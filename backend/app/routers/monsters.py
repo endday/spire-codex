@@ -1,0 +1,29 @@
+"""Monster API endpoints."""
+from fastapi import APIRouter, HTTPException, Query, Request
+from ..models.schemas import Monster
+from ..services.data_service import load_monsters
+
+router = APIRouter(prefix="/api/monsters", tags=["Monsters"])
+
+
+@router.get("", response_model=list[Monster])
+def get_monsters(
+    request: Request,
+    type: str | None = Query(None, description="Filter by type (Normal, Elite, Boss)"),
+    search: str | None = Query(None, description="Search by name"),
+):
+    monsters = load_monsters()
+    if type:
+        monsters = [m for m in monsters if m["type"].lower() == type.lower()]
+    if search:
+        monsters = [m for m in monsters if search.lower() in m["name"].lower()]
+    return monsters
+
+
+@router.get("/{monster_id}", response_model=Monster)
+def get_monster(request: Request, monster_id: str):
+    monsters = load_monsters()
+    for monster in monsters:
+        if monster["id"] == monster_id.upper():
+            return monster
+    raise HTTPException(status_code=404, detail=f"Monster '{monster_id}' not found")
