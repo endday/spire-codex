@@ -59,52 +59,54 @@ export default function Navbar() {
           </Link>
 
           {/* Burger button — always visible */}
-          <button
-            ref={buttonRef}
-            onClick={() => setOpen(!open)}
-            className="p-2 rounded-md text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-card)] transition-colors"
-            aria-label="Toggle menu"
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              {open ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              )}
-            </svg>
-          </button>
-        </div>
-      </div>
+          <div className="relative">
+            <button
+              ref={buttonRef}
+              onClick={() => setOpen(!open)}
+              className="p-2 rounded-md text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-card)] transition-colors"
+              aria-label="Toggle menu"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                {open ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
 
-      {/* Dropdown menu */}
-      {open && (
-        <div
-          ref={menuRef}
-          className="absolute right-4 sm:right-6 lg:right-8 top-14 w-48 rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-primary)] shadow-xl shadow-black/30"
-        >
-          <div className="py-2">
-            {links.map((link) => {
-              const isActive =
-                link.href === "/"
-                  ? pathname === "/"
-                  : pathname.startsWith(link.href);
-              return (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className={`block px-4 py-2 text-sm font-medium transition-colors ${
-                    isActive
-                      ? "text-[var(--accent-gold)] bg-[var(--bg-card)]"
-                      : "text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-card)]"
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              );
-            })}
+            {/* Dropdown menu */}
+            {open && (
+              <div
+                ref={menuRef}
+                className="absolute right-0 top-full mt-2 w-48 rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-primary)] shadow-xl shadow-black/30"
+              >
+                <div className="py-2">
+                  {links.map((link) => {
+                    const isActive =
+                      link.href === "/"
+                        ? pathname === "/"
+                        : pathname.startsWith(link.href);
+                    return (
+                      <Link
+                        key={link.href}
+                        href={link.href}
+                        className={`block px-4 py-2 text-sm font-medium transition-colors ${
+                          isActive
+                            ? "text-[var(--accent-gold)] bg-[var(--bg-card)]"
+                            : "text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-card)]"
+                        }`}
+                      >
+                        {link.label}
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
           </div>
         </div>
-      )}
+      </div>
     </nav>
   );
 }
