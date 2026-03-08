@@ -13,6 +13,8 @@ export interface Card {
   description_raw: string | null;
   cost: number;
   is_x_cost: boolean | null;
+  is_x_star_cost: boolean | null;
+  star_cost: number | null;
   type: string;
   rarity: string;
   target: string;
@@ -114,6 +116,12 @@ export interface EventOption {
   description: string;
 }
 
+export interface DialogueLine {
+  order: string;
+  speaker: string;
+  text: string;
+}
+
 export interface GameEvent {
   id: string;
   name: string;
@@ -121,6 +129,8 @@ export interface GameEvent {
   act: string | null;
   description: string | null;
   options: EventOption[] | null;
+  epithet: string | null;
+  dialogue: Record<string, DialogueLine[]> | null;
 }
 
 export interface Stats {

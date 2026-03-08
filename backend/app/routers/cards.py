@@ -12,6 +12,7 @@ def get_cards(
     color: str | None = Query(None, description="Filter by character color (ironclad, silent, defect, necrobinder, regent, colorless)"),
     type: str | None = Query(None, description="Filter by card type (Attack, Skill, Power, Status, Curse)"),
     rarity: str | None = Query(None, description="Filter by rarity (Basic, Common, Uncommon, Rare, Ancient)"),
+    keyword: str | None = Query(None, description="Filter by keyword (Exhaust, Innate, Ethereal, Retain, Unplayable, Sly, Eternal)"),
     search: str | None = Query(None, description="Search by name"),
 ):
     cards = load_cards()
@@ -21,6 +22,8 @@ def get_cards(
         cards = [c for c in cards if c["type"].lower() == type.lower()]
     if rarity:
         cards = [c for c in cards if c["rarity"].lower() == rarity.lower()]
+    if keyword:
+        cards = [c for c in cards if c.get("keywords") and keyword in c["keywords"]]
     if search:
         cards = [c for c in cards if search.lower() in c["name"].lower()]
     return cards

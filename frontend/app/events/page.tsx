@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import type { GameEvent } from "@/lib/api";
+import type { GameEvent, DialogueLine } from "@/lib/api";
 import SearchFilter from "../components/SearchFilter";
 import RichDescription from "../components/RichDescription";
 
@@ -38,6 +38,14 @@ export default function EventsPage() {
   const [type, setType] = useState("");
   const [act, setAct] = useState("");
   const [loading, setLoading] = useState(true);
+  const [expandedDialogue, setExpandedDialogue] = useState<Record<string, string | null>>({});
+
+  const toggleDialogue = (eventId: string, group: string) => {
+    setExpandedDialogue((prev) => ({
+      ...prev,
+      [eventId]: prev[eventId] === group ? null : group,
+    }));
+  };
 
   useEffect(() => {
     setLoading(true);
@@ -92,9 +100,16 @@ export default function EventsPage() {
               } p-4 hover:bg-[var(--bg-card-hover)] transition-all`}
             >
               <div className="flex items-start justify-between mb-2">
-                <h3 className="font-semibold text-[var(--text-primary)]">
-                  {event.name}
-                </h3>
+                <div>
+                  <h3 className="font-semibold text-[var(--text-primary)]">
+                    {event.name}
+                  </h3>
+                  {event.epithet && (
+                    <p className="text-xs text-purple-400 italic">
+                      {event.epithet}
+                    </p>
+                  )}
+                </div>
                 <span
                   className={`text-[10px] px-1.5 py-0.5 rounded border flex-shrink-0 ml-2 ${
                     typeBadge[event.type] || "bg-gray-800 text-gray-300 border-gray-700"
@@ -136,6 +151,50 @@ export default function EventsPage() {
                       )}
                     </div>
                   ))}
+                </div>
+              )}
+
+              {event.dialogue && Object.keys(event.dialogue).length > 0 && (
+                <div className="mt-3 space-y-1">
+                  <p className="text-[10px] uppercase tracking-wider text-[var(--text-muted)]">
+                    Dialogue
+                  </p>
+                  <div className="flex flex-wrap gap-1">
+                    {Object.keys(event.dialogue).map((group) => (
+                      <button
+                        key={group}
+                        onClick={() => toggleDialogue(event.id, group)}
+                        className={`text-[11px] px-2 py-0.5 rounded border transition-colors ${
+                          expandedDialogue[event.id] === group
+                            ? "bg-purple-950/60 text-purple-300 border-purple-800/50"
+                            : "bg-[var(--bg-primary)] text-[var(--text-muted)] border-[var(--border-subtle)] hover:text-[var(--text-secondary)]"
+                        }`}
+                      >
+                        {group}
+                      </button>
+                    ))}
+                  </div>
+                  {expandedDialogue[event.id] &&
+                    event.dialogue[expandedDialogue[event.id]!] && (
+                      <div className="mt-2 space-y-1.5 max-h-48 overflow-y-auto">
+                        {event.dialogue[expandedDialogue[event.id]!].map(
+                          (line, i) => (
+                            <div
+                              key={i}
+                              className={`text-xs px-2.5 py-1.5 rounded ${
+                                line.speaker === "ancient"
+                                  ? "bg-purple-950/30 text-purple-200 border-l-2 border-purple-700/50"
+                                  : "bg-indigo-950/30 text-indigo-200 border-l-2 border-indigo-700/50 ml-4"
+                              }`}
+                            >
+                              <span className="whitespace-pre-line">
+                                {line.text}
+                              </span>
+                            </div>
+                          )
+                        )}
+                      </div>
+                    )}
                 </div>
               )}
             </div>

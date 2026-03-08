@@ -33,14 +33,23 @@ const rarityOptions = [
   { label: "Ancient", value: "Ancient" },
 ];
 
+const keywordOptions = [
+  { label: "Exhaust", value: "Exhaust" },
+  { label: "Innate", value: "Innate" },
+  { label: "Ethereal", value: "Ethereal" },
+  { label: "Retain", value: "Retain" },
+  { label: "Unplayable", value: "Unplayable" },
+  { label: "Sly", value: "Sly" },
+  { label: "Eternal", value: "Eternal" },
+];
+
 export default function CardsPage() {
   const [cards, setCards] = useState<Card[]>([]);
   const [search, setSearch] = useState("");
   const [color, setColor] = useState("");
   const [type, setType] = useState("");
   const [rarity, setRarity] = useState("");
-  const [upgraded, setUpgraded] = useState(false);
-  const [betaArt, setBetaArt] = useState(false);
+  const [keyword, setKeyword] = useState("");
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -49,12 +58,13 @@ export default function CardsPage() {
     if (color) params.set("color", color);
     if (type) params.set("type", type);
     if (rarity) params.set("rarity", rarity);
+    if (keyword) params.set("keyword", keyword);
     if (search) params.set("search", search);
     fetch(`${API}/api/cards?${params}`)
       .then((r) => r.json())
       .then(setCards)
       .finally(() => setLoading(false));
-  }, [color, type, rarity, search]);
+  }, [color, type, rarity, keyword, search]);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -86,37 +96,13 @@ export default function CardsPage() {
             options: rarityOptions,
             onChange: setRarity,
           },
+          {
+            label: "All Keywords",
+            value: keyword,
+            options: keywordOptions,
+            onChange: setKeyword,
+          },
         ]}
-        extra={
-          <>
-            <button
-              onClick={() => setBetaArt(!betaArt)}
-              className={`flex items-center gap-2 px-3 py-1.5 rounded-lg border text-sm transition-colors ${
-                betaArt
-                  ? "bg-amber-950/50 border-amber-700/50 text-amber-400"
-                  : "bg-[var(--bg-card)] border-[var(--border-subtle)] text-[var(--text-muted)]"
-              }`}
-            >
-              <span className={`inline-block w-8 h-4 rounded-full relative transition-colors ${betaArt ? "bg-amber-600" : "bg-gray-600"}`}>
-                <span className={`absolute top-0.5 w-3 h-3 rounded-full bg-white transition-all ${betaArt ? "left-4" : "left-0.5"}`} />
-              </span>
-              Beta Art
-            </button>
-            <button
-              onClick={() => setUpgraded(!upgraded)}
-              className={`flex items-center gap-2 px-3 py-1.5 rounded-lg border text-sm transition-colors ${
-                upgraded
-                  ? "bg-emerald-950/50 border-emerald-700/50 text-emerald-400"
-                  : "bg-[var(--bg-card)] border-[var(--border-subtle)] text-[var(--text-muted)]"
-              }`}
-            >
-              <span className={`inline-block w-8 h-4 rounded-full relative transition-colors ${upgraded ? "bg-emerald-600" : "bg-gray-600"}`}>
-                <span className={`absolute top-0.5 w-3 h-3 rounded-full bg-white transition-all ${upgraded ? "left-4" : "left-0.5"}`} />
-              </span>
-              Upgraded
-            </button>
-          </>
-        }
       />
 
       {loading ? (
@@ -124,7 +110,7 @@ export default function CardsPage() {
           Loading...
         </div>
       ) : (
-        <CardGrid cards={cards} upgraded={upgraded} betaArt={betaArt} />
+        <CardGrid cards={cards} />
       )}
     </div>
   );

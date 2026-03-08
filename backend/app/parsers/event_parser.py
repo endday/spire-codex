@@ -19,11 +19,13 @@ def class_name_to_id(name: str) -> str:
 
 
 def load_localization() -> dict:
-    loc_file = LOCALIZATION / "events.json"
-    if loc_file.exists():
-        with open(loc_file, "r", encoding="utf-8") as f:
-            return json.load(f)
-    return {}
+    loc = {}
+    for filename in ("events.json", "ancients.json"):
+        loc_file = LOCALIZATION / filename
+        if loc_file.exists():
+            with open(loc_file, "r", encoding="utf-8") as f:
+                loc.update(json.load(f))
+    return loc
 
 
 def strip_rich_tags(text: str) -> str:
@@ -110,6 +112,56 @@ def is_ancient_event(content: str) -> bool:
     return "AncientEventModel" in content
 
 
+CHARACTERS = ["IRONCLAD", "SILENT", "DEFECT", "NECROBINDER", "REGENT"]
+
+
+def parse_ancient_dialogue(event_id: str, localization: dict) -> dict[str, list[dict]]:
+    """Extract dialogue lines for an Ancient event, grouped by character."""
+    dialogue: dict[str, list[dict]] = {}
+
+    # Collect all talk keys for this event
+    prefix = f"{event_id}.talk."
+    for key, value in localization.items():
+        if not key.startswith(prefix):
+            continue
+        rest = key[len(prefix):]
+        # Pattern: CHARACTER.VISIT-LINE.type (e.g. IRONCLAD.0-0.ancient, IRONCLAD.0-1.char)
+        parts = rest.split(".")
+        if len(parts) < 3:
+            continue
+        speaker_group = parts[0]  # Character name, "ANY", or "firstVisitEver"
+        visit_line = parts[1]     # e.g. "0-0", "0-0r", "1-0r"
+        line_type = parts[2]      # "ancient", "char", "next"
+
+        if line_type == "next":
+            continue  # Skip button labels
+
+        # Map speaker groups to display names
+        if speaker_group == "firstVisitEver":
+            group_key = "First Visit"
+        elif speaker_group == "ANY":
+            group_key = "Returning"
+        else:
+            group_key = speaker_group.replace("_", " ").title()
+
+        if group_key not in dialogue:
+            dialogue[group_key] = []
+
+        cleaned = strip_rich_tags(value)
+        speaker = "ancient" if line_type == "ancient" else "character"
+        dialogue[group_key].append({
+            "order": visit_line,
+            "speaker": speaker,
+            "text": cleaned,
+        })
+
+    # Sort each group's lines by order
+    for group in dialogue:
+        dialogue[group].sort(key=lambda x: x["order"])
+
+    return dialogue
+
+
 def parse_single_event(filepath: Path, localization: dict, act_mapping: dict) -> dict | None:
     content = filepath.read_text(encoding="utf-8")
     class_name = filepath.stem
@@ -146,7 +198,7 @@ def parse_single_event(filepath: Path, localization: dict, act_mapping: dict) ->
         # Check if it's referenced across multiple acts via encounter system
         event_type = "Shared"
 
-    return {
+    result = {
         "id": event_id,
         "name": title,
         "type": event_type,
@@ -154,6 +206,17 @@ def parse_single_event(filepath: Path, localization: dict, act_mapping: dict) ->
         "description": desc_clean if desc_clean else None,
         "options": options if options else None,
     }
+
+    # Enrich Ancient events with epithet and dialogue
+    if is_ancient:
+        epithet = localization.get(f"{event_id}.epithet", "")
+        if epithet:
+            result["epithet"] = epithet
+        dialogue = parse_ancient_dialogue(event_id, localization)
+        if dialogue:
+            result["dialogue"] = dialogue
+
+    return result
 
 
 def parse_all_events() -> list[dict]:

@@ -14,6 +14,8 @@ class Card(BaseModel):
     description_raw: str | None = None
     cost: int
     is_x_cost: bool | None = None
+    is_x_star_cost: bool | None = None
+    star_cost: int | None = None
     type: str
     rarity: str
     target: str
@@ -126,6 +128,12 @@ class EventOption(BaseModel):
     description: str
 
 
+class DialogueLine(BaseModel):
+    order: str
+    speaker: str
+    text: str
+
+
 class Event(BaseModel):
     id: str
     name: str
@@ -133,6 +141,8 @@ class Event(BaseModel):
     act: str | None = None
     description: str | None = None
     options: list[EventOption] | None = None
+    epithet: str | None = None
+    dialogue: dict[str, list[DialogueLine]] | None = None
 
 
 class StatsResponse(BaseModel):

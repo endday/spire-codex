@@ -103,7 +103,17 @@ def extract_vars_from_source(content: str) -> dict[str, int]:
     """Extract DynamicVar values from C# source code."""
     all_vars: dict[str, int] = {}
 
-    # Pattern: new XxxVar(Nm) or new XxxVar(N) — typed vars like DamageVar, BlockVar, etc.
+    # Pattern: new XxxVar("Name", Nm, ...) — named typed vars (events use this heavily)
+    # e.g. new DamageVar("RipHpLoss", 5m, ValueProp.Unblockable)
+    for m in re.finditer(r'new\s+\w+Var\(\s*"(\w+)"\s*,\s*(\d+)m?(?:\s*,\s*[^)]+)?\)', content):
+        all_vars[m.group(1)] = int(m.group(2))
+
+    # Pattern: new IntVar("Name", Nm) — named int vars
+    # e.g. new IntVar("RewardCount", 1m)
+    for m in re.finditer(r'new\s+IntVar\(\s*"(\w+)"\s*,\s*(\d+)m?\)', content):
+        all_vars[m.group(1)] = int(m.group(2))
+
+    # Pattern: new XxxVar(Nm) or new XxxVar(N) — unnamed typed vars (cards use this)
     # Captures the type name (before "Var") and the numeric value
     for m in re.finditer(r'new\s+(\w+)Var\((\d+)m?(?:\s*,\s*[^)]+)?\)', content):
         var_type = m.group(1)  # e.g. "Damage", "Block", "Energy", "Cards", "MaxHp", "Power", "Heal"

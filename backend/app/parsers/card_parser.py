@@ -148,6 +148,11 @@ def parse_single_card(filepath: Path, localization: dict, card_pools: dict) -> d
     for iv in re.finditer(r'(\w+)\s*=\s*new IntVar\((\d+)\)', content):
         all_vars[iv.group(1)] = int(iv.group(2))
 
+    # Star cost: CanonicalStarCost => N means the card costs stars
+    star_cost_match = re.search(r'CanonicalStarCost\s*=>\s*(\d+)', content)
+    if star_cost_match:
+        all_vars["StarCost"] = int(star_cost_match.group(1))
+
     cards_draw = all_vars.get("Cards")
     energy_gain = all_vars.get("Energy")
     hp_loss = all_vars.get("HpLoss")
@@ -168,23 +173,46 @@ def parse_single_card(filepath: Path, localization: dict, card_pools: dict) -> d
     if cost_up:
         cost_upgrade = int(cost_up.group(1))
 
-    # Keywords (Ethereal, Exhaust, Innate, Unplayable, Retain, Sly, Eternal)
-    if re.search(r'IsEthereal\s*=>\s*true', content):
+    # Keywords from CanonicalKeywords array (most common pattern)
+    canonical_kw_match = re.search(r'CanonicalKeywords\s*=>', content)
+    canonical_keywords_block = ""
+    if canonical_kw_match:
+        # Extract the block after CanonicalKeywords =>
+        start = canonical_kw_match.end()
+        # Find the matching closing of the property (next semicolon at property level)
+        depth = 0
+        end = start
+        for i in range(start, len(content)):
+            if content[i] == '{':
+                depth += 1
+            elif content[i] == '}':
+                depth -= 1
+            elif content[i] == ';' and depth <= 0:
+                end = i
+                break
+        canonical_keywords_block = content[start:end]
+
+    for kw in ("Exhaust", "Innate", "Ethereal", "Retain", "Unplayable", "Sly", "Eternal"):
+        if f"CardKeyword.{kw}" in canonical_keywords_block:
+            keywords.append(kw)
+
+    # Keywords from property overrides (additional patterns)
+    if "Ethereal" not in keywords and re.search(r'IsEthereal\s*=>\s*true', content):
         keywords.append("Ethereal")
-    if re.search(r'IsInnate\s*=>\s*true', content):
+    if "Innate" not in keywords and re.search(r'IsInnate\s*=>\s*true', content):
         keywords.append("Innate")
-    if re.search(r'ExhaustOnPlay\s*=>\s*true', content) or re.search(r'ShouldExhaust\s*=>\s*true', content):
-        keywords.append("Exhaust")
-    if re.search(r'CardKeyword\.Exhaust', content) and 'AddKeyword' in content:
-        if "Exhaust" not in keywords:
+    if "Exhaust" not in keywords:
+        if re.search(r'ExhaustOnPlay\s*=>\s*true', content) or re.search(r'ShouldExhaust\s*=>\s*true', content):
             keywords.append("Exhaust")
-    if re.search(r'IsRetain\s*=>\s*true', content) or re.search(r'IsRetainable\s*=>\s*true', content):
+        if re.search(r'CardKeyword\.Exhaust', content) and 'AddKeyword' in content:
+            keywords.append("Exhaust")
+    if "Retain" not in keywords and (re.search(r'IsRetain\s*=>\s*true', content) or re.search(r'IsRetainable\s*=>\s*true', content)):
         keywords.append("Retain")
-    if re.search(r'IsUnplayable\s*=>\s*true', content) or re.search(r'CardKeyword\.Unplayable', content):
+    if "Unplayable" not in keywords and re.search(r'IsUnplayable\s*=>\s*true', content):
         keywords.append("Unplayable")
-    if re.search(r'CardKeyword\.Sly', content):
+    if "Sly" not in keywords and re.search(r'CardKeyword\.Sly', content) and 'AddKeyword' in content:
         keywords.append("Sly")
-    if re.search(r'CardKeyword\.Eternal', content):
+    if "Eternal" not in keywords and re.search(r'CardKeyword\.Eternal', content) and 'AddKeyword' in content:
         keywords.append("Eternal")
 
     # Tags (Strike, Defend, Minion, OstyAttack, Shiv)
@@ -195,6 +223,7 @@ def parse_single_card(filepath: Path, localization: dict, card_pools: dict) -> d
 
     # X-cost detection
     is_x_cost = bool(re.search(r'HasEnergyCostX\s*=>\s*true', content) or re.search(r'CostsX', content))
+    is_x_star_cost = bool(re.search(r'HasStarCostX\s*=>\s*true', content))
 
     # Multi-hit
     hit_count = None
@@ -294,6 +323,8 @@ def parse_single_card(filepath: Path, localization: dict, card_pools: dict) -> d
 
     desc_rendered = resolve_description(description, all_vars)
 
+    star_cost = all_vars.get("StarCost")
+
     card = {
         "id": card_id,
         "name": title,
@@ -301,6 +332,8 @@ def parse_single_card(filepath: Path, localization: dict, card_pools: dict) -> d
         "description_raw": description,
         "cost": cost,
         "is_x_cost": is_x_cost if is_x_cost else None,
+        "is_x_star_cost": is_x_star_cost if is_x_star_cost else None,
+        "star_cost": star_cost,
         "type": card_type,
         "rarity": rarity,
         "target": target,
