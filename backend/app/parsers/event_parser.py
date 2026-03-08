@@ -34,7 +34,7 @@ def strip_rich_tags(text: str) -> str:
     text = re.sub(r'\[rainbow[^\]]*\]', '', text)
     text = re.sub(r'\[font_size=\d+\]', '', text)
     # Strip simple open/close tags
-    text = re.sub(r'\[/?(?:gold|blue|red|purple|green|orange|pink|aqua|sine|jitter|b|i|font_size)\]', '', text)
+    text = re.sub(r'\[/?(?:gold|blue|red|purple|green|orange|pink|aqua|sine|jitter|thinky_dots|b|i|font_size)\]', '', text)
     return text
 
 
@@ -215,6 +215,12 @@ def parse_single_event(filepath: Path, localization: dict, act_mapping: dict) ->
         dialogue = parse_ancient_dialogue(event_id, localization)
         if dialogue:
             result["dialogue"] = dialogue
+
+        # Use first-visit dialogue as description if none exists
+        if not result["description"]:
+            first_visit = localization.get(f"{event_id}.talk.firstVisitEver.0-0.ancient", "")
+            if first_visit:
+                result["description"] = strip_rich_tags(first_visit)
 
     return result
 

@@ -219,7 +219,7 @@
     "name": "Darv",
     "type": "Ancient",
     "act": null,
-    "description": null,
+    "description": "...where did I put... Oh!\nCome to see my collection!? Take anything from that pile over there, put it to good use!",
     "options": null,
     "epithet": "The Hoarder",
     "dialogue": {
@@ -679,7 +679,7 @@
     "name": "Neow",
     "type": "Ancient",
     "act": "Underdocks",
-    "description": null,
+    "description": "I’ve... remade you....\n...go... ..up.....",
     "options": null,
     "epithet": "Mother of Resurrection (Exiled)",
     "dialogue": {
@@ -869,7 +869,7 @@
     "name": "Nonupeipe",
     "type": "Ancient",
     "act": "Act 3 - Glory",
-    "description": null,
+    "description": "I haven’t had a visitor in a millennia!\nYou’re looking quite drab, here, let’s find something delightful for you to wear.",
     "options": null,
     "epithet": "Serendipity Incarnate",
     "dialogue": {
@@ -1029,7 +1029,7 @@
     "name": "Orobas",
     "type": "Ancient",
     "act": "Act 2 - Hive",
-    "description": null,
+    "description": "Puppet puppet!! All the way up here?! Take these, take take!",
     "options": [
       {
         "id": "OPTION_POOL_3_LOCKED",
@@ -1205,7 +1205,7 @@
     "name": "Pael",
     "type": "Ancient",
     "act": "Act 2 - Hive",
-    "description": null,
+    "description": "A puppet has arrived?\nCan you check on Father? I’m too tired...",
     "options": null,
     "epithet": "Melting Dragon",
     "dialogue": {
@@ -1213,7 +1213,7 @@
         {
           "order": "0-0r",
           "speaker": "ancient",
-          "text": "[thinky_dots]Welcome back friend. Let my flesh help you...[/thinky_dots]"
+          "text": "Welcome back friend. Let my flesh help you..."
         },
         {
           "order": "1-0r",
@@ -1225,41 +1225,41 @@
         {
           "order": "0-0",
           "speaker": "ancient",
-          "text": "[thinky_dots]Troubled automaton, looking for your friend?\nLet me help...[/thinky_dots]"
+          "text": "Troubled automaton, looking for your friend?\nLet me help..."
         },
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "[thinky_dots]Do constructs dream?\nWatch and copy me...[/thinky_dots]"
+          "text": "Do constructs dream?\nWatch and copy me..."
         },
         {
           "order": "2-0",
           "speaker": "ancient",
-          "text": "[thinky_dots]I dreamt of your friend...\nFather can restore Flaw...[/thinky_dots]"
+          "text": "I dreamt of your friend...\nFather can restore Flaw..."
         }
       ],
       "Ironclad": [
         {
           "order": "0-0",
           "speaker": "ancient",
-          "text": "[thinky_dots]You contain such rage. Take from me and find some peace...[/thinky_dots]"
+          "text": "You contain such rage. Take from me and find some peace..."
         },
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "[thinky_dots]Do you remember how it feels to dream?\nIt is good to sleep...[/thinky_dots]"
+          "text": "Do you remember how it feels to dream?\nIt is good to sleep..."
         },
         {
           "order": "2-0",
           "speaker": "ancient",
-          "text": "[thinky_dots]You must quell your flames.\nFather can free you...[/thinky_dots]"
+          "text": "You must quell your flames.\nFather can free you..."
         }
       ],
       "Necrobinder": [
         {
           "order": "0-0",
           "speaker": "ancient",
-          "text": "[thinky_dots]Such malice paints your heart.[/thinky_dots]"
+          "text": "Such malice paints your heart."
         },
         {
           "order": "0-1",
@@ -1269,17 +1269,17 @@
         {
           "order": "0-2",
           "speaker": "ancient",
-          "text": "[thinky_dots]There is no peace on your path.\nTake a part of me to ease your burdens...[/thinky_dots]"
+          "text": "There is no peace on your path.\nTake a part of me to ease your burdens..."
         },
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "[thinky_dots]The one with the Hand returns.\nPainful memories. Take my strength and leave...[/thinky_dots]"
+          "text": "The one with the Hand returns.\nPainful memories. Take my strength and leave..."
         },
         {
           "order": "2-0",
           "speaker": "ancient",
-          "text": "[thinky_dots]Killing Father won’t bring peace.[/thinky_dots]"
+          "text": "Killing Father won’t bring peace."
         },
         {
           "order": "2-1",
@@ -1289,7 +1289,7 @@
         {
           "order": "2-2",
           "speaker": "ancient",
-          "text": "[thinky_dots]We do not choose our family...[/thinky_dots]"
+          "text": "We do not choose our family..."
         }
       ],
       "Regent": [
@@ -1301,7 +1301,7 @@
         {
           "order": "0-1",
           "speaker": "ancient",
-          "text": "[thinky_dots]Quiet down now.\nTake a part of me and be on your way...[/thinky_dots]"
+          "text": "Quiet down now.\nTake a part of me and be on your way..."
         },
         {
           "order": "1-0r",
@@ -1316,36 +1316,36 @@
         {
           "order": "2-1",
           "speaker": "ancient",
-          "text": "[thinky_dots]Why not give when I have an abundance of flesh?[/thinky_dots]"
+          "text": "Why not give when I have an abundance of flesh?"
         },
         {
           "order": "2-2",
           "speaker": "ancient",
-          "text": "[thinky_dots]When you return, I will be replenished anew.\nThat’s what sleep does...[/thinky_dots]"
+          "text": "When you return, I will be replenished anew.\nThat’s what sleep does..."
         }
       ],
       "Silent": [
         {
           "order": "0-0",
           "speaker": "ancient",
-          "text": "[thinky_dots]Murderous creature, no need for violence here.\nHave part of me and find peace...[/thinky_dots]"
+          "text": "Murderous creature, no need for violence here.\nHave part of me and find peace..."
         },
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "[thinky_dots]Trophy hunting? Sure, take a part of me...\nWhatever grants you comfort...[/thinky_dots]"
+          "text": "Trophy hunting? Sure, take a part of me...\nWhatever grants you comfort..."
         },
         {
           "order": "2-0",
           "speaker": "ancient",
-          "text": "[thinky_dots]You’ve poisoned me...?\nWhat is this going to...? zZZzz...[/thinky_dots]"
+          "text": "You’ve poisoned me...?\nWhat is this going to...? zZZzz..."
         }
       ],
       "First Visit": [
         {
           "order": "0-0",
           "speaker": "ancient",
-          "text": "[thinky_dots]A puppet has arrived?\nCan you check on Father? I’m too tired...[/thinky_dots]"
+          "text": "A puppet has arrived?\nCan you check on Father? I’m too tired..."
         }
       ]
     }
@@ -1743,7 +1743,7 @@
     "name": "Tanx",
     "type": "Ancient",
     "act": "Act 3 - Glory",
-    "description": null,
+    "description": "SO WEAK! BUT YOU HAVE POTENTIAL!\nUSE THIS WEAPON!!",
     "options": null,
     "epithet": "Khimera King",
     "dialogue": {
@@ -1962,7 +1962,7 @@
     "name": "Tezcatara",
     "type": "Ancient",
     "act": "Act 2 - Hive",
-    "description": null,
+    "description": "Oh, a visitor! Do come in, dear!\nWhat can Tezcatara do for you?",
     "options": null,
     "epithet": "It Which Feeds the Fire",
     "dialogue": {
@@ -2302,7 +2302,7 @@
     "name": "Vakuu",
     "type": "Ancient",
     "act": "Act 3 - Glory",
-    "description": null,
+    "description": "Give yourself to me and you will be feared as much as I.",
     "options": null,
     "epithet": "The First Demon",
     "dialogue": {
