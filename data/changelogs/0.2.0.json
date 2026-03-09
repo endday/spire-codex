@@ -1,0 +1,408 @@
+{
+  "app_id": 2868840,
+  "game_version": "0.2.0",
+  "build_id": "",
+  "codex_version": null,
+  "tag": "0.2.0",
+  "date": "2026-03-09",
+  "title": "Epochs & Timeline",
+  "from_ref": "37d2fc7",
+  "to_ref": "15e24ff",
+  "summary": {
+    "added": 65,
+    "removed": 0,
+    "changed": 0
+  },
+  "categories": [
+    {
+      "id": "epochs",
+      "name": "Epochs",
+      "old_count": 0,
+      "new_count": 57,
+      "added": [
+        {
+          "id": "ACT2_B_EPOCH",
+          "name": "Somewhere",
+          "title": "Somewhere",
+          "era": "Seeds3"
+        },
+        {
+          "id": "ACT3_B_EPOCH",
+          "name": "Elsewhere",
+          "title": "Elsewhere",
+          "era": "Seeds0"
+        },
+        {
+          "id": "COLORLESS1_EPOCH",
+          "name": "Preon",
+          "title": "Preon",
+          "era": "Prehistoria0"
+        },
+        {
+          "id": "COLORLESS2_EPOCH",
+          "name": "The Architect",
+          "title": "The Architect",
+          "era": "Prehistoria2"
+        },
+        {
+          "id": "COLORLESS3_EPOCH",
+          "name": "Traitors",
+          "title": "Traitors",
+          "era": "Seeds2"
+        },
+        {
+          "id": "COLORLESS4_EPOCH",
+          "name": "Slumber",
+          "title": "Slumber",
+          "era": "Seeds3"
+        },
+        {
+          "id": "COLORLESS5_EPOCH",
+          "name": "Buy Something!",
+          "title": "Buy Something!",
+          "era": "Blight1"
+        },
+        {
+          "id": "CUSTOM_AND_SEEDS_EPOCH",
+          "name": "Seeds",
+          "title": "Seeds",
+          "era": "Seeds0"
+        },
+        {
+          "id": "DAILY_RUN_EPOCH",
+          "name": "The Daily",
+          "title": "The Daily",
+          "era": "Invitation6"
+        },
+        {
+          "id": "DARV_EPOCH",
+          "name": "Darv",
+          "title": "Darv",
+          "era": "Invitation4"
+        },
+        {
+          "id": "DEFECT1_EPOCH",
+          "name": "Booting Up",
+          "title": "Booting Up",
+          "era": "Invitation1"
+        },
+        {
+          "id": "DEFECT2_EPOCH",
+          "name": "Tricked",
+          "title": "Tricked",
+          "era": "Invitation2"
+        },
+        {
+          "id": "DEFECT3_EPOCH",
+          "name": "Hello! Hello!",
+          "title": "Hello! Hello!",
+          "era": "Flourish1"
+        },
+        {
+          "id": "DEFECT4_EPOCH",
+          "name": "Resolving Bugs",
+          "title": "Resolving Bugs",
+          "era": "Flourish2"
+        },
+        {
+          "id": "DEFECT5_EPOCH",
+          "name": "Confrontation",
+          "title": "Confrontation",
+          "era": "Flourish3"
+        },
+        {
+          "id": "DEFECT6_EPOCH",
+          "name": "Laser Beams",
+          "title": "Laser Beams",
+          "era": "Blight2"
+        },
+        {
+          "id": "DEFECT7_EPOCH",
+          "name": "Ooh Shiny!",
+          "title": "Ooh Shiny!",
+          "era": "Invitation6"
+        },
+        {
+          "id": "EVENT1_EPOCH",
+          "name": "Cultists",
+          "title": "Cultists",
+          "era": "Flourish1"
+        },
+        {
+          "id": "EVENT2_EPOCH",
+          "name": "They Return",
+          "title": "They Return",
+          "era": "Invitation1"
+        },
+        {
+          "id": "EVENT3_EPOCH",
+          "name": "The Spire",
+          "title": "The Spire",
+          "era": "Blight1"
+        },
+        {
+          "id": "IRONCLAD2_EPOCH",
+          "name": "The Ironclad",
+          "title": "The Ironclad",
+          "era": "Blight1"
+        },
+        {
+          "id": "IRONCLAD3_EPOCH",
+          "name": "Devastation",
+          "title": "Devastation",
+          "era": "Seeds3"
+        },
+        {
+          "id": "IRONCLAD4_EPOCH",
+          "name": "The Pact",
+          "title": "The Pact",
+          "era": "Seeds2"
+        },
+        {
+          "id": "IRONCLAD5_EPOCH",
+          "name": "Ablaze",
+          "title": "Ablaze",
+          "era": "Blight2"
+        },
+        {
+          "id": "IRONCLAD6_EPOCH",
+          "name": "Snuffed",
+          "title": "Snuffed",
+          "era": "Flourish3"
+        },
+        {
+          "id": "IRONCLAD7_EPOCH",
+          "name": "My Face",
+          "title": "My Face",
+          "era": "Invitation5"
+        },
+        {
+          "id": "NECROBINDER1_EPOCH",
+          "name": "Life and Death",
+          "title": "Life and Death",
+          "era": "Invitation5"
+        },
+        {
+          "id": "NECROBINDER2_EPOCH",
+          "name": "The Twelve",
+          "title": "The Twelve",
+          "era": "Invitation0"
+        },
+        {
+          "id": "NECROBINDER3_EPOCH",
+          "name": "Futility",
+          "title": "Futility",
+          "era": "Invitation1"
+        },
+        {
+          "id": "NECROBINDER4_EPOCH",
+          "name": "Spireborn",
+          "title": "Spireborn",
+          "era": "Invitation2"
+        },
+        {
+          "id": "NECROBINDER5_EPOCH",
+          "name": "The Giant",
+          "title": "The Giant",
+          "era": "Invitation3"
+        },
+        {
+          "id": "NECROBINDER6_EPOCH",
+          "name": "Annihilation",
+          "title": "Annihilation",
+          "era": "Invitation4"
+        },
+        {
+          "id": "NECROBINDER7_EPOCH",
+          "name": "To Kill",
+          "title": "To Kill",
+          "era": "Invitation7"
+        },
+        {
+          "id": "NEOW_EPOCH",
+          "name": "Neow",
+          "title": "Neow",
+          "era": "Invitation0"
+        },
+        {
+          "id": "OROBAS_EPOCH",
+          "name": "Orobas",
+          "title": "Orobas",
+          "era": "Flourish0"
+        },
+        {
+          "id": "POTION1_EPOCH",
+          "name": "Open",
+          "title": "Open",
+          "era": "Invitation0"
+        },
+        {
+          "id": "POTION2_EPOCH",
+          "name": "The Calm",
+          "title": "The Calm",
+          "era": "Flourish0"
+        },
+        {
+          "id": "REGENT1_EPOCH",
+          "name": "Anomalous Planet",
+          "title": "Anomalous Planet",
+          "era": "Flourish2"
+        },
+        {
+          "id": "REGENT2_EPOCH",
+          "name": "I Arrive",
+          "title": "I Arrive",
+          "era": "Invitation1"
+        },
+        {
+          "id": "REGENT3_EPOCH",
+          "name": "We Need a Hero!",
+          "title": "We Need a Hero!",
+          "era": "Invitation2"
+        },
+        {
+          "id": "REGENT4_EPOCH",
+          "name": "Grand Strategy",
+          "title": "Grand Strategy",
+          "era": "Invitation3"
+        },
+        {
+          "id": "REGENT5_EPOCH",
+          "name": "Friends",
+          "title": "Friends",
+          "era": "Flourish3"
+        },
+        {
+          "id": "REGENT6_EPOCH",
+          "name": "Discontent",
+          "title": "Discontent",
+          "era": "Flourish1"
+        },
+        {
+          "id": "REGENT7_EPOCH",
+          "name": "Little King",
+          "title": "Little King",
+          "era": "Invitation5"
+        },
+        {
+          "id": "RELIC1_EPOCH",
+          "name": "Scribbles",
+          "title": "Scribbles",
+          "era": "Prehistoria1"
+        },
+        {
+          "id": "RELIC2_EPOCH",
+          "name": "Ancients",
+          "title": "Ancients",
+          "era": "Seeds1"
+        },
+        {
+          "id": "RELIC3_EPOCH",
+          "name": "Civilization",
+          "title": "Civilization",
+          "era": "Flourish1"
+        },
+        {
+          "id": "RELIC4_EPOCH",
+          "name": "Consequences",
+          "title": "Consequences",
+          "era": "Blight0"
+        },
+        {
+          "id": "RELIC5_EPOCH",
+          "name": "Arise",
+          "title": "Arise",
+          "era": "Flourish1"
+        },
+        {
+          "id": "SILENT1_EPOCH",
+          "name": "Fog Rolls In",
+          "title": "Fog Rolls In",
+          "era": "Invitation0"
+        },
+        {
+          "id": "SILENT2_EPOCH",
+          "name": "Bigger Prey",
+          "title": "Bigger Prey",
+          "era": "Flourish0"
+        },
+        {
+          "id": "SILENT3_EPOCH",
+          "name": "Ill",
+          "title": "Ill",
+          "era": "Flourish3"
+        },
+        {
+          "id": "SILENT4_EPOCH",
+          "name": "Trophies",
+          "title": "Trophies",
+          "era": "Blight1"
+        },
+        {
+          "id": "SILENT5_EPOCH",
+          "name": "Poisoner",
+          "title": "Poisoner",
+          "era": "Blight2"
+        },
+        {
+          "id": "SILENT6_EPOCH",
+          "name": "Nemesis",
+          "title": "Nemesis",
+          "era": "Prehistoria2"
+        },
+        {
+          "id": "SILENT7_EPOCH",
+          "name": "Soup",
+          "title": "Soup",
+          "era": "Invitation5"
+        },
+        {
+          "id": "UNDERDOCKS_EPOCH",
+          "name": "Underdocks",
+          "title": "Underdocks",
+          "era": "Invitation1"
+        }
+      ]
+    },
+    {
+      "id": "stories",
+      "name": "Stories",
+      "old_count": 0,
+      "new_count": 8,
+      "added": [
+        {
+          "id": "DEFECT",
+          "name": "The Defect"
+        },
+        {
+          "id": "IRONCLAD",
+          "name": "The Ironclad"
+        },
+        {
+          "id": "MAGNUM_OPUS",
+          "name": "Magnum Opus"
+        },
+        {
+          "id": "NECROBINDER",
+          "name": "The Necrobinder"
+        },
+        {
+          "id": "REGENT",
+          "name": "The Regent"
+        },
+        {
+          "id": "REOPENING",
+          "name": "The Reopening"
+        },
+        {
+          "id": "SILENT",
+          "name": "The Silent"
+        },
+        {
+          "id": "TALES_FROM_THE_SPIRE",
+          "name": "Tales from the Spire"
+        }
+      ]
+    }
+  ]
+}

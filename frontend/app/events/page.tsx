@@ -286,7 +286,7 @@ export default function EventsPage() {
                       <span
                         className={`inline-block transition-transform ${isExpanded ? "rotate-90" : ""}`}
                       >
-                        ▶
+                        &gt;
                       </span>
                       All Pages ({pageCount})
                     </button>

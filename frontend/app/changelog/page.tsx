@@ -1,0 +1,294 @@
+"use client";
+
+import { useState, useEffect } from "react";
+
+const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+
+interface ChangelogSummary {
+  app_id: number | null;
+  game_version: string;
+  build_id: string;
+  codex_version: number | null;
+  tag: string;
+  date: string;
+  title: string;
+  summary: { added: number; removed: number; changed: number };
+}
+
+interface FieldChange {
+  field: string;
+  old: string;
+  new: string;
+}
+
+interface ChangedEntity {
+  id: string;
+  name: string;
+  changes: FieldChange[];
+}
+
+interface CategoryDiff {
+  id: string;
+  name: string;
+  old_count: number;
+  new_count: number;
+  added?: { id: string; name: string; [key: string]: unknown }[];
+  removed?: { id: string; name: string }[];
+  changed?: ChangedEntity[];
+}
+
+interface ChangelogDetail extends ChangelogSummary {
+  from_ref: string;
+  to_ref: string;
+  categories: CategoryDiff[];
+}
+
+const STEAM_APP_URL = "https://store.steampowered.com/app/2868840";
+
+function SummaryBadge({ added, removed, changed }: { added: number; removed: number; changed: number }) {
+  return (
+    <div className="flex gap-2 text-xs">
+      {added > 0 && (
+        <span className="px-2 py-0.5 rounded bg-emerald-950/50 text-emerald-400 border border-emerald-900/30">
+          +{added} added
+        </span>
+      )}
+      {removed > 0 && (
+        <span className="px-2 py-0.5 rounded bg-red-950/50 text-red-400 border border-red-900/30">
+          -{removed} removed
+        </span>
+      )}
+      {changed > 0 && (
+        <span className="px-2 py-0.5 rounded bg-amber-950/50 text-amber-400 border border-amber-900/30">
+          ~{changed} changed
+        </span>
+      )}
+    </div>
+  );
+}
+
+function CategorySection({ cat }: { cat: CategoryDiff }) {
+  const [open, setOpen] = useState(false);
+  const total = (cat.added?.length ?? 0) + (cat.removed?.length ?? 0) + (cat.changed?.length ?? 0);
+  const countDiff = cat.new_count !== cat.old_count
+    ? ` (${cat.old_count} → ${cat.new_count})`
+    : "";
+
+  return (
+    <div className="border border-[var(--border-subtle)] rounded-lg overflow-hidden">
+      <div
+        className="flex items-center justify-between px-4 py-2.5 cursor-pointer hover:bg-[var(--bg-card-hover)] transition-colors"
+        onClick={() => setOpen(!open)}
+      >
+        <div className="flex items-center gap-2">
+          <span className={`inline-block transition-transform text-[var(--text-muted)] text-xs ${open ? "rotate-90" : ""}`}>
+            &gt;
+          </span>
+          <span className="font-semibold text-[var(--text-primary)]">{cat.name}</span>
+          <span className="text-xs text-[var(--text-muted)]">{total} changes{countDiff}</span>
+        </div>
+        <SummaryBadge
+          added={cat.added?.length ?? 0}
+          removed={cat.removed?.length ?? 0}
+          changed={cat.changed?.length ?? 0}
+        />
+      </div>
+
+      {open && (
+        <div className="border-t border-[var(--border-subtle)] px-4 py-3 space-y-3">
+          {cat.added && cat.added.length > 0 && (
+            <div>
+              <h4 className="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-1.5">
+                Added ({cat.added.length})
+              </h4>
+              <div className="flex flex-wrap gap-1.5">
+                {cat.added.map((e) => (
+                  <span
+                    key={e.id}
+                    className="text-xs px-2 py-0.5 rounded bg-emerald-950/30 text-emerald-300 border border-emerald-900/20"
+                  >
+                    {e.name}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {cat.removed && cat.removed.length > 0 && (
+            <div>
+              <h4 className="text-xs font-semibold text-red-400 uppercase tracking-wider mb-1.5">
+                Removed ({cat.removed.length})
+              </h4>
+              <div className="flex flex-wrap gap-1.5">
+                {cat.removed.map((e) => (
+                  <span
+                    key={e.id}
+                    className="text-xs px-2 py-0.5 rounded bg-red-950/30 text-red-300 border border-red-900/20 line-through"
+                  >
+                    {e.name}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {cat.changed && cat.changed.length > 0 && (
+            <div>
+              <h4 className="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-1.5">
+                Changed ({cat.changed.length})
+              </h4>
+              <div className="space-y-1.5">
+                {cat.changed.map((e) => (
+                  <details key={e.id} className="group">
+                    <summary className="text-xs text-[var(--text-secondary)] cursor-pointer hover:text-[var(--text-primary)] transition-colors">
+                      <span className="font-medium">{e.name}</span>
+                      <span className="text-[var(--text-muted)] ml-1">
+                        ({e.changes.length} {e.changes.length === 1 ? "field" : "fields"})
+                      </span>
+                    </summary>
+                    <div className="ml-4 mt-1 space-y-0.5">
+                      {e.changes.map((c) => (
+                        <div key={c.field} className="text-[11px] text-[var(--text-muted)]">
+                          <span className="text-[var(--text-secondary)]">{c.field}:</span>{" "}
+                          <span className="text-red-400/70 line-through">{c.old}</span>{" "}
+                          <span className="text-[var(--text-muted)]">→</span>{" "}
+                          <span className="text-emerald-400/70">{c.new}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </details>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default function ChangelogPage() {
+  const [changelogs, setChangelogs] = useState<ChangelogSummary[]>([]);
+  const [selected, setSelected] = useState<ChangelogDetail | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch(`${API}/api/changelogs`)
+      .then((r) => r.json())
+      .then((data: ChangelogSummary[]) => {
+        setChangelogs(data);
+        // Auto-load the newest
+        if (data.length > 0) {
+          fetch(`${API}/api/changelogs/${data[0].tag}`)
+            .then((r) => r.json())
+            .then(setSelected);
+        }
+      })
+      .finally(() => setLoading(false));
+  }, []);
+
+  function loadVersion(tag: string) {
+    setSelected(null);
+    fetch(`${API}/api/changelogs/${tag}`)
+      .then((r) => r.json())
+      .then(setSelected);
+  }
+
+  return (
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <h1 className="text-3xl font-bold mb-2">
+        <span className="text-[var(--accent-gold)]">Changelog</span>
+      </h1>
+      <p className="text-sm text-[var(--text-muted)] mb-8">
+        Track what changes between game updates — new cards, balance tweaks, removed content, and more.
+      </p>
+
+      {loading ? (
+        <div className="text-center py-12 text-[var(--text-muted)]">Loading...</div>
+      ) : changelogs.length === 0 ? (
+        <div className="text-center py-12 text-[var(--text-muted)]">No changelogs yet.</div>
+      ) : (
+        <div className="flex flex-col lg:flex-row gap-6">
+          {/* Version list */}
+          <div className="lg:w-64 flex-shrink-0">
+            <h2 className="text-xs font-semibold text-[var(--text-muted)] uppercase tracking-wider mb-2">
+              Versions
+            </h2>
+            <div className="space-y-1">
+              {changelogs.map((log) => (
+                <button
+                  key={log.tag}
+                  onClick={() => loadVersion(log.tag)}
+                  className={`w-full text-left px-3 py-2 rounded-lg border transition-colors ${
+                    selected?.tag === log.tag
+                      ? "bg-[var(--bg-card)] border-[var(--accent-gold)]/40 text-[var(--text-primary)]"
+                      : "border-transparent text-[var(--text-secondary)] hover:bg-[var(--bg-card)] hover:text-[var(--text-primary)]"
+                  }`}
+                >
+                  <div className="flex items-baseline justify-between">
+                    <span className="font-medium text-sm">
+                      v{log.game_version}
+                      {log.codex_version != null && (
+                        <span className="text-[var(--text-muted)] font-normal ml-1">
+                          codex {log.codex_version}
+                        </span>
+                      )}
+                    </span>
+                    <span className="text-[10px] text-[var(--text-muted)]">{log.date}</span>
+                  </div>
+                  <div className="text-xs text-[var(--text-muted)] mt-0.5">{log.title}</div>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Detail view */}
+          <div className="flex-1 min-w-0">
+            {selected ? (
+              <>
+                <div className="mb-6">
+                  <div className="flex items-baseline gap-3 mb-1">
+                    <h2 className="text-xl font-bold text-[var(--text-primary)]">
+                      v{selected.game_version}
+                      {selected.codex_version != null && (
+                        <span className="text-base font-normal text-[var(--text-muted)] ml-2">
+                          codex {selected.codex_version}
+                        </span>
+                      )}
+                    </h2>
+                    <span className="text-sm text-[var(--text-muted)]">{selected.date}</span>
+                  </div>
+                  <p className="text-sm text-[var(--text-secondary)] mb-2">{selected.title}</p>
+                  <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-[11px] text-[var(--text-muted)] mb-3">
+                    {selected.app_id && (
+                      <a
+                        href={STEAM_APP_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-[var(--text-secondary)] transition-colors"
+                      >
+                        App ID: {selected.app_id}
+                      </a>
+                    )}
+                    {selected.build_id && (
+                      <span>Build ID: {selected.build_id}</span>
+                    )}
+                  </div>
+                  <SummaryBadge {...selected.summary} />
+                </div>
+
+                <div className="space-y-3">
+                  {selected.categories.map((cat) => (
+                    <CategorySection key={cat.id} cat={cat} />
+                  ))}
+                </div>
+              </>
+            ) : (
+              <div className="text-center py-12 text-[var(--text-muted)]">Loading version...</div>
+            )}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}

@@ -261,7 +261,7 @@ export default function TimelinePage() {
                               <span
                                 className={`inline-block transition-transform text-[var(--text-muted)] text-xs ${isExpanded ? "rotate-90" : ""}`}
                               >
-                                ▶
+                                &gt;
                               </span>
                               <div>
                                 <h3 className="font-semibold text-[var(--text-primary)]">

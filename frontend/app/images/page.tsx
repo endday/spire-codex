@@ -65,7 +65,7 @@ export default function ImagesPage() {
                     <span
                       className={`inline-block transition-transform text-[var(--text-muted)] text-xs ${isOpen ? "rotate-90" : ""}`}
                     >
-                      ▶
+                      &gt;
                     </span>
                     <span className="font-semibold text-[var(--text-primary)]">
                       {cat.name}

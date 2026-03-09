@@ -18,6 +18,7 @@ const links = [
   { href: "/timeline", label: "Timeline" },
   { href: "/reference", label: "Reference" },
   { href: "/images", label: "Images" },
+  { href: "/changelog", label: "Changelog" },
   { href: "/about", label: "About" },
 ];
 
