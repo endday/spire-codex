@@ -34,7 +34,7 @@ Slay the Spire 2 is built with Godot 4 but all game logic lives in a C#/.NET 8 D
 
 4. **Description Resolution** — A shared `description_resolver.py` module resolves SmartFormat localization templates (`{Damage:diff()}`, `{Energy:energyIcons()}`, `{Cards:plural:card|cards}`) into human-readable text with rich text markers for frontend rendering. Runtime-dynamic variables (e.g., `{Card}`, `{Relic}`) are preserved as readable placeholders. `StringVar` references in events (e.g., `{Enchantment1}` → `ModelDb.Enchantment<Sharp>().Title`) are resolved to display names via localization lookup.
 
-5. **Spine Rendering** — Characters and monsters are Spine skeletal animations, not static images. A headless Node.js renderer assembles idle poses into 512×512 portrait PNGs. Renders 125 of 158 skeleton files including all 5 characters (combat, rest site, character select poses), 95+ monsters, NPCs (Neow, Tezcatara), and more. Skin-based variants (Cultists, Bowlbugs) are rendered individually. See [Spine Renderer](#spine-renderer) below.
+5. **Spine Rendering** — Characters and monsters are Spine skeletal animations, not static images. A headless Node.js renderer assembles idle poses into 512×512 portrait PNGs. All 111 monsters have images: 100 rendered from Spine skeletons, 6 aliased from shared skeletons (Flyconid→flying_mushrooms, Ovicopter→egg_layer, Crusher/Rocket→kaiser_crab), and 5 from static game assets (Doormaker). Also renders all 5 characters (combat, rest site, character select poses), NPCs, and backgrounds. Skin-based variants (Cultists, Bowlbugs, Cubex) are rendered individually. See [Spine Renderer](#spine-renderer) below.
 
 6. **Images** — Card portraits, relic/potion icons, character art, monster sprites, Ancient portrait icons, and boss encounter icons extracted from game assets and served as static files.
 
@@ -80,6 +80,7 @@ spire-codex/
 │   │   ├── render.mjs           # Monster renderer
 │   │   ├── render_all.mjs       # Universal renderer (all .skel files)
 │   │   ├── render_skins2.mjs    # Skin variant renderer
+│   │   ├── render_utils.mjs     # Shared rendering utilities (slot-by-slot fallback)
 │   │   └── package.json
 │   ├── diff_data.py            # Changelog diff generator
 │   ├── update.py               # Cross-platform update pipeline
@@ -361,32 +362,40 @@ Monster sprites in StS2 are [Spine](http://esotericsoftware.com/) skeletal anima
 
 1. Finds `.skel`, `.atlas`, and `.png` files under `extraction/raw/animations/`
 2. Applies the idle animation at time 0 using `@esotericsoftware/spine-canvas` (v4.2.106, matching the game's Spine 4.2.x binary format)
-3. Calculates a bounding box from all visible attachments, **excluding shadow/ground/VFX slots** (projectile paths, whoosh effects, wind paths, megablade/megatail) for tighter framing
+3. Calculates a bounding box from all visible attachments, **excluding shadow/ground/VFX slots** (projectile paths, whoosh effects, wind paths, megablade/megatail) for tighter framing. Dispatches `computeWorldVertices` correctly per attachment type (RegionAttachment uses 4-arg form, MeshAttachment uses 6-arg form)
 4. Hides VFX-only slots before rendering (paths, whoosh, windpath, vulnerable, projectile, megablade, megatail)
 5. Renders at **2× supersampling** (1024px) to reduce canvas triangle-mesh seam artifacts, then downscales to 512×512
-6. Handles filename mismatches (e.g., `egg_layer/` dir containing `egglayer.skel`) via fallback file detection
-7. Outputs PNGs to `backend/static/images/`
+6. **Automatic fallback**: Detects when canvas clip-path accumulation from complex mesh skeletons (e.g., Devoted Sculptor with ~4,400 triangles) produces blank output, and re-renders slot-by-slot with manual alpha compositing
+7. Handles filename mismatches (e.g., `egg_layer/` dir containing `egglayer.skel`) via fallback file detection
+8. Outputs PNGs to `backend/static/images/`
 
 ### Render coverage
 
 | Category | Rendered | Total | Notes |
 |---|---|---|---|
-| Monsters | 97+ | 103 dirs | Skin variants rendered separately (Cultists, Bowlbugs) |
+| Monsters | 100 | 103 dirs | All 111 game monsters have images (100 rendered + 11 aliased/static) |
 | Characters (combat) | 5 | 5 | Battle stance poses |
 | Characters (rest site) | 6 | 6 | Includes Osty |
 | Characters (select) | 5 | 5 | Wide cinematic poses |
 | Backgrounds/NPCs | 10 | 14 | Neow, Tezcatara, merchant rooms, main menu |
 | VFX/UI | 2 | 16 | Most VFX need specific animation frames |
-| **Total** | **125** | **158** | |
+| **Total** | **128+** | **158** | |
+
+Monsters without Spine data use alternative images:
+- **Shared skeletons**: Flyconid (→ flying_mushrooms), Ovicopter (→ egg_layer), Crusher/Rocket (→ kaiser_crab)
+- **Static placeholder**: Doormaker (beta art from game files)
+- **Multi-segment**: Decimillipede rendered from front segment (decimillipede2.skel + decimillipede_middle.atlas)
 
 ### Technical details
 
 - Uses `node-canvas` for server-side Canvas API (no browser/GPU needed)
 - **Triangle rendering** enabled (`triangleRendering = true`) — required for mesh attachments (most monster body parts). Without it, only RegionAttachments render.
 - `Physics.reset` parameter required by spine-canvas 4.2.x `updateWorldTransform()`
+- **Bounds calculation**: `RegionAttachment.computeWorldVertices(slot, verts, offset, stride)` uses a 4-arg signature; `MeshAttachment.computeWorldVertices(slot, start, count, verts, offset, stride)` uses 6 args — must dispatch by `instanceof` check
 - Shadow slots (`shadow`, `shadow2`, `ground`, `ground_shadow`) excluded from bounds calculation but still rendered
 - VFX slots (`*path*`, `whoosh`, `windpath`, `vulnerable`, `projectile`, `megablade`, `megatail`) excluded from bounds AND hidden before rendering
 - Skin-based skeletons (Cultists: coral/slug, Bowlbugs: cocoon/goop/rock/web, Cubex: circleeye/diamondeye/squareeye) require explicit skin selection
+- **Slot-by-slot fallback** (`render_utils.mjs`): spine-canvas accumulates canvas `clip()` paths during triangle rendering. On complex skeletons (~4,000+ mesh triangles), this corrupts the canvas state causing `toBuffer()` OOM or blank output. The fallback renders each slot to an independent canvas and alpha-composites raw pixel data via `getImageData`/`putImageData`
 
 ### Dependencies
 
