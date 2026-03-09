@@ -174,24 +174,30 @@ export default function ChangelogPage() {
 
   useEffect(() => {
     fetch(`${API}/api/changelogs`)
-      .then((r) => r.json())
+      .then((r) => {
+        if (!r.ok) return [];
+        return r.json();
+      })
       .then((data: ChangelogSummary[]) => {
+        if (!Array.isArray(data) || data.length === 0) return;
         setChangelogs(data);
-        // Auto-load the newest
-        if (data.length > 0) {
-          fetch(`${API}/api/changelogs/${data[0].tag}`)
-            .then((r) => r.json())
-            .then(setSelected);
+        const firstTag = data[0].tag || data[0].game_version;
+        if (firstTag) {
+          fetch(`${API}/api/changelogs/${firstTag}`)
+            .then((r) => (r.ok ? r.json() : null))
+            .then((d) => d && setSelected(d));
         }
       })
+      .catch(() => {})
       .finally(() => setLoading(false));
   }, []);
 
   function loadVersion(tag: string) {
     setSelected(null);
     fetch(`${API}/api/changelogs/${tag}`)
-      .then((r) => r.json())
-      .then(setSelected);
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => d && setSelected(d))
+      .catch(() => {});
   }
 
   return (
