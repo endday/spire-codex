@@ -67,7 +67,7 @@ function PageBlock({
         {isInitial ? "Start" : pageName}
       </p>
       {page.description && (
-        <p className="text-xs text-[var(--text-secondary)] leading-relaxed mb-1.5 line-clamp-3">
+        <p className="text-xs text-[var(--text-secondary)] leading-relaxed mb-1.5">
           <RichDescription text={page.description} />
         </p>
       )}
@@ -107,6 +107,7 @@ export default function EventsPage() {
     {}
   );
   const [relicNames, setRelicNames] = useState<Record<string, string>>({});
+  const [expandedDesc, setExpandedDesc] = useState<Record<string, boolean>>({});
 
   const toggleDialogue = (eventId: string, group: string) => {
     setExpandedDialogue((prev) => ({
@@ -236,9 +237,19 @@ export default function EventsPage() {
                 )}
 
                 {event.description && (
-                  <p className="text-sm text-[var(--text-secondary)] leading-relaxed mb-3 line-clamp-3">
-                    <RichDescription text={event.description} />
-                  </p>
+                  <div className="mb-3">
+                    <p className={`text-sm text-[var(--text-secondary)] leading-relaxed ${expandedDesc[event.id] ? "" : "line-clamp-3"}`}>
+                      <RichDescription text={event.description} />
+                    </p>
+                    {event.description.length > 150 && (
+                      <button
+                        onClick={() => setExpandedDesc((prev) => ({ ...prev, [event.id]: !prev[event.id] }))}
+                        className="text-[10px] text-[var(--text-muted)] hover:text-[var(--text-secondary)] cursor-pointer mt-0.5 transition-colors"
+                      >
+                        {expandedDesc[event.id] ? "Show less" : "Show more..."}
+                      </button>
+                    )}
+                  </div>
                 )}
 
                 {/* Initial options */}

@@ -21,7 +21,7 @@ Slay the Spire 2 is built with Godot 4 but all game logic lives in a C#/.NET 8 D
    - **Monsters**: HP ranges, ascension scaling via `AscensionHelper`, move state machines, damage values
    - **Enchantments**: Card type restrictions, stackability, Amount-based scaling
    - **Encounters**: Monster compositions, room type (Boss/Elite/Monster), act placement, tags
-   - **Events**: Multi-page descriptions, choices with outcomes, act placement
+   - **Events**: Multi-page decision trees (56 of 66 events), choices with outcomes, act placement, `StringVar` model references resolved to display names
    - **Ancients**: 8 Ancient NPCs with epithets, character-specific dialogue, relic offerings, portrait icons
    - **Powers**: PowerType (Buff/Debuff), PowerStackType (Counter/Single), DynamicVars, descriptions
    - **Orbs**: Passive/Evoke values, descriptions
@@ -31,7 +31,7 @@ Slay the Spire 2 is built with Godot 4 but all game logic lives in a C#/.NET 8 D
    - **Intents**: Monster intent descriptions
    - **Achievements**: Unlock conditions, descriptions
 
-4. **Description Resolution** — A shared `description_resolver.py` module resolves SmartFormat localization templates (`{Damage:diff()}`, `{Energy:energyIcons()}`, `{Cards:plural:card|cards}`) into human-readable text with `[gold]`, `[energy:N]`, `[star:N]` markers for frontend rendering. Runtime-dynamic variables (e.g., `{Card}`, `{Relic}`) are preserved as readable placeholders.
+4. **Description Resolution** — A shared `description_resolver.py` module resolves SmartFormat localization templates (`{Damage:diff()}`, `{Energy:energyIcons()}`, `{Cards:plural:card|cards}`) into human-readable text with rich text markers for frontend rendering. Runtime-dynamic variables (e.g., `{Card}`, `{Relic}`) are preserved as readable placeholders. `StringVar` references in events (e.g., `{Enchantment1}` → `ModelDb.Enchantment<Sharp>().Title`) are resolved to display names via localization lookup.
 
 5. **Spine Rendering** — Characters and monsters are Spine skeletal animations, not static images. A headless Node.js renderer assembles idle poses into 512×512 portrait PNGs. Renders 125 of 158 skeleton files including all 5 characters (combat, rest site, character select poses), 95+ monsters, NPCs (Neow, Tezcatara), and more. Skin-based variants (Cultists, Bowlbugs) are rendered individually. See [Spine Renderer](#spine-renderer) below.
 
@@ -122,6 +122,31 @@ spire-codex/
 | `GET /api/stats` | Entity counts (15 categories) | — |
 
 Rate limited to **60 requests per minute** per IP. Interactive docs at `/docs` (Swagger UI).
+
+### Rich Text Formatting
+
+Text fields (`description`, `loss_text`, `flavor`, dialogue `text`, option `title`/`description`) may contain Godot BBCode-style tags preserved from the game's localization data:
+
+| Tag | Type | Example | Rendered as |
+|---|---|---|---|
+| `[gold]...[/gold]` | Color | `[gold]Enchant[/gold]` | Gold colored text |
+| `[red]...[/red]` | Color | `[red]blood[/red]` | Red colored text |
+| `[blue]...[/blue]` | Color | `[blue]2[/blue]` | Blue colored text |
+| `[green]...[/green]` | Color | `[green]healed[/green]` | Green colored text |
+| `[purple]...[/purple]` | Color | `[purple]Sharp[/purple]` | Purple colored text |
+| `[orange]...[/orange]` | Color | `[orange]hulking figure[/orange]` | Orange colored text |
+| `[pink]...[/pink]` | Color | — | Pink colored text |
+| `[aqua]...[/aqua]` | Color | `[aqua]Ascending Spirit[/aqua]` | Cyan colored text |
+| `[sine]...[/sine]` | Effect | `[sine]swirling vortex[/sine]` | Wavy animated text |
+| `[jitter]...[/jitter]` | Effect | `[jitter]CLANG![/jitter]` | Shaking animated text |
+| `[b]...[/b]` | Effect | `[b]bold text[/b]` | Bold text |
+| `[energy:N]` | Icon | `[energy:2]` | Energy icon(s) |
+| `[star:N]` | Icon | `[star:1]` | Star icon(s) |
+| `[Card]`, `[Relic]` | Placeholder | `[Card]` | Runtime-dynamic (italic) |
+
+Tags can be nested: `[b][jitter]CLANG![/jitter][/b]`, `[gold][sine]swirling vortex[/sine][/gold]`.
+
+If you're consuming the API directly, you can strip these with a regex like `\[/?[a-z]+(?::\d+)?\]` or render them in your own frontend. The `description_raw` field (where available) contains the unresolved SmartFormat template.
 
 ## Running Locally
 
