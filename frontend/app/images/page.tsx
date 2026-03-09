@@ -95,13 +95,13 @@ export default function ImagesPage() {
                           key={img.filename}
                           className="group rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-primary)] hover:border-[var(--border-accent)] transition-all overflow-hidden"
                         >
-                          <div className="aspect-square flex items-center justify-center p-2">
+                          <div className="flex items-center justify-center p-2">
                             <img
                               src={`${API}${img.url}`}
                               alt={img.filename.replace(/\.png$/, "").replace(/_/g, " ")}
                               crossOrigin="anonymous"
                               loading="lazy"
-                              className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                              className="max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
                             />
                           </div>
                           <div className="px-1.5 pb-1.5 text-center">
