@@ -479,7 +479,7 @@
       {
         "id": "EXTRACT_CURRENT_PRIZE_1",
         "title": "Extract Nectar",
-        "description": "Gain [blue][Prize][/blue] [gold]Gold[/gold]."
+        "description": "Gain [blue]35[/blue] [gold]Gold[/gold]."
       },
       {
         "id": "REACH_DEEPER_1",
@@ -503,7 +503,7 @@
           {
             "id": "EXTRACT_CURRENT_PRIZE_1",
             "title": "Extract Nectar",
-            "description": "Gain [blue][Prize][/blue] [gold]Gold[/gold]."
+            "description": "Gain [blue]35[/blue] [gold]Gold[/gold]."
           },
           {
             "id": "REACH_DEEPER_1",
@@ -523,7 +523,7 @@
           {
             "id": "EXTRACT_CURRENT_PRIZE_2",
             "title": "Extract Nectar",
-            "description": "Gain [blue][Prize][/blue] [gold]Gold[/gold]."
+            "description": "Gain [blue]75[/blue] [gold]Gold[/gold]."
           },
           {
             "id": "REACH_DEEPER_2",
@@ -539,7 +539,7 @@
           {
             "id": "EXTRACT_INSTEAD",
             "title": "Extract Nectar",
-            "description": "Gain [blue][Prize][/blue] [gold]Gold[/gold]."
+            "description": "Gain [blue]135[/blue] [gold]Gold[/gold]."
           },
           {
             "id": "POLLINOUS_CORE",
@@ -815,7 +815,7 @@
       {
         "id": "REST",
         "title": "Rest",
-        "description": "Heal [green]0[/green] HP. Fight some [red]enemies[/red]."
+        "description": "Heal [green]30% Max HP[/green] HP. Fight some [red]enemies[/red]."
       },
       {
         "id": "TRUDGE_ON",
@@ -831,7 +831,7 @@
           {
             "id": "REST",
             "title": "Rest",
-            "description": "Heal [green]0[/green] HP. Fight some [red]enemies[/red]."
+            "description": "Heal [green]30% Max HP[/green] HP. Fight some [red]enemies[/red]."
           },
           {
             "id": "TRUDGE_ON",
@@ -1092,7 +1092,7 @@
       },
       {
         "id": "GRAB_SOMETHING_OFF_THE_BELT",
-        "description": "You grab the [gold][Last Dish Title][/gold] from the belt and scarf it down.\n[green]Tasty![/green]",
+        "description": "You grab the [gold]Last Dish Title[/gold] from the belt and scarf it down.\n[green]Tasty![/green]",
         "options": [
           {
             "id": "LEAVE",
@@ -1241,12 +1241,12 @@
       {
         "id": "BIG_MUSHROOM",
         "title": "Big Mushroom",
-        "description": ""
+        "description": "Obtain [gold]Big Mushroom[/gold]. Upon pickup, raise your Max HP by [blue]20[/blue]. At the start of each combat, draw [blue]2[/blue] fewer cards."
       },
       {
         "id": "FRAGRANT_MUSHROOM",
         "title": "Fragrant Mushroom",
-        "description": ""
+        "description": "Obtain [gold]Fragrant Mushroom[/gold]. Upon pickup, lose [red]15[/red] HP and [gold]Upgrade[/gold] [blue]3[/blue] random cards."
       }
     ],
     "pages": [
@@ -1265,12 +1265,12 @@
           {
             "id": "BIG_MUSHROOM",
             "title": "Big Mushroom",
-            "description": ""
+            "description": "Obtain [gold]Big Mushroom[/gold]. Upon pickup, raise your Max HP by [blue]20[/blue]. At the start of each combat, draw [blue]2[/blue] fewer cards."
           },
           {
             "id": "FRAGRANT_MUSHROOM",
             "title": "Fragrant Mushroom",
-            "description": ""
+            "description": "Obtain [gold]Fragrant Mushroom[/gold]. Upon pickup, lose [red]15[/red] HP and [gold]Upgrade[/gold] [blue]3[/blue] random cards."
           }
         ]
       },
@@ -1362,11 +1362,11 @@
       },
       {
         "id": "JOIN_FORCES",
-        "description": "Everyone's face immediately lights up, including [Is Multiplayer]!\n\nOne of the adventurers turns out to be a bard!\nYou merrily waltz into the maze as [aqua]Aquid the squid wizard[/aqua] effortlessly disarms traps, while you and the [red]Grathorian fighter[/red] take out the [orange]spiky club-wielding guards[/orange] with ease.\n\nThis was the most joyous adventure of your life and you've made some truly [gold][sine]Great Memories[/sine][/gold]."
+        "description": "Everyone's face immediately lights up, including your own!\n\nOne of the adventurers turns out to be a bard!\nYou merrily waltz into the maze as [aqua]Aquid the squid wizard[/aqua] effortlessly disarms traps, while you and the [red]Grathorian fighter[/red] take out the [orange]spiky club-wielding guards[/orange] with ease.\n\nThis was the most joyous adventure of your life and you've made some truly [gold][sine]Great Memories[/sine][/gold]."
       },
       {
         "id": "SOLO_QUEST",
-        "description": "Feeling misanthropic, you [Is Multiplayer]wordlessly walk past their now-frowning faces. One of them even [jitter][purple]shakes their fist[/purple][/jitter] at you.\n\nThe maze is not welcoming. You fall into a spike trap, you are struck by a massive log with spikes, and [orange]feisty creatures with spiky clubs[/orange] fight you along the entire journey.\n\nYou are sick of spikes, and consider teamwork for the next adventure."
+        "description": "Feeling misanthropic, you wordlessly walk past their now-frowning faces. One of them even [jitter][purple]shakes their fist[/purple][/jitter] at you.\n\nThe maze is not welcoming. You fall into a spike trap, you are struck by a massive log with spikes, and [orange]feisty creatures with spiky clubs[/orange] fight you along the entire journey.\n\nYou are sick of spikes, and consider teamwork for the next adventure."
       }
     ]
   },
@@ -2498,7 +2498,7 @@
       {
         "id": "BOTTOM",
         "title": "Take the Bottom One",
-        "description": "Trade [gold][Bottom Relic Owned][/gold] for [gold][Bottom Relic New][/gold]."
+        "description": "Trade [gold][Bottom Relic Owned][/gold] for [gold]a random Relic[/gold]."
       },
       {
         "id": "MIDDLE",
@@ -2523,7 +2523,7 @@
           {
             "id": "BOTTOM",
             "title": "Take the Bottom One",
-            "description": "Trade [gold][Bottom Relic Owned][/gold] for [gold][Bottom Relic New][/gold]."
+            "description": "Trade [gold][Bottom Relic Owned][/gold] for [gold]a random Relic[/gold]."
           },
           {
             "id": "MIDDLE",
@@ -2802,7 +2802,7 @@
       {
         "id": "HOLD_ON_0",
         "title": "Hold On",
-        "description": "Lose [red][Hp Loss][/red] HP. The card in the above option is randomized."
+        "description": "Lose [red]3+[/red] HP. The card in the above option is randomized."
       },
       {
         "id": "OVERCOME",
@@ -2818,7 +2818,7 @@
           {
             "id": "HOLD_ON_1",
             "title": "Hold On",
-            "description": "Lose [red][Hp Loss][/red] HP. The card in the above option is randomized."
+            "description": "Lose [red]3+[/red] HP. The card in the above option is randomized."
           }
         ]
       },
@@ -2829,7 +2829,7 @@
           {
             "id": "HOLD_ON_2",
             "title": "Hold On",
-            "description": "Lose [red][Hp Loss][/red] HP. The card in the above option is randomized."
+            "description": "Lose [red]3+[/red] HP. The card in the above option is randomized."
           }
         ]
       },
@@ -2840,7 +2840,7 @@
           {
             "id": "HOLD_ON_3",
             "title": "Hold On",
-            "description": "Lose [red][Hp Loss][/red] HP. The card in the above option is randomized."
+            "description": "Lose [red]3+[/red] HP. The card in the above option is randomized."
           }
         ]
       },
@@ -2851,7 +2851,7 @@
           {
             "id": "HOLD_ON_4",
             "title": "Hold On",
-            "description": "Lose [red][Hp Loss][/red] HP. The card in the above option is randomized."
+            "description": "Lose [red]3+[/red] HP. The card in the above option is randomized."
           }
         ]
       },
@@ -2862,7 +2862,7 @@
           {
             "id": "HOLD_ON_5",
             "title": "Hold On",
-            "description": "Lose [red][Hp Loss][/red] HP. The card in the above option is randomized."
+            "description": "Lose [red]3+[/red] HP. The card in the above option is randomized."
           }
         ]
       },
@@ -2873,7 +2873,7 @@
           {
             "id": "HOLD_ON_6",
             "title": "Hold On",
-            "description": "Lose [red][Hp Loss][/red] HP. The card in the above option is randomized."
+            "description": "Lose [red]3+[/red] HP. The card in the above option is randomized."
           }
         ]
       },
@@ -2884,7 +2884,7 @@
           {
             "id": "HOLD_ON_LOOP",
             "title": "Hold On",
-            "description": "Lose [red][Hp Loss][/red] HP. The card in the above option is randomized."
+            "description": "Lose [red]3+[/red] HP. The card in the above option is randomized."
           }
         ]
       },
@@ -2895,7 +2895,7 @@
           {
             "id": "HOLD_ON_LOOP",
             "title": "Hold On",
-            "description": "Lose [red][Hp Loss][/red] HP. The card in the above option is randomized."
+            "description": "Lose [red]3+[/red] HP. The card in the above option is randomized."
           }
         ]
       },
@@ -2906,7 +2906,7 @@
           {
             "id": "HOLD_ON_0",
             "title": "Hold On",
-            "description": "Lose [red][Hp Loss][/red] HP. The card in the above option is randomized."
+            "description": "Lose [red]3+[/red] HP. The card in the above option is randomized."
           },
           {
             "id": "OVERCOME",
@@ -2931,7 +2931,7 @@
       {
         "id": "DRINK",
         "title": "Drink",
-        "description": "Heal [green]0[/green] HP."
+        "description": "Heal [green]33% Max HP[/green] HP."
       },
       {
         "id": "OBSERVE",
@@ -2956,7 +2956,7 @@
           {
             "id": "DRINK",
             "title": "Drink",
-            "description": "Heal [green]0[/green] HP."
+            "description": "Heal [green]33% Max HP[/green] HP."
           },
           {
             "id": "OBSERVE",
@@ -3976,7 +3976,7 @@
       {
         "id": "PLAIN",
         "title": "This",
-        "description": "Lose [red]6[/red] HP. Gain [blue]0[/blue] [gold]Gold[/gold]."
+        "description": "Lose [red]6[/red] HP. Gain [blue]41-69[/blue] [gold]Gold[/gold]."
       }
     ],
     "pages": [
@@ -3992,7 +3992,7 @@
           {
             "id": "PLAIN",
             "title": "This",
-            "description": "Lose [red]6[/red] HP. Gain [blue]0[/blue] [gold]Gold[/gold]."
+            "description": "Lose [red]6[/red] HP. Gain [blue]41-69[/blue] [gold]Gold[/gold]."
           }
         ]
       },
@@ -4687,7 +4687,7 @@
       {
         "id": "FEATURED_ITEM",
         "title": "Wongo's Featured Item",
-        "description": "Pay [red]200[/red] [gold]Gold[/gold]. Obtain [gold][Random Relic][/gold]."
+        "description": "Pay [red]200[/red] [gold]Gold[/gold]. Obtain [gold]a random Relic[/gold]."
       },
       {
         "id": "FEATURED_ITEM_LOCKED",
@@ -4740,7 +4740,7 @@
           {
             "id": "FEATURED_ITEM",
             "title": "Wongo's Featured Item",
-            "description": "Pay [red]200[/red] [gold]Gold[/gold]. Obtain [gold][Random Relic][/gold]."
+            "description": "Pay [red]200[/red] [gold]Gold[/gold]. Obtain [gold]a random Relic[/gold]."
           },
           {
             "id": "FEATURED_ITEM_LOCKED",

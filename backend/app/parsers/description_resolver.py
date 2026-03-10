@@ -77,6 +77,18 @@ def resolve_description(raw: str, vars_dict: dict[str, int | str], is_upgraded: 
         return text
     text = resolve_all_plurals(text)
 
+    # Handle SmartFormat conditionals: {Var: trueValue|falseValue}
+    # e.g. {IsMultiplayer: by any player|} -> "" (single player default)
+    def resolve_conditional(m):
+        var_name = m.group(1)
+        true_val = m.group(2)
+        false_val = m.group(3) if m.group(3) is not None else ""
+        val = _lookup(var_name, vars_dict)
+        if val is not None and val:
+            return true_val
+        return false_val
+    text = re.sub(r'\{(\w+):\s*([^|}]*)\|([^}]*)\}', resolve_conditional, text)
+
     # Handle {Var:diff()} -> value
     def resolve_diff(m):
         val = _lookup(m.group(1), vars_dict)
@@ -157,10 +169,30 @@ def extract_vars_from_source(content: str) -> dict[str, int]:
     for m in re.finditer(r'(\w+)\s*=\s*new\s+IntVar\((\d+)\)', content):
         all_vars[m.group(1)] = int(m.group(2))
 
+    # Pattern: new CardsVar("Name", N) — named cards vars
+    for m in re.finditer(r'new\s+CardsVar\(\s*"(\w+)"\s*,\s*(\d+)\)', content):
+        all_vars[m.group(1)] = int(m.group(2))
+
+    # Pattern: new XxxVar(ValueProp...) with no numeric — CalculatedDamageVar etc.
+    # These need a fallback: check for CalculationBase or similar vars to compute
+    # CalculatedDamageVar/CalculatedBlockVar without a literal value
+    if 'CalculatedDamageVar' in content and 'CalculatedDamage' not in all_vars:
+        base_val = all_vars.get('CalculationBase', 0)
+        extra_val = all_vars.get('ExtraDamage', 0)
+        if base_val or extra_val:
+            all_vars['CalculatedDamage'] = base_val + extra_val
+
     # Const values: private const int _varName = N;
     for m in re.finditer(r'private\s+const\s+int\s+_?(\w+)\s*=\s*(\d+)', content):
         name = m.group(1)
         if name not in all_vars:
             all_vars[name] = int(m.group(2))
+
+    # Static array values: private static readonly int[] _name = new int[] { N, N, N };
+    for m in re.finditer(r'(?:static|readonly)\s+(?:.*?)(?:int|decimal)\[\]\s+_?(\w+)\s*=\s*(?:new\s+\w+\[\d*\]\s*\{|new\s*\[\]\s*\{|\{)\s*([\d,\s m]+)\s*\}', content):
+        arr_name = m.group(1)
+        values = [int(v.strip().rstrip('m')) for v in m.group(2).split(',') if v.strip().rstrip('m').isdigit()]
+        for i, val in enumerate(values):
+            all_vars[f"{arr_name}_{i}"] = val
 
     return all_vars

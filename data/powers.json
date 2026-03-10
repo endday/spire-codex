@@ -506,7 +506,7 @@
   {
     "id": "DEXTERITY",
     "name": "Dexterity",
-    "description": "[Amount] [gold]Block[/gold] gained from cards by [blue][Amount][/blue].",
+    "description": "Increases [gold]Block[/gold] gained from cards by [blue][Amount][/blue].",
     "description_raw": "{Amount:cond:<0?Decreases|Increases} [gold]Block[/gold] gained from cards by [blue]{Amount:abs()}[/blue].",
     "type": "Buff",
     "stack_type": "Counter",
@@ -542,7 +542,7 @@
   {
     "id": "DOOM",
     "name": "Doom",
-    "description": "At the end of the [On Player] turn, if [gold][Owner Name][/gold] has [blue][Amount][/blue] or less HP, it dies.",
+    "description": "At the end of the enemy turn, if [gold][Owner Name][/gold] has [blue][Amount][/blue] or less HP, it dies.",
     "description_raw": "At the end of the {OnPlayer:player|enemy} turn, if [gold]{OwnerName}[/gold] has [blue]{Amount}[/blue] or less HP, it dies.",
     "type": "Debuff",
     "stack_type": "Counter",
@@ -749,7 +749,7 @@
   {
     "id": "FOCUS",
     "name": "Focus",
-    "description": "[Amount] the effectiveness of Orbs by [blue][Amount][/blue].",
+    "description": "Increases the effectiveness of Orbs by [blue][Amount][/blue].",
     "description_raw": "{Amount:cond:<0?Decreases|Increases} the effectiveness of Orbs by [blue]{Amount:abs()}[/blue].",
     "type": "Buff",
     "stack_type": "Counter",
@@ -1028,7 +1028,7 @@
   {
     "id": "IMBALANCED",
     "name": "Imbalanced",
-    "description": "If [gold][Owner Name]'s[/gold] attacks are fully blocked[Is Multiplayer], it becomes [gold]Stunned[/gold].",
+    "description": "If [gold][Owner Name]'s[/gold] attacks are fully blocked, it becomes [gold]Stunned[/gold].",
     "description_raw": "If [gold]{OwnerName}'s[/gold] attacks are fully blocked{IsMultiplayer: by any player|}, it becomes [gold]Stunned[/gold].",
     "type": "Debuff",
     "stack_type": "Single",
@@ -1469,7 +1469,7 @@
   {
     "id": "POISON",
     "name": "Poison",
-    "description": "At the start of [On Player] [blue][Amount][/blue] HP, then reduce [gold]Poison[/gold] by [blue]1[/blue].",
+    "description": "At the start of its turn, loses [blue][Amount][/blue] HP, then reduce [gold]Poison[/gold] by [blue]1[/blue].",
     "description_raw": "At the start of {OnPlayer:your turn, lose|its turn, loses} [blue]{Amount}[/blue] HP, then reduce [gold]Poison[/gold] by [blue]1[/blue].",
     "type": "Debuff",
     "stack_type": "Counter",
@@ -1622,7 +1622,7 @@
   {
     "id": "RITUAL",
     "name": "Ritual",
-    "description": "At the end of [On Player] turn, [On Player] [blue][Amount][/blue] [gold]Strength[/gold].",
+    "description": "At the end of its turn, gains [blue][Amount][/blue] [gold]Strength[/gold].",
     "description_raw": "At the end of {OnPlayer:your|its} turn, {OnPlayer:gain|gains} [blue]{Amount}[/blue] [gold]Strength[/gold].",
     "type": "Buff",
     "stack_type": "Counter",
@@ -1748,7 +1748,7 @@
   {
     "id": "SHRINK",
     "name": "Shrink",
-    "description": "[Applier Name.String Value] is alive, your|[gold][Owner Name]'s[/gold]} Attacks deal [blue]30%[/blue] less damage[Amount][/blue] turns|}.",
+    "description": "[Applier Name.String Value] is alive, your|[gold][Owner Name]'s[/gold]} Attacks deal [blue]30%[/blue] less damage>1? for the next [blue][[/blue] turns|].",
     "description_raw": "{ApplierName.StringValue:cond:While {} is alive, your|[gold]{OwnerName}'s[/gold]} Attacks deal [blue]{DamageDecrease}%[/blue] less damage{Amount:cond:==1? next turn|>1? for the next [blue]{}[/blue] turns|}.",
     "type": "Debuff",
     "stack_type": "None",
@@ -1820,7 +1820,7 @@
   {
     "id": "SLOW",
     "name": "Slow",
-    "description": "Whenever you play a card, [On Player] [blue]10%[/blue] more damage from Attacks this turn.| (Receives [blue][Amount]%[/blue] more damage)",
+    "description": "Whenever you play a card, this enemy receives [blue]10%[/blue] more damage from Attacks this turn.| (Receives [blue][Amount]%[/blue] more damage)",
     "description_raw": "Whenever you play a card, {OnPlayer:you receive|this enemy receives} [blue]10%[/blue] more damage from Attacks this turn.{Amount:plural:|| (Receives [blue]{Amount}%[/blue] more damage)}",
     "type": "Debuff",
     "stack_type": "Counter",
@@ -1964,7 +1964,7 @@
   {
     "id": "STRANGLE",
     "name": "Strangle",
-    "description": "Whenever you play a card this turn, [On Player] [blue][Amount][/blue] HP.",
+    "description": "Whenever you play a card this turn, this enemy loses [blue][Amount][/blue] HP.",
     "description_raw": "Whenever you play a card this turn, {OnPlayer:you lose|this enemy loses} [blue]{Amount}[/blue] HP.",
     "type": "Debuff",
     "stack_type": "Counter",
@@ -1982,7 +1982,7 @@
   {
     "id": "STRENGTH",
     "name": "Strength",
-    "description": "[Amount] attack damage by [blue][Amount][/blue].",
+    "description": "Increases attack damage by [blue][Amount][/blue].",
     "description_raw": "{Amount:cond:<0?Decreases|Increases} attack damage by [blue]{Amount:abs()}[/blue].",
     "type": "Buff",
     "stack_type": "Counter",
@@ -2270,7 +2270,7 @@
   {
     "id": "VIGOR",
     "name": "Vigor",
-    "description": "[On Player] next Attack deals [blue][Amount][/blue] additional damage.",
+    "description": "[gold][Owner Name's[/gold]] next Attack deals [blue][Amount][/blue] additional damage.",
     "description_raw": "{OnPlayer:Your|[gold]{OwnerName}'s[/gold]} next Attack deals [blue]{Amount}[/blue] additional damage.",
     "type": "Buff",
     "stack_type": "Counter",

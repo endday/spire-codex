@@ -34,8 +34,9 @@
     "tags": null,
     "vars": {
       "ThornsPower": 4,
+      "Thorns": 4,
       "DexterityPower": 1,
-      "Power": 4
+      "Dexterity": 1
     },
     "upgrade": null,
     "image_url": "/static/images/cards/abrasive.png",
@@ -99,7 +100,7 @@
     "tags": null,
     "vars": {
       "AccuracyPower": 4,
-      "Power": 4
+      "Accuracy": 4
     },
     "upgrade": null,
     "image_url": "/static/images/cards/accuracy.png",
@@ -232,7 +233,7 @@
     "tags": null,
     "vars": {
       "AfterimagePower": 1,
-      "Power": 1
+      "Afterimage": 1
     },
     "upgrade": null,
     "image_url": "/static/images/cards/afterimage.png",
@@ -479,7 +480,7 @@
     "tags": null,
     "vars": {
       "DexterityPower": 3,
-      "Power": 3
+      "Dexterity": 3
     },
     "upgrade": {
       "dexterity": "+2"
@@ -549,7 +550,7 @@
     "tags": null,
     "vars": {
       "IntangiblePower": 1,
-      "Power": 1
+      "Intangible": 1
     },
     "upgrade": null,
     "image_url": "/static/images/cards/apparition.png",
@@ -613,7 +614,7 @@
     "tags": null,
     "vars": {
       "ArsenalPower": 1,
-      "Power": 1
+      "Arsenal": 1
     },
     "upgrade": null,
     "image_url": "/static/images/cards/arsenal.png",
@@ -653,7 +654,7 @@
   {
     "id": "ASHEN_STRIKE",
     "name": "Ashen Strike",
-    "description": "Deal X damage.\nDeals 3 additional damage for each card in your [gold]Exhaust Pile[/gold].",
+    "description": "Deal 9 damage.\nDeals 3 additional damage for each card in your [gold]Exhaust Pile[/gold].",
     "description_raw": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card in your [gold]Exhaust Pile[/gold].",
     "cost": 1,
     "is_x_cost": null,
@@ -676,7 +677,8 @@
     ],
     "vars": {
       "CalculationBase": 6,
-      "ExtraDamage": 3
+      "ExtraDamage": 3,
+      "CalculatedDamage": 9
     },
     "upgrade": {
       "damage": "+1",
@@ -718,7 +720,7 @@
     "vars": {
       "Damage": 10,
       "VulnerablePower": 1,
-      "Power": 1
+      "Vulnerable": 1
     },
     "upgrade": {
       "damage": "+3",
@@ -952,7 +954,7 @@
   {
     "id": "BARRAGE",
     "name": "Barrage",
-    "description": "Deal 5 damage for each [gold]Channeled[/gold] Orb.",
+    "description": "Deal 5 damage for each [gold]Channeled[/gold] Orb.[In Combat]",
     "description_raw": "Deal {Damage:diff()} damage for each [gold]Channeled[/gold] Orb.{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
     "cost": 1,
     "is_x_cost": null,
@@ -1039,7 +1041,7 @@
     "vars": {
       "Damage": 8,
       "VulnerablePower": 2,
-      "Power": 2
+      "Vulnerable": 2
     },
     "upgrade": {
       "damage": "+2",
@@ -1136,7 +1138,7 @@
     "vars": {
       "Damage": 3,
       "VulnerablePower": 1,
-      "Power": 1
+      "Vulnerable": 1
     },
     "upgrade": {
       "damage": "+1",
@@ -1335,8 +1337,9 @@
     "tags": null,
     "vars": {
       "FocusPower": 4,
+      "Focus": 4,
       "BiasedCognitionPower": 1,
-      "Power": 4
+      "BiasedCognition": 1
     },
     "upgrade": null,
     "image_url": "/static/images/cards/biased_cognition.png",
@@ -1405,7 +1408,7 @@
     "tags": null,
     "vars": {
       "BlackHolePower": 3,
-      "Power": 3
+      "BlackHole": 3
     },
     "upgrade": null,
     "image_url": "/static/images/cards/black_hole.png",
@@ -1473,7 +1476,7 @@
     "tags": null,
     "vars": {
       "StrengthPower": 2,
-      "Power": 2
+      "Strength": 2
     },
     "upgrade": {
       "strength": "+1"
@@ -1537,8 +1540,8 @@
     "keywords": null,
     "tags": null,
     "vars": {
-      "Block": 16,
-      "HpLoss": 2
+      "HpLoss": 2,
+      "Block": 16
     },
     "upgrade": {
       "block": "+4"
@@ -1632,8 +1635,8 @@
     "keywords": null,
     "tags": null,
     "vars": {
-      "Block": 5,
-      "Blur": 1
+      "Blur": 1,
+      "Block": 5
     },
     "upgrade": {
       "block": "+3"
@@ -1644,7 +1647,7 @@
   {
     "id": "BODY_SLAM",
     "name": "Body Slam",
-    "description": "Deal damage equal to your [gold]Block[/gold].",
+    "description": "Deal damage equal to your [gold]Block[/gold].[In Combat]",
     "description_raw": "Deal damage equal to your [gold]Block[/gold].{InCombat:\n(Deals {CalculatedDamage:diff()} damage)|}",
     "cost": 1,
     "is_x_cost": null,
@@ -1665,7 +1668,8 @@
     "tags": null,
     "vars": {
       "CalculationBase": 0,
-      "ExtraDamage": 1
+      "ExtraDamage": 1,
+      "CalculatedDamage": 1
     },
     "upgrade": null,
     "image_url": "/static/images/cards/body_slam.png",
@@ -1769,7 +1773,7 @@
   {
     "id": "BONE_SHARDS",
     "name": "Bone Shards",
-    "description": "If [gold]Osty[/gold] is alive, he deals X damage to ALL enemies and you gain 9 [gold]Block[/gold].\n[gold]Osty[/gold] dies.",
+    "description": "If [gold]Osty[/gold] is alive, he deals 9 damage to ALL enemies and you gain 9 [gold]Block[/gold].\n[gold]Osty[/gold] dies.",
     "description_raw": "If [gold]Osty[/gold] is alive, he deals {OstyDamage:diff()} damage to ALL enemies and you gain {Block:diff()} [gold]Block[/gold].\n[gold]Osty[/gold] dies.",
     "cost": 1,
     "is_x_cost": null,
@@ -1779,7 +1783,7 @@
     "rarity": "Uncommon",
     "target": "AllEnemies",
     "color": "necrobinder",
-    "damage": null,
+    "damage": 9,
     "block": 9,
     "hit_count": null,
     "powers_applied": null,
@@ -1791,7 +1795,9 @@
       "OstyAttack"
     ],
     "vars": {
-      "Block": 9
+      "OstyDamage": 9,
+      "Block": 9,
+      "Damage": 9
     },
     "upgrade": {
       "damage": "+3",
@@ -1894,9 +1900,9 @@
     "keywords": null,
     "tags": null,
     "vars": {
+      "Energy": 1,
       "DoomPower": 3,
-      "Power": 3,
-      "Energy": 1
+      "Doom": 3
     },
     "upgrade": {
       "energy": "+1"
@@ -1932,9 +1938,9 @@
     "keywords": null,
     "tags": null,
     "vars": {
+      "Repeat": 3,
       "PoisonPower": 3,
-      "Power": 3,
-      "Repeat": 3
+      "Poison": 3
     },
     "upgrade": {
       "repeat": "+1"
@@ -1970,9 +1976,9 @@
     "keywords": null,
     "tags": null,
     "vars": {
-      "StrengthPower": 1,
       "HpLoss": 1,
-      "Power": 1
+      "StrengthPower": 1,
+      "Strength": 1
     },
     "upgrade": {
       "strength": "+1"
@@ -2010,7 +2016,7 @@
     "vars": {
       "Damage": 20,
       "VulnerablePower": 5,
-      "Power": 5
+      "Vulnerable": 5
     },
     "upgrade": {
       "damage": "+5",
@@ -2114,7 +2120,7 @@
     "tags": null,
     "vars": {
       "PoisonPower": 9,
-      "Power": 9
+      "Poison": 9
     },
     "upgrade": {
       "poison": "+3"
@@ -2125,7 +2131,7 @@
   {
     "id": "BUFFER",
     "name": "Buffer",
-    "description": "Prevent the next time times} you would lose HP.",
+    "description": "Prevent the next time you would lose HP.",
     "description_raw": "Prevent the next {BufferPower:plural:time|{BufferPower:diff()} times} you would lose HP.",
     "cost": 2,
     "is_x_cost": null,
@@ -2151,7 +2157,7 @@
     "tags": null,
     "vars": {
       "BufferPower": 1,
-      "Power": 1
+      "Buffer": 1
     },
     "upgrade": null,
     "image_url": "/static/images/cards/buffer.png",
@@ -2189,10 +2195,11 @@
     "keywords": null,
     "tags": null,
     "vars": {
+      "OrbSlots": 1,
       "StrengthPower": 2,
+      "Strength": 2,
       "DexterityPower": 2,
-      "Power": 2,
-      "OrbSlots": 1
+      "Dexterity": 2
     },
     "upgrade": {
       "strength": "+1",
@@ -2231,7 +2238,7 @@
   {
     "id": "BULLY",
     "name": "Bully",
-    "description": "Deal X damage.\nDeals 2 additional damage for each [gold]Vulnerable[/gold] on the enemy.",
+    "description": "Deal 6 damage.\nDeals 2 additional damage for each [gold]Vulnerable[/gold] on the enemy.",
     "description_raw": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each [gold]Vulnerable[/gold] on the enemy.",
     "cost": 0,
     "is_x_cost": null,
@@ -2252,7 +2259,8 @@
     "tags": null,
     "vars": {
       "CalculationBase": 4,
-      "ExtraDamage": 2
+      "ExtraDamage": 2,
+      "CalculatedDamage": 6
     },
     "upgrade": {
       "damage": "+1",
@@ -2565,7 +2573,7 @@
     "tags": null,
     "vars": {
       "CalcifyPower": 4,
-      "Power": 4
+      "Calcify": 4
     },
     "upgrade": null,
     "image_url": "/static/images/cards/calcify.png",
@@ -2658,7 +2666,7 @@
     "tags": null,
     "vars": {
       "ThornsPower": 3,
-      "Power": 3
+      "Thorns": 3
     },
     "upgrade": null,
     "image_url": "/static/images/cards/caltrops.png",
@@ -2991,8 +2999,8 @@
     "keywords": null,
     "tags": null,
     "vars": {
-      "Damage": 17,
-      "CardsToExhaust": 1
+      "CardsToExhaust": 1,
+      "Damage": 17
     },
     "upgrade": {
       "damage": "+5"
@@ -3054,8 +3062,8 @@
     "keywords": null,
     "tags": null,
     "vars": {
-      "Damage": 3,
-      "Increase": 2
+      "Increase": 2,
+      "Damage": 3
     },
     "upgrade": {
       "damage": "+1"
@@ -3273,8 +3281,8 @@
     "keywords": null,
     "tags": null,
     "vars": {
-      "Block": 5,
-      "Colossus": 1
+      "Colossus": 1,
+      "Block": 5
     },
     "upgrade": {
       "block": "+3"
@@ -3316,8 +3324,9 @@
     "vars": {
       "Damage": 33,
       "VulnerablePower": 3,
+      "Vulnerable": 3,
       "WeakPower": 3,
-      "Power": 3,
+      "Weak": 3,
       "StarCost": 5
     },
     "upgrade": {
@@ -3360,7 +3369,7 @@
   {
     "id": "COMPILE_DRIVER",
     "name": "Compile Driver",
-    "description": "Deal 7 damage.\nDraw 1 card for each unique Orb you have.",
+    "description": "Deal 7 damage.\nDraw 1 card for each unique Orb you have.[In Combat]",
     "description_raw": "Deal {Damage:diff()} damage.\nDraw 1 card for each unique Orb you have.{InCombat:\n(Draw {CalculatedCards:diff()} {CalculatedCards:plural:card|cards})|}",
     "cost": 1,
     "is_x_cost": null,
@@ -3393,7 +3402,7 @@
   {
     "id": "CONFLAGRATION",
     "name": "Conflagration",
-    "description": "Deal X damage to ALL enemies.\nDeals 2 additional damage for each other Attack you've played this turn.",
+    "description": "Deal 10 damage to ALL enemies.\nDeals 2 additional damage for each other Attack you've played this turn.",
     "description_raw": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeals {ExtraDamage:diff()} additional damage for each other Attack you've played this turn.",
     "cost": 1,
     "is_x_cost": null,
@@ -3414,7 +3423,8 @@
     "tags": null,
     "vars": {
       "CalculationBase": 8,
-      "ExtraDamage": 2
+      "ExtraDamage": 2,
+      "CalculatedDamage": 10
     },
     "upgrade": {
       "damage": "+1",
@@ -3483,9 +3493,9 @@
     "keywords": null,
     "tags": null,
     "vars": {
-      "ConsumingShadowPower": 1,
       "Repeat": 2,
-      "Power": 1
+      "ConsumingShadowPower": 1,
+      "ConsumingShadow": 1
     },
     "upgrade": {
       "repeat": "+1"
@@ -3554,7 +3564,7 @@
     "tags": null,
     "vars": {
       "CoolantPower": 2,
-      "Power": 2
+      "Coolant": 2
     },
     "upgrade": null,
     "image_url": "/static/images/cards/coolant.png",
@@ -3620,7 +3630,7 @@
     "tags": null,
     "vars": {
       "StrengthPower": 5,
-      "Power": 5
+      "Strength": 5
     },
     "upgrade": {
       "strength": "+3"
@@ -3746,7 +3756,7 @@
     "tags": null,
     "vars": {
       "CountdownPower": 6,
-      "Power": 6
+      "Countdown": 6
     },
     "upgrade": null,
     "image_url": "/static/images/cards/countdown.png",
@@ -3815,7 +3825,7 @@
   {
     "id": "CRESCENT_SPEAR",
     "name": "Crescent Spear",
-    "description": "Deal X damage.\nDeals 2 additional damage for ALL your cards that have a [star:1] cost.",
+    "description": "Deal 8 damage.\nDeals 2 additional damage for ALL your cards that have a [star:1] cost.",
     "description_raw": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for ALL your cards that have a {singleStarIcon} cost.",
     "cost": 1,
     "is_x_cost": null,
@@ -3837,6 +3847,7 @@
     "vars": {
       "CalculationBase": 6,
       "ExtraDamage": 2,
+      "CalculatedDamage": 8,
       "StarCost": 1
     },
     "upgrade": {
@@ -3875,7 +3886,7 @@
     "tags": null,
     "vars": {
       "CrimsonMantlePower": 8,
-      "Power": 8
+      "CrimsonMantle": 8
     },
     "upgrade": null,
     "image_url": "/static/images/cards/crimson_mantle.png",
@@ -3910,7 +3921,7 @@
     "tags": null,
     "vars": {
       "CrueltyPower": 25,
-      "Power": 25
+      "Cruelty": 25
     },
     "upgrade": null,
     "image_url": "/static/images/cards/cruelty.png",
@@ -3939,8 +3950,8 @@
     "keywords": null,
     "tags": null,
     "vars": {
-      "Damage": 7,
-      "StrengthLoss": 1
+      "StrengthLoss": 1,
+      "Damage": 7
     },
     "upgrade": {
       "damage": "+1"
@@ -4068,9 +4079,9 @@
     "keywords": null,
     "tags": null,
     "vars": {
+      "Energy": 2,
       "DanseMacabrePower": 3,
-      "Power": 3,
-      "Energy": 2
+      "DanseMacabre": 3
     },
     "upgrade": null,
     "image_url": "/static/images/cards/danse_macabre.png",
@@ -4253,7 +4264,7 @@
     "tags": null,
     "vars": {
       "PoisonPower": 5,
-      "Power": 5
+      "Poison": 5
     },
     "upgrade": {
       "poison": "+2"
@@ -4264,7 +4275,7 @@
   {
     "id": "DEATH_MARCH",
     "name": "Death March",
-    "description": "Deal X damage.\nDeals 3 additional damage for each card drawn during your turn.",
+    "description": "Deal 11 damage.\nDeals 3 additional damage for each card drawn during your turn.",
     "description_raw": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card drawn during your turn.",
     "cost": 1,
     "is_x_cost": null,
@@ -4285,7 +4296,8 @@
     "tags": null,
     "vars": {
       "CalculationBase": 8,
-      "ExtraDamage": 3
+      "ExtraDamage": 3,
+      "CalculatedDamage": 11
     },
     "upgrade": {
       "damage": "+1",
@@ -4328,8 +4340,9 @@
     "tags": null,
     "vars": {
       "DoomPower": 21,
+      "Doom": 21,
       "WeakPower": 1,
-      "Power": 21
+      "Weak": 1
     },
     "upgrade": {
       "doom": "+5"
@@ -4399,7 +4412,7 @@
     "vars": {
       "Damage": 7,
       "DebilitatePower": 3,
-      "Power": 3
+      "Debilitate": 3
     },
     "upgrade": {
       "damage": "+2"
@@ -4791,7 +4804,7 @@
     "tags": null,
     "vars": {
       "FocusPower": 1,
-      "Power": 1
+      "Focus": 1
     },
     "upgrade": null,
     "image_url": "/static/images/cards/defragment.png",
@@ -4829,7 +4842,7 @@
     "vars": {
       "Block": 6,
       "WeakPower": 1,
-      "Power": 1
+      "Weak": 1
     },
     "upgrade": {
       "block": "+1",
@@ -4932,7 +4945,7 @@
     "tags": null,
     "vars": {
       "StrengthPower": 2,
-      "Power": 2
+      "Strength": 2
     },
     "upgrade": null,
     "image_url": "/static/images/cards/demon_form.png",
@@ -4941,7 +4954,7 @@
   {
     "id": "DEMONIC_SHIELD",
     "name": "Demonic Shield",
-    "description": "Lose 1 HP.\nGive another player [gold]Block[/gold] equal to your [gold]Block[/gold].",
+    "description": "Lose 1 HP.\nGive another player [gold]Block[/gold] equal to your [gold]Block[/gold].[In Combat]",
     "description_raw": "Lose {HpLoss:diff()} HP.\nGive another player [gold]Block[/gold] equal to your [gold]Block[/gold].{InCombat:\n(Gives {CalculatedBlock:diff()} [gold]Block[/gold])|}",
     "cost": 0,
     "is_x_cost": null,
@@ -5032,7 +5045,7 @@
     "tags": null,
     "vars": {
       "DevourLifePower": 1,
-      "Power": 1
+      "DevourLife": 1
     },
     "upgrade": null,
     "image_url": "/static/images/cards/devour_life.png",
@@ -5127,7 +5140,7 @@
     "tags": null,
     "vars": {
       "DisintegrationPower": 6,
-      "Power": 6
+      "Disintegration": 6
     },
     "upgrade": null,
     "image_url": "/static/images/cards/disintegration.png",
@@ -5315,7 +5328,7 @@
     "tags": null,
     "vars": {
       "WeakPower": 1,
-      "Power": 1
+      "Weak": 1
     },
     "upgrade": null,
     "image_url": "/static/images/cards/doubt.png",
@@ -5447,9 +5460,9 @@
     "keywords": null,
     "tags": null,
     "vars": {
-      "DrumOfBattlePower": 1,
       "Cards": 2,
-      "Power": 1
+      "DrumOfBattlePower": 1,
+      "DrumOfBattle": 1
     },
     "upgrade": {
       "cards": "+1"
@@ -5540,8 +5553,8 @@
     ],
     "tags": null,
     "vars": {
-      "Damage": 9,
       "StrengthLoss": 9,
+      "Damage": 9,
       "StarCost": 3
     },
     "upgrade": {
@@ -5634,7 +5647,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
-    "vars": null,
+    "vars": {
+      "intangibleThreshold": 9
+    },
     "upgrade": null,
     "image_url": "/static/images/cards/eidolon.png",
     "beta_image_url": "/static/images/cards/beta/eidolon.png"
@@ -5668,7 +5683,7 @@
     "tags": null,
     "vars": {
       "DoomPower": 29,
-      "Power": 29
+      "Doom": 29
     },
     "upgrade": {
       "doom": "+8"
@@ -5883,7 +5898,7 @@
     "tags": null,
     "vars": {
       "EnvenomPower": 1,
-      "Power": 1
+      "Envenom": 1
     },
     "upgrade": null,
     "image_url": "/static/images/cards/envenom.png",
@@ -5912,8 +5927,8 @@
     "keywords": null,
     "tags": null,
     "vars": {
-      "Block": 13,
-      "Equilibrium": 1
+      "Equilibrium": 1,
+      "Block": 13
     },
     "upgrade": {
       "block": "+3"
@@ -6014,7 +6029,7 @@
     "tags": null,
     "vars": {
       "PlatingPower": 7,
-      "Power": 7
+      "Plating": 7
     },
     "upgrade": null,
     "image_url": "/static/images/cards/eternal_armor.png",
@@ -6210,8 +6225,9 @@
     "vars": {
       "Damage": 7,
       "VulnerablePower": 1,
+      "Vulnerable": 1,
       "WeakPower": 1,
-      "Power": 1,
+      "Weak": 1,
       "StarCost": 2
     },
     "upgrade": {
@@ -6223,7 +6239,7 @@
   {
     "id": "FAN_OF_KNIVES",
     "name": "Fan of Knives",
-    "description": "[gold]Shivs[/gold] now hit ALL enemies.\nAdd X [gold]Shivs[/gold] into your [gold]Hand[/gold].",
+    "description": "[gold]Shivs[/gold] now hit ALL enemies.\nAdd 4 [gold]Shivs[/gold] into your [gold]Hand[/gold].",
     "description_raw": "[gold]Shivs[/gold] now hit ALL enemies.\nAdd {Shivs:diff()} [gold]Shivs[/gold] into your [gold]Hand[/gold].",
     "cost": 2,
     "is_x_cost": null,
@@ -6242,7 +6258,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
-    "vars": null,
+    "vars": {
+      "Shivs": 4
+    },
     "upgrade": null,
     "image_url": "/static/images/cards/fan_of_knives.png",
     "beta_image_url": null
@@ -6310,7 +6328,7 @@
     "vars": {
       "Damage": 7,
       "VulnerablePower": 1,
-      "Power": 1
+      "Vulnerable": 1
     },
     "upgrade": {
       "damage": "+1",
@@ -6383,7 +6401,7 @@
     "tags": null,
     "vars": {
       "StrengthPower": 5,
-      "Power": 5
+      "Strength": 5
     },
     "upgrade": {
       "strength": "+2"
@@ -6423,7 +6441,7 @@
   {
     "id": "FERAL",
     "name": "Feral",
-    "description": "The first time times} you play a\n0[energy:1] Attack each turn,\nreturn it to your [gold]Hand[/gold].",
+    "description": "The first time you play a\n0[energy:1] Attack each turn,\nreturn it to your [gold]Hand[/gold].",
     "description_raw": "The first {FeralPower:plural:time|{FeralPower:diff()} times} you play a\n0{energyPrefix:energyIcons(1)} Attack each turn,\nreturn it to your [gold]Hand[/gold].",
     "cost": 2,
     "is_x_cost": null,
@@ -6449,7 +6467,7 @@
     "tags": null,
     "vars": {
       "FeralPower": 1,
-      "Power": 1
+      "Feral": 1
     },
     "upgrade": null,
     "image_url": "/static/images/cards/feral.png",
@@ -6458,7 +6476,7 @@
   {
     "id": "FETCH",
     "name": "Fetch",
-    "description": "[gold]Osty[/gold] deals X damage.\nIf this is the first time this card has been played this turn, draw 1 card.",
+    "description": "[gold]Osty[/gold] deals 3 damage.\nIf this is the first time this card has been played this turn, draw 1 card.",
     "description_raw": "[gold]Osty[/gold] deals {OstyDamage:diff()} damage.\nIf this is the first time this card has been played this turn, draw {Cards:diff()} {Cards:plural:card|cards}.",
     "cost": 0,
     "is_x_cost": null,
@@ -6468,7 +6486,7 @@
     "rarity": "Uncommon",
     "target": "AnyEnemy",
     "color": "necrobinder",
-    "damage": null,
+    "damage": 3,
     "block": null,
     "hit_count": null,
     "powers_applied": null,
@@ -6480,7 +6498,9 @@
       "OstyAttack"
     ],
     "vars": {
-      "Cards": 1
+      "OstyDamage": 3,
+      "Cards": 1,
+      "Damage": 3
     },
     "upgrade": {
       "damage": "+3",
@@ -6550,11 +6570,11 @@
     "keywords": null,
     "tags": null,
     "vars": {
+      "EnemyStrength": 1,
       "Damage": 5,
-      "StrengthPower": 2,
       "Repeat": 2,
-      "Power": 2,
-      "EnemyStrength": 1
+      "StrengthPower": 2,
+      "Strength": 2
     },
     "upgrade": {
       "damage": "+1",
@@ -6629,7 +6649,7 @@
   {
     "id": "FINISHER",
     "name": "Finisher",
-    "description": "Deal 6 damage for each Attack already played this turn.",
+    "description": "Deal 6 damage for each Attack already played this turn.[In Combat]",
     "description_raw": "Deal {Damage:diff()} damage for each Attack already played this turn.{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
     "cost": 1,
     "is_x_cost": null,
@@ -6693,7 +6713,7 @@
   {
     "id": "FLAK_CANNON",
     "name": "Flak Cannon",
-    "description": "[gold]Exhaust[/gold] ALL your [gold]Status[/gold] cards.\nDeal 8 damage to a random enemy for each card [gold]Exhausted[/gold].",
+    "description": "[gold]Exhaust[/gold] ALL your [gold]Status[/gold] cards.\nDeal 8 damage to a random enemy for each card [gold]Exhausted[/gold].[In Combat]",
     "description_raw": "[gold]Exhaust[/gold] ALL your [gold]Status[/gold] cards.\nDeal {Damage:diff()} damage to a random enemy for each card [gold]Exhausted[/gold].{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
     "cost": 2,
     "is_x_cost": null,
@@ -6746,8 +6766,8 @@
     "keywords": null,
     "tags": null,
     "vars": {
-      "Block": 12,
-      "DamageBack": 4
+      "DamageBack": 4,
+      "Block": 12
     },
     "upgrade": {
       "block": "+4"
@@ -6817,7 +6837,7 @@
   {
     "id": "FLATTEN",
     "name": "Flatten",
-    "description": "[gold]Osty[/gold] deals X damage.\nThis card costs 0 [energy:1] if [gold]Osty[/gold] has attacked this turn.",
+    "description": "[gold]Osty[/gold] deals 12 damage.\nThis card costs 0 [energy:1] if [gold]Osty[/gold] has attacked this turn.",
     "description_raw": "[gold]Osty[/gold] deals {OstyDamage:diff()} damage.\nThis card costs 0 {energyPrefix:energyIcons(1)} if [gold]Osty[/gold] has attacked this turn.",
     "cost": 2,
     "is_x_cost": null,
@@ -6827,7 +6847,7 @@
     "rarity": "Common",
     "target": "AnyEnemy",
     "color": "necrobinder",
-    "damage": null,
+    "damage": 12,
     "block": null,
     "hit_count": null,
     "powers_applied": null,
@@ -6838,7 +6858,10 @@
     "tags": [
       "OstyAttack"
     ],
-    "vars": null,
+    "vars": {
+      "OstyDamage": 12,
+      "Damage": 12
+    },
     "upgrade": {
       "damage": "+4",
       "ostydamage": "+4"
@@ -6849,7 +6872,7 @@
   {
     "id": "FLECHETTES",
     "name": "Flechettes",
-    "description": "Deal 5 damage for each Skill in your [gold]Hand[/gold].",
+    "description": "Deal 5 damage for each Skill in your [gold]Hand[/gold].[In Combat]",
     "description_raw": "Deal {Damage:diff()} damage for each Skill in your [gold]Hand[/gold].{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
     "cost": 1,
     "is_x_cost": null,
@@ -6944,7 +6967,7 @@
     "vars": {
       "Damage": 9,
       "FocusPower": 1,
-      "Power": 1
+      "Focus": 1
     },
     "upgrade": {
       "damage": "+2"
@@ -6982,7 +7005,7 @@
     "vars": {
       "Damage": 6,
       "WeakPower": 1,
-      "Power": 1
+      "Weak": 1
     },
     "upgrade": {
       "damage": "+2",
@@ -7051,7 +7074,7 @@
     "tags": null,
     "vars": {
       "DexterityPower": 2,
-      "Power": 2
+      "Dexterity": 2
     },
     "upgrade": {
       "dexterity": "+1"
@@ -7205,9 +7228,9 @@
     "keywords": null,
     "tags": null,
     "vars": {
+      "Energy": 1,
       "StrengthPower": 2,
-      "Power": 2,
-      "Energy": 1
+      "Strength": 2
     },
     "upgrade": null,
     "image_url": "/static/images/cards/friendship.png",
@@ -7216,7 +7239,7 @@
   {
     "id": "FTL",
     "name": "FTL",
-    "description": "Deal 5 damage.\nIf you have played fewer than X cards this turn, draw 1 card.",
+    "description": "Deal 5 damage.\nIf you have played fewer than 3 cards this turn, draw 1 card.",
     "description_raw": "Deal {Damage:diff()} damage.\nIf you have played fewer than {PlayMax:diff()} cards this turn, draw 1 card.",
     "cost": 0,
     "is_x_cost": null,
@@ -7236,6 +7259,7 @@
     "keywords": null,
     "tags": null,
     "vars": {
+      "PlayMax": 3,
       "Damage": 5,
       "Cards": 1
     },
@@ -7371,8 +7395,9 @@
     "vars": {
       "Damage": 13,
       "VulnerablePower": 2,
+      "Vulnerable": 2,
       "WeakPower": 2,
-      "Power": 2,
+      "Weak": 2,
       "StarCost": 3
     },
     "upgrade": {
@@ -7384,7 +7409,7 @@
   {
     "id": "GANG_UP",
     "name": "Gang Up",
-    "description": "Deal X damage.\nDeals 5 additional damage for each time another player has attacked the enemy this turn.",
+    "description": "Deal 10 damage.\nDeals 5 additional damage for each time another player has attacked the enemy this turn.",
     "description_raw": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each time another player has attacked the enemy this turn.",
     "cost": 1,
     "is_x_cost": null,
@@ -7405,7 +7430,8 @@
     "tags": null,
     "vars": {
       "CalculationBase": 5,
-      "ExtraDamage": 5
+      "ExtraDamage": 5,
+      "CalculatedDamage": 10
     },
     "upgrade": {
       "damage": "+2",
@@ -7478,7 +7504,7 @@
   {
     "id": "GENETIC_ALGORITHM",
     "name": "Genetic Algorithm",
-    "description": "Gain X [gold]Block[/gold].\nPermanently increase this card's [gold]Block[/gold] by X.",
+    "description": "Gain X [gold]Block[/gold].\nPermanently increase this card's [gold]Block[/gold] by 3.",
     "description_raw": "Gain {Block:diff()} [gold]Block[/gold].\nPermanently increase this card's [gold]Block[/gold] by {Increase:diff()}.",
     "cost": 1,
     "is_x_cost": null,
@@ -7499,7 +7525,9 @@
       "Exhaust"
     ],
     "tags": null,
-    "vars": null,
+    "vars": {
+      "Increase": 3
+    },
     "upgrade": null,
     "image_url": "/static/images/cards/genetic_algorithm.png",
     "beta_image_url": null
@@ -7620,8 +7648,8 @@
     "keywords": null,
     "tags": null,
     "vars": {
-      "Cards": 3,
-      "PutBack": 1
+      "PutBack": 1,
+      "Cards": 3
     },
     "upgrade": {
       "cards": "+1"
@@ -7665,7 +7693,7 @@
   {
     "id": "GLITTERSTREAM",
     "name": "Glitterstream",
-    "description": "Gain 11 [gold]Block[/gold].\nNext turn, gain X [gold]Block[/gold].",
+    "description": "Gain 11 [gold]Block[/gold].\nNext turn, gain 4 [gold]Block[/gold].",
     "description_raw": "Gain {Block:diff()} [gold]Block[/gold].\nNext turn, gain {BlockNextTurn:diff()} [gold]Block[/gold].",
     "cost": 2,
     "is_x_cost": null,
@@ -7685,6 +7713,7 @@
     "keywords": null,
     "tags": null,
     "vars": {
+      "BlockNextTurn": 4,
       "Block": 11
     },
     "upgrade": {
@@ -7755,7 +7784,7 @@
     "vars": {
       "Damage": 3,
       "WeakPower": 1,
-      "Power": 1
+      "Weak": 1
     },
     "upgrade": {
       "damage": "+1",
@@ -7767,7 +7796,7 @@
   {
     "id": "GOLD_AXE",
     "name": "Gold Axe",
-    "description": "Deal damage equal to the number of cards played this combat.",
+    "description": "Deal damage equal to the number of cards played this combat.[In Combat]",
     "description_raw": "Deal damage equal to the number of cards played this combat.{InCombat:\n(Deals {CalculatedDamage:diff()} damage)|}",
     "cost": 1,
     "is_x_cost": null,
@@ -7788,7 +7817,8 @@
     "tags": null,
     "vars": {
       "CalculationBase": 0,
-      "ExtraDamage": 1
+      "ExtraDamage": 1,
+      "CalculatedDamage": 1
     },
     "upgrade": null,
     "image_url": "/static/images/cards/gold_axe.png",
@@ -7855,7 +7885,7 @@
     "vars": {
       "Damage": 7,
       "GrapplePower": 5,
-      "Power": 5
+      "Grapple": 5
     },
     "upgrade": {
       "damage": "+2"
@@ -8113,7 +8143,7 @@
     "tags": null,
     "vars": {
       "HailstormPower": 6,
-      "Power": 6
+      "Hailstorm": 6
     },
     "upgrade": null,
     "image_url": "/static/images/cards/hailstorm.png",
@@ -8169,8 +8199,8 @@
     "keywords": null,
     "tags": null,
     "vars": {
-      "Damage": 20,
-      "Gold": 20
+      "Gold": 20,
+      "Damage": 20
     },
     "upgrade": {
       "damage": "+5"
@@ -8329,7 +8359,7 @@
     "tags": null,
     "vars": {
       "PoisonPower": 4,
-      "Power": 4
+      "Poison": 4
     },
     "upgrade": {
       "poison": "+2"
@@ -8468,7 +8498,7 @@
   {
     "id": "HELIX_DRILL",
     "name": "Helix Drill",
-    "description": "Deal 3 damage for each [energy:1] previously spent this turn.",
+    "description": "Deal 3 damage for each [energy:1] previously spent this turn.[In Combat]",
     "description_raw": "Deal {Damage:diff()} damage for each {energyPrefix:energyIcons(1)} previously spent this turn.{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
     "cost": 0,
     "is_x_cost": null,
@@ -8575,8 +8605,8 @@
     "keywords": null,
     "tags": null,
     "vars": {
-      "Damage": 14,
-      "HpLoss": 2
+      "HpLoss": 2,
+      "Damage": 14
     },
     "upgrade": {
       "damage": "+5"
@@ -8612,9 +8642,9 @@
     "keywords": null,
     "tags": null,
     "vars": {
-      "StarNextTurnPower": 3,
       "Stars": 1,
-      "Power": 3
+      "StarNextTurnPower": 3,
+      "StarNextTurn": 3
     },
     "upgrade": null,
     "image_url": "/static/images/cards/hidden_cache.png",
@@ -8643,8 +8673,8 @@
     "keywords": null,
     "tags": null,
     "vars": {
-      "Cards": 2,
-      "Shivs": 2
+      "Shivs": 2,
+      "Cards": 2
     },
     "upgrade": null,
     "image_url": "/static/images/cards/hidden_daggers.png",
@@ -8653,7 +8683,7 @@
   {
     "id": "HIDDEN_GEM",
     "name": "Hidden Gem",
-    "description": "A random card in your [gold]Draw Pile[/gold] gains [gold]Replay[/gold] X.",
+    "description": "A random card in your [gold]Draw Pile[/gold] gains [gold]Replay[/gold] 2.",
     "description_raw": "A random card in your [gold]Draw Pile[/gold] gains [gold]Replay[/gold] {Replay:diff()}.",
     "cost": 1,
     "is_x_cost": null,
@@ -8672,7 +8702,9 @@
     "hp_loss": null,
     "keywords": null,
     "tags": null,
-    "vars": null,
+    "vars": {
+      "Replay": 2
+    },
     "upgrade": null,
     "image_url": "/static/images/cards/hidden_gem.png",
     "beta_image_url": "/static/images/cards/beta/hidden_gem.png"
@@ -8680,7 +8712,7 @@
   {
     "id": "HIGH_FIVE",
     "name": "High Five",
-    "description": "[gold]Osty[/gold] deals X damage\nand applies 2 [gold]Vulnerable[/gold]\nto ALL enemies.",
+    "description": "[gold]Osty[/gold] deals 11 damage\nand applies 2 [gold]Vulnerable[/gold]\nto ALL enemies.",
     "description_raw": "[gold]Osty[/gold] deals {OstyDamage:diff()} damage\nand applies {VulnerablePower:diff()} [gold]Vulnerable[/gold]\nto ALL enemies.",
     "cost": 2,
     "is_x_cost": null,
@@ -8690,7 +8722,7 @@
     "rarity": "Uncommon",
     "target": "AllEnemies",
     "color": "necrobinder",
-    "damage": null,
+    "damage": 11,
     "block": null,
     "hit_count": null,
     "powers_applied": [
@@ -8707,8 +8739,10 @@
       "OstyAttack"
     ],
     "vars": {
+      "OstyDamage": 11,
       "VulnerablePower": 2,
-      "Power": 2
+      "Vulnerable": 2,
+      "Damage": 11
     },
     "upgrade": {
       "damage": "+2",
@@ -8780,7 +8814,7 @@
     "tags": null,
     "vars": {
       "FocusPower": 2,
-      "Power": 2
+      "Focus": 2
     },
     "upgrade": null,
     "image_url": "/static/images/cards/hotfix.png",
@@ -8878,7 +8912,7 @@
     "vars": {
       "Damage": 26,
       "FocusPower": 3,
-      "Power": 3
+      "Focus": 3
     },
     "upgrade": {
       "damage": "+8"
@@ -9131,7 +9165,7 @@
     "tags": null,
     "vars": {
       "InfernoPower": 6,
-      "Power": 6
+      "Inferno": 6
     },
     "upgrade": null,
     "image_url": "/static/images/cards/inferno.png",
@@ -9193,7 +9227,7 @@
     "tags": null,
     "vars": {
       "StrengthPower": 2,
-      "Power": 2
+      "Strength": 2
     },
     "upgrade": null,
     "image_url": "/static/images/cards/inflame.png",
@@ -9354,7 +9388,7 @@
     "tags": null,
     "vars": {
       "IterationPower": 2,
-      "Power": 2
+      "Iteration": 2
     },
     "upgrade": null,
     "image_url": "/static/images/cards/iteration.png",
@@ -9454,7 +9488,7 @@
     "tags": null,
     "vars": {
       "JuggernautPower": 5,
-      "Power": 5
+      "Juggernaut": 5
     },
     "upgrade": null,
     "image_url": "/static/images/cards/juggernaut.png",
@@ -9541,8 +9575,8 @@
     "keywords": null,
     "tags": null,
     "vars": {
-      "Damage": 8,
-      "Increase": 3
+      "Increase": 3,
+      "Damage": 8
     },
     "upgrade": null,
     "image_url": "/static/images/cards/kingly_punch.png",
@@ -9551,7 +9585,7 @@
   {
     "id": "KNIFE_TRAP",
     "name": "Knife Trap",
-    "description": "Play every [gold]Shiv[/gold] in your [gold]Exhaust Pile[/gold] on the enemy.",
+    "description": "Play every [gold]Shiv[/gold] in your [gold]Exhaust Pile[/gold] on the enemy.[In Combat]",
     "description_raw": "{IfUpgraded:show:[gold]Upgrade[/gold] and play|Play} every [gold]Shiv[/gold] in your [gold]Exhaust Pile[/gold] on the enemy.{InCombat:\n(Plays {CalculatedShivs:diff()} [gold]{CalculatedShivs:plural:Shiv|Shivs}[/gold])|}",
     "cost": 2,
     "is_x_cost": null,
@@ -9610,7 +9644,7 @@
     "vars": {
       "Damage": 10,
       "KnockdownPower": 2,
-      "Power": 2
+      "Knockdown": 2
     },
     "upgrade": {
       "damage": "+4"
@@ -9685,8 +9719,9 @@
     "tags": null,
     "vars": {
       "WeakPower": 1,
+      "Weak": 1,
       "VulnerablePower": 1,
-      "Power": 1
+      "Vulnerable": 1
     },
     "upgrade": null,
     "image_url": "/static/images/cards/know_thy_place.png",
@@ -9716,7 +9751,9 @@
       "Unplayable"
     ],
     "tags": null,
-    "vars": null,
+    "vars": {
+      "gloryActIndex": 2
+    },
     "upgrade": null,
     "image_url": "/static/images/cards/lantern_key.png",
     "beta_image_url": "/static/images/cards/beta/lantern_key.png"
@@ -9751,7 +9788,7 @@
   {
     "id": "LEADING_STRIKE",
     "name": "Leading Strike",
-    "description": "Deal 7 damage.\nAdd X [gold]Shiv[/gold] into your [gold]Hand[/gold].",
+    "description": "Deal 7 damage.\nAdd 1 [gold]Shiv[/gold] into your [gold]Hand[/gold].",
     "description_raw": "Deal {Damage:diff()} damage.\nAdd {Shivs:diff()} [gold]Shiv[/gold] into your [gold]Hand[/gold].",
     "cost": 1,
     "is_x_cost": null,
@@ -9773,6 +9810,7 @@
       "Strike"
     ],
     "vars": {
+      "Shivs": 1,
       "Damage": 7
     },
     "upgrade": {
@@ -9842,7 +9880,7 @@
     "vars": {
       "Block": 11,
       "WeakPower": 2,
-      "Power": 2
+      "Weak": 2
     },
     "upgrade": {
       "block": "+3",
@@ -9915,7 +9953,7 @@
     "tags": null,
     "vars": {
       "LethalityPower": 50,
-      "Power": 50
+      "Lethality": 50
     },
     "upgrade": null,
     "image_url": "/static/images/cards/lethality.png",
@@ -9955,7 +9993,7 @@
   {
     "id": "LIGHTNING_ROD",
     "name": "Lightning Rod",
-    "description": "Gain 4 [gold]Block[/gold].\nAt the start of the next , [gold]Channel[/gold] 1 [gold]Lightning[/gold].",
+    "description": "Gain 4 [gold]Block[/gold].\nAt the start of the next [] turns, [gold]Channel[/gold] 1 [gold]Lightning[/gold].",
     "description_raw": "Gain {Block:diff()} [gold]Block[/gold].\nAt the start of the next {LightningRodPower:plural:turn|{:diff()} turns}, [gold]Channel[/gold] 1 [gold]Lightning[/gold].",
     "cost": 1,
     "is_x_cost": null,
@@ -9982,7 +10020,7 @@
     "vars": {
       "Block": 4,
       "LightningRodPower": 2,
-      "Power": 2
+      "LightningRod": 2
     },
     "upgrade": {
       "block": "+3"
@@ -10056,7 +10094,7 @@
   {
     "id": "LUNAR_BLAST",
     "name": "Lunar Blast",
-    "description": "Deal 4 damage for each Skill already played this turn.",
+    "description": "Deal 4 damage for each Skill already played this turn.[In Combat]",
     "description_raw": "Deal {Damage:diff()} damage for each Skill already played this turn.{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
     "cost": 0,
     "is_x_cost": null,
@@ -10118,7 +10156,7 @@
   {
     "id": "MAD_SCIENCE",
     "name": "Mad Science",
-    "description": ".|Gain 8 [gold]Block[/gold].|}|}",
+    "description": "Skill|Power):Deal 12.|Gain 8 [gold]Block[/gold].|}[Has Rider][Choking][Wisdom][Expertise][Curious]|Skill|Power):\n???|\n???|???}",
     "description_raw": "{CardType:choose(Attack|Skill|Power):Deal {Damage:diff()} damage{Violence: {ViolenceHits:diff()} times|}.|Gain {Block:diff()} [gold]Block[/gold].|}{HasRider:{Sapping:\nApply {SappingWeak:diff()} [gold]Weak[/gold].\nApply {SappingVulnerable:diff()} [gold]Vulnerable[/gold].|}{Choking:\nWhenever you play a card this turn, the enemy loses {ChokingDamage:diff()} HP.|}{Energized:\nGain {EnergizedEnergy:energyIcons()}.|}{Wisdom:\nDraw {WisdomCards:diff()} cards.|}{Chaos:\nAdd a random card into your [gold]Hand[/gold]. It costs 0 {energyPrefix:energyIcons(1)} this turn.|}{Expertise:Gain {ExpertiseStrength:diff()} [gold]Strength[/gold].\nGain {ExpertiseDexterity:diff()} [gold]Dexterity[/gold].|}{Curious:Powers cost {CuriousReduction:diff()} {energyPrefix:energyIcons(1)} less.|}{Improvement:At the end of combat, [gold]Upgrade[/gold] a random card.|}|{CardType:choose(Attack|Skill|Power):\n???|\n???|???}}",
     "cost": 1,
     "is_x_cost": null,
@@ -10138,10 +10176,12 @@
     "keywords": null,
     "tags": null,
     "vars": {
-      "Damage": 12,
-      "Block": 8,
       "ViolenceHits": 3,
-      "CuriousReduction": 1
+      "EnergizedEnergy": 2,
+      "WisdomCards": 3,
+      "CuriousReduction": 1,
+      "Damage": 12,
+      "Block": 8
     },
     "upgrade": null,
     "image_url": null,
@@ -10231,8 +10271,8 @@
     "keywords": null,
     "tags": null,
     "vars": {
-      "Damage": 15,
-      "StrengthLoss": 10
+      "StrengthLoss": 10,
+      "Damage": 15
     },
     "upgrade": {
       "damage": "+5"
@@ -10354,8 +10394,8 @@
     "keywords": null,
     "tags": null,
     "vars": {
-      "Damage": 5,
-      "Increase": 1
+      "Increase": 1,
+      "Damage": 5
     },
     "upgrade": {
       "damage": "+1"
@@ -10425,7 +10465,7 @@
   {
     "id": "MEMENTO_MORI",
     "name": "Memento Mori",
-    "description": "Deal X damage.\nDeals 4 additional damage for each card discarded this turn.",
+    "description": "Deal 12 damage.\nDeals 4 additional damage for each card discarded this turn.",
     "description_raw": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card discarded this turn.",
     "cost": 1,
     "is_x_cost": null,
@@ -10446,7 +10486,8 @@
     "tags": null,
     "vars": {
       "CalculationBase": 8,
-      "ExtraDamage": 4
+      "ExtraDamage": 4,
+      "CalculatedDamage": 12
     },
     "upgrade": {
       "damage": "+1",
@@ -10523,8 +10564,9 @@
     "vars": {
       "Damage": 14,
       "VulnerablePower": 2,
+      "Vulnerable": 2,
       "WeakPower": 2,
-      "Power": 2,
+      "Weak": 2,
       "StarCost": 2
     },
     "upgrade": {
@@ -10601,7 +10643,7 @@
   {
     "id": "MIND_BLAST",
     "name": "Mind Blast",
-    "description": "Deal damage equal to the number of cards in your [gold]Draw Pile[/gold].",
+    "description": "Deal damage equal to the number of cards in your [gold]Draw Pile[/gold].[In Combat]",
     "description_raw": "Deal damage equal to the number of cards in your [gold]Draw Pile[/gold].{InCombat:\n(Deals {CalculatedDamage:diff()} damage)|}",
     "cost": 1,
     "is_x_cost": null,
@@ -10624,7 +10666,8 @@
     "tags": null,
     "vars": {
       "CalculationBase": 0,
-      "ExtraDamage": 1
+      "ExtraDamage": 1,
+      "CalculatedDamage": 1
     },
     "upgrade": null,
     "image_url": "/static/images/cards/mind_blast.png",
@@ -10659,7 +10702,7 @@
     "tags": null,
     "vars": {
       "MindRotPower": 1,
-      "Power": 1
+      "MindRot": 1
     },
     "upgrade": null,
     "image_url": "/static/images/cards/mind_rot.png",
@@ -10775,7 +10818,7 @@
   {
     "id": "MIRAGE",
     "name": "Mirage",
-    "description": "Gain [gold]Block[/gold] equal to [gold]Poison[/gold] on ALL enemies.",
+    "description": "Gain [gold]Block[/gold] equal to [gold]Poison[/gold] on ALL enemies.[In Combat]",
     "description_raw": "Gain [gold]Block[/gold] equal to [gold]Poison[/gold] on ALL enemies.{InCombat:\n(Gain {CalculatedBlock:diff()} [gold]Block[/gold])|}",
     "cost": 1,
     "is_x_cost": null,
@@ -11021,7 +11064,7 @@
   {
     "id": "MURDER",
     "name": "Murder",
-    "description": "Deal X damage.\nDeals 1 additional damage for each card drawn this combat.",
+    "description": "Deal 2 damage.\nDeals 1 additional damage for each card drawn this combat.",
     "description_raw": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card drawn this combat.",
     "cost": 3,
     "is_x_cost": null,
@@ -11042,7 +11085,8 @@
     "tags": null,
     "vars": {
       "CalculationBase": 1,
-      "ExtraDamage": 1
+      "ExtraDamage": 1,
+      "CalculatedDamage": 2
     },
     "upgrade": null,
     "image_url": "/static/images/cards/murder.png",
@@ -11109,7 +11153,7 @@
     "vars": {
       "Block": 5,
       "DoomPower": 7,
-      "Power": 7
+      "Doom": 7
     },
     "upgrade": {
       "block": "+1",
@@ -11121,7 +11165,7 @@
   {
     "id": "NEOWS_FURY",
     "name": "Neow's Fury",
-    "description": "Deal 10 damage.\nPut  from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold].",
+    "description": "Deal 10 damage.\nPut [] random cards from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold].",
     "description_raw": "Deal {Damage:diff()} damage.\nPut {Cards:plural:a random card|{:diff()} random cards} from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold].",
     "cost": 1,
     "is_x_cost": null,
@@ -11180,10 +11224,10 @@
     "keywords": null,
     "tags": null,
     "vars": {
-      "NeurosurgePower": 3,
-      "Power": 3,
       "Energy": 3,
-      "Cards": 2
+      "Cards": 2,
+      "NeurosurgePower": 3,
+      "Neurosurge": 3
     },
     "upgrade": {
       "energy": "+1"
@@ -11221,7 +11265,7 @@
     "vars": {
       "Damage": 3,
       "WeakPower": 1,
-      "Power": 1
+      "Weak": 1
     },
     "upgrade": {
       "damage": "+1",
@@ -11259,7 +11303,7 @@
     "tags": null,
     "vars": {
       "PlatingPower": 8,
-      "Power": 8,
+      "Plating": 8,
       "StarCost": 5
     },
     "upgrade": null,
@@ -11298,7 +11342,7 @@
   {
     "id": "NO_ESCAPE",
     "name": "No Escape",
-    "description": "Apply 10 [gold]Doom[/gold], plus an additional 5 [gold]Doom[/gold] for every 10 [gold]Doom[/gold] already on this enemy.",
+    "description": "Apply 10 [gold]Doom[/gold], plus an additional 5 [gold]Doom[/gold] for every 10 [gold]Doom[/gold] already on this enemy.[Is Targeting]",
     "description_raw": "Apply {CalculationBase:diff()} [gold]Doom[/gold], plus an additional {CalculationExtra:diff()} [gold]Doom[/gold] for every {DoomThreshold:diff()} [gold]Doom[/gold] already on this enemy.{IsTargeting:\n(Apply {CalculatedDoom:diff()} [gold]Doom[/gold])|}",
     "cost": 1,
     "is_x_cost": null,
@@ -11318,9 +11362,9 @@
     "keywords": null,
     "tags": null,
     "vars": {
+      "DoomThreshold": 10,
       "CalculationBase": 10,
-      "CalculationExtra": 5,
-      "DoomThreshold": 10
+      "CalculationExtra": 5
     },
     "upgrade": {
       "calculationbase": "+5"
@@ -11331,7 +11375,7 @@
   {
     "id": "NORMALITY",
     "name": "Normality",
-    "description": "You cannot play more than 3 cards this turn. left)|}",
+    "description": "You cannot play more than 3 cards this turn.",
     "description_raw": "You cannot play more than 3 cards this turn.{InCombat:\n({CalculatedCards:plural:{} card|{} cards} left)|}",
     "cost": -1,
     "is_x_cost": null,
@@ -11353,7 +11397,8 @@
     ],
     "tags": null,
     "vars": {
-      "CalculationBase": 3
+      "CalculationBase": 3,
+      "numOfCardsPerTurn": 3
     },
     "upgrade": null,
     "image_url": "/static/images/cards/normality.png",
@@ -11445,7 +11490,7 @@
     "vars": {
       "Damage": 10,
       "WeakPower": 2,
-      "Power": 2
+      "Weak": 2
     },
     "upgrade": {
       "damage": "+3",
@@ -11483,7 +11528,7 @@
     "tags": null,
     "vars": {
       "DoomPower": 3,
-      "Power": 3
+      "Doom": 3
     },
     "upgrade": {
       "doom": "+1"
@@ -11618,7 +11663,7 @@
   {
     "id": "OUTBREAK",
     "name": "Outbreak",
-    "description": "Every 3 you apply [gold]Poison[/gold], deal 11 damage to ALL enemies.",
+    "description": "Every 3 times you apply [gold]Poison[/gold], deal 11 damage to ALL enemies.",
     "description_raw": "Every {Repeat:plural:time|{Repeat:diff()} times} you apply [gold]Poison[/gold], deal {OutbreakPower:diff()} damage to ALL enemies.",
     "cost": 1,
     "is_x_cost": null,
@@ -11643,9 +11688,9 @@
     "keywords": null,
     "tags": null,
     "vars": {
+      "Repeat": 3,
       "OutbreakPower": 11,
-      "Power": 11,
-      "Repeat": 3
+      "Outbreak": 11
     },
     "upgrade": null,
     "image_url": "/static/images/cards/outbreak.png",
@@ -11797,8 +11842,8 @@
     "keywords": null,
     "tags": null,
     "vars": {
-      "Cards": 1,
-      "CardPlay": 5
+      "CardPlay": 5,
+      "Cards": 1
     },
     "upgrade": {
       "cards": "+1"
@@ -11860,8 +11905,8 @@
     ],
     "tags": null,
     "vars": {
-      "Block": 30,
-      "Turns": 2
+      "Turns": 2,
+      "Block": 30
     },
     "upgrade": {
       "block": "+10"
@@ -11898,7 +11943,7 @@
     "tags": null,
     "vars": {
       "ParryPower": 6,
-      "Power": 6
+      "Parry": 6
     },
     "upgrade": null,
     "image_url": "/static/images/cards/parry.png",
@@ -11999,7 +12044,7 @@
     "vars": {
       "Block": 8,
       "VigorPower": 2,
-      "Power": 2
+      "Vigor": 2
     },
     "upgrade": {
       "block": "+2"
@@ -12042,7 +12087,7 @@
   {
     "id": "PERFECTED_STRIKE",
     "name": "Perfected Strike",
-    "description": "Deal X damage.\nDeals 2 additional damage for ALL your cards containing “Strike”.",
+    "description": "Deal 8 damage.\nDeals 2 additional damage for ALL your cards containing “Strike”.",
     "description_raw": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for ALL your cards containing “Strike”.",
     "cost": 2,
     "is_x_cost": null,
@@ -12065,7 +12110,8 @@
     ],
     "vars": {
       "CalculationBase": 6,
-      "ExtraDamage": 2
+      "ExtraDamage": 2,
+      "CalculatedDamage": 8
     },
     "upgrade": {
       "damage": "+1",
@@ -12103,7 +12149,7 @@
     "tags": null,
     "vars": {
       "PhantomBladesPower": 9,
-      "Power": 9
+      "PhantomBlades": 9
     },
     "upgrade": null,
     "image_url": "/static/images/cards/phantom_blades.png",
@@ -12132,9 +12178,9 @@
     "keywords": null,
     "tags": null,
     "vars": {
+      "PutBack": 1,
       "Damage": 10,
-      "Cards": 1,
-      "PutBack": 1
+      "Cards": 1
     },
     "upgrade": {
       "damage": "+3",
@@ -12297,7 +12343,7 @@
     "vars": {
       "Damage": 6,
       "PoisonPower": 3,
-      "Power": 3
+      "Poison": 3
     },
     "upgrade": {
       "damage": "+2",
@@ -12309,7 +12355,7 @@
   {
     "id": "POKE",
     "name": "Poke",
-    "description": "[gold]Osty[/gold] deals X damage.",
+    "description": "[gold]Osty[/gold] deals 6 damage.",
     "description_raw": "[gold]Osty[/gold] deals {OstyDamage:diff()} damage.",
     "cost": 0,
     "is_x_cost": null,
@@ -12319,7 +12365,7 @@
     "rarity": "Common",
     "target": "AnyEnemy",
     "color": "necrobinder",
-    "damage": null,
+    "damage": 6,
     "block": null,
     "hit_count": null,
     "powers_applied": null,
@@ -12330,7 +12376,10 @@
     "tags": [
       "OstyAttack"
     ],
-    "vars": null,
+    "vars": {
+      "OstyDamage": 6,
+      "Damage": 6
+    },
     "upgrade": {
       "damage": "+3",
       "ostydamage": "+3"
@@ -12437,7 +12486,7 @@
   {
     "id": "PRECISE_CUT",
     "name": "Precise Cut",
-    "description": "Deal X damage.\nDeals 2 less damage for each other card in your [gold]Hand[/gold].",
+    "description": "Deal 15 damage.\nDeals 2 less damage for each other card in your [gold]Hand[/gold].",
     "description_raw": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:inverseDiff()} less damage for each other card in your [gold]Hand[/gold].",
     "cost": 0,
     "is_x_cost": null,
@@ -12458,7 +12507,8 @@
     "tags": null,
     "vars": {
       "CalculationBase": 13,
-      "ExtraDamage": 2
+      "ExtraDamage": 2,
+      "CalculatedDamage": 15
     },
     "upgrade": {
       "calculationbase": "+3"
@@ -12526,7 +12576,7 @@
     "tags": null,
     "vars": {
       "PrepTimePower": 4,
-      "Power": 4
+      "PrepTime": 4
     },
     "upgrade": null,
     "image_url": "/static/images/cards/prep_time.png",
@@ -12684,7 +12734,7 @@
   {
     "id": "PROTECTOR",
     "name": "Protector",
-    "description": "[gold]Osty[/gold] deals X damage.\nDeals additional damage equal to [gold]Osty's[/gold] [gold]Max HP[/gold].",
+    "description": "[gold]Osty[/gold] deals 11 damage.\nDeals additional damage equal to [gold]Osty's[/gold] [gold]Max HP[/gold].",
     "description_raw": "[gold]Osty[/gold] deals {CalculatedDamage:diff()} damage.\nDeals additional damage equal to [gold]Osty's[/gold] [gold]Max HP[/gold].",
     "cost": 1,
     "is_x_cost": null,
@@ -12707,7 +12757,8 @@
     ],
     "vars": {
       "CalculationBase": 10,
-      "ExtraDamage": 1
+      "ExtraDamage": 1,
+      "CalculatedDamage": 11
     },
     "upgrade": {
       "calculationbase": "+5"
@@ -12748,8 +12799,9 @@
     "tags": null,
     "vars": {
       "StrengthPower": 1,
+      "Strength": 1,
       "DexterityPower": 1,
-      "Power": 1
+      "Dexterity": 1
     },
     "upgrade": {
       "dexterity": "+1",
@@ -12781,8 +12833,8 @@
     "keywords": null,
     "tags": null,
     "vars": {
-      "Block": 7,
-      "Summon": 4
+      "Summon": 4,
+      "Block": 7
     },
     "upgrade": {
       "block": "+2",
@@ -12794,7 +12846,7 @@
   {
     "id": "PULL_FROM_BELOW",
     "name": "Pull from Below",
-    "description": "Deal 5 damage for each [gold]Ethereal[/gold] card played this combat.",
+    "description": "Deal 5 damage for each [gold]Ethereal[/gold] card played this combat.[In Combat]",
     "description_raw": "Deal {Damage:diff()} damage for each [gold]Ethereal[/gold] card played this combat.{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
     "cost": 1,
     "is_x_cost": null,
@@ -12981,7 +13033,7 @@
   {
     "id": "RADIATE",
     "name": "Radiate",
-    "description": "Deal 3 damage to ALL enemies for each [star:1] gained this turn.",
+    "description": "Deal 3 damage to ALL enemies for each [star:1] gained this turn.[In Combat]",
     "description_raw": "Deal {Damage:diff()} damage to ALL enemies for each {Stars:starIcons()} gained this turn.{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
     "cost": 0,
     "is_x_cost": null,
@@ -13124,8 +13176,8 @@
     "keywords": null,
     "tags": null,
     "vars": {
-      "Damage": 9,
-      "Increase": 5
+      "Increase": 5,
+      "Damage": 9
     },
     "upgrade": null,
     "image_url": "/static/images/cards/rampage.png",
@@ -13134,7 +13186,7 @@
   {
     "id": "RATTLE",
     "name": "Rattle",
-    "description": "[gold]Osty[/gold] deals X damage.\nHits an additional time for each other time he has attacked this turn.",
+    "description": "[gold]Osty[/gold] deals 7 damage.\nHits an additional time for each other time he has attacked this turn.[In Combat]",
     "description_raw": "[gold]Osty[/gold] deals {OstyDamage:diff()} damage.\nHits an additional time for each other time he has attacked this turn.{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times})|}",
     "cost": 1,
     "is_x_cost": null,
@@ -13144,7 +13196,7 @@
     "rarity": "Uncommon",
     "target": "AnyEnemy",
     "color": "necrobinder",
-    "damage": null,
+    "damage": 7,
     "block": null,
     "hit_count": null,
     "powers_applied": null,
@@ -13156,8 +13208,10 @@
       "OstyAttack"
     ],
     "vars": {
+      "OstyDamage": 7,
       "CalculationBase": 0,
-      "CalculationExtra": 1
+      "CalculationExtra": 1,
+      "Damage": 7
     },
     "upgrade": {
       "damage": "+2",
@@ -13475,8 +13529,8 @@
     "keywords": null,
     "tags": null,
     "vars": {
-      "Damage": 9,
-      "Repeat": 2
+      "Repeat": 2,
+      "Damage": 9
     },
     "upgrade": {
       "damage": "+3"
@@ -13553,7 +13607,7 @@
   {
     "id": "REND",
     "name": "Rend",
-    "description": "Deal X damage.\nDeals 5 additional damage for each unique debuff on the enemy.",
+    "description": "Deal 20 damage.\nDeals 5 additional damage for each unique debuff on the enemy.",
     "description_raw": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each unique debuff on the enemy.",
     "cost": 2,
     "is_x_cost": null,
@@ -13574,7 +13628,8 @@
     "tags": null,
     "vars": {
       "CalculationBase": 15,
-      "ExtraDamage": 5
+      "ExtraDamage": 5,
+      "CalculatedDamage": 20
     },
     "upgrade": {
       "damage": "+3",
@@ -13613,7 +13668,7 @@
     "tags": null,
     "vars": {
       "StrengthPower": 1,
-      "Power": 1,
+      "Strength": 1,
       "StarCost": 3
     },
     "upgrade": null,
@@ -13692,7 +13747,7 @@
   {
     "id": "RIGHT_HAND_HAND",
     "name": "Right Hand Hand",
-    "description": "[gold]Osty[/gold] deals X damage.\nWhenever you play a card that costs [energy:2] or more, return this to your [gold]Hand[/gold] from the [gold]Discard Pile[/gold].",
+    "description": "[gold]Osty[/gold] deals 4 damage.\nWhenever you play a card that costs [energy:2] or more, return this to your [gold]Hand[/gold] from the [gold]Discard Pile[/gold].",
     "description_raw": "[gold]Osty[/gold] deals {OstyDamage:diff()} damage.\nWhenever you play a card that costs {Energy:energyIcons()} or more, return this to your [gold]Hand[/gold] from the [gold]Discard Pile[/gold].",
     "cost": 0,
     "is_x_cost": null,
@@ -13702,7 +13757,7 @@
     "rarity": "Uncommon",
     "target": "AnyEnemy",
     "color": "necrobinder",
-    "damage": null,
+    "damage": 4,
     "block": null,
     "hit_count": null,
     "powers_applied": null,
@@ -13714,7 +13769,9 @@
       "OstyAttack"
     ],
     "vars": {
-      "Energy": 2
+      "OstyDamage": 4,
+      "Energy": 2,
+      "Damage": 4
     },
     "upgrade": {
       "damage": "+2",
@@ -13815,9 +13872,9 @@
     "keywords": null,
     "tags": null,
     "vars": {
+      "IncrementAmount": 5,
       "RollingBoulderPower": 5,
-      "Power": 5,
-      "IncrementAmount": 5
+      "RollingBoulder": 5
     },
     "upgrade": null,
     "image_url": "/static/images/cards/rolling_boulder.png",
@@ -13915,7 +13972,7 @@
     "tags": null,
     "vars": {
       "StrengthPower": 1,
-      "Power": 1
+      "Strength": 1
     },
     "upgrade": {
       "strength": "+1"
@@ -14042,9 +14099,9 @@
     "keywords": null,
     "tags": null,
     "vars": {
+      "Cards": 1,
       "DoomPower": 13,
-      "Power": 13,
-      "Cards": 1
+      "Doom": 13
     },
     "upgrade": {
       "doom": "+3",
@@ -14362,7 +14419,7 @@
     "tags": null,
     "vars": {
       "SentryModePower": 1,
-      "Power": 1
+      "SentryMode": 1
     },
     "upgrade": null,
     "image_url": "/static/images/cards/sentry_mode.png",
@@ -14397,7 +14454,7 @@
     "tags": null,
     "vars": {
       "SerpentFormPower": 4,
-      "Power": 4
+      "SerpentForm": 4
     },
     "upgrade": null,
     "image_url": "/static/images/cards/serpent_form.png",
@@ -14435,7 +14492,7 @@
     "vars": {
       "Damage": 7,
       "StrengthPower": 2,
-      "Power": 2
+      "Strength": 2
     },
     "upgrade": {
       "damage": "+2",
@@ -14447,7 +14504,7 @@
   {
     "id": "SEVEN_STARS",
     "name": "Seven Stars",
-    "description": "Deal 7 damage to ALL enemies .",
+    "description": "Deal 7 damage to ALL enemies 7 times.",
     "description_raw": "Deal {Damage:diff()} damage to ALL enemies {Repeat:plural:{} time|{} times}.",
     "cost": 2,
     "is_x_cost": null,
@@ -14857,7 +14914,7 @@
   {
     "id": "SIC_EM",
     "name": "Sic 'Em",
-    "description": "[gold]Osty[/gold] deals X damage.\nWhenever [gold]Osty[/gold] hits this enemy this turn, [gold]Summon[/gold] 2.",
+    "description": "[gold]Osty[/gold] deals 5 damage.\nWhenever [gold]Osty[/gold] hits this enemy this turn, [gold]Summon[/gold] 2.",
     "description_raw": "[gold]Osty[/gold] deals {OstyDamage:diff()} damage.\nWhenever [gold]Osty[/gold] hits this enemy this turn, [gold]Summon[/gold] {SicEmPower:diff()}.",
     "cost": 1,
     "is_x_cost": null,
@@ -14867,7 +14924,7 @@
     "rarity": "Uncommon",
     "target": "AnyEnemy",
     "color": "necrobinder",
-    "damage": null,
+    "damage": 5,
     "block": null,
     "hit_count": null,
     "powers_applied": [
@@ -14884,8 +14941,10 @@
       "OstyAttack"
     ],
     "vars": {
+      "OstyDamage": 5,
       "SicEmPower": 2,
-      "Power": 2
+      "SicEm": 2,
+      "Damage": 5
     },
     "upgrade": {
       "damage": "+1",
@@ -14925,7 +14984,7 @@
     "tags": null,
     "vars": {
       "SignalBoostPower": 1,
-      "Power": 1
+      "SignalBoost": 1
     },
     "upgrade": null,
     "image_url": "/static/images/cards/signal_boost.png",
@@ -15022,7 +15081,7 @@
     "tags": null,
     "vars": {
       "SleightOfFleshPower": 9,
-      "Power": 9
+      "SleightOfFlesh": 9
     },
     "upgrade": null,
     "image_url": "/static/images/cards/sleight_of_flesh.png",
@@ -15119,7 +15178,7 @@
     "tags": null,
     "vars": {
       "SlothPower": 3,
-      "Power": 3
+      "Sloth": 3
     },
     "upgrade": null,
     "image_url": "/static/images/cards/sloth.png",
@@ -15154,7 +15213,7 @@
     "tags": null,
     "vars": {
       "SmokestackPower": 5,
-      "Power": 5
+      "Smokestack": 5
     },
     "upgrade": null,
     "image_url": "/static/images/cards/smokestack.png",
@@ -15191,7 +15250,7 @@
     "tags": null,
     "vars": {
       "PoisonPower": 7,
-      "Power": 7
+      "Poison": 7
     },
     "upgrade": {
       "poison": "+3"
@@ -15202,7 +15261,7 @@
   {
     "id": "SNAP",
     "name": "Snap",
-    "description": "[gold]Osty[/gold] deals X damage.\nAdd [gold]Retain[/gold] to a card in your [gold]Hand[/gold].",
+    "description": "[gold]Osty[/gold] deals 7 damage.\nAdd [gold]Retain[/gold] to a card in your [gold]Hand[/gold].",
     "description_raw": "[gold]Osty[/gold] deals {OstyDamage:diff()} damage.\nAdd [gold]Retain[/gold] to a card in your [gold]Hand[/gold].",
     "cost": 1,
     "is_x_cost": null,
@@ -15212,7 +15271,7 @@
     "rarity": "Common",
     "target": "AnyEnemy",
     "color": "necrobinder",
-    "damage": null,
+    "damage": 7,
     "block": null,
     "hit_count": null,
     "powers_applied": null,
@@ -15223,7 +15282,10 @@
     "tags": [
       "OstyAttack"
     ],
-    "vars": null,
+    "vars": {
+      "OstyDamage": 7,
+      "Damage": 7
+    },
     "upgrade": {
       "damage": "+3",
       "ostydamage": "+3"
@@ -15262,7 +15324,7 @@
     "tags": null,
     "vars": {
       "SneakyPower": 1,
-      "Power": 1
+      "Sneaky": 1
     },
     "upgrade": null,
     "image_url": "/static/images/cards/sneaky.png",
@@ -15368,7 +15430,7 @@
   {
     "id": "SOUL_STORM",
     "name": "Soul Storm",
-    "description": "Deal X damage.\nDeals 2 additional damage for each [gold]Soul[/gold] in your [gold]Exhaust Pile[/gold].",
+    "description": "Deal 11 damage.\nDeals 2 additional damage for each [gold]Soul[/gold] in your [gold]Exhaust Pile[/gold].",
     "description_raw": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each [gold]Soul[/gold] in your [gold]Exhaust Pile[/gold].",
     "cost": 1,
     "is_x_cost": null,
@@ -15389,7 +15451,8 @@
     "tags": null,
     "vars": {
       "CalculationBase": 9,
-      "ExtraDamage": 2
+      "ExtraDamage": 2,
+      "CalculatedDamage": 11
     },
     "upgrade": {
       "damage": "+1",
@@ -15401,7 +15464,7 @@
   {
     "id": "SOVEREIGN_BLADE",
     "name": "Sovereign Blade",
-    "description": "Deal 10 damage1 times}.",
+    "description": "Deal 10 damage.",
     "description_raw": "Deal {Damage:diff()} damage{SeekingEdgeAmount:cond:>0? to ALL enemies|}{Repeat:plural:| {} times}.",
     "cost": 2,
     "is_x_cost": null,
@@ -15426,7 +15489,8 @@
       "Damage": 10,
       "CalculationBase": 0,
       "CalculationExtra": 1,
-      "Repeat": 1
+      "Repeat": 1,
+      "baseDamage": 10
     },
     "upgrade": null,
     "image_url": "/static/images/cards/sovereign_blade.png",
@@ -15523,7 +15587,7 @@
     "tags": null,
     "vars": {
       "SpeedsterPower": 2,
-      "Power": 2
+      "Speedster": 2
     },
     "upgrade": null,
     "image_url": "/static/images/cards/speedster.png",
@@ -15558,7 +15622,7 @@
     "tags": null,
     "vars": {
       "SpinnerPower": 1,
-      "Power": 1
+      "Spinner": 1
     },
     "upgrade": null,
     "image_url": "/static/images/cards/spinner.png",
@@ -15808,7 +15872,7 @@
     "vars": {
       "Damage": 10,
       "VulnerablePower": 2,
-      "Power": 2
+      "Vulnerable": 2
     },
     "upgrade": {
       "damage": "+2",
@@ -15820,7 +15884,7 @@
   {
     "id": "SQUEEZE",
     "name": "Squeeze",
-    "description": "[gold]Osty[/gold] deals X damage.\nDeals 5 additional damage for ALL your other [gold]Osty[/gold] Attacks.",
+    "description": "[gold]Osty[/gold] deals 30 damage.\nDeals 5 additional damage for ALL your other [gold]Osty[/gold] Attacks.",
     "description_raw": "[gold]Osty[/gold] deals {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for ALL your other [gold]Osty[/gold] Attacks.",
     "cost": 3,
     "is_x_cost": null,
@@ -15843,7 +15907,8 @@
     ],
     "vars": {
       "CalculationBase": 25,
-      "ExtraDamage": 5
+      "ExtraDamage": 5,
+      "CalculatedDamage": 30
     },
     "upgrade": {
       "damage": "+1",
@@ -15856,7 +15921,7 @@
   {
     "id": "STACK",
     "name": "Stack",
-    "description": "Gain [gold]Block[/gold] equal to the number of cards in your [gold]Discard Pile[/gold]|}.",
+    "description": "Gain [gold]Block[/gold] equal to the number of cards in your [gold]Discard Pile[/gold]|}.[In Combat]",
     "description_raw": "Gain [gold]Block[/gold] equal to the number of cards in your [gold]Discard Pile[/gold]{IfUpgraded:show: +{CalculationBase}|}.{InCombat:\n(Gain {CalculatedBlock:diff()} [gold]Block[/gold].)|}",
     "cost": 1,
     "is_x_cost": null,
@@ -16034,7 +16099,7 @@
     "tags": null,
     "vars": {
       "PlatingPower": 4,
-      "Power": 4
+      "Plating": 4
     },
     "upgrade": null,
     "image_url": "/static/images/cards/stone_armor.png",
@@ -16069,7 +16134,7 @@
     "tags": null,
     "vars": {
       "StormPower": 1,
-      "Power": 1
+      "Storm": 1
     },
     "upgrade": null,
     "image_url": "/static/images/cards/storm.png",
@@ -16132,7 +16197,7 @@
     "vars": {
       "Damage": 8,
       "StranglePower": 2,
-      "Power": 2
+      "Strangle": 2
     },
     "upgrade": {
       "damage": "+2"
@@ -16389,7 +16454,7 @@
     "vars": {
       "Damage": 8,
       "WeakPower": 1,
-      "Power": 1
+      "Weak": 1
     },
     "upgrade": {
       "damage": "+2",
@@ -16497,7 +16562,7 @@
   {
     "id": "SUPERMASSIVE",
     "name": "Supermassive",
-    "description": "Deal X damage.\nDeals 3 additional damage for each card you created this combat.",
+    "description": "Deal 8 damage.\nDeals 3 additional damage for each card you created this combat.",
     "description_raw": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card you created this combat.",
     "cost": 1,
     "is_x_cost": null,
@@ -16518,7 +16583,8 @@
     "tags": null,
     "vars": {
       "CalculationBase": 5,
-      "ExtraDamage": 3
+      "ExtraDamage": 3,
+      "CalculatedDamage": 8
     },
     "upgrade": {
       "damage": "+1",
@@ -16559,7 +16625,7 @@
     "vars": {
       "Damage": 11,
       "WeakPower": 3,
-      "Power": 3
+      "Weak": 3
     },
     "upgrade": {
       "damage": "+6",
@@ -16634,7 +16700,7 @@
   {
     "id": "SWEEPING_GAZE",
     "name": "Sweeping Gaze",
-    "description": "[gold]Osty[/gold] deals X damage to a random enemy.",
+    "description": "[gold]Osty[/gold] deals 10 damage to a random enemy.",
     "description_raw": "[gold]Osty[/gold] deals {OstyDamage:diff()} damage to a random enemy.",
     "cost": 0,
     "is_x_cost": null,
@@ -16644,7 +16710,7 @@
     "rarity": "Token",
     "target": "RandomEnemy",
     "color": "token",
-    "damage": null,
+    "damage": 10,
     "block": null,
     "hit_count": null,
     "powers_applied": null,
@@ -16658,7 +16724,10 @@
     "tags": [
       "OstyAttack"
     ],
-    "vars": null,
+    "vars": {
+      "OstyDamage": 10,
+      "Damage": 10
+    },
     "upgrade": {
       "damage": "+5",
       "ostydamage": "+5"
@@ -16727,7 +16796,7 @@
     "tags": null,
     "vars": {
       "SwordSagePower": 1,
-      "Power": 1
+      "SwordSage": 1
     },
     "upgrade": null,
     "image_url": "/static/images/cards/sword_sage.png",
@@ -16736,7 +16805,7 @@
   {
     "id": "SYNCHRONIZE",
     "name": "Synchronize",
-    "description": "Gain 2 [gold]Focus[/gold] this turn for each unique Orb you have.",
+    "description": "Gain 2 [gold]Focus[/gold] this turn for each unique Orb you have.[In Combat]",
     "description_raw": "Gain {CalculationExtra:diff()} [gold]Focus[/gold] this turn for each unique Orb you have.{InCombat:\n(Gain {CalculatedFocus:diff()} [gold]Focus[/gold])|}",
     "cost": 1,
     "is_x_cost": null,
@@ -16917,7 +16986,7 @@
     "vars": {
       "Block": 7,
       "VulnerablePower": 1,
-      "Power": 1
+      "Vulnerable": 1
     },
     "upgrade": {
       "block": "+1",
@@ -16929,7 +16998,7 @@
   {
     "id": "TEAR_ASUNDER",
     "name": "Tear Asunder",
-    "description": "Deal 5 damage.\nHits an additional time for each time you lost HP this combat.",
+    "description": "Deal 5 damage.\nHits an additional time for each time you lost HP this combat.[In Combat]",
     "description_raw": "Deal {Damage:diff()} damage.\nHits an additional time for each time you lost HP this combat.{InCombat:\n(Hits {CalculatedHits:diff()} {CalculatedHits:plural:time|times}.)|}",
     "cost": 2,
     "is_x_cost": null,
@@ -17016,7 +17085,7 @@
     "tags": null,
     "vars": {
       "VigorPower": 6,
-      "Power": 6
+      "Vigor": 6
     },
     "upgrade": null,
     "image_url": "/static/images/cards/terraforming.png",
@@ -17150,7 +17219,7 @@
   {
     "id": "THE_SCYTHE",
     "name": "The Scythe",
-    "description": "Deal X damage.\nPermanently increase this card's damage by X.",
+    "description": "Deal X damage.\nPermanently increase this card's damage by 3.",
     "description_raw": "Deal {Damage:diff()} damage.\nPermanently increase this card's damage by {Increase:diff()}.",
     "cost": 2,
     "is_x_cost": null,
@@ -17171,7 +17240,10 @@
       "Exhaust"
     ],
     "tags": null,
-    "vars": null,
+    "vars": {
+      "Increase": 3,
+      "baseDamage": 13
+    },
     "upgrade": null,
     "image_url": "/static/images/cards/the_scythe.png",
     "beta_image_url": "/static/images/cards/beta/the_scythe.png"
@@ -17359,7 +17431,7 @@
     "tags": null,
     "vars": {
       "ThunderPower": 6,
-      "Power": 6
+      "Thunder": 6
     },
     "upgrade": null,
     "image_url": "/static/images/cards/thunder.png",
@@ -17395,7 +17467,7 @@
     "vars": {
       "Damage": 4,
       "VulnerablePower": 1,
-      "Power": 1
+      "Vulnerable": 1
     },
     "upgrade": {
       "damage": "+3"
@@ -17406,7 +17478,7 @@
   {
     "id": "TIMES_UP",
     "name": "Time's Up",
-    "description": "Deal damage equal to the enemy's [gold]Doom[/gold].",
+    "description": "Deal damage equal to the enemy's [gold]Doom[/gold].[Is Targeting]",
     "description_raw": "Deal damage equal to the enemy's [gold]Doom[/gold].{IsTargeting:\n(Deals {CalculatedDamage:diff()} damage)|}",
     "cost": 2,
     "is_x_cost": null,
@@ -17429,7 +17501,8 @@
     "tags": null,
     "vars": {
       "CalculationBase": 0,
-      "ExtraDamage": 1
+      "ExtraDamage": 1,
+      "CalculatedDamage": 1
     },
     "upgrade": null,
     "image_url": "/static/images/cards/times_up.png",
@@ -17485,8 +17558,8 @@
     "keywords": null,
     "tags": null,
     "vars": {
-      "Block": 5,
-      "Turns": 2
+      "Turns": 2,
+      "Block": 5
     },
     "upgrade": {
       "block": "+2"
@@ -17639,7 +17712,7 @@
     "tags": null,
     "vars": {
       "VulnerablePower": 2,
-      "Power": 2
+      "Vulnerable": 2
     },
     "upgrade": {
       "vulnerable": "+1"
@@ -17871,7 +17944,7 @@
   {
     "id": "UNLEASH",
     "name": "Unleash",
-    "description": "[gold]Osty[/gold] deals X damage.\nDeals additional damage equal to [gold]Osty's[/gold] current HP.",
+    "description": "[gold]Osty[/gold] deals 7 damage.\nDeals additional damage equal to [gold]Osty's[/gold] current HP.",
     "description_raw": "[gold]Osty[/gold] deals {CalculatedDamage:diff()} damage.\nDeals additional damage equal to [gold]Osty's[/gold] current HP.",
     "cost": 1,
     "is_x_cost": null,
@@ -17894,7 +17967,8 @@
     ],
     "vars": {
       "CalculationBase": 6,
-      "ExtraDamage": 1
+      "ExtraDamage": 1,
+      "CalculatedDamage": 7
     },
     "upgrade": {
       "calculationbase": "+3"
@@ -18047,8 +18121,8 @@
     "keywords": null,
     "tags": null,
     "vars": {
-      "Damage": 13,
-      "Power": 1
+      "Power": 1,
+      "Damage": 13
     },
     "upgrade": null,
     "image_url": "/static/images/cards/uppercut.png",
@@ -18213,7 +18287,7 @@
   {
     "id": "VOID_FORM",
     "name": "Void Form",
-    "description": "End your turn.\nThe first 2 you play each turn are free to play.",
+    "description": "End your turn.\nThe first 2 cards you play each turn are free to play.",
     "description_raw": "End your turn.\nThe first {VoidFormPower:plural:card|{VoidFormPower:diff()} cards} you play each turn {VoidFormPower:plural:is|are} free to play.",
     "cost": 3,
     "is_x_cost": null,
@@ -18239,7 +18313,7 @@
     "tags": null,
     "vars": {
       "VoidFormPower": 2,
-      "Power": 2
+      "VoidForm": 2
     },
     "upgrade": null,
     "image_url": "/static/images/cards/void_form.png",
@@ -18279,7 +18353,7 @@
   {
     "id": "VOLTAIC",
     "name": "Voltaic",
-    "description": "[gold]Channel Lightning[/gold] equal to the [gold]Lightning[/gold] already [gold]Channeled[/gold] this combat.",
+    "description": "[gold]Channel Lightning[/gold] equal to the [gold]Lightning[/gold] already [gold]Channeled[/gold] this combat.[In Combat]",
     "description_raw": "[gold]Channel Lightning[/gold] equal to the [gold]Lightning[/gold] already [gold]Channeled[/gold] this combat.{InCombat:\n([gold]Channel[/gold] {CalculatedChannels:diff()} [gold]Lightning[/gold])|}",
     "cost": 2,
     "is_x_cost": null,
@@ -18337,7 +18411,7 @@
     "tags": null,
     "vars": {
       "WasteAwayPower": 1,
-      "Power": 1
+      "WasteAway": 1
     },
     "upgrade": null,
     "image_url": "/static/images/cards/waste_away.png",
@@ -18587,8 +18661,9 @@
     "tags": null,
     "vars": {
       "IntangiblePower": 2,
+      "Intangible": 2,
       "WraithFormPower": 1,
-      "Power": 2
+      "WraithForm": 1
     },
     "upgrade": null,
     "image_url": "/static/images/cards/wraith_form.png",
