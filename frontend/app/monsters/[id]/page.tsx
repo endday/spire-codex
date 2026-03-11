@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description: desc,
       openGraph: {
-        title: `${monster.name} - Spire Codex`,
+        title: `${monster.name} - Spire Codex - Slay the Spire 2`,
         description: desc,
         images: monster.image_url ? [{ url: `${API_PUBLIC}${monster.image_url}` }] : [],
       },

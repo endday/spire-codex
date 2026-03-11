@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description: desc || `${relic.name} relic from Slay the Spire 2`,
       openGraph: {
-        title: `${relic.name} - Spire Codex`,
+        title: `${relic.name} - Spire Codex - Slay the Spire 2`,
         description: desc || `${relic.name} relic from Slay the Spire 2`,
         images: relic.image_url ? [{ url: `${API_PUBLIC}${relic.image_url}` }] : [],
       },
