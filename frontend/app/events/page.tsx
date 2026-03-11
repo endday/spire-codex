@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import type { GameEvent, EventPage, DialogueLine } from "@/lib/api";
 import SearchFilter from "../components/SearchFilter";
 import RichDescription from "../components/RichDescription";
@@ -106,7 +107,9 @@ export default function EventsPage() {
   const [expandedPages, setExpandedPages] = useState<Record<string, boolean>>(
     {}
   );
-  const [relicNames, setRelicNames] = useState<Record<string, string>>({});
+  const [relicMap, setRelicMap] = useState<
+    Record<string, { id: string; name: string; description: string; image_url: string | null }>
+  >({});
   const [expandedDesc, setExpandedDesc] = useState<Record<string, boolean>>({});
 
   const toggleDialogue = (eventId: string, group: string) => {
@@ -126,10 +129,10 @@ export default function EventsPage() {
   useEffect(() => {
     fetch(`${API}/api/relics`)
       .then((r) => r.json())
-      .then((relics: { id: string; name: string }[]) => {
-        const map: Record<string, string> = {};
-        for (const r of relics) map[r.id] = r.name;
-        setRelicNames(map);
+      .then((relics: { id: string; name: string; description: string; image_url: string | null }[]) => {
+        const map: Record<string, typeof relics[number]> = {};
+        for (const r of relics) map[r.id] = r;
+        setRelicMap(map);
       });
   }, []);
 
@@ -311,18 +314,39 @@ export default function EventsPage() {
                     <p className="text-[10px] uppercase tracking-wider text-[var(--text-muted)] mb-1.5">
                       Relic Offerings
                     </p>
-                    <div className="flex flex-wrap gap-1">
-                      {event.relics.map((relicId) => (
-                        <span
-                          key={relicId}
-                          className="text-[11px] px-1.5 py-0.5 rounded bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[var(--text-secondary)]"
-                        >
-                          {relicNames[relicId] ||
-                            relicId
-                              .replace(/_/g, " ")
-                              .replace(/\b\w/g, (c) => c.toUpperCase())}
-                        </span>
-                      ))}
+                    <div className="flex flex-col gap-1.5">
+                      {event.relics.map((relicId) => {
+                        const relic = relicMap[relicId];
+                        return (
+                          <Link
+                            key={relicId}
+                            href={`/relics/${relicId}`}
+                            className="flex items-center gap-2.5 px-2.5 py-2 rounded-lg bg-[var(--bg-primary)] border border-[var(--border-subtle)] hover:border-[var(--accent-gold)]/50 transition-colors"
+                          >
+                            {relic?.image_url && (
+                              <img
+                                src={`${API}${relic.image_url}`}
+                                alt={relic.name}
+                                className="w-8 h-8 object-contain flex-shrink-0"
+                                crossOrigin="anonymous"
+                              />
+                            )}
+                            <div className="min-w-0">
+                              <div className="text-xs font-medium text-[var(--accent-gold)]">
+                                {relic?.name ||
+                                  relicId
+                                    .replace(/_/g, " ")
+                                    .replace(/\b\w/g, (c) => c.toUpperCase())}
+                              </div>
+                              {relic?.description && (
+                                <div className="text-[11px] text-[var(--text-muted)] line-clamp-1">
+                                  <RichDescription text={relic.description} />
+                                </div>
+                              )}
+                            </div>
+                          </Link>
+                        );
+                      })}
                     </div>
                   </div>
                 )}
