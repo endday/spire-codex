@@ -13,20 +13,28 @@ const cardTypeColors: Record<string, string> = {
   Power: "bg-purple-950/50 text-purple-300 border-purple-900/30",
 };
 
+const cardTypeOptions = [
+  { label: "Attack", value: "Attack" },
+  { label: "Skill", value: "Skill" },
+  { label: "Power", value: "Power" },
+];
+
 export default function EnchantmentsPage() {
   const [enchantments, setEnchantments] = useState<Enchantment[]>([]);
   const [search, setSearch] = useState("");
+  const [cardType, setCardType] = useState("");
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setLoading(true);
     const params = new URLSearchParams();
     if (search) params.set("search", search);
+    if (cardType) params.set("card_type", cardType);
     fetch(`${API}/api/enchantments?${params}`)
       .then((r) => r.json())
       .then(setEnchantments)
       .finally(() => setLoading(false));
-  }, [search]);
+  }, [search, cardType]);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -39,7 +47,14 @@ export default function EnchantmentsPage() {
         onSearchChange={setSearch}
         placeholder="Search enchantments..."
         resultCount={enchantments.length}
-        filters={[]}
+        filters={[
+          {
+            label: "All Card Types",
+            value: cardType,
+            options: cardTypeOptions,
+            onChange: setCardType,
+          },
+        ]}
       />
 
       {loading ? (

@@ -85,6 +85,12 @@ export default function PotionDetailPage() {
 
         <div className="flex items-center justify-center gap-3 mb-6 text-sm">
           <span className={rarityColor}>{potion.rarity}</span>
+          {potion.pool && (
+            <>
+              <span className="text-[var(--border-subtle)]">·</span>
+              <span className="text-[var(--text-muted)] capitalize">{potion.pool}</span>
+            </>
+          )}
         </div>
 
         <div className="text-[var(--text-secondary)] leading-relaxed">

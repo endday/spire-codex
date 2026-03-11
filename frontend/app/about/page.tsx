@@ -1,25 +1,28 @@
+"use client";
+
+import { useState, useEffect } from "react";
+
 const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
-const STATS = [
-  { label: "Cards", count: 576 },
-  { label: "Relics", count: 289 },
-  { label: "Powers", count: 260 },
-  { label: "Monsters", count: 111 },
-  { label: "Encounters", count: 87 },
-  { label: "Events", count: 66 },
-  { label: "Potions", count: 63 },
-  { label: "Epochs", count: 57 },
-  { label: "Achievements", count: 33 },
-  { label: "Enchantments", count: 22 },
-  { label: "Modifiers", count: 16 },
-  { label: "Intents", count: 14 },
-  { label: "Ascension Levels", count: 11 },
-  { label: "Afflictions", count: 9 },
-  { label: "Keywords", count: 8 },
-  { label: "Stories", count: 8 },
-  { label: "Characters", count: 5 },
-  { label: "Orbs", count: 5 },
-  { label: "Acts", count: 4 },
+const STAT_ORDER = [
+  { key: "cards", label: "Cards" },
+  { key: "relics", label: "Relics" },
+  { key: "powers", label: "Powers" },
+  { key: "monsters", label: "Monsters" },
+  { key: "encounters", label: "Encounters" },
+  { key: "events", label: "Events" },
+  { key: "potions", label: "Potions" },
+  { key: "epochs", label: "Epochs" },
+  { key: "achievements", label: "Achievements" },
+  { key: "enchantments", label: "Enchantments" },
+  { key: "modifiers", label: "Modifiers" },
+  { key: "intents", label: "Intents" },
+  { key: "ascensions", label: "Ascension Levels" },
+  { key: "afflictions", label: "Afflictions" },
+  { key: "keywords", label: "Keywords" },
+  { key: "characters", label: "Characters" },
+  { key: "orbs", label: "Orbs" },
+  { key: "acts", label: "Acts" },
 ];
 
 const PIPELINE_STEPS = [
@@ -46,6 +49,15 @@ const PIPELINE_STEPS = [
 ];
 
 export default function AboutPage() {
+  const [stats, setStats] = useState<Record<string, number>>({});
+
+  useEffect(() => {
+    fetch(`${API_BASE}/api/stats`)
+      .then((r) => r.json())
+      .then(setStats)
+      .catch(() => {});
+  }, []);
+
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <h1 className="text-3xl font-bold mb-8">
@@ -74,9 +86,9 @@ export default function AboutPage() {
             What&apos;s Inside
           </h2>
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3">
-            {STATS.map((s) => (
-              <div key={s.label} className="text-center">
-                <div className="text-xl font-bold text-[var(--accent-gold)]">{s.count}</div>
+            {STAT_ORDER.filter((s) => stats[s.key]).map((s) => (
+              <div key={s.key} className="text-center">
+                <div className="text-xl font-bold text-[var(--accent-gold)]">{stats[s.key]}</div>
                 <div className="text-xs text-[var(--text-muted)]">{s.label}</div>
               </div>
             ))}

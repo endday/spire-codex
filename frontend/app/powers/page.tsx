@@ -34,17 +34,11 @@ export default function PowersPage() {
     setLoading(true);
     const params = new URLSearchParams();
     if (type) params.set("type", type);
+    if (stackType) params.set("stack_type", stackType);
     if (search) params.set("search", search);
     fetch(`${API}/api/powers?${params}`)
       .then((r) => r.json())
-      .then((data: Power[]) => {
-        if (stackType) {
-          data = data.filter(
-            (p) => p.stack_type.toLowerCase() === stackType.toLowerCase()
-          );
-        }
-        setPowers(data);
-      })
+      .then(setPowers)
       .finally(() => setLoading(false));
   }, [type, search, stackType]);
 
