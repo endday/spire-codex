@@ -22,13 +22,13 @@ const CATEGORIES: CategoryConfig[] = [
   {
     label: "Characters",
     endpoint: "/api/characters",
-    linkFn: (item) => `/characters/${item.id}`,
+    linkFn: (item) => `/characters/${item.id.toLowerCase()}`,
     subtitleFn: (item) => (item.color ? String(item.color) : ""),
   },
   {
     label: "Cards",
     endpoint: "/api/cards",
-    linkFn: (item) => `/cards/${item.id}`,
+    linkFn: (item) => `/cards/${item.id.toLowerCase()}`,
     subtitleFn: (item) => {
       const parts: string[] = [];
       if (item.color) parts.push(String(item.color));
@@ -40,19 +40,19 @@ const CATEGORIES: CategoryConfig[] = [
   {
     label: "Relics",
     endpoint: "/api/relics",
-    linkFn: (item) => `/relics/${item.id}`,
+    linkFn: (item) => `/relics/${item.id.toLowerCase()}`,
     subtitleFn: (item) => (item.rarity ? String(item.rarity) : ""),
   },
   {
     label: "Monsters",
     endpoint: "/api/monsters",
-    linkFn: (item) => `/monsters/${item.id}`,
+    linkFn: (item) => `/monsters/${item.id.toLowerCase()}`,
     subtitleFn: (item) => (item.type ? String(item.type) : ""),
   },
   {
     label: "Potions",
     endpoint: "/api/potions",
-    linkFn: (item) => `/potions/${item.id}`,
+    linkFn: (item) => `/potions/${item.id.toLowerCase()}`,
     subtitleFn: (item) => (item.rarity ? String(item.rarity) : ""),
   },
   {

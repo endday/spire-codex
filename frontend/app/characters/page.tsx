@@ -66,7 +66,7 @@ export default function CharactersPage() {
           const style = colorStyles[char.color || ""] || "border-[var(--border-subtle)] from-gray-900/20";
           return (
             <Link
-              href={`/characters/${char.id}`}
+              href={`/characters/${char.id.toLowerCase()}`}
               key={char.id}
               className={`rounded-xl border-2 ${style} bg-gradient-to-br to-transparent bg-[var(--bg-card)] p-6 transition-all hover:shadow-lg hover:shadow-black/20 cursor-pointer`}
             >

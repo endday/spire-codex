@@ -72,7 +72,7 @@ export default function MonstersPage() {
           {monsters.map((monster) => (
             <Link
               key={monster.id}
-              href={`/monsters/${monster.id}`}
+              href={`/monsters/${monster.id.toLowerCase()}`}
               className={`bg-[var(--bg-card)] rounded-lg border ${
                 typeColors[monster.type] || "border-[var(--border-subtle)]"
               } p-4 hover:bg-[var(--bg-card-hover)] transition-all cursor-pointer`}

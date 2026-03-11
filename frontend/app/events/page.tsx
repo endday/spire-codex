@@ -320,7 +320,7 @@ export default function EventsPage() {
                         return (
                           <Link
                             key={relicId}
-                            href={`/relics/${relicId}`}
+                            href={`/relics/${relicId.toLowerCase()}`}
                             className="flex items-center gap-2.5 px-2.5 py-2 rounded-lg bg-[var(--bg-primary)] border border-[var(--border-subtle)] hover:border-[var(--accent-gold)]/50 transition-colors"
                           >
                             {relic?.image_url && (

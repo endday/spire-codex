@@ -153,7 +153,7 @@ spire-codex/
 | `GET /api/encounters/{id}` | Single encounter | — |
 | `GET /api/events` | All events | `type`, `act`, `search` |
 | `GET /api/events/{id}` | Single event | — |
-| `GET /api/powers` | All powers | `type`, `search` |
+| `GET /api/powers` | All powers | `type`, `stack_type`, `search` |
 | `GET /api/powers/{id}` | Single power | — |
 | `GET /api/keywords` | Card keyword definitions | — |
 | `GET /api/keywords/{id}` | Single keyword | — |
@@ -441,11 +441,27 @@ Steam install locations:
 - **macOS**: `~/Library/Application Support/Steam/steamapps/common/Slay the Spire 2/`
 - **Linux**: `~/.local/share/Steam/steamapps/common/Slay the Spire 2/`
 
+## Versioning
+
+Spire Codex uses **`1.X.Y`** semantic versioning:
+
+| Segment | Meaning |
+|---------|---------|
+| **1** | Spire Codex major version (stays unless a full rewrite) |
+| **X** | Bumps when Mega Crit releases a game patch |
+| **Y** | Bumps for our own parser/frontend fixes and improvements |
+
+Examples: `v1.0.0` = initial release, `v1.0.1` = our bug fixes, `v1.1.0` = first Mega Crit patch incorporated.
+
 ## Roadmap
 
 - ~~**Individual detail pages**~~ — ✅ Click-through pages for cards, characters, relics, monsters, potions, enchantments, encounters, events
 - ~~**Global search**~~ — ✅ Press `.` anywhere to search across all categories
 - **Database backend** — Replace JSON loading with SQLite/PostgreSQL
+
+## Acknowledgments
+
+Thanks to **vesper-arch**, **terracubist**, and **U77654** for QA testing, bug reports, and contributions.
 
 ## Tech Stack
 

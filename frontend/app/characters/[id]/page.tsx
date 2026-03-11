@@ -1,322 +1,36 @@
-"use client";
-
-import { useState, useEffect } from "react";
-import { useParams } from "next/navigation";
-import Link from "next/link";
-import type { Character, Card, Relic } from "@/lib/api";
-import RichDescription from "@/app/components/RichDescription";
+import type { Metadata } from "next";
+import CharacterDetail from "./CharacterDetail";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
-function toUpperSnake(s: string): string {
-  return s.replace(/([a-z0-9])([A-Z])/g, "$1_$2").toUpperCase();
+function stripTags(text: string): string {
+  return text.replace(/\[\/?\w+(?:[=:][^\]]+)?\]/g, "").trim();
 }
 
-const colorStyles: Record<string, { border: string; accent: string; bg: string }> = {
-  red: { border: "border-red-700/60", accent: "text-red-400", bg: "from-red-900/20" },
-  green: { border: "border-green-700/60", accent: "text-green-400", bg: "from-green-900/20" },
-  blue: { border: "border-blue-700/60", accent: "text-blue-400", bg: "from-blue-900/20" },
-  purple: { border: "border-purple-700/60", accent: "text-purple-400", bg: "from-purple-900/20" },
-  orange: { border: "border-orange-700/60", accent: "text-orange-400", bg: "from-orange-900/20" },
-};
+type Props = { params: Promise<{ id: string }> };
 
-const QUOTE_LABELS: Record<string, { label: string; icon: string }> = {
-  aroma_principle: { label: "Inner Principle", icon: "soul" },
-  event_death_prevention: { label: "Death Prevention", icon: "shield" },
-  gold_monologue: { label: "On Finding Gold", icon: "gold" },
-  banter_alive: { label: "Combat Banter", icon: "sword" },
-  banter_dead: { label: "Last Words", icon: "skull" },
-};
-
-export default function CharacterDetailPage() {
-  const { id } = useParams<{ id: string }>();
-  const [char, setChar] = useState<Character | null>(null);
-  const [cards, setCards] = useState<Record<string, Card>>({});
-  const [relics, setRelics] = useState<Record<string, Relic>>({});
-  const [loading, setLoading] = useState(true);
-  const [notFound, setNotFound] = useState(false);
-  const [expandedAncient, setExpandedAncient] = useState<string | null>(null);
-
-  useEffect(() => {
-    if (!id) return;
-    setLoading(true);
-    Promise.all([
-      fetch(`${API}/api/characters/${id}`).then((r) => {
-        if (!r.ok) { setNotFound(true); return null; }
-        return r.json();
-      }),
-      fetch(`${API}/api/cards`).then((r) => r.json()),
-      fetch(`${API}/api/relics`).then((r) => r.json()),
-    ])
-      .then(([charData, cardsData, relicsData]: [Character | null, Card[], Relic[]]) => {
-        if (charData) setChar(charData);
-        const cm: Record<string, Card> = {};
-        for (const c of cardsData ?? []) cm[c.id] = c;
-        setCards(cm);
-        const rm: Record<string, Relic> = {};
-        for (const r of relicsData ?? []) rm[r.id] = r;
-        setRelics(rm);
-      })
-      .finally(() => setLoading(false));
-  }, [id]);
-
-  if (loading) {
-    return (
-      <div className="max-w-4xl mx-auto px-4 py-12 text-center text-[var(--text-muted)]">
-        Loading...
-      </div>
-    );
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { id } = await params;
+  try {
+    const res = await fetch(`${API}/api/characters/${id}`);
+    if (!res.ok) return { title: "Character Not Found - Spire Codex" };
+    const char = await res.json();
+    const desc = stripTags(char.description || "");
+    const title = `${char.name} - Spire Codex - Slay the Spire 2 Database`;
+    return {
+      title,
+      description: desc || `${char.name} from Slay the Spire 2`,
+      openGraph: {
+        title: `${char.name} - Spire Codex`,
+        description: desc || `${char.name} from Slay the Spire 2`,
+        images: [{ url: `${API}/static/images/characters/combat_${char.id.toLowerCase()}.png` }],
+      },
+    };
+  } catch {
+    return { title: "Spire Codex - Slay the Spire 2 Database" };
   }
+}
 
-  if (notFound || !char) {
-    return (
-      <div className="max-w-4xl mx-auto px-4 py-12 text-center">
-        <p className="text-[var(--text-muted)] mb-4">Character not found.</p>
-        <Link href="/characters" className="text-[var(--accent-gold)] hover:underline">
-          &larr; Back to Characters
-        </Link>
-      </div>
-    );
-  }
-
-  const style = colorStyles[char.color || ""] || { border: "border-[var(--border-subtle)]", accent: "text-gray-400", bg: "from-gray-900/20" };
-
-  // Group dialogues by ancient
-  const dialoguesByAncient: Record<string, typeof char.dialogues> = {};
-  if (char.dialogues) {
-    for (const d of char.dialogues) {
-      if (!dialoguesByAncient[d.ancient]) dialoguesByAncient[d.ancient] = [];
-      dialoguesByAncient[d.ancient]!.push(d);
-    }
-  }
-
-  return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
-      <Link
-        href="/characters"
-        className="text-sm text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors mb-6 inline-block"
-      >
-        &larr; Back to Characters
-      </Link>
-
-      {/* Hero section */}
-      <div className={`rounded-xl border-2 ${style.border} bg-gradient-to-br ${style.bg} to-transparent bg-[var(--bg-card)] p-6 mb-8`}>
-        <div className="flex flex-col sm:flex-row items-center gap-6">
-          <img
-            src={`${API}/static/images/characters/combat_${char.id.toLowerCase()}.png`}
-            alt={char.name}
-            className="w-48 h-48 object-contain"
-            crossOrigin="anonymous"
-          />
-          <div className="flex-1 text-center sm:text-left">
-            <h1 className={`text-3xl font-bold ${style.accent} mb-2`}>{char.name}</h1>
-            <div className="text-[var(--text-secondary)] leading-relaxed mb-4">
-              <RichDescription text={char.description} />
-            </div>
-            <div className="flex flex-wrap justify-center sm:justify-start gap-3">
-              {char.gender && (
-                <span className="text-xs px-2 py-1 rounded bg-[var(--bg-primary)] text-[var(--text-muted)] border border-[var(--border-subtle)]">
-                  {char.gender}
-                </span>
-              )}
-              {char.unlocks_after && (
-                <span className="text-xs px-2 py-1 rounded bg-[var(--bg-primary)] text-[var(--text-muted)] border border-[var(--border-subtle)]">
-                  Unlocks after {char.unlocks_after}
-                </span>
-              )}
-            </div>
-          </div>
-        </div>
-
-        {/* Stats */}
-        <div className="grid grid-cols-3 sm:grid-cols-4 gap-3 mt-6">
-          <div className="bg-[var(--bg-primary)] rounded-lg p-3 text-center">
-            <div className="text-xs text-[var(--text-muted)] mb-1">HP</div>
-            <div className="text-2xl font-bold text-red-400">{char.starting_hp}</div>
-          </div>
-          <div className="bg-[var(--bg-primary)] rounded-lg p-3 text-center">
-            <div className="text-xs text-[var(--text-muted)] mb-1">Gold</div>
-            <div className="text-2xl font-bold text-[var(--accent-gold)]">{char.starting_gold}</div>
-          </div>
-          <div className="bg-[var(--bg-primary)] rounded-lg p-3 text-center">
-            <div className="text-xs text-[var(--text-muted)] mb-1">Energy</div>
-            <div className="text-2xl font-bold text-amber-400">{char.max_energy ?? 3}</div>
-          </div>
-          {char.orb_slots && (
-            <div className="bg-[var(--bg-primary)] rounded-lg p-3 text-center">
-              <div className="text-xs text-[var(--text-muted)] mb-1">Orb Slots</div>
-              <div className="text-2xl font-bold text-blue-400">{char.orb_slots}</div>
-            </div>
-          )}
-        </div>
-      </div>
-
-      {/* Starting Deck */}
-      <div className="bg-[var(--bg-card)] rounded-lg border border-[var(--border-subtle)] p-6 mb-6">
-        <h2 className="text-lg font-semibold text-[var(--text-primary)] mb-4">
-          Starting Deck
-          <span className="text-sm font-normal text-[var(--text-muted)] ml-2">
-            ({char.starting_deck.length} cards)
-          </span>
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          {char.starting_deck.map((cardName, i) => {
-            const cardData = cards[toUpperSnake(cardName)];
-            return (
-              <Link
-                key={`${cardName}-${i}`}
-                href={cardData ? `/cards/${cardData.id}` : "#"}
-                className="flex items-center gap-3 p-3 rounded-lg bg-[var(--bg-primary)] border border-[var(--border-subtle)] hover:border-[var(--border-accent)] transition-colors"
-              >
-                {cardData?.image_url && (
-                  <img
-                    src={`${API}${cardData.image_url}`}
-                    alt={cardData.name}
-                    className="w-10 h-10 object-contain"
-                    crossOrigin="anonymous"
-                  />
-                )}
-                <div>
-                  <div className="text-sm font-medium text-[var(--text-primary)]">
-                    {cardData?.name ?? cardName.replace(/([A-Z])/g, " $1").trim()}
-                  </div>
-                  {cardData && (
-                    <div className="text-xs text-[var(--text-muted)]">
-                      {cardData.type} · Cost {cardData.cost}
-                    </div>
-                  )}
-                </div>
-              </Link>
-            );
-          })}
-        </div>
-      </div>
-
-      {/* Starting Relics */}
-      <div className="bg-[var(--bg-card)] rounded-lg border border-[var(--border-subtle)] p-6 mb-6">
-        <h2 className="text-lg font-semibold text-[var(--text-primary)] mb-4">Starting Relic</h2>
-        <div className="flex flex-wrap gap-3">
-          {char.starting_relics.map((relicName) => {
-            const relicData = relics[toUpperSnake(relicName)];
-            return (
-              <Link
-                key={relicName}
-                href={relicData ? `/relics/${relicData.id}` : "#"}
-                className="flex items-center gap-3 p-3 rounded-lg bg-[var(--bg-primary)] border border-[var(--accent-gold)]/20 hover:border-[var(--accent-gold)]/50 transition-colors"
-              >
-                {relicData?.image_url && (
-                  <img
-                    src={`${API}${relicData.image_url}`}
-                    alt={relicData.name}
-                    className="w-10 h-10 object-contain"
-                    crossOrigin="anonymous"
-                  />
-                )}
-                <div>
-                  <div className="text-sm font-medium text-[var(--accent-gold)]">
-                    {relicData?.name ?? relicName.replace(/([A-Z])/g, " $1").trim()}
-                  </div>
-                  {relicData && (
-                    <div className="text-xs text-[var(--text-secondary)]">
-                      <RichDescription text={relicData.description} />
-                    </div>
-                  )}
-                </div>
-              </Link>
-            );
-          })}
-        </div>
-      </div>
-
-      {/* Quotes */}
-      {char.quotes && Object.keys(char.quotes).some((k) => k in QUOTE_LABELS) && (
-        <div className="bg-[var(--bg-card)] rounded-lg border border-[var(--border-subtle)] p-6 mb-6">
-          <h2 className="text-lg font-semibold text-[var(--text-primary)] mb-4">Quotes</h2>
-          <div className="space-y-4">
-            {Object.entries(QUOTE_LABELS).map(([key, { label }]) => {
-              const text = char.quotes?.[key];
-              if (!text || text === "...") return null;
-              return (
-                <div key={key} className="border-l-2 border-[var(--border-subtle)] pl-4">
-                  <div className="text-xs text-[var(--text-muted)] uppercase tracking-wider mb-1">
-                    {label}
-                  </div>
-                  <div className="text-[var(--text-secondary)] italic">
-                    <RichDescription text={text} />
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      )}
-
-      {/* NPC Dialogues */}
-      {char.dialogues && char.dialogues.length > 0 && (
-        <div className="bg-[var(--bg-card)] rounded-lg border border-[var(--border-subtle)] p-6">
-          <h2 className="text-lg font-semibold text-[var(--text-primary)] mb-4">
-            NPC Dialogues
-            <span className="text-sm font-normal text-[var(--text-muted)] ml-2">
-              ({char.dialogues.length} conversations)
-            </span>
-          </h2>
-          <div className="space-y-3">
-            {Object.entries(dialoguesByAncient).map(([ancientId, convos]) => {
-              const ancientName = convos![0].ancient_name;
-              const isExpanded = expandedAncient === ancientId;
-              return (
-                <div key={ancientId} className="border border-[var(--border-subtle)] rounded-lg overflow-hidden">
-                  <button
-                    onClick={() => setExpandedAncient(isExpanded ? null : ancientId)}
-                    className="w-full flex items-center justify-between p-4 bg-[var(--bg-primary)] hover:bg-[var(--bg-card-hover)] transition-colors text-left"
-                  >
-                    <span className="font-medium text-[var(--text-primary)]">
-                      {ancientName}
-                    </span>
-                    <span className="text-xs text-[var(--text-muted)]">
-                      {convos!.length} conversation{convos!.length !== 1 ? "s" : ""}
-                      <span className="ml-2">{isExpanded ? "▲" : "▼"}</span>
-                    </span>
-                  </button>
-                  {isExpanded && (
-                    <div className="p-4 space-y-6">
-                      {convos!.map((convo, ci) => (
-                        <div key={ci} className={ci > 0 ? "border-t border-[var(--border-subtle)] pt-4" : ""}>
-                          <div className="space-y-2">
-                            {convo.lines.map((line, li) => (
-                              <div
-                                key={li}
-                                className={`flex gap-3 ${
-                                  line.speaker === "char" ? "flex-row-reverse" : ""
-                                }`}
-                              >
-                                <div
-                                  className={`max-w-[80%] rounded-lg px-3 py-2 text-sm ${
-                                    line.speaker === "char"
-                                      ? `bg-[var(--bg-primary)] ${style.border} border`
-                                      : "bg-[var(--bg-card-hover)] border border-[var(--border-subtle)]"
-                                  }`}
-                                >
-                                  <div className="text-[10px] text-[var(--text-muted)] uppercase tracking-wider mb-1">
-                                    {line.speaker === "char" ? char.name : ancientName}
-                                  </div>
-                                  <div className="text-[var(--text-secondary)] whitespace-pre-line">
-                                    <RichDescription text={line.text} />
-                                  </div>
-                                </div>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      )}
-    </div>
-  );
+export default function Page() {
+  return <CharacterDetail />;
 }

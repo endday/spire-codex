@@ -153,7 +153,7 @@ function CardItem({ card }: { card: Card }) {
         isUpgraded ? "border-emerald-700/60 hover:border-emerald-500" : colorMap[card.color] || "border-[var(--border-subtle)] hover:border-[var(--border-accent)]"
       } p-4 transition-all hover:bg-[var(--bg-card-hover)] hover:shadow-lg hover:shadow-black/20`}
     >
-      <Link href={`/cards/${card.id}`} className="absolute inset-0 z-10" />
+      <Link href={`/cards/${card.id.toLowerCase()}`} className="absolute inset-0 z-10" />
 
       {(() => {
         const imgUrl = betaArt && card.beta_image_url ? card.beta_image_url : (card.image_url || card.beta_image_url);

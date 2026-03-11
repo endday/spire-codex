@@ -96,7 +96,7 @@ export default function RelicsPage() {
             return (
               <Link
                 key={relic.id}
-                href={`/relics/${relic.id}`}
+                href={`/relics/${relic.id.toLowerCase()}`}
                 className={`bg-[var(--bg-card)] rounded-lg border ${style.split(" ")[0]} p-4 hover:bg-[var(--bg-card-hover)] transition-all cursor-pointer block`}
               >
                 <div className="flex gap-3">

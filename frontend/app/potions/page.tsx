@@ -89,7 +89,7 @@ export default function PotionsPage() {
             return (
               <Link
                 key={potion.id}
-                href={`/potions/${potion.id}`}
+                href={`/potions/${potion.id.toLowerCase()}`}
                 className={`bg-[var(--bg-card)] rounded-lg border ${style.split(" ")[0]} p-4 hover:bg-[var(--bg-card-hover)] transition-all cursor-pointer block`}
               >
                 <div className="flex gap-3">

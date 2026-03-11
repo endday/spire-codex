@@ -169,7 +169,7 @@ export default function Home() {
           {CHARACTERS.map((char) => (
             <Link
               key={char.id}
-              href={`/characters/${char.id.toUpperCase()}`}
+              href={`/characters/${char.id.toLowerCase()}`}
               className="group relative overflow-hidden rounded-xl bg-[var(--bg-card)] border border-[var(--border-subtle)] hover:border-[var(--border-accent)] transition-all"
             >
               <div
