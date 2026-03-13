@@ -203,9 +203,12 @@ export default function EventsPage() {
                       />
                     )}
                     <div>
-                      <h3 className="font-semibold text-[var(--text-primary)]">
+                      <Link
+                        href={`/events/${event.id.toLowerCase()}`}
+                        className="font-semibold text-[var(--text-primary)] hover:text-[var(--accent-gold)] transition-colors"
+                      >
                         {event.name}
-                      </h3>
+                      </Link>
                       {event.epithet && (
                         <p className="text-xs text-purple-400 italic">
                           {event.epithet}

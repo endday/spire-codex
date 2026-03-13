@@ -74,8 +74,25 @@ const CATEGORIES: CategoryConfig[] = [
   {
     label: "Events",
     endpoint: "/api/events",
-    linkFn: () => `/events`,
+    linkFn: (item) => `/events/${item.id.toLowerCase()}`,
   },
+];
+
+const PAGES = [
+  { name: "Cards", path: "/cards", keywords: ["card", "deck"] },
+  { name: "Characters", path: "/characters", keywords: ["character", "class", "hero"] },
+  { name: "Relics", path: "/relics", keywords: ["relic", "artifact"] },
+  { name: "Monsters", path: "/monsters", keywords: ["monster", "enemy", "boss"] },
+  { name: "Potions", path: "/potions", keywords: ["potion", "flask"] },
+  { name: "Powers", path: "/powers", keywords: ["power", "buff", "debuff", "status"] },
+  { name: "Enchantments", path: "/enchantments", keywords: ["enchantment", "enchant"] },
+  { name: "Encounters", path: "/encounters", keywords: ["encounter", "fight", "combat"] },
+  { name: "Events", path: "/events", keywords: ["event"] },
+  { name: "Timeline", path: "/timeline", keywords: ["timeline", "epoch", "era", "unlock"] },
+  { name: "Reference", path: "/reference", keywords: ["reference", "keyword", "intent", "orb", "affliction", "modifier", "achievement", "ascension"] },
+  { name: "Images", path: "/images", keywords: ["image", "sprite", "asset", "art"] },
+  { name: "Changelog", path: "/changelog", keywords: ["changelog", "patch", "update", "version"] },
+  { name: "About", path: "/about", keywords: ["about", "info"] },
 ];
 
 const MAX_PER_CATEGORY = 5;
@@ -91,13 +108,30 @@ export default function GlobalSearch() {
   const router = useRouter();
   const abortRef = useRef<AbortController | null>(null);
 
+  // Filter matching pages
+  const matchedPages = query.trim()
+    ? PAGES.filter((p) => {
+        const q = query.trim().toLowerCase();
+        return (
+          p.name.toLowerCase().includes(q) ||
+          p.keywords.some((k) => k.includes(q))
+        );
+      })
+    : [];
+
   // Build flat list of all visible results for keyboard navigation
-  const flatResults = CATEGORIES.flatMap((cat) =>
-    (results[cat.label] ?? []).slice(0, MAX_PER_CATEGORY).map((item) => ({
-      item,
-      category: cat,
-    }))
-  );
+  const flatResults = [
+    ...matchedPages.map((p) => ({
+      item: { id: p.path, name: p.name } as SearchResult,
+      category: { label: "Pages", endpoint: "", linkFn: () => p.path } as CategoryConfig,
+    })),
+    ...CATEGORIES.flatMap((cat) =>
+      (results[cat.label] ?? []).slice(0, MAX_PER_CATEGORY).map((item) => ({
+        item,
+        category: cat,
+      }))
+    ),
+  ];
 
   // Open on "." key when not in an input
   useEffect(() => {
@@ -207,10 +241,9 @@ export default function GlobalSearch() {
 
   if (!open) return null;
 
-  const totalResults = Object.values(results).reduce(
-    (sum, arr) => sum + arr.length,
-    0
-  );
+  const totalResults =
+    matchedPages.length +
+    Object.values(results).reduce((sum, arr) => sum + arr.length, 0);
 
   return (
     <div
@@ -269,8 +302,44 @@ export default function GlobalSearch() {
             </div>
           )}
 
+          {matchedPages.length > 0 && (
+            <div className="py-2">
+              <div className="px-4 py-1 text-xs uppercase tracking-wider text-[var(--text-muted)] font-medium">
+                Pages
+              </div>
+              {matchedPages.map((p, i) => {
+                const isSelected = i === selectedIndex;
+                return (
+                  <button
+                    key={p.path}
+                    className={`w-full text-left px-4 py-2 flex items-center gap-2 cursor-pointer transition-colors ${
+                      isSelected
+                        ? "bg-[var(--bg-card-hover)]"
+                        : "hover:bg-[var(--bg-card-hover)]"
+                    }`}
+                    onClick={() => {
+                      setOpen(false);
+                      router.push(p.path);
+                    }}
+                    onMouseEnter={() => setSelectedIndex(i)}
+                  >
+                    <svg className="w-4 h-4 text-[var(--text-muted)] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                    <span className="text-sm text-[var(--text-primary)]">
+                      {p.name}
+                    </span>
+                    <span className="text-xs text-[var(--text-muted)]">
+                      {p.path}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+          )}
+
           {(() => {
-            let runningIndex = 0;
+            let runningIndex = matchedPages.length;
             return CATEGORIES.map((cat) => {
               const items = results[cat.label];
               if (!items || items.length === 0) return null;
