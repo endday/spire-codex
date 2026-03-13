@@ -141,12 +141,12 @@ def extract_event_vars(content: str) -> dict[str, int | str]:
         for rm in re.finditer(r'DynamicVars\.(\w+)\.BaseValue\s*=.*?MaxHp\s*\*\s*(\d+(?:\.\d+)?)m', calc_body):
             var_name = rm.group(1)
             pct = float(rm.group(2))
-            vars_dict[var_name] = f"{int(pct * 100)}% Max HP"
+            vars_dict[var_name] = f"{int(pct * 100)}% Max"
 
     # Also check for HealRestSiteOption.GetHealAmount pattern (30% Max HP)
     if 'HealRestSiteOption.GetHealAmount' in content:
         if 'Heal' not in vars_dict or vars_dict.get('Heal') == 0:
-            vars_dict['Heal'] = "30% Max HP"
+            vars_dict['Heal'] = "30% Max"
 
     # Slippery Bridge pattern: CurrentHpLoss => N + NumberOfHoldOns
     for rm in re.finditer(r'Current(\w+)\s*=>\s*(\d+)\s*\+\s*(\w+)', content):
@@ -154,6 +154,22 @@ def extract_event_vars(content: str) -> dict[str, int | str]:
         base_val = int(rm.group(2))
         if var_name not in vars_dict or vars_dict.get(var_name) == 0:
             vars_dict[var_name] = f"{base_val}+"
+
+    # StringVar with DynamicDescription from relics:
+    # e.g. new StringVar("BoneTeaDescription", ModelDb.Relic<BoneTea>().DynamicDescription.GetFormattedText())
+    relic_descs = get_relic_descriptions()
+    for m in re.finditer(
+        r'new\s+StringVar\("(\w+)",\s*ModelDb\.Relic<([^>]+)>\(\)\.DynamicDescription\.GetFormattedText\(\)\)',
+        content
+    ):
+        var_name = m.group(1)
+        class_name = m.group(2)
+        if "." in class_name:
+            class_name = class_name.rsplit(".", 1)[1]
+        entity_id = class_name_to_id(class_name)
+        desc = relic_descs.get(entity_id)
+        if desc:
+            vars_dict[var_name] = desc
 
     # StringVar with model references:
     title_map = get_title_map()

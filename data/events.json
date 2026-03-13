@@ -815,7 +815,7 @@
       {
         "id": "REST",
         "title": "Rest",
-        "description": "Heal [green]30% Max HP[/green] HP. Fight some [red]enemies[/red]."
+        "description": "Heal [green]30% Max[/green] HP. Fight some [red]enemies[/red]."
       },
       {
         "id": "TRUDGE_ON",
@@ -831,7 +831,7 @@
           {
             "id": "REST",
             "title": "Rest",
-            "description": "Heal [green]30% Max HP[/green] HP. Fight some [red]enemies[/red]."
+            "description": "Heal [green]30% Max[/green] HP. Fight some [red]enemies[/red]."
           },
           {
             "id": "TRUDGE_ON",
@@ -2925,7 +2925,7 @@
       {
         "id": "DRINK",
         "title": "Drink",
-        "description": "Heal [green]33% Max HP[/green] HP."
+        "description": "Heal [green]33% Max[/green] HP."
       },
       {
         "id": "OBSERVE",
@@ -2950,7 +2950,7 @@
           {
             "id": "DRINK",
             "title": "Drink",
-            "description": "Heal [green]33% Max HP[/green] HP."
+            "description": "Heal [green]33% Max[/green] HP."
           },
           {
             "id": "OBSERVE",
@@ -3542,7 +3542,7 @@
       {
         "id": "BONE_TEA",
         "title": "Bone Tea",
-        "description": "Pay [red]50[/red] [gold]Gold[/gold]. [BoneTeaDescription]"
+        "description": "Pay [red]50[/red] [gold]Gold[/gold]. At the start of the next [blue]2[/blue] combats, [gold]Upgrade[/gold] your starting hand."
       },
       {
         "id": "BONE_TEA_LOCKED",
@@ -3552,7 +3552,7 @@
       {
         "id": "EMBER_TEA",
         "title": "Ember Tea",
-        "description": "Pay [red]150[/red] [gold]Gold[/gold]. [EmberTeaDescription]"
+        "description": "Pay [red]150[/red] [gold]Gold[/gold]. At the start of the next [blue]2[/blue] combats, gain [blue]2[/blue] [gold]Strength[/gold]."
       },
       {
         "id": "EMBER_TEA_LOCKED",
@@ -3562,7 +3562,7 @@
       {
         "id": "TEA_OF_DISCOURTESY",
         "title": "Tea of Discourtesy",
-        "description": "[TeaOfDiscourtesyDescription]"
+        "description": "At the start of the next combat, shuffle [blue]2[/blue] [gold]Dazed[/gold] into your [gold]Draw Pile[/gold]."
       }
     ],
     "pages": [
@@ -3577,7 +3577,7 @@
           {
             "id": "BONE_TEA",
             "title": "Bone Tea",
-            "description": "Pay [red]50[/red] [gold]Gold[/gold]. [BoneTeaDescription]"
+            "description": "Pay [red]50[/red] [gold]Gold[/gold]. At the start of the next [blue]2[/blue] combats, [gold]Upgrade[/gold] your starting hand."
           },
           {
             "id": "BONE_TEA_LOCKED",
@@ -3587,7 +3587,7 @@
           {
             "id": "EMBER_TEA",
             "title": "Ember Tea",
-            "description": "Pay [red]150[/red] [gold]Gold[/gold]. [EmberTeaDescription]"
+            "description": "Pay [red]150[/red] [gold]Gold[/gold]. At the start of the next [blue]2[/blue] combats, gain [blue]2[/blue] [gold]Strength[/gold]."
           },
           {
             "id": "EMBER_TEA_LOCKED",
@@ -3597,7 +3597,7 @@
           {
             "id": "TEA_OF_DISCOURTESY",
             "title": "Tea of Discourtesy",
-            "description": "[TeaOfDiscourtesyDescription]"
+            "description": "At the start of the next combat, shuffle [blue]2[/blue] [gold]Dazed[/gold] into your [gold]Draw Pile[/gold]."
           }
         ]
       },
