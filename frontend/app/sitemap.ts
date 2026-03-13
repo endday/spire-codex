@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://spirecodex.com";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://spire-codex.com";
 const API = process.env.API_INTERNAL_URL || process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
 const STATIC_PAGES = [
