@@ -1,0 +1,72 @@
+[
+  {
+    "id": "ATTACK",
+    "name": "Agresión",
+    "description": "Este enemigo planea [gold]atacar[/gold] {IsMultiplayer:a todo el mundo|}e infligir [blue]{Damage}[/blue] de daño{Repeat:plural:| [blue]{}[/blue] veces}."
+  },
+  {
+    "id": "BUFF",
+    "name": "Empoderamiento",
+    "description": "Este enemigo planea usar una [gold]mejora[/gold]."
+  },
+  {
+    "id": "CARD_DEBUFF",
+    "name": "Malicia",
+    "description": "Este enemigo planea aplicar [gold]aflicciones[/gold] en tus cartas."
+  },
+  {
+    "id": "DEATH_BLOW",
+    "name": "Ataque mortal",
+    "description": "Esta criatura planea que caigas junto a ella. Su ataque infligirá [blue]{Damage}[/blue] de daño antes de perecer."
+  },
+  {
+    "id": "DEBUFF",
+    "name": "Táctica",
+    "description": "Este enemigo planea aplicarte una [gold]desmejora[/gold]."
+  },
+  {
+    "id": "DEBUFF_STRONG",
+    "name": "Táctica suprema",
+    "description": "Este enemigo planea aplicarte una poderosa [gold]desmejora[/gold]."
+  },
+  {
+    "id": "DEFEND",
+    "name": "Protección",
+    "description": "Este enemigo planea [gold]bloquear[/gold] durante su turno."
+  },
+  {
+    "id": "ESCAPE",
+    "name": "Cobardía",
+    "description": "Este enemigo planea [gold]escapar[/gold]."
+  },
+  {
+    "id": "HEAL",
+    "name": "Curación",
+    "description": "El enemigo planea [gold]curarse[/gold]."
+  },
+  {
+    "id": "SLEEP",
+    "name": "Dulces sueños",
+    "description": "Este enemigo no planea hacer algo en su turno."
+  },
+  {
+    "id": "STATUS",
+    "name": "Planeamiento",
+    "description": "Este enemigo planea darte [blue]{CardCount}[/blue] {CardCount:plural:carta|cartas} de [gold]estado[/gold]."
+  },
+  {
+    "id": "STUN",
+    "name": "Aturdimiento",
+    "description": "Este enemigo no podrá atacar en su próximo turno."
+  },
+  {
+    "id": "SUMMON",
+    "name": "Invocación",
+    "description": "Este enemigo planea invocar [gold]monstruos[/gold]."
+  },
+  {
+    "id": "UNKNOWN",
+    "name": "Incertidumbre",
+    "description": "Los planes de este enemigo son [gold]inciertos[/gold]."
+  }
+]

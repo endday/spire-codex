@@ -1,6 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { cachedFetch } from "@/lib/fetch-cache";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -49,14 +51,14 @@ const PIPELINE_STEPS = [
 ];
 
 export default function AboutPage() {
+  const { lang } = useLanguage();
   const [stats, setStats] = useState<Record<string, number>>({});
 
   useEffect(() => {
-    fetch(`${API_BASE}/api/stats`)
-      .then((r) => r.json())
+    cachedFetch<Record<string, number>>(`${API_BASE}/api/stats?lang=${lang}`)
       .then(setStats)
       .catch(() => {});
-  }, []);
+  }, [lang]);
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

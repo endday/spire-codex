@@ -5,119 +5,111 @@ from pathlib import Path
 from functools import lru_cache
 
 DATA_DIR = Path(os.environ.get("DATA_DIR", Path(__file__).resolve().parents[3] / "data"))
+DEFAULT_LANG = "eng"
 
 
-@lru_cache(maxsize=1)
-def load_cards() -> list[dict]:
-    with open(DATA_DIR / "cards.json", "r", encoding="utf-8") as f:
+@lru_cache(maxsize=512)
+def _load_json(lang: str, entity: str) -> list[dict]:
+    """Load a parsed JSON data file for the given language and entity."""
+    filepath = DATA_DIR / lang / f"{entity}.json"
+    if not filepath.exists():
+        filepath = DATA_DIR / DEFAULT_LANG / f"{entity}.json"
+    with open(filepath, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
-@lru_cache(maxsize=1)
-def load_characters() -> list[dict]:
-    with open(DATA_DIR / "characters.json", "r", encoding="utf-8") as f:
-        return json.load(f)
+def load_cards(lang: str = DEFAULT_LANG) -> list[dict]:
+    return _load_json(lang, "cards")
 
 
-@lru_cache(maxsize=1)
-def load_relics() -> list[dict]:
-    with open(DATA_DIR / "relics.json", "r", encoding="utf-8") as f:
-        return json.load(f)
+def load_characters(lang: str = DEFAULT_LANG) -> list[dict]:
+    return _load_json(lang, "characters")
 
 
-@lru_cache(maxsize=1)
-def load_monsters() -> list[dict]:
-    with open(DATA_DIR / "monsters.json", "r", encoding="utf-8") as f:
-        return json.load(f)
+def load_relics(lang: str = DEFAULT_LANG) -> list[dict]:
+    return _load_json(lang, "relics")
 
 
-@lru_cache(maxsize=1)
-def load_potions() -> list[dict]:
-    with open(DATA_DIR / "potions.json", "r", encoding="utf-8") as f:
-        return json.load(f)
+def load_monsters(lang: str = DEFAULT_LANG) -> list[dict]:
+    return _load_json(lang, "monsters")
 
 
-@lru_cache(maxsize=1)
-def load_enchantments() -> list[dict]:
-    with open(DATA_DIR / "enchantments.json", "r", encoding="utf-8") as f:
-        return json.load(f)
+def load_potions(lang: str = DEFAULT_LANG) -> list[dict]:
+    return _load_json(lang, "potions")
 
 
-@lru_cache(maxsize=1)
-def load_encounters() -> list[dict]:
-    with open(DATA_DIR / "encounters.json", "r", encoding="utf-8") as f:
-        return json.load(f)
+def load_enchantments(lang: str = DEFAULT_LANG) -> list[dict]:
+    return _load_json(lang, "enchantments")
 
 
-@lru_cache(maxsize=1)
-def load_events() -> list[dict]:
-    with open(DATA_DIR / "events.json", "r", encoding="utf-8") as f:
-        return json.load(f)
+def load_encounters(lang: str = DEFAULT_LANG) -> list[dict]:
+    return _load_json(lang, "encounters")
 
 
-@lru_cache(maxsize=1)
-def load_powers() -> list[dict]:
-    with open(DATA_DIR / "powers.json", "r", encoding="utf-8") as f:
-        return json.load(f)
+def load_events(lang: str = DEFAULT_LANG) -> list[dict]:
+    return _load_json(lang, "events")
 
 
-@lru_cache(maxsize=1)
-def load_keywords() -> list[dict]:
-    with open(DATA_DIR / "keywords.json", "r", encoding="utf-8") as f:
-        return json.load(f)
+def load_powers(lang: str = DEFAULT_LANG) -> list[dict]:
+    return _load_json(lang, "powers")
 
 
-@lru_cache(maxsize=1)
-def load_intents() -> list[dict]:
-    with open(DATA_DIR / "intents.json", "r", encoding="utf-8") as f:
-        return json.load(f)
+def load_keywords(lang: str = DEFAULT_LANG) -> list[dict]:
+    return _load_json(lang, "keywords")
 
 
-@lru_cache(maxsize=1)
-def load_orbs() -> list[dict]:
-    with open(DATA_DIR / "orbs.json", "r", encoding="utf-8") as f:
-        return json.load(f)
+def load_intents(lang: str = DEFAULT_LANG) -> list[dict]:
+    return _load_json(lang, "intents")
 
 
-@lru_cache(maxsize=1)
-def load_afflictions() -> list[dict]:
-    with open(DATA_DIR / "afflictions.json", "r", encoding="utf-8") as f:
-        return json.load(f)
+def load_orbs(lang: str = DEFAULT_LANG) -> list[dict]:
+    return _load_json(lang, "orbs")
 
 
-@lru_cache(maxsize=1)
-def load_modifiers() -> list[dict]:
-    with open(DATA_DIR / "modifiers.json", "r", encoding="utf-8") as f:
-        return json.load(f)
+def load_afflictions(lang: str = DEFAULT_LANG) -> list[dict]:
+    return _load_json(lang, "afflictions")
 
 
-@lru_cache(maxsize=1)
-def load_achievements() -> list[dict]:
-    with open(DATA_DIR / "achievements.json", "r", encoding="utf-8") as f:
-        return json.load(f)
+def load_modifiers(lang: str = DEFAULT_LANG) -> list[dict]:
+    return _load_json(lang, "modifiers")
 
 
-@lru_cache(maxsize=1)
-def load_epochs() -> list[dict]:
-    with open(DATA_DIR / "epochs.json", "r", encoding="utf-8") as f:
-        return json.load(f)
+def load_achievements(lang: str = DEFAULT_LANG) -> list[dict]:
+    return _load_json(lang, "achievements")
 
 
-@lru_cache(maxsize=1)
-def load_stories() -> list[dict]:
-    with open(DATA_DIR / "stories.json", "r", encoding="utf-8") as f:
-        return json.load(f)
+def load_epochs(lang: str = DEFAULT_LANG) -> list[dict]:
+    return _load_json(lang, "epochs")
 
 
-@lru_cache(maxsize=1)
-def load_acts() -> list[dict]:
-    with open(DATA_DIR / "acts.json", "r", encoding="utf-8") as f:
-        return json.load(f)
+def load_stories(lang: str = DEFAULT_LANG) -> list[dict]:
+    return _load_json(lang, "stories")
 
 
-@lru_cache(maxsize=1)
-def load_ascensions() -> list[dict]:
-    with open(DATA_DIR / "ascensions.json", "r", encoding="utf-8") as f:
+def load_acts(lang: str = DEFAULT_LANG) -> list[dict]:
+    return _load_json(lang, "acts")
+
+
+def load_ascensions(lang: str = DEFAULT_LANG) -> list[dict]:
+    return _load_json(lang, "ascensions")
+
+
+@lru_cache(maxsize=16)
+def load_translation_maps(lang: str = DEFAULT_LANG) -> dict:
+    """Load translation maps for filter values (English -> localized)."""
+    filepath = DATA_DIR / lang / "translations.json"
+    if not filepath.exists():
+        filepath = DATA_DIR / DEFAULT_LANG / "translations.json"
+    if not filepath.exists():
+        # Fallback: identity maps
+        return {
+            "card_types": {},
+            "card_rarities": {},
+            "relic_rarities": {},
+            "potion_rarities": {},
+            "keywords": {},
+        }
+    with open(filepath, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
@@ -129,25 +121,25 @@ def count_images() -> int:
     return sum(1 for _ in images_dir.rglob("*.png"))
 
 
-def get_stats() -> dict:
+def get_stats(lang: str = DEFAULT_LANG) -> dict:
     return {
-        "cards": len(load_cards()),
-        "characters": len(load_characters()),
-        "relics": len(load_relics()),
-        "monsters": len(load_monsters()),
-        "potions": len(load_potions()),
-        "enchantments": len(load_enchantments()),
-        "encounters": len(load_encounters()),
-        "events": len(load_events()),
-        "powers": len(load_powers()),
-        "keywords": len(load_keywords()),
-        "intents": len(load_intents()),
-        "orbs": len(load_orbs()),
-        "afflictions": len(load_afflictions()),
-        "modifiers": len(load_modifiers()),
-        "achievements": len(load_achievements()),
-        "epochs": len(load_epochs()),
-        "acts": len(load_acts()),
-        "ascensions": len(load_ascensions()),
+        "cards": len(load_cards(lang)),
+        "characters": len(load_characters(lang)),
+        "relics": len(load_relics(lang)),
+        "monsters": len(load_monsters(lang)),
+        "potions": len(load_potions(lang)),
+        "enchantments": len(load_enchantments(lang)),
+        "encounters": len(load_encounters(lang)),
+        "events": len(load_events(lang)),
+        "powers": len(load_powers(lang)),
+        "keywords": len(load_keywords(lang)),
+        "intents": len(load_intents(lang)),
+        "orbs": len(load_orbs(lang)),
+        "afflictions": len(load_afflictions(lang)),
+        "modifiers": len(load_modifiers(lang)),
+        "achievements": len(load_achievements(lang)),
+        "epochs": len(load_epochs(lang)),
+        "acts": len(load_acts(lang)),
+        "ascensions": len(load_ascensions(lang)),
         "images": count_images(),
     }

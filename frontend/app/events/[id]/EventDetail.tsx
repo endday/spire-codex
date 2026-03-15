@@ -5,6 +5,8 @@ import { useParams } from "next/navigation";
 import Link from "next/link";
 import type { GameEvent, EventPage } from "@/lib/api";
 import RichDescription from "@/app/components/RichDescription";
+import { cachedFetch } from "@/lib/fetch-cache";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -67,6 +69,7 @@ function PageBlock({ page, index }: { page: EventPage; index: number }) {
 
 export default function EventDetail() {
   const { id } = useParams<{ id: string }>();
+  const { lang } = useLanguage();
   const [event, setEvent] = useState<GameEvent | null>(null);
   const [loading, setLoading] = useState(true);
   const [notFound, setNotFound] = useState(false);
@@ -78,29 +81,20 @@ export default function EventDetail() {
   useEffect(() => {
     if (!id) return;
     setLoading(true);
-    fetch(`${API}/api/events/${id}`)
-      .then((r) => {
-        if (!r.ok) {
-          setNotFound(true);
-          return null;
-        }
-        return r.json();
-      })
-      .then((data) => {
-        if (data) setEvent(data);
-      })
+    cachedFetch<GameEvent>(`${API}/api/events/${id}?lang=${lang}`)
+      .then((data) => setEvent(data))
+      .catch(() => setNotFound(true))
       .finally(() => setLoading(false));
-  }, [id]);
+  }, [id, lang]);
 
   useEffect(() => {
-    fetch(`${API}/api/relics`)
-      .then((r) => r.json())
-      .then((relics: { id: string; name: string; description: string; image_url: string | null }[]) => {
+    cachedFetch<{ id: string; name: string; description: string; image_url: string | null }[]>(`${API}/api/relics?lang=${lang}`)
+      .then((relics) => {
         const map: Record<string, (typeof relics)[number]> = {};
         for (const r of relics) map[r.id] = r;
         setRelicMap(map);
       });
-  }, []);
+  }, [lang]);
 
   if (loading) {
     return (

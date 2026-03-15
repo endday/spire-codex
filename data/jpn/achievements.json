@@ -1,0 +1,167 @@
+[
+  {
+    "id": "ALL_CARDS_UPGRADED",
+    "name": "パーフェクトデッキ",
+    "description": "デッキのカードをすべてアップグレードしてゲームをクリアする。"
+  },
+  {
+    "id": "ALL_OTHER_ACHIEVEMENTS",
+    "name": "永遠なる者",
+    "description": "これを除くすべての実績を獲得する。"
+  },
+  {
+    "id": "CHARACTER_SKILL_IRONCLAD1",
+    "name": "果たされし契約",
+    "description": "1回の戦闘でカードを20枚廃棄する。"
+  },
+  {
+    "id": "CHARACTER_SKILL_IRONCLAD2",
+    "name": "最も重き刃",
+    "description": "一撃で999ダメージを与える。"
+  },
+  {
+    "id": "CHARACTER_SKILL_NECROBINDER1",
+    "name": "お前はもう死んでいる",
+    "description": "1体の敵に破滅999を付与する。"
+  },
+  {
+    "id": "CHARACTER_SKILL_NECROBINDER2",
+    "name": "ミルク",
+    "description": "オスティに筋力50を付与する。"
+  },
+  {
+    "id": "CHARACTER_SKILL_REGENT1",
+    "name": "君主に相応しき刃",
+    "description": "999ダメージ以上を与えるソヴリン・ブレードを鍛造する。"
+  },
+  {
+    "id": "CHARACTER_SKILL_REGENT2",
+    "name": "満天の星",
+    "description": "一度にスターを20個所持する。"
+  },
+  {
+    "id": "CHARACTER_SKILL_SILENT1",
+    "name": "狡猾な手口",
+    "description": "1枚のカード使用から、スライによりカードを5枚プレイする。"
+  },
+  {
+    "id": "CHARACTER_SKILL_SILENT2",
+    "name": "ほんの数滴で",
+    "description": "1体の敵に毒99を付与する。"
+  },
+  {
+    "id": "COMPLETE_ACT4",
+    "name": "真エンド",
+    "description": "第4層をクリアする。"
+  },
+  {
+    "id": "COMPLETE_TIMELINE",
+    "name": "歴史家",
+    "description": "年代記を完成させる。"
+  },
+  {
+    "id": "DEFEAT_GLORY_ENEMIES",
+    "name": "栄光の路",
+    "description": "栄光の路に出現するすべての敵を倒す。"
+  },
+  {
+    "id": "DEFEAT_HIVE_ENEMIES",
+    "name": "魔窟",
+    "description": "魔窟に出現するすべての敵を倒す。"
+  },
+  {
+    "id": "DEFEAT_ONE_BOSS",
+    "name": "始まりの1体",
+    "description": "ボスを1体倒す。"
+  },
+  {
+    "id": "DEFEAT_OVERGROWTH_ENEMIES",
+    "name": "繁茂の地",
+    "description": "繁茂の地に出現するすべての敵を倒す。"
+  },
+  {
+    "id": "DEFEAT_UNDERDOCKS_ENEMIES",
+    "name": "地下水路",
+    "description": "地下水路に出現するすべての敵を倒す。"
+  },
+  {
+    "id": "DEFECT_ASCENSION10",
+    "name": "反響",
+    "description": "ディフェクトでアセンション10をクリアする。"
+  },
+  {
+    "id": "DEFECT_WIN",
+    "name": "ディフェクト",
+    "description": "ディフェクトでゲームをクリアする。"
+  },
+  {
+    "id": "DISCOVER_ALL_CARDS",
+    "name": "コレクター",
+    "description": "すべてのカードを発見する。"
+  },
+  {
+    "id": "DISCOVER_ALL_EVENTS",
+    "name": "探検家",
+    "description": "すべてのイベントに遭遇する。"
+  },
+  {
+    "id": "DISCOVER_ALL_RELICS",
+    "name": "考古学者",
+    "description": "すべてのレリックを発見する。"
+  },
+  {
+    "id": "FLOOR_TEN_THOUSAND",
+    "name": "長すぎる階段",
+    "description": "10,000階を踏破する。"
+  },
+  {
+    "id": "IRONCLAD_ASCENSION10",
+    "name": "悪魔",
+    "description": "アイアンクラッドでアセンション10をクリアする。"
+  },
+  {
+    "id": "IRONCLAD_WIN",
+    "name": "アイアンクラッド",
+    "description": "アイアンクラッドでゲームをクリアする。"
+  },
+  {
+    "id": "NECROBINDER_ASCENSION10",
+    "name": "リッチ",
+    "description": "ネクロバインダーでアセンション10をクリアする。"
+  },
+  {
+    "id": "NECROBINDER_WIN",
+    "name": "ネクロバインダー",
+    "description": "ネクロバインダーでゲームをクリアする。"
+  },
+  {
+    "id": "NO_RELIC_WIN",
+    "name": "無用の長物",
+    "description": "レリックを1つも獲得せずにゲームをクリアする。"
+  },
+  {
+    "id": "PLAY20_CARDS_SINGLE_TURN",
+    "name": "カードゲームって楽しい",
+    "description": "1ターンにカードを20枚プレイする。"
+  },
+  {
+    "id": "REGENT_ASCENSION10",
+    "name": "君主",
+    "description": "リージェントでアセンション10をクリアする。"
+  },
+  {
+    "id": "REGENT_WIN",
+    "name": "リージェント",
+    "description": "リージェントでゲームをクリアする。"
+  },
+  {
+    "id": "SILENT_ASCENSION10",
+    "name": "死霊",
+    "description": "サイレントでアセンション10をクリアする。"
+  },
+  {
+    "id": "SILENT_WIN",
+    "name": "サイレント",
+    "description": "サイレントでゲームをクリアする。"
+  }
+]

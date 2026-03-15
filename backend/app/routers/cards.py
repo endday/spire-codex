@@ -1,7 +1,8 @@
 """Card API endpoints."""
-from fastapi import APIRouter, HTTPException, Query, Request
+from fastapi import APIRouter, Depends, HTTPException, Query, Request
 from ..models.schemas import Card
-from ..services.data_service import load_cards
+from ..services.data_service import load_cards, load_keywords, load_translation_maps
+from ..dependencies import get_lang
 
 router = APIRouter(prefix="/api/cards", tags=["Cards"])
 
@@ -14,24 +15,30 @@ def get_cards(
     rarity: str | None = Query(None, description="Filter by rarity (Basic, Common, Uncommon, Rare, Ancient)"),
     keyword: str | None = Query(None, description="Filter by keyword (Exhaust, Innate, Ethereal, Retain, Unplayable, Sly, Eternal)"),
     search: str | None = Query(None, description="Search by name"),
+    lang: str = Depends(get_lang),
 ):
-    cards = load_cards()
+    cards = load_cards(lang)
     if color:
         cards = [c for c in cards if c["color"].lower() == color.lower()]
+    if type or rarity or keyword:
+        maps = load_translation_maps(lang)
     if type:
-        cards = [c for c in cards if c["type"].lower() == type.lower()]
+        type_localized = maps["card_types"].get(type, type)
+        cards = [c for c in cards if c["type"] == type_localized]
     if rarity:
-        cards = [c for c in cards if c["rarity"].lower() == rarity.lower()]
+        rarity_localized = maps["card_rarities"].get(rarity, rarity)
+        cards = [c for c in cards if c["rarity"] == rarity_localized]
     if keyword:
-        cards = [c for c in cards if c.get("keywords") and keyword in c["keywords"]]
+        kw_localized = maps["keywords"].get(keyword.upper(), keyword)
+        cards = [c for c in cards if c.get("keywords") and kw_localized in c["keywords"]]
     if search:
         cards = [c for c in cards if search.lower() in c["name"].lower()]
     return cards
 
 
 @router.get("/{card_id}", response_model=Card)
-def get_card(request: Request, card_id: str):
-    cards = load_cards()
+def get_card(request: Request, card_id: str, lang: str = Depends(get_lang)):
+    cards = load_cards(lang)
     for card in cards:
         if card["id"] == card_id.upper():
             return card

@@ -1,4 +1,5 @@
 """Run all parsers and generate structured JSON data files."""
+import sys
 from card_parser import main as parse_cards
 from character_parser import main as parse_characters
 from relic_parser import main as parse_relics
@@ -13,21 +14,48 @@ from epoch_parser import main as parse_epochs
 from act_parser import main as parse_acts
 from ascension_parser import main as parse_ascensions
 from pool_parser import main as parse_pools
+from translation_parser import main as parse_translations
+
+LANGUAGES = [
+    "deu", "eng", "esp", "fra", "ita", "jpn",
+    "kor", "pol", "ptb", "rus", "spa", "tha", "tur", "zhs",
+]
+
+
+def parse_language(lang: str):
+    """Run all parsers for a single language."""
+    parse_cards(lang)
+    parse_characters(lang)
+    parse_relics(lang)
+    parse_monsters(lang)
+    parse_potions(lang)
+    parse_enchantments(lang)
+    parse_encounters(lang)
+    parse_events(lang)
+    parse_powers(lang)
+    parse_keywords_etc(lang)
+    parse_epochs(lang)
+    parse_acts(lang)
+    parse_ascensions(lang)
+    parse_pools(lang)  # Must run after potions
+    parse_translations(lang)
+
 
 if __name__ == "__main__":
+    # Usage: python3 parse_all.py [--lang LANG|all]
+    lang_arg = "all"
+    if "--lang" in sys.argv:
+        idx = sys.argv.index("--lang")
+        if idx + 1 < len(sys.argv):
+            lang_arg = sys.argv[idx + 1]
+
+    if lang_arg == "all":
+        languages = LANGUAGES
+    else:
+        languages = [lang_arg]
+
     print("=== Parsing Slay the Spire 2 Game Data ===\n")
-    parse_cards()
-    parse_characters()
-    parse_relics()
-    parse_monsters()
-    parse_potions()
-    parse_enchantments()
-    parse_encounters()
-    parse_events()
-    parse_powers()
-    parse_keywords_etc()
-    parse_epochs()
-    parse_acts()
-    parse_ascensions()
-    parse_pools()  # Must run after potions
+    for lang in languages:
+        print(f"\n--- Language: {lang} ---")
+        parse_language(lang)
     print("\n=== Done! ===")

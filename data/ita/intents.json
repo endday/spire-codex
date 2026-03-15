@@ -1,0 +1,72 @@
+[
+  {
+    "id": "ATTACK",
+    "name": "Aggressività",
+    "description": "Questo nemico si appresta ad [gold]attaccare[/gold] {IsMultiplayer:tutti|}e infliggere [blue]{Damage}[/blue] di danno{Repeat:plural:| [blue]{}[/blue] volte}."
+  },
+  {
+    "id": "BUFF",
+    "name": "Rafforzamento",
+    "description": "Questo nemico si appresta a usare un [gold]Buff[/gold]."
+  },
+  {
+    "id": "CARD_DEBUFF",
+    "name": "Malvagità",
+    "description": "Queto nemico si appresta ad applicare [gold]Afflizioni[/gold] sulle tue carte."
+  },
+  {
+    "id": "DEATH_BLOW",
+    "name": "Attacco mortale",
+    "description": "Questa creatura vuole farti morire insieme a essa. Ti attaccherà e infliggerà [blue]{Damage}[/blue] di danno prima di essere sconfitta."
+  },
+  {
+    "id": "DEBUFF",
+    "name": "Strategia",
+    "description": "Questo nemico si appresta ad applicarti un [gold]Debuff[/gold]."
+  },
+  {
+    "id": "DEBUFF_STRONG",
+    "name": "Strategia superiore",
+    "description": "Questo nemico si appresta ad applicarti un potente [gold]Debuff[/gold]."
+  },
+  {
+    "id": "DEFEND",
+    "name": "Prudenza",
+    "description": "Questo nemico si appresta a [gold]bloccare[/gold] durante il suo turno."
+  },
+  {
+    "id": "ESCAPE",
+    "name": "Codardia",
+    "description": "Questo nemico si appresta a [gold]fuggire[/gold]."
+  },
+  {
+    "id": "HEAL",
+    "name": "Guarigione",
+    "description": "Questo nemico si appresta a [gold]curarsi[/gold]."
+  },
+  {
+    "id": "SLEEP",
+    "name": "Letargo",
+    "description": "Questo nemico non farà nulla durante il suo turno."
+  },
+  {
+    "id": "STATUS",
+    "name": "Strategia",
+    "description": "Questo nemico si appresta a darti [blue]{CardCount}[/blue] {CardCount:plural:carta|carte} [gold]Stato[/gold]."
+  },
+  {
+    "id": "STUN",
+    "name": "Stordimento",
+    "description": "Questo nemico non può agire durante il suo prossimo turno."
+  },
+  {
+    "id": "SUMMON",
+    "name": "Invocazione",
+    "description": "Questo nemico si appresta a invocare dei [gold]mostri[/gold]."
+  },
+  {
+    "id": "UNKNOWN",
+    "name": "Incertezza",
+    "description": "Le intenzioni del nemico sono [gold]sconosciute[/gold]."
+  }
+]

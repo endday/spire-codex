@@ -1,0 +1,167 @@
+[
+  {
+    "id": "ALL_CARDS_UPGRADED",
+    "name": "O Baralho Perfeito",
+    "description": "Conclua uma Partida com um baralho totalmente aprimorado."
+  },
+  {
+    "id": "ALL_OTHER_ACHIEVEMENTS",
+    "name": "O Eterno",
+    "description": "Complete todas as outras Conquistas."
+  },
+  {
+    "id": "CHARACTER_SKILL_IRONCLAD1",
+    "name": "Pacto Concluído",
+    "description": "Exaure 20 cartas em um único combate."
+  },
+  {
+    "id": "CHARACTER_SKILL_IRONCLAD2",
+    "name": "Lâmina Massiva",
+    "description": "Cause 999 de Dano com um único golpe."
+  },
+  {
+    "id": "CHARACTER_SKILL_NECROBINDER1",
+    "name": "Mais que Morto",
+    "description": "Aplique 999 de Ruína a um único inimigo."
+  },
+  {
+    "id": "CHARACTER_SKILL_NECROBINDER2",
+    "name": "Laticínio",
+    "description": "Aplique 50 de Força ao Ostheo."
+  },
+  {
+    "id": "CHARACTER_SKILL_REGENT1",
+    "name": "Espada Digna de Monarca",
+    "description": "Forje uma Espada Soberana que cause pelo menos 999 de Dano."
+  },
+  {
+    "id": "CHARACTER_SKILL_REGENT2",
+    "name": "Sóis no Firmamento",
+    "description": "Acumule 20 Estrelas."
+  },
+  {
+    "id": "CHARACTER_SKILL_SILENT1",
+    "name": "Furtividade Sagaz",
+    "description": "Jogue 5 cartas usando Sagaz de uma única carta."
+  },
+  {
+    "id": "CHARACTER_SKILL_SILENT2",
+    "name": "Algumas Gotas",
+    "description": "Aplique 99 de Veneno a um único inimigo."
+  },
+  {
+    "id": "COMPLETE_ACT4",
+    "name": "Epílogo Definitivo",
+    "description": "Complete o Ato 4."
+  },
+  {
+    "id": "COMPLETE_TIMELINE",
+    "name": "Historiador",
+    "description": "Complete a Linha do Tempo."
+  },
+  {
+    "id": "DEFEAT_GLORY_ENEMIES",
+    "name": "A Glória",
+    "description": "Derrote todos os inimigos na Glória."
+  },
+  {
+    "id": "DEFEAT_HIVE_ENEMIES",
+    "name": "A Colmeia",
+    "description": "Derrote todos os inimigos na Colmeia."
+  },
+  {
+    "id": "DEFEAT_ONE_BOSS",
+    "name": "O Primeiro de Muitos",
+    "description": "Derrote um Chefe."
+  },
+  {
+    "id": "DEFEAT_OVERGROWTH_ENEMIES",
+    "name": "A Proliferação",
+    "description": "Derrote todos os inimigos na Proliferação."
+  },
+  {
+    "id": "DEFEAT_UNDERDOCKS_ENEMIES",
+    "name": "As Docas Subterrâneas",
+    "description": "Derrote todos os inimigos nas Docas Subterrâneas."
+  },
+  {
+    "id": "DEFECT_ASCENSION10",
+    "name": "Ecoar",
+    "description": "Conclua a Ascensão 10 com O Defeituoso."
+  },
+  {
+    "id": "DEFECT_WIN",
+    "name": "O Defeituoso",
+    "description": "Conclua o jogo com o Defeituoso."
+  },
+  {
+    "id": "DISCOVER_ALL_CARDS",
+    "name": "Colecionador",
+    "description": "Descubra todas as Cartas."
+  },
+  {
+    "id": "DISCOVER_ALL_EVENTS",
+    "name": "Explorador",
+    "description": "Encontre todos os Eventos."
+  },
+  {
+    "id": "DISCOVER_ALL_RELICS",
+    "name": "Arqueólogo",
+    "description": "Descubra todas as Relíquias."
+  },
+  {
+    "id": "FLOOR_TEN_THOUSAND",
+    "name": "Longas Escadarias",
+    "description": "Suba 10,000 andares."
+  },
+  {
+    "id": "IRONCLAD_ASCENSION10",
+    "name": "Demônio",
+    "description": "Conclua a Ascensão 10 com o Rígido."
+  },
+  {
+    "id": "IRONCLAD_WIN",
+    "name": "O Rígido",
+    "description": "Conclua o jogo com o Rígido."
+  },
+  {
+    "id": "NECROBINDER_ASCENSION10",
+    "name": "Lich",
+    "description": "Conclua a Ascensão 10 com a Necroartífice."
+  },
+  {
+    "id": "NECROBINDER_WIN",
+    "name": "A Necroartífice",
+    "description": "Conclua o jogo com a Necroartífice."
+  },
+  {
+    "id": "NO_RELIC_WIN",
+    "name": "Acúmulo Desnecessário",
+    "description": "Conclua uma Partida sem obter nenhuma relíquia."
+  },
+  {
+    "id": "PLAY20_CARDS_SINGLE_TURN",
+    "name": "Carteado Divertido",
+    "description": "Jogue 20 cartas em um único turno."
+  },
+  {
+    "id": "REGENT_ASCENSION10",
+    "name": "Monarca",
+    "description": "Conclua a Ascensão 10 com o Regente."
+  },
+  {
+    "id": "REGENT_WIN",
+    "name": "O Regente",
+    "description": "Conclua o jogo com o Regente."
+  },
+  {
+    "id": "SILENT_ASCENSION10",
+    "name": "Espectro",
+    "description": "Conclua a Ascensão 10 com a Sorrateira."
+  },
+  {
+    "id": "SILENT_WIN",
+    "name": "A Sorrateira",
+    "description": "Conclua o jogo com a Sorrateira."
+  }
+]

@@ -1,6 +1,7 @@
 """Spire Codex API - FastAPI Application."""
-from fastapi import FastAPI, Request, Response
+from fastapi import Depends, FastAPI, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.gzip import GZipMiddleware
 from fastapi.staticfiles import StaticFiles
 from starlette.middleware.base import BaseHTTPMiddleware
 from pathlib import Path
@@ -8,7 +9,8 @@ from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
 from .routers import cards, characters, relics, monsters, potions, enchantments, encounters, events, powers, keywords, intents, orbs, afflictions, modifiers, achievements, epochs, stories, images, changelogs, feedback, acts, ascensions
-from .services.data_service import get_stats
+from .services.data_service import get_stats, load_translation_maps
+from .dependencies import get_lang, VALID_LANGUAGES, LANGUAGE_NAMES
 
 limiter = Limiter(key_func=get_remote_address, default_limits=["60/minute"])
 
@@ -23,14 +25,18 @@ app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
 
 class CORSStaticMiddleware(BaseHTTPMiddleware):
-    """Add CORS headers to all responses, including static files."""
+    """Add CORS headers and cache headers to all responses."""
     async def dispatch(self, request: Request, call_next):
         response = await call_next(request)
         response.headers["Access-Control-Allow-Origin"] = "*"
+        # Cache API GET responses for 5 minutes (data changes only on redeploy)
+        if request.method == "GET" and request.url.path.startswith("/api/"):
+            response.headers["Cache-Control"] = "public, max-age=300"
         return response
 
 
 app.add_middleware(CORSStaticMiddleware)
+app.add_middleware(GZipMiddleware, minimum_size=1000)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -62,10 +68,25 @@ app.include_router(acts.router)
 app.include_router(ascensions.router)
 
 
+@app.get("/api/languages", tags=["Languages"])
+def languages(request: Request):
+    """Get list of available languages."""
+    return [
+        {"code": code, "name": LANGUAGE_NAMES.get(code, code)}
+        for code in sorted(VALID_LANGUAGES)
+    ]
+
+
+@app.get("/api/translations", tags=["Languages"])
+def translations(request: Request, lang: str = Depends(get_lang)):
+    """Get translation maps for the given language (section titles, descriptions, character names, filter labels)."""
+    return load_translation_maps(lang)
+
+
 @app.get("/api/stats", tags=["Stats"])
-def stats(request: Request):
+def stats(request: Request, lang: str = Depends(get_lang)):
     """Get total counts of all game entities."""
-    return get_stats()
+    return get_stats(lang)
 
 
 @app.get("/", tags=["Root"])
@@ -97,6 +118,8 @@ def root(request: Request):
             "images": "/api/images",
             "changelogs": "/api/changelogs",
             "stats": "/api/stats",
+            "languages": "/api/languages",
+            "translations": "/api/translations",
         },
     }
 

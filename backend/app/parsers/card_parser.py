@@ -7,11 +7,9 @@ from description_resolver import resolve_description as shared_resolve_descripti
 
 BASE = Path(__file__).resolve().parents[3]
 DECOMPILED = BASE / "extraction" / "decompiled"
-LOCALIZATION = BASE / "extraction" / "raw" / "localization" / "eng"
 CARDS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.Cards"
 POOLS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.CardPools"
 STATIC_IMAGES = BASE / "backend" / "static" / "images" / "cards"
-OUTPUT = BASE / "data"
 
 CARD_TYPE_MAP = {0: "None", 1: "Attack", 2: "Skill", 3: "Power", 4: "Status", 5: "Curse", 6: "Quest"}
 CARD_RARITY_MAP = {0: "None", 1: "Basic", 2: "Common", 3: "Uncommon", 4: "Rare", 5: "Ancient", 6: "Event", 7: "Token", 8: "Status", 9: "Curse", 10: "Quest"}
@@ -30,8 +28,8 @@ def class_name_to_id(name: str) -> str:
     return s.upper()
 
 
-def load_localization() -> dict:
-    loc_file = LOCALIZATION / "cards.json"
+def load_localization(loc_dir: Path) -> dict:
+    loc_file = loc_dir / "cards.json"
     if loc_file.exists():
         with open(loc_file, "r", encoding="utf-8") as f:
             return json.load(f)
@@ -310,9 +308,111 @@ def parse_single_card(filepath: Path, localization: dict, card_pools: dict) -> d
     return card
 
 
-def parse_all_cards() -> list[dict]:
-    localization = load_localization()
+def load_gameplay_ui(loc_dir: Path) -> dict:
+    """Load gameplay_ui.json for type/rarity translations."""
+    loc_file = loc_dir / "gameplay_ui.json"
+    if loc_file.exists():
+        with open(loc_file, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+
+def load_keyword_names(loc_dir: Path) -> dict[str, str]:
+    """Load keyword localization to map English enum names to localized names."""
+    loc_file = loc_dir / "card_keywords.json"
+    if not loc_file.exists():
+        return {}
+    with open(loc_file, "r", encoding="utf-8") as f:
+        loc = json.load(f)
+    name_map = {}
+    seen = set()
+    for key in loc:
+        kw_id = key.split(".")[0]
+        if kw_id in seen:
+            continue
+        seen.add(kw_id)
+        title = loc.get(f"{kw_id}.title", "")
+        if title:
+            name_map[kw_id] = title
+            name_map[kw_id.upper()] = title
+    return name_map
+
+
+def load_power_names(loc_dir: Path) -> dict[str, str]:
+    """Load power localization to map English power names to localized names."""
+    loc_file = loc_dir / "powers.json"
+    if not loc_file.exists():
+        return {}
+    with open(loc_file, "r", encoding="utf-8") as f:
+        loc = json.load(f)
+    # Build mapping: "Thorns" -> "가시", "Dexterity" -> "민첩"
+    # Power IDs are like THORNS_POWER, class names are ThornsPower
+    name_map = {}
+    seen = set()
+    for key in loc:
+        power_id = key.split(".")[0]
+        if power_id in seen:
+            continue
+        seen.add(power_id)
+        title = loc.get(f"{power_id}.title", "")
+        if title:
+            # Strip "_POWER" suffix to get the base name: THORNS_POWER -> THORNS
+            base = power_id.replace("_POWER", "")
+            # Convert THORNS -> Thorns for matching
+            base_title = base.replace("_", " ").title().replace(" ", "")
+            name_map[base_title] = title
+    return name_map
+
+
+def build_type_map(gameplay_ui: dict) -> dict[str, str]:
+    """Build card type translation map from gameplay_ui data."""
+    return {
+        "Attack": gameplay_ui.get("CARD_TYPE.ATTACK", "Attack"),
+        "Skill": gameplay_ui.get("CARD_TYPE.SKILL", "Skill"),
+        "Power": gameplay_ui.get("CARD_TYPE.POWER", "Power"),
+        "Status": gameplay_ui.get("CARD_TYPE.STATUS", "Status"),
+        "Curse": gameplay_ui.get("CARD_TYPE.CURSE", "Curse"),
+        "Quest": gameplay_ui.get("CARD_TYPE.QUEST", "Quest"),
+    }
+
+
+def build_rarity_map(gameplay_ui: dict) -> dict[str, str]:
+    """Build card rarity translation map from gameplay_ui data."""
+    return {
+        "Basic": gameplay_ui.get("CARD_RARITY.BASIC", "Basic"),
+        "Common": gameplay_ui.get("CARD_RARITY.COMMON", "Common"),
+        "Uncommon": gameplay_ui.get("CARD_RARITY.UNCOMMON", "Uncommon"),
+        "Rare": gameplay_ui.get("CARD_RARITY.RARE", "Rare"),
+        "Ancient": gameplay_ui.get("CARD_RARITY.ANCIENT", "Ancient"),
+        "Event": gameplay_ui.get("CARD_RARITY.EVENT", "Event"),
+        "Token": gameplay_ui.get("CARD_RARITY.TOKEN", "Token"),
+        "Status": gameplay_ui.get("CARD_RARITY.STATUS", "Status"),
+        "Curse": gameplay_ui.get("CARD_RARITY.CURSE", "Curse"),
+        "Quest": gameplay_ui.get("CARD_RARITY.QUEST", "Quest"),
+    }
+
+
+def localize_card(card: dict, type_map: dict, rarity_map: dict,
+                  kw_names: dict, power_names: dict) -> dict:
+    """Localize display fields on a card."""
+    card["type"] = type_map.get(card["type"], card["type"])
+    card["rarity"] = rarity_map.get(card["rarity"], card["rarity"])
+    if card["keywords"]:
+        card["keywords"] = [kw_names.get(kw.upper(), kw) for kw in card["keywords"]]
+    if card["powers_applied"]:
+        for pa in card["powers_applied"]:
+            pa["power"] = power_names.get(pa["power"], pa["power"])
+    return card
+
+
+def parse_all_cards(loc_dir: Path) -> list[dict]:
+    localization = load_localization(loc_dir)
     card_pools = parse_card_pools()
+    gameplay_ui = load_gameplay_ui(loc_dir)
+    type_map = build_type_map(gameplay_ui)
+    rarity_map = build_rarity_map(gameplay_ui)
+    kw_names = load_keyword_names(loc_dir)
+    power_names = load_power_names(loc_dir)
     cards = []
 
     for filepath in sorted(CARDS_DIR.glob("*.cs")):
@@ -320,17 +420,20 @@ def parse_all_cards() -> list[dict]:
             continue
         card = parse_single_card(filepath, localization, card_pools)
         if card:
+            localize_card(card, type_map, rarity_map, kw_names, power_names)
             cards.append(card)
 
     return cards
 
 
-def main():
-    OUTPUT.mkdir(exist_ok=True)
-    cards = parse_all_cards()
-    with open(OUTPUT / "cards.json", "w", encoding="utf-8") as f:
+def main(lang: str = "eng"):
+    loc_dir = BASE / "extraction" / "raw" / "localization" / lang
+    output_dir = BASE / "data" / lang
+    output_dir.mkdir(parents=True, exist_ok=True)
+    cards = parse_all_cards(loc_dir)
+    with open(output_dir / "cards.json", "w", encoding="utf-8") as f:
         json.dump(cards, f, indent=2, ensure_ascii=False)
-    print(f"Parsed {len(cards)} cards -> data/cards.json")
+    print(f"Parsed {len(cards)} cards -> data/{lang}/cards.json")
 
 
 if __name__ == "__main__":

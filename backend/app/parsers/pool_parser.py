@@ -13,7 +13,6 @@ CARD_POOLS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.CardPools"
 RELIC_POOLS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.RelicPools"
 POTION_POOLS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.PotionPools"
 EPOCHS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Timeline.Epochs"
-OUTPUT = BASE / "data"
 
 
 def class_name_to_id(name: str) -> str:
@@ -68,9 +67,9 @@ def parse_potion_pools() -> dict[str, str]:
     return potion_to_pool
 
 
-def update_potions_with_pools():
+def update_potions_with_pools(output_dir: Path):
     """Add pool field to existing potions.json."""
-    potions_file = OUTPUT / "potions.json"
+    potions_file = output_dir / "potions.json"
     if not potions_file.exists():
         print("potions.json not found, skipping pool update")
         return
@@ -92,8 +91,9 @@ def update_potions_with_pools():
     print(f"Updated {updated} potions with pool assignments")
 
 
-def main():
-    update_potions_with_pools()
+def main(lang: str = "eng"):
+    output_dir = BASE / "data" / lang
+    update_potions_with_pools(output_dir)
 
 
 if __name__ == "__main__":

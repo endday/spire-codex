@@ -3,7 +3,9 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import type { Character, Relic, Card } from "@/lib/api";
+import { cachedFetch } from "@/lib/fetch-cache";
 import RichDescription from "../components/RichDescription";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -24,6 +26,7 @@ const colorStyles: Record<string, string> = {
 };
 
 export default function CharactersPage() {
+  const { lang } = useLanguage();
   const [characters, setCharacters] = useState<Character[]>([]);
   const [relicMap, setRelicMap] = useState<Record<string, Relic>>({});
   const [cardMap, setCardMap] = useState<Record<string, Card>>({});
@@ -31,9 +34,9 @@ export default function CharactersPage() {
 
   useEffect(() => {
     Promise.all([
-      fetch(`${API}/api/characters`).then((r) => r.json()),
-      fetch(`${API}/api/relics`).then((r) => r.json()),
-      fetch(`${API}/api/cards`).then((r) => r.json()),
+      cachedFetch<Character[]>(`${API}/api/characters?lang=${lang}`),
+      cachedFetch<Relic[]>(`${API}/api/relics?lang=${lang}`),
+      cachedFetch<Card[]>(`${API}/api/cards?lang=${lang}`),
     ])
       .then(([chars, relics, cards]: [Character[], Relic[], Card[]]) => {
         setCharacters(chars);
@@ -45,7 +48,7 @@ export default function CharactersPage() {
         setCardMap(cm);
       })
       .finally(() => setLoading(false));
-  }, []);
+  }, [lang]);
 
   if (loading) {
     return (

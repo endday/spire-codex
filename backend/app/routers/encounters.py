@@ -1,7 +1,8 @@
 """Encounter API endpoints."""
-from fastapi import APIRouter, HTTPException, Query, Request
+from fastapi import APIRouter, Depends, HTTPException, Query, Request
 from ..models.schemas import Encounter
 from ..services.data_service import load_encounters
+from ..dependencies import get_lang
 
 router = APIRouter(prefix="/api/encounters", tags=["Encounters"])
 
@@ -12,8 +13,9 @@ def get_encounters(
     room_type: str | None = Query(None, description="Filter by room type (Monster, Elite, Boss)"),
     act: str | None = Query(None, description="Filter by act name"),
     search: str | None = Query(None, description="Search by name"),
+    lang: str = Depends(get_lang),
 ):
-    encounters = load_encounters()
+    encounters = load_encounters(lang)
     if room_type:
         encounters = [e for e in encounters if e["room_type"].lower() == room_type.lower()]
     if act:
@@ -24,8 +26,8 @@ def get_encounters(
 
 
 @router.get("/{encounter_id}", response_model=Encounter)
-def get_encounter(request: Request, encounter_id: str):
-    encounters = load_encounters()
+def get_encounter(request: Request, encounter_id: str, lang: str = Depends(get_lang)):
+    encounters = load_encounters(lang)
     for e in encounters:
         if e["id"] == encounter_id.upper():
             return e

@@ -1,0 +1,167 @@
+[
+  {
+    "id": "ALL_CARDS_UPGRADED",
+    "name": "กองการ์ดสมบูรณ์แบบ",
+    "description": "ชนะการเดินทางโดยพัฒนาทั้งกองการ์ด"
+  },
+  {
+    "id": "ALL_OTHER_ACHIEVEMENTS",
+    "name": "ผู้เป็นนิรันดร์",
+    "description": "ปลดล็อกความสำเร็จอื่นทั้งหมด"
+  },
+  {
+    "id": "CHARACTER_SKILL_IRONCLAD1",
+    "name": "บรรลุสัญญา",
+    "description": "สลาย 20 การ์ดในการต่อสู้เดียว"
+  },
+  {
+    "id": "CHARACTER_SKILL_IRONCLAD2",
+    "name": "คมดาบที่หนักที่สุด",
+    "description": "สร้างความเสียหาย 999 ในการโจมตีครั้งเดียว"
+  },
+  {
+    "id": "CHARACTER_SKILL_NECROBINDER1",
+    "name": "แกน่ะได้ตายไปแล้ว",
+    "description": ""
+  },
+  {
+    "id": "CHARACTER_SKILL_NECROBINDER2",
+    "name": "นมสด",
+    "description": ""
+  },
+  {
+    "id": "CHARACTER_SKILL_REGENT1",
+    "name": "Character Skill Regent1",
+    "description": "หลอมสร้างพระแสงอาญาสิทธิ์ที่สร้างความเสียหายอย่างน้อย 999"
+  },
+  {
+    "id": "CHARACTER_SKILL_REGENT2",
+    "name": "หมู่ดาวฤกษ์กลางนภา",
+    "description": "มี 20 ดาวในคราวเดียว"
+  },
+  {
+    "id": "CHARACTER_SKILL_SILENT1",
+    "name": "ร้อยเล่ห์เพทุบาย",
+    "description": "ใช้การ์ดเพียงใบเดียวในการเล่นการ์ดเล่ห์เหลี่ยม 5 ใบ"
+  },
+  {
+    "id": "CHARACTER_SKILL_SILENT2",
+    "name": "แค่ไม่กี่หยด",
+    "description": "สร้าง 99 พิษใส่ศัตรูตัวเดียว"
+  },
+  {
+    "id": "COMPLETE_ACT4",
+    "name": "ฉากจบที่แท้จริง",
+    "description": "สำเร็จองก์ 4"
+  },
+  {
+    "id": "COMPLETE_TIMELINE",
+    "name": "นักประวัติศาสตร์",
+    "description": "สำเร็จเส้นเวลา"
+  },
+  {
+    "id": "DEFEAT_GLORY_ENEMIES",
+    "name": "ความรุ่งโรจน์",
+    "description": "กำจัดศัตรูทุกตัวในองก์ความรุ่งโรจน์"
+  },
+  {
+    "id": "DEFEAT_HIVE_ENEMIES",
+    "name": "รังผึ้ง",
+    "description": "กำจัดศัตรูทุกตัวในองก์รังผึ้ง"
+  },
+  {
+    "id": "DEFEAT_ONE_BOSS",
+    "name": "ตัวแรกจากอีกหลาย",
+    "description": "กำจัดบอส"
+  },
+  {
+    "id": "DEFEAT_OVERGROWTH_ENEMIES",
+    "name": "รกชัฏ",
+    "description": "กำจัดศัตรูทุกตัวในองก์รกชัฏ"
+  },
+  {
+    "id": "DEFEAT_UNDERDOCKS_ENEMIES",
+    "name": "ท่าเรือเบื้องล่าง",
+    "description": "กำจัดศัตรูทุกตัวในองก์ท่าเรือเบื้องล่าง"
+  },
+  {
+    "id": "DEFECT_ASCENSION10",
+    "name": "ก้องกังวาน",
+    "description": "สำเร็จผู้บรรลุ 10 ในฐานะนักเวทแปรพักตร์"
+  },
+  {
+    "id": "DEFECT_WIN",
+    "name": "นักเวทแปรพักตร์",
+    "description": "ชนะในฐานะนักเวทแปรพักตร์"
+  },
+  {
+    "id": "DISCOVER_ALL_CARDS",
+    "name": "นักสะสม",
+    "description": "ค้นพบการ์ดทั้งหมด"
+  },
+  {
+    "id": "DISCOVER_ALL_EVENTS",
+    "name": "นักสำรวจ",
+    "description": "เผชิญทุกเหตุการณ์"
+  },
+  {
+    "id": "DISCOVER_ALL_RELICS",
+    "name": "นักโบราณคดี",
+    "description": "ค้นพบเครื่องรางทั้งหมด"
+  },
+  {
+    "id": "FLOOR_TEN_THOUSAND",
+    "name": "บันไดนานาขั้น",
+    "description": "ปีน 10,000 ชั้น"
+  },
+  {
+    "id": "IRONCLAD_ASCENSION10",
+    "name": "ปีศาจ",
+    "description": "สำเร็จผู้บรรลุ 10 ในฐานะนักรบเกราะเหล็ก"
+  },
+  {
+    "id": "IRONCLAD_WIN",
+    "name": "นักรบเกราะเหล็ก",
+    "description": "ชนะในฐานะนักรบเกราะเหล็ก"
+  },
+  {
+    "id": "NECROBINDER_ASCENSION10",
+    "name": "ลิช",
+    "description": "สำเร็จผู้บรรลุ 10 ในฐานะนัก Necrobinder"
+  },
+  {
+    "id": "NECROBINDER_WIN",
+    "name": "Necrobinder Win",
+    "description": "ชนะในฐานะนัก Necrobinder"
+  },
+  {
+    "id": "NO_RELIC_WIN",
+    "name": "ฮาวทูทิ้ง",
+    "description": "ชนะการเดินทางโดยไม่ได้รับเครื่องรางใดๆ"
+  },
+  {
+    "id": "PLAY20_CARDS_SINGLE_TURN",
+    "name": "เล่นการ์ดนี่สนุกจังเลย",
+    "description": "เล่น 20 การ์ดในเทิร์นเดียว"
+  },
+  {
+    "id": "REGENT_ASCENSION10",
+    "name": "มหาราช",
+    "description": "สำเร็จผู้บรรลุ 10 ในฐานะนัก Regent"
+  },
+  {
+    "id": "REGENT_WIN",
+    "name": "Regent Win",
+    "description": "ชนะในฐานะ Regent"
+  },
+  {
+    "id": "SILENT_ASCENSION10",
+    "name": "มายา",
+    "description": "สำเร็จผู้บรรลุ 10 ในฐานะนักฆ่าแห่งความเงียบ"
+  },
+  {
+    "id": "SILENT_WIN",
+    "name": "นักฆ่าแห่งความเงียบ",
+    "description": "ชนะในฐานะนักฆ่าแห่งความเงียบ"
+  }
+]

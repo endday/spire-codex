@@ -1,0 +1,65 @@
+[
+  {
+    "id": "BOUND",
+    "name": "Vincolo",
+    "description": "Puoi giocare solo [blue]1[/blue] carta con [gold]Vincolo[/gold] in ogni turno. Le carte si [gold]svincolano[/gold] al termine del turno.",
+    "extra_card_text": "Vincolo",
+    "is_stackable": false
+  },
+  {
+    "id": "ENTANGLED",
+    "name": "Impigliamento",
+    "description": "Costa [energy:1] extra.",
+    "extra_card_text": "Impigliamento",
+    "is_stackable": false
+  },
+  {
+    "id": "GALVANIZED",
+    "name": "Galvanizzazione",
+    "description": "Subisci [blue][Amount][/blue] di danno quando questa carta viene giocata.",
+    "extra_card_text": "Subisci [Amount] di danno.",
+    "is_stackable": true
+  },
+  {
+    "id": "HEXED",
+    "name": "Maleficio",
+    "description": "Aggiungi [gold]Evanescenza[/gold] a questa carta.",
+    "extra_card_text": null,
+    "is_stackable": false
+  },
+  {
+    "id": "MOCK_NO_UNPLAYABLE_AFFLICTION",
+    "name": "Mock No Unplayable Affliction",
+    "description": "",
+    "extra_card_text": null,
+    "is_stackable": false
+  },
+  {
+    "id": "MOCK_SELF_DAMAGE_AFFLICTION",
+    "name": "Mock Self Damage Affliction",
+    "description": "",
+    "extra_card_text": null,
+    "is_stackable": false
+  },
+  {
+    "id": "MOCK_USELESS_AFFLICTION",
+    "name": "Mock Useless Affliction",
+    "description": "",
+    "extra_card_text": null,
+    "is_stackable": false
+  },
+  {
+    "id": "RINGING",
+    "name": "Vibrazione",
+    "description": "Puoi giocare solo [blue]1[/blue] carta in questo turno.",
+    "extra_card_text": "Vibrazione",
+    "is_stackable": false
+  },
+  {
+    "id": "SMOG",
+    "name": "Contaminazione",
+    "description": "Non puoi giocare ulteriori carte [gold]Abilità[/gold] in questo turno. L'effetto si rimuove al termine del turno.",
+    "extra_card_text": null,
+    "is_stackable": false
+  }
+]

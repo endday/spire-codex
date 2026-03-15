@@ -1,0 +1,167 @@
+[
+  {
+    "id": "ALL_CARDS_UPGRADED",
+    "name": "Идеальная колода",
+    "description": "Выиграйте вылазку с полностью улучшенной колодой."
+  },
+  {
+    "id": "ALL_OTHER_ACHIEVEMENTS",
+    "name": "Вечность",
+    "description": "Получите все достижения."
+  },
+  {
+    "id": "CHARACTER_SKILL_IRONCLAD1",
+    "name": "Пакт выполнен",
+    "description": "Сожгите 20 карт за один бой."
+  },
+  {
+    "id": "CHARACTER_SKILL_IRONCLAD2",
+    "name": "Тяжелейший клинок",
+    "description": "Нанесите 999 урона одним ударом."
+  },
+  {
+    "id": "CHARACTER_SKILL_NECROBINDER1",
+    "name": "Не жилец",
+    "description": "Наложите 999 злого рока на одного врага."
+  },
+  {
+    "id": "CHARACTER_SKILL_NECROBINDER2",
+    "name": "Молоко",
+    "description": "Наложите 50 силы на Костю."
+  },
+  {
+    "id": "CHARACTER_SKILL_REGENT1",
+    "name": "Клинок, достойный монарха",
+    "description": "Скуйте Клинок монарха, который нанесет как минимум 999 урона."
+  },
+  {
+    "id": "CHARACTER_SKILL_REGENT2",
+    "name": "Небесные светила",
+    "description": "Накопите 20 Звезд."
+  },
+  {
+    "id": "CHARACTER_SKILL_SILENT1",
+    "name": "Коварный хитрец",
+    "description": "Разыграйте 5 коварных карт при помощи одной карты."
+  },
+  {
+    "id": "CHARACTER_SKILL_SILENT2",
+    "name": "Пара капель",
+    "description": "Наложите 99 яда на одного врага."
+  },
+  {
+    "id": "COMPLETE_ACT4",
+    "name": "Настоящая концовка",
+    "description": "Пройдите 4-й акт."
+  },
+  {
+    "id": "COMPLETE_TIMELINE",
+    "name": "Историк",
+    "description": "Закончите Летопись."
+  },
+  {
+    "id": "DEFEAT_GLORY_ENEMIES",
+    "name": "Чертог",
+    "description": "Победите всех врагов в Чертоге."
+  },
+  {
+    "id": "DEFEAT_HIVE_ENEMIES",
+    "name": "Улей",
+    "description": "Победите всех врагов в Улье."
+  },
+  {
+    "id": "DEFEAT_ONE_BOSS",
+    "name": "Первый, но не последний",
+    "description": "Победите босса."
+  },
+  {
+    "id": "DEFEAT_OVERGROWTH_ENEMIES",
+    "name": "Заросли",
+    "description": "Победите всех врагов в Зарослях."
+  },
+  {
+    "id": "DEFEAT_UNDERDOCKS_ENEMIES",
+    "name": "Пристань",
+    "description": "Победите всех врагов на Пристани."
+  },
+  {
+    "id": "DEFECT_ASCENSION10",
+    "name": "Эхо",
+    "description": "Пройдите Возвышение 10 за Дефекта."
+  },
+  {
+    "id": "DEFECT_WIN",
+    "name": "Дефект",
+    "description": "Победите в вылазке за Дефекта."
+  },
+  {
+    "id": "DISCOVER_ALL_CARDS",
+    "name": "Коллекционер",
+    "description": "Найдите все карты."
+  },
+  {
+    "id": "DISCOVER_ALL_EVENTS",
+    "name": "Исследователь",
+    "description": "Поучаствуйте во всех событиях."
+  },
+  {
+    "id": "DISCOVER_ALL_RELICS",
+    "name": "Археолог",
+    "description": "Найдите все реликвии."
+  },
+  {
+    "id": "FLOOR_TEN_THOUSAND",
+    "name": "Бесконечная лестница",
+    "description": "Покорите 10 000 этажей."
+  },
+  {
+    "id": "IRONCLAD_ASCENSION10",
+    "name": "Демон",
+    "description": "Пройдите Возвышение 10 за Латоносца."
+  },
+  {
+    "id": "IRONCLAD_WIN",
+    "name": "Латоносец",
+    "description": "Пройдите вылазку за Латоносца."
+  },
+  {
+    "id": "NECROBINDER_ASCENSION10",
+    "name": "Лич",
+    "description": "Пройдите Возвышение 10 за Призывающую."
+  },
+  {
+    "id": "NECROBINDER_WIN",
+    "name": "Призывающая",
+    "description": "Пройдите вылазку за Призывающую."
+  },
+  {
+    "id": "NO_RELIC_WIN",
+    "name": "Балласт",
+    "description": "Пройдите вылазку без реликвий."
+  },
+  {
+    "id": "PLAY20_CARDS_SINGLE_TURN",
+    "name": "Картежник",
+    "description": "Разыграйте 20 карт в одном ходу."
+  },
+  {
+    "id": "REGENT_ASCENSION10",
+    "name": "Монарх",
+    "description": "Пройдите Возвышение 10 за Наследника."
+  },
+  {
+    "id": "REGENT_WIN",
+    "name": "Наследник",
+    "description": "Пройдите вылазку за Наследника."
+  },
+  {
+    "id": "SILENT_ASCENSION10",
+    "name": "Призрак",
+    "description": "Пройдите Возвышение 10 за Безмолвную."
+  },
+  {
+    "id": "SILENT_WIN",
+    "name": "Безмолвная",
+    "description": "Пройдите вылазку за Безмолвную."
+  }
+]

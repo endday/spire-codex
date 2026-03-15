@@ -5,10 +5,8 @@ from pathlib import Path
 
 BASE = Path(__file__).resolve().parents[3]
 DECOMPILED = BASE / "extraction" / "decompiled"
-LOCALIZATION = BASE / "extraction" / "raw" / "localization" / "eng"
 ENCOUNTERS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.Encounters"
 ACTS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.Acts"
-OUTPUT = BASE / "data"
 
 
 def class_name_to_id(name: str) -> str:
@@ -24,12 +22,27 @@ def monster_class_to_name(class_name: str) -> str:
     return s
 
 
-def load_localization() -> dict:
-    loc_file = LOCALIZATION / "encounters.json"
+def load_localization(loc_dir: Path) -> dict:
+    loc_file = loc_dir / "encounters.json"
     if loc_file.exists():
         with open(loc_file, "r", encoding="utf-8") as f:
             return json.load(f)
     return {}
+
+
+def load_monster_names(loc_dir: Path) -> dict[str, str]:
+    """Load monster ID -> localized name mapping."""
+    loc_file = loc_dir / "monsters.json"
+    if not loc_file.exists():
+        return {}
+    with open(loc_file, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    names = {}
+    for key, value in data.items():
+        if key.endswith(".name"):
+            monster_id = key[:-5]  # strip ".name"
+            names[monster_id] = value
+    return names
 
 
 def build_act_mapping() -> dict[str, str]:
@@ -75,7 +88,7 @@ def parse_monsters(content: str) -> list[str]:
     return sorted(monsters)
 
 
-def parse_single_encounter(filepath: Path, localization: dict, act_mapping: dict) -> dict | None:
+def parse_single_encounter(filepath: Path, localization: dict, act_mapping: dict, monster_names: dict[str, str] = {}) -> dict | None:
     content = filepath.read_text(encoding="utf-8")
     class_name = filepath.stem
 
@@ -98,12 +111,13 @@ def parse_single_encounter(filepath: Path, localization: dict, act_mapping: dict
     # Act mapping
     act = act_mapping.get(class_name)
 
-    # Convert monster class names to IDs and readable names
+    # Convert monster class names to IDs and localized names
     monsters = []
     for mc in monster_classes:
+        mid = class_name_to_id(mc)
         monsters.append({
-            "id": class_name_to_id(mc),
-            "name": monster_class_to_name(mc),
+            "id": mid,
+            "name": monster_names.get(mid, monster_class_to_name(mc)),
         })
 
     return {
@@ -118,23 +132,26 @@ def parse_single_encounter(filepath: Path, localization: dict, act_mapping: dict
     }
 
 
-def parse_all_encounters() -> list[dict]:
-    localization = load_localization()
+def parse_all_encounters(loc_dir: Path) -> list[dict]:
+    localization = load_localization(loc_dir)
     act_mapping = build_act_mapping()
+    monster_names = load_monster_names(loc_dir)
     encounters = []
     for filepath in sorted(ENCOUNTERS_DIR.glob("*.cs")):
-        enc = parse_single_encounter(filepath, localization, act_mapping)
+        enc = parse_single_encounter(filepath, localization, act_mapping, monster_names)
         if enc:
             encounters.append(enc)
     return encounters
 
 
-def main():
-    OUTPUT.mkdir(exist_ok=True)
-    encounters = parse_all_encounters()
-    with open(OUTPUT / "encounters.json", "w", encoding="utf-8") as f:
+def main(lang: str = "eng"):
+    loc_dir = BASE / "extraction" / "raw" / "localization" / lang
+    output_dir = BASE / "data" / lang
+    output_dir.mkdir(parents=True, exist_ok=True)
+    encounters = parse_all_encounters(loc_dir)
+    with open(output_dir / "encounters.json", "w", encoding="utf-8") as f:
         json.dump(encounters, f, indent=2, ensure_ascii=False)
-    print(f"Parsed {len(encounters)} encounters -> data/encounters.json")
+    print(f"Parsed {len(encounters)} encounters -> data/{lang}/encounters.json")
 
 
 if __name__ == "__main__":

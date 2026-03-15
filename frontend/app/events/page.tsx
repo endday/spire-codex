@@ -4,8 +4,10 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import type { GameEvent, EventPage, DialogueLine } from "@/lib/api";
+import { cachedFetch } from "@/lib/fetch-cache";
 import SearchFilter from "../components/SearchFilter";
 import RichDescription from "../components/RichDescription";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -113,6 +115,7 @@ export default function EventsPage() {
   >({});
   const [expandedDesc, setExpandedDesc] = useState<Record<string, boolean>>({});
   const router = useRouter();
+  const { lang } = useLanguage();
 
   const toggleDialogue = (eventId: string, group: string) => {
     setExpandedDialogue((prev) => ({
@@ -129,14 +132,13 @@ export default function EventsPage() {
   };
 
   useEffect(() => {
-    fetch(`${API}/api/relics`)
-      .then((r) => r.json())
-      .then((relics: { id: string; name: string; description: string; image_url: string | null }[]) => {
+    cachedFetch<{ id: string; name: string; description: string; image_url: string | null }[]>(`${API}/api/relics?lang=${lang}`)
+      .then((relics) => {
         const map: Record<string, typeof relics[number]> = {};
         for (const r of relics) map[r.id] = r;
         setRelicMap(map);
       });
-  }, []);
+  }, [lang]);
 
   useEffect(() => {
     setLoading(true);
@@ -144,11 +146,11 @@ export default function EventsPage() {
     if (type) params.set("type", type);
     if (act) params.set("act", act);
     if (search) params.set("search", search);
-    fetch(`${API}/api/events?${params}`)
-      .then((r) => r.json())
+    params.set("lang", lang);
+    cachedFetch<GameEvent[]>(`${API}/api/events?${params}`)
       .then(setEvents)
       .finally(() => setLoading(false));
-  }, [type, act, search]);
+  }, [type, act, search, lang]);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

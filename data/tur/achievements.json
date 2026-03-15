@@ -1,0 +1,167 @@
+[
+  {
+    "id": "ALL_CARDS_UPGRADED",
+    "name": "Mükemmel Deste",
+    "description": "Tamamen geliştirilmiş bir desteyle bir Oyun kazan."
+  },
+  {
+    "id": "ALL_OTHER_ACHIEVEMENTS",
+    "name": "Ebedi Varlık",
+    "description": "Diğer bütün başarımları kazan."
+  },
+  {
+    "id": "CHARACTER_SKILL_IRONCLAD1",
+    "name": "Anlaşma Tamamlandı",
+    "description": "Tek bir savaş esnasında 20 kart tüket."
+  },
+  {
+    "id": "CHARACTER_SKILL_IRONCLAD2",
+    "name": "En Ağır Kılıç",
+    "description": "Tek bir vuruşta 999 Hasar ver."
+  },
+  {
+    "id": "CHARACTER_SKILL_NECROBINDER1",
+    "name": "Zaten Öldün",
+    "description": "Tek bir düşmana 999 Kader uygula."
+  },
+  {
+    "id": "CHARACTER_SKILL_NECROBINDER2",
+    "name": "Süt",
+    "description": "Osti'ye 50 Kuvvet uygula."
+  },
+  {
+    "id": "CHARACTER_SKILL_REGENT1",
+    "name": "Krallara Layık Kılıç",
+    "description": "En az 999 hasar veren bir Egemen Kılıcı döv."
+  },
+  {
+    "id": "CHARACTER_SKILL_REGENT2",
+    "name": "Gökyüzündeki Güneşler",
+    "description": "Tek bir seferde 20 Yıldız'a sahip ol."
+  },
+  {
+    "id": "CHARACTER_SKILL_SILENT1",
+    "name": "Kurnaz Tilki",
+    "description": "Tek bir karttaki Kurnaz ile beş kart oyna."
+  },
+  {
+    "id": "CHARACTER_SKILL_SILENT2",
+    "name": "Birkaç Damla",
+    "description": "Tek bir düşmana 99 Zehir uygula."
+  },
+  {
+    "id": "COMPLETE_ACT4",
+    "name": "Nihai Son",
+    "description": "4. Sahne'yi tamamla."
+  },
+  {
+    "id": "COMPLETE_TIMELINE",
+    "name": "Tarihçi",
+    "description": "Zaman Çizelgesi'ni tamamla."
+  },
+  {
+    "id": "DEFEAT_GLORY_ENEMIES",
+    "name": "İhtişam",
+    "description": "İhtişam'daki tüm düşmanları yen."
+  },
+  {
+    "id": "DEFEAT_HIVE_ENEMIES",
+    "name": "Kovan",
+    "description": "Kovan'daki tüm düşmanları yen."
+  },
+  {
+    "id": "DEFEAT_ONE_BOSS",
+    "name": "Bu Daha Başlangıç",
+    "description": "Bir Boss'u yen."
+  },
+  {
+    "id": "DEFEAT_OVERGROWTH_ENEMIES",
+    "name": "Aşırı Yeşerme",
+    "description": "Aşırı Yeşerme'deki tüm düşmanları yen."
+  },
+  {
+    "id": "DEFEAT_UNDERDOCKS_ENEMIES",
+    "name": "Dip Rıhtımlar",
+    "description": "Dip Rıhtımlar'daki tüm düşmanları yen."
+  },
+  {
+    "id": "DEFECT_ASCENSION10",
+    "name": "Yankı",
+    "description": "Arıza olarak Yükseliş 10'u yen."
+  },
+  {
+    "id": "DEFECT_WIN",
+    "name": "Arıza",
+    "description": "Arıza olarak kazan."
+  },
+  {
+    "id": "DISCOVER_ALL_CARDS",
+    "name": "Koleksiyoncu",
+    "description": "Tüm Kartları keşfet."
+  },
+  {
+    "id": "DISCOVER_ALL_EVENTS",
+    "name": "Kâşif",
+    "description": "Tüm Etkinliklerle karşılaş."
+  },
+  {
+    "id": "DISCOVER_ALL_RELICS",
+    "name": "Arkeolog",
+    "description": "Tüm Kalıntıları keşfet."
+  },
+  {
+    "id": "FLOOR_TEN_THOUSAND",
+    "name": "Tonla Merdiven",
+    "description": "10.000 kat tırman."
+  },
+  {
+    "id": "IRONCLAD_ASCENSION10",
+    "name": "Şeytan",
+    "description": "Demirkaplı olarak Yükseliş 10'u yen."
+  },
+  {
+    "id": "IRONCLAD_WIN",
+    "name": "Demirkaplı",
+    "description": "Demirkaplı olarak kazan."
+  },
+  {
+    "id": "NECROBINDER_ASCENSION10",
+    "name": "Lich",
+    "description": "Ölübağlayan olarak Yükseliş 10'u yen."
+  },
+  {
+    "id": "NECROBINDER_WIN",
+    "name": "Ölübağlayan",
+    "description": "Ölübağlayan olarak kazan."
+  },
+  {
+    "id": "NO_RELIC_WIN",
+    "name": "Gereksiz Kalabalık",
+    "description": "Hiçbir kalıntı elde etmeden bir Oyun kazan."
+  },
+  {
+    "id": "PLAY20_CARDS_SINGLE_TURN",
+    "name": "Kart Oynamak Ne Eğlenceliymiş",
+    "description": "Tek turda 20 kart oyna."
+  },
+  {
+    "id": "REGENT_ASCENSION10",
+    "name": "Hükümdar",
+    "description": "Naip olarak Yükseliş 10'u yen."
+  },
+  {
+    "id": "REGENT_WIN",
+    "name": "Naip",
+    "description": "Naip olarak kazan."
+  },
+  {
+    "id": "SILENT_ASCENSION10",
+    "name": "Hayalet",
+    "description": "Sessiz olarak Yükseliş 10'u yen."
+  },
+  {
+    "id": "SILENT_WIN",
+    "name": "Sessiz",
+    "description": "Sessiz olarak kazan."
+  }
+]

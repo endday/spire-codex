@@ -6,6 +6,8 @@ import Link from "next/link";
 import type { Card } from "@/lib/api";
 import RichDescription from "@/app/components/RichDescription";
 import type { RelatedCard } from "@/app/components/RichDescription";
+import { cachedFetch } from "@/lib/fetch-cache";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -106,6 +108,7 @@ function getUpgradedDescription(card: Card, upgraded: boolean): string {
 export default function CardDetail() {
   const params = useParams();
   const id = params.id as string;
+  const { lang } = useLanguage();
 
   const [card, setCard] = useState<Card | null>(null);
   const [spawnedCards, setSpawnedCards] = useState<Card[]>([]);
@@ -118,33 +121,22 @@ export default function CardDetail() {
     if (!id) return;
     setLoading(true);
     setNotFound(false);
-    fetch(`${API}/api/cards/${id}`)
-      .then((r) => {
-        if (!r.ok) {
-          setNotFound(true);
-          return null;
-        }
-        return r.json();
-      })
+    cachedFetch<Card>(`${API}/api/cards/${id}?lang=${lang}`)
       .then((data) => {
-        if (data) {
-          setCard(data);
-          if (data.spawns_cards && data.spawns_cards.length > 0) {
-            Promise.all(
-              data.spawns_cards.map((sid: string) =>
-                fetch(`${API}/api/cards/${sid}`)
-                  .then((r) => (r.ok ? r.json() : null))
-                  .catch(() => null)
+        setCard(data);
+        if (data.spawns_cards && data.spawns_cards.length > 0) {
+          Promise.all(
+            data.spawns_cards.map((sid: string) =>
+              cachedFetch<Card>(`${API}/api/cards/${sid}?lang=${lang}`).catch(
+                () => null
               )
-            ).then((results) =>
-              setSpawnedCards(results.filter(Boolean))
-            );
-          }
+            )
+          ).then((results) => setSpawnedCards(results.filter(Boolean) as Card[]));
         }
       })
       .catch(() => setNotFound(true))
       .finally(() => setLoading(false));
-  }, [id]);
+  }, [id, lang]);
 
   if (loading) {
     return (

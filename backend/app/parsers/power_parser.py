@@ -6,10 +6,8 @@ from description_resolver import resolve_description, extract_vars_from_source
 
 BASE = Path(__file__).resolve().parents[3]
 DECOMPILED = BASE / "extraction" / "decompiled"
-LOCALIZATION = BASE / "extraction" / "raw" / "localization" / "eng"
 POWERS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.Powers"
 POWERS_IMAGES = BASE / "extraction" / "raw" / "images" / "powers"
-OUTPUT = BASE / "data"
 
 # Aliases for powers whose icon filename doesn't match the ID pattern
 IMAGE_ALIASES: dict[str, str] = {
@@ -23,8 +21,8 @@ def class_name_to_id(name: str) -> str:
     return s.upper()
 
 
-def load_localization() -> dict:
-    loc_file = LOCALIZATION / "powers.json"
+def load_localization(loc_dir: Path) -> dict:
+    loc_file = loc_dir / "powers.json"
     if loc_file.exists():
         with open(loc_file, "r", encoding="utf-8") as f:
             return json.load(f)
@@ -125,8 +123,8 @@ def parse_single_power(filepath: Path, localization: dict) -> dict | None:
     }
 
 
-def parse_all_powers() -> list[dict]:
-    localization = load_localization()
+def parse_all_powers(loc_dir: Path) -> list[dict]:
+    localization = load_localization(loc_dir)
     powers = []
     for filepath in sorted(POWERS_DIR.glob("*.cs")):
         power = parse_single_power(filepath, localization)
@@ -135,12 +133,14 @@ def parse_all_powers() -> list[dict]:
     return powers
 
 
-def main():
-    OUTPUT.mkdir(exist_ok=True)
-    powers = parse_all_powers()
-    with open(OUTPUT / "powers.json", "w", encoding="utf-8") as f:
+def main(lang: str = "eng"):
+    loc_dir = BASE / "extraction" / "raw" / "localization" / lang
+    output_dir = BASE / "data" / lang
+    output_dir.mkdir(parents=True, exist_ok=True)
+    powers = parse_all_powers(loc_dir)
+    with open(output_dir / "powers.json", "w", encoding="utf-8") as f:
         json.dump(powers, f, indent=2, ensure_ascii=False)
-    print(f"Parsed {len(powers)} powers -> data/powers.json")
+    print(f"Parsed {len(powers)} powers -> data/{lang}/powers.json")
 
 
 if __name__ == "__main__":

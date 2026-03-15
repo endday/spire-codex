@@ -2,8 +2,10 @@
 
 import { useState, useEffect } from "react";
 import type { Card } from "@/lib/api";
+import { cachedFetch } from "@/lib/fetch-cache";
 import CardGrid from "../components/CardGrid";
 import SearchFilter from "../components/SearchFilter";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -53,6 +55,7 @@ export default function CardsPage() {
   const [rarity, setRarity] = useState("");
   const [keyword, setKeyword] = useState("");
   const [loading, setLoading] = useState(true);
+  const { lang } = useLanguage();
 
   useEffect(() => {
     setLoading(true);
@@ -62,11 +65,11 @@ export default function CardsPage() {
     if (rarity) params.set("rarity", rarity);
     if (keyword) params.set("keyword", keyword);
     if (search) params.set("search", search);
-    fetch(`${API}/api/cards?${params}`)
-      .then((r) => r.json())
+    params.set("lang", lang);
+    cachedFetch<Card[]>(`${API}/api/cards?${params}`)
       .then(setCards)
       .finally(() => setLoading(false));
-  }, [color, type, rarity, keyword, search]);
+  }, [color, type, rarity, keyword, search, lang]);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
 import type { Monster } from "@/lib/api";
+import { cachedFetch } from "@/lib/fetch-cache";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -15,6 +17,7 @@ const typeBadge: Record<string, string> = {
 
 export default function MonsterDetail() {
   const { id } = useParams<{ id: string }>();
+  const { lang } = useLanguage();
   const [monster, setMonster] = useState<Monster | null>(null);
   const [loading, setLoading] = useState(true);
   const [notFound, setNotFound] = useState(false);
@@ -22,19 +25,11 @@ export default function MonsterDetail() {
   useEffect(() => {
     if (!id) return;
     setLoading(true);
-    fetch(`${API}/api/monsters/${id}`)
-      .then((r) => {
-        if (!r.ok) {
-          setNotFound(true);
-          return null;
-        }
-        return r.json();
-      })
-      .then((data) => {
-        if (data) setMonster(data);
-      })
+    cachedFetch<Monster>(`${API}/api/monsters/${id}?lang=${lang}`)
+      .then((data) => setMonster(data))
+      .catch(() => setNotFound(true))
       .finally(() => setLoading(false));
-  }, [id]);
+  }, [id, lang]);
 
   if (loading) {
     return (

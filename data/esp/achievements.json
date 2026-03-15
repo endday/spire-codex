@@ -1,0 +1,167 @@
+[
+  {
+    "id": "ALL_CARDS_UPGRADED",
+    "name": "El mazo perfecto",
+    "description": "Gana una partida con un mazo mejorado por completo."
+  },
+  {
+    "id": "ALL_OTHER_ACHIEVEMENTS",
+    "name": "El eterno",
+    "description": "Consigue todos los logros."
+  },
+  {
+    "id": "CHARACTER_SKILL_IRONCLAD1",
+    "name": "Pacto cumplido",
+    "description": "Agota 20 cartas en un mismo combate."
+  },
+  {
+    "id": "CHARACTER_SKILL_IRONCLAD2",
+    "name": "Espada omnipotente",
+    "description": "Inflige 999 de daño con un solo ataque."
+  },
+  {
+    "id": "CHARACTER_SKILL_NECROBINDER1",
+    "name": "Fuerza de ultratumba",
+    "description": "Aplica 999 de condena a un enemigo."
+  },
+  {
+    "id": "CHARACTER_SKILL_NECROBINDER2",
+    "name": "Rico en calcio",
+    "description": "Aplica 50 de fuerza a Puro Hueso."
+  },
+  {
+    "id": "CHARACTER_SKILL_REGENT1",
+    "name": "Espada ideal para monarca",
+    "description": "Forja una Espada del soberano que inflija al menos 999 de daño."
+  },
+  {
+    "id": "CHARACTER_SKILL_REGENT2",
+    "name": "Cielos estrellados",
+    "description": "Acumula y ten 20 estrellas a la vez."
+  },
+  {
+    "id": "CHARACTER_SKILL_SILENT1",
+    "name": "Astucia deshonesta",
+    "description": "Juega 5 cartas usando la astucia de una sola carta."
+  },
+  {
+    "id": "CHARACTER_SKILL_SILENT2",
+    "name": "Un poquito de ponzoña",
+    "description": "Aplica 99 de veneno a un enemigo."
+  },
+  {
+    "id": "COMPLETE_ACT4",
+    "name": "Final verdadero",
+    "description": "Completa el acto 4."
+  },
+  {
+    "id": "COMPLETE_TIMELINE",
+    "name": "Cronista",
+    "description": "Completa la Cronología."
+  },
+  {
+    "id": "DEFEAT_GLORY_ENEMIES",
+    "name": "Gloria pura",
+    "description": "Derrota a todos los enemigos en Gloria."
+  },
+  {
+    "id": "DEFEAT_HIVE_ENEMIES",
+    "name": "Conquista en Colmena",
+    "description": "Derrota a todos los enemigos en Colmena."
+  },
+  {
+    "id": "DEFEAT_ONE_BOSS",
+    "name": "El primero de muchos",
+    "description": "Derrota un jefe."
+  },
+  {
+    "id": "DEFEAT_OVERGROWTH_ENEMIES",
+    "name": "Espesa Espesura",
+    "description": "Derrota a todos los enemigos en Espesura."
+  },
+  {
+    "id": "DEFEAT_UNDERDOCKS_ENEMIES",
+    "name": "Victoria en Muelles Funestos",
+    "description": "Derrota a todos los enemigos en Muelles Funestos."
+  },
+  {
+    "id": "DEFECT_ASCENSION10",
+    "name": "Ecos ascendentes",
+    "description": "Completa una partida con ascensión 10 como El Defectuoso."
+  },
+  {
+    "id": "DEFECT_WIN",
+    "name": "El Defectuoso",
+    "description": "Gana como El Defectuoso."
+  },
+  {
+    "id": "DISCOVER_ALL_CARDS",
+    "name": "Coleccionista",
+    "description": "Descubre todas las cartas."
+  },
+  {
+    "id": "DISCOVER_ALL_EVENTS",
+    "name": "Trotamundos",
+    "description": "Descubre todos los eventos."
+  },
+  {
+    "id": "DISCOVER_ALL_RELICS",
+    "name": "Afición por la arqueología",
+    "description": "Descubre todas las reliquias."
+  },
+  {
+    "id": "FLOOR_TEN_THOUSAND",
+    "name": "Sube y sube...",
+    "description": "Escala 10 000 pisos."
+  },
+  {
+    "id": "IRONCLAD_ASCENSION10",
+    "name": "Ser demoníaco",
+    "description": "Completa una partida con ascensión 10 como El Blindado."
+  },
+  {
+    "id": "IRONCLAD_WIN",
+    "name": "El Blindado",
+    "description": "Gana como El Blindado."
+  },
+  {
+    "id": "NECROBINDER_ASCENSION10",
+    "name": "Gran liche",
+    "description": "Completa una partida con ascensión 10 como La Necrodescarte."
+  },
+  {
+    "id": "NECROBINDER_WIN",
+    "name": "La Necrodescarte",
+    "description": "Gana como La Necrodescarte."
+  },
+  {
+    "id": "NO_RELIC_WIN",
+    "name": "Desorden sin propósito",
+    "description": "Gana una partida sin obtener ninguna reliquia."
+  },
+  {
+    "id": "PLAY20_CARDS_SINGLE_TURN",
+    "name": "¡Qué divertido es jugar a las cartas!",
+    "description": "Juega 20 cartas en un solo turno."
+  },
+  {
+    "id": "REGENT_ASCENSION10",
+    "name": "Monarca supremo",
+    "description": "Completa una partida con ascensión 10 como El Monarca."
+  },
+  {
+    "id": "REGENT_WIN",
+    "name": "El Monarca",
+    "description": "Gana como El Monarca."
+  },
+  {
+    "id": "SILENT_ASCENSION10",
+    "name": "Espectro silente",
+    "description": "Completa una partida con ascensión 10 como La Silenciosa."
+  },
+  {
+    "id": "SILENT_WIN",
+    "name": "La Silenciosa",
+    "description": "Gana como La Silenciosa."
+  }
+]

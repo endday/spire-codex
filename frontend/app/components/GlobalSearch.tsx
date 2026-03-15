@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 import { useRouter } from "next/navigation";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -107,6 +108,7 @@ export default function GlobalSearch() {
   const overlayRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
   const abortRef = useRef<AbortController | null>(null);
+  const { lang } = useLanguage();
 
   // Filter matching pages
   const matchedPages = query.trim()
@@ -178,7 +180,7 @@ export default function GlobalSearch() {
       const encoded = encodeURIComponent(query.trim());
       Promise.all(
         CATEGORIES.map((cat) =>
-          fetch(`${API}${cat.endpoint}?search=${encoded}`, {
+          fetch(`${API}${cat.endpoint}?search=${encoded}&lang=${lang}`, {
             signal: controller.signal,
           })
             .then((r) => (r.ok ? r.json() : []))
@@ -201,7 +203,7 @@ export default function GlobalSearch() {
     }, 300);
 
     return () => clearTimeout(timer);
-  }, [query]);
+  }, [query, lang]);
 
   // Navigate to result
   const navigate = useCallback(

@@ -11,7 +11,9 @@ import type {
   Act,
   Ascension,
 } from "@/lib/api";
+import { cachedFetch } from "@/lib/fetch-cache";
 import RichDescription from "../components/RichDescription";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -19,6 +21,7 @@ interface Section<T> {
   title: string;
   endpoint: string;
   accent: string;
+  lang: string;
   render: (item: T) => React.ReactNode;
 }
 
@@ -26,15 +29,15 @@ function ReferenceSection<T extends { id: string }>({
   title,
   endpoint,
   accent,
+  lang,
   render,
 }: Section<T>) {
   const [data, setData] = useState<T[]>([]);
 
   useEffect(() => {
-    fetch(`${API}/api/${endpoint}`)
-      .then((r) => r.json())
+    cachedFetch<T[]>(`${API}/api/${endpoint}?lang=${lang}`)
       .then(setData);
-  }, [endpoint]);
+  }, [endpoint, lang]);
 
   const filtered = data.filter((item) => !item.id.startsWith("MOCK_") && item.id !== "PERIOD");
 
@@ -65,6 +68,8 @@ function ReferenceSection<T extends { id: string }>({
 }
 
 export default function ReferencePage() {
+  const { lang } = useLanguage();
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <h1 className="text-3xl font-bold mb-8">
@@ -75,6 +80,7 @@ export default function ReferencePage() {
         title="Acts"
         endpoint="acts"
         accent="text-emerald-400"
+        lang={lang}
         render={(act) => (
           <>
             <h3 className="font-semibold text-[var(--text-primary)] mb-2">
@@ -93,6 +99,7 @@ export default function ReferencePage() {
         title="Ascension Levels"
         endpoint="ascensions"
         accent="text-rose-400"
+        lang={lang}
         render={(asc) => (
           <>
             <div className="flex items-baseline gap-2 mb-1">
@@ -112,6 +119,7 @@ export default function ReferencePage() {
         title="Keywords"
         endpoint="keywords"
         accent="text-cyan-400"
+        lang={lang}
         render={(kw) => (
           <>
             <h3 className="font-semibold text-[var(--text-primary)] mb-1">
@@ -128,6 +136,7 @@ export default function ReferencePage() {
         title="Orbs"
         endpoint="orbs"
         accent="text-blue-400"
+        lang={lang}
         render={(orb) => (
           <>
             <h3 className="font-semibold text-[var(--text-primary)] mb-1">
@@ -144,6 +153,7 @@ export default function ReferencePage() {
         title="Afflictions"
         endpoint="afflictions"
         accent="text-red-400"
+        lang={lang}
         render={(aff) => (
           <>
             <div className="flex items-start justify-between mb-1">
@@ -172,6 +182,7 @@ export default function ReferencePage() {
         title="Intents"
         endpoint="intents"
         accent="text-amber-400"
+        lang={lang}
         render={(intent) => (
           <>
             <h3 className="font-semibold text-[var(--text-primary)] mb-1">
@@ -188,6 +199,7 @@ export default function ReferencePage() {
         title="Modifiers"
         endpoint="modifiers"
         accent="text-purple-400"
+        lang={lang}
         render={(mod) => (
           <>
             <h3 className="font-semibold text-[var(--text-primary)] mb-1">
@@ -204,6 +216,7 @@ export default function ReferencePage() {
         title="Achievements"
         endpoint="achievements"
         accent="text-yellow-400"
+        lang={lang}
         render={(ach) => (
           <>
             <h3 className="font-semibold text-[var(--text-primary)] mb-1">

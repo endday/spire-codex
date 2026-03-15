@@ -1,0 +1,72 @@
+[
+  {
+    "id": "ATTACK",
+    "name": "Saldırgan",
+    "description": "Bu düşman, {IsMultiplayer:herkese |}{Repeat:plural:|[blue]{}[/blue] kez }[blue]{Damage}[/blue] hasar vermek için [gold]Saldırmayı[/gold] amaçlıyor."
+  },
+  {
+    "id": "BUFF",
+    "name": "Güçlendirme",
+    "description": "Bu düşman [gold]Güçlendirme[/gold] kullanmayı amaçlıyor."
+  },
+  {
+    "id": "CARD_DEBUFF",
+    "name": "Art Niyetli",
+    "description": "Bu düşman, kartlarına [gold]Olumsuz Etki[/gold] uygulamayı amaçlıyor."
+  },
+  {
+    "id": "DEATH_BLOW",
+    "name": "Son Darbe",
+    "description": "Bu yaratık seni de beraberinde ölüme sürüklemeye çalışıyor. Yok olmadan önce sana saldırıp [blue]{Damage}[/blue] hasar verecek."
+  },
+  {
+    "id": "DEBUFF",
+    "name": "Stratejik",
+    "description": "Bu düşman, sana bir [gold]Güçsüzleştirme[/gold] uygulamayı amaçlıyor."
+  },
+  {
+    "id": "DEBUFF_STRONG",
+    "name": "Stratejik",
+    "description": "Bu düşman, sana şiddetli bir [gold]Güçsüzleştirme[/gold] uygulamayı amaçlıyor."
+  },
+  {
+    "id": "DEFEND",
+    "name": "Defansif",
+    "description": "Bu düşman turu geldiğinde [gold]Bloklamayı[/gold] amaçlıyor."
+  },
+  {
+    "id": "ESCAPE",
+    "name": "Korkak",
+    "description": "Bu düşman [gold]Kaçmayı[/gold] amaçlıyor."
+  },
+  {
+    "id": "HEAL",
+    "name": "İyileştirme",
+    "description": "Bu düşman [gold]İyileştirmeyi[/gold] amaçlıyor."
+  },
+  {
+    "id": "SLEEP",
+    "name": "Uyuyor",
+    "description": "Bu düşman, bu turda hiçbir şey yapmıyor."
+  },
+  {
+    "id": "STATUS",
+    "name": "Stratejik",
+    "description": "Bu düşman sana [blue]{CardCount}[/blue] [gold]Durum[/gold] {CardCount:plural:kartı|kartı} vermeyi amaçlıyor."
+  },
+  {
+    "id": "STUN",
+    "name": "Sersemlemiş",
+    "description": "Bu düşman, bir sonraki turunda hareket edemez."
+  },
+  {
+    "id": "SUMMON",
+    "name": "Çağrı",
+    "description": "Bu düşman, [gold]Canavar[/gold] çağırmayı amaçlıyor."
+  },
+  {
+    "id": "UNKNOWN",
+    "name": "Bilinmeyen",
+    "description": "Bu düşmanın amacı [gold]Bilinmiyor[/gold]."
+  }
+]

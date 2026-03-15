@@ -1,0 +1,2892 @@
+[
+  {
+    "id": "AKABEKO",
+    "name": "Akabeko",
+    "description": "Au début de chaque combat, gagnez [blue]8[/blue] de [gold]Vigueur[/gold].",
+    "description_raw": "Au début de chaque combat, gagnez [blue]{VigorPower}[/blue] de [gold]Vigueur[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "shared",
+    "image_url": "/static/images/relics/akabeko.png"
+  },
+  {
+    "id": "ALCHEMICAL_COFFER",
+    "name": "Caisse d'alchimie",
+    "description": "Lorsque vous obtenez cette relique, gagnez [blue]4[/blue] nouveaux emplacements de potion avec des potions aléatoires.",
+    "description_raw": "Lorsque vous obtenez cette relique, gagnez [blue]{PotionSlots}[/blue] nouveaux emplacements de potion avec des potions aléatoires.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/alchemical_coffer.png"
+  },
+  {
+    "id": "AMETHYST_AUBERGINE",
+    "name": "Aubergine d'améthyste",
+    "description": "Les ennemis donnent [blue]10[/blue] [gold]Pièces d'or[/gold] supplémentaires.",
+    "description_raw": "Les ennemis donnent [blue]{Gold}[/blue] [gold]Pièces d'or[/gold] supplémentaires.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique commune",
+    "pool": "shared",
+    "image_url": "/static/images/relics/amethyst_aubergine.png"
+  },
+  {
+    "id": "ANCHOR",
+    "name": "Ancre",
+    "description": "Démarrez chaque combat avec [blue]10[/blue] d'[gold]Armure[/gold].",
+    "description_raw": "Démarrez chaque combat avec [blue]{Block}[/blue] d'[gold]Armure[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique commune",
+    "pool": "shared",
+    "image_url": "/static/images/relics/anchor.png"
+  },
+  {
+    "id": "ARCANE_SCROLL",
+    "name": "Parchemin arcanique",
+    "description": "Lorsque vous obtenez cette relique, ajoutez une [gold]Carte Rare[/gold] aléatoire à votre [gold]Deck[/gold].",
+    "description_raw": "Lorsque vous obtenez cette relique, ajoutez une [gold]Carte Rare[/gold] aléatoire à votre [gold]Deck[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/arcane_scroll.png"
+  },
+  {
+    "id": "ARCHAIC_TOOTH",
+    "name": "Dent archaïque",
+    "description": "Lorsque vous obtenez cette relique, [gold]Transformez[/gold] une carte de base en sa version d'Ancien.",
+    "description_raw": "Lorsque vous obtenez cette relique, [gold]Transformez[/gold] {StarterCard.StringValue:cond:[gold]{StarterCard}[/gold] en [gold]{AncientCard}[/gold]|une carte de base en sa version d'Ancien}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/archaic_tooth.png"
+  },
+  {
+    "id": "ART_OF_WAR",
+    "name": "L'Art de la guerre",
+    "description": "Si vous ne jouez aucune Attaque pendant votre tour, gagnez [energy:1] supplémentaire au tour suivant.",
+    "description_raw": "Si vous ne jouez aucune Attaque pendant votre tour, gagnez {Energy:energyIcons()} supplémentaire au tour suivant.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/art_of_war.png"
+  },
+  {
+    "id": "ASTROLABE",
+    "name": "Astrolabe",
+    "description": "Lorsque vous obtenez cette relique, [gold]Transformez[/gold] [blue]3[/blue] cartes, puis [gold]Améliorez[/gold]-les.",
+    "description_raw": "Lorsque vous obtenez cette relique, [gold]Transformez[/gold] [blue]{Cards}[/blue] {Cards:plural:carte|cartes}, puis [gold]Améliorez[/gold]-les.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/astrolabe.png"
+  },
+  {
+    "id": "BAG_OF_MARBLES",
+    "name": "Sac de billes",
+    "description": "Au début de chaque combat, appliquez [gold]Vulnérable[/gold] ([blue]1[/blue]) sur TOUS les ennemis.",
+    "description_raw": "Au début de chaque combat, appliquez [gold]Vulnérable[/gold] ([blue]{VulnerablePower}[/blue]) sur TOUS les ennemis.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "shared",
+    "image_url": "/static/images/relics/bag_of_marbles.png"
+  },
+  {
+    "id": "BAG_OF_PREPARATION",
+    "name": "Sacoche de préparatifs",
+    "description": "Au début de chaque combat, piochez [blue]2[/blue] cartes supplémentaires.",
+    "description_raw": "Au début de chaque combat, piochez [blue]{Cards}[/blue] {Cards:plural:carte supplémentaire|cartes supplémentaires}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique commune",
+    "pool": "shared",
+    "image_url": "/static/images/relics/bag_of_preparation.png"
+  },
+  {
+    "id": "BEATING_REMNANT",
+    "name": "Vestige battant",
+    "description": "Vous ne pouvez perdre plus de [blue]20[/blue] PV en un seul tour.",
+    "description_raw": "Vous ne pouvez perdre plus de [blue]20[/blue] PV en un seul tour.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/beating_remnant.png"
+  },
+  {
+    "id": "BEAUTIFUL_BRACELET",
+    "name": "Bracelet brillant",
+    "description": "Lorsque vous obtenez cette relique, choisissez [blue]3[/blue] cartes dans votre [gold]Deck[/gold]. [gold]Envoûtez[/gold]-les avec [purple]Célérité[/purple] [blue]3[/blue].",
+    "description_raw": "Lorsque vous obtenez cette relique, choisissez [blue]{Cards}[/blue] {Cards:plural:carte|cartes} dans votre [gold]Deck[/gold]. [gold]Envoûtez[/gold]-les avec [purple]Célérité[/purple] [blue]3[/blue].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/beautiful_bracelet.png"
+  },
+  {
+    "id": "BELLOWS",
+    "name": "Soufflet",
+    "description": "La première [gold]Main[/gold] que vous piochez chaque combat est [gold]Améliorée[/gold].",
+    "description_raw": "La première [gold]Main[/gold] que vous piochez chaque combat est [gold]Améliorée[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "shared",
+    "image_url": "/static/images/relics/bellows.png"
+  },
+  {
+    "id": "BELT_BUCKLE",
+    "name": "Boucle de ceinture",
+    "description": "Si vous n'avez pas de potions, vous avez [blue]2[/blue] de [gold]Dexterité[/gold] supplémentaire.",
+    "description_raw": "Si vous n'avez pas de potions, vous avez [blue]{DexterityPower}[/blue] de [gold]Dexterité[/gold] supplémentaire.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique du Marchand",
+    "pool": "shared",
+    "image_url": "/static/images/relics/belt_buckle.png"
+  },
+  {
+    "id": "BIG_HAT",
+    "name": "Grand chapeau",
+    "description": "Au début de chaque combat, ajoutez [blue]2[/blue] cartes [gold]Éthérées[/gold] aléatoires à votre [gold]Main[/gold].",
+    "description_raw": "Au début de chaque combat, ajoutez [blue]{Cards}[/blue] {Cards:plural:carte [gold]Éthérée[/gold] aléatoire|cartes [gold]Éthérées[/gold] aléatoires} à votre [gold]Main[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "necrobinder",
+    "image_url": "/static/images/relics/big_hat.png"
+  },
+  {
+    "id": "BIG_MUSHROOM",
+    "name": "Gros champi",
+    "description": "Lorsque vous obtenez cette relique, augmentez vos PV Max de [blue]20[/blue]. Au début de chaque combat, vous piochez [blue]2[/blue] cartes en moins.",
+    "description_raw": "Lorsque vous obtenez cette relique, augmentez vos PV Max de [blue]{MaxHp}[/blue]. Au début de chaque combat, vous piochez [blue]{Cards}[/blue] {Cards:plural:carte|cartes} en moins.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/big_mushroom.png"
+  },
+  {
+    "id": "BIIIG_HUG",
+    "name": "Grooos câlin",
+    "description": "Lorsque vous obtenez cette relique, retirez [blue]4[/blue] cartes de votre [gold]Deck[/gold]. Lorsque vous mélangez votre [gold]Pioche[/gold], ajoutez une [gold]Suie[/gold] à votre [gold]Pioche[/gold].",
+    "description_raw": "Lorsque vous obtenez cette relique, retirez [blue]{Cards}[/blue] cartes de votre [gold]Deck[/gold]. Lorsque vous mélangez votre [gold]Pioche[/gold], ajoutez une [gold]Suie[/gold] à votre [gold]Pioche[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/biiig_hug.png"
+  },
+  {
+    "id": "BING_BONG",
+    "name": "Bing bong",
+    "description": "Chaque fois que vous ajoutez une carte à votre [gold]Deck[/gold], ajoutez-en une copie supplémentaire.",
+    "description_raw": "Chaque fois que vous ajoutez une carte à votre [gold]Deck[/gold], ajoutez-en une copie supplémentaire.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/bing_bong.png"
+  },
+  {
+    "id": "BLACK_BLOOD",
+    "name": "Sang noir",
+    "description": "À la fin de chaque combat, récupérez [green]12[/green] PV.",
+    "description_raw": "À la fin de chaque combat, récupérez [green]{Heal}[/green] PV.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique de base",
+    "pool": "shared",
+    "image_url": "/static/images/relics/black_blood.png"
+  },
+  {
+    "id": "BLACK_STAR",
+    "name": "Étoile noire",
+    "description": "Les [gold]Élites[/gold] donnent une Relique supplémentaire lorsqu'ils sont vaincus.",
+    "description_raw": "Les [gold]Élites[/gold] donnent une Relique supplémentaire lorsqu'ils sont vaincus.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/black_star.png"
+  },
+  {
+    "id": "BLESSED_ANTLER",
+    "name": "Bois bénis",
+    "description": "Gagnez [energy:1] au début de chaque tour. Au début de chaque combat, ajoutez [blue]3[/blue] [gold]Hébété[/gold] à votre [gold]Pioche[/gold].",
+    "description_raw": "Gagnez {Energy:energyIcons()} au début de chaque tour. Au début de chaque combat, ajoutez [blue]{Cards}[/blue] [gold]Hébété[/gold] à votre [gold]Pioche[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/blessed_antler.png"
+  },
+  {
+    "id": "BLOOD_SOAKED_ROSE",
+    "name": "Rose sanguinolente",
+    "description": "Lorsque vous obtenez cette relique, ajoutez [blue]1[/blue] [red]Assuétude[/red] à votre [gold]Deck[/gold]. Gagnez [energy:1] au début de chaque tour.",
+    "description_raw": "Lorsque vous obtenez cette relique, ajoutez [blue]1[/blue] [red]Assuétude[/red] à votre [gold]Deck[/gold]. Gagnez {Energy:energyIcons()} au début de chaque tour.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/blood_soaked_rose.png"
+  },
+  {
+    "id": "BLOOD_VIAL",
+    "name": "Fiole de sang",
+    "description": "Au début de chaque combat, récupérez [green]2[/green] PV.",
+    "description_raw": "Au début de chaque combat, récupérez [green]{Heal}[/green] PV.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique commune",
+    "pool": "shared",
+    "image_url": "/static/images/relics/blood_vial.png"
+  },
+  {
+    "id": "BONE_FLUTE",
+    "name": "Flûte d'os",
+    "description": "Chaque fois que [gold]Titos[/gold] attaque, gagnez [blue]2[/blue] d'[gold]Armure[/gold].",
+    "description_raw": "Chaque fois que [gold]Titos[/gold] attaque, gagnez [blue]{Block}[/blue] d'[gold]Armure[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique commune",
+    "pool": "necrobinder",
+    "image_url": "/static/images/relics/bone_flute.png"
+  },
+  {
+    "id": "BONE_TEA",
+    "name": "Thé d'os",
+    "description": "Au début des [blue]2[/blue] prochains combats, [gold]Améliorez[/gold] votre main de départ.",
+    "description_raw": "Au début {Combats:plural:du prochain combat|des [blue]{}[/blue] prochains combats}, [gold]Améliorez[/gold] votre main de départ.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/bone_tea.png"
+  },
+  {
+    "id": "BOOK_OF_FIVE_RINGS",
+    "name": "Livre des cinq anneaux",
+    "description": "Chaque fois que vous ajoutez [blue]5[/blue] cartes à votre [gold]Deck[/gold], récupérez [green]15[/green] PV.",
+    "description_raw": "Chaque fois que vous ajoutez [blue]{Cards}[/blue] {Cards:plural:carte|cartes} à votre [gold]Deck[/gold], récupérez [green]{Heal}[/green] PV.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique commune",
+    "pool": "shared",
+    "image_url": "/static/images/relics/book_of_five_rings.png"
+  },
+  {
+    "id": "BOOK_REPAIR_KNIFE",
+    "name": "Couteau à reliure",
+    "description": "Chaque fois qu'un ennemi non-Serviteur succombe à [gold]Fatalité[/gold], récupérez [green]3[/green] PV.",
+    "description_raw": "Chaque fois qu'un ennemi non-Serviteur succombe à [gold]Fatalité[/gold], récupérez [green]{Heal}[/green] PV.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "necrobinder",
+    "image_url": "/static/images/relics/book_repair_knife.png"
+  },
+  {
+    "id": "BOOKMARK",
+    "name": "Marque-page",
+    "description": "À la fin de chaque tour, réduisez le coût d'une carte [gold]Retenue[/gold] aléatoire de [blue]1[/blue] jusqu'à ce qu'elle soit jouée.",
+    "description_raw": "À la fin de chaque tour, réduisez le coût d'une carte [gold]Retenue[/gold] aléatoire de [blue]1[/blue] jusqu'à ce qu'elle soit jouée.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "necrobinder",
+    "image_url": "/static/images/relics/bookmark.png"
+  },
+  {
+    "id": "BOOMING_CONCH",
+    "name": "Conque retentissante",
+    "description": "Au début des combats d'[gold]Élite[/gold], piochez [blue]2[/blue] cartes supplémentaires.",
+    "description_raw": "Au début des combats d'[gold]Élite[/gold], piochez [blue]{Cards}[/blue] {Cards:plural:carte supplémentaire|cartes supplémentaires}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/booming_conch.png"
+  },
+  {
+    "id": "BOUND_PHYLACTERY",
+    "name": "Phylactère enchaîné",
+    "description": "Au début de votre tour, [gold]Invoquez[/gold] pour [blue]1[/blue].",
+    "description_raw": "Au début de votre tour, [gold]Invoquez[/gold] pour [blue]{Summon}[/blue].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique de base",
+    "pool": "necrobinder",
+    "image_url": "/static/images/relics/bound_phylactery.png"
+  },
+  {
+    "id": "BOWLER_HAT",
+    "name": "Chapeau melon",
+    "description": "Recevez [blue]20%[/blue] de [gold]Pièces d'or[/gold] supplémentaires.",
+    "description_raw": "Recevez [blue]20%[/blue] de [gold]Pièces d'or[/gold] supplémentaires.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "shared",
+    "image_url": "/static/images/relics/bowler_hat.png"
+  },
+  {
+    "id": "BREAD",
+    "name": "Pain",
+    "description": "Au début de votre premier tour, perdez [energy:2]. Au début de chaque tour suivant, gagnez [energy:1].",
+    "description_raw": "Au début de votre premier tour, perdez {LoseEnergy:energyIcons()}. Au début de chaque tour suivant, gagnez {GainEnergy:energyIcons()}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique du Marchand",
+    "pool": "shared",
+    "image_url": "/static/images/relics/bread.png"
+  },
+  {
+    "id": "BRILLIANT_SCARF",
+    "name": "Écharpe étincelante",
+    "description": "La [blue]5ème[/blue] carte jouée chaque tour peut être jouée sans coût.",
+    "description_raw": "La [blue]5ème[/blue] carte jouée chaque tour peut être jouée sans coût.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/brilliant_scarf.png"
+  },
+  {
+    "id": "BRIMSTONE",
+    "name": "Soufre",
+    "description": "Au début de votre tour, gagnez [blue][SelfStrength][/blue] de [gold]Force[/gold] ; TOUS les ennemis gagnent [blue][EnemyStrength][/blue] de [gold]Force[/gold].",
+    "description_raw": "Au début de votre tour, gagnez [blue]{SelfStrength}[/blue] de [gold]Force[/gold] ; TOUS les ennemis gagnent [blue]{EnemyStrength}[/blue] de [gold]Force[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique du Marchand",
+    "pool": "ironclad",
+    "image_url": "/static/images/relics/brimstone.png"
+  },
+  {
+    "id": "BRONZE_SCALES",
+    "name": "Écailles de bronze",
+    "description": "Démarrez chaque combat avec [blue]3[/blue] d'[gold]Épines[/gold].",
+    "description_raw": "Démarrez chaque combat avec [blue]{ThornsPower}[/blue] d'[gold]Épines[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique commune",
+    "pool": "shared",
+    "image_url": "/static/images/relics/bronze_scales.png"
+  },
+  {
+    "id": "BURNING_BLOOD",
+    "name": "Sang ardent",
+    "description": "À la fin de chaque combat, récupérez [green]6[/green] PV.",
+    "description_raw": "À la fin de chaque combat, récupérez [green]{Heal}[/green] PV.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique de base",
+    "pool": "ironclad",
+    "image_url": "/static/images/relics/burning_blood.png"
+  },
+  {
+    "id": "BURNING_STICKS",
+    "name": "Bâtonnets enflammés",
+    "description": "La première fois que vous [gold]Épuisez[/gold] une Compétence chaque combat, ajoutez-en une copie à votre [gold]Main[/gold].",
+    "description_raw": "La première fois que vous [gold]Épuisez[/gold] une Compétence chaque combat, ajoutez-en une copie à votre [gold]Main[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique du Marchand",
+    "pool": "shared",
+    "image_url": "/static/images/relics/burning_sticks.png"
+  },
+  {
+    "id": "BYRDPIP",
+    "name": "Oizillon",
+    "description": "Lorsque vous obtenez cette relique, obtenez la carte [gold]Piqué d'oizo[/gold]. Un [gold]Oizillon[/gold] vous accompagnera en combat.",
+    "description_raw": "Lorsque vous obtenez cette relique, obtenez la carte [gold]Piqué d'oizo[/gold]. Un [gold]Oizillon[/gold] vous accompagnera en combat.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/byrdpip.png"
+  },
+  {
+    "id": "CALLING_BELL",
+    "name": "Cloche d'appel",
+    "description": "Lorsque vous obtenez cette relique, obtenez une [red]Malédiction[/red] spéciale et [blue]3[/blue] [gold]Reliques[/gold].",
+    "description_raw": "Lorsque vous obtenez cette relique, obtenez une [red]Malédiction[/red] spéciale et [blue]{Relics}[/blue] [gold]Reliques[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/calling_bell.png"
+  },
+  {
+    "id": "CANDELABRA",
+    "name": "Candélabre",
+    "description": "Au début de votre [blue]2ème[/blue] tour, gagnez [energy:2].",
+    "description_raw": "Au début de votre [blue]2ème[/blue] tour, gagnez {Energy:energyIcons()}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "shared",
+    "image_url": "/static/images/relics/candelabra.png"
+  },
+  {
+    "id": "CAPTAINS_WHEEL",
+    "name": "Barre de capitaine",
+    "description": "Au début de votre [blue]3ème[/blue] tour, gagnez [blue]18[/blue] d'[gold]Armure[/gold].",
+    "description_raw": "Au début de votre [blue]3ème[/blue] tour, gagnez [blue]{Block}[/blue] d'[gold]Armure[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/captains_wheel.png"
+  },
+  {
+    "id": "CAULDRON",
+    "name": "Chaudron",
+    "description": "Lorsque vous obtenez cette relique, concoctez [blue]5[/blue] potions aléatoires.",
+    "description_raw": "Lorsque vous obtenez cette relique, concoctez [blue]{Potions}[/blue] {Potions:plural:potion aléatoire|potions aléatoires}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique du Marchand",
+    "pool": "shared",
+    "image_url": "/static/images/relics/cauldron.png"
+  },
+  {
+    "id": "CENTENNIAL_PUZZLE",
+    "name": "Puzzle centenaire",
+    "description": "La première fois que vous perdez des PV chaque combat, piochez [blue]3[/blue] cartes.",
+    "description_raw": "La première fois que vous perdez des PV chaque combat, piochez [blue]{Cards}[/blue] {Cards:plural:carte|cartes}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique commune",
+    "pool": "shared",
+    "image_url": "/static/images/relics/centennial_puzzle.png"
+  },
+  {
+    "id": "CHANDELIER",
+    "name": "Chandelier",
+    "description": "Au début de votre [blue]3ème[/blue] tour, gagnez [energy:3].",
+    "description_raw": "Au début de votre [blue]3ème[/blue] tour, gagnez {Energy:energyIcons()}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/chandelier.png"
+  },
+  {
+    "id": "CHARONS_ASHES",
+    "name": "Cendres de Charon",
+    "description": "Chaque fois que vous [gold]Épuisez[/gold] une carte, infligez [blue]3[/blue] dégâts à TOUS les ennemis.",
+    "description_raw": "Chaque fois que vous [gold]Épuisez[/gold] une carte, infligez [blue]{Damage}[/blue] dégâts à TOUS les ennemis.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "ironclad",
+    "image_url": "/static/images/relics/charons_ashes.png"
+  },
+  {
+    "id": "CHEMICAL_X",
+    "name": "Composé X",
+    "description": "Les effets de vos cartes de coût [blue]X[/blue] sont augmentés de [blue]2[/blue].",
+    "description_raw": "Les effets de vos cartes de coût [blue]X[/blue] sont augmentés de [blue]{Increase}[/blue].",
+    "flavor": "AVERTISSEMENT : ne pas mélanger au sucre, aux épices, ou à n'importe quel autre aliment pouvant avoir bon goût.",
+    "rarity": "Relique du Marchand",
+    "pool": "shared",
+    "image_url": "/static/images/relics/chemical_x.png"
+  },
+  {
+    "id": "CHOICES_PARADOX",
+    "name": "Embarras du choix",
+    "description": "Au début de chaque combat, ajoutez [blue]1[/blue] carte parmi [blue]5[/blue] cartes aléatoires à votre [gold]Main[/gold]. Ajoutez [gold]Retenue[/gold] à la carte choisie.",
+    "description_raw": "Au début de chaque combat, ajoutez [blue]1[/blue] carte parmi [blue]{Cards}[/blue] cartes aléatoires à votre [gold]Main[/gold]. Ajoutez [gold]Retenue[/gold] à la carte choisie.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/choices_paradox.png"
+  },
+  {
+    "id": "CHOSEN_CHEESE",
+    "name": "Fromage élu",
+    "description": "À la fin de chaque combat, gagnez [blue]1[/blue] PV Max.",
+    "description_raw": "À la fin de chaque combat, gagnez [blue]{MaxHp}[/blue] PV Max.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/chosen_cheese.png"
+  },
+  {
+    "id": "CIRCLET",
+    "name": "Diadème",
+    "description": "C'est un diadème.",
+    "description_raw": "C'est un diadème.",
+    "flavor": "Une curieuse relique qui apparaît lorsqu'il y a un problème dans la [gold]Tour[/gold] ou qu'il n'y a plus de reliques à découvrir.",
+    "rarity": "None",
+    "pool": "shared",
+    "image_url": "/static/images/relics/circlet.png"
+  },
+  {
+    "id": "CLAWS",
+    "name": "Griffes",
+    "description": "Lorsque vous obtenez cette relique, [gold]Transformez[/gold] jusqu'à [blue]6[/blue] cartes en [gold]Mutilation[/gold].",
+    "description_raw": "Lorsque vous obtenez cette relique, [gold]Transformez[/gold] jusqu'à [blue]{Cards}[/blue] {Cards:plural:carte|cartes} en [gold]Mutilation[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/claws.png"
+  },
+  {
+    "id": "CLOAK_CLASP",
+    "name": "Boucle de cape",
+    "description": "À la fin de votre tour, gagnez [blue]1[/blue] d'[gold]Armure[/gold] pour chaque carte dans votre [gold]Main[/gold].",
+    "description_raw": "À la fin de votre tour, gagnez [blue]{Block}[/blue] d'[gold]Armure[/gold] pour chaque carte dans votre [gold]Main[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/cloak_clasp.png"
+  },
+  {
+    "id": "CRACKED_CORE",
+    "name": "Noyau fissuré",
+    "description": "Au début de chaque combat, [gold]Canalisez[/gold] [blue]1[/blue] [gold]Orbe kéraunique[/gold].",
+    "description_raw": "Au début de chaque combat, [gold]Canalisez[/gold] [blue]{Lightning}[/blue] [gold]Orbe kéraunique[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique de base",
+    "pool": "defect",
+    "image_url": "/static/images/relics/cracked_core.png"
+  },
+  {
+    "id": "CROSSBOW",
+    "name": "Arbalète",
+    "description": "Au début de votre tour, ajoutez une [gold]Attaque[/gold] aléatoire à votre [gold]Main[/gold]. Elle coûte [blue]0[/blue] [energy:1] ce tour.",
+    "description_raw": "Au début de votre tour, ajoutez une [gold]Attaque[/gold] aléatoire à votre [gold]Main[/gold]. Elle coûte [blue]0[/blue] {energyPrefix:energyIcons(1)} ce tour.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/crossbow.png"
+  },
+  {
+    "id": "CURSED_PEARL",
+    "name": "Perle maudite",
+    "description": "Lorsque vous obtenez cette relique, recevez [red]Cupidité[/red]. Obtenez [blue]333[/blue] [gold]Pièces d'or[/gold].",
+    "description_raw": "Lorsque vous obtenez cette relique, recevez [red]Cupidité[/red]. Obtenez [blue]{Gold}[/blue] [gold]Pièces d'or[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/cursed_pearl.png"
+  },
+  {
+    "id": "DARKSTONE_PERIAPT",
+    "name": "Amulette sombrepierre",
+    "description": "Chaque fois que vous obtenez une [red]Malédiction[/red], augmentez vos PV Max de [blue]6[/blue].",
+    "description_raw": "Chaque fois que vous obtenez une [red]Malédiction[/red], augmentez vos PV Max de [blue]{MaxHp}[/blue].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/darkstone_periapt.png"
+  },
+  {
+    "id": "DATA_DISK",
+    "name": "Disque dur",
+    "description": "Commencez chaque combat avec [blue]1[/blue] de [gold]Focalisation[/gold].",
+    "description_raw": "Commencez chaque combat avec [blue]{FocusPower}[/blue] de [gold]Focalisation[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique commune",
+    "pool": "defect",
+    "image_url": "/static/images/relics/data_disk.png"
+  },
+  {
+    "id": "DAUGHTER_OF_THE_WIND",
+    "name": "Fille des vents",
+    "description": "Chaque fois que vous jouez une Attaque, gagnez [blue]1[/blue] d'[gold]Armure[/gold].",
+    "description_raw": "Chaque fois que vous jouez une Attaque, gagnez [blue]{Block}[/blue] d'[gold]Armure[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/daughter_of_the_wind.png"
+  },
+  {
+    "id": "DELICATE_FROND",
+    "name": "Fougère délicate",
+    "description": "Au début de chaque combat, remplissez vos emplacements de potion vides avec des potions aléatoires.",
+    "description_raw": "Au début de chaque combat, remplissez vos emplacements de potion vides avec des potions aléatoires.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/delicate_frond.png"
+  },
+  {
+    "id": "DEMON_TONGUE",
+    "name": "Langue du Démon",
+    "description": "La première fois que vous perdez des PV pendant votre tour, vous récupérez autant de PV.",
+    "description_raw": "La première fois que vous perdez des PV pendant votre tour, vous récupérez autant de PV.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "ironclad",
+    "image_url": "/static/images/relics/demon_tongue.png"
+  },
+  {
+    "id": "DIAMOND_DIADEM",
+    "name": "Diadème de diamant",
+    "description": "Si vous jouez [blue]2[/blue] cartes ou moins pendant votre tour, les dégâts des ennemis sont réduits de moitié.",
+    "description_raw": "Si vous jouez [blue]{CardThreshold}[/blue] cartes ou moins pendant votre tour, les dégâts des ennemis sont réduits de moitié.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/diamond_diadem.png"
+  },
+  {
+    "id": "DINGY_RUG",
+    "name": "Tapis miteux",
+    "description": "Les récompenses de carte peuvent désormais proposer des cartes Incolores.",
+    "description_raw": "Les récompenses de carte peuvent désormais proposer des cartes Incolores.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique du Marchand",
+    "pool": "shared",
+    "image_url": "/static/images/relics/dingy_rug.png"
+  },
+  {
+    "id": "DISTINGUISHED_CAPE",
+    "name": "Cape distinguée",
+    "description": "Lorsque vous obtenez cette relique, perdez [red]9[/red] PV Max. Ajoutez [blue]3[/blue] [gold]Apparitions[/gold] à votre [gold]Deck[/gold].",
+    "description_raw": "Lorsque vous obtenez cette relique, perdez [red]9[/red] PV Max. Ajoutez [blue]{Cards}[/blue] [gold]{Cards:plural:Apparition|Apparitions}[/gold] à votre [gold]Deck[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/distinguished_cape.png"
+  },
+  {
+    "id": "DIVINE_DESTINY",
+    "name": "Destin divin",
+    "description": "Au début de chaque combat, gagnez [star:6].",
+    "description_raw": "Au début de chaque combat, gagnez {Stars:starIcons()}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique de base",
+    "pool": "shared",
+    "image_url": "/static/images/relics/divine_destiny.png"
+  },
+  {
+    "id": "DIVINE_RIGHT",
+    "name": "Droit divin",
+    "description": "Au début de chaque combat, gagnez [star:3].",
+    "description_raw": "Au début de chaque combat, gagnez {Stars:starIcons()}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique de base",
+    "pool": "regent",
+    "image_url": "/static/images/relics/divine_right.png"
+  },
+  {
+    "id": "DOLLYS_MIRROR",
+    "name": "Miroir de Dolly",
+    "description": "Lorsque vous obtenez cette relique, obtenez une copie supplémentaire d'une carte dans votre [gold]Deck[/gold].",
+    "description_raw": "Lorsque vous obtenez cette relique, obtenez une copie supplémentaire d'une carte dans votre [gold]Deck[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique du Marchand",
+    "pool": "shared",
+    "image_url": "/static/images/relics/dollys_mirror.png"
+  },
+  {
+    "id": "DRAGON_FRUIT",
+    "name": "Fruit du dragon",
+    "description": "Chaque fois que vous gagnez des [gold]Pièces d'or[/gold], augmentez vos PV Max de [blue]1[/blue].",
+    "description_raw": "Chaque fois que vous gagnez des [gold]Pièces d'or[/gold], augmentez vos PV Max de [blue]{MaxHp}[/blue].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique du Marchand",
+    "pool": "shared",
+    "image_url": "/static/images/relics/dragon_fruit.png"
+  },
+  {
+    "id": "DREAM_CATCHER",
+    "name": "Attrape-rêves",
+    "description": "Lorsque vous vous [gold]Reposez[/gold], vous pouvez ajouter une carte à votre [gold]Deck[/gold].",
+    "description_raw": "Lorsque vous vous [gold]Reposez[/gold], vous pouvez ajouter une carte à votre [gold]Deck[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/dream_catcher.png"
+  },
+  {
+    "id": "DRIFTWOOD",
+    "name": "Bois flotté",
+    "description": "Vous disposez d'une relance gratuite pour chaque récompense de carte.",
+    "description_raw": "Vous disposez d'une relance gratuite pour chaque récompense de carte.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/driftwood.png"
+  },
+  {
+    "id": "DUSTY_TOME",
+    "name": "Grimoire poussiéreux",
+    "description": "Lorsque vous obtenez cette relique, obtenez une [gold]Carte d'Ancien[/gold].",
+    "description_raw": "Lorsque vous obtenez cette relique, obtenez {AncientCard.StringValue:cond:[gold]{}[/gold]|une [gold]Carte d'Ancien[/gold]}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/dusty_tome.png"
+  },
+  {
+    "id": "ECTOPLASM",
+    "name": "Ectoplasme",
+    "description": "Vous ne pouvez plus obtenir de [gold]Pièces d'or[/gold]. Gagnez [energy:1] au début de chaque tour.",
+    "description_raw": "Vous ne pouvez plus obtenir de [gold]Pièces d'or[/gold]. Gagnez {Energy:energyIcons()} au début de chaque tour.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/ectoplasm.png"
+  },
+  {
+    "id": "ELECTRIC_SHRYMP",
+    "name": "Crevaite électrique",
+    "description": "Lorsque vous obtenez cette relique, [gold]Envoûtez[/gold] une Compétence avec [purple]Imprégné[/purple].",
+    "description_raw": "Lorsque vous obtenez cette relique, [gold]Envoûtez[/gold] une Compétence avec [purple]Imprégné[/purple].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/electric_shrymp.png"
+  },
+  {
+    "id": "EMBER_TEA",
+    "name": "Thé de braises",
+    "description": "Au début des [blue]2[/blue] prochains combats, gagnez [blue]2[/blue] de [gold]Force[/gold].",
+    "description_raw": "Au début {Combats:plural:du prochain combat|des [blue]{}[/blue] prochains combats}, gagnez [blue]{StrengthPower}[/blue] de [gold]Force[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/ember_tea.png"
+  },
+  {
+    "id": "EMOTION_CHIP",
+    "name": "Puce émotionnelle",
+    "description": "Si vous avez perdu des PV lors du tour précédent, déclenchez la capacité passive de chacun de vos Orbes au début de votre tour.",
+    "description_raw": "Si vous avez perdu des PV lors du tour précédent, déclenchez la capacité passive de chacun de vos Orbes au début de votre tour.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "defect",
+    "image_url": "/static/images/relics/emotion_chip.png"
+  },
+  {
+    "id": "EMPTY_CAGE",
+    "name": "Cage vide",
+    "description": "Lorsque vous obtenez cette relique, retirez [blue]2[/blue] cartes de votre [gold]Deck[/gold].",
+    "description_raw": "Lorsque vous obtenez cette relique, retirez [blue]{Cards}[/blue] {Cards:plural:carte|cartes} de votre [gold]Deck[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/empty_cage.png"
+  },
+  {
+    "id": "ETERNAL_FEATHER",
+    "name": "Plume éternelle",
+    "description": "Pour toutes les [blue]5[/blue] cartes dans votre [gold]Deck[/gold], récupérez [green]3[/green] PV lorsque vous entrez dans un [gold]Site de repos[/gold].",
+    "description_raw": "Pour toutes les {Cards:plural:card|[blue]{}[/blue] cartes} dans votre [gold]Deck[/gold], récupérez [green]{Heal}[/green] PV lorsque vous entrez dans un [gold]Site de repos[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "shared",
+    "image_url": "/static/images/relics/eternal_feather.png"
+  },
+  {
+    "id": "FAKE_ANCHOR",
+    "name": "Ancre ???",
+    "description": "Démarrez chaque combat avec [blue]4[/blue] d'[gold]Armure[/gold].",
+    "description_raw": "Démarrez chaque combat avec [blue]{Block}[/blue] d'[gold]Armure[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/fake_anchor.png"
+  },
+  {
+    "id": "FAKE_BLOOD_VIAL",
+    "name": "Fiole de sang ???",
+    "description": "Au début de chaque combat, récupérez [green]1[/green] PV.",
+    "description_raw": "Au début de chaque combat, récupérez [green]{Heal}[/green] PV.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/fake_blood_vial.png"
+  },
+  {
+    "id": "FAKE_HAPPY_FLOWER",
+    "name": "Fleur joyeuse ???",
+    "description": "Tous les [blue]5[/blue] tours, gagnez [energy:1].",
+    "description_raw": "Tous les {Turns:plural:tours|[blue]{Turns}[/blue] tours}, gagnez {Energy:energyIcons()}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/fake_happy_flower.png"
+  },
+  {
+    "id": "FAKE_LEES_WAFFLE",
+    "name": "Gaufre de Lee ???",
+    "description": "Lorsque vous obtenez cette relique, récupérez [green]10%[/green] de vos PV.",
+    "description_raw": "Lorsque vous obtenez cette relique, récupérez [green]{Heal}%[/green] de vos PV.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/fake_lees_waffle.png"
+  },
+  {
+    "id": "FAKE_MANGO",
+    "name": "Mangue ???",
+    "description": "Lorsque vous obtenez cette relique, augmentez vos PV Max de [blue]3[/blue].",
+    "description_raw": "Lorsque vous obtenez cette relique, augmentez vos PV Max de [blue]{MaxHp}[/blue].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/fake_mango.png"
+  },
+  {
+    "id": "FAKE_MERCHANTS_RUG",
+    "name": "Le tapis du Marchand ???",
+    "description": "Une piètre imitation. Sans effet.",
+    "description_raw": "Une piètre imitation. Sans effet.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/fake_merchants_rug.png"
+  },
+  {
+    "id": "FAKE_ORICHALCUM",
+    "name": "Orichalque ???",
+    "description": "Si vous terminez votre tour sans [gold]Armure[/gold], gagnez [blue]3[/blue] d'[gold]Armure[/gold].",
+    "description_raw": "Si vous terminez votre tour sans [gold]Armure[/gold], gagnez [blue]{Block}[/blue] d'[gold]Armure[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/fake_orichalcum.png"
+  },
+  {
+    "id": "FAKE_SNECKO_EYE",
+    "name": "Œil de geckobra ???",
+    "description": "Démarrez chaque combat [red]Désorienté[/red].",
+    "description_raw": "Démarrez chaque combat [red]Désorienté[/red].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/fake_snecko_eye.png"
+  },
+  {
+    "id": "FAKE_STRIKE_DUMMY",
+    "name": "Mannequin d'entraînement ???",
+    "description": "Les cartes contenant « Frappe » infligent [blue]1[/blue] dégât supplémentaire.",
+    "description_raw": "Les cartes contenant « Frappe » infligent [blue]{ExtraDamage}[/blue] {ExtraDamage:plural:dégât supplémentaire|dégâts supplémentaires}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/fake_strike_dummy.png"
+  },
+  {
+    "id": "FAKE_VENERABLE_TEA_SET",
+    "name": "Service à thé vénérable ???",
+    "description": "Chaque fois que vous entrez dans un [gold]Site de repos[/gold], vous démarrez le combat suivant avec [energy:1] supplémentaires.",
+    "description_raw": "Chaque fois que vous entrez dans un [gold]Site de repos[/gold], vous démarrez le combat suivant avec {Energy:energyIcons()} supplémentaires.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/fake_venerable_tea_set.png"
+  },
+  {
+    "id": "FENCING_MANUAL",
+    "name": "Manuel d'escrime",
+    "description": "Au début de chaque combat, [gold]Forgez[/gold] [blue]10[/blue].",
+    "description_raw": "Au début de chaque combat, [gold]Forgez[/gold] [blue]{Forge}[/blue].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique commune",
+    "pool": "regent",
+    "image_url": "/static/images/relics/fencing_manual.png"
+  },
+  {
+    "id": "FESTIVE_POPPER",
+    "name": "Pétard de fête",
+    "description": "Au début de chaque combat, infligez [blue]9[/blue] dégâts à TOUS les ennemis.",
+    "description_raw": "Au début de chaque combat, infligez [blue]{Damage}[/blue] dégâts à TOUS les ennemis.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique commune",
+    "pool": "shared",
+    "image_url": "/static/images/relics/festive_popper.png"
+  },
+  {
+    "id": "FIDDLE",
+    "name": "Violon",
+    "description": "Au début de chaque tour, piochez [blue]2[/blue] cartes supplémentaires. Vous ne pouvez plus piocher de cartes pendant votre tour.",
+    "description_raw": "Au début de chaque tour, piochez [blue]{Cards}[/blue] {Cards:plural:carte supplémentaire|cartes supplémentaires}. Vous ne pouvez plus piocher de cartes pendant votre tour.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/fiddle.png"
+  },
+  {
+    "id": "FORGOTTEN_SOUL",
+    "name": "Âme oubliée",
+    "description": "Lorsque vous [gold]Épuisez[/gold] une carte, infligez [blue]1[/blue] dégât à un ennemi aléatoire.",
+    "description_raw": "Lorsque vous [gold]Épuisez[/gold] une carte, infligez [blue]{Damage}[/blue] dégât à un ennemi aléatoire.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/forgotten_soul.png"
+  },
+  {
+    "id": "FRAGRANT_MUSHROOM",
+    "name": "Champi aromatique",
+    "description": "Lorsque vous obtenez cette relique, perdez [red]15[/red] PV et [gold]Améliorez[/gold] [blue]3[/blue] cartes aléatoires.",
+    "description_raw": "Lorsque vous obtenez cette relique, perdez [red]{HpLoss}[/red] PV et [gold]Améliorez[/gold] [blue]{Cards}[/blue] {Cards:plural:carte aléatoire|cartes aléatoires}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/fragrant_mushroom.png"
+  },
+  {
+    "id": "FRESNEL_LENS",
+    "name": "Lentille de Fresnel",
+    "description": "Lorsque vous ajoutez une carte qui donne de l'[gold]Armure[/gold] à votre [gold]Deck[/gold], [gold]Envoûtez[/gold]-la avec [purple]Agile[/purple] [blue]2[/blue].",
+    "description_raw": "Lorsque vous ajoutez une carte qui donne de l'[gold]Armure[/gold] à votre [gold]Deck[/gold], [gold]Envoûtez[/gold]-la avec [purple]Agile[/purple] [blue]{NimbleAmount}[/blue].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/fresnel_lens.png"
+  },
+  {
+    "id": "FROZEN_EGG",
+    "name": "Œuf gelé",
+    "description": "Lorsque vous ajoutez un Pouvoir à votre [gold]Deck[/gold], [gold]Améliorez[/gold]-le.",
+    "description_raw": "Lorsque vous ajoutez un Pouvoir à votre [gold]Deck[/gold], [gold]Améliorez[/gold]-le.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/frozen_egg.png"
+  },
+  {
+    "id": "FUNERARY_MASK",
+    "name": "Masque funéraire",
+    "description": "Au début de chaque combat, ajoutez [blue]3[/blue] [gold]Âmes[/gold] à votre [gold]Pioche[/gold].",
+    "description_raw": "Au début de chaque combat, ajoutez [blue]{Cards}[/blue] [gold]{Cards:plural:Âme|Âmes}[/gold] à votre [gold]Pioche[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "necrobinder",
+    "image_url": "/static/images/relics/funerary_mask.png"
+  },
+  {
+    "id": "FUR_COAT",
+    "name": "Manteau de fourrure",
+    "description": "Lorsque vous obtenez cette relique, marquez [blue]7[/blue] combats aléatoires sur le Plan. Les ennemis dans ces salles ont [blue]1[/blue] PV.",
+    "description_raw": "Lorsque vous obtenez cette relique, marquez [blue]{Combats}[/blue] combats aléatoires sur le Plan. Les ennemis dans ces salles ont [blue]1[/blue] PV.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/fur_coat.png"
+  },
+  {
+    "id": "GALACTIC_DUST",
+    "name": "Poussière galactique",
+    "description": "Chaque fois que vous dépensez [blue]10[/blue] [star:1], gagnez [blue]10[/blue] d'[gold]Armure[/gold].",
+    "description_raw": "Chaque fois que vous dépensez [blue]{Stars}[/blue] {singleStarIcon}, gagnez [blue]{Block}[/blue] d'[gold]Armure[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "regent",
+    "image_url": "/static/images/relics/galactic_dust.png"
+  },
+  {
+    "id": "GAMBLING_CHIP",
+    "name": "Jeton de casino",
+    "description": "Au début de chaque combat, défaussez autant de cartes que vous souhaitez, puis piochez-en le même nombre.",
+    "description_raw": "Au début de chaque combat, défaussez autant de cartes que vous souhaitez, puis piochez-en le même nombre.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/gambling_chip.png"
+  },
+  {
+    "id": "GAME_PIECE",
+    "name": "Pion",
+    "description": "Chaque fois que vous jouez un Pouvoir, piochez [blue]1[/blue] carte.",
+    "description_raw": "Chaque fois que vous jouez un Pouvoir, piochez [blue]{Cards}[/blue] {Cards:plural:carte|cartes}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/game_piece.png"
+  },
+  {
+    "id": "GHOST_SEED",
+    "name": "Graine fantôme",
+    "description": "Les [gold]Frappes[/gold] et les [gold]Défenses[/gold] deviennent [gold]Éthérées[/gold].",
+    "description_raw": "Les [gold]Frappes[/gold] et les [gold]Défenses[/gold] deviennent [gold]Éthérées[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique du Marchand",
+    "pool": "shared",
+    "image_url": "/static/images/relics/ghost_seed.png"
+  },
+  {
+    "id": "GIRYA",
+    "name": "Girya",
+    "description": "Vous pouvez augmenter votre [gold]Force[/gold] aux [gold]Sites de repos[/gold]. ([blue]3[/blue] fois maximum)",
+    "description_raw": "Vous pouvez augmenter votre [gold]Force[/gold] aux [gold]Sites de repos[/gold]. ([blue]3[/blue] fois maximum)",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/girya.png"
+  },
+  {
+    "id": "GLASS_EYE",
+    "name": "Œil de verre",
+    "description": "Lorsque vous obtenez cette relique, obtenez [blue]2[/blue] cartes [gold]Communes[/gold], [blue]2[/blue] cartes [gold]Inhabituelles[/gold], et [blue]1[/blue] carte [gold]Rare[/gold].",
+    "description_raw": "Lorsque vous obtenez cette relique, obtenez [blue]2[/blue] cartes [gold]Communes[/gold], [blue]2[/blue] cartes [gold]Inhabituelles[/gold], et [blue]1[/blue] carte [gold]Rare[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/glass_eye.png"
+  },
+  {
+    "id": "GLITTER",
+    "name": "Paillettes",
+    "description": "[gold]Envoûtez[/gold] toutes les récompenses de carte avec [purple]Glamour[/purple].",
+    "description_raw": "[gold]Envoûtez[/gold] toutes les récompenses de carte avec [purple]Glamour[/purple].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/glitter.png"
+  },
+  {
+    "id": "GNARLED_HAMMER",
+    "name": "Marteau tordu",
+    "description": "Lorsque vous obtenez cette relique, [gold]Envoûtez[/gold] jusqu'à [blue]3[/blue] Attaques avec [purple]Tranchant[/purple] [blue]3[/blue].",
+    "description_raw": "Lorsque vous obtenez cette relique, [gold]Envoûtez[/gold] jusqu'à [blue]{Cards}[/blue] {Cards:plural:Attaque|Attaques} avec [purple]Tranchant[/purple] [blue]{SharpAmount:diff()}[/blue].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique du Marchand",
+    "pool": "shared",
+    "image_url": "/static/images/relics/gnarled_hammer.png"
+  },
+  {
+    "id": "GOLD_PLATED_CABLES",
+    "name": "Câble plaqué or",
+    "description": "Votre orbe le plus à droite déclenche sa capacité passive une fois de plus.",
+    "description_raw": "Votre orbe le plus à droite déclenche sa capacité passive une fois de plus.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "defect",
+    "image_url": "/static/images/relics/gold_plated_cables.png"
+  },
+  {
+    "id": "GOLDEN_COMPASS",
+    "name": "Boussole dorée",
+    "description": "Lorsque vous obtenez cette relique, remplacez la carte de l'[gold]Acte[/gold] [blue]2[/blue] par un chemin unique.",
+    "description_raw": "Lorsque vous obtenez cette relique, remplacez la carte de l'[gold]Acte[/gold] [blue]2[/blue] par un chemin unique.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/golden_compass.png"
+  },
+  {
+    "id": "GOLDEN_PEARL",
+    "name": "Perle dorée",
+    "description": "Lorsque vous obtenez cette relique, gagnez [blue]150[/blue] [gold]Pièces d'or[/gold].",
+    "description_raw": "Lorsque vous obtenez cette relique, gagnez [blue]{Gold}[/blue] [gold]Pièces d'or[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/golden_pearl.png"
+  },
+  {
+    "id": "GORGET",
+    "name": "Gorgerette",
+    "description": "Au début de chaque combat, gagnez [blue]4[/blue] de [gold]Blindage[/gold].",
+    "description_raw": "Au début de chaque combat, gagnez [blue]{PlatingPower}[/blue] de [gold]Blindage[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique commune",
+    "pool": "shared",
+    "image_url": "/static/images/relics/gorget.png"
+  },
+  {
+    "id": "GREMLIN_HORN",
+    "name": "Corne de diablotin",
+    "description": "Chaque fois qu'un ennemi est tué, gagnez [energy:1] et piochez [blue]1[/blue] carte.",
+    "description_raw": "Chaque fois qu'un ennemi est tué, gagnez {Energy:energyIcons()} et piochez [blue]{Cards}[/blue] {Cards:plural:carte|cartes}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "shared",
+    "image_url": "/static/images/relics/gremlin_horn.png"
+  },
+  {
+    "id": "HAND_DRILL",
+    "name": "Perceuse",
+    "description": "Lorsque vous venez à bout de l'[gold]Armure[/gold] d'un ennemi, appliquez-lui [blue]2[/blue] [gold]Vulnérable[/gold].",
+    "description_raw": "Lorsque vous venez à bout de l'[gold]Armure[/gold] d'un ennemi, appliquez-lui [blue]{VulnerablePower}[/blue] [gold]Vulnérable[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/hand_drill.png"
+  },
+  {
+    "id": "HAPPY_FLOWER",
+    "name": "Fleur joyeuse",
+    "description": "Tous les [blue]3[/blue] tours, gagnez [energy:1].",
+    "description_raw": "Tous les {Turns:plural:tours|[blue]{Turns}[/blue] tours}, gagnez {Energy:energyIcons()}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique commune",
+    "pool": "shared",
+    "image_url": "/static/images/relics/happy_flower.png"
+  },
+  {
+    "id": "HELICAL_DART",
+    "name": "Fléchette hélicoïdale",
+    "description": "Chaque fois que vous jouez un [gold]Surin[/gold], gagnez [blue]1[/blue] de [gold]Dextérité[/gold] jusqu'à la fin du tour.",
+    "description_raw": "Chaque fois que vous jouez un [gold]Surin[/gold], gagnez [blue]{DexterityPower}[/blue] de [gold]Dextérité[/gold] jusqu'à la fin du tour.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "silent",
+    "image_url": "/static/images/relics/helical_dart.png"
+  },
+  {
+    "id": "HISTORY_COURSE",
+    "name": "Manuel d'Histoire",
+    "description": "Au début de votre tour, jouez une copie de la dernière Compétence ou Attaque que vous avez jouée.",
+    "description_raw": "Au début de votre tour, jouez une copie de la dernière Compétence ou Attaque que vous avez jouée.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/history_course.png"
+  },
+  {
+    "id": "HORN_CLEAT",
+    "name": "Taquet d'amarrage",
+    "description": "Au début de votre [blue]2ème[/blue] tour, gagnez [blue]14[/blue] d'[gold]Armure[/gold].",
+    "description_raw": "Au début de votre [blue]2ème[/blue] tour, gagnez [blue]{Block}[/blue] d'[gold]Armure[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "shared",
+    "image_url": "/static/images/relics/horn_cleat.png"
+  },
+  {
+    "id": "ICE_CREAM",
+    "name": "Crème glacée",
+    "description": "Vous conservez votre Énergie entre chaque tour.",
+    "description_raw": "Vous conservez votre Énergie entre chaque tour.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/ice_cream.png"
+  },
+  {
+    "id": "INFUSED_CORE",
+    "name": "Noyau infusé",
+    "description": "Au début de chaque combat, [gold]Canalisez[/gold] [blue]3[/blue] [gold]Orbes kérauniques[/gold].",
+    "description_raw": "Au début de chaque combat, [gold]Canalisez[/gold] [blue]{Lightning}[/blue] [gold]Orbes kérauniques[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique de base",
+    "pool": "shared",
+    "image_url": "/static/images/relics/infused_core.png"
+  },
+  {
+    "id": "INTIMIDATING_HELMET",
+    "name": "Casque intimidant",
+    "description": "Lorsque vous jouez une carte qui coûte [energy:2] ou plus, gagnez [blue]4[/blue] d'[gold]Armure[/gold].",
+    "description_raw": "Lorsque vous jouez une carte qui coûte {Energy:energyIcons()} ou plus, gagnez [blue]{Block}[/blue] d'[gold]Armure[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/intimidating_helmet.png"
+  },
+  {
+    "id": "IRON_CLUB",
+    "name": "Gourdin de fer",
+    "description": "Toutes les [blue]4[/blue] cartes jouées, vous piochez [blue]1[/blue] carte.",
+    "description_raw": "Toutes les [blue]{Cards}[/blue] {Cards:plural:carte jouée|cartes jouées}, vous piochez [blue]1[/blue] carte.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/iron_club.png"
+  },
+  {
+    "id": "IVORY_TILE",
+    "name": "Carreau en ivoire",
+    "description": "Lorsque vous jouez une carte qui coûte [energy:3] ou plus, gagnez [energy:1].",
+    "description_raw": "Lorsque vous jouez une carte qui coûte {EnergyThreshold:energyIcons()} ou plus, gagnez {Energy:energyIcons()}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "necrobinder",
+    "image_url": "/static/images/relics/ivory_tile.png"
+  },
+  {
+    "id": "JEWELED_MASK",
+    "name": "Masque serti",
+    "description": "Au début de chaque combat, placez un Pouvoir aléatoire de votre [gold]Pioche[/gold] dans votre [gold]Main[/gold]. Il coûte [blue]0[/blue].",
+    "description_raw": "Au début de chaque combat, placez un Pouvoir aléatoire de votre [gold]Pioche[/gold] dans votre [gold]Main[/gold]. Il coûte [blue]0[/blue].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/jeweled_mask.png"
+  },
+  {
+    "id": "JEWELRY_BOX",
+    "name": "Coffre à bijoux",
+    "description": "Lorsque vous obtenez cette relique, ajoutez [blue]1[/blue] [gold]Apothéose[/gold] à votre [gold]Deck[/gold].",
+    "description_raw": "Lorsque vous obtenez cette relique, ajoutez [blue]1[/blue] [gold]Apothéose[/gold] à votre [gold]Deck[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/jewelry_box.png"
+  },
+  {
+    "id": "JOSS_PAPER",
+    "name": "Billet funéraire",
+    "description": "Chaque fois que vous avez [gold]Épuisé[/gold] [blue]5[/blue] cartes, piochez [blue]1[/blue] carte.",
+    "description_raw": "Chaque fois que vous avez [gold]Épuisé[/gold] [blue]{ExhaustAmount}[/blue] cartes, piochez [blue]{Cards}[/blue] {Cards:plural:carte|cartes}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "shared",
+    "image_url": "/static/images/relics/joss_paper.png"
+  },
+  {
+    "id": "JUZU_BRACELET",
+    "name": "Bracelet Juzu",
+    "description": "Les salles [gold]?[/gold] ne contiennent plus d'ennemis normaux.",
+    "description_raw": "Les salles [gold]?[/gold] ne contiennent plus d'ennemis normaux.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique commune",
+    "pool": "shared",
+    "image_url": "/static/images/relics/juzu_bracelet.png"
+  },
+  {
+    "id": "KIFUDA",
+    "name": "Kifuda",
+    "description": "Lorsque vous obtenez cette relique, [gold]Envoûtez[/gold] jusqu'à [blue]3[/blue] cartes avec [purple]Adroit[/purple].",
+    "description_raw": "Lorsque vous obtenez cette relique, [gold]Envoûtez[/gold] jusqu'à [blue]{Cards}[/blue] {Cards:plural:carte|cartes} avec [purple]Adroit[/purple].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique du Marchand",
+    "pool": "shared",
+    "image_url": "/static/images/relics/kifuda.png"
+  },
+  {
+    "id": "KUNAI",
+    "name": "Kunai",
+    "description": "Chaque fois que vous jouez [blue]3[/blue] Attaques en un seul tour, gagnez [blue]1[/blue] de [gold]Dextérité[/gold].",
+    "description_raw": "Chaque fois que vous jouez [blue]{Cards}[/blue] Attaques en un seul tour, gagnez [blue]{DexterityPower}[/blue] de [gold]Dextérité[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/kunai.png"
+  },
+  {
+    "id": "KUSARIGAMA",
+    "name": "Kusarigama",
+    "description": "Chaque fois que vous jouez [blue]3[/blue] Attaques en un seul tour, infligez [blue]6[/blue] dégâts à un ennemi aléatoire.",
+    "description_raw": "Chaque fois que vous jouez [blue]{Cards}[/blue] {Cards:plural:Attaque|Attaques} en un seul tour, infligez [blue]{Damage}[/blue] dégâts à un ennemi aléatoire.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "shared",
+    "image_url": "/static/images/relics/kusarigama.png"
+  },
+  {
+    "id": "LANTERN",
+    "name": "Lanterne",
+    "description": "Démarrez chaque combat avec [energy:1] supplémentaire.",
+    "description_raw": "Démarrez chaque combat avec {Energy:energyIcons()} supplémentaire.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique commune",
+    "pool": "shared",
+    "image_url": "/static/images/relics/lantern.png"
+  },
+  {
+    "id": "LARGE_CAPSULE",
+    "name": "Grande capsule",
+    "description": "Lorsque vous obtenez cette relique, obtenez [blue]2[/blue] [gold]Reliques aléatoires[/gold]. Ajoutez une [gold]Frappe[/gold] et une [gold]Défense[/gold] à votre [gold]Deck[/gold].",
+    "description_raw": "Lorsque vous obtenez cette relique, obtenez [blue]{Relics}[/blue] [gold]{Relics:plural:Relique aléatoire|Reliques aléatoires}[/gold]. Ajoutez une [gold]Frappe[/gold] et une [gold]Défense[/gold] à votre [gold]Deck[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/large_capsule.png"
+  },
+  {
+    "id": "LASTING_CANDY",
+    "name": "Bonbon durable",
+    "description": "Tous les deux combats, vos récompenses de carte contiennent un Pouvoir supplémentaire.",
+    "description_raw": "Tous les deux combats, vos récompenses de carte contiennent un Pouvoir supplémentaire.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/lasting_candy.png"
+  },
+  {
+    "id": "LAVA_LAMP",
+    "name": "Lampe à lave",
+    "description": "À la fin de chaque combat, si vous n'avez subi aucun dégât, [gold]Améliorez[/gold] toutes les récompenses de carte.",
+    "description_raw": "À la fin de chaque combat, si vous n'avez subi aucun dégât, [gold]Améliorez[/gold] toutes les récompenses de carte.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique du Marchand",
+    "pool": "shared",
+    "image_url": "/static/images/relics/lava_lamp.png"
+  },
+  {
+    "id": "LAVA_ROCK",
+    "name": "Pierre volcanique",
+    "description": "Le Boss de l'Acte 1 octroie [blue]2[/blue] [gold]Reliques[/gold] lorsqu'il est vaincu.",
+    "description_raw": "Le Boss de l'Acte 1 octroie [blue]{Relics}[/blue] [gold]Reliques[/gold] lorsqu'il est vaincu.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/lava_rock.png"
+  },
+  {
+    "id": "LEAD_PAPERWEIGHT",
+    "name": "Presse-papier en plomb",
+    "description": "Lorsque vous obtenez cette relique, choisissez [blue]1[/blue] carte Incolore parmi [blue]2[/blue] à ajoutez à votre [gold]Deck[/gold].",
+    "description_raw": "Lorsque vous obtenez cette relique, choisissez [blue]1[/blue] carte Incolore parmi [blue]2[/blue] à ajoutez à votre [gold]Deck[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/lead_paperweight.png"
+  },
+  {
+    "id": "LEAFY_POULTICE",
+    "name": "Cataplasme",
+    "description": "Lorsque vous obtenez cette relique, [gold]Transformez[/gold] [blue]1[/blue] [gold]Frappe[/gold] et [blue]1[/blue] [gold]Défense[/gold] et perdez [blue]10[/blue] PV Max.",
+    "description_raw": "Lorsque vous obtenez cette relique, [gold]Transformez[/gold] [blue]1[/blue] [gold]Frappe[/gold] et [blue]1[/blue] [gold]Défense[/gold] et perdez [blue]{MaxHp}[/blue] PV Max.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/leafy_poultice.png"
+  },
+  {
+    "id": "LEES_WAFFLE",
+    "name": "Gaufre de Lee",
+    "description": "Lorsque vous obtenez cette relique, augmentez vos PV Max de [blue]7[/blue] et récupérez tous vos PV.",
+    "description_raw": "Lorsque vous obtenez cette relique, augmentez vos PV Max de [blue]{MaxHp}[/blue] et récupérez tous vos PV.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique du Marchand",
+    "pool": "shared",
+    "image_url": "/static/images/relics/lees_waffle.png"
+  },
+  {
+    "id": "LETTER_OPENER",
+    "name": "Coupe-papier",
+    "description": "Chaque fois que vous jouez [blue]3[/blue] Compétences en un seul tour, infligez [blue]5[/blue] dégâts à TOUS les ennemis.",
+    "description_raw": "Chaque fois que vous jouez [blue]{Cards}[/blue] {Cards:plural:Compétence|Compétences} en un seul tour, infligez [blue]{Damage}[/blue] dégâts à TOUS les ennemis.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "shared",
+    "image_url": "/static/images/relics/letter_opener.png"
+  },
+  {
+    "id": "LIZARD_TAIL",
+    "name": "Queue de lézard",
+    "description": "Vous empêche de mourir UNE FOIS en soignant [green]50%[/green] de vos PV Max.",
+    "description_raw": "Vous empêche de mourir UNE FOIS en soignant [green]{Heal}%[/green] de vos PV Max.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/lizard_tail.png"
+  },
+  {
+    "id": "LOOMING_FRUIT",
+    "name": "Fruits exotiques",
+    "description": "Lorsque vous obtenez cette relique, augmentez vos PV Max de [blue]31[/blue].",
+    "description_raw": "Lorsque vous obtenez cette relique, augmentez vos PV Max de [blue]{MaxHp}[/blue].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/looming_fruit.png"
+  },
+  {
+    "id": "LORDS_PARASOL",
+    "name": "Parasol seigneurial",
+    "description": "Lorsque vous passez chez le [gold]Marchand[/gold], vous obtenez immédiatement TOUT ce qu'il propose.",
+    "description_raw": "Lorsque vous passez chez le [gold]Marchand[/gold], vous obtenez immédiatement TOUT ce qu'il propose.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/lords_parasol.png"
+  },
+  {
+    "id": "LOST_COFFER",
+    "name": "Coffret perdu",
+    "description": "Lorsque vous obtenez cette relique, gagnez [blue]1[/blue] récompense de carte et obtenez [blue]1[/blue] potion aléatoire.",
+    "description_raw": "Lorsque vous obtenez cette relique, gagnez [blue]1[/blue] récompense de carte et obtenez [blue]1[/blue] potion aléatoire.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/lost_coffer.png"
+  },
+  {
+    "id": "LOST_WISP",
+    "name": "Feu follet perdu",
+    "description": "Chaque fois que vous jouez un [gold]Pouvoir[/gold], infligez [blue]8[/blue] dégâts à TOUS les ennemis.",
+    "description_raw": "Chaque fois que vous jouez un [gold]Pouvoir[/gold], infligez [blue]{Damage}[/blue] dégâts à TOUS les ennemis.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/lost_wisp.png"
+  },
+  {
+    "id": "LUCKY_FYSH",
+    "name": "Poisson chanceux",
+    "description": "Chaque fois que vous ajoutez une carte à votre [gold]Deck[/gold], gagnez [blue]15[/blue] [gold]Pièces d'or[/gold].",
+    "description_raw": "Chaque fois que vous ajoutez une carte à votre [gold]Deck[/gold], gagnez [blue]{Gold}[/blue] [gold]Pièces d'or[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "shared",
+    "image_url": "/static/images/relics/lucky_fysh.png"
+  },
+  {
+    "id": "LUNAR_PASTRY",
+    "name": "Pâtisserie lunaire",
+    "description": "À la fin de votre tour, gagnez [star:1].",
+    "description_raw": "À la fin de votre tour, gagnez {Stars:starIcons()}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "regent",
+    "image_url": "/static/images/relics/lunar_pastry.png"
+  },
+  {
+    "id": "MANGO",
+    "name": "Mangue",
+    "description": "Lorsque vous obtenez cette relique, augmentez vos PV Max de [blue]14[/blue].",
+    "description_raw": "Lorsque vous obtenez cette relique, augmentez vos PV Max de [blue]{MaxHp}[/blue].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/mango.png"
+  },
+  {
+    "id": "MASSIVE_SCROLL",
+    "name": "Parchemin énorme",
+    "description": "Lorsque vous obtenez cette relique, choisissez [blue]1[/blue] [gold]Carte Incolore Multijoueur[/gold] parmi [blue]3[/blue] à ajouter à votre [gold]Deck[/gold].",
+    "description_raw": "Lorsque vous obtenez cette relique, choisissez [blue]1[/blue] [gold]Carte Incolore Multijoueur[/gold] parmi [blue]3[/blue] à ajouter à votre [gold]Deck[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/massive_scroll.png"
+  },
+  {
+    "id": "MAW_BANK",
+    "name": "Tirelire-gueule",
+    "description": "Chaque fois que vous gravissez un étage, obtenez [blue]12[/blue] [gold]Pièces d'or[/gold]. Cesse de fonctionner dès que vous dépensez des [gold]Pièces d'or[/gold] chez le Marchand.",
+    "description_raw": "Chaque fois que vous gravissez un étage, obtenez [blue]{Gold}[/blue] [gold]Pièces d'or[/gold]. Cesse de fonctionner dès que vous dépensez des [gold]Pièces d'or[/gold] chez le Marchand.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/maw_bank.png"
+  },
+  {
+    "id": "MEAL_TICKET",
+    "name": "Ticket restaurant",
+    "description": "Lorsque vous entrez dans une boutique, récupérez [green]15[/green] PV.",
+    "description_raw": "Lorsque vous entrez dans une boutique, récupérez [green]{Heal}[/green] PV.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique commune",
+    "pool": "shared",
+    "image_url": "/static/images/relics/meal_ticket.png"
+  },
+  {
+    "id": "MEAT_CLEAVER",
+    "name": "Couperet à viande",
+    "description": "Vous pouvez [gold]Cuisiner[/gold] aux Sites de Repos.",
+    "description_raw": "Vous pouvez [gold]Cuisiner[/gold] aux Sites de Repos.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/meat_cleaver.png"
+  },
+  {
+    "id": "MEAT_ON_THE_BONE",
+    "name": "Os à viande",
+    "description": "Si vous avez [blue]50%[/blue] ou moins de vos PV Max à la fin d'un combat, récupérez [green]12[/green] PV.",
+    "description_raw": "Si vous avez [blue]{HpThreshold}%[/blue] ou moins de vos PV Max à la fin d'un combat, récupérez [green]{Heal}[/green] PV.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/meat_on_the_bone.png"
+  },
+  {
+    "id": "MEMBERSHIP_CARD",
+    "name": "Carte de fidélité",
+    "description": "[blue]50%[/blue] de remise sur tous les produits !",
+    "description_raw": "[blue]{Discount}%[/blue] de remise sur tous les produits !",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique du Marchand",
+    "pool": "shared",
+    "image_url": "/static/images/relics/membership_card.png"
+  },
+  {
+    "id": "MERCURY_HOURGLASS",
+    "name": "Sablier de mercure",
+    "description": "Au début de votre tour, infligez [blue]3[/blue] dégâts à TOUS les ennemis.",
+    "description_raw": "Au début de votre tour, infligez [blue]{Damage}[/blue] dégâts à TOUS les ennemis.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "shared",
+    "image_url": "/static/images/relics/mercury_hourglass.png"
+  },
+  {
+    "id": "METRONOME",
+    "name": "Métronome",
+    "description": "La première fois que vous [gold]Canalisez[/gold] [blue]7[/blue] [gold]Orbes[/gold] dans un combat, infligez [blue]30[/blue] dégâts à TOUS les ennemis.",
+    "description_raw": "La première fois que vous [gold]Canalisez[/gold] [blue]{OrbCount}[/blue] [gold]Orbes[/gold] dans un combat, infligez [blue]{Damage}[/blue] dégâts à TOUS les ennemis.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "defect",
+    "image_url": "/static/images/relics/metronome.png"
+  },
+  {
+    "id": "MINI_REGENT",
+    "name": "Mini Régent",
+    "description": "La première fois que vous dépensez des [star:1] chaque tour, gagnez [blue]1[/blue] de [gold]Force[/gold].",
+    "description_raw": "La première fois que vous dépensez des {singleStarIcon} chaque tour, gagnez [blue]{StrengthPower}[/blue] de [gold]Force[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "regent",
+    "image_url": "/static/images/relics/mini_regent.png"
+  },
+  {
+    "id": "MINIATURE_CANNON",
+    "name": "Canon miniature",
+    "description": "Les Attaques [gold]Améliorées[/gold] infligent [blue]3[/blue] dégâts supplémentaires.",
+    "description_raw": "Les Attaques [gold]Améliorées[/gold] infligent [blue]{ExtraDamage}[/blue] dégâts supplémentaires.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "shared",
+    "image_url": "/static/images/relics/miniature_cannon.png"
+  },
+  {
+    "id": "MINIATURE_TENT",
+    "name": "Tente miniature",
+    "description": "Vous pouvez effectuer autant d'actions différentes que vous souhaitez aux [gold]Sites de repos[/gold].",
+    "description_raw": "Vous pouvez effectuer autant d'actions différentes que vous souhaitez aux [gold]Sites de repos[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique du Marchand",
+    "pool": "shared",
+    "image_url": "/static/images/relics/miniature_tent.png"
+  },
+  {
+    "id": "MOLTEN_EGG",
+    "name": "Œuf en fusion",
+    "description": "Lorsque vous ajoutez une Attaque à votre [gold]Deck[/gold], [gold]Améliorez[/gold]-la.",
+    "description_raw": "Lorsque vous ajoutez une Attaque à votre [gold]Deck[/gold], [gold]Améliorez[/gold]-la.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/molten_egg.png"
+  },
+  {
+    "id": "MR_STRUGGLES",
+    "name": "Monsieur Carnage",
+    "description": "Au début de votre tour, infligez un nombre de dégâts égal au numéro du tour à TOUS les ennemis.",
+    "description_raw": "Au début de votre tour, infligez un nombre de dégâts égal au numéro du tour à TOUS les ennemis.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/mr_struggles.png"
+  },
+  {
+    "id": "MUMMIFIED_HAND",
+    "name": "Main momifiée",
+    "description": "Chaque fois que vous jouez un Pouvoir, le coût d'une carte aléatoire de votre [gold]Main[/gold] est réduit à [blue]0[/blue] jusqu'à la fin du tour.",
+    "description_raw": "Chaque fois que vous jouez un Pouvoir, le coût d'une carte aléatoire de votre [gold]Main[/gold] est réduit à [blue]0[/blue] jusqu'à la fin du tour.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/mummified_hand.png"
+  },
+  {
+    "id": "MUSIC_BOX",
+    "name": "Boîte à musique",
+    "description": "Vous créez une copie [gold]Éthérée[/gold] de la première Attaque que vous jouez chaque tour.",
+    "description_raw": "Vous créez une copie [gold]Éthérée[/gold] de la première Attaque que vous jouez chaque tour.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/music_box.png"
+  },
+  {
+    "id": "MYSTIC_LIGHTER",
+    "name": "Briquet mystique",
+    "description": "Les Attaques [gold]Envoûtées[/gold] infligent [blue]9[/blue] dégâts supplémentaires.",
+    "description_raw": "Les Attaques [gold]Envoûtées[/gold] infligent [blue]{Damage}[/blue] dégâts supplémentaires.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique du Marchand",
+    "pool": "shared",
+    "image_url": "/static/images/relics/mystic_lighter.png"
+  },
+  {
+    "id": "NEOWS_TORMENT",
+    "name": "Tourment de Neow",
+    "description": "Lorsque vous obtenez cette relique, ajoutez [blue]1[/blue] [gold]Fureur de Neow[/gold] à votre [gold]Deck[/gold].",
+    "description_raw": "Lorsque vous obtenez cette relique, ajoutez [blue]1[/blue] [gold]Fureur de Neow[/gold] à votre [gold]Deck[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/neows_torment.png"
+  },
+  {
+    "id": "NEW_LEAF",
+    "name": "Nouvelle page",
+    "description": "Lorsque vous obtenez cette relique, [gold]Transformez[/gold] [blue]1[/blue] carte.",
+    "description_raw": "Lorsque vous obtenez cette relique, [gold]Transformez[/gold] [blue]{Cards}[/blue] {Cards:plural:carte|cartes}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/new_leaf.png"
+  },
+  {
+    "id": "NINJA_SCROLL",
+    "name": "Parchemin de ninja",
+    "description": "Au début de chaque combat, ajoutez [blue]3[/blue] [gold]Surins[/gold] à votre [gold]Main[/gold].",
+    "description_raw": "Au début de chaque combat, ajoutez [blue]{Shivs}[/blue] [gold]{Shivs:plural:Surin|Surins}[/gold] à votre [gold]Main[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique du Marchand",
+    "pool": "silent",
+    "image_url": "/static/images/relics/ninja_scroll.png"
+  },
+  {
+    "id": "NUNCHAKU",
+    "name": "Nunchaku",
+    "description": "Toutes les [blue]10[/blue] Attaques jouées, vous gagnez [energy:1].",
+    "description_raw": "Toutes les [blue]{Cards}[/blue] Attaques jouées, vous gagnez {Energy:energyIcons()}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "shared",
+    "image_url": "/static/images/relics/nunchaku.png"
+  },
+  {
+    "id": "NUTRITIOUS_OYSTER",
+    "name": "Huître nourrissante",
+    "description": "Lorsque vous obtenez cette relique, augmentez vos PV Max de [blue]11[/blue].",
+    "description_raw": "Lorsque vous obtenez cette relique, augmentez vos PV Max de [blue]{MaxHp}[/blue].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/nutritious_oyster.png"
+  },
+  {
+    "id": "NUTRITIOUS_SOUP",
+    "name": "Soupe nourrissante",
+    "description": "Lorsque vous obtenez cette relique, [gold]Envoûtez[/gold] toutes les [gold]Frappes[/gold] dans votre [gold]Deck[/gold] avec [purple]Braise de Tezcatara[/purple].",
+    "description_raw": "Lorsque vous obtenez cette relique, [gold]Envoûtez[/gold] toutes les [gold]Frappes[/gold] dans votre [gold]Deck[/gold] avec [purple]Braise de Tezcatara[/purple].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/nutritious_soup.png"
+  },
+  {
+    "id": "ODDLY_SMOOTH_STONE",
+    "name": "Pierre étrangement lisse",
+    "description": "Démarrez chaque combat avec [blue]1[/blue] de [gold]Dextérité[/gold].",
+    "description_raw": "Démarrez chaque combat avec [blue]{DexterityPower}[/blue] de [gold]Dextérité[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique commune",
+    "pool": "shared",
+    "image_url": "/static/images/relics/oddly_smooth_stone.png"
+  },
+  {
+    "id": "OLD_COIN",
+    "name": "Pièce antique",
+    "description": "Lorsque vous obtenez cette relique, obtenez [blue]300[/blue] [gold]Pièces d'or[/gold].",
+    "description_raw": "Lorsque vous obtenez cette relique, obtenez [blue]{Gold}[/blue] [gold]Pièces d'or[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/old_coin.png"
+  },
+  {
+    "id": "ORANGE_DOUGH",
+    "name": "Pâte orange",
+    "description": "Au début de chaque combat, ajoutez [blue]2[/blue] cartes Incolores aléatoires à votre [gold]Main[/gold].",
+    "description_raw": "Au début de chaque combat, ajoutez [blue]{Cards}[/blue] {Cards:plural:carte Incolore aléatoire|cartes Incolores aléatoires} à votre [gold]Main[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "regent",
+    "image_url": "/static/images/relics/orange_dough.png"
+  },
+  {
+    "id": "ORICHALCUM",
+    "name": "Orichalque",
+    "description": "Si vous terminez votre tour sans [gold]Armure[/gold], gagnez [blue]6[/blue] d'[gold]Armure[/gold].",
+    "description_raw": "Si vous terminez votre tour sans [gold]Armure[/gold], gagnez [blue]{Block}[/blue] d'[gold]Armure[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "shared",
+    "image_url": "/static/images/relics/orichalcum.png"
+  },
+  {
+    "id": "ORNAMENTAL_FAN",
+    "name": "Éventail décoratif",
+    "description": "Chaque fois que vous jouez [blue]3[/blue] Attaques en un seul tour, gagnez [blue]4[/blue] d'[gold]Armure[/gold].",
+    "description_raw": "Chaque fois que vous jouez [blue]{Cards}[/blue] Attaques en un seul tour, gagnez [blue]{Block}[/blue] d'[gold]Armure[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "shared",
+    "image_url": "/static/images/relics/ornamental_fan.png"
+  },
+  {
+    "id": "ORRERY",
+    "name": "Planétaire",
+    "description": "Lorsque vous obtenez cette relique, obtenez [blue]5[/blue] récompenses de carte.",
+    "description_raw": "Lorsque vous obtenez cette relique, obtenez [blue]{Cards}[/blue] {Cards:plural:récompense|récompenses} de carte.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique du Marchand",
+    "pool": "shared",
+    "image_url": "/static/images/relics/orrery.png"
+  },
+  {
+    "id": "PAELS_BLOOD",
+    "name": "Sang de Pael",
+    "description": "Au début de votre tour, piochez [blue]1[/blue] carte supplémentaire.",
+    "description_raw": "Au début de votre tour, piochez [blue]{Cards}[/blue] {Cards:plural:carte supplémentaire|cartes supplémentaires}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/paels_blood.png"
+  },
+  {
+    "id": "PAELS_CLAW",
+    "name": "Griffe de Pael",
+    "description": "Lorsque vous obtenez cette relique, [gold]Envoûtez[/gold] toutes vos [gold]Défenses[/gold] avec [purple][EnchantmentName][/purple].",
+    "description_raw": "Lorsque vous obtenez cette relique, [gold]Envoûtez[/gold] toutes vos [gold]Défenses[/gold] avec [purple]{EnchantmentName}[/purple].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/paels_claw.png"
+  },
+  {
+    "id": "PAELS_EYE",
+    "name": "Œil de Pael",
+    "description": "Lorsque vous terminez votre tour sans avoir joué de cartes pour la première fois dans un combat, [gold]Épuisez[/gold] votre [gold]Main[/gold], et jouez un tour supplémentaire.",
+    "description_raw": "Lorsque vous terminez votre tour sans avoir joué de cartes pour la première fois dans un combat, [gold]Épuisez[/gold] votre [gold]Main[/gold], et jouez un tour supplémentaire.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/paels_eye.png"
+  },
+  {
+    "id": "PAELS_FLESH",
+    "name": "Chair de Pael",
+    "description": "Gagnez [energy:1] supplémentaire au début de votre [blue]3ème[/blue] tour et au début de chaque tour suivant.",
+    "description_raw": "Gagnez {Energy:energyIcons()} supplémentaire au début de votre [blue]3ème[/blue] tour et au début de chaque tour suivant.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/paels_flesh.png"
+  },
+  {
+    "id": "PAELS_GROWTH",
+    "name": "Excroissance de Pael",
+    "description": "Lorsque vous obtenez cette relique, [gold]Envoûtez[/gold] une carte avec [purple][EnchantmentName][/purple].",
+    "description_raw": "Lorsque vous obtenez cette relique, [gold]Envoûtez[/gold] une carte avec [purple]{EnchantmentName}[/purple].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/paels_growth.png"
+  },
+  {
+    "id": "PAELS_HORN",
+    "name": "Corne de Pael",
+    "description": "Lorsque vous obtenez cette relique, ajoutez [blue]2[/blue] [gold]Relaxations[/gold] à votre [gold]Deck[/gold].",
+    "description_raw": "Lorsque vous obtenez cette relique, ajoutez [blue]2[/blue] [gold]Relaxations[/gold] à votre [gold]Deck[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/paels_horn.png"
+  },
+  {
+    "id": "PAELS_LEGION",
+    "name": "Légion de Pael",
+    "description": "Double l'[gold]Armure[/gold] reçue d'une carte, puis s'endort pendant [blue]2[/blue] tours.",
+    "description_raw": "Double l'[gold]Armure[/gold] reçue d'une carte, puis s'endort pendant [blue]{Turns}[/blue] {Turns:plural:tour|tours}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/paels_legion.png"
+  },
+  {
+    "id": "PAELS_TEARS",
+    "name": "Larmes de Pael",
+    "description": "Si vous terminez votre tour sans avoir dépensé toute votre [energy:1], gagnez [energy:2] supplémentaires au prochain tour.",
+    "description_raw": "Si vous terminez votre tour sans avoir dépensé toute votre {energyPrefix:energyIcons(1)}, gagnez {Energy:energyIcons()} supplémentaires au prochain tour.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/paels_tears.png"
+  },
+  {
+    "id": "PAELS_TOOTH",
+    "name": "Dent de Pael",
+    "description": "Lorsque vous obtenez cette relique, retirez [blue]5[/blue] cartes de votre [gold]Deck[/gold]. Après chaque combat, rajoutez-en [blue]1[/blue] aléatoirement ; elle est [gold]Améliorée[/gold].",
+    "description_raw": "Lorsque vous obtenez cette relique, retirez [blue]{Cards}[/blue] {Cards:plural:carte|cartes} de votre [gold]Deck[/gold]. Après chaque combat, rajoutez-en [blue]1[/blue] aléatoirement ; elle est [gold]Améliorée[/gold].{CardTitles.StringValue:cond:\n\nCartes restantes:\n{}|}",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/paels_tooth.png"
+  },
+  {
+    "id": "PAELS_WING",
+    "name": "Aile de Pael",
+    "description": "Vous pouvez offrir des récompenses de carte en sacrifice à Pael. Tous les [blue]2[/blue] sacrifices, vous obtenez une [gold]Relique[/gold].",
+    "description_raw": "Vous pouvez offrir des récompenses de carte en sacrifice à Pael. {Sacrifices:plural:À chaque sacrifice|Tous les [blue]{}[/blue] sacrifices}, vous obtenez une [gold]Relique[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/paels_wing.png"
+  },
+  {
+    "id": "PANDORAS_BOX",
+    "name": "Boîte de Pandore",
+    "description": "[gold]Transformez[/gold] TOUTES vos [gold]Frappes[/gold] et vos [gold]Défenses[/gold].",
+    "description_raw": "[gold]Transformez[/gold] TOUTES vos [gold]Frappes[/gold] et vos [gold]Défenses[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/pandoras_box.png"
+  },
+  {
+    "id": "PANTOGRAPH",
+    "name": "Pantographe",
+    "description": "Au début de chaque combat de [gold]Boss[/gold], récupérez [green]25[/green] PV.",
+    "description_raw": "Au début de chaque combat de [gold]Boss[/gold], récupérez [green]{Heal}[/green] PV.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "shared",
+    "image_url": "/static/images/relics/pantograph.png"
+  },
+  {
+    "id": "PAPER_KRANE",
+    "name": "Grû en papier",
+    "description": "Les ennemis [gold]Affaiblis[/gold] vous infligent [blue]40%[/blue] de dégâts en moins plutôt que [blue]25%[/blue].",
+    "description_raw": "Les ennemis [gold]Affaiblis[/gold] vous infligent [blue]40%[/blue] de dégâts en moins plutôt que [blue]25%[/blue].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "silent",
+    "image_url": "/static/images/relics/paper_krane.png"
+  },
+  {
+    "id": "PAPER_PHROG",
+    "name": "Krapo en papier",
+    "description": "Les ennemis [gold]Vulnérables[/gold] reçoivent [blue]75%[/blue] de dégâts supplémentaires plutôt que [blue]50%[/blue].",
+    "description_raw": "Les ennemis [gold]Vulnérables[/gold] reçoivent [blue]75%[/blue] de dégâts supplémentaires plutôt que [blue]50%[/blue].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "ironclad",
+    "image_url": "/static/images/relics/paper_phrog.png"
+  },
+  {
+    "id": "PARRYING_SHIELD",
+    "name": "Bouclier de parade",
+    "description": "Si vous terminez votre tour avec au moins [blue]10[/blue] d'[gold]Armure[/gold], infligez [blue]6[/blue] dégâts à un ennemi aléatoire.",
+    "description_raw": "Si vous terminez votre tour avec au moins [blue]{Block}[/blue] d'[gold]Armure[/gold], infligez [blue]{Damage}[/blue] dégâts à un ennemi aléatoire.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "shared",
+    "image_url": "/static/images/relics/parrying_shield.png"
+  },
+  {
+    "id": "PEAR",
+    "name": "Poire",
+    "description": "Lorsque vous obtenez cette relique, augmentez vos PV Max de [blue]10[/blue].",
+    "description_raw": "Lorsque vous obtenez cette relique, augmentez vos PV Max de [blue]{MaxHp}[/blue].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "shared",
+    "image_url": "/static/images/relics/pear.png"
+  },
+  {
+    "id": "PEN_NIB",
+    "name": "Pointe de stylo",
+    "description": "Toutes les [blue]10èmes[/blue] Attaques jouées infligent le double de dégâts.",
+    "description_raw": "Toutes les [blue]10èmes[/blue] Attaques jouées infligent le double de dégâts.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "shared",
+    "image_url": "/static/images/relics/pen_nib.png"
+  },
+  {
+    "id": "PENDULUM",
+    "name": "Pendule",
+    "description": "Après avoir mélangé votre [gold]Pioche[/gold], piochez une carte.",
+    "description_raw": "Après avoir mélangé votre [gold]Pioche[/gold], piochez une carte.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique commune",
+    "pool": "shared",
+    "image_url": "/static/images/relics/pendulum.png"
+  },
+  {
+    "id": "PERMAFROST",
+    "name": "Pergélisol",
+    "description": "La première fois que vous jouez un Pouvoir chaque combat, gagnez [blue]6[/blue] d'[gold]Armure[/gold].",
+    "description_raw": "La première fois que vous jouez un Pouvoir chaque combat, gagnez [blue]{Block}[/blue] d'[gold]Armure[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique commune",
+    "pool": "shared",
+    "image_url": "/static/images/relics/permafrost.png"
+  },
+  {
+    "id": "PETRIFIED_TOAD",
+    "name": "Crapaud pétrifié",
+    "description": "Au début de chaque combat, obtenez une [gold]Pierre en forme de potion[/gold].",
+    "description_raw": "Au début de chaque combat, obtenez une [gold]Pierre en forme de potion[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "shared",
+    "image_url": "/static/images/relics/petrified_toad.png"
+  },
+  {
+    "id": "PHILOSOPHERS_STONE",
+    "name": "Pierre philosophale",
+    "description": "Gagnez [energy:1] au début de chaque tour. TOUS les ennemis démarrent le combat avec [blue]1[/blue] de [gold]Force[/gold].",
+    "description_raw": "Gagnez {Energy:energyIcons()} au début de chaque tour. TOUS les ennemis démarrent le combat avec [blue]{StrengthPower}[/blue] de [gold]Force[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/philosophers_stone.png"
+  },
+  {
+    "id": "PHYLACTERY_UNBOUND",
+    "name": "Phylactère déchaîné",
+    "description": "Au début de chaque combat, [gold]Invoquez[/gold] pour [blue]5[/blue]. Au début de votre tour, [gold]Invoquez[/gold] pour [blue]2[/blue].",
+    "description_raw": "Au début de chaque combat, [gold]Invoquez[/gold] pour [blue]{StartOfCombat}[/blue]. Au début de votre tour, [gold]Invoquez[/gold] pour [blue]{StartOfTurn}[/blue].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique de base",
+    "pool": "shared",
+    "image_url": "/static/images/relics/phylactery_unbound.png"
+  },
+  {
+    "id": "PLANISPHERE",
+    "name": "Planisphère",
+    "description": "Lorsque vous entrez dans une salle [gold]?[/gold], récupérez [green]4[/green] PV.",
+    "description_raw": "Lorsque vous entrez dans une salle [gold]?[/gold], récupérez [green]{Heal}[/green] PV.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "shared",
+    "image_url": "/static/images/relics/planisphere.png"
+  },
+  {
+    "id": "POCKETWATCH",
+    "name": "Montre à gousset",
+    "description": "Si vous avez joué [blue]3[/blue] cartes ou moins durant votre tour, piochez [blue]3[/blue] cartes supplémentaires au début du tour suivant.",
+    "description_raw": "Si vous avez joué [blue]{CardThreshold}[/blue] {CardThreshold:plural:carte|cartes} ou moins durant votre tour, piochez [blue]{Cards}[/blue] {Cards:plural:carte supplémentaire|cartes supplémentaires} au début du tour suivant.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/pocketwatch.png"
+  },
+  {
+    "id": "POLLINOUS_CORE",
+    "name": "Noyau pollinique",
+    "description": "Tous les [blue]4[/blue] tours, piochez [blue]2[/blue] cartes supplémentaires.",
+    "description_raw": "Tous les {Turns:plural:tours|[blue]{Turns}[/blue] tours}, piochez [blue]{Cards}[/blue] {Cards:plural:carte supplémentaire|cartes supplémentaires}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/pollinous_core.png"
+  },
+  {
+    "id": "POMANDER",
+    "name": "Pommandre",
+    "description": "Lorsque vous obtenez cette relique, [gold]Améliorez[/gold] une carte.",
+    "description_raw": "Lorsque vous obtenez cette relique, [gold]Améliorez[/gold] une carte.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/pomander.png"
+  },
+  {
+    "id": "POTION_BELT",
+    "name": "Ceinture à potions",
+    "description": "Lorsque vous obtenez cette relique, gagnez [blue]2[/blue] emplacements de potion.",
+    "description_raw": "Lorsque vous obtenez cette relique, gagnez [blue]{PotionSlots}[/blue] {PotionSlots:plural:emplacement de potion|emplacements de potion}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique commune",
+    "pool": "shared",
+    "image_url": "/static/images/relics/potion_belt.png"
+  },
+  {
+    "id": "POWER_CELL",
+    "name": "Pile d'énergie",
+    "description": "Au début de chaque combat, ajoutez [blue]2[/blue] cartes de coût 0 de votre [gold]Pioche[/gold] à votre [gold]Main[/gold].",
+    "description_raw": "Au début de chaque combat, ajoutez [blue]{Cards}[/blue] cartes de coût 0 de votre [gold]Pioche[/gold] à votre [gold]Main[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "defect",
+    "image_url": "/static/images/relics/power_cell.png"
+  },
+  {
+    "id": "PRAYER_WHEEL",
+    "name": "Moulin à prières",
+    "description": "Les ennemis normaux donnent une récompense de carte supplémentaire.",
+    "description_raw": "Les ennemis normaux donnent une récompense de carte supplémentaire.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/prayer_wheel.png"
+  },
+  {
+    "id": "PRECARIOUS_SHEARS",
+    "name": "Forces précaires",
+    "description": "Lorsque vous obtenez cette relique, retirez [blue]2[/blue] cartes de votre [gold]Deck[/gold] et subissez [red]13[/red] dégâts.",
+    "description_raw": "Lorsque vous obtenez cette relique, retirez [blue]{Cards}[/blue] {Cards:plural:carte|cartes} de votre [gold]Deck[/gold] et subissez [red]{Damage}[/red] dégâts.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/precarious_shears.png"
+  },
+  {
+    "id": "PRECISE_SCISSORS",
+    "name": "Ciseaux précis",
+    "description": "Lorsque vous obtenez cette relique, retirez [blue]1[/blue] carte de votre [gold]Deck[/gold].",
+    "description_raw": "Lorsque vous obtenez cette relique, retirez [blue]{Cards}[/blue] {Cards:plural:carte|cartes} de votre [gold]Deck[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/precise_scissors.png"
+  },
+  {
+    "id": "PRESERVED_FOG",
+    "name": "Brouillard en conserve",
+    "description": "Lorsque vous obtenez cette relique, retirez [blue]5[/blue] cartes de votre [gold]Deck[/gold]. Ajoutez [red]Hubris[/red] à votre [gold]Deck[/gold].",
+    "description_raw": "Lorsque vous obtenez cette relique, retirez [blue]{Cards}[/blue] {Cards:plural:carte|cartes} de votre [gold]Deck[/gold]. Ajoutez [red]Hubris[/red] à votre [gold]Deck[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/preserved_fog.png"
+  },
+  {
+    "id": "PRISMATIC_GEM",
+    "name": "Joyau prismatique",
+    "description": "Gagnez [energy:1] au début de chaque tour. Les récompenses de carte contiennent désormais des cartes d'autres couleurs.",
+    "description_raw": "Gagnez {Energy:energyIcons()} au début de chaque tour. Les récompenses de carte contiennent désormais des cartes d'autres couleurs.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/prismatic_gem.png"
+  },
+  {
+    "id": "PUMPKIN_CANDLE",
+    "name": "Lanterne-citrouille",
+    "description": "Gagnez [energy:1] au début de chaque tour. S'éteint au début de l'[gold]Acte[/gold] [blue]3[/blue].",
+    "description_raw": "Gagnez {Energy:energyIcons()} au début de chaque tour. S'éteint au début de l'[gold]Acte[/gold] [blue]3[/blue].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/pumpkin_candle.png"
+  },
+  {
+    "id": "PUNCH_DAGGER",
+    "name": "Poignard",
+    "description": "Lorsque vous obtenez cette relique, [gold]Envoûtez[/gold] une Attaque avec [purple]Élan[/purple] [blue]5[/blue].",
+    "description_raw": "Lorsque vous obtenez cette relique, [gold]Envoûtez[/gold] une Attaque avec [purple]Élan[/purple] [blue]{Momentum}[/blue].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique du Marchand",
+    "pool": "shared",
+    "image_url": "/static/images/relics/punch_dagger.png"
+  },
+  {
+    "id": "RADIANT_PEARL",
+    "name": "Perle radieuse",
+    "description": "Au début de chaque combat, ajoutez [blue]1[/blue] [gold]Luminescence[/gold] à votre [gold]Main[/gold].",
+    "description_raw": "Au début de chaque combat, ajoutez [blue]{Cards}[/blue] [gold]{Cards:plural:Luminescence|Luminescences}[/gold] à votre [gold]Main[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/radiant_pearl.png"
+  },
+  {
+    "id": "RAINBOW_RING",
+    "name": "Anneau arc-en-ciel",
+    "description": "La première fois de chaque tour que vous jouez une Attaque, une Compétence et un Pouvoir, gagnez [blue]1[/blue] de [gold]Force[/gold] et [blue]1[/blue] de [gold]Dextérité[/gold].",
+    "description_raw": "La première fois de chaque tour que vous jouez une Attaque, une Compétence et un Pouvoir, gagnez [blue]{StrengthPower}[/blue] de [gold]Force[/gold] et [blue]{DexterityPower}[/blue] de [gold]Dextérité[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/rainbow_ring.png"
+  },
+  {
+    "id": "RAZOR_TOOTH",
+    "name": "Dent de rasoir",
+    "description": "Chaque fois que vous jouez une Attaque ou une Compétence, [gold]Améliorez[/gold]-la pour le restant du combat.",
+    "description_raw": "Chaque fois que vous jouez une Attaque ou une Compétence, [gold]Améliorez[/gold]-la pour le restant du combat.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/razor_tooth.png"
+  },
+  {
+    "id": "RED_MASK",
+    "name": "Masque rouge",
+    "description": "Au début de chaque combat, appliquez [blue]1[/blue] [gold]Affaiblissement[/gold] à TOUS les ennemis.",
+    "description_raw": "Au début de chaque combat, appliquez [blue]{WeakPower}[/blue] [gold]Affaiblissement[/gold] à TOUS les ennemis.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "shared",
+    "image_url": "/static/images/relics/red_mask.png"
+  },
+  {
+    "id": "RED_SKULL",
+    "name": "Crâne rouge",
+    "description": "Si vous êtes à [blue]50%[/blue] de PV ou moins, vous avez [blue]3[/blue] de [gold]Force[/gold] supplémentaire.",
+    "description_raw": "Si vous êtes à [blue]{HpThreshold}%[/blue] de PV ou moins, vous avez [blue]{StrengthPower}[/blue] de [gold]Force[/gold] supplémentaire.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique commune",
+    "pool": "ironclad",
+    "image_url": "/static/images/relics/red_skull.png"
+  },
+  {
+    "id": "REGAL_PILLOW",
+    "name": "Oreiller royal",
+    "description": "Lorsque vous vous [gold]Reposez[/gold], récupérez [blue]15[/blue] PV supplémentaires.",
+    "description_raw": "Lorsque vous vous [gold]Reposez[/gold], récupérez [blue]{Heal}[/blue] PV supplémentaires.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique commune",
+    "pool": "shared",
+    "image_url": "/static/images/relics/regal_pillow.png"
+  },
+  {
+    "id": "REGALITE",
+    "name": "Royalithe",
+    "description": "Lorsque vous créez une carte Incolore, gagnez [blue]2[/blue] d'[gold]Armure[/gold].",
+    "description_raw": "Lorsque vous créez une carte Incolore, gagnez [blue]{Block}[/blue] d'[gold]Armure[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "regent",
+    "image_url": "/static/images/relics/regalite.png"
+  },
+  {
+    "id": "REPTILE_TRINKET",
+    "name": "Breloque reptile",
+    "description": "Lorsque vous utilisez une potion, gagnez [blue]3[/blue] de [gold]Force[/gold] jusqu'à la fin du tour.",
+    "description_raw": "Lorsque vous utilisez une potion, gagnez [blue]{StrengthPower}[/blue] de [gold]Force[/gold] jusqu'à la fin du tour.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "shared",
+    "image_url": "/static/images/relics/reptile_trinket.png"
+  },
+  {
+    "id": "RING_OF_THE_DRAKE",
+    "name": "Anneau du dragon",
+    "description": "Au début de vos premiers [blue]3[/blue] tours, piochez [blue]2[/blue] cartes supplémentaires.",
+    "description_raw": "Au début de {Turns:plural:votre premier tour|vos premiers [blue]{}[/blue] tours}, piochez [blue]{Cards}[/blue] {Cards:plural:carte supplémentaire|cartes supplémentaires}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique de base",
+    "pool": "shared",
+    "image_url": "/static/images/relics/ring_of_the_drake.png"
+  },
+  {
+    "id": "RING_OF_THE_SNAKE",
+    "name": "Anneau du serpent",
+    "description": "Au début de chaque combat, piochez [blue]2[/blue] cartes supplémentaires.",
+    "description_raw": "Au début de chaque combat, piochez [blue]{Cards}[/blue] {Cards:plural:carte supplémentaire|cartes supplémentaires}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique de base",
+    "pool": "silent",
+    "image_url": "/static/images/relics/ring_of_the_snake.png"
+  },
+  {
+    "id": "RINGING_TRIANGLE",
+    "name": "Triangle résonnant",
+    "description": "[gold]Retenez[/gold] votre [gold]Main[/gold] le premier tour de chaque combat.",
+    "description_raw": "[gold]Retenez[/gold] votre [gold]Main[/gold] le premier tour de chaque combat.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique du Marchand",
+    "pool": "shared",
+    "image_url": "/static/images/relics/ringing_triangle.png"
+  },
+  {
+    "id": "RIPPLE_BASIN",
+    "name": "Bassinet à remous",
+    "description": "Si vous n'avez pas joué d'Attaques pendant votre tour, gagnez [blue]4[/blue] d'[gold]Armure[/gold].",
+    "description_raw": "Si vous n'avez pas joué d'Attaques pendant votre tour, gagnez [blue]{Block}[/blue] d'[gold]Armure[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "shared",
+    "image_url": "/static/images/relics/ripple_basin.png"
+  },
+  {
+    "id": "ROYAL_POISON",
+    "name": "Poison royal",
+    "description": "Au début de chaque combat, perdez [blue]4[/blue] PV.",
+    "description_raw": "Au début de chaque combat, perdez [blue]{Damage}[/blue] PV.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/royal_poison.png"
+  },
+  {
+    "id": "ROYAL_STAMP",
+    "name": "Sceau royal",
+    "description": "Lorsque vous obtenez cette relique, choisissez une Attaque ou une Compétence dans votre [gold]Deck[/gold] à [gold]Envoûter[/gold] avec [purple][Enchantment][/purple].",
+    "description_raw": "Lorsque vous obtenez cette relique, choisissez une Attaque ou une Compétence dans votre [gold]Deck[/gold] à [gold]Envoûter[/gold] avec [purple]{Enchantment}[/purple].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique du Marchand",
+    "pool": "shared",
+    "image_url": "/static/images/relics/royal_stamp.png"
+  },
+  {
+    "id": "RUINED_HELMET",
+    "name": "Casque délabré",
+    "description": "La première fois que vous gagnez de la [gold]Force[/gold] chaque combat, doublez-en la quantité.",
+    "description_raw": "La première fois que vous gagnez de la [gold]Force[/gold] chaque combat, doublez-en la quantité.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "ironclad",
+    "image_url": "/static/images/relics/ruined_helmet.png"
+  },
+  {
+    "id": "RUNIC_CAPACITOR",
+    "name": "Condensateur runique",
+    "description": "Démarré chaque combat avec [blue]3[/blue] [gold]Emplacements d'Orbe[/gold] supplémentaires.",
+    "description_raw": "Démarré chaque combat avec [blue]{Repeat}[/blue] [gold]Emplacements d'Orbe[/gold] supplémentaires.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique du Marchand",
+    "pool": "defect",
+    "image_url": "/static/images/relics/runic_capacitor.png"
+  },
+  {
+    "id": "RUNIC_PYRAMID",
+    "name": "Pyramide runique",
+    "description": "À la fin de votre tour, vous ne défaussez pas votre [gold]Main[/gold].",
+    "description_raw": "À la fin de votre tour, vous ne défaussez pas votre [gold]Main[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/runic_pyramid.png"
+  },
+  {
+    "id": "SAI",
+    "name": "Saï",
+    "description": "Au début de votre tour, gagnez [blue]7[/blue] d'[gold]Armure[/gold].",
+    "description_raw": "Au début de votre tour, gagnez [blue]{Block}[/blue] d'[gold]Armure[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/sai.png"
+  },
+  {
+    "id": "SAND_CASTLE",
+    "name": "Château de sable",
+    "description": "Lorsque vous obtenez cette relique, [gold]Améliorez[/gold] [blue]6[/blue] cartes aléatoires.",
+    "description_raw": "Lorsque vous obtenez cette relique, [gold]Améliorez[/gold] [blue]{Cards}[/blue] {Cards:plural:carte aléatoire|cartes aléatoires}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/sand_castle.png"
+  },
+  {
+    "id": "SCREAMING_FLAGON",
+    "name": "Pichet hurlant",
+    "description": "Si votre [gold]Main[/gold] est vide à la fin de votre tour, infligez [blue]20[/blue] dégâts à TOUS les ennemis.",
+    "description_raw": "Si votre [gold]Main[/gold] est vide à la fin de votre tour, infligez [blue]{Damage}[/blue] dégâts à TOUS les ennemis.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique du Marchand",
+    "pool": "shared",
+    "image_url": "/static/images/relics/screaming_flagon.png"
+  },
+  {
+    "id": "SCROLL_BOXES",
+    "name": "Caisse de parchemins",
+    "description": "Lorsque vous obtenez cette relique, perdez toutes vos [gold]Pièces d'or[/gold] et choisissez [blue]1[/blue] pack de cartes parmi [blue]2[/blue] à ajouter à votre [gold]Deck[/gold].",
+    "description_raw": "Lorsque vous obtenez cette relique, perdez toutes vos [gold]Pièces d'or[/gold] et choisissez [blue]1[/blue] pack de cartes parmi [blue]2[/blue] à ajouter à votre [gold]Deck[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/scroll_boxes.png"
+  },
+  {
+    "id": "SEA_GLASS",
+    "name": "Verre marin",
+    "description": "Consultez une sélection de [blue]15[/blue] cartes d'un autre personnage. Ajoutez-en autant que vous souhaitez à votre [gold]Deck[/gold].",
+    "description_raw": "Consultez une sélection de [blue]{Cards}[/blue] cartes {Character.StringValue:cond:de [gold]{}[/gold]|d'un autre personnage}. Ajoutez-en autant que vous souhaitez à votre [gold]Deck[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/sea_glass.png"
+  },
+  {
+    "id": "SEAL_OF_GOLD",
+    "name": "Sceau doré",
+    "description": "Au début de votre tour, dépensez [blue]5[/blue] [gold]Pièces d'or[/gold] pour gagner [energy:1].",
+    "description_raw": "Au début de votre tour, dépensez [blue]{Gold}[/blue] [gold]Pièces d'or[/gold] pour gagner {Energy:energyIcons()}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/seal_of_gold.png"
+  },
+  {
+    "id": "SELF_FORMING_CLAY",
+    "name": "Argile autoformante",
+    "description": "Chaque fois que vous perdez des PV en combat, gagnez [blue]3[/blue] d'[gold]Armure[/gold] au tour suivant.",
+    "description_raw": "Chaque fois que vous perdez des PV en combat, gagnez [blue]{BlockNextTurn}[/blue] d'[gold]Armure[/gold] au tour suivant.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "ironclad",
+    "image_url": "/static/images/relics/self_forming_clay.png"
+  },
+  {
+    "id": "SERE_TALON",
+    "name": "Serre desséchée",
+    "description": "Lorsque vous obtenez cette relique, ajoutez [blue]2[/blue] [red]Malédictions[/red] aléatoires et [blue]3[/blue] [purple]Vœux[/purple] à votre [gold]Deck[/gold].",
+    "description_raw": "Lorsque vous obtenez cette relique, ajoutez [blue]{Curses}[/blue] [red]Malédictions[/red] aléatoires et [blue]{Wishes}[/blue] [purple]Vœux[/purple] à votre [gold]Deck[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/sere_talon.png"
+  },
+  {
+    "id": "SHOVEL",
+    "name": "Pelle",
+    "description": "Vous pouvez Fouiller les [gold]Sites de repos[/gold] pour obtenir une [gold]Relique[/gold] aléatoire.",
+    "description_raw": "Vous pouvez Fouiller les [gold]Sites de repos[/gold] pour obtenir une [gold]Relique[/gold] aléatoire.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/shovel.png"
+  },
+  {
+    "id": "SHURIKEN",
+    "name": "Shuriken",
+    "description": "Chaque fois que vous jouez [blue]3[/blue] Attaques en un seul tour, gagnez [blue]1[/blue] de [gold]Force[/gold].",
+    "description_raw": "Chaque fois que vous jouez [blue]{Cards}[/blue] Attaques en un seul tour, gagnez [blue]{StrengthPower}[/blue] de [gold]Force[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/shuriken.png"
+  },
+  {
+    "id": "SIGNET_RING",
+    "name": "Anneau à signet",
+    "description": "Lorsque vous obtenez cette relique, obtenez [blue]999[/blue] [gold]Pièces d'or[/gold].",
+    "description_raw": "Lorsque vous obtenez cette relique, obtenez [blue]{Gold}[/blue] [gold]Pièces d'or[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/signet_ring.png"
+  },
+  {
+    "id": "SILVER_CRUCIBLE",
+    "name": "Creuset en argent",
+    "description": "Vos [blue]3[/blue] premières récompenses de carte sont [gold]Améliorées[/gold]. Le premier Coffre trésor que vous ouvrez est [red]vide[/red].",
+    "description_raw": "Vos [blue]{Cards}[/blue] premières récompenses de carte sont [gold]Améliorées[/gold]. Le premier Coffre trésor que vous ouvrez est [red]vide[/red].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/silver_crucible.png"
+  },
+  {
+    "id": "SLING_OF_COURAGE",
+    "name": "Fronde du courage",
+    "description": "Démarrez chaque combat d'[gold]Élite[/gold] avec [blue]2[/blue] de [gold]Force[/gold].",
+    "description_raw": "Démarrez chaque combat d'[gold]Élite[/gold] avec [blue]{StrengthPower}[/blue] de [gold]Force[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique du Marchand",
+    "pool": "shared",
+    "image_url": "/static/images/relics/sling_of_courage.png"
+  },
+  {
+    "id": "SMALL_CAPSULE",
+    "name": "Petite capsule",
+    "description": "Lorsque vous obtenez cette relique, obtenez une [gold]Relique[/gold] aléatoire.",
+    "description_raw": "Lorsque vous obtenez cette relique, obtenez une [gold]Relique[/gold] aléatoire.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/small_capsule.png"
+  },
+  {
+    "id": "SNECKO_EYE",
+    "name": "Œil de geckobra",
+    "description": "Au début de votre tour, piochez [blue]2[/blue] cartes supplémentaires. Démarrez chaque combat [red]Désorienté[/red].",
+    "description_raw": "Au début de votre tour, piochez [blue]{Cards}[/blue] {Cards:plural:carte supplémentaire|cartes supplémentaires}. Démarrez chaque combat [red]Désorienté[/red].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/snecko_eye.png"
+  },
+  {
+    "id": "SNECKO_SKULL",
+    "name": "Crâne de geckobra",
+    "description": "Vous appliquez [blue]1[/blue] de [gold]Poison[/gold] en plus à chaque fois que vous appliquez du [gold]Poison[/gold].",
+    "description_raw": "Vous appliquez [blue]{PoisonPower}[/blue] de [gold]Poison[/gold] en plus à chaque fois que vous appliquez du [gold]Poison[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique commune",
+    "pool": "silent",
+    "image_url": "/static/images/relics/snecko_skull.png"
+  },
+  {
+    "id": "SOZU",
+    "name": "Sozu",
+    "description": "Gagnez [energy:1] au début de chaque tour. Vous ne pouvez plus obtenir de potions.",
+    "description_raw": "Gagnez {Energy:energyIcons()} au début de chaque tour. Vous ne pouvez plus obtenir de potions.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/sozu.png"
+  },
+  {
+    "id": "SPARKLING_ROUGE",
+    "name": "Fard pétillant",
+    "description": "Au début de votre [blue]3ème[/blue] tour, gagnez [blue]1[/blue] de [gold]Force[/gold] et [blue]1[/blue] de [gold]Dextérité[/gold].",
+    "description_raw": "Au début de votre [blue]3ème[/blue] tour, gagnez [blue]{StrengthPower}[/blue] de [gold]Force[/gold] et [blue]{DexterityPower}[/blue] de [gold]Dextérité[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "shared",
+    "image_url": "/static/images/relics/sparkling_rouge.png"
+  },
+  {
+    "id": "SPIKED_GAUNTLETS",
+    "name": "Gantelets à pointes",
+    "description": "Gagnez [energy:1] au début de chaque tour. Les Pouvoirs coûtent [blue]1[/blue] [energy:1] supplémentaire.",
+    "description_raw": "Gagnez {Energy:energyIcons()} au début de chaque tour. Les Pouvoirs coûtent [blue]1[/blue] {energyPrefix:energyIcons(1)} supplémentaire.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/spiked_gauntlets.png"
+  },
+  {
+    "id": "STONE_CALENDAR",
+    "name": "Calendrier de pierre",
+    "description": "À la fin du tour [blue]7[/blue], infligez [blue]52[/blue] dégâts à TOUS les ennemis.",
+    "description_raw": "À la fin du tour [blue]{DamageTurn}[/blue], infligez [blue]{Damage}[/blue] dégâts à TOUS les ennemis.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/stone_calendar.png"
+  },
+  {
+    "id": "STONE_CRACKER",
+    "name": "Marteau-piqueur",
+    "description": "Au début des combats de [gold]Boss[/gold], [gold]Améliorez[/gold] [blue]3[/blue] cartes aléatoires de votre [gold]Pioche[/gold] pour le restant du combat.",
+    "description_raw": "Au début des combats de [gold]Boss[/gold], [gold]Améliorez[/gold] [blue]{Cards}[/blue] {Cards:plural:carte aléatoire|cartes aléatoires} de votre [gold]Pioche[/gold] pour le restant du combat.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "shared",
+    "image_url": "/static/images/relics/stone_cracker.png"
+  },
+  {
+    "id": "STONE_HUMIDIFIER",
+    "name": "Humidificateur en pierre",
+    "description": "Lorsque vous vous [gold]Reposez[/gold] à un [gold]Site de repos[/gold], augmentez vos PV Max de [blue]5[/blue].",
+    "description_raw": "Lorsque vous vous [gold]Reposez[/gold] à un [gold]Site de repos[/gold], augmentez vos PV Max de [blue]{MaxHp}[/blue].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/stone_humidifier.png"
+  },
+  {
+    "id": "STORYBOOK",
+    "name": "Livre d'histoires",
+    "description": "Lorsque vous obtenez cette relique, ajoutez [blue]1[/blue] [gold]Flamme éclatante[/gold] à votre [gold]Deck[/gold].",
+    "description_raw": "Lorsque vous obtenez cette relique, ajoutez [blue]1[/blue] [gold]Flamme éclatante[/gold] à votre [gold]Deck[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/storybook.png"
+  },
+  {
+    "id": "STRAWBERRY",
+    "name": "Fraise",
+    "description": "Lorsque vous obtenez cette relique, augmentez vos PV Max de [blue]7[/blue].",
+    "description_raw": "Lorsque vous obtenez cette relique, augmentez vos PV Max de [blue]{MaxHp}[/blue].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique commune",
+    "pool": "shared",
+    "image_url": "/static/images/relics/strawberry.png"
+  },
+  {
+    "id": "STRIKE_DUMMY",
+    "name": "Mannequin d'entraînement",
+    "description": "Les cartes contenant « Frappe » infligent [blue]3[/blue] dégâts supplémentaires.",
+    "description_raw": "Les cartes contenant « Frappe » infligent [blue]{ExtraDamage}[/blue] dégâts supplémentaires.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique commune",
+    "pool": "shared",
+    "image_url": "/static/images/relics/strike_dummy.png"
+  },
+  {
+    "id": "STURDY_CLAMP",
+    "name": "Pince robuste",
+    "description": "Vous conservez jusqu'à [blue]10[/blue] d'[gold]Armure[/gold] entre chaque tour.",
+    "description_raw": "Vous conservez jusqu'à [blue]{Block}[/blue] d'[gold]Armure[/gold] entre chaque tour.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/sturdy_clamp.png"
+  },
+  {
+    "id": "SWORD_OF_JADE",
+    "name": "Épée de jade",
+    "description": "Démarrez chaque combat avec [blue]3[/blue] de [gold]Strength[/gold].",
+    "description_raw": "Démarrez chaque combat avec [blue]{StrengthPower}[/blue] de [gold]Strength[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/sword_of_jade.png"
+  },
+  {
+    "id": "SWORD_OF_STONE",
+    "name": "Épée de pierre",
+    "description": "Se transforme en une puissante [gold]Relique[/gold] après avoir vaincu [blue]5[/blue] [gold]Élites[/gold].",
+    "description_raw": "Se transforme en une puissante [gold]Relique[/gold] après avoir vaincu [blue]{Elites}[/blue] [gold]{Elites:plural:Élite|Élites}[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/sword_of_stone.png"
+  },
+  {
+    "id": "SYMBIOTIC_VIRUS",
+    "name": "Virus symbiotique",
+    "description": "Au début de chaque combat, [gold]Canalisez[/gold] [blue]1[/blue] [gold]Orbes ténébreux[/gold].",
+    "description_raw": "Au début de chaque combat, [gold]Canalisez[/gold] [blue]{Dark}[/blue] [gold]Orbes ténébreux[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "defect",
+    "image_url": "/static/images/relics/symbiotic_virus.png"
+  },
+  {
+    "id": "TANXS_WHISTLE",
+    "name": "Sifflet de Tanx",
+    "description": "Lorsque vous obtenez cette relique, ajoutez [blue]1[/blue] [gold]Sifflet[/gold] à votre [gold]Deck[/gold].",
+    "description_raw": "Lorsque vous obtenez cette relique, ajoutez [blue]1[/blue] [gold]Sifflet[/gold] à votre [gold]Deck[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/tanxs_whistle.png"
+  },
+  {
+    "id": "TEA_OF_DISCOURTESY",
+    "name": "Thé de l'incivilité",
+    "description": "Au début du prochain combat, mélangez [blue]2[/blue] [gold]Hébétement[/gold] à votre [gold]Pioche[/gold].",
+    "description_raw": "Au début du prochain combat, mélangez [blue]{DazedCount}[/blue] [gold]Hébétement[/gold] à votre [gold]Pioche[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/tea_of_discourtesy.png"
+  },
+  {
+    "id": "THE_ABACUS",
+    "name": "L'Abaque",
+    "description": "Chaque fois que la [gold]Pioche[/gold] est mélangée, gagnez [blue]6[/blue] d'[gold]Armure[/gold].",
+    "description_raw": "Chaque fois que la [gold]Pioche[/gold] est mélangée, gagnez [blue]{Block}[/blue] d'[gold]Armure[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique du Marchand",
+    "pool": "shared",
+    "image_url": "/static/images/relics/the_abacus.png"
+  },
+  {
+    "id": "THE_BOOT",
+    "name": "La botte",
+    "description": "Chaque fois que vous auriez infligé [blue]4[/blue] dégâts d'attaque ou moins (sans armure), vous infligez [blue]5[/blue] dégâts à la place.",
+    "description_raw": "Chaque fois que vous auriez infligé [blue]{DamageThreshold}[/blue] dégâts d'attaque ou moins (sans armure), vous infligez [blue]{DamageMinimum}[/blue] dégâts à la place.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/the_boot.png"
+  },
+  {
+    "id": "THE_COURIER",
+    "name": "Le Coursier",
+    "description": "Le Marchand renouvelle immédiatement les cartes, reliques et potions que vous achetez, et ses prix sont réduits de [blue]20%[/blue].",
+    "description_raw": "Le Marchand renouvelle immédiatement les cartes, reliques et potions que vous achetez, et ses prix sont réduits de [blue]{Discount}%[/blue].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/the_courier.png"
+  },
+  {
+    "id": "THROWING_AXE",
+    "name": "Hache de lancer",
+    "description": "La première carte que vous jouez chaque combat est jouée une fois de plus.",
+    "description_raw": "La première carte que vous jouez chaque combat est jouée une fois de plus.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/throwing_axe.png"
+  },
+  {
+    "id": "TINGSHA",
+    "name": "Tingsha",
+    "description": "Pour chaque carte que vous défaussez pendant votre tour, infligez [blue]3[/blue] dégâts à un ennemi aléatoire.",
+    "description_raw": "Pour chaque carte que vous défaussez pendant votre tour, infligez [blue]{Damage}[/blue] dégâts à un ennemi aléatoire.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "silent",
+    "image_url": "/static/images/relics/tingsha.png"
+  },
+  {
+    "id": "TINY_MAILBOX",
+    "name": "Minuscule boîte aux lettres",
+    "description": "Lorsque vous vous [gold]Reposez[/gold], obtenez une potion aléatoire.",
+    "description_raw": "Lorsque vous vous [gold]Reposez[/gold], obtenez une potion aléatoire.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique commune",
+    "pool": "shared",
+    "image_url": "/static/images/relics/tiny_mailbox.png"
+  },
+  {
+    "id": "TOASTY_MITTENS",
+    "name": "Mitaines réchauffantes",
+    "description": "Au début de votre tour, [gold]Épuisez[/gold] la carte du dessus de votre [gold]Pioche[/gold] et gagnez [blue]1[/blue] de [gold]Force[/gold].",
+    "description_raw": "Au début de votre tour, [gold]Épuisez[/gold] la carte du dessus de votre [gold]Pioche[/gold] et gagnez [blue]{StrengthPower}[/blue] de [gold]Force[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/toasty_mittens.png"
+  },
+  {
+    "id": "TOOLBOX",
+    "name": "Boîte à outils",
+    "description": "Au début de chaque combat, choisissez [blue]1[/blue] carte Incolore aléatoire parmi [blue]3[/blue] et ajoutez-la à votre [gold]Main[/gold].",
+    "description_raw": "Au début de chaque combat, choisissez [blue]1[/blue] carte Incolore aléatoire parmi [blue]{Cards}[/blue] et ajoutez-la à votre [gold]Main[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique du Marchand",
+    "pool": "shared",
+    "image_url": "/static/images/relics/toolbox.png"
+  },
+  {
+    "id": "TOUCH_OF_OROBAS",
+    "name": "Toucher d'Orobas",
+    "description": "Lorsque vous obtenez cette relique, remplacez votre [gold]Relique[/gold] de départ par une version [gold]Améliorée[/gold].",
+    "description_raw": "Lorsque vous obtenez cette relique, remplacez {StarterRelic.StringValue:cond:[gold]{StarterRelic}[/gold] par [gold]{UpgradedRelic}[/gold]|votre [gold]Relique[/gold] de départ par une version [gold]Améliorée[/gold]}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/touch_of_orobas.png"
+  },
+  {
+    "id": "TOUGH_BANDAGES",
+    "name": "Bandages résistants",
+    "description": "Chaque fois que vous défaussez une carte pendant votre tour, gagnez [blue]3[/blue] d'[gold]Armure[/gold].",
+    "description_raw": "Chaque fois que vous défaussez une carte pendant votre tour, gagnez [blue]{Block}[/blue] d'[gold]Armure[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "silent",
+    "image_url": "/static/images/relics/tough_bandages.png"
+  },
+  {
+    "id": "TOXIC_EGG",
+    "name": "Œuf toxique",
+    "description": "Lorsque vous ajoutez une Compétence à votre [gold]Deck[/gold], [gold]Améliorez[/gold]-la.",
+    "description_raw": "Lorsque vous ajoutez une Compétence à votre [gold]Deck[/gold], [gold]Améliorez[/gold]-la.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/toxic_egg.png"
+  },
+  {
+    "id": "TOY_BOX",
+    "name": "Caisse à jouets",
+    "description": "Lorsque vous obtenez cette relique, obtenez [blue]4[/blue] [gold]Reliques de cire[/gold]. Tous les [blue]3[/blue] combats, la [gold]Relique de cire[/gold] le plus à gauche fondra.",
+    "description_raw": "Lorsque vous obtenez cette relique, obtenez [blue]{Relics}[/blue] [gold]{Relics:plural:Relique|Reliques} de cire[/gold]. Tous les {Combats:plural:combats|[blue]{Combats}[/blue] combats}, la [gold]Relique de cire[/gold] le plus à gauche fondra.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/toy_box.png"
+  },
+  {
+    "id": "TRI_BOOMERANG",
+    "name": "Tri-boomerang",
+    "description": "Choisissez [blue]3[/blue] Attaques de votre [gold]Deck[/gold]. [gold]Envoûtez[/gold]-les avec [purple]Instinct[/purple].",
+    "description_raw": "Choisissez [blue]{Cards}[/blue] {Cards:plural:Attaque|Attaques} de votre [gold]Deck[/gold]. [gold]Envoûtez[/gold]-les avec [purple]Instinct[/purple].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/tri_boomerang.png"
+  },
+  {
+    "id": "TUNGSTEN_ROD",
+    "name": "Tige de tungstène",
+    "description": "Vous perdez [blue]1[/blue] PV de moins chaque fois que vous perdriez des PV.",
+    "description_raw": "Vous perdez [blue]{HpLossReduction}[/blue] PV de moins chaque fois que vous perdriez des PV.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/tungsten_rod.png"
+  },
+  {
+    "id": "TUNING_FORK",
+    "name": "Diapason",
+    "description": "Toutes les [blue]10[/blue] Compétences que vous jouez, vous gagnez [blue]7[/blue] d'[gold]Armure[/gold].",
+    "description_raw": "Toutes les [blue]{Cards}[/blue] Compétences que vous jouez, vous gagnez [blue]{Block}[/blue] d'[gold]Armure[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "shared",
+    "image_url": "/static/images/relics/tuning_fork.png"
+  },
+  {
+    "id": "TWISTED_FUNNEL",
+    "name": "Entonnoir torsadé",
+    "description": "Au début de chaque combat, appliquez [blue]4[/blue] de [gold]Poison[/gold] à TOUS les ennemis.",
+    "description_raw": "Au début de chaque combat, appliquez [blue]{PoisonPower}[/blue] de [gold]Poison[/gold] à TOUS les ennemis.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "silent",
+    "image_url": "/static/images/relics/twisted_funnel.png"
+  },
+  {
+    "id": "UNCEASING_TOP",
+    "name": "Toupie perpétuelle",
+    "description": "Chaque fois que votre [gold]Main[/gold] est vide pendant votre tour, piochez une carte.",
+    "description_raw": "Chaque fois que votre [gold]Main[/gold] est vide pendant votre tour, piochez une carte.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/unceasing_top.png"
+  },
+  {
+    "id": "UNDYING_SIGIL",
+    "name": "Sceau immortel",
+    "description": "Les ennemis affligés d'au moins autant de [gold]Fatalité[/gold] que de PV infligent [blue]50%[/blue] de dégâts en moins.",
+    "description_raw": "Les ennemis affligés d'au moins autant de [gold]Fatalité[/gold] que de PV infligent [blue]50%[/blue] de dégâts en moins.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique du Marchand",
+    "pool": "necrobinder",
+    "image_url": "/static/images/relics/undying_sigil.png"
+  },
+  {
+    "id": "UNSETTLING_LAMP",
+    "name": "Lampe inquiétante",
+    "description": "Chaque combat, la première fois que vous jouez une carte qui inflige des [gold]Effets négatifs[/gold] à un ennemi, doublez-en l'effet.",
+    "description_raw": "Chaque combat, la première fois que vous jouez une carte qui inflige des [gold]Effets négatifs[/gold] à un ennemi, doublez-en l'effet.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/unsettling_lamp.png"
+  },
+  {
+    "id": "VAJRA",
+    "name": "Vajra",
+    "description": "Démarrez chaque combat avec [blue]1[/blue] de [gold]Force[/gold].",
+    "description_raw": "Démarrez chaque combat avec [blue]{StrengthPower}[/blue] de [gold]Force[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique commune",
+    "pool": "shared",
+    "image_url": "/static/images/relics/vajra.png"
+  },
+  {
+    "id": "VAKUU_CARD_SELECTOR",
+    "name": "VakuuCardSelector",
+    "description": "",
+    "description_raw": "",
+    "flavor": "",
+    "rarity": "Unknown",
+    "pool": "shared",
+    "image_url": null
+  },
+  {
+    "id": "VAMBRACE",
+    "name": "Brassard",
+    "description": "La première fois qu'une carte vous confère de l'[gold]Armure[/gold] chaque combat, doublez-en la quantité.",
+    "description_raw": "La première fois qu'une carte vous confère de l'[gold]Armure[/gold] chaque combat, doublez-en la quantité.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique inhabituelle",
+    "pool": "shared",
+    "image_url": "/static/images/relics/vambrace.png"
+  },
+  {
+    "id": "VELVET_CHOKER",
+    "name": "Ras du cou en velours",
+    "description": "Gagnez [energy:1] au début de chaque tour. Vous ne pouvez pas jouer plus de [blue]6[/blue] cartes par tour.",
+    "description_raw": "Gagnez {Energy:energyIcons()} au début de chaque tour. Vous ne pouvez pas jouer plus de [blue]{Cards}[/blue] {Cards:plural:carte|cartes} par tour.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/velvet_choker.png"
+  },
+  {
+    "id": "VENERABLE_TEA_SET",
+    "name": "Service à thé vénérable",
+    "description": "Chaque fois que vous entrez dans un [gold]Site de repos[/gold], vous démarrez le combat suivant avec [energy:2] supplémentaires.",
+    "description_raw": "Chaque fois que vous entrez dans un [gold]Site de repos[/gold], vous démarrez le combat suivant avec {Energy:energyIcons()} supplémentaires.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique commune",
+    "pool": "shared",
+    "image_url": "/static/images/relics/venerable_tea_set.png"
+  },
+  {
+    "id": "VERY_HOT_COCOA",
+    "name": "Chcolat très chaud",
+    "description": "Démarrez chaque combat avec [blue][energy:4][/blue] supplémentaires.",
+    "description_raw": "Démarrez chaque combat avec [blue]{Energy:energyIcons()}[/blue] supplémentaires.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/very_hot_cocoa.png"
+  },
+  {
+    "id": "VEXING_PUZZLEBOX",
+    "name": "Casse-tête vexant",
+    "description": "Au début de chaque combat, ajoutez une carte aléatoire à votre [gold]Main[/gold]. Elle coûte [blue]0[/blue][energy:1].",
+    "description_raw": "Au début de chaque combat, ajoutez une carte aléatoire à votre [gold]Main[/gold]. Elle coûte [blue]0[/blue]{energyPrefix:energyIcons(1)}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/vexing_puzzlebox.png"
+  },
+  {
+    "id": "VITRUVIAN_MINION",
+    "name": "Sbire de Vitruve",
+    "description": "Les cartes contenant « Sbire » infligent le double de dégâts et confèrent le double d'[gold]Armure[/gold].",
+    "description_raw": "Les cartes contenant « Sbire » infligent le double de dégâts et confèrent le double d'[gold]Armure[/gold].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique du Marchand",
+    "pool": "regent",
+    "image_url": "/static/images/relics/vitruvian_minion.png"
+  },
+  {
+    "id": "WAR_HAMMER",
+    "name": "Marteau de guerre",
+    "description": "Lorsque vous tuez un [gold]Élite[/gold], [gold]Améliorez[/gold] [blue]4[/blue] cartes aléatoires.",
+    "description_raw": "Lorsque vous tuez un [gold]Élite[/gold], [gold]Améliorez[/gold] [blue]{Cards}[/blue] {Cards:plural:carte aléatoire|cartes aléatoires}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/war_hammer.png"
+  },
+  {
+    "id": "WAR_PAINT",
+    "name": "Peinture de guerre",
+    "description": "Lorsque vous obtenez cette relique, [gold]Améliorez[/gold] [blue]2[/blue] Compétences aléatoires.",
+    "description_raw": "Lorsque vous obtenez cette relique, [gold]Améliorez[/gold] [blue]{Cards}[/blue] {Cards:plural:Compétence aléatoire|Compétences aléatoires}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique commune",
+    "pool": "shared",
+    "image_url": "/static/images/relics/war_paint.png"
+  },
+  {
+    "id": "WHETSTONE",
+    "name": "Pierre à aiguiser",
+    "description": "Lorsque vous obtenez cette relique, [gold]Améliorez[/gold] [blue]2[/blue] Attaques aléatoires.",
+    "description_raw": "Lorsque vous obtenez cette relique, [gold]Améliorez[/gold] [blue]{Cards}[/blue] {Cards:plural:Attaque aléatoire|Attaques aléatoires}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique commune",
+    "pool": "shared",
+    "image_url": "/static/images/relics/whetstone.png"
+  },
+  {
+    "id": "WHISPERING_EARRING",
+    "name": "Boucle d'oreille susurrante",
+    "description": "Gagnez [energy:1] au début de chaque tour. [red]Vakuu joue votre premier tour à votre place.[/red]",
+    "description_raw": "Gagnez {Energy:energyIcons()} au début de chaque tour. [red]Vakuu joue votre premier tour à votre place.[/red]",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": "/static/images/relics/whispering_earring.png"
+  },
+  {
+    "id": "WHITE_BEAST_STATUE",
+    "name": "Statue de bête blanche",
+    "description": "Vous obtenez toujours une potion dans les récompenses de combat.",
+    "description_raw": "Vous obtenez toujours une potion dans les récompenses de combat.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/white_beast_statue.png"
+  },
+  {
+    "id": "WHITE_STAR",
+    "name": "Étoile blanche",
+    "description": "Les [gold]Élites[/gold] donnent une récompense de carte [gold]Rare[/gold] supplémentaire.",
+    "description_raw": "Les [gold]Élites[/gold] donnent une récompense de carte [gold]Rare[/gold] supplémentaire.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "shared",
+    "image_url": "/static/images/relics/white_star.png"
+  },
+  {
+    "id": "WING_CHARM",
+    "name": "Aile fétiche",
+    "description": "Une carte aléatoire de chaque récompense de carte est [gold]Envoûtée[/gold] avec [purple]Rapide[/purple] [blue]1[/blue].",
+    "description_raw": "Une carte aléatoire de chaque récompense de carte est [gold]Envoûtée[/gold] avec [purple]Rapide[/purple] [blue]{SwiftAmount}[/blue].",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique du Marchand",
+    "pool": "shared",
+    "image_url": "/static/images/relics/wing_charm.png"
+  },
+  {
+    "id": "WONGO_CUSTOMER_APPRECIATION_BADGE",
+    "name": "Pin’s Exclusif de Fidélité Wongo",
+    "description": "Sans effet.",
+    "description_raw": "Sans effet.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/wongo_customer_appreciation_badge.png"
+  },
+  {
+    "id": "WONGOS_MYSTERY_TICKET",
+    "name": "Ticket mystère de Chez Wongo's",
+    "description": "Recevez [blue]3[/blue] [gold]Reliques aléatoires[/gold] après [blue]5[/blue] combats.",
+    "description_raw": "Recevez [blue]{Repeat}[/blue] [gold]{Repeat:plural:Relique aléatoire|Reliques aléatoires}[/gold] après [blue]{RemainingCombats}[/blue] {RemainingCombats:plural:combat|combats}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'événement",
+    "pool": "shared",
+    "image_url": "/static/images/relics/wongos_mystery_ticket.png"
+  },
+  {
+    "id": "YUMMY_COOKIE",
+    "name": "Délicieux biscuit",
+    "description": "Lorsque vous obtenez cette relique, [gold]Améliorez[/gold] [blue]4[/blue] cartes.",
+    "description_raw": "Lorsque vous obtenez cette relique, [gold]Améliorez[/gold] [blue]{Cards}[/blue] {Cards:plural:carte|cartes}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique d'Ancien",
+    "pool": "shared",
+    "image_url": null
+  }
+]

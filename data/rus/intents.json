@@ -1,0 +1,72 @@
+[
+  {
+    "id": "ATTACK",
+    "name": "Агрессия",
+    "description": "Этот враг планирует [gold]атаковать[/gold] {IsMultiplayer:всех |}и нанести [blue]{Damage}[/blue] урона{Repeat:plural(ru):| [blue]{}[/blue] раза| [blue]{}[/blue] раз}."
+  },
+  {
+    "id": "BUFF",
+    "name": "Усиление",
+    "description": "Этот враг собирается наложить на себя [gold]положительный эффект[/gold]."
+  },
+  {
+    "id": "CARD_DEBUFF",
+    "name": "Коварство",
+    "description": "Этот враг собирается наложить [gold]порчу[/gold] на ваши карты."
+  },
+  {
+    "id": "DEATH_BLOW",
+    "name": "Предсмертный рывок",
+    "description": "Этот враг из последних сил нанесет вам [blue]{Damage}[/blue] урона перед смертью, чтобы утащить вас за собой в могилу."
+  },
+  {
+    "id": "DEBUFF",
+    "name": "Находчивость",
+    "description": "Этот враг собирается наложить на вас [gold]отрицательный эффект[/gold]."
+  },
+  {
+    "id": "DEBUFF_STRONG",
+    "name": "Находчивость",
+    "description": "Этот враг собирается наложить на вас мощный [gold]отрицательный эффект[/gold]."
+  },
+  {
+    "id": "DEFEND",
+    "name": "Самооборона",
+    "description": "Этот враг собирается [gold]защититься[/gold]."
+  },
+  {
+    "id": "ESCAPE",
+    "name": "Трусость",
+    "description": "Этот враг собирается [gold]сбежать[/gold]."
+  },
+  {
+    "id": "HEAL",
+    "name": "Лечение",
+    "description": "Этот враг собирается [gold]восполнить ОЗ[/gold]."
+  },
+  {
+    "id": "SLEEP",
+    "name": "Сон",
+    "description": "Этот враг не собирается ничего делать."
+  },
+  {
+    "id": "STATUS",
+    "name": "Находчивость",
+    "description": "Этот враг собирается подбросить вам [blue]{CardCount}[/blue] {CardCount:plural(ru):[gold]Статус[/gold]|[gold]Статуса[/gold]|[gold]Статусов[/gold]}."
+  },
+  {
+    "id": "STUN",
+    "name": "Оглушение",
+    "description": "Этот враг пропускает следующий ход."
+  },
+  {
+    "id": "SUMMON",
+    "name": "Призыв",
+    "description": "Этот враг собирается призвать [gold]монстров[/gold]."
+  },
+  {
+    "id": "UNKNOWN",
+    "name": "Неизвестность",
+    "description": "Намерения этого врага [gold]неизвестны[/gold]."
+  }
+]

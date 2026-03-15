@@ -2,9 +2,11 @@
 
 import { useState, useEffect } from "react";
 import type { Relic } from "@/lib/api";
+import { cachedFetch } from "@/lib/fetch-cache";
 import Link from "next/link";
 import SearchFilter from "../components/SearchFilter";
 import RichDescription from "../components/RichDescription";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -38,6 +40,7 @@ const poolOptions = [
 ];
 
 export default function RelicsPage() {
+  const { lang } = useLanguage();
   const [relics, setRelics] = useState<Relic[]>([]);
   const [search, setSearch] = useState("");
   const [rarity, setRarity] = useState("");
@@ -50,11 +53,11 @@ export default function RelicsPage() {
     if (rarity) params.set("rarity", rarity);
     if (pool) params.set("pool", pool);
     if (search) params.set("search", search);
-    fetch(`${API}/api/relics?${params}`)
-      .then((r) => r.json())
+    params.set("lang", lang);
+    cachedFetch<Relic[]>(`${API}/api/relics?${params}`)
       .then(setRelics)
       .finally(() => setLoading(false));
-  }, [rarity, pool, search]);
+  }, [rarity, pool, search, lang]);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

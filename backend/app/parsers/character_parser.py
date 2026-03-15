@@ -5,9 +5,7 @@ from pathlib import Path
 
 BASE = Path(__file__).resolve().parents[3]
 DECOMPILED = BASE / "extraction" / "decompiled"
-LOCALIZATION = BASE / "extraction" / "raw" / "localization" / "eng"
 CHARS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.Characters"
-OUTPUT = BASE / "data"
 
 
 def class_name_to_id(name: str) -> str:
@@ -16,16 +14,16 @@ def class_name_to_id(name: str) -> str:
     return s.upper()
 
 
-def load_localization() -> dict:
-    loc_file = LOCALIZATION / "characters.json"
+def load_localization(loc_dir: Path) -> dict:
+    loc_file = loc_dir / "characters.json"
     if loc_file.exists():
         with open(loc_file, "r", encoding="utf-8") as f:
             return json.load(f)
     return {}
 
 
-def load_ancients_localization() -> dict:
-    loc_file = LOCALIZATION / "ancients.json"
+def load_ancients_localization(loc_dir: Path) -> dict:
+    loc_file = loc_dir / "ancients.json"
     if loc_file.exists():
         with open(loc_file, "r", encoding="utf-8") as f:
             return json.load(f)
@@ -170,9 +168,9 @@ def parse_character(filepath: Path, localization: dict, ancients_loc: dict) -> d
     }
 
 
-def parse_all_characters() -> list[dict]:
-    localization = load_localization()
-    ancients_loc = load_ancients_localization()
+def parse_all_characters(loc_dir: Path) -> list[dict]:
+    localization = load_localization(loc_dir)
+    ancients_loc = load_ancients_localization(loc_dir)
     characters = []
     for filepath in sorted(CHARS_DIR.glob("*.cs")):
         char = parse_character(filepath, localization, ancients_loc)
@@ -181,12 +179,14 @@ def parse_all_characters() -> list[dict]:
     return characters
 
 
-def main():
-    OUTPUT.mkdir(exist_ok=True)
-    characters = parse_all_characters()
-    with open(OUTPUT / "characters.json", "w", encoding="utf-8") as f:
+def main(lang: str = "eng"):
+    loc_dir = BASE / "extraction" / "raw" / "localization" / lang
+    output_dir = BASE / "data" / lang
+    output_dir.mkdir(parents=True, exist_ok=True)
+    characters = parse_all_characters(loc_dir)
+    with open(output_dir / "characters.json", "w", encoding="utf-8") as f:
         json.dump(characters, f, indent=2, ensure_ascii=False)
-    print(f"Parsed {len(characters)} characters -> data/characters.json")
+    print(f"Parsed {len(characters)} characters -> data/{lang}/characters.json")
 
 
 if __name__ == "__main__":

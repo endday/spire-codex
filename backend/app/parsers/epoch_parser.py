@@ -5,10 +5,8 @@ from pathlib import Path
 
 BASE = Path(__file__).resolve().parents[3]
 DECOMPILED = BASE / "extraction" / "decompiled"
-LOCALIZATION = BASE / "extraction" / "raw" / "localization" / "eng"
 EPOCHS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Timeline.Epochs"
 STORIES_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Timeline.Stories"
-OUTPUT = BASE / "data"
 
 ERA_VALUES = {
     "Prehistoria0": -20000,
@@ -51,16 +49,16 @@ def epoch_class_to_id(class_name: str) -> str:
     return class_name_to_id(class_name)
 
 
-def load_localization() -> dict:
-    loc_file = LOCALIZATION / "epochs.json"
+def load_localization(loc_dir: Path) -> dict:
+    loc_file = loc_dir / "epochs.json"
     if loc_file.exists():
         with open(loc_file, "r", encoding="utf-8") as f:
             return json.load(f)
     return {}
 
 
-def load_eras_localization() -> dict:
-    loc_file = LOCALIZATION / "eras.json"
+def load_eras_localization(loc_dir: Path) -> dict:
+    loc_file = loc_dir / "eras.json"
     if loc_file.exists():
         with open(loc_file, "r", encoding="utf-8") as f:
             return json.load(f)
@@ -127,11 +125,11 @@ def extract_unlocks_events(content: str) -> list[str]:
     return [class_name_to_id(m.group(1)) for m in re.finditer(r'ModelDb\.Event<(\w+)>\(\)', content)]
 
 
-def load_all_titles() -> dict[str, str]:
+def load_all_titles(loc_dir: Path) -> dict[str, str]:
     """Load title mappings from localization files for resolving unlock_text placeholders."""
     titles = {}
     for filename in ("cards.json", "relics.json", "potions.json", "events.json"):
-        loc_file = LOCALIZATION / filename
+        loc_file = loc_dir / filename
         if not loc_file.exists():
             continue
         with open(loc_file, "r", encoding="utf-8") as f:
@@ -143,20 +141,8 @@ def load_all_titles() -> dict[str, str]:
     return titles
 
 
-_title_cache: dict[str, str] | None = None
-
-
-def get_title_map() -> dict[str, str]:
-    global _title_cache
-    if _title_cache is None:
-        _title_cache = load_all_titles()
-    return _title_cache
-
-
-def resolve_unlock_text(text: str, content: str) -> str:
+def resolve_unlock_text(text: str, content: str, title_map: dict[str, str]) -> str:
     """Resolve placeholders like {Event}, {Potion1}, {Card1}, {Relic1} in unlock_text."""
-    title_map = get_title_map()
-
     # Extract model references for numbered vars
     potions = [class_name_to_id(m.group(1)) for m in re.finditer(r'ModelDb\.Potion<(\w+)>\(\)', content)]
     cards = [class_name_to_id(m.group(1)) for m in re.finditer(r'ModelDb\.Card<(\w+)>\(\)', content)]
@@ -197,7 +183,7 @@ def extract_timeline_expansion(content: str) -> list[str]:
     return ids
 
 
-def parse_single_epoch(filepath: Path, localization: dict) -> dict | None:
+def parse_single_epoch(filepath: Path, localization: dict, title_map: dict[str, str]) -> dict | None:
     content = filepath.read_text(encoding="utf-8")
 
     epoch_id = extract_field(content, "Id")
@@ -229,7 +215,7 @@ def parse_single_epoch(filepath: Path, localization: dict) -> dict | None:
     unlock_info = strip_rich_tags(resolve_unlock_info(unlock_info_raw)) if unlock_info_raw else None
 
     unlock_text_raw = localization.get(f"{epoch_id}.unlockText", "")
-    unlock_text = strip_rich_tags(resolve_unlock_text(unlock_text_raw, content)) if unlock_text_raw else None
+    unlock_text = strip_rich_tags(resolve_unlock_text(unlock_text_raw, content, title_map)) if unlock_text_raw else None
 
     # Sort order
     era_value = ERA_VALUES.get(era, 0) if era else 0
@@ -255,12 +241,13 @@ def parse_single_epoch(filepath: Path, localization: dict) -> dict | None:
     return result
 
 
-def parse_all_epochs() -> list[dict]:
-    localization = load_localization()
-    eras_loc = load_eras_localization()
+def parse_all_epochs(loc_dir: Path) -> list[dict]:
+    localization = load_localization(loc_dir)
+    eras_loc = load_eras_localization(loc_dir)
+    title_map = load_all_titles(loc_dir)
     epochs = []
     for filepath in sorted(EPOCHS_DIR.glob("*.cs")):
-        epoch = parse_single_epoch(filepath, localization)
+        epoch = parse_single_epoch(filepath, localization, title_map)
         if epoch and epoch["era"]:
             # Add era display name and year from eras localization
             era_key = epoch["era"].upper()
@@ -314,8 +301,8 @@ def parse_single_story(filepath: Path, localization: dict) -> dict | None:
     }
 
 
-def parse_all_stories() -> list[dict]:
-    localization = load_localization()
+def parse_all_stories(loc_dir: Path) -> list[dict]:
+    localization = load_localization(loc_dir)
     stories = []
     for filepath in sorted(STORIES_DIR.glob("*.cs")):
         story = parse_single_story(filepath, localization)
@@ -324,18 +311,20 @@ def parse_all_stories() -> list[dict]:
     return stories
 
 
-def main():
-    OUTPUT.mkdir(exist_ok=True)
+def main(lang: str = "eng"):
+    loc_dir = BASE / "extraction" / "raw" / "localization" / lang
+    output_dir = BASE / "data" / lang
+    output_dir.mkdir(parents=True, exist_ok=True)
 
-    epochs = parse_all_epochs()
-    with open(OUTPUT / "epochs.json", "w", encoding="utf-8") as f:
+    epochs = parse_all_epochs(loc_dir)
+    with open(output_dir / "epochs.json", "w", encoding="utf-8") as f:
         json.dump(epochs, f, indent=2, ensure_ascii=False)
-    print(f"Parsed {len(epochs)} epochs -> data/epochs.json")
+    print(f"Parsed {len(epochs)} epochs -> data/{lang}/epochs.json")
 
-    stories = parse_all_stories()
-    with open(OUTPUT / "stories.json", "w", encoding="utf-8") as f:
+    stories = parse_all_stories(loc_dir)
+    with open(output_dir / "stories.json", "w", encoding="utf-8") as f:
         json.dump(stories, f, indent=2, ensure_ascii=False)
-    print(f"Parsed {len(stories)} stories -> data/stories.json")
+    print(f"Parsed {len(stories)} stories -> data/{lang}/stories.json")
 
 
 if __name__ == "__main__":

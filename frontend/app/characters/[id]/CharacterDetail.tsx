@@ -5,6 +5,8 @@ import { useParams } from "next/navigation";
 import Link from "next/link";
 import type { Character, Card, Relic } from "@/lib/api";
 import RichDescription from "@/app/components/RichDescription";
+import { cachedFetch } from "@/lib/fetch-cache";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -30,6 +32,7 @@ const QUOTE_LABELS: Record<string, { label: string; icon: string }> = {
 
 export default function CharacterDetail() {
   const { id } = useParams<{ id: string }>();
+  const { lang } = useLanguage();
   const [char, setChar] = useState<Character | null>(null);
   const [cards, setCards] = useState<Record<string, Card>>({});
   const [relics, setRelics] = useState<Record<string, Relic>>({});
@@ -41,12 +44,12 @@ export default function CharacterDetail() {
     if (!id) return;
     setLoading(true);
     Promise.all([
-      fetch(`${API}/api/characters/${id}`).then((r) => {
-        if (!r.ok) { setNotFound(true); return null; }
-        return r.json();
+      cachedFetch<Character>(`${API}/api/characters/${id}?lang=${lang}`).catch(() => {
+        setNotFound(true);
+        return null;
       }),
-      fetch(`${API}/api/cards`).then((r) => r.json()),
-      fetch(`${API}/api/relics`).then((r) => r.json()),
+      cachedFetch<Card[]>(`${API}/api/cards?lang=${lang}`),
+      cachedFetch<Relic[]>(`${API}/api/relics?lang=${lang}`),
     ])
       .then(([charData, cardsData, relicsData]: [Character | null, Card[], Relic[]]) => {
         if (charData) setChar(charData);
@@ -58,7 +61,7 @@ export default function CharacterDetail() {
         setRelics(rm);
       })
       .finally(() => setLoading(false));
-  }, [id]);
+  }, [id, lang]);
 
   if (loading) {
     return (

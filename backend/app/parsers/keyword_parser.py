@@ -6,11 +6,9 @@ from description_resolver import resolve_description, extract_vars_from_source
 
 BASE = Path(__file__).resolve().parents[3]
 DECOMPILED = BASE / "extraction" / "decompiled"
-LOCALIZATION = BASE / "extraction" / "raw" / "localization" / "eng"
 ORBS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.Orbs"
 AFFLICTIONS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.Afflictions"
 MODIFIERS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.Modifiers"
-OUTPUT = BASE / "data"
 
 
 def class_name_to_id(name: str) -> str:
@@ -28,8 +26,8 @@ def clean_description(text: str) -> str:
 
 
 # --- Keywords ---
-def parse_keywords() -> list[dict]:
-    loc_file = LOCALIZATION / "card_keywords.json"
+def parse_keywords(loc_dir: Path) -> list[dict]:
+    loc_file = loc_dir / "card_keywords.json"
     if not loc_file.exists():
         return []
     with open(loc_file, "r", encoding="utf-8") as f:
@@ -55,8 +53,8 @@ def parse_keywords() -> list[dict]:
 
 
 # --- Intents ---
-def parse_intents() -> list[dict]:
-    loc_file = LOCALIZATION / "intents.json"
+def parse_intents(loc_dir: Path) -> list[dict]:
+    loc_file = loc_dir / "intents.json"
     if not loc_file.exists():
         return []
     with open(loc_file, "r", encoding="utf-8") as f:
@@ -82,8 +80,8 @@ def parse_intents() -> list[dict]:
 
 
 # --- Orbs ---
-def parse_orbs() -> list[dict]:
-    loc_file = LOCALIZATION / "orbs.json"
+def parse_orbs(loc_dir: Path) -> list[dict]:
+    loc_file = loc_dir / "orbs.json"
     if not loc_file.exists():
         return []
     with open(loc_file, "r", encoding="utf-8") as f:
@@ -131,8 +129,8 @@ def parse_orbs() -> list[dict]:
 
 
 # --- Afflictions ---
-def parse_afflictions() -> list[dict]:
-    loc_file = LOCALIZATION / "afflictions.json"
+def parse_afflictions(loc_dir: Path) -> list[dict]:
+    loc_file = loc_dir / "afflictions.json"
     if not loc_file.exists():
         return []
     with open(loc_file, "r", encoding="utf-8") as f:
@@ -184,8 +182,8 @@ def parse_afflictions() -> list[dict]:
 
 
 # --- Modifiers ---
-def parse_modifiers() -> list[dict]:
-    loc_file = LOCALIZATION / "modifiers.json"
+def parse_modifiers(loc_dir: Path) -> list[dict]:
+    loc_file = loc_dir / "modifiers.json"
     if not loc_file.exists():
         return []
     with open(loc_file, "r", encoding="utf-8") as f:
@@ -224,8 +222,8 @@ def parse_modifiers() -> list[dict]:
 
 
 # --- Achievements ---
-def parse_achievements() -> list[dict]:
-    loc_file = LOCALIZATION / "achievements.json"
+def parse_achievements(loc_dir: Path) -> list[dict]:
+    loc_file = loc_dir / "achievements.json"
     if not loc_file.exists():
         return []
     with open(loc_file, "r", encoding="utf-8") as f:
@@ -254,38 +252,40 @@ def parse_achievements() -> list[dict]:
     return achievements
 
 
-def main():
-    OUTPUT.mkdir(exist_ok=True)
+def main(lang: str = "eng"):
+    loc_dir = BASE / "extraction" / "raw" / "localization" / lang
+    output_dir = BASE / "data" / lang
+    output_dir.mkdir(parents=True, exist_ok=True)
 
-    keywords = parse_keywords()
-    with open(OUTPUT / "keywords.json", "w", encoding="utf-8") as f:
+    keywords = parse_keywords(loc_dir)
+    with open(output_dir / "keywords.json", "w", encoding="utf-8") as f:
         json.dump(keywords, f, indent=2, ensure_ascii=False)
-    print(f"Parsed {len(keywords)} keywords -> data/keywords.json")
+    print(f"Parsed {len(keywords)} keywords -> data/{lang}/keywords.json")
 
-    intents = parse_intents()
-    with open(OUTPUT / "intents.json", "w", encoding="utf-8") as f:
+    intents = parse_intents(loc_dir)
+    with open(output_dir / "intents.json", "w", encoding="utf-8") as f:
         json.dump(intents, f, indent=2, ensure_ascii=False)
-    print(f"Parsed {len(intents)} intents -> data/intents.json")
+    print(f"Parsed {len(intents)} intents -> data/{lang}/intents.json")
 
-    orbs = parse_orbs()
-    with open(OUTPUT / "orbs.json", "w", encoding="utf-8") as f:
+    orbs = parse_orbs(loc_dir)
+    with open(output_dir / "orbs.json", "w", encoding="utf-8") as f:
         json.dump(orbs, f, indent=2, ensure_ascii=False)
-    print(f"Parsed {len(orbs)} orbs -> data/orbs.json")
+    print(f"Parsed {len(orbs)} orbs -> data/{lang}/orbs.json")
 
-    afflictions = parse_afflictions()
-    with open(OUTPUT / "afflictions.json", "w", encoding="utf-8") as f:
+    afflictions = parse_afflictions(loc_dir)
+    with open(output_dir / "afflictions.json", "w", encoding="utf-8") as f:
         json.dump(afflictions, f, indent=2, ensure_ascii=False)
-    print(f"Parsed {len(afflictions)} afflictions -> data/afflictions.json")
+    print(f"Parsed {len(afflictions)} afflictions -> data/{lang}/afflictions.json")
 
-    modifiers = parse_modifiers()
-    with open(OUTPUT / "modifiers.json", "w", encoding="utf-8") as f:
+    modifiers = parse_modifiers(loc_dir)
+    with open(output_dir / "modifiers.json", "w", encoding="utf-8") as f:
         json.dump(modifiers, f, indent=2, ensure_ascii=False)
-    print(f"Parsed {len(modifiers)} modifiers -> data/modifiers.json")
+    print(f"Parsed {len(modifiers)} modifiers -> data/{lang}/modifiers.json")
 
-    achievements = parse_achievements()
-    with open(OUTPUT / "achievements.json", "w", encoding="utf-8") as f:
+    achievements = parse_achievements(loc_dir)
+    with open(output_dir / "achievements.json", "w", encoding="utf-8") as f:
         json.dump(achievements, f, indent=2, ensure_ascii=False)
-    print(f"Parsed {len(achievements)} achievements -> data/achievements.json")
+    print(f"Parsed {len(achievements)} achievements -> data/{lang}/achievements.json")
 
 
 if __name__ == "__main__":

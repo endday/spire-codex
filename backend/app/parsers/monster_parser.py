@@ -5,11 +5,9 @@ from pathlib import Path
 
 BASE = Path(__file__).resolve().parents[3]
 DECOMPILED = BASE / "extraction" / "decompiled"
-LOCALIZATION = BASE / "extraction" / "raw" / "localization" / "eng"
 MONSTERS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.Monsters"
 ENCOUNTERS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.Encounters"
 IMAGES_DIR = BASE / "backend" / "static" / "images" / "monsters"
-OUTPUT = BASE / "data"
 
 
 def class_name_to_id(name: str) -> str:
@@ -18,8 +16,8 @@ def class_name_to_id(name: str) -> str:
     return s.upper()
 
 
-def load_localization() -> dict:
-    loc_file = LOCALIZATION / "monsters.json"
+def load_localization(loc_dir: Path) -> dict:
+    loc_file = loc_dir / "monsters.json"
     if loc_file.exists():
         with open(loc_file, "r", encoding="utf-8") as f:
             return json.load(f)
@@ -183,8 +181,8 @@ def parse_single_monster(filepath: Path, localization: dict, encounter_types: di
     }
 
 
-def parse_all_monsters() -> list[dict]:
-    localization = load_localization()
+def parse_all_monsters(loc_dir: Path) -> list[dict]:
+    localization = load_localization(loc_dir)
     encounter_types = parse_encounter_types()
     monsters = []
     for filepath in sorted(MONSTERS_DIR.glob("*.cs")):
@@ -194,12 +192,14 @@ def parse_all_monsters() -> list[dict]:
     return monsters
 
 
-def main():
-    OUTPUT.mkdir(exist_ok=True)
-    monsters = parse_all_monsters()
-    with open(OUTPUT / "monsters.json", "w", encoding="utf-8") as f:
+def main(lang: str = "eng"):
+    loc_dir = BASE / "extraction" / "raw" / "localization" / lang
+    output_dir = BASE / "data" / lang
+    output_dir.mkdir(parents=True, exist_ok=True)
+    monsters = parse_all_monsters(loc_dir)
+    with open(output_dir / "monsters.json", "w", encoding="utf-8") as f:
         json.dump(monsters, f, indent=2, ensure_ascii=False)
-    print(f"Parsed {len(monsters)} monsters -> data/monsters.json")
+    print(f"Parsed {len(monsters)} monsters -> data/{lang}/monsters.json")
 
 
 if __name__ == "__main__":

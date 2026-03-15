@@ -1,7 +1,8 @@
 """Enchantment API endpoints."""
-from fastapi import APIRouter, HTTPException, Query, Request
+from fastapi import APIRouter, Depends, HTTPException, Query, Request
 from ..models.schemas import Enchantment
 from ..services.data_service import load_enchantments
+from ..dependencies import get_lang
 
 router = APIRouter(prefix="/api/enchantments", tags=["Enchantments"])
 
@@ -11,8 +12,9 @@ def get_enchantments(
     request: Request,
     card_type: str | None = Query(None, description="Filter by card type restriction (Attack, Skill, Power)"),
     search: str | None = Query(None, description="Search by name"),
+    lang: str = Depends(get_lang),
 ):
-    enchantments = load_enchantments()
+    enchantments = load_enchantments(lang)
     if card_type:
         enchantments = [e for e in enchantments if e.get("card_type") and e["card_type"].lower() == card_type.lower()]
     if search:
@@ -21,8 +23,8 @@ def get_enchantments(
 
 
 @router.get("/{enchantment_id}", response_model=Enchantment)
-def get_enchantment(request: Request, enchantment_id: str):
-    enchantments = load_enchantments()
+def get_enchantment(request: Request, enchantment_id: str, lang: str = Depends(get_lang)):
+    enchantments = load_enchantments(lang)
     for e in enchantments:
         if e["id"] == enchantment_id.upper():
             return e

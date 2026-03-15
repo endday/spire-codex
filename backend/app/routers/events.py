@@ -1,7 +1,8 @@
 """Event API endpoints."""
-from fastapi import APIRouter, HTTPException, Query, Request
+from fastapi import APIRouter, Depends, HTTPException, Query, Request
 from ..models.schemas import Event
 from ..services.data_service import load_events
+from ..dependencies import get_lang
 
 router = APIRouter(prefix="/api/events", tags=["Events"])
 
@@ -12,8 +13,9 @@ def get_events(
     type: str | None = Query(None, description="Filter by type (Event, Ancient, Shared)"),
     act: str | None = Query(None, description="Filter by act name"),
     search: str | None = Query(None, description="Search by name"),
+    lang: str = Depends(get_lang),
 ):
-    events = load_events()
+    events = load_events(lang)
     if type:
         events = [e for e in events if e["type"].lower() == type.lower()]
     if act:
@@ -24,8 +26,8 @@ def get_events(
 
 
 @router.get("/{event_id}", response_model=Event)
-def get_event(request: Request, event_id: str):
-    events = load_events()
+def get_event(request: Request, event_id: str, lang: str = Depends(get_lang)):
+    events = load_events(lang)
     for e in events:
         if e["id"] == event_id.upper():
             return e

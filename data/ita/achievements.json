@@ -1,0 +1,167 @@
+[
+  {
+    "id": "ALL_CARDS_UPGRADED",
+    "name": "Il mazzo perfetto",
+    "description": "Vinci una partita con un mazzo composto solo da carte potenziate."
+  },
+  {
+    "id": "ALL_OTHER_ACHIEVEMENTS",
+    "name": "Un essere eterno",
+    "description": "Completa tutti gli altri obiettivi."
+  },
+  {
+    "id": "CHARACTER_SKILL_IRONCLAD1",
+    "name": "Patto onorato",
+    "description": "Esaurisci 20 carte in un singolo combattimento."
+  },
+  {
+    "id": "CHARACTER_SKILL_IRONCLAD2",
+    "name": "Spada onnipotente",
+    "description": "Infliggi 999 di danno con un singolo colpo."
+  },
+  {
+    "id": "CHARACTER_SKILL_NECROBINDER1",
+    "name": "Condanna tombale",
+    "description": "Applica 999 di Condanna a un singolo nemico."
+  },
+  {
+    "id": "CHARACTER_SKILL_NECROBINDER2",
+    "name": "Calcio a gogo",
+    "description": "Applica 50 di Forza a Osty."
+  },
+  {
+    "id": "CHARACTER_SKILL_REGENT1",
+    "name": "Una spada da monarca",
+    "description": "Crea una carta Spada Sovrana tramite Forgiatura che infligge almeno 999 di danno."
+  },
+  {
+    "id": "CHARACTER_SKILL_REGENT2",
+    "name": "Firmamento celeste",
+    "description": "Accumula 20 Stelle in una sola volta."
+  },
+  {
+    "id": "CHARACTER_SKILL_SILENT1",
+    "name": "Come una volpe",
+    "description": "Gioca 5 carte usando Astuzia da una sola carta."
+  },
+  {
+    "id": "CHARACTER_SKILL_SILENT2",
+    "name": "Rapporto tossico",
+    "description": "Applica 99 di Veleno a un singolo nemico."
+  },
+  {
+    "id": "COMPLETE_ACT4",
+    "name": "Finale vero",
+    "description": "Completa l'Atto 4."
+  },
+  {
+    "id": "COMPLETE_TIMELINE",
+    "name": "Amante della storia",
+    "description": "Completa la Cronologia."
+  },
+  {
+    "id": "DEFEAT_GLORY_ENEMIES",
+    "name": "Gloria",
+    "description": "Sconfiggi ogni nemico nell'Atto Gloria."
+  },
+  {
+    "id": "DEFEAT_HIVE_ENEMIES",
+    "name": "Alveare",
+    "description": "Sconfiggi ogni nemico nell'Atto Alveare."
+  },
+  {
+    "id": "DEFEAT_ONE_BOSS",
+    "name": "Il primo di tanti",
+    "description": "Sconfiggi un boss."
+  },
+  {
+    "id": "DEFEAT_OVERGROWTH_ENEMIES",
+    "name": "Proliferazione",
+    "description": "Sconfiggi ogni nemico nell'Atto Proliferazione."
+  },
+  {
+    "id": "DEFEAT_UNDERDOCKS_ENEMIES",
+    "name": "Moli Funesti",
+    "description": "Sconfiggi ogni nemico nell'Atto Moli Funesti."
+  },
+  {
+    "id": "DEFECT_ASCENSION10",
+    "name": "Eco",
+    "description": "Completa una partita in Ascensione 10 con Defect."
+  },
+  {
+    "id": "DEFECT_WIN",
+    "name": "Defect",
+    "description": "Vinci con Defect."
+  },
+  {
+    "id": "DISCOVER_ALL_CARDS",
+    "name": "Collezionista",
+    "description": "Scopri tutte le carte."
+  },
+  {
+    "id": "DISCOVER_ALL_EVENTS",
+    "name": "Amante dell'esplorazione",
+    "description": "Scopri tutti gli eventi."
+  },
+  {
+    "id": "DISCOVER_ALL_RELICS",
+    "name": "Amante dell'archeologia",
+    "description": "Scopri tutte le reliquie."
+  },
+  {
+    "id": "FLOOR_TEN_THOUSAND",
+    "name": "Scale a non finire",
+    "description": "Scala 10.000 piani."
+  },
+  {
+    "id": "IRONCLAD_ASCENSION10",
+    "name": "Demone",
+    "description": "Completa una partita in Ascensione 10 con Ironclad."
+  },
+  {
+    "id": "IRONCLAD_WIN",
+    "name": "Ironclad",
+    "description": "Vinci con Ironclad."
+  },
+  {
+    "id": "NECROBINDER_ASCENSION10",
+    "name": "Lich",
+    "description": "Completa una partita in Ascensione 10 con Necrobinder."
+  },
+  {
+    "id": "NECROBINDER_WIN",
+    "name": "Necrobinder",
+    "description": "Vinci con Necrobinder."
+  },
+  {
+    "id": "NO_RELIC_WIN",
+    "name": "Cianfrusaglie inutili",
+    "description": "Vinci una partita senza ottenere nessuna reliquia."
+  },
+  {
+    "id": "PLAY20_CARDS_SINGLE_TURN",
+    "name": "Giocare le carte è uno spasso!",
+    "description": "Gioca 20 carde in un singolo turno."
+  },
+  {
+    "id": "REGENT_ASCENSION10",
+    "name": "Monarca",
+    "description": "Completa una partita in Ascensione 10 con Regent."
+  },
+  {
+    "id": "REGENT_WIN",
+    "name": "Regent",
+    "description": "Vinci con Regent."
+  },
+  {
+    "id": "SILENT_ASCENSION10",
+    "name": "Fantasma silente",
+    "description": "Completa una partita in Ascensione 10 con Silent."
+  },
+  {
+    "id": "SILENT_WIN",
+    "name": "Silent",
+    "description": "Vinci con Silent."
+  }
+]

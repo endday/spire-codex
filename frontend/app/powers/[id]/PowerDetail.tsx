@@ -5,6 +5,8 @@ import { useParams } from "next/navigation";
 import Link from "next/link";
 import type { Power } from "@/lib/api";
 import RichDescription from "@/app/components/RichDescription";
+import { cachedFetch } from "@/lib/fetch-cache";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -16,6 +18,7 @@ const typeColors: Record<string, string> = {
 
 export default function PowerDetail() {
   const { id } = useParams<{ id: string }>();
+  const { lang } = useLanguage();
   const [power, setPower] = useState<Power | null>(null);
   const [loading, setLoading] = useState(true);
   const [notFound, setNotFound] = useState(false);
@@ -23,19 +26,11 @@ export default function PowerDetail() {
   useEffect(() => {
     if (!id) return;
     setLoading(true);
-    fetch(`${API}/api/powers/${id}`)
-      .then((r) => {
-        if (!r.ok) {
-          setNotFound(true);
-          return null;
-        }
-        return r.json();
-      })
-      .then((data) => {
-        if (data) setPower(data);
-      })
+    cachedFetch<Power>(`${API}/api/powers/${id}?lang=${lang}`)
+      .then((data) => setPower(data))
+      .catch(() => setNotFound(true))
       .finally(() => setLoading(false));
-  }, [id]);
+  }, [id, lang]);
 
   if (loading) {
     return (

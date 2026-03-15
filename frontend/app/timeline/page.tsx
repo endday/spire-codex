@@ -2,8 +2,10 @@
 
 import { useState, useEffect } from "react";
 import type { Epoch, Story, Card, Relic, Potion } from "@/lib/api";
+import { cachedFetch } from "@/lib/fetch-cache";
 import SearchFilter from "../components/SearchFilter";
 import RichDescription from "../components/RichDescription";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -125,6 +127,7 @@ function UnlockBadge({
 }
 
 export default function TimelinePage() {
+  const { lang } = useLanguage();
   const [epochs, setEpochs] = useState<Epoch[]>([]);
   const [stories, setStories] = useState<Story[]>([]);
   const [cardMap, setCardMap] = useState<Record<string, Card>>({});
@@ -139,10 +142,10 @@ export default function TimelinePage() {
   // Load reference data once for tooltips and epoch title lookups
   useEffect(() => {
     Promise.all([
-      fetch(`${API}/api/cards`).then((r) => r.json()),
-      fetch(`${API}/api/relics`).then((r) => r.json()),
-      fetch(`${API}/api/potions`).then((r) => r.json()),
-      fetch(`${API}/api/epochs`).then((r) => r.json()),
+      cachedFetch<Card[]>(`${API}/api/cards?lang=${lang}`),
+      cachedFetch<Relic[]>(`${API}/api/relics?lang=${lang}`),
+      cachedFetch<Potion[]>(`${API}/api/potions?lang=${lang}`),
+      cachedFetch<Epoch[]>(`${API}/api/epochs?lang=${lang}`),
     ]).then(([cards, relics, potions, allEpochs]: [Card[], Relic[], Potion[], Epoch[]]) => {
       const cm: Record<string, Card> = {};
       for (const c of cards) cm[c.id] = c;
@@ -157,23 +160,24 @@ export default function TimelinePage() {
       for (const e of allEpochs) em[e.id] = e.title;
       setEpochTitleMap(em);
     });
-  }, []);
+  }, [lang]);
 
   useEffect(() => {
     setLoading(true);
     const params = new URLSearchParams();
     if (storyFilter) params.set("story", storyFilter);
     if (search) params.set("search", search);
+    params.set("lang", lang);
     Promise.all([
-      fetch(`${API}/api/epochs?${params}`).then((r) => r.json()),
-      fetch(`${API}/api/stories`).then((r) => r.json()),
+      cachedFetch<Epoch[]>(`${API}/api/epochs?${params}`),
+      cachedFetch<Story[]>(`${API}/api/stories?lang=${lang}`),
     ])
       .then(([e, s]: [Epoch[], Story[]]) => {
         setEpochs(e.sort((a, b) => a.sort_order - b.sort_order));
         setStories(s);
       })
       .finally(() => setLoading(false));
-  }, [storyFilter, search]);
+  }, [storyFilter, search, lang]);
 
   // Group epochs by story — map story IDs case-insensitively
   const storyMap = new Map<string, Story>();

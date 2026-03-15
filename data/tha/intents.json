@@ -1,0 +1,72 @@
+[
+  {
+    "id": "ATTACK",
+    "name": "ก้าวร้าว",
+    "description": "ศัตรูนี้ตั้งใจจะ[gold]โจมตี[/gold]{IsMultiplayer:ทุกคน|} สร้างความเสียหาย [blue]{Damage}[/blue]{Repeat:plural:| จำนวน [blue]{}[/blue] ครั้ง}"
+  },
+  {
+    "id": "BUFF",
+    "name": "เสริมพลัง",
+    "description": "ศัตรูนี้ตั้งใจจะใช้[gold]ผลพิเศษ[/gold]"
+  },
+  {
+    "id": "CARD_DEBUFF",
+    "name": "มุ่งร้าย",
+    "description": "ศัตรูนี้ตั้งใจจะสร้าง[gold]ผลกัดเซาะ[/gold]ใส่การ์ดของคุณ"
+  },
+  {
+    "id": "DEATH_BLOW",
+    "name": "เฮือกสุดท้าย",
+    "description": "สิ่งมีชีวิตนี้พยายามจะลากคุณไปตายด้วย มันจะโจมตีคุณ [blue]{Damage}[/blue] ก่อนถูกทำลาย"
+  },
+  {
+    "id": "DEBUFF",
+    "name": "กลยุทธ์",
+    "description": "ศัตรูนี้ตั้งใจจะสร้าง[gold]ผลผิดปกติ[/gold]ใส่คุณ"
+  },
+  {
+    "id": "DEBUFF_STRONG",
+    "name": "กลยุทธ์",
+    "description": "ศัตรูนี้ตั้งใจจะสร้าง[gold]ผลพิเศษ[/gold]ที่ทรงพลังใส่คุณ"
+  },
+  {
+    "id": "DEFEND",
+    "name": "ตั้งรับ",
+    "description": "ศัตรูนี้ตั้งใจจะ[gold]บล็อก[/gold]ในเทิร์นของมัน"
+  },
+  {
+    "id": "ESCAPE",
+    "name": "ขี้ขลาด",
+    "description": "ศัตรูนี้ตั้งใจจะ[gold]หนี[/gold]"
+  },
+  {
+    "id": "HEAL",
+    "name": "ฟื้นฟู",
+    "description": "ศัตรูนี้ตั้งใจจะ[gold]ฟื้นฟู[/gold]"
+  },
+  {
+    "id": "SLEEP",
+    "name": "หลับอยู่",
+    "description": "ศัตรูนี้ไม่ทำอะไรเลยในเทิร์นนี้"
+  },
+  {
+    "id": "STATUS",
+    "name": "กลยุทธ์",
+    "description": "ศัตรูนี้ตั้งใจจะมอบ[gold]การ์ดสถานะ[/gold] [blue]{CardCount}[/blue] {CardCount:plural:การ์ด|การ์ด}ให้กับคุณ"
+  },
+  {
+    "id": "STUN",
+    "name": "สตัน",
+    "description": "ศัตรูนี้เคลื่อนไหวไม่ได้ในเทิร์นถัดไปของมัน"
+  },
+  {
+    "id": "SUMMON",
+    "name": "อัญเชิญ",
+    "description": "ศัตรูนี้ตั้งใจจะอัญเชิญ[gold]พวกมอนสเตอร์[/gold]"
+  },
+  {
+    "id": "UNKNOWN",
+    "name": "ปริศนา",
+    "description": "ความตั้งใจของศัตรูนี้เป็น[gold]ปริศนา[/gold]"
+  }
+]

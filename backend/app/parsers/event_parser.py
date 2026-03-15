@@ -6,11 +6,9 @@ from description_resolver import resolve_description, extract_vars_from_source
 
 BASE = Path(__file__).resolve().parents[3]
 DECOMPILED = BASE / "extraction" / "decompiled"
-LOCALIZATION = BASE / "extraction" / "raw" / "localization" / "eng"
 EVENTS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.Events"
 ACTS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.Acts"
 IMAGES_DIR = BASE / "backend" / "static" / "images" / "misc" / "ancients"
-OUTPUT = BASE / "data"
 
 
 def class_name_to_id(name: str) -> str:
@@ -19,10 +17,10 @@ def class_name_to_id(name: str) -> str:
     return s.upper()
 
 
-def load_localization() -> dict:
+def load_localization(loc_dir: Path) -> dict:
     loc = {}
     for filename in ("events.json", "ancients.json"):
-        loc_file = LOCALIZATION / filename
+        loc_file = loc_dir / filename
         if loc_file.exists():
             with open(loc_file, "r", encoding="utf-8") as f:
                 loc.update(json.load(f))
@@ -63,12 +61,12 @@ def build_act_mapping() -> dict[str, str]:
     return event_to_act
 
 
-def load_all_titles() -> dict[str, str]:
+def load_all_titles(loc_dir: Path) -> dict[str, str]:
     """Load title mappings from all localization files for resolving StringVar model references."""
     titles = {}
     loc_files = ["cards.json", "relics.json", "potions.json", "enchantments.json", "powers.json"]
     for filename in loc_files:
-        loc_file = LOCALIZATION / filename
+        loc_file = loc_dir / filename
         if not loc_file.exists():
             continue
         with open(loc_file, "r", encoding="utf-8") as f:
@@ -80,17 +78,7 @@ def load_all_titles() -> dict[str, str]:
     return titles
 
 
-_title_cache: dict[str, str] | None = None
-
-
-def get_title_map() -> dict[str, str]:
-    global _title_cache
-    if _title_cache is None:
-        _title_cache = load_all_titles()
-    return _title_cache
-
-
-def extract_event_vars(content: str) -> dict[str, int | str]:
+def extract_event_vars(content: str, title_map: dict[str, str], relic_descs: dict[str, str]) -> dict[str, int | str]:
     """Extract constant values, DynamicVar, and StringVar declarations from event source."""
     vars_dict: dict[str, int | str] = {}
 
@@ -157,7 +145,6 @@ def extract_event_vars(content: str) -> dict[str, int | str]:
 
     # StringVar with DynamicDescription from relics:
     # e.g. new StringVar("BoneTeaDescription", ModelDb.Relic<BoneTea>().DynamicDescription.GetFormattedText())
-    relic_descs = get_relic_descriptions()
     for m in re.finditer(
         r'new\s+StringVar\("(\w+)",\s*ModelDb\.Relic<([^>]+)>\(\)\.DynamicDescription\.GetFormattedText\(\)\)',
         content
@@ -172,7 +159,6 @@ def extract_event_vars(content: str) -> dict[str, int | str]:
             vars_dict[var_name] = desc
 
     # StringVar with model references:
-    title_map = get_title_map()
     for m in re.finditer(
         r'new\s+StringVar\("(\w+)",\s*ModelDb\.(?:Card|Enchantment|Relic|Potion)<([^>]+)>\(\)\.Title(?:\.GetFormattedText\(\))?\)',
         content
@@ -249,9 +235,9 @@ def extract_event_vars(content: str) -> dict[str, int | str]:
     return vars_dict
 
 
-def load_relic_descriptions() -> dict[str, str]:
+def load_relic_descriptions(data_dir: Path) -> dict[str, str]:
     """Load relic descriptions for enriching RelicOption events."""
-    relic_file = BASE / "data" / "relics.json"
+    relic_file = data_dir / "relics.json"
     if relic_file.exists():
         with open(relic_file, "r", encoding="utf-8") as f:
             relics = json.load(f)
@@ -259,22 +245,12 @@ def load_relic_descriptions() -> dict[str, str]:
     return {}
 
 
-_relic_desc_cache: dict[str, str] | None = None
-
-
-def get_relic_descriptions() -> dict[str, str]:
-    global _relic_desc_cache
-    if _relic_desc_cache is None:
-        _relic_desc_cache = load_relic_descriptions()
-    return _relic_desc_cache
-
-
-def parse_options_from_localization(event_id: str, localization: dict, vars_dict: dict) -> list[dict]:
+def parse_options_from_localization(event_id: str, localization: dict, vars_dict: dict, relic_descs: dict[str, str]) -> list[dict]:
     """Extract event options (choices) from localization keys for INITIAL page."""
-    return parse_page_options(event_id, "INITIAL", localization, vars_dict)
+    return parse_page_options(event_id, "INITIAL", localization, vars_dict, relic_descs)
 
 
-def parse_page_options(event_id: str, page_name: str, localization: dict, vars_dict: dict) -> list[dict]:
+def parse_page_options(event_id: str, page_name: str, localization: dict, vars_dict: dict, relic_descs: dict[str, str]) -> list[dict]:
     """Extract options for a specific page."""
     options = []
     prefix = f"{event_id}.pages.{page_name}.options."
@@ -285,7 +261,6 @@ def parse_page_options(event_id: str, page_name: str, localization: dict, vars_d
             option_name = rest.split(".")[0]
             option_keys.add(option_name)
 
-    relic_descs = get_relic_descriptions()
     for opt_name in sorted(option_keys):
         title_raw = localization.get(f"{prefix}{opt_name}.title", opt_name)
         title = strip_rich_tags(resolve_description(title_raw, vars_dict))
@@ -306,7 +281,7 @@ def parse_page_options(event_id: str, page_name: str, localization: dict, vars_d
     return options
 
 
-def parse_all_pages(event_id: str, localization: dict, vars_dict: dict) -> list[dict] | None:
+def parse_all_pages(event_id: str, localization: dict, vars_dict: dict, relic_descs: dict[str, str]) -> list[dict] | None:
     """Extract all pages for an event, building the full decision tree."""
     # Discover all page names
     page_prefix = f"{event_id}.pages."
@@ -326,7 +301,7 @@ def parse_all_pages(event_id: str, localization: dict, vars_dict: dict) -> list[
         desc_resolved = resolve_description(desc_raw, vars_dict) if desc_raw else ""
         desc_clean = strip_rich_tags(desc_resolved)
 
-        options = parse_page_options(event_id, page_name, localization, vars_dict)
+        options = parse_page_options(event_id, page_name, localization, vars_dict, relic_descs)
 
         page = {
             "id": page_name,
@@ -409,7 +384,7 @@ def extract_ancient_relics(content: str) -> list[str]:
     return relic_ids
 
 
-def parse_single_event(filepath: Path, localization: dict, act_mapping: dict) -> dict | None:
+def parse_single_event(filepath: Path, localization: dict, act_mapping: dict, title_map: dict[str, str], relic_descs: dict[str, str]) -> dict | None:
     content = filepath.read_text(encoding="utf-8")
     class_name = filepath.stem
 
@@ -426,12 +401,12 @@ def parse_single_event(filepath: Path, localization: dict, act_mapping: dict) ->
 
     # Description (initial page)
     desc_raw = localization.get(f"{event_id}.pages.INITIAL.description", "")
-    vars_dict = extract_event_vars(content)
+    vars_dict = extract_event_vars(content, title_map, relic_descs)
     desc_resolved = resolve_description(desc_raw, vars_dict) if desc_raw else ""
     desc_clean = strip_rich_tags(desc_resolved)
 
     # Options (choices) — skip for Ancient events, their offerings are in the relics list
-    options = [] if is_ancient else parse_options_from_localization(event_id, localization, vars_dict)
+    options = [] if is_ancient else parse_options_from_localization(event_id, localization, vars_dict, relic_descs)
 
     # Act mapping
     act = act_mapping.get(class_name)
@@ -445,7 +420,7 @@ def parse_single_event(filepath: Path, localization: dict, act_mapping: dict) ->
         event_type = "Shared"
 
     # Parse all pages (multi-page events)
-    pages = parse_all_pages(event_id, localization, vars_dict)
+    pages = parse_all_pages(event_id, localization, vars_dict, relic_descs)
 
     result = {
         "id": event_id,
@@ -486,23 +461,27 @@ def parse_single_event(filepath: Path, localization: dict, act_mapping: dict) ->
     return result
 
 
-def parse_all_events() -> list[dict]:
-    localization = load_localization()
+def parse_all_events(loc_dir: Path, data_dir: Path) -> list[dict]:
+    localization = load_localization(loc_dir)
     act_mapping = build_act_mapping()
+    title_map = load_all_titles(loc_dir)
+    relic_descs = load_relic_descriptions(data_dir)
     events = []
     for filepath in sorted(EVENTS_DIR.glob("*.cs")):
-        event = parse_single_event(filepath, localization, act_mapping)
+        event = parse_single_event(filepath, localization, act_mapping, title_map, relic_descs)
         if event:
             events.append(event)
     return events
 
 
-def main():
-    OUTPUT.mkdir(exist_ok=True)
-    events = parse_all_events()
-    with open(OUTPUT / "events.json", "w", encoding="utf-8") as f:
+def main(lang: str = "eng"):
+    loc_dir = BASE / "extraction" / "raw" / "localization" / lang
+    output_dir = BASE / "data" / lang
+    output_dir.mkdir(parents=True, exist_ok=True)
+    events = parse_all_events(loc_dir, output_dir)
+    with open(output_dir / "events.json", "w", encoding="utf-8") as f:
         json.dump(events, f, indent=2, ensure_ascii=False)
-    print(f"Parsed {len(events)} events -> data/events.json")
+    print(f"Parsed {len(events)} events -> data/{lang}/events.json")
 
 
 if __name__ == "__main__":

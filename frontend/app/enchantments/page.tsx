@@ -2,8 +2,10 @@
 
 import { useState, useEffect } from "react";
 import type { Enchantment } from "@/lib/api";
+import { cachedFetch } from "@/lib/fetch-cache";
 import SearchFilter from "../components/SearchFilter";
 import RichDescription from "../components/RichDescription";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -20,6 +22,7 @@ const cardTypeOptions = [
 ];
 
 export default function EnchantmentsPage() {
+  const { lang } = useLanguage();
   const [enchantments, setEnchantments] = useState<Enchantment[]>([]);
   const [search, setSearch] = useState("");
   const [cardType, setCardType] = useState("");
@@ -30,11 +33,11 @@ export default function EnchantmentsPage() {
     const params = new URLSearchParams();
     if (search) params.set("search", search);
     if (cardType) params.set("card_type", cardType);
-    fetch(`${API}/api/enchantments?${params}`)
-      .then((r) => r.json())
+    params.set("lang", lang);
+    cachedFetch<Enchantment[]>(`${API}/api/enchantments?${params}`)
       .then(setEnchantments)
       .finally(() => setLoading(false));
-  }, [search, cardType]);
+  }, [search, cardType, lang]);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

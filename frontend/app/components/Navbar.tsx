@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import LanguageSelector from "./LanguageSelector";
 
 const links = [
   { href: "/", label: "Home" },
@@ -75,6 +76,8 @@ export default function Navbar() {
               <span className="hidden sm:inline">Press</span>
               <kbd className="text-xs border border-[var(--border-subtle)] rounded px-1.5 py-0.5">.</kbd>
             </button>
+
+            <LanguageSelector />
 
           {/* Burger button — always visible */}
           <div className="relative">

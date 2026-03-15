@@ -6,11 +6,9 @@ from description_resolver import resolve_description, extract_vars_from_source
 
 BASE = Path(__file__).resolve().parents[3]
 DECOMPILED = BASE / "extraction" / "decompiled"
-LOCALIZATION = BASE / "extraction" / "raw" / "localization" / "eng"
 RELICS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.Relics"
 RELIC_POOLS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.RelicPools"
 STATIC_IMAGES = BASE / "backend" / "static" / "images" / "relics"
-OUTPUT = BASE / "data"
 
 
 def class_name_to_id(name: str) -> str:
@@ -19,8 +17,8 @@ def class_name_to_id(name: str) -> str:
     return s.upper()
 
 
-def load_localization() -> dict:
-    loc_file = LOCALIZATION / "relics.json"
+def load_localization(loc_dir: Path) -> dict:
+    loc_file = loc_dir / "relics.json"
     if loc_file.exists():
         with open(loc_file, "r", encoding="utf-8") as f:
             return json.load(f)
@@ -93,23 +91,48 @@ def parse_single_relic(filepath: Path, localization: dict, relic_pools: dict) ->
     }
 
 
-def parse_all_relics() -> list[dict]:
-    localization = load_localization()
+def load_gameplay_ui(loc_dir: Path) -> dict:
+    loc_file = loc_dir / "gameplay_ui.json"
+    if loc_file.exists():
+        with open(loc_file, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+
+def build_relic_rarity_map(gameplay_ui: dict) -> dict[str, str]:
+    return {
+        "Starter": gameplay_ui.get("RELIC_RARITY.STARTER", "Starter"),
+        "Common": gameplay_ui.get("RELIC_RARITY.COMMON", "Common"),
+        "Uncommon": gameplay_ui.get("RELIC_RARITY.UNCOMMON", "Uncommon"),
+        "Rare": gameplay_ui.get("RELIC_RARITY.RARE", "Rare"),
+        "Ancient": gameplay_ui.get("RELIC_RARITY.ANCIENT", "Ancient"),
+        "Event": gameplay_ui.get("RELIC_RARITY.EVENT", "Event"),
+        "Shop": gameplay_ui.get("RELIC_RARITY.SHOP", "Shop"),
+    }
+
+
+def parse_all_relics(loc_dir: Path) -> list[dict]:
+    localization = load_localization(loc_dir)
     relic_pools = parse_relic_pools()
+    gameplay_ui = load_gameplay_ui(loc_dir)
+    rarity_map = build_relic_rarity_map(gameplay_ui)
     relics = []
     for filepath in sorted(RELICS_DIR.glob("*.cs")):
         relic = parse_single_relic(filepath, localization, relic_pools)
         if relic:
+            relic["rarity"] = rarity_map.get(relic["rarity"], relic["rarity"])
             relics.append(relic)
     return relics
 
 
-def main():
-    OUTPUT.mkdir(exist_ok=True)
-    relics = parse_all_relics()
-    with open(OUTPUT / "relics.json", "w", encoding="utf-8") as f:
+def main(lang: str = "eng"):
+    loc_dir = BASE / "extraction" / "raw" / "localization" / lang
+    output_dir = BASE / "data" / lang
+    output_dir.mkdir(parents=True, exist_ok=True)
+    relics = parse_all_relics(loc_dir)
+    with open(output_dir / "relics.json", "w", encoding="utf-8") as f:
         json.dump(relics, f, indent=2, ensure_ascii=False)
-    print(f"Parsed {len(relics)} relics -> data/relics.json")
+    print(f"Parsed {len(relics)} relics -> data/{lang}/relics.json")
 
 
 if __name__ == "__main__":

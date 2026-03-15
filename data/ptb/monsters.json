@@ -1,0 +1,3787 @@
+[
+  {
+    "id": "ARCHITECT",
+    "name": "O Arquiteto",
+    "type": "Normal",
+    "min_hp": 9999,
+    "max_hp": 9999,
+    "min_hp_ascension": null,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "NOTHING",
+        "name": "Nada"
+      }
+    ],
+    "damage_values": null,
+    "block_values": null,
+    "image_url": "/static/images/monsters/architect.png"
+  },
+  {
+    "id": "ASSASSIN_RUBY_RAIDER",
+    "name": "Guerreiro Assassino",
+    "type": "Normal",
+    "min_hp": 18,
+    "max_hp": 23,
+    "min_hp_ascension": 19,
+    "max_hp_ascension": 24,
+    "moves": [
+      {
+        "id": "KILLSHOT",
+        "name": "Disparo Letal"
+      }
+    ],
+    "damage_values": {
+      "Killshot": {
+        "normal": 11,
+        "ascension": 12
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/assassin_ruby_raider.png"
+  },
+  {
+    "id": "AXE_RUBY_RAIDER",
+    "name": "Guerreiro com Machado",
+    "type": "Normal",
+    "min_hp": 20,
+    "max_hp": 22,
+    "min_hp_ascension": 21,
+    "max_hp_ascension": 23,
+    "moves": [
+      {
+        "id": "SWING_1",
+        "name": "Swing 1"
+      },
+      {
+        "id": "SWING_2",
+        "name": "Swing 2"
+      },
+      {
+        "id": "BIG_SWING",
+        "name": "Golpe Abrangente"
+      }
+    ],
+    "damage_values": {
+      "Swing": {
+        "normal": 5,
+        "ascension": 6
+      },
+      "BigSwing": {
+        "normal": 12,
+        "ascension": 13
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/axe_ruby_raider.png"
+  },
+  {
+    "id": "AXEBOT",
+    "name": "Robô de Fundição",
+    "type": "Normal",
+    "min_hp": 40,
+    "max_hp": 44,
+    "min_hp_ascension": 42,
+    "max_hp_ascension": 46,
+    "moves": [
+      {
+        "id": "BOOT_UP",
+        "name": "Iniciar"
+      },
+      {
+        "id": "ONE_TWO",
+        "name": "Golpe Duplo"
+      },
+      {
+        "id": "SHARPEN",
+        "name": "Afiar"
+      },
+      {
+        "id": "HAMMER_UPPERCUT",
+        "name": "Martelo Ascendente"
+      }
+    ],
+    "damage_values": {
+      "OneTwo": {
+        "normal": 5,
+        "ascension": 6
+      },
+      "HammerUppercut": {
+        "normal": 8,
+        "ascension": 10
+      }
+    },
+    "block_values": {
+      "bootUp": 10
+    },
+    "image_url": "/static/images/monsters/axebot.png"
+  },
+  {
+    "id": "BATTLE_FRIEND_V1",
+    "name": "Companheiro de Batalha V1.0",
+    "type": "Normal",
+    "min_hp": 75,
+    "max_hp": 75,
+    "min_hp_ascension": null,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "NOTHING",
+        "name": "Nulo"
+      }
+    ],
+    "damage_values": null,
+    "block_values": null,
+    "image_url": "/static/images/monsters/battle_friend_v1.png"
+  },
+  {
+    "id": "BATTLE_FRIEND_V2",
+    "name": "Companheiro de Batalha V2.0",
+    "type": "Normal",
+    "min_hp": 150,
+    "max_hp": 150,
+    "min_hp_ascension": null,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "NOTHING",
+        "name": "Nulo"
+      }
+    ],
+    "damage_values": null,
+    "block_values": null,
+    "image_url": "/static/images/monsters/battle_friend_v2.png"
+  },
+  {
+    "id": "BATTLE_FRIEND_V3",
+    "name": "Companheiro de Batalha V3.0",
+    "type": "Normal",
+    "min_hp": 300,
+    "max_hp": 300,
+    "min_hp_ascension": null,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "NOTHING",
+        "name": "Nulo"
+      }
+    ],
+    "damage_values": null,
+    "block_values": null,
+    "image_url": "/static/images/monsters/battle_friend_v3.png"
+  },
+  {
+    "id": "BOWLBUG_EGG",
+    "name": "Besouro Coletor (Ovo)",
+    "type": "Normal",
+    "min_hp": 21,
+    "max_hp": 22,
+    "min_hp_ascension": 23,
+    "max_hp_ascension": 24,
+    "moves": [
+      {
+        "id": "BITE",
+        "name": "Mordida"
+      }
+    ],
+    "damage_values": {
+      "Bite": {
+        "normal": 7,
+        "ascension": 8
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/bowlbug_egg.png"
+  },
+  {
+    "id": "BOWLBUG_NECTAR",
+    "name": "Besouro Coletor (Néctar)",
+    "type": "Normal",
+    "min_hp": 35,
+    "max_hp": 38,
+    "min_hp_ascension": 36,
+    "max_hp_ascension": 39,
+    "moves": [
+      {
+        "id": "THRASH",
+        "name": "Despedaçar"
+      },
+      {
+        "id": "BUFF",
+        "name": "Melhoria"
+      },
+      {
+        "id": "THRASH2",
+        "name": "Despedaçar"
+      }
+    ],
+    "damage_values": {
+      "Thrash": {
+        "normal": 3
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/bowlbug_nectar.png"
+  },
+  {
+    "id": "BOWLBUG_ROCK",
+    "name": "Besouro Coletor (Pedra)",
+    "type": "Normal",
+    "min_hp": 45,
+    "max_hp": 48,
+    "min_hp_ascension": 46,
+    "max_hp_ascension": 49,
+    "moves": [
+      {
+        "id": "HEADBUTT",
+        "name": "Cabeçada"
+      },
+      {
+        "id": "DIZZY",
+        "name": "Dizzy"
+      }
+    ],
+    "damage_values": {
+      "Headbutt": {
+        "normal": 15,
+        "ascension": 16
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/bowlbug_rock.png"
+  },
+  {
+    "id": "BOWLBUG_SILK",
+    "name": "Besouro Coletor (Seda)",
+    "type": "Normal",
+    "min_hp": 40,
+    "max_hp": 43,
+    "min_hp_ascension": 41,
+    "max_hp_ascension": 44,
+    "moves": [
+      {
+        "id": "TRASH",
+        "name": "Trash"
+      },
+      {
+        "id": "TOXIC_SPIT",
+        "name": "Toxic Spit"
+      }
+    ],
+    "damage_values": {
+      "Thrash": {
+        "normal": 4,
+        "ascension": 5
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/bowlbug_silk.png"
+  },
+  {
+    "id": "BRUTE_RUBY_RAIDER",
+    "name": "Guerreiro Bruto",
+    "type": "Normal",
+    "min_hp": 30,
+    "max_hp": 33,
+    "min_hp_ascension": 31,
+    "max_hp_ascension": 34,
+    "moves": [
+      {
+        "id": "BEAT",
+        "name": "Golpear"
+      },
+      {
+        "id": "ROAR",
+        "name": "Roar"
+      }
+    ],
+    "damage_values": {
+      "Beat": {
+        "normal": 7,
+        "ascension": 8
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/brute_ruby_raider.png"
+  },
+  {
+    "id": "BYGONE_EFFIGY",
+    "name": "Efígie Antigo",
+    "type": "Elite",
+    "min_hp": 127,
+    "max_hp": null,
+    "min_hp_ascension": 132,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "INITIAL_SLEEP",
+        "name": "Initial Sleep"
+      },
+      {
+        "id": "WAKE",
+        "name": "Wake"
+      },
+      {
+        "id": "SLEEP",
+        "name": "Dormir"
+      },
+      {
+        "id": "SLASHES",
+        "name": "Corte"
+      }
+    ],
+    "damage_values": {
+      "Slash": {
+        "normal": 15,
+        "ascension": 17
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/bygone_effigy.png"
+  },
+  {
+    "id": "BYRDONIS",
+    "name": "Avestriz Alfa",
+    "type": "Elite",
+    "min_hp": 91,
+    "max_hp": 94,
+    "min_hp_ascension": 99,
+    "max_hp_ascension": 99,
+    "moves": [
+      {
+        "id": "PECK",
+        "name": "Bicada"
+      },
+      {
+        "id": "SWOOP",
+        "name": "Swoop"
+      }
+    ],
+    "damage_values": {
+      "Peck": {
+        "normal": 3,
+        "ascension": 4
+      },
+      "Swoop": {
+        "normal": 16,
+        "ascension": 18
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/byrdonis.png"
+  },
+  {
+    "id": "BYRDPIP",
+    "name": "Avestriz Filhote",
+    "type": "Normal",
+    "min_hp": 9999,
+    "max_hp": 9999,
+    "min_hp_ascension": null,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "NOTHING",
+        "name": "Nulo"
+      }
+    ],
+    "damage_values": null,
+    "block_values": null,
+    "image_url": "/static/images/monsters/byrdpip.png"
+  },
+  {
+    "id": "CALCIFIED_CULTIST",
+    "name": "Cultista Calcificado",
+    "type": "Normal",
+    "min_hp": 38,
+    "max_hp": 41,
+    "min_hp_ascension": 39,
+    "max_hp_ascension": 42,
+    "moves": [
+      {
+        "id": "INCANTATION",
+        "name": "Encantamento"
+      },
+      {
+        "id": "DARK_STRIKE",
+        "name": "Golpe Sombrio"
+      }
+    ],
+    "damage_values": {
+      "DarkStrike": {
+        "normal": 9,
+        "ascension": 11
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/calcified_cultist.png"
+  },
+  {
+    "id": "CEREMONIAL_BEAST",
+    "name": "Besta Cerimonial",
+    "type": "Boss",
+    "min_hp": 252,
+    "max_hp": null,
+    "min_hp_ascension": 262,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "STAMP",
+        "name": "Marcar"
+      },
+      {
+        "id": "PLOW",
+        "name": "Investida"
+      },
+      {
+        "id": "STUN",
+        "name": "Stun"
+      },
+      {
+        "id": "BEAST_CRY",
+        "name": "Rugido Bestial"
+      },
+      {
+        "id": "STOMP",
+        "name": "Pisotear"
+      },
+      {
+        "id": "CRUSH",
+        "name": "Esmagar"
+      }
+    ],
+    "damage_values": {
+      "Plow": {
+        "normal": 18,
+        "ascension": 20
+      },
+      "Stomp": {
+        "normal": 15,
+        "ascension": 17
+      },
+      "Crush": {
+        "normal": 17,
+        "ascension": 19
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/ceremonial_beast.png"
+  },
+  {
+    "id": "CHOMPER",
+    "name": "Mordiscador",
+    "type": "Normal",
+    "min_hp": 60,
+    "max_hp": 64,
+    "min_hp_ascension": 63,
+    "max_hp_ascension": 67,
+    "moves": [
+      {
+        "id": "CLAMP",
+        "name": "Pinçar"
+      },
+      {
+        "id": "SCREECH",
+        "name": "Ruído"
+      }
+    ],
+    "damage_values": {
+      "Clamp": {
+        "normal": 8,
+        "ascension": 9
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/chomper.png"
+  },
+  {
+    "id": "CORPSE_SLUG",
+    "name": "Lesma Necrófaga",
+    "type": "Normal",
+    "min_hp": 25,
+    "max_hp": 27,
+    "min_hp_ascension": 27,
+    "max_hp_ascension": 29,
+    "moves": [
+      {
+        "id": "WHIP_SLAP",
+        "name": "Chicotada"
+      },
+      {
+        "id": "GLOMP",
+        "name": "Glomp"
+      },
+      {
+        "id": "GOOP",
+        "name": "Goop"
+      }
+    ],
+    "damage_values": {
+      "Glomp": {
+        "normal": 8,
+        "ascension": 9
+      },
+      "WhipSlap": {
+        "normal": 3
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/corpse_slug.png"
+  },
+  {
+    "id": "CROSSBOW_RUBY_RAIDER",
+    "name": "Guerreiro Atirador",
+    "type": "Normal",
+    "min_hp": 18,
+    "max_hp": 21,
+    "min_hp_ascension": 19,
+    "max_hp_ascension": 22,
+    "moves": [
+      {
+        "id": "FIRE",
+        "name": "Disparar!"
+      },
+      {
+        "id": "RELOAD",
+        "name": "Recarregar"
+      }
+    ],
+    "damage_values": {
+      "Fire": {
+        "normal": 14,
+        "ascension": 16
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/crossbow_ruby_raider.png"
+  },
+  {
+    "id": "CRUSHER",
+    "name": "Esmagador",
+    "type": "Boss",
+    "min_hp": 199,
+    "max_hp": null,
+    "min_hp_ascension": 209,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "THRASH",
+        "name": "Despedaçar"
+      },
+      {
+        "id": "ENLARGING_STRIKE",
+        "name": "Golpe Crescente"
+      },
+      {
+        "id": "BUG_STING",
+        "name": "Picada"
+      },
+      {
+        "id": "ADAPT",
+        "name": "Adaptar"
+      },
+      {
+        "id": "GUARDED_STRIKE",
+        "name": "Golpe Defensivo"
+      }
+    ],
+    "damage_values": {
+      "Thrash": {
+        "normal": 12,
+        "ascension": 14
+      },
+      "EnlargingStrike": {
+        "normal": 4,
+        "ascension": 4
+      },
+      "BugSting": {
+        "normal": 6,
+        "ascension": 7
+      },
+      "GuardedStrike": {
+        "normal": 12,
+        "ascension": 14
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/crusher.png"
+  },
+  {
+    "id": "CUBEX_CONSTRUCT",
+    "name": "Cubiconstructo",
+    "type": "Normal",
+    "min_hp": 65,
+    "max_hp": null,
+    "min_hp_ascension": 70,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "CHARGE_UP",
+        "name": "Carregar"
+      },
+      {
+        "id": "REPEATER",
+        "name": "Repeater"
+      },
+      {
+        "id": "REPEATER_MOVE_2",
+        "name": "Repeater Move 2"
+      },
+      {
+        "id": "EXPEL_BLAST",
+        "name": "Expel Blast"
+      },
+      {
+        "id": "SUBMERGE",
+        "name": "Submergir"
+      }
+    ],
+    "damage_values": {
+      "Blast": {
+        "normal": 7,
+        "ascension": 8
+      },
+      "Expel": {
+        "normal": 5,
+        "ascension": 6
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/cubex_construct.png"
+  },
+  {
+    "id": "DAMP_CULTIST",
+    "name": "Cultista Encharcado",
+    "type": "Normal",
+    "min_hp": 51,
+    "max_hp": 53,
+    "min_hp_ascension": 52,
+    "max_hp_ascension": 54,
+    "moves": [
+      {
+        "id": "INCANTATION",
+        "name": "Encantamento"
+      },
+      {
+        "id": "DARK_STRIKE",
+        "name": "Golpe Sombrio"
+      }
+    ],
+    "damage_values": {
+      "DarkStrike": {
+        "normal": 1,
+        "ascension": 3
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/damp_cultist.png"
+  },
+  {
+    "id": "DECIMILLIPEDE_SEGMENT",
+    "name": "Decimilípede",
+    "type": "Normal",
+    "min_hp": 42,
+    "max_hp": 48,
+    "min_hp_ascension": 48,
+    "max_hp_ascension": 56,
+    "moves": [
+      {
+        "id": "WRITHE",
+        "name": "Retorcimento"
+      },
+      {
+        "id": "BULK",
+        "name": "Corpulência"
+      },
+      {
+        "id": "CONSTRICT",
+        "name": "Constrict"
+      },
+      {
+        "id": "DEAD",
+        "name": "Morte"
+      },
+      {
+        "id": "REATTACH",
+        "name": "Reconectar"
+      }
+    ],
+    "damage_values": {
+      "Writhe": {
+        "normal": 5,
+        "ascension": 6
+      },
+      "Constrict": {
+        "normal": 8,
+        "ascension": 9
+      },
+      "Bulk": {
+        "normal": 6,
+        "ascension": 7
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/decimillipede.png"
+  },
+  {
+    "id": "DEVOTED_SCULPTOR",
+    "name": "Escultor Devoto",
+    "type": "Normal",
+    "min_hp": 162,
+    "max_hp": null,
+    "min_hp_ascension": 172,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "FORBIDDEN_INCANTATION",
+        "name": "Forbidden Incantation"
+      },
+      {
+        "id": "SAVAGE",
+        "name": "Savage"
+      }
+    ],
+    "damage_values": {
+      "Savage": {
+        "normal": 12,
+        "ascension": 15
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/devoted_sculptor.png"
+  },
+  {
+    "id": "DOOR",
+    "name": "Porta",
+    "type": "Boss",
+    "min_hp": 155,
+    "max_hp": null,
+    "min_hp_ascension": 165,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "DRAMATIC_OPEN",
+        "name": "Dramatic Open"
+      },
+      {
+        "id": "ENFORCE",
+        "name": "Enforce"
+      },
+      {
+        "id": "DOOR_SLAM",
+        "name": "Door Slam"
+      },
+      {
+        "id": "DEAD",
+        "name": "Dead"
+      }
+    ],
+    "damage_values": {
+      "DramaticOpen": {
+        "normal": 25,
+        "ascension": 28
+      },
+      "DoorSlam": {
+        "normal": 15,
+        "ascension": 15
+      },
+      "Enforce": {
+        "normal": 20
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/door.png"
+  },
+  {
+    "id": "DOORMAKER",
+    "name": "Porteiro",
+    "type": "Boss",
+    "min_hp": 489,
+    "max_hp": null,
+    "min_hp_ascension": 512,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "WHAT_IS_IT",
+        "name": "What Is It"
+      },
+      {
+        "id": "BEAM",
+        "name": "Beam"
+      },
+      {
+        "id": "GET_BACK_IN",
+        "name": "Get Back In"
+      }
+    ],
+    "damage_values": {
+      "LaserBeam": {
+        "normal": 31,
+        "ascension": 34
+      },
+      "GetBackInMove": {
+        "normal": 40,
+        "ascension": 45
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/doormaker.png"
+  },
+  {
+    "id": "ENTOMANCER",
+    "name": "Entomante",
+    "type": "Elite",
+    "min_hp": 145,
+    "max_hp": null,
+    "min_hp_ascension": 155,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "PHEROMONE_SPIT",
+        "name": "Disparo de Feromônios"
+      },
+      {
+        "id": "BEES",
+        "name": "Abelhaaaaas!"
+      },
+      {
+        "id": "SPEAR",
+        "name": "Lança!"
+      }
+    ],
+    "damage_values": {
+      "SpearMove": {
+        "normal": 18,
+        "ascension": 20
+      },
+      "Bees": {
+        "normal": 3,
+        "ascension": 3
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/entomancer.png"
+  },
+  {
+    "id": "EXOSKELETON",
+    "name": "Exoesqueleto",
+    "type": "Normal",
+    "min_hp": 24,
+    "max_hp": 28,
+    "min_hp_ascension": 25,
+    "max_hp_ascension": 29,
+    "moves": [
+      {
+        "id": "SKITTER",
+        "name": "Escapar"
+      },
+      {
+        "id": "MANDIBLE",
+        "name": "Mandible"
+      },
+      {
+        "id": "ENRAGE",
+        "name": "Enfurecer"
+      }
+    ],
+    "damage_values": {
+      "Mandibles": {
+        "normal": 8,
+        "ascension": 9
+      },
+      "Skitter": {
+        "normal": 1
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/exoskeleton.png"
+  },
+  {
+    "id": "EYE_WITH_TEETH",
+    "name": "Olho Dentado",
+    "type": "Normal",
+    "min_hp": 6,
+    "max_hp": null,
+    "min_hp_ascension": null,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "DISTRACT",
+        "name": "Distrair"
+      }
+    ],
+    "damage_values": null,
+    "block_values": null,
+    "image_url": "/static/images/monsters/eye_with_teeth.png"
+  },
+  {
+    "id": "FABRICATOR",
+    "name": "Operador",
+    "type": "Normal",
+    "min_hp": 150,
+    "max_hp": null,
+    "min_hp_ascension": 155,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "FABRICATE",
+        "name": "Fabricar"
+      },
+      {
+        "id": "FABRICATING_STRIKE",
+        "name": "Fabricating Strike"
+      },
+      {
+        "id": "DISINTEGRATE",
+        "name": "Desintegrar"
+      }
+    ],
+    "damage_values": {
+      "FabricatingStrike": {
+        "normal": 18,
+        "ascension": 21
+      },
+      "Disintegrate": {
+        "normal": 11,
+        "ascension": 13
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/fabricator.png"
+  },
+  {
+    "id": "FAT_GREMLIN",
+    "name": "Gremlin Avarento",
+    "type": "Normal",
+    "min_hp": 13,
+    "max_hp": 17,
+    "min_hp_ascension": 14,
+    "max_hp_ascension": 18,
+    "moves": [
+      {
+        "id": "SPAWNED",
+        "name": "Spawned"
+      },
+      {
+        "id": "FLEE",
+        "name": "Escapar"
+      }
+    ],
+    "damage_values": null,
+    "block_values": null,
+    "image_url": "/static/images/monsters/fat_gremlin.png"
+  },
+  {
+    "id": "FLAIL_KNIGHT",
+    "name": "Cavaleiro Flagelador",
+    "type": "Elite",
+    "min_hp": 101,
+    "max_hp": null,
+    "min_hp_ascension": 108,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "WAR_CHANT",
+        "name": "War Chant"
+      },
+      {
+        "id": "FLAIL",
+        "name": "Mangual"
+      },
+      {
+        "id": "RAM",
+        "name": "Investida"
+      }
+    ],
+    "damage_values": {
+      "Flail": {
+        "normal": 9,
+        "ascension": 10
+      },
+      "Ram": {
+        "normal": 15,
+        "ascension": 17
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/flail_knight.png"
+  },
+  {
+    "id": "FLYCONID",
+    "name": "Micodíptero",
+    "type": "Normal",
+    "min_hp": 47,
+    "max_hp": 49,
+    "min_hp_ascension": 51,
+    "max_hp_ascension": 53,
+    "moves": [
+      {
+        "id": "VULNERABLE_SPORES",
+        "name": "Vulnerable Spores"
+      },
+      {
+        "id": "FRAIL_SPORES",
+        "name": "Esporos Extenuantes"
+      },
+      {
+        "id": "SMASH",
+        "name": "Bater"
+      }
+    ],
+    "damage_values": {
+      "Smash": {
+        "normal": 11,
+        "ascension": 12
+      },
+      "Spore": {
+        "normal": 8,
+        "ascension": 9
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/flyconid.png"
+  },
+  {
+    "id": "FOGMOG",
+    "name": "Brumesporo",
+    "type": "Normal",
+    "min_hp": 74,
+    "max_hp": null,
+    "min_hp_ascension": 78,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "ILLUSION",
+        "name": "Illusion"
+      },
+      {
+        "id": "SWIPE",
+        "name": "Swipe"
+      },
+      {
+        "id": "SWIPE_RANDOM",
+        "name": "Swipe Random"
+      },
+      {
+        "id": "HEADBUTT",
+        "name": "Headbutt"
+      }
+    ],
+    "damage_values": {
+      "Swipe": {
+        "normal": 8,
+        "ascension": 9
+      },
+      "Headbutt": {
+        "normal": 14,
+        "ascension": 16
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/fogmog.png"
+  },
+  {
+    "id": "FOSSIL_STALKER",
+    "name": "Fóssil Espreitador",
+    "type": "Normal",
+    "min_hp": 51,
+    "max_hp": 53,
+    "min_hp_ascension": 54,
+    "max_hp_ascension": 56,
+    "moves": [
+      {
+        "id": "TACKLE",
+        "name": "Investida"
+      },
+      {
+        "id": "LATCH",
+        "name": "Engatar"
+      },
+      {
+        "id": "LASH",
+        "name": "Chibatada"
+      }
+    ],
+    "damage_values": {
+      "Tackle": {
+        "normal": 9,
+        "ascension": 11
+      },
+      "Latch": {
+        "normal": 12,
+        "ascension": 14
+      },
+      "Lash": {
+        "normal": 3,
+        "ascension": 4
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/fossil_stalker.png"
+  },
+  {
+    "id": "FROG_KNIGHT",
+    "name": "Sapo Cavaleiro",
+    "type": "Normal",
+    "min_hp": 191,
+    "max_hp": null,
+    "min_hp_ascension": 199,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "FOR_THE_QUEEN",
+        "name": "Pela Rainhaa"
+      },
+      {
+        "id": "STRIKE_DOWN_EVIL",
+        "name": "Acabar com o Mal"
+      },
+      {
+        "id": "TONGUE_LASH",
+        "name": "Língua Chicote"
+      },
+      {
+        "id": "BEETLE_CHARGE",
+        "name": "Investida"
+      }
+    ],
+    "damage_values": {
+      "StrikeDownEvil": {
+        "normal": 21,
+        "ascension": 23
+      },
+      "TongueLash": {
+        "normal": 13,
+        "ascension": 14
+      },
+      "BeetleCharge": {
+        "normal": 35,
+        "ascension": 40
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/frog_knight.png"
+  },
+  {
+    "id": "FUZZY_WURM_CRAWLER",
+    "name": "Vorme Peluginoso",
+    "type": "Normal",
+    "min_hp": 55,
+    "max_hp": 57,
+    "min_hp_ascension": 58,
+    "max_hp_ascension": 59,
+    "moves": [
+      {
+        "id": "FIRST_ACID_GOOP",
+        "name": "First Acid Goop"
+      },
+      {
+        "id": "ACID_GOOP",
+        "name": "Saliva Ácida"
+      },
+      {
+        "id": "INHALE",
+        "name": "Inhale"
+      }
+    ],
+    "damage_values": {
+      "AcidGoop": {
+        "normal": 4,
+        "ascension": 6
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/fuzzy_wurm_crawler.png"
+  },
+  {
+    "id": "GAS_BOMB",
+    "name": "Bomba Gasosa",
+    "type": "Normal",
+    "min_hp": 10,
+    "max_hp": null,
+    "min_hp_ascension": 12,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "EXPLODE",
+        "name": "Explodir"
+      }
+    ],
+    "damage_values": {
+      "Explode": {
+        "normal": 8,
+        "ascension": 9
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/gas_bomb.png"
+  },
+  {
+    "id": "GLOBE_HEAD",
+    "name": "Globocéfalo",
+    "type": "Normal",
+    "min_hp": 148,
+    "max_hp": null,
+    "min_hp_ascension": 158,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "THUNDER_STRIKE",
+        "name": "Thunder Strike"
+      },
+      {
+        "id": "SHOCKING_SLAP",
+        "name": "Golpe Eletrizante"
+      },
+      {
+        "id": "GALVANIC_BURST",
+        "name": "Galvanic Burst"
+      }
+    ],
+    "damage_values": {
+      "ThunderStrike": {
+        "normal": 6,
+        "ascension": 7
+      },
+      "ShockingSlap": {
+        "normal": 13,
+        "ascension": 14
+      },
+      "GalvanicBurst": {
+        "normal": 16,
+        "ascension": 17
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/orb_head.png"
+  },
+  {
+    "id": "GREMLIN_MERC",
+    "name": "Gremlin Mercenário",
+    "type": "Normal",
+    "min_hp": 47,
+    "max_hp": 49,
+    "min_hp_ascension": 51,
+    "max_hp_ascension": 53,
+    "moves": [
+      {
+        "id": "GIMME",
+        "name": "Passa pra cá"
+      },
+      {
+        "id": "DOUBLE_SMASH",
+        "name": "Golpear em Dupla"
+      },
+      {
+        "id": "HEHE",
+        "name": "Hehe"
+      }
+    ],
+    "damage_values": {
+      "Gimme": {
+        "normal": 7,
+        "ascension": 8
+      },
+      "DoubleSmash": {
+        "normal": 6,
+        "ascension": 7
+      },
+      "Hehe": {
+        "normal": 8,
+        "ascension": 9
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/gremlin_merc.png"
+  },
+  {
+    "id": "GUARDBOT",
+    "name": "Guarda-Robô",
+    "type": "Normal",
+    "min_hp": 21,
+    "max_hp": 25,
+    "min_hp_ascension": 22,
+    "max_hp_ascension": 26,
+    "moves": [
+      {
+        "id": "GUARD",
+        "name": "Guarda"
+      }
+    ],
+    "damage_values": null,
+    "block_values": null,
+    "image_url": "/static/images/monsters/guardbot.png"
+  },
+  {
+    "id": "HAUNTED_SHIP",
+    "name": "Embarcação Assombrada",
+    "type": "Normal",
+    "min_hp": 63,
+    "max_hp": null,
+    "min_hp_ascension": 67,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "RAMMING_SPEED",
+        "name": "Impulso Veloz"
+      },
+      {
+        "id": "SWIPE",
+        "name": "Grande Corte"
+      },
+      {
+        "id": "STOMP",
+        "name": "Pisotear"
+      },
+      {
+        "id": "HAUNT",
+        "name": "Assombrar"
+      }
+    ],
+    "damage_values": {
+      "RammingSpeed": {
+        "normal": 10,
+        "ascension": 11
+      },
+      "Swipe": {
+        "normal": 13,
+        "ascension": 14
+      },
+      "Stomp": {
+        "normal": 4,
+        "ascension": 5
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/haunted_ship.png"
+  },
+  {
+    "id": "HUNTER_KILLER",
+    "name": "Predador de Predadores",
+    "type": "Normal",
+    "min_hp": 121,
+    "max_hp": null,
+    "min_hp_ascension": 126,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "TENDERIZING_GOOP",
+        "name": "Gosma Corrosiva"
+      },
+      {
+        "id": "BITE",
+        "name": "Mordida"
+      },
+      {
+        "id": "PUNCTURE",
+        "name": "Perfurar"
+      }
+    ],
+    "damage_values": {
+      "Bite": {
+        "normal": 17,
+        "ascension": 19
+      },
+      "Puncture": {
+        "normal": 7,
+        "ascension": 8
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/hunter_killer.png"
+  },
+  {
+    "id": "INFESTED_PRISM",
+    "name": "Prisma Infestado",
+    "type": "Elite",
+    "min_hp": 200,
+    "max_hp": null,
+    "min_hp_ascension": 215,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "JAB",
+        "name": "Golpe Seco"
+      },
+      {
+        "id": "RADIATE",
+        "name": "Irradiar"
+      },
+      {
+        "id": "WHIRLWIND",
+        "name": "Vórtice"
+      },
+      {
+        "id": "PULSATE",
+        "name": "Pulsar"
+      }
+    ],
+    "damage_values": {
+      "Jab": {
+        "normal": 22,
+        "ascension": 24
+      },
+      "Radiate": {
+        "normal": 16,
+        "ascension": 18
+      },
+      "Whirlwind": {
+        "normal": 9,
+        "ascension": 10
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/infested_prism.png"
+  },
+  {
+    "id": "INKLET",
+    "name": "Nanquíneo",
+    "type": "Normal",
+    "min_hp": 11,
+    "max_hp": 17,
+    "min_hp_ascension": 12,
+    "max_hp_ascension": 18,
+    "moves": [
+      {
+        "id": "JAB",
+        "name": "Soco"
+      },
+      {
+        "id": "WHIRLWIND",
+        "name": "Whirlwind"
+      },
+      {
+        "id": "PIERCING_GAZE",
+        "name": "Olhar Penetrante"
+      }
+    ],
+    "damage_values": {
+      "Jab": {
+        "normal": 3,
+        "ascension": 4
+      },
+      "Whirlwind": {
+        "normal": 2,
+        "ascension": 3
+      },
+      "PiercingGaze": {
+        "normal": 10,
+        "ascension": 11
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/inklet.png"
+  },
+  {
+    "id": "KIN_FOLLOWER",
+    "name": "Discípulo Tribal",
+    "type": "Boss",
+    "min_hp": 58,
+    "max_hp": 59,
+    "min_hp_ascension": 62,
+    "max_hp_ascension": 63,
+    "moves": [
+      {
+        "id": "QUICK_SLASH",
+        "name": "Quick Slash"
+      },
+      {
+        "id": "BOOMERANG",
+        "name": "Boomerang"
+      },
+      {
+        "id": "POWER_DANCE",
+        "name": "Power Dance"
+      }
+    ],
+    "damage_values": {
+      "QuickSlash": {
+        "normal": 5,
+        "ascension": 5
+      },
+      "Boomerang": {
+        "normal": 2,
+        "ascension": 2
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/kin_follower.png"
+  },
+  {
+    "id": "KIN_PRIEST",
+    "name": "Sacerdote Tribal",
+    "type": "Boss",
+    "min_hp": 190,
+    "max_hp": null,
+    "min_hp_ascension": 199,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "ORB_OF_FRAILTY",
+        "name": "Orb Of Frailty"
+      },
+      {
+        "id": "ORB_OF_WEAKNESS",
+        "name": "Orb Of Weakness"
+      },
+      {
+        "id": "BEAM",
+        "name": "Beam"
+      },
+      {
+        "id": "RITUAL",
+        "name": "Ritual"
+      }
+    ],
+    "damage_values": {
+      "OrbOfFrailty": {
+        "normal": 8,
+        "ascension": 9
+      },
+      "OrbOfWeakness": {
+        "normal": 8,
+        "ascension": 9
+      },
+      "Beam": {
+        "normal": 3,
+        "ascension": 3
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/kin_priest.png"
+  },
+  {
+    "id": "KNOWLEDGE_DEMON",
+    "name": "Demônio do Conhecimento",
+    "type": "Boss",
+    "min_hp": 379,
+    "max_hp": null,
+    "min_hp_ascension": 399,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "CURSE_OF_KNOWLEDGE",
+        "name": "Maldição do Conhecimento"
+      },
+      {
+        "id": "SLAP",
+        "name": "Slap"
+      },
+      {
+        "id": "KNOWLEDGE_OVERWHELMING",
+        "name": "Conhecimento Esmagador"
+      },
+      {
+        "id": "PONDER",
+        "name": "Reflexão"
+      }
+    ],
+    "damage_values": {
+      "Slap": {
+        "normal": 17,
+        "ascension": 18
+      },
+      "Ponder": {
+        "normal": 11,
+        "ascension": 13
+      },
+      "KnowledgeOverwhelming": {
+        "normal": 8,
+        "ascension": 9
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/knowledge_demon.png"
+  },
+  {
+    "id": "LAGAVULIN_MATRIARCH",
+    "name": "Matriarca Lagavulin",
+    "type": "Boss",
+    "min_hp": 222,
+    "max_hp": null,
+    "min_hp_ascension": 233,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "SLEEP",
+        "name": "Repouso"
+      },
+      {
+        "id": "SLASH",
+        "name": "Corte"
+      },
+      {
+        "id": "SLASH2",
+        "name": "Slash2"
+      },
+      {
+        "id": "DISEMBOWEL",
+        "name": "Estripar"
+      },
+      {
+        "id": "SOUL_SIPHON",
+        "name": "Sifão de Almas"
+      }
+    ],
+    "damage_values": {
+      "Slash": {
+        "normal": 19,
+        "ascension": 21
+      },
+      "Slash2": {
+        "normal": 12,
+        "ascension": 14
+      },
+      "Disembowel": {
+        "normal": 9,
+        "ascension": 10
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/lagavulin_matriarch.png"
+  },
+  {
+    "id": "LEAF_SLIME_M",
+    "name": "Gosma de Folhas (M)",
+    "type": "Normal",
+    "min_hp": 32,
+    "max_hp": 35,
+    "min_hp_ascension": 33,
+    "max_hp_ascension": 36,
+    "moves": [
+      {
+        "id": "CLUMP_SHOT",
+        "name": "Disparo Aglomerado"
+      },
+      {
+        "id": "STICKY_SHOT",
+        "name": "Disparo Grudento"
+      }
+    ],
+    "damage_values": {
+      "Clump": {
+        "normal": 8,
+        "ascension": 9
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/leaf_slime_m.png"
+  },
+  {
+    "id": "LEAF_SLIME_S",
+    "name": "Gosma de Folhas (P)",
+    "type": "Normal",
+    "min_hp": 11,
+    "max_hp": 15,
+    "min_hp_ascension": 12,
+    "max_hp_ascension": 16,
+    "moves": [
+      {
+        "id": "BUTT",
+        "name": "Butt"
+      },
+      {
+        "id": "GOOP",
+        "name": "Gosma"
+      }
+    ],
+    "damage_values": {
+      "Tackle": {
+        "normal": 3,
+        "ascension": 4
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/leaf_slime_s.png"
+  },
+  {
+    "id": "LIVING_FOG",
+    "name": "Névoa Viva",
+    "type": "Normal",
+    "min_hp": 80,
+    "max_hp": null,
+    "min_hp_ascension": 82,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "ADVANCED_GAS",
+        "name": "Advanced Gas"
+      },
+      {
+        "id": "BLOAT",
+        "name": "Inchar"
+      },
+      {
+        "id": "SUPER_GAS_BLAST",
+        "name": "Super Gas Blast"
+      }
+    ],
+    "damage_values": {
+      "AdvancedGas": {
+        "normal": 8,
+        "ascension": 9
+      },
+      "Bloat": {
+        "normal": 5,
+        "ascension": 6
+      },
+      "SuperGasBlast": {
+        "normal": 8,
+        "ascension": 9
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/living_smog.png"
+  },
+  {
+    "id": "LIVING_SHIELD",
+    "name": "Escudeiro",
+    "type": "Normal",
+    "min_hp": 55,
+    "max_hp": null,
+    "min_hp_ascension": 65,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "SHIELD_SLAM",
+        "name": "Golpe de Escudo"
+      },
+      {
+        "id": "SMASH",
+        "name": "Smash"
+      }
+    ],
+    "damage_values": {
+      "Smash": {
+        "normal": 16,
+        "ascension": 18
+      },
+      "ShieldSlam": {
+        "normal": 6
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/living_shield.png"
+  },
+  {
+    "id": "LOUSE_PROGENITOR",
+    "name": "Piolho Progenitor",
+    "type": "Normal",
+    "min_hp": 134,
+    "max_hp": 136,
+    "min_hp_ascension": 138,
+    "max_hp_ascension": 141,
+    "moves": [
+      {
+        "id": "WEB_CANNON",
+        "name": "Canhão de Seda"
+      },
+      {
+        "id": "POUNCE",
+        "name": "Pounce"
+      },
+      {
+        "id": "CURL_AND_GROW",
+        "name": "Enrolar e Fortificar"
+      }
+    ],
+    "damage_values": {
+      "Web": {
+        "normal": 9,
+        "ascension": 10
+      },
+      "Pounce": {
+        "normal": 14,
+        "ascension": 16
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/louse_progenitor.png"
+  },
+  {
+    "id": "MAGI_KNIGHT",
+    "name": "Cavaleiro Mago",
+    "type": "Elite",
+    "min_hp": 82,
+    "max_hp": null,
+    "min_hp_ascension": 89,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "FIRST_POWER_SHIELD",
+        "name": "First Power Shield"
+      },
+      {
+        "id": "DAMPEN",
+        "name": "Dampen"
+      },
+      {
+        "id": "PREP",
+        "name": "Prep"
+      },
+      {
+        "id": "MAGIC_BOMB",
+        "name": "Bomba Mágica"
+      },
+      {
+        "id": "RAM",
+        "name": "Avançar"
+      }
+    ],
+    "damage_values": {
+      "PowerShield": {
+        "normal": 6,
+        "ascension": 7
+      },
+      "Spear": {
+        "normal": 10,
+        "ascension": 11
+      },
+      "Bomb": {
+        "normal": 35,
+        "ascension": 40
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/magi_knight.png"
+  },
+  {
+    "id": "MAWLER",
+    "name": "Dilacerador",
+    "type": "Normal",
+    "min_hp": 72,
+    "max_hp": null,
+    "min_hp_ascension": 76,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "RIP_AND_TEAR",
+        "name": "Dilacerar"
+      },
+      {
+        "id": "ROAR",
+        "name": "Rugido"
+      },
+      {
+        "id": "CLAW",
+        "name": "Garras"
+      }
+    ],
+    "damage_values": {
+      "RipAndTear": {
+        "normal": 14,
+        "ascension": 16
+      },
+      "Claw": {
+        "normal": 4,
+        "ascension": 5
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/mawler.png"
+  },
+  {
+    "id": "MECHA_KNIGHT",
+    "name": "Cavaleiro Mecânico",
+    "type": "Elite",
+    "min_hp": 300,
+    "max_hp": null,
+    "min_hp_ascension": 320,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "CHARGE",
+        "name": "Investida"
+      },
+      {
+        "id": "FLAMETHROWER",
+        "name": "Lança-chamas"
+      },
+      {
+        "id": "WINDUP",
+        "name": "Carregar"
+      },
+      {
+        "id": "HEAVY_CLEAVE",
+        "name": "Corte Pesado"
+      }
+    ],
+    "damage_values": {
+      "Charge": {
+        "normal": 25,
+        "ascension": 30
+      },
+      "HeavyCleave": {
+        "normal": 35,
+        "ascension": 40
+      }
+    },
+    "block_values": {
+      "windup": 15
+    },
+    "image_url": "/static/images/monsters/mecha_knight.png"
+  },
+  {
+    "id": "MYTE",
+    "name": "Acarino",
+    "type": "Normal",
+    "min_hp": 61,
+    "max_hp": 67,
+    "min_hp_ascension": 64,
+    "max_hp_ascension": 69,
+    "moves": [
+      {
+        "id": "TOXIC",
+        "name": "Cornucópia de Toxinas"
+      },
+      {
+        "id": "BITE",
+        "name": "Mordida"
+      },
+      {
+        "id": "SUCK",
+        "name": "Sucção"
+      }
+    ],
+    "damage_values": {
+      "Bite": {
+        "normal": 13,
+        "ascension": 15
+      },
+      "Suck": {
+        "normal": 4,
+        "ascension": 6
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/myte.png"
+  },
+  {
+    "id": "NIBBIT",
+    "name": "Lagartisco",
+    "type": "Normal",
+    "min_hp": 42,
+    "max_hp": 46,
+    "min_hp_ascension": 44,
+    "max_hp_ascension": 48,
+    "moves": [
+      {
+        "id": "BUTT",
+        "name": "Pancada"
+      },
+      {
+        "id": "SLICE",
+        "name": "Slice"
+      },
+      {
+        "id": "HISS",
+        "name": "Rosnar"
+      }
+    ],
+    "damage_values": {
+      "Butt": {
+        "normal": 12,
+        "ascension": 13
+      },
+      "Slice": {
+        "normal": 6,
+        "ascension": 6
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/nibbit.png"
+  },
+  {
+    "id": "NOISEBOT",
+    "name": "Ruído-Robô",
+    "type": "Normal",
+    "min_hp": 23,
+    "max_hp": 28,
+    "min_hp_ascension": 24,
+    "max_hp_ascension": 29,
+    "moves": [
+      {
+        "id": "NOISE",
+        "name": "Ruído"
+      }
+    ],
+    "damage_values": null,
+    "block_values": null,
+    "image_url": "/static/images/monsters/noisebot.png"
+  },
+  {
+    "id": "OSTY",
+    "name": "Ostheo",
+    "type": "Normal",
+    "min_hp": 1,
+    "max_hp": 1,
+    "min_hp_ascension": null,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "NOTHING",
+        "name": "Nothing"
+      }
+    ],
+    "damage_values": null,
+    "block_values": null,
+    "image_url": "/static/images/monsters/osty.png"
+  },
+  {
+    "id": "OVICOPTER",
+    "name": "Ovicóptero",
+    "type": "Normal",
+    "min_hp": 124,
+    "max_hp": 130,
+    "min_hp_ascension": 126,
+    "max_hp_ascension": 132,
+    "moves": [
+      {
+        "id": "LAY_EGGS",
+        "name": "Botar Ovos"
+      },
+      {
+        "id": "SMASH",
+        "name": "Esgamar"
+      },
+      {
+        "id": "TENDERIZER",
+        "name": "Amaciar"
+      },
+      {
+        "id": "NUTRITIONAL_PASTE",
+        "name": "Pasta Nutricional"
+      }
+    ],
+    "damage_values": {
+      "Smash": {
+        "normal": 16,
+        "ascension": 17
+      },
+      "Tenderizer": {
+        "normal": 7,
+        "ascension": 8
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/ovicopter.png"
+  },
+  {
+    "id": "OWL_MAGISTRATE",
+    "name": "Coruja Magistrada",
+    "type": "Normal",
+    "min_hp": 234,
+    "max_hp": null,
+    "min_hp_ascension": 243,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "MAGISTRATE_SCRUTINY",
+        "name": "Controle da Lei"
+      },
+      {
+        "id": "PECK_ASSAULT",
+        "name": "Bicadas Furiosas"
+      },
+      {
+        "id": "JUDICIAL_FLIGHT",
+        "name": "Duelo Judicial"
+      },
+      {
+        "id": "VERDICT",
+        "name": "Veredito"
+      }
+    ],
+    "damage_values": {
+      "Verdict": {
+        "normal": 33,
+        "ascension": 36
+      },
+      "Scrutiny": {
+        "normal": 16,
+        "ascension": 17
+      },
+      "PeckAssault": {
+        "normal": 4,
+        "ascension": 4
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/owl_magistrate.png"
+  },
+  {
+    "id": "PAELS_LEGION",
+    "name": "Legião de Pael",
+    "type": "Normal",
+    "min_hp": 9999,
+    "max_hp": 9999,
+    "min_hp_ascension": null,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "NOTHING",
+        "name": "Nulo"
+      }
+    ],
+    "damage_values": null,
+    "block_values": null,
+    "image_url": "/static/images/monsters/paels_legion.png"
+  },
+  {
+    "id": "PARAFRIGHT",
+    "name": "Aterrorizante",
+    "type": "Normal",
+    "min_hp": 21,
+    "max_hp": null,
+    "min_hp_ascension": null,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "SLAM",
+        "name": "Pancada"
+      }
+    ],
+    "damage_values": {
+      "Slam": {
+        "normal": 16,
+        "ascension": 17
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/parafright.png"
+  },
+  {
+    "id": "PHANTASMAL_GARDENER",
+    "name": "Enguia Espectral",
+    "type": "Elite",
+    "min_hp": 28,
+    "max_hp": 32,
+    "min_hp_ascension": 29,
+    "max_hp_ascension": 33,
+    "moves": [
+      {
+        "id": "BITE",
+        "name": "Mordida"
+      },
+      {
+        "id": "LASH",
+        "name": "Chicotada"
+      },
+      {
+        "id": "FLAIL",
+        "name": "Flagelo"
+      },
+      {
+        "id": "ENLARGE",
+        "name": "Crescer"
+      }
+    ],
+    "damage_values": {
+      "Bite": {
+        "normal": 5,
+        "ascension": 5
+      },
+      "Lash": {
+        "normal": 7,
+        "ascension": 7
+      },
+      "Flail": {
+        "normal": 1
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/phantasmal_gardener.png"
+  },
+  {
+    "id": "PHROG_PARASITE",
+    "name": "Sapo Parasitado",
+    "type": "Elite",
+    "min_hp": 61,
+    "max_hp": 64,
+    "min_hp_ascension": 66,
+    "max_hp_ascension": 68,
+    "moves": [
+      {
+        "id": "INFECT",
+        "name": "Infestar"
+      },
+      {
+        "id": "LASH",
+        "name": "Chicotada"
+      }
+    ],
+    "damage_values": {
+      "Lash": {
+        "normal": 4,
+        "ascension": 5
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/phrog_parasite.png"
+  },
+  {
+    "id": "PUNCH_CONSTRUCT",
+    "name": "Constructo Pugilista",
+    "type": "Normal",
+    "min_hp": 55,
+    "max_hp": null,
+    "min_hp_ascension": 60,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "READY",
+        "name": "APOSTOS"
+      },
+      {
+        "id": "STRONG_PUNCH",
+        "name": "Soco Potente"
+      },
+      {
+        "id": "FAST_PUNCH",
+        "name": "Soco Ágil"
+      }
+    ],
+    "damage_values": {
+      "StrongPunch": {
+        "normal": 14,
+        "ascension": 16
+      },
+      "FastPunch": {
+        "normal": 5,
+        "ascension": 6
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/punch_construct.png"
+  },
+  {
+    "id": "QUEEN",
+    "name": "Rainha",
+    "type": "Boss",
+    "min_hp": 400,
+    "max_hp": null,
+    "min_hp_ascension": 419,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "PUPPET_STRINGS",
+        "name": "Puppet Strings"
+      },
+      {
+        "id": "YOUR_MINE",
+        "name": "Your Mine"
+      },
+      {
+        "id": "BURN_BRIGHT_FOR_ME",
+        "name": "Queime Para Mim"
+      },
+      {
+        "id": "OFF_WITH_YOUR_HEAD",
+        "name": "Cortem-lhe a Cabeça"
+      },
+      {
+        "id": "EXECUTION",
+        "name": "Execução"
+      },
+      {
+        "id": "ENRAGE",
+        "name": "Enrage"
+      }
+    ],
+    "damage_values": {
+      "OffWithYourHead": {
+        "normal": 3,
+        "ascension": 4
+      },
+      "Execution": {
+        "normal": 15,
+        "ascension": 18
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/queen.png"
+  },
+  {
+    "id": "ROCKET",
+    "name": "Míssil",
+    "type": "Boss",
+    "min_hp": 189,
+    "max_hp": null,
+    "min_hp_ascension": 199,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "TARGETING_RETICLE",
+        "name": "Mira"
+      },
+      {
+        "id": "PRECISION_BEAM",
+        "name": "Disparo Preciso"
+      },
+      {
+        "id": "CHARGE_UP",
+        "name": "Carregar"
+      },
+      {
+        "id": "LASER",
+        "name": "Raio Laser"
+      },
+      {
+        "id": "RECHARGE",
+        "name": "Recarregar"
+      }
+    ],
+    "damage_values": {
+      "TargetingReticle": {
+        "normal": 3,
+        "ascension": 4
+      },
+      "PrecisionBeam": {
+        "normal": 18,
+        "ascension": 20
+      },
+      "Laser": {
+        "normal": 31,
+        "ascension": 35
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/rocket.png"
+  },
+  {
+    "id": "SCROLL_OF_BITING",
+    "name": "Pergaminho Mordaz",
+    "type": "Normal",
+    "min_hp": 31,
+    "max_hp": 38,
+    "min_hp_ascension": 32,
+    "max_hp_ascension": 39,
+    "moves": [
+      {
+        "id": "CHOMP",
+        "name": "Mordida"
+      },
+      {
+        "id": "CHEW",
+        "name": "Mastigar"
+      },
+      {
+        "id": "MORE_TEETH",
+        "name": "Dentes Infinitos"
+      }
+    ],
+    "damage_values": {
+      "Chomp": {
+        "normal": 14,
+        "ascension": 16
+      },
+      "Chew": {
+        "normal": 5,
+        "ascension": 6
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/scroll_of_biting.png"
+  },
+  {
+    "id": "SEAPUNK",
+    "name": "Arruaceiro Marinho",
+    "type": "Normal",
+    "min_hp": 44,
+    "max_hp": 46,
+    "min_hp_ascension": 47,
+    "max_hp_ascension": 49,
+    "moves": [
+      {
+        "id": "SEA_KICK",
+        "name": "Patada Marinha"
+      },
+      {
+        "id": "SPINNING_KICK",
+        "name": "Patada Giratória"
+      },
+      {
+        "id": "BUBBLE_BURP",
+        "name": "Borbulhar"
+      }
+    ],
+    "damage_values": {
+      "SeaKick": {
+        "normal": 11,
+        "ascension": 12
+      },
+      "SpinningKick": {
+        "normal": 2
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/seapunk.png"
+  },
+  {
+    "id": "SEWER_CLAM",
+    "name": "Bivalve de Esgoto",
+    "type": "Normal",
+    "min_hp": 56,
+    "max_hp": null,
+    "min_hp_ascension": 58,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "PRESSURIZE",
+        "name": "Pressurizar"
+      },
+      {
+        "id": "JET",
+        "name": "Jato"
+      }
+    ],
+    "damage_values": {
+      "Jet": {
+        "normal": 10,
+        "ascension": 11
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/sewer_clam.png"
+  },
+  {
+    "id": "SHRINKER_BEETLE",
+    "name": "Besouro Encolhedor",
+    "type": "Normal",
+    "min_hp": 38,
+    "max_hp": 40,
+    "min_hp_ascension": 40,
+    "max_hp_ascension": 42,
+    "moves": [
+      {
+        "id": "SHRINKER",
+        "name": "Encolher"
+      },
+      {
+        "id": "CHOMP",
+        "name": "Mordida"
+      },
+      {
+        "id": "STOMP",
+        "name": "Pisar"
+      }
+    ],
+    "damage_values": {
+      "Chomp": {
+        "normal": 7,
+        "ascension": 8
+      },
+      "Stomp": {
+        "normal": 13,
+        "ascension": 14
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/shrinker_beetle.png"
+  },
+  {
+    "id": "SKULKING_COLONY",
+    "name": "Colônia Furtiva",
+    "type": "Elite",
+    "min_hp": 79,
+    "max_hp": null,
+    "min_hp_ascension": 84,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "INERTIA",
+        "name": "Inércia"
+      },
+      {
+        "id": "ZOOM",
+        "name": "Ampliar"
+      },
+      {
+        "id": "SUPER_CRAB",
+        "name": "Super Caranguejo"
+      },
+      {
+        "id": "SMASH",
+        "name": "Smash"
+      }
+    ],
+    "damage_values": {
+      "SuperCrab": {
+        "normal": 6,
+        "ascension": 7
+      },
+      "Zoom": {
+        "normal": 16,
+        "ascension": 17
+      },
+      "Smash": {
+        "normal": 9,
+        "ascension": 11
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/skulkling_colomy.png"
+  },
+  {
+    "id": "SLIMED_BERSERKER",
+    "name": "Amoque Gosmento",
+    "type": "Normal",
+    "min_hp": 266,
+    "max_hp": null,
+    "min_hp_ascension": 276,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "VOMIT_ICHOR",
+        "name": "Vomit Ichor"
+      },
+      {
+        "id": "LEECHING_HUG",
+        "name": "Leeching Hug"
+      },
+      {
+        "id": "SMOTHER",
+        "name": "Smother"
+      },
+      {
+        "id": "FURIOUS_PUMMELING",
+        "name": "Furious Pummeling"
+      }
+    ],
+    "damage_values": {
+      "Pummeling": {
+        "normal": 4,
+        "ascension": 5
+      },
+      "Smother": {
+        "normal": 30,
+        "ascension": 33
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/slimed_berserker.png"
+  },
+  {
+    "id": "SLITHERING_STRANGLER",
+    "name": "Estrangulador Rastejante",
+    "type": "Normal",
+    "min_hp": 53,
+    "max_hp": 55,
+    "min_hp_ascension": 54,
+    "max_hp_ascension": 56,
+    "moves": [
+      {
+        "id": "CONSTRICT",
+        "name": "Apertar"
+      },
+      {
+        "id": "TWACK",
+        "name": "Twack"
+      },
+      {
+        "id": "LASH",
+        "name": "Chicotada"
+      }
+    ],
+    "damage_values": {
+      "Thwack": {
+        "normal": 7,
+        "ascension": 8
+      },
+      "Lash": {
+        "normal": 12,
+        "ascension": 13
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/slithering_strangler.png"
+  },
+  {
+    "id": "SLUDGE_SPINNER",
+    "name": "Náutilo Oleoso",
+    "type": "Normal",
+    "min_hp": 37,
+    "max_hp": 39,
+    "min_hp_ascension": 41,
+    "max_hp_ascension": 42,
+    "moves": [
+      {
+        "id": "OIL_SPRAY",
+        "name": "Rajada de Óleo"
+      },
+      {
+        "id": "SLAM",
+        "name": "Pancada"
+      },
+      {
+        "id": "RAGE",
+        "name": "Fúria"
+      }
+    ],
+    "damage_values": {
+      "OilSpray": {
+        "normal": 8,
+        "ascension": 9
+      },
+      "Slam": {
+        "normal": 11,
+        "ascension": 12
+      },
+      "Rage": {
+        "normal": 6,
+        "ascension": 7
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/sludge_spinner.png"
+  },
+  {
+    "id": "SLUMBERING_BEETLE",
+    "name": "Besouro Sonolento",
+    "type": "Normal",
+    "min_hp": 86,
+    "max_hp": null,
+    "min_hp_ascension": 89,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "SNORE",
+        "name": "Dormir"
+      },
+      {
+        "id": "ROLL_OUT",
+        "name": "Rolar"
+      }
+    ],
+    "damage_values": {
+      "Rollout": {
+        "normal": 16,
+        "ascension": 18
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/slumbering_beetle.png"
+  },
+  {
+    "id": "SNAPPING_JAXFRUIT",
+    "name": "Bulbo Mordiscador",
+    "type": "Normal",
+    "min_hp": 31,
+    "max_hp": 33,
+    "min_hp_ascension": 34,
+    "max_hp_ascension": 36,
+    "moves": [
+      {
+        "id": "ENERGY_ORB",
+        "name": "Orbe de Energia"
+      }
+    ],
+    "damage_values": {
+      "Energy": {
+        "normal": 3,
+        "ascension": 4
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/snapping_jaxfruit.png"
+  },
+  {
+    "id": "SNEAKY_GREMLIN",
+    "name": "Gremlin Trapaceiro",
+    "type": "Normal",
+    "min_hp": 10,
+    "max_hp": 14,
+    "min_hp_ascension": 11,
+    "max_hp_ascension": 15,
+    "moves": [
+      {
+        "id": "SPAWNED",
+        "name": "Spawned"
+      },
+      {
+        "id": "TACKLE",
+        "name": "Investida"
+      }
+    ],
+    "damage_values": {
+      "Tackle": {
+        "normal": 9,
+        "ascension": 10
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/sneaky_gremlin.png"
+  },
+  {
+    "id": "SOUL_FYSH",
+    "name": "Peyxe Espectral",
+    "type": "Boss",
+    "min_hp": 211,
+    "max_hp": null,
+    "min_hp_ascension": 221,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "BECKON",
+        "name": "Beckon"
+      },
+      {
+        "id": "DE_GAS",
+        "name": "Fuga de Gás"
+      },
+      {
+        "id": "GAZE",
+        "name": "Gaze"
+      },
+      {
+        "id": "FADE",
+        "name": "Fade"
+      },
+      {
+        "id": "SCREAM",
+        "name": "Lamento"
+      }
+    ],
+    "damage_values": {
+      "DeGas": {
+        "normal": 16,
+        "ascension": 17
+      },
+      "Scream": {
+        "normal": 11,
+        "ascension": 12
+      },
+      "Gaze": {
+        "normal": 7,
+        "ascension": 8
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/soul_fysh.png"
+  },
+  {
+    "id": "SOUL_NEXUS",
+    "name": "Nexo de Almas",
+    "type": "Elite",
+    "min_hp": 234,
+    "max_hp": null,
+    "min_hp_ascension": 254,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "SOUL_BURN",
+        "name": "Queimar Almas"
+      },
+      {
+        "id": "MAELSTROM",
+        "name": "Redemoinho"
+      },
+      {
+        "id": "DRAIN_LIFE",
+        "name": "Drenar Vitalidade"
+      }
+    ],
+    "damage_values": {
+      "SoulBurn": {
+        "normal": 29,
+        "ascension": 31
+      },
+      "Maelstrom": {
+        "normal": 6,
+        "ascension": 7
+      },
+      "DrainLife": {
+        "normal": 18,
+        "ascension": 19
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/soul_nexus.png"
+  },
+  {
+    "id": "SPECTRAL_KNIGHT",
+    "name": "Cavaleiro Espectral",
+    "type": "Elite",
+    "min_hp": 93,
+    "max_hp": null,
+    "min_hp_ascension": 97,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "HEX",
+        "name": "Feitiço"
+      },
+      {
+        "id": "SOUL_SLASH",
+        "name": "Corte Espiritual"
+      },
+      {
+        "id": "SOUL_FLAME",
+        "name": "Chama Espiritual"
+      }
+    ],
+    "damage_values": {
+      "SoulSlash": {
+        "normal": 15,
+        "ascension": 17
+      },
+      "SoulFlame": {
+        "normal": 3,
+        "ascension": 4
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/spectral_knight.png"
+  },
+  {
+    "id": "SPINY_TOAD",
+    "name": "Sapo Espinhoso",
+    "type": "Normal",
+    "min_hp": 116,
+    "max_hp": 119,
+    "min_hp_ascension": 121,
+    "max_hp_ascension": 124,
+    "moves": [
+      {
+        "id": "PROTRUDING_SPIKES",
+        "name": "Espinhos Protuberantes"
+      },
+      {
+        "id": "SPIKE_EXPLOSION",
+        "name": "Explosão de Espinhos"
+      },
+      {
+        "id": "TONGUE_LASH",
+        "name": "Chicote de Língua"
+      }
+    ],
+    "damage_values": {
+      "Lash": {
+        "normal": 17,
+        "ascension": 19
+      },
+      "Explosion": {
+        "normal": 23,
+        "ascension": 25
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/spiny_toad.png"
+  },
+  {
+    "id": "STABBOT",
+    "name": "Perfura-Robô",
+    "type": "Normal",
+    "min_hp": 23,
+    "max_hp": 28,
+    "min_hp_ascension": 24,
+    "max_hp_ascension": 29,
+    "moves": [
+      {
+        "id": "STAB",
+        "name": "Apunhalar"
+      }
+    ],
+    "damage_values": {
+      "Stab": {
+        "normal": 11,
+        "ascension": 12
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/stabbot.png"
+  },
+  {
+    "id": "TERROR_EEL",
+    "name": "Enguia Abissal",
+    "type": "Elite",
+    "min_hp": 140,
+    "max_hp": null,
+    "min_hp_ascension": 150,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "CRASH",
+        "name": "Crash"
+      },
+      {
+        "id": "ThrashMove",
+        "name": "Thrashmove"
+      },
+      {
+        "id": "STUN",
+        "name": "Stun"
+      },
+      {
+        "id": "TERROR",
+        "name": "Terror"
+      }
+    ],
+    "damage_values": {
+      "Crash": {
+        "normal": 17,
+        "ascension": 19
+      },
+      "Thrash": {
+        "normal": 3,
+        "ascension": 4
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/terror_eel.png"
+  },
+  {
+    "id": "TEST_SUBJECT",
+    "name": "Cobaia #C{Count}",
+    "type": "Boss",
+    "min_hp": null,
+    "max_hp": null,
+    "min_hp_ascension": null,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "RESPAWN",
+        "name": "Respawn"
+      },
+      {
+        "id": "BITE",
+        "name": "Bite"
+      },
+      {
+        "id": "SKULL_BASH",
+        "name": "Skull Bash"
+      },
+      {
+        "id": "POUNCE",
+        "name": "Pounce"
+      },
+      {
+        "id": "MULTI_CLAW",
+        "name": "Multi Claw"
+      },
+      {
+        "id": "PHASE3_LACERATE",
+        "name": "Phase3 Lacerate"
+      },
+      {
+        "id": "BIG_POUNCE",
+        "name": "Big Pounce"
+      },
+      {
+        "id": "BURNING_GROWL",
+        "name": "Burning Growl"
+      }
+    ],
+    "damage_values": {
+      "Bite": {
+        "normal": 20,
+        "ascension": 22
+      },
+      "SkullBash": {
+        "normal": 14,
+        "ascension": 16
+      },
+      "Pounce": {
+        "normal": 30,
+        "ascension": 32
+      },
+      "MultiClaw": {
+        "normal": 10,
+        "ascension": 11
+      },
+      "Phase3Lacerate": {
+        "normal": 10,
+        "ascension": 11
+      },
+      "BigPounce": {
+        "normal": 45
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/test_subject.png"
+  },
+  {
+    "id": "THE_ADVERSARY_MK_ONE",
+    "name": "O Adversário V1.0",
+    "type": "Normal",
+    "min_hp": 100,
+    "max_hp": null,
+    "min_hp_ascension": null,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "SMASH",
+        "name": "Destruir"
+      },
+      {
+        "id": "BEAM",
+        "name": "Raio"
+      },
+      {
+        "id": "BARRAGE",
+        "name": "Alvejar"
+      }
+    ],
+    "damage_values": {
+      "Smash": {
+        "normal": 12
+      },
+      "Beam": {
+        "normal": 15
+      },
+      "Barrage": {
+        "normal": 8
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/the_adversary_placeholder.png"
+  },
+  {
+    "id": "THE_ADVERSARY_MK_THREE",
+    "name": "O Adversário V3.0",
+    "type": "Normal",
+    "min_hp": 300,
+    "max_hp": null,
+    "min_hp_ascension": 300,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "CRASH",
+        "name": "Colidir"
+      },
+      {
+        "id": "FLAME_BEAM",
+        "name": "Raio de Calor"
+      },
+      {
+        "id": "BARRAGE",
+        "name": "Alvejar"
+      }
+    ],
+    "damage_values": {
+      "Crash": {
+        "normal": 15
+      },
+      "FlameBeam": {
+        "normal": 18
+      },
+      "Barrage": {
+        "normal": 10
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/the_adversary_placeholder.png"
+  },
+  {
+    "id": "THE_ADVERSARY_MK_TWO",
+    "name": "O Adversário V2.0",
+    "type": "Normal",
+    "min_hp": 200,
+    "max_hp": null,
+    "min_hp_ascension": 200,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "BASH",
+        "name": "Pancada"
+      },
+      {
+        "id": "FLAME_BEAM",
+        "name": "Raio de Calor"
+      },
+      {
+        "id": "BARRAGE",
+        "name": "Alvejar"
+      }
+    ],
+    "damage_values": {
+      "Bash": {
+        "normal": 13
+      },
+      "FlameBeam": {
+        "normal": 16
+      },
+      "Barrage": {
+        "normal": 9
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/the_adversary_placeholder.png"
+  },
+  {
+    "id": "THE_FORGOTTEN",
+    "name": "O Esquecido",
+    "type": "Normal",
+    "min_hp": 106,
+    "max_hp": null,
+    "min_hp_ascension": 111,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "MIASMA",
+        "name": "Miasma"
+      },
+      {
+        "id": "DREAD",
+        "name": "Pavor"
+      }
+    ],
+    "damage_values": {
+      "Dread": {
+        "normal": 15,
+        "ascension": 17
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/the_forgotten.png"
+  },
+  {
+    "id": "THE_INSATIABLE",
+    "name": "O Insaciável",
+    "type": "Boss",
+    "min_hp": 321,
+    "max_hp": null,
+    "min_hp_ascension": 341,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "LIQUIFY_GROUND",
+        "name": "Liquidificar Solo"
+      },
+      {
+        "id": "THRASH_MOVE_1",
+        "name": "Thrash Move 1"
+      },
+      {
+        "id": "THRASH_MOVE_2",
+        "name": "Thrash Move 2"
+      },
+      {
+        "id": "LUNGING_BITE",
+        "name": "Bote"
+      },
+      {
+        "id": "SALIVATE",
+        "name": "Salivar"
+      }
+    ],
+    "damage_values": {
+      "Thrash": {
+        "normal": 8,
+        "ascension": 9
+      },
+      "Bite": {
+        "normal": 28,
+        "ascension": 31
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/the_insatiable.png"
+  },
+  {
+    "id": "THE_LOST",
+    "name": "O Perdido",
+    "type": "Normal",
+    "min_hp": 93,
+    "max_hp": null,
+    "min_hp_ascension": 99,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "DEBILITATING_SMOG",
+        "name": "Névoa Debilitante"
+      },
+      {
+        "id": "EYE_LASERS",
+        "name": "Laser Ocular"
+      }
+    ],
+    "damage_values": {
+      "EyeLasers": {
+        "normal": 4,
+        "ascension": 5
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/the_lost.png"
+  },
+  {
+    "id": "THE_OBSCURA",
+    "name": "A Obscura",
+    "type": "Normal",
+    "min_hp": 123,
+    "max_hp": null,
+    "min_hp_ascension": 129,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "ILLUSION",
+        "name": "Ilusão"
+      },
+      {
+        "id": "PIERCING_GAZE",
+        "name": "Olhar Penetrante"
+      },
+      {
+        "id": "SAIL",
+        "name": "Sail"
+      },
+      {
+        "id": "HARDENING_STRIKE",
+        "name": "Golpe Endurecedor"
+      }
+    ],
+    "damage_values": {
+      "PiercingGaze": {
+        "normal": 10,
+        "ascension": 11
+      },
+      "HardeningStrike": {
+        "normal": 6,
+        "ascension": 7
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/the_obscura.png"
+  },
+  {
+    "id": "THIEVING_HOPPER",
+    "name": "Gafanhoto Larápio",
+    "type": "Normal",
+    "min_hp": 79,
+    "max_hp": null,
+    "min_hp_ascension": 84,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "THIEVERY",
+        "name": "Furto"
+      },
+      {
+        "id": "NAB",
+        "name": "Afanar"
+      },
+      {
+        "id": "HAT_TRICK",
+        "name": "Truque"
+      },
+      {
+        "id": "FLUTTER",
+        "name": "Bater Asas"
+      },
+      {
+        "id": "ESCAPE",
+        "name": "Escapar"
+      }
+    ],
+    "damage_values": {
+      "Theft": {
+        "normal": 17,
+        "ascension": 19
+      },
+      "HatTrick": {
+        "normal": 21,
+        "ascension": 23
+      },
+      "Nab": {
+        "normal": 14,
+        "ascension": 16
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/thieving_hopper.png"
+  },
+  {
+    "id": "TOADPOLE",
+    "name": "Girino",
+    "type": "Normal",
+    "min_hp": 21,
+    "max_hp": 25,
+    "min_hp_ascension": 22,
+    "max_hp_ascension": 26,
+    "moves": [
+      {
+        "id": "SPIKE_SPIT",
+        "name": "Disparo de Espinho"
+      },
+      {
+        "id": "WHIRL",
+        "name": "Vórtice"
+      },
+      {
+        "id": "SPIKEN",
+        "name": "Espinhos"
+      }
+    ],
+    "damage_values": {
+      "SpikeSpit": {
+        "normal": 3,
+        "ascension": 4
+      },
+      "Whirl": {
+        "normal": 7,
+        "ascension": 8
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/toadpole.png"
+  },
+  {
+    "id": "TORCH_HEAD_AMALGAM",
+    "name": "Amálgama Lamparínea",
+    "type": "Boss",
+    "min_hp": 199,
+    "max_hp": null,
+    "min_hp_ascension": 211,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "TACKLE_1",
+        "name": "Tackle 1"
+      },
+      {
+        "id": "TACKLE_2",
+        "name": "Tackle 2"
+      },
+      {
+        "id": "BEAM",
+        "name": "Beam"
+      },
+      {
+        "id": "TACKLE_3",
+        "name": "Tackle 3"
+      },
+      {
+        "id": "TACKLE_4",
+        "name": "Tackle 4"
+      }
+    ],
+    "damage_values": {
+      "Tackle": {
+        "normal": 18,
+        "ascension": 19
+      },
+      "WeakTackle": {
+        "normal": 14,
+        "ascension": 15
+      },
+      "SoulBeam": {
+        "normal": 8,
+        "ascension": 8
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/amalgam.png"
+  },
+  {
+    "id": "TOUGH_EGG",
+    "name": "Ovo Resistente",
+    "type": "Normal",
+    "min_hp": 14,
+    "max_hp": 18,
+    "min_hp_ascension": 15,
+    "max_hp_ascension": 19,
+    "moves": [
+      {
+        "id": "HATCH",
+        "name": "Eclodir"
+      },
+      {
+        "id": "NIBBLE",
+        "name": "Nibble"
+      }
+    ],
+    "damage_values": {
+      "Nibble": {
+        "normal": 4,
+        "ascension": 5
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/tough_egg.png"
+  },
+  {
+    "id": "TRACKER_RUBY_RAIDER",
+    "name": "Guerreira Rastreadora",
+    "type": "Normal",
+    "min_hp": 21,
+    "max_hp": 25,
+    "min_hp_ascension": 22,
+    "max_hp_ascension": 26,
+    "moves": [
+      {
+        "id": "TRACK",
+        "name": "Rastrear"
+      },
+      {
+        "id": "HOUNDS",
+        "name": "Soltar as Feras"
+      }
+    ],
+    "damage_values": {
+      "Hounds": {
+        "normal": 1,
+        "ascension": 1
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/tracker_ruby_raider.png"
+  },
+  {
+    "id": "TUNNELER",
+    "name": "Escavador",
+    "type": "Normal",
+    "min_hp": 87,
+    "max_hp": null,
+    "min_hp_ascension": 92,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "BITE",
+        "name": "Mordida"
+      },
+      {
+        "id": "BURROW",
+        "name": "Cavar"
+      },
+      {
+        "id": "BELOW_MOVE_1",
+        "name": "Below Move 1"
+      },
+      {
+        "id": "DIZZY",
+        "name": "Dizzy"
+      }
+    ],
+    "damage_values": {
+      "Bite": {
+        "normal": 13,
+        "ascension": 15
+      },
+      "Below": {
+        "normal": 23,
+        "ascension": 26
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/tunneler.png"
+  },
+  {
+    "id": "TURRET_OPERATOR",
+    "name": "Operador de Artilharia",
+    "type": "Normal",
+    "min_hp": 41,
+    "max_hp": null,
+    "min_hp_ascension": 51,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "UNLOAD_MOVE_1",
+        "name": "Unload Move 1"
+      },
+      {
+        "id": "UNLOAD_MOVE_2",
+        "name": "Unload Move 2"
+      },
+      {
+        "id": "RELOAD",
+        "name": "Reload"
+      }
+    ],
+    "damage_values": {
+      "Fire": {
+        "normal": 3,
+        "ascension": 4
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/turret_operator.png"
+  },
+  {
+    "id": "TWIG_SLIME_M",
+    "name": "Gosma de Gravetos (M)",
+    "type": "Normal",
+    "min_hp": 26,
+    "max_hp": 28,
+    "min_hp_ascension": 27,
+    "max_hp_ascension": 29,
+    "moves": [
+      {
+        "id": "CLUMP_SHOT",
+        "name": "Clump Shot"
+      },
+      {
+        "id": "STICKY_SHOT",
+        "name": "Disparo Pegajoso"
+      }
+    ],
+    "damage_values": {
+      "Clump": {
+        "normal": 11,
+        "ascension": 12
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/twig_slime_m.png"
+  },
+  {
+    "id": "TWIG_SLIME_S",
+    "name": "Gosma de Gravetos (P)",
+    "type": "Normal",
+    "min_hp": 7,
+    "max_hp": 11,
+    "min_hp_ascension": 8,
+    "max_hp_ascension": 12,
+    "moves": [
+      {
+        "id": "BUTT",
+        "name": "Butt"
+      }
+    ],
+    "damage_values": {
+      "Tackle": {
+        "normal": 4,
+        "ascension": 5
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/twig_slime_s.png"
+  },
+  {
+    "id": "TWO_TAILED_RAT",
+    "name": "Rato Duas-Caudas",
+    "type": "Normal",
+    "min_hp": 17,
+    "max_hp": 21,
+    "min_hp_ascension": 18,
+    "max_hp_ascension": 22,
+    "moves": [
+      {
+        "id": "SCRATCH",
+        "name": "Arranhão"
+      },
+      {
+        "id": "DISEASE_BITE",
+        "name": "Mordida Infecciosa"
+      },
+      {
+        "id": "SCREECH",
+        "name": "Grunhido"
+      },
+      {
+        "id": "CALL_FOR_BACKUP",
+        "name": "Chamar Reforços"
+      }
+    ],
+    "damage_values": {
+      "Scratch": {
+        "normal": 8,
+        "ascension": 9
+      },
+      "DiseaseBite": {
+        "normal": 6,
+        "ascension": 7
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/two_tailed_rat.png"
+  },
+  {
+    "id": "VANTOM",
+    "name": "Vantasma",
+    "type": "Boss",
+    "min_hp": 173,
+    "max_hp": null,
+    "min_hp_ascension": 183,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "INK_BLOT",
+        "name": "Mancha"
+      },
+      {
+        "id": "INKY_LANCE",
+        "name": "Lança Nanquim"
+      },
+      {
+        "id": "DISMEMBER",
+        "name": "Desmembrar"
+      },
+      {
+        "id": "PREPARE",
+        "name": "Preparação"
+      }
+    ],
+    "damage_values": {
+      "InkBlot": {
+        "normal": 7,
+        "ascension": 8
+      },
+      "InkyLance": {
+        "normal": 6,
+        "ascension": 7
+      },
+      "Dismember": {
+        "normal": 27,
+        "ascension": 30
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/vantom.png"
+  },
+  {
+    "id": "VINE_SHAMBLER",
+    "name": "Videira Trôpega",
+    "type": "Normal",
+    "min_hp": 61,
+    "max_hp": null,
+    "min_hp_ascension": 64,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "GRASPING_VINES",
+        "name": "Vinhas Paralisantes"
+      },
+      {
+        "id": "SWIPE",
+        "name": "Golpe de Vinha"
+      },
+      {
+        "id": "CHOMP",
+        "name": "Mordida"
+      }
+    ],
+    "damage_values": {
+      "GraspingVines": {
+        "normal": 8,
+        "ascension": 9
+      },
+      "Swipe": {
+        "normal": 6,
+        "ascension": 7
+      },
+      "Chomp": {
+        "normal": 16,
+        "ascension": 18
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/vine_shambler.png"
+  },
+  {
+    "id": "WATERFALL_GIANT",
+    "name": "Cachoeira Titânica",
+    "type": "Boss",
+    "min_hp": 250,
+    "max_hp": null,
+    "min_hp_ascension": 260,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "PRESSURIZE",
+        "name": "Pressurizar"
+      },
+      {
+        "id": "STOMP",
+        "name": "Pisão"
+      },
+      {
+        "id": "RAM",
+        "name": "Investida"
+      },
+      {
+        "id": "SIPHON",
+        "name": "Sifão"
+      },
+      {
+        "id": "PRESSURE_GUN",
+        "name": "Tiro Pressurizado"
+      },
+      {
+        "id": "PRESSURE_UP",
+        "name": "Pressure Up"
+      },
+      {
+        "id": "ABOUT_TO_BLOW",
+        "name": "About To Blow"
+      },
+      {
+        "id": "EXPLODE",
+        "name": "Explode"
+      }
+    ],
+    "damage_values": {
+      "Stomp": {
+        "normal": 15,
+        "ascension": 16
+      },
+      "Ram": {
+        "normal": 10,
+        "ascension": 11
+      },
+      "PressureUp": {
+        "normal": 13,
+        "ascension": 14
+      },
+      "BasePressureGun": {
+        "normal": 20,
+        "ascension": 23
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/waterfall_giant.png"
+  },
+  {
+    "id": "WRIGGLER",
+    "name": "Parasitário",
+    "type": "Elite",
+    "min_hp": 17,
+    "max_hp": 21,
+    "min_hp_ascension": 18,
+    "max_hp_ascension": 22,
+    "moves": [
+      {
+        "id": "NASTY_BITE",
+        "name": "Nasty Bite"
+      },
+      {
+        "id": "WRIGGLE",
+        "name": "Wriggle"
+      },
+      {
+        "id": "SPAWNED",
+        "name": "Spawned"
+      }
+    ],
+    "damage_values": {
+      "Bite": {
+        "normal": 6,
+        "ascension": 7
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/wriggler.png"
+  },
+  {
+    "id": "ZAPBOT",
+    "name": "Eletro-Robô",
+    "type": "Normal",
+    "min_hp": 23,
+    "max_hp": 28,
+    "min_hp_ascension": 24,
+    "max_hp_ascension": 29,
+    "moves": [
+      {
+        "id": "ZAP",
+        "name": "Choque"
+      }
+    ],
+    "damage_values": {
+      "Zap": {
+        "normal": 14,
+        "ascension": 15
+      }
+    },
+    "block_values": null,
+    "image_url": "/static/images/monsters/zapbot.png"
+  }
+]

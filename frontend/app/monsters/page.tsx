@@ -3,7 +3,9 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import type { Monster } from "@/lib/api";
+import { cachedFetch } from "@/lib/fetch-cache";
 import SearchFilter from "../components/SearchFilter";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -26,6 +28,7 @@ const typeOptions = [
 ];
 
 export default function MonstersPage() {
+  const { lang } = useLanguage();
   const [monsters, setMonsters] = useState<Monster[]>([]);
   const [search, setSearch] = useState("");
   const [type, setType] = useState("");
@@ -36,11 +39,11 @@ export default function MonstersPage() {
     const params = new URLSearchParams();
     if (type) params.set("type", type);
     if (search) params.set("search", search);
-    fetch(`${API}/api/monsters?${params}`)
-      .then((r) => r.json())
+    params.set("lang", lang);
+    cachedFetch<Monster[]>(`${API}/api/monsters?${params}`)
       .then(setMonsters)
       .finally(() => setLoading(false));
-  }, [type, search]);
+  }, [type, search, lang]);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

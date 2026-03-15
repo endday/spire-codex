@@ -1,0 +1,72 @@
+[
+  {
+    "id": "ATTACK",
+    "name": "Agresja",
+    "description": "Ten przeciwnik zamierza zadać {IsMultiplayer:wszystkim |}[blue]{Damage}[/blue] pkt. [gold]obrażeń[/gold]{Repeat:plural(en):| [blue]{}[/blue] razy}."
+  },
+  {
+    "id": "BUFF",
+    "name": "Wzmocnienie",
+    "description": "Ten przeciwnik zamierza użyć [gold]Wzmocnienia[/gold]."
+  },
+  {
+    "id": "CARD_DEBUFF",
+    "name": "Złośliwość",
+    "description": "Ten przeciwnik zamierza nałożyć [gold]Przekleństwo[/gold] na twoje karty."
+  },
+  {
+    "id": "DEATH_BLOW",
+    "name": "Gwałtowna eksplozja",
+    "description": "To stworzenie wysadzi cię w powietrze. Zada ci [blue]{Damage}[/blue] pkt. obrażeń, jeżeli nie zostanie zabite."
+  },
+  {
+    "id": "DEBUFF",
+    "name": "Strategia",
+    "description": "Ten przeciwnik zamierza nałożyć na ciebie [gold]Osłabienie[/gold]."
+  },
+  {
+    "id": "DEBUFF_STRONG",
+    "name": "Strategia",
+    "description": "Ten przeciwnik zamierza nałożyć na ciebie potężne [gold]Osłabienie[/gold]."
+  },
+  {
+    "id": "DEFEND",
+    "name": "Defensywa",
+    "description": "Ten przeciwnik zamierza się [gold]bronić[/gold]."
+  },
+  {
+    "id": "ESCAPE",
+    "name": "Tchórzliwa ucieczka",
+    "description": "Ten przeciwnik zamierza [gold]uciec[/gold]."
+  },
+  {
+    "id": "HEAL",
+    "name": "Leczenie",
+    "description": "Ten przeciwnik zamierza [gold]przywrócić[/gold] swoje PŻ."
+  },
+  {
+    "id": "SLEEP",
+    "name": "Sen",
+    "description": "Ten przeciwnik nic nie zrobi w tej turze."
+  },
+  {
+    "id": "STATUS",
+    "name": "Strategia",
+    "description": ""
+  },
+  {
+    "id": "STUN",
+    "name": "Ogłuszenie",
+    "description": "Ten przeciwnik nie może wykonać akcji w swojej następnej turze."
+  },
+  {
+    "id": "SUMMON",
+    "name": "Przywołanie",
+    "description": "Ten przeciwnik zamierza przywołać [gold]potwory[/gold]."
+  },
+  {
+    "id": "UNKNOWN",
+    "name": "Nieznane",
+    "description": "Zamiary tego przeciwnika są [gold]nieznane[/gold]."
+  }
+]

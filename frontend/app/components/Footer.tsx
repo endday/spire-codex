@@ -57,6 +57,7 @@ function FeedbackModal({ onClose }: { onClose: () => void }) {
             >
               <option value="Bug">Bug</option>
               <option value="Feature Request">Feature Request</option>
+              <option value="Localization">Localization</option>
             </select>
 
             <label className="block text-sm text-[var(--text-secondary)] mb-1">Discord Username or Email <span className="text-red-400">*</span></label>

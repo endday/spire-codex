@@ -1,7 +1,8 @@
 """Relic API endpoints."""
-from fastapi import APIRouter, HTTPException, Query, Request
+from fastapi import APIRouter, Depends, HTTPException, Query, Request
 from ..models.schemas import Relic
-from ..services.data_service import load_relics
+from ..services.data_service import load_relics, load_translation_maps
+from ..dependencies import get_lang
 
 router = APIRouter(prefix="/api/relics", tags=["Relics"])
 
@@ -12,10 +13,13 @@ def get_relics(
     rarity: str | None = Query(None, description="Filter by rarity (Starter, Common, Uncommon, Rare, Shop, Event, Ancient)"),
     pool: str | None = Query(None, description="Filter by character pool (ironclad, silent, defect, necrobinder, regent, shared)"),
     search: str | None = Query(None, description="Search by name"),
+    lang: str = Depends(get_lang),
 ):
-    relics = [r for r in load_relics() if not r["id"].startswith("VAKUU_CARD")]
+    relics = [r for r in load_relics(lang) if not r["id"].startswith("VAKUU_CARD")]
     if rarity:
-        relics = [r for r in relics if r["rarity"].lower() == rarity.lower()]
+        maps = load_translation_maps(lang)
+        rarity_localized = maps["relic_rarities"].get(rarity, rarity)
+        relics = [r for r in relics if r["rarity"] == rarity_localized]
     if pool:
         relics = [r for r in relics if r["pool"].lower() == pool.lower()]
     if search:
@@ -24,8 +28,8 @@ def get_relics(
 
 
 @router.get("/{relic_id}", response_model=Relic)
-def get_relic(request: Request, relic_id: str):
-    relics = load_relics()
+def get_relic(request: Request, relic_id: str, lang: str = Depends(get_lang)):
+    relics = load_relics(lang)
     for relic in relics:
         if relic["id"] == relic_id.upper():
             return relic

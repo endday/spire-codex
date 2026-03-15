@@ -1,7 +1,8 @@
 """Character API endpoints."""
-from fastapi import APIRouter, HTTPException, Query, Request
+from fastapi import APIRouter, Depends, HTTPException, Query, Request
 from ..models.schemas import Character
 from ..services.data_service import load_characters
+from ..dependencies import get_lang
 
 router = APIRouter(prefix="/api/characters", tags=["Characters"])
 
@@ -10,16 +11,17 @@ router = APIRouter(prefix="/api/characters", tags=["Characters"])
 def get_characters(
     request: Request,
     search: str | None = Query(None, description="Search by name"),
+    lang: str = Depends(get_lang),
 ):
-    characters = load_characters()
+    characters = load_characters(lang)
     if search:
         characters = [c for c in characters if search.lower() in c["name"].lower()]
     return characters
 
 
 @router.get("/{character_id}", response_model=Character)
-def get_character(request: Request, character_id: str):
-    characters = load_characters()
+def get_character(request: Request, character_id: str, lang: str = Depends(get_lang)):
+    characters = load_characters(lang)
     for char in characters:
         if char["id"] == character_id.upper():
             return char

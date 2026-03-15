@@ -1,7 +1,8 @@
 """Potion API endpoints."""
-from fastapi import APIRouter, HTTPException, Query, Request
+from fastapi import APIRouter, Depends, HTTPException, Query, Request
 from ..models.schemas import Potion
-from ..services.data_service import load_potions
+from ..services.data_service import load_potions, load_translation_maps
+from ..dependencies import get_lang
 
 router = APIRouter(prefix="/api/potions", tags=["Potions"])
 
@@ -12,10 +13,13 @@ def get_potions(
     rarity: str | None = Query(None, description="Filter by rarity"),
     pool: str | None = Query(None, description="Filter by character pool"),
     search: str | None = Query(None, description="Search by name"),
+    lang: str = Depends(get_lang),
 ):
-    potions = load_potions()
+    potions = load_potions(lang)
     if rarity:
-        potions = [p for p in potions if p["rarity"].lower() == rarity.lower()]
+        maps = load_translation_maps(lang)
+        rarity_localized = maps["potion_rarities"].get(rarity, rarity)
+        potions = [p for p in potions if p["rarity"] == rarity_localized]
     if pool:
         potions = [p for p in potions if p.get("pool", "").lower() == pool.lower()]
     if search:
@@ -24,8 +28,8 @@ def get_potions(
 
 
 @router.get("/{potion_id}", response_model=Potion)
-def get_potion(request: Request, potion_id: str):
-    potions = load_potions()
+def get_potion(request: Request, potion_id: str, lang: str = Depends(get_lang)):
+    potions = load_potions(lang)
     for potion in potions:
         if potion["id"] == potion_id.upper():
             return potion

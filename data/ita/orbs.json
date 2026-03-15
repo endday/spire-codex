@@ -1,0 +1,32 @@
+[
+  {
+    "id": "DARK_ORB",
+    "name": "Tetroglobo",
+    "description": "[gold]Effetto passivo:[/gold] al termine del turno, aumenta il danno di questo Globo di [blue][Passive][/blue].\n[gold]Evocazione:[/gold] infligge [blue][Evoke][/blue] di danno al nemico con PV più bassi.",
+    "description_raw": "[gold]Effetto passivo:[/gold] al termine del turno, aumenta il danno di questo Globo di [blue]{Passive}[/blue].\n[gold]Evocazione:[/gold] infligge [blue]{Evoke}[/blue] di danno al nemico con PV più bassi."
+  },
+  {
+    "id": "FROST_ORB",
+    "name": "Crioglobo",
+    "description": "[gold]Effetto passivo:[/gold] al termine del turno, ottieni [blue][Passive][/blue] [gold]Blocco[/gold].\n[gold]Evocazione:[/gold] ottieni [blue][Evoke][/blue] di [gold]Blocco[/gold].",
+    "description_raw": "[gold]Effetto passivo:[/gold] al termine del turno, ottieni [blue]{Passive}[/blue] [gold]Blocco[/gold].\n[gold]Evocazione:[/gold] ottieni [blue]{Evoke}[/blue] di [gold]Blocco[/gold]."
+  },
+  {
+    "id": "GLASS_ORB",
+    "name": "Vitreoglobo",
+    "description": "[gold]Effetto passivo:[/gold] al termine del turno, infliggi [blue][Passive][/blue] di danno a TUTTI i nemici e riduce il valore di questo Globo di [blue]1[/blue].\n[gold]Evocazione:[/gold] infliggi [blue][Evoke][/blue] di danno a TUTTI i nemici.",
+    "description_raw": "[gold]Effetto passivo:[/gold] al termine del turno, infliggi [blue]{Passive}[/blue] di danno a TUTTI i nemici e riduce il valore di questo Globo di [blue]1[/blue].\n[gold]Evocazione:[/gold] infliggi [blue]{Evoke}[/blue] di danno a TUTTI i nemici."
+  },
+  {
+    "id": "LIGHTNING_ORB",
+    "name": "Elettroglobo",
+    "description": "[gold]Effetto passivo:[/gold] al termine del turno, infliggi [blue][Passive][/blue] di danno a un nemico casuale.\n[gold]Evocazione:[/gold] infliggi [blue][Evoke][/blue] di danno a un nemico casuale.",
+    "description_raw": "[gold]Effetto passivo:[/gold] al termine del turno, infliggi [blue]{Passive}[/blue] di danno a un nemico casuale.\n[gold]Evocazione:[/gold] infliggi [blue]{Evoke}[/blue] di danno a un nemico casuale."
+  },
+  {
+    "id": "PLASMA_ORB",
+    "name": "Plasmaglobo",
+    "description": "[gold]Effetto passivo:[/gold] all'inizio del turno\nottieni [energy:1].\n[gold]Evocazione:[/gold] ottieni [energy:2].\nIl Plasmaglobo non è influenzato da [gold]Focus[/gold].",
+    "description_raw": "[gold]Effetto passivo:[/gold] all'inizio del turno\nottieni {energyPrefix:energyIcons(1)}.\n[gold]Evocazione:[/gold] ottieni {energyPrefix:energyIcons(2)}.\nIl Plasmaglobo non è influenzato da [gold]Focus[/gold]."
+  }
+]

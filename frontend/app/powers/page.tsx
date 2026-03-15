@@ -3,8 +3,10 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import type { Power } from "@/lib/api";
+import { cachedFetch } from "@/lib/fetch-cache";
 import SearchFilter from "../components/SearchFilter";
 import RichDescription from "../components/RichDescription";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -25,6 +27,7 @@ const stackOptions = [
 ];
 
 export default function PowersPage() {
+  const { lang } = useLanguage();
   const [powers, setPowers] = useState<Power[]>([]);
   const [search, setSearch] = useState("");
   const [type, setType] = useState("");
@@ -37,11 +40,11 @@ export default function PowersPage() {
     if (type) params.set("type", type);
     if (stackType) params.set("stack_type", stackType);
     if (search) params.set("search", search);
-    fetch(`${API}/api/powers?${params}`)
-      .then((r) => r.json())
+    params.set("lang", lang);
+    cachedFetch<Power[]>(`${API}/api/powers?${params}`)
       .then(setPowers)
       .finally(() => setLoading(false));
-  }, [type, search, stackType]);
+  }, [type, search, stackType, lang]);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

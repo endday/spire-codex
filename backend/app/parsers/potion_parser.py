@@ -6,10 +6,8 @@ from description_resolver import resolve_description, extract_vars_from_source
 
 BASE = Path(__file__).resolve().parents[3]
 DECOMPILED = BASE / "extraction" / "decompiled"
-LOCALIZATION = BASE / "extraction" / "raw" / "localization" / "eng"
 POTIONS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.Potions"
 STATIC_IMAGES = BASE / "backend" / "static" / "images" / "potions"
-OUTPUT = BASE / "data"
 
 
 def class_name_to_id(name: str) -> str:
@@ -18,8 +16,8 @@ def class_name_to_id(name: str) -> str:
     return s.upper()
 
 
-def load_localization() -> dict:
-    loc_file = LOCALIZATION / "potions.json"
+def load_localization(loc_dir: Path) -> dict:
+    loc_file = loc_dir / "potions.json"
     if loc_file.exists():
         with open(loc_file, "r", encoding="utf-8") as f:
             return json.load(f)
@@ -64,22 +62,45 @@ def parse_single_potion(filepath: Path, localization: dict) -> dict | None:
     }
 
 
-def parse_all_potions() -> list[dict]:
-    localization = load_localization()
+def load_gameplay_ui(loc_dir: Path) -> dict:
+    loc_file = loc_dir / "gameplay_ui.json"
+    if loc_file.exists():
+        with open(loc_file, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+
+def build_potion_rarity_map(gameplay_ui: dict) -> dict[str, str]:
+    return {
+        "Common": gameplay_ui.get("POTION_RARITY.COMMON", "Common"),
+        "Uncommon": gameplay_ui.get("POTION_RARITY.UNCOMMON", "Uncommon"),
+        "Rare": gameplay_ui.get("POTION_RARITY.RARE", "Rare"),
+        "Event": gameplay_ui.get("POTION_RARITY.EVENT", "Event"),
+        "Token": gameplay_ui.get("POTION_RARITY.TOKEN", "Token"),
+    }
+
+
+def parse_all_potions(loc_dir: Path) -> list[dict]:
+    localization = load_localization(loc_dir)
+    gameplay_ui = load_gameplay_ui(loc_dir)
+    rarity_map = build_potion_rarity_map(gameplay_ui)
     potions = []
     for filepath in sorted(POTIONS_DIR.glob("*.cs")):
         potion = parse_single_potion(filepath, localization)
         if potion:
+            potion["rarity"] = rarity_map.get(potion["rarity"], potion["rarity"])
             potions.append(potion)
     return potions
 
 
-def main():
-    OUTPUT.mkdir(exist_ok=True)
-    potions = parse_all_potions()
-    with open(OUTPUT / "potions.json", "w", encoding="utf-8") as f:
+def main(lang: str = "eng"):
+    loc_dir = BASE / "extraction" / "raw" / "localization" / lang
+    output_dir = BASE / "data" / lang
+    output_dir.mkdir(parents=True, exist_ok=True)
+    potions = parse_all_potions(loc_dir)
+    with open(output_dir / "potions.json", "w", encoding="utf-8") as f:
         json.dump(potions, f, indent=2, ensure_ascii=False)
-    print(f"Parsed {len(potions)} potions -> data/potions.json")
+    print(f"Parsed {len(potions)} potions -> data/{lang}/potions.json")
 
 
 if __name__ == "__main__":

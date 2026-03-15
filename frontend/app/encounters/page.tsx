@@ -2,8 +2,10 @@
 
 import { useState, useEffect } from "react";
 import type { Encounter } from "@/lib/api";
+import { cachedFetch } from "@/lib/fetch-cache";
 import SearchFilter from "../components/SearchFilter";
 import RichDescription from "../components/RichDescription";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -33,6 +35,7 @@ const actOptions = [
 ];
 
 export default function EncountersPage() {
+  const { lang } = useLanguage();
   const [encounters, setEncounters] = useState<Encounter[]>([]);
   const [search, setSearch] = useState("");
   const [roomType, setRoomType] = useState("");
@@ -45,11 +48,11 @@ export default function EncountersPage() {
     if (roomType) params.set("room_type", roomType);
     if (act) params.set("act", act);
     if (search) params.set("search", search);
-    fetch(`${API}/api/encounters?${params}`)
-      .then((r) => r.json())
+    params.set("lang", lang);
+    cachedFetch<Encounter[]>(`${API}/api/encounters?${params}`)
       .then(setEncounters)
       .finally(() => setLoading(false));
-  }, [roomType, act, search]);
+  }, [roomType, act, search, lang]);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
