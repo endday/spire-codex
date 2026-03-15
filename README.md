@@ -1,6 +1,6 @@
 # Spire Codex
 
-A comprehensive database and API for **Slay the Spire 2** game data, built by reverse-engineering the game files.
+A comprehensive database and API for **Slay the Spire 2** game data, built by reverse-engineering the game files. Supports all **14 languages** shipped with the game.
 
 **Live site**: [spire-codex.com](https://spire-codex.com)
 
@@ -14,7 +14,7 @@ Slay the Spire 2 is built with Godot 4 but all game logic lives in a C#/.NET 8 D
 
 2. **DLL Decompilation** — [ILSpy](https://github.com/icsharpcode/ILSpy) decompiles `sts2.dll` into ~3,300 readable C# source files containing all game models.
 
-3. **Data Parsing** — 20 Python regex-based parsers extract structured data from the decompiled C# source:
+3. **Data Parsing** — 20 Python regex-based parsers extract structured data from the decompiled C# source, outputting per-language JSON to `data/{lang}/`:
    - **Cards**: `base(cost, CardType, CardRarity, TargetType)` constructors + `DamageVar`, `BlockVar`, `PowerVar<T>` for stats
    - **Characters**: `StartingHp`, `StartingGold`, `MaxEnergy`, `StartingDeck`, `StartingRelics`
    - **Relics/Potions**: Rarity, pool, descriptions resolved from SmartFormat templates
@@ -34,6 +34,7 @@ Slay the Spire 2 is built with Godot 4 but all game logic lives in a C#/.NET 8 D
    - **Acts**: Boss discovery order, encounters, events, ancients, room counts
    - **Ascension Levels**: 11 levels (0–10) with descriptions from localization
    - **Potion Pools**: Character-specific pools parsed from pool classes and epoch references
+   - **Translations**: Per-language filter maps (card types, rarities, keywords → localized names) and UI strings (section titles, descriptions, character names) for frontend consumption
 
 4. **Description Resolution** — A shared `description_resolver.py` module resolves SmartFormat localization templates (`{Damage:diff()}`, `{Energy:energyIcons()}`, `{Cards:plural:card|cards}`) into human-readable text with rich text markers for frontend rendering. Runtime-dynamic variables (e.g., `{Card}`, `{Relic}`) are preserved as readable placeholders. `StringVar` references in events (e.g., `{Enchantment1}` → `ModelDb.Enchantment<Sharp>().Title`) are resolved to display names via localization lookup.
 
@@ -49,10 +50,11 @@ Slay the Spire 2 is built with Godot 4 but all game logic lives in a C#/.NET 8 D
 spire-codex/
 ├── backend/                    # FastAPI backend
 │   ├── app/
-│   │   ├── main.py             # App entry, CORS, rate limiting, static files
+│   │   ├── main.py             # App entry, CORS, GZip, rate limiting, static files
+│   │   ├── dependencies.py     # Shared deps (lang validation, language names)
 │   │   ├── routers/            # API endpoints (22 routers)
 │   │   ├── models/schemas.py   # Pydantic models
-│   │   ├── services/           # JSON data loading
+│   │   ├── services/           # JSON data loading (LRU cached, 14-lang support)
 │   │   └── parsers/            # C# source → JSON parsers
 │   │       ├── card_parser.py
 │   │       ├── character_parser.py
@@ -68,21 +70,27 @@ spire-codex/
 │   │       ├── act_parser.py
 │   │       ├── ascension_parser.py
 │   │       ├── pool_parser.py            # Adds character pool to potions
+│   │       ├── translation_parser.py    # Generates translations.json per language
 │   │       ├── description_resolver.py   # Shared SmartFormat resolver
-│   │       └── parse_all.py
+│   │       └── parse_all.py              # Orchestrates all parsers (14 languages)
 │   ├── static/images/          # Game images (not committed)
 │   ├── scripts/copy_images.py  # Copies images from extraction → static
 │   ├── Dockerfile
 │   └── requirements.txt
 ├── frontend/                   # Next.js 16 + TypeScript + Tailwind CSS
-│   ├── app/                    # Pages: cards, characters, relics, monsters, potions,
-│   │   │                       #   enchantments, encounters, events, powers, timeline,
-│   │   │                       #   reference, images, changelog, about
-│   │   │                       #   Detail pages: cards/[id], characters/[id], relics/[id],
-│   │   │                       #   monsters/[id], potions/[id], enchantments/[id],
-│   │   │                       #   encounters/[id], events/[id]
-│   │   └── components/         # CardGrid, RichDescription, SearchFilter, GlobalSearch, Navbar, Footer
-│   ├── lib/api.ts              # API client + TypeScript interfaces
+│   ├── app/
+│   │   ├── contexts/           # LanguageContext (i18n state + localStorage)
+│   │   ├── components/         # CardGrid, RichDescription, SearchFilter,
+│   │   │                       #   GlobalSearch, Navbar, Footer, LanguageSelector
+│   │   └── ...                 # Pages: cards, characters, relics, monsters, potions,
+│   │                           #   enchantments, encounters, events, powers, timeline,
+│   │                           #   reference, images, changelog, about
+│   │                           #   Detail pages: cards/[id], characters/[id], relics/[id],
+│   │                           #   monsters/[id], potions/[id], enchantments/[id],
+│   │                           #   encounters/[id], events/[id]
+│   ├── lib/
+│   │   ├── api.ts              # API client + TypeScript interfaces
+│   │   └── fetch-cache.ts      # Client-side in-memory fetch cache (5min TTL)
 │   └── Dockerfile
 ├── tools/
 │   ├── spine-renderer/         # Headless Spine skeleton renderer
@@ -95,6 +103,7 @@ spire-codex/
 │   ├── update.py               # Cross-platform update pipeline
 │   └── deploy.py               # Local Docker build + push to Docker Hub
 ├── data/                       # Parsed JSON data files
+│   ├── {lang}/                 # Per-language directories (eng, kor, jpn, fra, etc.)
 │   └── changelogs/             # Changelog JSON files (keyed by game version)
 ├── extraction/                 # Raw game files (not committed)
 │   ├── raw/                    # GDRE extracted Godot project
@@ -135,53 +144,79 @@ spire-codex/
 
 ## API Endpoints
 
+All data endpoints accept an optional `?lang=` query parameter (default: `eng`). Responses are **GZip-compressed** and cached with `Cache-Control: public, max-age=300`.
+
 | Endpoint | Description | Filters |
 |---|---|---|
-| `GET /api/cards` | All cards | `color`, `type`, `rarity`, `keyword`, `search` |
-| `GET /api/cards/{id}` | Single card | — |
-| `GET /api/characters` | All characters | `search` |
-| `GET /api/characters/{id}` | Single character (with quotes, dialogues) | — |
-| `GET /api/relics` | All relics | `rarity`, `pool`, `search` |
-| `GET /api/relics/{id}` | Single relic | — |
-| `GET /api/monsters` | All monsters | `type`, `search` |
-| `GET /api/monsters/{id}` | Single monster | — |
-| `GET /api/potions` | All potions | `rarity`, `pool`, `search` |
-| `GET /api/potions/{id}` | Single potion | — |
-| `GET /api/enchantments` | All enchantments | `card_type`, `search` |
-| `GET /api/enchantments/{id}` | Single enchantment | — |
-| `GET /api/encounters` | All encounters | `room_type`, `act`, `search` |
-| `GET /api/encounters/{id}` | Single encounter | — |
-| `GET /api/events` | All events | `type`, `act`, `search` |
-| `GET /api/events/{id}` | Single event | — |
-| `GET /api/powers` | All powers | `type`, `stack_type`, `search` |
-| `GET /api/powers/{id}` | Single power | — |
-| `GET /api/keywords` | Card keyword definitions | — |
-| `GET /api/keywords/{id}` | Single keyword | — |
-| `GET /api/intents` | Monster intent types | — |
-| `GET /api/intents/{id}` | Single intent | — |
-| `GET /api/orbs` | All orbs | — |
-| `GET /api/orbs/{id}` | Single orb | — |
-| `GET /api/afflictions` | Card afflictions | — |
-| `GET /api/afflictions/{id}` | Single affliction | — |
-| `GET /api/modifiers` | Run modifiers | — |
-| `GET /api/modifiers/{id}` | Single modifier | — |
-| `GET /api/achievements` | All achievements | — |
-| `GET /api/achievements/{id}` | Single achievement | — |
-| `GET /api/epochs` | Timeline epochs | `era`, `search` |
-| `GET /api/epochs/{id}` | Single epoch | — |
-| `GET /api/stories` | Story entries | — |
-| `GET /api/stories/{id}` | Single story | — |
+| `GET /api/cards` | All cards | `color`, `type`, `rarity`, `keyword`, `search`, `lang` |
+| `GET /api/cards/{id}` | Single card | `lang` |
+| `GET /api/characters` | All characters | `search`, `lang` |
+| `GET /api/characters/{id}` | Single character (with quotes, dialogues) | `lang` |
+| `GET /api/relics` | All relics | `rarity`, `pool`, `search`, `lang` |
+| `GET /api/relics/{id}` | Single relic | `lang` |
+| `GET /api/monsters` | All monsters | `type`, `search`, `lang` |
+| `GET /api/monsters/{id}` | Single monster | `lang` |
+| `GET /api/potions` | All potions | `rarity`, `pool`, `search`, `lang` |
+| `GET /api/potions/{id}` | Single potion | `lang` |
+| `GET /api/enchantments` | All enchantments | `card_type`, `search`, `lang` |
+| `GET /api/enchantments/{id}` | Single enchantment | `lang` |
+| `GET /api/encounters` | All encounters | `room_type`, `act`, `search`, `lang` |
+| `GET /api/encounters/{id}` | Single encounter | `lang` |
+| `GET /api/events` | All events | `type`, `act`, `search`, `lang` |
+| `GET /api/events/{id}` | Single event | `lang` |
+| `GET /api/powers` | All powers | `type`, `stack_type`, `search`, `lang` |
+| `GET /api/powers/{id}` | Single power | `lang` |
+| `GET /api/keywords` | Card keyword definitions | `lang` |
+| `GET /api/keywords/{id}` | Single keyword | `lang` |
+| `GET /api/intents` | Monster intent types | `lang` |
+| `GET /api/intents/{id}` | Single intent | `lang` |
+| `GET /api/orbs` | All orbs | `lang` |
+| `GET /api/orbs/{id}` | Single orb | `lang` |
+| `GET /api/afflictions` | Card afflictions | `lang` |
+| `GET /api/afflictions/{id}` | Single affliction | `lang` |
+| `GET /api/modifiers` | Run modifiers | `lang` |
+| `GET /api/modifiers/{id}` | Single modifier | `lang` |
+| `GET /api/achievements` | All achievements | `lang` |
+| `GET /api/achievements/{id}` | Single achievement | `lang` |
+| `GET /api/epochs` | Timeline epochs | `era`, `search`, `lang` |
+| `GET /api/epochs/{id}` | Single epoch | `lang` |
+| `GET /api/stories` | Story entries | `lang` |
+| `GET /api/stories/{id}` | Single story | `lang` |
+| `GET /api/acts` | All acts | `lang` |
+| `GET /api/acts/{id}` | Single act | `lang` |
+| `GET /api/ascensions` | Ascension levels (0–10) | `lang` |
+| `GET /api/stats` | Entity counts across all categories | `lang` |
+| `GET /api/languages` | Available languages with display names | — |
+| `GET /api/translations` | Translation maps for filter values and UI strings | `lang` |
 | `GET /api/images` | Image categories with file lists | — |
 | `GET /api/images/{category}/download` | ZIP download of image category | — |
 | `GET /api/changelogs` | Changelog summaries (all versions) | — |
 | `GET /api/changelogs/{tag}` | Full changelog for a version tag | — |
-| `GET /api/acts` | All acts | — |
-| `GET /api/acts/{id}` | Single act | — |
-| `GET /api/ascensions` | Ascension levels (0–10) | — |
-| `GET /api/stats` | Entity counts across all categories | — |
 | `POST /api/feedback` | Submit feedback (proxied to Discord) | — |
 
 Rate limited to **60 requests per minute** per IP. Feedback endpoint limited to **5 per minute** per IP. Interactive docs at `/docs` (Swagger UI).
+
+### Localization
+
+All game data is served in 14 languages using Slay the Spire 2's own localization files. Pass `?lang=` to any data endpoint.
+
+| Code | Language | Code | Language |
+|------|----------|------|----------|
+| `eng` | English | `kor` | 한국어 |
+| `deu` | Deutsch | `pol` | Polski |
+| `esp` | Español (ES) | `ptb` | Português (BR) |
+| `fra` | Français | `rus` | Русский |
+| `ita` | Italiano | `spa` | Español (LA) |
+| `jpn` | 日本語 | `tha` | ไทย |
+| `tur` | Türkçe | `zhs` | 简体中文 |
+
+**What's localized**: All entity names, descriptions, card types, rarities, keywords, power names, monster names in encounters, character names, section titles — everything that comes from the game's localization data.
+
+**What stays English**: UI chrome (navigation, filter labels, search placeholders), structural fields used for filtering (`room_type`, power `type`/`stack_type`, `pool`), site branding.
+
+Filter parameters (`type=Attack`, `rarity=Rare`, `keyword=Exhaust`) always use English values regardless of language — the backend translates them to the localized equivalents before matching.
+
+Example: `GET /api/cards?lang=kor&type=Attack` returns Korean card data where type is "공격", filtered correctly even though the parameter is English.
 
 ### Rich Text Formatting
 
@@ -286,8 +321,11 @@ The script auto-detects your OS and finds the Steam install directory. Requireme
 If you prefer to run steps individually:
 
 ```bash
-# Parse all data
+# Parse all data (all 14 languages)
 cd backend/app/parsers && python3 parse_all.py
+
+# Parse a single language
+cd backend/app/parsers && python3 parse_all.py --lang eng
 
 # Copy images from extraction to static
 python3 backend/scripts/copy_images.py
@@ -457,6 +495,7 @@ Examples: `v1.0.0` = initial release, `v1.0.1` = our bug fixes, `v1.1.0` = first
 
 - ~~**Individual detail pages**~~ — ✅ Click-through pages for cards, characters, relics, monsters, potions, enchantments, encounters, events
 - ~~**Global search**~~ — ✅ Press `.` anywhere to search across all categories
+- ~~**Multi-language support**~~ — ✅ 14 languages using the game's own localization files
 - **Database backend** — Replace JSON loading with SQLite/PostgreSQL
 
 ## Acknowledgments
@@ -465,8 +504,8 @@ Thanks to **vesper-arch**, **terracubist**, and **U77654** for QA testing, bug r
 
 ## Tech Stack
 
-- **Backend**: Python, FastAPI, Pydantic, slowapi
-- **Frontend**: Next.js 16 (App Router), TypeScript, Tailwind CSS
+- **Backend**: Python, FastAPI, Pydantic, slowapi, GZip compression
+- **Frontend**: Next.js 16 (App Router), TypeScript, Tailwind CSS, 14-language support
 - **Spine Renderer**: Node.js, @esotericsoftware/spine-canvas, node-canvas
 - **Infrastructure**: Docker, Forgejo CI, buildah
 - **Tools**: Python (update pipeline, changelog diffing, image copying)
