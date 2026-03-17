@@ -16,7 +16,7 @@ export default async function MonstersPage() {
         <span className="text-[var(--accent-gold)]">Slay the Spire 2 Monsters</span>
       </h1>
       <p className="text-sm text-[var(--text-muted)] mb-6">
-        Browse all {monsters.length} monsters in Slay the Spire 2 — normals, elites, and bosses. View HP values, moves, damage stats, and ascension scaling.
+        Browse every monster in Slay the Spire 2 — normals, elites, and bosses. View HP values, moves, damage stats, and ascension scaling.
       </p>
 
       <MonstersClient initialMonsters={monsters} />

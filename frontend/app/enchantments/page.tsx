@@ -16,7 +16,7 @@ export default async function EnchantmentsPage() {
         <span className="text-[var(--accent-gold)]">Slay the Spire 2 Enchantments</span>
       </h1>
       <p className="text-sm text-[var(--text-muted)] mb-6">
-        Browse all {enchantments.length} enchantments in Slay the Spire 2. Filter by card type and view effects, stackability, and extra card text.
+        Browse every enchantment in Slay the Spire 2. Filter by card type and view effects, stackability, and extra card text.
       </p>
 
       <EnchantmentsClient initialEnchantments={enchantments} />

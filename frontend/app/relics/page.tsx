@@ -16,7 +16,7 @@ export default async function RelicsPage() {
         <span className="text-[var(--accent-gold)]">Slay the Spire 2 Relics</span>
       </h1>
       <p className="text-sm text-[var(--text-muted)] mb-6">
-        Browse all {relics.length} relics across Ironclad, Silent, Defect, Necrobinder, and Regent. Filter by rarity and character pool.
+        Browse every relic across Ironclad, Silent, Defect, Necrobinder, and Regent. Filter by rarity and character pool.
       </p>
 
       <RelicsClient initialRelics={relics} />

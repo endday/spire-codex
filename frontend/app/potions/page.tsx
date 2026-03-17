@@ -16,7 +16,7 @@ export default async function PotionsPage() {
         <span className="text-[var(--accent-gold)]">Slay the Spire 2 Potions</span>
       </h1>
       <p className="text-sm text-[var(--text-muted)] mb-6">
-        Browse all {potions.length} potions across Ironclad, Silent, Defect, Necrobinder, and Regent. Filter by rarity and character pool.
+        Browse every potion across Ironclad, Silent, Defect, Necrobinder, and Regent. Filter by rarity and character pool.
       </p>
 
       <PotionsClient initialPotions={potions} />

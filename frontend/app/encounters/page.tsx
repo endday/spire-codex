@@ -16,7 +16,7 @@ export default async function EncountersPage() {
         <span className="text-[var(--accent-gold)]">Slay the Spire 2 Encounters</span>
       </h1>
       <p className="text-sm text-[var(--text-muted)] mb-6">
-        Browse all {encounters.length} combat encounters in Slay the Spire 2. Filter by room type (Monster, Elite, Boss) and act to find specific fights and monster compositions.
+        Browse every combat encounter in Slay the Spire 2. Filter by room type (Monster, Elite, Boss) and act to find specific fights and monster compositions.
       </p>
 
       <EncountersClient initialEncounters={encounters} />

@@ -16,7 +16,7 @@ export default async function EventsPage() {
         <span className="text-[var(--accent-gold)]">Slay the Spire 2 Events</span>
       </h1>
       <p className="text-sm text-[var(--text-muted)] mb-6">
-        Browse all {events.length} Slay the Spire 2 events including shrine events, Ancient encounters, and story events. View choices, dialogue, and outcomes.
+        Browse every Slay the Spire 2 event including shrine events, Ancient encounters, and story events. View choices, dialogue, and outcomes.
       </p>
 
       <EventsClient initialEvents={events} />

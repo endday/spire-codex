@@ -16,7 +16,7 @@ export default async function CardsPage() {
         <span className="text-[var(--accent-gold)]">Slay the Spire 2 Cards</span>
       </h1>
       <p className="text-sm text-[var(--text-muted)] mb-6">
-        Browse all {cards.length} cards across Ironclad, Silent, Defect, Necrobinder, and Regent. Filter by character, type, rarity, and keywords.
+        Browse every card across Ironclad, Silent, Defect, Necrobinder, and Regent. Filter by character, type, rarity, and keywords.
       </p>
 
       <CardsClient initialCards={cards} />

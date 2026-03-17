@@ -16,7 +16,7 @@ export default async function CharactersPage() {
         <span className="text-[var(--accent-gold)]">Slay the Spire 2 Characters</span>
       </h1>
       <p className="text-sm text-[var(--text-muted)] mb-6">
-        All {characters.length} playable characters in Slay the Spire 2 — view starting decks, relics, HP, gold, energy, and more.
+        All playable characters in Slay the Spire 2 — view starting decks, relics, HP, gold, energy, and more.
       </p>
 
       <CharactersClient initialCharacters={characters} />

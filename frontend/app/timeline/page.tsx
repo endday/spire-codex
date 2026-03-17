@@ -34,7 +34,7 @@ export default async function TimelinePage() {
         <span className="text-[var(--accent-gold)]">Slay the Spire 2 Timeline</span>
       </h1>
       <p className="text-sm text-[var(--text-muted)] mb-6">
-        Explore the full Slay the Spire 2 timeline across {epochs.length} epochs, {stories.length} story arcs, and multiple eras. Track story progression, unlockable cards, relics, and potions.
+        Explore the full Slay the Spire 2 timeline across every epoch, story arc, and era. Track story progression, unlockable cards, relics, and potions.
       </p>
 
       <TimelineClient
