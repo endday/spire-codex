@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-export const revalidate = 3600;
+export const dynamic = "force-dynamic";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://spire-codex.com";
 const API = process.env.API_INTERNAL_URL || process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
@@ -42,7 +42,7 @@ const DYNAMIC_ROUTES = [
 
 async function fetchEntities(endpoint: string): Promise<EntityWithImage[]> {
   try {
-    const res = await fetch(`${API}${endpoint}`, { next: { revalidate: 3600 } });
+    const res = await fetch(`${API}${endpoint}`);
     if (!res.ok) return [];
     return res.json();
   } catch {
