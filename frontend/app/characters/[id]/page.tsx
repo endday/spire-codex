@@ -1,16 +1,11 @@
 import type { Metadata } from "next";
 import CharacterDetail from "./CharacterDetail";
+import { stripTags } from "@/lib/seo";
+import JsonLd from "@/app/components/JsonLd";
+import { buildDetailPageJsonLd } from "@/lib/jsonld";
 
 const API_INTERNAL = process.env.API_INTERNAL_URL || process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 const API_PUBLIC = process.env.NEXT_PUBLIC_SITE_URL || process.env.NEXT_PUBLIC_API_URL || "";
-
-function stripTags(text: string): string {
-  return text
-    .replace(/\[\/?\w+(?:[=:][^\]]+)?\]/g, "")
-    .replace(/\{[^}]+\}/g, "")
-    .replace(/\s{2,}/g, " ")
-    .trim();
-}
 
 type Props = { params: Promise<{ id: string }> };
 
@@ -30,12 +25,40 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         description: desc || `${char.name} from Slay the Spire 2`,
         images: [{ url: `${API_PUBLIC}/static/images/characters/combat_${char.id.toLowerCase()}.png` }],
       },
+      twitter: { card: "summary_large_image" },
+      alternates: { canonical: `/characters/${id}` },
     };
   } catch {
     return { title: "Spire Codex - Slay the Spire 2 Database" };
   }
 }
 
-export default function Page() {
-  return <CharacterDetail />;
+export default async function Page({ params }: Props) {
+  const { id } = await params;
+  let jsonLd = null;
+  try {
+    const res = await fetch(`${API_INTERNAL}/api/characters/${id}`);
+    if (res.ok) {
+      const char = await res.json();
+      const desc = stripTags(char.description || "");
+      jsonLd = buildDetailPageJsonLd({
+        name: char.name,
+        description: desc || `${char.name} from Slay the Spire 2`,
+        path: `/characters/${id}`,
+        imageUrl: `${API_PUBLIC}/static/images/characters/combat_${char.id.toLowerCase()}.png`,
+        category: "Character",
+        breadcrumbs: [
+          { name: "Home", href: "/" },
+          { name: "Characters", href: "/characters" },
+          { name: char.name, href: `/characters/${id}` },
+        ],
+      });
+    }
+  } catch {}
+  return (
+    <>
+      {jsonLd && <JsonLd data={jsonLd} />}
+      <CharacterDetail />
+    </>
+  );
 }

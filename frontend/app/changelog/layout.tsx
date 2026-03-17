@@ -9,6 +9,9 @@ export const metadata: Metadata = {
     description:
       "Slay the Spire 2 update history and Spire Codex changelog. Track patches, balance changes, and new content.",
   },
+  alternates: {
+    canonical: "/changelog",
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

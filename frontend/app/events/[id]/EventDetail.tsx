@@ -130,7 +130,7 @@ export default function EventDetail() {
           <div className="flex justify-center mb-4">
             <img
               src={`${API}${event.image_url}`}
-              alt={event.name}
+              alt={`${event.name} - Slay the Spire 2 Event`}
               className="w-20 h-20 object-contain"
               crossOrigin="anonymous"
             />
@@ -228,7 +228,7 @@ export default function EventDetail() {
                     {relic?.image_url && (
                       <img
                         src={`${API}${relic.image_url}`}
-                        alt={relic.name}
+                        alt={`${relic.name} - Slay the Spire 2 Relic`}
                         className="w-8 h-8 object-contain flex-shrink-0"
                         crossOrigin="anonymous"
                       />

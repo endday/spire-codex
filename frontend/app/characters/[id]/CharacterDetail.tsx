@@ -107,7 +107,7 @@ export default function CharacterDetail() {
         <div className="flex flex-col sm:flex-row items-center gap-6">
           <img
             src={`${API}/static/images/characters/combat_${char.id.toLowerCase()}.png`}
-            alt={char.name}
+            alt={`${char.name} - Slay the Spire 2 Character`}
             className="w-48 h-48 object-contain"
             crossOrigin="anonymous"
           />
@@ -174,7 +174,7 @@ export default function CharacterDetail() {
                 {cardData?.image_url && (
                   <img
                     src={`${API}${cardData.image_url}`}
-                    alt={cardData.name}
+                    alt={`${cardData.name} - Slay the Spire 2 Card`}
                     className="w-10 h-10 object-contain"
                     crossOrigin="anonymous"
                   />
@@ -210,7 +210,7 @@ export default function CharacterDetail() {
                 {relicData?.image_url && (
                   <img
                     src={`${API}${relicData.image_url}`}
-                    alt={relicData.name}
+                    alt={`${relicData.name} - Slay the Spire 2 Relic`}
                     className="w-10 h-10 object-contain"
                     crossOrigin="anonymous"
                   />

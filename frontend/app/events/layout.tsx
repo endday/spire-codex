@@ -9,6 +9,9 @@ export const metadata: Metadata = {
     description:
       "Slay the Spire 2 events — browse all 66 shrine events, Ancient encounters, and story events with choices, dialogue, and outcomes.",
   },
+  alternates: {
+    canonical: "/events",
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

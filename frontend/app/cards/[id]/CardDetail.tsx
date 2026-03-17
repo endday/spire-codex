@@ -206,7 +206,7 @@ export default function CardDetail() {
           <div className="bg-black/40">
             <img
               src={`${API}${imgUrl}`}
-              alt={card.name}
+              alt={`${card.name} - Slay the Spire 2 Card`}
               className="w-full object-contain max-h-80"
               crossOrigin="anonymous"
             />

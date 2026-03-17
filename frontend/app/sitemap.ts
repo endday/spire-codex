@@ -45,6 +45,7 @@ async function fetchIds(endpoint: string): Promise<string[]> {
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticEntries: MetadataRoute.Sitemap = STATIC_PAGES.map((p) => ({
     url: `${SITE_URL}${p.path}`,
+    lastModified: new Date(),
     changeFrequency: "weekly",
     priority: p.priority,
   }));
@@ -54,6 +55,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       const ids = await fetchIds(route.endpoint);
       return ids.map((id) => ({
         url: `${SITE_URL}${route.prefix}/${id}`,
+        lastModified: new Date(),
         changeFrequency: "weekly" as const,
         priority: route.priority,
       }));

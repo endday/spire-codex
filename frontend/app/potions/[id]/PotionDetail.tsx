@@ -67,7 +67,7 @@ export default function PotionDetail() {
           <div className="flex justify-center mb-6">
             <img
               src={`${API}${potion.image_url}`}
-              alt={potion.name}
+              alt={`${potion.name} - Slay the Spire 2 Potion`}
               className="w-24 h-24 object-contain"
               crossOrigin="anonymous"
             />

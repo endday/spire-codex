@@ -67,7 +67,7 @@ export default function PowerDetail() {
           <div className="flex justify-center mb-6">
             <img
               src={`${API}${power.image_url}`}
-              alt={power.name}
+              alt={`${power.name} - Slay the Spire 2 Power`}
               className="w-24 h-24 object-contain"
               crossOrigin="anonymous"
             />

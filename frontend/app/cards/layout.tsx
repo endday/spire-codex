@@ -9,6 +9,9 @@ export const metadata: Metadata = {
     description:
       "Browse all 576+ Slay the Spire 2 cards. Filter by character, type, rarity, and keywords.",
   },
+  alternates: {
+    canonical: "/cards",
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

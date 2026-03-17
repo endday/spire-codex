@@ -9,6 +9,9 @@ export const metadata: Metadata = {
     description:
       "Browse all Slay the Spire 2 enchantments. View effects, card type restrictions, and stackability.",
   },
+  alternates: {
+    canonical: "/enchantments",
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

@@ -304,7 +304,7 @@ function CardHoverTip({ card, children }: { card: RelatedCard; children: React.R
               <span className="block bg-black/40">
                 <img
                   src={`${API_BASE}${card.image_url}`}
-                  alt={card.name}
+                  alt={`${card.name} - Slay the Spire 2 Card`}
                   className="w-full h-24 object-contain"
                   crossOrigin="anonymous"
                 />

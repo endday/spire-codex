@@ -80,7 +80,7 @@ export default function MonstersClient({ initialMonsters }: { initialMonsters: M
               <div className="mb-3 -mx-4 -mt-4">
                 <img
                   src={`${API}${monster.image_url}`}
-                  alt={monster.name}
+                  alt={`${monster.name} - Slay the Spire 2 Monster`}
                   className="w-full h-40 object-contain rounded-t-lg"
                   loading="lazy"
                   crossOrigin="anonymous"

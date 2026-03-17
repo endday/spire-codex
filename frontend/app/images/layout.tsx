@@ -9,6 +9,9 @@ export const metadata: Metadata = {
     description:
       "Browse and download Slay the Spire 2 game assets — card portraits, relic icons, monster sprites, and more.",
   },
+  alternates: {
+    canonical: "/images",
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

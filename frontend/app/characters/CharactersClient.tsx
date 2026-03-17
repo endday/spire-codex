@@ -94,7 +94,7 @@ export default function CharactersClient({ initialCharacters }: { initialCharact
               </h2>
               <img
                 src={`${API}/static/images/characters/character_icon_${char.id.toLowerCase()}.png`}
-                alt={char.name}
+                alt={`${char.name} - Slay the Spire 2 Character`}
                 className="w-10 h-10 rounded-full object-cover border-2 border-[var(--border-subtle)] ml-auto flex-shrink-0"
                 loading="lazy"
                 crossOrigin="anonymous"

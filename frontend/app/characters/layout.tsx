@@ -9,6 +9,9 @@ export const metadata: Metadata = {
     description:
       "Slay the Spire 2 characters — Ironclad, Silent, Defect, Necrobinder, and Regent. Starting decks, relics, stats, and more.",
   },
+  alternates: {
+    canonical: "/characters",
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

@@ -9,6 +9,9 @@ export const metadata: Metadata = {
     description:
       "Slay the Spire 2 encounters — browse all 87 combat encounters including normal fights, elites, and bosses.",
   },
+  alternates: {
+    canonical: "/encounters",
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

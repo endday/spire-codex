@@ -198,7 +198,7 @@ export default function EventsClient({ initialEvents }: { initialEvents: GameEve
                   {event.image_url && (
                     <img
                       src={`${API}${event.image_url}`}
-                      alt={event.name}
+                      alt={`${event.name} - Slay the Spire 2 Event`}
                       className="w-10 h-10 object-contain flex-shrink-0"
                       crossOrigin="anonymous"
                     />
@@ -328,7 +328,7 @@ export default function EventsClient({ initialEvents }: { initialEvents: GameEve
                           {relic?.image_url && (
                             <img
                               src={`${API}${relic.image_url}`}
-                              alt={relic.name}
+                              alt={`${relic.name} - Slay the Spire 2 Relic`}
                               className="w-8 h-8 object-contain flex-shrink-0"
                               crossOrigin="anonymous"
                             />

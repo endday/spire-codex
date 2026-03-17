@@ -103,7 +103,7 @@ export default function PotionsClient({ initialPotions }: { initialPotions: Poti
                   {potion.image_url && (
                     <img
                       src={`${API}${potion.image_url}`}
-                      alt={potion.name}
+                      alt={`${potion.name} - Slay the Spire 2 Potion`}
                       className="w-12 h-12 object-contain flex-shrink-0"
                       loading="lazy"
                       crossOrigin="anonymous"

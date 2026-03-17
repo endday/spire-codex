@@ -76,7 +76,7 @@ export default function MonsterDetail() {
         <div className="mb-6">
           <img
             src={`${API}${monster.image_url}`}
-            alt={monster.name}
+            alt={`${monster.name} - Slay the Spire 2 Monster`}
             className="mx-auto max-h-80 object-contain"
             crossOrigin="anonymous"
           />

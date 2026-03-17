@@ -11,6 +11,9 @@ export const metadata: Metadata = {
     description:
       "Slay the Spire 2 reference guide covering keywords, orbs, afflictions, intents, modifiers, achievements, and more.",
   },
+  alternates: {
+    canonical: "/reference",
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

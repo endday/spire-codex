@@ -9,6 +9,9 @@ export const metadata: Metadata = {
     description:
       "Browse all 63+ Slay the Spire 2 potions. Filter by rarity and character pool.",
   },
+  alternates: {
+    canonical: "/potions",
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

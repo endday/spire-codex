@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import MonsterDetail from "./MonsterDetail";
+import JsonLd from "@/app/components/JsonLd";
+import { buildDetailPageJsonLd } from "@/lib/jsonld";
 
 const API_INTERNAL = process.env.API_INTERNAL_URL || process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 const API_PUBLIC = process.env.NEXT_PUBLIC_SITE_URL || process.env.NEXT_PUBLIC_API_URL || "";
@@ -23,12 +25,41 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         description: desc,
         images: monster.image_url ? [{ url: `${API_PUBLIC}${monster.image_url}` }] : [],
       },
+      twitter: { card: "summary_large_image" },
+      alternates: { canonical: `/monsters/${id}` },
     };
   } catch {
     return { title: "Spire Codex - Slay the Spire 2 Database" };
   }
 }
 
-export default function Page() {
-  return <MonsterDetail />;
+export default async function Page({ params }: Props) {
+  const { id } = await params;
+  let jsonLd = null;
+  try {
+    const res = await fetch(`${API_INTERNAL}/api/monsters/${id}`);
+    if (res.ok) {
+      const monster = await res.json();
+      const hpText = monster.min_hp ? `${monster.min_hp}${monster.max_hp && monster.max_hp !== monster.min_hp ? `\u2013${monster.max_hp}` : ""} HP` : "";
+      const desc = `${monster.type} monster${hpText ? ` \u00b7 ${hpText}` : ""}`;
+      jsonLd = buildDetailPageJsonLd({
+        name: monster.name,
+        description: desc,
+        path: `/monsters/${id}`,
+        imageUrl: monster.image_url ? `${API_PUBLIC}${monster.image_url}` : undefined,
+        category: "Monster",
+        breadcrumbs: [
+          { name: "Home", href: "/" },
+          { name: "Monsters", href: "/monsters" },
+          { name: monster.name, href: `/monsters/${id}` },
+        ],
+      });
+    }
+  } catch {}
+  return (
+    <>
+      {jsonLd && <JsonLd data={jsonLd} />}
+      <MonsterDetail />
+    </>
+  );
 }

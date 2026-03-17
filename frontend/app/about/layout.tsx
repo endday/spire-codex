@@ -9,6 +9,9 @@ export const metadata: Metadata = {
     description:
       "About Spire Codex — a community-built database for Slay the Spire 2.",
   },
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

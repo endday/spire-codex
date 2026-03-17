@@ -1,4 +1,6 @@
 import type { Epoch, Story, Card, Relic, Potion } from "@/lib/api";
+import JsonLd from "@/app/components/JsonLd";
+import { buildCollectionPageJsonLd, buildBreadcrumbJsonLd } from "@/lib/jsonld";
 import TimelineClient from "./TimelineClient";
 
 const API = process.env.API_INTERNAL_URL || process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
@@ -28,8 +30,21 @@ export default async function TimelinePage() {
   // Sort epochs by sort_order for initial render
   epochs.sort((a, b) => a.sort_order - b.sort_order);
 
+  const jsonLd = [
+    buildBreadcrumbJsonLd([
+      { name: "Home", href: "/" },
+      { name: "Timeline", href: "/timeline" },
+    ]),
+    buildCollectionPageJsonLd({
+      name: "Slay the Spire 2 Timeline",
+      description: "Explore the full Slay the Spire 2 timeline across every epoch and story arc.",
+      path: "/timeline",
+    }),
+  ];
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <JsonLd data={jsonLd} />
       <h1 className="text-3xl font-bold mb-2">
         <span className="text-[var(--accent-gold)]">Slay the Spire 2 Timeline</span>
       </h1>

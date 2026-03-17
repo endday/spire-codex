@@ -9,6 +9,9 @@ export const metadata: Metadata = {
     description:
       "Slay the Spire 2 timeline covering all epochs, eras, and story arcs. Track unlockable cards, relics, and potions across every story progression path.",
   },
+  alternates: {
+    canonical: "/timeline",
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

@@ -1,7 +1,30 @@
+import type { Metadata } from "next";
 import type { Stats } from "@/lib/api";
 import HomeClient from "./HomeClient";
+import JsonLd from "./components/JsonLd";
+import { buildWebSiteJsonLd } from "@/lib/jsonld";
 
 const API = process.env.API_INTERNAL_URL || process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+
+export const metadata: Metadata = {
+  title: "Spire Codex - Slay the Spire 2 Database, Wiki & Guide",
+  description:
+    "The complete Slay the Spire 2 database. Browse all cards, relics, characters, monsters, potions, events, powers, and more. Filter by character, rarity, and type.",
+  openGraph: {
+    title: "Spire Codex - Slay the Spire 2 Database, Wiki & Guide",
+    description:
+      "The complete Slay the Spire 2 database. Browse all cards, relics, characters, monsters, potions, events, powers, and more.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Spire Codex - Slay the Spire 2 Database, Wiki & Guide",
+    description:
+      "The complete Slay the Spire 2 database. Browse all cards, relics, characters, monsters, potions, events, powers, and more.",
+  },
+  alternates: {
+    canonical: "/",
+  },
+};
 
 interface Translations {
   sections?: Record<string, string>;
@@ -33,6 +56,7 @@ export default async function Home() {
 
   return (
     <div className="min-h-screen">
+      <JsonLd data={buildWebSiteJsonLd()} />
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-[var(--accent-red)]/8 via-transparent to-transparent" />

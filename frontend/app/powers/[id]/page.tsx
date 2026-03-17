@@ -1,16 +1,11 @@
 import type { Metadata } from "next";
 import PowerDetail from "./PowerDetail";
+import { stripTags } from "@/lib/seo";
+import JsonLd from "@/app/components/JsonLd";
+import { buildDetailPageJsonLd } from "@/lib/jsonld";
 
 const API_INTERNAL = process.env.API_INTERNAL_URL || process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 const API_PUBLIC = process.env.NEXT_PUBLIC_SITE_URL || process.env.NEXT_PUBLIC_API_URL || "";
-
-function stripTags(text: string): string {
-  return text
-    .replace(/\[\/?\w+(?:[=:][^\]]+)?\]/g, "")
-    .replace(/\{[^}]+\}/g, "")
-    .replace(/\s{2,}/g, " ")
-    .trim();
-}
 
 type Props = { params: Promise<{ id: string }> };
 
@@ -30,12 +25,40 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         description: desc || `${power.name} power from Slay the Spire 2`,
         images: power.image_url ? [{ url: `${API_PUBLIC}${power.image_url}` }] : [],
       },
+      twitter: { card: "summary_large_image" },
+      alternates: { canonical: `/powers/${id}` },
     };
   } catch {
     return { title: "Spire Codex - Slay the Spire 2 Database" };
   }
 }
 
-export default function Page() {
-  return <PowerDetail />;
+export default async function Page({ params }: Props) {
+  const { id } = await params;
+  let jsonLd = null;
+  try {
+    const res = await fetch(`${API_INTERNAL}/api/powers/${id}`);
+    if (res.ok) {
+      const power = await res.json();
+      const desc = stripTags(power.description || "");
+      jsonLd = buildDetailPageJsonLd({
+        name: power.name,
+        description: desc || `${power.name} power from Slay the Spire 2`,
+        path: `/powers/${id}`,
+        imageUrl: power.image_url ? `${API_PUBLIC}${power.image_url}` : undefined,
+        category: "Power",
+        breadcrumbs: [
+          { name: "Home", href: "/" },
+          { name: "Powers", href: "/powers" },
+          { name: power.name, href: `/powers/${id}` },
+        ],
+      });
+    }
+  } catch {}
+  return (
+    <>
+      {jsonLd && <JsonLd data={jsonLd} />}
+      <PowerDetail />
+    </>
+  );
 }

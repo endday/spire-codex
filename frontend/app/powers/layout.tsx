@@ -9,6 +9,9 @@ export const metadata: Metadata = {
     description:
       "Browse all 260 Slay the Spire 2 powers — buffs, debuffs, and neutral effects. Filter by type and stack behavior.",
   },
+  alternates: {
+    canonical: "/powers",
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

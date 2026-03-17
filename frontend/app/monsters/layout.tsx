@@ -9,6 +9,9 @@ export const metadata: Metadata = {
     description:
       "Slay the Spire 2 monsters — browse all 111 normals, elites, and bosses. View HP, moves, and ascension scaling.",
   },
+  alternates: {
+    canonical: "/monsters",
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

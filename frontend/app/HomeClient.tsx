@@ -23,18 +23,18 @@ const CHARACTERS = [
 ];
 
 const FALLBACK_DESCS: Record<string, string> = {
-  cards: "Browse all cards across every character",
-  characters: "View character stats, starting decks, and relics",
-  relics: "Explore relics from starter to ancient tier",
-  monsters: "Study monster HP, moves, and ascension scaling",
-  potions: "Discover all available potions and their effects",
-  enchantments: "View card enchantments and their effects",
-  encounters: "Browse combat encounters across all acts",
-  events: "Explore non-combat events and their choices",
-  powers: "Browse all buffs, debuffs, and status effects",
-  timeline: "Explore the lore epochs and story arcs of the Spire",
-  images: "Browse and download all game art assets",
-  reference: "Acts, ascension, keywords, orbs, afflictions, and more",
+  cards: "Browse all Slay the Spire 2 cards. Filter by character, type, rarity, and keywords.",
+  characters: "View all Slay the Spire 2 characters — stats, starting decks, relics, and NPC dialogues.",
+  relics: "Explore all Slay the Spire 2 relics from starter to ancient tier. Filter by rarity and pool.",
+  monsters: "Study all Slay the Spire 2 monsters — HP, moves, damage stats, and ascension scaling.",
+  potions: "Discover all Slay the Spire 2 potions and their effects. Filter by rarity and character pool.",
+  enchantments: "View all Slay the Spire 2 enchantments — effects, card type restrictions, and stackability.",
+  encounters: "Browse all Slay the Spire 2 combat encounters across every act — normals, elites, and bosses.",
+  events: "Explore all Slay the Spire 2 events — shrine events, Ancient encounters, choices, and outcomes.",
+  powers: "Browse all Slay the Spire 2 powers — buffs, debuffs, and neutral status effects.",
+  timeline: "Explore the Slay the Spire 2 timeline — epochs, story arcs, and unlockable content.",
+  images: "Browse and download Slay the Spire 2 game art — card portraits, relic icons, monster sprites.",
+  reference: "Slay the Spire 2 reference — keywords, orbs, afflictions, intents, acts, ascension, and more.",
 };
 
 interface HomeClientProps {
@@ -177,7 +177,7 @@ export default function HomeClient({ initialStats, initialTranslations }: HomeCl
                 <div className="relative aspect-square flex items-end justify-center">
                   <img
                     src={`${API}/static/images/characters/combat_${char.id}.png`}
-                    alt={charName}
+                    alt={`${charName} - Slay the Spire 2 Character`}
                     className="w-full h-full object-contain p-1 sm:p-2 group-hover:scale-105 transition-transform duration-300"
                     crossOrigin="anonymous"
                   />

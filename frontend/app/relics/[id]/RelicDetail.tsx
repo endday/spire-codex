@@ -71,7 +71,7 @@ export default function RelicDetail() {
           <div className="flex justify-center mb-6">
             <img
               src={`${API}${relic.image_url}`}
-              alt={relic.name}
+              alt={`${relic.name} - Slay the Spire 2 Relic`}
               className="w-24 h-24 object-contain"
               crossOrigin="anonymous"
             />

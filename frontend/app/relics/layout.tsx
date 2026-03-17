@@ -9,6 +9,9 @@ export const metadata: Metadata = {
     description:
       "Browse all 289+ Slay the Spire 2 relics. Filter by rarity and character pool. View relic effects and images.",
   },
+  alternates: {
+    canonical: "/relics",
+  },
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
