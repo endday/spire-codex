@@ -1,122 +1,25 @@
-"use client";
-
-import { useState, useEffect } from "react";
 import type { Card } from "@/lib/api";
-import { cachedFetch } from "@/lib/fetch-cache";
-import CardGrid from "../components/CardGrid";
-import SearchFilter from "../components/SearchFilter";
-import { useLanguage } from "../contexts/LanguageContext";
+import CardsClient from "./CardsClient";
 
-const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+const API = process.env.API_INTERNAL_URL || process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
-const colorOptions = [
-  { label: "Ironclad", value: "ironclad" },
-  { label: "Silent", value: "silent" },
-  { label: "Defect", value: "defect" },
-  { label: "Necrobinder", value: "necrobinder" },
-  { label: "Regent", value: "regent" },
-  { label: "Colorless", value: "colorless" },
-  { label: "Token", value: "token" },
-  { label: "Curse", value: "curse" },
-];
-
-const typeOptions = [
-  { label: "Attack", value: "Attack" },
-  { label: "Skill", value: "Skill" },
-  { label: "Power", value: "Power" },
-  { label: "Status", value: "Status" },
-  { label: "Curse", value: "Curse" },
-];
-
-const rarityOptions = [
-  { label: "Basic", value: "Basic" },
-  { label: "Common", value: "Common" },
-  { label: "Uncommon", value: "Uncommon" },
-  { label: "Rare", value: "Rare" },
-  { label: "Ancient", value: "Ancient" },
-  { label: "Token", value: "Token" },
-];
-
-const keywordOptions = [
-  { label: "Exhaust", value: "Exhaust" },
-  { label: "Innate", value: "Innate" },
-  { label: "Ethereal", value: "Ethereal" },
-  { label: "Retain", value: "Retain" },
-  { label: "Unplayable", value: "Unplayable" },
-  { label: "Sly", value: "Sly" },
-  { label: "Eternal", value: "Eternal" },
-];
-
-export default function CardsPage() {
-  const [cards, setCards] = useState<Card[]>([]);
-  const [search, setSearch] = useState("");
-  const [color, setColor] = useState("");
-  const [type, setType] = useState("");
-  const [rarity, setRarity] = useState("");
-  const [keyword, setKeyword] = useState("");
-  const [loading, setLoading] = useState(true);
-  const { lang } = useLanguage();
-
-  useEffect(() => {
-    setLoading(true);
-    const params = new URLSearchParams();
-    if (color) params.set("color", color);
-    if (type) params.set("type", type);
-    if (rarity) params.set("rarity", rarity);
-    if (keyword) params.set("keyword", keyword);
-    if (search) params.set("search", search);
-    params.set("lang", lang);
-    cachedFetch<Card[]>(`${API}/api/cards?${params}`)
-      .then(setCards)
-      .finally(() => setLoading(false));
-  }, [color, type, rarity, keyword, search, lang]);
+export default async function CardsPage() {
+  let cards: Card[] = [];
+  try {
+    const res = await fetch(`${API}/api/cards?lang=eng`, { next: { revalidate: 300 } });
+    if (res.ok) cards = await res.json();
+  } catch {}
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <h1 className="text-3xl font-bold mb-6">
-        <span className="text-[var(--accent-gold)]">Cards</span>
+      <h1 className="text-3xl font-bold mb-2">
+        <span className="text-[var(--accent-gold)]">Slay the Spire 2 Cards</span>
       </h1>
+      <p className="text-sm text-[var(--text-muted)] mb-6">
+        Browse all {cards.length} cards across Ironclad, Silent, Defect, Necrobinder, and Regent. Filter by character, type, rarity, and keywords.
+      </p>
 
-      <SearchFilter
-        search={search}
-        onSearchChange={setSearch}
-        placeholder="Search cards..."
-        resultCount={cards.length}
-        filters={[
-          {
-            label: "All Colors",
-            value: color,
-            options: colorOptions,
-            onChange: setColor,
-          },
-          {
-            label: "All Types",
-            value: type,
-            options: typeOptions,
-            onChange: setType,
-          },
-          {
-            label: "All Rarities",
-            value: rarity,
-            options: rarityOptions,
-            onChange: setRarity,
-          },
-          {
-            label: "All Keywords",
-            value: keyword,
-            options: keywordOptions,
-            onChange: setKeyword,
-          },
-        ]}
-      />
-
-      {loading ? (
-        <div className="text-center py-12 text-[var(--text-muted)]">
-          Loading...
-        </div>
-      ) : (
-        <CardGrid cards={cards} />
-      )}
+      <CardsClient initialCards={cards} />
     </div>
   );
 }

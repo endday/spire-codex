@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Events - Spire Codex - Slay the Spire 2 Database",
+  title: "Slay the Spire 2 Events - All In-Game Events | Spire Codex",
   description:
-    "All 66 events in Slay the Spire 2 — shrine events, Ancient encounters, and story events. View choices, dialogue, and outcomes.",
+    "Slay the Spire 2 events — browse all 66 shrine events, Ancient encounters, and story events. View choices, dialogue, relic offerings, and outcomes for every event.",
   openGraph: {
-    title: "Events - Spire Codex - Slay the Spire 2",
+    title: "Slay the Spire 2 Events - All In-Game Events | Spire Codex",
     description:
-      "All 66 events in Slay the Spire 2 — shrine events, Ancient encounters, and story events.",
+      "Slay the Spire 2 events — browse all 66 shrine events, Ancient encounters, and story events with choices, dialogue, and outcomes.",
   },
 };
 

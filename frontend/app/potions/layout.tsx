@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Potions - Spire Codex - Slay the Spire 2 Database",
+  title: "Slay the Spire 2 Potions - Complete Potion List | Spire Codex",
   description:
-    "Browse all 63+ potions in Slay the Spire 2. Filter by rarity and character pool. View potion effects and descriptions.",
+    "Browse all 63+ Slay the Spire 2 potions. Filter by rarity (Common, Uncommon, Rare) and character pool (Ironclad, Silent, Defect, Necrobinder, Regent). View potion effects and descriptions.",
   openGraph: {
-    title: "Potions - Spire Codex - Slay the Spire 2",
+    title: "Slay the Spire 2 Potions - Complete Potion List | Spire Codex",
     description:
-      "Browse all 63+ potions in Slay the Spire 2. Filter by rarity and character pool.",
+      "Browse all 63+ Slay the Spire 2 potions. Filter by rarity and character pool.",
   },
 };
 

@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Characters - Spire Codex - Slay the Spire 2 Database",
+  title: "Slay the Spire 2 Characters - All Playable Characters | Spire Codex",
   description:
-    "All playable characters in Slay the Spire 2 — Ironclad, Silent, Defect, Necrobinder, and Regent. View starting decks, relics, stats, and NPC dialogues.",
+    "Slay the Spire 2 characters — Ironclad, Silent, Defect, Necrobinder, and Regent. View starting decks, relics, HP, gold, energy stats, and NPC dialogues for every character.",
   openGraph: {
-    title: "Characters - Spire Codex - Slay the Spire 2",
+    title: "Slay the Spire 2 Characters - All Playable Characters | Spire Codex",
     description:
-      "All playable characters in Slay the Spire 2 — Ironclad, Silent, Defect, Necrobinder, and Regent.",
+      "Slay the Spire 2 characters — Ironclad, Silent, Defect, Necrobinder, and Regent. Starting decks, relics, stats, and more.",
   },
 };
 

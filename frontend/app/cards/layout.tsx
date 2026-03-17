@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cards - Spire Codex - Slay the Spire 2 Database",
+  title: "Slay the Spire 2 Cards - Complete Card List | Spire Codex",
   description:
-    "Browse all 576+ cards in Slay the Spire 2. Filter by character, type, rarity, and keywords. View card art, stats, upgrades, and related cards.",
+    "Browse all 576+ Slay the Spire 2 cards. Filter by character (Ironclad, Silent, Defect, Necrobinder, Regent), type, rarity, and keywords. View card art, stats, upgrades, and related cards.",
   openGraph: {
-    title: "Cards - Spire Codex - Slay the Spire 2",
+    title: "Slay the Spire 2 Cards - Complete Card List | Spire Codex",
     description:
-      "Browse all 576+ cards in Slay the Spire 2. Filter by character, type, rarity, and keywords.",
+      "Browse all 576+ Slay the Spire 2 cards. Filter by character, type, rarity, and keywords.",
   },
 };
 

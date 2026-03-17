@@ -1,183 +1,25 @@
-"use client";
-
-import { useState, useEffect } from "react";
-import Link from "next/link";
 import type { Monster } from "@/lib/api";
-import { cachedFetch } from "@/lib/fetch-cache";
-import SearchFilter from "../components/SearchFilter";
-import { useLanguage } from "../contexts/LanguageContext";
+import MonstersClient from "./MonstersClient";
 
-const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+const API = process.env.API_INTERNAL_URL || process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
-const typeColors: Record<string, string> = {
-  Normal: "border-gray-600/40",
-  Elite: "border-amber-600/50",
-  Boss: "border-red-600/50",
-};
-
-const typeBadge: Record<string, string> = {
-  Normal: "bg-gray-800 text-gray-300",
-  Elite: "bg-amber-900/50 text-amber-400",
-  Boss: "bg-red-900/50 text-red-400",
-};
-
-const typeOptions = [
-  { label: "Normal", value: "Normal" },
-  { label: "Elite", value: "Elite" },
-  { label: "Boss", value: "Boss" },
-];
-
-export default function MonstersPage() {
-  const { lang } = useLanguage();
-  const [monsters, setMonsters] = useState<Monster[]>([]);
-  const [search, setSearch] = useState("");
-  const [type, setType] = useState("");
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setLoading(true);
-    const params = new URLSearchParams();
-    if (type) params.set("type", type);
-    if (search) params.set("search", search);
-    params.set("lang", lang);
-    cachedFetch<Monster[]>(`${API}/api/monsters?${params}`)
-      .then(setMonsters)
-      .finally(() => setLoading(false));
-  }, [type, search, lang]);
+export default async function MonstersPage() {
+  let monsters: Monster[] = [];
+  try {
+    const res = await fetch(`${API}/api/monsters?lang=eng`, { next: { revalidate: 300 } });
+    if (res.ok) monsters = await res.json();
+  } catch {}
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <h1 className="text-3xl font-bold mb-6">
-        <span className="text-[var(--accent-gold)]">Monsters</span>
+      <h1 className="text-3xl font-bold mb-2">
+        <span className="text-[var(--accent-gold)]">Slay the Spire 2 Monsters</span>
       </h1>
+      <p className="text-sm text-[var(--text-muted)] mb-6">
+        Browse all {monsters.length} monsters in Slay the Spire 2 — normals, elites, and bosses. View HP values, moves, damage stats, and ascension scaling.
+      </p>
 
-      <SearchFilter
-        search={search}
-        onSearchChange={setSearch}
-        placeholder="Search monsters..."
-        resultCount={monsters.length}
-        filters={[
-          {
-            label: "All Types",
-            value: type,
-            options: typeOptions,
-            onChange: setType,
-          },
-        ]}
-      />
-
-      {loading ? (
-        <div className="text-center py-12 text-[var(--text-muted)]">
-          Loading...
-        </div>
-      ) : (
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
-          {monsters.map((monster) => (
-            <Link
-              key={monster.id}
-              href={`/monsters/${monster.id.toLowerCase()}`}
-              className={`bg-[var(--bg-card)] rounded-lg border ${
-                typeColors[monster.type] || "border-[var(--border-subtle)]"
-              } p-4 hover:bg-[var(--bg-card-hover)] transition-all cursor-pointer`}
-            >
-              {monster.image_url && (
-                <div className="mb-3 -mx-4 -mt-4">
-                  <img
-                    src={`${API}${monster.image_url}`}
-                    alt={monster.name}
-                    className="w-full h-40 object-contain rounded-t-lg"
-                    loading="lazy"
-                    crossOrigin="anonymous"
-                  />
-                </div>
-              )}
-              <div className="flex items-start justify-between mb-3">
-                <h3 className="font-semibold text-[var(--text-primary)]">
-                  {monster.name}
-                </h3>
-                <span
-                  className={`text-[10px] px-2 py-0.5 rounded-full font-medium ${
-                    typeBadge[monster.type] || ""
-                  }`}
-                >
-                  {monster.type}
-                </span>
-              </div>
-
-              {/* HP */}
-              {monster.min_hp && (
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="flex items-center gap-1.5">
-                    <span className="text-xs text-[var(--text-muted)]">HP</span>
-                    <span className="text-sm font-medium text-red-400">
-                      {monster.min_hp}
-                      {monster.max_hp && monster.max_hp !== monster.min_hp
-                        ? `–${monster.max_hp}`
-                        : ""}
-                    </span>
-                  </div>
-                  {monster.min_hp_ascension && (
-                    <div className="flex items-center gap-1.5">
-                      <span className="text-xs text-[var(--text-muted)]">
-                        A+ HP
-                      </span>
-                      <span className="text-sm font-medium text-orange-400">
-                        {monster.min_hp_ascension}
-                        {monster.max_hp_ascension &&
-                        monster.max_hp_ascension !== monster.min_hp_ascension
-                          ? `–${monster.max_hp_ascension}`
-                          : ""}
-                      </span>
-                    </div>
-                  )}
-                </div>
-              )}
-
-              {/* Moves */}
-              {monster.moves && monster.moves.length > 0 && (
-                <div className="mb-3">
-                  <span className="text-xs text-[var(--text-muted)] block mb-1">
-                    Moves
-                  </span>
-                  <div className="flex flex-wrap gap-1">
-                    {monster.moves.map((move) => (
-                      <span
-                        key={move.id}
-                        className="text-xs px-2 py-0.5 rounded bg-[var(--bg-primary)] text-[var(--text-secondary)] border border-[var(--border-subtle)]"
-                      >
-                        {move.name}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {/* Damage */}
-              {monster.damage_values &&
-                Object.keys(monster.damage_values).length > 0 && (
-                  <div>
-                    <span className="text-xs text-[var(--text-muted)] block mb-1">
-                      Damage
-                    </span>
-                    <div className="flex flex-wrap gap-2">
-                      {Object.entries(monster.damage_values).map(
-                        ([name, val]) => (
-                          <span
-                            key={name}
-                            className="text-xs px-2 py-0.5 rounded bg-red-950/40 text-red-300 border border-red-900/30"
-                          >
-                            {name}: {val.normal}
-                            {val.ascension ? ` (A: ${val.ascension})` : ""}
-                          </span>
-                        )
-                      )}
-                    </div>
-                  </div>
-                )}
-            </Link>
-          ))}
-        </div>
-      )}
+      <MonstersClient initialMonsters={monsters} />
     </div>
   );
 }

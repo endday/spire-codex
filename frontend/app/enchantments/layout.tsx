@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Enchantments - Spire Codex - Slay the Spire 2 Database",
+  title: "Slay the Spire 2 Enchantments - Complete Enchantment List | Spire Codex",
   description:
-    "All 22 enchantments in Slay the Spire 2. View enchantment effects, card type restrictions, and stackability.",
+    "Browse all Slay the Spire 2 enchantments. View enchantment effects, card type restrictions, stackability, and extra card text for Attack, Skill, and Power enchantments.",
   openGraph: {
-    title: "Enchantments - Spire Codex - Slay the Spire 2",
+    title: "Slay the Spire 2 Enchantments - Complete Enchantment List | Spire Codex",
     description:
-      "All 22 enchantments in Slay the Spire 2. View effects, card type restrictions, and stackability.",
+      "Browse all Slay the Spire 2 enchantments. View effects, card type restrictions, and stackability.",
   },
 };
 

@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Encounters - Spire Codex - Slay the Spire 2 Database",
+  title: "Slay the Spire 2 Encounters - All Combat Encounters | Spire Codex",
   description:
-    "All 87 encounters in Slay the Spire 2 — normal fights, elites, and bosses. View monster compositions, act assignments, and room types.",
+    "Slay the Spire 2 encounters — browse all 87 combat encounters including normal fights, elites, and bosses. View monster compositions, act assignments, and room types.",
   openGraph: {
-    title: "Encounters - Spire Codex - Slay the Spire 2",
+    title: "Slay the Spire 2 Encounters - All Combat Encounters | Spire Codex",
     description:
-      "All 87 encounters in Slay the Spire 2 — normal fights, elites, and bosses.",
+      "Slay the Spire 2 encounters — browse all 87 combat encounters including normal fights, elites, and bosses.",
   },
 };
 

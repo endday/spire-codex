@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Timeline - Spire Codex - Slay the Spire 2 Database",
+  title: "Slay the Spire 2 Timeline - Epochs & Unlocks | Spire Codex",
   description:
-    "The full timeline of Slay the Spire 2 — 57 epochs across multiple eras. View story progression, unlockable cards, relics, and potions.",
+    "Slay the Spire 2 timeline covering all epochs, eras, and story arcs. Track unlockable cards, relics, and potions across every story progression path.",
   openGraph: {
-    title: "Timeline - Spire Codex - Slay the Spire 2",
+    title: "Slay the Spire 2 Timeline - Epochs & Unlocks | Spire Codex",
     description:
-      "The full timeline of Slay the Spire 2 — 57 epochs across multiple eras and story arcs.",
+      "Slay the Spire 2 timeline covering all epochs, eras, and story arcs. Track unlockable cards, relics, and potions across every story progression path.",
   },
 };
 

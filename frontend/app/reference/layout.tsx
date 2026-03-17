@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Reference - Spire Codex - Slay the Spire 2 Database",
+  title:
+    "Slay the Spire 2 Reference - Keywords, Orbs, Afflictions & More | Spire Codex",
   description:
-    "Slay the Spire 2 reference guide — keywords, intents, orbs, afflictions, modifiers, achievements, acts, and ascension levels all in one place.",
+    "Slay the Spire 2 reference guide covering keywords, orbs, afflictions, intents, modifiers, achievements, acts, and ascension levels all in one place.",
   openGraph: {
-    title: "Reference - Spire Codex - Slay the Spire 2",
+    title:
+      "Slay the Spire 2 Reference - Keywords, Orbs, Afflictions & More | Spire Codex",
     description:
-      "Slay the Spire 2 reference guide — keywords, intents, orbs, afflictions, modifiers, achievements, and more.",
+      "Slay the Spire 2 reference guide covering keywords, orbs, afflictions, intents, modifiers, achievements, and more.",
   },
 };
 

@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Powers - Spire Codex - Slay the Spire 2 Database",
+  title: "Slay the Spire 2 Powers - Complete Power List | Spire Codex",
   description:
-    "All 260 powers in Slay the Spire 2 — buffs, debuffs, and neutral effects. Filter by type and stack behavior. View descriptions and icons.",
+    "Browse all 260 Slay the Spire 2 powers — buffs, debuffs, and neutral effects. Filter by type and stack behavior. View descriptions, icons, and details for every power.",
   openGraph: {
-    title: "Powers - Spire Codex - Slay the Spire 2",
+    title: "Slay the Spire 2 Powers - Complete Power List | Spire Codex",
     description:
-      "All 260 powers in Slay the Spire 2 — buffs, debuffs, and neutral effects.",
+      "Browse all 260 Slay the Spire 2 powers — buffs, debuffs, and neutral effects. Filter by type and stack behavior.",
   },
 };
 

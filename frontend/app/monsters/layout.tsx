@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Monsters - Spire Codex - Slay the Spire 2 Database",
+  title: "Slay the Spire 2 Monsters - Complete Monster List | Spire Codex",
   description:
-    "All 111 monsters in Slay the Spire 2 — elites, bosses, and minions. View HP values, moves, damage stats, and ascension scaling.",
+    "Slay the Spire 2 monsters — browse all 111 normals, elites, and bosses. View HP values, moves, damage stats, and ascension scaling.",
   openGraph: {
-    title: "Monsters - Spire Codex - Slay the Spire 2",
+    title: "Slay the Spire 2 Monsters - Complete Monster List | Spire Codex",
     description:
-      "All 111 monsters in Slay the Spire 2 — elites, bosses, and minions. View HP, moves, and ascension scaling.",
+      "Slay the Spire 2 monsters — browse all 111 normals, elites, and bosses. View HP, moves, and ascension scaling.",
   },
 };
 
