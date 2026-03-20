@@ -33,6 +33,7 @@ export interface Card {
   upgrade: Record<string, string | number | null> | null;
   image_url: string | null;
   beta_image_url: string | null;
+  compendium_order: number;
 }
 
 export interface CharacterDialogueLine {
@@ -75,6 +76,7 @@ export interface Relic {
   rarity: string;
   pool: string;
   image_url: string | null;
+  compendium_order: number;
 }
 
 export interface Monster {
@@ -98,6 +100,7 @@ export interface Potion {
   rarity: string;
   pool: string | null;
   image_url: string | null;
+  compendium_order: number;
 }
 
 export interface Act {

@@ -7,7 +7,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/akabeko.png"
+    "image_url": "/static/images/relics/akabeko.png",
+    "compendium_order": 40
   },
   {
     "id": "ALCHEMICAL_COFFER",
@@ -17,7 +18,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/alchemical_coffer.png"
+    "image_url": "/static/images/relics/alchemical_coffer.png",
+    "compendium_order": 160
   },
   {
     "id": "AMETHYST_AUBERGINE",
@@ -27,7 +29,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Common Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/amethyst_aubergine.png"
+    "image_url": "/static/images/relics/amethyst_aubergine.png",
+    "compendium_order": 10
   },
   {
     "id": "ANCHOR",
@@ -37,717 +40,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Common Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/anchor.png"
-  },
-  {
-    "id": "ARCANE_SCROLL",
-    "name": "Arcane Scroll",
-    "description": "Upon pickup, obtain a random [gold]Rare Card[/gold] to add to your [gold]Deck[/gold].",
-    "description_raw": "Upon pickup, obtain a random [gold]Rare Card[/gold] to add to your [gold]Deck[/gold].",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Ancient Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/arcane_scroll.png"
-  },
-  {
-    "id": "ARCHAIC_TOOTH",
-    "name": "Archaic Tooth",
-    "description": "Upon pickup, [gold]Transform[/gold] a starter card with an ancient version.",
-    "description_raw": "Upon pickup, [gold]Transform[/gold] {StarterCard.StringValue:cond:[gold]{StarterCard}[/gold] into [gold]{AncientCard}[/gold]|a starter card with an ancient version}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Ancient Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/archaic_tooth.png"
-  },
-  {
-    "id": "ART_OF_WAR",
-    "name": "Art of War",
-    "description": "If you do not play any Attacks during your turn, gain an additional [energy:1] next turn.",
-    "description_raw": "If you do not play any Attacks during your turn, gain an additional {Energy:energyIcons()} next turn.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Rare Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/art_of_war.png"
-  },
-  {
-    "id": "ASTROLABE",
-    "name": "Astrolabe",
-    "description": "Upon pickup, [gold]Transform[/gold] [blue]3[/blue] cards, then [gold]Upgrade[/gold] them.",
-    "description_raw": "Upon pickup, [gold]Transform[/gold] [blue]{Cards}[/blue] {Cards:plural:card|cards}, then [gold]Upgrade[/gold] them.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Ancient Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/astrolabe.png"
-  },
-  {
-    "id": "BAG_OF_MARBLES",
-    "name": "Bag of Marbles",
-    "description": "At the start of each combat, apply [blue]1[/blue] [gold]Vulnerable[/gold] to ALL enemies.",
-    "description_raw": "At the start of each combat, apply [blue]{VulnerablePower}[/blue] [gold]Vulnerable[/gold] to ALL enemies.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Uncommon Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/bag_of_marbles.png"
-  },
-  {
-    "id": "BAG_OF_PREPARATION",
-    "name": "Bag of Preparation",
-    "description": "At the start of each combat, draw [blue]2[/blue] additional cards.",
-    "description_raw": "At the start of each combat, draw [blue]{Cards}[/blue] additional {Cards:plural:card|cards}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Common Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/bag_of_preparation.png"
-  },
-  {
-    "id": "BEATING_REMNANT",
-    "name": "Beating Remnant",
-    "description": "You cannot lose more than [blue]20[/blue] HP in a single turn.",
-    "description_raw": "You cannot lose more than [blue]20[/blue] HP in a single turn.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Rare Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/beating_remnant.png"
-  },
-  {
-    "id": "BEAUTIFUL_BRACELET",
-    "name": "Beautiful Bracelet",
-    "description": "Upon pickup, choose [blue]3[/blue] cards in your [gold]Deck[/gold]. [gold]Enchant[/gold] them with [purple]Swift[/purple] [blue]3[/blue].",
-    "description_raw": "Upon pickup, choose [blue]{Cards}[/blue] {Cards:plural:card|cards} in your [gold]Deck[/gold]. [gold]Enchant[/gold] them with [purple]Swift[/purple] [blue]3[/blue].",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Ancient Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/beautiful_bracelet.png"
-  },
-  {
-    "id": "BELLOWS",
-    "name": "Bellows",
-    "description": "The first [gold]Hand[/gold] you draw each combat is [gold]Upgraded[/gold].",
-    "description_raw": "The first [gold]Hand[/gold] you draw each combat is [gold]Upgraded[/gold].",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Uncommon Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/bellows.png"
-  },
-  {
-    "id": "BELT_BUCKLE",
-    "name": "Belt Buckle",
-    "description": "While you have no potions, you have [blue]2[/blue] additional [gold]Dexterity[/gold].",
-    "description_raw": "While you have no potions, you have [blue]{DexterityPower}[/blue] additional [gold]Dexterity[/gold].",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Shop Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/belt_buckle.png"
-  },
-  {
-    "id": "BIG_HAT",
-    "name": "Big Hat",
-    "description": "At the start of each combat, add [blue]2[/blue] random [gold]Ethereal[/gold] cards into your [gold]Hand[/gold].",
-    "description_raw": "At the start of each combat, add [blue]{Cards}[/blue] random [gold]Ethereal[/gold] {Cards:plural:card|cards} into your [gold]Hand[/gold].",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Rare Relic",
-    "pool": "necrobinder",
-    "image_url": "/static/images/relics/big_hat.png"
-  },
-  {
-    "id": "BIG_MUSHROOM",
-    "name": "Big Mushroom",
-    "description": "Upon pickup, raise your Max HP by [blue]20[/blue]. At the start of each combat, draw [blue]2[/blue] fewer cards.",
-    "description_raw": "Upon pickup, raise your Max HP by [blue]{MaxHp}[/blue]. At the start of each combat, draw [blue]{Cards}[/blue] fewer {Cards:plural:card|cards}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Event Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/big_mushroom.png"
-  },
-  {
-    "id": "BIIIG_HUG",
-    "name": "Biiig Hug",
-    "description": "Upon pickup, remove [blue]4[/blue] cards from your [gold]Deck[/gold]. Whenever you shuffle your [gold]Draw Pile[/gold], add a [gold]Soot[/gold] into your [gold]Draw Pile[/gold].",
-    "description_raw": "Upon pickup, remove [blue]{Cards}[/blue] cards from your [gold]Deck[/gold]. Whenever you shuffle your [gold]Draw Pile[/gold], add a [gold]Soot[/gold] into your [gold]Draw Pile[/gold].",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Ancient Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/biiig_hug.png"
-  },
-  {
-    "id": "BING_BONG",
-    "name": "Bing Bong",
-    "description": "Whenever you add a card to your [gold]Deck[/gold], add one additional copy.",
-    "description_raw": "Whenever you add a card to your [gold]Deck[/gold], add one additional copy.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Event Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/bing_bong.png"
-  },
-  {
-    "id": "BLACK_BLOOD",
-    "name": "Black Blood",
-    "description": "At the end of combat, heal [green]12[/green] HP.",
-    "description_raw": "At the end of combat, heal [green]{Heal}[/green] HP.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Starter Relic",
-    "pool": "ironclad",
-    "image_url": "/static/images/relics/black_blood.png"
-  },
-  {
-    "id": "BLACK_STAR",
-    "name": "Black Star",
-    "description": "[gold]Elites[/gold] drop an additional Relic when defeated.",
-    "description_raw": "[gold]Elites[/gold] drop an additional Relic when defeated.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Ancient Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/black_star.png"
-  },
-  {
-    "id": "BLESSED_ANTLER",
-    "name": "Blessed Antler",
-    "description": "Gain [energy:1] at the start of each turn. At the start of each combat, shuffle [blue]3[/blue] [gold]Dazed[/gold] into your [gold]Draw Pile[/gold].",
-    "description_raw": "Gain {Energy:energyIcons()} at the start of each turn. At the start of each combat, shuffle [blue]{Cards}[/blue] [gold]Dazed[/gold] into your [gold]Draw Pile[/gold].",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Ancient Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/blessed_antler.png"
-  },
-  {
-    "id": "BLOOD_SOAKED_ROSE",
-    "name": "Blood-Soaked Rose",
-    "description": "Upon pickup, add [blue]1[/blue] [red]Enthralled[/red] to your [gold]Deck[/gold]. Gain [energy:1] at the start of each turn.",
-    "description_raw": "Upon pickup, add [blue]1[/blue] [red]Enthralled[/red] to your [gold]Deck[/gold]. Gain {Energy:energyIcons()} at the start of each turn.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Ancient Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/blood_soaked_rose.png"
-  },
-  {
-    "id": "BLOOD_VIAL",
-    "name": "Blood Vial",
-    "description": "At the start of each combat, heal [green]2[/green] HP.",
-    "description_raw": "At the start of each combat, heal [green]{Heal}[/green] HP.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Common Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/blood_vial.png"
-  },
-  {
-    "id": "BONE_FLUTE",
-    "name": "Bone Flute",
-    "description": "Whenever [gold]Osty[/gold] attacks, gain [blue]2[/blue] [gold]Block[/gold].",
-    "description_raw": "Whenever [gold]Osty[/gold] attacks, gain [blue]{Block}[/blue] [gold]Block[/gold].",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Common Relic",
-    "pool": "necrobinder",
-    "image_url": "/static/images/relics/bone_flute.png"
-  },
-  {
-    "id": "BONE_TEA",
-    "name": "Bone Tea",
-    "description": "At the start of the next [blue]2[/blue] combats, [gold]Upgrade[/gold] your starting hand.",
-    "description_raw": "At the start of the next {Combats:plural:combat|[blue]{}[/blue] combats}, [gold]Upgrade[/gold] your starting hand.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Event Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/bone_tea.png"
-  },
-  {
-    "id": "BOOK_OF_FIVE_RINGS",
-    "name": "Book of Five Rings",
-    "description": "Every [blue]5[/blue] cards you add to your [gold]Deck[/gold], heal [green]15[/green] HP.",
-    "description_raw": "Every [blue]{Cards}[/blue] {Cards:plural:card|cards} you add to your [gold]Deck[/gold], heal [green]{Heal}[/green] HP.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Common Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/book_of_five_rings.png"
-  },
-  {
-    "id": "BOOK_REPAIR_KNIFE",
-    "name": "Book Repair Knife",
-    "description": "Whenever a non-Minion enemy dies to [gold]Doom[/gold], heal [green]3[/green] HP.",
-    "description_raw": "Whenever a non-Minion enemy dies to [gold]Doom[/gold], heal [green]{Heal}[/green] HP.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Uncommon Relic",
-    "pool": "necrobinder",
-    "image_url": "/static/images/relics/book_repair_knife.png"
-  },
-  {
-    "id": "BOOKMARK",
-    "name": "Bookmark",
-    "description": "At the end of each turn, lower the cost of a random [gold]Retained[/gold] card by [blue]1[/blue] until played.",
-    "description_raw": "At the end of each turn, lower the cost of a random [gold]Retained[/gold] card by [blue]1[/blue] until played.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Rare Relic",
-    "pool": "necrobinder",
-    "image_url": "/static/images/relics/bookmark.png"
-  },
-  {
-    "id": "BOOMING_CONCH",
-    "name": "Booming Conch",
-    "description": "At the start of [gold]Elite[/gold] combats, draw [blue]2[/blue] additional cards.",
-    "description_raw": "At the start of [gold]Elite[/gold] combats, draw [blue]{Cards}[/blue] additional {Cards:plural:card|cards}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Ancient Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/booming_conch.png"
-  },
-  {
-    "id": "BOUND_PHYLACTERY",
-    "name": "Bound Phylactery",
-    "description": "At the start of your turn, [gold]Summon[/gold] [blue]1[/blue].",
-    "description_raw": "At the start of your turn, [gold]Summon[/gold] [blue]{Summon}[/blue].",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Starter Relic",
-    "pool": "necrobinder",
-    "image_url": "/static/images/relics/bound_phylactery.png"
-  },
-  {
-    "id": "BOWLER_HAT",
-    "name": "Bowler Hat",
-    "description": "Gain [blue]20%[/blue] additional [gold]Gold[/gold].",
-    "description_raw": "Gain [blue]20%[/blue] additional [gold]Gold[/gold].",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Uncommon Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/bowler_hat.png"
-  },
-  {
-    "id": "BREAD",
-    "name": "Bread",
-    "description": "At the start of your first turn, lose [energy:2]. At the start of all other turns, gain [energy:1].",
-    "description_raw": "At the start of your first turn, lose {LoseEnergy:energyIcons()}. At the start of all other turns, gain {GainEnergy:energyIcons()}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Shop Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/bread.png"
-  },
-  {
-    "id": "BRILLIANT_SCARF",
-    "name": "Brilliant Scarf",
-    "description": "The [blue]5th[/blue] card you play each turn is free.",
-    "description_raw": "The [blue]5th[/blue] card you play each turn is free.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Ancient Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/brilliant_scarf.png"
-  },
-  {
-    "id": "BRIMSTONE",
-    "name": "Brimstone",
-    "description": "At the start of your turn, gain [blue][SelfStrength][/blue] [gold]Strength[/gold] and ALL enemies gain [blue][EnemyStrength][/blue] [gold]Strength[/gold].",
-    "description_raw": "At the start of your turn, gain [blue]{SelfStrength}[/blue] [gold]Strength[/gold] and ALL enemies gain [blue]{EnemyStrength}[/blue] [gold]Strength[/gold].",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Shop Relic",
-    "pool": "ironclad",
-    "image_url": "/static/images/relics/brimstone.png"
-  },
-  {
-    "id": "BRONZE_SCALES",
-    "name": "Bronze Scales",
-    "description": "Start each combat with [blue]3[/blue] [gold]Thorns[/gold].",
-    "description_raw": "Start each combat with [blue]{ThornsPower}[/blue] [gold]Thorns[/gold].",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Common Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/bronze_scales.png"
-  },
-  {
-    "id": "BURNING_BLOOD",
-    "name": "Burning Blood",
-    "description": "At the end of combat, heal [green]6[/green] HP.",
-    "description_raw": "At the end of combat, heal [green]{Heal}[/green] HP.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Starter Relic",
-    "pool": "ironclad",
-    "image_url": "/static/images/relics/burning_blood.png"
-  },
-  {
-    "id": "BURNING_STICKS",
-    "name": "Burning Sticks",
-    "description": "The first time each combat you [gold]Exhaust[/gold] a Skill, add a copy of it into your [gold]Hand[/gold].",
-    "description_raw": "The first time each combat you [gold]Exhaust[/gold] a Skill, add a copy of it into your [gold]Hand[/gold].",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Shop Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/burning_sticks.png"
-  },
-  {
-    "id": "BYRDPIP",
-    "name": "Byrdpip",
-    "description": "Upon pickup, gain the card [gold]Byrd Swoop[/gold]. A [gold]Byrdpip[/gold] will accompany you in battles.",
-    "description_raw": "Upon pickup, gain the card [gold]Byrd Swoop[/gold]. A [gold]Byrdpip[/gold] will accompany you in battles.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Event Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/byrdpip.png"
-  },
-  {
-    "id": "CALLING_BELL",
-    "name": "Calling Bell",
-    "description": "Upon pickup, obtain a unique [red]Curse[/red] and [blue]3[/blue] [gold]Relics[/gold].",
-    "description_raw": "Upon pickup, obtain a unique [red]Curse[/red] and [blue]{Relics}[/blue] [gold]Relics[/gold].",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Ancient Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/calling_bell.png"
-  },
-  {
-    "id": "CANDELABRA",
-    "name": "Candelabra",
-    "description": "At the start of your [blue]2nd[/blue] turn, gain [energy:2].",
-    "description_raw": "At the start of your [blue]2nd[/blue] turn, gain {Energy:energyIcons()}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Uncommon Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/candelabra.png"
-  },
-  {
-    "id": "CAPTAINS_WHEEL",
-    "name": "Captain's Wheel",
-    "description": "At the start of your [blue]3rd[/blue] turn, gain [blue]18[/blue] [gold]Block[/gold].",
-    "description_raw": "At the start of your [blue]3rd[/blue] turn, gain [blue]{Block}[/blue] [gold]Block[/gold].",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Rare Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/captains_wheel.png"
-  },
-  {
-    "id": "CAULDRON",
-    "name": "Cauldron",
-    "description": "Upon pickup, brews [blue]5[/blue] random potions.",
-    "description_raw": "Upon pickup, brews [blue]{Potions}[/blue] random {Potions:plural:potion|potions}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Shop Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/cauldron.png"
-  },
-  {
-    "id": "CENTENNIAL_PUZZLE",
-    "name": "Centennial Puzzle",
-    "description": "The first time you lose HP each combat, draw [blue]3[/blue] cards.",
-    "description_raw": "The first time you lose HP each combat, draw [blue]{Cards}[/blue] {Cards:plural:card|cards}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Common Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/centennial_puzzle.png"
-  },
-  {
-    "id": "CHANDELIER",
-    "name": "Chandelier",
-    "description": "At the start of your [blue]3rd[/blue] turn, gain [energy:3].",
-    "description_raw": "At the start of your [blue]3rd[/blue] turn, gain {Energy:energyIcons()}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Rare Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/chandelier.png"
-  },
-  {
-    "id": "CHARONS_ASHES",
-    "name": "Charon's Ashes",
-    "description": "Whenever you [gold]Exhaust[/gold] a card, deal [blue]3[/blue] damage to ALL enemies.",
-    "description_raw": "Whenever you [gold]Exhaust[/gold] a card, deal [blue]{Damage}[/blue] damage to ALL enemies.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Rare Relic",
-    "pool": "ironclad",
-    "image_url": "/static/images/relics/charons_ashes.png"
-  },
-  {
-    "id": "CHEMICAL_X",
-    "name": "Chemical X",
-    "description": "The effects of your cost [blue]X[/blue] cards are increased by [blue]2[/blue].",
-    "description_raw": "The effects of your cost [blue]X[/blue] cards are increased by [blue]{Increase}[/blue].",
-    "flavor": "WARNING: Do not combine with sugar, spice, and everything nice.",
-    "rarity": "Shop Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/chemical_x.png"
-  },
-  {
-    "id": "CHOICES_PARADOX",
-    "name": "Choices Paradox",
-    "description": "At the start of each combat, add [blue]1[/blue] of [blue]5[/blue] random cards into your [gold]Hand[/gold]. Add [gold]Retain[/gold] to the chosen card.",
-    "description_raw": "At the start of each combat, add [blue]1[/blue] of [blue]{Cards}[/blue] random cards into your [gold]Hand[/gold]. Add [gold]Retain[/gold] to the chosen card.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Ancient Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/choices_paradox.png"
-  },
-  {
-    "id": "CHOSEN_CHEESE",
-    "name": "The Chosen Cheese",
-    "description": "At the end of combat, gain [blue]1[/blue] Max HP.",
-    "description_raw": "At the end of combat, gain [blue]{MaxHp}[/blue] Max HP.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Event Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/chosen_cheese.png"
-  },
-  {
-    "id": "CIRCLET",
-    "name": "Circlet",
-    "description": "It's a circlet.",
-    "description_raw": "It's a circlet.",
-    "flavor": "A curious relic which appears when there's a problem within the [gold]Spire[/gold] or there are no more relics to discover.",
-    "rarity": "None",
-    "pool": "shared",
-    "image_url": "/static/images/relics/circlet.png"
-  },
-  {
-    "id": "CLAWS",
-    "name": "Claws",
-    "description": "Upon pickup, [gold]Transform[/gold] up to [blue]6[/blue] cards into [gold]Maul[/gold].",
-    "description_raw": "Upon pickup, [gold]Transform[/gold] up to [blue]{Cards}[/blue] {Cards:plural:card|cards} into [gold]Maul[/gold].",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Ancient Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/claws.png"
-  },
-  {
-    "id": "CLOAK_CLASP",
-    "name": "Cloak Clasp",
-    "description": "At the end of your turn, gain [blue]1[/blue] [gold]Block[/gold] for each card in your [gold]Hand[/gold].",
-    "description_raw": "At the end of your turn, gain [blue]{Block}[/blue] [gold]Block[/gold] for each card in your [gold]Hand[/gold].",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Rare Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/cloak_clasp.png"
-  },
-  {
-    "id": "CRACKED_CORE",
-    "name": "Cracked Core",
-    "description": "At the start of each combat, [gold]Channel[/gold] [blue]1[/blue] [gold]Lightning[/gold].",
-    "description_raw": "At the start of each combat, [gold]Channel[/gold] [blue]{Lightning}[/blue] [gold]Lightning[/gold].",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Starter Relic",
-    "pool": "defect",
-    "image_url": "/static/images/relics/cracked_core.png"
-  },
-  {
-    "id": "CROSSBOW",
-    "name": "Crossbow",
-    "description": "At the start of your turn, add a random [gold]Attack[/gold] into your [gold]Hand[/gold]. It costs [blue]0[/blue][energy:1] this turn.",
-    "description_raw": "At the start of your turn, add a random [gold]Attack[/gold] into your [gold]Hand[/gold]. It costs [blue]0[/blue]{energyPrefix:energyIcons(1)} this turn.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Ancient Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/crossbow.png"
-  },
-  {
-    "id": "CURSED_PEARL",
-    "name": "Cursed Pearl",
-    "description": "Upon pickup, receive [red]Greed[/red]. Gain [blue]333[/blue] [gold]Gold[/gold].",
-    "description_raw": "Upon pickup, receive [red]Greed[/red]. Gain [blue]{Gold}[/blue] [gold]Gold[/gold].",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Ancient Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/cursed_pearl.png"
-  },
-  {
-    "id": "DARKSTONE_PERIAPT",
-    "name": "Darkstone Periapt",
-    "description": "Whenever you obtain a [red]Curse[/red], raise your Max HP by [blue]6[/blue].",
-    "description_raw": "Whenever you obtain a [red]Curse[/red], raise your Max HP by [blue]{MaxHp}[/blue].",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Event Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/darkstone_periapt.png"
-  },
-  {
-    "id": "DATA_DISK",
-    "name": "Data Disk",
-    "description": "Start each combat with [blue]1[/blue] [gold]Focus[/gold].",
-    "description_raw": "Start each combat with [blue]{FocusPower}[/blue] [gold]Focus[/gold].",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Common Relic",
-    "pool": "defect",
-    "image_url": "/static/images/relics/data_disk.png"
-  },
-  {
-    "id": "DAUGHTER_OF_THE_WIND",
-    "name": "Daughter of the Wind",
-    "description": "Whenever you play an Attack, gain [blue]1[/blue] [gold]Block[/gold].",
-    "description_raw": "Whenever you play an Attack, gain [blue]{Block}[/blue] [gold]Block[/gold].",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Event Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/daughter_of_the_wind.png"
-  },
-  {
-    "id": "DELICATE_FROND",
-    "name": "Delicate Frond",
-    "description": "At the start of each combat, fill all empty potion slots with random potions.",
-    "description_raw": "At the start of each combat, fill all empty potion slots with random potions.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Ancient Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/delicate_frond.png"
-  },
-  {
-    "id": "DEMON_TONGUE",
-    "name": "Demon Tongue",
-    "description": "The first time you lose HP on your turn, heal HP equal to the amount lost.",
-    "description_raw": "The first time you lose HP on your turn, heal HP equal to the amount lost.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Rare Relic",
-    "pool": "ironclad",
-    "image_url": "/static/images/relics/demon_tongue.png"
-  },
-  {
-    "id": "DIAMOND_DIADEM",
-    "name": "Diamond Diadem",
-    "description": "Whenever you play [blue]2[/blue] or fewer cards in a turn, take half damage from enemies.",
-    "description_raw": "Whenever you play [blue]{CardThreshold}[/blue] or fewer cards in a turn, take half damage from enemies.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Ancient Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/diamond_diadem.png"
-  },
-  {
-    "id": "DINGY_RUG",
-    "name": "Dingy Rug",
-    "description": "Card rewards can now contain Colorless cards.",
-    "description_raw": "Card rewards can now contain Colorless cards.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Shop Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/dingy_rug.png"
-  },
-  {
-    "id": "DISTINGUISHED_CAPE",
-    "name": "Distinguished Cape",
-    "description": "Upon pickup, lose [red]9[/red] Max HP. Add [blue]3[/blue] [gold]Apparitions[/gold] to your [gold]Deck[/gold].",
-    "description_raw": "Upon pickup, lose [red]9[/red] Max HP. Add [blue]{Cards}[/blue] [gold]{Cards:plural:Apparition|Apparitions}[/gold] to your [gold]Deck[/gold].",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Ancient Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/distinguished_cape.png"
-  },
-  {
-    "id": "DIVINE_DESTINY",
-    "name": "Divine Destiny",
-    "description": "At the start of each combat, gain [star:6].",
-    "description_raw": "At the start of each combat, gain {Stars:starIcons()}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Starter Relic",
-    "pool": "regent",
-    "image_url": "/static/images/relics/divine_destiny.png"
-  },
-  {
-    "id": "DIVINE_RIGHT",
-    "name": "Divine Right",
-    "description": "At the start of each combat, gain [star:3].",
-    "description_raw": "At the start of each combat, gain {Stars:starIcons()}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Starter Relic",
-    "pool": "regent",
-    "image_url": "/static/images/relics/divine_right.png"
-  },
-  {
-    "id": "DOLLYS_MIRROR",
-    "name": "Dolly's Mirror",
-    "description": "Upon pickup, obtain an additional copy of a card in your [gold]Deck[/gold].",
-    "description_raw": "Upon pickup, obtain an additional copy of a card in your [gold]Deck[/gold].",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Shop Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/dollys_mirror.png"
-  },
-  {
-    "id": "DRAGON_FRUIT",
-    "name": "Dragon Fruit",
-    "description": "Whenever you gain [gold]Gold[/gold], raise your Max HP by [blue]1[/blue].",
-    "description_raw": "Whenever you gain [gold]Gold[/gold], raise your Max HP by [blue]{MaxHp}[/blue].",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Shop Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/dragon_fruit.png"
-  },
-  {
-    "id": "DREAM_CATCHER",
-    "name": "Dream Catcher",
-    "description": "Whenever you [gold]Rest[/gold], you may add a card to your [gold]Deck[/gold].",
-    "description_raw": "Whenever you [gold]Rest[/gold], you may add a card to your [gold]Deck[/gold].",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Event Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/dream_catcher.png"
-  },
-  {
-    "id": "DRIFTWOOD",
-    "name": "Driftwood",
-    "description": "You may reroll each card reward once.",
-    "description_raw": "You may reroll each card reward once.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Ancient Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/driftwood.png"
-  },
-  {
-    "id": "DUSTY_TOME",
-    "name": "Dusty Tome",
-    "description": "Upon pickup, obtain an [gold]Ancient Card[/gold].",
-    "description_raw": "Upon pickup, obtain {AncientCard.StringValue:cond:[gold]{}[/gold]|an [gold]Ancient Card[/gold]}.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Ancient Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/dusty_tome.png"
-  },
-  {
-    "id": "ECTOPLASM",
-    "name": "Ectoplasm",
-    "description": "You can no longer gain [gold]Gold[/gold]. Gain [energy:1] at the start of each turn.",
-    "description_raw": "You can no longer gain [gold]Gold[/gold]. Gain {Energy:energyIcons()} at the start of each turn.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Ancient Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/ectoplasm.png"
-  },
-  {
-    "id": "ELECTRIC_SHRYMP",
-    "name": "Electric Shrymp",
-    "description": "Upon pickup, [gold]Enchant[/gold] a Skill with [purple]Imbued[/purple].",
-    "description_raw": "Upon pickup, [gold]Enchant[/gold] a Skill with [purple]Imbued[/purple].",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Ancient Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/electric_shrymp.png"
-  },
-  {
-    "id": "EMBER_TEA",
-    "name": "Ember Tea",
-    "description": "At the start of the next [blue]2[/blue] combats, gain [blue]2[/blue] [gold]Strength[/gold].",
-    "description_raw": "At the start of the next {Combats:plural:combat|[blue]{}[/blue] combats}, gain [blue]{StrengthPower}[/blue] [gold]Strength[/gold].",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Event Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/ember_tea.png"
-  },
-  {
-    "id": "EMOTION_CHIP",
-    "name": "Emotion Chip",
-    "description": "If you lost HP during the previous turn, trigger the passive ability of all Orbs at the start of your turn.",
-    "description_raw": "If you lost HP during the previous turn, trigger the passive ability of all Orbs at the start of your turn.",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Rare Relic",
-    "pool": "defect",
-    "image_url": "/static/images/relics/emotion_chip.png"
-  },
-  {
-    "id": "EMPTY_CAGE",
-    "name": "Empty Cage",
-    "description": "Upon pickup, remove [blue]2[/blue] cards from your [gold]Deck[/gold].",
-    "description_raw": "Upon pickup, remove [blue]{Cards}[/blue] {Cards:plural:card|cards} from your [gold]Deck[/gold].",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Ancient Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/empty_cage.png"
-  },
-  {
-    "id": "ETERNAL_FEATHER",
-    "name": "Eternal Feather",
-    "description": "For every [blue]5[/blue] cards in your [gold]Deck[/gold], heal [green]3[/green] HP whenever you enter a [gold]Rest Site[/gold].",
-    "description_raw": "For every {Cards:plural:card|[blue]{}[/blue] cards} in your [gold]Deck[/gold], heal [green]{Heal}[/green] HP whenever you enter a [gold]Rest Site[/gold].",
-    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Uncommon Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/eternal_feather.png"
+    "image_url": "/static/images/relics/anchor.png",
+    "compendium_order": 11
   },
   {
     "id": "FAKE_ANCHOR",
@@ -757,7 +51,206 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Event Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/fake_anchor.png"
+    "image_url": "/static/images/relics/fake_anchor.png",
+    "compendium_order": 252
+  },
+  {
+    "id": "ARCANE_SCROLL",
+    "name": "Arcane Scroll",
+    "description": "Upon pickup, obtain a random [gold]Rare Card[/gold] to add to your [gold]Deck[/gold].",
+    "description_raw": "Upon pickup, obtain a random [gold]Rare Card[/gold] to add to your [gold]Deck[/gold].",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Ancient Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/arcane_scroll.png",
+    "compendium_order": 161
+  },
+  {
+    "id": "ARCHAIC_TOOTH",
+    "name": "Archaic Tooth",
+    "description": "Upon pickup, [gold]Transform[/gold] a starter card with an ancient version.",
+    "description_raw": "Upon pickup, [gold]Transform[/gold] {StarterCard.StringValue:cond:[gold]{StarterCard}[/gold] into [gold]{AncientCard}[/gold]|a starter card with an ancient version}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Ancient Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/archaic_tooth.png",
+    "compendium_order": 162
+  },
+  {
+    "id": "ART_OF_WAR",
+    "name": "Art of War",
+    "description": "If you do not play any Attacks during your turn, gain an additional [energy:1] next turn.",
+    "description_raw": "If you do not play any Attacks during your turn, gain an additional {Energy:energyIcons()} next turn.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Rare Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/art_of_war.png",
+    "compendium_order": 80
+  },
+  {
+    "id": "ASTROLABE",
+    "name": "Astrolabe",
+    "description": "Upon pickup, [gold]Transform[/gold] [blue]3[/blue] cards, then [gold]Upgrade[/gold] them.",
+    "description_raw": "Upon pickup, [gold]Transform[/gold] [blue]{Cards}[/blue] {Cards:plural:card|cards}, then [gold]Upgrade[/gold] them.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Ancient Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/astrolabe.png",
+    "compendium_order": 163
+  },
+  {
+    "id": "BAG_OF_MARBLES",
+    "name": "Bag of Marbles",
+    "description": "At the start of each combat, apply [blue]1[/blue] [gold]Vulnerable[/gold] to ALL enemies.",
+    "description_raw": "At the start of each combat, apply [blue]{VulnerablePower}[/blue] [gold]Vulnerable[/gold] to ALL enemies.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Uncommon Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/bag_of_marbles.png",
+    "compendium_order": 41
+  },
+  {
+    "id": "BAG_OF_PREPARATION",
+    "name": "Bag of Preparation",
+    "description": "At the start of each combat, draw [blue]2[/blue] additional cards.",
+    "description_raw": "At the start of each combat, draw [blue]{Cards}[/blue] additional {Cards:plural:card|cards}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Common Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/bag_of_preparation.png",
+    "compendium_order": 12
+  },
+  {
+    "id": "BEATING_REMNANT",
+    "name": "Beating Remnant",
+    "description": "You cannot lose more than [blue]20[/blue] HP in a single turn.",
+    "description_raw": "You cannot lose more than [blue]20[/blue] HP in a single turn.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Rare Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/beating_remnant.png",
+    "compendium_order": 81
+  },
+  {
+    "id": "BEAUTIFUL_BRACELET",
+    "name": "Beautiful Bracelet",
+    "description": "Upon pickup, choose [blue]3[/blue] cards in your [gold]Deck[/gold]. [gold]Enchant[/gold] them with [purple]Swift[/purple] [blue]3[/blue].",
+    "description_raw": "Upon pickup, choose [blue]{Cards}[/blue] {Cards:plural:card|cards} in your [gold]Deck[/gold]. [gold]Enchant[/gold] them with [purple]Swift[/purple] [blue]3[/blue].",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Ancient Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/beautiful_bracelet.png",
+    "compendium_order": 164
+  },
+  {
+    "id": "BELLOWS",
+    "name": "Bellows",
+    "description": "The first [gold]Hand[/gold] you draw each combat is [gold]Upgraded[/gold].",
+    "description_raw": "The first [gold]Hand[/gold] you draw each combat is [gold]Upgraded[/gold].",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Uncommon Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/bellows.png",
+    "compendium_order": 42
+  },
+  {
+    "id": "BELT_BUCKLE",
+    "name": "Belt Buckle",
+    "description": "While you have no potions, you have [blue]2[/blue] additional [gold]Dexterity[/gold].",
+    "description_raw": "While you have no potions, you have [blue]{DexterityPower}[/blue] additional [gold]Dexterity[/gold].",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Shop Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/belt_buckle.png",
+    "compendium_order": 130
+  },
+  {
+    "id": "BIG_HAT",
+    "name": "Big Hat",
+    "description": "At the start of each combat, add [blue]2[/blue] random [gold]Ethereal[/gold] cards into your [gold]Hand[/gold].",
+    "description_raw": "At the start of each combat, add [blue]{Cards}[/blue] random [gold]Ethereal[/gold] {Cards:plural:card|cards} into your [gold]Hand[/gold].",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Rare Relic",
+    "pool": "necrobinder",
+    "image_url": "/static/images/relics/big_hat.png",
+    "compendium_order": 82
+  },
+  {
+    "id": "BIG_MUSHROOM",
+    "name": "Big Mushroom",
+    "description": "Upon pickup, raise your Max HP by [blue]20[/blue]. At the start of each combat, draw [blue]2[/blue] fewer cards.",
+    "description_raw": "Upon pickup, raise your Max HP by [blue]{MaxHp}[/blue]. At the start of each combat, draw [blue]{Cards}[/blue] fewer {Cards:plural:card|cards}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Event Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/big_mushroom.png",
+    "compendium_order": 253
+  },
+  {
+    "id": "BIIIG_HUG",
+    "name": "Biiig Hug",
+    "description": "Upon pickup, remove [blue]4[/blue] cards from your [gold]Deck[/gold]. Whenever you shuffle your [gold]Draw Pile[/gold], add a [gold]Soot[/gold] into your [gold]Draw Pile[/gold].",
+    "description_raw": "Upon pickup, remove [blue]{Cards}[/blue] cards from your [gold]Deck[/gold]. Whenever you shuffle your [gold]Draw Pile[/gold], add a [gold]Soot[/gold] into your [gold]Draw Pile[/gold].",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Ancient Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/biiig_hug.png",
+    "compendium_order": 165
+  },
+  {
+    "id": "BING_BONG",
+    "name": "Bing Bong",
+    "description": "Whenever you add a card to your [gold]Deck[/gold], add one additional copy.",
+    "description_raw": "Whenever you add a card to your [gold]Deck[/gold], add one additional copy.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Event Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/bing_bong.png",
+    "compendium_order": 254
+  },
+  {
+    "id": "BLACK_BLOOD",
+    "name": "Black Blood",
+    "description": "At the end of combat, heal [green]12[/green] HP.",
+    "description_raw": "At the end of combat, heal [green]{Heal}[/green] HP.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Starter Relic",
+    "pool": "ironclad",
+    "image_url": "/static/images/relics/black_blood.png",
+    "compendium_order": 0
+  },
+  {
+    "id": "BLACK_STAR",
+    "name": "Black Star",
+    "description": "[gold]Elites[/gold] drop an additional Relic when defeated.",
+    "description_raw": "[gold]Elites[/gold] drop an additional Relic when defeated.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Ancient Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/black_star.png",
+    "compendium_order": 166
+  },
+  {
+    "id": "BLESSED_ANTLER",
+    "name": "Blessed Antler",
+    "description": "Gain [energy:1] at the start of each turn. At the start of each combat, shuffle [blue]3[/blue] [gold]Dazed[/gold] into your [gold]Draw Pile[/gold].",
+    "description_raw": "Gain {Energy:energyIcons()} at the start of each turn. At the start of each combat, shuffle [blue]{Cards}[/blue] [gold]Dazed[/gold] into your [gold]Draw Pile[/gold].",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Ancient Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/blessed_antler.png",
+    "compendium_order": 167
+  },
+  {
+    "id": "BLOOD_VIAL",
+    "name": "Blood Vial",
+    "description": "At the start of each combat, heal [green]2[/green] HP.",
+    "description_raw": "At the start of each combat, heal [green]{Heal}[/green] HP.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Common Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/blood_vial.png",
+    "compendium_order": 13
   },
   {
     "id": "FAKE_BLOOD_VIAL",
@@ -767,87 +260,580 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Event Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/fake_blood_vial.png"
+    "image_url": "/static/images/relics/fake_blood_vial.png",
+    "compendium_order": 255
   },
   {
-    "id": "FAKE_HAPPY_FLOWER",
-    "name": "Happy Flower???",
-    "description": "Every [blue]5[/blue] turns, gain [energy:1].",
-    "description_raw": "Every [blue]{Turns}[/blue] {Turns:plural:turn|turns}, gain {Energy:energyIcons()}.",
+    "id": "BLOOD_SOAKED_ROSE",
+    "name": "Blood-Soaked Rose",
+    "description": "Upon pickup, add [blue]1[/blue] [red]Enthralled[/red] to your [gold]Deck[/gold]. Gain [energy:1] at the start of each turn.",
+    "description_raw": "Upon pickup, add [blue]1[/blue] [red]Enthralled[/red] to your [gold]Deck[/gold]. Gain {Energy:energyIcons()} at the start of each turn.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Ancient Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/blood_soaked_rose.png",
+    "compendium_order": 168
+  },
+  {
+    "id": "BONE_FLUTE",
+    "name": "Bone Flute",
+    "description": "Whenever [gold]Osty[/gold] attacks, gain [blue]2[/blue] [gold]Block[/gold].",
+    "description_raw": "Whenever [gold]Osty[/gold] attacks, gain [blue]{Block}[/blue] [gold]Block[/gold].",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Common Relic",
+    "pool": "necrobinder",
+    "image_url": "/static/images/relics/bone_flute.png",
+    "compendium_order": 14
+  },
+  {
+    "id": "BONE_TEA",
+    "name": "Bone Tea",
+    "description": "At the start of the next [blue]2[/blue] combats, [gold]Upgrade[/gold] your starting hand.",
+    "description_raw": "At the start of the next {Combats:plural:combat|[blue]{}[/blue] combats}, [gold]Upgrade[/gold] your starting hand.",
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Event Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/fake_happy_flower.png"
+    "image_url": "/static/images/relics/bone_tea.png",
+    "compendium_order": 256
   },
   {
-    "id": "FAKE_LEES_WAFFLE",
-    "name": "Lee's Waffle???",
-    "description": "Upon pickup, heal [green]10%[/green] of your HP.",
-    "description_raw": "Upon pickup, heal [green]{Heal}%[/green] of your HP.",
+    "id": "BOOK_REPAIR_KNIFE",
+    "name": "Book Repair Knife",
+    "description": "Whenever a non-Minion enemy dies to [gold]Doom[/gold], heal [green]3[/green] HP.",
+    "description_raw": "Whenever a non-Minion enemy dies to [gold]Doom[/gold], heal [green]{Heal}[/green] HP.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Uncommon Relic",
+    "pool": "necrobinder",
+    "image_url": "/static/images/relics/book_repair_knife.png",
+    "compendium_order": 43
+  },
+  {
+    "id": "BOOK_OF_FIVE_RINGS",
+    "name": "Book of Five Rings",
+    "description": "Every [blue]5[/blue] cards you add to your [gold]Deck[/gold], heal [green]15[/green] HP.",
+    "description_raw": "Every [blue]{Cards}[/blue] {Cards:plural:card|cards} you add to your [gold]Deck[/gold], heal [green]{Heal}[/green] HP.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Common Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/book_of_five_rings.png",
+    "compendium_order": 15
+  },
+  {
+    "id": "BOOKMARK",
+    "name": "Bookmark",
+    "description": "At the end of each turn, lower the cost of a random [gold]Retained[/gold] card by [blue]1[/blue] until played.",
+    "description_raw": "At the end of each turn, lower the cost of a random [gold]Retained[/gold] card by [blue]1[/blue] until played.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Rare Relic",
+    "pool": "necrobinder",
+    "image_url": "/static/images/relics/bookmark.png",
+    "compendium_order": 83
+  },
+  {
+    "id": "BOOMING_CONCH",
+    "name": "Booming Conch",
+    "description": "At the start of [gold]Elite[/gold] combats, draw [blue]2[/blue] additional cards.",
+    "description_raw": "At the start of [gold]Elite[/gold] combats, draw [blue]{Cards}[/blue] additional {Cards:plural:card|cards}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Ancient Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/booming_conch.png",
+    "compendium_order": 169
+  },
+  {
+    "id": "BOUND_PHYLACTERY",
+    "name": "Bound Phylactery",
+    "description": "At the start of your turn, [gold]Summon[/gold] [blue]1[/blue].",
+    "description_raw": "At the start of your turn, [gold]Summon[/gold] [blue]{Summon}[/blue].",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Starter Relic",
+    "pool": "necrobinder",
+    "image_url": "/static/images/relics/bound_phylactery.png",
+    "compendium_order": 1
+  },
+  {
+    "id": "BOWLER_HAT",
+    "name": "Bowler Hat",
+    "description": "Gain [blue]20%[/blue] additional [gold]Gold[/gold].",
+    "description_raw": "Gain [blue]20%[/blue] additional [gold]Gold[/gold].",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Uncommon Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/bowler_hat.png",
+    "compendium_order": 44
+  },
+  {
+    "id": "BREAD",
+    "name": "Bread",
+    "description": "At the start of your first turn, lose [energy:2]. At the start of all other turns, gain [energy:1].",
+    "description_raw": "At the start of your first turn, lose {LoseEnergy:energyIcons()}. At the start of all other turns, gain {GainEnergy:energyIcons()}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Shop Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/bread.png",
+    "compendium_order": 131
+  },
+  {
+    "id": "BRILLIANT_SCARF",
+    "name": "Brilliant Scarf",
+    "description": "The [blue]5th[/blue] card you play each turn is free.",
+    "description_raw": "The [blue]5th[/blue] card you play each turn is free.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Ancient Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/brilliant_scarf.png",
+    "compendium_order": 170
+  },
+  {
+    "id": "BRIMSTONE",
+    "name": "Brimstone",
+    "description": "At the start of your turn, gain [blue][SelfStrength][/blue] [gold]Strength[/gold] and ALL enemies gain [blue][EnemyStrength][/blue] [gold]Strength[/gold].",
+    "description_raw": "At the start of your turn, gain [blue]{SelfStrength}[/blue] [gold]Strength[/gold] and ALL enemies gain [blue]{EnemyStrength}[/blue] [gold]Strength[/gold].",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Shop Relic",
+    "pool": "ironclad",
+    "image_url": "/static/images/relics/brimstone.png",
+    "compendium_order": 132
+  },
+  {
+    "id": "BRONZE_SCALES",
+    "name": "Bronze Scales",
+    "description": "Start each combat with [blue]3[/blue] [gold]Thorns[/gold].",
+    "description_raw": "Start each combat with [blue]{ThornsPower}[/blue] [gold]Thorns[/gold].",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Common Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/bronze_scales.png",
+    "compendium_order": 16
+  },
+  {
+    "id": "BURNING_BLOOD",
+    "name": "Burning Blood",
+    "description": "At the end of combat, heal [green]6[/green] HP.",
+    "description_raw": "At the end of combat, heal [green]{Heal}[/green] HP.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Starter Relic",
+    "pool": "ironclad",
+    "image_url": "/static/images/relics/burning_blood.png",
+    "compendium_order": 2
+  },
+  {
+    "id": "BURNING_STICKS",
+    "name": "Burning Sticks",
+    "description": "The first time each combat you [gold]Exhaust[/gold] a Skill, add a copy of it into your [gold]Hand[/gold].",
+    "description_raw": "The first time each combat you [gold]Exhaust[/gold] a Skill, add a copy of it into your [gold]Hand[/gold].",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Shop Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/burning_sticks.png",
+    "compendium_order": 133
+  },
+  {
+    "id": "BYRDPIP",
+    "name": "Byrdpip",
+    "description": "Upon pickup, gain the card [gold]Byrd Swoop[/gold]. A [gold]Byrdpip[/gold] will accompany you in battles.",
+    "description_raw": "Upon pickup, gain the card [gold]Byrd Swoop[/gold]. A [gold]Byrdpip[/gold] will accompany you in battles.",
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Event Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/fake_lees_waffle.png"
+    "image_url": "/static/images/relics/byrdpip.png",
+    "compendium_order": 257
   },
   {
-    "id": "FAKE_MANGO",
-    "name": "Mango???",
-    "description": "Upon pickup, raise your Max HP by [blue]3[/blue].",
-    "description_raw": "Upon pickup, raise your Max HP by [blue]{MaxHp}[/blue].",
+    "id": "CALLING_BELL",
+    "name": "Calling Bell",
+    "description": "Upon pickup, obtain a unique [red]Curse[/red] and [blue]3[/blue] [gold]Relics[/gold].",
+    "description_raw": "Upon pickup, obtain a unique [red]Curse[/red] and [blue]{Relics}[/blue] [gold]Relics[/gold].",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Ancient Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/calling_bell.png",
+    "compendium_order": 171
+  },
+  {
+    "id": "CANDELABRA",
+    "name": "Candelabra",
+    "description": "At the start of your [blue]2nd[/blue] turn, gain [energy:2].",
+    "description_raw": "At the start of your [blue]2nd[/blue] turn, gain {Energy:energyIcons()}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Uncommon Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/candelabra.png",
+    "compendium_order": 45
+  },
+  {
+    "id": "CAPTAINS_WHEEL",
+    "name": "Captain's Wheel",
+    "description": "At the start of your [blue]3rd[/blue] turn, gain [blue]18[/blue] [gold]Block[/gold].",
+    "description_raw": "At the start of your [blue]3rd[/blue] turn, gain [blue]{Block}[/blue] [gold]Block[/gold].",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Rare Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/captains_wheel.png",
+    "compendium_order": 84
+  },
+  {
+    "id": "CAULDRON",
+    "name": "Cauldron",
+    "description": "Upon pickup, brews [blue]5[/blue] random potions.",
+    "description_raw": "Upon pickup, brews [blue]{Potions}[/blue] random {Potions:plural:potion|potions}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Shop Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/cauldron.png",
+    "compendium_order": 134
+  },
+  {
+    "id": "CENTENNIAL_PUZZLE",
+    "name": "Centennial Puzzle",
+    "description": "The first time you lose HP each combat, draw [blue]3[/blue] cards.",
+    "description_raw": "The first time you lose HP each combat, draw [blue]{Cards}[/blue] {Cards:plural:card|cards}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Common Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/centennial_puzzle.png",
+    "compendium_order": 17
+  },
+  {
+    "id": "CHANDELIER",
+    "name": "Chandelier",
+    "description": "At the start of your [blue]3rd[/blue] turn, gain [energy:3].",
+    "description_raw": "At the start of your [blue]3rd[/blue] turn, gain {Energy:energyIcons()}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Rare Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/chandelier.png",
+    "compendium_order": 85
+  },
+  {
+    "id": "CHARONS_ASHES",
+    "name": "Charon's Ashes",
+    "description": "Whenever you [gold]Exhaust[/gold] a card, deal [blue]3[/blue] damage to ALL enemies.",
+    "description_raw": "Whenever you [gold]Exhaust[/gold] a card, deal [blue]{Damage}[/blue] damage to ALL enemies.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Rare Relic",
+    "pool": "ironclad",
+    "image_url": "/static/images/relics/charons_ashes.png",
+    "compendium_order": 86
+  },
+  {
+    "id": "CHEMICAL_X",
+    "name": "Chemical X",
+    "description": "The effects of your cost [blue]X[/blue] cards are increased by [blue]2[/blue].",
+    "description_raw": "The effects of your cost [blue]X[/blue] cards are increased by [blue]{Increase}[/blue].",
+    "flavor": "WARNING: Do not combine with sugar, spice, and everything nice.",
+    "rarity": "Shop Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/chemical_x.png",
+    "compendium_order": 135
+  },
+  {
+    "id": "CHOICES_PARADOX",
+    "name": "Choices Paradox",
+    "description": "At the start of each combat, add [blue]1[/blue] of [blue]5[/blue] random cards into your [gold]Hand[/gold]. Add [gold]Retain[/gold] to the chosen card.",
+    "description_raw": "At the start of each combat, add [blue]1[/blue] of [blue]{Cards}[/blue] random cards into your [gold]Hand[/gold]. Add [gold]Retain[/gold] to the chosen card.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Ancient Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/choices_paradox.png",
+    "compendium_order": 172
+  },
+  {
+    "id": "CIRCLET",
+    "name": "Circlet",
+    "description": "It's a circlet.",
+    "description_raw": "It's a circlet.",
+    "flavor": "A curious relic which appears when there's a problem within the [gold]Spire[/gold] or there are no more relics to discover.",
+    "rarity": "None",
+    "pool": "shared",
+    "image_url": "/static/images/relics/circlet.png",
+    "compendium_order": 287
+  },
+  {
+    "id": "CLAWS",
+    "name": "Claws",
+    "description": "Upon pickup, [gold]Transform[/gold] up to [blue]6[/blue] cards into [gold]Maul[/gold].",
+    "description_raw": "Upon pickup, [gold]Transform[/gold] up to [blue]{Cards}[/blue] {Cards:plural:card|cards} into [gold]Maul[/gold].",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Ancient Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/claws.png",
+    "compendium_order": 173
+  },
+  {
+    "id": "CLOAK_CLASP",
+    "name": "Cloak Clasp",
+    "description": "At the end of your turn, gain [blue]1[/blue] [gold]Block[/gold] for each card in your [gold]Hand[/gold].",
+    "description_raw": "At the end of your turn, gain [blue]{Block}[/blue] [gold]Block[/gold] for each card in your [gold]Hand[/gold].",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Rare Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/cloak_clasp.png",
+    "compendium_order": 87
+  },
+  {
+    "id": "CRACKED_CORE",
+    "name": "Cracked Core",
+    "description": "At the start of each combat, [gold]Channel[/gold] [blue]1[/blue] [gold]Lightning[/gold].",
+    "description_raw": "At the start of each combat, [gold]Channel[/gold] [blue]{Lightning}[/blue] [gold]Lightning[/gold].",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Starter Relic",
+    "pool": "defect",
+    "image_url": "/static/images/relics/cracked_core.png",
+    "compendium_order": 3
+  },
+  {
+    "id": "CROSSBOW",
+    "name": "Crossbow",
+    "description": "At the start of your turn, add a random [gold]Attack[/gold] into your [gold]Hand[/gold]. It costs [blue]0[/blue][energy:1] this turn.",
+    "description_raw": "At the start of your turn, add a random [gold]Attack[/gold] into your [gold]Hand[/gold]. It costs [blue]0[/blue]{energyPrefix:energyIcons(1)} this turn.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Ancient Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/crossbow.png",
+    "compendium_order": 174
+  },
+  {
+    "id": "CURSED_PEARL",
+    "name": "Cursed Pearl",
+    "description": "Upon pickup, receive [red]Greed[/red]. Gain [blue]333[/blue] [gold]Gold[/gold].",
+    "description_raw": "Upon pickup, receive [red]Greed[/red]. Gain [blue]{Gold}[/blue] [gold]Gold[/gold].",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Ancient Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/cursed_pearl.png",
+    "compendium_order": 175
+  },
+  {
+    "id": "DARKSTONE_PERIAPT",
+    "name": "Darkstone Periapt",
+    "description": "Whenever you obtain a [red]Curse[/red], raise your Max HP by [blue]6[/blue].",
+    "description_raw": "Whenever you obtain a [red]Curse[/red], raise your Max HP by [blue]{MaxHp}[/blue].",
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Event Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/fake_mango.png"
+    "image_url": "/static/images/relics/darkstone_periapt.png",
+    "compendium_order": 258
   },
   {
-    "id": "FAKE_MERCHANTS_RUG",
-    "name": "The Merchant's Rug???",
-    "description": "Poor imitation. Does nothing.",
-    "description_raw": "Poor imitation. Does nothing.",
+    "id": "DATA_DISK",
+    "name": "Data Disk",
+    "description": "Start each combat with [blue]1[/blue] [gold]Focus[/gold].",
+    "description_raw": "Start each combat with [blue]{FocusPower}[/blue] [gold]Focus[/gold].",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Common Relic",
+    "pool": "defect",
+    "image_url": "/static/images/relics/data_disk.png",
+    "compendium_order": 18
+  },
+  {
+    "id": "DAUGHTER_OF_THE_WIND",
+    "name": "Daughter of the Wind",
+    "description": "Whenever you play an Attack, gain [blue]1[/blue] [gold]Block[/gold].",
+    "description_raw": "Whenever you play an Attack, gain [blue]{Block}[/blue] [gold]Block[/gold].",
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Event Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/fake_merchants_rug.png"
+    "image_url": "/static/images/relics/daughter_of_the_wind.png",
+    "compendium_order": 259
   },
   {
-    "id": "FAKE_ORICHALCUM",
-    "name": "Orichalcum???",
-    "description": "If you end your turn without [gold]Block[/gold], gain [blue]3[/blue] [gold]Block[/gold].",
-    "description_raw": "If you end your turn without [gold]Block[/gold], gain [blue]{Block}[/blue] [gold]Block[/gold].",
+    "id": "DELICATE_FROND",
+    "name": "Delicate Frond",
+    "description": "At the start of each combat, fill all empty potion slots with random potions.",
+    "description_raw": "At the start of each combat, fill all empty potion slots with random potions.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Ancient Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/delicate_frond.png",
+    "compendium_order": 176
+  },
+  {
+    "id": "DEMON_TONGUE",
+    "name": "Demon Tongue",
+    "description": "The first time you lose HP on your turn, heal HP equal to the amount lost.",
+    "description_raw": "The first time you lose HP on your turn, heal HP equal to the amount lost.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Rare Relic",
+    "pool": "ironclad",
+    "image_url": "/static/images/relics/demon_tongue.png",
+    "compendium_order": 88
+  },
+  {
+    "id": "DIAMOND_DIADEM",
+    "name": "Diamond Diadem",
+    "description": "Whenever you play [blue]2[/blue] or fewer cards in a turn, take half damage from enemies.",
+    "description_raw": "Whenever you play [blue]{CardThreshold}[/blue] or fewer cards in a turn, take half damage from enemies.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Ancient Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/diamond_diadem.png",
+    "compendium_order": 177
+  },
+  {
+    "id": "DINGY_RUG",
+    "name": "Dingy Rug",
+    "description": "Card rewards can now contain Colorless cards.",
+    "description_raw": "Card rewards can now contain Colorless cards.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Shop Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/dingy_rug.png",
+    "compendium_order": 136
+  },
+  {
+    "id": "DISTINGUISHED_CAPE",
+    "name": "Distinguished Cape",
+    "description": "Upon pickup, lose [red]9[/red] Max HP. Add [blue]3[/blue] [gold]Apparitions[/gold] to your [gold]Deck[/gold].",
+    "description_raw": "Upon pickup, lose [red]9[/red] Max HP. Add [blue]{Cards}[/blue] [gold]{Cards:plural:Apparition|Apparitions}[/gold] to your [gold]Deck[/gold].",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Ancient Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/distinguished_cape.png",
+    "compendium_order": 178
+  },
+  {
+    "id": "DIVINE_DESTINY",
+    "name": "Divine Destiny",
+    "description": "At the start of each combat, gain [star:6].",
+    "description_raw": "At the start of each combat, gain {Stars:starIcons()}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Starter Relic",
+    "pool": "regent",
+    "image_url": "/static/images/relics/divine_destiny.png",
+    "compendium_order": 4
+  },
+  {
+    "id": "DIVINE_RIGHT",
+    "name": "Divine Right",
+    "description": "At the start of each combat, gain [star:3].",
+    "description_raw": "At the start of each combat, gain {Stars:starIcons()}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Starter Relic",
+    "pool": "regent",
+    "image_url": "/static/images/relics/divine_right.png",
+    "compendium_order": 5
+  },
+  {
+    "id": "DOLLYS_MIRROR",
+    "name": "Dolly's Mirror",
+    "description": "Upon pickup, obtain an additional copy of a card in your [gold]Deck[/gold].",
+    "description_raw": "Upon pickup, obtain an additional copy of a card in your [gold]Deck[/gold].",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Shop Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/dollys_mirror.png",
+    "compendium_order": 137
+  },
+  {
+    "id": "DRAGON_FRUIT",
+    "name": "Dragon Fruit",
+    "description": "Whenever you gain [gold]Gold[/gold], raise your Max HP by [blue]1[/blue].",
+    "description_raw": "Whenever you gain [gold]Gold[/gold], raise your Max HP by [blue]{MaxHp}[/blue].",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Shop Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/dragon_fruit.png",
+    "compendium_order": 138
+  },
+  {
+    "id": "DREAM_CATCHER",
+    "name": "Dream Catcher",
+    "description": "Whenever you [gold]Rest[/gold], you may add a card to your [gold]Deck[/gold].",
+    "description_raw": "Whenever you [gold]Rest[/gold], you may add a card to your [gold]Deck[/gold].",
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Event Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/fake_orichalcum.png"
+    "image_url": "/static/images/relics/dream_catcher.png",
+    "compendium_order": 260
   },
   {
-    "id": "FAKE_SNECKO_EYE",
-    "name": "Snecko Eye???",
-    "description": "Start each combat [red]Confused[/red].",
-    "description_raw": "Start each combat [red]Confused[/red].",
+    "id": "DRIFTWOOD",
+    "name": "Driftwood",
+    "description": "You may reroll each card reward once.",
+    "description_raw": "You may reroll each card reward once.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Ancient Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/driftwood.png",
+    "compendium_order": 179
+  },
+  {
+    "id": "DUSTY_TOME",
+    "name": "Dusty Tome",
+    "description": "Upon pickup, obtain an [gold]Ancient Card[/gold].",
+    "description_raw": "Upon pickup, obtain {AncientCard.StringValue:cond:[gold]{}[/gold]|an [gold]Ancient Card[/gold]}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Ancient Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/dusty_tome.png",
+    "compendium_order": 180
+  },
+  {
+    "id": "ECTOPLASM",
+    "name": "Ectoplasm",
+    "description": "You can no longer gain [gold]Gold[/gold]. Gain [energy:1] at the start of each turn.",
+    "description_raw": "You can no longer gain [gold]Gold[/gold]. Gain {Energy:energyIcons()} at the start of each turn.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Ancient Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/ectoplasm.png",
+    "compendium_order": 181
+  },
+  {
+    "id": "ELECTRIC_SHRYMP",
+    "name": "Electric Shrymp",
+    "description": "Upon pickup, [gold]Enchant[/gold] a Skill with [purple]Imbued[/purple].",
+    "description_raw": "Upon pickup, [gold]Enchant[/gold] a Skill with [purple]Imbued[/purple].",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Ancient Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/electric_shrymp.png",
+    "compendium_order": 182
+  },
+  {
+    "id": "EMBER_TEA",
+    "name": "Ember Tea",
+    "description": "At the start of the next [blue]2[/blue] combats, gain [blue]2[/blue] [gold]Strength[/gold].",
+    "description_raw": "At the start of the next {Combats:plural:combat|[blue]{}[/blue] combats}, gain [blue]{StrengthPower}[/blue] [gold]Strength[/gold].",
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Event Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/fake_snecko_eye.png"
+    "image_url": "/static/images/relics/ember_tea.png",
+    "compendium_order": 261
   },
   {
-    "id": "FAKE_STRIKE_DUMMY",
-    "name": "Strike Dummy???",
-    "description": "Cards containing “Strike” deal [blue]1[/blue] additional damage.",
-    "description_raw": "Cards containing “Strike” deal [blue]{ExtraDamage}[/blue] additional damage.",
+    "id": "EMOTION_CHIP",
+    "name": "Emotion Chip",
+    "description": "If you lost HP during the previous turn, trigger the passive ability of all Orbs at the start of your turn.",
+    "description_raw": "If you lost HP during the previous turn, trigger the passive ability of all Orbs at the start of your turn.",
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Event Relic",
-    "pool": "shared",
-    "image_url": "/static/images/relics/fake_strike_dummy.png"
+    "rarity": "Rare Relic",
+    "pool": "defect",
+    "image_url": "/static/images/relics/emotion_chip.png",
+    "compendium_order": 89
   },
   {
-    "id": "FAKE_VENERABLE_TEA_SET",
-    "name": "Venerable Tea Set???",
-    "description": "Whenever you enter a [gold]Rest Site[/gold], start the next combat with an additional [energy:1].",
-    "description_raw": "Whenever you enter a [gold]Rest Site[/gold], start the next combat with an additional {Energy:energyIcons()}.",
+    "id": "EMPTY_CAGE",
+    "name": "Empty Cage",
+    "description": "Upon pickup, remove [blue]2[/blue] cards from your [gold]Deck[/gold].",
+    "description_raw": "Upon pickup, remove [blue]{Cards}[/blue] {Cards:plural:card|cards} from your [gold]Deck[/gold].",
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
-    "rarity": "Event Relic",
+    "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/fake_venerable_tea_set.png"
+    "image_url": "/static/images/relics/empty_cage.png",
+    "compendium_order": 183
+  },
+  {
+    "id": "ETERNAL_FEATHER",
+    "name": "Eternal Feather",
+    "description": "For every [blue]5[/blue] cards in your [gold]Deck[/gold], heal [green]3[/green] HP whenever you enter a [gold]Rest Site[/gold].",
+    "description_raw": "For every {Cards:plural:card|[blue]{}[/blue] cards} in your [gold]Deck[/gold], heal [green]{Heal}[/green] HP whenever you enter a [gold]Rest Site[/gold].",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Uncommon Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/eternal_feather.png",
+    "compendium_order": 46
   },
   {
     "id": "FENCING_MANUAL",
@@ -857,7 +843,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Common Relic",
     "pool": "regent",
-    "image_url": "/static/images/relics/fencing_manual.png"
+    "image_url": "/static/images/relics/fencing_manual.png",
+    "compendium_order": 19
   },
   {
     "id": "FESTIVE_POPPER",
@@ -867,7 +854,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Common Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/festive_popper.png"
+    "image_url": "/static/images/relics/festive_popper.png",
+    "compendium_order": 20
   },
   {
     "id": "FIDDLE",
@@ -877,7 +865,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/fiddle.png"
+    "image_url": "/static/images/relics/fiddle.png",
+    "compendium_order": 184
   },
   {
     "id": "FORGOTTEN_SOUL",
@@ -887,7 +876,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Event Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/forgotten_soul.png"
+    "image_url": "/static/images/relics/forgotten_soul.png",
+    "compendium_order": 262
   },
   {
     "id": "FRAGRANT_MUSHROOM",
@@ -897,7 +887,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Event Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/fragrant_mushroom.png"
+    "image_url": "/static/images/relics/fragrant_mushroom.png",
+    "compendium_order": 263
   },
   {
     "id": "FRESNEL_LENS",
@@ -907,7 +898,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Event Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/fresnel_lens.png"
+    "image_url": "/static/images/relics/fresnel_lens.png",
+    "compendium_order": 264
   },
   {
     "id": "FROZEN_EGG",
@@ -917,7 +909,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/frozen_egg.png"
+    "image_url": "/static/images/relics/frozen_egg.png",
+    "compendium_order": 90
   },
   {
     "id": "FUNERARY_MASK",
@@ -927,7 +920,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "necrobinder",
-    "image_url": "/static/images/relics/funerary_mask.png"
+    "image_url": "/static/images/relics/funerary_mask.png",
+    "compendium_order": 47
   },
   {
     "id": "FUR_COAT",
@@ -937,7 +931,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/fur_coat.png"
+    "image_url": "/static/images/relics/fur_coat.png",
+    "compendium_order": 185
   },
   {
     "id": "GALACTIC_DUST",
@@ -947,7 +942,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "regent",
-    "image_url": "/static/images/relics/galactic_dust.png"
+    "image_url": "/static/images/relics/galactic_dust.png",
+    "compendium_order": 48
   },
   {
     "id": "GAMBLING_CHIP",
@@ -957,7 +953,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/gambling_chip.png"
+    "image_url": "/static/images/relics/gambling_chip.png",
+    "compendium_order": 91
   },
   {
     "id": "GAME_PIECE",
@@ -967,7 +964,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/game_piece.png"
+    "image_url": "/static/images/relics/game_piece.png",
+    "compendium_order": 92
   },
   {
     "id": "GHOST_SEED",
@@ -977,7 +975,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Shop Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/ghost_seed.png"
+    "image_url": "/static/images/relics/ghost_seed.png",
+    "compendium_order": 139
   },
   {
     "id": "GIRYA",
@@ -987,7 +986,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/girya.png"
+    "image_url": "/static/images/relics/girya.png",
+    "compendium_order": 93
   },
   {
     "id": "GLASS_EYE",
@@ -997,7 +997,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/glass_eye.png"
+    "image_url": "/static/images/relics/glass_eye.png",
+    "compendium_order": 186
   },
   {
     "id": "GLITTER",
@@ -1007,7 +1008,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/glitter.png"
+    "image_url": "/static/images/relics/glitter.png",
+    "compendium_order": 187
   },
   {
     "id": "GNARLED_HAMMER",
@@ -1017,7 +1019,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Shop Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/gnarled_hammer.png"
+    "image_url": "/static/images/relics/gnarled_hammer.png",
+    "compendium_order": 140
   },
   {
     "id": "GOLD_PLATED_CABLES",
@@ -1027,7 +1030,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "defect",
-    "image_url": "/static/images/relics/gold_plated_cables.png"
+    "image_url": "/static/images/relics/gold_plated_cables.png",
+    "compendium_order": 49
   },
   {
     "id": "GOLDEN_COMPASS",
@@ -1037,7 +1041,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/golden_compass.png"
+    "image_url": "/static/images/relics/golden_compass.png",
+    "compendium_order": 188
   },
   {
     "id": "GOLDEN_PEARL",
@@ -1047,7 +1052,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/golden_pearl.png"
+    "image_url": "/static/images/relics/golden_pearl.png",
+    "compendium_order": 189
   },
   {
     "id": "GORGET",
@@ -1057,7 +1063,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Common Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/gorget.png"
+    "image_url": "/static/images/relics/gorget.png",
+    "compendium_order": 21
   },
   {
     "id": "GREMLIN_HORN",
@@ -1067,7 +1074,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/gremlin_horn.png"
+    "image_url": "/static/images/relics/gremlin_horn.png",
+    "compendium_order": 50
   },
   {
     "id": "HAND_DRILL",
@@ -1077,7 +1085,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Event Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/hand_drill.png"
+    "image_url": "/static/images/relics/hand_drill.png",
+    "compendium_order": 265
   },
   {
     "id": "HAPPY_FLOWER",
@@ -1087,7 +1096,19 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Common Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/happy_flower.png"
+    "image_url": "/static/images/relics/happy_flower.png",
+    "compendium_order": 22
+  },
+  {
+    "id": "FAKE_HAPPY_FLOWER",
+    "name": "Happy Flower???",
+    "description": "Every [blue]5[/blue] turns, gain [energy:1].",
+    "description_raw": "Every [blue]{Turns}[/blue] {Turns:plural:turn|turns}, gain {Energy:energyIcons()}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Event Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/fake_happy_flower.png",
+    "compendium_order": 266
   },
   {
     "id": "HELICAL_DART",
@@ -1097,7 +1118,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "silent",
-    "image_url": "/static/images/relics/helical_dart.png"
+    "image_url": "/static/images/relics/helical_dart.png",
+    "compendium_order": 94
   },
   {
     "id": "HISTORY_COURSE",
@@ -1107,7 +1129,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Event Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/history_course.png"
+    "image_url": "/static/images/relics/history_course.png",
+    "compendium_order": 267
   },
   {
     "id": "HORN_CLEAT",
@@ -1117,7 +1140,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/horn_cleat.png"
+    "image_url": "/static/images/relics/horn_cleat.png",
+    "compendium_order": 51
   },
   {
     "id": "ICE_CREAM",
@@ -1127,7 +1151,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/ice_cream.png"
+    "image_url": "/static/images/relics/ice_cream.png",
+    "compendium_order": 95
   },
   {
     "id": "INFUSED_CORE",
@@ -1137,7 +1162,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Starter Relic",
     "pool": "defect",
-    "image_url": "/static/images/relics/infused_core.png"
+    "image_url": "/static/images/relics/infused_core.png",
+    "compendium_order": 6
   },
   {
     "id": "INTIMIDATING_HELMET",
@@ -1147,7 +1173,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/intimidating_helmet.png"
+    "image_url": "/static/images/relics/intimidating_helmet.png",
+    "compendium_order": 96
   },
   {
     "id": "IRON_CLUB",
@@ -1157,7 +1184,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/iron_club.png"
+    "image_url": "/static/images/relics/iron_club.png",
+    "compendium_order": 190
   },
   {
     "id": "IVORY_TILE",
@@ -1167,7 +1195,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "necrobinder",
-    "image_url": "/static/images/relics/ivory_tile.png"
+    "image_url": "/static/images/relics/ivory_tile.png",
+    "compendium_order": 97
   },
   {
     "id": "JEWELED_MASK",
@@ -1177,7 +1206,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/jeweled_mask.png"
+    "image_url": "/static/images/relics/jeweled_mask.png",
+    "compendium_order": 191
   },
   {
     "id": "JEWELRY_BOX",
@@ -1187,7 +1217,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/jewelry_box.png"
+    "image_url": "/static/images/relics/jewelry_box.png",
+    "compendium_order": 192
   },
   {
     "id": "JOSS_PAPER",
@@ -1197,7 +1228,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/joss_paper.png"
+    "image_url": "/static/images/relics/joss_paper.png",
+    "compendium_order": 52
   },
   {
     "id": "JUZU_BRACELET",
@@ -1207,7 +1239,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Common Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/juzu_bracelet.png"
+    "image_url": "/static/images/relics/juzu_bracelet.png",
+    "compendium_order": 23
   },
   {
     "id": "KIFUDA",
@@ -1217,7 +1250,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Shop Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/kifuda.png"
+    "image_url": "/static/images/relics/kifuda.png",
+    "compendium_order": 141
   },
   {
     "id": "KUNAI",
@@ -1227,7 +1261,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/kunai.png"
+    "image_url": "/static/images/relics/kunai.png",
+    "compendium_order": 98
   },
   {
     "id": "KUSARIGAMA",
@@ -1237,7 +1272,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/kusarigama.png"
+    "image_url": "/static/images/relics/kusarigama.png",
+    "compendium_order": 53
   },
   {
     "id": "LANTERN",
@@ -1247,7 +1283,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Common Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/lantern.png"
+    "image_url": "/static/images/relics/lantern.png",
+    "compendium_order": 24
   },
   {
     "id": "LARGE_CAPSULE",
@@ -1257,7 +1294,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/large_capsule.png"
+    "image_url": "/static/images/relics/large_capsule.png",
+    "compendium_order": 193
   },
   {
     "id": "LASTING_CANDY",
@@ -1267,7 +1305,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/lasting_candy.png"
+    "image_url": "/static/images/relics/lasting_candy.png",
+    "compendium_order": 99
   },
   {
     "id": "LAVA_LAMP",
@@ -1277,7 +1316,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Shop Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/lava_lamp.png"
+    "image_url": "/static/images/relics/lava_lamp.png",
+    "compendium_order": 142
   },
   {
     "id": "LAVA_ROCK",
@@ -1287,7 +1327,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/lava_rock.png"
+    "image_url": "/static/images/relics/lava_rock.png",
+    "compendium_order": 194
   },
   {
     "id": "LEAD_PAPERWEIGHT",
@@ -1297,7 +1338,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/lead_paperweight.png"
+    "image_url": "/static/images/relics/lead_paperweight.png",
+    "compendium_order": 195
   },
   {
     "id": "LEAFY_POULTICE",
@@ -1307,7 +1349,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/leafy_poultice.png"
+    "image_url": "/static/images/relics/leafy_poultice.png",
+    "compendium_order": 196
   },
   {
     "id": "LEES_WAFFLE",
@@ -1317,7 +1360,19 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Shop Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/lees_waffle.png"
+    "image_url": "/static/images/relics/lees_waffle.png",
+    "compendium_order": 143
+  },
+  {
+    "id": "FAKE_LEES_WAFFLE",
+    "name": "Lee's Waffle???",
+    "description": "Upon pickup, heal [green]10%[/green] of your HP.",
+    "description_raw": "Upon pickup, heal [green]{Heal}%[/green] of your HP.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Event Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/fake_lees_waffle.png",
+    "compendium_order": 268
   },
   {
     "id": "LETTER_OPENER",
@@ -1327,7 +1382,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/letter_opener.png"
+    "image_url": "/static/images/relics/letter_opener.png",
+    "compendium_order": 54
   },
   {
     "id": "LIZARD_TAIL",
@@ -1337,7 +1393,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/lizard_tail.png"
+    "image_url": "/static/images/relics/lizard_tail.png",
+    "compendium_order": 100
   },
   {
     "id": "LOOMING_FRUIT",
@@ -1347,7 +1404,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/looming_fruit.png"
+    "image_url": "/static/images/relics/looming_fruit.png",
+    "compendium_order": 197
   },
   {
     "id": "LORDS_PARASOL",
@@ -1357,7 +1415,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/lords_parasol.png"
+    "image_url": "/static/images/relics/lords_parasol.png",
+    "compendium_order": 198
   },
   {
     "id": "LOST_COFFER",
@@ -1367,7 +1426,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/lost_coffer.png"
+    "image_url": "/static/images/relics/lost_coffer.png",
+    "compendium_order": 199
   },
   {
     "id": "LOST_WISP",
@@ -1377,7 +1437,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Event Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/lost_wisp.png"
+    "image_url": "/static/images/relics/lost_wisp.png",
+    "compendium_order": 269
   },
   {
     "id": "LUCKY_FYSH",
@@ -1387,7 +1448,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/lucky_fysh.png"
+    "image_url": "/static/images/relics/lucky_fysh.png",
+    "compendium_order": 55
   },
   {
     "id": "LUNAR_PASTRY",
@@ -1397,7 +1459,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "regent",
-    "image_url": "/static/images/relics/lunar_pastry.png"
+    "image_url": "/static/images/relics/lunar_pastry.png",
+    "compendium_order": 101
   },
   {
     "id": "MANGO",
@@ -1407,7 +1470,19 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/mango.png"
+    "image_url": "/static/images/relics/mango.png",
+    "compendium_order": 102
+  },
+  {
+    "id": "FAKE_MANGO",
+    "name": "Mango???",
+    "description": "Upon pickup, raise your Max HP by [blue]3[/blue].",
+    "description_raw": "Upon pickup, raise your Max HP by [blue]{MaxHp}[/blue].",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Event Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/fake_mango.png",
+    "compendium_order": 270
   },
   {
     "id": "MASSIVE_SCROLL",
@@ -1417,7 +1492,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/massive_scroll.png"
+    "image_url": "/static/images/relics/massive_scroll.png",
+    "compendium_order": 200
   },
   {
     "id": "MAW_BANK",
@@ -1427,7 +1503,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Event Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/maw_bank.png"
+    "image_url": "/static/images/relics/maw_bank.png",
+    "compendium_order": 271
   },
   {
     "id": "MEAL_TICKET",
@@ -1437,7 +1514,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Common Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/meal_ticket.png"
+    "image_url": "/static/images/relics/meal_ticket.png",
+    "compendium_order": 25
   },
   {
     "id": "MEAT_CLEAVER",
@@ -1447,7 +1525,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/meat_cleaver.png"
+    "image_url": "/static/images/relics/meat_cleaver.png",
+    "compendium_order": 201
   },
   {
     "id": "MEAT_ON_THE_BONE",
@@ -1457,7 +1536,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/meat_on_the_bone.png"
+    "image_url": "/static/images/relics/meat_on_the_bone.png",
+    "compendium_order": 103
   },
   {
     "id": "MEMBERSHIP_CARD",
@@ -1467,7 +1547,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Shop Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/membership_card.png"
+    "image_url": "/static/images/relics/membership_card.png",
+    "compendium_order": 144
   },
   {
     "id": "MERCURY_HOURGLASS",
@@ -1477,7 +1558,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/mercury_hourglass.png"
+    "image_url": "/static/images/relics/mercury_hourglass.png",
+    "compendium_order": 56
   },
   {
     "id": "METRONOME",
@@ -1487,7 +1569,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "defect",
-    "image_url": "/static/images/relics/metronome.png"
+    "image_url": "/static/images/relics/metronome.png",
+    "compendium_order": 104
   },
   {
     "id": "MINI_REGENT",
@@ -1497,7 +1580,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "regent",
-    "image_url": "/static/images/relics/mini_regent.png"
+    "image_url": "/static/images/relics/mini_regent.png",
+    "compendium_order": 105
   },
   {
     "id": "MINIATURE_CANNON",
@@ -1507,7 +1591,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/miniature_cannon.png"
+    "image_url": "/static/images/relics/miniature_cannon.png",
+    "compendium_order": 57
   },
   {
     "id": "MINIATURE_TENT",
@@ -1517,7 +1602,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Shop Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/miniature_tent.png"
+    "image_url": "/static/images/relics/miniature_tent.png",
+    "compendium_order": 145
   },
   {
     "id": "MOLTEN_EGG",
@@ -1527,7 +1613,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/molten_egg.png"
+    "image_url": "/static/images/relics/molten_egg.png",
+    "compendium_order": 106
   },
   {
     "id": "MR_STRUGGLES",
@@ -1537,7 +1624,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Event Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/mr_struggles.png"
+    "image_url": "/static/images/relics/mr_struggles.png",
+    "compendium_order": 272
   },
   {
     "id": "MUMMIFIED_HAND",
@@ -1547,7 +1635,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/mummified_hand.png"
+    "image_url": "/static/images/relics/mummified_hand.png",
+    "compendium_order": 107
   },
   {
     "id": "MUSIC_BOX",
@@ -1557,7 +1646,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/music_box.png"
+    "image_url": "/static/images/relics/music_box.png",
+    "compendium_order": 202
   },
   {
     "id": "MYSTIC_LIGHTER",
@@ -1567,7 +1657,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Shop Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/mystic_lighter.png"
+    "image_url": "/static/images/relics/mystic_lighter.png",
+    "compendium_order": 146
   },
   {
     "id": "NEOWS_TORMENT",
@@ -1577,7 +1668,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/neows_torment.png"
+    "image_url": "/static/images/relics/neows_torment.png",
+    "compendium_order": 203
   },
   {
     "id": "NEW_LEAF",
@@ -1587,7 +1679,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/new_leaf.png"
+    "image_url": "/static/images/relics/new_leaf.png",
+    "compendium_order": 204
   },
   {
     "id": "NINJA_SCROLL",
@@ -1597,7 +1690,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Shop Relic",
     "pool": "silent",
-    "image_url": "/static/images/relics/ninja_scroll.png"
+    "image_url": "/static/images/relics/ninja_scroll.png",
+    "compendium_order": 147
   },
   {
     "id": "NUNCHAKU",
@@ -1607,7 +1701,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/nunchaku.png"
+    "image_url": "/static/images/relics/nunchaku.png",
+    "compendium_order": 58
   },
   {
     "id": "NUTRITIOUS_OYSTER",
@@ -1617,7 +1712,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/nutritious_oyster.png"
+    "image_url": "/static/images/relics/nutritious_oyster.png",
+    "compendium_order": 205
   },
   {
     "id": "NUTRITIOUS_SOUP",
@@ -1627,7 +1723,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/nutritious_soup.png"
+    "image_url": "/static/images/relics/nutritious_soup.png",
+    "compendium_order": 206
   },
   {
     "id": "ODDLY_SMOOTH_STONE",
@@ -1637,7 +1734,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Common Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/oddly_smooth_stone.png"
+    "image_url": "/static/images/relics/oddly_smooth_stone.png",
+    "compendium_order": 26
   },
   {
     "id": "OLD_COIN",
@@ -1647,7 +1745,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/old_coin.png"
+    "image_url": "/static/images/relics/old_coin.png",
+    "compendium_order": 108
   },
   {
     "id": "ORANGE_DOUGH",
@@ -1657,7 +1756,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "regent",
-    "image_url": "/static/images/relics/orange_dough.png"
+    "image_url": "/static/images/relics/orange_dough.png",
+    "compendium_order": 109
   },
   {
     "id": "ORICHALCUM",
@@ -1667,7 +1767,19 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/orichalcum.png"
+    "image_url": "/static/images/relics/orichalcum.png",
+    "compendium_order": 59
+  },
+  {
+    "id": "FAKE_ORICHALCUM",
+    "name": "Orichalcum???",
+    "description": "If you end your turn without [gold]Block[/gold], gain [blue]3[/blue] [gold]Block[/gold].",
+    "description_raw": "If you end your turn without [gold]Block[/gold], gain [blue]{Block}[/blue] [gold]Block[/gold].",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Event Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/fake_orichalcum.png",
+    "compendium_order": 273
   },
   {
     "id": "ORNAMENTAL_FAN",
@@ -1677,7 +1789,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/ornamental_fan.png"
+    "image_url": "/static/images/relics/ornamental_fan.png",
+    "compendium_order": 60
   },
   {
     "id": "ORRERY",
@@ -1687,7 +1800,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Shop Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/orrery.png"
+    "image_url": "/static/images/relics/orrery.png",
+    "compendium_order": 148
   },
   {
     "id": "PAELS_BLOOD",
@@ -1697,7 +1811,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/paels_blood.png"
+    "image_url": "/static/images/relics/paels_blood.png",
+    "compendium_order": 207
   },
   {
     "id": "PAELS_CLAW",
@@ -1707,7 +1822,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/paels_claw.png"
+    "image_url": "/static/images/relics/paels_claw.png",
+    "compendium_order": 208
   },
   {
     "id": "PAELS_EYE",
@@ -1717,7 +1833,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/paels_eye.png"
+    "image_url": "/static/images/relics/paels_eye.png",
+    "compendium_order": 209
   },
   {
     "id": "PAELS_FLESH",
@@ -1727,7 +1844,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/paels_flesh.png"
+    "image_url": "/static/images/relics/paels_flesh.png",
+    "compendium_order": 210
   },
   {
     "id": "PAELS_GROWTH",
@@ -1737,7 +1855,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/paels_growth.png"
+    "image_url": "/static/images/relics/paels_growth.png",
+    "compendium_order": 211
   },
   {
     "id": "PAELS_HORN",
@@ -1747,7 +1866,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/paels_horn.png"
+    "image_url": "/static/images/relics/paels_horn.png",
+    "compendium_order": 212
   },
   {
     "id": "PAELS_LEGION",
@@ -1757,7 +1877,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/paels_legion.png"
+    "image_url": "/static/images/relics/paels_legion.png",
+    "compendium_order": 213
   },
   {
     "id": "PAELS_TEARS",
@@ -1767,7 +1888,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/paels_tears.png"
+    "image_url": "/static/images/relics/paels_tears.png",
+    "compendium_order": 214
   },
   {
     "id": "PAELS_TOOTH",
@@ -1777,7 +1899,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/paels_tooth.png"
+    "image_url": "/static/images/relics/paels_tooth.png",
+    "compendium_order": 215
   },
   {
     "id": "PAELS_WING",
@@ -1787,7 +1910,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/paels_wing.png"
+    "image_url": "/static/images/relics/paels_wing.png",
+    "compendium_order": 216
   },
   {
     "id": "PANDORAS_BOX",
@@ -1797,7 +1921,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/pandoras_box.png"
+    "image_url": "/static/images/relics/pandoras_box.png",
+    "compendium_order": 217
   },
   {
     "id": "PANTOGRAPH",
@@ -1807,7 +1932,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/pantograph.png"
+    "image_url": "/static/images/relics/pantograph.png",
+    "compendium_order": 61
   },
   {
     "id": "PAPER_KRANE",
@@ -1817,7 +1943,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "silent",
-    "image_url": "/static/images/relics/paper_krane.png"
+    "image_url": "/static/images/relics/paper_krane.png",
+    "compendium_order": 110
   },
   {
     "id": "PAPER_PHROG",
@@ -1827,7 +1954,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "ironclad",
-    "image_url": "/static/images/relics/paper_phrog.png"
+    "image_url": "/static/images/relics/paper_phrog.png",
+    "compendium_order": 62
   },
   {
     "id": "PARRYING_SHIELD",
@@ -1837,7 +1965,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/parrying_shield.png"
+    "image_url": "/static/images/relics/parrying_shield.png",
+    "compendium_order": 63
   },
   {
     "id": "PEAR",
@@ -1847,7 +1976,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/pear.png"
+    "image_url": "/static/images/relics/pear.png",
+    "compendium_order": 64
   },
   {
     "id": "PEN_NIB",
@@ -1857,7 +1987,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/pen_nib.png"
+    "image_url": "/static/images/relics/pen_nib.png",
+    "compendium_order": 65
   },
   {
     "id": "PENDULUM",
@@ -1867,7 +1998,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Common Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/pendulum.png"
+    "image_url": "/static/images/relics/pendulum.png",
+    "compendium_order": 27
   },
   {
     "id": "PERMAFROST",
@@ -1877,7 +2009,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Common Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/permafrost.png"
+    "image_url": "/static/images/relics/permafrost.png",
+    "compendium_order": 28
   },
   {
     "id": "PETRIFIED_TOAD",
@@ -1887,7 +2020,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/petrified_toad.png"
+    "image_url": "/static/images/relics/petrified_toad.png",
+    "compendium_order": 66
   },
   {
     "id": "PHILOSOPHERS_STONE",
@@ -1897,7 +2031,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/philosophers_stone.png"
+    "image_url": "/static/images/relics/philosophers_stone.png",
+    "compendium_order": 218
   },
   {
     "id": "PHYLACTERY_UNBOUND",
@@ -1907,7 +2042,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Starter Relic",
     "pool": "necrobinder",
-    "image_url": "/static/images/relics/phylactery_unbound.png"
+    "image_url": "/static/images/relics/phylactery_unbound.png",
+    "compendium_order": 7
   },
   {
     "id": "PLANISPHERE",
@@ -1917,7 +2053,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/planisphere.png"
+    "image_url": "/static/images/relics/planisphere.png",
+    "compendium_order": 67
   },
   {
     "id": "POCKETWATCH",
@@ -1927,7 +2064,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/pocketwatch.png"
+    "image_url": "/static/images/relics/pocketwatch.png",
+    "compendium_order": 111
   },
   {
     "id": "POLLINOUS_CORE",
@@ -1937,7 +2075,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Event Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/pollinous_core.png"
+    "image_url": "/static/images/relics/pollinous_core.png",
+    "compendium_order": 274
   },
   {
     "id": "POMANDER",
@@ -1947,7 +2086,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/pomander.png"
+    "image_url": "/static/images/relics/pomander.png",
+    "compendium_order": 219
   },
   {
     "id": "POTION_BELT",
@@ -1957,7 +2097,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Common Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/potion_belt.png"
+    "image_url": "/static/images/relics/potion_belt.png",
+    "compendium_order": 29
   },
   {
     "id": "POWER_CELL",
@@ -1967,7 +2108,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "defect",
-    "image_url": "/static/images/relics/power_cell.png"
+    "image_url": "/static/images/relics/power_cell.png",
+    "compendium_order": 112
   },
   {
     "id": "PRAYER_WHEEL",
@@ -1977,7 +2119,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/prayer_wheel.png"
+    "image_url": "/static/images/relics/prayer_wheel.png",
+    "compendium_order": 113
   },
   {
     "id": "PRECARIOUS_SHEARS",
@@ -1987,7 +2130,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/precarious_shears.png"
+    "image_url": "/static/images/relics/precarious_shears.png",
+    "compendium_order": 220
   },
   {
     "id": "PRECISE_SCISSORS",
@@ -1997,7 +2141,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/precise_scissors.png"
+    "image_url": "/static/images/relics/precise_scissors.png",
+    "compendium_order": 221
   },
   {
     "id": "PRESERVED_FOG",
@@ -2007,7 +2152,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/preserved_fog.png"
+    "image_url": "/static/images/relics/preserved_fog.png",
+    "compendium_order": 222
   },
   {
     "id": "PRISMATIC_GEM",
@@ -2017,7 +2163,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/prismatic_gem.png"
+    "image_url": "/static/images/relics/prismatic_gem.png",
+    "compendium_order": 223
   },
   {
     "id": "PUMPKIN_CANDLE",
@@ -2027,7 +2174,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/pumpkin_candle.png"
+    "image_url": "/static/images/relics/pumpkin_candle.png",
+    "compendium_order": 224
   },
   {
     "id": "PUNCH_DAGGER",
@@ -2037,7 +2185,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Shop Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/punch_dagger.png"
+    "image_url": "/static/images/relics/punch_dagger.png",
+    "compendium_order": 149
   },
   {
     "id": "RADIANT_PEARL",
@@ -2047,7 +2196,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/radiant_pearl.png"
+    "image_url": "/static/images/relics/radiant_pearl.png",
+    "compendium_order": 225
   },
   {
     "id": "RAINBOW_RING",
@@ -2057,7 +2207,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/rainbow_ring.png"
+    "image_url": "/static/images/relics/rainbow_ring.png",
+    "compendium_order": 114
   },
   {
     "id": "RAZOR_TOOTH",
@@ -2067,7 +2218,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/razor_tooth.png"
+    "image_url": "/static/images/relics/razor_tooth.png",
+    "compendium_order": 115
   },
   {
     "id": "RED_MASK",
@@ -2077,7 +2229,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/red_mask.png"
+    "image_url": "/static/images/relics/red_mask.png",
+    "compendium_order": 68
   },
   {
     "id": "RED_SKULL",
@@ -2087,7 +2240,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Common Relic",
     "pool": "ironclad",
-    "image_url": "/static/images/relics/red_skull.png"
+    "image_url": "/static/images/relics/red_skull.png",
+    "compendium_order": 30
   },
   {
     "id": "REGAL_PILLOW",
@@ -2097,7 +2251,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Common Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/regal_pillow.png"
+    "image_url": "/static/images/relics/regal_pillow.png",
+    "compendium_order": 31
   },
   {
     "id": "REGALITE",
@@ -2107,7 +2262,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "regent",
-    "image_url": "/static/images/relics/regalite.png"
+    "image_url": "/static/images/relics/regalite.png",
+    "compendium_order": 69
   },
   {
     "id": "REPTILE_TRINKET",
@@ -2117,7 +2273,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/reptile_trinket.png"
+    "image_url": "/static/images/relics/reptile_trinket.png",
+    "compendium_order": 70
   },
   {
     "id": "RING_OF_THE_DRAKE",
@@ -2127,7 +2284,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Starter Relic",
     "pool": "silent",
-    "image_url": "/static/images/relics/ring_of_the_drake.png"
+    "image_url": "/static/images/relics/ring_of_the_drake.png",
+    "compendium_order": 8
   },
   {
     "id": "RING_OF_THE_SNAKE",
@@ -2137,7 +2295,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Starter Relic",
     "pool": "silent",
-    "image_url": "/static/images/relics/ring_of_the_snake.png"
+    "image_url": "/static/images/relics/ring_of_the_snake.png",
+    "compendium_order": 9
   },
   {
     "id": "RINGING_TRIANGLE",
@@ -2147,7 +2306,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Shop Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/ringing_triangle.png"
+    "image_url": "/static/images/relics/ringing_triangle.png",
+    "compendium_order": 150
   },
   {
     "id": "RIPPLE_BASIN",
@@ -2157,7 +2317,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/ripple_basin.png"
+    "image_url": "/static/images/relics/ripple_basin.png",
+    "compendium_order": 71
   },
   {
     "id": "ROYAL_POISON",
@@ -2167,7 +2328,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Event Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/royal_poison.png"
+    "image_url": "/static/images/relics/royal_poison.png",
+    "compendium_order": 275
   },
   {
     "id": "ROYAL_STAMP",
@@ -2177,7 +2339,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Shop Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/royal_stamp.png"
+    "image_url": "/static/images/relics/royal_stamp.png",
+    "compendium_order": 151
   },
   {
     "id": "RUINED_HELMET",
@@ -2187,7 +2350,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "ironclad",
-    "image_url": "/static/images/relics/ruined_helmet.png"
+    "image_url": "/static/images/relics/ruined_helmet.png",
+    "compendium_order": 116
   },
   {
     "id": "RUNIC_CAPACITOR",
@@ -2197,7 +2361,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Shop Relic",
     "pool": "defect",
-    "image_url": "/static/images/relics/runic_capacitor.png"
+    "image_url": "/static/images/relics/runic_capacitor.png",
+    "compendium_order": 152
   },
   {
     "id": "RUNIC_PYRAMID",
@@ -2207,7 +2372,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/runic_pyramid.png"
+    "image_url": "/static/images/relics/runic_pyramid.png",
+    "compendium_order": 226
   },
   {
     "id": "SAI",
@@ -2217,7 +2383,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/sai.png"
+    "image_url": "/static/images/relics/sai.png",
+    "compendium_order": 227
   },
   {
     "id": "SAND_CASTLE",
@@ -2227,7 +2394,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/sand_castle.png"
+    "image_url": "/static/images/relics/sand_castle.png",
+    "compendium_order": 228
   },
   {
     "id": "SCREAMING_FLAGON",
@@ -2237,7 +2405,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Shop Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/screaming_flagon.png"
+    "image_url": "/static/images/relics/screaming_flagon.png",
+    "compendium_order": 153
   },
   {
     "id": "SCROLL_BOXES",
@@ -2247,7 +2416,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/scroll_boxes.png"
+    "image_url": "/static/images/relics/scroll_boxes.png",
+    "compendium_order": 229
   },
   {
     "id": "SEA_GLASS",
@@ -2257,7 +2427,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/sea_glass.png"
+    "image_url": "/static/images/relics/sea_glass.png",
+    "compendium_order": 230
   },
   {
     "id": "SEAL_OF_GOLD",
@@ -2267,7 +2438,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/seal_of_gold.png"
+    "image_url": "/static/images/relics/seal_of_gold.png",
+    "compendium_order": 231
   },
   {
     "id": "SELF_FORMING_CLAY",
@@ -2277,7 +2449,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "ironclad",
-    "image_url": "/static/images/relics/self_forming_clay.png"
+    "image_url": "/static/images/relics/self_forming_clay.png",
+    "compendium_order": 72
   },
   {
     "id": "SERE_TALON",
@@ -2287,7 +2460,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/sere_talon.png"
+    "image_url": "/static/images/relics/sere_talon.png",
+    "compendium_order": 232
   },
   {
     "id": "SHOVEL",
@@ -2297,7 +2471,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/shovel.png"
+    "image_url": "/static/images/relics/shovel.png",
+    "compendium_order": 117
   },
   {
     "id": "SHURIKEN",
@@ -2307,7 +2482,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/shuriken.png"
+    "image_url": "/static/images/relics/shuriken.png",
+    "compendium_order": 118
   },
   {
     "id": "SIGNET_RING",
@@ -2317,7 +2493,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/signet_ring.png"
+    "image_url": "/static/images/relics/signet_ring.png",
+    "compendium_order": 233
   },
   {
     "id": "SILVER_CRUCIBLE",
@@ -2327,7 +2504,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/silver_crucible.png"
+    "image_url": "/static/images/relics/silver_crucible.png",
+    "compendium_order": 234
   },
   {
     "id": "SLING_OF_COURAGE",
@@ -2337,7 +2515,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Shop Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/sling_of_courage.png"
+    "image_url": "/static/images/relics/sling_of_courage.png",
+    "compendium_order": 154
   },
   {
     "id": "SMALL_CAPSULE",
@@ -2347,7 +2526,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/small_capsule.png"
+    "image_url": "/static/images/relics/small_capsule.png",
+    "compendium_order": 235
   },
   {
     "id": "SNECKO_EYE",
@@ -2357,7 +2537,19 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/snecko_eye.png"
+    "image_url": "/static/images/relics/snecko_eye.png",
+    "compendium_order": 236
+  },
+  {
+    "id": "FAKE_SNECKO_EYE",
+    "name": "Snecko Eye???",
+    "description": "Start each combat [red]Confused[/red].",
+    "description_raw": "Start each combat [red]Confused[/red].",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Event Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/fake_snecko_eye.png",
+    "compendium_order": 276
   },
   {
     "id": "SNECKO_SKULL",
@@ -2367,7 +2559,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Common Relic",
     "pool": "silent",
-    "image_url": "/static/images/relics/snecko_skull.png"
+    "image_url": "/static/images/relics/snecko_skull.png",
+    "compendium_order": 32
   },
   {
     "id": "SOZU",
@@ -2377,7 +2570,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/sozu.png"
+    "image_url": "/static/images/relics/sozu.png",
+    "compendium_order": 237
   },
   {
     "id": "SPARKLING_ROUGE",
@@ -2387,7 +2581,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/sparkling_rouge.png"
+    "image_url": "/static/images/relics/sparkling_rouge.png",
+    "compendium_order": 73
   },
   {
     "id": "SPIKED_GAUNTLETS",
@@ -2397,7 +2592,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/spiked_gauntlets.png"
+    "image_url": "/static/images/relics/spiked_gauntlets.png",
+    "compendium_order": 238
   },
   {
     "id": "STONE_CALENDAR",
@@ -2407,7 +2603,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/stone_calendar.png"
+    "image_url": "/static/images/relics/stone_calendar.png",
+    "compendium_order": 119
   },
   {
     "id": "STONE_CRACKER",
@@ -2417,7 +2614,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/stone_cracker.png"
+    "image_url": "/static/images/relics/stone_cracker.png",
+    "compendium_order": 74
   },
   {
     "id": "STONE_HUMIDIFIER",
@@ -2427,7 +2625,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/stone_humidifier.png"
+    "image_url": "/static/images/relics/stone_humidifier.png",
+    "compendium_order": 239
   },
   {
     "id": "STORYBOOK",
@@ -2437,7 +2636,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/storybook.png"
+    "image_url": "/static/images/relics/storybook.png",
+    "compendium_order": 240
   },
   {
     "id": "STRAWBERRY",
@@ -2447,7 +2647,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Common Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/strawberry.png"
+    "image_url": "/static/images/relics/strawberry.png",
+    "compendium_order": 33
   },
   {
     "id": "STRIKE_DUMMY",
@@ -2457,7 +2658,19 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Common Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/strike_dummy.png"
+    "image_url": "/static/images/relics/strike_dummy.png",
+    "compendium_order": 34
+  },
+  {
+    "id": "FAKE_STRIKE_DUMMY",
+    "name": "Strike Dummy???",
+    "description": "Cards containing “Strike” deal [blue]1[/blue] additional damage.",
+    "description_raw": "Cards containing “Strike” deal [blue]{ExtraDamage}[/blue] additional damage.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Event Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/fake_strike_dummy.png",
+    "compendium_order": 277
   },
   {
     "id": "STURDY_CLAMP",
@@ -2467,7 +2680,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/sturdy_clamp.png"
+    "image_url": "/static/images/relics/sturdy_clamp.png",
+    "compendium_order": 120
   },
   {
     "id": "SWORD_OF_JADE",
@@ -2477,7 +2691,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Event Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/sword_of_jade.png"
+    "image_url": "/static/images/relics/sword_of_jade.png",
+    "compendium_order": 278
   },
   {
     "id": "SWORD_OF_STONE",
@@ -2487,7 +2702,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Event Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/sword_of_stone.png"
+    "image_url": "/static/images/relics/sword_of_stone.png",
+    "compendium_order": 279
   },
   {
     "id": "SYMBIOTIC_VIRUS",
@@ -2497,7 +2713,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "defect",
-    "image_url": "/static/images/relics/symbiotic_virus.png"
+    "image_url": "/static/images/relics/symbiotic_virus.png",
+    "compendium_order": 75
   },
   {
     "id": "TANXS_WHISTLE",
@@ -2507,7 +2724,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/tanxs_whistle.png"
+    "image_url": "/static/images/relics/tanxs_whistle.png",
+    "compendium_order": 241
   },
   {
     "id": "TEA_OF_DISCOURTESY",
@@ -2517,7 +2735,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Event Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/tea_of_discourtesy.png"
+    "image_url": "/static/images/relics/tea_of_discourtesy.png",
+    "compendium_order": 280
   },
   {
     "id": "THE_ABACUS",
@@ -2527,7 +2746,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Shop Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/the_abacus.png"
+    "image_url": "/static/images/relics/the_abacus.png",
+    "compendium_order": 155
   },
   {
     "id": "THE_BOOT",
@@ -2537,7 +2757,19 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Event Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/the_boot.png"
+    "image_url": "/static/images/relics/the_boot.png",
+    "compendium_order": 281
+  },
+  {
+    "id": "CHOSEN_CHEESE",
+    "name": "The Chosen Cheese",
+    "description": "At the end of combat, gain [blue]1[/blue] Max HP.",
+    "description_raw": "At the end of combat, gain [blue]{MaxHp}[/blue] Max HP.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Event Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/chosen_cheese.png",
+    "compendium_order": 282
   },
   {
     "id": "THE_COURIER",
@@ -2547,7 +2779,19 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/the_courier.png"
+    "image_url": "/static/images/relics/the_courier.png",
+    "compendium_order": 121
+  },
+  {
+    "id": "FAKE_MERCHANTS_RUG",
+    "name": "The Merchant's Rug???",
+    "description": "Poor imitation. Does nothing.",
+    "description_raw": "Poor imitation. Does nothing.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Event Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/fake_merchants_rug.png",
+    "compendium_order": 283
   },
   {
     "id": "THROWING_AXE",
@@ -2557,7 +2801,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/throwing_axe.png"
+    "image_url": "/static/images/relics/throwing_axe.png",
+    "compendium_order": 242
   },
   {
     "id": "TINGSHA",
@@ -2567,7 +2812,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "silent",
-    "image_url": "/static/images/relics/tingsha.png"
+    "image_url": "/static/images/relics/tingsha.png",
+    "compendium_order": 76
   },
   {
     "id": "TINY_MAILBOX",
@@ -2577,7 +2823,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Common Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/tiny_mailbox.png"
+    "image_url": "/static/images/relics/tiny_mailbox.png",
+    "compendium_order": 35
   },
   {
     "id": "TOASTY_MITTENS",
@@ -2587,7 +2834,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/toasty_mittens.png"
+    "image_url": "/static/images/relics/toasty_mittens.png",
+    "compendium_order": 243
   },
   {
     "id": "TOOLBOX",
@@ -2597,7 +2845,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Shop Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/toolbox.png"
+    "image_url": "/static/images/relics/toolbox.png",
+    "compendium_order": 156
   },
   {
     "id": "TOUCH_OF_OROBAS",
@@ -2607,7 +2856,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/touch_of_orobas.png"
+    "image_url": "/static/images/relics/touch_of_orobas.png",
+    "compendium_order": 244
   },
   {
     "id": "TOUGH_BANDAGES",
@@ -2617,7 +2867,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "silent",
-    "image_url": "/static/images/relics/tough_bandages.png"
+    "image_url": "/static/images/relics/tough_bandages.png",
+    "compendium_order": 122
   },
   {
     "id": "TOXIC_EGG",
@@ -2627,7 +2878,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/toxic_egg.png"
+    "image_url": "/static/images/relics/toxic_egg.png",
+    "compendium_order": 123
   },
   {
     "id": "TOY_BOX",
@@ -2637,7 +2889,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/toy_box.png"
+    "image_url": "/static/images/relics/toy_box.png",
+    "compendium_order": 245
   },
   {
     "id": "TRI_BOOMERANG",
@@ -2647,7 +2900,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/tri_boomerang.png"
+    "image_url": "/static/images/relics/tri_boomerang.png",
+    "compendium_order": 246
   },
   {
     "id": "TUNGSTEN_ROD",
@@ -2657,7 +2911,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/tungsten_rod.png"
+    "image_url": "/static/images/relics/tungsten_rod.png",
+    "compendium_order": 124
   },
   {
     "id": "TUNING_FORK",
@@ -2667,7 +2922,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/tuning_fork.png"
+    "image_url": "/static/images/relics/tuning_fork.png",
+    "compendium_order": 77
   },
   {
     "id": "TWISTED_FUNNEL",
@@ -2677,7 +2933,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "silent",
-    "image_url": "/static/images/relics/twisted_funnel.png"
+    "image_url": "/static/images/relics/twisted_funnel.png",
+    "compendium_order": 78
   },
   {
     "id": "UNCEASING_TOP",
@@ -2687,7 +2944,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/unceasing_top.png"
+    "image_url": "/static/images/relics/unceasing_top.png",
+    "compendium_order": 125
   },
   {
     "id": "UNDYING_SIGIL",
@@ -2697,7 +2955,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Shop Relic",
     "pool": "necrobinder",
-    "image_url": "/static/images/relics/undying_sigil.png"
+    "image_url": "/static/images/relics/undying_sigil.png",
+    "compendium_order": 157
   },
   {
     "id": "UNSETTLING_LAMP",
@@ -2707,7 +2966,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/unsettling_lamp.png"
+    "image_url": "/static/images/relics/unsettling_lamp.png",
+    "compendium_order": 126
   },
   {
     "id": "VAJRA",
@@ -2717,7 +2977,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Common Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/vajra.png"
+    "image_url": "/static/images/relics/vajra.png",
+    "compendium_order": 36
   },
   {
     "id": "VAKUU_CARD_SELECTOR",
@@ -2727,7 +2988,8 @@
     "flavor": "",
     "rarity": "Unknown",
     "pool": "shared",
-    "image_url": null
+    "image_url": null,
+    "compendium_order": 288
   },
   {
     "id": "VAMBRACE",
@@ -2737,7 +2999,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/vambrace.png"
+    "image_url": "/static/images/relics/vambrace.png",
+    "compendium_order": 79
   },
   {
     "id": "VELVET_CHOKER",
@@ -2747,7 +3010,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/velvet_choker.png"
+    "image_url": "/static/images/relics/velvet_choker.png",
+    "compendium_order": 247
   },
   {
     "id": "VENERABLE_TEA_SET",
@@ -2757,7 +3021,19 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Common Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/venerable_tea_set.png"
+    "image_url": "/static/images/relics/venerable_tea_set.png",
+    "compendium_order": 37
+  },
+  {
+    "id": "FAKE_VENERABLE_TEA_SET",
+    "name": "Venerable Tea Set???",
+    "description": "Whenever you enter a [gold]Rest Site[/gold], start the next combat with an additional [energy:1].",
+    "description_raw": "Whenever you enter a [gold]Rest Site[/gold], start the next combat with an additional {Energy:energyIcons()}.",
+    "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+    "rarity": "Event Relic",
+    "pool": "shared",
+    "image_url": "/static/images/relics/fake_venerable_tea_set.png",
+    "compendium_order": 284
   },
   {
     "id": "VERY_HOT_COCOA",
@@ -2767,7 +3043,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/very_hot_cocoa.png"
+    "image_url": "/static/images/relics/very_hot_cocoa.png",
+    "compendium_order": 248
   },
   {
     "id": "VEXING_PUZZLEBOX",
@@ -2777,7 +3054,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/vexing_puzzlebox.png"
+    "image_url": "/static/images/relics/vexing_puzzlebox.png",
+    "compendium_order": 127
   },
   {
     "id": "VITRUVIAN_MINION",
@@ -2787,7 +3065,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Shop Relic",
     "pool": "regent",
-    "image_url": "/static/images/relics/vitruvian_minion.png"
+    "image_url": "/static/images/relics/vitruvian_minion.png",
+    "compendium_order": 158
   },
   {
     "id": "WAR_HAMMER",
@@ -2797,7 +3076,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/war_hammer.png"
+    "image_url": "/static/images/relics/war_hammer.png",
+    "compendium_order": 249
   },
   {
     "id": "WAR_PAINT",
@@ -2807,7 +3087,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Common Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/war_paint.png"
+    "image_url": "/static/images/relics/war_paint.png",
+    "compendium_order": 38
   },
   {
     "id": "WHETSTONE",
@@ -2817,7 +3098,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Common Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/whetstone.png"
+    "image_url": "/static/images/relics/whetstone.png",
+    "compendium_order": 39
   },
   {
     "id": "WHISPERING_EARRING",
@@ -2827,7 +3109,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/whispering_earring.png"
+    "image_url": "/static/images/relics/whispering_earring.png",
+    "compendium_order": 250
   },
   {
     "id": "WHITE_BEAST_STATUE",
@@ -2837,7 +3120,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/white_beast_statue.png"
+    "image_url": "/static/images/relics/white_beast_statue.png",
+    "compendium_order": 128
   },
   {
     "id": "WHITE_STAR",
@@ -2847,7 +3131,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Rare Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/white_star.png"
+    "image_url": "/static/images/relics/white_star.png",
+    "compendium_order": 129
   },
   {
     "id": "WING_CHARM",
@@ -2857,7 +3142,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Shop Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/wing_charm.png"
+    "image_url": "/static/images/relics/wing_charm.png",
+    "compendium_order": 159
   },
   {
     "id": "WONGO_CUSTOMER_APPRECIATION_BADGE",
@@ -2867,7 +3153,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Event Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/wongo_customer_appreciation_badge.png"
+    "image_url": "/static/images/relics/wongo_customer_appreciation_badge.png",
+    "compendium_order": 285
   },
   {
     "id": "WONGOS_MYSTERY_TICKET",
@@ -2877,7 +3164,8 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Event Relic",
     "pool": "shared",
-    "image_url": "/static/images/relics/wongos_mystery_ticket.png"
+    "image_url": "/static/images/relics/wongos_mystery_ticket.png",
+    "compendium_order": 286
   },
   {
     "id": "YUMMY_COOKIE",
@@ -2887,6 +3175,7 @@
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Ancient Relic",
     "pool": "shared",
-    "image_url": null
+    "image_url": null,
+    "compendium_order": 251
   }
 ]

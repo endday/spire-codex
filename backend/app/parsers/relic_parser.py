@@ -137,17 +137,31 @@ def build_relic_rarity_map(gameplay_ui: dict) -> dict[str, str]:
     }
 
 
+# Compendium rarity order for relics (matches in-game relic collection)
+RELIC_RARITY_ORDER = ["Starter", "Common", "Uncommon", "Rare", "Shop", "Ancient", "Event"]
+
+
 def parse_all_relics(loc_dir: Path) -> list[dict]:
     localization = load_localization(loc_dir)
     relic_pools = parse_relic_pools()
     gameplay_ui = load_gameplay_ui(loc_dir)
     rarity_map = build_relic_rarity_map(gameplay_ui)
+    rarity_index = {rarity_map.get(r, r): i for i, r in enumerate(RELIC_RARITY_ORDER)}
     relics = []
     for filepath in sorted(RELICS_DIR.glob("*.cs")):
         relic = parse_single_relic(filepath, localization, relic_pools)
         if relic:
             relic["rarity"] = rarity_map.get(relic["rarity"], relic["rarity"])
             relics.append(relic)
+
+    # Assign compendium_order: rarity category → alphabetical by name
+    relics.sort(key=lambda r: (rarity_index.get(r["rarity"], 99), r["name"]))
+    for i, relic in enumerate(relics):
+        relic["compendium_order"] = i
+
+    # Restore alphabetical order (default)
+    relics.sort(key=lambda r: r["name"])
+
     return relics
 
 

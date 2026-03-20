@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import type { Card } from "@/lib/api";
 import { cachedFetch } from "@/lib/fetch-cache";
 import CardGrid from "../components/CardGrid";
@@ -8,6 +8,12 @@ import SearchFilter from "../components/SearchFilter";
 import { useLanguage } from "../contexts/LanguageContext";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+
+const sortOptions = [
+  { label: "A → Z", value: "az" },
+  { label: "Z → A", value: "za" },
+  { label: "Compendium", value: "compendium" },
+];
 
 const colorOptions = [
   { label: "Ironclad", value: "ironclad" },
@@ -54,6 +60,7 @@ export default function CardsClient({ initialCards }: { initialCards: Card[] }) 
   const [type, setType] = useState("");
   const [rarity, setRarity] = useState("");
   const [keyword, setKeyword] = useState("");
+  const [sort, setSort] = useState("az");
   const { lang } = useLanguage();
   const initialRender = useRef(true);
 
@@ -76,13 +83,24 @@ export default function CardsClient({ initialCards }: { initialCards: Card[] }) 
       .then(setCards);
   }, [color, type, rarity, keyword, search, lang]);
 
+  const sortedCards = useMemo(() => {
+    const sorted = [...cards];
+    if (sort === "az") sorted.sort((a, b) => a.name.localeCompare(b.name));
+    else if (sort === "za") sorted.sort((a, b) => b.name.localeCompare(a.name));
+    else if (sort === "compendium") sorted.sort((a, b) => a.compendium_order - b.compendium_order);
+    return sorted;
+  }, [cards, sort]);
+
   return (
     <>
       <SearchFilter
         search={search}
         onSearchChange={setSearch}
         placeholder="Search cards..."
-        resultCount={cards.length}
+        resultCount={sortedCards.length}
+        sortOptions={sortOptions}
+        sortValue={sort}
+        onSortChange={setSort}
         filters={[
           {
             label: "All Colors",
@@ -111,7 +129,7 @@ export default function CardsClient({ initialCards }: { initialCards: Card[] }) 
         ]}
       />
 
-      <CardGrid cards={cards} />
+      <CardGrid cards={sortedCards} />
     </>
   );
 }

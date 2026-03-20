@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import type { Relic } from "@/lib/api";
 import { cachedFetch } from "@/lib/fetch-cache";
 import Link from "next/link";
@@ -39,11 +39,18 @@ const poolOptions = [
   { label: "Regent", value: "regent" },
 ];
 
+const sortOptions = [
+  { label: "A → Z", value: "az" },
+  { label: "Z → A", value: "za" },
+  { label: "Compendium", value: "compendium" },
+];
+
 export default function RelicsClient({ initialRelics }: { initialRelics: Relic[] }) {
   const [relics, setRelics] = useState<Relic[]>(initialRelics);
   const [search, setSearch] = useState("");
   const [rarity, setRarity] = useState("");
   const [pool, setPool] = useState("");
+  const [sort, setSort] = useState("az");
   const { lang } = useLanguage();
   const initialRender = useRef(true);
 
@@ -64,13 +71,24 @@ export default function RelicsClient({ initialRelics }: { initialRelics: Relic[]
       .then(setRelics);
   }, [rarity, pool, search, lang]);
 
+  const sortedRelics = useMemo(() => {
+    const sorted = [...relics];
+    if (sort === "az") sorted.sort((a, b) => a.name.localeCompare(b.name));
+    else if (sort === "za") sorted.sort((a, b) => b.name.localeCompare(a.name));
+    else if (sort === "compendium") sorted.sort((a, b) => a.compendium_order - b.compendium_order);
+    return sorted;
+  }, [relics, sort]);
+
   return (
     <>
       <SearchFilter
         search={search}
         onSearchChange={setSearch}
         placeholder="Search relics..."
-        resultCount={relics.length}
+        resultCount={sortedRelics.length}
+        sortOptions={sortOptions}
+        sortValue={sort}
+        onSortChange={setSort}
         filters={[
           {
             label: "All Rarities",
@@ -88,7 +106,7 @@ export default function RelicsClient({ initialRelics }: { initialRelics: Relic[]
       />
 
       <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">
-        {relics.map((relic) => {
+        {sortedRelics.map((relic) => {
           const style =
             rarityColors[relic.rarity] ||
             "border-[var(--border-subtle)] text-gray-400";

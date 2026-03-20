@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import type { Potion } from "@/lib/api";
 import { cachedFetch } from "@/lib/fetch-cache";
 import Link from "next/link";
@@ -32,12 +32,19 @@ const poolOptions = [
   { label: "Event", value: "event" },
 ];
 
+const sortOptions = [
+  { label: "A → Z", value: "az" },
+  { label: "Z → A", value: "za" },
+  { label: "Compendium", value: "compendium" },
+];
+
 export default function PotionsClient({ initialPotions }: { initialPotions: Potion[] }) {
   const { lang } = useLanguage();
   const [potions, setPotions] = useState<Potion[]>(initialPotions);
   const [search, setSearch] = useState("");
   const [rarity, setRarity] = useState("");
   const [pool, setPool] = useState("");
+  const [sort, setSort] = useState("az");
   const [loading, setLoading] = useState(false);
   const initialRender = useRef(true);
 
@@ -60,13 +67,24 @@ export default function PotionsClient({ initialPotions }: { initialPotions: Poti
       .finally(() => setLoading(false));
   }, [rarity, search, pool, lang]);
 
+  const sortedPotions = useMemo(() => {
+    const sorted = [...potions];
+    if (sort === "az") sorted.sort((a, b) => a.name.localeCompare(b.name));
+    else if (sort === "za") sorted.sort((a, b) => b.name.localeCompare(a.name));
+    else if (sort === "compendium") sorted.sort((a, b) => a.compendium_order - b.compendium_order);
+    return sorted;
+  }, [potions, sort]);
+
   return (
     <>
       <SearchFilter
         search={search}
         onSearchChange={setSearch}
         placeholder="Search potions..."
-        resultCount={potions.length}
+        resultCount={sortedPotions.length}
+        sortOptions={sortOptions}
+        sortValue={sort}
+        onSortChange={setSort}
         filters={[
           {
             label: "All Rarities",
@@ -89,7 +107,7 @@ export default function PotionsClient({ initialPotions }: { initialPotions: Poti
         </div>
       ) : (
         <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">
-          {potions.map((potion) => {
+          {sortedPotions.map((potion) => {
             const style =
               rarityColors[potion.rarity] ||
               "border-[var(--border-subtle)] text-gray-400";

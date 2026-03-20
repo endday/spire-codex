@@ -36,6 +36,18 @@ def load_localization(loc_dir: Path) -> dict:
     return {}
 
 
+# Compendium pool order (matches AllCharacterCardPools + AllSharedCardPools in ModelDb.cs)
+POOL_ORDER = [
+    "ironclad", "silent", "regent", "necrobinder", "defect",
+    "colorless", "curse", "deprecated", "event", "quest", "status", "token",
+]
+POOL_INDEX = {p: i for i, p in enumerate(POOL_ORDER)}
+
+# Compendium rarity order within each pool
+RARITY_ORDER = ["Basic", "Common", "Uncommon", "Rare", "Ancient", "Event", "Token", "Status", "Curse", "Quest", "None"]
+RARITY_INDEX = {r: i for i, r in enumerate(RARITY_ORDER)}
+
+
 def parse_card_pools() -> dict[str, str]:
     """Parse card pool files to map card class names to character colors."""
     card_to_color = {}
@@ -422,6 +434,18 @@ def parse_all_cards(loc_dir: Path) -> list[dict]:
         if card:
             localize_card(card, type_map, rarity_map, kw_names, power_names)
             cards.append(card)
+
+    # Assign compendium_order: pool index → rarity → ID (matches in-game card library)
+    cards.sort(key=lambda c: (
+        POOL_INDEX.get(c.get("color", ""), 99),
+        RARITY_INDEX.get(c.get("rarity", ""), 99),
+        c["id"],
+    ))
+    for i, card in enumerate(cards):
+        card["compendium_order"] = i
+
+    # Restore alphabetical order (default)
+    cards.sort(key=lambda c: c["name"])
 
     return cards
 

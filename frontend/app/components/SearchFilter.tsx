@@ -5,6 +5,11 @@ interface FilterOption {
   value: string;
 }
 
+interface SortOption {
+  label: string;
+  value: string;
+}
+
 interface SearchFilterProps {
   search: string;
   onSearchChange: (value: string) => void;
@@ -14,6 +19,9 @@ interface SearchFilterProps {
     options: FilterOption[];
     onChange: (value: string) => void;
   }[];
+  sortOptions?: SortOption[];
+  sortValue?: string;
+  onSortChange?: (value: string) => void;
   resultCount?: number;
   placeholder?: string;
   extra?: React.ReactNode;
@@ -23,6 +31,9 @@ export default function SearchFilter({
   search,
   onSearchChange,
   filters,
+  sortOptions,
+  sortValue,
+  onSortChange,
   resultCount,
   placeholder = "Search...",
   extra,
@@ -53,6 +64,19 @@ export default function SearchFilter({
           ))}
         </select>
       ))}
+      {sortOptions && onSortChange && (
+        <select
+          value={sortValue}
+          onChange={(e) => onSortChange(e.target.value)}
+          className="px-3 py-2.5 bg-[var(--bg-card)] border border-[var(--border-subtle)] rounded-lg text-[var(--text-primary)] focus:outline-none focus:border-[var(--accent-gold)]/50 cursor-pointer text-sm"
+        >
+          {sortOptions.map((opt) => (
+            <option key={opt.value} value={opt.value}>
+              {opt.label}
+            </option>
+          ))}
+        </select>
+      )}
       {resultCount !== undefined && (
         <span className="text-sm text-[var(--text-muted)] whitespace-nowrap">
           {resultCount} results

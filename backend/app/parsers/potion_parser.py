@@ -80,16 +80,30 @@ def build_potion_rarity_map(gameplay_ui: dict) -> dict[str, str]:
     }
 
 
+# Compendium rarity order for potions (matches in-game potion lab)
+POTION_RARITY_ORDER = ["Common", "Uncommon", "Rare", "Event", "Token"]
+
+
 def parse_all_potions(loc_dir: Path) -> list[dict]:
     localization = load_localization(loc_dir)
     gameplay_ui = load_gameplay_ui(loc_dir)
     rarity_map = build_potion_rarity_map(gameplay_ui)
+    rarity_index = {rarity_map.get(r, r): i for i, r in enumerate(POTION_RARITY_ORDER)}
     potions = []
     for filepath in sorted(POTIONS_DIR.glob("*.cs")):
         potion = parse_single_potion(filepath, localization)
         if potion:
             potion["rarity"] = rarity_map.get(potion["rarity"], potion["rarity"])
             potions.append(potion)
+
+    # Assign compendium_order: rarity category → alphabetical by name
+    potions.sort(key=lambda p: (rarity_index.get(p["rarity"], 99), p["name"]))
+    for i, potion in enumerate(potions):
+        potion["compendium_order"] = i
+
+    # Restore alphabetical order (default)
+    potions.sort(key=lambda p: p["name"])
+
     return potions
 
 
