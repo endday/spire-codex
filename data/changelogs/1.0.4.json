@@ -1,0 +1,45 @@
+{
+  "app_id": 2868840,
+  "game_version": "1.0.4",
+  "build_id": "",
+  "tag": "1.0.4",
+  "date": "2026-03-20",
+  "title": "SEO overhaul, tooltip widget, comparison pages, and data fixes",
+  "from_ref": "v1.0.3",
+  "to_ref": "v1.0.4",
+  "summary": {
+    "added": 12,
+    "removed": 3,
+    "changed": 8
+  },
+  "features": [
+    "Embeddable tooltip widget — add Wowhead-style hoverable tooltips to any website with a single script tag, supporting all 13 entity types (cards, relics, potions, characters, monsters, powers, events, encounters, enchantments, keywords, orbs, afflictions, achievements)",
+    "Developer documentation page at /developers — widget installation guide, full API endpoint reference, code examples in cURL/Python/JavaScript, and link to interactive Swagger docs",
+    "Character hub pages — expanded character detail pages with collapsible sections for all character-specific cards (grouped by rarity) and character pool relics",
+    "Character comparison pages at /compare — 10 character pair comparisons with side-by-side stats, card pool breakdowns by type and rarity, keyword distribution charts, and starting deck/relic comparison",
+    "Keyword hub pages at /keywords — dedicated pages for each keyword (Exhaust, Ethereal, Innate, Retain, Sly, Eternal, Unplayable) listing all cards with that keyword, with search and character filter",
+    "Compendium sort order — cards, relics, and potions now support sorting by in-game compendium order (pool → rarity → ID for cards, rarity → name for relics/potions), with A-Z, Z-A, and Compendium sort options",
+    "Cross-language entity names — collapsible 'Other languages' section on all detail pages showing localized names across all 14 supported languages",
+    "Related cards section on card detail pages — shows cards sharing the same keywords or tags",
+    "Card keyword badges now link to keyword hub pages",
+    "High-resolution renders of Neow (2048x2048) and Tezcatara (2048x2048) from Spine skeletal animations, plus reusable render_hires.mjs script for rendering any skeleton at high resolution"
+  ],
+  "fixes": [
+    "19 inherited powers (DyingStarPower, FlexPotionPower, etc.) now display correct type (Buff/Debuff), stack type (Counter), and description instead of showing empty data",
+    "3 abstract base power classes (TemporaryStrengthPower, TemporaryDexterityPower, TemporaryFocusPower) removed from output — they are not real in-game powers (260 → 257 powers)",
+    "Upgraded starter relics (Black Blood, Ring of the Drake, Divine Destiny, Phylactery Unbound, Infused Core) now assigned to their correct character pool instead of 'shared'",
+    "Event choice ordering now matches the in-game order from C# source instead of alphabetical sorting (fixes Slippery Bridge showing Hold On before Overcome, Doors of Light and Dark showing Dark before Light, etc.)",
+    "Sitemap changed from generateSitemaps() index to flat XML — Next.js 16 did not auto-generate sitemap index, causing /sitemap.xml to 404",
+    "Sitemap set to force-dynamic to avoid empty results when API is unavailable during Docker build (15 URLs → 1,384 URLs)",
+    "Navbar labels updated to match in-game compendium names (Card Library, Relic Collection, Bestiary, Potion Lab)"
+  ],
+  "api_changes": [
+    "New endpoint: GET /api/names/{entity_type}/{entity_id} — returns localized entity names across all 14 languages",
+    "New field: compendium_order on Card, Relic, and Potion schemas — integer matching in-game compendium sort position",
+    "Cards endpoint now supports ?tag= query parameter for filtering by card tag (Strike, Defend, Minion, etc.)",
+    "FAQPage JSON-LD schema added to all 6 detail page types (cards, relics, potions, monsters, powers, events)",
+    "VideoGame JSON-LD schema added to home page",
+    "Developers link added to footer navigation"
+  ],
+  "categories": []
+}
