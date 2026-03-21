@@ -8,6 +8,8 @@ import RichDescription from "@/app/components/RichDescription";
 import type { RelatedCard } from "@/app/components/RichDescription";
 import { cachedFetch } from "@/lib/fetch-cache";
 import { useLanguage } from "../../contexts/LanguageContext";
+import LocalizedNames from "@/app/components/LocalizedNames";
+import RelatedCards from "@/app/components/RelatedCards";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -339,9 +341,10 @@ export default function CardDetail() {
           {card.keywords && card.keywords.length > 0 && (
             <div className="flex flex-wrap gap-1.5 mb-5">
               {card.keywords.map((kw) => (
-                <span
+                <Link
                   key={kw}
-                  className="text-xs px-2 py-1 rounded bg-[var(--bg-primary)] text-[var(--accent-gold-light)] border border-[var(--accent-gold)]/20"
+                  href={`/keywords/${kw.toLowerCase()}`}
+                  className="text-xs px-2 py-1 rounded bg-[var(--bg-primary)] text-[var(--accent-gold-light)] border border-[var(--accent-gold)]/20 hover:border-[var(--accent-gold)]/50 transition-colors"
                 >
                   {kw}
                   {keywordTooltips[kw] && (
@@ -349,7 +352,7 @@ export default function CardDetail() {
                       &mdash; {keywordTooltips[kw]}
                     </span>
                   )}
-                </span>
+                </Link>
               ))}
             </div>
           )}
@@ -399,6 +402,15 @@ export default function CardDetail() {
               )}
             </div>
           )}
+
+          <RelatedCards
+            currentId={id}
+            keywords={card.keywords}
+            tags={card.tags}
+            color={card.color}
+          />
+
+          <LocalizedNames entityType="cards" entityId={id} />
         </div>
       </div>
     </div>

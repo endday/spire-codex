@@ -6,6 +6,7 @@ import Link from "next/link";
 import type { Monster } from "@/lib/api";
 import { cachedFetch } from "@/lib/fetch-cache";
 import { useLanguage } from "../../contexts/LanguageContext";
+import LocalizedNames from "@/app/components/LocalizedNames";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -210,6 +211,8 @@ export default function MonsterDetail() {
             </div>
           </div>
         )}
+
+      <LocalizedNames entityType="monsters" entityId={id} />
     </div>
   );
 }

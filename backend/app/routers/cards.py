@@ -14,6 +14,7 @@ def get_cards(
     type: str | None = Query(None, description="Filter by card type (Attack, Skill, Power, Status, Curse)"),
     rarity: str | None = Query(None, description="Filter by rarity (Basic, Common, Uncommon, Rare, Ancient)"),
     keyword: str | None = Query(None, description="Filter by keyword (Exhaust, Innate, Ethereal, Retain, Unplayable, Sly, Eternal)"),
+    tag: str | None = Query(None, description="Filter by tag (Strike, Defend, Minion, etc.)"),
     search: str | None = Query(None, description="Search by name"),
     lang: str = Depends(get_lang),
 ):
@@ -31,6 +32,8 @@ def get_cards(
     if keyword:
         kw_localized = maps["keywords"].get(keyword.upper(), keyword)
         cards = [c for c in cards if c.get("keywords") and kw_localized in c["keywords"]]
+    if tag:
+        cards = [c for c in cards if c.get("tags") and tag in c["tags"]]
     if search:
         cards = [c for c in cards if search.lower() in c["name"].lower()]
     return cards

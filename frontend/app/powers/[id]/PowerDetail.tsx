@@ -7,6 +7,7 @@ import type { Power } from "@/lib/api";
 import RichDescription from "@/app/components/RichDescription";
 import { cachedFetch } from "@/lib/fetch-cache";
 import { useLanguage } from "../../contexts/LanguageContext";
+import LocalizedNames from "@/app/components/LocalizedNames";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -89,6 +90,8 @@ export default function PowerDetail() {
             <RichDescription text={power.description} />
           </div>
         )}
+
+        <LocalizedNames entityType="powers" entityId={id} />
       </div>
     </div>
   );

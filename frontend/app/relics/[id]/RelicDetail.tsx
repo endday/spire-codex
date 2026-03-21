@@ -7,6 +7,7 @@ import type { Relic } from "@/lib/api";
 import RichDescription from "@/app/components/RichDescription";
 import { cachedFetch } from "@/lib/fetch-cache";
 import { useLanguage } from "../../contexts/LanguageContext";
+import LocalizedNames from "@/app/components/LocalizedNames";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -97,6 +98,8 @@ export default function RelicDetail() {
             <RichDescription text={relic.flavor} />
           </div>
         )}
+
+        <LocalizedNames entityType="relics" entityId={id} />
       </div>
     </div>
   );

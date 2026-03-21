@@ -9,6 +9,7 @@ const API_PUBLIC = process.env.NEXT_PUBLIC_SITE_URL || process.env.NEXT_PUBLIC_A
 const STATIC_PAGES = [
   { path: "/", priority: 1.0, changeFrequency: "daily" as const },
   { path: "/cards", priority: 0.9, changeFrequency: "daily" as const },
+  { path: "/keywords", priority: 0.7, changeFrequency: "weekly" as const },
   { path: "/characters", priority: 0.9, changeFrequency: "daily" as const },
   { path: "/relics", priority: 0.9, changeFrequency: "daily" as const },
   { path: "/monsters", priority: 0.8, changeFrequency: "daily" as const },
@@ -38,6 +39,7 @@ const DYNAMIC_ROUTES = [
   { endpoint: "/api/potions", prefix: "/potions", priority: 0.7 },
   { endpoint: "/api/powers", prefix: "/powers", priority: 0.6 },
   { endpoint: "/api/events", prefix: "/events", priority: 0.6 },
+  { endpoint: "/api/keywords", prefix: "/keywords", priority: 0.7 },
 ];
 
 async function fetchEntities(endpoint: string): Promise<EntityWithImage[]> {

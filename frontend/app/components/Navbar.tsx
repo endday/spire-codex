@@ -16,6 +16,7 @@ const links = [
   { href: "/encounters", label: "Encounters" },
   { href: "/events", label: "Events" },
   { href: "/powers", label: "Powers" },
+  { href: "/keywords", label: "Keywords" },
   { href: "/timeline", label: "Timeline" },
   { href: "/reference", label: "Reference" },
   { href: "/images", label: "Images" },
