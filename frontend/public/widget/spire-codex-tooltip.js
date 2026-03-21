@@ -1,15 +1,25 @@
 /**
- * Spire Codex Tooltip Widget v1.0
- * Embeddable card/relic/potion tooltips for Slay the Spire 2.
+ * Spire Codex Tooltip Widget v1.1
+ * Embeddable tooltips for all Slay the Spire 2 entities.
  *
  * Usage:
  *   <script src="https://spire-codex.com/widget/spire-codex-tooltip.js"></script>
  *
  * Syntax:
- *   [[Strike]]              — card (default)
- *   [[card:Strike]]         — card (explicit)
- *   [[relic:Burning Blood]]  — relic
- *   [[potion:Fire Potion]]  — potion
+ *   [[Strike]]                    — card (default)
+ *   [[card:Bash]]                 — card (explicit)
+ *   [[relic:Burning Blood]]       — relic
+ *   [[potion:Fire Potion]]        — potion
+ *   [[character:Ironclad]]        — character
+ *   [[monster:Jaw Worm]]          — monster
+ *   [[power:Strength]]            — power
+ *   [[event:Neow]]                — event
+ *   [[encounter:Lagavulin]]       — encounter
+ *   [[enchantment:Sharp]]         — enchantment
+ *   [[keyword:Exhaust]]           — keyword
+ *   [[orb:Lightning]]             — orb
+ *   [[affliction:Bound]]          — affliction
+ *   [[achievement:Minimalist]]    — achievement
  */
 (function () {
   "use strict";
@@ -47,6 +57,8 @@
       ".scx-tip-desc .scx-red{color:#f87171}" +
       ".scx-tip-desc .scx-blue{color:#60a5fa}" +
       ".scx-tip-desc .scx-green{color:#4ade80}" +
+      ".scx-tip-desc .scx-purple{color:#c084fc}" +
+      ".scx-tip-desc .scx-orange{color:#fb923c}" +
       ".scx-tip-attr{font-size:10px;text-align:right;padding:4px 12px 8px;color:#4a4540}" +
       ".scx-tip-attr a{color:#6b6560;text-decoration:none}" +
       ".scx-tip-attr a:hover{color:#d4a843}" +
@@ -105,8 +117,9 @@
       html += '<img class="scx-tip-img" src="' + API + data.image_url + '" alt="" crossorigin="anonymous">';
     }
     html += '<div class="scx-tip-body">';
-    html += '<div class="scx-tip-name">' + esc(data.name) + "</div>";
+    html += '<div class="scx-tip-name">' + esc(data.name || data.title || "") + "</div>";
     html += '<div class="scx-tip-meta">';
+
     if (type === "card") {
       if (data.type) html += "<span>" + esc(data.type) + "</span>";
       if (data.rarity) html += "<span>" + esc(data.rarity) + "</span>";
@@ -117,13 +130,45 @@
       if (data.pool) html += "<span>" + capitalize(data.pool) + "</span>";
     } else if (type === "potion") {
       if (data.rarity) html += "<span>" + esc(data.rarity) + "</span>";
+      if (data.pool) html += "<span>" + capitalize(data.pool) + "</span>";
+    } else if (type === "character") {
+      if (data.starting_hp) html += "<span>" + data.starting_hp + " HP</span>";
+      if (data.max_energy) html += "<span>" + data.max_energy + " Energy</span>";
+      if (data.starting_gold) html += "<span>" + data.starting_gold + " Gold</span>";
+    } else if (type === "monster") {
+      if (data.type) html += "<span>" + esc(data.type) + "</span>";
+      if (data.min_hp != null) {
+        var hp = data.min_hp === data.max_hp ? data.min_hp : data.min_hp + "\u2013" + data.max_hp;
+        html += "<span>" + hp + " HP</span>";
+      }
+    } else if (type === "power") {
+      if (data.type) html += "<span>" + esc(data.type) + "</span>";
+      if (data.stack_type) html += "<span>" + esc(data.stack_type) + "</span>";
+    } else if (type === "event") {
+      if (data.type) html += "<span>" + esc(data.type) + "</span>";
+      if (data.act) html += "<span>" + esc(data.act) + "</span>";
+    } else if (type === "encounter") {
+      if (data.room_type) html += "<span>" + esc(data.room_type) + "</span>";
+      if (data.act) html += "<span>" + esc(data.act) + "</span>";
+    } else if (type === "enchantment") {
+      if (data.card_type) html += "<span>" + esc(data.card_type) + "</span>";
+      if (data.is_stackable) html += "<span>Stackable</span>";
+    } else if (type === "keyword" || type === "orb" || type === "affliction" || type === "achievement") {
+      // No special meta for these — just show description
     }
+
     html += "</div>";
     if (data.description) {
       html += '<div class="scx-tip-desc">' + renderRichText(data.description) + "</div>";
     }
     html += "</div>";
-    html += '<div class="scx-tip-attr"><a href="' + SITE + "/" + type + "s/" + encodeURIComponent(data.id.toLowerCase()) + '" target="_blank" rel="noopener">Spire Codex</a></div>';
+
+    // URL path: most types pluralize with "s", handle exceptions
+    var urlType = type + "s";
+    if (type === "keyword" || type === "orb" || type === "affliction" || type === "achievement") {
+      urlType = "reference";
+    }
+    html += '<div class="scx-tip-attr"><a href="' + SITE + "/" + urlType + "/" + encodeURIComponent(data.id.toLowerCase()) + '" target="_blank" rel="noopener">Spire Codex</a></div>';
     tip.innerHTML = html;
   }
 
@@ -134,7 +179,9 @@
       .replace(/\[red\](.*?)\[\/red\]/g, '<span class="scx-red">$1</span>')
       .replace(/\[blue\](.*?)\[\/blue\]/g, '<span class="scx-blue">$1</span>')
       .replace(/\[green\](.*?)\[\/green\]/g, '<span class="scx-green">$1</span>')
-      .replace(/\[\/?(?:b|sine|jitter|purple|orange|pink|aqua)\]/g, "")
+      .replace(/\[purple\](.*?)\[\/purple\]/g, '<span class="scx-purple">$1</span>')
+      .replace(/\[orange\](.*?)\[\/orange\]/g, '<span class="scx-orange">$1</span>')
+      .replace(/\[\/?(?:b|sine|jitter|pink|aqua)\]/g, "")
       .replace(/\[energy:(\d+)\]/g, "($1 Energy)")
       .replace(/\[star:(\d+)\]/g, "($1 Stars)");
   }
@@ -150,7 +197,21 @@
   }
 
   // --- Data fetching ---
-  var TYPE_ENDPOINTS = { card: "/api/cards", relic: "/api/relics", potion: "/api/potions" };
+  var TYPE_ENDPOINTS = {
+    card: "/api/cards",
+    relic: "/api/relics",
+    potion: "/api/potions",
+    character: "/api/characters",
+    monster: "/api/monsters",
+    power: "/api/powers",
+    event: "/api/events",
+    encounter: "/api/encounters",
+    enchantment: "/api/enchantments",
+    keyword: "/api/keywords",
+    orb: "/api/orbs",
+    affliction: "/api/afflictions",
+    achievement: "/api/achievements",
+  };
 
   function fetchEntity(type, name, cb) {
     var ep = TYPE_ENDPOINTS[type];
@@ -169,8 +230,9 @@
       .then(function (r) { return r.json(); })
       .then(function (items) {
         items.forEach(function (item) {
-          cache[type + ":" + item.name.toLowerCase()] = item;
-          cache[type + ":" + item.id.toLowerCase()] = item;
+          var n = (item.name || item.title || "").toLowerCase();
+          if (n) cache[type + ":" + n] = item;
+          if (item.id) cache[type + ":" + item.id.toLowerCase()] = item;
         });
         fetched[fetchKey] = true;
         delete fetched[fetchKey + ":pending"];
@@ -182,7 +244,8 @@
   }
 
   // --- DOM scanning ---
-  var PATTERN = /\[\[(?:(card|relic|potion):)?([^\]]+)\]\]/g;
+  var ALL_TYPES = Object.keys(TYPE_ENDPOINTS).join("|");
+  var PATTERN = new RegExp("\\[\\[(?:(" + ALL_TYPES + "):)?([^\\]]+)\\]\\]", "g");
   var SKIP_TAGS = { SCRIPT: 1, STYLE: 1, TEXTAREA: 1, CODE: 1, PRE: 1, INPUT: 1 };
 
   function scan(root) {
@@ -209,9 +272,16 @@
         if (lastIdx < match.index) {
           frag.appendChild(document.createTextNode(text.slice(lastIdx, match.index)));
         }
+
+        // Build URL path
+        var urlType = type + "s";
+        if (type === "keyword" || type === "orb" || type === "affliction" || type === "achievement") {
+          urlType = "reference";
+        }
+
         var a = document.createElement("a");
         a.className = "scx-link scx-" + type;
-        a.href = SITE + "/" + type + "s/" + encodeURIComponent(name.toLowerCase().replace(/\s+/g, "_"));
+        a.href = SITE + "/" + urlType + "/" + encodeURIComponent(name.toLowerCase().replace(/\s+/g, "_"));
         a.target = "_blank";
         a.rel = "noopener";
         a.textContent = name;

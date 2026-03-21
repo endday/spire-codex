@@ -47,22 +47,27 @@ export default function DevelopersPage() {
             Syntax
           </h3>
           <div className="space-y-2 text-sm">
-            <div className="flex gap-4">
-              <code className="text-[var(--accent-gold)] whitespace-nowrap">{"[[Strike]]"}</code>
-              <span className="text-[var(--text-muted)]">Card tooltip (default type)</span>
-            </div>
-            <div className="flex gap-4">
-              <code className="text-[var(--accent-gold)] whitespace-nowrap">{"[[card:Bash]]"}</code>
-              <span className="text-[var(--text-muted)]">Card tooltip (explicit)</span>
-            </div>
-            <div className="flex gap-4">
-              <code className="text-[var(--accent-gold)] whitespace-nowrap">{"[[relic:Burning Blood]]"}</code>
-              <span className="text-[var(--text-muted)]">Relic tooltip</span>
-            </div>
-            <div className="flex gap-4">
-              <code className="text-[var(--accent-gold)] whitespace-nowrap">{"[[potion:Fire Potion]]"}</code>
-              <span className="text-[var(--text-muted)]">Potion tooltip</span>
-            </div>
+            {[
+              { syntax: "[[Strike]]", desc: "Card tooltip (default type)" },
+              { syntax: "[[card:Bash]]", desc: "Card (explicit)" },
+              { syntax: "[[relic:Burning Blood]]", desc: "Relic" },
+              { syntax: "[[potion:Fire Potion]]", desc: "Potion" },
+              { syntax: "[[character:Ironclad]]", desc: "Character" },
+              { syntax: "[[monster:Jaw Worm]]", desc: "Monster" },
+              { syntax: "[[power:Strength]]", desc: "Power" },
+              { syntax: "[[event:Neow]]", desc: "Event" },
+              { syntax: "[[encounter:Lagavulin]]", desc: "Encounter" },
+              { syntax: "[[enchantment:Sharp]]", desc: "Enchantment" },
+              { syntax: "[[keyword:Exhaust]]", desc: "Keyword" },
+              { syntax: "[[orb:Lightning]]", desc: "Orb" },
+              { syntax: "[[affliction:Bound]]", desc: "Affliction" },
+              { syntax: "[[achievement:Minimalist]]", desc: "Achievement" },
+            ].map((item) => (
+              <div key={item.syntax} className="flex gap-4">
+                <code className="text-[var(--accent-gold)] whitespace-nowrap">{item.syntax}</code>
+                <span className="text-[var(--text-muted)]">{item.desc}</span>
+              </div>
+            ))}
           </div>
         </div>
 
