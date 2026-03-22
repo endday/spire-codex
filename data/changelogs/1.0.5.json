@@ -1,0 +1,36 @@
+{
+  "app_id": 2868840,
+  "game_version": "1.0.5",
+  "build_id": "",
+  "tag": "1.0.5",
+  "date": "2026-03-21",
+  "title": "Growth strategy — widgets, exports, i18n, browse pages, internal linking",
+  "from_ref": "v1.0.4",
+  "to_ref": "v1.0.5",
+  "summary": {
+    "added": 27,
+    "removed": 0,
+    "changed": 10
+  },
+  "features": [
+    "Changelog widget — embeddable patch notes viewer at /widget/spire-codex-changelog.js with version switching and NEW/FIX/API color-coded badges",
+    "Developer showcase page at /showcase — community project gallery for tools, bots, and integrations built with the Spire Codex API",
+    "Data export archives — downloadable ZIP files of all game data per language via /api/exports/{lang}, with download links on the /developers page",
+    "Card browse matrix — 41 programmatic SEO pages at /cards/browse/ for filter combinations (rare-attacks, ironclad-skills, common-powers, etc.) with per-page metadata and JSON-LD",
+    "Entity version history — collapsible timeline on card, relic, potion, monster, and power detail pages showing per-entity changes across versions via /api/history/{type}/{id}",
+    "Internal linking mesh — powers applied on cards now link to power detail pages, encounter monsters link to monster pages, power detail pages show all cards that apply them",
+    "International SEO — localized landing pages for 13 non-English languages at /{lang}/ with server-rendered card and relic lists, hreflang alternates, and 39 new sitemap entries",
+    "SoftwareApplication JSON-LD schema on the /developers page for API discoverability in search results"
+  ],
+  "fixes": [
+    "Standardized all SEO page titles to consistent format: Slay the Spire 2 [Topic] - [Descriptor] | Spire Codex across all 15 layout files and 8 detail page types",
+    "Removed unnecessary horizontal rule above card detail toggle buttons"
+  ],
+  "api_changes": [
+    "New endpoint: GET /api/exports/{lang} — download all game data as a ZIP archive for any of the 14 supported languages",
+    "New endpoint: GET /api/history/{entity_type}/{entity_id} — returns version history and per-field diffs for any entity across all changelogs",
+    "SoftwareApplication JSON-LD added to /developers page",
+    "Changelog widget documentation added to /developers page"
+  ],
+  "categories": []
+}
