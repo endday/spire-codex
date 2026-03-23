@@ -54,8 +54,19 @@ const NAV_GROUPS: NavGroup[] = [
 export default function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [expandedGroups, setExpandedGroups] = useState<Set<string>>(new Set());
   const menuRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
+
+  // Auto-expand the group containing the active page
+  useEffect(() => {
+    for (const group of NAV_GROUPS) {
+      if (group.links.some((link) => pathname.startsWith(link.href))) {
+        setExpandedGroups((prev) => new Set(prev).add(group.label));
+        break;
+      }
+    }
+  }, [pathname]);
 
   // Close menu when clicking outside
   useEffect(() => {
@@ -78,6 +89,15 @@ export default function Navbar() {
   useEffect(() => {
     setOpen(false);
   }, [pathname]);
+
+  function toggleGroup(label: string) {
+    setExpandedGroups((prev) => {
+      const next = new Set(prev);
+      if (next.has(label)) next.delete(label);
+      else next.add(label);
+      return next;
+    });
+  }
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-[var(--border-subtle)] bg-[var(--bg-primary)]/95 backdrop-blur-sm">
@@ -144,32 +164,48 @@ export default function Navbar() {
                   </Link>
                 </div>
 
-                {/* Grouped sections */}
-                {NAV_GROUPS.map((group) => (
-                  <div key={group.label} className="border-t border-[var(--border-subtle)]">
-                    <div className="px-4 pt-2 pb-1">
-                      <span className="text-[10px] font-semibold uppercase tracking-wider text-[var(--text-muted)]">
+                {/* Collapsible groups */}
+                {NAV_GROUPS.map((group) => {
+                  const isExpanded = expandedGroups.has(group.label);
+                  const hasActive = group.links.some((link) => pathname.startsWith(link.href));
+                  return (
+                    <div key={group.label} className="border-t border-[var(--border-subtle)]">
+                      <button
+                        onClick={() => toggleGroup(group.label)}
+                        className={`w-full flex items-center justify-between px-4 py-2 text-xs font-semibold uppercase tracking-wider transition-colors ${
+                          hasActive
+                            ? "text-[var(--accent-gold)]"
+                            : "text-[var(--text-muted)] hover:text-[var(--text-secondary)]"
+                        }`}
+                      >
                         {group.label}
-                      </span>
+                        <span className={`text-[10px] transition-transform ${isExpanded ? "rotate-90" : ""}`}>
+                          ▸
+                        </span>
+                      </button>
+                      {isExpanded && (
+                        <div className="pb-1">
+                          {group.links.map((link) => {
+                            const isActive = pathname.startsWith(link.href);
+                            return (
+                              <Link
+                                key={link.href}
+                                href={link.href}
+                                className={`block px-6 py-1.5 text-sm font-medium transition-colors ${
+                                  isActive
+                                    ? "text-[var(--accent-gold)] bg-[var(--bg-card)]"
+                                    : "text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-card)]"
+                                }`}
+                              >
+                                {link.label}
+                              </Link>
+                            );
+                          })}
+                        </div>
+                      )}
                     </div>
-                    {group.links.map((link) => {
-                      const isActive = pathname.startsWith(link.href);
-                      return (
-                        <Link
-                          key={link.href}
-                          href={link.href}
-                          className={`block px-4 py-1.5 text-sm font-medium transition-colors ${
-                            isActive
-                              ? "text-[var(--accent-gold)] bg-[var(--bg-card)]"
-                              : "text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-card)]"
-                          }`}
-                        >
-                          {link.label}
-                        </Link>
-                      );
-                    })}
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             )}
           </div>
