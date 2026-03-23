@@ -20,24 +20,24 @@ const NAV_GROUPS: NavGroup[] = [
       { href: "/monsters", label: "Bestiary" },
       { href: "/potions", label: "Potion Lab" },
       { href: "/enchantments", label: "Enchantments" },
-      { href: "/powers", label: "Powers" },
       { href: "/encounters", label: "Encounters" },
       { href: "/events", label: "Events" },
+      { href: "/powers", label: "Powers" },
+      { href: "/timeline", label: "Timeline" },
+      { href: "/images", label: "Images" },
+      { href: "/reference", label: "Reference" },
+    ],
+  },
+  {
+    label: "Game Info",
+    links: [
       { href: "/merchant", label: "Merchant" },
       { href: "/keywords", label: "Keywords" },
-    ],
-  },
-  {
-    label: "Tools",
-    links: [
       { href: "/compare", label: "Compare" },
-      { href: "/timeline", label: "Timeline" },
-      { href: "/reference", label: "Reference" },
-      { href: "/images", label: "Images" },
     ],
   },
   {
-    label: "Site",
+    label: "About the Site",
     links: [
       { href: "/showcase", label: "Showcase" },
       { href: "/changelog", label: "Changelog" },
