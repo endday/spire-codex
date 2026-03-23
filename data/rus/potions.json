@@ -6,6 +6,7 @@
     "description_raw": "Дает [blue]{BufferPower}[/blue] [gold]Буфер[/gold].",
     "rarity": "Редкое",
     "image_url": "/static/images/potions/lucky_tonic.png",
+    "rarity_key": "Rare",
     "compendium_order": 40,
     "pool": "shared"
   },
@@ -16,6 +17,7 @@
     "description_raw": "Добавляет [blue]{Cards}[/blue] [gold]{Cards:plural(ru):«Душу»|«Души»|«Душ»}[/gold] в [gold]руку[/gold].",
     "rarity": "Редкое",
     "image_url": "/static/images/potions/pot_of_ghouls.png",
+    "rarity_key": "Rare",
     "compendium_order": 41,
     "pool": "necrobinder"
   },
@@ -26,6 +28,7 @@
     "description_raw": "Вы выбираете [blue]1[/blue] из [blue]3[/blue] случайных бесцветных карт и добавляете ее в [gold]руку[/gold]. В этом ходу она бесплатна.",
     "rarity": "Обычное",
     "image_url": "/static/images/potions/colorless_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 0,
     "pool": "shared"
   },
@@ -36,6 +39,7 @@
     "description_raw": "[gold]Улучшает[/gold] ВСЕ карты в [gold]руке[/gold] до конца боя.",
     "rarity": "Необычное",
     "image_url": "/static/images/potions/blessing_of_the_forge.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 20,
     "pool": "shared"
   },
@@ -46,6 +50,7 @@
     "description_raw": "Наносит [blue]{Damage}[/blue] урона ВСЕМ врагам.",
     "rarity": "Обычное",
     "image_url": "/static/images/potions/explosive_ampoule.png",
+    "rarity_key": "Common",
     "compendium_order": 1,
     "pool": "shared"
   },
@@ -56,6 +61,7 @@
     "description_raw": "",
     "rarity": "Необычное",
     "image_url": "/static/images/potions/clarity.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 21,
     "pool": "shared"
   },
@@ -66,6 +72,7 @@
     "description_raw": "Дает [blue]{RitualPower}[/blue] [gold]Ритуал[/gold].",
     "rarity": "Редкое",
     "image_url": "/static/images/potions/mazaleths_gift.png",
+    "rarity_key": "Rare",
     "compendium_order": 42,
     "pool": "shared"
   },
@@ -76,6 +83,7 @@
     "description_raw": "Следующая разыгранная в этом ходу карта, разыгрывается еще раз.",
     "rarity": "Необычное",
     "image_url": "/static/images/potions/duplicator.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 22,
     "pool": "shared"
   },
@@ -86,6 +94,7 @@
     "description_raw": "Дает [blue]{ThornsPower}[/blue] [gold]шипов[/gold].",
     "rarity": "Необычное",
     "image_url": "/static/images/potions/liquid_bronze.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 23,
     "pool": "shared"
   },
@@ -96,6 +105,7 @@
     "description_raw": "Положите карту из [gold]стопки сброса[/gold] в [gold]руку[/gold]. В этом ходу она стоит [blue]0[/blue] {energyPrefix:energyIcons(1)}.",
     "rarity": "Редкое",
     "image_url": "/static/images/potions/liquid_memories.png",
+    "rarity_key": "Rare",
     "compendium_order": 43,
     "pool": "shared"
   },
@@ -106,6 +116,7 @@
     "description_raw": "Вы добираете [blue]{Cards}[/blue] карт. Стоимость карт в вашей [gold]руке[/gold] изменяется случайным образом на этот ход.",
     "rarity": "Редкое",
     "image_url": "/static/images/potions/snecko_oil.png",
+    "rarity_key": "Rare",
     "compendium_order": 44,
     "pool": "shared"
   },
@@ -116,6 +127,7 @@
     "description_raw": "",
     "rarity": "Редкое",
     "image_url": "/static/images/potions/beetle_juice.png",
+    "rarity_key": "Rare",
     "compendium_order": 45,
     "pool": "shared"
   },
@@ -126,6 +138,7 @@
     "description_raw": "",
     "rarity": "Редкое",
     "image_url": "/static/images/potions/bottled_potential.png",
+    "rarity_key": "Rare",
     "compendium_order": 46,
     "pool": "shared"
   },
@@ -136,6 +149,7 @@
     "description_raw": "Вы выбираете [blue]1[/blue] из [blue]3[/blue] случайных Атак и добавляете ее в [gold]руку[/gold]. В этом ходу она разыгрывается бесплатно.",
     "rarity": "Обычное",
     "image_url": "/static/images/potions/attack_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 2,
     "pool": "shared"
   },
@@ -146,6 +160,7 @@
     "description_raw": "Дает [blue]{StrengthPower}[/blue] [gold]силы[/gold]. Вы теряете [blue]{StrengthPower}[/blue] [gold]силы[/gold] в конце хода.",
     "rarity": "Обычное",
     "image_url": "/static/images/potions/flex_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 3,
     "pool": "shared"
   },
@@ -156,6 +171,7 @@
     "description_raw": "Следующая разыгранная атака наносит тройной урон.",
     "rarity": "Редкое",
     "image_url": "/static/images/potions/gigantification_potion.png",
+    "rarity_key": "Rare",
     "compendium_order": 47,
     "pool": "shared"
   },
@@ -166,6 +182,7 @@
     "description_raw": "",
     "rarity": "Необычное",
     "image_url": "/static/images/potions/potion_of_capacity.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 24,
     "pool": "defect"
   },
@@ -176,6 +193,7 @@
     "description_raw": "Дает [blue]{Block}[/blue] [gold]защиты[/gold].",
     "rarity": "Обычное",
     "image_url": "/static/images/potions/block_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 4,
     "pool": "shared"
   },
@@ -186,6 +204,7 @@
     "description_raw": "Дает {Stars:starIcons()}.",
     "rarity": "Обычное",
     "image_url": "/static/images/potions/star_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 5,
     "pool": "regent"
   },
@@ -196,6 +215,7 @@
     "description_raw": "Восполняет [green]{HealPercent}%[/green] от Макс. ОЗ.",
     "rarity": "Обычное",
     "image_url": "/static/images/potions/blood_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 6,
     "pool": "ironclad"
   },
@@ -206,6 +226,7 @@
     "description_raw": "Дает [blue]{DexterityPower}[/blue] [gold]ловкости[/gold].",
     "rarity": "Обычное",
     "image_url": "/static/images/potions/dexterity_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 7,
     "pool": "shared"
   },
@@ -216,6 +237,7 @@
     "description_raw": "Вы выбираете [blue]1[/blue] из [blue]3[/blue] случайных Навыков и добавляете его в [gold]руку[/gold]. В этом ходу он бесплатен.",
     "rarity": "Обычное",
     "image_url": "/static/images/potions/skill_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 8,
     "pool": "shared"
   },
@@ -226,6 +248,7 @@
     "description_raw": "Накладывает [blue]{PoisonPower}[/blue] [gold]яда[/gold].",
     "rarity": "Обычное",
     "image_url": "/static/images/potions/poison_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 9,
     "pool": "silent"
   },
@@ -236,6 +259,7 @@
     "description_raw": "Дает [blue]{DexterityPower}[/blue] [gold]ловкости[/gold]. Вы теряете [blue]{DexterityPower}[/blue] [gold]ловкости[/gold] в конце хода.",
     "rarity": "Обычное",
     "image_url": "/static/images/potions/speed_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 10,
     "pool": "shared"
   },
@@ -246,6 +270,7 @@
     "description_raw": "Дает [green]{RegenPower}[/green] [gold]регенерации[/gold].",
     "rarity": "Необычное",
     "image_url": "/static/images/potions/regen_potion.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 25,
     "pool": "shared"
   },
@@ -256,6 +281,7 @@
     "description_raw": "Дает [blue]{StrengthPower}[/blue] [gold]силы[/gold].",
     "rarity": "Обычное",
     "image_url": "/static/images/potions/strength_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 11,
     "pool": "shared"
   },
@@ -266,6 +292,7 @@
     "description_raw": "Вы добираете [blue]{Cards}[/blue] {Cards:plural(ru):карту|карты|карт}.",
     "rarity": "Обычное",
     "image_url": "/static/images/potions/swift_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 12,
     "pool": "shared"
   },
@@ -276,6 +303,7 @@
     "description_raw": "Накладывает [blue]{WeakPower}[/blue] [gold]слабости[/gold].",
     "rarity": "Обычное",
     "image_url": "/static/images/potions/weak_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 13,
     "pool": "shared"
   },
@@ -286,6 +314,7 @@
     "description_raw": "Вы выбираете [blue]1[/blue] из [blue]3[/blue] случайных Талатов и добавляете его в [gold]руку[/gold]. В этом ходу он бесплатен.",
     "rarity": "Обычное",
     "image_url": "/static/images/potions/power_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 14,
     "pool": "shared"
   },
@@ -296,6 +325,7 @@
     "description_raw": "Накладывает [blue]{VulnerablePower}[/blue] [gold]уязвимости[/gold].",
     "rarity": "Обычное",
     "image_url": "/static/images/potions/vulnerable_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 15,
     "pool": "shared"
   },
@@ -306,6 +336,7 @@
     "description_raw": "Дает [blue]{FocusPower}[/blue] [gold]фокуса[/gold].",
     "rarity": "Обычное",
     "image_url": "/static/images/potions/focus_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 16,
     "pool": "defect"
   },
@@ -316,6 +347,7 @@
     "description_raw": "Добавляет в [gold]руку[/gold] [blue]{Cards}[/blue] [gold]улучшенных[/gold] {Cards:plural(ru):заточку|заточки|заточек} .",
     "rarity": "Необычное",
     "image_url": "/static/images/potions/cunning_potion.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 26,
     "pool": "silent"
   },
@@ -326,6 +358,7 @@
     "description_raw": "Дает {Energy:energyIcons()}.",
     "rarity": "Обычное",
     "image_url": "/static/images/potions/energy_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 17,
     "pool": "shared"
   },
@@ -336,6 +369,7 @@
     "description_raw": "Наносит [blue]{Damage}[/blue] урона.",
     "rarity": "Обозначение",
     "image_url": "/static/images/potions/potion_shaped_rock.png",
+    "rarity_key": "Token",
     "compendium_order": 62,
     "pool": "shared"
   },
@@ -346,6 +380,7 @@
     "description_raw": "Делает выбранную карту в [gold]руке[/gold] бесплатной на весь бой.",
     "rarity": "Необычное",
     "image_url": "/static/images/potions/touch_of_insanity.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 27,
     "pool": "shared"
   },
@@ -356,6 +391,7 @@
     "description_raw": "Выберите и возьмите карту из [gold]стопки добора[/gold].",
     "rarity": "Редкое",
     "image_url": "/static/images/potions/droplet_of_precognition.png",
+    "rarity_key": "Rare",
     "compendium_order": 48,
     "pool": "shared"
   },
@@ -366,6 +402,7 @@
     "description_raw": "Дает [blue]{Block:diff()}[/blue] [gold]защиты[/gold]. Даст [blue]{Block:diff()}[/blue] [gold]защиты[/gold] в следующем ходу.",
     "rarity": "Редкое",
     "image_url": "/static/images/potions/ship_in_a_bottle.png",
+    "rarity_key": "Rare",
     "compendium_order": 49,
     "pool": "shared"
   },
@@ -376,6 +413,7 @@
     "description_raw": "[gold]Закаляет[/gold] [blue]{Forge}[/blue].",
     "rarity": "Необычное",
     "image_url": "/static/images/potions/kings_courage.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 28,
     "pool": "regent"
   },
@@ -386,6 +424,7 @@
     "description_raw": "",
     "rarity": "Редкое",
     "image_url": "/static/images/potions/cosmic_concoction.png",
+    "rarity_key": "Rare",
     "compendium_order": 50,
     "pool": "regent"
   },
@@ -396,6 +435,7 @@
     "description_raw": "[gold]Призывает[/gold] [blue]{Summon}[/blue].",
     "rarity": "Необычное",
     "image_url": "/static/images/potions/bone_brew.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 29,
     "pool": "necrobinder"
   },
@@ -406,6 +446,7 @@
     "description_raw": "Наносит [blue]{Damage}[/blue] урона ВСЕМ.\nВы можете бросить это зелье [gold]торговцу[/gold] за вознаграждение в [blue]{Gold}[/blue] [gold]золота[/gold].",
     "rarity": "Зелье события",
     "image_url": "/static/images/potions/foul_potion.png",
+    "rarity_key": "Event",
     "compendium_order": 60,
     "pool": "event"
   },
@@ -416,6 +457,7 @@
     "description_raw": "[gold]Сжигает[/gold] любое количество выбранных карт в вашей [gold]руке[/gold].",
     "rarity": "Необычное",
     "image_url": "/static/images/potions/ashwater.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 30,
     "pool": "ironclad"
   },
@@ -426,6 +468,7 @@
     "description_raw": "Заполняет все пустые места для зелий случайными зельями.",
     "rarity": "Редкое",
     "image_url": "/static/images/potions/entropic_brew.png",
+    "rarity_key": "Rare",
     "compendium_order": 51,
     "pool": "shared"
   },
@@ -436,6 +479,7 @@
     "description_raw": "Сбросьте любое количество карт и возьмите столько же.",
     "rarity": "Необычное",
     "image_url": "/static/images/potions/gamblers_brew.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 31,
     "pool": "shared"
   },
@@ -446,6 +490,7 @@
     "description_raw": "Наносит [blue]{Damage}[/blue] урона.",
     "rarity": "Обычное",
     "image_url": "/static/images/potions/fire_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 18,
     "pool": "shared"
   },
@@ -456,6 +501,7 @@
     "description_raw": "Накладывает [blue]{WeakPower:diff()}[/blue] [gold]слабости[/gold] и [blue]{VulnerablePower:diff()}[/blue] [gold]уязвимости[/gold] на ВСЕХ врагов.",
     "rarity": "Необычное",
     "image_url": "/static/images/potions/potion_of_binding.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 32,
     "pool": "shared"
   },
@@ -466,6 +512,7 @@
     "description_raw": "Добавляет в [gold]руку[/gold] случайные Атаку, Навык и Талант. В этом ходу они бесплатные.",
     "rarity": "Редкое",
     "image_url": "/static/images/potions/orobic_acid.png",
+    "rarity_key": "Rare",
     "compendium_order": 52,
     "pool": "shared"
   },
@@ -476,6 +523,7 @@
     "description_raw": "",
     "rarity": "Необычное",
     "image_url": "/static/images/potions/cure_all.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 33,
     "pool": "shared"
   },
@@ -486,6 +534,7 @@
     "description_raw": "Вы разыгрываете [blue]{Repeat}[/blue] карт с верха [gold]стопки добора[/gold].",
     "rarity": "Редкое",
     "image_url": "/static/images/potions/distilled_chaos.png",
+    "rarity_key": "Rare",
     "compendium_order": 53,
     "pool": "shared"
   },
@@ -496,6 +545,7 @@
     "description_raw": "Отнимает [blue]{Demise}[/blue] ОЗ у противника в конце его хода.",
     "rarity": "Необычное",
     "image_url": "/static/images/potions/powdered_demise.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 34,
     "pool": "shared"
   },
@@ -506,6 +556,7 @@
     "description_raw": "Дает [blue]1[/blue] [gold]неосязаемости[/gold].",
     "rarity": "Редкое",
     "image_url": "/static/images/potions/ghost_in_a_jar.png",
+    "rarity_key": "Rare",
     "compendium_order": 54,
     "pool": "silent"
   },
@@ -516,6 +567,7 @@
     "description_raw": "Накладывает [blue]{DoomPower}[/blue] [gold]злого рока[/gold].",
     "rarity": "Обычное",
     "image_url": "/static/images/potions/potion_of_doom.png",
+    "rarity_key": "Common",
     "compendium_order": 19,
     "pool": "necrobinder"
   },
@@ -526,6 +578,7 @@
     "description_raw": "Дает [blue]{StrengthPower}[/blue] [gold]силы[/gold]. Дает [blue]{DexterityPower}[/blue] [gold]ловкости[/gold].",
     "rarity": "Необычное",
     "image_url": "/static/images/potions/fysh_oil.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 35,
     "pool": "shared"
   },
@@ -536,6 +589,7 @@
     "description_raw": "[gold]Сжигает[/gold] все карты в [gold]руке[/gold]. Вы добираете [blue]{Cards}[/blue] карт.",
     "rarity": "Зелье события",
     "image_url": "/static/images/potions/glowwater_potion.png",
+    "rarity_key": "Event",
     "compendium_order": 61,
     "pool": "event"
   },
@@ -546,6 +600,7 @@
     "description_raw": "",
     "rarity": "Необычное",
     "image_url": "/static/images/potions/radiant_tincture.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 36,
     "pool": "shared"
   },
@@ -556,6 +611,7 @@
     "description_raw": "ВСЕ враги теряют [blue]{StrengthPower}[/blue] [gold]силы[/gold] в этом ходу.",
     "rarity": "Редкое",
     "image_url": "/static/images/potions/shackling_potion.png",
+    "rarity_key": "Rare",
     "compendium_order": 55,
     "pool": "shared"
   },
@@ -566,6 +622,7 @@
     "description_raw": "Все карты с [gold]«Ударом»[/gold] в названии получают [gold]повтор[/gold] [blue]1[/blue] .",
     "rarity": "Редкое",
     "image_url": "/static/images/potions/soldiers_stew.png",
+    "rarity_key": "Rare",
     "compendium_order": 56,
     "pool": "ironclad"
   },
@@ -576,6 +633,7 @@
     "description_raw": "Следующие [blue]{Repeat}[/blue] {Repeat:plural(ru):ход|хода|ходов} вы [gold]оставляете[/gold] карты в [gold]руке[/gold].",
     "rarity": "Необычное",
     "image_url": "/static/images/potions/stable_serum.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 37,
     "pool": "shared"
   },
@@ -586,6 +644,7 @@
     "description_raw": "Дает [blue]{PlatingPower}[/blue] [gold]панциря[/gold].",
     "rarity": "Необычное",
     "image_url": "/static/images/potions/heart_of_iron.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 38,
     "pool": "shared"
   },
@@ -596,6 +655,7 @@
     "description_raw": "Утраивает вашу текущую [gold]Защиту[/gold].",
     "rarity": "Необычное",
     "image_url": "/static/images/potions/fortifier.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 39,
     "pool": "shared"
   },
@@ -606,6 +666,7 @@
     "description_raw": "Вместо того, чтобы умереть, вы исцеляетесь до [blue]30%[/blue] от Макс. ОЗ и сбрасываете это зелье.",
     "rarity": "Редкое",
     "image_url": "/static/images/potions/fairy_in_a_bottle.png",
+    "rarity_key": "Rare",
     "compendium_order": 57,
     "pool": "shared"
   },
@@ -616,6 +677,7 @@
     "description_raw": "Повышает Макс. ОЗ на [blue]{MaxHp}[/blue].",
     "rarity": "Редкое",
     "image_url": "/static/images/potions/fruit_juice.png",
+    "rarity_key": "Rare",
     "compendium_order": 58,
     "pool": "shared"
   },
@@ -626,6 +688,7 @@
     "description_raw": "[gold]Заряжает[/gold] [gold]сферу тьмы[/gold] в каждом [gold]слоте[/gold].",
     "rarity": "Редкое",
     "image_url": "/static/images/potions/essence_of_darkness.png",
+    "rarity_key": "Rare",
     "compendium_order": 59,
     "pool": "defect"
   }

@@ -16,7 +16,9 @@ export interface Card {
   is_x_star_cost: boolean | null;
   star_cost: number | null;
   type: string;
+  type_key: string | null;
   rarity: string;
+  rarity_key: string | null;
   target: string;
   color: string;
   damage: number | null;
@@ -74,6 +76,7 @@ export interface Relic {
   description_raw: string | null;
   flavor: string | null;
   rarity: string;
+  rarity_key: string | null;
   pool: string;
   image_url: string | null;
   compendium_order: number;
@@ -98,6 +101,7 @@ export interface Potion {
   name: string;
   description: string;
   rarity: string;
+  rarity_key: string | null;
   pool: string | null;
   image_url: string | null;
   compendium_order: number;

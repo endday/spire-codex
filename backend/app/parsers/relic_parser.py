@@ -151,6 +151,7 @@ def parse_all_relics(loc_dir: Path) -> list[dict]:
     for filepath in sorted(RELICS_DIR.glob("*.cs")):
         relic = parse_single_relic(filepath, localization, relic_pools)
         if relic:
+            relic["rarity_key"] = relic["rarity"]
             relic["rarity"] = rarity_map.get(relic["rarity"], relic["rarity"])
             relics.append(relic)
 

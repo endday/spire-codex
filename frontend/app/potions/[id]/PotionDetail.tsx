@@ -70,7 +70,7 @@ export default function PotionDetail() {
   }
 
   const rarityColor = rarityColorMap[potion.rarity] || "text-gray-400";
-  const priceRange = getPotionMerchantPriceRange(potion.rarity);
+  const priceRange = getPotionMerchantPriceRange(potion.rarity_key || potion.rarity);
 
   const tabs: { key: Tab; label: string }[] = [
     { key: "overview", label: "Overview" },

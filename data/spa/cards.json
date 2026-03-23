@@ -32,6 +32,8 @@
     },
     "image_url": "/static/images/cards/turbo.png",
     "beta_image_url": "/static/images/cards/beta/turbo.png",
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 434
   },
   {
@@ -63,6 +65,8 @@
     },
     "image_url": "/static/images/cards/hammer_time.png",
     "beta_image_url": "/static/images/cards/beta/hammer_time.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 212
   },
   {
@@ -96,6 +100,8 @@
     },
     "image_url": "/static/images/cards/fisticuffs.png",
     "beta_image_url": "/static/images/cards/beta/fisticuffs.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 457
   },
   {
@@ -129,6 +135,8 @@
     },
     "image_url": "/static/images/cards/pounce.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 147
   },
   {
@@ -164,6 +172,8 @@
     },
     "image_url": "/static/images/cards/fan_of_knives.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 119
   },
   {
@@ -211,6 +221,8 @@
     },
     "image_url": "/static/images/cards/abrasive.png",
     "beta_image_url": "/static/images/cards/beta/abrasive.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 87
   },
   {
@@ -242,6 +254,8 @@
     },
     "image_url": "/static/images/cards/dark_embrace.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 23
   },
   {
@@ -281,6 +295,8 @@
     },
     "image_url": "/static/images/cards/caltrops.png",
     "beta_image_url": "/static/images/cards/beta/caltrops.png",
+    "type_key": "Power",
+    "rarity_key": "Event",
     "compendium_order": 525
   },
   {
@@ -314,6 +330,8 @@
     },
     "image_url": "/static/images/cards/accelerant.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 88
   },
   {
@@ -348,6 +366,8 @@
     },
     "image_url": "/static/images/cards/gather_light.png",
     "beta_image_url": "/static/images/cards/beta/gather_light.png",
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 205
   },
   {
@@ -381,6 +401,8 @@
     },
     "image_url": "/static/images/cards/acrobatics.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 90
   },
   {
@@ -414,6 +436,8 @@
     },
     "image_url": "/static/images/cards/huddle_up.png",
     "beta_image_url": "/static/images/cards/beta/huddle_up.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 463
   },
   {
@@ -450,6 +474,8 @@
     },
     "image_url": "/static/images/cards/adrenaline.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 91
   },
   {
@@ -483,6 +509,8 @@
     },
     "image_url": "/static/images/cards/skim.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 419
   },
   {
@@ -524,6 +552,8 @@
     },
     "image_url": "/static/images/cards/grapple.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 38
   },
   {
@@ -559,6 +589,8 @@
     },
     "image_url": "/static/images/cards/pull_from_below.png",
     "beta_image_url": "/static/images/cards/beta/pull_from_below.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 319
   },
   {
@@ -590,6 +622,8 @@
     },
     "image_url": "/static/images/cards/hellraiser.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 41
   },
   {
@@ -621,6 +655,8 @@
     },
     "image_url": "/static/images/cards/aggression.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 0
   },
   {
@@ -660,6 +696,8 @@
     },
     "image_url": "/static/images/cards/black_hole.png",
     "beta_image_url": "/static/images/cards/beta/black_hole.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 181
   },
   {
@@ -693,6 +731,8 @@
     },
     "image_url": "/static/images/cards/uproar.png",
     "beta_image_url": "/static/images/cards/beta/uproar.png",
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 435
   },
   {
@@ -729,6 +769,8 @@
     },
     "image_url": "/static/images/cards/genetic_algorithm.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 386
   },
   {
@@ -766,6 +808,8 @@
     },
     "image_url": "/static/images/cards/feed.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 32
   },
   {
@@ -800,6 +844,8 @@
     },
     "image_url": "/static/images/cards/alignment.png",
     "beta_image_url": "/static/images/cards/beta/alignment.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 175
   },
   {
@@ -837,6 +883,8 @@
     },
     "image_url": "/static/images/cards/flatten.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 295
   },
   {
@@ -872,6 +920,8 @@
     },
     "image_url": "/static/images/cards/soul.png",
     "beta_image_url": "/static/images/cards/beta/soul.png",
+    "type_key": "Skill",
+    "rarity_key": "Token",
     "compendium_order": 572
   },
   {
@@ -905,6 +955,8 @@
     },
     "image_url": "/static/images/cards/alchemize.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 439
   },
   {
@@ -940,6 +992,8 @@
     },
     "image_url": "/static/images/cards/overclock.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 408
   },
   {
@@ -973,6 +1027,8 @@
     },
     "image_url": "/static/images/cards/volley.png",
     "beta_image_url": "/static/images/cards/beta/volley.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 502
   },
   {
@@ -1008,6 +1064,8 @@
     },
     "image_url": "/static/images/cards/energy_surge.png",
     "beta_image_url": "/static/images/cards/beta/energy_surge.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 379
   },
   {
@@ -1048,6 +1106,8 @@
     },
     "image_url": "/static/images/cards/friendship.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 297
   },
   {
@@ -1087,6 +1147,8 @@
     },
     "image_url": "/static/images/cards/buffer.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 359
   },
   {
@@ -1122,6 +1184,8 @@
     },
     "image_url": "/static/images/cards/parse.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 315
   },
   {
@@ -1161,6 +1225,8 @@
     },
     "image_url": "/static/images/cards/anticipate.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 93
   },
   {
@@ -1194,6 +1260,8 @@
     },
     "image_url": "/static/images/cards/beat_down.png",
     "beta_image_url": "/static/images/cards/beta/beat_down.png",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 443
   },
   {
@@ -1229,6 +1297,8 @@
     },
     "image_url": "/static/images/cards/haunt.png",
     "beta_image_url": "/static/images/cards/beta/haunt.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 302
   },
   {
@@ -1271,6 +1341,8 @@
     },
     "image_url": "/static/images/cards/apparition.png",
     "beta_image_url": "/static/images/cards/beta/apparition.png",
+    "type_key": "Skill",
+    "rarity_key": "Ancient",
     "compendium_order": 522
   },
   {
@@ -1312,6 +1384,8 @@
     },
     "image_url": "/static/images/cards/devour_life.png",
     "beta_image_url": "/static/images/cards/beta/devour_life.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 285
   },
   {
@@ -1346,6 +1420,8 @@
     },
     "image_url": "/static/images/cards/stack.png",
     "beta_image_url": "/static/images/cards/beta/stack.png",
+    "type_key": "Skill",
+    "rarity_key": "Event",
     "compendium_order": 544
   },
   {
@@ -1381,6 +1457,8 @@
     },
     "image_url": "/static/images/cards/crush_under.png",
     "beta_image_url": "/static/images/cards/beta/crush_under.png",
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 196
   },
   {
@@ -1415,6 +1493,8 @@
     },
     "image_url": "/static/images/cards/apotheosis.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Ancient",
     "compendium_order": 521
   },
   {
@@ -1448,6 +1528,8 @@
     },
     "image_url": "/static/images/cards/machine_learning.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 402
   },
   {
@@ -1487,6 +1569,8 @@
     },
     "image_url": "/static/images/cards/squeeze.png",
     "beta_image_url": "/static/images/cards/beta/squeeze.png",
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 342
   },
   {
@@ -1520,6 +1604,8 @@
     },
     "image_url": "/static/images/cards/calculated_gamble.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 104
   },
   {
@@ -1556,6 +1642,8 @@
     },
     "image_url": "/static/images/cards/royal_gamble.png",
     "beta_image_url": "/static/images/cards/beta/royal_gamble.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 244
   },
   {
@@ -1591,6 +1679,8 @@
     },
     "image_url": "/static/images/cards/scrape.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 415
   },
   {
@@ -1624,6 +1714,8 @@
     },
     "image_url": "/static/images/cards/rainbow.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 410
   },
   {
@@ -1657,6 +1749,8 @@
     },
     "image_url": "/static/images/cards/secret_weapon.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 490
   },
   {
@@ -1696,6 +1790,8 @@
     },
     "image_url": "/static/images/cards/eternal_armor.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 454
   },
   {
@@ -1735,6 +1831,8 @@
     },
     "image_url": "/static/images/cards/stone_armor.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 71
   },
   {
@@ -1766,6 +1864,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/armaments.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 2
   },
   {
@@ -1799,6 +1899,8 @@
     },
     "image_url": "/static/images/cards/stomp.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 70
   },
   {
@@ -1838,6 +1940,8 @@
     },
     "image_url": "/static/images/cards/arsenal.png",
     "beta_image_url": "/static/images/cards/beta/arsenal.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 176
   },
   {
@@ -1873,6 +1977,8 @@
     },
     "image_url": "/static/images/cards/flak_cannon.png",
     "beta_image_url": "/static/images/cards/beta/flak_cannon.png",
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 382
   },
   {
@@ -1906,6 +2012,8 @@
     },
     "image_url": "/static/images/cards/hand_trick.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 127
   },
   {
@@ -1941,6 +2049,8 @@
     },
     "image_url": "/static/images/cards/up_my_sleeve.png",
     "beta_image_url": "/static/images/cards/beta/up_my_sleeve.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 172
   },
   {
@@ -1975,6 +2085,8 @@
     },
     "image_url": "/static/images/cards/cinder.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 17
   },
   {
@@ -2019,6 +2131,8 @@
     },
     "image_url": "/static/images/cards/assassinate.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 94
   },
   {
@@ -2054,6 +2168,8 @@
     },
     "image_url": "/static/images/cards/murder.png",
     "beta_image_url": "/static/images/cards/beta/murder.png",
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 138
   },
   {
@@ -2089,6 +2205,8 @@
     },
     "image_url": "/static/images/cards/fasten.png",
     "beta_image_url": "/static/images/cards/beta/fasten.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 455
   },
   {
@@ -2124,6 +2242,8 @@
     },
     "image_url": "/static/images/cards/crash_landing.png",
     "beta_image_url": "/static/images/cards/beta/crash_landing.png",
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 194
   },
   {
@@ -2161,6 +2281,8 @@
     },
     "image_url": "/static/images/cards/glimpse_beyond.png",
     "beta_image_url": "/static/images/cards/beta/glimpse_beyond.png",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 298
   },
   {
@@ -2192,6 +2314,8 @@
     },
     "image_url": "/static/images/cards/entrench.png",
     "beta_image_url": "/static/images/cards/beta/entrench.png",
+    "type_key": "Skill",
+    "rarity_key": "Event",
     "compendium_order": 530
   },
   {
@@ -2225,6 +2349,8 @@
     },
     "image_url": "/static/images/cards/howl_from_beyond.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 43
   },
   {
@@ -2258,6 +2384,8 @@
     },
     "image_url": "/static/images/cards/automation.png",
     "beta_image_url": "/static/images/cards/beta/automation.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 441
   },
   {
@@ -2291,6 +2419,8 @@
     },
     "image_url": "/static/images/cards/manifest_authority.png",
     "beta_image_url": "/static/images/cards/beta/manifest_authority.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 225
   },
   {
@@ -2325,6 +2455,8 @@
     },
     "image_url": "/static/images/cards/breakthrough.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 13
   },
   {
@@ -2358,6 +2490,8 @@
     },
     "image_url": "/static/images/cards/outmaneuver.png",
     "beta_image_url": "/static/images/cards/beta/outmaneuver.png",
+    "type_key": "Skill",
+    "rarity_key": "Event",
     "compendium_order": 538
   },
   {
@@ -2397,6 +2531,8 @@
     },
     "image_url": "/static/images/cards/inflame.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 47
   },
   {
@@ -2430,6 +2566,8 @@
     },
     "image_url": "/static/images/cards/stoke.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 69
   },
   {
@@ -2471,6 +2609,8 @@
     },
     "image_url": "/static/images/cards/patter.png",
     "beta_image_url": "/static/images/cards/beta/patter.png",
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 234
   },
   {
@@ -2506,6 +2646,8 @@
     },
     "image_url": "/static/images/cards/flame_barrier.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 36
   },
   {
@@ -2539,6 +2681,8 @@
     },
     "image_url": "/static/images/cards/shadow_shield.png",
     "beta_image_url": "/static/images/cards/beta/shadow_shield.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 416
   },
   {
@@ -2570,6 +2714,8 @@
     },
     "image_url": "/static/images/cards/barricade.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 4
   },
   {
@@ -2604,6 +2750,8 @@
     },
     "image_url": "/static/images/cards/sweeping_beam.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 427
   },
   {
@@ -2645,6 +2793,8 @@
     },
     "image_url": "/static/images/cards/leg_sweep.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 133
   },
   {
@@ -2685,6 +2835,8 @@
     },
     "image_url": "/static/images/cards/sweeping_gaze.png",
     "beta_image_url": "/static/images/cards/beta/sweeping_gaze.png",
+    "type_key": "Attack",
+    "rarity_key": "Token",
     "compendium_order": 574
   },
   {
@@ -2718,6 +2870,8 @@
     },
     "image_url": "/static/images/cards/tesla_coil.png",
     "beta_image_url": "/static/images/cards/beta/tesla_coil.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 431
   },
   {
@@ -2751,6 +2905,8 @@
     },
     "image_url": "/static/images/cards/ball_lightning.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 353
   },
   {
@@ -2784,6 +2940,8 @@
     },
     "image_url": "/static/images/cards/bolas.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 445
   },
   {
@@ -2819,6 +2977,8 @@
     },
     "image_url": "/static/images/cards/bombardment.png",
     "beta_image_url": "/static/images/cards/beta/bombardment.png",
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 182
   },
   {
@@ -2854,6 +3014,8 @@
     },
     "image_url": "/static/images/cards/barrage.png",
     "beta_image_url": "/static/images/cards/beta/barrage.png",
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 354
   },
   {
@@ -2891,6 +3053,8 @@
     },
     "image_url": "/static/images/cards/minion_dive_bomb.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Token",
     "compendium_order": 567
   },
   {
@@ -2924,6 +3088,8 @@
     },
     "image_url": "/static/images/cards/spoils_of_battle.png",
     "beta_image_url": "/static/images/cards/beta/spoils_of_battle.png",
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 250
   },
   {
@@ -2960,6 +3126,8 @@
     },
     "image_url": "/static/images/cards/panic_button.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 477
   },
   {
@@ -2994,6 +3162,8 @@
     },
     "image_url": "/static/images/cards/glow.png",
     "beta_image_url": "/static/images/cards/beta/glow.png",
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 209
   },
   {
@@ -3029,6 +3199,8 @@
     },
     "image_url": "/static/images/cards/helix_drill.png",
     "beta_image_url": "/static/images/cards/beta/helix_drill.png",
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 392
   },
   {
@@ -3069,6 +3241,8 @@
     },
     "image_url": "/static/images/cards/outbreak.png",
     "beta_image_url": "/static/images/cards/beta/outbreak.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 142
   },
   {
@@ -3102,6 +3276,8 @@
     },
     "image_url": "/static/images/cards/loop.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 401
   },
   {
@@ -3135,6 +3311,8 @@
     },
     "image_url": "/static/images/cards/headbutt.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 40
   },
   {
@@ -3166,6 +3344,8 @@
     },
     "image_url": "/static/images/cards/zap.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Basic",
     "compendium_order": 438
   },
   {
@@ -3197,6 +3377,8 @@
     },
     "image_url": "/static/images/cards/calamity.png",
     "beta_image_url": "/static/images/cards/beta/calamity.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 446
   },
   {
@@ -3236,6 +3418,8 @@
     },
     "image_url": "/static/images/cards/calcify.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 270
   },
   {
@@ -3269,6 +3453,8 @@
     },
     "image_url": "/static/images/cards/spectrum_shift.png",
     "beta_image_url": "/static/images/cards/beta/spectrum_shift.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 249
   },
   {
@@ -3309,6 +3495,8 @@
     },
     "image_url": "/static/images/cards/rolling_boulder.png",
     "beta_image_url": "/static/images/cards/beta/rolling_boulder.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 486
   },
   {
@@ -3342,6 +3530,8 @@
     },
     "image_url": "/static/images/cards/chaos.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 362
   },
   {
@@ -3376,6 +3566,8 @@
     },
     "image_url": "/static/images/cards/cloak_of_stars.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 188
   },
   {
@@ -3412,6 +3604,8 @@
     },
     "image_url": "/static/images/cards/cloak_and_dagger.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 105
   },
   {
@@ -3453,6 +3647,8 @@
     },
     "image_url": "/static/images/cards/beam_cell.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 355
   },
   {
@@ -3487,6 +3683,8 @@
     },
     "image_url": "/static/images/cards/charge_battery.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 363
   },
   {
@@ -3516,6 +3714,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/cascade.png",
     "beta_image_url": "/static/images/cards/beta/cascade.png",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 16
   },
   {
@@ -3549,6 +3749,8 @@
     },
     "image_url": "/static/images/cards/catastrophe.png",
     "beta_image_url": "/static/images/cards/beta/catastrophe.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 447
   },
   {
@@ -3586,6 +3788,8 @@
     },
     "image_url": "/static/images/cards/snap.png",
     "beta_image_url": "/static/images/cards/beta/snap.png",
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 337
   },
   {
@@ -3625,6 +3829,8 @@
     },
     "image_url": "/static/images/cards/smokestack.png",
     "beta_image_url": "/static/images/cards/beta/smokestack.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 420
   },
   {
@@ -3670,6 +3876,8 @@
     },
     "image_url": "/static/images/cards/high_five.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 303
   },
   {
@@ -3703,6 +3911,8 @@
     },
     "image_url": "/static/images/cards/clash.png",
     "beta_image_url": "/static/images/cards/beta/clash.png",
+    "type_key": "Attack",
+    "rarity_key": "Event",
     "compendium_order": 526
   },
   {
@@ -3741,6 +3951,8 @@
     },
     "image_url": null,
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Event",
     "compendium_order": 534
   },
   {
@@ -3773,6 +3985,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/greed.png",
     "beta_image_url": "/static/images/cards/beta/greed.png",
+    "type_key": "Curse",
+    "rarity_key": "Curse",
     "compendium_order": 512
   },
   {
@@ -3806,6 +4020,8 @@
     },
     "image_url": "/static/images/cards/hang.png",
     "beta_image_url": "/static/images/cards/beta/hang.png",
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 301
   },
   {
@@ -3840,6 +4056,8 @@
     },
     "image_url": "/static/images/cards/colossus.png",
     "beta_image_url": "/static/images/cards/beta/colossus.png",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 18
   },
   {
@@ -3879,6 +4097,8 @@
     },
     "image_url": "/static/images/cards/juggernaut.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 49
   },
   {
@@ -3915,6 +4135,8 @@
     },
     "image_url": "/static/images/cards/fuel.png",
     "beta_image_url": "/static/images/cards/beta/fuel.png",
+    "type_key": "Skill",
+    "rarity_key": "Token",
     "compendium_order": 563
   },
   {
@@ -3962,6 +4184,8 @@
     },
     "image_url": "/static/images/cards/comet.png",
     "beta_image_url": "/static/images/cards/beta/comet.png",
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 190
   },
   {
@@ -3997,6 +4221,8 @@
     },
     "image_url": "/static/images/cards/compile_driver.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 368
   },
   {
@@ -4032,6 +4258,8 @@
     },
     "image_url": "/static/images/cards/compact.png",
     "beta_image_url": "/static/images/cards/beta/compact.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 367
   },
   {
@@ -4065,6 +4293,8 @@
     },
     "image_url": "/static/images/cards/foregone_conclusion.png",
     "beta_image_url": "/static/images/cards/beta/foregone_conclusion.png",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 202
   },
   {
@@ -4098,6 +4328,8 @@
     },
     "image_url": "/static/images/cards/capacitor.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 361
   },
   {
@@ -4135,6 +4367,8 @@
     },
     "image_url": "/static/images/cards/conflagration.png",
     "beta_image_url": "/static/images/cards/beta/conflagration.png",
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 19
   },
   {
@@ -4166,6 +4400,8 @@
     },
     "image_url": "/static/images/cards/havoc.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 39
   },
   {
@@ -4199,6 +4435,8 @@
     },
     "image_url": "/static/images/cards/believe_in_you.png",
     "beta_image_url": "/static/images/cards/beta/believe_in_you.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 444
   },
   {
@@ -4244,6 +4482,8 @@
     },
     "image_url": "/static/images/cards/biased_cognition.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Ancient",
     "compendium_order": 356
   },
   {
@@ -4277,6 +4517,8 @@
     },
     "image_url": "/static/images/cards/conqueror.png",
     "beta_image_url": "/static/images/cards/beta/conqueror.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 191
   },
   {
@@ -4314,6 +4556,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/waste_away.png",
     "beta_image_url": "/static/images/cards/beta/waste_away.png",
+    "type_key": "Status",
+    "rarity_key": "Status",
     "compendium_order": 575
   },
   {
@@ -4348,6 +4592,8 @@
     },
     "image_url": "/static/images/cards/convergence.png",
     "beta_image_url": "/static/images/cards/beta/convergence.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 192
   },
   {
@@ -4387,6 +4633,8 @@
     },
     "image_url": "/static/images/cards/coordinate.png",
     "beta_image_url": "/static/images/cards/beta/coordinate.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 448
   },
   {
@@ -4422,6 +4670,8 @@
     },
     "image_url": "/static/images/cards/dash.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 109
   },
   {
@@ -4455,6 +4705,8 @@
     },
     "image_url": "/static/images/cards/corruption.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Ancient",
     "compendium_order": 20
   },
   {
@@ -4490,6 +4742,8 @@
     },
     "image_url": "/static/images/cards/precise_cut.png",
     "beta_image_url": "/static/images/cards/beta/precise_cut.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 148
   },
   {
@@ -4523,6 +4777,8 @@
     },
     "image_url": "/static/images/cards/echoing_slash.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 114
   },
   {
@@ -4556,6 +4812,8 @@
     },
     "image_url": "/static/images/cards/glasswork.png",
     "beta_image_url": "/static/images/cards/beta/glasswork.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 388
   },
   {
@@ -4595,6 +4853,8 @@
     },
     "image_url": "/static/images/cards/cruelty.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 22
   },
   {
@@ -4634,6 +4894,8 @@
     },
     "image_url": "/static/images/cards/rattle.png",
     "beta_image_url": "/static/images/cards/beta/rattle.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 321
   },
   {
@@ -4667,6 +4929,8 @@
     },
     "image_url": "/static/images/cards/infinite_blades.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 130
   },
   {
@@ -4706,6 +4970,8 @@
     },
     "image_url": "/static/images/cards/countdown.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 274
   },
   {
@@ -4739,6 +5005,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/guilty.png",
     "beta_image_url": null,
+    "type_key": "Curse",
+    "rarity_key": "Curse",
     "compendium_order": 513
   },
   {
@@ -4770,6 +5038,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/quasar.png",
     "beta_image_url": "/static/images/cards/beta/quasar.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 238
   },
   {
@@ -4804,6 +5074,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/hidden_daggers.png",
     "beta_image_url": "/static/images/cards/beta/hidden_daggers.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 129
   },
   {
@@ -4841,6 +5113,8 @@
     },
     "image_url": "/static/images/cards/blade_dance.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 97
   },
   {
@@ -4881,6 +5155,8 @@
     },
     "image_url": "/static/images/cards/danse_macabre.png",
     "beta_image_url": "/static/images/cards/beta/danse_macabre.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 275
   },
   {
@@ -4916,6 +5192,8 @@
     },
     "image_url": "/static/images/cards/flechettes.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 122
   },
   {
@@ -4957,6 +5235,8 @@
     },
     "image_url": "/static/images/cards/debilitate.png",
     "beta_image_url": "/static/images/cards/beta/debilitate.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 279
   },
   {
@@ -4994,6 +5274,8 @@
     },
     "image_url": "/static/images/cards/poke.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 316
   },
   {
@@ -5029,6 +5311,8 @@
     },
     "image_url": "/static/images/cards/pull_aggro.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 318
   },
   {
@@ -5064,6 +5348,8 @@
     },
     "image_url": "/static/images/cards/defend_ironclad.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Basic",
     "compendium_order": 24
   },
   {
@@ -5099,6 +5385,8 @@
     },
     "image_url": "/static/images/cards/defend_silent.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Basic",
     "compendium_order": 111
   },
   {
@@ -5134,6 +5422,8 @@
     },
     "image_url": "/static/images/cards/defend_regent.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Basic",
     "compendium_order": 198
   },
   {
@@ -5169,6 +5459,8 @@
     },
     "image_url": "/static/images/cards/defend_necrobinder.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Basic",
     "compendium_order": 280
   },
   {
@@ -5204,6 +5496,8 @@
     },
     "image_url": "/static/images/cards/defend_defect.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Basic",
     "compendium_order": 374
   },
   {
@@ -5239,6 +5533,8 @@
     },
     "image_url": "/static/images/cards/ultimate_defend.png",
     "beta_image_url": "/static/images/cards/beta/ultimate_defend.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 500
   },
   {
@@ -5274,6 +5570,8 @@
     },
     "image_url": "/static/images/cards/delay.png",
     "beta_image_url": "/static/images/cards/beta/delay.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 283
   },
   {
@@ -5315,6 +5613,8 @@
     },
     "image_url": "/static/images/cards/null.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 407
   },
   {
@@ -5348,6 +5648,8 @@
     },
     "image_url": "/static/images/cards/predator.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 149
   },
   {
@@ -5391,6 +5693,8 @@
     },
     "image_url": "/static/images/cards/defy.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 282
   },
   {
@@ -5424,6 +5728,8 @@
     },
     "image_url": "/static/images/cards/quadcast.png",
     "beta_image_url": "/static/images/cards/beta/quadcast.png",
+    "type_key": "Skill",
+    "rarity_key": "Ancient",
     "compendium_order": 409
   },
   {
@@ -5455,6 +5761,8 @@
     },
     "image_url": "/static/images/cards/dualcast.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Basic",
     "compendium_order": 377
   },
   {
@@ -5488,6 +5796,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/decay.png",
     "beta_image_url": null,
+    "type_key": "Curse",
+    "rarity_key": "Curse",
     "compendium_order": 508
   },
   {
@@ -5521,6 +5831,8 @@
     },
     "image_url": "/static/images/cards/discovery.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 450
   },
   {
@@ -5554,6 +5866,8 @@
     },
     "image_url": "/static/images/cards/wish.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Ancient",
     "compendium_order": 547
   },
   {
@@ -5593,6 +5907,8 @@
     },
     "image_url": "/static/images/cards/defragment.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 375
   },
   {
@@ -5630,6 +5946,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/disintegration.png",
     "beta_image_url": "/static/images/cards/beta/disintegration.png",
+    "type_key": "Status",
+    "rarity_key": "Status",
     "compendium_order": 562
   },
   {
@@ -5663,6 +5981,8 @@
     },
     "image_url": "/static/images/cards/dismantle.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 27
   },
   {
@@ -5695,6 +6015,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/dazed.png",
     "beta_image_url": null,
+    "type_key": "Status",
+    "rarity_key": "Status",
     "compendium_order": 553
   },
   {
@@ -5730,6 +6052,8 @@
     },
     "image_url": "/static/images/cards/mangle.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 51
   },
   {
@@ -5763,6 +6087,8 @@
     },
     "image_url": "/static/images/cards/vicious.png",
     "beta_image_url": "/static/images/cards/beta/vicious.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 85
   },
   {
@@ -5799,6 +6125,8 @@
     },
     "image_url": "/static/images/cards/reave.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 325
   },
   {
@@ -5833,6 +6161,8 @@
     },
     "image_url": "/static/images/cards/glimmer.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 207
   },
   {
@@ -5867,6 +6197,8 @@
     },
     "image_url": "/static/images/cards/flash_of_steel.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 458
   },
   {
@@ -5903,6 +6235,8 @@
     },
     "image_url": "/static/images/cards/shared_fate.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 333
   },
   {
@@ -5936,6 +6270,8 @@
     },
     "image_url": "/static/images/cards/deflect.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 112
   },
   {
@@ -5969,6 +6305,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/debt.png",
     "beta_image_url": null,
+    "type_key": "Curse",
+    "rarity_key": "Curse",
     "compendium_order": 507
   },
   {
@@ -6003,6 +6341,8 @@
     },
     "image_url": "/static/images/cards/devastate.png",
     "beta_image_url": "/static/images/cards/beta/devastate.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 199
   },
   {
@@ -6036,6 +6376,8 @@
     },
     "image_url": "/static/images/cards/venerate.png",
     "beta_image_url": "/static/images/cards/beta/venerate.png",
+    "type_key": "Skill",
+    "rarity_key": "Basic",
     "compendium_order": 260
   },
   {
@@ -6069,6 +6411,8 @@
     },
     "image_url": "/static/images/cards/royalties.png",
     "beta_image_url": "/static/images/cards/beta/royalties.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 243
   },
   {
@@ -6103,6 +6447,8 @@
     },
     "image_url": "/static/images/cards/blur.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 99
   },
   {
@@ -6140,6 +6486,8 @@
     },
     "image_url": "/static/images/cards/decisions_decisions.png",
     "beta_image_url": "/static/images/cards/beta/decisions_decisions.png",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 197
   },
   {
@@ -6173,6 +6521,8 @@
     },
     "image_url": "/static/images/cards/pinpoint.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 145
   },
   {
@@ -6206,6 +6556,8 @@
     },
     "image_url": "/static/images/cards/distraction.png",
     "beta_image_url": "/static/images/cards/beta/distraction.png",
+    "type_key": "Skill",
+    "rarity_key": "Event",
     "compendium_order": 527
   },
   {
@@ -6239,6 +6591,8 @@
     },
     "image_url": "/static/images/cards/dual_wield.png",
     "beta_image_url": "/static/images/cards/beta/dual_wield.png",
+    "type_key": "Skill",
+    "rarity_key": "Event",
     "compendium_order": 528
   },
   {
@@ -6274,6 +6628,8 @@
     },
     "image_url": "/static/images/cards/dominate.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 28
   },
   {
@@ -6310,6 +6666,8 @@
     },
     "image_url": "/static/images/cards/demesne.png",
     "beta_image_url": "/static/images/cards/beta/demesne.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 284
   },
   {
@@ -6345,6 +6703,8 @@
     },
     "image_url": "/static/images/cards/dredge.png",
     "beta_image_url": "/static/images/cards/beta/dredge.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 288
   },
   {
@@ -6380,6 +6740,8 @@
     },
     "image_url": "/static/images/cards/drain_power.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 287
   },
   {
@@ -6419,6 +6781,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/doubt.png",
     "beta_image_url": null,
+    "type_key": "Curse",
+    "rarity_key": "Curse",
     "compendium_order": 509
   },
   {
@@ -6452,6 +6816,8 @@
     },
     "image_url": "/static/images/cards/eidolon.png",
     "beta_image_url": "/static/images/cards/beta/eidolon.png",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 289
   },
   {
@@ -6497,6 +6863,8 @@
     },
     "image_url": "/static/images/cards/deathbringer.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 276
   },
   {
@@ -6530,6 +6898,8 @@
     },
     "image_url": "/static/images/cards/the_sealed_throne.png",
     "beta_image_url": "/static/images/cards/beta/the_sealed_throne.png",
+    "type_key": "Power",
+    "rarity_key": "Ancient",
     "compendium_order": 257
   },
   {
@@ -6564,6 +6934,8 @@
     },
     "image_url": "/static/images/cards/the_smith.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 258
   },
   {
@@ -6599,6 +6971,8 @@
     },
     "image_url": "/static/images/cards/body_slam.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 10
   },
   {
@@ -6630,6 +7004,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/enthralled.png",
     "beta_image_url": "/static/images/cards/beta/enthralled.png",
+    "type_key": "Curse",
+    "rarity_key": "Curse",
     "compendium_order": 510
   },
   {
@@ -6663,6 +7039,8 @@
     },
     "image_url": "/static/images/cards/double_energy.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 376
   },
   {
@@ -6696,6 +7074,8 @@
     },
     "image_url": "/static/images/cards/chill.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 364
   },
   {
@@ -6729,6 +7109,8 @@
     },
     "image_url": "/static/images/cards/skewer.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 156
   },
   {
@@ -6765,6 +7147,8 @@
     },
     "image_url": "/static/images/cards/dramatic_entrance.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 451
   },
   {
@@ -6798,6 +7182,8 @@
     },
     "image_url": "/static/images/cards/entropy.png",
     "beta_image_url": "/static/images/cards/beta/entropy.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 452
   },
   {
@@ -6837,6 +7223,8 @@
     },
     "image_url": "/static/images/cards/envenom.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 115
   },
   {
@@ -6871,6 +7259,8 @@
     },
     "image_url": "/static/images/cards/equilibrium.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 453
   },
   {
@@ -6906,6 +7296,8 @@
     },
     "image_url": "/static/images/cards/eradicate.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 292
   },
   {
@@ -6935,6 +7327,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/frantic_escape.png",
     "beta_image_url": "/static/images/cards/beta/frantic_escape.png",
+    "type_key": "Status",
+    "rarity_key": "Status",
     "compendium_order": 555
   },
   {
@@ -6970,6 +7364,8 @@
     },
     "image_url": "/static/images/cards/severance.png",
     "beta_image_url": "/static/images/cards/beta/severance.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 332
   },
   {
@@ -7001,6 +7397,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/debris.png",
     "beta_image_url": "/static/images/cards/beta/debris.png",
+    "type_key": "Status",
+    "rarity_key": "Status",
     "compendium_order": 554
   },
   {
@@ -7038,6 +7436,8 @@
     },
     "image_url": "/static/images/cards/demonic_shield.png",
     "beta_image_url": "/static/images/cards/beta/demonic_shield.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 25
   },
   {
@@ -7079,6 +7479,8 @@
     },
     "image_url": "/static/images/cards/squash.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Event",
     "compendium_order": 543
   },
   {
@@ -7113,6 +7515,8 @@
     },
     "image_url": "/static/images/cards/sword_boomerang.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 73
   },
   {
@@ -7152,6 +7556,8 @@
     },
     "image_url": "/static/images/cards/sovereign_blade.png",
     "beta_image_url": "/static/images/cards/beta/sovereign_blade.png",
+    "type_key": "Attack",
+    "rarity_key": "Token",
     "compendium_order": 573
   },
   {
@@ -7185,6 +7591,8 @@
     },
     "image_url": "/static/images/cards/infernal_blade.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 45
   },
   {
@@ -7221,6 +7629,8 @@
     },
     "image_url": "/static/images/cards/mirage.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 137
   },
   {
@@ -7252,6 +7662,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/spore_mind.png",
     "beta_image_url": "/static/images/cards/beta/spore_mind.png",
+    "type_key": "Curse",
+    "rarity_key": "Curse",
     "compendium_order": 519
   },
   {
@@ -7289,6 +7701,8 @@
     },
     "image_url": "/static/images/cards/capture_spirit.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 272
   },
   {
@@ -7322,6 +7736,8 @@
     },
     "image_url": "/static/images/cards/spirit_of_ash.png",
     "beta_image_url": "/static/images/cards/beta/spirit_of_ash.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 340
   },
   {
@@ -7355,6 +7771,8 @@
     },
     "image_url": "/static/images/cards/dodge_and_roll.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 113
   },
   {
@@ -7391,6 +7809,8 @@
     },
     "image_url": "/static/images/cards/graveblast.png",
     "beta_image_url": "/static/images/cards/beta/graveblast.png",
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 299
   },
   {
@@ -7424,6 +7844,8 @@
     },
     "image_url": "/static/images/cards/stampede.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 68
   },
   {
@@ -7457,6 +7879,8 @@
     },
     "image_url": "/static/images/cards/panache.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 476
   },
   {
@@ -7498,6 +7922,8 @@
     },
     "image_url": "/static/images/cards/strangle.png",
     "beta_image_url": "/static/images/cards/beta/strangle.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 162
   },
   {
@@ -7529,6 +7955,8 @@
     },
     "image_url": "/static/images/cards/stratagem.png",
     "beta_image_url": "/static/images/cards/beta/stratagem.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 494
   },
   {
@@ -7564,6 +7992,8 @@
     },
     "image_url": "/static/images/cards/tactician.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 167
   },
   {
@@ -7611,6 +8041,8 @@
     },
     "image_url": "/static/images/cards/falling_star.png",
     "beta_image_url": "/static/images/cards/beta/falling_star.png",
+    "type_key": "Attack",
+    "rarity_key": "Basic",
     "compendium_order": 201
   },
   {
@@ -7647,6 +8079,8 @@
     },
     "image_url": "/static/images/cards/guiding_star.png",
     "beta_image_url": "/static/images/cards/beta/guiding_star.png",
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 211
   },
   {
@@ -7694,6 +8128,8 @@
     },
     "image_url": "/static/images/cards/gamma_blast.png",
     "beta_image_url": "/static/images/cards/beta/gamma_blast.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 204
   },
   {
@@ -7731,6 +8167,8 @@
     },
     "image_url": "/static/images/cards/mind_blast.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 473
   },
   {
@@ -7766,6 +8204,8 @@
     },
     "image_url": "/static/images/cards/expose.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 118
   },
   {
@@ -7800,6 +8240,8 @@
     },
     "image_url": "/static/images/cards/exterminate.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Event",
     "compendium_order": 531
   },
   {
@@ -7833,6 +8275,8 @@
     },
     "image_url": "/static/images/cards/seeking_edge.png",
     "beta_image_url": "/static/images/cards/beta/seeking_edge.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 245
   },
   {
@@ -7867,6 +8311,8 @@
     },
     "image_url": "/static/images/cards/pacts_end.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 55
   },
   {
@@ -7908,6 +8354,8 @@
     },
     "image_url": "/static/images/cards/scourge.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 328
   },
   {
@@ -7939,6 +8387,8 @@
     },
     "image_url": "/static/images/cards/flanking.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 121
   },
   {
@@ -7973,6 +8423,8 @@
     },
     "image_url": "/static/images/cards/bloodletting.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 7
   },
   {
@@ -8010,6 +8462,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/sloth.png",
     "beta_image_url": "/static/images/cards/beta/sloth.png",
+    "type_key": "Status",
+    "rarity_key": "Status",
     "compendium_order": 571
   },
   {
@@ -8045,6 +8499,8 @@
     },
     "image_url": "/static/images/cards/wrought_in_war.png",
     "beta_image_url": "/static/images/cards/beta/wrought_in_war.png",
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 262
   },
   {
@@ -8076,6 +8532,8 @@
     },
     "image_url": "/static/images/cards/reaper_form.png",
     "beta_image_url": "/static/images/cards/beta/reaper_form.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 324
   },
   {
@@ -8115,6 +8573,8 @@
     },
     "image_url": "/static/images/cards/void_form.png",
     "beta_image_url": "/static/images/cards/beta/void_form.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 261
   },
   {
@@ -8154,6 +8614,8 @@
     },
     "image_url": "/static/images/cards/demon_form.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 26
   },
   {
@@ -8199,6 +8661,8 @@
     },
     "image_url": "/static/images/cards/wraith_form.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Ancient",
     "compendium_order": 174
   },
   {
@@ -8238,6 +8702,8 @@
     },
     "image_url": "/static/images/cards/serpent_form.png",
     "beta_image_url": "/static/images/cards/beta/serpent_form.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 153
   },
   {
@@ -8273,6 +8739,8 @@
     },
     "image_url": "/static/images/cards/echo_form.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 378
   },
   {
@@ -8320,6 +8788,8 @@
     },
     "image_url": "/static/images/cards/bulk_up.png",
     "beta_image_url": "/static/images/cards/beta/bulk_up.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 360
   },
   {
@@ -8353,6 +8823,8 @@
     },
     "image_url": "/static/images/cards/furnace.png",
     "beta_image_url": "/static/images/cards/beta/furnace.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 203
   },
   {
@@ -8393,6 +8865,8 @@
     },
     "image_url": "/static/images/cards/bouncing_flask.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 100
   },
   {
@@ -8432,6 +8906,8 @@
     },
     "image_url": "/static/images/cards/feeding_frenzy.png",
     "beta_image_url": "/static/images/cards/beta/feeding_frenzy.png",
+    "type_key": "Skill",
+    "rarity_key": "Event",
     "compendium_order": 532
   },
   {
@@ -8465,6 +8941,8 @@
     },
     "image_url": "/static/images/cards/cold_snap.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 366
   },
   {
@@ -8500,6 +8978,8 @@
     },
     "image_url": "/static/images/cards/fiend_fire.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 34
   },
   {
@@ -8535,6 +9015,8 @@
     },
     "image_url": "/static/images/cards/wisp.png",
     "beta_image_url": "/static/images/cards/beta/wisp.png",
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 350
   },
   {
@@ -8566,6 +9048,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/primal_force.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 59
   },
   {
@@ -8599,6 +9083,8 @@
     },
     "image_url": "/static/images/cards/shadowmeld.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 154
   },
   {
@@ -8632,6 +9118,8 @@
     },
     "image_url": "/static/images/cards/rage.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 61
   },
   {
@@ -8668,6 +9156,8 @@
     },
     "image_url": "/static/images/cards/neows_fury.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Ancient",
     "compendium_order": 537
   },
   {
@@ -8699,6 +9189,8 @@
     },
     "image_url": "/static/images/cards/fusion.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 385
   },
   {
@@ -8732,6 +9224,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/folly.png",
     "beta_image_url": null,
+    "type_key": "Curse",
+    "rarity_key": "Curse",
     "compendium_order": 511
   },
   {
@@ -8766,6 +9260,8 @@
     },
     "image_url": "/static/images/cards/uppercut.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 84
   },
   {
@@ -8799,6 +9295,8 @@
     },
     "image_url": "/static/images/cards/scrawl.png",
     "beta_image_url": "/static/images/cards/beta/scrawl.png",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 488
   },
   {
@@ -8832,6 +9330,8 @@
     },
     "image_url": "/static/images/cards/noxious_fumes.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 141
   },
   {
@@ -8865,6 +9365,8 @@
     },
     "image_url": "/static/images/cards/hidden_gem.png",
     "beta_image_url": "/static/images/cards/beta/hidden_gem.png",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 462
   },
   {
@@ -8894,6 +9396,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/largesse.png",
     "beta_image_url": "/static/images/cards/beta/largesse.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 222
   },
   {
@@ -8927,6 +9431,8 @@
     },
     "image_url": "/static/images/cards/glacier.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 387
   },
   {
@@ -8962,6 +9468,8 @@
     },
     "image_url": "/static/images/cards/strike_ironclad.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Basic",
     "compendium_order": 72
   },
   {
@@ -8997,6 +9505,8 @@
     },
     "image_url": "/static/images/cards/strike_silent.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Basic",
     "compendium_order": 163
   },
   {
@@ -9032,6 +9542,8 @@
     },
     "image_url": "/static/images/cards/strike_regent.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Basic",
     "compendium_order": 252
   },
   {
@@ -9067,6 +9579,8 @@
     },
     "image_url": "/static/images/cards/strike_necrobinder.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Basic",
     "compendium_order": 343
   },
   {
@@ -9102,6 +9616,8 @@
     },
     "image_url": "/static/images/cards/strike_defect.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Basic",
     "compendium_order": 423
   },
   {
@@ -9137,6 +9653,8 @@
     },
     "image_url": "/static/images/cards/adaptive_strike.png",
     "beta_image_url": "/static/images/cards/beta/adaptive_strike.png",
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 351
   },
   {
@@ -9173,6 +9691,8 @@
     },
     "image_url": "/static/images/cards/seeker_strike.png",
     "beta_image_url": "/static/images/cards/beta/seeker_strike.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 491
   },
   {
@@ -9209,6 +9729,8 @@
     },
     "image_url": "/static/images/cards/shining_strike.png",
     "beta_image_url": "/static/images/cards/beta/shining_strike.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 247
   },
   {
@@ -9247,6 +9769,8 @@
     },
     "image_url": "/static/images/cards/ashen_strike.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 3
   },
   {
@@ -9282,6 +9806,8 @@
     },
     "image_url": "/static/images/cards/sculpting_strike.png",
     "beta_image_url": "/static/images/cards/beta/sculpting_strike.png",
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 329
   },
   {
@@ -9319,6 +9845,8 @@
     },
     "image_url": "/static/images/cards/pommel_strike.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 58
   },
   {
@@ -9358,6 +9886,8 @@
     },
     "image_url": "/static/images/cards/minion_strike.png",
     "beta_image_url": "/static/images/cards/beta/minion_strike.png",
+    "type_key": "Attack",
+    "rarity_key": "Token",
     "compendium_order": 569
   },
   {
@@ -9393,6 +9923,8 @@
     },
     "image_url": "/static/images/cards/blight_strike.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 265
   },
   {
@@ -9436,6 +9968,8 @@
     },
     "image_url": "/static/images/cards/setup_strike.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 65
   },
   {
@@ -9471,6 +10005,8 @@
     },
     "image_url": "/static/images/cards/ultimate_strike.png",
     "beta_image_url": "/static/images/cards/beta/ultimate_strike.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 501
   },
   {
@@ -9506,6 +10042,8 @@
     },
     "image_url": "/static/images/cards/twin_strike.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 81
   },
   {
@@ -9541,6 +10079,8 @@
     },
     "image_url": "/static/images/cards/momentum_strike.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 405
   },
   {
@@ -9579,6 +10119,8 @@
     },
     "image_url": "/static/images/cards/leading_strike.png",
     "beta_image_url": "/static/images/cards/beta/leading_strike.png",
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 132
   },
   {
@@ -9614,6 +10156,8 @@
     },
     "image_url": "/static/images/cards/meteor_strike.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 403
   },
   {
@@ -9652,6 +10196,8 @@
     },
     "image_url": "/static/images/cards/perfected_strike.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 56
   },
   {
@@ -9695,6 +10241,8 @@
     },
     "image_url": "/static/images/cards/focused_strike.png",
     "beta_image_url": "/static/images/cards/beta/focused_strike.png",
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 383
   },
   {
@@ -9732,6 +10280,8 @@
     },
     "image_url": "/static/images/cards/solar_strike.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 248
   },
   {
@@ -9770,6 +10320,8 @@
     },
     "image_url": "/static/images/cards/big_bang.png",
     "beta_image_url": "/static/images/cards/beta/big_bang.png",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 180
   },
   {
@@ -9803,6 +10355,8 @@
     },
     "image_url": "/static/images/cards/grand_finale.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 126
   },
   {
@@ -9842,6 +10396,8 @@
     },
     "image_url": "/static/images/cards/hailstorm.png",
     "beta_image_url": "/static/images/cards/beta/hailstorm.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 391
   },
   {
@@ -9877,6 +10433,8 @@
     },
     "image_url": "/static/images/cards/dark_shackles.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 449
   },
   {
@@ -9910,6 +10468,8 @@
     },
     "image_url": "/static/images/cards/forbidden_grimoire.png",
     "beta_image_url": "/static/images/cards/beta/forbidden_grimoire.png",
+    "type_key": "Power",
+    "rarity_key": "Ancient",
     "compendium_order": 296
   },
   {
@@ -9945,6 +10505,8 @@
     },
     "image_url": "/static/images/cards/reap.png",
     "beta_image_url": "/static/images/cards/beta/reap.png",
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 323
   },
   {
@@ -9978,6 +10540,8 @@
     },
     "image_url": "/static/images/cards/bodyguard.png",
     "beta_image_url": "/static/images/cards/beta/bodyguard.png",
+    "type_key": "Skill",
+    "rarity_key": "Basic",
     "compendium_order": 266
   },
   {
@@ -10014,6 +10578,8 @@
     },
     "image_url": "/static/images/cards/grave_warden.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 300
   },
   {
@@ -10047,6 +10613,8 @@
     },
     "image_url": "/static/images/cards/genesis.png",
     "beta_image_url": "/static/images/cards/beta/genesis.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 206
   },
   {
@@ -10084,6 +10652,8 @@
     },
     "image_url": "/static/images/cards/times_up.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 345
   },
   {
@@ -10121,6 +10691,8 @@
     },
     "image_url": "/static/images/cards/rend.png",
     "beta_image_url": "/static/images/cards/beta/rend.png",
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 484
   },
   {
@@ -10160,6 +10732,8 @@
     },
     "image_url": "/static/images/cards/tremble.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 79
   },
   {
@@ -10195,6 +10769,8 @@
     },
     "image_url": "/static/images/cards/gold_axe.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 460
   },
   {
@@ -10230,6 +10806,8 @@
     },
     "image_url": "/static/images/cards/hegemony.png",
     "beta_image_url": "/static/images/cards/beta/hegemony.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 214
   },
   {
@@ -10264,6 +10842,8 @@
     },
     "image_url": "/static/images/cards/hemokinesis.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 42
   },
   {
@@ -10295,6 +10875,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/wound.png",
     "beta_image_url": null,
+    "type_key": "Status",
+    "rarity_key": "Status",
     "compendium_order": 561
   },
   {
@@ -10335,6 +10917,8 @@
     },
     "image_url": "/static/images/cards/hyperbeam.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 395
   },
   {
@@ -10374,6 +10958,8 @@
     },
     "image_url": "/static/images/cards/blade_of_ink.png",
     "beta_image_url": "/static/images/cards/beta/blade_of_ink.png",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 98
   },
   {
@@ -10415,6 +11001,8 @@
     },
     "image_url": "/static/images/cards/phantom_blades.png",
     "beta_image_url": "/static/images/cards/beta/phantom_blades.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 143
   },
   {
@@ -10446,6 +11034,8 @@
     },
     "image_url": "/static/images/cards/hello_world.png",
     "beta_image_url": "/static/images/cards/beta/hello_world.png",
+    "type_key": "Power",
+    "rarity_key": "Event",
     "compendium_order": 533
   },
   {
@@ -10477,6 +11067,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/soot.png",
     "beta_image_url": "/static/images/cards/beta/soot.png",
+    "type_key": "Status",
+    "rarity_key": "Status",
     "compendium_order": 558
   },
   {
@@ -10513,6 +11105,8 @@
     },
     "image_url": "/static/images/cards/hologram.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 393
   },
   {
@@ -10544,6 +11138,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/byrdonis_egg.png",
     "beta_image_url": null,
+    "type_key": "Quest",
+    "rarity_key": "Quest",
     "compendium_order": 548
   },
   {
@@ -10577,6 +11173,8 @@
     },
     "image_url": "/static/images/cards/creative_ai.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 372
   },
   {
@@ -10610,6 +11208,8 @@
     },
     "image_url": "/static/images/cards/ignition.png",
     "beta_image_url": "/static/images/cards/beta/ignition.png",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 397
   },
   {
@@ -10641,6 +11241,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/enlightenment.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Event",
     "compendium_order": 529
   },
   {
@@ -10680,6 +11282,8 @@
     },
     "image_url": "/static/images/cards/afterimage.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 92
   },
   {
@@ -10713,6 +11317,8 @@
     },
     "image_url": "/static/images/cards/impatience.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 464
   },
   {
@@ -10746,6 +11352,8 @@
     },
     "image_url": "/static/images/cards/unrelenting.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 83
   },
   {
@@ -10781,6 +11389,8 @@
     },
     "image_url": "/static/images/cards/impervious.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 44
   },
   {
@@ -10815,6 +11425,8 @@
     },
     "image_url": "/static/images/cards/shrug_it_off.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 66
   },
   {
@@ -10850,6 +11462,8 @@
     },
     "image_url": "/static/images/cards/boost_away.png",
     "beta_image_url": "/static/images/cards/beta/boost_away.png",
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 357
   },
   {
@@ -10881,6 +11495,8 @@
     },
     "image_url": "/static/images/cards/unmovable.png",
     "beta_image_url": "/static/images/cards/beta/unmovable.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 82
   },
   {
@@ -10918,6 +11534,8 @@
     },
     "image_url": "/static/images/cards/spur.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 341
   },
   {
@@ -10951,6 +11569,8 @@
     },
     "image_url": "/static/images/cards/cosmic_indifference.png",
     "beta_image_url": "/static/images/cards/beta/cosmic_indifference.png",
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 193
   },
   {
@@ -10984,6 +11604,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/infection.png",
     "beta_image_url": "/static/images/cards/beta/infection.png",
+    "type_key": "Status",
+    "rarity_key": "Status",
     "compendium_order": 556
   },
   {
@@ -11023,6 +11645,8 @@
     },
     "image_url": "/static/images/cards/inferno.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 46
   },
   {
@@ -11060,6 +11684,8 @@
     },
     "image_url": "/static/images/cards/restlessness.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 485
   },
   {
@@ -11092,6 +11718,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/poor_sleep.png",
     "beta_image_url": "/static/images/cards/beta/poor_sleep.png",
+    "type_key": "Curse",
+    "rarity_key": "Curse",
     "compendium_order": 516
   },
   {
@@ -11125,6 +11753,8 @@
     },
     "image_url": "/static/images/cards/intercept.png",
     "beta_image_url": "/static/images/cards/beta/intercept.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 465
   },
   {
@@ -11160,6 +11790,8 @@
     },
     "image_url": "/static/images/cards/untouchable.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 171
   },
   {
@@ -11195,6 +11827,8 @@
     },
     "image_url": "/static/images/cards/invoke.png",
     "beta_image_url": "/static/images/cards/beta/invoke.png",
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 304
   },
   {
@@ -11236,6 +11870,8 @@
     },
     "image_url": "/static/images/cards/go_for_the_eyes.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 389
   },
   {
@@ -11269,6 +11905,8 @@
     },
     "image_url": "/static/images/cards/anger.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 1
   },
   {
@@ -11305,6 +11943,8 @@
     },
     "image_url": "/static/images/cards/radiate.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 239
   },
   {
@@ -11344,6 +11984,8 @@
     },
     "image_url": "/static/images/cards/iteration.png",
     "beta_image_url": "/static/images/cards/beta/iteration.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 398
   },
   {
@@ -11383,6 +12025,8 @@
     },
     "image_url": "/static/images/cards/footwork.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 125
   },
   {
@@ -11416,6 +12060,8 @@
     },
     "image_url": "/static/images/cards/the_gambit.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 497
   },
   {
@@ -11455,6 +12101,8 @@
     },
     "image_url": "/static/images/cards/end_of_days.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 290
   },
   {
@@ -11490,6 +12138,8 @@
     },
     "image_url": "/static/images/cards/the_hunt.png",
     "beta_image_url": "/static/images/cards/beta/the_hunt.png",
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 168
   },
   {
@@ -11527,6 +12177,8 @@
     },
     "image_url": "/static/images/cards/the_scythe.png",
     "beta_image_url": "/static/images/cards/beta/the_scythe.png",
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 344
   },
   {
@@ -11561,6 +12213,8 @@
     },
     "image_url": "/static/images/cards/the_bomb.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 496
   },
   {
@@ -11592,6 +12246,8 @@
     },
     "image_url": "/static/images/cards/mayhem.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 471
   },
   {
@@ -11626,6 +12282,8 @@
     },
     "image_url": "/static/images/cards/ice_lance.png",
     "beta_image_url": "/static/images/cards/beta/ice_lance.png",
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 396
   },
   {
@@ -11663,6 +12321,8 @@
     },
     "image_url": "/static/images/cards/crescent_spear.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 195
   },
   {
@@ -11696,6 +12356,8 @@
     },
     "image_url": "/static/images/cards/dagger_throw.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 108
   },
   {
@@ -11729,6 +12391,8 @@
     },
     "image_url": "/static/images/cards/thrumming_hatchet.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 499
   },
   {
@@ -11764,6 +12428,8 @@
     },
     "image_url": "/static/images/cards/legion_of_bone.png",
     "beta_image_url": "/static/images/cards/beta/legion_of_bone.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 305
   },
   {
@@ -11795,6 +12461,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/injury.png",
     "beta_image_url": null,
+    "type_key": "Curse",
+    "rarity_key": "Curse",
     "compendium_order": 514
   },
   {
@@ -11836,6 +12504,8 @@
     },
     "image_url": "/static/images/cards/lethality.png",
     "beta_image_url": "/static/images/cards/beta/lethality.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 306
   },
   {
@@ -11869,6 +12539,8 @@
     },
     "image_url": "/static/images/cards/lift.png",
     "beta_image_url": "/static/images/cards/beta/lift.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 469
   },
   {
@@ -11904,6 +12576,8 @@
     },
     "image_url": "/static/images/cards/expect_a_fight.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 31
   },
   {
@@ -11940,6 +12614,8 @@
     },
     "image_url": "/static/images/cards/brightest_flame.png",
     "beta_image_url": "/static/images/cards/beta/brightest_flame.png",
+    "type_key": "Skill",
+    "rarity_key": "Ancient",
     "compendium_order": 523
   },
   {
@@ -11971,6 +12647,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/beckon.png",
     "beta_image_url": "/static/images/cards/beta/beckon.png",
+    "type_key": "Status",
+    "rarity_key": "Status",
     "compendium_order": 551
   },
   {
@@ -12004,6 +12682,8 @@
     },
     "image_url": "/static/images/cards/call_of_the_void.png",
     "beta_image_url": "/static/images/cards/beta/call_of_the_void.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 271
   },
   {
@@ -12038,6 +12718,8 @@
     },
     "image_url": "/static/images/cards/banshees_cry.png",
     "beta_image_url": "/static/images/cards/beta/banshees_cry.png",
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 264
   },
   {
@@ -12073,6 +12755,8 @@
     },
     "image_url": "/static/images/cards/piercing_wail.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 144
   },
   {
@@ -12106,6 +12790,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/lantern_key.png",
     "beta_image_url": "/static/images/cards/beta/lantern_key.png",
+    "type_key": "Quest",
+    "rarity_key": "Quest",
     "compendium_order": 549
   },
   {
@@ -12139,6 +12825,8 @@
     },
     "image_url": "/static/images/cards/dagger_spray.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 107
   },
   {
@@ -12186,6 +12874,8 @@
     },
     "image_url": "/static/images/cards/meteor_shower.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Ancient",
     "compendium_order": 226
   },
   {
@@ -12222,6 +12912,8 @@
     },
     "image_url": "/static/images/cards/luminesce.png",
     "beta_image_url": "/static/images/cards/beta/luminesce.png",
+    "type_key": "Skill",
+    "rarity_key": "Token",
     "compendium_order": 565
   },
   {
@@ -12257,6 +12949,8 @@
     },
     "image_url": "/static/images/cards/master_of_strategy.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 470
   },
   {
@@ -12298,6 +12992,8 @@
     },
     "image_url": "/static/images/cards/sword_sage.png",
     "beta_image_url": "/static/images/cards/beta/sword_sage.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 255
   },
   {
@@ -12331,6 +13027,8 @@
     },
     "image_url": "/static/images/cards/necro_mastery.png",
     "beta_image_url": "/static/images/cards/beta/necro_mastery.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 309
   },
   {
@@ -12365,6 +13063,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/bad_luck.png",
     "beta_image_url": "/static/images/cards/beta/bad_luck.png",
+    "type_key": "Curse",
+    "rarity_key": "Curse",
     "compendium_order": 504
   },
   {
@@ -12396,6 +13096,8 @@
     },
     "image_url": "/static/images/cards/juggling.png",
     "beta_image_url": "/static/images/cards/beta/juggling.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 50
   },
   {
@@ -12428,6 +13130,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/curse_of_the_bell.png",
     "beta_image_url": null,
+    "type_key": "Curse",
+    "rarity_key": "Curse",
     "compendium_order": 506
   },
   {
@@ -12459,6 +13163,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/malaise.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 134
   },
   {
@@ -12492,6 +13198,8 @@
     },
     "image_url": "/static/images/cards/tag_team.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 495
   },
   {
@@ -12527,6 +13235,8 @@
     },
     "image_url": "/static/images/cards/hand_of_greed.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 461
   },
   {
@@ -12565,6 +13275,8 @@
     },
     "image_url": "/static/images/cards/right_hand_hand.png",
     "beta_image_url": "/static/images/cards/beta/right_hand_hand.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 326
   },
   {
@@ -12604,6 +13316,8 @@
     },
     "image_url": "/static/images/cards/crimson_mantle.png",
     "beta_image_url": "/static/images/cards/beta/crimson_mantle.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 21
   },
   {
@@ -12637,6 +13351,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/spoils_map.png",
     "beta_image_url": "/static/images/cards/beta/spoils_map.png",
+    "type_key": "Quest",
+    "rarity_key": "Quest",
     "compendium_order": 550
   },
   {
@@ -12677,6 +13393,8 @@
     },
     "image_url": "/static/images/cards/brand.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 11
   },
   {
@@ -12712,6 +13430,8 @@
     },
     "image_url": "/static/images/cards/summon_forth.png",
     "beta_image_url": "/static/images/cards/beta/summon_forth.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 253
   },
   {
@@ -12749,6 +13469,8 @@
     },
     "image_url": "/static/images/cards/death_march.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 278
   },
   {
@@ -12783,6 +13505,8 @@
     },
     "image_url": "/static/images/cards/heirloom_hammer.png",
     "beta_image_url": "/static/images/cards/beta/heirloom_hammer.png",
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 215
   },
   {
@@ -12817,6 +13541,8 @@
     },
     "image_url": "/static/images/cards/rampage.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 62
   },
   {
@@ -12858,6 +13584,8 @@
     },
     "image_url": "/static/images/cards/knockdown.png",
     "beta_image_url": "/static/images/cards/beta/knockdown.png",
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 468
   },
   {
@@ -12894,6 +13622,8 @@
     },
     "image_url": "/static/images/cards/bully.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 14
   },
   {
@@ -12927,6 +13657,8 @@
     },
     "image_url": "/static/images/cards/bludgeon.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 9
   },
   {
@@ -12961,6 +13693,8 @@
     },
     "image_url": "/static/images/cards/melancholy.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 307
   },
   {
@@ -12996,6 +13730,8 @@
     },
     "image_url": "/static/images/cards/dirge.png",
     "beta_image_url": "/static/images/cards/beta/dirge.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 286
   },
   {
@@ -13033,6 +13769,8 @@
     },
     "image_url": "/static/images/cards/memento_mori.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 136
   },
   {
@@ -13066,6 +13804,8 @@
     },
     "image_url": "/static/images/cards/coolheaded.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 371
   },
   {
@@ -13101,6 +13841,8 @@
     },
     "image_url": "/static/images/cards/metamorphosis.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Event",
     "compendium_order": 536
   },
   {
@@ -13140,6 +13882,8 @@
     },
     "image_url": "/static/images/cards/bone_shards.png",
     "beta_image_url": "/static/images/cards/beta/bone_shards.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 267
   },
   {
@@ -13173,6 +13917,8 @@
     },
     "image_url": "/static/images/cards/monarchs_gaze.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 227
   },
   {
@@ -13207,6 +13953,8 @@
     },
     "image_url": "/static/images/cards/misery.png",
     "beta_image_url": "/static/images/cards/beta/misery.png",
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 308
   },
   {
@@ -13241,6 +13989,8 @@
     },
     "image_url": "/static/images/cards/modded.png",
     "beta_image_url": "/static/images/cards/beta/modded.png",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 404
   },
   {
@@ -13282,6 +14032,8 @@
     },
     "image_url": "/static/images/cards/sentry_mode.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 331
   },
   {
@@ -13319,6 +14071,8 @@
     },
     "image_url": "/static/images/cards/beat_into_shape.png",
     "beta_image_url": "/static/images/cards/beta/beat_into_shape.png",
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 178
   },
   {
@@ -13360,6 +14114,8 @@
     },
     "image_url": "/static/images/cards/snakebite.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 158
   },
   {
@@ -13393,6 +14149,8 @@
     },
     "image_url": "/static/images/cards/shroud.png",
     "beta_image_url": "/static/images/cards/beta/shroud.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 334
   },
   {
@@ -13422,6 +14180,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/multi_cast.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 406
   },
   {
@@ -13456,6 +14216,8 @@
     },
     "image_url": "/static/images/cards/particle_wall.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 233
   },
   {
@@ -13490,6 +14252,8 @@
     },
     "image_url": "/static/images/cards/blood_wall.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 8
   },
   {
@@ -13526,6 +14290,8 @@
     },
     "image_url": "/static/images/cards/mimic.png",
     "beta_image_url": "/static/images/cards/beta/mimic.png",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 472
   },
   {
@@ -13565,6 +14331,8 @@
     },
     "image_url": "/static/images/cards/shiv.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Token",
     "compendium_order": 570
   },
   {
@@ -13600,6 +14368,8 @@
     },
     "image_url": "/static/images/cards/jack_of_all_trades.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 467
   },
   {
@@ -13641,6 +14411,8 @@
     },
     "image_url": "/static/images/cards/haze.png",
     "beta_image_url": "/static/images/cards/beta/haze.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 128
   },
   {
@@ -13682,6 +14454,8 @@
     },
     "image_url": "/static/images/cards/neutralize.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Basic",
     "compendium_order": 139
   },
   {
@@ -13722,6 +14496,8 @@
     },
     "image_url": "/static/images/cards/neutron_aegis.png",
     "beta_image_url": "/static/images/cards/beta/neutron_aegis.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 229
   },
   {
@@ -13755,6 +14531,8 @@
     },
     "image_url": "/static/images/cards/feel_no_pain.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 33
   },
   {
@@ -13788,6 +14566,8 @@
     },
     "image_url": "/static/images/cards/undeath.png",
     "beta_image_url": "/static/images/cards/beta/undeath.png",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 347
   },
   {
@@ -13822,6 +14602,8 @@
     },
     "image_url": "/static/images/cards/knockout_blow.png",
     "beta_image_url": "/static/images/cards/beta/knockout_blow.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 220
   },
   {
@@ -13856,6 +14638,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/normality.png",
     "beta_image_url": null,
+    "type_key": "Curse",
+    "rarity_key": "Curse",
     "compendium_order": 515
   },
   {
@@ -13887,6 +14671,8 @@
     },
     "image_url": "/static/images/cards/nostalgia.png",
     "beta_image_url": "/static/images/cards/beta/nostalgia.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 474
   },
   {
@@ -13924,6 +14710,8 @@
     },
     "image_url": "/static/images/cards/offering.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 53
   },
   {
@@ -13957,6 +14745,8 @@
     },
     "image_url": "/static/images/cards/evil_eye.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 30
   },
   {
@@ -13990,6 +14780,8 @@
     },
     "image_url": "/static/images/cards/corrosive_wave.png",
     "beta_image_url": "/static/images/cards/beta/corrosive_wave.png",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 106
   },
   {
@@ -14029,6 +14821,8 @@
     },
     "image_url": "/static/images/cards/oblivion.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 313
   },
   {
@@ -14062,6 +14856,8 @@
     },
     "image_url": "/static/images/cards/omnislice.png",
     "beta_image_url": "/static/images/cards/beta/omnislice.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 475
   },
   {
@@ -14097,6 +14893,8 @@
     },
     "image_url": "/static/images/cards/shockwave.png",
     "beta_image_url": "/static/images/cards/beta/shockwave.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 492
   },
   {
@@ -14132,6 +14930,8 @@
     },
     "image_url": "/static/images/cards/iron_wave.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 48
   },
   {
@@ -14167,6 +14967,8 @@
     },
     "image_url": "/static/images/cards/glitterstream.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 208
   },
   {
@@ -14196,6 +14998,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/darkness.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 373
   },
   {
@@ -14229,6 +15033,8 @@
     },
     "image_url": "/static/images/cards/burning_pact.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 15
   },
   {
@@ -14262,6 +15068,8 @@
     },
     "image_url": "/static/images/cards/thrash.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 77
   },
   {
@@ -14295,6 +15103,8 @@
     },
     "image_url": "/static/images/cards/pagestorm.png",
     "beta_image_url": "/static/images/cards/beta/pagestorm.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 314
   },
   {
@@ -14336,6 +15146,8 @@
     },
     "image_url": "/static/images/cards/parry.png",
     "beta_image_url": "/static/images/cards/beta/parry.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 232
   },
   {
@@ -14376,6 +15188,8 @@
     },
     "image_url": "/static/images/cards/lightning_rod.png",
     "beta_image_url": "/static/images/cards/beta/lightning_rod.png",
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 400
   },
   {
@@ -14415,6 +15229,8 @@
     },
     "image_url": "/static/images/cards/hotfix.png",
     "beta_image_url": "/static/images/cards/beta/hotfix.png",
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 394
   },
   {
@@ -14451,6 +15267,8 @@
     },
     "image_url": "/static/images/cards/tear_asunder.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 76
   },
   {
@@ -14484,6 +15302,8 @@
     },
     "image_url": "/static/images/cards/shadow_step.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 155
   },
   {
@@ -14517,6 +15337,8 @@
     },
     "image_url": "/static/images/cards/kingly_kick.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 218
   },
   {
@@ -14552,6 +15374,8 @@
     },
     "image_url": "/static/images/cards/bundle_of_joy.png",
     "beta_image_url": "/static/images/cards/beta/bundle_of_joy.png",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 184
   },
   {
@@ -14585,6 +15409,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/ascenders_bane.png",
     "beta_image_url": "/static/images/cards/beta/ascenders_bane.png",
+    "type_key": "Curse",
+    "rarity_key": "Curse",
     "compendium_order": 503
   },
   {
@@ -14619,6 +15445,8 @@
     },
     "image_url": "/static/images/cards/heavenly_drill.png",
     "beta_image_url": "/static/images/cards/beta/heavenly_drill.png",
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 213
   },
   {
@@ -14652,6 +15480,8 @@
     },
     "image_url": "/static/images/cards/veilpiercer.png",
     "beta_image_url": "/static/images/cards/beta/veilpiercer.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 349
   },
   {
@@ -14685,6 +15515,8 @@
     },
     "image_url": "/static/images/cards/expertise.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 117
   },
   {
@@ -14724,6 +15556,8 @@
     },
     "image_url": "/static/images/cards/sleight_of_flesh.png",
     "beta_image_url": "/static/images/cards/beta/sleight_of_flesh.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 336
   },
   {
@@ -14757,6 +15591,8 @@
     },
     "image_url": "/static/images/cards/nightmare.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 140
   },
   {
@@ -14791,6 +15627,8 @@
     },
     "image_url": "/static/images/cards/peck.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Event",
     "compendium_order": 539
   },
   {
@@ -14824,6 +15662,8 @@
     },
     "image_url": "/static/images/cards/pillar_of_creation.png",
     "beta_image_url": "/static/images/cards/beta/pillar_of_creation.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 236
   },
   {
@@ -14857,6 +15697,8 @@
     },
     "image_url": "/static/images/cards/pyre.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 60
   },
   {
@@ -14890,6 +15732,8 @@
     },
     "image_url": "/static/images/cards/escape_plan.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 116
   },
   {
@@ -14921,6 +15765,8 @@
     },
     "image_url": "/static/images/cards/master_planner.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 135
   },
   {
@@ -14954,6 +15800,8 @@
     },
     "image_url": "/static/images/cards/well_laid_plans.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 173
   },
   {
@@ -14991,6 +15839,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/mind_rot.png",
     "beta_image_url": "/static/images/cards/beta/mind_rot.png",
+    "type_key": "Status",
+    "rarity_key": "Status",
     "compendium_order": 566
   },
   {
@@ -15024,6 +15874,8 @@
     },
     "image_url": "/static/images/cards/stardust.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 251
   },
   {
@@ -15063,6 +15915,8 @@
     },
     "image_url": "/static/images/cards/bubble_bubble.png",
     "beta_image_url": "/static/images/cards/beta/bubble_bubble.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 101
   },
   {
@@ -15104,6 +15958,8 @@
     },
     "image_url": "/static/images/cards/bash.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Basic",
     "compendium_order": 5
   },
   {
@@ -15145,6 +16001,8 @@
     },
     "image_url": "/static/images/cards/signal_boost.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 418
   },
   {
@@ -15179,6 +16037,8 @@
     },
     "image_url": "/static/images/cards/celestial_might.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 185
   },
   {
@@ -15220,6 +16080,8 @@
     },
     "image_url": "/static/images/cards/accuracy.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 89
   },
   {
@@ -15254,6 +16116,8 @@
     },
     "image_url": "/static/images/cards/jackpot.png",
     "beta_image_url": "/static/images/cards/beta/jackpot.png",
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 466
   },
   {
@@ -15287,6 +16151,8 @@
     },
     "image_url": "/static/images/cards/prepared.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 150
   },
   {
@@ -15326,6 +16192,8 @@
     },
     "image_url": "/static/images/cards/prep_time.png",
     "beta_image_url": "/static/images/cards/beta/prep_time.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 478
   },
   {
@@ -15361,6 +16229,8 @@
     },
     "image_url": "/static/images/cards/production.png",
     "beta_image_url": "/static/images/cards/beta/production.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 479
   },
   {
@@ -15396,6 +16266,8 @@
     },
     "image_url": "/static/images/cards/defile.png",
     "beta_image_url": "/static/images/cards/beta/defile.png",
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 281
   },
   {
@@ -15429,6 +16301,8 @@
     },
     "image_url": "/static/images/cards/prophesize.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 237
   },
   {
@@ -15462,6 +16336,8 @@
     },
     "image_url": "/static/images/cards/prolong.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 480
   },
   {
@@ -15500,6 +16376,8 @@
     },
     "image_url": "/static/images/cards/protector.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Ancient",
     "compendium_order": 317
   },
   {
@@ -15541,6 +16419,8 @@
     },
     "image_url": "/static/images/cards/taunt.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 75
   },
   {
@@ -15576,6 +16456,8 @@
     },
     "image_url": "/static/images/cards/putrefy.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 320
   },
   {
@@ -15610,6 +16492,8 @@
     },
     "image_url": "/static/images/cards/deaths_door.png",
     "beta_image_url": "/static/images/cards/beta/deaths_door.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 277
   },
   {
@@ -15644,6 +16528,8 @@
     },
     "image_url": "/static/images/cards/astral_pulse.png",
     "beta_image_url": "/static/images/cards/beta/astral_pulse.png",
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 177
   },
   {
@@ -15685,6 +16571,8 @@
     },
     "image_url": "/static/images/cards/negative_pulse.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 310
   },
   {
@@ -15721,6 +16609,8 @@
     },
     "image_url": "/static/images/cards/purity.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 482
   },
   {
@@ -15754,6 +16644,8 @@
     },
     "image_url": "/static/images/cards/cleanse.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 273
   },
   {
@@ -15790,6 +16682,8 @@
     },
     "image_url": "/static/images/cards/backstab.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 96
   },
   {
@@ -15831,6 +16725,8 @@
     },
     "image_url": "/static/images/cards/poisoned_stab.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 146
   },
   {
@@ -15872,6 +16768,8 @@
     },
     "image_url": "/static/images/cards/sucker_punch.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 164
   },
   {
@@ -15906,6 +16804,8 @@
     },
     "image_url": "/static/images/cards/kingly_punch.png",
     "beta_image_url": "/static/images/cards/beta/kingly_punch.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 219
   },
   {
@@ -15939,6 +16839,8 @@
     },
     "image_url": "/static/images/cards/one_two_punch.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 54
   },
   {
@@ -15974,6 +16876,8 @@
     },
     "image_url": "/static/images/cards/molten_fist.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 52
   },
   {
@@ -16009,6 +16913,8 @@
     },
     "image_url": "/static/images/cards/rocket_punch.png",
     "beta_image_url": "/static/images/cards/beta/rocket_punch.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 413
   },
   {
@@ -16043,6 +16949,8 @@
     },
     "image_url": "/static/images/cards/make_it_so.png",
     "beta_image_url": "/static/images/cards/beta/make_it_so.png",
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 224
   },
   {
@@ -16076,6 +16984,8 @@
     },
     "image_url": "/static/images/cards/shatter.png",
     "beta_image_url": "/static/images/cards/beta/shatter.png",
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 417
   },
   {
@@ -16117,6 +17027,8 @@
     },
     "image_url": "/static/images/cards/break.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Ancient",
     "compendium_order": 12
   },
   {
@@ -16150,6 +17062,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/burn.png",
     "beta_image_url": null,
+    "type_key": "Status",
+    "rarity_key": "Status",
     "compendium_order": 552
   },
   {
@@ -16183,6 +17097,8 @@
     },
     "image_url": "/static/images/cards/rip_and_tear.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 542
   },
   {
@@ -16214,6 +17130,8 @@
     },
     "image_url": "/static/images/cards/tracking.png",
     "beta_image_url": "/static/images/cards/beta/tracking.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 170
   },
   {
@@ -16249,6 +17167,8 @@
     },
     "image_url": "/static/images/cards/lunar_blast.png",
     "beta_image_url": "/static/images/cards/beta/lunar_blast.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 223
   },
   {
@@ -16284,6 +17204,8 @@
     },
     "image_url": "/static/images/cards/reanimate.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 322
   },
   {
@@ -16317,6 +17239,8 @@
     },
     "image_url": "/static/images/cards/slice.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 157
   },
   {
@@ -16350,6 +17274,8 @@
     },
     "image_url": "/static/images/cards/rebound.png",
     "beta_image_url": "/static/images/cards/beta/rebound.png",
+    "type_key": "Attack",
+    "rarity_key": "Event",
     "compendium_order": 540
   },
   {
@@ -16383,6 +17309,8 @@
     },
     "image_url": "/static/images/cards/scavenge.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 414
   },
   {
@@ -16430,6 +17358,8 @@
     },
     "image_url": "/static/images/cards/know_thy_place.png",
     "beta_image_url": "/static/images/cards/beta/know_thy_place.png",
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 221
   },
   {
@@ -16464,6 +17394,8 @@
     },
     "image_url": "/static/images/cards/reflect.png",
     "beta_image_url": "/static/images/cards/beta/reflect.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 241
   },
   {
@@ -16499,6 +17431,8 @@
     },
     "image_url": "/static/images/cards/reflex.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 151
   },
   {
@@ -16533,6 +17467,8 @@
     },
     "image_url": "/static/images/cards/refract.png",
     "beta_image_url": "/static/images/cards/beta/refract.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 412
   },
   {
@@ -16572,6 +17508,8 @@
     },
     "image_url": "/static/images/cards/coolant.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 370
   },
   {
@@ -16607,6 +17545,8 @@
     },
     "image_url": "/static/images/cards/reboot.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 411
   },
   {
@@ -16646,6 +17586,8 @@
     },
     "image_url": "/static/images/cards/relax.png",
     "beta_image_url": "/static/images/cards/beta/relax.png",
+    "type_key": "Skill",
+    "rarity_key": "Ancient",
     "compendium_order": 541
   },
   {
@@ -16681,6 +17623,8 @@
     },
     "image_url": "/static/images/cards/finisher.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 120
   },
   {
@@ -16712,6 +17656,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/regret.png",
     "beta_image_url": null,
+    "type_key": "Curse",
+    "rarity_key": "Curse",
     "compendium_order": 517
   },
   {
@@ -16746,6 +17692,8 @@
     },
     "image_url": "/static/images/cards/spite.png",
     "beta_image_url": "/static/images/cards/beta/spite.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 67
   },
   {
@@ -16779,6 +17727,8 @@
     },
     "image_url": "/static/images/cards/rally.png",
     "beta_image_url": "/static/images/cards/beta/rally.png",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 483
   },
   {
@@ -16813,6 +17763,8 @@
     },
     "image_url": "/static/images/cards/toric_toughness.png",
     "beta_image_url": "/static/images/cards/beta/toric_toughness.png",
+    "type_key": "Skill",
+    "rarity_key": "Event",
     "compendium_order": 545
   },
   {
@@ -16853,6 +17805,8 @@
     },
     "image_url": "/static/images/cards/resonance.png",
     "beta_image_url": "/static/images/cards/beta/resonance.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 242
   },
   {
@@ -16885,6 +17839,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/writhe.png",
     "beta_image_url": null,
+    "type_key": "Curse",
+    "rarity_key": "Curse",
     "compendium_order": 520
   },
   {
@@ -16916,6 +17872,8 @@
     },
     "image_url": "/static/images/cards/trash_to_treasure.png",
     "beta_image_url": "/static/images/cards/beta/trash_to_treasure.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 433
   },
   {
@@ -16953,6 +17911,8 @@
     },
     "image_url": "/static/images/cards/unleash.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Basic",
     "compendium_order": 348
   },
   {
@@ -16988,6 +17948,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/seance.png",
     "beta_image_url": "/static/images/cards/beta/seance.png",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 330
   },
   {
@@ -17021,6 +17983,8 @@
     },
     "image_url": "/static/images/cards/forgotten_ritual.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 37
   },
   {
@@ -17054,6 +18018,8 @@
     },
     "image_url": "/static/images/cards/giant_rock.png",
     "beta_image_url": "/static/images/cards/beta/giant_rock.png",
+    "type_key": "Attack",
+    "rarity_key": "Token",
     "compendium_order": 564
   },
   {
@@ -17088,6 +18054,8 @@
     },
     "image_url": "/static/images/cards/sunder.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 425
   },
   {
@@ -17121,6 +18089,8 @@
     },
     "image_url": "/static/images/cards/white_noise.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 437
   },
   {
@@ -17160,6 +18130,8 @@
     },
     "image_url": "/static/images/cards/rupture.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 63
   },
   {
@@ -17193,6 +18165,8 @@
     },
     "image_url": "/static/images/cards/burst.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 103
   },
   {
@@ -17229,6 +18203,8 @@
     },
     "image_url": "/static/images/cards/photon_cut.png",
     "beta_image_url": "/static/images/cards/beta/photon_cut.png",
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 235
   },
   {
@@ -17262,6 +18238,8 @@
     },
     "image_url": "/static/images/cards/sacrifice.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 327
   },
   {
@@ -17299,6 +18277,8 @@
     },
     "image_url": "/static/images/cards/minion_sacrifice.png",
     "beta_image_url": "/static/images/cards/beta/minion_sacrifice.png",
+    "type_key": "Skill",
+    "rarity_key": "Token",
     "compendium_order": 568
   },
   {
@@ -17328,6 +18308,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/splash.png",
     "beta_image_url": "/static/images/cards/beta/splash.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 493
   },
   {
@@ -17361,6 +18343,8 @@
     },
     "image_url": "/static/images/cards/leap.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 399
   },
   {
@@ -17396,6 +18380,8 @@
     },
     "image_url": "/static/images/cards/flick_flack.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 123
   },
   {
@@ -17429,6 +18415,8 @@
     },
     "image_url": "/static/images/cards/salvo.png",
     "beta_image_url": "/static/images/cards/beta/salvo.png",
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 487
   },
   {
@@ -17468,6 +18456,8 @@
     },
     "image_url": "/static/images/cards/feral.png",
     "beta_image_url": "/static/images/cards/beta/feral.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 380
   },
   {
@@ -17501,6 +18491,8 @@
     },
     "image_url": "/static/images/cards/pillage.png",
     "beta_image_url": "/static/images/cards/beta/pillage.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 57
   },
   {
@@ -17537,6 +18529,8 @@
     },
     "image_url": "/static/images/cards/boot_sequence.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 358
   },
   {
@@ -17572,6 +18566,8 @@
     },
     "image_url": "/static/images/cards/sow.png",
     "beta_image_url": "/static/images/cards/beta/sow.png",
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 339
   },
   {
@@ -17605,6 +18601,8 @@
     },
     "image_url": "/static/images/cards/second_wind.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 64
   },
   {
@@ -17638,6 +18636,8 @@
     },
     "image_url": "/static/images/cards/bury.png",
     "beta_image_url": "/static/images/cards/beta/bury.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 269
   },
   {
@@ -17673,6 +18673,8 @@
     },
     "image_url": "/static/images/cards/seven_stars.png",
     "beta_image_url": "/static/images/cards/beta/seven_stars.png",
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 246
   },
   {
@@ -17714,6 +18716,8 @@
     },
     "image_url": "/static/images/cards/sneaky.png",
     "beta_image_url": "/static/images/cards/beta/sneaky.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 159
   },
   {
@@ -17749,6 +18753,8 @@
     },
     "image_url": "/static/images/cards/whistle.png",
     "beta_image_url": "/static/images/cards/beta/whistle.png",
+    "type_key": "Attack",
+    "rarity_key": "Ancient",
     "compendium_order": 546
   },
   {
@@ -17784,6 +18790,8 @@
     },
     "image_url": "/static/images/cards/no_escape.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 312
   },
   {
@@ -17820,6 +18828,8 @@
     },
     "image_url": "/static/images/cards/synchronize.png",
     "beta_image_url": "/static/images/cards/beta/synchronize.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 428
   },
   {
@@ -17861,6 +18871,8 @@
     },
     "image_url": "/static/images/cards/neurosurge.png",
     "beta_image_url": "/static/images/cards/beta/neurosurge.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 311
   },
   {
@@ -17894,6 +18906,8 @@
     },
     "image_url": "/static/images/cards/monologue.png",
     "beta_image_url": "/static/images/cards/beta/monologue.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 228
   },
   {
@@ -17940,6 +18954,8 @@
     },
     "image_url": "/static/images/cards/prowess.png",
     "beta_image_url": "/static/images/cards/beta/prowess.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 481
   },
   {
@@ -17980,6 +18996,8 @@
     },
     "image_url": "/static/images/cards/consuming_shadow.png",
     "beta_image_url": "/static/images/cards/beta/consuming_shadow.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 369
   },
   {
@@ -18015,6 +19033,8 @@
     },
     "image_url": "/static/images/cards/fight_through.png",
     "beta_image_url": "/static/images/cards/beta/fight_through.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 381
   },
   {
@@ -18052,6 +19072,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/spinner.png",
     "beta_image_url": "/static/images/cards/beta/spinner.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 421
   },
   {
@@ -18083,6 +19105,8 @@
     },
     "image_url": "/static/images/cards/subroutine.png",
     "beta_image_url": "/static/images/cards/beta/subroutine.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 424
   },
   {
@@ -18118,6 +19142,8 @@
     },
     "image_url": "/static/images/cards/supercritical.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 426
   },
   {
@@ -18154,6 +19180,8 @@
     },
     "image_url": "/static/images/cards/supermassive.png",
     "beta_image_url": "/static/images/cards/beta/supermassive.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 254
   },
   {
@@ -18192,6 +19220,8 @@
     },
     "image_url": "/static/images/cards/dying_star.png",
     "beta_image_url": "/static/images/cards/beta/dying_star.png",
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 200
   },
   {
@@ -18225,6 +19255,8 @@
     },
     "image_url": "/static/images/cards/survivor.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Basic",
     "compendium_order": 166
   },
   {
@@ -18268,6 +19300,8 @@
     },
     "image_url": "/static/images/cards/suppress.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Ancient",
     "compendium_order": 165
   },
   {
@@ -18302,6 +19336,8 @@
     },
     "image_url": "/static/images/cards/finesse.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 456
   },
   {
@@ -18335,6 +19371,8 @@
     },
     "image_url": "/static/images/cards/synthesis.png",
     "beta_image_url": "/static/images/cards/beta/synthesis.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 429
   },
   {
@@ -18370,6 +19408,8 @@
     },
     "image_url": "/static/images/cards/claw.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 365
   },
   {
@@ -18411,6 +19451,8 @@
     },
     "image_url": "/static/images/cards/follow_through.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 124
   },
   {
@@ -18451,6 +19493,8 @@
     },
     "image_url": "/static/images/cards/drum_of_battle.png",
     "beta_image_url": "/static/images/cards/beta/drum_of_battle.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 29
   },
   {
@@ -18482,6 +19526,8 @@
     },
     "image_url": "/static/images/cards/tank.png",
     "beta_image_url": "/static/images/cards/beta/tank.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 74
   },
   {
@@ -18511,6 +19557,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/tempest.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 430
   },
   {
@@ -18545,6 +19593,8 @@
     },
     "image_url": "/static/images/cards/refine_blade.png",
     "beta_image_url": "/static/images/cards/beta/refine_blade.png",
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 240
   },
   {
@@ -18584,6 +19634,8 @@
     },
     "image_url": "/static/images/cards/terraforming.png",
     "beta_image_url": "/static/images/cards/beta/terraforming.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 256
   },
   {
@@ -18627,6 +19679,8 @@
     },
     "image_url": "/static/images/cards/fear.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 293
   },
   {
@@ -18667,6 +19721,8 @@
     },
     "image_url": "/static/images/cards/hidden_cache.png",
     "beta_image_url": "/static/images/cards/beta/hidden_cache.png",
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 216
   },
   {
@@ -18698,6 +19754,8 @@
     },
     "image_url": "/static/images/cards/bullet_time.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 102
   },
   {
@@ -18738,6 +19796,8 @@
     },
     "image_url": "/static/images/cards/borrowed_time.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 268
   },
   {
@@ -18771,6 +19831,8 @@
     },
     "image_url": "/static/images/cards/tyranny.png",
     "beta_image_url": "/static/images/cards/beta/tyranny.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 259
   },
   {
@@ -18804,6 +19866,8 @@
     },
     "image_url": "/static/images/cards/all_for_one.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 352
   },
   {
@@ -18839,6 +19903,8 @@
     },
     "image_url": "/static/images/cards/enfeebling_touch.png",
     "beta_image_url": "/static/images/cards/beta/enfeebling_touch.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 291
   },
   {
@@ -18872,6 +19938,8 @@
     },
     "image_url": "/static/images/cards/whirlwind.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 86
   },
   {
@@ -18911,6 +19979,8 @@
     },
     "image_url": "/static/images/cards/storm.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 422
   },
   {
@@ -18942,6 +20012,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/storm_of_steel.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 161
   },
   {
@@ -18980,6 +20052,8 @@
     },
     "image_url": "/static/images/cards/soul_storm.png",
     "beta_image_url": "/static/images/cards/beta/soul_storm.png",
+    "type_key": "Attack",
+    "rarity_key": "Rare",
     "compendium_order": 338
   },
   {
@@ -19012,6 +20086,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/clumsy.png",
     "beta_image_url": null,
+    "type_key": "Curse",
+    "rarity_key": "Curse",
     "compendium_order": 505
   },
   {
@@ -19045,6 +20121,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/toxic.png",
     "beta_image_url": null,
+    "type_key": "Status",
+    "rarity_key": "Status",
     "compendium_order": 559
   },
   {
@@ -19081,6 +20159,8 @@
     },
     "image_url": "/static/images/cards/gang_up.png",
     "beta_image_url": "/static/images/cards/beta/gang_up.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 459
   },
   {
@@ -19117,6 +20197,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/knife_trap.png",
     "beta_image_url": "/static/images/cards/beta/knife_trap.png",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 131
   },
   {
@@ -19150,6 +20232,8 @@
     },
     "image_url": "/static/images/cards/battle_trance.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 6
   },
   {
@@ -19185,6 +20269,8 @@
     },
     "image_url": "/static/images/cards/transfigure.png",
     "beta_image_url": "/static/images/cards/beta/transfigure.png",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 346
   },
   {
@@ -19220,6 +20306,8 @@
     },
     "image_url": "/static/images/cards/collision_course.png",
     "beta_image_url": "/static/images/cards/beta/collision_course.png",
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 189
   },
   {
@@ -19260,6 +20348,8 @@
     },
     "image_url": "/static/images/cards/thunderclap.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 78
   },
   {
@@ -19299,6 +20389,8 @@
     },
     "image_url": "/static/images/cards/thunder.png",
     "beta_image_url": "/static/images/cards/beta/thunder.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 432
   },
   {
@@ -19332,6 +20424,8 @@
     },
     "image_url": "/static/images/cards/secret_technique.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 489
   },
   {
@@ -19367,6 +20461,8 @@
     },
     "image_url": "/static/images/cards/afterlife.png",
     "beta_image_url": "/static/images/cards/beta/afterlife.png",
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 263
   },
   {
@@ -19402,6 +20498,8 @@
     },
     "image_url": "/static/images/cards/thinking_ahead.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 498
   },
   {
@@ -19436,6 +20534,8 @@
     },
     "image_url": "/static/images/cards/pale_blue_dot.png",
     "beta_image_url": "/static/images/cards/beta/pale_blue_dot.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 231
   },
   {
@@ -19469,6 +20569,8 @@
     },
     "image_url": "/static/images/cards/anointed.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 440
   },
   {
@@ -19503,6 +20605,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/void.png",
     "beta_image_url": null,
+    "type_key": "Status",
+    "rarity_key": "Status",
     "compendium_order": 560
   },
   {
@@ -19538,6 +20642,8 @@
     },
     "image_url": "/static/images/cards/maul.png",
     "beta_image_url": "/static/images/cards/beta/maul.png",
+    "type_key": "Attack",
+    "rarity_key": "Ancient",
     "compendium_order": 535
   },
   {
@@ -19574,6 +20680,8 @@
     },
     "image_url": "/static/images/cards/ftl.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 384
   },
   {
@@ -19613,6 +20721,8 @@
     },
     "image_url": "/static/images/cards/speedster.png",
     "beta_image_url": "/static/images/cards/beta/speedster.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 160
   },
   {
@@ -19652,6 +20762,8 @@
     },
     "image_url": "/static/images/cards/deadly_poison.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 110
   },
   {
@@ -19685,6 +20797,8 @@
     },
     "image_url": "/static/images/cards/true_grit.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 80
   },
   {
@@ -19718,6 +20832,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/shame.png",
     "beta_image_url": null,
+    "type_key": "Curse",
+    "rarity_key": "Curse",
     "compendium_order": 518
   },
   {
@@ -19754,6 +20870,8 @@
     },
     "image_url": "/static/images/cards/gunk_up.png",
     "beta_image_url": "/static/images/cards/beta/gunk_up.png",
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 390
   },
   {
@@ -19787,6 +20905,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/slimed.png",
     "beta_image_url": null,
+    "type_key": "Status",
+    "rarity_key": "Status",
     "compendium_order": 557
   },
   {
@@ -19823,6 +20943,8 @@
     },
     "image_url": "/static/images/cards/voltaic.png",
     "beta_image_url": "/static/images/cards/beta/voltaic.png",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 436
   },
   {
@@ -19857,6 +20979,8 @@
     },
     "image_url": "/static/images/cards/backflip.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Common",
     "compendium_order": 95
   },
   {
@@ -19890,6 +21014,8 @@
     },
     "image_url": "/static/images/cards/child_of_the_stars.png",
     "beta_image_url": "/static/images/cards/beta/child_of_the_stars.png",
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 187
   },
   {
@@ -19923,6 +21049,8 @@
     },
     "image_url": "/static/images/cards/byrd_swoop.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Event",
     "compendium_order": 524
   },
   {
@@ -19959,6 +21087,8 @@
     },
     "image_url": "/static/images/cards/ricochet.png",
     "beta_image_url": "/static/images/cards/beta/ricochet.png",
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 152
   },
   {
@@ -19992,6 +21122,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/charge.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 186
   },
   {
@@ -20037,6 +21169,8 @@
     },
     "image_url": "/static/images/cards/sic_em.png",
     "beta_image_url": "/static/images/cards/beta/sic_em.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 335
   },
   {
@@ -20080,6 +21214,8 @@
     },
     "image_url": "/static/images/cards/fight_me.png",
     "beta_image_url": "/static/images/cards/beta/fight_me.png",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 35
   },
   {
@@ -20115,6 +21251,8 @@
     },
     "image_url": "/static/images/cards/begone.png",
     "beta_image_url": "/static/images/cards/beta/begone.png",
+    "type_key": "Attack",
+    "rarity_key": "Common",
     "compendium_order": 179
   },
   {
@@ -20148,6 +21286,8 @@
     },
     "image_url": "/static/images/cards/i_am_invincible.png",
     "beta_image_url": "/static/images/cards/beta/i_am_invincible.png",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 217
   },
   {
@@ -20186,6 +21326,8 @@
     },
     "image_url": "/static/images/cards/fetch.png",
     "beta_image_url": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
     "compendium_order": 294
   },
   {
@@ -20219,6 +21361,8 @@
     "upgrade": null,
     "image_url": "/static/images/cards/guards.png",
     "beta_image_url": null,
+    "type_key": "Skill",
+    "rarity_key": "Rare",
     "compendium_order": 210
   },
   {
@@ -20254,6 +21398,8 @@
     },
     "image_url": "/static/images/cards/bulwark.png",
     "beta_image_url": "/static/images/cards/beta/bulwark.png",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
     "compendium_order": 183
   },
   {
@@ -20285,6 +21431,8 @@
     },
     "image_url": "/static/images/cards/beacon_of_hope.png",
     "beta_image_url": "/static/images/cards/beta/beacon_of_hope.png",
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 442
   },
   {
@@ -20318,6 +21466,8 @@
     },
     "image_url": "/static/images/cards/orbit.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Uncommon",
     "compendium_order": 230
   },
   {
@@ -20349,6 +21499,8 @@
     },
     "image_url": "/static/images/cards/tools_of_the_trade.png",
     "beta_image_url": null,
+    "type_key": "Power",
+    "rarity_key": "Rare",
     "compendium_order": 169
   }
 ]

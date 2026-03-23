@@ -77,7 +77,7 @@ export default function RelicDetail() {
   }
 
   const rarityColor = rarityColorMap[relic.rarity] || "text-gray-400";
-  const priceRange = getRelicMerchantPriceRange(relic.rarity);
+  const priceRange = getRelicMerchantPriceRange(relic.rarity_key || relic.rarity);
 
   const tabs: { key: Tab; label: string }[] = [
     { key: "overview", label: "Overview" },

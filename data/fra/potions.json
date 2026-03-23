@@ -6,6 +6,7 @@
     "description_raw": "Ajoutez une Attaque, une Compétence et un Pouvoir aléatoires à votre [gold]Main[/gold]. Ils coûtent [blue]0[/blue] ce tour.",
     "rarity": "Rare",
     "image_url": "/static/images/potions/orobic_acid.png",
+    "rarity_key": "Rare",
     "compendium_order": 40,
     "pool": "shared"
   },
@@ -16,6 +17,7 @@
     "description_raw": "Infligez [blue]{Damage}[/blue] {Damage:plural:dégât|dégâts} à TOUS les ennemis.",
     "rarity": "Commun",
     "image_url": "/static/images/potions/explosive_ampoule.png",
+    "rarity_key": "Common",
     "compendium_order": 0,
     "pool": "shared"
   },
@@ -26,6 +28,7 @@
     "description_raw": "Gagnez [blue]{ThornsPower}[/blue] [gold]Épines[/gold].",
     "rarity": "Inhabituel",
     "image_url": "/static/images/potions/liquid_bronze.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 20,
     "pool": "shared"
   },
@@ -36,6 +39,7 @@
     "description_raw": "[gold]Améliorez[/gold] toutes les cartes de votre [gold]Main[/gold] pour le restant du combat.",
     "rarity": "Inhabituel",
     "image_url": "/static/images/potions/blessing_of_the_forge.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 21,
     "pool": "shared"
   },
@@ -46,6 +50,7 @@
     "description_raw": "Jouez les [blue]{Repeat}[/blue] cartes du dessus de votre [gold]Pioche[/gold].",
     "rarity": "Rare",
     "image_url": "/static/images/potions/distilled_chaos.png",
+    "rarity_key": "Rare",
     "compendium_order": 41,
     "pool": "shared"
   },
@@ -56,6 +61,7 @@
     "description_raw": "Ajoutez [blue]{Cards}[/blue] {Cards:plural:carte Incolore [gold]Améliorée[/gold]|cartes Incolores [gold]Améliorées[/gold]} à votre [gold]Main[/gold].",
     "rarity": "Rare",
     "image_url": "/static/images/potions/cosmic_concoction.png",
+    "rarity_key": "Rare",
     "compendium_order": 42,
     "pool": "regent"
   },
@@ -66,6 +72,7 @@
     "description_raw": "[gold]Forgez[/gold] pour [blue]{Forge}[/blue].",
     "rarity": "Inhabituel",
     "image_url": "/static/images/potions/kings_courage.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 22,
     "pool": "regent"
   },
@@ -76,6 +83,7 @@
     "description_raw": "Gagnez [blue]{PlatingPower}[/blue] de [gold]Blindage[/gold].",
     "rarity": "Inhabituel",
     "image_url": "/static/images/potions/heart_of_iron.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 23,
     "pool": "shared"
   },
@@ -86,6 +94,7 @@
     "description_raw": "Gagnez [blue]{RitualPower}[/blue] [gold]Rituel[/gold].",
     "rarity": "Rare",
     "image_url": "/static/images/potions/mazaleths_gift.png",
+    "rarity_key": "Rare",
     "compendium_order": 43,
     "pool": "shared"
   },
@@ -96,6 +105,7 @@
     "description_raw": "La prochaine carte que vous jouez ce tour est jouée une fois de plus.",
     "rarity": "Inhabituel",
     "image_url": "/static/images/potions/duplicator.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 24,
     "pool": "shared"
   },
@@ -106,6 +116,7 @@
     "description_raw": "Défaussez autant de cartes que vous le souhaitez, puis piochez-en le même nombre.",
     "rarity": "Inhabituel",
     "image_url": "/static/images/potions/gamblers_brew.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 25,
     "pool": "shared"
   },
@@ -116,6 +127,7 @@
     "description_raw": "Remplissez vos emplacements de potion libres avec des potions aléatoires.",
     "rarity": "Rare",
     "image_url": "/static/images/potions/entropic_brew.png",
+    "rarity_key": "Rare",
     "compendium_order": 44,
     "pool": "shared"
   },
@@ -126,6 +138,7 @@
     "description_raw": "[gold]Épuisez[/gold] autant de cartes de votre [gold]Main[/gold] que vous souhaitez.",
     "rarity": "Inhabituel",
     "image_url": "/static/images/potions/ashwater.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 26,
     "pool": "ironclad"
   },
@@ -136,6 +149,7 @@
     "description_raw": "[gold]Canalisez[/gold] un [gold]Orbe obscur[/gold] pour chacun de vos [gold]emplacements d'Orbe[/gold].",
     "rarity": "Rare",
     "image_url": "/static/images/potions/essence_of_darkness.png",
+    "rarity_key": "Rare",
     "compendium_order": 45,
     "pool": "defect"
   },
@@ -146,6 +160,7 @@
     "description_raw": "Piochez [blue]{Cards}[/blue] {Cards:plural:carte|cartes}. Au début de {ClarityPower:plural:votre prochain tour|vos [blue]{}[/blue] prochains tours}, piochez [blue]1[/blue] carte supplémentaire.",
     "rarity": "Inhabituel",
     "image_url": "/static/images/potions/clarity.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 27,
     "pool": "shared"
   },
@@ -156,6 +171,7 @@
     "description_raw": "Gagnez [gold]Intangible[/gold] [blue](1)[/blue].",
     "rarity": "Rare",
     "image_url": "/static/images/potions/ghost_in_a_jar.png",
+    "rarity_key": "Rare",
     "compendium_order": 46,
     "pool": "silent"
   },
@@ -166,6 +182,7 @@
     "description_raw": "Triplez votre [gold]Armure[/gold].",
     "rarity": "Inhabituel",
     "image_url": "/static/images/potions/fortifier.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 28,
     "pool": "shared"
   },
@@ -176,6 +193,7 @@
     "description_raw": "Si vos PV atteignent 0, défaussez cette potion et récupérez [blue]30 %[/blue] de vos PV Max.",
     "rarity": "Rare",
     "image_url": "/static/images/potions/fairy_in_a_bottle.png",
+    "rarity_key": "Rare",
     "compendium_order": 47,
     "pool": "shared"
   },
@@ -186,6 +204,7 @@
     "description_raw": "Ajoutez [blue]{Cards}[/blue] [gold]{Cards:plural:Âme|Âmes}[/gold] à votre [gold]Main[/gold].",
     "rarity": "Rare",
     "image_url": "/static/images/potions/pot_of_ghouls.png",
+    "rarity_key": "Rare",
     "compendium_order": 48,
     "pool": "necrobinder"
   },
@@ -196,6 +215,7 @@
     "description_raw": "Choisissez une carte de votre [gold]Main[/gold]. Elle coûte [blue]0[/blue] pour le restant du combat.",
     "rarity": "Inhabituel",
     "image_url": "/static/images/potions/touch_of_insanity.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 29,
     "pool": "shared"
   },
@@ -206,6 +226,7 @@
     "description_raw": "Choisissez une carte de votre [gold]Pioche[/gold] et ajoutez-la à votre [gold]Main[/gold].",
     "rarity": "Rare",
     "image_url": "/static/images/potions/droplet_of_precognition.png",
+    "rarity_key": "Rare",
     "compendium_order": 49,
     "pool": "shared"
   },
@@ -216,6 +237,7 @@
     "description_raw": "Piochez [blue]{Cards}[/blue] cartes. Les cartes dans votre [gold]Main[/gold] ont un coût aléatoire pendant ce tour.",
     "rarity": "Rare",
     "image_url": "/static/images/potions/snecko_oil.png",
+    "rarity_key": "Rare",
     "compendium_order": 50,
     "pool": "shared"
   },
@@ -226,6 +248,7 @@
     "description_raw": "Gagnez [blue]{StrengthPower}[/blue] de [gold]Force[/gold] et [blue]{DexterityPower}[/blue] de [gold]Dextérité[/gold].",
     "rarity": "Inhabituel",
     "image_url": "/static/images/potions/fysh_oil.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 30,
     "pool": "shared"
   },
@@ -236,6 +259,7 @@
     "description_raw": "[gold]Invoquez[/gold] pour [blue]{Summon}[/blue].",
     "rarity": "Inhabituel",
     "image_url": "/static/images/potions/bone_brew.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 31,
     "pool": "necrobinder"
   },
@@ -246,6 +270,7 @@
     "description_raw": "Les attaques de l'ennemi infligent [blue]{DamageDecrease}%[/blue] de dégâts en moins {Repeat:plural:le prochain tour|pendant les [blue]{}[/blue] prochains tours}.",
     "rarity": "Rare",
     "image_url": "/static/images/potions/beetle_juice.png",
+    "rarity_key": "Rare",
     "compendium_order": 51,
     "pool": "shared"
   },
@@ -256,6 +281,7 @@
     "description_raw": "Gagnez [blue]{MaxHp}[/blue] PV Max.",
     "rarity": "Rare",
     "image_url": "/static/images/potions/fruit_juice.png",
+    "rarity_key": "Rare",
     "compendium_order": 52,
     "pool": "shared"
   },
@@ -266,6 +292,7 @@
     "description_raw": "Gagnez {Energy:energyIcons()}. Gagnez {energyPrefix:energyIcons(1)} au début de {RadiancePower:plural:votre prochain tour|vos [blue]{RadiancePower}[/blue] prochains tours}.",
     "rarity": "Inhabituel",
     "image_url": "/static/images/potions/radiant_tincture.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 32,
     "pool": "shared"
   },
@@ -276,6 +303,7 @@
     "description_raw": "Gagnez [blue]{Block:diff()}[/blue] d'[gold]Armure[/gold]. Au prochain tour, gagnez [blue]{Block:diff()}[/blue] d'[gold]Armure[/gold].",
     "rarity": "Rare",
     "image_url": "/static/images/potions/ship_in_a_bottle.png",
+    "rarity_key": "Rare",
     "compendium_order": 53,
     "pool": "shared"
   },
@@ -286,6 +314,7 @@
     "description_raw": "Gagnez [blue]{BufferPower}[/blue] [gold]Tampon[/gold].",
     "rarity": "Rare",
     "image_url": "/static/images/potions/lucky_tonic.png",
+    "rarity_key": "Rare",
     "compendium_order": 54,
     "pool": "shared"
   },
@@ -296,6 +325,7 @@
     "description_raw": "Infligez [blue]{Damage}[/blue] {Damage:plural:dégât|dégâts}.",
     "rarity": "Généré",
     "image_url": "/static/images/potions/potion_shaped_rock.png",
+    "rarity_key": "Token",
     "compendium_order": 62,
     "pool": "shared"
   },
@@ -306,6 +336,7 @@
     "description_raw": "Mélangez TOUTES vos cartes dans votre [gold]Pioche[/gold]. Piochez [blue]{Cards}[/blue] {Cards:plural:carte|cartes}.",
     "rarity": "Rare",
     "image_url": "/static/images/potions/bottled_potential.png",
+    "rarity_key": "Rare",
     "compendium_order": 55,
     "pool": "shared"
   },
@@ -316,6 +347,7 @@
     "description_raw": "Appliquez [gold]Affaiblissement[/gold] [blue]({WeakPower})[/blue] .",
     "rarity": "Commun",
     "image_url": "/static/images/potions/weak_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 1,
     "pool": "shared"
   },
@@ -326,6 +358,7 @@
     "description_raw": "Gagnez [blue]{Block}[/blue] d'[gold]Armure[/gold].",
     "rarity": "Commun",
     "image_url": "/static/images/potions/block_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 2,
     "pool": "shared"
   },
@@ -336,6 +369,7 @@
     "description_raw": "Choisissez [blue]1[/blue] Attaque parmi [blue]3[/blue] aléatoires à ajouter à votre [gold]Main[/gold]. Elle coûte [blue]0[/blue] ce tour.",
     "rarity": "Commun",
     "image_url": "/static/images/potions/attack_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 3,
     "pool": "shared"
   },
@@ -346,6 +380,7 @@
     "description_raw": "TOUS les ennemis perdent [blue]{StrengthPower}[/blue] de [gold]Force[/gold] ce tour.",
     "rarity": "Rare",
     "image_url": "/static/images/potions/shackling_potion.png",
+    "rarity_key": "Rare",
     "compendium_order": 56,
     "pool": "shared"
   },
@@ -356,6 +391,7 @@
     "description_raw": "Gagnez {Energy:energyIcons()}.",
     "rarity": "Commun",
     "image_url": "/static/images/potions/energy_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 4,
     "pool": "shared"
   },
@@ -366,6 +402,7 @@
     "description_raw": "Gagnez {Stars:starIcons()}.",
     "rarity": "Commun",
     "image_url": "/static/images/potions/star_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 5,
     "pool": "regent"
   },
@@ -376,6 +413,7 @@
     "description_raw": "Choisissez [blue]1[/blue] Compétence parmi [blue]3[/blue] aléatoires à ajouter à votre [gold]Main[/gold]. Elle coûte [blue]0[/blue] ce tour.",
     "rarity": "Commun",
     "image_url": "/static/images/potions/skill_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 6,
     "pool": "shared"
   },
@@ -386,6 +424,7 @@
     "description_raw": "Piochez [blue]{Cards}[/blue] {Cards:plural:carte|cartes}.",
     "rarity": "Commun",
     "image_url": "/static/images/potions/swift_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 7,
     "pool": "shared"
   },
@@ -396,6 +435,7 @@
     "description_raw": "Gagnez [blue]{DexterityPower}[/blue] de [gold]Dextérité[/gold].",
     "rarity": "Commun",
     "image_url": "/static/images/potions/dexterity_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 8,
     "pool": "shared"
   },
@@ -406,6 +446,7 @@
     "description_raw": "Gagnez [blue]{FocusPower}[/blue] de [gold]Focalisation[/gold].",
     "rarity": "Commun",
     "image_url": "/static/images/potions/focus_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 9,
     "pool": "defect"
   },
@@ -416,6 +457,7 @@
     "description_raw": "Gagnez [blue]{StrengthPower}[/blue] de [gold]Force[/gold].",
     "rarity": "Commun",
     "image_url": "/static/images/potions/strength_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 10,
     "pool": "shared"
   },
@@ -426,6 +468,7 @@
     "description_raw": "La prochaine Attaque que vous jouez inflige le triple de dégâts.",
     "rarity": "Rare",
     "image_url": "/static/images/potions/gigantification_potion.png",
+    "rarity_key": "Rare",
     "compendium_order": 57,
     "pool": "shared"
   },
@@ -436,6 +479,7 @@
     "description_raw": "Appliquez [blue]{PoisonPower}[/blue] de [gold]Poison[/gold].",
     "rarity": "Commun",
     "image_url": "/static/images/potions/poison_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 11,
     "pool": "silent"
   },
@@ -446,6 +490,7 @@
     "description_raw": "Choisissez [blue]1[/blue] Pouvoir parmi [blue]3[/blue] aléatoires à ajouter à votre [gold]Main[/gold]. Il coûte [blue]0[/blue] ce tour.",
     "rarity": "Commun",
     "image_url": "/static/images/potions/power_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 12,
     "pool": "shared"
   },
@@ -456,6 +501,7 @@
     "description_raw": "Ajoutez [blue]{Cards}[/blue] [gold]{Cards:plural:Surin Amélioré|Surins Améliorés}[/gold] à votre [gold]Main[/gold]",
     "rarity": "Inhabituel",
     "image_url": "/static/images/potions/cunning_potion.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 33,
     "pool": "silent"
   },
@@ -466,6 +512,7 @@
     "description_raw": "Gagnez [green]{RegenPower}[/green] de [gold]Régénération[/gold].",
     "rarity": "Inhabituel",
     "image_url": "/static/images/potions/regen_potion.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 34,
     "pool": "shared"
   },
@@ -476,6 +523,7 @@
     "description_raw": "Gagnez [blue]{Repeat}[/blue] [gold]{Repeat:plural:Emplacement|Emplacements} d'Orbe[/gold].",
     "rarity": "Inhabituel",
     "image_url": "/static/images/potions/potion_of_capacity.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 35,
     "pool": "defect"
   },
@@ -486,6 +534,7 @@
     "description_raw": "Gagnez [blue]{StrengthPower}[/blue] de [gold]Force[/gold]. À la fin de votre tour, perdez [blue]{StrengthPower}[/blue] [gold]Force[/gold].",
     "rarity": "Commun",
     "image_url": "/static/images/potions/flex_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 13,
     "pool": "shared"
   },
@@ -496,6 +545,7 @@
     "description_raw": "Gagnez [blue]{DexterityPower}[/blue] de [gold]Dextérité[/gold]. À la fin de votre tour, perdez [blue]{DexterityPower}[/blue] de [gold]Dextérité[/gold].",
     "rarity": "Commun",
     "image_url": "/static/images/potions/speed_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 14,
     "pool": "shared"
   },
@@ -506,6 +556,7 @@
     "description_raw": "Appliquez [gold]Vulnérable[/gold] [blue]({VulnerablePower})[/blue].",
     "rarity": "Commun",
     "image_url": "/static/images/potions/vulnerable_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 15,
     "pool": "shared"
   },
@@ -516,6 +567,7 @@
     "description_raw": "Infligez [blue]{Damage}[/blue] {Damage:plural:dégât|dégâts}.",
     "rarity": "Commun",
     "image_url": "/static/images/potions/fire_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 16,
     "pool": "shared"
   },
@@ -526,6 +578,7 @@
     "description_raw": "Choisissez [blue]1[/blue] carte Incolore parmi [blue]3[/blue] aléatoires à ajouter à votre [gold]Main[/gold]. Elle coûte [blue]0[/blue] ce tour.",
     "rarity": "Commun",
     "image_url": "/static/images/potions/colorless_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 17,
     "pool": "shared"
   },
@@ -536,6 +589,7 @@
     "description_raw": "Infligez [blue]{Damage}[/blue] {Damage:plural:dégât|dégâts} à TOUT LE MONDE.\nPeut être jeté sur le [gold]Marchand[/gold] pour [blue]{Gold}[/blue] [gold]Pièces d'or[/gold].",
     "rarity": "Événement",
     "image_url": "/static/images/potions/foul_potion.png",
+    "rarity_key": "Event",
     "compendium_order": 60,
     "pool": "event"
   },
@@ -546,6 +600,7 @@
     "description_raw": "[gold]Épuisez[/gold] votre [gold]Main[/gold]. Piochez [blue]{Cards}[/blue] cartes.",
     "rarity": "Événement",
     "image_url": "/static/images/potions/glowwater_potion.png",
+    "rarity_key": "Event",
     "compendium_order": 61,
     "pool": "event"
   },
@@ -556,6 +611,7 @@
     "description_raw": "Appliquez [blue]{DoomPower}[/blue] de [gold]Fatalité[/gold].",
     "rarity": "Commun",
     "image_url": "/static/images/potions/potion_of_doom.png",
+    "rarity_key": "Common",
     "compendium_order": 18,
     "pool": "necrobinder"
   },
@@ -566,6 +622,7 @@
     "description_raw": "Appliquez [gold]Affaibli[/gold][blue]({WeakPower:diff()})[/blue] et [gold]Vulnérable[/gold] [blue]({VulnerablePower:diff()})[/blue] à TOUS les ennemis.",
     "rarity": "Inhabituel",
     "image_url": "/static/images/potions/potion_of_binding.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 36,
     "pool": "shared"
   },
@@ -576,6 +633,7 @@
     "description_raw": "Récupérez [green]{HealPercent}%[/green] de vos PV Max.",
     "rarity": "Commun",
     "image_url": "/static/images/potions/blood_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 19,
     "pool": "ironclad"
   },
@@ -586,6 +644,7 @@
     "description_raw": "L'ennemi perd [blue]{Demise}[/blue] PV à la fin de chacun de ses tours.",
     "rarity": "Inhabituel",
     "image_url": "/static/images/potions/powdered_demise.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 37,
     "pool": "shared"
   },
@@ -596,6 +655,7 @@
     "description_raw": "Toutes les cartes dont le nom contient [gold]Frappe[/gold] gagnent [gold]Écho[/gold] [blue](1)[/blue] pendant ce combat.",
     "rarity": "Rare",
     "image_url": "/static/images/potions/soldiers_stew.png",
+    "rarity_key": "Rare",
     "compendium_order": 58,
     "pool": "ironclad"
   },
@@ -606,6 +666,7 @@
     "description_raw": "Gagnez {Energy:energyIcons()}. Piochez [blue]{Cards}[/blue] {Cards:plural:carte|cartes}.",
     "rarity": "Inhabituel",
     "image_url": "/static/images/potions/cure_all.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 38,
     "pool": "shared"
   },
@@ -616,6 +677,7 @@
     "description_raw": "Ajoutez une carte de votre [gold]Défausse[/gold] à votre [gold]Main[/gold]. Elle coûte [blue]0[/blue] {energyPrefix:energyIcons(1)} ce tour.",
     "rarity": "Rare",
     "image_url": "/static/images/potions/liquid_memories.png",
+    "rarity_key": "Rare",
     "compendium_order": 59,
     "pool": "shared"
   },
@@ -626,6 +688,7 @@
     "description_raw": "[gold]Retenez[/gold] votre [gold]Main[/gold] {Repeat:plural:jusqu'au prochain tour|pendant les [blue]{}[/blue] prochains tours}.",
     "rarity": "Inhabituel",
     "image_url": "/static/images/potions/stable_serum.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 39,
     "pool": "shared"
   }

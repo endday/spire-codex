@@ -6,6 +6,7 @@
     "description_raw": "Mische ALLE deine Karten in deinen [gold]Nachziehstapel[/gold]. Ziehe [blue]{Cards}[/blue] {Cards:plural:Karte|Karten}.",
     "rarity": "Selten",
     "image_url": "/static/images/potions/bottled_potential.png",
+    "rarity_key": "Rare",
     "compendium_order": 40,
     "pool": "shared"
   },
@@ -16,6 +17,7 @@
     "description_raw": "Erhalte {Energy:energyIcons()}. Ziehe [blue]{Cards}[/blue] {Cards:plural:Karte|Karten}.",
     "rarity": "Ungewöhnlich",
     "image_url": "/static/images/potions/cure_all.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 20,
     "pool": "shared"
   },
@@ -26,6 +28,7 @@
     "description_raw": "Wähle [blue]1[/blue] von [blue]3[/blue] zufälligen Angriffskarten, die du auf die [gold]Hand[/gold] erhältst. Sie ist in diesem Zug kostenlos spielbar.",
     "rarity": "Gewöhnlich",
     "image_url": "/static/images/potions/attack_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 0,
     "pool": "shared"
   },
@@ -36,6 +39,7 @@
     "description_raw": "[gold]Erschöpfe[/gold] beliebig viele deiner [gold]Handkarten[/gold].",
     "rarity": "Ungewöhnlich",
     "image_url": "/static/images/potions/ashwater.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 21,
     "pool": "ironclad"
   },
@@ -46,6 +50,7 @@
     "description_raw": "Verdreifache dein [gold]Block[/gold].",
     "rarity": "Ungewöhnlich",
     "image_url": "/static/images/potions/fortifier.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 22,
     "pool": "shared"
   },
@@ -56,6 +61,7 @@
     "description_raw": "Erhalte [blue]{Block}[/blue] [gold]Block[/gold].",
     "rarity": "Gewöhnlich",
     "image_url": "/static/images/potions/block_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 1,
     "pool": "shared"
   },
@@ -66,6 +72,7 @@
     "description_raw": "Heile [green]{HealPercent}%[/green] deiner max. TP.",
     "rarity": "Gewöhnlich",
     "image_url": "/static/images/potions/blood_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 2,
     "pool": "ironclad"
   },
@@ -76,6 +83,7 @@
     "description_raw": "Erhalte [blue]{Block:diff()}[/blue] [gold]Block[/gold]. Erhalte im nächsten Zug [blue]{Block:diff()}[/blue] [gold]Block[/gold].",
     "rarity": "Selten",
     "image_url": "/static/images/potions/ship_in_a_bottle.png",
+    "rarity_key": "Rare",
     "compendium_order": 41,
     "pool": "shared"
   },
@@ -86,6 +94,7 @@
     "description_raw": "Spiele die obersten [blue]{Repeat}[/blue] Karten deines [gold]Nachziehstapels[/gold] aus.",
     "rarity": "Selten",
     "image_url": "/static/images/potions/distilled_chaos.png",
+    "rarity_key": "Rare",
     "compendium_order": 42,
     "pool": "shared"
   },
@@ -96,6 +105,7 @@
     "description_raw": "Erhalte [blue]{PlatingPower}[/blue] [gold]Panzerung[/gold].",
     "rarity": "Ungewöhnlich",
     "image_url": "/static/images/potions/heart_of_iron.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 23,
     "pool": "shared"
   },
@@ -106,6 +116,7 @@
     "description_raw": "Erhalte {Energy:energyIcons()}.",
     "rarity": "Gewöhnlich",
     "image_url": "/static/images/potions/energy_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 3,
     "pool": "shared"
   },
@@ -116,6 +127,7 @@
     "description_raw": "Befülle alle deine leeren Trankplätze mit zufälligen Tränken.",
     "rarity": "Selten",
     "image_url": "/static/images/potions/entropic_brew.png",
+    "rarity_key": "Rare",
     "compendium_order": 43,
     "pool": "shared"
   },
@@ -126,6 +138,7 @@
     "description_raw": "Erhalte [green]{RegenPower}[/green] [gold]Erholen[/gold].",
     "rarity": "Ungewöhnlich",
     "image_url": "/static/images/potions/regen_potion.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 24,
     "pool": "shared"
   },
@@ -136,6 +149,7 @@
     "description_raw": "Füge ALLEN Gegnern [blue]{Damage}[/blue] Schaden zu.",
     "rarity": "Gewöhnlich",
     "image_url": "/static/images/potions/explosive_ampoule.png",
+    "rarity_key": "Common",
     "compendium_order": 4,
     "pool": "shared"
   },
@@ -146,6 +160,7 @@
     "description_raw": "Wähle [blue]1[/blue] von [blue]3[/blue] zufälligen farblosen Karten, die du auf die [gold]Hand[/gold] erhältst. Sie ist in diesem Zug kostenlos spielbar.",
     "rarity": "Gewöhnlich",
     "image_url": "/static/images/potions/colorless_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 5,
     "pool": "shared"
   },
@@ -156,6 +171,7 @@
     "description_raw": "Füge ALLEN [blue]{Damage}[/blue] Schaden zu.\nKann stattdessen beim [gold]Händler[/gold] für [blue]{Gold}[/blue] [gold]Gold[/gold] geworfen werden.",
     "rarity": "Ereignis",
     "image_url": "/static/images/potions/foul_potion.png",
+    "rarity_key": "Event",
     "compendium_order": 60,
     "pool": "event"
   },
@@ -166,6 +182,7 @@
     "description_raw": "Wenn du sterben würdest, wird stattdessen dieser Trank entfernt und du heilst auf [blue]30%[/blue] deiner max. TP.",
     "rarity": "Selten",
     "image_url": "/static/images/potions/fairy_in_a_bottle.png",
+    "rarity_key": "Rare",
     "compendium_order": 44,
     "pool": "shared"
   },
@@ -176,6 +193,7 @@
     "description_raw": "Wähle [blue]1[/blue] von [blue]3[/blue] zufälligen Fertigkeitskarten, die du auf deine [gold]Hand[/gold] erhältst. Sie ist in diesem Zug kostenlos spielbar.",
     "rarity": "Gewöhnlich",
     "image_url": "/static/images/potions/skill_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 6,
     "pool": "shared"
   },
@@ -186,6 +204,7 @@
     "description_raw": "ALLE Gegner verlieren für diesen Zug [blue]{StrengthPower}[/blue] [gold]Stärke[/gold].",
     "rarity": "Selten",
     "image_url": "/static/images/potions/shackling_potion.png",
+    "rarity_key": "Rare",
     "compendium_order": 45,
     "pool": "shared"
   },
@@ -196,6 +215,7 @@
     "description_raw": "Füge [blue]{Damage}[/blue] Schaden zu.",
     "rarity": "Gewöhnlich",
     "image_url": "/static/images/potions/fire_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 7,
     "pool": "shared"
   },
@@ -206,6 +226,7 @@
     "description_raw": "Erhalte [blue]1[/blue] [gold]Immateriell[/gold].",
     "rarity": "Selten",
     "image_url": "/static/images/potions/ghost_in_a_jar.png",
+    "rarity_key": "Rare",
     "compendium_order": 46,
     "pool": "silent"
   },
@@ -216,6 +237,7 @@
     "description_raw": "Erhalte [blue]{DexterityPower}[/blue] [gold]Geschicklichkeit[/gold]. Verliere am Ende deines Zuges [blue]{DexterityPower}[/blue] [gold]Geschicklichkeit[/gold].",
     "rarity": "Gewöhnlich",
     "image_url": "/static/images/potions/speed_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 8,
     "pool": "shared"
   },
@@ -226,6 +248,7 @@
     "description_raw": "Erhalte [blue]{ThornsPower}[/blue] [gold]Stacheln[/gold].",
     "rarity": "Ungewöhnlich",
     "image_url": "/static/images/potions/liquid_bronze.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 25,
     "pool": "shared"
   },
@@ -236,6 +259,7 @@
     "description_raw": "Wähle eine Karte aus deinem [gold]Abwurfstapel[/gold] und nimm sie auf die [gold]Hand[/gold]. Sie kostet in diesem Zug [blue]0[/blue] {energyPrefix:energyIcons(1)}.",
     "rarity": "Selten",
     "image_url": "/static/images/potions/liquid_memories.png",
+    "rarity_key": "Rare",
     "compendium_order": 47,
     "pool": "shared"
   },
@@ -246,6 +270,7 @@
     "description_raw": "Erhalte [blue]{FocusPower}[/blue] [gold]Fokus[/gold].",
     "rarity": "Gewöhnlich",
     "image_url": "/static/images/potions/focus_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 9,
     "pool": "defect"
   },
@@ -256,6 +281,7 @@
     "description_raw": "Erhalte [blue]{MaxHp}[/blue] max. TP.",
     "rarity": "Selten",
     "image_url": "/static/images/potions/fruit_juice.png",
+    "rarity_key": "Rare",
     "compendium_order": 48,
     "pool": "shared"
   },
@@ -266,6 +292,7 @@
     "description_raw": "Erhalte [blue]{StrengthPower}[/blue] [gold]Stärke[/gold] und [blue]{DexterityPower}[/blue] [gold]Geschicklichkeit[/gold].",
     "rarity": "Ungewöhnlich",
     "image_url": "/static/images/potions/fysh_oil.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 26,
     "pool": "shared"
   },
@@ -276,6 +303,7 @@
     "description_raw": "Erhalte [blue]{DexterityPower}[/blue] [gold]Geschicklichkeit[/gold].",
     "rarity": "Gewöhnlich",
     "image_url": "/static/images/potions/dexterity_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 10,
     "pool": "shared"
   },
@@ -286,6 +314,7 @@
     "description_raw": "Wende [blue]{PoisonPower}[/blue] [gold]Gift[/gold] an.",
     "rarity": "Gewöhnlich",
     "image_url": "/static/images/potions/poison_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 11,
     "pool": "silent"
   },
@@ -296,6 +325,7 @@
     "description_raw": "Der nächste von dir gespielte Angriff fügt dreifachen Schaden zu.",
     "rarity": "Selten",
     "image_url": "/static/images/potions/gigantification_potion.png",
+    "rarity_key": "Rare",
     "compendium_order": 49,
     "pool": "shared"
   },
@@ -306,6 +336,7 @@
     "description_raw": "Erhalte [blue]{BufferPower}[/blue] [gold]Puffer[/gold].",
     "rarity": "Selten",
     "image_url": "/static/images/potions/lucky_tonic.png",
+    "rarity_key": "Rare",
     "compendium_order": 50,
     "pool": "shared"
   },
@@ -316,6 +347,7 @@
     "description_raw": "[gold]Erschöpfe[/gold] deine [gold]Hand[/gold].\nZiehe [blue]{Cards}[/blue] Karten.",
     "rarity": "Ereignis",
     "image_url": "/static/images/potions/glowwater_potion.png",
+    "rarity_key": "Event",
     "compendium_order": 61,
     "pool": "event"
   },
@@ -326,6 +358,7 @@
     "description_raw": "Wähle eine [gold]Handkarte[/gold]. Sie ist in diesem Kampf kostenlos spielbar.",
     "rarity": "Ungewöhnlich",
     "image_url": "/static/images/potions/touch_of_insanity.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 27,
     "pool": "shared"
   },
@@ -336,6 +369,7 @@
     "description_raw": "[gold]Verbessere[/gold] alle deine [gold]Handkarten[/gold] für den restlichen Kampf.",
     "rarity": "Ungewöhnlich",
     "image_url": "/static/images/potions/blessing_of_the_forge.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 28,
     "pool": "shared"
   },
@@ -346,6 +380,7 @@
     "description_raw": "Erhalte [blue]{Repeat}[/blue] [gold]Orb-{Repeat:plural:Slot|Slots}[/gold].",
     "rarity": "Ungewöhnlich",
     "image_url": "/static/images/potions/potion_of_capacity.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 29,
     "pool": "defect"
   },
@@ -356,6 +391,7 @@
     "description_raw": "Ziehe [blue]{Cards}[/blue] {Cards:plural:Karte|Karten}. Ziehe zu Beginn {ClarityPower:plural:deines nächsten Zuges|deiner nächsten [blue]{}[/blue] Züge} [blue]1[/blue] zusätzliche Karte.",
     "rarity": "Ungewöhnlich",
     "image_url": "/static/images/potions/clarity.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 30,
     "pool": "shared"
   },
@@ -366,6 +402,7 @@
     "description_raw": "[gold]Beschwöre[/gold] [blue]{Summon}[/blue].",
     "rarity": "Ungewöhnlich",
     "image_url": "/static/images/potions/bone_brew.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 31,
     "pool": "necrobinder"
   },
@@ -376,6 +413,7 @@
     "description_raw": "Erhalte [blue]{Cards}[/blue] [gold]verbesserte[/gold] farblose {Cards:plural:Karte|Karten} auf deine [gold]Hand[/gold].",
     "rarity": "Selten",
     "image_url": "/static/images/potions/cosmic_concoction.png",
+    "rarity_key": "Rare",
     "compendium_order": 51,
     "pool": "regent"
   },
@@ -386,6 +424,7 @@
     "description_raw": "Gegnerische Angriffe fügen {Repeat:plural:im nächsten Zug|für die nächsten [blue]{}[/blue] Züge} [blue]{DamageDecrease}%[/blue] weniger Schaden zu.",
     "rarity": "Selten",
     "image_url": "/static/images/potions/beetle_juice.png",
+    "rarity_key": "Rare",
     "compendium_order": 52,
     "pool": "shared"
   },
@@ -396,6 +435,7 @@
     "description_raw": "[gold]Schmiede[/gold] [blue]{Forge}[/blue].",
     "rarity": "Ungewöhnlich",
     "image_url": "/static/images/potions/kings_courage.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 32,
     "pool": "regent"
   },
@@ -406,6 +446,7 @@
     "description_raw": "Erhalte [blue]{Cards}[/blue] [gold]{Cards:plural:verbessertes Messer|verbesserte Messer}[/gold] auf deine [gold]Hand[/gold].",
     "rarity": "Ungewöhnlich",
     "image_url": "/static/images/potions/cunning_potion.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 33,
     "pool": "silent"
   },
@@ -416,6 +457,7 @@
     "description_raw": "Wähle [blue]1[/blue] von [blue]3[/blue] zufälligen Machtkarten, die du auf deine [gold]Hand[/gold] erhältst. Sie ist in diesem Zug kostenlos spielbar.",
     "rarity": "Gewöhnlich",
     "image_url": "/static/images/potions/power_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 12,
     "pool": "shared"
   },
@@ -426,6 +468,7 @@
     "description_raw": "Erhalte [blue]{RitualPower}[/blue] [gold]Ritual[/gold].",
     "rarity": "Selten",
     "image_url": "/static/images/potions/mazaleths_gift.png",
+    "rarity_key": "Rare",
     "compendium_order": 53,
     "pool": "shared"
   },
@@ -436,6 +479,7 @@
     "description_raw": "Erhalte [blue]{StrengthPower}[/blue] [gold]Stärke[/gold]. Verliere am Ende deines Zuges [blue]{StrengthPower}[/blue] [gold]Stärke[/gold].",
     "rarity": "Gewöhnlich",
     "image_url": "/static/images/potions/flex_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 13,
     "pool": "shared"
   },
@@ -446,6 +490,7 @@
     "description_raw": "Erhalte eine zufällige Angriffs-, Fertigkeits- und Machtkarte auf deine [gold]Hand[/gold]. Sie sind in diesem Zug kostenlos spielbar.",
     "rarity": "Selten",
     "image_url": "/static/images/potions/orobic_acid.png",
+    "rarity_key": "Rare",
     "compendium_order": 54,
     "pool": "shared"
   },
@@ -456,6 +501,7 @@
     "description_raw": "Erhalte [blue]{Cards}[/blue] [gold]{Cards:plural:Seele|Seelen}[/gold] auf deine [gold]Hand[/gold].",
     "rarity": "Selten",
     "image_url": "/static/images/potions/pot_of_ghouls.png",
+    "rarity_key": "Rare",
     "compendium_order": 55,
     "pool": "necrobinder"
   },
@@ -466,6 +512,7 @@
     "description_raw": "Der Gegner verliert immer am Ende seines Zuges [blue]{Demise}[/blue] TP.",
     "rarity": "Ungewöhnlich",
     "image_url": "/static/images/potions/powdered_demise.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 34,
     "pool": "shared"
   },
@@ -476,6 +523,7 @@
     "description_raw": "[gold]Erschaffe[/gold] einen [gold]Schatten[/gold] für jeden deiner [gold]Orb-Slots[/gold].",
     "rarity": "Selten",
     "image_url": "/static/images/potions/essence_of_darkness.png",
+    "rarity_key": "Rare",
     "compendium_order": 56,
     "pool": "defect"
   },
@@ -486,6 +534,7 @@
     "description_raw": "Ziehe [blue]{Cards}[/blue] {Cards:plural:Karte|Karten}.",
     "rarity": "Gewöhnlich",
     "image_url": "/static/images/potions/swift_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 14,
     "pool": "shared"
   },
@@ -496,6 +545,7 @@
     "description_raw": "Wende [blue]{WeakPower}[/blue] [gold]Schwach[/gold] an.",
     "rarity": "Gewöhnlich",
     "image_url": "/static/images/potions/weak_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 15,
     "pool": "shared"
   },
@@ -506,6 +556,7 @@
     "description_raw": "Ziehe [blue]{Cards}[/blue] Karten. Ändere die Kosten deiner [gold]Handkarten[/gold] für diesen Zug zufällig.",
     "rarity": "Selten",
     "image_url": "/static/images/potions/snecko_oil.png",
+    "rarity_key": "Rare",
     "compendium_order": 57,
     "pool": "shared"
   },
@@ -516,6 +567,7 @@
     "description_raw": "Alle [gold]Schlag[/gold] beinhaltenden Karten haben in diesem Kampf [blue]1[/blue] [gold]Erneut Spielen[/gold].",
     "rarity": "Selten",
     "image_url": "/static/images/potions/soldiers_stew.png",
+    "rarity_key": "Rare",
     "compendium_order": 58,
     "pool": "ironclad"
   },
@@ -526,6 +578,7 @@
     "description_raw": "[gold]Behalte[/gold] deine [gold]Hand[/gold] für [blue]{Repeat}[/blue] {Repeat:plural:Zug|Züge}.",
     "rarity": "Ungewöhnlich",
     "image_url": "/static/images/potions/stable_serum.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 35,
     "pool": "shared"
   },
@@ -536,6 +589,7 @@
     "description_raw": "Erhalte {Stars:starIcons()}.",
     "rarity": "Gewöhnlich",
     "image_url": "/static/images/potions/star_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 16,
     "pool": "regent"
   },
@@ -546,6 +600,7 @@
     "description_raw": "Erhalte {Energy:energyIcons()}. Erhalte zu Beginn {RadiancePower:plural:deines|deiner} nächsten [blue]{RadiancePower}[/blue] {RadiancePower:plural:Zuges|Züge} eine zusätzliche {energyPrefix:energyIcons(1)}.",
     "rarity": "Ungewöhnlich",
     "image_url": "/static/images/potions/radiant_tincture.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 36,
     "pool": "shared"
   },
@@ -556,6 +611,7 @@
     "description_raw": "Erhalte [blue]{StrengthPower}[/blue] [gold]Stärke[/gold].",
     "rarity": "Gewöhnlich",
     "image_url": "/static/images/potions/strength_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 17,
     "pool": "shared"
   },
@@ -566,6 +622,7 @@
     "description_raw": "Füge [blue]{Damage}[/blue] Schaden zu.",
     "rarity": "Token",
     "image_url": "/static/images/potions/potion_shaped_rock.png",
+    "rarity_key": "Token",
     "compendium_order": 62,
     "pool": "shared"
   },
@@ -576,6 +633,7 @@
     "description_raw": "Wähle eine Karte aus deinem [gold]Nachziehstapel[/gold] und nimm sie auf die [gold]Hand[/gold].",
     "rarity": "Selten",
     "image_url": "/static/images/potions/droplet_of_precognition.png",
+    "rarity_key": "Rare",
     "compendium_order": 59,
     "pool": "shared"
   },
@@ -586,6 +644,7 @@
     "description_raw": "Wende auf ALLE Gegner [blue]{WeakPower:diff()}[/blue] [gold]Schwach[/gold] und [blue]{VulnerablePower:diff()}[/blue] [gold]Verwundbar[/gold] an.",
     "rarity": "Ungewöhnlich",
     "image_url": "/static/images/potions/potion_of_binding.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 37,
     "pool": "shared"
   },
@@ -596,6 +655,7 @@
     "description_raw": "Wende [blue]{DoomPower}[/blue] [gold]Verderben[/gold] an.",
     "rarity": "Gewöhnlich",
     "image_url": "/static/images/potions/potion_of_doom.png",
+    "rarity_key": "Common",
     "compendium_order": 18,
     "pool": "necrobinder"
   },
@@ -606,6 +666,7 @@
     "description_raw": "In diesem Zug wird deine nächste Karte ein weiteres Mal gespielt.",
     "rarity": "Ungewöhnlich",
     "image_url": "/static/images/potions/duplicator.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 38,
     "pool": "shared"
   },
@@ -616,6 +677,7 @@
     "description_raw": "Wende [blue]{VulnerablePower}[/blue] [gold]Verwundbar[/gold] an.",
     "rarity": "Gewöhnlich",
     "image_url": "/static/images/potions/vulnerable_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 19,
     "pool": "shared"
   },
@@ -626,6 +688,7 @@
     "description_raw": "Wirf beliebig viele Karten ab, dann ziehe genauso viele.",
     "rarity": "Ungewöhnlich",
     "image_url": "/static/images/potions/gamblers_brew.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 39,
     "pool": "shared"
   }

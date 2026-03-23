@@ -6,6 +6,7 @@
     "description_raw": "Aggiungi una carta Attacco, Abilità e Potere casuale alla tua [gold]mano[/gold]. In questo turno puoi giocarle senza costo.",
     "rarity": "Rara",
     "image_url": "/static/images/potions/orobic_acid.png",
+    "rarity_key": "Rare",
     "compendium_order": 40,
     "pool": "shared"
   },
@@ -16,6 +17,7 @@
     "description_raw": "[gold]Esaurisci[/gold] un numero qualsiasi di carte nella tua [gold]mano[/gold].",
     "rarity": "Non comune",
     "image_url": "/static/images/potions/ashwater.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 20,
     "pool": "ironclad"
   },
@@ -26,6 +28,7 @@
     "description_raw": "Infliggi [blue]{Damage}[/blue] di danno a TUTTI i nemici.",
     "rarity": "Comune",
     "image_url": "/static/images/potions/explosive_ampoule.png",
+    "rarity_key": "Common",
     "compendium_order": 0,
     "pool": "shared"
   },
@@ -36,6 +39,7 @@
     "description_raw": "[gold]Potenzi[/gold] tutte le carte nella tua [gold]mano[/gold] per il resto del combattimento.",
     "rarity": "Non comune",
     "image_url": "/static/images/potions/blessing_of_the_forge.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 21,
     "pool": "shared"
   },
@@ -46,6 +50,7 @@
     "description_raw": "Riempi tutti gli spazi pozioni vuoti con pozioni casuali.",
     "rarity": "Rara",
     "image_url": "/static/images/potions/entropic_brew.png",
+    "rarity_key": "Rare",
     "compendium_order": 41,
     "pool": "shared"
   },
@@ -56,6 +61,7 @@
     "description_raw": "Ottieni [blue]{Block}[/blue] di [gold]Blocco[/gold].",
     "rarity": "Comune",
     "image_url": "/static/images/potions/block_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 1,
     "pool": "shared"
   },
@@ -66,6 +72,7 @@
     "description_raw": "Ottieni [blue]{ThornsPower}[/blue] di [gold]Spinascudo[/gold].",
     "rarity": "Non comune",
     "image_url": "/static/images/potions/liquid_bronze.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 22,
     "pool": "shared"
   },
@@ -76,6 +83,7 @@
     "description_raw": "Giochi le prime [blue]{Repeat}[/blue] carte del tuo [gold]mazzo di pesca[/gold].",
     "rarity": "Rara",
     "image_url": "/static/images/potions/distilled_chaos.png",
+    "rarity_key": "Rare",
     "compendium_order": 42,
     "pool": "shared"
   },
@@ -86,6 +94,7 @@
     "description_raw": "Ottieni [blue]{StrengthPower}[/blue] di [gold]Forza[/gold] e [blue]{DexterityPower}[/blue] di [gold]Destrezza[/gold].",
     "rarity": "Non comune",
     "image_url": "/static/images/potions/fysh_oil.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 23,
     "pool": "shared"
   },
@@ -96,6 +105,7 @@
     "description_raw": "Ottieni [blue]{FocusPower}[/blue] di [gold]Focus[/gold].",
     "rarity": "Comune",
     "image_url": "/static/images/potions/focus_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 2,
     "pool": "defect"
   },
@@ -106,6 +116,7 @@
     "description_raw": "Applichi [blue]{Forge}[/blue] di [gold]Forgiatura[/gold]",
     "rarity": "Non comune",
     "image_url": "/static/images/potions/kings_courage.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 24,
     "pool": "regent"
   },
@@ -116,6 +127,7 @@
     "description_raw": "Ottieni [blue]{PlatingPower}[/blue] di [gold]Placcatura[/gold].",
     "rarity": "Non comune",
     "image_url": "/static/images/potions/heart_of_iron.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 25,
     "pool": "shared"
   },
@@ -126,6 +138,7 @@
     "description_raw": "Ottieni {Energy:energyIcons()}. Peschi [blue]{Cards}[/blue] {Cards:plural:carta|carte}.",
     "rarity": "Non comune",
     "image_url": "/static/images/potions/cure_all.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 26,
     "pool": "shared"
   },
@@ -136,6 +149,7 @@
     "description_raw": "Ottieni [blue]{DexterityPower}[/blue] di [gold]Destrezza[/gold].",
     "rarity": "Comune",
     "image_url": "/static/images/potions/dexterity_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 3,
     "pool": "shared"
   },
@@ -146,6 +160,7 @@
     "description_raw": "In questo turno, la tua carta successiva verrà giocata una seconda volta.",
     "rarity": "Non comune",
     "image_url": "/static/images/potions/duplicator.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 27,
     "pool": "shared"
   },
@@ -156,6 +171,7 @@
     "description_raw": "[gold]Canalizzi[/gold] un [gold]Tetroglobo[/gold] per ognuno dei tuoi [gold]spazi Globi[/gold].",
     "rarity": "Rara",
     "image_url": "/static/images/potions/essence_of_darkness.png",
+    "rarity_key": "Rare",
     "compendium_order": 43,
     "pool": "defect"
   },
@@ -166,6 +182,7 @@
     "description_raw": "Recuperi un [green]{HealPercent}%[/green] dei tuoi PV massimi.",
     "rarity": "Comune",
     "image_url": "/static/images/potions/blood_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 4,
     "pool": "ironclad"
   },
@@ -176,6 +193,7 @@
     "description_raw": "Peschi [blue]{Cards}[/blue] {Cards:plural:carta|carte}. All'inizio {ClarityPower:plural:del tuo turno successivo|dei tuoi [blue]{}[/blue] turni successivi}, peschi [blue]1[/blue] carta extra.",
     "rarity": "Non comune",
     "image_url": "/static/images/potions/clarity.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 28,
     "pool": "shared"
   },
@@ -186,6 +204,7 @@
     "description_raw": "Quando stai per morire, questa pozione viene scartata e recuperi il [blue]30%[/blue] dei tuoi PV massimi.",
     "rarity": "Rara",
     "image_url": "/static/images/potions/fairy_in_a_bottle.png",
+    "rarity_key": "Rare",
     "compendium_order": 44,
     "pool": "shared"
   },
@@ -196,6 +215,7 @@
     "description_raw": "Triplica il tuo [gold]Blocco[/gold].",
     "rarity": "Non comune",
     "image_url": "/static/images/potions/fortifier.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 29,
     "pool": "shared"
   },
@@ -206,6 +226,7 @@
     "description_raw": "Ottieni [blue]{StrengthPower}[/blue] di [gold]Forza[/gold].",
     "rarity": "Comune",
     "image_url": "/static/images/potions/strength_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 5,
     "pool": "shared"
   },
@@ -216,6 +237,7 @@
     "description_raw": "Scegli una carta nel tuo [gold]mazzo di pesca[/gold] e aggiungila alla tua [gold]mano[/gold].",
     "rarity": "Rara",
     "image_url": "/static/images/potions/droplet_of_precognition.png",
+    "rarity_key": "Rare",
     "compendium_order": 45,
     "pool": "shared"
   },
@@ -226,6 +248,7 @@
     "description_raw": "Metti una carta dalla tua [gold]pila degli scarti[/gold] nella tua [gold]mano[/gold]. Costa [blue]0[/blue] {energyPrefix:energyIcons(1)} in questo turno.",
     "rarity": "Rara",
     "image_url": "/static/images/potions/liquid_memories.png",
+    "rarity_key": "Rare",
     "compendium_order": 46,
     "pool": "shared"
   },
@@ -236,6 +259,7 @@
     "description_raw": "Aggiungi [blue]{Cards}[/blue] {Cards:plural:carta incolore [gold]potenziata[/gold]|carte incolori [gold]potenziate[/gold]} alla tua [gold]mano[/gold].",
     "rarity": "Rara",
     "image_url": "/static/images/potions/cosmic_concoction.png",
+    "rarity_key": "Rare",
     "compendium_order": 47,
     "pool": "regent"
   },
@@ -246,6 +270,7 @@
     "description_raw": "Il nemico perde [blue]{Demise}[/blue] PV al termine di ogni suo turno.",
     "rarity": "Non comune",
     "image_url": "/static/images/potions/powdered_demise.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 30,
     "pool": "shared"
   },
@@ -256,6 +281,7 @@
     "description_raw": "Ottieni [blue]{Block:diff()}[/blue] di [gold]Blocco[/gold]. Nel turno successivo, ottieni [blue]{Block:diff()}[/blue] di [gold]Blocco[/gold].",
     "rarity": "Rara",
     "image_url": "/static/images/potions/ship_in_a_bottle.png",
+    "rarity_key": "Rare",
     "compendium_order": 48,
     "pool": "shared"
   },
@@ -266,6 +292,7 @@
     "description_raw": "Peschi [blue]{Cards}[/blue] carte. In questo turno il costo delle carte nella tua [gold]mano[/gold] vengono modificate in modo casuale.",
     "rarity": "Rara",
     "image_url": "/static/images/potions/snecko_oil.png",
+    "rarity_key": "Rare",
     "compendium_order": 49,
     "pool": "shared"
   },
@@ -276,6 +303,7 @@
     "description_raw": "Mischi TUTTE le tue carte nel tuo [gold]mazzo di pesca[/gold]. Peschi [blue]{Cards}[/blue] {Cards:plural:carta|carte}.",
     "rarity": "Rara",
     "image_url": "/static/images/potions/bottled_potential.png",
+    "rarity_key": "Rare",
     "compendium_order": 50,
     "pool": "shared"
   },
@@ -286,6 +314,7 @@
     "description_raw": "Scegli [blue]1[/blue] tra [blue]3[/blue] carte Abilità casuali da aggiungere alla tua [gold]mano[/gold]. Questo turno puoi giocarla senza nessun costo.",
     "rarity": "Comune",
     "image_url": "/static/images/potions/skill_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 6,
     "pool": "shared"
   },
@@ -296,6 +325,7 @@
     "description_raw": "Ottieni [blue]{Repeat}[/blue] [gold]{Repeat:plural:spazio|spazi} Globi[/gold].",
     "rarity": "Non comune",
     "image_url": "/static/images/potions/potion_of_capacity.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 31,
     "pool": "defect"
   },
@@ -306,6 +336,7 @@
     "description_raw": "Applichi [blue]{WeakPower}[/blue] di [gold]Debolezza[/gold].",
     "rarity": "Comune",
     "image_url": "/static/images/potions/weak_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 7,
     "pool": "shared"
   },
@@ -316,6 +347,7 @@
     "description_raw": "Ottieni {Energy:energyIcons()}.",
     "rarity": "Comune",
     "image_url": "/static/images/potions/energy_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 8,
     "pool": "shared"
   },
@@ -326,6 +358,7 @@
     "description_raw": "La carta Attacco successiva che giochi infligge danno triplo.",
     "rarity": "Rara",
     "image_url": "/static/images/potions/gigantification_potion.png",
+    "rarity_key": "Rare",
     "compendium_order": 51,
     "pool": "shared"
   },
@@ -336,6 +369,7 @@
     "description_raw": "Infliggi [blue]{Damage}[/blue] di danno.",
     "rarity": "Comune",
     "image_url": "/static/images/potions/fire_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 9,
     "pool": "shared"
   },
@@ -346,6 +380,7 @@
     "description_raw": "Scegli [blue]1[/blue] tra [blue]3[/blue] carte incolori casuali da aggiungere alla tua [gold]mano[/gold]. Per questo turno puoi giocarla senza nessun costo.",
     "rarity": "Comune",
     "image_url": "/static/images/potions/colorless_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 10,
     "pool": "shared"
   },
@@ -356,6 +391,7 @@
     "description_raw": "[gold]Esaurisci[/gold] la tua [gold]mano[/gold]. Peschi [blue]{Cards}[/blue] carte.",
     "rarity": "Evento",
     "image_url": "/static/images/potions/glowwater_potion.png",
+    "rarity_key": "Event",
     "compendium_order": 60,
     "pool": "event"
   },
@@ -366,6 +402,7 @@
     "description_raw": "Infliggi [blue]{Damage}[/blue] di danno a TUTTI.\nPuò essere lanciata al [gold]mercante[/gold] in cambio di [blue]{Gold}[/blue] unità [gold]d'oro[/gold].",
     "rarity": "Evento",
     "image_url": "/static/images/potions/foul_potion.png",
+    "rarity_key": "Event",
     "compendium_order": 61,
     "pool": "event"
   },
@@ -376,6 +413,7 @@
     "description_raw": "TUTTI i nemici perdono [blue]{StrengthPower}[/blue] di [gold]Forza[/gold] in questo turno.",
     "rarity": "Rara",
     "image_url": "/static/images/potions/shackling_potion.png",
+    "rarity_key": "Rare",
     "compendium_order": 52,
     "pool": "shared"
   },
@@ -386,6 +424,7 @@
     "description_raw": "Scegli [blue]1[/blue] tra [blue]3[/blue] carte Potere casuali da aggiungere alla tua [gold]mano[/gold]. Questo turno puoi giocarla senza nessun costo.",
     "rarity": "Comune",
     "image_url": "/static/images/potions/power_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 11,
     "pool": "shared"
   },
@@ -396,6 +435,7 @@
     "description_raw": "Peschi [blue]{Cards}[/blue] {Cards:plural:carta|carte}.",
     "rarity": "Comune",
     "image_url": "/static/images/potions/swift_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 12,
     "pool": "shared"
   },
@@ -406,6 +446,7 @@
     "description_raw": "Ottieni [green]{RegenPower}[/green] di [gold]Rigenerazione[/gold].",
     "rarity": "Non comune",
     "image_url": "/static/images/potions/regen_potion.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 32,
     "pool": "shared"
   },
@@ -416,6 +457,7 @@
     "description_raw": "Aggiungi [blue]{Cards}[/blue] [gold]{Cards:plural:carta Pugnale potenziato|carte Pugnale potenziate}[/gold] alla tua [gold]mano[/gold].",
     "rarity": "Non comune",
     "image_url": "/static/images/potions/cunning_potion.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 33,
     "pool": "silent"
   },
@@ -426,6 +468,7 @@
     "description_raw": "Ottieni {Stars:starIcons()}.",
     "rarity": "Comune",
     "image_url": "/static/images/potions/star_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 13,
     "pool": "regent"
   },
@@ -436,6 +479,7 @@
     "description_raw": "Applichi [blue]{PoisonPower}[/blue] di [gold]Veleno[/gold].",
     "rarity": "Comune",
     "image_url": "/static/images/potions/poison_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 14,
     "pool": "silent"
   },
@@ -446,6 +490,7 @@
     "description_raw": "Ottieni [blue]{DexterityPower}[/blue] di [gold]Destrezza[/gold]. Al termine del tuo turno, perdi [blue]{DexterityPower}[/blue] di [gold]Destrezza[/gold].",
     "rarity": "Comune",
     "image_url": "/static/images/potions/speed_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 15,
     "pool": "shared"
   },
@@ -456,6 +501,7 @@
     "description_raw": "Scegli [blue]1[/blue] tra [blue]3[/blue] carte Attacco casuali da aggiungere alla tua [gold]mano[/gold]. Per questo turno puoi giocarla senza nessun costo.",
     "rarity": "Comune",
     "image_url": "/static/images/potions/attack_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 16,
     "pool": "shared"
   },
@@ -466,6 +512,7 @@
     "description_raw": "Scarti un numero qualsiasi di carte, poi ne peschi altrettante.",
     "rarity": "Non comune",
     "image_url": "/static/images/potions/gamblers_brew.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 34,
     "pool": "shared"
   },
@@ -476,6 +523,7 @@
     "description_raw": "Applichi [blue]{WeakPower:diff()}[/blue] di [gold]Debolezza[/gold] e [blue]{VulnerablePower:diff()}[/blue] di [gold]Vulnerabilità[/gold] a TUTTI i nemici.",
     "rarity": "Non comune",
     "image_url": "/static/images/potions/potion_of_binding.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 35,
     "pool": "shared"
   },
@@ -486,6 +534,7 @@
     "description_raw": "Applichi [blue]{DoomPower}[/blue] di [gold]Condanna[/gold].",
     "rarity": "Comune",
     "image_url": "/static/images/potions/potion_of_doom.png",
+    "rarity_key": "Common",
     "compendium_order": 17,
     "pool": "necrobinder"
   },
@@ -496,6 +545,7 @@
     "description_raw": "Applichi [blue]{VulnerablePower}[/blue] di [gold]Vulnerabilità[/gold].",
     "rarity": "Comune",
     "image_url": "/static/images/potions/vulnerable_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 18,
     "pool": "shared"
   },
@@ -506,6 +556,7 @@
     "description_raw": "Ottieni [blue]{RitualPower}[/blue] di [gold]Rituale[/gold].",
     "rarity": "Rara",
     "image_url": "/static/images/potions/mazaleths_gift.png",
+    "rarity_key": "Rare",
     "compendium_order": 53,
     "pool": "shared"
   },
@@ -516,6 +567,7 @@
     "description_raw": "Infliggi [blue]{Damage}[/blue] di danno.",
     "rarity": "Segnalino",
     "image_url": "/static/images/potions/potion_shaped_rock.png",
+    "rarity_key": "Token",
     "compendium_order": 62,
     "pool": "shared"
   },
@@ -526,6 +578,7 @@
     "description_raw": "[gold]Conservi[/gold] la tua [gold]mano[/gold] per [blue]{Repeat}[/blue] {Repeat:plural:turno|turni}.",
     "rarity": "Non comune",
     "image_url": "/static/images/potions/stable_serum.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 36,
     "pool": "shared"
   },
@@ -536,6 +589,7 @@
     "description_raw": "Ottieni [blue]1[/blue] di [gold]Intangibilità[/gold].",
     "rarity": "Rara",
     "image_url": "/static/images/potions/ghost_in_a_jar.png",
+    "rarity_key": "Rare",
     "compendium_order": 54,
     "pool": "silent"
   },
@@ -546,6 +600,7 @@
     "description_raw": "Ottieni [blue]{StrengthPower}[/blue] di [gold]Forza[/gold]. Al termine del turno, perdi [blue]{StrengthPower}[/blue] di [gold]Forza[/gold].",
     "rarity": "Comune",
     "image_url": "/static/images/potions/flex_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 19,
     "pool": "shared"
   },
@@ -556,6 +611,7 @@
     "description_raw": "Tutte le carte contenenti la parola [gold]Colpo[/gold] ottengono [blue]1[/blue] di [gold]Riattivazione[/gold] in questo combattimento.",
     "rarity": "Rara",
     "image_url": "/static/images/potions/soldiers_stew.png",
+    "rarity_key": "Rare",
     "compendium_order": 55,
     "pool": "ironclad"
   },
@@ -566,6 +622,7 @@
     "description_raw": "Ottieni i seguenti PV massimi: [blue]{MaxHp}[/blue].",
     "rarity": "Rara",
     "image_url": "/static/images/potions/fruit_juice.png",
+    "rarity_key": "Rare",
     "compendium_order": 56,
     "pool": "shared"
   },
@@ -576,6 +633,7 @@
     "description_raw": "Gli attacchi del nemico infliggono un [blue]{DamageDecrease}%[/blue] di danno in meno per {Repeat:plural:il turno successivo|i [blue]{}[/blue] turni successivi}.",
     "rarity": "Rara",
     "image_url": "/static/images/potions/beetle_juice.png",
+    "rarity_key": "Rare",
     "compendium_order": 57,
     "pool": "shared"
   },
@@ -586,6 +644,7 @@
     "description_raw": "Ottieni {Energy:energyIcons()}. Ottieni {energyPrefix:energyIcons(1)} extra all'inizio {RadiancePower:plural:del tuo prossimo turno|dei tuoi [blue]{RadiancePower}[/blue] prossimi turni}.",
     "rarity": "Non comune",
     "image_url": "/static/images/potions/radiant_tincture.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 37,
     "pool": "shared"
   },
@@ -596,6 +655,7 @@
     "description_raw": "Scegli una carta nella tua [gold]mano[/gold] che potrai giocare senza nessun costo in questo combattimento.",
     "rarity": "Non comune",
     "image_url": "/static/images/potions/touch_of_insanity.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 38,
     "pool": "shared"
   },
@@ -606,6 +666,7 @@
     "description_raw": "Ottieni [blue]{BufferPower}[/blue] di [gold]Buffer[/gold].",
     "rarity": "Rara",
     "image_url": "/static/images/potions/lucky_tonic.png",
+    "rarity_key": "Rare",
     "compendium_order": 58,
     "pool": "shared"
   },
@@ -616,6 +677,7 @@
     "description_raw": "Aggiungi [blue]{Cards}[/blue] [gold]{Cards:plural:carta Anima|carte Anima}[/gold] alla tua [gold]mano[/gold].",
     "rarity": "Rara",
     "image_url": "/static/images/potions/pot_of_ghouls.png",
+    "rarity_key": "Rare",
     "compendium_order": 59,
     "pool": "necrobinder"
   },
@@ -626,6 +688,7 @@
     "description_raw": "Applichi [blue]{Summon}[/blue] di [gold]Invocazione[/gold].",
     "rarity": "Non comune",
     "image_url": "/static/images/potions/bone_brew.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 39,
     "pool": "necrobinder"
   }

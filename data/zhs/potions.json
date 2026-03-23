@@ -6,6 +6,7 @@
     "description_raw": "获得[green]{RegenPower}[/green]层[gold]再生[/gold]。",
     "rarity": "罕见",
     "image_url": "/static/images/potions/regen_potion.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 20,
     "pool": "shared"
   },
@@ -16,6 +17,7 @@
     "description_raw": "获得[blue]{StrengthPower}[/blue]点[gold]力量[/gold]。",
     "rarity": "普通",
     "image_url": "/static/images/potions/strength_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 0,
     "pool": "shared"
   },
@@ -26,6 +28,7 @@
     "description_raw": "[gold]消耗[/gold]你的[gold]手牌[/gold]。抽[blue]{Cards}[/blue]张牌。",
     "rarity": "事件",
     "image_url": "/static/images/potions/glowwater_potion.png",
+    "rarity_key": "Event",
     "compendium_order": 60,
     "pool": "event"
   },
@@ -36,6 +39,7 @@
     "description_raw": "将你的[gold]格挡[/gold]变为三倍。",
     "rarity": "罕见",
     "image_url": "/static/images/potions/fortifier.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 21,
     "pool": "shared"
   },
@@ -46,6 +50,7 @@
     "description_raw": "在本场战斗中，所有名字中有“[gold]打击[/gold]”的牌获得[gold]重放[/gold]：[blue]1[/blue]。",
     "rarity": "稀有",
     "image_url": "/static/images/potions/soldiers_stew.png",
+    "rarity_key": "Rare",
     "compendium_order": 40,
     "pool": "ironclad"
   },
@@ -56,6 +61,7 @@
     "description_raw": "本回合，你打出的下一张牌会额外打出一次。",
     "rarity": "罕见",
     "image_url": "/static/images/potions/duplicator.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 22,
     "pool": "shared"
   },
@@ -66,6 +72,7 @@
     "description_raw": "将[blue]{Cards}[/blue]张[gold]升级[/gold]的无色牌加入你的[gold]手牌[/gold]。",
     "rarity": "稀有",
     "image_url": "/static/images/potions/cosmic_concoction.png",
+    "rarity_key": "Rare",
     "compendium_order": 41,
     "pool": "regent"
   },
@@ -76,6 +83,7 @@
     "description_raw": "将[blue]{Cards}[/blue]张[gold]灵魂[/gold]加入你的[gold]手牌[/gold]。",
     "rarity": "稀有",
     "image_url": "/static/images/potions/pot_of_ghouls.png",
+    "rarity_key": "Rare",
     "compendium_order": 42,
     "pool": "necrobinder"
   },
@@ -86,6 +94,7 @@
     "description_raw": "获得[blue]{BufferPower}[/blue]层[gold]缓冲[/gold]。",
     "rarity": "稀有",
     "image_url": "/static/images/potions/lucky_tonic.png",
+    "rarity_key": "Rare",
     "compendium_order": 43,
     "pool": "shared"
   },
@@ -96,6 +105,7 @@
     "description_raw": "抽[blue]{Cards}[/blue]张牌。在本回合随机化你[gold]手牌[/gold]中所有牌的耗能。",
     "rarity": "稀有",
     "image_url": "/static/images/potions/snecko_oil.png",
+    "rarity_key": "Rare",
     "compendium_order": 44,
     "pool": "shared"
   },
@@ -106,6 +116,7 @@
     "description_raw": "获得[blue]{StrengthPower}[/blue]点[gold]力量[/gold]和[blue]{DexterityPower}[/blue]点[gold]敏捷[/gold]。",
     "rarity": "罕见",
     "image_url": "/static/images/potions/fysh_oil.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 23,
     "pool": "shared"
   },
@@ -116,6 +127,7 @@
     "description_raw": "获得[blue]{Repeat}[/blue]个[gold]充能球栏位[/gold]。",
     "rarity": "罕见",
     "image_url": "/static/images/potions/potion_of_capacity.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 24,
     "pool": "defect"
   },
@@ -126,6 +138,7 @@
     "description_raw": "从[blue]3[/blue]张随机技能牌中选择[blue]1[/blue]张加入你的[gold]手牌[/gold]。这张牌在本回合可以免费打出。",
     "rarity": "普通",
     "image_url": "/static/images/potions/skill_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 1,
     "pool": "shared"
   },
@@ -136,6 +149,7 @@
     "description_raw": "从[blue]3[/blue]张随机攻击牌中选择[blue]1[/blue]张加入你的[gold]手牌[/gold]。这张牌在本回合可以免费打出。",
     "rarity": "普通",
     "image_url": "/static/images/potions/attack_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 2,
     "pool": "shared"
   },
@@ -146,6 +160,7 @@
     "description_raw": "获得[blue]{DexterityPower}[/blue]点[gold]敏捷[/gold]。",
     "rarity": "普通",
     "image_url": "/static/images/potions/dexterity_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 3,
     "pool": "shared"
   },
@@ -156,6 +171,7 @@
     "description_raw": "从[blue]3[/blue]张随机无色牌中选择[blue]1[/blue]张加入你的[gold]手牌[/gold]。这张牌在本回合可以免费打出。",
     "rarity": "普通",
     "image_url": "/static/images/potions/colorless_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 4,
     "pool": "shared"
   },
@@ -166,6 +182,7 @@
     "description_raw": "抽[blue]{Cards}[/blue]张牌。在你的下[blue]{ClarityPower}[/blue]个回合开始时，额外[blue]1[/blue]张牌。",
     "rarity": "罕见",
     "image_url": "/static/images/potions/clarity.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 25,
     "pool": "shared"
   },
@@ -176,6 +193,7 @@
     "description_raw": "获得{Energy:energyIcons()}。在你的下[blue]{RadiancePower}[/blue]个回合开始时，额外获得{energyPrefix:energyIcons(1)}。",
     "rarity": "罕见",
     "image_url": "/static/images/potions/radiant_tincture.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 26,
     "pool": "shared"
   },
@@ -186,6 +204,7 @@
     "description_raw": "给予[blue]{VulnerablePower}[/blue]层[gold]易伤[/gold]。",
     "rarity": "普通",
     "image_url": "/static/images/potions/vulnerable_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 5,
     "pool": "shared"
   },
@@ -196,6 +215,7 @@
     "description_raw": "获得{Stars:starIcons()}。",
     "rarity": "普通",
     "image_url": "/static/images/potions/star_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 6,
     "pool": "regent"
   },
@@ -206,6 +226,7 @@
     "description_raw": "获得[blue]{MaxHp}[/blue]点最大生命值。",
     "rarity": "稀有",
     "image_url": "/static/images/potions/fruit_juice.png",
+    "rarity_key": "Rare",
     "compendium_order": 45,
     "pool": "shared"
   },
@@ -216,6 +237,7 @@
     "description_raw": "获得[blue]{Block}[/blue]点[gold]格挡[/gold]。",
     "rarity": "普通",
     "image_url": "/static/images/potions/block_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 7,
     "pool": "shared"
   },
@@ -226,6 +248,7 @@
     "description_raw": "往你的[gold]手牌[/gold]中加入一张随机攻击牌、一张随机技能牌和一张随机能力牌。这些牌在本回合免费。",
     "rarity": "稀有",
     "image_url": "/static/images/potions/orobic_acid.png",
+    "rarity_key": "Rare",
     "compendium_order": 46,
     "pool": "shared"
   },
@@ -236,6 +259,7 @@
     "description_raw": "给予[blue]{PoisonPower}[/blue]层[gold]中毒[/gold]。",
     "rarity": "普通",
     "image_url": "/static/images/potions/poison_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 8,
     "pool": "silent"
   },
@@ -246,6 +270,7 @@
     "description_raw": "对所有人造成[blue]{Damage}[/blue]点伤害。\n也可以投掷给[gold]商人[/gold]换取[blue]{Gold}[/blue][gold]金币[/gold]。",
     "rarity": "事件",
     "image_url": "/static/images/potions/foul_potion.png",
+    "rarity_key": "Event",
     "compendium_order": 61,
     "pool": "event"
   },
@@ -256,6 +281,7 @@
     "description_raw": "获得[blue]{ThornsPower}[/blue]点[gold]荆棘[/gold]。",
     "rarity": "罕见",
     "image_url": "/static/images/potions/liquid_bronze.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 27,
     "pool": "shared"
   },
@@ -266,6 +292,7 @@
     "description_raw": "敌人在自身的每个回合结束时，失去[blue]{Demise}[/blue]点生命。",
     "rarity": "罕见",
     "image_url": "/static/images/potions/powdered_demise.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 28,
     "pool": "shared"
   },
@@ -276,6 +303,7 @@
     "description_raw": "将你[gold]弃牌堆[/gold]中的一张牌放入你的[gold]手牌[/gold]。这张牌在本回合的{energyPrefix:energyIcons(1)}费用为[blue]0[/blue]。",
     "rarity": "稀有",
     "image_url": "/static/images/potions/liquid_memories.png",
+    "rarity_key": "Rare",
     "compendium_order": 47,
     "pool": "shared"
   },
@@ -286,6 +314,7 @@
     "description_raw": "在所有空药水栏位中获得随机药水。",
     "rarity": "稀有",
     "image_url": "/static/images/potions/entropic_brew.png",
+    "rarity_key": "Rare",
     "compendium_order": 48,
     "pool": "shared"
   },
@@ -296,6 +325,7 @@
     "description_raw": "造成[blue]{Damage}[/blue]点伤害。",
     "rarity": "普通",
     "image_url": "/static/images/potions/fire_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 9,
     "pool": "shared"
   },
@@ -306,6 +336,7 @@
     "description_raw": "[gold]消耗[/gold]你[gold]手牌[/gold]中的任意张牌。",
     "rarity": "罕见",
     "image_url": "/static/images/potions/ashwater.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 29,
     "pool": "ironclad"
   },
@@ -316,6 +347,7 @@
     "description_raw": "给予[blue]{DoomPower}[/blue]层[gold]灾厄[/gold]。",
     "rarity": "普通",
     "image_url": "/static/images/potions/potion_of_doom.png",
+    "rarity_key": "Common",
     "compendium_order": 10,
     "pool": "necrobinder"
   },
@@ -326,6 +358,7 @@
     "description_raw": "在本场战斗中[gold]升级[/gold]你[gold]手牌[/gold]中的所有牌。",
     "rarity": "罕见",
     "image_url": "/static/images/potions/blessing_of_the_forge.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 30,
     "pool": "shared"
   },
@@ -336,6 +369,7 @@
     "description_raw": "对所有敌人造成[blue]{Damage}[/blue]点伤害。",
     "rarity": "普通",
     "image_url": "/static/images/potions/explosive_ampoule.png",
+    "rarity_key": "Common",
     "compendium_order": 11,
     "pool": "shared"
   },
@@ -346,6 +380,7 @@
     "description_raw": "将[blue]{Cards}[/blue]张[gold]小刀+[/gold]加入你的[gold]手牌[/gold]。",
     "rarity": "罕见",
     "image_url": "/static/images/potions/cunning_potion.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 31,
     "pool": "silent"
   },
@@ -356,6 +391,7 @@
     "description_raw": "[gold]铸造[/gold][blue]{Forge}[/blue]。",
     "rarity": "罕见",
     "image_url": "/static/images/potions/kings_courage.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 32,
     "pool": "regent"
   },
@@ -366,6 +402,7 @@
     "description_raw": "当你将要死亡时，改为丢弃这瓶药水，然后将你回复到你最大生命值的[blue]30%[/blue]。",
     "rarity": "稀有",
     "image_url": "/static/images/potions/fairy_in_a_bottle.png",
+    "rarity_key": "Rare",
     "compendium_order": 49,
     "pool": "shared"
   },
@@ -376,6 +413,7 @@
     "description_raw": "获得[blue]{Block:diff()}[/blue]点[gold]格挡[/gold]。在下个回合开始时获得[blue]{Block:diff()}[/blue]点[gold]格挡[/gold]。",
     "rarity": "稀有",
     "image_url": "/static/images/potions/ship_in_a_bottle.png",
+    "rarity_key": "Rare",
     "compendium_order": 50,
     "pool": "shared"
   },
@@ -386,6 +424,7 @@
     "description_raw": "将你的所有牌洗入你的[gold]抽牌堆[/gold]。抽[blue]{Cards}[/blue]张牌。",
     "rarity": "稀有",
     "image_url": "/static/images/potions/bottled_potential.png",
+    "rarity_key": "Rare",
     "compendium_order": 51,
     "pool": "shared"
   },
@@ -396,6 +435,7 @@
     "description_raw": "敌人的攻击在下[blue]{Repeat}[/blue]个回合中造成的伤害减少[blue]{DamageDecrease}%[/blue]。",
     "rarity": "稀有",
     "image_url": "/static/images/potions/beetle_juice.png",
+    "rarity_key": "Rare",
     "compendium_order": 52,
     "pool": "shared"
   },
@@ -406,6 +446,7 @@
     "description_raw": "获得{Energy:energyIcons()}。抽[blue]{Cards}[/blue]张牌。",
     "rarity": "罕见",
     "image_url": "/static/images/potions/cure_all.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 33,
     "pool": "shared"
   },
@@ -416,6 +457,7 @@
     "description_raw": "选择你[gold]手牌[/gold]中的一张牌，使其在本场战斗可以免费打出。",
     "rarity": "罕见",
     "image_url": "/static/images/potions/touch_of_insanity.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 34,
     "pool": "shared"
   },
@@ -426,6 +468,7 @@
     "description_raw": "[gold]保留[/gold]你的[gold]手牌[/gold][blue]{Repeat}[/blue]回合。",
     "rarity": "罕见",
     "image_url": "/static/images/potions/stable_serum.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 35,
     "pool": "shared"
   },
@@ -436,6 +479,7 @@
     "description_raw": "打出你[gold]抽牌堆[/gold]顶部的[blue]{Repeat}[/blue]张牌。",
     "rarity": "稀有",
     "image_url": "/static/images/potions/distilled_chaos.png",
+    "rarity_key": "Rare",
     "compendium_order": 53,
     "pool": "shared"
   },
@@ -446,6 +490,7 @@
     "description_raw": "给予所有敌人[blue]{WeakPower:diff()}[/blue]层[gold]虚弱[/gold]和[blue]{VulnerablePower:diff()}[/blue]层[gold]易伤[/gold]。",
     "rarity": "罕见",
     "image_url": "/static/images/potions/potion_of_binding.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 36,
     "pool": "shared"
   },
@@ -456,6 +501,7 @@
     "description_raw": "获得[blue]1[/blue]层[gold]无实体[/gold]。",
     "rarity": "稀有",
     "image_url": "/static/images/potions/ghost_in_a_jar.png",
+    "rarity_key": "Rare",
     "compendium_order": 54,
     "pool": "silent"
   },
@@ -466,6 +512,7 @@
     "description_raw": "获得[blue]{StrengthPower}[/blue]点[gold]力量[/gold]。在你的这个回合结束时，失去[blue]{StrengthPower}[/blue]点[gold]力量[/gold]。",
     "rarity": "普通",
     "image_url": "/static/images/potions/flex_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 12,
     "pool": "shared"
   },
@@ -476,6 +523,7 @@
     "description_raw": "从[blue]3[/blue]张随机能力牌中选择[blue]1[/blue]张加入你的[gold]手牌[/gold]。这张牌在本回合可以免费打出。",
     "rarity": "普通",
     "image_url": "/static/images/potions/power_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 13,
     "pool": "shared"
   },
@@ -486,6 +534,7 @@
     "description_raw": "获得{Energy:energyIcons()}。",
     "rarity": "普通",
     "image_url": "/static/images/potions/energy_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 14,
     "pool": "shared"
   },
@@ -496,6 +545,7 @@
     "description_raw": "造成[blue]{Damage}[/blue]点伤害。",
     "rarity": "衍生",
     "image_url": "/static/images/potions/potion_shaped_rock.png",
+    "rarity_key": "Token",
     "compendium_order": 62,
     "pool": "shared"
   },
@@ -506,6 +556,7 @@
     "description_raw": "给予[blue]{WeakPower}[/blue]层[gold]虚弱[/gold]。",
     "rarity": "普通",
     "image_url": "/static/images/potions/weak_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 15,
     "pool": "shared"
   },
@@ -516,6 +567,7 @@
     "description_raw": "丢弃任意张牌，然后抽相同数量的牌。",
     "rarity": "罕见",
     "image_url": "/static/images/potions/gamblers_brew.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 37,
     "pool": "shared"
   },
@@ -526,6 +578,7 @@
     "description_raw": "你打出的下一张攻击牌将会造成三倍伤害。",
     "rarity": "稀有",
     "image_url": "/static/images/potions/gigantification_potion.png",
+    "rarity_key": "Rare",
     "compendium_order": 55,
     "pool": "shared"
   },
@@ -536,6 +589,7 @@
     "description_raw": "抽[blue]{Cards}[/blue]张牌。",
     "rarity": "普通",
     "image_url": "/static/images/potions/swift_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 16,
     "pool": "shared"
   },
@@ -546,6 +600,7 @@
     "description_raw": "获得[blue]{DexterityPower}[/blue]点[gold]敏捷[/gold]。在你的这个回合结束时，失去[blue]{DexterityPower}[/blue]点[gold]敏捷[/gold]。",
     "rarity": "普通",
     "image_url": "/static/images/potions/speed_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 17,
     "pool": "shared"
   },
@@ -556,6 +611,7 @@
     "description_raw": "获得[blue]{PlatingPower}[/blue]层[gold]覆甲[/gold]。",
     "rarity": "罕见",
     "image_url": "/static/images/potions/heart_of_iron.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 38,
     "pool": "shared"
   },
@@ -566,6 +622,7 @@
     "description_raw": "所有敌人在这个回合失去[blue]{StrengthPower}[/blue]点[gold]力量[/gold]。",
     "rarity": "稀有",
     "image_url": "/static/images/potions/shackling_potion.png",
+    "rarity_key": "Rare",
     "compendium_order": 56,
     "pool": "shared"
   },
@@ -576,6 +633,7 @@
     "description_raw": "获得[blue]{FocusPower}[/blue]点[gold]集中[/gold]。",
     "rarity": "普通",
     "image_url": "/static/images/potions/focus_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 18,
     "pool": "defect"
   },
@@ -586,6 +644,7 @@
     "description_raw": "选择你[gold]抽牌堆[/gold]中的一张牌加入你的[gold]手牌[/gold]。",
     "rarity": "稀有",
     "image_url": "/static/images/potions/droplet_of_precognition.png",
+    "rarity_key": "Rare",
     "compendium_order": 57,
     "pool": "shared"
   },
@@ -596,6 +655,7 @@
     "description_raw": "获得[blue]{RitualPower}[/blue]层[gold]仪式[/gold]。",
     "rarity": "稀有",
     "image_url": "/static/images/potions/mazaleths_gift.png",
+    "rarity_key": "Rare",
     "compendium_order": 58,
     "pool": "shared"
   },
@@ -606,6 +666,7 @@
     "description_raw": "[gold]召唤[/gold][blue]{Summon}[/blue]。",
     "rarity": "罕见",
     "image_url": "/static/images/potions/bone_brew.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 39,
     "pool": "necrobinder"
   },
@@ -616,6 +677,7 @@
     "description_raw": "回复你最大生命值的[green]{HealPercent}%[/green]。",
     "rarity": "普通",
     "image_url": "/static/images/potions/blood_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 19,
     "pool": "ironclad"
   },
@@ -626,6 +688,7 @@
     "description_raw": "[gold]生成[/gold]你[gold]充能球栏位[/gold]数量个[gold]黑暗[/gold]充能球。",
     "rarity": "稀有",
     "image_url": "/static/images/potions/essence_of_darkness.png",
+    "rarity_key": "Rare",
     "compendium_order": 59,
     "pool": "defect"
   }

@@ -204,7 +204,7 @@ export default function CardDetail() {
 
   const descText = getUpgradedDescription(card, upgraded);
   const energyIcon = energyIconMap[card.color] || "colorless";
-  const priceRange = getMerchantPriceRange(card.rarity, card.color);
+  const priceRange = getMerchantPriceRange(card.rarity_key || card.rarity, card.color);
 
   const tabs: { key: Tab; label: string }[] = [
     { key: "overview", label: "Overview" },

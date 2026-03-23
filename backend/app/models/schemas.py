@@ -17,7 +17,9 @@ class Card(BaseModel):
     is_x_star_cost: bool | None = None
     star_cost: int | None = None
     type: str
+    type_key: str | None = None
     rarity: str
+    rarity_key: str | None = None
     target: str
     color: str
     damage: int | None = None
@@ -75,6 +77,7 @@ class Relic(BaseModel):
     description_raw: str | None = None
     flavor: str | None = None
     rarity: str
+    rarity_key: str | None = None
     pool: str
     image_url: str | None = None
     compendium_order: int = 0
@@ -110,6 +113,7 @@ class Potion(BaseModel):
     description: str
     description_raw: str | None = None
     rarity: str
+    rarity_key: str | None = None
     pool: str | None = None
     image_url: str | None = None
     compendium_order: int = 0

@@ -93,6 +93,7 @@ def parse_all_potions(loc_dir: Path) -> list[dict]:
     for filepath in sorted(POTIONS_DIR.glob("*.cs")):
         potion = parse_single_potion(filepath, localization)
         if potion:
+            potion["rarity_key"] = potion["rarity"]
             potion["rarity"] = rarity_map.get(potion["rarity"], potion["rarity"])
             potions.append(potion)
 

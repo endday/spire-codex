@@ -407,6 +407,8 @@ def build_rarity_map(gameplay_ui: dict) -> dict[str, str]:
 def localize_card(card: dict, type_map: dict, rarity_map: dict,
                   kw_names: dict, power_names: dict) -> dict:
     """Localize display fields on a card."""
+    card["type_key"] = card["type"]
+    card["rarity_key"] = card["rarity"]
     card["type"] = type_map.get(card["type"], card["type"])
     card["rarity"] = rarity_map.get(card["rarity"], card["rarity"])
     if card["keywords"]:

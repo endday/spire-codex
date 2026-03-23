@@ -6,6 +6,7 @@
     "description_raw": "Wybierz [blue]1[/blue] z [blue]3[/blue] losowych bezbarwnych kart i dodaj ją do [gold]ręki[/gold]. W tej turze jest darmowa.",
     "rarity": "Pospolita",
     "image_url": "/static/images/potions/colorless_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 0,
     "pool": "shared"
   },
@@ -16,6 +17,7 @@
     "description_raw": "",
     "rarity": "Rzadka",
     "image_url": "/static/images/potions/bottled_potential.png",
+    "rarity_key": "Rare",
     "compendium_order": 40,
     "pool": "shared"
   },
@@ -26,6 +28,7 @@
     "description_raw": "[gold]Ulepsz[/gold] wszystkie karty w [gold]ręce[/gold] na czas tej walki.",
     "rarity": "Niepospolita",
     "image_url": "/static/images/potions/blessing_of_the_forge.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 20,
     "pool": "shared"
   },
@@ -36,6 +39,7 @@
     "description_raw": "Włóż kartę ze [gold]stosu kart odrzuconych[/gold] do [gold]ręki[/gold]. W tej turze kosztuje [blue]0[/blue] {energyPrefix:energyIcons(1)}.",
     "rarity": "Rzadka",
     "image_url": "/static/images/potions/liquid_memories.png",
+    "rarity_key": "Rare",
     "compendium_order": 41,
     "pool": "shared"
   },
@@ -46,6 +50,7 @@
     "description_raw": "Zyskaj [blue]{ThornsPower}[/blue] pkt. [gold]Cierni[/gold].",
     "rarity": "Niepospolita",
     "image_url": "/static/images/potions/liquid_bronze.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 21,
     "pool": "shared"
   },
@@ -56,6 +61,7 @@
     "description_raw": "Zyskaj [blue]{RitualPower}[/blue] pkt. [gold]Rytuału[/gold].",
     "rarity": "Rzadka",
     "image_url": "/static/images/potions/mazaleths_gift.png",
+    "rarity_key": "Rare",
     "compendium_order": 42,
     "pool": "shared"
   },
@@ -66,6 +72,7 @@
     "description_raw": "",
     "rarity": "Rzadka",
     "image_url": "/static/images/potions/distilled_chaos.png",
+    "rarity_key": "Rare",
     "compendium_order": 43,
     "pool": "shared"
   },
@@ -76,6 +83,7 @@
     "description_raw": "Zyskaj [blue]1[/blue] pkt. [gold]Nieuchwytności[/gold].",
     "rarity": "Rzadka",
     "image_url": "/static/images/potions/ghost_in_a_jar.png",
+    "rarity_key": "Rare",
     "compendium_order": 44,
     "pool": "silent"
   },
@@ -86,6 +94,7 @@
     "description_raw": "",
     "rarity": "Niepospolita",
     "image_url": "/static/images/potions/clarity.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 22,
     "pool": "shared"
   },
@@ -96,6 +105,7 @@
     "description_raw": "[gold]Wyczerp[/gold] dowolną liczbę kart z [gold]ręki[/gold].",
     "rarity": "Niepospolita",
     "image_url": "/static/images/potions/ashwater.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 23,
     "pool": "ironclad"
   },
@@ -106,6 +116,7 @@
     "description_raw": "Wypełnia wszystkie puste miejsca na mikstury losowymi miksturami.",
     "rarity": "Rzadka",
     "image_url": "/static/images/potions/entropic_brew.png",
+    "rarity_key": "Rare",
     "compendium_order": 45,
     "pool": "shared"
   },
@@ -116,6 +127,7 @@
     "description_raw": "[gold]Załaduj[/gold] Sferę [gold]Ciemności[/gold] w każde [gold]miejsce na Sferę[/gold].",
     "rarity": "Rzadka",
     "image_url": "/static/images/potions/essence_of_darkness.png",
+    "rarity_key": "Rare",
     "compendium_order": 46,
     "pool": "defect"
   },
@@ -126,6 +138,7 @@
     "description_raw": "Nałóż [blue]{PoisonPower}[/blue] pkt. [gold]Trucizny[/gold].",
     "rarity": "Pospolita",
     "image_url": "/static/images/potions/poison_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 1,
     "pool": "silent"
   },
@@ -136,6 +149,7 @@
     "description_raw": "Potraja twój [gold]Blok[/gold].",
     "rarity": "Niepospolita",
     "image_url": "/static/images/potions/fortifier.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 24,
     "pool": "shared"
   },
@@ -146,6 +160,7 @@
     "description_raw": "",
     "rarity": "Rzadka",
     "image_url": "/static/images/potions/pot_of_ghouls.png",
+    "rarity_key": "Rare",
     "compendium_order": 47,
     "pool": "necrobinder"
   },
@@ -156,6 +171,7 @@
     "description_raw": "Wszystkie karty zawierające „[gold]uderzenie[/gold]” w nazwie otrzymują w tej walce [blue]1[/blue] [gold]Powtórkę[/gold].",
     "rarity": "Rzadka",
     "image_url": "/static/images/potions/soldiers_stew.png",
+    "rarity_key": "Rare",
     "compendium_order": 48,
     "pool": "ironclad"
   },
@@ -166,6 +182,7 @@
     "description_raw": "Zyskaj {Stars:starIcons()}.",
     "rarity": "Pospolita",
     "image_url": "/static/images/potions/star_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 2,
     "pool": "regent"
   },
@@ -176,6 +193,7 @@
     "description_raw": "Zadaje [blue]{Damage}[/blue] pkt. obrażeń.",
     "rarity": "Specjalna",
     "image_url": "/static/images/potions/potion_shaped_rock.png",
+    "rarity_key": "Token",
     "compendium_order": 62,
     "pool": "shared"
   },
@@ -186,6 +204,7 @@
     "description_raw": "Wybierz kartę ze [gold]stosu rozgrywającego[/gold] i dodaj ją do [gold]ręki[/gold].",
     "rarity": "Rzadka",
     "image_url": "/static/images/potions/droplet_of_precognition.png",
+    "rarity_key": "Rare",
     "compendium_order": 49,
     "pool": "shared"
   },
@@ -196,6 +215,7 @@
     "description_raw": "",
     "rarity": "Rzadka",
     "image_url": "/static/images/potions/cosmic_concoction.png",
+    "rarity_key": "Rare",
     "compendium_order": 50,
     "pool": "regent"
   },
@@ -206,6 +226,7 @@
     "description_raw": "Wybierz [blue]1[/blue] z [blue]3[/blue] losowych Ataków i dodaj go do [gold]ręki[/gold]. W tej turze jest darmowy.",
     "rarity": "Pospolita",
     "image_url": "/static/images/potions/attack_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 3,
     "pool": "shared"
   },
@@ -216,6 +237,7 @@
     "description_raw": "Zyskaj [blue]{Block}[/blue] pkt. [gold]Bloku[/gold].",
     "rarity": "Pospolita",
     "image_url": "/static/images/potions/block_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 4,
     "pool": "shared"
   },
@@ -226,6 +248,7 @@
     "description_raw": "Zyskaj {Energy:energyIcons()}.",
     "rarity": "Pospolita",
     "image_url": "/static/images/potions/energy_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 5,
     "pool": "shared"
   },
@@ -236,6 +259,7 @@
     "description_raw": "Przywraca [green]{HealPercent}%[/green] maks. PŻ.",
     "rarity": "Pospolita",
     "image_url": "/static/images/potions/blood_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 6,
     "pool": "ironclad"
   },
@@ -246,6 +270,7 @@
     "description_raw": "Wybierz [blue]1[/blue] z [blue]3[/blue] losowych Mocy i dodaj ją do [gold]ręki[/gold]. W tej turze kosztuje 0.",
     "rarity": "Pospolita",
     "image_url": "/static/images/potions/power_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 7,
     "pool": "shared"
   },
@@ -256,6 +281,7 @@
     "description_raw": "Następna karta Ataku zadaje potrójne obrażenia.",
     "rarity": "Rzadka",
     "image_url": "/static/images/potions/gigantification_potion.png",
+    "rarity_key": "Rare",
     "compendium_order": 51,
     "pool": "shared"
   },
@@ -266,6 +292,7 @@
     "description_raw": "Nałóż [blue]{WeakPower:diff()}[/blue] pkt. [gold]Słabości[/gold] i [blue]{VulnerablePower:diff()}[/blue] pkt. [gold]Wrażliwości[/gold] na WSZYSTKICH przeciwników.",
     "rarity": "Niepospolita",
     "image_url": "/static/images/potions/potion_of_binding.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 25,
     "pool": "shared"
   },
@@ -276,6 +303,7 @@
     "description_raw": "",
     "rarity": "Niepospolita",
     "image_url": "/static/images/potions/potion_of_capacity.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 26,
     "pool": "defect"
   },
@@ -286,6 +314,7 @@
     "description_raw": "",
     "rarity": "Niepospolita",
     "image_url": "/static/images/potions/cunning_potion.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 27,
     "pool": "silent"
   },
@@ -296,6 +325,7 @@
     "description_raw": "Zyskaj [blue]{DexterityPower}[/blue] pkt. [gold]Zręczności[/gold]. Pod koniec tury utrać [blue]{DexterityPower}[/blue] pkt. [gold]Zręczności[/gold].",
     "rarity": "Pospolita",
     "image_url": "/static/images/potions/speed_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 8,
     "pool": "shared"
   },
@@ -306,6 +336,7 @@
     "description_raw": "Zyskaj [green]{RegenPower}[/green] pkt. [gold]Regeneracji[/gold].",
     "rarity": "Niepospolita",
     "image_url": "/static/images/potions/regen_potion.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 28,
     "pool": "shared"
   },
@@ -316,6 +347,7 @@
     "description_raw": "Zyskaj [blue]{StrengthPower}[/blue] pkt. [gold]Siły[/gold].",
     "rarity": "Pospolita",
     "image_url": "/static/images/potions/strength_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 9,
     "pool": "shared"
   },
@@ -326,6 +358,7 @@
     "description_raw": "Zyskaj [blue]{FocusPower}[/blue] pkt. [gold]Skupienia[/gold].",
     "rarity": "Pospolita",
     "image_url": "/static/images/potions/focus_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 10,
     "pool": "defect"
   },
@@ -336,6 +369,7 @@
     "description_raw": "",
     "rarity": "Pospolita",
     "image_url": "/static/images/potions/swift_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 11,
     "pool": "shared"
   },
@@ -346,6 +380,7 @@
     "description_raw": "Nałóż [blue]{WeakPower}[/blue] pkt. [gold]Słabości[/gold].",
     "rarity": "Pospolita",
     "image_url": "/static/images/potions/weak_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 12,
     "pool": "shared"
   },
@@ -356,6 +391,7 @@
     "description_raw": "Wybierz [blue]1[/blue] z [blue]3[/blue] losowych Umiejętności i dodaj ją do [gold]ręki[/gold]. W tej turze kosztuje 0.",
     "rarity": "Pospolita",
     "image_url": "/static/images/potions/skill_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 13,
     "pool": "shared"
   },
@@ -366,6 +402,7 @@
     "description_raw": "W tej turze WSZYSCY przeciwnicy tracą [blue]{StrengthPower}[/blue] pkt. [gold]Siły[/gold].",
     "rarity": "Rzadka",
     "image_url": "/static/images/potions/shackling_potion.png",
+    "rarity_key": "Rare",
     "compendium_order": 52,
     "pool": "shared"
   },
@@ -376,6 +413,7 @@
     "description_raw": "Nałóż [blue]{VulnerablePower}[/blue] pkt. [gold]Wrażliwości[/gold].",
     "rarity": "Pospolita",
     "image_url": "/static/images/potions/vulnerable_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 14,
     "pool": "shared"
   },
@@ -386,6 +424,7 @@
     "description_raw": "Nakłada [blue]{DoomPower}[/blue] pkt. [gold]Zagłady[/gold].",
     "rarity": "Pospolita",
     "image_url": "/static/images/potions/potion_of_doom.png",
+    "rarity_key": "Common",
     "compendium_order": 15,
     "pool": "necrobinder"
   },
@@ -396,6 +435,7 @@
     "description_raw": "Zyskaj [blue]{DexterityPower}[/blue] pkt. [gold]Zręczności[/gold].",
     "rarity": "Pospolita",
     "image_url": "/static/images/potions/dexterity_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 16,
     "pool": "shared"
   },
@@ -406,6 +446,7 @@
     "description_raw": "Zyskaj [blue]{MaxHp}[/blue] maks. PŻ.",
     "rarity": "Rzadka",
     "image_url": "/static/images/potions/fruit_juice.png",
+    "rarity_key": "Rare",
     "compendium_order": 53,
     "pool": "shared"
   },
@@ -416,6 +457,7 @@
     "description_raw": "Wybierz kartę w [gold]ręce[/gold]. W tej walce jest darmowa.",
     "rarity": "Niepospolita",
     "image_url": "/static/images/potions/touch_of_insanity.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 29,
     "pool": "shared"
   },
@@ -426,6 +468,7 @@
     "description_raw": "[gold]Wykuj[/gold] [blue]{Forge}[/blue].",
     "rarity": "Niepospolita",
     "image_url": "/static/images/potions/kings_courage.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 30,
     "pool": "regent"
   },
@@ -436,6 +479,7 @@
     "description_raw": "Zyskaj [blue]{StrengthPower}[/blue] pkt. [gold]Siły[/gold] i [blue]{DexterityPower}[/blue] pkt. [gold]Zręczności[/gold].",
     "rarity": "Niepospolita",
     "image_url": "/static/images/potions/fysh_oil.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 31,
     "pool": "shared"
   },
@@ -446,6 +490,7 @@
     "description_raw": "",
     "rarity": "Rzadka",
     "image_url": "/static/images/potions/snecko_oil.png",
+    "rarity_key": "Rare",
     "compendium_order": 54,
     "pool": "shared"
   },
@@ -456,6 +501,7 @@
     "description_raw": "Dodaj losowy Atak, Umiejętność i Moc do [gold]ręki[/gold]. W tej turze są darmowe.",
     "rarity": "Rzadka",
     "image_url": "/static/images/potions/orobic_acid.png",
+    "rarity_key": "Rare",
     "compendium_order": 55,
     "pool": "shared"
   },
@@ -466,6 +512,7 @@
     "description_raw": "",
     "rarity": "Niepospolita",
     "image_url": "/static/images/potions/cure_all.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 32,
     "pool": "shared"
   },
@@ -476,6 +523,7 @@
     "description_raw": "Zadaje [blue]{Damage}[/blue] pkt. obrażeń WSZYSTKIM.\nMożna też nią rzucić w [gold]Handlarza[/gold], aby otrzymać [blue]{Gold}[/blue] szt. [gold]Złota[/gold].",
     "rarity": "Unikalna",
     "image_url": "/static/images/potions/foul_potion.png",
+    "rarity_key": "Event",
     "compendium_order": 60,
     "pool": "event"
   },
@@ -486,6 +534,7 @@
     "description_raw": "W tej turze następna karta jest zagrywana dwukrotnie.",
     "rarity": "Niepospolita",
     "image_url": "/static/images/potions/duplicator.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 33,
     "pool": "shared"
   },
@@ -496,6 +545,7 @@
     "description_raw": "Zyskaj {Energy:energyIcons()}. Na początku {RadiancePower:plural(en):następnej tury|[blue]{RadiancePower}[/blue] następnych tur} zyskaj dodatkowy {energyPrefix:energyIcons(1)}.",
     "rarity": "Niepospolita",
     "image_url": "/static/images/potions/radiant_tincture.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 34,
     "pool": "shared"
   },
@@ -506,6 +556,7 @@
     "description_raw": "Zadaje [blue]{Damage}[/blue] pkt. obrażeń.",
     "rarity": "Pospolita",
     "image_url": "/static/images/potions/fire_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 17,
     "pool": "shared"
   },
@@ -516,6 +567,7 @@
     "description_raw": "",
     "rarity": "Niepospolita",
     "image_url": "/static/images/potions/stable_serum.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 35,
     "pool": "shared"
   },
@@ -526,6 +578,7 @@
     "description_raw": "",
     "rarity": "Rzadka",
     "image_url": "/static/images/potions/beetle_juice.png",
+    "rarity_key": "Rare",
     "compendium_order": 56,
     "pool": "shared"
   },
@@ -536,6 +589,7 @@
     "description_raw": "Zyskaj [blue]{Block:diff()}[/blue] pkt. [gold]Bloku[/gold]. W następnej turze zyskaj [blue]{Block:diff()}[/blue] pkt. [gold]Bloku[/gold].",
     "rarity": "Rzadka",
     "image_url": "/static/images/potions/ship_in_a_bottle.png",
+    "rarity_key": "Rare",
     "compendium_order": 57,
     "pool": "shared"
   },
@@ -546,6 +600,7 @@
     "description_raw": "Zyskaj [blue]{BufferPower}[/blue] pkt. [gold]Buforu[/gold].",
     "rarity": "Rzadka",
     "image_url": "/static/images/potions/lucky_tonic.png",
+    "rarity_key": "Rare",
     "compendium_order": 58,
     "pool": "shared"
   },
@@ -556,6 +611,7 @@
     "description_raw": "Przeciwnik traci [blue]{Demise}[/blue] PŻ na koniec swojej tury.",
     "rarity": "Niepospolita",
     "image_url": "/static/images/potions/powdered_demise.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 36,
     "pool": "shared"
   },
@@ -566,6 +622,7 @@
     "description_raw": "Po otrzymaniu śmiertelnych obrażeń przywraca [blue]30%[/blue] maks. PŻ i zostaje usunięta.",
     "rarity": "Rzadka",
     "image_url": "/static/images/potions/fairy_in_a_bottle.png",
+    "rarity_key": "Rare",
     "compendium_order": 59,
     "pool": "shared"
   },
@@ -576,6 +633,7 @@
     "description_raw": "Zadaje [blue]{Damage}[/blue] pkt. obrażeń WSZYSTKIM przeciwnikom.",
     "rarity": "Pospolita",
     "image_url": "/static/images/potions/explosive_ampoule.png",
+    "rarity_key": "Common",
     "compendium_order": 18,
     "pool": "shared"
   },
@@ -586,6 +644,7 @@
     "description_raw": "Zyskaj [blue]{StrengthPower}[/blue] pkt. [gold]Siły[/gold]. Pod koniec tury utrać [blue]{StrengthPower}[/blue] pkt. [gold]Siły[/gold].",
     "rarity": "Pospolita",
     "image_url": "/static/images/potions/flex_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 19,
     "pool": "shared"
   },
@@ -596,6 +655,7 @@
     "description_raw": "Odrzuć dowolną liczbę kart, następnie dobierz ich tyle samo.",
     "rarity": "Niepospolita",
     "image_url": "/static/images/potions/gamblers_brew.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 37,
     "pool": "shared"
   },
@@ -606,6 +666,7 @@
     "description_raw": "[gold]Przywołaj[/gold] [blue]{Summon}[/blue].",
     "rarity": "Niepospolita",
     "image_url": "/static/images/potions/bone_brew.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 38,
     "pool": "necrobinder"
   },
@@ -616,6 +677,7 @@
     "description_raw": "[gold]Wyczerp[/gold] swoją [gold]rękę[/gold]. Dobierz [blue]{Cards}[/blue] kart.",
     "rarity": "Unikalna",
     "image_url": "/static/images/potions/glowwater_potion.png",
+    "rarity_key": "Event",
     "compendium_order": 61,
     "pool": "event"
   },
@@ -626,6 +688,7 @@
     "description_raw": "Zyskaj [blue]{PlatingPower}[/blue] pkt. [gold]Opancerzenia[/gold].",
     "rarity": "Niepospolita",
     "image_url": "/static/images/potions/heart_of_iron.png",
+    "rarity_key": "Uncommon",
     "compendium_order": 39,
     "pool": "shared"
   }
