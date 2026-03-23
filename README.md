@@ -489,37 +489,48 @@ Examples: `v1.0.0` = initial release, `v1.0.1` = our bug fixes, `v1.1.0` = first
 
 ## SEO
 
-The frontend includes comprehensive SEO optimizations:
+- **Structured data (JSON-LD)**: WebSite + VideoGame (home), CollectionPage + ItemList (list pages), Article + BreadcrumbList + FAQPage (detail pages), SoftwareApplication (developers)
+- **Title format**: `"Slay the Spire 2 [Topic] - [Descriptor] | Spire Codex"` — standardized across all pages
+- **Sitemap**: Flat XML at `/sitemap.xml` with `force-dynamic` (renders server-side, not build-time). ~1,500+ URLs including entity detail pages, browse matrix pages, and i18n landing pages
+- **International SEO**: `/{lang}/` routes for 13 non-English languages with hreflang alternates
+- **Programmatic SEO**: 41 card browse pages at `/cards/browse/` (rare-attacks, ironclad-skills, etc.)
+- **Internal linking**: Powers ↔ cards, encounters → monsters, card keywords → keyword hub pages
+- **Open Graph & Twitter Cards**: Per-entity OG images, `summary_large_image` Twitter cards
+- **Canonical URLs**: Every page declares a canonical URL
 
-- **Structured data (JSON-LD)**: WebSite schema on home page, CollectionPage + ItemList on all 10 list pages, Article + BreadcrumbList on all 7 detail pages
-- **Open Graph & Twitter Cards**: Global OG image (`/og-image.png`), `summary_large_image` Twitter cards on every page, per-entity OG images on detail pages
-- **Canonical URLs**: Every page declares a canonical URL via `alternates.canonical`
-- **Sitemap index**: `generateSitemaps()` in `app/sitemap.ts` produces 8 sub-sitemaps (~1,385 URLs total):
+## Embeddable Widgets
 
-  | Sitemap | Contents | URLs |
-  |---------|----------|------|
-  | `/sitemap/static.xml` | Home, list pages, reference, images, changelog, about | 15 |
-  | `/sitemap/cards.xml` | All card detail pages with image URLs | ~576 |
-  | `/sitemap/characters.xml` | Character detail pages with image URLs | 5 |
-  | `/sitemap/relics.xml` | All relic detail pages with image URLs | ~289 |
-  | `/sitemap/monsters.xml` | All monster detail pages with image URLs | ~111 |
-  | `/sitemap/potions.xml` | All potion detail pages with image URLs | ~63 |
-  | `/sitemap/powers.xml` | All power detail pages with image URLs | ~260 |
-  | `/sitemap/events.xml` | All event detail pages with image URLs | ~66 |
+### Tooltip Widget
+Add hoverable tooltips for all 13 entity types to any website:
+```html
+<script src="https://spire-codex.com/widget/spire-codex-tooltip.js"></script>
+<p>Start with [[Bash]] and [[relic:Burning Blood]].</p>
+```
 
-  Sitemaps regenerate hourly via ISR (`revalidate: 3600`) so they stay current after deploys without requiring the API at build time. Entity entries include `<image:image>` tags for Google Image search indexing.
+### Changelog Widget
+Embed an interactive changelog viewer:
+```html
+<div id="scx-changelog"></div>
+<script src="https://spire-codex.com/widget/spire-codex-changelog.js"></script>
+```
 
-- **Descriptive alt text**: All images include entity name + "Slay the Spire 2 {Category}" for search context
-- **Keyword-rich metadata**: Each category layout has unique title/description targeting "Slay the Spire 2 {category}" keywords
-
-Key files: `frontend/lib/seo.ts` (shared utilities), `frontend/lib/jsonld.ts` (schema builders), `frontend/app/components/JsonLd.tsx` (renderer component).
+Full docs: [spire-codex.com/developers](https://spire-codex.com/developers)
 
 ## Roadmap
 
-- ~~**Individual detail pages**~~ — ✅ Click-through pages for cards, characters, relics, monsters, potions, enchantments, encounters, events
-- ~~**Global search**~~ — ✅ Press `.` anywhere to search across all categories
-- ~~**Multi-language support**~~ — ✅ 14 languages using the game's own localization files
-- ~~**SEO (structured data + meta tags)**~~ — ✅ JSON-LD, OG/Twitter cards, canonical URLs, sitemap lastmod, alt text
+- ~~Individual detail pages~~ ✅
+- ~~Global search~~ ✅
+- ~~Multi-language support (14 languages)~~ ✅
+- ~~SEO (JSON-LD, OG/Twitter, sitemap, hreflang)~~ ✅
+- ~~Tooltip widget (all 13 entity types)~~ ✅
+- ~~Character comparison pages (10 pairs)~~ ✅
+- ~~Keyword hub pages~~ ✅
+- ~~Merchant guide (pricing from decompiled C#)~~ ✅
+- ~~Developer docs + data exports~~ ✅
+- ~~International SEO (13 language landing pages)~~ ✅
+- ~~Card browse matrix (41 programmatic SEO pages)~~ ✅
+- **Discord bot** — Card lookup, patch alerts
+- **Deck builder** — Interactive deck theorycrafting
 - **Database backend** — Replace JSON loading with SQLite/PostgreSQL
 
 ## Acknowledgments
