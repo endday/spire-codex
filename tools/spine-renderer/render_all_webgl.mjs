@@ -18,6 +18,7 @@ const OUTPUT_ROOT = path.join(BASE, "backend/static/images/renders");
 const OUTPUT_SIZE = 512;
 const IDLE_NAMES = ["idle_loop", "idle", "Idle_loop", "Idle", "rest_idle", "rest_loop", "loop", "animation"];
 const SHADOW_NAMES = ["shadow", "shadow2", "ground", "ground_shadow"];
+const HIDDEN_SLOTS = ["smoketex", "smoke_tex", "smokeplacholder", "smoke_placeholder"];
 const DRY_RUN = process.argv.includes("--dry-run");
 
 function findAllSkels(dir) {
@@ -69,7 +70,7 @@ async function renderSkel(page, skelPath, outPath, outputSize) {
   });
 
   const result = await page.evaluate(async (params) => {
-    const { skelB64, atlasB64, textureData, outputSize, idleNames, shadowNames, spineCoreCode } = params;
+    const { skelB64, atlasB64, textureData, outputSize, idleNames, shadowNames, hiddenSlots, spineCoreCode } = params;
 
     if (!window.spine) {
       eval(spineCoreCode.replace(/^"use strict";\s*var spine\s*=/, "window.spine ="));
@@ -192,6 +193,16 @@ async function renderSkel(page, skelPath, outPath, outputSize) {
     shader.bind();
     shader.setUniformi(spine.Shader.SAMPLER, 0);
     shader.setUniform4x4f(spine.Shader.MVP_MATRIX, mvp.values);
+    // Hide placeholder/smoke slots
+    for (const slot of skeleton.slots) {
+      const sn = slot.data.name.toLowerCase();
+      const att = slot.getAttachment();
+      const an = att ? (att.name || "").toLowerCase() : "";
+      if (hiddenSlots.some(h => sn.includes(h) || an.includes(h))) {
+        slot.setAttachment(null);
+      }
+    }
+
     batcher.begin(shader);
     renderer.premultipliedAlpha = false;
     renderer.draw(batcher, skeleton);
@@ -224,7 +235,7 @@ async function renderSkel(page, skelPath, outPath, outputSize) {
     };
   }, {
     skelB64, atlasB64, textureData, outputSize,
-    idleNames: IDLE_NAMES, shadowNames: SHADOW_NAMES, spineCoreCode,
+    idleNames: IDLE_NAMES, shadowNames: SHADOW_NAMES, hiddenSlots: HIDDEN_SLOTS, spineCoreCode,
   });
 
   if (result.error) return { status: "skip", reason: result.error };

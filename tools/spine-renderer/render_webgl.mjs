@@ -16,6 +16,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const IDLE_NAMES = ["idle_loop", "idle", "Idle_loop", "Idle", "rest_idle", "rest_loop", "loop", "animation"];
 const SHADOW_NAMES = ["shadow", "shadow2", "ground", "ground_shadow"];
+const HIDDEN_SLOTS = ["smoketex", "smoke_tex", "smokeplacholder", "smoke_placeholder"];
 
 async function main() {
   const skelDir = path.resolve(process.argv[2] || "");
@@ -70,7 +71,7 @@ async function main() {
   const spineCoreCode = fs.readFileSync(spineCorePath, "utf-8");
 
   const result = await page.evaluate(async (params) => {
-    const { skelB64, atlasB64, textureData, outputSize, idleNames, shadowNames, spineCoreCode } = params;
+    const { skelB64, atlasB64, textureData, outputSize, idleNames, shadowNames, hiddenSlots, spineCoreCode } = params;
 
     // Load spine-webgl — IIFE uses `var spine = (...)()`, make it global
     eval(spineCoreCode.replace(/^"use strict";\s*var spine\s*=/, "window.spine ="));
@@ -225,6 +226,16 @@ async function main() {
     shader.setUniformi(spine.Shader.SAMPLER, 0);
     shader.setUniform4x4f(spine.Shader.MVP_MATRIX, mvp.values);
 
+    // Hide placeholder/smoke slots before rendering
+    for (const slot of skeleton.slots) {
+      const sn = slot.data.name.toLowerCase();
+      const att = slot.getAttachment();
+      const an = att ? (att.name || "").toLowerCase() : "";
+      if (hiddenSlots.some(h => sn.includes(h) || an.includes(h))) {
+        slot.setAttachment(null);
+      }
+    }
+
     batcher.begin(shader);
     renderer.premultipliedAlpha = false;
     renderer.draw(batcher, skeleton);
@@ -259,6 +270,7 @@ async function main() {
     outputSize,
     idleNames: IDLE_NAMES,
     shadowNames: SHADOW_NAMES,
+    hiddenSlots: HIDDEN_SLOTS,
     spineCoreCode: spineCoreCode,
   });
 
