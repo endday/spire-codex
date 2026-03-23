@@ -91,7 +91,7 @@ export interface Monster {
   min_hp_ascension: number | null;
   max_hp_ascension: number | null;
   moves: { id: string; name: string }[] | null;
-  damage_values: Record<string, { normal: number; ascension?: number }> | null;
+  damage_values: Record<string, { normal: number; ascension?: number; hit_count?: number }> | null;
   block_values: Record<string, number> | null;
   image_url: string | null;
 }

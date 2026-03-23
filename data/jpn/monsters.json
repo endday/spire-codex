@@ -104,7 +104,8 @@
     "damage_values": {
       "OneTwo": {
         "normal": 5,
-        "ascension": 6
+        "ascension": 6,
+        "hit_count": 2
       },
       "HammerUppercut": {
         "normal": 8,
@@ -271,7 +272,8 @@
     "damage_values": {
       "Thrash": {
         "normal": 4,
-        "ascension": 5
+        "ascension": 5,
+        "hit_count": 2
       }
     },
     "block_values": null,
@@ -360,7 +362,8 @@
     "damage_values": {
       "Peck": {
         "normal": 3,
-        "ascension": 4
+        "ascension": 4,
+        "hit_count": 3
       },
       "Swoop": {
         "normal": 16,
@@ -487,7 +490,8 @@
     "damage_values": {
       "Clamp": {
         "normal": 8,
-        "ascension": 9
+        "ascension": 9,
+        "hit_count": 2
       }
     },
     "block_values": null,
@@ -521,7 +525,8 @@
         "ascension": 9
       },
       "WhipSlap": {
-        "normal": 3
+        "normal": 3,
+        "hit_count": 2
       }
     },
     "block_values": null,
@@ -595,7 +600,8 @@
       },
       "BugSting": {
         "normal": 6,
-        "ascension": 7
+        "ascension": 7,
+        "hit_count": 2
       },
       "GuardedStrike": {
         "normal": 12,
@@ -642,7 +648,8 @@
       },
       "Expel": {
         "normal": 5,
-        "ascension": 6
+        "ascension": 6,
+        "hit_count": 2
       }
     },
     "block_values": null,
@@ -708,7 +715,8 @@
     "damage_values": {
       "Writhe": {
         "normal": 5,
-        "ascension": 6
+        "ascension": 6,
+        "hit_count": 2
       },
       "Constrict": {
         "normal": 8,
@@ -782,7 +790,8 @@
       },
       "DoorSlam": {
         "normal": 15,
-        "ascension": 15
+        "ascension": 15,
+        "hit_count": 2
       },
       "Enforce": {
         "normal": 20
@@ -855,7 +864,8 @@
       },
       "Bees": {
         "normal": 3,
-        "ascension": 3
+        "ascension": 3,
+        "hit_count": 7
       }
     },
     "block_values": null,
@@ -995,7 +1005,8 @@
     "damage_values": {
       "Flail": {
         "normal": 9,
-        "ascension": 10
+        "ascension": 10,
+        "hit_count": 2
       },
       "Ram": {
         "normal": 15,
@@ -1112,7 +1123,8 @@
       },
       "Lash": {
         "normal": 3,
-        "ascension": 4
+        "ascension": 4,
+        "hit_count": 2
       }
     },
     "block_values": null,
@@ -1240,7 +1252,8 @@
     "damage_values": {
       "ThunderStrike": {
         "normal": 6,
-        "ascension": 7
+        "ascension": 7,
+        "hit_count": 3
       },
       "ShockingSlap": {
         "normal": 13,
@@ -1279,11 +1292,13 @@
     "damage_values": {
       "Gimme": {
         "normal": 7,
-        "ascension": 8
+        "ascension": 8,
+        "hit_count": 2
       },
       "DoubleSmash": {
         "normal": 6,
-        "ascension": 7
+        "ascension": 7,
+        "hit_count": 2
       },
       "Hehe": {
         "normal": 8,
@@ -1348,7 +1363,8 @@
       },
       "Stomp": {
         "normal": 4,
-        "ascension": 5
+        "ascension": 5,
+        "hit_count": 3
       }
     },
     "block_values": null,
@@ -1383,7 +1399,8 @@
       },
       "Puncture": {
         "normal": 7,
-        "ascension": 8
+        "ascension": 8,
+        "hit_count": 3
       }
     },
     "block_values": null,
@@ -1426,7 +1443,8 @@
       },
       "Whirlwind": {
         "normal": 9,
-        "ascension": 10
+        "ascension": 10,
+        "hit_count": 3
       }
     },
     "block_values": null,
@@ -1461,7 +1479,8 @@
       },
       "Whirlwind": {
         "normal": 2,
-        "ascension": 3
+        "ascension": 3,
+        "hit_count": 3
       },
       "PiercingGaze": {
         "normal": 10,
@@ -1500,7 +1519,8 @@
       },
       "Boomerang": {
         "normal": 2,
-        "ascension": 2
+        "ascension": 2,
+        "hit_count": 2
       }
     },
     "block_values": null,
@@ -1543,7 +1563,8 @@
       },
       "Beam": {
         "normal": 3,
-        "ascension": 3
+        "ascension": 3,
+        "hit_count": 3
       }
     },
     "block_values": null,
@@ -1586,7 +1607,8 @@
       },
       "KnowledgeOverwhelming": {
         "normal": 8,
-        "ascension": 9
+        "ascension": 9,
+        "hit_count": 3
       }
     },
     "block_values": null,
@@ -1633,7 +1655,8 @@
       },
       "Disembowel": {
         "normal": 9,
-        "ascension": 10
+        "ascension": 10,
+        "hit_count": 2
       }
     },
     "block_values": null,
@@ -1873,7 +1896,8 @@
       },
       "Claw": {
         "normal": 4,
-        "ascension": 5
+        "ascension": 5,
+        "hit_count": 2
       }
     },
     "block_values": null,
@@ -2102,7 +2126,8 @@
       },
       "PeckAssault": {
         "normal": 4,
-        "ascension": 4
+        "ascension": 4,
+        "hit_count": 6
       }
     },
     "block_values": null,
@@ -2185,7 +2210,8 @@
         "ascension": 7
       },
       "Flail": {
-        "normal": 1
+        "normal": 1,
+        "hit_count": 3
       }
     },
     "block_values": null,
@@ -2212,7 +2238,8 @@
     "damage_values": {
       "Lash": {
         "normal": 4,
-        "ascension": 5
+        "ascension": 5,
+        "hit_count": 4
       }
     },
     "block_values": null,
@@ -2247,7 +2274,8 @@
       },
       "FastPunch": {
         "normal": 5,
-        "ascension": 6
+        "ascension": 6,
+        "hit_count": 2
       }
     },
     "block_values": null,
@@ -2290,7 +2318,8 @@
     "damage_values": {
       "OffWithYourHead": {
         "normal": 3,
-        "ascension": 4
+        "ascension": 4,
+        "hit_count": 5
       },
       "Execution": {
         "normal": 15,
@@ -2376,7 +2405,8 @@
       },
       "Chew": {
         "normal": 5,
-        "ascension": 6
+        "ascension": 6,
+        "hit_count": 2
       }
     },
     "block_values": null,
@@ -2410,7 +2440,8 @@
         "ascension": 12
       },
       "SpinningKick": {
-        "normal": 2
+        "normal": 2,
+        "hit_count": 4
       }
     },
     "block_values": null,
@@ -2507,7 +2538,8 @@
     "damage_values": {
       "SuperCrab": {
         "normal": 6,
-        "ascension": 7
+        "ascension": 7,
+        "hit_count": 2
       },
       "Zoom": {
         "normal": 16,
@@ -2550,7 +2582,8 @@
     "damage_values": {
       "Pummeling": {
         "normal": 4,
-        "ascension": 5
+        "ascension": 5,
+        "hit_count": 4
       },
       "Smother": {
         "normal": 30,
@@ -2787,7 +2820,8 @@
       },
       "Maelstrom": {
         "normal": 6,
-        "ascension": 7
+        "ascension": 7,
+        "hit_count": 4
       },
       "DrainLife": {
         "normal": 18,
@@ -2826,7 +2860,8 @@
       },
       "SoulFlame": {
         "normal": 3,
-        "ascension": 4
+        "ascension": 4,
+        "hit_count": 3
       }
     },
     "block_values": null,
@@ -2923,7 +2958,8 @@
       },
       "Thrash": {
         "normal": 3,
-        "ascension": 4
+        "ascension": 4,
+        "hit_count": 3
       }
     },
     "block_values": null,
@@ -2990,7 +3026,8 @@
       },
       "Phase3Lacerate": {
         "normal": 10,
-        "ascension": 11
+        "ascension": 11,
+        "hit_count": 3
       },
       "BigPounce": {
         "normal": 45
@@ -3029,7 +3066,8 @@
         "normal": 15
       },
       "Barrage": {
-        "normal": 8
+        "normal": 8,
+        "hit_count": 2
       }
     },
     "block_values": null,
@@ -3065,7 +3103,8 @@
         "normal": 18
       },
       "Barrage": {
-        "normal": 10
+        "normal": 10,
+        "hit_count": 2
       }
     },
     "block_values": null,
@@ -3101,7 +3140,8 @@
         "normal": 16
       },
       "Barrage": {
-        "normal": 9
+        "normal": 9,
+        "hit_count": 2
       }
     },
     "block_values": null,
@@ -3167,7 +3207,8 @@
     "damage_values": {
       "Thrash": {
         "normal": 8,
-        "ascension": 9
+        "ascension": 9,
+        "hit_count": 2
       },
       "Bite": {
         "normal": 28,
@@ -3198,7 +3239,8 @@
     "damage_values": {
       "EyeLasers": {
         "normal": 4,
-        "ascension": 5
+        "ascension": 5,
+        "hit_count": 2
       }
     },
     "block_values": null,
@@ -3315,7 +3357,8 @@
     "damage_values": {
       "SpikeSpit": {
         "normal": 3,
-        "ascension": 4
+        "ascension": 4,
+        "hit_count": 3
       },
       "Whirl": {
         "normal": 7,
@@ -3366,7 +3409,8 @@
       },
       "SoulBeam": {
         "normal": 8,
-        "ascension": 8
+        "ascension": 8,
+        "hit_count": 3
       }
     },
     "block_values": null,
@@ -3420,7 +3464,8 @@
     "damage_values": {
       "Hounds": {
         "normal": 1,
-        "ascension": 1
+        "ascension": 1,
+        "hit_count": 8
       }
     },
     "block_values": null,
@@ -3490,7 +3535,8 @@
     "damage_values": {
       "Fire": {
         "normal": 3,
-        "ascension": 4
+        "ascension": 4,
+        "hit_count": 5
       }
     },
     "block_values": null,
@@ -3618,7 +3664,8 @@
       },
       "InkyLance": {
         "normal": 6,
-        "ascension": 7
+        "ascension": 7,
+        "hit_count": 2
       },
       "Dismember": {
         "normal": 27,
@@ -3657,7 +3704,8 @@
       },
       "Swipe": {
         "normal": 6,
-        "ascension": 7
+        "ascension": 7,
+        "hit_count": 2
       },
       "Chomp": {
         "normal": 16,

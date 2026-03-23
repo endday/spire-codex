@@ -92,6 +92,7 @@ class MonsterMove(BaseModel):
 class MonsterDamage(BaseModel):
     normal: int
     ascension: int | None = None
+    hit_count: int | None = None
 
 
 class Monster(BaseModel):

@@ -114,6 +114,32 @@ def parse_single_monster(filepath: Path, localization: dict, encounter_types: di
         if name not in damage_values:
             damage_values[name] = {"normal": int(dm.group(2))}
 
+    # Hit counts — extract from WithHitCount(N) or WithHitCount(VarName)
+    hit_counts: dict[str, int] = {}
+    # First, extract named repeat constants: private int XRepeat => N; or const int _xRepeat = N;
+    repeat_vars: dict[str, int] = {}
+    for rm in re.finditer(r'(\w+)(?:Repeat|Times|TotalCount)\s*=>\s*(\d+)', content):
+        repeat_vars[rm.group(1) + re.search(r'(Repeat|Times|TotalCount)', rm.group(0)).group()] = int(rm.group(2))
+    for rm in re.finditer(r'private\s+const\s+int\s+_(\w*(?:Repeat|Times|TotalCount))\s*=\s*(\d+)', content):
+        repeat_vars[rm.group(1)] = int(rm.group(2))
+    # Also check AscensionHelper for repeat values
+    for rm in re.finditer(r'(\w+(?:Repeat|Times|TotalCount))\s*=>\s*AscensionHelper\.GetValueIfAscension\(\w+\.\w+,\s*(\d+),\s*(\d+)\)', content):
+        repeat_vars[rm.group(1)] = int(rm.group(3))  # Use normal value
+
+    # Now match WithHitCount to damage vars: DamageCmd.Attack(XDamage).WithHitCount(N_or_Var)
+    for hm in re.finditer(r'Attack\((\w+)Damage\)\.WithHitCount\((\w+)\)', content):
+        dmg_name = hm.group(1)
+        hit_val = hm.group(2)
+        if hit_val.isdigit():
+            hit_counts[dmg_name] = int(hit_val)
+        elif hit_val in repeat_vars:
+            hit_counts[dmg_name] = repeat_vars[hit_val]
+
+    # Merge hit counts into damage_values
+    for dmg_name, count in hit_counts.items():
+        if dmg_name in damage_values:
+            damage_values[dmg_name]["hit_count"] = count
+
     # Block values
     block_values = {}
     for bm in re.finditer(r'(\w+)Block\s*=>\s*(\d+)', content):
