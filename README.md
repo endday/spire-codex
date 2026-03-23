@@ -96,10 +96,12 @@ spire-codex/
 │   └── Dockerfile
 ├── tools/
 │   ├── spine-renderer/         # Headless Spine skeleton renderer
-│   │   ├── render.mjs           # Monster renderer
-│   │   ├── render_all.mjs       # Universal renderer (all .skel files)
+│   │   ├── render_webgl.mjs     # WebGL renderer (single skeleton) — no seam artifacts
+│   │   ├── render_all_webgl.mjs # WebGL batch renderer (all .skel files)
+│   │   ├── render.mjs           # Legacy canvas renderer (has triangle seams)
+│   │   ├── render_all.mjs       # Legacy canvas batch renderer
 │   │   ├── render_skins2.mjs    # Skin variant renderer
-│   │   ├── render_utils.mjs     # Shared rendering utilities (slot-by-slot fallback)
+│   │   ├── render_utils.mjs     # Shared canvas rendering utilities
 │   │   └── package.json
 │   ├── diff_data.py            # Changelog diff generator
 │   ├── update.py               # Cross-platform update pipeline
@@ -332,11 +334,14 @@ cd backend/app/parsers && python3 parse_all.py --lang eng
 # Copy images from extraction to static
 python3 backend/scripts/copy_images.py
 
-# Render Spine sprites
+# Render Spine sprites (WebGL — no triangle seam artifacts)
 cd tools/spine-renderer && npm install
-node render_all.mjs          # All skeletons
-node render.mjs              # Monsters only (better framing)
-node render_skins2.mjs       # Skin variants (Cultists, Bowlbugs, etc.)
+npx playwright install chromium           # First time only
+node render_all_webgl.mjs                 # All 138 skeletons via headless Chrome
+node render_webgl.mjs <skel_dir> <out> [size]  # Single skeleton (e.g., hi-res ancient)
+
+# Legacy canvas renderer (has triangle seam artifacts — avoid)
+# node render_all.mjs / node render.mjs
 ```
 
 ## Changelog System
@@ -414,48 +419,49 @@ Production data is bind-mounted (`./data:/data:ro`). Container restart required 
 
 Monster sprites in StS2 are [Spine](http://esotericsoftware.com/) skeletal animations — each monster is a `.skel` (binary skeleton) + `.atlas` + `.png` spritesheet, not a single image. The renderer assembles these into static portrait PNGs.
 
-### How it works
+### WebGL Renderer (Current)
 
-1. Finds `.skel`, `.atlas`, and `.png` files under `extraction/raw/animations/`
-2. Applies the idle animation at time 0 using `@esotericsoftware/spine-canvas` (v4.2.106, matching the game's Spine 4.2.x binary format)
-3. Calculates a bounding box from all visible attachments, **excluding shadow/ground/VFX slots** (projectile paths, whoosh effects, wind paths, megablade/megatail) for tighter framing. Dispatches `computeWorldVertices` correctly per attachment type (RegionAttachment uses 4-arg form, MeshAttachment uses 6-arg form)
-4. Hides VFX-only slots before rendering (paths, whoosh, windpath, vulnerable, projectile, megablade, megatail)
-5. Renders at **2× supersampling** (1024px) to reduce canvas triangle-mesh seam artifacts, then downscales to 512×512
-6. **Automatic fallback**: Detects when canvas clip-path accumulation from complex mesh skeletons (e.g., Devoted Sculptor with ~4,400 triangles) produces blank output, and re-renders slot-by-slot with manual alpha compositing
-7. Handles filename mismatches (e.g., `egg_layer/` dir containing `egglayer.skel`) via fallback file detection
-8. Outputs PNGs to `backend/static/images/`
+The WebGL renderer (`render_webgl.mjs`, `render_all_webgl.mjs`) uses **Playwright + spine-webgl** to render skeletons via headless Chrome's GPU. This produces clean renders with **no triangle seam artifacts**.
+
+**How it works:**
+1. Launches headless Chrome via Playwright with WebGL enabled
+2. Loads skeleton data + atlas + textures as base64 into the browser page
+3. Creates a WebGL canvas, sets up spine-webgl shader + polygon batcher
+4. Applies the idle animation, calculates bounds (excluding shadow/ground slots)
+5. Renders via GPU triangle rasterization — no canvas clip paths, no seams
+6. Reads raw pixels via `gl.readPixels`, flips vertically (WebGL is bottom-up)
+7. Writes PNG via node-canvas to preserve transparency
+
+**Single skeleton:**
+```bash
+node render_webgl.mjs <skel_dir> <output_path> [size]
+node render_webgl.mjs ../../extraction/raw/animations/backgrounds/neow_room ../../backend/static/images/misc/neow.png 2048
+```
+
+**Batch all skeletons:**
+```bash
+node render_all_webgl.mjs  # Renders 138 skeletons to backend/static/images/renders/
+```
 
 ### Render coverage
 
 | Category | Rendered | Total | Notes |
 |---|---|---|---|
-| Monsters | 100 | 103 dirs | All 111 game monsters have images (100 rendered + 11 aliased/static) |
-| Characters (combat) | 5 | 5 | Battle stance poses |
-| Characters (rest site) | 6 | 6 | Includes Osty |
-| Characters (select) | 5 | 5 | Wide cinematic poses |
-| Backgrounds/NPCs | 10 | 14 | Neow, Tezcatara, merchant rooms, main menu |
-| VFX/UI | 2 | 16 | Most VFX need specific animation frames |
-| **Total** | **128+** | **158** | |
+| Monsters | 99 | 103 dirs | All 111 game monsters have images (99 rendered + aliases/static) |
+| Characters | 16 | 16 | Combat, rest site, and select poses |
+| Backgrounds/NPCs | 14 | 17 | Neow, Tezcatara, merchant rooms, main menu |
+| VFX/UI | 9 | 22 | Most VFX need specific animation frames |
+| **Total** | **138** | **158** | 20 skipped (no atlas, VFX-only, blank) |
 
-Monsters without Spine data use alternative images:
-- **Shared skeletons**: Flyconid (→ flying_mushrooms), Ovicopter (→ egg_layer), Crusher/Rocket (→ kaiser_crab)
-- **Static placeholder**: Doormaker (beta art from game files)
-- **Multi-segment**: Decimillipede rendered from front segment (decimillipede2.skel + decimillipede_middle.atlas)
+### Legacy Canvas Renderer
 
-### Technical details
-
-- Uses `node-canvas` for server-side Canvas API (no browser/GPU needed)
-- **Triangle rendering** enabled (`triangleRendering = true`) — required for mesh attachments (most monster body parts). Without it, only RegionAttachments render.
-- `Physics.reset` parameter required by spine-canvas 4.2.x `updateWorldTransform()`
-- **Bounds calculation**: `RegionAttachment.computeWorldVertices(slot, verts, offset, stride)` uses a 4-arg signature; `MeshAttachment.computeWorldVertices(slot, start, count, verts, offset, stride)` uses 6 args — must dispatch by `instanceof` check
-- Shadow slots (`shadow`, `shadow2`, `ground`, `ground_shadow`) excluded from bounds calculation but still rendered
-- VFX slots (`*path*`, `whoosh`, `windpath`, `vulnerable`, `projectile`, `megablade`, `megatail`) excluded from bounds AND hidden before rendering
-- Skin-based skeletons (Cultists: coral/slug, Bowlbugs: cocoon/goop/rock/web, Cubex: circleeye/diamondeye/squareeye) require explicit skin selection
-- **Slot-by-slot fallback** (`render_utils.mjs`): spine-canvas accumulates canvas `clip()` paths during triangle rendering. On complex skeletons (~4,000+ mesh triangles), this corrupts the canvas state causing `toBuffer()` OOM or blank output. The fallback renders each slot to an independent canvas and alpha-composites raw pixel data via `getImageData`/`putImageData`
+The canvas renderer (`render.mjs`, `render_all.mjs`) uses `spine-canvas` with `triangleRendering = true`. This produces **visible wireframe mesh artifacts** due to canvas `clip()` path anti-aliasing between adjacent triangles. Use the WebGL renderer instead.
 
 ### Dependencies
 
-- `@esotericsoftware/spine-canvas` ^4.2.106 — Spine runtime for Canvas
+- `@esotericsoftware/spine-webgl` ^4.2.107 — Spine runtime for WebGL (current)
+- `playwright` — Headless Chrome for WebGL rendering
+- `@esotericsoftware/spine-canvas` ^4.2.106 — Spine runtime for Canvas (legacy)
 - `canvas` ^3.1.0 — Node.js Canvas implementation
 
 ## Extracting Game Files
@@ -541,7 +547,7 @@ Thanks to **vesper-arch**, **terracubist**, and **U77654** for QA testing, bug r
 
 - **Backend**: Python, FastAPI, Pydantic, slowapi, GZip compression
 - **Frontend**: Next.js 16 (App Router), TypeScript, Tailwind CSS, 14-language support
-- **Spine Renderer**: Node.js, @esotericsoftware/spine-canvas, node-canvas
+- **Spine Renderer**: Node.js, Playwright, @esotericsoftware/spine-webgl (WebGL via headless Chrome)
 - **Infrastructure**: Docker, Forgejo CI, buildah
 - **Tools**: Python (update pipeline, changelog diffing, image copying)
 
