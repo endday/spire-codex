@@ -19,7 +19,7 @@ const ANIM_ROOT = path.join(BASE, "extraction/raw/animations");
 const OUTPUT_ROOT = path.join(BASE, "backend/static/images/renders");
 
 const OUTPUT_SIZE = 512;
-const SUPERSAMPLE = 2;
+const SUPERSAMPLE = 3;
 const RENDER_SIZE = OUTPUT_SIZE * SUPERSAMPLE;
 const PADDING = 20 * SUPERSAMPLE;
 const SHADOW_NAMES = new Set(["shadow", "shadow2", "ground", "ground_shadow"]);

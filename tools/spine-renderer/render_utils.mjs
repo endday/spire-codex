@@ -120,9 +120,148 @@ function renderSlotBySlot(skeleton, renderSize, scale, cx, cy) {
 }
 
 /**
+ * Fix triangle seam artifacts by two passes:
+ * 1. Boost low-alpha pixels that have high-alpha neighbors (seam lines within meshes)
+ * 2. Fill fully transparent pixels surrounded by opaque pixels (gaps between triangles)
+ */
+function fillSeams(imgData, width) {
+  const src = imgData.data;
+  const out = new Uint8ClampedArray(src);
+  const h = (src.length / 4) / width;
+
+  // Pass 1: Boost semi-transparent seam pixels (alpha < 200 with opaque neighbors)
+  for (let y = 1; y < h - 1; y++) {
+    for (let x = 1; x < width - 1; x++) {
+      const i = (y * width + x) * 4;
+      const a = src[i + 3];
+      // Skip fully opaque and fully transparent
+      if (a >= 200 || a === 0) continue;
+
+      // Check 8-connected neighbors for opaque pixels
+      let opaqueCount = 0;
+      let r = 0, g = 0, b = 0;
+      for (let dy = -1; dy <= 1; dy++) {
+        for (let dx = -1; dx <= 1; dx++) {
+          if (dx === 0 && dy === 0) continue;
+          const ni = ((y + dy) * width + (x + dx)) * 4;
+          if (src[ni + 3] >= 200) {
+            opaqueCount++;
+            r += src[ni];
+            g += src[ni + 1];
+            b += src[ni + 2];
+          }
+        }
+      }
+
+      // If this low-alpha pixel is surrounded by opaque pixels, it's a seam
+      if (opaqueCount >= 4) {
+        out[i] = r / opaqueCount;
+        out[i + 1] = g / opaqueCount;
+        out[i + 2] = b / opaqueCount;
+        out[i + 3] = 255;
+      }
+    }
+  }
+
+  // Pass 2: Fill fully transparent gaps (dilate)
+  // Use the output from pass 1 as input
+  const src2 = new Uint8ClampedArray(out);
+  for (let y = 1; y < h - 1; y++) {
+    for (let x = 1; x < width - 1; x++) {
+      const i = (y * width + x) * 4;
+      if (src2[i + 3] > 0) continue;
+
+      let r = 0, g = 0, b = 0, count = 0;
+      for (let dy = -1; dy <= 1; dy++) {
+        for (let dx = -1; dx <= 1; dx++) {
+          if (dx === 0 && dy === 0) continue;
+          const ni = ((y + dy) * width + (x + dx)) * 4;
+          if (src2[ni + 3] >= 200) {
+            r += src2[ni];
+            g += src2[ni + 1];
+            b += src2[ni + 2];
+            count++;
+          }
+        }
+      }
+
+      if (count >= 3) {
+        out[i] = r / count;
+        out[i + 1] = g / count;
+        out[i + 2] = b / count;
+        out[i + 3] = 255;
+      }
+    }
+  }
+
+  imgData.data.set(out);
+}
+
+/**
+ * Apply a selective 3x3 box blur to pixels where there's a sharp alpha
+ * transition — these are the seam lines. This smudges the seam artifacts
+ * without blurring the entire image.
+ */
+function blurSeams(imgData, width) {
+  const src = new Uint8ClampedArray(imgData.data);
+  const out = imgData.data;
+  const h = (src.length / 4) / width;
+
+  for (let y = 1; y < h - 1; y++) {
+    for (let x = 1; x < width - 1; x++) {
+      const i = (y * width + x) * 4;
+      const a = src[i + 3];
+
+      // Find pixels with alpha between 1-230 that neighbor fully opaque pixels
+      // These are the semi-transparent seam edges
+      if (a === 0 || a > 230) continue;
+
+      let hasOpaque = false;
+      for (let dy = -1; dy <= 1; dy++) {
+        for (let dx = -1; dx <= 1; dx++) {
+          if (dx === 0 && dy === 0) continue;
+          const ni = ((y + dy) * width + (x + dx)) * 4;
+          if (src[ni + 3] > 230) { hasOpaque = true; break; }
+        }
+        if (hasOpaque) break;
+      }
+
+      if (!hasOpaque) continue;
+
+      // Apply 3x3 weighted average using only non-transparent neighbors
+      let r = 0, g = 0, b = 0, aa = 0, w = 0;
+      for (let dy = -1; dy <= 1; dy++) {
+        for (let dx = -1; dx <= 1; dx++) {
+          const ni = ((y + dy) * width + (x + dx)) * 4;
+          const na = src[ni + 3];
+          if (na === 0) continue;
+          const weight = na / 255;
+          r += src[ni] * weight;
+          g += src[ni + 1] * weight;
+          b += src[ni + 2] * weight;
+          aa += na;
+          w += weight;
+        }
+      }
+
+      if (w > 0) {
+        out[i] = r / w;
+        out[i + 1] = g / w;
+        out[i + 2] = b / w;
+        out[i + 3] = Math.min(255, aa / 9 * 1.5); // Boost alpha
+      }
+    }
+  }
+}
+
+/**
  * Convert ImageData to a downscaled PNG buffer.
  */
 export function imageDataToPng(imgData, renderSize, outputSize) {
+  // Fix triangle seam artifacts then blur seam areas before downscaling
+  fillSeams(imgData, renderSize);
+  blurSeams(imgData, renderSize);
+
   const fullCanvas = createCanvas(renderSize, renderSize);
   const fullCtx = fullCanvas.getContext("2d");
   fullCtx.putImageData(imgData, 0, 0);

@@ -14,7 +14,7 @@ import path from "node:path";
 import { renderSkeleton, imageDataToPng } from "./render_utils.mjs";
 
 const OUTPUT_SIZE = 2048;
-const SUPERSAMPLE = 2;
+const SUPERSAMPLE = 3;
 const RENDER_SIZE = OUTPUT_SIZE * SUPERSAMPLE;
 const PADDING = 40 * SUPERSAMPLE;
 const SHADOW_NAMES = new Set(["shadow", "shadow2", "ground", "ground_shadow"]);
