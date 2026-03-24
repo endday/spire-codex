@@ -67,7 +67,17 @@ export default function EnchantmentsClient({ initialEnchantments }: { initialEnc
             key={ench.id}
             className="bg-[var(--bg-card)] rounded-lg border border-cyan-800/40 p-4 hover:bg-[var(--bg-card-hover)] transition-all"
           >
-            <div className="flex items-start justify-between mb-2">
+            <div className="flex items-start gap-3 mb-2">
+              {ench.image_url && (
+                <img
+                  src={`${API}${ench.image_url}`}
+                  alt={`${ench.name} enchantment icon`}
+                  className="w-10 h-10 object-contain flex-shrink-0"
+                  loading="lazy"
+                  crossOrigin="anonymous"
+                />
+              )}
+              <div className="flex-1 flex items-start justify-between">
               <h3 className="font-semibold text-[var(--text-primary)]">
                 {ench.name}
               </h3>
@@ -87,6 +97,7 @@ export default function EnchantmentsClient({ initialEnchantments }: { initialEnc
                     Stackable
                   </span>
                 )}
+              </div>
               </div>
             </div>
 
