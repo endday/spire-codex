@@ -90,7 +90,7 @@ export default async function LangEventsPage({ params }: { params: Promise<{ lan
         <span className="text-[var(--accent-gold)]">{gameName} {t(CATEGORY_LABEL, lang)}</span>
       </h1>
       <p className="text-sm text-[var(--text-muted)] mb-6">
-        Browse every Slay the Spire 2 event including shrine events, Ancient encounters, and story events. View choices, dialogue, and outcomes.
+        {t("events_tagline", lang)}
       </p>
 
       <EventsClient initialEvents={events} />

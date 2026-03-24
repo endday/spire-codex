@@ -90,7 +90,7 @@ export default async function LangCharactersPage({ params }: { params: Promise<{
         <span className="text-[var(--accent-gold)]">{gameName} {t(CATEGORY_LABEL, lang)}</span>
       </h1>
       <p className="text-sm text-[var(--text-muted)] mb-6">
-        All playable characters in {gameName} — view starting decks, relics, HP, gold, energy, and more.
+        {t("characters_tagline", lang)}
       </p>
 
       <CharactersClient initialCharacters={characters} />

@@ -90,7 +90,7 @@ export default async function LangPowersPage({ params }: { params: Promise<{ lan
         <span className="text-[var(--accent-gold)]">{gameName} {t(CATEGORY_LABEL, lang)}</span>
       </h1>
       <p className="text-sm text-[var(--text-muted)] mb-6">
-        Browse every power in {gameName} — buffs, debuffs, and neutral effects. Filter by type and stack behavior.
+        {t("powers_tagline", lang)}
       </p>
 
       <PowersClient initialPowers={powers} />

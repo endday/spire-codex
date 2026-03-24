@@ -13,6 +13,7 @@ import {
   type LangCode,
 } from "@/lib/languages";
 import { SITE_URL } from "@/lib/seo";
+import { t } from "@/lib/ui-translations";
 
 export const dynamic = "force-dynamic";
 
@@ -89,7 +90,7 @@ export default async function LangCardsPage({ params }: { params: Promise<{ lang
         <span className="text-[var(--accent-gold)]">{gameName} {cardsWord}</span>
       </h1>
       <p className="text-sm text-[var(--text-muted)] mb-6">
-        Browse every card across Ironclad, Silent, Defect, Necrobinder, and Regent. Filter by character, type, rarity, and keywords.
+        {t("cards_tagline", lang)}
       </p>
 
       <CardsClient initialCards={cards} />

@@ -90,7 +90,7 @@ export default async function LangPotionsPage({ params }: { params: Promise<{ la
         <span className="text-[var(--accent-gold)]">{gameName} {t(CATEGORY_LABEL, lang)}</span>
       </h1>
       <p className="text-sm text-[var(--text-muted)] mb-6">
-        Browse every potion across Ironclad, Silent, Defect, Necrobinder, and Regent. Filter by rarity and character pool.
+        {t("potions_tagline", lang)}
       </p>
 
       <PotionsClient initialPotions={potions} />

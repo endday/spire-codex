@@ -90,7 +90,7 @@ export default async function LangMonstersPage({ params }: { params: Promise<{ l
         <span className="text-[var(--accent-gold)]">{gameName} {t(CATEGORY_LABEL, lang)}</span>
       </h1>
       <p className="text-sm text-[var(--text-muted)] mb-6">
-        Browse every monster in {gameName} — normals, elites, and bosses. View HP values, moves, damage stats, and ascension scaling.
+        {t("monsters_tagline", lang)}
       </p>
 
       <MonstersClient initialMonsters={monsters} />

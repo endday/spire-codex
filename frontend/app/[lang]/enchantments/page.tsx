@@ -89,7 +89,7 @@ export default async function LangEnchantmentsPage({ params }: { params: Promise
         <span className="text-[var(--accent-gold)]">{gameName} {t(CATEGORY_LABEL, lang)}</span>
       </h1>
       <p className="text-sm text-[var(--text-muted)] mb-6">
-        Browse every enchantment. Filter by card type and view effects, stackability, and extra card text.
+        {t("enchantments_tagline", lang)}
       </p>
 
       <EnchantmentsClient initialEnchantments={enchantments} />

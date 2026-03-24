@@ -13,6 +13,7 @@ import {
   type LangCode,
 } from "@/lib/languages";
 import { SITE_URL } from "@/lib/seo";
+import { t } from "@/lib/ui-translations";
 
 export const dynamic = "force-dynamic";
 
@@ -89,7 +90,7 @@ export default async function LangRelicsPage({ params }: { params: Promise<{ lan
         <span className="text-[var(--accent-gold)]">{gameName} {relicsWord}</span>
       </h1>
       <p className="text-sm text-[var(--text-muted)] mb-6">
-        Browse every relic across Ironclad, Silent, Defect, Necrobinder, and Regent. Filter by rarity and character pool.
+        {t("relics_tagline", lang)}
       </p>
 
       <RelicsClient initialRelics={relics} />

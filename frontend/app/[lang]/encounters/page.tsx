@@ -89,7 +89,7 @@ export default async function LangEncountersPage({ params }: { params: Promise<{
         <span className="text-[var(--accent-gold)]">{gameName} {t(CATEGORY_LABEL, lang)}</span>
       </h1>
       <p className="text-sm text-[var(--text-muted)] mb-6">
-        Browse every combat encounter in {gameName}. Filter by room type (Monster, Elite, Boss) and act to find specific fights and monster compositions.
+        {t("encounters_tagline", lang)}
       </p>
 
       <EncountersClient initialEncounters={encounters} />
