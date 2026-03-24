@@ -31,6 +31,7 @@ class Card(BaseModel):
     energy_gain: int | None = None
     hp_loss: int | None = None
     keywords: list[str] | None = None
+    keywords_key: list[str] | None = None
     tags: list[str] | None = None
     spawns_cards: list[str] | None = None
     vars: dict[str, int] | None = None

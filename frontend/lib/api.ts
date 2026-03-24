@@ -29,6 +29,7 @@ export interface Card {
   energy_gain: number | null;
   hp_loss: number | null;
   keywords: string[] | null;
+  keywords_key: string[] | null;
   tags: string[] | null;
   spawns_cards: string[] | null;
   vars: Record<string, number> | null;

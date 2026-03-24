@@ -50,8 +50,10 @@ function parsePairSlug(slug: string): { a: string; b: string } | null {
 
 function countByField(cards: Card[], field: "type" | "rarity"): Record<string, number> {
   const counts: Record<string, number> = {};
+  // Use the _key variant (English) for consistent counting across languages
+  const keyField = field === "type" ? "type_key" : "rarity_key";
   for (const card of cards) {
-    const val = card[field] || "Unknown";
+    const val = (card as Record<string, unknown>)[keyField] as string || card[field] || "Unknown";
     counts[val] = (counts[val] || 0) + 1;
   }
   return counts;
@@ -61,8 +63,10 @@ function countKeywords(cards: Card[]): Record<string, number> {
   const counts: Record<string, number> = {};
   for (const kw of KEYWORDS) counts[kw] = 0;
   for (const card of cards) {
-    if (card.keywords) {
-      for (const kw of card.keywords) {
+    // Use keywords_key (English) for consistent matching across languages
+    const kws = card.keywords_key || card.keywords;
+    if (kws) {
+      for (const kw of kws) {
         if (kw in counts) counts[kw]++;
       }
     }

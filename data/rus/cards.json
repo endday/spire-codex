@@ -140,6 +140,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 91
   },
   {
@@ -175,6 +178,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 45
   },
   {
@@ -212,6 +218,9 @@
     "beta_image_url": null,
     "type_key": "Attack",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 34
   },
   {
@@ -393,6 +402,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 439
   },
   {
@@ -427,6 +439,10 @@
     "beta_image_url": "/static/images/cards/beta/greed.png",
     "type_key": "Curse",
     "rarity_key": "Curse",
+    "keywords_key": [
+      "Unplayable",
+      "Eternal"
+    ],
     "compendium_order": 512
   },
   {
@@ -501,6 +517,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Ethereal"
+    ],
     "compendium_order": 315
   },
   {
@@ -573,6 +592,10 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Ancient",
+    "keywords_key": [
+      "Exhaust",
+      "Innate"
+    ],
     "compendium_order": 521
   },
   {
@@ -837,6 +860,10 @@
     "beta_image_url": null,
     "type_key": "Status",
     "rarity_key": "Status",
+    "keywords_key": [
+      "Ethereal",
+      "Unplayable"
+    ],
     "compendium_order": 560
   },
   {
@@ -982,6 +1009,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 437
   },
   {
@@ -1084,6 +1114,10 @@
     "beta_image_url": "/static/images/cards/beta/poor_sleep.png",
     "type_key": "Curse",
     "rarity_key": "Curse",
+    "keywords_key": [
+      "Retain",
+      "Unplayable"
+    ],
     "compendium_order": 516
   },
   {
@@ -1238,6 +1272,9 @@
     "beta_image_url": "/static/images/cards/beta/wisp.png",
     "type_key": "Skill",
     "rarity_key": "Common",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 350
   },
   {
@@ -1455,6 +1492,9 @@
     "beta_image_url": "/static/images/cards/beta/big_bang.png",
     "type_key": "Skill",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 180
   },
   {
@@ -1528,6 +1568,9 @@
     "beta_image_url": "/static/images/cards/beta/bombardment.png",
     "type_key": "Attack",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 182
   },
   {
@@ -1598,6 +1641,11 @@
     "beta_image_url": "/static/images/cards/beta/ascenders_bane.png",
     "type_key": "Curse",
     "rarity_key": "Curse",
+    "keywords_key": [
+      "Ethereal",
+      "Unplayable",
+      "Eternal"
+    ],
     "compendium_order": 503
   },
   {
@@ -2006,6 +2054,9 @@
     "beta_image_url": "/static/images/cards/beta/the_hunt.png",
     "type_key": "Attack",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 168
   },
   {
@@ -2074,6 +2125,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 470
   },
   {
@@ -2515,6 +2569,9 @@
     "beta_image_url": null,
     "type_key": "Attack",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 345
   },
   {
@@ -2662,6 +2719,10 @@
     "beta_image_url": "/static/images/cards/beta/sweeping_gaze.png",
     "type_key": "Attack",
     "rarity_key": "Token",
+    "keywords_key": [
+      "Exhaust",
+      "Ethereal"
+    ],
     "compendium_order": 574
   },
   {
@@ -2734,6 +2795,9 @@
     "beta_image_url": "/static/images/cards/beta/energy_surge.png",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 379
   },
   {
@@ -3152,6 +3216,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 386
   },
   {
@@ -3230,6 +3297,9 @@
     "beta_image_url": null,
     "type_key": "Curse",
     "rarity_key": "Curse",
+    "keywords_key": [
+      "Unplayable"
+    ],
     "compendium_order": 508
   },
   {
@@ -3264,6 +3334,10 @@
     "beta_image_url": null,
     "type_key": "Status",
     "rarity_key": "Status",
+    "keywords_key": [
+      "Ethereal",
+      "Unplayable"
+    ],
     "compendium_order": 553
   },
   {
@@ -3302,6 +3376,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Common",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 393
   },
   {
@@ -3787,6 +3864,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 376
   },
   {
@@ -3931,6 +4011,9 @@
     "beta_image_url": "/static/images/cards/beta/demonic_shield.png",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 25
   },
   {
@@ -4100,6 +4183,9 @@
     "beta_image_url": "/static/images/cards/beta/abrasive.png",
     "type_key": "Power",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Sly"
+    ],
     "compendium_order": 87
   },
   {
@@ -4337,6 +4423,9 @@
     "beta_image_url": null,
     "type_key": "Curse",
     "rarity_key": "Curse",
+    "keywords_key": [
+      "Unplayable"
+    ],
     "compendium_order": 507
   },
   {
@@ -4375,6 +4464,10 @@
     "beta_image_url": null,
     "type_key": "Attack",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Exhaust",
+      "Innate"
+    ],
     "compendium_order": 451
   },
   {
@@ -4484,6 +4577,9 @@
     "beta_image_url": "/static/images/cards/beta/soul.png",
     "type_key": "Skill",
     "rarity_key": "Token",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 572
   },
   {
@@ -4528,6 +4624,9 @@
     "beta_image_url": "/static/images/cards/beta/haze.png",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Sly"
+    ],
     "compendium_order": 128
   },
   {
@@ -4791,6 +4890,9 @@
     "beta_image_url": "/static/images/cards/beta/reap.png",
     "type_key": "Attack",
     "rarity_key": "Common",
+    "keywords_key": [
+      "Retain"
+    ],
     "compendium_order": 323
   },
   {
@@ -4826,6 +4928,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Ancient",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 547
   },
   {
@@ -4896,6 +5001,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Retain"
+    ],
     "compendium_order": 327
   },
   {
@@ -5270,6 +5378,9 @@
     "beta_image_url": "/static/images/cards/beta/afterlife.png",
     "type_key": "Skill",
     "rarity_key": "Common",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 263
   },
   {
@@ -5417,6 +5528,9 @@
     "beta_image_url": "/static/images/cards/beta/ignition.png",
     "type_key": "Skill",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 397
   },
   {
@@ -5679,6 +5793,9 @@
     "beta_image_url": null,
     "type_key": "Attack",
     "rarity_key": "Token",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 570
   },
   {
@@ -6056,6 +6173,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Common",
+    "keywords_key": [
+      "Retain"
+    ],
     "compendium_order": 158
   },
   {
@@ -6107,6 +6227,9 @@
     "beta_image_url": "/static/images/cards/beta/know_thy_place.png",
     "type_key": "Skill",
     "rarity_key": "Common",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 221
   },
   {
@@ -6350,6 +6473,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 440
   },
   {
@@ -6505,6 +6631,10 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Exhaust",
+      "Innate"
+    ],
     "compendium_order": 358
   },
   {
@@ -6540,6 +6670,9 @@
     "beta_image_url": "/static/images/cards/beta/infection.png",
     "type_key": "Status",
     "rarity_key": "Status",
+    "keywords_key": [
+      "Unplayable"
+    ],
     "compendium_order": 556
   },
   {
@@ -6612,6 +6745,9 @@
     "beta_image_url": "/static/images/cards/beta/enfeebling_touch.png",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Ethereal"
+    ],
     "compendium_order": 291
   },
   {
@@ -6687,6 +6823,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Retain"
+    ],
     "compendium_order": 341
   },
   {
@@ -6876,6 +7015,9 @@
     "beta_image_url": "/static/images/cards/beta/spoils_map.png",
     "type_key": "Quest",
     "rarity_key": "Quest",
+    "keywords_key": [
+      "Unplayable"
+    ],
     "compendium_order": 550
   },
   {
@@ -7132,6 +7274,9 @@
     "beta_image_url": "/static/images/cards/beta/sovereign_blade.png",
     "type_key": "Attack",
     "rarity_key": "Token",
+    "keywords_key": [
+      "Retain"
+    ],
     "compendium_order": 573
   },
   {
@@ -7203,6 +7348,9 @@
     "beta_image_url": "/static/images/cards/beta/lantern_key.png",
     "type_key": "Quest",
     "rarity_key": "Quest",
+    "keywords_key": [
+      "Unplayable"
+    ],
     "compendium_order": 549
   },
   {
@@ -7585,6 +7733,9 @@
     "beta_image_url": "/static/images/cards/beta/royal_gamble.png",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 244
   },
   {
@@ -7765,6 +7916,9 @@
     "beta_image_url": "/static/images/cards/beta/the_scythe.png",
     "type_key": "Attack",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 344
   },
   {
@@ -7872,6 +8026,9 @@
     "beta_image_url": "/static/images/cards/beta/legion_of_bone.png",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 305
   },
   {
@@ -7948,6 +8105,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 140
   },
   {
@@ -7986,6 +8146,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 477
   },
   {
@@ -8170,6 +8333,9 @@
     "beta_image_url": null,
     "type_key": "Attack",
     "rarity_key": "Common",
+    "keywords_key": [
+      "Sly"
+    ],
     "compendium_order": 123
   },
   {
@@ -8728,6 +8894,9 @@
     "beta_image_url": "/static/images/cards/beta/bundle_of_joy.png",
     "type_key": "Skill",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 184
   },
   {
@@ -8809,6 +8978,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 467
   },
   {
@@ -9035,6 +9207,9 @@
     "beta_image_url": null,
     "type_key": "Attack",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Innate"
+    ],
     "compendium_order": 473
   },
   {
@@ -9072,6 +9247,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Event",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 536
   },
   {
@@ -9278,6 +9456,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 137
   },
   {
@@ -9316,6 +9497,9 @@
     "beta_image_url": "/static/images/cards/beta/graveblast.png",
     "type_key": "Attack",
     "rarity_key": "Common",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 299
   },
   {
@@ -9504,6 +9688,10 @@
     "beta_image_url": null,
     "type_key": "Curse",
     "rarity_key": "Curse",
+    "keywords_key": [
+      "Innate",
+      "Unplayable"
+    ],
     "compendium_order": 520
   },
   {
@@ -9584,6 +9772,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 498
   },
   {
@@ -9996,6 +10187,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 450
   },
   {
@@ -10344,6 +10538,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Common",
+    "keywords_key": [
+      "Ethereal"
+    ],
     "compendium_order": 282
   },
   {
@@ -10382,6 +10579,10 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Exhaust",
+      "Retain"
+    ],
     "compendium_order": 482
   },
   {
@@ -10419,6 +10620,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Common",
+    "keywords_key": [
+      "Sly"
+    ],
     "compendium_order": 171
   },
   {
@@ -10456,6 +10660,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 44
   },
   {
@@ -10568,6 +10775,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Retain"
+    ],
     "compendium_order": 485
   },
   {
@@ -10637,6 +10847,10 @@
     "beta_image_url": null,
     "type_key": "Curse",
     "rarity_key": "Curse",
+    "keywords_key": [
+      "Ethereal",
+      "Unplayable"
+    ],
     "compendium_order": 505
   },
   {
@@ -10788,6 +11002,10 @@
     "beta_image_url": null,
     "type_key": "Attack",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Exhaust",
+      "Innate"
+    ],
     "compendium_order": 96
   },
   {
@@ -11018,6 +11236,9 @@
     "beta_image_url": "/static/images/cards/beta/demesne.png",
     "type_key": "Power",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Ethereal"
+    ],
     "compendium_order": 284
   },
   {
@@ -11263,6 +11484,9 @@
     "beta_image_url": null,
     "type_key": "Power",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Ethereal"
+    ],
     "compendium_order": 378
   },
   {
@@ -11296,6 +11520,9 @@
     "beta_image_url": "/static/images/cards/beta/debris.png",
     "type_key": "Status",
     "rarity_key": "Status",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 554
   },
   {
@@ -11602,6 +11829,9 @@
     "beta_image_url": "/static/images/cards/beta/seance.png",
     "type_key": "Skill",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Ethereal"
+    ],
     "compendium_order": 330
   },
   {
@@ -11708,6 +11938,9 @@
     "beta_image_url": null,
     "type_key": "Curse",
     "rarity_key": "Curse",
+    "keywords_key": [
+      "Unplayable"
+    ],
     "compendium_order": 515
   },
   {
@@ -11850,6 +12083,9 @@
     "beta_image_url": null,
     "type_key": "Status",
     "rarity_key": "Status",
+    "keywords_key": [
+      "Unplayable"
+    ],
     "compendium_order": 552
   },
   {
@@ -11887,6 +12123,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 449
   },
   {
@@ -13062,6 +13301,9 @@
     "beta_image_url": "/static/images/cards/beta/relax.png",
     "type_key": "Skill",
     "rarity_key": "Ancient",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 541
   },
   {
@@ -13099,6 +13341,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 411
   },
   {
@@ -13318,6 +13563,9 @@
     "beta_image_url": "/static/images/cards/beta/scrawl.png",
     "type_key": "Skill",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 488
   },
   {
@@ -13701,6 +13949,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 53
   },
   {
@@ -13739,6 +13990,9 @@
     "beta_image_url": "/static/images/cards/beta/mimic.png",
     "type_key": "Skill",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 472
   },
   {
@@ -13861,6 +14115,9 @@
     "beta_image_url": null,
     "type_key": "Attack",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 32
   },
   {
@@ -13938,6 +14195,9 @@
     "beta_image_url": "/static/images/cards/beta/enthralled.png",
     "type_key": "Curse",
     "rarity_key": "Curse",
+    "keywords_key": [
+      "Eternal"
+    ],
     "compendium_order": 510
   },
   {
@@ -14044,6 +14304,9 @@
     "beta_image_url": "/static/images/cards/beta/forbidden_grimoire.png",
     "type_key": "Power",
     "rarity_key": "Ancient",
+    "keywords_key": [
+      "Eternal"
+    ],
     "compendium_order": 296
   },
   {
@@ -14081,6 +14344,9 @@
     "beta_image_url": "/static/images/cards/beta/sow.png",
     "type_key": "Attack",
     "rarity_key": "Common",
+    "keywords_key": [
+      "Retain"
+    ],
     "compendium_order": 339
   },
   {
@@ -14227,6 +14493,9 @@
     "beta_image_url": null,
     "type_key": "Attack",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Retain"
+    ],
     "compendium_order": 292
   },
   {
@@ -14375,6 +14644,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 28
   },
   {
@@ -14412,6 +14684,9 @@
     "beta_image_url": "/static/images/cards/beta/transfigure.png",
     "type_key": "Skill",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 346
   },
   {
@@ -14718,6 +14993,10 @@
     "beta_image_url": "/static/images/cards/beta/apparition.png",
     "type_key": "Skill",
     "rarity_key": "Ancient",
+    "keywords_key": [
+      "Exhaust",
+      "Ethereal"
+    ],
     "compendium_order": 522
   },
   {
@@ -14910,6 +15189,9 @@
     "beta_image_url": "/static/images/cards/beta/voltaic.png",
     "type_key": "Skill",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 436
   },
   {
@@ -14945,6 +15227,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 480
   },
   {
@@ -14982,6 +15267,9 @@
     "beta_image_url": "/static/images/cards/beta/production.png",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 479
   },
   {
@@ -15016,6 +15304,10 @@
     "beta_image_url": null,
     "type_key": "Curse",
     "rarity_key": "Curse",
+    "keywords_key": [
+      "Unplayable",
+      "Eternal"
+    ],
     "compendium_order": 506
   },
   {
@@ -15132,6 +15424,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Common",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 144
   },
   {
@@ -15236,6 +15531,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Event",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 529
   },
   {
@@ -15271,6 +15569,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 104
   },
   {
@@ -15415,6 +15716,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 410
   },
   {
@@ -15523,6 +15827,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 320
   },
   {
@@ -15769,6 +16076,9 @@
     "beta_image_url": null,
     "type_key": "Status",
     "rarity_key": "Status",
+    "keywords_key": [
+      "Unplayable"
+    ],
     "compendium_order": 561
   },
   {
@@ -15806,6 +16116,9 @@
     "beta_image_url": null,
     "type_key": "Attack",
     "rarity_key": "Common",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 52
   },
   {
@@ -16038,6 +16351,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 322
   },
   {
@@ -16118,6 +16434,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Sly"
+    ],
     "compendium_order": 151
   },
   {
@@ -16156,6 +16475,9 @@
     "beta_image_url": "/static/images/cards/beta/ricochet.png",
     "type_key": "Attack",
     "rarity_key": "Common",
+    "keywords_key": [
+      "Sly"
+    ],
     "compendium_order": 152
   },
   {
@@ -16308,6 +16630,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 210
   },
   {
@@ -16341,6 +16666,9 @@
     "beta_image_url": "/static/images/cards/beta/soot.png",
     "type_key": "Status",
     "rarity_key": "Status",
+    "keywords_key": [
+      "Unplayable"
+    ],
     "compendium_order": 558
   },
   {
@@ -16414,6 +16742,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 426
   },
   {
@@ -16490,6 +16821,10 @@
     "beta_image_url": "/static/images/cards/beta/luminesce.png",
     "type_key": "Skill",
     "rarity_key": "Token",
+    "keywords_key": [
+      "Exhaust",
+      "Retain"
+    ],
     "compendium_order": 565
   },
   {
@@ -16527,6 +16862,9 @@
     "beta_image_url": "/static/images/cards/beta/whistle.png",
     "type_key": "Attack",
     "rarity_key": "Ancient",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 546
   },
   {
@@ -16706,6 +17044,9 @@
     "beta_image_url": "/static/images/cards/beta/shockwave.png",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 492
   },
   {
@@ -16815,6 +17156,9 @@
     "beta_image_url": "/static/images/cards/beta/synchronize.png",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 428
   },
   {
@@ -17006,6 +17350,9 @@
     "beta_image_url": "/static/images/cards/beta/defile.png",
     "type_key": "Attack",
     "rarity_key": "Common",
+    "keywords_key": [
+      "Ethereal"
+    ],
     "compendium_order": 281
   },
   {
@@ -17123,6 +17470,9 @@
     "beta_image_url": "/static/images/cards/beta/sneaky.png",
     "type_key": "Power",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Sly"
+    ],
     "compendium_order": 159
   },
   {
@@ -17196,6 +17546,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 118
   },
   {
@@ -17348,6 +17701,9 @@
     "beta_image_url": null,
     "type_key": "Status",
     "rarity_key": "Status",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 557
   },
   {
@@ -17420,6 +17776,9 @@
     "beta_image_url": "/static/images/cards/beta/decisions_decisions.png",
     "type_key": "Skill",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 197
   },
   {
@@ -17459,6 +17818,9 @@
     "beta_image_url": null,
     "type_key": "Attack",
     "rarity_key": "Token",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 567
   },
   {
@@ -17498,6 +17860,9 @@
     "beta_image_url": "/static/images/cards/beta/minion_sacrifice.png",
     "type_key": "Skill",
     "rarity_key": "Token",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 568
   },
   {
@@ -17584,6 +17949,9 @@
     "beta_image_url": "/static/images/cards/beta/lethality.png",
     "type_key": "Power",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Ethereal"
+    ],
     "compendium_order": 306
   },
   {
@@ -17719,6 +18087,9 @@
     "beta_image_url": null,
     "type_key": "Curse",
     "rarity_key": "Curse",
+    "keywords_key": [
+      "Unplayable"
+    ],
     "compendium_order": 517
   },
   {
@@ -17800,6 +18171,9 @@
     "beta_image_url": null,
     "type_key": "Curse",
     "rarity_key": "Curse",
+    "keywords_key": [
+      "Unplayable"
+    ],
     "compendium_order": 509
   },
   {
@@ -17950,6 +18324,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 333
   },
   {
@@ -18018,6 +18395,9 @@
     "beta_image_url": "/static/images/cards/beta/spore_mind.png",
     "type_key": "Curse",
     "rarity_key": "Curse",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 519
   },
   {
@@ -18314,6 +18694,9 @@
     "beta_image_url": null,
     "type_key": "Attack",
     "rarity_key": "Common",
+    "keywords_key": [
+      "Ethereal"
+    ],
     "compendium_order": 293
   },
   {
@@ -18384,6 +18767,9 @@
     "beta_image_url": null,
     "type_key": "Curse",
     "rarity_key": "Curse",
+    "keywords_key": [
+      "Unplayable"
+    ],
     "compendium_order": 518
   },
   {
@@ -18526,6 +18912,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 489
   },
   {
@@ -18604,6 +18993,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 490
   },
   {
@@ -18641,6 +19033,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Sly"
+    ],
     "compendium_order": 167
   },
   {
@@ -18680,6 +19075,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Common",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 97
   },
   {
@@ -18932,6 +19330,9 @@
     "beta_image_url": "/static/images/cards/beta/tyranny.png",
     "type_key": "Power",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 259
   },
   {
@@ -19008,6 +19409,9 @@
     "beta_image_url": null,
     "type_key": "Status",
     "rarity_key": "Status",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 559
   },
   {
@@ -19083,6 +19487,9 @@
     "beta_image_url": "/static/images/cards/beta/fuel.png",
     "type_key": "Skill",
     "rarity_key": "Token",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 563
   },
   {
@@ -19194,6 +19601,9 @@
     "beta_image_url": null,
     "type_key": "Curse",
     "rarity_key": "Curse",
+    "keywords_key": [
+      "Unplayable"
+    ],
     "compendium_order": 514
   },
   {
@@ -19341,6 +19751,11 @@
     "beta_image_url": null,
     "type_key": "Curse",
     "rarity_key": "Curse",
+    "keywords_key": [
+      "Innate",
+      "Unplayable",
+      "Eternal"
+    ],
     "compendium_order": 511
   },
   {
@@ -19427,6 +19842,10 @@
     "beta_image_url": null,
     "type_key": "Attack",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust",
+      "Innate"
+    ],
     "compendium_order": 94
   },
   {
@@ -19534,6 +19953,9 @@
     "beta_image_url": null,
     "type_key": "Curse",
     "rarity_key": "Curse",
+    "keywords_key": [
+      "Unplayable"
+    ],
     "compendium_order": 513
   },
   {
@@ -19894,6 +20316,9 @@
     "beta_image_url": "/static/images/cards/beta/minion_strike.png",
     "type_key": "Attack",
     "rarity_key": "Token",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 569
   },
   {
@@ -20054,6 +20479,9 @@
     "beta_image_url": "/static/images/cards/beta/distraction.png",
     "type_key": "Skill",
     "rarity_key": "Event",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 527
   },
   {
@@ -20094,6 +20522,9 @@
     "beta_image_url": "/static/images/cards/beta/dying_star.png",
     "type_key": "Attack",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Ethereal"
+    ],
     "compendium_order": 200
   },
   {
@@ -20171,6 +20602,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 418
   },
   {
@@ -20217,6 +20651,9 @@
     "beta_image_url": null,
     "type_key": "Attack",
     "rarity_key": "Ancient",
+    "keywords_key": [
+      "Innate"
+    ],
     "compendium_order": 165
   },
   {
@@ -20481,6 +20918,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 69
   },
   {
@@ -20514,6 +20954,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 134
   },
   {
@@ -20619,6 +21062,9 @@
     "beta_image_url": null,
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 364
   },
   {
@@ -20915,6 +21361,10 @@
     "beta_image_url": "/static/images/cards/beta/bad_luck.png",
     "type_key": "Curse",
     "rarity_key": "Curse",
+    "keywords_key": [
+      "Unplayable",
+      "Eternal"
+    ],
     "compendium_order": 504
   },
   {
@@ -21366,6 +21816,9 @@
     "beta_image_url": "/static/images/cards/beta/dredge.png",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 288
   },
   {
@@ -21477,6 +21930,9 @@
     "beta_image_url": null,
     "type_key": "Quest",
     "rarity_key": "Quest",
+    "keywords_key": [
+      "Unplayable"
+    ],
     "compendium_order": 548
   },
   {
@@ -21550,6 +22006,9 @@
     "beta_image_url": null,
     "type_key": "Attack",
     "rarity_key": "Ancient",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 537
   },
   {
@@ -21627,6 +22086,9 @@
     "beta_image_url": "/static/images/cards/beta/glimpse_beyond.png",
     "type_key": "Skill",
     "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
     "compendium_order": 298
   }
 ]
