@@ -208,7 +208,7 @@ export default function Navbar() {
                                 rel="noopener noreferrer"
                                 className={className}
                               >
-                                {link.label}
+                                {t(link.label, lang)}
                               </a>
                             ) : (
                               <Link
@@ -216,7 +216,7 @@ export default function Navbar() {
                                 href={fullHref}
                                 className={className}
                               >
-                                {link.label}
+                                {t(link.label, lang)}
                               </Link>
                             );
                           })}
