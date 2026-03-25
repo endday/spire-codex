@@ -220,6 +220,7 @@ class Intent(BaseModel):
     id: str
     name: str
     description: str
+    image_url: str | None = None
 
 
 class Orb(BaseModel):
@@ -227,6 +228,7 @@ class Orb(BaseModel):
     name: str
     description: str
     description_raw: str | None = None
+    image_url: str | None = None
 
 
 class Affliction(BaseModel):

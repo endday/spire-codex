@@ -49,6 +49,11 @@ const DYNAMIC_ROUTES = [
   { endpoint: "/api/powers", prefix: "/powers", priority: 0.6 },
   { endpoint: "/api/events", prefix: "/events", priority: 0.6 },
   { endpoint: "/api/keywords", prefix: "/keywords", priority: 0.7 },
+  { endpoint: "/api/intents", prefix: "/intents", priority: 0.5 },
+  { endpoint: "/api/orbs", prefix: "/orbs", priority: 0.5 },
+  { endpoint: "/api/afflictions", prefix: "/afflictions", priority: 0.5 },
+  { endpoint: "/api/modifiers", prefix: "/modifiers", priority: 0.5 },
+  { endpoint: "/api/achievements", prefix: "/achievements", priority: 0.5 },
 ];
 
 async function fetchEntities(endpoint: string): Promise<EntityWithImage[]> {
@@ -100,7 +105,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }));
 
   // Localized pages: landing pages + list pages + detail pages
-  const LANG_ENTITY_ROUTES = ["cards", "relics", "potions", "monsters", "powers", "events", "characters", "enchantments", "encounters"];
+  const LANG_ENTITY_ROUTES = ["cards", "relics", "potions", "monsters", "powers", "events", "characters", "enchantments", "encounters", "intents", "orbs", "afflictions", "modifiers", "achievements"];
   const langListEntries: MetadataRoute.Sitemap = SUPPORTED_LANGS.flatMap((lang) => [
     {
       url: `${SITE_URL}/${lang}`,

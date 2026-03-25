@@ -8,6 +8,7 @@ BASE = Path(__file__).resolve().parents[3]
 DECOMPILED = BASE / "extraction" / "decompiled"
 ORBS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.Orbs"
 AFFLICTIONS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.Afflictions"
+STATIC_IMAGES = BASE / "backend" / "static" / "images"
 MODIFIERS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.Modifiers"
 
 
@@ -71,10 +72,16 @@ def parse_intents(loc_dir: Path) -> list[dict]:
         title = loc.get(f"{intent_id}.title", intent_id.replace("_", " ").title())
         desc = loc.get(f"{intent_id}.description", "")
         desc_clean = clean_description(desc)
+        # Image URL — check for intent icon
+        img_name = intent_id.lower()
+        image_file = STATIC_IMAGES / "intents" / f"{img_name}.png"
+        image_url = f"/static/images/intents/{img_name}.png" if image_file.exists() else None
+
         intents.append({
             "id": intent_id,
             "name": title,
             "description": desc_clean,
+            "image_url": image_url,
         })
     return intents
 
@@ -119,11 +126,17 @@ def parse_orbs(loc_dir: Path) -> list[dict]:
         desc_resolved = resolve_description(desc_raw, all_vars) if desc_raw else ""
         desc_clean = clean_description(desc_resolved)
 
+        # Image URL
+        img_name = orb_id.lower()
+        image_file = STATIC_IMAGES / "orbs" / f"{img_name}.png"
+        image_url = f"/static/images/orbs/{img_name}.png" if image_file.exists() else None
+
         orbs.append({
             "id": orb_id,
             "name": title,
             "description": desc_clean,
             "description_raw": desc_raw if desc_raw != desc_clean else None,
+            "image_url": image_url,
         })
     return orbs
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
 import type {
   Keyword,
   Intent,
@@ -14,6 +15,7 @@ import type {
 import { cachedFetch } from "@/lib/fetch-cache";
 import RichDescription from "../components/RichDescription";
 import { useLanguage } from "../contexts/LanguageContext";
+import { useLangPrefix } from "@/lib/use-lang-prefix";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -34,6 +36,7 @@ interface Section<T> {
   accent: string;
   initialData?: T[];
   lang: string;
+  linkPrefix?: string;
   render: (item: T) => React.ReactNode;
 }
 
@@ -43,6 +46,7 @@ function ReferenceSection<T extends { id: string }>({
   accent,
   initialData,
   lang,
+  linkPrefix,
   render,
 }: Section<T>) {
   const [data, setData] = useState<T[]>(initialData ?? []);
@@ -75,14 +79,22 @@ function ReferenceSection<T extends { id: string }>({
         </span>
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-        {filtered.map((item) => (
-          <div
-            key={item.id}
-            className="bg-[var(--bg-card)] rounded-lg border border-[var(--border-subtle)] p-4 hover:bg-[var(--bg-card-hover)] transition-all"
-          >
-            {render(item)}
-          </div>
-        ))}
+        {filtered.map((item) => {
+          const content = (
+            <div
+              className="bg-[var(--bg-card)] rounded-lg border border-[var(--border-subtle)] p-4 hover:bg-[var(--bg-card-hover)] transition-all"
+            >
+              {render(item)}
+            </div>
+          );
+          return linkPrefix ? (
+            <Link key={item.id} href={`${linkPrefix}/${item.id.toLowerCase()}`} className="block">
+              {content}
+            </Link>
+          ) : (
+            <div key={item.id}>{content}</div>
+          );
+        })}
       </div>
     </div>
   );
@@ -94,6 +106,7 @@ export default function ReferenceClient({
   initialData: ReferenceData;
 }) {
   const { lang } = useLanguage();
+  const lp = useLangPrefix();
 
   return (
     <>
@@ -168,6 +181,7 @@ export default function ReferenceClient({
         accent="text-blue-400"
         initialData={initialData.orbs}
         lang={lang}
+        linkPrefix={`${lp}/orbs`}
         render={(orb) => (
           <>
             <h3 className="font-semibold text-[var(--text-primary)] mb-1">
@@ -186,6 +200,7 @@ export default function ReferenceClient({
         accent="text-red-400"
         initialData={initialData.afflictions}
         lang={lang}
+        linkPrefix={`${lp}/afflictions`}
         render={(aff) => (
           <>
             <div className="flex items-start justify-between mb-1">
@@ -216,6 +231,7 @@ export default function ReferenceClient({
         accent="text-amber-400"
         initialData={initialData.intents}
         lang={lang}
+        linkPrefix={`${lp}/intents`}
         render={(intent) => (
           <>
             <h3 className="font-semibold text-[var(--text-primary)] mb-1">
@@ -234,6 +250,7 @@ export default function ReferenceClient({
         accent="text-purple-400"
         initialData={initialData.modifiers}
         lang={lang}
+        linkPrefix={`${lp}/modifiers`}
         render={(mod) => (
           <>
             <h3 className="font-semibold text-[var(--text-primary)] mb-1">
@@ -252,6 +269,7 @@ export default function ReferenceClient({
         accent="text-yellow-400"
         initialData={initialData.achievements}
         lang={lang}
+        linkPrefix={`${lp}/achievements`}
         render={(ach) => (
           <>
             <h3 className="font-semibold text-[var(--text-primary)] mb-1">
