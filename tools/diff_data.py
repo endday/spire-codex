@@ -37,7 +37,8 @@ import shutil
 from pathlib import Path
 from collections import defaultdict
 
-DATA_DIR = Path(__file__).resolve().parent.parent / "data"
+BASE_DIR = Path(__file__).resolve().parent.parent
+DATA_DIR = BASE_DIR / "data" / "eng"
 
 # Slay the Spire 2 Steam App ID (fixed)
 STEAM_APP_ID = 2868840
@@ -93,8 +94,8 @@ def extract_git_data(ref: str, tmp_dir: Path) -> Path:
     out.mkdir(parents=True, exist_ok=True)
     # List data files at that ref
     result = subprocess.run(
-        ["git", "ls-tree", "-r", "--name-only", ref, "data/"],
-        capture_output=True, text=True, cwd=DATA_DIR.parent
+        ["git", "ls-tree", "-r", "--name-only", ref, "data/eng/"],
+        capture_output=True, text=True, cwd=BASE_DIR
     )
     if result.returncode != 0:
         print(f"Error: Could not read git ref '{ref}': {result.stderr.strip()}", file=sys.stderr)
@@ -105,7 +106,7 @@ def extract_git_data(ref: str, tmp_dir: Path) -> Path:
         fname = Path(line).name
         content = subprocess.run(
             ["git", "show", f"{ref}:{line}"],
-            capture_output=True, text=True, cwd=DATA_DIR.parent
+            capture_output=True, text=True, cwd=BASE_DIR
         )
         if content.returncode == 0:
             (out / fname).write_text(content.stdout, encoding="utf-8")
@@ -444,7 +445,7 @@ def main():
             changelog = build_json_output(results, game_version, build_id, date, title, old_label, new_label)
             # Save to changelogs directory — keyed by tag
             tag = changelog["tag"]
-            out_path = DATA_DIR / "changelogs" / f"{tag}.json"
+            out_path = BASE_DIR / "data" / "changelogs" / f"{tag}.json"
             out_path.parent.mkdir(parents=True, exist_ok=True)
             with open(out_path, "w", encoding="utf-8") as f:
                 json.dump(changelog, f, indent=2, ensure_ascii=False)
