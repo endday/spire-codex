@@ -200,6 +200,7 @@ export default function MonsterDetail() {
   const [powerData, setPowerData] = useState<Record<string, Power>>({});
   const [loading, setLoading] = useState(true);
   const [notFound, setNotFound] = useState(false);
+  const [betaArt, setBetaArt] = useState(false);
 
   useEffect(() => {
     if (!id) return;
@@ -212,13 +213,20 @@ export default function MonsterDetail() {
 
   // Fetch powers for tooltips
   useEffect(() => {
-    if (!monster?.moves) return;
+    if (!monster) return;
     const powerIds = new Set<string>();
-    for (const move of monster.moves) {
-      if (move.powers) {
-        for (const p of move.powers) {
-          powerIds.add(p.power_id);
+    if (monster.moves) {
+      for (const move of monster.moves) {
+        if (move.powers) {
+          for (const p of move.powers) {
+            powerIds.add(p.power_id);
+          }
         }
+      }
+    }
+    if (monster.innate_powers) {
+      for (const p of monster.innate_powers) {
+        powerIds.add(p.power_id);
       }
     }
     if (powerIds.size === 0) return;
@@ -281,13 +289,26 @@ export default function MonsterDetail() {
 
       {/* Image */}
       {monster.image_url && (
-        <div className="mb-6">
+        <div className="mb-6 relative">
           <img
-            src={`${API}${monster.image_url}`}
+            src={`${API}${betaArt && monster.beta_image_url ? monster.beta_image_url : monster.image_url}`}
             alt={`${monster.name} - Slay the Spire 2 Monster`}
             className="mx-auto max-h-80 object-contain"
             crossOrigin="anonymous"
           />
+          {monster.beta_image_url && (
+            <button
+              onClick={() => setBetaArt(!betaArt)}
+              className={`absolute top-2 right-2 text-sm w-8 h-8 flex items-center justify-center rounded transition-colors ${
+                betaArt
+                  ? "bg-amber-950/60 border border-amber-700/50"
+                  : "bg-[var(--bg-primary)] border border-[var(--border-subtle)] opacity-50 hover:opacity-100"
+              }`}
+              title={betaArt ? "Show current art" : "Show concept art"}
+            >
+              ✏️
+            </button>
+          )}
         </div>
       )}
 
@@ -347,6 +368,32 @@ export default function MonsterDetail() {
                 </span>
               </div>
             )}
+          </div>
+        </div>
+      )}
+
+      {/* Innate Powers */}
+      {monster.innate_powers && monster.innate_powers.length > 0 && (
+        <div className="bg-[var(--bg-card)] rounded-lg border border-[var(--border-subtle)] p-4 mb-4">
+          <h2 className="text-sm font-semibold text-[var(--text-muted)] uppercase tracking-wide mb-3">
+            Innate Powers
+          </h2>
+          <p className="text-xs text-[var(--text-muted)] mb-2">Applied at the start of combat</p>
+          <div className="flex flex-wrap gap-1.5">
+            {monster.innate_powers.map((p, i) => {
+              const power = powerData[p.power_id];
+              const displayName = power
+                ? power.name
+                : p.power_id.replace(/_/g, " ").toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase());
+              return (
+                <PowerPill
+                  key={i}
+                  p={{ power_id: p.power_id, target: "self", amount: p.amount }}
+                  powerData={powerData}
+                  lp={lp}
+                />
+              );
+            })}
           </div>
         </div>
       )}

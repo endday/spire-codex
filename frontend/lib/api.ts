@@ -6,6 +6,21 @@ async function fetchApi<T>(path: string): Promise<T> {
   return res.json();
 }
 
+export interface CardRiderEffect {
+  id: string;
+  name: string;
+  description: string;
+}
+
+export interface CardTypeVariant {
+  type: string;
+  description: string;
+  damage: number | null;
+  block: number | null;
+  image_url: string | null;
+  riders: CardRiderEffect[] | null;
+}
+
 export interface Card {
   id: string;
   name: string;
@@ -36,6 +51,7 @@ export interface Card {
   upgrade: Record<string, string | number | null> | null;
   image_url: string | null;
   beta_image_url: string | null;
+  type_variants: Record<string, CardTypeVariant> | null;
   compendium_order: number;
 }
 
@@ -114,6 +130,11 @@ export interface MonsterEncounter {
   is_weak: boolean;
 }
 
+export interface MonsterInnatePower {
+  power_id: string;
+  amount: number;
+}
+
 export interface Monster {
   id: string;
   name: string;
@@ -126,7 +147,9 @@ export interface Monster {
   damage_values: Record<string, { normal: number; ascension?: number; hit_count?: number }> | null;
   block_values: Record<string, number> | null;
   encounters: MonsterEncounter[] | null;
+  innate_powers: MonsterInnatePower[] | null;
   image_url: string | null;
+  beta_image_url: string | null;
 }
 
 export interface Potion {

@@ -25,7 +25,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/architect.png"
+    "image_url": "/static/images/monsters/architect.png",
+    "beta_image_url": null
   },
   {
     "id": "ASSASSIN_RUBY_RAIDER",
@@ -62,7 +63,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/assassin_ruby_raider.png"
+    "image_url": "/static/images/monsters/assassin_ruby_raider.png",
+    "beta_image_url": null
   },
   {
     "id": "AXE_RUBY_RAIDER",
@@ -121,7 +123,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/axe_ruby_raider.png"
+    "image_url": "/static/images/monsters/axe_ruby_raider.png",
+    "beta_image_url": null
   },
   {
     "id": "AXEBOT",
@@ -212,7 +215,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/axebot.png"
+    "image_url": "/static/images/monsters/axebot.png",
+    "beta_image_url": null
   },
   {
     "id": "BATTLE_FRIEND_V1",
@@ -240,7 +244,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/battle_friend_v1.png"
+    "image_url": "/static/images/monsters/battle_friend_v1.png",
+    "beta_image_url": null
   },
   {
     "id": "BATTLE_FRIEND_V2",
@@ -268,7 +273,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/battle_friend_v2.png"
+    "image_url": "/static/images/monsters/battle_friend_v2.png",
+    "beta_image_url": null
   },
   {
     "id": "BATTLE_FRIEND_V3",
@@ -296,7 +302,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/battle_friend_v3.png"
+    "image_url": "/static/images/monsters/battle_friend_v3.png",
+    "beta_image_url": null
   },
   {
     "id": "BOWLBUG_EGG",
@@ -347,7 +354,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/bowlbug_egg.png"
+    "image_url": "/static/images/monsters/bowlbug_egg.png",
+    "beta_image_url": null
   },
   {
     "id": "BOWLBUG_NECTAR",
@@ -409,7 +417,8 @@
         "is_weak": true
       }
     ],
-    "image_url": "/static/images/monsters/bowlbug_nectar.png"
+    "image_url": "/static/images/monsters/bowlbug_nectar.png",
+    "beta_image_url": null
   },
   {
     "id": "BOWLBUG_ROCK",
@@ -465,7 +474,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/bowlbug_rock.png"
+    "image_url": "/static/images/monsters/bowlbug_rock.png",
+    "beta_image_url": null
   },
   {
     "id": "BOWLBUG_SILK",
@@ -525,7 +535,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/bowlbug_silk.png"
+    "image_url": "/static/images/monsters/bowlbug_silk.png",
+    "beta_image_url": null
   },
   {
     "id": "BRUTE_RUBY_RAIDER",
@@ -574,7 +585,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/brute_ruby_raider.png"
+    "image_url": "/static/images/monsters/brute_ruby_raider.png",
+    "beta_image_url": null
   },
   {
     "id": "BYGONE_EFFIGY",
@@ -633,7 +645,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/bygone_effigy.png"
+    "image_url": "/static/images/monsters/bygone_effigy.png",
+    "beta_image_url": null
   },
   {
     "id": "BYRDONIS",
@@ -685,7 +698,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/byrdonis.png"
+    "image_url": "/static/images/monsters/byrdonis.png",
+    "beta_image_url": null
   },
   {
     "id": "BYRDPIP",
@@ -705,7 +719,8 @@
     "damage_values": null,
     "block_values": null,
     "encounters": null,
-    "image_url": "/static/images/monsters/byrdpip.png"
+    "image_url": "/static/images/monsters/byrdpip.png",
+    "beta_image_url": null
   },
   {
     "id": "CALCIFIED_CULTIST",
@@ -761,7 +776,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/calcified_cultist.png"
+    "image_url": "/static/images/monsters/calcified_cultist.png",
+    "beta_image_url": null
   },
   {
     "id": "CEREMONIAL_BEAST",
@@ -867,7 +883,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/ceremonial_beast.png"
+    "image_url": "/static/images/monsters/ceremonial_beast.png",
+    "beta_image_url": null
   },
   {
     "id": "CHOMPER",
@@ -911,7 +928,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/chomper.png"
+    "image_url": "/static/images/monsters/chomper.png",
+    "beta_image_url": null
   },
   {
     "id": "CORPSE_SLUG",
@@ -980,7 +998,8 @@
         "is_weak": true
       }
     ],
-    "image_url": "/static/images/monsters/corpse_slug.png"
+    "image_url": "/static/images/monsters/corpse_slug.png",
+    "beta_image_url": null
   },
   {
     "id": "CROSSBOW_RUBY_RAIDER",
@@ -1023,7 +1042,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/crossbow_ruby_raider.png"
+    "image_url": "/static/images/monsters/crossbow_ruby_raider.png",
+    "beta_image_url": null
   },
   {
     "id": "CRUSHER",
@@ -1126,7 +1146,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/crusher.png"
+    "image_url": "/static/images/monsters/crusher.png",
+    "beta_image_url": null
   },
   {
     "id": "CUBEX_CONSTRUCT",
@@ -1217,7 +1238,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/cubex_construct.png"
+    "image_url": "/static/images/monsters/cubex_construct.png",
+    "beta_image_url": null
   },
   {
     "id": "DAMP_CULTIST",
@@ -1266,12 +1288,13 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/damp_cultist.png"
+    "image_url": "/static/images/monsters/damp_cultist.png",
+    "beta_image_url": null
   },
   {
     "id": "DECIMILLIPEDE_SEGMENT",
     "name": "Decimillipede",
-    "type": "Normal",
+    "type": "Elite",
     "min_hp": 42,
     "max_hp": 48,
     "min_hp_ascension": 48,
@@ -1347,7 +1370,8 @@
     },
     "block_values": null,
     "encounters": null,
-    "image_url": "/static/images/monsters/decimillipede.png"
+    "image_url": "/static/images/monsters/decimillipede.png",
+    "beta_image_url": null
   },
   {
     "id": "DEVOTED_SCULPTOR",
@@ -1389,7 +1413,8 @@
         "is_weak": true
       }
     ],
-    "image_url": "/static/images/monsters/devoted_sculptor.png"
+    "image_url": "/static/images/monsters/devoted_sculptor.png",
+    "beta_image_url": null
   },
   {
     "id": "DOOR",
@@ -1464,7 +1489,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/door.png"
+    "image_url": "/static/images/monsters/door.png",
+    "beta_image_url": "/static/images/monsters/beta/door.png"
   },
   {
     "id": "DOORMAKER",
@@ -1518,7 +1544,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/doormaker.png"
+    "image_url": "/static/images/monsters/doormaker.png",
+    "beta_image_url": "/static/images/monsters/beta/door_maker_placeholder_2.png"
   },
   {
     "id": "ENTOMANCER",
@@ -1588,7 +1615,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/entomancer.png"
+    "image_url": "/static/images/monsters/entomancer.png",
+    "beta_image_url": null
   },
   {
     "id": "EXOSKELETON",
@@ -1651,7 +1679,8 @@
         "is_weak": true
       }
     ],
-    "image_url": "/static/images/monsters/exoskeleton.png"
+    "image_url": "/static/images/monsters/exoskeleton.png",
+    "beta_image_url": null
   },
   {
     "id": "EYE_WITH_TEETH",
@@ -1679,7 +1708,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/eye_with_teeth.png"
+    "image_url": "/static/images/monsters/eye_with_teeth.png",
+    "beta_image_url": null
   },
   {
     "id": "FABRICATOR",
@@ -1734,7 +1764,89 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/fabricator.png"
+    "image_url": "/static/images/monsters/fabricator.png",
+    "beta_image_url": null
+  },
+  {
+    "id": "FAKE_MERCHANT_MONSTER",
+    "name": "The Merchant???",
+    "type": "Normal",
+    "min_hp": 165,
+    "max_hp": 165,
+    "min_hp_ascension": 175,
+    "max_hp_ascension": 175,
+    "moves": [
+      {
+        "id": "SWIPE",
+        "name": "Swipe",
+        "intent": "Attack",
+        "damage": {
+          "normal": 13,
+          "ascension": 15
+        }
+      },
+      {
+        "id": "SPEW_COINS",
+        "name": "Spew Coins",
+        "intent": "Attack",
+        "damage": {
+          "normal": 2
+        }
+      },
+      {
+        "id": "THROW_RELIC",
+        "name": "Throw Relic",
+        "intent": "Attack + Debuff",
+        "powers": [
+          {
+            "power_id": "FRAIL",
+            "target": "player",
+            "amount": 1
+          }
+        ],
+        "damage": {
+          "normal": 9,
+          "ascension": 10
+        }
+      },
+      {
+        "id": "ENRAGE",
+        "name": "Enrage",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ]
+      }
+    ],
+    "damage_values": {
+      "Swipe": {
+        "normal": 13,
+        "ascension": 15
+      },
+      "ThrowRelic": {
+        "normal": 9,
+        "ascension": 10
+      },
+      "spewCoins": {
+        "normal": 2
+      }
+    },
+    "block_values": null,
+    "encounters": [
+      {
+        "encounter_id": "FAKE_MERCHANT_EVENT_ENCOUNTER",
+        "encounter_name": "The Merchant???",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/fake_merchant.png",
+    "beta_image_url": null
   },
   {
     "id": "FAT_GREMLIN",
@@ -1767,7 +1879,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/fat_gremlin.png"
+    "image_url": "/static/images/monsters/fat_gremlin.png",
+    "beta_image_url": null
   },
   {
     "id": "FLAIL_KNIGHT",
@@ -1831,7 +1944,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/flail_knight.png"
+    "image_url": "/static/images/monsters/flail_knight.png",
+    "beta_image_url": null
   },
   {
     "id": "FLYCONID",
@@ -1911,7 +2025,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/flyconid.png"
+    "image_url": "/static/images/monsters/flyconid.png",
+    "beta_image_url": null
   },
   {
     "id": "FOGMOG",
@@ -1989,7 +2104,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/fogmog.png"
+    "image_url": "/static/images/monsters/fogmog.png",
+    "beta_image_url": null
   },
   {
     "id": "FOSSIL_STALKER",
@@ -2061,7 +2177,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/fossil_stalker.png"
+    "image_url": "/static/images/monsters/fossil_stalker.png",
+    "beta_image_url": null
   },
   {
     "id": "FROG_KNIGHT",
@@ -2143,7 +2260,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/frog_knight.png"
+    "image_url": "/static/images/monsters/frog_knight.png",
+    "beta_image_url": null
   },
   {
     "id": "FUZZY_WURM_CRAWLER",
@@ -2208,7 +2326,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/fuzzy_wurm_crawler.png"
+    "image_url": "/static/images/monsters/fuzzy_wurm_crawler.png",
+    "beta_image_url": null
   },
   {
     "id": "GAS_BOMB",
@@ -2245,7 +2364,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/gas_bomb.png"
+    "image_url": "/static/images/monsters/gas_bomb.png",
+    "beta_image_url": null
   },
   {
     "id": "GLOBE_HEAD",
@@ -2324,7 +2444,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/orb_head.png"
+    "image_url": "/static/images/monsters/orb_head.png",
+    "beta_image_url": null
   },
   {
     "id": "GREMLIN_MERC",
@@ -2405,7 +2526,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/gremlin_merc.png"
+    "image_url": "/static/images/monsters/gremlin_merc.png",
+    "beta_image_url": null
   },
   {
     "id": "GUARDBOT",
@@ -2425,7 +2547,8 @@
     "damage_values": null,
     "block_values": null,
     "encounters": null,
-    "image_url": "/static/images/monsters/guardbot.png"
+    "image_url": "/static/images/monsters/guardbot.png",
+    "beta_image_url": null
   },
   {
     "id": "HAUNTED_SHIP",
@@ -2512,7 +2635,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/haunted_ship.png"
+    "image_url": "/static/images/monsters/haunted_ship.png",
+    "beta_image_url": null
   },
   {
     "id": "HUNTER_KILLER",
@@ -2576,7 +2700,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/hunter_killer.png"
+    "image_url": "/static/images/monsters/hunter_killer.png",
+    "beta_image_url": null
   },
   {
     "id": "INFESTED_PRISM",
@@ -2653,7 +2778,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/infested_prism.png"
+    "image_url": "/static/images/monsters/infested_prism.png",
+    "beta_image_url": null
   },
   {
     "id": "INKLET",
@@ -2718,7 +2844,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/inklet.png"
+    "image_url": "/static/images/monsters/inklet.png",
+    "beta_image_url": null
   },
   {
     "id": "KIN_FOLLOWER",
@@ -2782,7 +2909,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/kin_follower.png"
+    "image_url": "/static/images/monsters/kin_follower.png",
+    "beta_image_url": null
   },
   {
     "id": "KIN_PRIEST",
@@ -2873,7 +3001,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/kin_priest.png"
+    "image_url": "/static/images/monsters/kin_priest.png",
+    "beta_image_url": null
   },
   {
     "id": "KNOWLEDGE_DEMON",
@@ -2951,7 +3080,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/knowledge_demon.png"
+    "image_url": "/static/images/monsters/knowledge_demon.png",
+    "beta_image_url": null
   },
   {
     "id": "LAGAVULIN_MATRIARCH",
@@ -3033,7 +3163,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/lagavulin_matriarch.png"
+    "image_url": "/static/images/monsters/lagavulin_matriarch.png",
+    "beta_image_url": null
   },
   {
     "id": "LEAF_SLIME_M",
@@ -3096,7 +3227,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/leaf_slime_m.png"
+    "image_url": "/static/images/monsters/leaf_slime_m.png",
+    "beta_image_url": null
   },
   {
     "id": "LEAF_SLIME_S",
@@ -3148,7 +3280,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/leaf_slime_s.png"
+    "image_url": "/static/images/monsters/leaf_slime_s.png",
+    "beta_image_url": null
   },
   {
     "id": "LIVING_FOG",
@@ -3218,7 +3351,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/living_smog.png"
+    "image_url": "/static/images/monsters/living_smog.png",
+    "beta_image_url": null
   },
   {
     "id": "LIVING_SHIELD",
@@ -3273,7 +3407,8 @@
         "is_weak": true
       }
     ],
-    "image_url": "/static/images/monsters/living_shield.png"
+    "image_url": "/static/images/monsters/living_shield.png",
+    "beta_image_url": null
   },
   {
     "id": "LOUSE_PROGENITOR",
@@ -3342,7 +3477,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/louse_progenitor.png"
+    "image_url": "/static/images/monsters/louse_progenitor.png",
+    "beta_image_url": null
   },
   {
     "id": "MAGI_KNIGHT",
@@ -3411,7 +3547,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/magi_knight.png"
+    "image_url": "/static/images/monsters/magi_knight.png",
+    "beta_image_url": null
   },
   {
     "id": "MAWLER",
@@ -3475,7 +3612,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/mawler.png"
+    "image_url": "/static/images/monsters/mawler.png",
+    "beta_image_url": null
   },
   {
     "id": "MECHA_KNIGHT",
@@ -3545,7 +3683,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/mecha_knight.png"
+    "image_url": "/static/images/monsters/mecha_knight.png",
+    "beta_image_url": null
   },
   {
     "id": "MYTE",
@@ -3607,7 +3746,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/myte.png"
+    "image_url": "/static/images/monsters/myte.png",
+    "beta_image_url": null
   },
   {
     "id": "NIBBIT",
@@ -3676,7 +3816,8 @@
         "is_weak": true
       }
     ],
-    "image_url": "/static/images/monsters/nibbit.png"
+    "image_url": "/static/images/monsters/nibbit.png",
+    "beta_image_url": null
   },
   {
     "id": "NOISEBOT",
@@ -3696,7 +3837,8 @@
     "damage_values": null,
     "block_values": null,
     "encounters": null,
-    "image_url": "/static/images/monsters/noisebot.png"
+    "image_url": "/static/images/monsters/noisebot.png",
+    "beta_image_url": null
   },
   {
     "id": "OSTY",
@@ -3716,7 +3858,8 @@
     "damage_values": null,
     "block_values": null,
     "encounters": null,
-    "image_url": "/static/images/monsters/osty.png"
+    "image_url": "/static/images/monsters/osty.png",
+    "beta_image_url": null
   },
   {
     "id": "OVICOPTER",
@@ -3790,7 +3933,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/ovicopter.png"
+    "image_url": "/static/images/monsters/ovicopter.png",
+    "beta_image_url": null
   },
   {
     "id": "OWL_MAGISTRATE",
@@ -3874,7 +4018,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/owl_magistrate.png"
+    "image_url": "/static/images/monsters/owl_magistrate.png",
+    "beta_image_url": null
   },
   {
     "id": "PAELS_LEGION",
@@ -3894,7 +4039,8 @@
     "damage_values": null,
     "block_values": null,
     "encounters": null,
-    "image_url": "/static/images/monsters/paels_legion.png"
+    "image_url": "/static/images/monsters/paels_legion.png",
+    "beta_image_url": "/static/images/monsters/beta/paels_legion.png"
   },
   {
     "id": "PARAFRIGHT",
@@ -3923,7 +4069,8 @@
     },
     "block_values": null,
     "encounters": null,
-    "image_url": "/static/images/monsters/parafright.png"
+    "image_url": "/static/images/monsters/parafright.png",
+    "beta_image_url": null
   },
   {
     "id": "PHANTASMAL_GARDENER",
@@ -3998,7 +4145,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/phantasmal_gardener.png"
+    "image_url": "/static/images/monsters/phantasmal_gardener.png",
+    "beta_image_url": null
   },
   {
     "id": "PHROG_PARASITE",
@@ -4042,7 +4190,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/phrog_parasite.png"
+    "image_url": "/static/images/monsters/phrog_parasite.png",
+    "beta_image_url": null
   },
   {
     "id": "PUNCH_CONSTRUCT",
@@ -4121,7 +4270,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/punch_construct.png"
+    "image_url": "/static/images/monsters/punch_construct.png",
+    "beta_image_url": null
   },
   {
     "id": "QUEEN",
@@ -4225,7 +4375,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/queen.png"
+    "image_url": "/static/images/monsters/queen.png",
+    "beta_image_url": null
   },
   {
     "id": "ROCKET",
@@ -4305,7 +4456,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/rocket.png"
+    "image_url": "/static/images/monsters/rocket.png",
+    "beta_image_url": null
   },
   {
     "id": "SCROLL_OF_BITING",
@@ -4376,7 +4528,8 @@
         "is_weak": true
       }
     ],
-    "image_url": "/static/images/monsters/scroll_of_biting.png"
+    "image_url": "/static/images/monsters/scroll_of_biting.png",
+    "beta_image_url": null
   },
   {
     "id": "SEAPUNK",
@@ -4438,7 +4591,8 @@
         "is_weak": true
       }
     ],
-    "image_url": "/static/images/monsters/seapunk.png"
+    "image_url": "/static/images/monsters/seapunk.png",
+    "beta_image_url": null
   },
   {
     "id": "SEWER_CLAM",
@@ -4487,7 +4641,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/sewer_clam.png"
+    "image_url": "/static/images/monsters/sewer_clam.png",
+    "beta_image_url": null
   },
   {
     "id": "SHRINKER_BEETLE",
@@ -4549,7 +4704,8 @@
         "is_weak": true
       }
     ],
-    "image_url": "/static/images/monsters/shrinker_beetle.png"
+    "image_url": "/static/images/monsters/shrinker_beetle.png",
+    "beta_image_url": null
   },
   {
     "id": "SKULKING_COLONY",
@@ -4626,7 +4782,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/skulkling_colomy.png"
+    "image_url": "/static/images/monsters/skulkling_colomy.png",
+    "beta_image_url": null
   },
   {
     "id": "SLIMED_BERSERKER",
@@ -4700,7 +4857,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/slimed_berserker.png"
+    "image_url": "/static/images/monsters/slimed_berserker.png",
+    "beta_image_url": null
   },
   {
     "id": "SLITHERING_STRANGLER",
@@ -4759,7 +4917,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/slithering_strangler.png"
+    "image_url": "/static/images/monsters/slithering_strangler.png",
+    "beta_image_url": null
   },
   {
     "id": "SLUDGE_SPINNER",
@@ -4836,7 +4995,8 @@
         "is_weak": true
       }
     ],
-    "image_url": "/static/images/monsters/sludge_spinner.png"
+    "image_url": "/static/images/monsters/sludge_spinner.png",
+    "beta_image_url": null
   },
   {
     "id": "SLUMBERING_BEETLE",
@@ -4881,7 +5041,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/slumbering_beetle.png"
+    "image_url": "/static/images/monsters/slumbering_beetle.png",
+    "beta_image_url": null
   },
   {
     "id": "SNAPPING_JAXFRUIT",
@@ -4932,7 +5093,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/snapping_jaxfruit.png"
+    "image_url": "/static/images/monsters/snapping_jaxfruit.png",
+    "beta_image_url": null
   },
   {
     "id": "SNEAKY_GREMLIN",
@@ -4974,7 +5136,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/sneaky_gremlin.png"
+    "image_url": "/static/images/monsters/sneaky_gremlin.png",
+    "beta_image_url": null
   },
   {
     "id": "SOUL_FYSH",
@@ -5061,7 +5224,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/soul_fysh.png"
+    "image_url": "/static/images/monsters/soul_fysh.png",
+    "beta_image_url": null
   },
   {
     "id": "SOUL_NEXUS",
@@ -5138,7 +5302,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/soul_nexus.png"
+    "image_url": "/static/images/monsters/soul_nexus.png",
+    "beta_image_url": null
   },
   {
     "id": "SPECTRAL_KNIGHT",
@@ -5202,7 +5367,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/spectral_knight.png"
+    "image_url": "/static/images/monsters/spectral_knight.png",
+    "beta_image_url": null
   },
   {
     "id": "SPINY_TOAD",
@@ -5264,7 +5430,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/spiny_toad.png"
+    "image_url": "/static/images/monsters/spiny_toad.png",
+    "beta_image_url": null
   },
   {
     "id": "STABBOT",
@@ -5300,7 +5467,8 @@
     },
     "block_values": null,
     "encounters": null,
-    "image_url": "/static/images/monsters/stabbot.png"
+    "image_url": "/static/images/monsters/stabbot.png",
+    "beta_image_url": null
   },
   {
     "id": "TERROR_EEL",
@@ -5371,7 +5539,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/terror_eel.png"
+    "image_url": "/static/images/monsters/terror_eel.png",
+    "beta_image_url": null
   },
   {
     "id": "TEST_SUBJECT",
@@ -5510,7 +5679,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/test_subject.png"
+    "image_url": "/static/images/monsters/test_subject.png",
+    "beta_image_url": null
   },
   {
     "id": "THE_ADVERSARY_MK_ONE",
@@ -5568,7 +5738,8 @@
     },
     "block_values": null,
     "encounters": null,
-    "image_url": "/static/images/monsters/the_adversary_placeholder.png"
+    "image_url": "/static/images/monsters/the_adversary_placeholder.png",
+    "beta_image_url": null
   },
   {
     "id": "THE_ADVERSARY_MK_THREE",
@@ -5626,7 +5797,8 @@
     },
     "block_values": null,
     "encounters": null,
-    "image_url": "/static/images/monsters/the_adversary_placeholder.png"
+    "image_url": "/static/images/monsters/the_adversary_placeholder.png",
+    "beta_image_url": null
   },
   {
     "id": "THE_ADVERSARY_MK_TWO",
@@ -5684,7 +5856,8 @@
     },
     "block_values": null,
     "encounters": null,
-    "image_url": "/static/images/monsters/the_adversary_placeholder.png"
+    "image_url": "/static/images/monsters/the_adversary_placeholder.png",
+    "beta_image_url": null
   },
   {
     "id": "THE_FORGOTTEN",
@@ -5734,7 +5907,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/the_forgotten.png"
+    "image_url": "/static/images/monsters/the_forgotten.png",
+    "beta_image_url": null
   },
   {
     "id": "THE_INSATIABLE",
@@ -5813,7 +5987,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/the_insatiable.png"
+    "image_url": "/static/images/monsters/the_insatiable.png",
+    "beta_image_url": null
   },
   {
     "id": "THE_LOST",
@@ -5864,7 +6039,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/the_lost.png"
+    "image_url": "/static/images/monsters/the_lost.png",
+    "beta_image_url": null
   },
   {
     "id": "THE_OBSCURA",
@@ -5924,7 +6100,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/the_obscura.png"
+    "image_url": "/static/images/monsters/the_obscura.png",
+    "beta_image_url": null
   },
   {
     "id": "THIEVING_HOPPER",
@@ -6000,7 +6177,8 @@
         "is_weak": true
       }
     ],
-    "image_url": "/static/images/monsters/thieving_hopper.png"
+    "image_url": "/static/images/monsters/thieving_hopper.png",
+    "beta_image_url": null
   },
   {
     "id": "TOADPOLE",
@@ -6071,7 +6249,8 @@
         "is_weak": true
       }
     ],
-    "image_url": "/static/images/monsters/toadpole.png"
+    "image_url": "/static/images/monsters/toadpole.png",
+    "beta_image_url": null
   },
   {
     "id": "TORCH_HEAD_AMALGAM",
@@ -6149,7 +6328,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/amalgam.png"
+    "image_url": "/static/images/monsters/amalgam.png",
+    "beta_image_url": null
   },
   {
     "id": "TOUGH_EGG",
@@ -6191,7 +6371,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/tough_egg.png"
+    "image_url": "/static/images/monsters/tough_egg.png",
+    "beta_image_url": null
   },
   {
     "id": "TRACKER_RUBY_RAIDER",
@@ -6242,7 +6423,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/tracker_ruby_raider.png"
+    "image_url": "/static/images/monsters/tracker_ruby_raider.png",
+    "beta_image_url": null
   },
   {
     "id": "TUNNELER",
@@ -6316,7 +6498,8 @@
         "is_weak": true
       }
     ],
-    "image_url": "/static/images/monsters/tunneler.png"
+    "image_url": "/static/images/monsters/tunneler.png",
+    "beta_image_url": null
   },
   {
     "id": "TURRET_OPERATOR",
@@ -6367,7 +6550,8 @@
         "is_weak": true
       }
     ],
-    "image_url": "/static/images/monsters/turret_operator.png"
+    "image_url": "/static/images/monsters/turret_operator.png",
+    "beta_image_url": null
   },
   {
     "id": "TWIG_SLIME_M",
@@ -6430,7 +6614,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/twig_slime_m.png"
+    "image_url": "/static/images/monsters/twig_slime_m.png",
+    "beta_image_url": null
   },
   {
     "id": "TWIG_SLIME_S",
@@ -6477,7 +6662,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/twig_slime_s.png"
+    "image_url": "/static/images/monsters/twig_slime_s.png",
+    "beta_image_url": null
   },
   {
     "id": "TWO_TAILED_RAT",
@@ -6544,7 +6730,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/two_tailed_rat.png"
+    "image_url": "/static/images/monsters/two_tailed_rat.png",
+    "beta_image_url": null
   },
   {
     "id": "VANTOM",
@@ -6621,7 +6808,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/vantom.png"
+    "image_url": "/static/images/monsters/vantom.png",
+    "beta_image_url": null
   },
   {
     "id": "VINE_SHAMBLER",
@@ -6693,7 +6881,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/vine_shambler.png"
+    "image_url": "/static/images/monsters/vine_shambler.png",
+    "beta_image_url": null
   },
   {
     "id": "WATERFALL_GIANT",
@@ -6832,7 +7021,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/waterfall_giant.png"
+    "image_url": "/static/images/monsters/waterfall_giant.png",
+    "beta_image_url": null
   },
   {
     "id": "WRIGGLER",
@@ -6893,7 +7083,8 @@
         "is_weak": false
       }
     ],
-    "image_url": "/static/images/monsters/wriggler.png"
+    "image_url": "/static/images/monsters/wriggler.png",
+    "beta_image_url": null
   },
   {
     "id": "ZAPBOT",
@@ -6922,6 +7113,348 @@
     },
     "block_values": null,
     "encounters": null,
-    "image_url": "/static/images/monsters/zapbot.png"
+    "image_url": "/static/images/monsters/zapbot.png",
+    "beta_image_url": null
+  },
+  {
+    "id": "DECIMILLIPEDE_SEGMENT_BACK",
+    "name": "Decimillipede Segment (Back)",
+    "type": "Elite",
+    "min_hp": 42,
+    "max_hp": 48,
+    "min_hp_ascension": 48,
+    "max_hp_ascension": 56,
+    "moves": [
+      {
+        "id": "WRITHE",
+        "name": "Writhe",
+        "intent": "Attack",
+        "damage": {
+          "normal": 5,
+          "ascension": 6,
+          "hit_count": 2
+        }
+      },
+      {
+        "id": "BULK",
+        "name": "Bulk",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ],
+        "damage": {
+          "normal": 6,
+          "ascension": 7
+        }
+      },
+      {
+        "id": "CONSTRICT",
+        "name": "Constrict",
+        "intent": "Attack + Debuff",
+        "powers": [
+          {
+            "power_id": "WEAK",
+            "target": "player",
+            "amount": 1
+          }
+        ],
+        "damage": {
+          "normal": 8,
+          "ascension": 9
+        }
+      },
+      {
+        "id": "DEAD",
+        "name": "Dead",
+        "intent": "Unknown"
+      },
+      {
+        "id": "REATTACH",
+        "name": "Reattach",
+        "intent": "Heal"
+      }
+    ],
+    "damage_values": {
+      "Writhe": {
+        "normal": 5,
+        "ascension": 6,
+        "hit_count": 2
+      },
+      "Constrict": {
+        "normal": 8,
+        "ascension": 9
+      },
+      "Bulk": {
+        "normal": 6,
+        "ascension": 7
+      }
+    },
+    "block_values": null,
+    "encounters": [
+      {
+        "encounter_id": "DECIMILLIPEDE_ELITE",
+        "encounter_name": "The Decimillipede",
+        "room_type": "Elite",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/decimillipede_segment_back.png"
+  },
+  {
+    "id": "DECIMILLIPEDE_SEGMENT_FRONT",
+    "name": "Decimillipede Segment (Front)",
+    "type": "Elite",
+    "min_hp": 42,
+    "max_hp": 48,
+    "min_hp_ascension": 48,
+    "max_hp_ascension": 56,
+    "moves": [
+      {
+        "id": "WRITHE",
+        "name": "Writhe",
+        "intent": "Attack",
+        "damage": {
+          "normal": 5,
+          "ascension": 6,
+          "hit_count": 2
+        }
+      },
+      {
+        "id": "BULK",
+        "name": "Bulk",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ],
+        "damage": {
+          "normal": 6,
+          "ascension": 7
+        }
+      },
+      {
+        "id": "CONSTRICT",
+        "name": "Constrict",
+        "intent": "Attack + Debuff",
+        "powers": [
+          {
+            "power_id": "WEAK",
+            "target": "player",
+            "amount": 1
+          }
+        ],
+        "damage": {
+          "normal": 8,
+          "ascension": 9
+        }
+      },
+      {
+        "id": "DEAD",
+        "name": "Dead",
+        "intent": "Unknown"
+      },
+      {
+        "id": "REATTACH",
+        "name": "Reattach",
+        "intent": "Heal"
+      }
+    ],
+    "damage_values": {
+      "Writhe": {
+        "normal": 5,
+        "ascension": 6,
+        "hit_count": 2
+      },
+      "Constrict": {
+        "normal": 8,
+        "ascension": 9
+      },
+      "Bulk": {
+        "normal": 6,
+        "ascension": 7
+      }
+    },
+    "block_values": null,
+    "encounters": [
+      {
+        "encounter_id": "DECIMILLIPEDE_ELITE",
+        "encounter_name": "The Decimillipede",
+        "room_type": "Elite",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/decimillipede_segment_front.png"
+  },
+  {
+    "id": "DECIMILLIPEDE_SEGMENT_MIDDLE",
+    "name": "Decimillipede Segment (Middle)",
+    "type": "Elite",
+    "min_hp": 42,
+    "max_hp": 48,
+    "min_hp_ascension": 48,
+    "max_hp_ascension": 56,
+    "moves": [
+      {
+        "id": "WRITHE",
+        "name": "Writhe",
+        "intent": "Attack",
+        "damage": {
+          "normal": 5,
+          "ascension": 6,
+          "hit_count": 2
+        }
+      },
+      {
+        "id": "BULK",
+        "name": "Bulk",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 2
+          }
+        ],
+        "damage": {
+          "normal": 6,
+          "ascension": 7
+        }
+      },
+      {
+        "id": "CONSTRICT",
+        "name": "Constrict",
+        "intent": "Attack + Debuff",
+        "powers": [
+          {
+            "power_id": "WEAK",
+            "target": "player",
+            "amount": 1
+          }
+        ],
+        "damage": {
+          "normal": 8,
+          "ascension": 9
+        }
+      },
+      {
+        "id": "DEAD",
+        "name": "Dead",
+        "intent": "Unknown"
+      },
+      {
+        "id": "REATTACH",
+        "name": "Reattach",
+        "intent": "Heal"
+      }
+    ],
+    "damage_values": {
+      "Writhe": {
+        "normal": 5,
+        "ascension": 6,
+        "hit_count": 2
+      },
+      "Constrict": {
+        "normal": 8,
+        "ascension": 9
+      },
+      "Bulk": {
+        "normal": 6,
+        "ascension": 7
+      }
+    },
+    "block_values": null,
+    "encounters": [
+      {
+        "encounter_id": "DECIMILLIPEDE_ELITE",
+        "encounter_name": "The Decimillipede",
+        "room_type": "Elite",
+        "act": "Act 2 - Hive",
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/decimillipede_segment_middle.png"
+  },
+  {
+    "id": "MYSTERIOUS_KNIGHT",
+    "name": "Mysterious Knight",
+    "type": "Normal",
+    "min_hp": 101,
+    "max_hp": null,
+    "min_hp_ascension": 108,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "WAR_CHANT",
+        "name": "War Chant",
+        "intent": "Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 3
+          }
+        ]
+      },
+      {
+        "id": "FLAIL",
+        "name": "Flail",
+        "intent": "Attack",
+        "damage": {
+          "normal": 9,
+          "ascension": 10,
+          "hit_count": 2
+        }
+      },
+      {
+        "id": "RAM",
+        "name": "Ram",
+        "intent": "Attack",
+        "damage": {
+          "normal": 15,
+          "ascension": 17
+        }
+      }
+    ],
+    "damage_values": {
+      "Flail": {
+        "normal": 9,
+        "ascension": 10,
+        "hit_count": 2
+      },
+      "Ram": {
+        "normal": 15,
+        "ascension": 17
+      }
+    },
+    "block_values": null,
+    "encounters": [
+      {
+        "encounter_id": "MYSTERIOUS_KNIGHT_EVENT_ENCOUNTER",
+        "encounter_name": "Mysterious Knight",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
+      }
+    ],
+    "image_url": "/static/images/monsters/flail_knight.png",
+    "innate_powers": [
+      {
+        "power_id": "STRENGTH",
+        "amount": 6
+      },
+      {
+        "power_id": "PLATING",
+        "amount": 6
+      }
+    ]
   }
 ]

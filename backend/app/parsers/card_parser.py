@@ -74,7 +74,7 @@ def parse_card_pools() -> dict[str, str]:
     return card_to_color
 
 
-def parse_single_card(filepath: Path, localization: dict, card_pools: dict) -> dict | None:
+def parse_single_card(filepath: Path, localization: dict, card_pools: dict, event_loc: dict | None = None) -> dict | None:
     """Parse a single card C# file."""
     content = filepath.read_text(encoding="utf-8")
     class_name = filepath.stem
@@ -242,7 +242,50 @@ def parse_single_card(filepath: Path, localization: dict, card_pools: dict) -> d
     # Character color from pool
     color = card_pools.get(class_name, "unknown")
 
-    desc_rendered = shared_resolve_description(description, all_vars)
+    # Add card type to vars temporarily so choose() conditionals can resolve
+    resolve_vars = {**all_vars, "CardType": card_type}
+    desc_rendered = shared_resolve_description(description, resolve_vars)
+
+    # Generate type variants for cards with choose() conditionals (e.g. Mad Science)
+    # Mad Science has 9 variants: 3 types × 3 riders per type
+    type_variants = None
+    if "{CardType:choose(" in description:
+        # Rider effects per type (from TinkerTime.cs)
+        RIDERS = {
+            "Attack": ["Sapping", "Violence", "Choking"],
+            "Skill": ["Energized", "Wisdom", "Chaos"],
+            "Power": ["Expertise", "Curious", "Improvement"],
+        }
+        type_variants = {}
+        for vtype in ["Attack", "Skill", "Power"]:
+            v_vars = {**all_vars, "CardType": vtype}
+            v_desc = shared_resolve_description(description, v_vars)
+            v_entry = {"type": vtype, "description": v_desc}
+            if vtype == "Attack" and damage:
+                v_entry["damage"] = damage
+            elif vtype == "Skill" and block:
+                v_entry["block"] = block
+            # Variant-specific image
+            variant_img = f"{card_id.lower()}_{vtype.lower()}.png"
+            if (STATIC_IMAGES / variant_img).exists():
+                v_entry["image_url"] = f"/static/images/cards/{variant_img}"
+            # Rider sub-variants
+            riders = []
+            for rider in RIDERS.get(vtype, []):
+                # Resolve rider description from localization
+                rider_loc_key = f"TINKER_TIME.pages.CHOOSE_RIDER.options.{rider.upper()}.description"
+                rider_title_key = f"TINKER_TIME.pages.CHOOSE_RIDER.options.{rider.upper()}.title"
+                rider_desc_raw = event_loc.get(rider_loc_key, "") if event_loc else ""
+                rider_title = event_loc.get(rider_title_key, rider) if event_loc else rider
+                rider_desc = shared_resolve_description(rider_desc_raw, all_vars) if rider_desc_raw else ""
+                riders.append({
+                    "id": rider.upper(),
+                    "name": rider_title,
+                    "description": rider_desc,
+                })
+            if riders:
+                v_entry["riders"] = riders
+            type_variants[vtype.lower()] = v_entry
 
     star_cost = all_vars.get("StarCost")
 
@@ -273,6 +316,7 @@ def parse_single_card(filepath: Path, localization: dict, card_pools: dict) -> d
         "upgrade": {},
         "image_url": f"/static/images/cards/{card_id.lower()}.png" if (STATIC_IMAGES / f"{card_id.lower()}.png").exists() else None,
         "beta_image_url": f"/static/images/cards/beta/{card_id.lower()}.png" if (STATIC_IMAGES / "beta" / f"{card_id.lower()}.png").exists() else None,
+        "type_variants": type_variants,
     }
 
     if upgrade_damage:
@@ -429,12 +473,18 @@ def parse_all_cards(loc_dir: Path) -> list[dict]:
     rarity_map = build_rarity_map(gameplay_ui)
     kw_names = load_keyword_names(loc_dir)
     power_names = load_power_names(loc_dir)
+    # Load event localization for rider descriptions (Mad Science / Tinker Time)
+    event_loc_file = loc_dir / "events.json"
+    event_loc = {}
+    if event_loc_file.exists():
+        with open(event_loc_file, "r", encoding="utf-8") as f:
+            event_loc = json.load(f)
     cards = []
 
     for filepath in sorted(CARDS_DIR.glob("*.cs")):
         if filepath.stem.startswith("Mock") or filepath.stem == "DeprecatedCard":
             continue
-        card = parse_single_card(filepath, localization, card_pools)
+        card = parse_single_card(filepath, localization, card_pools, event_loc)
         if card:
             localize_card(card, type_map, rarity_map, kw_names, power_names)
             cards.append(card)

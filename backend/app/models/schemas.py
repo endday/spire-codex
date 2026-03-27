@@ -8,6 +8,21 @@ class PowerApplied(BaseModel):
     amount: int
 
 
+class CardRiderEffect(BaseModel):
+    id: str
+    name: str
+    description: str
+
+
+class CardTypeVariant(BaseModel):
+    type: str
+    description: str
+    damage: int | None = None
+    block: int | None = None
+    image_url: str | None = None
+    riders: list[CardRiderEffect] | None = None
+
+
 class Card(BaseModel):
     id: str
     name: str
@@ -38,6 +53,7 @@ class Card(BaseModel):
     upgrade: dict[str, str | int | None] | None = None
     image_url: str | None = None
     beta_image_url: str | None = None
+    type_variants: dict[str, CardTypeVariant] | None = None
     compendium_order: int = 0
 
 
@@ -122,6 +138,11 @@ class MonsterEncounter(BaseModel):
     is_weak: bool = False
 
 
+class MonsterInnatePower(BaseModel):
+    power_id: str
+    amount: int
+
+
 class Monster(BaseModel):
     id: str
     name: str
@@ -134,7 +155,9 @@ class Monster(BaseModel):
     damage_values: dict[str, MonsterDamage] | None = None
     block_values: dict[str, int] | None = None
     encounters: list[MonsterEncounter] | None = None
+    innate_powers: list[MonsterInnatePower] | None = None
     image_url: str | None = None
+    beta_image_url: str | None = None
 
 
 class Potion(BaseModel):

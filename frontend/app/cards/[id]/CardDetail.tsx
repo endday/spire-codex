@@ -138,6 +138,7 @@ const [card, setCard] = useState<Card | null>(null);
   const [notFound, setNotFound] = useState(false);
   const [upgraded, setUpgraded] = useState(false);
   const [betaArt, setBetaArt] = useState(false);
+  const [selectedVariant, setSelectedVariant] = useState<string | null>(null);
   const [tab, setTab] = useState<Tab>("overview");
 
   useEffect(() => {
@@ -193,19 +194,24 @@ const [card, setCard] = useState<Card | null>(null);
   }
 
   const u = upgraded && card.upgrade ? card.upgrade : null;
-  const dmg = u ? getUpgradedValue(card.damage, u.damage) : card.damage;
-  const blk = u ? getUpgradedValue(card.block, u.block) : card.block;
+  const activeVariant = selectedVariant && card.type_variants ? card.type_variants[selectedVariant] : null;
+  const dmg = activeVariant ? activeVariant.damage : (u ? getUpgradedValue(card.damage, u.damage) : card.damage);
+  const blk = activeVariant ? activeVariant.block : (u ? getUpgradedValue(card.block, u.block) : card.block);
   const cost = u && u.cost != null ? (u.cost as number) : card.cost;
+  const displayType = activeVariant ? activeVariant.type : card.type;
   const isUpgraded = upgraded && card.upgrade != null;
   const hasBetaArt = !!card.beta_image_url;
   const hasUpgrade = !!card.upgrade;
+  const hasVariants = !!card.type_variants;
 
-  const imgUrl =
-    betaArt && card.beta_image_url
+  const variantImg = activeVariant?.image_url || null;
+  const imgUrl = variantImg
+    ? variantImg
+    : betaArt && card.beta_image_url
       ? card.beta_image_url
       : card.image_url || card.beta_image_url;
 
-  const descText = getUpgradedDescription(card, upgraded);
+  const descText = activeVariant ? activeVariant.description : getUpgradedDescription(card, upgraded);
   const energyIcon = energyIconMap[card.color] || "colorless";
   const priceRange = getMerchantPriceRange(card.rarity_key || card.rarity, card.color);
 
@@ -277,7 +283,7 @@ const [card, setCard] = useState<Card | null>(null);
           {/* Metadata: Type / Rarity / Color / Target */}
           <div className="flex items-center gap-2 mb-5 text-sm">
             <span className="text-[var(--text-secondary)]">
-              {typeIcons[card.type] || ""} {card.type}
+              {typeIcons[displayType] || ""} {displayType}
             </span>
             <span className="text-[var(--text-muted)]">&middot;</span>
             <span className={rarityColors[card.rarity] || "text-gray-400"}>
@@ -296,6 +302,25 @@ const [card, setCard] = useState<Card | null>(null);
               </>
             )}
           </div>
+
+          {/* Type Variant Toggle */}
+          {hasVariants && card.type_variants && (
+            <div className="flex gap-1.5 mb-4">
+              {Object.entries(card.type_variants).map(([key, v]) => (
+                <button
+                  key={key}
+                  onClick={() => setSelectedVariant(selectedVariant === key ? null : key)}
+                  className={`text-xs px-3 py-1.5 rounded-lg border transition-colors ${
+                    (selectedVariant === key || (!selectedVariant && key === card.type.toLowerCase()))
+                      ? "bg-[var(--accent-gold)]/10 border-[var(--accent-gold)]/40 text-[var(--accent-gold)]"
+                      : "bg-[var(--bg-primary)] border-[var(--border-subtle)] text-[var(--text-muted)] hover:text-[var(--text-secondary)]"
+                  }`}
+                >
+                  {typeIcons[v.type] || ""} {v.type}
+                </button>
+              ))}
+            </div>
+          )}
 
           {/* Tabs */}
           <div className="flex gap-1 mb-5 border-b border-[var(--border-subtle)]">
@@ -379,21 +404,64 @@ const [card, setCard] = useState<Card | null>(null);
                 </div>
               )}
 
-              {/* Description */}
-              <div className="text-sm text-[var(--text-secondary)] leading-relaxed mb-5">
-                <RichDescription
-                  text={descText}
-                  energyIcon={energyIcon}
-                  relatedCards={spawnedCards.map((sc): RelatedCard => ({
-                    id: sc.id,
-                    name: sc.name,
-                    image_url: sc.image_url,
-                    type: sc.type,
-                    rarity: sc.rarity,
-                    cost: sc.cost,
-                  }))}
-                />
-              </div>
+              {/* Description — show all variants if available */}
+              {hasVariants && card.type_variants ? (
+                <div className="space-y-3 mb-5">
+                  {Object.entries(card.type_variants).map(([key, v]) => {
+                    const isActive = selectedVariant === key || (!selectedVariant && key === card.type.toLowerCase());
+                    return (
+                      <div
+                        key={key}
+                        className={`text-sm leading-relaxed rounded-lg border transition-colors overflow-hidden ${
+                          isActive
+                            ? "border-[var(--accent-gold)]/30"
+                            : "border-[var(--border-subtle)] opacity-60"
+                        }`}
+                      >
+                        <div className={`px-3 py-2 ${isActive ? "bg-[var(--accent-gold)]/5" : "bg-[var(--bg-primary)]/50"}`}>
+                          <span className="text-xs font-semibold uppercase tracking-wider text-[var(--text-muted)] mr-2">
+                            {typeIcons[v.type] || ""} {v.type}
+                          </span>
+                          {v.description ? (
+                            <span className="text-[var(--text-secondary)]">
+                              <RichDescription text={v.description} energyIcon={energyIcon} />
+                            </span>
+                          ) : null}
+                        </div>
+                        {v.riders && v.riders.length > 0 && (
+                          <div className="border-t border-[var(--border-subtle)] px-3 py-2 space-y-1.5">
+                            {v.riders.map((r) => (
+                              <div key={r.id} className="flex items-start gap-2 text-xs">
+                                <span className="font-medium text-[var(--accent-gold)] whitespace-nowrap flex-shrink-0">
+                                  + {r.name}
+                                </span>
+                                <span className="text-[var(--text-secondary)]">
+                                  <RichDescription text={r.description} energyIcon={energyIcon} />
+                                </span>
+                              </div>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              ) : (
+                <div className="text-sm text-[var(--text-secondary)] leading-relaxed mb-5">
+                  <RichDescription
+                    text={descText}
+                    energyIcon={energyIcon}
+                    relatedCards={spawnedCards.map((sc): RelatedCard => ({
+                      id: sc.id,
+                      name: sc.name,
+                      image_url: sc.image_url,
+                      type: sc.type,
+                      rarity: sc.rarity,
+                      cost: sc.cost,
+                    }))}
+                  />
+                </div>
+              )}
 
               {/* Keywords */}
               {card.keywords && card.keywords.length > 0 && (

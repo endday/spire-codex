@@ -224,7 +224,7 @@ def parse_single_monster(filepath: Path, localization: dict, encounter_types: di
     # Skip test/mock/deprecated monsters
     skip_prefixes = ("Mock", "Deprecated")
     skip_names = {
-        "BigDummy", "FakeMerchantMonster", "MultiAttackMoveMonster",
+        "BigDummy", "MultiAttackMoveMonster",
         "OneHpMonster", "SingleAttackMoveMonster", "TenHpMonster",
     }
     if class_name.startswith(skip_prefixes) or class_name in skip_names:
@@ -318,7 +318,9 @@ def parse_single_monster(filepath: Path, localization: dict, encounter_types: di
         block_values[name] = int(bm.group(2))
 
     # Monster type from encounter data (keyed by class name)
-    monster_type = encounter_types.get(class_name, "Normal")
+    # Some parent classes aren't directly referenced in encounters but should inherit child type
+    TYPE_OVERRIDES = {"DecimillipedeSegment": "Elite"}
+    monster_type = TYPE_OVERRIDES.get(class_name, encounter_types.get(class_name, "Normal"))
 
     # Encounter appearances (keyed by monster ID)
     encounters = monster_encounters.get(monster_id, [])
@@ -381,10 +383,25 @@ def parse_single_monster(filepath: Path, localization: dict, encounter_types: di
         "FLYCONID": "flyconid",
         "OVICOPTER": "ovicopter",
         "DECIMILLIPEDE_SEGMENT": "decimillipede",
+        "DECIMILLIPEDE_SEGMENT_BACK": "decimillipede_segment_back",
+        "DECIMILLIPEDE_SEGMENT_FRONT": "decimillipede_segment_front",
+        "DECIMILLIPEDE_SEGMENT_MIDDLE": "decimillipede_segment_middle",
+        "FAKE_MERCHANT_MONSTER": "fake_merchant",
+        "MYSTERIOUS_KNIGHT": "flail_knight",
     }
     img_name = IMAGE_ALIASES.get(monster_id, monster_id.lower())
     image_file = IMAGES_DIR / f"{img_name}.png"
     image_url = f"/static/images/monsters/{img_name}.png" if image_file.exists() else None
+
+    # Beta/concept art — check beta/ subdirectory
+    BETA_ALIASES = {
+        "DOOR": "door",
+        "DOORMAKER": "door_maker_placeholder_2",
+        "PAELS_LEGION": "paels_legion",
+    }
+    beta_name = BETA_ALIASES.get(monster_id)
+    beta_file = IMAGES_DIR / "beta" / f"{beta_name}.png" if beta_name else None
+    beta_image_url = f"/static/images/monsters/beta/{beta_name}.png" if beta_file and beta_file.exists() else None
 
     return {
         "id": monster_id,
@@ -399,6 +416,7 @@ def parse_single_monster(filepath: Path, localization: dict, encounter_types: di
         "block_values": block_values if block_values else None,
         "encounters": encounters if encounters else None,
         "image_url": image_url,
+        "beta_image_url": beta_image_url,
     }
 
 
@@ -451,14 +469,111 @@ def _intent_label(intents: list[str]) -> str:
     return " + ".join(unique)
 
 
+def _detect_parent_class(filepath: Path) -> str | None:
+    """Detect if a monster C# class inherits from another monster (not MonsterModel)."""
+    content = filepath.read_text(encoding="utf-8")
+    m = re.search(r'class\s+\w+\s*:\s*(\w+)', content)
+    if m and m.group(1) != "MonsterModel":
+        return m.group(1)
+    return None
+
+
+# Monsters that inherit from another monster and should copy parent data
+INHERITANCE_MAP: dict[str, str] = {
+    "DecimillipedeSegmentBack": "DecimillipedeSegment",
+    "DecimillipedeSegmentFront": "DecimillipedeSegment",
+    "DecimillipedeSegmentMiddle": "DecimillipedeSegment",
+    "MysteriousKnight": "FlailKnight",
+}
+
+# Display name overrides for inherited monsters (game only has parent's name)
+NAME_OVERRIDES: dict[str, str] = {
+    "DECIMILLIPEDE_SEGMENT_BACK": "Decimillipede Segment (Back)",
+    "DECIMILLIPEDE_SEGMENT_FRONT": "Decimillipede Segment (Front)",
+    "DECIMILLIPEDE_SEGMENT_MIDDLE": "Decimillipede Segment (Middle)",
+}
+
+
 def parse_all_monsters(loc_dir: Path, data_dir: Path) -> list[dict]:
     localization = load_localization(loc_dir)
     encounter_types, monster_encounters = parse_encounter_data(data_dir)
     monsters = []
+    monsters_by_class: dict[str, dict] = {}
+
     for filepath in sorted(MONSTERS_DIR.glob("*.cs")):
         monster = parse_single_monster(filepath, localization, encounter_types, monster_encounters)
         if monster:
             monsters.append(monster)
+            monsters_by_class[filepath.stem] = monster
+
+    # Handle inheritance — fill in missing data from parent
+    for child_class, parent_class in INHERITANCE_MAP.items():
+        child_id = class_name_to_id(child_class)
+        parent = monsters_by_class.get(parent_class)
+        if not parent:
+            continue
+
+        # Check if child already exists
+        existing = next((m for m in monsters if m["id"] == child_id), None)
+        if existing:
+            # Fill in missing fields from parent
+            for field in ["min_hp", "max_hp", "min_hp_ascension", "max_hp_ascension",
+                          "moves", "damage_values", "block_values"]:
+                if not existing.get(field) and parent.get(field):
+                    existing[field] = parent[field]
+        else:
+            # Create new entry based on parent
+            child_filepath = MONSTERS_DIR / f"{child_class}.cs"
+            child_monster_id = child_id
+            name = NAME_OVERRIDES.get(child_monster_id,
+                   localization.get(f"{child_monster_id}.name",
+                                    child_class.replace("_", " ")))
+
+            # Determine image
+            IMAGE_ALIASES_LOCAL = {
+                "DECIMILLIPEDE_SEGMENT_BACK": "decimillipede_segment_back",
+                "DECIMILLIPEDE_SEGMENT_FRONT": "decimillipede_segment_front",
+                "DECIMILLIPEDE_SEGMENT_MIDDLE": "decimillipede_segment_middle",
+                "MYSTERIOUS_KNIGHT": "flail_knight",
+            }
+            img_name = IMAGE_ALIASES_LOCAL.get(child_monster_id, child_monster_id.lower())
+            image_file = IMAGES_DIR / f"{img_name}.png"
+            image_url = f"/static/images/monsters/{img_name}.png" if image_file.exists() else None
+
+            new_monster = {
+                "id": child_monster_id,
+                "name": name,
+                "type": encounter_types.get(child_class, parent["type"]),
+                "min_hp": parent.get("min_hp"),
+                "max_hp": parent.get("max_hp"),
+                "min_hp_ascension": parent.get("min_hp_ascension"),
+                "max_hp_ascension": parent.get("max_hp_ascension"),
+                "moves": parent.get("moves"),
+                "damage_values": parent.get("damage_values"),
+                "block_values": parent.get("block_values"),
+                "encounters": monster_encounters.get(child_monster_id, []) or None,
+                "image_url": image_url,
+            }
+
+            # Extract any additional powers from child's AfterAddedToRoom
+            if child_filepath.exists():
+                child_content = child_filepath.read_text(encoding="utf-8")
+                # Look for powers applied in AfterAddedToRoom (like MysteriousKnight)
+                init_powers = []
+                for pm in re.finditer(
+                    r'PowerCmd\.Apply<(\w+)>\([\w.]+\s*,\s*(\d+)m?',
+                    child_content
+                ):
+                    init_powers.append({
+                        "power_id": power_class_to_id(pm.group(1)),
+                        "amount": int(pm.group(2)),
+                    })
+                if init_powers:
+                    new_monster["innate_powers"] = init_powers
+
+            monsters.append(new_monster)
+            monsters_by_class[child_class] = new_monster
+
     return monsters
 
 

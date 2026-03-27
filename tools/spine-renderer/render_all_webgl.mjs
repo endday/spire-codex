@@ -17,7 +17,7 @@ const OUTPUT_ROOT = path.join(BASE, "backend/static/images/renders");
 
 const OUTPUT_SIZE = 512;
 const IDLE_NAMES = ["idle_loop", "idle", "Idle_loop", "Idle", "rest_idle", "rest_loop", "loop", "animation"];
-const SHADOW_NAMES = ["shadow", "shadow2", "ground", "ground_shadow"];
+const SHADOW_NAMES = ["shadow", "shadow2", "shadow_v2", "ground", "ground_shadow"];
 const HIDDEN_SLOTS = ["smoketex", "smoke_tex", "smokeplacholder", "smoke_placeholder", "megatail", "megablade"];
 const DRY_RUN = process.argv.includes("--dry-run");
 

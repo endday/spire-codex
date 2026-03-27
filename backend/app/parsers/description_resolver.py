@@ -12,9 +12,67 @@ def _lookup(name: str, vars_dict: dict[str, int | str], default=None):
     return default
 
 
+def _split_pipes_at_depth0(s):
+    """Split string on | at brace depth 0."""
+    parts = []
+    depth = 0
+    current = []
+    for ch in s:
+        if ch == '{':
+            depth += 1
+        elif ch == '}':
+            depth -= 1
+        elif ch == '|' and depth == 0:
+            parts.append(''.join(current))
+            current = []
+            continue
+        current.append(ch)
+    parts.append(''.join(current))
+    return parts
+
+
 def resolve_description(raw: str, vars_dict: dict[str, int | str], is_upgraded: bool = False) -> str:
     """Resolve SmartFormat templates in descriptions."""
     text = raw
+
+    # Handle {Var:choose(Option1|Option2|...):result1|result2|...}
+    # Picks the branch matching the variable's value (e.g. CardType -> "Attack" picks first branch)
+    def resolve_all_choose(text):
+        while True:
+            m = re.search(r'\{(\w+):choose\(([^)]+)\):', text)
+            if not m:
+                break
+            start = m.start()
+            var_name = m.group(1)
+            options = m.group(2).split('|')
+            rest_start = m.end()
+            # Find matching closing } by counting braces
+            depth = 1
+            i = rest_start
+            while i < len(text) and depth > 0:
+                if text[i] == '{':
+                    depth += 1
+                elif text[i] == '}':
+                    depth -= 1
+                i += 1
+            if depth != 0:
+                break
+            inner = text[rest_start:i - 1]
+            branches = _split_pipes_at_depth0(inner)
+            val = _lookup(var_name, vars_dict)
+            # Find matching branch index
+            result = None
+            if val is not None:
+                val_str = str(val)
+                for idx, opt in enumerate(options):
+                    if opt.strip().lower() == val_str.strip().lower() and idx < len(branches):
+                        result = branches[idx]
+                        break
+            if result is None and branches:
+                result = branches[0]  # fallback to first only if no match found
+            text = text[:start] + (result or "") + text[i:]
+        return text
+    text = resolve_all_choose(text)
 
     # Handle {IfUpgraded:show:A|B} or {IfUpgraded:show:A}
     def resolve_if_upgraded(m):
@@ -83,24 +141,6 @@ def resolve_description(raw: str, vars_dict: dict[str, int | str], is_upgraded: 
     # {Var.Property:cond:trueVal|falseVal} or {Var:cond:>N?result|==N?result|default}
     # e.g. {StarterRelic.StringValue:cond:[gold]{StarterRelic}[/gold]|generic text}
     # e.g. {Attacks:cond:>1?{Attacks:diff()} Attacks are|Attack is}
-    def _split_pipes_at_depth0(s):
-        """Split string on | at brace depth 0."""
-        parts = []
-        depth = 0
-        current = []
-        for ch in s:
-            if ch == '{':
-                depth += 1
-            elif ch == '}':
-                depth -= 1
-            elif ch == '|' and depth == 0:
-                parts.append(''.join(current))
-                current = []
-                continue
-            current.append(ch)
-        parts.append(''.join(current))
-        return parts
-
     def _eval_cond(op_str, val):
         """Evaluate a SmartFormat condition like >1, ==1, >=5 against a numeric value."""
         m = re.match(r'(>=|<=|!=|>|<|==)\s*(\d+)', op_str)
@@ -164,23 +204,48 @@ def resolve_description(raw: str, vars_dict: dict[str, int | str], is_upgraded: 
         return text
     text = resolve_all_cond(text)
 
-    # Handle SmartFormat conditionals: {Var: trueValue|falseValue}
-    # e.g. {IsMultiplayer: by any player|} -> "" (single player default)
-    def resolve_conditional(m):
-        var_name = m.group(1)
-        true_val = m.group(2)
-        false_val = m.group(3) if m.group(3) is not None else ""
-        val = _lookup(var_name, vars_dict)
-        if val is not None and val:
-            return true_val
-        return false_val
-    text = re.sub(r'\{(\w+):\s*([^|}]*)\|([^}]*)\}', resolve_conditional, text)
+    # Handle nested SmartFormat conditionals: {Var:trueValue|falseValue}
+    # where trueValue/falseValue can contain nested {braces}
+    # e.g. {HasRider:{Sapping:...|}{Choking:...|}|} or {Violence: 3 times|}
+    def resolve_all_nested_cond(text):
+        while True:
+            # Match {Word: or {Word. pattern (conditional with nested braces)
+            m = re.search(r'\{(\w[\w.]*?)(?::(?!choose\(|cond:|diff\(\)|energyIcons|starIcons|plural:|show:))', text)
+            if not m:
+                break
+            start = m.start()
+            var_name = m.group(1)
+            rest_start = m.end()
+            # Find matching closing } by counting braces
+            depth = 1
+            i = rest_start
+            while i < len(text) and depth > 0:
+                if text[i] == '{':
+                    depth += 1
+                elif text[i] == '}':
+                    depth -= 1
+                i += 1
+            if depth != 0:
+                break
+            inner = text[rest_start:i - 1]
+            parts = _split_pipes_at_depth0(inner)
+            val = _lookup(var_name, vars_dict)
+            true_val = parts[0] if parts else ""
+            false_val = parts[1] if len(parts) > 1 else ""
+            result = true_val if (val is not None and val) else false_val
+            text = text[:start] + result + text[i:]
+        return text
+    text = resolve_all_nested_cond(text)
 
     # Handle {Var:diff()} -> value
     def resolve_diff(m):
         val = _lookup(m.group(1), vars_dict)
         return str(val) if val is not None else "X"
     text = re.sub(r'\{(\w+):diff\(\)\}', resolve_diff, text)
+
+    # Strip trailing standalone "???" lines (unresolved rider enchantment slots)
+    text = re.sub(r'\n\?\?\?$', '', text.strip())
+    text = re.sub(r'^\?\?\?$', '', text.strip(), flags=re.MULTILINE)
 
     # Handle remaining {Var} without formatter
     def _make_readable(name: str) -> str:
@@ -215,7 +280,8 @@ def extract_vars_from_source(content: str) -> dict[str, int]:
 
     # Pattern: new XxxVar("Name", Nm, ...) — named typed vars (events use this heavily)
     # e.g. new DamageVar("RipHpLoss", 5m, ValueProp.Unblockable)
-    for m in re.finditer(r'new\s+\w+Var\(\s*"(\w+)"\s*,\s*(\d+)m?(?:\s*,\s*[^)]+)?\)', content):
+    # Also handles generic types: new PowerVar<WeakPower>("SappingWeak", 2m)
+    for m in re.finditer(r'new\s+\w+Var(?:<\w+>)?\(\s*"(\w+)"\s*,\s*(\d+)m?(?:\s*,\s*[^)]+)?\)', content):
         all_vars[m.group(1)] = int(m.group(2))
 
     # Pattern: new IntVar("Name", Nm) — named int vars
