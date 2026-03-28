@@ -221,6 +221,8 @@ def build_indexnow_urls() -> list[str]:
         f"{SITE_URL}/showcase",
         f"{SITE_URL}/changelog",
         f"{SITE_URL}/about",
+        f"{SITE_URL}/ancients",
+        f"{SITE_URL}/cards/browse",
         f"{SITE_URL}/sitemap.xml",
     ]
 
@@ -236,6 +238,13 @@ def build_indexnow_urls() -> list[str]:
         "encounters": "encounters",
         "enchantments": "enchantments",
         "keywords": "keywords",
+        "intents": "intents",
+        "orbs": "orbs",
+        "afflictions": "afflictions",
+        "modifiers": "modifiers",
+        "achievements": "achievements",
+        "acts": "acts",
+        "ascensions": "ascensions",
     }
 
     for filename, route in entity_routes.items():
@@ -265,7 +274,7 @@ def build_indexnow_urls() -> list[str]:
 
     # Localized pages (13 languages)
     LANGS = ["deu", "esp", "fra", "ita", "jpn", "kor", "pol", "ptb", "rus", "spa", "tha", "tur", "zhs"]
-    LANG_ENTITY_ROUTES = ["cards", "relics", "potions", "monsters", "powers", "events", "characters", "enchantments", "encounters"]
+    LANG_ENTITY_ROUTES = ["cards", "relics", "potions", "monsters", "powers", "events", "characters", "enchantments", "encounters", "acts", "ascensions", "keywords", "intents", "orbs", "afflictions", "modifiers", "achievements"]
 
     for lang in LANGS:
         # Landing + list pages
