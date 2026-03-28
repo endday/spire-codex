@@ -224,7 +224,7 @@ def parse_single_card(filepath: Path, localization: dict, card_pools: dict, even
     spawns_cards = sorted(class_name_to_id(s) for s in related) if related else None
 
     # X-cost detection
-    is_x_cost = bool(re.search(r'HasEnergyCostX\s*=>\s*true', content) or re.search(r'CostsX', content))
+    is_x_cost = bool(re.search(r'HasEnergyCostX\s*=>\s*true', content) or re.search(r'override.*CostsX\s*=>\s*true', content))
     is_x_star_cost = bool(re.search(r'HasStarCostX\s*=>\s*true', content))
 
     # Multi-hit

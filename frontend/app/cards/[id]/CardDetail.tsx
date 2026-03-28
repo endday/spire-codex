@@ -99,6 +99,9 @@ function getUpgradedDescription(card: Card, upgraded: boolean): string {
   const vars = card.vars || {};
 
   if (u) {
+    // Collect all replacements first to avoid cascading (e.g. Spur: 3→5 then 5→7)
+    const replacements: { base: string; upgraded: string }[] = [];
+
     for (const [key, upVal] of Object.entries(u)) {
       if (upVal == null) continue;
       const varKey = Object.keys(vars).find(
@@ -108,9 +111,7 @@ function getUpgradedDescription(card: Card, upgraded: boolean): string {
         const base = vars[varKey];
         const upgradedVal = getUpgradedValue(base, upVal);
         if (upgradedVal !== null && upgradedVal !== base) {
-          const baseStr = String(base);
-          const upgradedStr = String(upgradedVal);
-          desc = desc.replace(new RegExp(`\\b${baseStr}\\b`), upgradedStr);
+          replacements.push({ base: String(base), upgraded: String(upgradedVal) });
         }
       }
       if (key.toLowerCase() === "energy") {
@@ -118,6 +119,24 @@ function getUpgradedDescription(card: Card, upgraded: boolean): string {
         const upEnergy = getUpgradedValue(baseEnergy, upVal) ?? baseEnergy;
         desc = desc.replace(/\[energy:(\d+)\]/, `[energy:${upEnergy}]`);
       }
+    }
+
+    // Apply all replacements in a single pass using a regex that matches any base value
+    if (replacements.length > 0) {
+      const replMap = new Map(replacements.map((r) => [r.base, r.upgraded]));
+      // Sort by longest base string first to avoid partial matches
+      const pattern = replacements
+        .map((r) => r.base)
+        .sort((a, b) => b.length - a.length)
+        .map((s) => `\\b${s}\\b`)
+        .join("|");
+      const used = new Set<string>();
+      desc = desc.replace(new RegExp(pattern, "g"), (match) => {
+        // Only replace each base value once
+        if (used.has(match)) return match;
+        used.add(match);
+        return replMap.get(match) ?? match;
+      });
     }
   }
 
