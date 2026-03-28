@@ -36,6 +36,7 @@ const NAV_GROUPS: NavGroup[] = [
     label: "Game Info",
     links: [
       { href: "/merchant", label: "Merchant" },
+      { href: "/ancients", label: "Ancients" },
       { href: "/keywords", label: "Keywords" },
       { href: "/compare", label: "Compare" },
     ],
