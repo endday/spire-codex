@@ -12297,7 +12297,7 @@
     "upgrade": {
       "add_innate": true
     },
-    "image_url": null,
+    "image_url": "/static/images/cards/mad_science_attack.png",
     "beta_image_url": null,
     "type_variants": {
       "attack": {

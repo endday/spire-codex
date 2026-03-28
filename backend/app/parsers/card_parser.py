@@ -314,7 +314,8 @@ def parse_single_card(filepath: Path, localization: dict, card_pools: dict, even
         "spawns_cards": spawns_cards,
         "vars": all_vars if all_vars else None,
         "upgrade": {},
-        "image_url": f"/static/images/cards/{card_id.lower()}.png" if (STATIC_IMAGES / f"{card_id.lower()}.png").exists() else None,
+        "image_url": f"/static/images/cards/{card_id.lower()}.png" if (STATIC_IMAGES / f"{card_id.lower()}.png").exists()
+            else (type_variants[card_type.lower()].get("image_url") if type_variants and card_type.lower() in type_variants else None),
         "beta_image_url": f"/static/images/cards/beta/{card_id.lower()}.png" if (STATIC_IMAGES / "beta" / f"{card_id.lower()}.png").exists() else None,
         "type_variants": type_variants,
     }
