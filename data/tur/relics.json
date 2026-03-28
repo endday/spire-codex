@@ -1770,7 +1770,7 @@
   {
     "id": "BRIMSTONE",
     "name": "Kükürt",
-    "description": "Turunun başında [blue][SelfStrength][/blue] [gold]Kuvvet[/gold] elde et; TÜM düşmanlar ise [blue][EnemyStrength][/blue] [gold]Kuvvet[/gold] elde eder.",
+    "description": "Turunun başında [blue]2[/blue] [gold]Kuvvet[/gold] elde et; TÜM düşmanlar ise [blue]1[/blue] [gold]Kuvvet[/gold] elde eder.",
     "description_raw": "Turunun başında [blue]{SelfStrength}[/blue] [gold]Kuvvet[/gold] elde et; TÜM düşmanlar ise [blue]{EnemyStrength}[/blue] [gold]Kuvvet[/gold] elde eder.",
     "flavor": "[red]Bu kalıntının detayları ileride ortaya çıkacak...[/red]",
     "rarity": "Dükkan Kalıntısı",
@@ -1975,7 +1975,7 @@
       "Ironclad": "/static/images/relics/yummy_cookie_ironclad.png",
       "Silent": "/static/images/relics/yummy_cookie_silent.png",
       "Defect": "/static/images/relics/yummy_cookie_defect.png",
-      "Necrobinder": "/static/images/relics/yummy_cookie_necro.png",
+      "Necrobinder": "/static/images/relics/yummy_cookie_necrobinder.png",
       "Regent": "/static/images/relics/yummy_cookie_regent.png"
     },
     "rarity_key": "Ancient",

@@ -301,7 +301,7 @@
   {
     "id": "BRIMSTONE",
     "name": "Azufre",
-    "description": "Al comienzo de tu turno, gana [blue][SelfStrength][/blue] de [gold]Fuerza[/gold] y TODOS los enemigos ganan [blue][EnemyStrength][/blue] de [gold]Fuerza[/gold].",
+    "description": "Al comienzo de tu turno, gana [blue]2[/blue] de [gold]Fuerza[/gold] y TODOS los enemigos ganan [blue]1[/blue] de [gold]Fuerza[/gold].",
     "description_raw": "Al comienzo de tu turno, gana [blue]{SelfStrength}[/blue] de [gold]Fuerza[/gold] y TODOS los enemigos ganan [blue]{EnemyStrength}[/blue] de [gold]Fuerza[/gold].",
     "flavor": "[red]Los detalles de esta reliquia serán revelados en el futuro...[/red]",
     "rarity": "Tienda de reliquias",
@@ -1611,7 +1611,7 @@
       "Ironclad": "/static/images/relics/yummy_cookie_ironclad.png",
       "Silent": "/static/images/relics/yummy_cookie_silent.png",
       "Defect": "/static/images/relics/yummy_cookie_defect.png",
-      "Necrobinder": "/static/images/relics/yummy_cookie_necro.png",
+      "Necrobinder": "/static/images/relics/yummy_cookie_necrobinder.png",
       "Regent": "/static/images/relics/yummy_cookie_regent.png"
     },
     "rarity_key": "Ancient",

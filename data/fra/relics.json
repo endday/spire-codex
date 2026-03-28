@@ -1169,7 +1169,7 @@
       "Ironclad": "/static/images/relics/yummy_cookie_ironclad.png",
       "Silent": "/static/images/relics/yummy_cookie_silent.png",
       "Defect": "/static/images/relics/yummy_cookie_defect.png",
-      "Necrobinder": "/static/images/relics/yummy_cookie_necro.png",
+      "Necrobinder": "/static/images/relics/yummy_cookie_necrobinder.png",
       "Regent": "/static/images/relics/yummy_cookie_regent.png"
     },
     "rarity_key": "Ancient",
@@ -3232,7 +3232,7 @@
   {
     "id": "BRIMSTONE",
     "name": "Soufre",
-    "description": "Au début de votre tour, gagnez [blue][SelfStrength][/blue] de [gold]Force[/gold] ; TOUS les ennemis gagnent [blue][EnemyStrength][/blue] de [gold]Force[/gold].",
+    "description": "Au début de votre tour, gagnez [blue]2[/blue] de [gold]Force[/gold] ; TOUS les ennemis gagnent [blue]1[/blue] de [gold]Force[/gold].",
     "description_raw": "Au début de votre tour, gagnez [blue]{SelfStrength}[/blue] de [gold]Force[/gold] ; TOUS les ennemis gagnent [blue]{EnemyStrength}[/blue] de [gold]Force[/gold].",
     "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
     "rarity": "Relique du Marchand",

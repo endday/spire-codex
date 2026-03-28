@@ -38,7 +38,7 @@
       "Ironclad": "/static/images/relics/yummy_cookie_ironclad.png",
       "Silent": "/static/images/relics/yummy_cookie_silent.png",
       "Defect": "/static/images/relics/yummy_cookie_defect.png",
-      "Necrobinder": "/static/images/relics/yummy_cookie_necro.png",
+      "Necrobinder": "/static/images/relics/yummy_cookie_necrobinder.png",
       "Regent": "/static/images/relics/yummy_cookie_regent.png"
     },
     "rarity_key": "Ancient",
@@ -1295,7 +1295,7 @@
   {
     "id": "BRIMSTONE",
     "name": "ブリムストーン",
-    "description": "ターン開始時、[gold]筋力[/gold][blue][SelfStrength][/blue]を得て、すべての敵は[gold]筋力[/gold][blue][EnemyStrength][/blue]を得る",
+    "description": "ターン開始時、[gold]筋力[/gold][blue]2[/blue]を得て、すべての敵は[gold]筋力[/gold][blue]1[/blue]を得る",
     "description_raw": "ターン開始時、[gold]筋力[/gold][blue]{SelfStrength}[/blue]を得て、すべての敵は[gold]筋力[/gold][blue]{EnemyStrength}[/blue]を得る",
     "flavor": "[red]このレリックの詳細は今後明かされるはずだ……[/red]",
     "rarity": "レリック（ショップ）",

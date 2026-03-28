@@ -558,7 +558,7 @@
       "Ironclad": "/static/images/relics/yummy_cookie_ironclad.png",
       "Silent": "/static/images/relics/yummy_cookie_silent.png",
       "Defect": "/static/images/relics/yummy_cookie_defect.png",
-      "Necrobinder": "/static/images/relics/yummy_cookie_necro.png",
+      "Necrobinder": "/static/images/relics/yummy_cookie_necrobinder.png",
       "Regent": "/static/images/relics/yummy_cookie_regent.png"
     },
     "rarity_key": "Ancient",
@@ -2972,7 +2972,7 @@
   {
     "id": "BRIMSTONE",
     "name": "Сера",
-    "description": "Дает [blue][SelfStrength][/blue] [gold]силы[/gold] и ВСЕ враги получают [blue][EnemyStrength][/blue] [gold]силы[/gold] в начале хода.",
+    "description": "Дает [blue]2[/blue] [gold]силы[/gold] и ВСЕ враги получают [blue]1[/blue] [gold]силы[/gold] в начале хода.",
     "description_raw": "Дает [blue]{SelfStrength}[/blue] [gold]силы[/gold] и ВСЕ враги получают [blue]{EnemyStrength}[/blue] [gold]силы[/gold] в начале хода.",
     "flavor": "[red]Подробности об этой реликвии станут известны в будущем…[/red]",
     "rarity": "Реликвия из магазина",
@@ -3141,7 +3141,7 @@
   {
     "id": "FAKE_HAPPY_FLOWER",
     "name": "Счастливый цветок???",
-    "description": "Дает [energy:1] plural(ru):каждый ход хода|каждые {} ходов}.",
+    "description": "Дает [energy:1] plural(ru):каждый ход.",
     "description_raw": "Дает {Energy:energyIcons()} {Turns:plural(ru):каждый ход|каждые {} хода|каждые {} ходов}.",
     "flavor": "[red]Подробности об этой реликвии станут известны в будущем…[/red]",
     "rarity": "Реликвия за событие",

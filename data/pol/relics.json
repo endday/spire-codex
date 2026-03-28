@@ -665,7 +665,7 @@
   {
     "id": "BONE_TEA",
     "name": "Herbata z kości",
-    "description": "Na początku [blue][[/blue] następnych walk] wszystkie karty w [gold]ręce[/gold] zostają [gold]Ulepszone[/gold].",
+    "description": "Na początku [blue]{}[/blue] następnych walk wszystkie karty w [gold]ręce[/gold] zostają [gold]Ulepszone[/gold].",
     "description_raw": "Na początku {Combats:plural(en):następnej walki|[blue]{}[/blue] następnych walk} wszystkie karty w [gold]ręce[/gold] zostają [gold]Ulepszone[/gold].",
     "flavor": "[red]Szczegóły tego artefaktu zostaną ujawnione w przyszłości...[/red]",
     "rarity": "Specjalny Artefakt",
@@ -1965,7 +1965,7 @@
   {
     "id": "EMBER_TEA",
     "name": "Piekielnie gorąca herbata",
-    "description": "Na początku [blue][[/blue] następnych walk] zyskaj [blue]2[/blue] pkt. [gold]Siły[/gold].",
+    "description": "Na początku [blue]{}[/blue] następnych walk zyskaj [blue]2[/blue] pkt. [gold]Siły[/gold].",
     "description_raw": "Na początku {Combats:plural(en):następnej walki|[blue]{}[/blue] następnych walk} zyskaj [blue]{StrengthPower}[/blue] pkt. [gold]Siły[/gold].",
     "flavor": "[red]Szczegóły tego artefaktu zostaną ujawnione w przyszłości...[/red]",
     "rarity": "Specjalny Artefakt",
@@ -2261,7 +2261,7 @@
       "Ironclad": "/static/images/relics/yummy_cookie_ironclad.png",
       "Silent": "/static/images/relics/yummy_cookie_silent.png",
       "Defect": "/static/images/relics/yummy_cookie_defect.png",
-      "Necrobinder": "/static/images/relics/yummy_cookie_necro.png",
+      "Necrobinder": "/static/images/relics/yummy_cookie_necrobinder.png",
       "Regent": "/static/images/relics/yummy_cookie_regent.png"
     },
     "rarity_key": "Ancient",
@@ -2621,7 +2621,7 @@
   {
     "id": "BRIMSTONE",
     "name": "Siarka",
-    "description": "Na początku tury zyskaj [blue][SelfStrength][/blue] pkt. [gold]Siły[/gold]. WSZYSCY przeciwnicy otrzymują [blue][EnemyStrength][/blue] pkt. [gold]Siły[/gold].",
+    "description": "Na początku tury zyskaj [blue]2[/blue] pkt. [gold]Siły[/gold]. WSZYSCY przeciwnicy otrzymują [blue]1[/blue] pkt. [gold]Siły[/gold].",
     "description_raw": "Na początku tury zyskaj [blue]{SelfStrength}[/blue] pkt. [gold]Siły[/gold]. WSZYSCY przeciwnicy otrzymują [blue]{EnemyStrength}[/blue] pkt. [gold]Siły[/gold].",
     "flavor": "[red]Szczegóły tego artefaktu zostaną ujawnione w przyszłości...[/red]",
     "rarity": "Zakupiony Artefakt",
@@ -2647,7 +2647,7 @@
   {
     "id": "PAELS_WING",
     "name": "Skrzydło Paela",
-    "description": "Możesz ofiarować Paelowi karty z łupów. Po złożeniu plural(en):ofiary[/blue] ofiar} zyskaj losowy [gold]Artefakt[/gold].",
+    "description": "Możesz ofiarować Paelowi karty z łupów. Po złożeniu plural(en):ofiary zyskaj losowy [gold]Artefakt[/gold].",
     "description_raw": "Możesz ofiarować Paelowi karty z łupów. Po złożeniu {Sacrifices:plural(en):ofiary|[blue]{}[/blue] ofiar} zyskaj losowy [gold]Artefakt[/gold].",
     "flavor": "[red]Szczegóły tego artefaktu zostaną ujawnione w przyszłości...[/red]",
     "rarity": "Starożytny Artefakt",
@@ -3219,7 +3219,7 @@
   {
     "id": "ETERNAL_FEATHER",
     "name": "Wieczne pióro",
-    "description": "Kiedykolwiek przebywasz w [gold]Obozowisku[/gold], przywróć [green]3[/green] PŻ za plural(en):każdą kartę[/blue] kart} w twojej [gold]talii[/gold].",
+    "description": "Kiedykolwiek przebywasz w [gold]Obozowisku[/gold], przywróć [green]3[/green] PŻ za plural(en):każdą kartę w twojej [gold]talii[/gold].",
     "description_raw": "Kiedykolwiek przebywasz w [gold]Obozowisku[/gold], przywróć [green]{Heal}[/green] PŻ za {Cards:plural(en):każdą kartę|każde [blue]{}[/blue] kart} w twojej [gold]talii[/gold].",
     "flavor": "[red]Szczegóły tego artefaktu zostaną ujawnione w przyszłości...[/red]",
     "rarity": "Niepospolity Artefakt",

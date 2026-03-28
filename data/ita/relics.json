@@ -363,7 +363,7 @@
       "Ironclad": "/static/images/relics/yummy_cookie_ironclad.png",
       "Silent": "/static/images/relics/yummy_cookie_silent.png",
       "Defect": "/static/images/relics/yummy_cookie_defect.png",
-      "Necrobinder": "/static/images/relics/yummy_cookie_necro.png",
+      "Necrobinder": "/static/images/relics/yummy_cookie_necrobinder.png",
       "Regent": "/static/images/relics/yummy_cookie_regent.png"
     },
     "rarity_key": "Ancient",
@@ -3739,7 +3739,7 @@
   {
     "id": "BRIMSTONE",
     "name": "Zolfo",
-    "description": "All'inizio del tuo turno, ottieni [blue][SelfStrength][/blue] di [gold]Forza[/gold] e TUTTI i nemici ottengono [blue][EnemyStrength][/blue] di [gold]Forza[/gold].",
+    "description": "All'inizio del tuo turno, ottieni [blue]2[/blue] di [gold]Forza[/gold] e TUTTI i nemici ottengono [blue]1[/blue] di [gold]Forza[/gold].",
     "description_raw": "All'inizio del tuo turno, ottieni [blue]{SelfStrength}[/blue] di [gold]Forza[/gold] e TUTTI i nemici ottengono [blue]{EnemyStrength}[/blue] di [gold]Forza[/gold].",
     "flavor": "[red]I dettagli di questa reliquia verranno rivelati in futuro...[/red]",
     "rarity": "Reliquia artigianale",

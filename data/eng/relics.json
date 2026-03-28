@@ -457,7 +457,7 @@
   {
     "id": "BRIMSTONE",
     "name": "Brimstone",
-    "description": "At the start of your turn, gain [blue][SelfStrength][/blue] [gold]Strength[/gold] and ALL enemies gain [blue][EnemyStrength][/blue] [gold]Strength[/gold].",
+    "description": "At the start of your turn, gain [blue]2[/blue] [gold]Strength[/gold] and ALL enemies gain [blue]1[/blue] [gold]Strength[/gold].",
     "description_raw": "At the start of your turn, gain [blue]{SelfStrength}[/blue] [gold]Strength[/gold] and ALL enemies gain [blue]{EnemyStrength}[/blue] [gold]Strength[/gold].",
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Shop Relic",
@@ -3756,7 +3756,7 @@
       "Ironclad": "/static/images/relics/yummy_cookie_ironclad.png",
       "Silent": "/static/images/relics/yummy_cookie_silent.png",
       "Defect": "/static/images/relics/yummy_cookie_defect.png",
-      "Necrobinder": "/static/images/relics/yummy_cookie_necro.png",
+      "Necrobinder": "/static/images/relics/yummy_cookie_necrobinder.png",
       "Regent": "/static/images/relics/yummy_cookie_regent.png"
     },
     "rarity_key": "Ancient",

@@ -110,7 +110,7 @@ def parse_single_relic(filepath: Path, localization: dict, relic_pools: dict) ->
         "ironclad": "Ironclad",
         "silent": "Silent",
         "defect": "Defect",
-        "necro": "Necrobinder",
+        "necrobinder": "Necrobinder",
         "regent": "Regent",
     }
     image_variants = {}

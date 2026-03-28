@@ -389,7 +389,7 @@
       "Ironclad": "/static/images/relics/yummy_cookie_ironclad.png",
       "Silent": "/static/images/relics/yummy_cookie_silent.png",
       "Defect": "/static/images/relics/yummy_cookie_defect.png",
-      "Necrobinder": "/static/images/relics/yummy_cookie_necro.png",
+      "Necrobinder": "/static/images/relics/yummy_cookie_necrobinder.png",
       "Regent": "/static/images/relics/yummy_cookie_regent.png"
     },
     "rarity_key": "Ancient",
@@ -1386,7 +1386,7 @@
   {
     "id": "BRIMSTONE",
     "name": "Enxofre",
-    "description": "No início do seu turno, receba [blue][SelfStrength][/blue] de [gold]Força[/gold] e TODOS os inimigos recebem [blue][EnemyStrength][/blue] de [gold]Força[/gold].",
+    "description": "No início do seu turno, receba [blue]2[/blue] de [gold]Força[/gold] e TODOS os inimigos recebem [blue]1[/blue] de [gold]Força[/gold].",
     "description_raw": "No início do seu turno, receba [blue]{SelfStrength}[/blue] de [gold]Força[/gold] e TODOS os inimigos recebem [blue]{EnemyStrength}[/blue] de [gold]Força[/gold].",
     "flavor": "[red]Detalhes sobre esta relíquia serão revelados no futuro...[/red]",
     "rarity": "Relíquia de Loja",

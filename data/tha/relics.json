@@ -392,7 +392,7 @@
   {
     "id": "BRIMSTONE",
     "name": "Brimstone",
-    "description": "ตอนเริ่มต้นเทิร์น ได้รับ [blue][SelfStrength][/blue] [gold]ความแข็งแรง[/gold] และศัตรูทั้งหมดได้รับ [blue][EnemyStrength][/blue] [gold]ความแข็งแรง[/gold]",
+    "description": "ตอนเริ่มต้นเทิร์น ได้รับ [blue]2[/blue] [gold]ความแข็งแรง[/gold] และศัตรูทั้งหมดได้รับ [blue]1[/blue] [gold]ความแข็งแรง[/gold]",
     "description_raw": "ตอนเริ่มต้นเทิร์น ได้รับ [blue]{SelfStrength}[/blue] [gold]ความแข็งแรง[/gold] และศัตรูทั้งหมดได้รับ [blue]{EnemyStrength}[/blue] [gold]ความแข็งแรง[/gold]",
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
     "rarity": "เครื่องรางร้านค้า",
@@ -1952,7 +1952,7 @@
   {
     "id": "PAELS_TOOTH",
     "name": "PaelsTooth",
-    "description": "เมื่อรับมา กำจัดการ์ด [blue]5[/blue] ใบจาก[gold]กองการ์ด[/gold] หลังจบแต่ละการต่อสู้ [gold]พัฒนา[/gold]การ์ด [blue]1[/blue] ใบแบบสุ่มจากกองที่แยกไว้ แล้วได้รับคืน ",
+    "description": "เมื่อรับมา กำจัดการ์ด [blue]5[/blue] ใบจาก[gold]กองการ์ด[/gold] หลังจบแต่ละการต่อสู้ [gold]พัฒนา[/gold]การ์ด [blue]1[/blue] ใบแบบสุ่มจากกองที่แยกไว้ แล้วได้รับคืน",
     "description_raw": "เมื่อรับมา กำจัดการ์ด [blue]{Cards}[/blue] ใบจาก[gold]กองการ์ด[/gold] หลังจบแต่ละการต่อสู้ [gold]พัฒนา[/gold]การ์ด [blue]1[/blue] ใบแบบสุ่มจากกองที่แยกไว้ แล้วได้รับคืน {CardTitles.StringValue:cond:\n\nการ์ดที่แยกไว้:\n{}|}",
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
     "rarity": "เครื่องรางเทพโบราณ",
@@ -3379,7 +3379,7 @@
       "Ironclad": "/static/images/relics/yummy_cookie_ironclad.png",
       "Silent": "/static/images/relics/yummy_cookie_silent.png",
       "Defect": "/static/images/relics/yummy_cookie_defect.png",
-      "Necrobinder": "/static/images/relics/yummy_cookie_necro.png",
+      "Necrobinder": "/static/images/relics/yummy_cookie_necrobinder.png",
       "Regent": "/static/images/relics/yummy_cookie_regent.png"
     },
     "rarity_key": "Ancient",

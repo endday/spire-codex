@@ -1858,7 +1858,7 @@
       "Ironclad": "/static/images/relics/yummy_cookie_ironclad.png",
       "Silent": "/static/images/relics/yummy_cookie_silent.png",
       "Defect": "/static/images/relics/yummy_cookie_defect.png",
-      "Necrobinder": "/static/images/relics/yummy_cookie_necro.png",
+      "Necrobinder": "/static/images/relics/yummy_cookie_necrobinder.png",
       "Regent": "/static/images/relics/yummy_cookie_regent.png"
     },
     "rarity_key": "Ancient",
@@ -2868,7 +2868,7 @@
   {
     "id": "BRIMSTONE",
     "name": "Schwefel",
-    "description": "Erhalte zu Beginn deines Zuges [blue][SelfStrength][/blue] [gold]Stärke[/gold] und ALLE Gegner erhalten [blue][EnemyStrength][/blue] [gold]Stärke[/gold].",
+    "description": "Erhalte zu Beginn deines Zuges [blue]2[/blue] [gold]Stärke[/gold] und ALLE Gegner erhalten [blue]1[/blue] [gold]Stärke[/gold].",
     "description_raw": "Erhalte zu Beginn deines Zuges [blue]{SelfStrength}[/blue] [gold]Stärke[/gold] und ALLE Gegner erhalten [blue]{EnemyStrength}[/blue] [gold]Stärke[/gold].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Laden-Relikt",
