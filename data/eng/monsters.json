@@ -79,6 +79,7 @@
         "id": "SWING_1",
         "name": "Swing 1",
         "intent": "Attack + Defend",
+        "block": 5,
         "damage": {
           "normal": 5,
           "ascension": 6
@@ -88,6 +89,7 @@
         "id": "SWING_2",
         "name": "Swing 2",
         "intent": "Attack + Defend",
+        "block": 5,
         "damage": {
           "normal": 5,
           "ascension": 6
@@ -98,8 +100,8 @@
         "name": "Big Swing",
         "intent": "Attack",
         "damage": {
-          "normal": 5,
-          "ascension": 6
+          "normal": 12,
+          "ascension": 13
         }
       }
     ],
@@ -318,6 +320,7 @@
         "id": "BITE",
         "name": "Bite",
         "intent": "Attack + Defend",
+        "block": 7,
         "damage": {
           "normal": 7,
           "ascension": 8
@@ -489,7 +492,12 @@
       {
         "id": "TRASH",
         "name": "Trash",
-        "intent": "Attack"
+        "intent": "Attack",
+        "damage": {
+          "normal": 4,
+          "ascension": 5,
+          "hit_count": 2
+        }
       },
       {
         "id": "TOXIC_SPIT",
@@ -663,8 +671,7 @@
         "intent": "Attack",
         "damage": {
           "normal": 3,
-          "ascension": 4,
-          "hit_count": 3
+          "ascension": 4
         }
       },
       {
@@ -1180,7 +1187,11 @@
             "target": "self",
             "amount": 2
           }
-        ]
+        ],
+        "damage": {
+          "normal": 7,
+          "ascension": 8
+        }
       },
       {
         "id": "REPEATER_MOVE_2",
@@ -1192,15 +1203,20 @@
             "target": "self",
             "amount": 2
           }
-        ]
+        ],
+        "damage": {
+          "normal": 7,
+          "ascension": 8
+        }
       },
       {
         "id": "EXPEL_BLAST",
         "name": "Expel Blast",
         "intent": "Attack",
         "damage": {
-          "normal": 7,
-          "ascension": 8
+          "normal": 5,
+          "ascension": 6,
+          "hit_count": 2
         }
       },
       {
@@ -1509,7 +1525,11 @@
       {
         "id": "BEAM",
         "name": "Beam",
-        "intent": "Attack"
+        "intent": "Attack",
+        "damage": {
+          "normal": 31,
+          "ascension": 34
+        }
       },
       {
         "id": "GET_BACK_IN",
@@ -1521,7 +1541,11 @@
             "target": "self",
             "amount": 5
           }
-        ]
+        ],
+        "damage": {
+          "normal": 40,
+          "ascension": 45
+        }
       }
     ],
     "damage_values": {
@@ -1584,14 +1608,17 @@
         "intent": "Attack",
         "damage": {
           "normal": 3,
-          "ascension": 3,
-          "hit_count": 7
+          "ascension": 3
         }
       },
       {
         "id": "SPEAR",
         "name": "Spear!",
-        "intent": "Attack"
+        "intent": "Attack",
+        "damage": {
+          "normal": 18,
+          "ascension": 20
+        }
       }
     ],
     "damage_values": {
@@ -1638,7 +1665,11 @@
       {
         "id": "MANDIBLE",
         "name": "Mandible",
-        "intent": "Attack"
+        "intent": "Attack",
+        "damage": {
+          "normal": 8,
+          "ascension": 9
+        }
       },
       {
         "id": "ENRAGE",
@@ -1805,8 +1836,8 @@
           }
         ],
         "damage": {
-          "normal": 9,
-          "ascension": 10
+          "normal": 13,
+          "ascension": 15
         }
       },
       {
@@ -2541,7 +2572,8 @@
       {
         "id": "GUARD",
         "name": "Guard",
-        "intent": "Defend"
+        "intent": "Defend",
+        "block": 15
       }
     ],
     "damage_values": null,
@@ -2725,6 +2757,7 @@
         "id": "RADIATE",
         "name": "Radiate",
         "intent": "Attack + Defend",
+        "block": 16,
         "damage": {
           "normal": 16,
           "ascension": 18
@@ -2750,7 +2783,8 @@
             "target": "self",
             "amount": 4
           }
-        ]
+        ],
+        "block": 20
       }
     ],
     "damage_values": {
@@ -3110,9 +3144,10 @@
         "id": "SLASH2",
         "name": "Slash2",
         "intent": "Attack + Defend",
+        "block": 12,
         "damage": {
-          "normal": 19,
-          "ascension": 21
+          "normal": 12,
+          "ascension": 14
         }
       },
       {
@@ -3242,7 +3277,11 @@
       {
         "id": "BUTT",
         "name": "Butt",
-        "intent": "Attack"
+        "intent": "Attack",
+        "damage": {
+          "normal": 3,
+          "ascension": 4
+        }
       },
       {
         "id": "GOOP",
@@ -3454,7 +3493,8 @@
             "target": "self",
             "amount": 5
           }
-        ]
+        ],
+        "block": 14
       }
     ],
     "damage_values": {
@@ -3493,6 +3533,7 @@
         "id": "FIRST_POWER_SHIELD",
         "name": "First Power Shield",
         "intent": "Attack + Defend",
+        "block": 5,
         "damage": {
           "normal": 6,
           "ascension": 7
@@ -3506,7 +3547,8 @@
       {
         "id": "PREP",
         "name": "Prep",
-        "intent": "Defend"
+        "intent": "Defend",
+        "block": 5
       },
       {
         "id": "MAGIC_BOMB",
@@ -3520,7 +3562,11 @@
       {
         "id": "RAM",
         "name": "Ram",
-        "intent": "Attack"
+        "intent": "Attack",
+        "damage": {
+          "normal": 10,
+          "ascension": 11
+        }
       }
     ],
     "damage_values": {
@@ -3771,6 +3817,7 @@
         "id": "SLICE",
         "name": "Slice",
         "intent": "Attack + Defend",
+        "block": 5,
         "damage": {
           "normal": 6,
           "ascension": 6
@@ -4104,8 +4151,7 @@
         "name": "Flail",
         "intent": "Attack",
         "damage": {
-          "normal": 1,
-          "hit_count": 3
+          "normal": 1
         }
       },
       {
@@ -4568,7 +4614,8 @@
             "target": "self",
             "amount": 1
           }
-        ]
+        ],
+        "block": 7
       }
     ],
     "damage_values": {
@@ -4726,7 +4773,8 @@
             "target": "self",
             "amount": 3
           }
-        ]
+        ],
+        "block": 10
       },
       {
         "id": "ZOOM",
@@ -4885,7 +4933,11 @@
         "id": "TWACK",
         "name": "Twack",
         "intent": "Attack + Defend",
-        "block": 5
+        "block": 5,
+        "damage": {
+          "normal": 7,
+          "ascension": 8
+        }
       },
       {
         "id": "LASH",
@@ -5022,7 +5074,11 @@
             "target": "self",
             "amount": 2
           }
-        ]
+        ],
+        "damage": {
+          "normal": 16,
+          "ascension": 18
+        }
       }
     ],
     "damage_values": {
@@ -5251,8 +5307,7 @@
         "intent": "Attack",
         "damage": {
           "normal": 6,
-          "ascension": 7,
-          "hit_count": 4
+          "ascension": 7
         }
       },
       {
@@ -5498,7 +5553,12 @@
             "target": "self",
             "amount": 7
           }
-        ]
+        ],
+        "damage": {
+          "normal": 3,
+          "ascension": 4,
+          "hit_count": 3
+        }
       },
       {
         "id": "STUN",
@@ -5626,8 +5686,7 @@
         "name": "Big Pounce",
         "intent": "Attack",
         "damage": {
-          "normal": 30,
-          "ascension": 32
+          "normal": 45
         }
       },
       {
@@ -6074,6 +6133,7 @@
         "id": "HARDENING_STRIKE",
         "name": "Hardening Strike",
         "intent": "Attack + Defend",
+        "block": 6,
         "damage": {
           "normal": 6,
           "ascension": 7
@@ -6115,7 +6175,11 @@
       {
         "id": "THIEVERY",
         "name": "Thievery",
-        "intent": "Attack + Debuff"
+        "intent": "Attack + Debuff",
+        "damage": {
+          "normal": 17,
+          "ascension": 19
+        }
       },
       {
         "id": "NAB",
@@ -6282,15 +6346,20 @@
       {
         "id": "BEAM",
         "name": "Beam",
-        "intent": "Attack"
+        "intent": "Attack",
+        "damage": {
+          "normal": 8,
+          "ascension": 8,
+          "hit_count": 3
+        }
       },
       {
         "id": "TACKLE_3",
         "name": "Tackle 3",
         "intent": "Attack",
         "damage": {
-          "normal": 18,
-          "ascension": 19
+          "normal": 14,
+          "ascension": 15
         }
       },
       {
@@ -6298,8 +6367,8 @@
         "name": "Tackle 4",
         "intent": "Attack",
         "damage": {
-          "normal": 18,
-          "ascension": 19
+          "normal": 14,
+          "ascension": 15
         }
       }
     ],
@@ -6401,8 +6470,7 @@
         "intent": "Attack",
         "damage": {
           "normal": 1,
-          "ascension": 1,
-          "hit_count": 8
+          "ascension": 1
         }
       }
     ],
@@ -6454,7 +6522,8 @@
             "target": "self",
             "amount": 1
           }
-        ]
+        ],
+        "block": 32
       },
       {
         "id": "BELOW_MOVE_1",
@@ -6513,12 +6582,22 @@
       {
         "id": "UNLOAD_MOVE_1",
         "name": "Unload Move 1",
-        "intent": "Attack"
+        "intent": "Attack",
+        "damage": {
+          "normal": 3,
+          "ascension": 4,
+          "hit_count": 5
+        }
       },
       {
         "id": "UNLOAD_MOVE_2",
         "name": "Unload Move 2",
-        "intent": "Attack"
+        "intent": "Attack",
+        "damage": {
+          "normal": 3,
+          "ascension": 4,
+          "hit_count": 5
+        }
       },
       {
         "id": "RELOAD",
@@ -6629,7 +6708,11 @@
       {
         "id": "BUTT",
         "name": "Butt",
-        "intent": "Attack"
+        "intent": "Attack",
+        "damage": {
+          "normal": 4,
+          "ascension": 5
+        }
       }
     ],
     "damage_values": {

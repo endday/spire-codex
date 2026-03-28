@@ -203,10 +203,78 @@ def extract_move_effects(content: str) -> dict[str, dict]:
         if powers:
             move_effects[move_id]["powers"] = powers
 
-        # Extract block from move methods
-        block_match = re.search(r'GainBlock\(base\.Creature,\s*(\d+)m?', body)
+        # Extract damage from move method body: DamageCmd.Attack(VarName) or DamageCmd.Attack(N)
+        dmg_match = re.search(r'DamageCmd\.Attack\((\w+)\)', body)
+        if dmg_match:
+            dmg_ref = dmg_match.group(1)
+            # Check if it's a literal number with 'm' suffix
+            if dmg_ref.endswith('m') and dmg_ref[:-1].isdigit():
+                move_effects[move_id]["damage"] = {"normal": int(dmg_ref[:-1])}
+            elif dmg_ref.isdigit():
+                move_effects[move_id]["damage"] = {"normal": int(dmg_ref)}
+            else:
+                # Resolve variable — look for property or field definition
+                # Pattern: private int VarName => AscensionHelper.GetValueIfAscension(..., asc, normal)
+                asc_match = re.search(
+                    rf'{dmg_ref}\s*=>\s*AscensionHelper\.GetValueIfAscension\(\w+\.\w+,\s*(\d+),\s*(\d+)\)',
+                    content
+                )
+                if asc_match:
+                    move_effects[move_id]["damage"] = {
+                        "normal": int(asc_match.group(2)),
+                        "ascension": int(asc_match.group(1)),
+                    }
+                else:
+                    # Simple property: private int VarName => N;
+                    simple_match = re.search(rf'{dmg_ref}\s*=>\s*(\d+)\s*;', content)
+                    if simple_match:
+                        move_effects[move_id]["damage"] = {"normal": int(simple_match.group(1))}
+                    else:
+                        # Const: private const int _varName = N;
+                        const_match = re.search(rf'const\s+int\s+\w*{dmg_ref}\w*\s*=\s*(\d+)', content, re.IGNORECASE)
+                        if const_match:
+                            move_effects[move_id]["damage"] = {"normal": int(const_match.group(1))}
+
+            # Check for hit count: .WithHitCount(N or Var)
+            hit_match = re.search(r'Attack\(\w+\)\.WithHitCount\((\w+)\)', body)
+            if hit_match and "damage" in move_effects[move_id]:
+                hit_val = hit_match.group(1)
+                if hit_val.isdigit():
+                    move_effects[move_id]["damage"]["hit_count"] = int(hit_val)
+                else:
+                    # Resolve hit count variable
+                    hc_match = re.search(rf'{hit_val}\s*=>\s*(\d+)', content)
+                    if hc_match:
+                        move_effects[move_id]["damage"]["hit_count"] = int(hc_match.group(1))
+                    else:
+                        hc_const = re.search(rf'const\s+int\s+\w*{hit_val}\w*\s*=\s*(\d+)', content, re.IGNORECASE)
+                        if hc_const:
+                            move_effects[move_id]["damage"]["hit_count"] = int(hc_const.group(1))
+
+        # Extract block from move methods — support both literal and variable references
+        block_match = re.search(r'GainBlock\([\w.]+,\s*(\w+)', body)
         if block_match:
-            move_effects[move_id]["block"] = int(block_match.group(1))
+            blk_ref = block_match.group(1)
+            if blk_ref.endswith('m') and blk_ref[:-1].isdigit():
+                move_effects[move_id]["block"] = int(blk_ref[:-1])
+            elif blk_ref.isdigit():
+                move_effects[move_id]["block"] = int(blk_ref)
+            else:
+                # Resolve variable
+                asc_match = re.search(
+                    rf'{blk_ref}\s*=>\s*AscensionHelper\.GetValueIfAscension\(\w+\.\w+,\s*(\d+),\s*(\d+)\)',
+                    content
+                )
+                if asc_match:
+                    move_effects[move_id]["block"] = int(asc_match.group(2))
+                else:
+                    simple_match = re.search(rf'{blk_ref}\s*=>\s*(\d+)\s*;', content)
+                    if simple_match:
+                        move_effects[move_id]["block"] = int(simple_match.group(1))
+                    else:
+                        const_match = re.search(rf'const\s+int\s+\w*{blk_ref}\w*\s*=\s*(\d+)', content, re.IGNORECASE)
+                        if const_match:
+                            move_effects[move_id]["block"] = int(const_match.group(1))
 
         # Extract healing
         heal_match = re.search(r'CreatureCmd\.Heal\(base\.Creature,\s*(\d+)', body)
@@ -347,14 +415,15 @@ def parse_single_monster(filepath: Path, localization: dict, encounter_types: di
             move_entry["block"] = effects["block"]
         if effects.get("heal"):
             move_entry["heal"] = effects["heal"]
-
-        # Link damage value if name matches
-        for dmg_name, dmg_val in damage_values.items():
-            # Match damage name to move (e.g., "HammerUppercut" matches "HAMMER_UPPERCUT_MOVE")
-            dmg_upper = class_name_to_id(dmg_name)
-            if dmg_upper in loc_move or loc_move.startswith(dmg_upper):
-                move_entry["damage"] = dmg_val
-                break
+        if effects.get("damage"):
+            move_entry["damage"] = effects["damage"]
+        else:
+            # Fallback: link damage value by name matching
+            for dmg_name, dmg_val in damage_values.items():
+                dmg_upper = class_name_to_id(dmg_name)
+                if dmg_upper in loc_move or loc_move.startswith(dmg_upper):
+                    move_entry["damage"] = dmg_val
+                    break
 
         move_details.append(move_entry)
 

@@ -28,12 +28,21 @@ const typeOptions = [
   { label: "Boss", value: "Boss" },
 ];
 
+const actOptions = [
+  { label: "Act 1 - Overgrowth", value: "Act 1 - Overgrowth" },
+  { label: "Act 2 - Hive", value: "Act 2 - Hive" },
+  { label: "Act 3 - Glory", value: "Act 3 - Glory" },
+  { label: "Underdocks", value: "Underdocks" },
+  { label: "Weak Encounters", value: "weak" },
+];
+
 export default function MonstersClient({ initialMonsters }: { initialMonsters: Monster[] }) {
   const { lang } = useLanguage();
     const lp = useLangPrefix();
 const [monsters, setMonsters] = useState<Monster[]>(initialMonsters);
   const [search, setSearch] = useState("");
   const [type, setType] = useState("");
+  const [act, setAct] = useState("");
   const initialRender = useRef(true);
 
   useEffect(() => {
@@ -52,13 +61,22 @@ const [monsters, setMonsters] = useState<Monster[]>(initialMonsters);
       .then(setMonsters);
   }, [type, search, lang]);
 
+  // Client-side act filtering (encounter data is on each monster)
+  const filtered = monsters.filter((m) => {
+    if (!act) return true;
+    if (act === "weak") {
+      return m.encounters?.some((e) => e.is_weak) ?? false;
+    }
+    return m.encounters?.some((e) => e.act === act) ?? false;
+  });
+
   return (
     <>
       <SearchFilter
         search={search}
         onSearchChange={setSearch}
         placeholder="Search monsters..."
-        resultCount={monsters.length}
+        resultCount={filtered.length}
         filters={[
           {
             label: "All Types",
@@ -66,11 +84,17 @@ const [monsters, setMonsters] = useState<Monster[]>(initialMonsters);
             options: typeOptions,
             onChange: setType,
           },
+          {
+            label: "All Acts",
+            value: act,
+            options: actOptions,
+            onChange: setAct,
+          },
         ]}
       />
 
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
-        {monsters.map((monster) => (
+        {filtered.map((monster) => (
           <Link
             key={monster.id}
             href={`${lp}/monsters/${monster.id.toLowerCase()}`}
