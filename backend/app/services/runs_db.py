@@ -138,6 +138,13 @@ def submit_run(data: dict) -> dict:
         # Check for duplicate
         existing = conn.execute("SELECT id FROM runs WHERE run_hash = ?", (run_hash,)).fetchone()
         if existing:
+            # Ensure JSON file exists for sharing even on duplicates
+            runs_dir = _data_dir / "runs"
+            runs_dir.mkdir(parents=True, exist_ok=True)
+            run_file = runs_dir / f"{run_hash}.json"
+            if not run_file.exists():
+                with open(run_file, "w", encoding="utf-8") as f:
+                    json.dump(data, f, ensure_ascii=False)
             return {"error": "This run has already been submitted", "duplicate": True, "run_hash": run_hash}
 
         # Insert run
