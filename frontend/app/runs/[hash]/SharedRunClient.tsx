@@ -135,7 +135,7 @@ export default function SharedRunClient() {
   if (notFound || !run) return (
     <div className="max-w-4xl mx-auto px-4 py-12 text-center">
       <p className="text-[var(--text-muted)] mb-4">Run not found.</p>
-      <Link href={`${lp}/runs`} className="text-[var(--accent-gold)] hover:underline">&larr; Back to Run Viewer</Link>
+      <Link href={`${lp}/runs`} className="text-[var(--accent-gold)] hover:underline">&larr; Back</Link>
     </div>
   );
 
@@ -148,7 +148,7 @@ export default function SharedRunClient() {
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <div className="flex items-center justify-between mb-4">
         <Link href={`${lp}/runs`} className="text-sm text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors">
-          &larr; Run Viewer
+          &larr; Back
         </Link>
         <button onClick={copyLink}
           className="text-xs px-3 py-1.5 rounded-lg border border-[var(--border-subtle)] text-[var(--text-muted)] hover:text-[var(--text-primary)] hover:border-[var(--border-accent)] transition-colors">
