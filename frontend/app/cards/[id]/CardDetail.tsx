@@ -222,6 +222,7 @@ const [card, setCard] = useState<Card | null>(null);
   const activeVariant = selectedVariant && card.type_variants ? card.type_variants[selectedVariant] : null;
   const dmg = activeVariant ? activeVariant.damage : (u ? getUpgradedValue(card.damage, u.damage) : card.damage);
   const blk = activeVariant ? activeVariant.block : (u ? getUpgradedValue(card.block, u.block) : card.block);
+  const hitCount = u?.repeat ? getUpgradedValue(card.hit_count, u.repeat) : card.hit_count;
   const cost = u && u.cost != null ? (u.cost as number) : card.cost;
   const displayType = activeVariant ? activeVariant.type : card.type;
   const isUpgraded = upgraded && card.upgrade != null;
@@ -409,8 +410,8 @@ const [card, setCard] = useState<Card | null>(null);
                       }`}
                     >
                       {dmg}
-                      {card.hit_count && card.hit_count > 1
-                        ? ` x${card.hit_count}`
+                      {hitCount && hitCount > 1
+                        ? ` x${hitCount}`
                         : ""}{" "}
                       DMG
                     </span>
