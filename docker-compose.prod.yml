@@ -5,7 +5,7 @@ services:
     image: ptrlrd/spire-codex-backend:latest
     container_name: spire-codex-backend
     volumes:
-      - ./data:/data:ro
+      - ./data:/data
     environment:
       - DATA_DIR=/data
       - FEEDBACK_WEBHOOK_URL=${FEEDBACK_WEBHOOK_URL:-}

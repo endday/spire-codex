@@ -6,7 +6,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./data:/data:ro
+      - ./data:/data
       - ./backend/static:/app/static:ro
     environment:
       - DATA_DIR=/data
