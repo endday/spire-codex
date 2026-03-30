@@ -121,19 +121,25 @@ function getUpgradedDescription(card: Card, upgraded: boolean): string {
       }
     }
 
-    // Apply all replacements in a single pass using a regex that matches any base value
+    // Apply replacements in a single pass — skip ambiguous values (same number appears multiple times)
     if (replacements.length > 0) {
+      // Count how many times each base value appears in description
       const replMap = new Map(replacements.map((r) => [r.base, r.upgraded]));
-      // Sort by longest base string first to avoid partial matches
       const pattern = replacements
         .map((r) => r.base)
         .sort((a, b) => b.length - a.length)
         .map((s) => `\\b${s}\\b`)
         .join("|");
+      const occurrences = new Map<string, number>();
+      desc.replace(new RegExp(pattern, "g"), (match) => {
+        occurrences.set(match, (occurrences.get(match) || 0) + 1);
+        return match;
+      });
+      // Only replace values that appear exactly once (unambiguous)
       const used = new Set<string>();
       desc = desc.replace(new RegExp(pattern, "g"), (match) => {
-        // Only replace each base value once
         if (used.has(match)) return match;
+        if ((occurrences.get(match) || 0) > 1) return match; // ambiguous — skip
         used.add(match);
         return replMap.get(match) ?? match;
       });
@@ -485,20 +491,40 @@ const [card, setCard] = useState<Card | null>(null);
               {/* Keywords */}
               {card.keywords && card.keywords.length > 0 && (
                 <div className="flex flex-wrap gap-1.5 mb-5">
-                  {card.keywords.map((kw) => (
-                    <Link
-                      key={kw}
-                      href={`${lp}/keywords/${kw.toLowerCase()}`}
-                      className="text-xs px-2 py-1 rounded bg-[var(--bg-primary)] text-[var(--accent-gold-light)] border border-[var(--accent-gold)]/20 hover:border-[var(--accent-gold)]/50 transition-colors"
-                    >
-                      {kw}
-                      {keywordTooltips[kw] && (
-                        <span className="text-[var(--text-muted)] ml-1.5">
-                          &mdash; {keywordTooltips[kw]}
-                        </span>
-                      )}
-                    </Link>
-                  ))}
+                  {card.keywords.map((kw) => {
+                    const removed = isUpgraded && u?.remove_exhaust && kw === "Exhaust";
+                    return (
+                      <Link
+                        key={kw}
+                        href={`${lp}/keywords/${kw.toLowerCase()}`}
+                        className={`text-xs px-2 py-1 rounded border transition-colors ${
+                          removed
+                            ? "bg-[var(--color-ironclad)]/10 text-[var(--text-muted)] border-[var(--color-ironclad)]/20 line-through"
+                            : "bg-[var(--bg-primary)] text-[var(--accent-gold-light)] border-[var(--accent-gold)]/20 hover:border-[var(--accent-gold)]/50"
+                        }`}
+                      >
+                        {removed && "−"}{kw}
+                        {!removed && keywordTooltips[kw] && (
+                          <span className="text-[var(--text-muted)] ml-1.5">
+                            &mdash; {keywordTooltips[kw]}
+                          </span>
+                        )}
+                      </Link>
+                    );
+                  })}
+                  {isUpgraded && u?.add_innate && !card.keywords?.includes("Innate") && (
+                    <span className="text-xs px-2 py-1 rounded bg-[var(--color-silent)]/10 text-[var(--color-silent)] border border-[var(--color-silent)]/20">
+                      +Innate
+                    </span>
+                  )}
+                </div>
+              )}
+              {/* Show added Innate even if card has no existing keywords */}
+              {isUpgraded && u?.add_innate && (!card.keywords || card.keywords.length === 0) && (
+                <div className="flex flex-wrap gap-1.5 mb-5">
+                  <span className="text-xs px-2 py-1 rounded bg-[var(--color-silent)]/10 text-[var(--color-silent)] border border-[var(--color-silent)]/20">
+                    +Innate
+                  </span>
                 </div>
               )}
 

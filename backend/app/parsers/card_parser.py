@@ -227,11 +227,13 @@ def parse_single_card(filepath: Path, localization: dict, card_pools: dict, even
     is_x_cost = bool(re.search(r'HasEnergyCostX\s*=>\s*true', content) or re.search(r'override.*CostsX\s*=>\s*true', content))
     is_x_star_cost = bool(re.search(r'HasStarCostX\s*=>\s*true', content))
 
-    # Multi-hit
+    # Multi-hit — check literal WithHitCount(N) or DynamicVar Repeat
     hit_count = None
     hit_match = re.search(r'WithHitCount\((\d+)\)', content)
     if hit_match:
         hit_count = int(hit_match.group(1))
+    elif re.search(r'WithHitCount\(', content) and all_vars.get("Repeat"):
+        hit_count = all_vars["Repeat"]
 
     # Get localization
     title = localization.get(f"{card_id}.title", class_name)
