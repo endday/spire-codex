@@ -104,6 +104,15 @@ function getUpgradedDescription(card: Card, upgraded: boolean): string {
 
     for (const [key, upVal] of Object.entries(u)) {
       if (upVal == null) continue;
+      // Handle repeat/hit count upgrades with contextual replacement ("N times")
+      if (key.toLowerCase() === "repeat" && vars["Repeat"] != null) {
+        const base = vars["Repeat"];
+        const upgraded = getUpgradedValue(base, upVal);
+        if (upgraded !== null && upgraded !== base) {
+          desc = desc.replace(new RegExp(`\\b${base}\\b(\\s*times)`, "i"), `${upgraded}$1`);
+        }
+        continue;
+      }
       const varKey = Object.keys(vars).find(
         (k) => k.toLowerCase() === key.toLowerCase()
       );
@@ -123,7 +132,6 @@ function getUpgradedDescription(card: Card, upgraded: boolean): string {
 
     // Apply replacements in a single pass — skip ambiguous values (same number appears multiple times)
     if (replacements.length > 0) {
-      // Count how many times each base value appears in description
       const replMap = new Map(replacements.map((r) => [r.base, r.upgraded]));
       const pattern = replacements
         .map((r) => r.base)
@@ -135,11 +143,10 @@ function getUpgradedDescription(card: Card, upgraded: boolean): string {
         occurrences.set(match, (occurrences.get(match) || 0) + 1);
         return match;
       });
-      // Only replace values that appear exactly once (unambiguous)
       const used = new Set<string>();
       desc = desc.replace(new RegExp(pattern, "g"), (match) => {
         if (used.has(match)) return match;
-        if ((occurrences.get(match) || 0) > 1) return match; // ambiguous — skip
+        if ((occurrences.get(match) || 0) > 1) return match;
         used.add(match);
         return replMap.get(match) ?? match;
       });
@@ -411,7 +418,7 @@ const [card, setCard] = useState<Card | null>(null);
                     >
                       {dmg}
                       {hitCount && hitCount > 1
-                        ? ` x${hitCount}`
+                        ? ` × ${hitCount}`
                         : ""}{" "}
                       DMG
                     </span>
