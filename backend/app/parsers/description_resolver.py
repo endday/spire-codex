@@ -329,13 +329,11 @@ def extract_vars_from_source(content: str) -> dict[str, int]:
         all_vars[m.group(1)] = int(m.group(2))
 
     # Pattern: new XxxVar(ValueProp...) with no numeric — CalculatedDamageVar etc.
-    # These need a fallback: check for CalculationBase or similar vars to compute
-    # CalculatedDamageVar/CalculatedBlockVar without a literal value
+    # CalculatedDamage in-game shows the BASE value, not base+extra (extra is runtime-multiplied)
     if 'CalculatedDamageVar' in content and 'CalculatedDamage' not in all_vars:
         base_val = all_vars.get('CalculationBase', 0)
-        extra_val = all_vars.get('ExtraDamage', 0)
-        if base_val or extra_val:
-            all_vars['CalculatedDamage'] = base_val + extra_val
+        if base_val is not None:
+            all_vars['CalculatedDamage'] = base_val
 
     # Pattern: new XxxVar(PropertyName, ...) where property is backed by a private field
     # e.g. new DamageVar(CurrentDamage, ValueProp.Move) with private int _currentDamage = 13

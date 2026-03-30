@@ -811,7 +811,7 @@
   {
     "id": "ASHEN_STRIKE",
     "name": "Ashen Strike",
-    "description": "Deal 9 damage.\nDeals 3 additional damage for each card in your [gold]Exhaust Pile[/gold].",
+    "description": "Deal 6 damage.\nDeals 3 additional damage for each card in your [gold]Exhaust Pile[/gold].",
     "description_raw": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card in your [gold]Exhaust Pile[/gold].",
     "cost": 1,
     "is_x_cost": null,
@@ -836,7 +836,7 @@
     "vars": {
       "CalculationBase": 6,
       "ExtraDamage": 3,
-      "CalculatedDamage": 9
+      "CalculatedDamage": 6
     },
     "upgrade": {
       "damage": "+1",
@@ -2018,7 +2018,7 @@
     "vars": {
       "CalculationBase": 0,
       "ExtraDamage": 1,
-      "CalculatedDamage": 1
+      "CalculatedDamage": 0
     },
     "upgrade": {
       "cost": 0
@@ -2694,7 +2694,7 @@
   {
     "id": "BULLY",
     "name": "Bully",
-    "description": "Deal 6 damage.\nDeals 2 additional damage for each [gold]Vulnerable[/gold] on the enemy.",
+    "description": "Deal 4 damage.\nDeals 2 additional damage for each [gold]Vulnerable[/gold] on the enemy.",
     "description_raw": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each [gold]Vulnerable[/gold] on the enemy.",
     "cost": 0,
     "is_x_cost": null,
@@ -2717,7 +2717,7 @@
     "vars": {
       "CalculationBase": 4,
       "ExtraDamage": 2,
-      "CalculatedDamage": 6
+      "CalculatedDamage": 4
     },
     "upgrade": {
       "damage": "+1",
@@ -4093,7 +4093,7 @@
   {
     "id": "CONFLAGRATION",
     "name": "Conflagration",
-    "description": "Deal 10 damage to ALL enemies.\nDeals 2 additional damage for each other Attack you've played this turn.",
+    "description": "Deal 8 damage to ALL enemies.\nDeals 2 additional damage for each other Attack you've played this turn.",
     "description_raw": "Deal {CalculatedDamage:diff()} damage to ALL enemies.\nDeals {ExtraDamage:diff()} additional damage for each other Attack you've played this turn.",
     "cost": 1,
     "is_x_cost": null,
@@ -4116,7 +4116,7 @@
     "vars": {
       "CalculationBase": 8,
       "ExtraDamage": 2,
-      "CalculatedDamage": 10
+      "CalculatedDamage": 8
     },
     "upgrade": {
       "damage": "+1",
@@ -4597,7 +4597,7 @@
   {
     "id": "CRESCENT_SPEAR",
     "name": "Crescent Spear",
-    "description": "Deal 8 damage.\nDeals 2 additional damage for ALL your cards that have a [star:1] cost.",
+    "description": "Deal 6 damage.\nDeals 2 additional damage for ALL your cards that have a [star:1] cost.",
     "description_raw": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for ALL your cards that have a {singleStarIcon} cost.",
     "cost": 1,
     "is_x_cost": null,
@@ -4620,7 +4620,7 @@
     "vars": {
       "CalculationBase": 6,
       "ExtraDamage": 2,
-      "CalculatedDamage": 8,
+      "CalculatedDamage": 6,
       "StarCost": 1
     },
     "upgrade": {
@@ -5143,7 +5143,7 @@
   {
     "id": "DEATH_MARCH",
     "name": "Death March",
-    "description": "Deal 11 damage.\nDeals 3 additional damage for each card drawn during your turn.",
+    "description": "Deal 8 damage.\nDeals 3 additional damage for each card drawn during your turn.",
     "description_raw": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card drawn during your turn.",
     "cost": 1,
     "is_x_cost": null,
@@ -5166,7 +5166,7 @@
     "vars": {
       "CalculationBase": 8,
       "ExtraDamage": 3,
-      "CalculatedDamage": 11
+      "CalculatedDamage": 8
     },
     "upgrade": {
       "damage": "+1",
@@ -8978,7 +8978,7 @@
   {
     "id": "GANG_UP",
     "name": "Gang Up",
-    "description": "Deal 10 damage.\nDeals 5 additional damage for each time another player has attacked the enemy this turn.",
+    "description": "Deal 5 damage.\nDeals 5 additional damage for each time another player has attacked the enemy this turn.",
     "description_raw": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each time another player has attacked the enemy this turn.",
     "cost": 1,
     "is_x_cost": null,
@@ -9001,7 +9001,7 @@
     "vars": {
       "CalculationBase": 5,
       "ExtraDamage": 5,
-      "CalculatedDamage": 10
+      "CalculatedDamage": 5
     },
     "upgrade": {
       "damage": "+2",
@@ -9463,7 +9463,7 @@
     "vars": {
       "CalculationBase": 0,
       "ExtraDamage": 1,
-      "CalculatedDamage": 1
+      "CalculatedDamage": 0
     },
     "upgrade": {
       "add_retain": true
@@ -12708,7 +12708,7 @@
   {
     "id": "MEMENTO_MORI",
     "name": "Memento Mori",
-    "description": "Deal 12 damage.\nDeals 4 additional damage for each card discarded this turn.",
+    "description": "Deal 8 damage.\nDeals 4 additional damage for each card discarded this turn.",
     "description_raw": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card discarded this turn.",
     "cost": 1,
     "is_x_cost": null,
@@ -12731,7 +12731,7 @@
     "vars": {
       "CalculationBase": 8,
       "ExtraDamage": 4,
-      "CalculatedDamage": 12
+      "CalculatedDamage": 8
     },
     "upgrade": {
       "damage": "+1",
@@ -12946,7 +12946,7 @@
     "vars": {
       "CalculationBase": 0,
       "ExtraDamage": 1,
-      "CalculatedDamage": 1
+      "CalculatedDamage": 0
     },
     "upgrade": {
       "cost": 0
@@ -13435,7 +13435,7 @@
   {
     "id": "MURDER",
     "name": "Murder",
-    "description": "Deal 2 damage.\nDeals 1 additional damage for each card drawn this combat.",
+    "description": "Deal 1 damage.\nDeals 1 additional damage for each card drawn this combat.",
     "description_raw": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card drawn this combat.",
     "cost": 3,
     "is_x_cost": null,
@@ -13458,7 +13458,7 @@
     "vars": {
       "CalculationBase": 1,
       "ExtraDamage": 1,
-      "CalculatedDamage": 2
+      "CalculatedDamage": 1
     },
     "upgrade": {
       "cost": 2
@@ -14667,7 +14667,7 @@
   {
     "id": "PERFECTED_STRIKE",
     "name": "Perfected Strike",
-    "description": "Deal 8 damage.\nDeals 2 additional damage for ALL your cards containing “Strike”.",
+    "description": "Deal 6 damage.\nDeals 2 additional damage for ALL your cards containing “Strike”.",
     "description_raw": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for ALL your cards containing “Strike”.",
     "cost": 2,
     "is_x_cost": null,
@@ -14692,7 +14692,7 @@
     "vars": {
       "CalculationBase": 6,
       "ExtraDamage": 2,
-      "CalculatedDamage": 8
+      "CalculatedDamage": 6
     },
     "upgrade": {
       "damage": "+1",
@@ -15141,7 +15141,7 @@
   {
     "id": "PRECISE_CUT",
     "name": "Precise Cut",
-    "description": "Deal 15 damage.\nDeals inverseDiff() less damage for each other card in your [gold]Hand[/gold].",
+    "description": "Deal 13 damage.\nDeals inverseDiff() less damage for each other card in your [gold]Hand[/gold].",
     "description_raw": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:inverseDiff()} less damage for each other card in your [gold]Hand[/gold].",
     "cost": 0,
     "is_x_cost": null,
@@ -15164,7 +15164,7 @@
     "vars": {
       "CalculationBase": 13,
       "ExtraDamage": 2,
-      "CalculatedDamage": 15
+      "CalculatedDamage": 13
     },
     "upgrade": {
       "calculationbase": "+3"
@@ -15444,7 +15444,7 @@
   {
     "id": "PROTECTOR",
     "name": "Protector",
-    "description": "[gold]Osty[/gold] deals 11 damage.\nDeals additional damage equal to [gold]Osty's[/gold] [gold]Max HP[/gold].",
+    "description": "[gold]Osty[/gold] deals 10 damage.\nDeals additional damage equal to [gold]Osty's[/gold] [gold]Max HP[/gold].",
     "description_raw": "[gold]Osty[/gold] deals {CalculatedDamage:diff()} damage.\nDeals additional damage equal to [gold]Osty's[/gold] [gold]Max HP[/gold].",
     "cost": 1,
     "is_x_cost": null,
@@ -15469,7 +15469,7 @@
     "vars": {
       "CalculationBase": 10,
       "ExtraDamage": 1,
-      "CalculatedDamage": 11
+      "CalculatedDamage": 10
     },
     "upgrade": {
       "cost": 0,
@@ -16497,7 +16497,7 @@
   {
     "id": "REND",
     "name": "Rend",
-    "description": "Deal 20 damage.\nDeals 5 additional damage for each unique debuff on the enemy.",
+    "description": "Deal 15 damage.\nDeals 5 additional damage for each unique debuff on the enemy.",
     "description_raw": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each unique debuff on the enemy.",
     "cost": 2,
     "is_x_cost": null,
@@ -16520,7 +16520,7 @@
     "vars": {
       "CalculationBase": 15,
       "ExtraDamage": 5,
-      "CalculatedDamage": 20
+      "CalculatedDamage": 15
     },
     "upgrade": {
       "damage": "+3",
@@ -18706,7 +18706,7 @@
   {
     "id": "SOUL_STORM",
     "name": "Soul Storm",
-    "description": "Deal 11 damage.\nDeals 2 additional damage for each [gold]Soul[/gold] in your [gold]Exhaust Pile[/gold].",
+    "description": "Deal 9 damage.\nDeals 2 additional damage for each [gold]Soul[/gold] in your [gold]Exhaust Pile[/gold].",
     "description_raw": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each [gold]Soul[/gold] in your [gold]Exhaust Pile[/gold].",
     "cost": 1,
     "is_x_cost": null,
@@ -18731,7 +18731,7 @@
     "vars": {
       "CalculationBase": 9,
       "ExtraDamage": 2,
-      "CalculatedDamage": 11
+      "CalculatedDamage": 9
     },
     "upgrade": {
       "damage": "+1",
@@ -19258,7 +19258,7 @@
   {
     "id": "SQUEEZE",
     "name": "Squeeze",
-    "description": "[gold]Osty[/gold] deals 30 damage.\nDeals 5 additional damage for ALL your other [gold]Osty[/gold] Attacks.",
+    "description": "[gold]Osty[/gold] deals 25 damage.\nDeals 5 additional damage for ALL your other [gold]Osty[/gold] Attacks.",
     "description_raw": "[gold]Osty[/gold] deals {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for ALL your other [gold]Osty[/gold] Attacks.",
     "cost": 3,
     "is_x_cost": null,
@@ -19283,7 +19283,7 @@
     "vars": {
       "CalculationBase": 25,
       "ExtraDamage": 5,
-      "CalculatedDamage": 30
+      "CalculatedDamage": 25
     },
     "upgrade": {
       "damage": "+1",
@@ -20068,7 +20068,7 @@
   {
     "id": "SUPERMASSIVE",
     "name": "Supermassive",
-    "description": "Deal 8 damage.\nDeals 3 additional damage for each card you created this combat.",
+    "description": "Deal 5 damage.\nDeals 3 additional damage for each card you created this combat.",
     "description_raw": "Deal {CalculatedDamage:diff()} damage.\nDeals {ExtraDamage:diff()} additional damage for each card you created this combat.",
     "cost": 1,
     "is_x_cost": null,
@@ -20091,7 +20091,7 @@
     "vars": {
       "CalculationBase": 5,
       "ExtraDamage": 3,
-      "CalculatedDamage": 8
+      "CalculatedDamage": 5
     },
     "upgrade": {
       "damage": "+1",
@@ -21236,7 +21236,7 @@
     "vars": {
       "CalculationBase": 0,
       "ExtraDamage": 1,
-      "CalculatedDamage": 1
+      "CalculatedDamage": 0
     },
     "upgrade": {
       "add_retain": true
@@ -21741,7 +21741,7 @@
   {
     "id": "UNLEASH",
     "name": "Unleash",
-    "description": "[gold]Osty[/gold] deals 7 damage.\nDeals additional damage equal to [gold]Osty's[/gold] current HP.",
+    "description": "[gold]Osty[/gold] deals 6 damage.\nDeals additional damage equal to [gold]Osty's[/gold] current HP.",
     "description_raw": "[gold]Osty[/gold] deals {CalculatedDamage:diff()} damage.\nDeals additional damage equal to [gold]Osty's[/gold] current HP.",
     "cost": 1,
     "is_x_cost": null,
@@ -21766,7 +21766,7 @@
     "vars": {
       "CalculationBase": 6,
       "ExtraDamage": 1,
-      "CalculatedDamage": 7
+      "CalculatedDamage": 6
     },
     "upgrade": {
       "calculationbase": "+3"
