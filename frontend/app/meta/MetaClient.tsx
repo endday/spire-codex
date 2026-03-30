@@ -88,7 +88,7 @@ function CardPill({ cardId, cardData, lp, className }: {
       onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}>
       {info?.name || displayName(`CARD.${cardId}`)}
       {show && info && (
-        <div className="absolute z-50 bottom-full left-1/2 -translate-x-1/2 mb-2 w-56 p-3 rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-card)] shadow-xl pointer-events-none">
+        <div className="absolute z-[100] bottom-full left-0 mb-2 w-56 p-3 rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-card)] shadow-xl pointer-events-none">
           <div className="flex items-start gap-2 mb-1.5">
             {info.image_url && <img src={`${API}${info.image_url}`} alt="" className="w-10 h-10 object-cover rounded" crossOrigin="anonymous" />}
             <div className="min-w-0">
@@ -97,7 +97,6 @@ function CardPill({ cardId, cardData, lp, className }: {
             </div>
           </div>
           <div className="text-[10px] text-[var(--text-secondary)] leading-relaxed"><RichDescription text={info.description} /></div>
-          <div className="absolute left-1/2 -translate-x-1/2 top-full w-2 h-2 bg-[var(--bg-card)] border-r border-b border-[var(--border-subtle)] rotate-45 -mt-1" />
         </div>
       )}
     </Link>
@@ -114,7 +113,7 @@ function RelicPill({ relicId, relicData, lp, className, children }: {
       onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}>
       {children || (info?.name || displayName(`RELIC.${relicId}`))}
       {show && info && (
-        <div className="absolute z-50 bottom-full left-1/2 -translate-x-1/2 mb-2 w-56 p-3 rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-card)] shadow-xl pointer-events-none">
+        <div className="absolute z-[100] bottom-full left-0 mb-2 w-56 p-3 rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-card)] shadow-xl pointer-events-none">
           <div className="flex items-start gap-2 mb-1.5">
             {info.image_url && <img src={`${API}${info.image_url}`} alt="" className="w-8 h-8 object-contain" crossOrigin="anonymous" />}
             <div className="min-w-0">
@@ -123,7 +122,6 @@ function RelicPill({ relicId, relicData, lp, className, children }: {
             </div>
           </div>
           <div className="text-[10px] text-[var(--text-secondary)] leading-relaxed"><RichDescription text={info.description} /></div>
-          <div className="absolute left-1/2 -translate-x-1/2 top-full w-2 h-2 bg-[var(--bg-card)] border-r border-b border-[var(--border-subtle)] rotate-45 -mt-1" />
         </div>
       )}
     </Link>
@@ -140,7 +138,7 @@ function PotionPill({ potionId, potionData, lp, className }: {
       onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}>
       {info?.name || displayName(`POTION.${potionId}`)}
       {show && info && (
-        <div className="absolute z-50 bottom-full left-1/2 -translate-x-1/2 mb-2 w-56 p-3 rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-card)] shadow-xl pointer-events-none">
+        <div className="absolute z-[100] bottom-full left-0 mb-2 w-56 p-3 rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-card)] shadow-xl pointer-events-none">
           <div className="flex items-start gap-2 mb-1.5">
             {info.image_url && <img src={`${API}${info.image_url}`} alt="" className="w-8 h-8 object-contain" crossOrigin="anonymous" />}
             <div className="min-w-0">
@@ -149,7 +147,6 @@ function PotionPill({ potionId, potionData, lp, className }: {
             </div>
           </div>
           <div className="text-[10px] text-[var(--text-secondary)] leading-relaxed"><RichDescription text={info.description} /></div>
-          <div className="absolute left-1/2 -translate-x-1/2 top-full w-2 h-2 bg-[var(--bg-card)] border-r border-b border-[var(--border-subtle)] rotate-45 -mt-1" />
         </div>
       )}
     </Link>
@@ -448,7 +445,7 @@ export default function MetaClient() {
                 ))}
               </div>
 
-              <div className="overflow-x-auto">
+              <div className="overflow-visible">
                 <table className="w-full text-xs">
                   <thead>
                     <tr className="text-[var(--text-muted)] border-b border-[var(--border-subtle)]">
@@ -543,7 +540,7 @@ export default function MetaClient() {
                         </button>
                       ))}
                     </div>
-                    <div className="overflow-x-auto">
+                    <div className="overflow-visible">
                       <table className="w-full text-xs">
                         <thead>
                           <tr className="text-[var(--text-muted)] border-b border-[var(--border-subtle)]">
@@ -577,7 +574,7 @@ export default function MetaClient() {
           {stats.top_potions && stats.top_potions.length > 0 && (
             <div className="bg-[var(--bg-card)] rounded-xl border border-[var(--border-subtle)] p-5">
               <h2 className="text-lg font-semibold text-[var(--text-primary)] mb-3">Potion Stats ({stats.top_potions.length})</h2>
-              <div className="overflow-x-auto">
+              <div className="overflow-visible">
                 <table className="w-full text-xs">
                   <thead>
                     <tr className="text-[var(--text-muted)] border-b border-[var(--border-subtle)]">
