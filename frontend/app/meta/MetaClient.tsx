@@ -74,7 +74,7 @@ interface CommunityStats {
 }
 
 function displayName(id: string): string {
-  return id.replace(/^(CARD|RELIC|ENCHANTMENT|MONSTER|ENCOUNTER|CHARACTER|ACT)\./, "")
+  return id.replace(/^(CARD|RELIC|ENCHANTMENT|MONSTER|ENCOUNTER|CHARACTER|ACT|POTION)\./, "")
     .replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 }
 

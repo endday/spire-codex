@@ -16,7 +16,7 @@ interface CardInfo { id: string; name: string; description: string; type: string
 interface RelicInfo { id: string; name: string; description: string; rarity: string; image_url: string | null; }
 
 function cleanId(id: string): string {
-  return id.replace(/^(CARD|RELIC|ENCHANTMENT|MONSTER|ENCOUNTER|CHARACTER|ACT)\./, "");
+  return id.replace(/^(CARD|RELIC|ENCHANTMENT|MONSTER|ENCOUNTER|CHARACTER|ACT|POTION)\./, "");
 }
 
 function displayName(id: string): string {

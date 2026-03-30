@@ -131,7 +131,7 @@ def compute_run_hash(data: dict) -> str:
 
 def clean_id(raw_id: str) -> str:
     """Strip prefixes like CARD., RELIC., etc."""
-    for prefix in ("CARD.", "RELIC.", "ENCHANTMENT.", "MONSTER.", "ENCOUNTER.", "CHARACTER.", "ACT."):
+    for prefix in ("CARD.", "RELIC.", "ENCHANTMENT.", "MONSTER.", "ENCOUNTER.", "CHARACTER.", "ACT.", "POTION."):
         if raw_id.startswith(prefix):
             return raw_id[len(prefix):]
     return raw_id

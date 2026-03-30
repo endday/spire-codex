@@ -190,7 +190,7 @@ interface RunData {
 }
 
 function cleanId(id: string): string {
-  return id.replace(/^(CARD|RELIC|ENCHANTMENT|MONSTER|ENCOUNTER|CHARACTER|ACT)\./, "");
+  return id.replace(/^(CARD|RELIC|ENCHANTMENT|MONSTER|ENCOUNTER|CHARACTER|ACT|POTION)\./, "");
 }
 
 function formatTime(seconds: number): string {
@@ -427,7 +427,7 @@ export default function RunsClient() {
     if (browseChar) params.set("character", browseChar);
     if (browseWin) params.set("win", browseWin);
     if (browseUser) params.set("username", browseUser);
-    fetch(`${API}/api/runs/list?${params}`)
+    fetch(`${API}/api/runs/list?${params}&_t=${Date.now()}`)
       .then((r) => r.ok ? r.json() : [])
       .then(setRunList)
       .catch(() => {});
