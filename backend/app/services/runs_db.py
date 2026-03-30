@@ -295,12 +295,15 @@ def get_stats(character: str | None = None, win: str | None = None,
             GROUP BY rc.card_id ORDER BY count DESC
         """, params).fetchall()
 
-        # Most common relics (filtered)
+        # Relic stats (filtered) — all relics, not just top 20
         top_relics = conn.execute(f"""
-            SELECT rr.relic_id, COUNT(*) as count
+            SELECT rr.relic_id,
+                   COUNT(*) as count,
+                   COUNT(DISTINCT rr.run_id) as total_runs_with,
+                   COUNT(DISTINCT CASE WHEN r.win = 1 THEN rr.run_id END) as win_runs
             FROM run_relics rr JOIN runs r ON rr.run_id = r.id
             {where}
-            GROUP BY rr.relic_id ORDER BY count DESC LIMIT 20
+            GROUP BY rr.relic_id ORDER BY count DESC
         """, params).fetchall()
 
         # Most deadly encounters (filtered, losses only)
@@ -365,7 +368,9 @@ def get_stats(character: str | None = None, win: str | None = None,
                 {"card_id": r["card_id"], "offered": r["offered"], "picked": r["picked"], "pick_rate": r["pick_rate"]}
                 for r in pick_rates
             ],
-            "top_relics": [{"relic_id": r["relic_id"], "count": r["count"]} for r in top_relics],
+            "top_relics": [{"relic_id": r["relic_id"], "count": r["count"],
+                           "total_runs_with": r["total_runs_with"], "win_runs": r["win_runs"]}
+                          for r in top_relics],
             "deadliest": [{"encounter": r["killed_by"], "count": r["count"]} for r in deaths],
         }
 

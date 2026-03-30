@@ -60,7 +60,7 @@ interface CommunityStats {
   ascensions: { level: number; total: number; wins: number; win_rate: number }[];
   top_cards: { card_id: string; count: number; in_wins: number; in_losses: number; win_runs: number; total_runs_with: number }[];
   pick_rates: { card_id: string; offered: number; picked: number; pick_rate: number }[];
-  top_relics: { relic_id: string; count: number }[];
+  top_relics: { relic_id: string; count: number; total_runs_with: number; win_runs: number }[];
   deadliest: { encounter: string; count: number }[];
 }
 
@@ -137,7 +137,9 @@ export default function MetaClient() {
   const [cardSort, setCardSort] = useState<SortKey>("pick_rate");
   const [showAllCards, setShowAllCards] = useState(false);
   const [cardView, setCardView] = useState<"chart" | "table">("table");
-  const [relicView, setRelicView] = useState<"chart" | "list">("list");
+  const [relicSort, setRelicSort] = useState<"count" | "win_pct" | "name">("count");
+  const [showAllRelics, setShowAllRelics] = useState(false);
+  const [relicView, setRelicView] = useState<"chart" | "table">("table");
 
   useEffect(() => {
     cachedFetch<CardInfo[]>(`${API}/api/cards`).then((cards) => {
@@ -442,53 +444,93 @@ export default function MetaClient() {
             </div>
           )}
 
-          {/* Top Relics */}
-          {stats.top_relics && stats.top_relics.length > 0 && (
-            <div className="bg-[var(--bg-card)] rounded-xl border border-[var(--border-subtle)] p-5">
-              <div className="flex items-center justify-between mb-3">
-                <h2 className="text-lg font-semibold text-[var(--text-primary)]">Most Common Relics</h2>
-                <div className="flex rounded-lg border border-[var(--border-subtle)] overflow-hidden">
-                  <button onClick={() => setRelicView("chart")}
-                    className={`text-xs px-2.5 py-1 transition-colors ${relicView === "chart" ? "bg-[var(--accent-gold)]/10 text-[var(--accent-gold)]" : "text-[var(--text-muted)] hover:text-[var(--text-secondary)]"}`}>
-                    Chart
-                  </button>
-                  <button onClick={() => setRelicView("list")}
-                    className={`text-xs px-2.5 py-1 border-l border-[var(--border-subtle)] transition-colors ${relicView === "list" ? "bg-[var(--accent-gold)]/10 text-[var(--accent-gold)]" : "text-[var(--text-muted)] hover:text-[var(--text-secondary)]"}`}>
-                    List
-                  </button>
+          {/* Relic Stats */}
+          {stats.top_relics && stats.top_relics.length > 0 && (() => {
+            const relicRows = stats.top_relics.map((r) => {
+              const winPct = r.total_runs_with > 0 ? Math.round(r.win_runs / r.total_runs_with * 100 * 10) / 10 : 0;
+              return { ...r, name: relicData[r.relic_id]?.name || displayName(`RELIC.${r.relic_id}`), win_pct: winPct };
+            }).sort((a, b) => {
+              if (relicSort === "name") return a.name.localeCompare(b.name);
+              if (relicSort === "win_pct") return b.win_pct - a.win_pct || b.win_runs - a.win_runs;
+              return b.count - a.count;
+            });
+            return (
+              <div className="bg-[var(--bg-card)] rounded-xl border border-[var(--border-subtle)] p-5">
+                <div className="flex items-center justify-between mb-3">
+                  <h2 className="text-lg font-semibold text-[var(--text-primary)]">Relic Stats ({relicRows.length})</h2>
+                  <div className="flex items-center gap-2">
+                    {relicView === "table" && (
+                      <button onClick={() => setShowAllRelics(!showAllRelics)} className="text-xs text-[var(--accent-gold)] hover:underline">
+                        {showAllRelics ? "Top 20" : "Show All"}
+                      </button>
+                    )}
+                    <div className="flex rounded-lg border border-[var(--border-subtle)] overflow-hidden">
+                      <button onClick={() => setRelicView("chart")}
+                        className={`text-xs px-2.5 py-1 transition-colors ${relicView === "chart" ? "bg-[var(--accent-gold)]/10 text-[var(--accent-gold)]" : "text-[var(--text-muted)] hover:text-[var(--text-secondary)]"}`}>
+                        Chart
+                      </button>
+                      <button onClick={() => setRelicView("table")}
+                        className={`text-xs px-2.5 py-1 border-l border-[var(--border-subtle)] transition-colors ${relicView === "table" ? "bg-[var(--accent-gold)]/10 text-[var(--accent-gold)]" : "text-[var(--text-muted)] hover:text-[var(--text-secondary)]"}`}>
+                        Table
+                      </button>
+                    </div>
+                  </div>
                 </div>
+
+                {relicView === "chart" && (
+                  <ResponsiveContainer width="100%" height={Math.min(relicRows.length, 15) * 28 + 30}>
+                    <BarChart layout="vertical"
+                      data={relicRows.slice(0, 15).map((r) => ({ name: r.name.length > 20 ? r.name.slice(0, 18) + "…" : r.name, count: r.total_runs_with }))}
+                      margin={{ left: 10, right: 20 }}>
+                      <XAxis type="number" tick={{ fontSize: 10, fill: "#9ca3af" }} />
+                      <YAxis type="category" dataKey="name" width={120} tick={{ fontSize: 10, fill: "#9ca3af" }} />
+                      <Tooltip contentStyle={{ background: "#1a1a2e", border: "1px solid #333", borderRadius: 8, fontSize: 12 }} />
+                      <Bar dataKey="count" fill={CHART_COLORS.gold} radius={[0, 4, 4, 0]} name="Runs" />
+                    </BarChart>
+                  </ResponsiveContainer>
+                )}
+
+                {relicView === "table" && (
+                  <>
+                    <div className="flex gap-1 mb-3">
+                      {([["count", "Runs"], ["win_pct", "Win %"], ["name", "Name"]] as [typeof relicSort, string][]).map(([key, label]) => (
+                        <button key={key} onClick={() => setRelicSort(key)}
+                          className={`text-[10px] px-2 py-0.5 rounded border transition-colors ${
+                            relicSort === key ? "border-[var(--accent-gold)]/40 text-[var(--accent-gold)] bg-[var(--accent-gold)]/5" : "border-[var(--border-subtle)] text-[var(--text-muted)] hover:text-[var(--text-secondary)]"
+                          }`}>
+                          {label}
+                        </button>
+                      ))}
+                    </div>
+                    <div className="overflow-x-auto">
+                      <table className="w-full text-xs">
+                        <thead>
+                          <tr className="text-[var(--text-muted)] border-b border-[var(--border-subtle)]">
+                            <th className="text-left py-1.5 font-medium">Relic</th>
+                            <th className="text-right py-1.5 font-medium w-16">Runs</th>
+                            <th className="text-right py-1.5 font-medium w-16">Win %</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {(showAllRelics ? relicRows : relicRows.slice(0, 20)).map((r) => (
+                            <tr key={r.relic_id} className="border-b border-[var(--border-subtle)] last:border-0 hover:bg-[var(--bg-primary)]/50">
+                              <td className="py-1.5">
+                                <RelicPill relicId={r.relic_id} relicData={relicData} lp={lp} className="text-[var(--text-secondary)] hover:text-[var(--accent-gold)]" />
+                              </td>
+                              <td className="text-right text-[var(--text-muted)]">{r.total_runs_with}</td>
+                              <td className={`text-right font-medium ${r.win_pct >= 50 ? "text-[var(--color-silent)]" : r.win_pct > 0 ? "text-[var(--text-secondary)]" : "text-[var(--text-muted)]"}`}>
+                                {r.total_runs_with > 0 ? `${r.win_pct}%` : "—"}
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  </>
+                )}
               </div>
-
-              {relicView === "chart" && (
-                <ResponsiveContainer width="100%" height={Math.min(stats.top_relics.length, 15) * 28 + 30}>
-                  <BarChart
-                    layout="vertical"
-                    data={stats.top_relics.slice(0, 15).map((r) => ({
-                      name: (relicData[r.relic_id]?.name || displayName(`RELIC.${r.relic_id}`)).slice(0, 20),
-                      count: r.count,
-                    }))}
-                    margin={{ left: 10, right: 20 }}
-                  >
-                    <XAxis type="number" tick={{ fontSize: 10, fill: "#9ca3af" }} />
-                    <YAxis type="category" dataKey="name" width={120} tick={{ fontSize: 10, fill: "#9ca3af" }} />
-                    <Tooltip contentStyle={{ background: "#1a1a2e", border: "1px solid #333", borderRadius: 8, fontSize: 12 }} />
-                    <Bar dataKey="count" fill={CHART_COLORS.gold} radius={[0, 4, 4, 0]} />
-                  </BarChart>
-                </ResponsiveContainer>
-              )}
-
-              {relicView === "list" && (
-                <div className="flex flex-wrap gap-1.5">
-                  {stats.top_relics.map((r) => (
-                    <RelicPill key={r.relic_id} relicId={r.relic_id} relicData={relicData} lp={lp}
-                      className="text-xs px-2 py-1 rounded bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[var(--accent-gold)] hover:bg-[var(--bg-card-hover)]">
-                      {relicData[r.relic_id]?.name || displayName(`RELIC.${r.relic_id}`)} <span className="text-[var(--text-muted)]">({r.count})</span>
-                    </RelicPill>
-                  ))}
-                </div>
-              )}
-            </div>
-          )}
+            );
+          })()}
 
           {/* Deadliest Encounters */}
           {stats.deadliest && stats.deadliest.length > 0 && (
