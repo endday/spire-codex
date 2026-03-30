@@ -86,13 +86,23 @@ def init_db():
             CREATE INDEX IF NOT EXISTS idx_runs_win ON runs(win);
             CREATE INDEX IF NOT EXISTS idx_runs_ascension ON runs(ascension);
             CREATE INDEX IF NOT EXISTS idx_runs_game_mode ON runs(game_mode);
-            CREATE INDEX IF NOT EXISTS idx_runs_player_count ON runs(player_count);
             CREATE INDEX IF NOT EXISTS idx_run_cards_card ON run_cards(card_id);
             CREATE INDEX IF NOT EXISTS idx_run_cards_run ON run_cards(run_id);
             CREATE INDEX IF NOT EXISTS idx_run_relics_relic ON run_relics(relic_id);
             CREATE INDEX IF NOT EXISTS idx_run_choices_card ON run_card_choices(card_id);
             CREATE INDEX IF NOT EXISTS idx_run_choices_run ON run_card_choices(run_id);
         """)
+
+        # Migrations — add columns to existing tables
+        for col, default in [("was_abandoned", "0"), ("player_count", "1")]:
+            try:
+                conn.execute(f"ALTER TABLE runs ADD COLUMN {col} INTEGER NOT NULL DEFAULT {default}")
+            except Exception:
+                pass  # column already exists
+        try:
+            conn.execute("CREATE INDEX IF NOT EXISTS idx_runs_player_count ON runs(player_count)")
+        except Exception:
+            pass
 
 
 def compute_run_hash(data: dict) -> str:
@@ -129,16 +139,6 @@ def submit_run(data: dict) -> dict:
         existing = conn.execute("SELECT id FROM runs WHERE run_hash = ?", (run_hash,)).fetchone()
         if existing:
             return {"error": "This run has already been submitted", "duplicate": True}
-
-        # Migrate: add columns if they don't exist (for existing DBs)
-        try:
-            conn.execute("ALTER TABLE runs ADD COLUMN was_abandoned INTEGER NOT NULL DEFAULT 0")
-        except Exception:
-            pass
-        try:
-            conn.execute("ALTER TABLE runs ADD COLUMN player_count INTEGER NOT NULL DEFAULT 1")
-        except Exception:
-            pass
 
         # Insert run
         cursor = conn.execute("""
@@ -195,16 +195,6 @@ def get_stats(character: str | None = None, win: str | None = None,
               players: str | None = None) -> dict:
     """Compute aggregate community stats with optional filters."""
     with get_conn() as conn:
-        # Migrate columns if needed
-        try:
-            conn.execute("ALTER TABLE runs ADD COLUMN was_abandoned INTEGER NOT NULL DEFAULT 0")
-        except Exception:
-            pass
-        try:
-            conn.execute("ALTER TABLE runs ADD COLUMN player_count INTEGER NOT NULL DEFAULT 1")
-        except Exception:
-            pass
-
         # Build WHERE clause
         conditions = []
         params: list = []
