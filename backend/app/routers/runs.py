@@ -4,10 +4,15 @@ from ..services.runs_db import submit_run, get_stats
 
 router = APIRouter(prefix="/api/runs", tags=["Runs"])
 
+MAX_BODY_SIZE = 512 * 1024  # 512 KB
+
 
 @router.post("", tags=["Runs"])
 async def submit_run_endpoint(request: Request):
     """Submit a run for community stats. Paste the .run file JSON content."""
+    body = await request.body()
+    if len(body) > MAX_BODY_SIZE:
+        raise HTTPException(status_code=413, detail=f"Request too large. Max {MAX_BODY_SIZE // 1024} KB.")
     try:
         data = await request.json()
     except Exception:
