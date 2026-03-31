@@ -535,19 +535,6 @@ const [card, setCard] = useState<Card | null>(null);
                 </div>
               )}
 
-              {/* Tags */}
-              {card.tags && card.tags.length > 0 && (
-                <div className="flex flex-wrap gap-1.5">
-                  {card.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="text-[11px] px-2 py-0.5 rounded bg-[var(--bg-primary)] text-[var(--text-muted)] border border-[var(--border-subtle)]"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              )}
             </>
           )}
 

@@ -237,25 +237,6 @@ function CardItem({ card }: { card: Card }) {
         {renderDescription(card, upgraded)}
       </p>
 
-      {/* Keywords */}
-      {card.keywords && card.keywords.length > 0 && (
-        <div className="flex flex-wrap gap-1 mt-3">
-          {card.keywords.map((kw) => (
-            <span
-              key={kw}
-              className="relative text-[10px] px-1.5 py-0.5 rounded bg-[var(--bg-primary)] text-[var(--accent-gold-light)] border border-[var(--accent-gold)]/20 cursor-help group/kw"
-              title={keywordTooltips[kw] || kw}
-            >
-              {kw}
-              {keywordTooltips[kw] && (
-                <span className="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-1.5 w-48 px-2.5 py-1.5 rounded bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[11px] text-[var(--text-secondary)] leading-snug shadow-lg opacity-0 group-hover/kw:opacity-100 transition-opacity z-10">
-                  {keywordTooltips[kw]}
-                </span>
-              )}
-            </span>
-          ))}
-        </div>
-      )}
 
       {/* Spacer to push buttons to bottom */}
       <div className="flex-grow" />
