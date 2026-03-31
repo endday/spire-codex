@@ -59,6 +59,36 @@ const keywordTooltips: Record<string, string> = {
   Eternal: "Cannot be removed from your deck.",
 };
 
+function InlineTooltip({ label, tooltip, href, color, image }: {
+  label: string; tooltip: string; href?: string; color: string; image?: string;
+}) {
+  const [show, setShow] = useState(false);
+  const inner = (
+    <span
+      className="relative inline-flex items-center cursor-pointer"
+      onMouseEnter={() => setShow(true)}
+      onMouseLeave={() => setShow(false)}
+      style={{ color }}
+    >
+      <span className="font-medium">{label}</span>
+      {tooltip && (
+        <span className="text-[var(--text-muted)] ml-1">— {tooltip.replace(/\[.*?\]/g, "").replace(/\n/g, " ").slice(0, 80)}</span>
+      )}
+      {show && tooltip && (
+        <span className="absolute z-[100] bottom-full left-0 mb-2 w-56 p-3 rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-card)] shadow-xl pointer-events-none text-left">
+          {image && <img src={image} alt="" className="w-6 h-6 object-contain mb-1" crossOrigin="anonymous" />}
+          <span className="font-semibold text-xs text-[var(--text-primary)] block">{label}</span>
+          <span className="text-[10px] text-[var(--text-secondary)] leading-relaxed block mt-1">
+            <RichDescription text={tooltip} />
+          </span>
+        </span>
+      )}
+    </span>
+  );
+  if (href) return <Link href={href} className="block">{inner}</Link>;
+  return <div>{inner}</div>;
+}
+
 const energyIconMap: Record<string, string> = {
   ironclad: "ironclad",
   silent: "silent",
@@ -172,6 +202,8 @@ const [card, setCard] = useState<Card | null>(null);
   const [betaArt, setBetaArt] = useState(false);
   const [selectedVariant, setSelectedVariant] = useState<string | null>(null);
   const [tab, setTab] = useState<Tab>("overview");
+  const [powerData, setPowerData] = useState<Record<string, { id: string; name: string; description: string; type: string; image_url: string | null }>>({});
+  const [keywordData, setKeywordData] = useState<Record<string, { id: string; name: string; description: string }>>({});
 
   useEffect(() => {
     if (!id) return;
@@ -193,6 +225,22 @@ const [card, setCard] = useState<Card | null>(null);
       .catch(() => setNotFound(true))
       .finally(() => setLoading(false));
   }, [id, lang]);
+
+  // Load powers and keywords for inline tooltips
+  useEffect(() => {
+    cachedFetch<{ id: string; name: string; description: string; type: string; image_url: string | null }[]>(`${API}/api/powers?lang=${lang}`)
+      .then((powers) => {
+        const m: Record<string, typeof powers[0]> = {};
+        for (const p of powers) m[p.name.toLowerCase()] = p;
+        setPowerData(m);
+      });
+    cachedFetch<{ id: string; name: string; description: string }[]>(`${API}/api/keywords?lang=${lang}`)
+      .then((kws) => {
+        const m: Record<string, typeof kws[0]> = {};
+        for (const k of kws) m[k.name.toLowerCase()] = k;
+        setKeywordData(m);
+      });
+  }, [lang]);
 
   if (loading) {
     return (
@@ -405,38 +453,6 @@ const [card, setCard] = useState<Card | null>(null);
           {/* ===== Overview Tab ===== */}
           {tab === "overview" && (
             <>
-              {/* Stats: DMG / BLK */}
-              {(dmg || blk) && (
-                <div className="flex gap-3 mb-5">
-                  {dmg && (
-                    <span
-                      className={`text-sm px-3 py-1 rounded border ${
-                        isUpgraded && u?.damage
-                          ? "bg-emerald-950/40 text-emerald-300 border-emerald-900/30"
-                          : "bg-red-950/50 text-red-300 border-red-900/30"
-                      }`}
-                    >
-                      {dmg}
-                      {hitCount && hitCount > 1
-                        ? ` × ${hitCount}`
-                        : ""}{" "}
-                      DMG
-                    </span>
-                  )}
-                  {blk && (
-                    <span
-                      className={`text-sm px-3 py-1 rounded border ${
-                        isUpgraded && u?.block
-                          ? "bg-emerald-950/40 text-emerald-300 border-emerald-900/30"
-                          : "bg-blue-950/50 text-blue-300 border-blue-900/30"
-                      }`}
-                    >
-                      {blk} BLK
-                    </span>
-                  )}
-                </div>
-              )}
-
               {/* Description — show all variants if available */}
               {hasVariants && card.type_variants ? (
                 <div className="space-y-3 mb-5">
@@ -493,46 +509,70 @@ const [card, setCard] = useState<Card | null>(null);
                       cost: sc.cost,
                     }))}
                   />
-                </div>
-              )}
 
-              {/* Keywords */}
-              {card.keywords && card.keywords.length > 0 && (
-                <div className="flex flex-wrap gap-1.5 mb-5">
-                  {card.keywords.map((kw) => {
-                    const removed = isUpgraded && u?.remove_exhaust && kw === "Exhaust";
-                    return (
-                      <Link
-                        key={kw}
-                        href={`${lp}/keywords/${kw.toLowerCase()}`}
-                        className={`text-xs px-2 py-1 rounded border transition-colors ${
-                          removed
-                            ? "bg-[var(--color-ironclad)]/10 text-[var(--text-muted)] border-[var(--color-ironclad)]/20 line-through"
-                            : "bg-[var(--bg-primary)] text-[var(--accent-gold-light)] border-[var(--accent-gold)]/20 hover:border-[var(--accent-gold)]/50"
-                        }`}
-                      >
-                        {removed && "−"}{kw}
-                        {!removed && keywordTooltips[kw] && (
-                          <span className="text-[var(--text-muted)] ml-1.5">
-                            &mdash; {keywordTooltips[kw]}
-                          </span>
-                        )}
-                      </Link>
-                    );
-                  })}
-                  {isUpgraded && u?.add_innate && !card.keywords?.includes("Innate") && (
-                    <span className="text-xs px-2 py-1 rounded bg-[var(--color-silent)]/10 text-[var(--color-silent)] border border-[var(--color-silent)]/20">
-                      +Innate
-                    </span>
+                  {/* Inline keywords after description */}
+                  {card.keywords && card.keywords.length > 0 && (
+                    <div className="mt-3 space-y-1">
+                      {card.keywords.map((kw) => {
+                        const removed = isUpgraded && u?.remove_exhaust && kw === "Exhaust";
+                        const kwData = keywordData[kw.toLowerCase()];
+                        if (removed) {
+                          return (
+                            <div key={kw} className="text-[var(--text-muted)] line-through">
+                              {kw}
+                            </div>
+                          );
+                        }
+                        return (
+                          <InlineTooltip
+                            key={kw}
+                            label={kw}
+                            tooltip={kwData ? kwData.description : keywordTooltips[kw] || ""}
+                            href={`${lp}/keywords/${kw.toLowerCase()}`}
+                            color="var(--accent-gold)"
+                          />
+                        );
+                      })}
+                      {isUpgraded && u?.add_innate && !card.keywords?.includes("Innate") && (
+                        <InlineTooltip
+                          label="+Innate"
+                          tooltip="Always appears in your opening hand."
+                          href={`${lp}/keywords/innate`}
+                          color="var(--color-silent)"
+                        />
+                      )}
+                    </div>
                   )}
-                </div>
-              )}
-              {/* Show added Innate even if card has no existing keywords */}
-              {isUpgraded && u?.add_innate && (!card.keywords || card.keywords.length === 0) && (
-                <div className="flex flex-wrap gap-1.5 mb-5">
-                  <span className="text-xs px-2 py-1 rounded bg-[var(--color-silent)]/10 text-[var(--color-silent)] border border-[var(--color-silent)]/20">
-                    +Innate
-                  </span>
+                  {isUpgraded && u?.add_innate && (!card.keywords || card.keywords.length === 0) && (
+                    <div className="mt-3">
+                      <InlineTooltip
+                        label="+Innate"
+                        tooltip="Always appears in your opening hand."
+                        href={`${lp}/keywords/innate`}
+                        color="var(--color-silent)"
+                      />
+                    </div>
+                  )}
+
+                  {/* Inline powers applied */}
+                  {card.powers_applied && card.powers_applied.length > 0 && (
+                    <div className="mt-3 space-y-1">
+                      {card.powers_applied.map((pa) => {
+                        const powerName = pa.power_key || pa.power;
+                        const pData = powerData[powerName.toLowerCase()];
+                        return (
+                          <InlineTooltip
+                            key={pa.power}
+                            label={`${pa.power} ${pa.amount}`}
+                            tooltip={pData?.description || ""}
+                            href={pData ? `${lp}/powers/${pData.id.toLowerCase()}` : undefined}
+                            color={pData?.type === "Debuff" ? "var(--color-ironclad)" : "var(--color-silent)"}
+                            image={pData?.image_url ? `${API}${pData.image_url}` : undefined}
+                          />
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
               )}
 
