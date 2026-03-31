@@ -82,7 +82,7 @@ function buildInteractiveWords(
   // Add glossary terms (Block, Discard Pile, Draw Pile, Fatal, Forge, etc.)
   for (const [name, data] of Object.entries(glossaryData)) {
     if (!words[data.name]) {
-      words[data.name] = { tooltip: data.description.replace(/\n/g, " "), href: `${lp}/keywords#${data.id.toLowerCase()}` };
+      words[data.name] = { tooltip: data.description.replace(/\n/g, " "), href: `${lp}/keywords/${data.id.toLowerCase()}` };
     }
   }
   return words;

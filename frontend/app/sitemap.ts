@@ -53,6 +53,7 @@ const DYNAMIC_ROUTES = [
   { endpoint: "/api/powers", prefix: "/powers", priority: 0.6 },
   { endpoint: "/api/events", prefix: "/events", priority: 0.6 },
   { endpoint: "/api/keywords", prefix: "/keywords", priority: 0.7 },
+  { endpoint: "/api/glossary", prefix: "/keywords", priority: 0.6 },
   { endpoint: "/api/acts", prefix: "/acts", priority: 0.6 },
   { endpoint: "/api/ascensions", prefix: "/ascensions", priority: 0.5 },
   { endpoint: "/api/intents", prefix: "/intents", priority: 0.5 },

@@ -10,55 +10,100 @@ const API_INTERNAL = process.env.API_INTERNAL_URL || process.env.NEXT_PUBLIC_API
 
 type Props = { params: Promise<{ id: string }> };
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { id } = await params;
+async function fetchKeywordOrGlossary(id: string) {
+  // Try keyword first
   try {
     const res = await fetch(`${API_INTERNAL}/api/keywords/${id}`);
-    if (!res.ok) return { title: "Keyword Not Found - Spire Codex" };
-    const kw = await res.json();
-    const desc = stripTags(kw.description);
-    const title = `Slay the Spire 2 ${kw.name} Cards - All ${kw.name} Cards | Spire Codex`;
+    if (res.ok) return { type: "keyword" as const, data: await res.json() };
+  } catch {}
+  // Fall back to glossary
+  try {
+    const res = await fetch(`${API_INTERNAL}/api/glossary/${id}`);
+    if (res.ok) return { type: "glossary" as const, data: await res.json() };
+  } catch {}
+  return null;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { id } = await params;
+  const result = await fetchKeywordOrGlossary(id);
+  if (!result) return { title: "Term Not Found - Spire Codex" };
+
+  const { type, data } = result;
+  const desc = stripTags(data.description);
+
+  if (type === "keyword") {
+    const title = `Slay the Spire 2 ${data.name} Cards - All ${data.name} Cards | Spire Codex`;
     return {
       title,
-      description: `${desc} Browse all ${kw.name} cards in Slay the Spire 2.`,
+      description: `${desc} Browse all ${data.name} cards in Slay the Spire 2.`,
       openGraph: {
-        title: `Slay the Spire 2 ${kw.name} Cards | Spire Codex`,
-        description: `${desc} Browse all ${kw.name} cards in Slay the Spire 2.`,
+        title: `Slay the Spire 2 ${data.name} Cards | Spire Codex`,
+        description: `${desc} Browse all ${data.name} cards in Slay the Spire 2.`,
       },
       twitter: { card: "summary_large_image" },
       alternates: { canonical: `/keywords/${id}` },
     };
-  } catch {
-    return { title: "Spire Codex - Slay the Spire 2 Database" };
   }
+
+  const title = `${data.name} - Slay the Spire 2 Game Term | Spire Codex`;
+  return {
+    title,
+    description: `${desc} Learn what ${data.name} means in Slay the Spire 2.`,
+    openGraph: {
+      title: `${data.name} - Slay the Spire 2 | Spire Codex`,
+      description: `${desc} Learn what ${data.name} means in Slay the Spire 2.`,
+    },
+    twitter: { card: "summary_large_image" },
+    alternates: { canonical: `/keywords/${id}` },
+  };
 }
 
 export default async function Page({ params }: Props) {
   const { id } = await params;
+  const result = await fetchKeywordOrGlossary(id);
+
   let jsonLd = null;
-  try {
-    const res = await fetch(`${API_INTERNAL}/api/keywords/${id}`);
-    if (res.ok) {
-      const kw = await res.json();
-      const desc = stripTags(kw.description);
+  if (result) {
+    const { type, data } = result;
+    const desc = stripTags(data.description);
+
+    if (type === "keyword") {
       const detailJsonLd = buildDetailPageJsonLd({
-        name: `${kw.name} Cards`,
-        description: `${desc} All cards with the ${kw.name} keyword in Slay the Spire 2.`,
+        name: `${data.name} Cards`,
+        description: `${desc} All cards with the ${data.name} keyword in Slay the Spire 2.`,
         path: `/keywords/${id}`,
         category: "Keyword",
         breadcrumbs: [
           { name: "Home", href: "/" },
           { name: "Keywords", href: "/keywords" },
-          { name: kw.name, href: `/keywords/${id}` },
+          { name: data.name, href: `/keywords/${id}` },
         ],
       });
       const faqJsonLd = buildFAQPageJsonLd([
-        { question: `What does ${kw.name} do in Slay the Spire 2?`, answer: desc },
-        { question: `Which cards have ${kw.name}?`, answer: `View the full list of ${kw.name} cards on this page.` },
+        { question: `What does ${data.name} do in Slay the Spire 2?`, answer: desc },
+        { question: `Which cards have ${data.name}?`, answer: `View the full list of ${data.name} cards on this page.` },
+      ]);
+      jsonLd = [...detailJsonLd, faqJsonLd];
+    } else {
+      const detailJsonLd = buildDetailPageJsonLd({
+        name: data.name,
+        description: `${desc} Game term definition for Slay the Spire 2.`,
+        path: `/keywords/${id}`,
+        category: "Game Term",
+        breadcrumbs: [
+          { name: "Home", href: "/" },
+          { name: "Keywords & Game Terms", href: "/keywords" },
+          { name: data.name, href: `/keywords/${id}` },
+        ],
+      });
+      const faqJsonLd = buildFAQPageJsonLd([
+        { question: `What does ${data.name} mean in Slay the Spire 2?`, answer: desc },
       ]);
       jsonLd = [...detailJsonLd, faqJsonLd];
     }
-  } catch {}
+  }
+
   return (
     <>
       {jsonLd && <JsonLd data={jsonLd} />}

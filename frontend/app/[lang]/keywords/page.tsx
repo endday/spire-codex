@@ -162,10 +162,10 @@ export default async function LangKeywordsPage({ params }: { params: Promise<{ l
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {terms.map((term) => (
-                <div
+                <Link
                   key={term.id}
-                  id={term.id.toLowerCase()}
-                  className="bg-[var(--bg-card)] rounded-lg border border-[var(--border-subtle)] p-4"
+                  href={`/${lang}/keywords/${term.id.toLowerCase()}`}
+                  className="bg-[var(--bg-card)] rounded-lg border border-[var(--border-subtle)] p-4 hover:bg-[var(--bg-card-hover)] hover:border-[var(--border-accent)] transition-all"
                 >
                   <h4 className="font-semibold text-[var(--accent-gold)] mb-1">
                     {term.name}
@@ -173,7 +173,7 @@ export default async function LangKeywordsPage({ params }: { params: Promise<{ l
                   <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
                     <RichDescription text={term.description.replace(/\n/g, " ")} />
                   </p>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
