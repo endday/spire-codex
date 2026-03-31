@@ -5,8 +5,13 @@ import os
 import sys
 from pathlib import Path
 
-# Add backend to path for imports
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "backend"))
+# Add backend to path for imports — works both locally and inside Docker container
+backend_path = Path(__file__).resolve().parents[1] / "backend"
+if backend_path.exists():
+    sys.path.insert(0, str(backend_path))
+else:
+    # Inside Docker, app/ is at /app
+    sys.path.insert(0, "/app")
 
 data_dir = Path(os.environ.get("DATA_DIR", Path(__file__).resolve().parents[1] / "data"))
 runs_dir = data_dir / "runs"
@@ -23,10 +28,14 @@ if len(run_files) == 0:
     print("Nothing to rebuild.")
     sys.exit(0)
 
-# Delete existing DB
+# Delete existing DB (or restore from backup if previous run failed)
+backup = db_path.with_suffix(".db.bak")
+if not db_path.exists() and backup.exists():
+    print(f"No DB found but backup exists — previous run may have failed")
 if db_path.exists():
-    backup = db_path.with_suffix(".db.bak")
     print(f"Backing up existing DB to {backup}")
+    if backup.exists():
+        backup.unlink()
     db_path.rename(backup)
 
 # Import after path setup
