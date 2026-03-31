@@ -520,7 +520,7 @@ const [card, setCard] = useState<Card | null>(null);
               ) : (
                 <div className="text-sm text-[var(--text-secondary)] leading-relaxed mb-5">
                   <RichDescription
-                    text={descText}
+                    text={descText + (card.keywords && card.keywords.length > 0 ? "\n" + card.keywords.filter((kw) => !(isUpgraded && u?.remove_exhaust && kw === "Exhaust")).join(". ") + "." : "") + (isUpgraded && u?.add_innate && !card.keywords?.includes("Innate") ? "\nInnate." : "")}
                     energyIcon={energyIcon}
                     relatedCards={spawnedCards.map((sc): RelatedCard => ({
                       id: sc.id,
