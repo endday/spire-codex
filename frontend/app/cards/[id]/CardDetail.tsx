@@ -221,7 +221,13 @@ function getUpgradedDescription(card: Card, upgraded: boolean): string {
       const used = new Set<string>();
       desc = desc.replace(new RegExp(pattern, "g"), (match) => {
         if (used.has(match)) return match;
-        if ((occurrences.get(match) || 0) > 1) return match;
+        if ((occurrences.get(match) || 0) > 1) {
+          // Allow replacement when all upgrades for this value are the same
+          // (e.g. Bulk Up: both Strength and Dexterity go 2→3)
+          const allSame = replacements.filter(r => r.base === match).every(r => r.upgraded === replMap.get(match));
+          if (!allSame) return match;
+          return `[green]${replMap.get(match)}[/green]`;
+        }
         used.add(match);
         const repl = replMap.get(match);
         return repl ? `[green]${repl}[/green]` : match;

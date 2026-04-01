@@ -111,13 +111,22 @@ function renderDescription(card: Card, upgraded: boolean): React.ReactNode {
         occurrences.set(r.base, Math.max(occurrences.get(r.base) || 0, count));
       }
 
-      // Single-pass for unambiguous values
-      const unambiguous = replacements.filter(r => (occurrences.get(r.base) || 0) === 1);
-      if (unambiguous.length > 0) {
-        const replMap = new Map(unambiguous.map(r => [r.base, r.upgraded]));
-        const pattern = unambiguous.map(r => r.base).sort((a, b) => b.length - a.length).map(s => `\\b${s}\\b`).join("|");
+      // Single-pass for unambiguous values + ambiguous values where all upgrades are the same
+      // (e.g. Bulk Up: both Strength and Dexterity go 2→3, Capture Spirit: both Damage and Cards go 3→4)
+      const sameUpgradeAmbiguous = replacements.filter(r => {
+        if ((occurrences.get(r.base) || 0) <= 1) return false;
+        return replacements.filter(r2 => r2.base === r.base).every(r2 => r2.upgraded === r.upgraded);
+      });
+      const eligible = [...replacements.filter(r => (occurrences.get(r.base) || 0) === 1), ...sameUpgradeAmbiguous];
+      if (eligible.length > 0) {
+        const replMap = new Map(eligible.map(r => [r.base, r.upgraded]));
+        const pattern = eligible.map(r => r.base).sort((a, b) => b.length - a.length).map(s => `\\b${s}\\b`).join("|");
         const used = new Set<string>();
         text = text.replace(new RegExp(pattern, "g"), (match) => {
+          // For same-upgrade-ambiguous values, replace all occurrences
+          if (sameUpgradeAmbiguous.some(r => r.base === match)) {
+            return `[green]${replMap.get(match)}[/green]`;
+          }
           if (used.has(match)) return match;
           used.add(match);
           const repl = replMap.get(match);
@@ -128,6 +137,7 @@ function renderDescription(card: Card, upgraded: boolean): React.ReactNode {
       // Contextual replacement for ambiguous values
       for (const r of replacements) {
         if ((occurrences.get(r.base) || 0) <= 1) continue;
+        if (sameUpgradeAmbiguous.some(r2 => r2.base === r.base)) continue;
         const context = r.varKey.toLowerCase().replace(/s$/, "");
         const fwd = new RegExp(`\\b${r.base}\\b(\\s+${context})(s?)`, "i");
         if (fwd.test(text)) {
