@@ -335,9 +335,9 @@ function splitWithCardRefs(
   // Build patterns sorted by name length desc (longer names match first)
   const sorted = [...cards].sort((a, b) => b.name.length - a.name.length);
   const patterns = sorted.flatMap((c) => {
-    // Match exact name and common plural forms
+    // Match exact name, common plural forms, and upgraded suffix (+)
     const escaped = c.name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    return [{ re: new RegExp(`(${escaped}(?:s|es)?)`, "gi"), card: c }];
+    return [{ re: new RegExp(`(${escaped}(?:s|es)?\\+?)`, "gi"), card: c }];
   });
 
   let segments: { text: string; card?: RelatedCard }[] = [{ text }];
