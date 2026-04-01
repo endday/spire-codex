@@ -32,6 +32,6 @@ def get_epochs(
 def get_epoch(request: Request, epoch_id: str, lang: str = Depends(get_lang)):
     epochs = load_epochs(lang)
     for epoch in epochs:
-        if epoch["id"] == epoch_id:
+        if epoch["id"].lower() == epoch_id.lower():
             return epoch
     raise HTTPException(status_code=404, detail=f"Epoch '{epoch_id}' not found")
