@@ -127,7 +127,7 @@ export default function EpochDetail() {
           </span>
           <span className="text-[var(--text-muted)]">&middot;</span>
           <span className="text-[var(--text-muted)]">
-            {epoch.era_name} {epoch.era_year !== "???" ? epoch.era_year : ""}
+            {epoch.era_name}{epoch.era_year && epoch.era_year !== "???" && epoch.era_year !== "0" ? ` · ${epoch.era_year}` : ""}
           </span>
         </div>
 
