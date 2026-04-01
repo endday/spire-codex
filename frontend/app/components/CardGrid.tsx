@@ -70,9 +70,14 @@ function renderDescription(card: Card, upgraded: boolean): React.ReactNode {
         const base = vars["Repeat"];
         const upgradedVal = getUpgradedValue(base, upVal);
         if (upgradedVal !== null && upgradedVal !== base) {
-          text = text.replace(new RegExp(`\\b${base}\\b(\\s*times)`, "i"), `[green]${upgradedVal}[/green]$1`);
+          if (new RegExp(`\\b${base}\\b\\s*times`, "i").test(text)) {
+            text = text.replace(new RegExp(`\\b${base}\\b(\\s*times)`, "i"), `[green]${upgradedVal}[/green]$1`);
+            continue;
+          }
+          // Fall through to general replacement for non-"times" repeat vars (e.g. "2 Orb Slots", "1 random Orb")
+        } else {
+          continue;
         }
-        continue;
       }
       const varKey = Object.keys(vars).find(k => k.toLowerCase() === key.toLowerCase());
       if (varKey && vars[varKey] != null) {

@@ -169,9 +169,14 @@ function getUpgradedDescription(card: Card, upgraded: boolean): string {
         const base = vars["Repeat"];
         const upgraded = getUpgradedValue(base, upVal);
         if (upgraded !== null && upgraded !== base) {
-          desc = desc.replace(new RegExp(`\\b${base}\\b(\\s*times)`, "i"), `[green]${upgraded}[/green]$1`);
+          if (new RegExp(`\\b${base}\\b\\s*times`, "i").test(desc)) {
+            desc = desc.replace(new RegExp(`\\b${base}\\b(\\s*times)`, "i"), `[green]${upgraded}[/green]$1`);
+            continue;
+          }
+          // Fall through to general replacement for non-"times" repeat vars (e.g. "2 Orb Slots", "1 random Orb")
+        } else {
+          continue;
         }
-        continue;
       }
       const varKey = Object.keys(vars).find(
         (k) => k.toLowerCase() === key.toLowerCase()
