@@ -22,6 +22,7 @@
     "Capacitor+ and Chaos+ now show upgraded Orb values (repeat upgrade was silently skipped)",
     "Bulk Up+ and Capture Spirit+ now show upgraded values when multiple stats share the same base number",
     "Text-only upgrade cards (Darkness, Armaments, etc.) no longer regress to missing upgrades after parser refactor",
+    "Spawned card links (Minion Strike, Soul, Shiv, etc.) were blocked by interactive word matching — \"Minion\" matched the Minion power tooltip instead of linking to the card",
     "Timeline era display uses proper era names instead of raw era with position number",
     "Era year 0 hidden on timeline list and detail pages",
     "Encounter loss text placeholders resolved with encounter name and 'The adventurer'"
