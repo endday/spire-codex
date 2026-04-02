@@ -40,6 +40,8 @@ const FALLBACK_DESCS: Record<string, string> = {
   images: "Browse and download Slay the Spire 2 game art — card portraits, relic icons, monster sprites.",
   reference: "Slay the Spire 2 reference — keywords, orbs, afflictions, intents, acts, ascension, and more.",
   guides: "Community strategy guides — character breakdowns, boss strategies, deckbuilding tips, and more.",
+  runs: "Community submitted runs — browse decks, relics, and stats from real climbs.",
+  meta: "Live community stats — win rates, popular cards, top relics, and more across all submitted runs.",
 };
 
 interface HomeClientProps {
@@ -51,6 +53,7 @@ export default function HomeClient({ initialStats, initialTranslations }: HomeCl
   const [stats, setStats] = useState<Stats | null>(initialStats);
   const [translations, setTranslations] = useState<Translations>(initialTranslations);
   const [guideCount, setGuideCount] = useState<number | null>(null);
+  const [runCount, setRunCount] = useState<number | null>(null);
   const { lang } = useLanguage();
   const initialRender = useRef(true);
   const pathname = usePathname();
@@ -72,6 +75,9 @@ export default function HomeClient({ initialStats, initialTranslations }: HomeCl
     cachedFetch<{ slug: string }[]>(`${API}/api/guides`)
       .then((g) => setGuideCount(g.length))
       .catch(() => {});
+    cachedFetch<{ total: number }>(`${API}/api/runs/list?limit=1`)
+      .then((d) => setRunCount(d.total))
+      .catch(() => {});
   }, []);
 
   // Section name: use game translations if actually translated, otherwise our UI translations
@@ -79,7 +85,8 @@ export default function HomeClient({ initialStats, initialTranslations }: HomeCl
     cards: "Card Library", characters: "Characters", relics: "Relic Collection",
     monsters: "Bestiary", potions: "Potion Lab", enchantments: "Enchantments",
     encounters: "Encounters", events: "Events", powers: "Powers",
-    timeline: "Timeline", images: "Images", reference: "Reference", guides: "Guides",
+    timeline: "Timeline", images: "Images", reference: "Reference",
+    guides: "Guides", runs: "Runs", meta: "Meta",
   };
   const ENGLISH_FALLBACKS = new Set(Object.values(SECTION_LABEL_MAP).map(v => v.toLowerCase()));
   const sectionKey = (key: string) => {
@@ -191,6 +198,18 @@ export default function HomeClient({ initialStats, initialTranslations }: HomeCl
       count: guideCount ?? "–",
       color: "#44CC44",  // guide green
     },
+    {
+      href: "/runs",
+      key: "runs",
+      count: runCount ?? "–",
+      color: "#e8b830",  // gold
+    },
+    {
+      href: "/meta",
+      key: "meta",
+      count: null,
+      color: "#d53b27",  // red
+    },
   ];
 
   return (
@@ -247,9 +266,11 @@ export default function HomeClient({ initialStats, initialTranslations }: HomeCl
                   <h2 className="text-xl font-semibold text-[var(--text-primary)] group-hover:text-[var(--accent-gold)] transition-colors">
                     {sectionKey(s.key)}
                   </h2>
-                  <span className="text-2xl font-bold" style={{ color: s.color }}>
-                    {s.count}
-                  </span>
+                  {s.count != null && (
+                    <span className="text-2xl font-bold" style={{ color: s.color }}>
+                      {s.count}
+                    </span>
+                  )}
                 </div>
                 <p className="text-sm text-[var(--text-secondary)]">{sectionDesc(s.key)}</p>
               </div>
