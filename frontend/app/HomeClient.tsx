@@ -39,6 +39,7 @@ const FALLBACK_DESCS: Record<string, string> = {
   timeline: "Explore the Slay the Spire 2 timeline — epochs, story arcs, and unlockable content.",
   images: "Browse and download Slay the Spire 2 game art — card portraits, relic icons, monster sprites.",
   reference: "Slay the Spire 2 reference — keywords, orbs, afflictions, intents, acts, ascension, and more.",
+  guides: "Community strategy guides — character breakdowns, boss strategies, deckbuilding tips, and more.",
 };
 
 interface HomeClientProps {
@@ -49,6 +50,7 @@ interface HomeClientProps {
 export default function HomeClient({ initialStats, initialTranslations }: HomeClientProps) {
   const [stats, setStats] = useState<Stats | null>(initialStats);
   const [translations, setTranslations] = useState<Translations>(initialTranslations);
+  const [guideCount, setGuideCount] = useState<number | null>(null);
   const { lang } = useLanguage();
   const initialRender = useRef(true);
   const pathname = usePathname();
@@ -66,12 +68,18 @@ export default function HomeClient({ initialStats, initialTranslations }: HomeCl
       .then(setTranslations);
   }, [lang]);
 
+  useEffect(() => {
+    cachedFetch<{ slug: string }[]>(`${API}/api/guides`)
+      .then((g) => setGuideCount(g.length))
+      .catch(() => {});
+  }, []);
+
   // Section name: use game translations if actually translated, otherwise our UI translations
   const SECTION_LABEL_MAP: Record<string, string> = {
     cards: "Card Library", characters: "Characters", relics: "Relic Collection",
     monsters: "Bestiary", potions: "Potion Lab", enchantments: "Enchantments",
     encounters: "Encounters", events: "Events", powers: "Powers",
-    timeline: "Timeline", images: "Images", reference: "Reference",
+    timeline: "Timeline", images: "Images", reference: "Reference", guides: "Guides",
   };
   const ENGLISH_FALLBACKS = new Set(Object.values(SECTION_LABEL_MAP).map(v => v.toLowerCase()));
   const sectionKey = (key: string) => {
@@ -176,6 +184,12 @@ export default function HomeClient({ initialStats, initialTranslations }: HomeCl
           (stats.ascensions ?? 0)
         : "–",
       color: "#596068",  // muted
+    },
+    {
+      href: "/guides",
+      key: "guides",
+      count: guideCount ?? "–",
+      color: "#44CC44",  // guide green
     },
   ];
 
