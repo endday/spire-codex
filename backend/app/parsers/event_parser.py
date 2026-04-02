@@ -505,6 +505,21 @@ def parse_single_event(filepath: Path, localization: dict, act_mapping: dict, ti
     return result
 
 
+def _fix_abyssal_baths(event: dict) -> dict:
+    """Fix Abyssal Baths — damage increases by 1 each Linger (3, 4, 5, 6...)."""
+    if event["id"] != "ABYSSAL_BATHS":
+        return event
+    for page in (event.get("pages") or []):
+        for opt in (page.get("options") or []):
+            if opt.get("id") == "LINGER":
+                opt["description"] = re.sub(
+                    r'Take \[red\]\d+\[/red\] damage\.',
+                    'Take [red]3[/red] damage. (increases by [red]+1[/red] each time)',
+                    opt["description"]
+                )
+    return event
+
+
 def _fix_tablet_of_truth(event: dict) -> dict:
     """Fix Tablet of Truth escalating decipher costs (runtime-computed in GetDecipherCost)."""
     if event["id"] != "TABLET_OF_TRUTH":
@@ -534,6 +549,7 @@ def parse_all_events(loc_dir: Path, data_dir: Path) -> list[dict]:
         event = parse_single_event(filepath, localization, act_mapping, title_map, relic_descs)
         if event:
             event = _fix_tablet_of_truth(event)
+            event = _fix_abyssal_baths(event)
             events.append(event)
     return events
 

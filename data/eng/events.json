@@ -29,7 +29,7 @@
           {
             "id": "LINGER",
             "title": "Linger",
-            "description": "Gain [green]2[/green] Max HP. Take [red]3[/red] damage."
+            "description": "Gain [green]2[/green] Max HP. Take [red]3[/red] damage. (increases by [red]+1[/red] each time)"
           },
           {
             "id": "EXIT_BATHS",
