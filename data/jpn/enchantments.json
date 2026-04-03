@@ -6,6 +6,7 @@
     "description_raw": "[blue]{Block:diff()}[/blue][gold]ブロック[/gold]を得る。",
     "extra_card_text": "X[gold]ブロック[/gold]を得る。",
     "card_type": null,
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/adroit.png"
   },
@@ -16,6 +17,7 @@
     "description_raw": null,
     "extra_card_text": null,
     "card_type": null,
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/clone.png"
   },
@@ -26,6 +28,7 @@
     "description_raw": null,
     "extra_card_text": "HPを2失う。",
     "card_type": "Attack",
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/corrupted.png"
   },
@@ -36,6 +39,7 @@
     "description_raw": null,
     "extra_card_text": null,
     "card_type": "Attack",
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/favored.png"
   },
@@ -46,6 +50,7 @@
     "description_raw": null,
     "extra_card_text": null,
     "card_type": null,
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/glam.png"
   },
@@ -56,6 +61,7 @@
     "description_raw": null,
     "extra_card_text": "このカードの[gold]ブロック[/gold]が永続的に[blue]1[/blue]増加する。",
     "card_type": null,
+    "applicable_to": "Defend cards",
     "is_stackable": false,
     "image_url": "/static/images/enchantments/goopy.png"
   },
@@ -66,6 +72,7 @@
     "description_raw": null,
     "extra_card_text": "刻印されている。",
     "card_type": "Skill",
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/imbued.png"
   },
@@ -76,6 +83,7 @@
     "description_raw": null,
     "extra_card_text": null,
     "card_type": "Attack",
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/instinct.png"
   },
@@ -86,6 +94,7 @@
     "description_raw": "プレイ時、この戦闘中に限りこのカードのダメージが[blue]{Amount}[/blue]増加する。",
     "extra_card_text": "この戦闘中、ダメージがX増加する。",
     "card_type": "Attack",
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/momentum.png"
   },
@@ -96,6 +105,7 @@
     "description_raw": "このカードから得る[gold]ブロック[/gold]が[blue]{Amount}[/blue]増加する。",
     "extra_card_text": null,
     "card_type": null,
+    "applicable_to": "cards that gain Block",
     "is_stackable": false,
     "image_url": "/static/images/enchantments/nimble.png"
   },
@@ -106,6 +116,7 @@
     "description_raw": null,
     "extra_card_text": "ぴったり。",
     "card_type": null,
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/perfect_fit.png"
   },
@@ -115,7 +126,8 @@
     "description": "[gold]天賦[/gold]と[gold]保留[/gold]を得る。",
     "description_raw": null,
     "extra_card_text": null,
-    "card_type": null,
+    "card_type": "Attack, Skill",
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/royally_approved.png"
   },
@@ -126,6 +138,7 @@
     "description_raw": "ダメージが[blue]{Amount}[/blue]増加する。",
     "extra_card_text": null,
     "card_type": "Attack",
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/sharp.png"
   },
@@ -136,6 +149,7 @@
     "description_raw": null,
     "extra_card_text": null,
     "card_type": null,
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/slither.png"
   },
@@ -146,6 +160,7 @@
     "description_raw": null,
     "extra_card_text": null,
     "card_type": null,
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/slumbering_essence.png"
   },
@@ -156,6 +171,7 @@
     "description_raw": null,
     "extra_card_text": null,
     "card_type": null,
+    "applicable_to": "cards with Exhaust",
     "is_stackable": false,
     "image_url": "/static/images/enchantments/souls_power.png"
   },
@@ -166,6 +182,7 @@
     "description_raw": "各戦闘で初めてプレイした時、{Amount:energyIcons()}を得る。",
     "extra_card_text": "[energy:X]を得る。",
     "card_type": null,
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/sown.png"
   },
@@ -176,6 +193,7 @@
     "description_raw": null,
     "extra_card_text": null,
     "card_type": null,
+    "applicable_to": "Basic Strike, Defend cards",
     "is_stackable": false,
     "image_url": "/static/images/enchantments/spiral.png"
   },
@@ -186,6 +204,7 @@
     "description_raw": null,
     "extra_card_text": null,
     "card_type": null,
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/steady.png"
   },
@@ -196,6 +215,7 @@
     "description_raw": "各戦闘で初めてプレイした時、カードを[blue]{Amount}[/blue]枚引く。",
     "extra_card_text": "初めてプレイした時、カードをX枚引く。",
     "card_type": null,
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/swift.png"
   },
@@ -206,6 +226,7 @@
     "description_raw": null,
     "extra_card_text": null,
     "card_type": null,
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/tezcataras_ember.png"
   },
@@ -216,6 +237,7 @@
     "description_raw": "各戦闘で初めてプレイした時、[blue]{Amount}[/blue]の追加ダメージを与える。",
     "extra_card_text": null,
     "card_type": "Attack",
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/vigorous.png"
   }

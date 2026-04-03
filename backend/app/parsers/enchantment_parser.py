@@ -26,9 +26,49 @@ def load_localization(loc_dir: Path) -> dict:
 
 def parse_card_type_restriction(content: str) -> str | None:
     """Extract which card types this enchantment can be applied to."""
+    # Simple equality: cardType == CardType.Attack
     m = re.search(r'CanEnchantCardType\(CardType\s+\w+\)\s*\{[^}]*cardType\s*==\s*CardType\.(\w+)', content, re.DOTALL)
     if m:
         return m.group(1)
+    # Decompiled range check: (uint)(cardType - 1) <= 1u → Attack (1) or Skill (2)
+    if re.search(r'CanEnchantCardType.*\(uint\)\(cardType\s*-\s*1\)\s*<=\s*1u', content, re.DOTALL):
+        return "Attack, Skill"
+    return None
+
+
+def parse_applicable_to(content: str) -> str | None:
+    """Extract CanEnchant restrictions beyond card type (tags, keywords, properties)."""
+    # Extract CanEnchant(CardModel ...) method body up to next method declaration
+    m = re.search(r'override\s+bool\s+CanEnchant\(CardModel\s+\w+\)\s*\{(.*?)(?=\n\t(?:public|protected|private)\s|\n\})', content, re.DOTALL)
+    if not m:
+        return None
+    body = m.group(1)
+
+    restrictions = []
+
+    # Tag checks: card.Tags.Contains(CardTag.Strike)
+    tags = re.findall(r'Tags\.Contains\(CardTag\.(\w+)\)', body)
+    if tags:
+        restrictions.append(", ".join(tags) + " cards")
+
+    # Rarity checks: card.Rarity == CardRarity.Basic
+    rarity_m = re.search(r'Rarity\s*==\s*CardRarity\.(\w+)', body)
+    if rarity_m:
+        restrictions.insert(0, rarity_m.group(1))
+
+    # Keyword checks: card.Keywords.Contains(CardKeyword.Exhaust)
+    keywords = re.findall(r'Keywords\.Contains\(CardKeyword\.(\w+)\)', body)
+    if keywords:
+        kw_names = [k for k in keywords if k != "Unplayable"]
+        if kw_names:
+            restrictions.append("cards with " + ", ".join(kw_names))
+
+    # Property checks: card.GainsBlock
+    if "GainsBlock" in body:
+        restrictions.append("cards that gain Block")
+
+    if restrictions:
+        return " ".join(restrictions)
     return None
 
 
@@ -67,6 +107,9 @@ def parse_single_enchantment(filepath: Path, localization: dict) -> dict | None:
     # Card type restriction
     card_type = parse_card_type_restriction(content)
 
+    # CanEnchant restriction (tags, keywords, properties beyond card type)
+    applicable_to = parse_applicable_to(content)
+
     # Boolean properties
     is_stackable = "IsStackable => true" in content
     show_amount = "ShowAmount => true" in content
@@ -82,6 +125,7 @@ def parse_single_enchantment(filepath: Path, localization: dict) -> dict | None:
         "description_raw": description_raw if description_raw != desc_clean else None,
         "extra_card_text": extra_text_resolved,
         "card_type": card_type,
+        "applicable_to": applicable_to,
         "is_stackable": is_stackable,
         "image_url": image_url,
     }

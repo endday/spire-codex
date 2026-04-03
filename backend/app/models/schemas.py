@@ -197,6 +197,7 @@ class Enchantment(BaseModel):
     description_raw: str | None = None
     extra_card_text: str | None = None
     card_type: str | None = None
+    applicable_to: str | None = None
     is_stackable: bool = False
     image_url: str | None = None
 

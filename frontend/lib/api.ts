@@ -188,6 +188,7 @@ export interface Enchantment {
   description_raw: string | null;
   extra_card_text: string | null;
   card_type: string | null;
+  applicable_to: string | null;
   is_stackable: boolean;
   image_url: string | null;
 }

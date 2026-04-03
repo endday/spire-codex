@@ -6,6 +6,7 @@
     "description_raw": "Gana [blue]{Block:diff()}[/blue] de [gold]Bloqueo[/gold].",
     "extra_card_text": "Gana X de [gold]Bloqueo[/gold].",
     "card_type": null,
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/adroit.png"
   },
@@ -16,6 +17,7 @@
     "description_raw": null,
     "extra_card_text": null,
     "card_type": null,
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/clone.png"
   },
@@ -26,6 +28,7 @@
     "description_raw": null,
     "extra_card_text": "Pierdes 2 PV.",
     "card_type": "Attack",
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/corrupted.png"
   },
@@ -36,6 +39,7 @@
     "description_raw": null,
     "extra_card_text": null,
     "card_type": "Attack",
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/favored.png"
   },
@@ -46,6 +50,7 @@
     "description_raw": null,
     "extra_card_text": null,
     "card_type": null,
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/glam.png"
   },
@@ -56,6 +61,7 @@
     "description_raw": null,
     "extra_card_text": "Aumenta permanentemente el [gold]Bloqueo[/gold] obtenido mediante esta carta en [blue]1[/blue].",
     "card_type": null,
+    "applicable_to": "Defend cards",
     "is_stackable": false,
     "image_url": "/static/images/enchantments/goopy.png"
   },
@@ -66,6 +72,7 @@
     "description_raw": null,
     "extra_card_text": "Infusión",
     "card_type": "Skill",
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/imbued.png"
   },
@@ -76,6 +83,7 @@
     "description_raw": null,
     "extra_card_text": null,
     "card_type": "Attack",
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/instinct.png"
   },
@@ -86,6 +94,7 @@
     "description_raw": "Al jugarla, aumenta el daño de ataque de esta carta en [blue]{Amount}[/blue] durante este combate.",
     "extra_card_text": "Aumenta el daño de esta carta en X durante este combate.",
     "card_type": "Attack",
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/momentum.png"
   },
@@ -96,6 +105,7 @@
     "description_raw": "Aumenta el [gold]Bloqueo[/gold] obtenido por esta carta en [blue]{Amount}[/blue].",
     "extra_card_text": null,
     "card_type": null,
+    "applicable_to": "cards that gain Block",
     "is_stackable": false,
     "image_url": "/static/images/enchantments/nimble.png"
   },
@@ -106,6 +116,7 @@
     "description_raw": null,
     "extra_card_text": "A medida.",
     "card_type": null,
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/perfect_fit.png"
   },
@@ -115,7 +126,8 @@
     "description": "Esta carta es [gold]Innata[/gold] y tiene [gold]Retención[/gold].",
     "description_raw": null,
     "extra_card_text": null,
-    "card_type": null,
+    "card_type": "Attack, Skill",
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/royally_approved.png"
   },
@@ -126,6 +138,7 @@
     "description_raw": "Aumenta el daño de esta carta en [blue]{Amount}[/blue].",
     "extra_card_text": null,
     "card_type": "Attack",
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/sharp.png"
   },
@@ -136,6 +149,7 @@
     "description_raw": null,
     "extra_card_text": null,
     "card_type": null,
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/slither.png"
   },
@@ -146,6 +160,7 @@
     "description_raw": null,
     "extra_card_text": null,
     "card_type": null,
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/slumbering_essence.png"
   },
@@ -156,6 +171,7 @@
     "description_raw": null,
     "extra_card_text": null,
     "card_type": null,
+    "applicable_to": "cards with Exhaust",
     "is_stackable": false,
     "image_url": "/static/images/enchantments/souls_power.png"
   },
@@ -166,6 +182,7 @@
     "description_raw": "La primera vez que juegues esta carta cada combate, gana {Amount:energyIcons()}.",
     "extra_card_text": "Gana [energy:X].",
     "card_type": null,
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/sown.png"
   },
@@ -176,6 +193,7 @@
     "description_raw": null,
     "extra_card_text": null,
     "card_type": null,
+    "applicable_to": "Basic Strike, Defend cards",
     "is_stackable": false,
     "image_url": "/static/images/enchantments/spiral.png"
   },
@@ -186,6 +204,7 @@
     "description_raw": null,
     "extra_card_text": null,
     "card_type": null,
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/steady.png"
   },
@@ -196,6 +215,7 @@
     "description_raw": "La primera vez que juegues esta carta, roba [blue]{Amount}[/blue] {Amount:plural:carta|cartas}.",
     "extra_card_text": "La primera vez que juegues esta carta, roba X cartas.",
     "card_type": null,
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/swift.png"
   },
@@ -206,6 +226,7 @@
     "description_raw": null,
     "extra_card_text": null,
     "card_type": null,
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/tezcataras_ember.png"
   },
@@ -216,6 +237,7 @@
     "description_raw": "La primera vez que juegues esta carta, inflige [blue]{Amount}[/blue] de daño adicional.",
     "extra_card_text": null,
     "card_type": "Attack",
+    "applicable_to": null,
     "is_stackable": false,
     "image_url": "/static/images/enchantments/vigorous.png"
   }

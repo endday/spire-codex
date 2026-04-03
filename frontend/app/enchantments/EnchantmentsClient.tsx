@@ -105,16 +105,17 @@ export default function EnchantmentsClient({ initialEnchantments }: { initialEnc
                 {ench.name}
               </h3>
               <div className="flex gap-1.5 ml-2 flex-shrink-0">
-                {ench.card_type && (
+                {ench.card_type?.split(", ").map((type) => (
                   <span
+                    key={type}
                     className={`text-[10px] px-1.5 py-0.5 rounded border ${
-                      cardTypeColors[ench.card_type] ||
+                      cardTypeColors[type] ||
                       "bg-gray-800 text-gray-300 border-gray-700"
                     }`}
                   >
-                    {ench.card_type}
+                    {type}
                   </span>
-                )}
+                ))}
                 {ench.is_stackable && (
                   <span className="text-[10px] px-1.5 py-0.5 rounded border bg-cyan-950/50 text-cyan-300 border-cyan-900/30">
                     Stackable

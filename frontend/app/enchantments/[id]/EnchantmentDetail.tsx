@@ -90,21 +90,29 @@ export default function EnchantmentDetail() {
           {enchantment.name}
         </h1>
 
-        <div className="flex items-center justify-center gap-3 mb-6 text-sm">
-          {enchantment.card_type && (
-            <span
-              className={`text-xs px-2 py-0.5 rounded border ${
-                cardTypeColors[enchantment.card_type] ||
-                "bg-gray-800 text-gray-300 border-gray-700"
-              }`}
-            >
-              {enchantment.card_type}
-            </span>
-          )}
-          {enchantment.is_stackable && (
-            <span className="text-xs px-2 py-0.5 rounded border bg-cyan-950/50 text-cyan-300 border-cyan-900/30">
-              Stackable
-            </span>
+        <div className="flex flex-col items-center gap-2 mb-6 text-sm">
+          <div className="flex items-center gap-3">
+            {enchantment.card_type?.split(", ").map((type) => (
+              <span
+                key={type}
+                className={`text-xs px-2 py-0.5 rounded border ${
+                  cardTypeColors[type] ||
+                  "bg-gray-800 text-gray-300 border-gray-700"
+                }`}
+              >
+                {type}
+              </span>
+            ))}
+            {enchantment.is_stackable && (
+              <span className="text-xs px-2 py-0.5 rounded border bg-cyan-950/50 text-cyan-300 border-cyan-900/30">
+                Stackable
+              </span>
+            )}
+          </div>
+          {enchantment.applicable_to && (
+            <p className="text-xs text-[var(--text-muted)]">
+              Applies to: {enchantment.applicable_to}
+            </p>
           )}
         </div>
 

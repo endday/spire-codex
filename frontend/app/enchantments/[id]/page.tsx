@@ -55,7 +55,7 @@ export default async function Page({ params }: Props) {
       });
       const faqQuestions = [
         { question: `What does ${enchantment.name} do in Slay the Spire 2?`, answer: desc || `${enchantment.name} is an enchantment in Slay the Spire 2.` },
-        { question: `What card type is ${enchantment.name} for?`, answer: enchantment.card_type ? `${enchantment.name} can be applied to ${enchantment.card_type} cards.` : `${enchantment.name} can be applied to any card type.` },
+        { question: `What card type is ${enchantment.name} for?`, answer: enchantment.applicable_to ? `${enchantment.name} can be applied to ${enchantment.applicable_to}.` : enchantment.card_type ? `${enchantment.name} can be applied to ${enchantment.card_type} cards.` : `${enchantment.name} can be applied to any card type.` },
       ];
       jsonLd = [...detailJsonLd, buildFAQPageJsonLd(faqQuestions)];
     }
