@@ -46,13 +46,13 @@ export default function MechanicsPage() {
         Every drop rate, reward chance, and game formula extracted from Slay the Spire 2&apos;s decompiled source code. All values are exact.
       </p>
 
-      <h2 className="text-xl font-semibold text-[var(--accent-gold)] mb-4">Mechanics</h2>
+      <h2 id="mechanics" className="text-xl font-semibold text-[var(--accent-gold)] mb-4">Mechanics</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
         {mechanics.map((s) => (
           <Link
             key={s.slug}
             href={`/mechanics/${s.slug}`}
-            className="bg-[var(--bg-card)] rounded-xl border border-[var(--border-subtle)] p-5 hover:bg-[var(--bg-card-hover)] hover:border-[var(--border-accent)] transition-all block"
+            className="bg-[var(--bg-card)] rounded-lg border border-[var(--border-subtle)] p-5 hover:bg-[var(--bg-card-hover)] hover:border-[var(--border-accent)] transition-all cursor-pointer block"
           >
             <h3 className="font-semibold text-[var(--text-primary)] group-hover:text-[var(--accent-gold)] mb-2">{s.title}</h3>
             <p className="text-sm text-[var(--text-secondary)] leading-relaxed line-clamp-2">{s.description}</p>
@@ -66,7 +66,7 @@ export default function MechanicsPage() {
           <Link
             key={s.slug}
             href={`/mechanics/${s.slug}`}
-            className="bg-[var(--bg-card)] rounded-xl border border-emerald-800/30 p-5 hover:bg-[var(--bg-card-hover)] hover:border-emerald-600/50 transition-all block"
+            className="bg-[var(--bg-card)] rounded-lg border border-emerald-800/30 p-5 hover:bg-[var(--bg-card-hover)] hover:border-emerald-600/50 transition-all cursor-pointer block"
           >
             <h3 className="font-semibold text-emerald-400 mb-2">{s.title}</h3>
             <p className="text-sm text-[var(--text-secondary)] leading-relaxed line-clamp-2">{s.description}</p>
