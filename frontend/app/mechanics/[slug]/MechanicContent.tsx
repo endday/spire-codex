@@ -48,7 +48,7 @@ export default function MechanicContent({ slug }: { slug: string }) {
             <div className={card}>
               <h3 className={h3}>Card Upgrade Chance</h3>
               <p className="text-sm text-[var(--text-secondary)]">
-                Card rewards have a <strong className={bold}>25%</strong> chance to be offered upgraded (<strong className={bold}>12.5%</strong> on A7+). Rare cards are never auto-upgraded.
+                Scales per act: <strong className={bold}>0%</strong> in Act 1, <strong className={bold}>25%</strong> in Act 2, <strong className={bold}>50%</strong> in Act 3 (halved on A7+: 0%/12.5%/25%). Rare cards are never auto-upgraded.
               </p>
             </div>
             <div className={card}>
@@ -95,7 +95,7 @@ export default function MechanicContent({ slug }: { slug: string }) {
               <tr><td className={td}>Elite</td><td className={tdr}>~52.5%</td></tr>
             </tbody></table>
             <p className={note}>
-              <strong className="text-[var(--text-secondary)]">Pity system:</strong> +10% each fight without a potion, -10% when one drops. Caps at 50%. Elite fights add a flat 12.5% bonus without affecting the pity counter.
+              <strong className="text-[var(--text-secondary)]">Pity system:</strong> +10% each fight without a potion, -10% when one drops. No hard cap in the code. Elite fights add a flat 12.5% bonus without affecting the pity counter.
             </p>
           </div>
           <div className={card}>
@@ -136,7 +136,7 @@ export default function MechanicContent({ slug }: { slug: string }) {
                 <tr className={tr}><td className={td}>Potions</td><td className={tdr}>3</td></tr>
                 <tr><td className={td}>Card removal</td><td className={tdr}>1 service</td></tr>
               </tbody></table>
-              <p className={note}>One random character card is &quot;On Sale&quot; each visit. All prices have &plusmn;15% variance.</p>
+              <p className={note}>One random character card is &quot;On Sale&quot; each visit. Card and potion prices have &plusmn;5% variance, relic prices have &plusmn;15% variance.</p>
             </div>
             <div>
               <h3 className={h3}>Card Removal Cost</h3>
@@ -157,13 +157,13 @@ export default function MechanicContent({ slug }: { slug: string }) {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className={card}>
             <h3 className={h3}>Act Structure</h3>
-            <table className={tbl}><thead><tr className={thr}><th className={th}>Act</th><th className={thr2}>Rooms</th><th className={thr2}>Weak Fights</th></tr></thead><tbody>
-              <tr className={tr}><td className={td}>Overgrowth (Act 1)</td><td className={tdr}>17</td><td className={tdr}>3</td></tr>
-              <tr className={tr}><td className={td}>Underdocks (Alt Act 1)</td><td className={tdr}>17</td><td className={tdr}>3</td></tr>
-              <tr className={tr}><td className={td}>Hive (Act 2)</td><td className={tdr}>16</td><td className={tdr}>2</td></tr>
-              <tr><td className={td}>Glory (Act 3)</td><td className={tdr}>15</td><td className={tdr}>2</td></tr>
+            <table className={tbl}><thead><tr className={thr}><th className={th}>Act</th><th className={thr2}>Rooms</th><th className={thr2}>Floors</th><th className={thr2}>Weak Fights</th></tr></thead><tbody>
+              <tr className={tr}><td className={td}>Overgrowth (Act 1)</td><td className={tdr}>15</td><td className={tdr}>17</td><td className={tdr}>3</td></tr>
+              <tr className={tr}><td className={td}>Underdocks (Alt Act 1)</td><td className={tdr}>15</td><td className={tdr}>17</td><td className={tdr}>3</td></tr>
+              <tr className={tr}><td className={td}>Hive (Act 2)</td><td className={tdr}>14</td><td className={tdr}>16</td><td className={tdr}>2</td></tr>
+              <tr><td className={td}>Glory (Act 3)</td><td className={tdr}>13</td><td className={tdr}>15</td><td className={tdr}>2</td></tr>
             </tbody></table>
-            <p className={note}>Map is a 7-column grid. First row is always fights, row 7 from the top is a guaranteed treasure room (or elite if replaced), last row is always a rest site. Boss sits above.</p>
+            <p className={note}>Map is a 7-column grid. Rooms = choosable nodes, Floors = rooms + Ancient + boss. First row is always fights, 7 rows from the end is a guaranteed treasure room (or elite if replaced), last row is always a rest site.</p>
           </div>
           <div className={card}>
             <h3 className={h3}>Room Distribution</h3>
@@ -171,10 +171,10 @@ export default function MechanicContent({ slug }: { slug: string }) {
               <tr className={tr}><td className={td}>Elites</td><td className={tdr}>5</td><td className={gold}>8</td></tr>
               <tr className={tr}><td className={td}>Shops</td><td className={tdr}>3</td><td className={tdr}>3</td></tr>
               <tr className={tr}><td className={td}>Unknown (?)</td><td className={tdr}>10-14</td><td className={tdr}>10-14</td></tr>
-              <tr className={tr}><td className={td}>Rest sites</td><td className={tdr}>3-7</td><td className={tdr}>-1 on A6</td></tr>
+              <tr className={tr}><td className={td}>Rest sites</td><td className={tdr}>5-7 (varies by act)</td><td className={tdr}>-1 on A6</td></tr>
               <tr><td className={td}>Fights</td><td className={tdr} colSpan={2}>Remaining slots</td></tr>
             </tbody></table>
-            <p className={note}>Unknown rooms average ~12 (Gaussian). Rest sites vary by act. No elites or rest sites in the first 5 rows.</p>
+            <p className={note}>Unknown rooms average ~12 (Gaussian). Rest sites: 6-7 in Acts 1-2, 5-6 in Act 3 (each -1 on A6). No elites or rest sites in the first 5 rows.</p>
           </div>
         </div>
       );
@@ -320,7 +320,8 @@ export default function MechanicContent({ slug }: { slug: string }) {
             <tr className={tr}><td className={td}>Lightning</td><td className={tdr}>3 damage to random enemy</td><td className={gold}>8 damage to random enemy</td></tr>
             <tr className={tr}><td className={td}>Frost</td><td className={tdr}>2 block</td><td className={gold}>5 block</td></tr>
             <tr className={tr}><td className={td}>Dark</td><td className={tdr}>+6 to evoke value</td><td className={gold}>Accumulated damage to lowest HP</td></tr>
-            <tr><td className={td}>Plasma</td><td className={tdr}>1 energy (start of turn)</td><td className={gold}>2 energy</td></tr>
+            <tr className={tr}><td className={td}>Plasma</td><td className={tdr}>1 energy (start of turn)</td><td className={gold}>2 energy</td></tr>
+            <tr><td className={td}>Glass</td><td className={tdr}>4 damage to all enemies (-1/turn)</td><td className={gold}>Passive value x2 to all enemies</td></tr>
           </tbody></table>
           <p className={note}>Starting slots: 3. Max capacity: 10. When full, channeling evokes the leftmost orb. Focus modifies passive and evoke values.</p>
         </div>
@@ -356,7 +357,7 @@ export default function MechanicContent({ slug }: { slug: string }) {
             </div>
             <div>
               <h3 className={`${h3} text-sm`}>Curse Pool (1 picked)</h3>
-              <p className="text-xs text-[var(--text-secondary)]">Cursed Pearl, Large Capsule, Leafy Poultice, Precarious Shears, Scroll Boxes, Silver Crucible</p>
+              <p className="text-xs text-[var(--text-secondary)]">Cursed Pearl, Large Capsule, Leafy Poultice, Precarious Shears, Scroll Boxes (conditional), Silver Crucible (singleplayer only)</p>
               <p className="text-xs text-[var(--text-muted)] mt-1">Conflicting pairs are removed (e.g. Cursed Pearl excludes Golden Pearl).</p>
             </div>
           </div>
