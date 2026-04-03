@@ -137,7 +137,18 @@ def parse_single_power(filepath: Path, localization: dict) -> dict | None:
             r'\[Amount\]|\[Applier|:cond:|==\d+\?|>\d+\?',
             description_resolved
         ))
-        if (amount_missing or has_artifacts) and plain_raw:
+        # Only fall back to plain if:
+        # 1. Plain is actually useful (not "TODO" or empty)
+        # 2. Smart description ONLY has {Amount} issues (no other resolved vars that plain would lose)
+        plain_is_useful = plain_raw and plain_raw.strip() not in ("", "TODO")
+        # Check if smart description resolved any non-Amount vars that plain would lose
+        smart_has_resolved_vars = any(
+            f"{{{v}" in smart_raw and v != "Amount" and v in all_vars
+            for v in all_vars
+        )
+        # Also check for unresolved StringVar placeholders like [AfflictionTitle]
+        has_unresolved_stringvars = bool(re.search(r'\[(?:AfflictionTitle|Covering)\]', description_resolved))
+        if ((amount_missing or has_artifacts) and plain_is_useful and not smart_has_resolved_vars) or (has_unresolved_stringvars and plain_is_useful):
             description_raw = plain_raw
             description_resolved = resolve_description(plain_raw, all_vars)
         else:
