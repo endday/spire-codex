@@ -21,7 +21,7 @@ spire-codex/
     app/
       main.py               # FastAPI app + CORS middleware + GZip
       models/schemas.py      # Pydantic models (with compendium_order)
-      routers/               # API routes (22+ routers)
+      routers/               # API routes (25+ routers)
         cards.py             # Cards (filter: color, type, rarity, keyword, tag, search)
         characters.py        # Characters
         relics.py            # Relics (filter: rarity, pool, search)
@@ -38,19 +38,22 @@ spire-codex/
         exports.py           # ZIP data downloads per language
         entity_history.py    # Per-entity version history from changelogs
         changelogs.py        # Changelog API
+        guides.py            # Guides (list, detail, Discord webhook submission)
+        runs.py              # Run submission + community stats + shared runs
         images.py feedback.py
       services/              # data_service (loads JSON, lru_cache)
       parsers/               # C# -> JSON parsers
         card_parser.py       # Cards with DynamicVars, upgrades, compendium_order
         character_parser.py
-        monster_parser.py    # Monsters with HP, moves, damage, encounter types
+        monster_parser.py    # Monsters with HP, moves, damage, encounter types, innate powers
         relic_parser.py      # Relics with var extraction, starter upgrade mapping, compendium_order
         potion_parser.py     # Potions with var extraction, compendium_order
         enchantment_parser.py
         encounter_parser.py
         event_parser.py      # Events with C# source-order choice extraction
         power_parser.py      # Powers with Temporary*Power inheritance resolution
-        keyword_parser.py    # Keywords, intents, orbs, afflictions, modifiers, achievements
+        keyword_parser.py    # Keywords, intents, orbs, afflictions, modifiers, achievements (with unlock conditions)
+        guide_parser.py      # Markdown guides with YAML frontmatter → JSON
         description_resolver.py
         parse_all.py         # Runs all parsers for all 14 languages
     static/images/           # Served static images
@@ -70,6 +73,13 @@ spire-codex/
       merchant/page.tsx      # Merchant guide — prices, fake merchant, card removal
       compare/page.tsx       # Character comparison hub (10 pairs)
       compare/[pair]/        # Side-by-side comparison detail pages
+      mechanics/page.tsx     # Game mechanics hub — 27 clickable sections
+      mechanics/[slug]/      # Individual mechanic detail pages with SEO
+      guides/page.tsx        # Community guides list with search/filter
+      guides/[slug]/         # Guide detail with markdown rendering + tooltip widget
+      guides/submit/         # Guide submission form → Discord webhook
+      runs/page.tsx          # Community run browser + submission
+      meta/page.tsx          # Live community stats from submitted runs
       showcase/page.tsx      # Community project gallery
       developers/page.tsx    # API docs, widget docs, data exports
       timeline/page.tsx reference/page.tsx images/page.tsx
@@ -109,6 +119,10 @@ spire-codex/
     deploy.py                # Build + push Docker images to Docker Hub
   data/                     # Parsed JSON output (14 language directories)
     changelogs/             # Version changelogs with per-entity diffs
+    guides/                 # Markdown guide files with YAML frontmatter
+    guides.json             # Parsed guide data
+    runs/                   # Submitted run JSON files (per player hash)
+    runs.db                 # SQLite database for run metadata
     showcase.json           # Community project gallery data
   docker-compose.yml        # Local dev
   docker-compose.prod.yml   # Production (Docker Hub images + nginx network)
@@ -118,14 +132,14 @@ spire-codex/
 - **576 cards** — cost, type, rarity, target, damage, block, keywords, tags, upgrades, X-cost, vars, resolved descriptions, compendium_order
 - **5 characters** — Ironclad, Silent, Defect, Necrobinder, Regent (HP, gold, energy, deck, relics)
 - **289 relics** — rarity, pool (with upgraded starter relic mapping from TouchOfOrobas), compendium_order
-- **111 monsters** — HP ranges, ascension scaling, moves, damage values, idle pose sprites
+- **111 monsters** — HP ranges, ascension scaling, moves, damage values, hit counts, innate powers (42 monsters), idle pose sprites
 - **63 potions** — rarity, pool, resolved descriptions, compendium_order
 - **22 enchantments** — card type restrictions, stackability, descriptions
 - **87 encounters** — monster compositions, room type, act placement, tags
-- **66 events** — multi-page decision trees, choices in C# source order (not alphabetical)
+- **66 events** — multi-page decision trees, choices in C# source order, runtime-computed values (escalating costs, gold ranges)
 - **257 powers** — type (Buff/Debuff), stack type, descriptions (3 abstract bases excluded, 19 inherited powers resolved)
 - **8 keywords** — Exhaust, Ethereal, Innate, Retain, Sly, Eternal, Unplayable (+ Period)
-- **14 intents** · **5 orbs** · **9 afflictions** · **16 modifiers** · **33 achievements**
+- **14 intents** · **5 orbs** · **9 afflictions** · **16 modifiers** · **33 achievements** (with unlock conditions, thresholds, categories)
 
 ## API Endpoints
 - `GET /api/stats` — Data counts
@@ -145,6 +159,9 @@ spire-codex/
 - `GET /api/exports/{lang}` — ZIP download of all entity JSON for a language
 - `GET /api/history/{entity_type}/{entity_id}` — Per-entity version history
 - `GET /api/changelogs` / `GET /api/changelogs/{tag}` — Version changelogs
+- `GET /api/guides?category=&difficulty=&tag=&search=` / `GET /api/guides/{slug}` — Guides
+- `POST /api/guides` — Guide submission (Discord webhook, rate-limited)
+- `POST /api/runs` — Run submission / `GET /api/runs/list` / `GET /api/runs/shared/{hash}` / `GET /api/runs/stats`
 - `GET /api/languages` / `GET /api/translations`
 - All endpoints accept `?lang=` (default: eng) — 14 languages supported
 - Docs: `http://localhost:8000/docs`
@@ -209,7 +226,12 @@ spire-codex/
 - **Starter relic upgrades**: Mapped via TouchOfOrobas.RefinementUpgrades to correct character pools
 - **Detail page tabs**: Overview (stats/description), Details (merchant price, powers, related), Info (localized names, version history)
 - **i18n key fields**: `rarity_key`, `type_key` on cards/relics/potions, `power_key` on powers_applied — English values preserved alongside localized display strings for logic (merchant prices, power links)
-- **Monster multi-hit**: `hit_count` extracted from `WithHitCount(N)` in C# source, displayed as `damage × hits = total`
+- **Card upgrade descriptions**: `upgrade_description` field on all 403 upgradable cards — resolved with upgraded var values for correct plurals, icons, and text
+- **Monster multi-hit**: `hit_count` extracted from `WithHitCount(N)` in C# source (including AscensionHelper patterns), displayed as `damage × hits = total`
+- **Monster innate powers**: 42 monsters have powers applied at spawn (Territorial, Artifact, Slippery, etc.) extracted from `AfterAddedToRoom`
+- **Event dynamic values**: Runtime-computed values (escalating costs, gold ranges, heal-to-full) resolved per-step with special handlers for Tablet of Truth, Abyssal Baths, and CalculateVars patterns
+- **Guides**: Markdown files in `data/guides/` with YAML frontmatter, parsed to JSON, rendered with react-markdown + tooltip widget (`[[Card Name]]` syntax)
+- **Mechanics page**: 27 individual SEO pages at `/mechanics/{slug}` — drop rates, combat formulas, map generation, boss pools, secrets & trivia
 - **IndexNow**: Deploy script pings api.indexnow.org with all 1,522 URLs after every push
 - **Shareable changelogs**: `/changelog#1.0.6` auto-selects version via URL hash
 - **Nav grouping**: Collapsible sections (Database, Game Info, About the Site) with auto-expand for active page
@@ -247,7 +269,7 @@ python3 tools/deploy.py
 
 ## Versioning
 Uses `1.X.Y` — 1=codex major, X=bumps on Mega Crit game patch, Y=our fixes/improvements.
-Current: **v1.0.6**
+Current: **v1.0.15**
 
 ## Known Limitations
 - 6 monsters lack images entirely (Crusher, Doormaker, Flyconid, Ovicopter, Rocket, Decimillipede)
@@ -279,6 +301,12 @@ Current: **v1.0.6**
 - ~~Localized detail pages (/{lang}/cards/{id})~~ ✅ — all entity types, 1:1 with English
 - ~~Full site localization routes~~ ✅ — all 30+ pages have /{lang}/ equivalents
 - ~~UI translations (tabs, nav, headings, taglines)~~ ✅ — partial, via lib/ui-translations.ts
+- ~~Community guides~~ ✅ — markdown guides with submission form, tooltip widget, author socials
+- ~~Game mechanics / drop rates page~~ ✅ — 27 individual SEO pages covering card/relic/potion odds, map generation, combat, boss pools, secrets
+- ~~Monster innate powers~~ ✅ — 42 monsters with powers parsed from AfterAddedToRoom
+- ~~Achievement unlock conditions~~ ✅ — category, character, threshold, condition from C# source
+- ~~Card upgrade descriptions~~ ✅ — upgrade_description for all 403 upgradable cards
+- ~~Event dynamic values~~ ✅ — escalating costs, gold ranges, heal-to-full resolved correctly
 - i18n refactor — migrate from manual t() calls to `next-intl` for complete translation coverage
   - Known gaps: compare graphs (keyword matching), merchant prose, about/changelog content, scattered client component strings
   - Current t() approach doesn't scale — hundreds of strings across dozens of components

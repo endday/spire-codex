@@ -19,7 +19,7 @@ The game is built with Godot 4 but all logic is in a C#/.NET 8 DLL, not GDScript
 ## Backend (`backend/`)
 
 - **FastAPI** with Pydantic schemas, slowapi rate limiting, GZip compression
-- **22+ routers** in `app/routers/` — one per entity type
+- **25+ routers** in `app/routers/` — one per entity type + guides, runs, feedback
 - **Data service** loads JSON from `data/{lang}/` with LRU caching
 - **SQLite** (`data/runs.db`) for community run submissions
 - **Static images** served from `backend/static/images/`
@@ -31,10 +31,11 @@ Each parser reads decompiled C# source + localization JSON and outputs structure
 | Parser | Extracts |
 |--------|----------|
 | `card_parser.py` | Cards — cost, type, rarity, damage, block, keywords, upgrades, DynamicVars |
-| `monster_parser.py` | Monsters — HP, moves with intents/powers/damage, encounter context |
+| `monster_parser.py` | Monsters — HP, moves with intents/powers/damage/hit counts, innate powers, encounter context |
 | `relic_parser.py` | Relics — rarity, pool, descriptions, image variants |
 | `power_parser.py` | Powers — type (Buff/Debuff), stack type, inheritance resolution |
-| `event_parser.py` | Events — multi-page decision trees, choices from C# source order |
+| `event_parser.py` | Events — multi-page decision trees, choices from C# source order, runtime-computed values |
+| `guide_parser.py` | Guides — markdown with YAML frontmatter |
 | `encounter_parser.py` | Encounters — monster compositions, room type, act, tags |
 | `description_resolver.py` | Shared SmartFormat template resolver |
 | `parse_all.py` | Orchestrates all parsers for all 14 languages |
@@ -45,6 +46,9 @@ Each parser reads decompiled C# source + localization JSON and outputs structure
 - **CalculatedDamage**: Cards like Ashen Strike use `CalculationBase + ExtraDamage * multiplier` — display shows base only
 - **Power inheritance**: 19 powers inherit from Temporary{Strength,Dexterity,Focus}Power
 - **Monster move effects**: Extracted from `PowerCmd.Apply<T>()` in move method bodies
+- **Monster innate powers**: Extracted from `AfterAddedToRoom` (42 monsters)
+- **Card upgrade descriptions**: `upgrade_description` resolved with upgraded var values for correct plurals/icons
+- **Event dynamic values**: Runtime-computed values via special handlers (Tablet of Truth, Abyssal Baths) and CalculateVars patterns (`+=`/`-=` with NextInt/NextFloat)
 - **ID format**: PascalCase class name → UPPER_SNAKE_CASE
 
 ## Frontend (`frontend/`)
@@ -89,6 +93,7 @@ All endpoints accept `?lang=` (default: `eng`). Responses are GZip-compressed wi
 - **List endpoints**: `GET /api/cards`, `GET /api/monsters`, etc. with filters
 - **Detail endpoints**: `GET /api/cards/{id}`, `GET /api/monsters/{id}`, etc.
 - **Runs**: `POST /api/runs` (submit), `GET /api/runs/stats` (aggregated meta), `GET /api/runs/list` (browse)
+- **Guides**: `GET /api/guides` (list with filters), `GET /api/guides/{slug}` (detail), `POST /api/guides` (Discord webhook submission)
 - **Docs**: `http://localhost:8000/docs` (Swagger UI)
 
 Filter parameters always use English values regardless of language.

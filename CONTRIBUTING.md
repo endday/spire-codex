@@ -65,10 +65,23 @@ If a card description, damage value, or relic effect is wrong:
 - Register them in `backend/app/main.py`
 - Pydantic models in `backend/app/models/schemas.py`
 
+### Guides
+- Guides are markdown files in `data/guides/` with YAML frontmatter
+- Parser at `backend/app/parsers/guide_parser.py` converts to `data/guides.json`
+- Supports `[[Card Name]]` tooltip syntax (rendered via the tooltip widget)
+- Submissions go through Discord webhook — reviewer creates the `.md` file
+- Author social links (website, Bluesky, Twitter, Twitch) shown at bottom of guide
+
 ### Run Data / Meta
 - Run submission and stats use SQLite (`data/runs.db`, not committed)
 - Schema and queries are in `backend/app/services/runs_db.py`
 - The meta page is at `frontend/app/meta/`
+
+### Game Mechanics
+- Static content pages at `frontend/app/mechanics/`
+- 27 individual SEO pages at `/mechanics/[slug]`
+- Section metadata in `frontend/app/mechanics/sections.ts`
+- Content components in `frontend/app/mechanics/[slug]/MechanicContent.tsx`
 
 ## Code Style
 

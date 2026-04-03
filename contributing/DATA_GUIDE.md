@@ -4,21 +4,21 @@
 
 | Category | Count | Key Fields |
 |----------|-------|------------|
-| Cards | 576 | cost, type, rarity, damage, block, keywords, upgrades, compendium_order |
+| Cards | 576 | cost, type, rarity, damage, block, keywords, upgrades, upgrade_description, compendium_order |
 | Characters | 5 | HP, gold, energy, starting deck/relics, dialogues |
 | Relics | 289 | rarity, pool, image_variants |
-| Monsters | 116 | HP, moves with intents/damage/powers/block, encounter context |
+| Monsters | 116 | HP, moves with intents/damage/powers/block/hit counts, innate powers (42), encounter context |
 | Potions | 63 | rarity, pool, compendium_order |
 | Enchantments | 22 | card type restrictions, stackability |
 | Encounters | 87 | monster compositions, room type, act, is_weak |
-| Events | 66 | multi-page decision trees, choices |
+| Events | 66 | multi-page decision trees, choices, runtime-computed values (gold ranges, escalating costs) |
 | Powers | 257 | type (Buff/Debuff), stack type |
 | Keywords | 8 | Exhaust, Ethereal, Innate, Retain, Sly, Eternal, Unplayable |
 | Intents | 14 | Monster intent types with icons |
 | Orbs | 5 | Passive/Evoke values |
 | Afflictions | 9 | Stackability, extra card text |
 | Modifiers | 16 | Custom mode run modifiers |
-| Achievements | 33 | Unlock descriptions |
+| Achievements | 33 | Unlock descriptions, category, character, threshold, condition |
 | Acts | 4 | Bosses, encounters, events, ancients |
 | Ascensions | 11 | Levels 0-10 with descriptions |
 
@@ -43,6 +43,8 @@ data/
   tur/          Turkish
   zhs/          Simplified Chinese
   changelogs/   Version diffs
+  guides/       Markdown guide files with YAML frontmatter
+  guides.json   Parsed guide data
   ancient_pools.json
   showcase.json
   runs.db       SQLite (not committed)

@@ -46,13 +46,21 @@ All data endpoints accept `?lang=` (default: `eng`). Rate limited to 60 req/min 
 | `GET /api/ancient-pools` | | Ancient relic offering pools |
 | `GET /api/ancient-pools/{id}` | | Single ancient's pools |
 
+## Guides
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `GET /api/guides` | GET | All guides. Filters: `category`, `difficulty`, `tag`, `search` |
+| `GET /api/guides/{slug}` | GET | Single guide with full markdown content |
+| `POST /api/guides` | POST | Submit a guide (proxied to Discord webhook). Rate limited: 3/min |
+
 ## Run Data
 
 | Endpoint | Method | Description |
 |----------|--------|-------------|
 | `POST /api/runs` | POST | Submit a run. Optional `?username=` param (25 char max) |
 | `GET /api/runs/stats` | GET | Community stats. Filters: `character`, `win`, `ascension`, `game_mode`, `players` |
-| `GET /api/runs/list` | GET | Browse runs. Filters: `character`, `win`, `username`, `limit` |
+| `GET /api/runs/list` | GET | Browse runs. Filters: `character`, `win`, `username`, `page`, `limit` |
 | `GET /api/runs/shared/{hash}` | GET | Retrieve a shared run by hash |
 
 ## Utility
