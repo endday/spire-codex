@@ -307,6 +307,10 @@ class Achievement(BaseModel):
     id: str
     name: str
     description: str
+    category: str | None = None
+    character: str | None = None
+    threshold: int | None = None
+    condition: str | None = None
 
 
 class Epoch(BaseModel):

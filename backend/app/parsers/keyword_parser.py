@@ -245,9 +245,45 @@ def parse_achievements(loc_dir: Path) -> list[dict]:
     with open(loc_file, "r", encoding="utf-8") as f:
         loc = json.load(f)
 
+    # Achievement metadata from C# source
+    ACHIEVEMENT_META: dict[str, dict] = {
+        "IRONCLAD_WIN": {"category": "character_win", "character": "Ironclad"},
+        "SILENT_WIN": {"category": "character_win", "character": "Silent"},
+        "REGENT_WIN": {"category": "character_win", "character": "Regent"},
+        "NECROBINDER_WIN": {"category": "character_win", "character": "Necrobinder"},
+        "DEFECT_WIN": {"category": "character_win", "character": "Defect"},
+        "IRONCLAD_ASCENSION10": {"category": "character_ascension", "character": "Ironclad"},
+        "SILENT_ASCENSION10": {"category": "character_ascension", "character": "Silent"},
+        "REGENT_ASCENSION10": {"category": "character_ascension", "character": "Regent"},
+        "NECROBINDER_ASCENSION10": {"category": "character_ascension", "character": "Necrobinder"},
+        "DEFECT_ASCENSION10": {"category": "character_ascension", "character": "Defect"},
+        "CHARACTER_SKILL_IRONCLAD1": {"category": "character_skill", "character": "Ironclad", "threshold": 20, "condition": "Exhaust 20 cards in a single combat"},
+        "CHARACTER_SKILL_IRONCLAD2": {"category": "character_skill", "character": "Ironclad", "threshold": 999, "condition": "Deal 999+ damage in a single hit"},
+        "CHARACTER_SKILL_SILENT1": {"category": "character_skill", "character": "Silent", "threshold": 5, "condition": "Play 5 cards via Sly off a single card play"},
+        "CHARACTER_SKILL_SILENT2": {"category": "character_skill", "character": "Silent", "threshold": 99, "condition": "Apply 99+ Poison to a single enemy"},
+        "CHARACTER_SKILL_NECROBINDER1": {"category": "character_skill", "character": "Necrobinder", "threshold": 999, "condition": "Apply 999+ Doom to a single enemy"},
+        "CHARACTER_SKILL_NECROBINDER2": {"category": "character_skill", "character": "Necrobinder", "threshold": 50, "condition": "Apply 50+ Strength to Osty"},
+        "CHARACTER_SKILL_REGENT1": {"category": "character_skill", "character": "Regent", "threshold": 999, "condition": "Forge a Sovereign Blade with 999+ base damage"},
+        "CHARACTER_SKILL_REGENT2": {"category": "character_skill", "character": "Regent", "threshold": 20, "condition": "Have 20+ Stars at once"},
+        "PLAY20_CARDS_SINGLE_TURN": {"category": "combat", "threshold": 20, "condition": "Play 20 cards in a single turn"},
+        "DEFEAT_ONE_BOSS": {"category": "combat", "condition": "Defeat a boss"},
+        "DEFEAT_OVERGROWTH_ENEMIES": {"category": "combat", "condition": "Defeat every enemy in the Overgrowth"},
+        "DEFEAT_UNDERDOCKS_ENEMIES": {"category": "combat", "condition": "Defeat every enemy in the Underdocks"},
+        "DEFEAT_HIVE_ENEMIES": {"category": "combat", "condition": "Defeat every enemy in the Hive"},
+        "DEFEAT_GLORY_ENEMIES": {"category": "combat", "condition": "Defeat every enemy in the Glory"},
+        "NO_RELIC_WIN": {"category": "run", "condition": "Win without obtaining any relics"},
+        "ALL_CARDS_UPGRADED": {"category": "run", "condition": "Win with a fully-upgraded deck"},
+        "COMPLETE_ACT4": {"category": "run", "condition": "Complete Act 4"},
+        "FLOOR_TEN_THOUSAND": {"category": "collection", "threshold": 10000, "condition": "Climb 10,000 floors total"},
+        "DISCOVER_ALL_CARDS": {"category": "collection", "condition": "Discover all cards"},
+        "DISCOVER_ALL_RELICS": {"category": "collection", "condition": "Discover all relics"},
+        "DISCOVER_ALL_EVENTS": {"category": "collection", "condition": "Encounter all events"},
+        "COMPLETE_TIMELINE": {"category": "collection", "condition": "Complete the Timeline"},
+        "ALL_OTHER_ACHIEVEMENTS": {"category": "meta", "condition": "Complete all other achievements"},
+    }
+
     achievements = []
     seen = set()
-    # Skip meta keys
     skip_prefixes = {"DESCRIPTION_WITH_UNLOCK_TIME", "UNLOCK_DATE", "LOCKED"}
     for key in loc:
         parts = key.split(".")
@@ -260,10 +296,15 @@ def parse_achievements(loc_dir: Path) -> list[dict]:
         desc = loc.get(f"{ach_id}.description", "")
         desc_clean = clean_description(desc)
 
+        meta = ACHIEVEMENT_META.get(ach_id, {})
         achievements.append({
             "id": ach_id,
             "name": title,
             "description": desc_clean,
+            "category": meta.get("category"),
+            "character": meta.get("character"),
+            "threshold": meta.get("threshold"),
+            "condition": meta.get("condition"),
         })
     return achievements
 
