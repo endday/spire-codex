@@ -34,10 +34,13 @@ CATEGORIES: dict[str, tuple[str, str, bool, list[str] | None]] = {
     "ui-characters": ("Character Icons", "ui/characters", False, None),
     "ui-combat": ("Combat UI", "ui/combat", False, None),
     "ui-rewards": ("Reward Icons", "ui/rewards", False, None),
-    "ui-map": ("Map Icons", "ui/map", False, None),
+    "ui-map": ("Map Markers", "ui/map", False, None),
+    "ui-map-nodes": ("Map Node Icons", "ui/map_nodes", False, None),
+    "ui-map-ancients": ("Ancient Node Icons", "ui/map_ancients", False, None),
     "ui-menu": ("Menu Icons", "ui/menu", False, None),
     "ui-cursors": ("Cursors", "ui/cursors", False, None),
     "ui-crystal-sphere": ("Crystal Sphere", "ui/crystal_sphere", False, None),
+    "ui-top-bar": ("Top Bar Icons", "ui/top_bar", False, None),
     "ui-misc": ("Misc UI", "ui/misc", False, None),
 }
 
