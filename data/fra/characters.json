@@ -44,7 +44,7 @@
           {
             "order": 0,
             "speaker": "ancient",
-            "text": "{characterGender:choose(feminine|neutral|masculine):Quelle belle pièce de pacotille|Quel beau morceau de ferraille|Quel joli bloc de bric-à-brac} {characterGender:choose(neutral|):tu fais|vous faites} !"
+            "text": "{characterGender:choose(feminine|neutral|masculine):Quelle belle pièce de pacotille|Quel beau morceau de ferraille|Quel joli bloc de bric-à-brac} {characterGender:choose(neutral):tu fais|vous faites} !"
           },
           {
             "order": 1,
@@ -60,7 +60,7 @@
           {
             "order": 0,
             "speaker": "ancient",
-            "text": "Toujours en service, à ce que vois... Voyons ce qu'on peut faire pour te mettre à jour !"
+            "text": "Toujours en service, à ce que je vois... Voyons ce qu'on peut faire pour te mettre à jour !"
           }
         ]
       },
@@ -71,7 +71,7 @@
           {
             "order": 0,
             "speaker": "ancient",
-            "text": "J'ai bien conservé ce que ton ami euhh... hum.\nOublie ce qu'ai dit !!"
+            "text": "J'ai bien conservé ce que ton ami euhh... hum.\nOublie ce que j'ai dit !!"
           },
           {
             "order": 1,
@@ -81,7 +81,7 @@
           {
             "order": 2,
             "speaker": "ancient",
-            "text": "Ma petite ferrtaille, oublie ce que j'ai dit !"
+            "text": "Ma petite ferraille, oublie ce que j'ai dit !"
           }
         ]
       },
@@ -227,7 +227,7 @@
           {
             "order": 0,
             "speaker": "ancient",
-            "text": "[thinky_dots]Les automates rêvent-ils ?\nObservez-moi et essayer de m'imiter...[/thinky_dots]"
+            "text": "[thinky_dots]Les automates rêvent-ils ?\nObservez-moi et essayez de m'imiter...[/thinky_dots]"
           }
         ]
       },
@@ -260,7 +260,7 @@
           {
             "order": 0,
             "speaker": "ancient",
-            "text": "TES ORBES NE SONT PAS DES VRAIES ARMES !!"
+            "text": "TES ORBES NE SONT PAS DE VRAIES ARMES !!"
           }
         ]
       },
@@ -414,7 +414,7 @@
           {
             "order": 0,
             "speaker": "ancient",
-            "text": "Ne trouves-tu pas étrange que tes camarades les assemblages veulent ta perte ?"
+            "text": "Ne trouves-tu pas étrange que tes camarades les assemblages veuillent ta perte ?"
           }
         ]
       },
@@ -826,7 +826,7 @@
           {
             "order": 0,
             "speaker": "ancient",
-            "text": "Les clans que tu as anéantis pèsent-il sur ton âme...?\n[i][font_size=22]Vakuu rit aux éclats.[/font_size][/i]"
+            "text": "Les clans que tu as anéantis pèsent-ils sur ton âme...?\n[i][font_size=22]Vakuu rit aux éclats.[/font_size][/i]"
           }
         ]
       },
@@ -1413,7 +1413,7 @@
           {
             "order": 0,
             "speaker": "ancient",
-            "text": "Qu'est-ce qui vous amène parmi nous ? Vous voulez jetez un œil à ma collection ?"
+            "text": "Qu'est-ce qui vous amène parmi nous ? Vous voulez jeter un œil à ma collection ?"
           },
           {
             "order": 1,
@@ -1519,7 +1519,7 @@
           {
             "order": 1,
             "speaker": "ancient",
-            "text": "Que de beaux accoutrements de contrées si lointaines !\nLaissez approcher vous sbires, et je vous donnerai ma bénédiction."
+            "text": "Que de beaux accoutrements de contrées si lointaines !\nLaissez approcher vos sbires, et je vous donnerai ma bénédiction."
           }
         ]
       },
@@ -1541,7 +1541,7 @@
           {
             "order": 0,
             "speaker": "ancient",
-            "text": "L'Architecte a perdu la tête ! Si seulement un noble champion pouvait nous venir en secours..."
+            "text": "L'Architecte a perdu la tête ! Si seulement un noble champion pouvait venir à notre secours..."
           },
           {
             "order": 1,
@@ -1589,7 +1589,7 @@
           {
             "order": 0,
             "speaker": "char",
-            "text": "Mon plus grand fan ! Ororbas, cher ami !\nHeureux de te voir encore en vie !"
+            "text": "Mon plus grand fan ! Orobas, cher ami !\nHeureux de te voir encore en vie !"
           },
           {
             "order": 1,

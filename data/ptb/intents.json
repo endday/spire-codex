@@ -20,7 +20,7 @@
   {
     "id": "DEATH_BLOW",
     "name": "Golpe Mortal",
-    "description": "Esta criatura está tentando te derrubar junto com ela. Vai atacar você por [blue]{Damage}[/blue] de dano antes de ser derrotada.",
+    "description": "Esta criatura está tentando te derrubar junto com ela. Ao se sacrificar, ela ataca causando [blue]{Damage}[/blue] de dano.",
     "image_url": "/static/images/intents/death_blow.png"
   },
   {

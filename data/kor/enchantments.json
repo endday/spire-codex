@@ -232,7 +232,7 @@
   },
   {
     "id": "VIGOROUS",
-    "name": "활력",
+    "name": "활기",
     "description": "이 카드를 처음으로 사용 시, 추가로 피해를 [blue]X[/blue] 줍니다.",
     "description_raw": "이 카드를 처음으로 사용 시, 추가로 피해를 [blue]{Amount}[/blue] 줍니다.",
     "extra_card_text": null,

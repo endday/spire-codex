@@ -471,7 +471,7 @@
       },
       {
         "id": "SQUASH",
-        "description": "„Rozumiem... chcesz się nauczyć [gold]Zgniatania szkodników[/gold]. Bardzo dobrze...”\n\nPrzerywa na chwilę, zastanawiając się, jak najlepiej zaprezentować tobie ten manewr...\n\nChwilę później wykrzykuje: [jitter]„A OTO TECHNIKA! PATRZ I UCZ SIĘ!!”[/jitter], po czym zadeptuje gigantycznego robala."
+        "description": "„Rozumiem... chcesz się nauczyć [gold]Zgniatania szkodników[/gold]. Bardzo dobrze...”\n\nPrzerywa na chwilę, zastanawiając się, jak najlepiej zaprezentować tobie ten manewr...\n\nChwilę później wykrzykuje: [jitter]„A OTO TECHNIKA! PATRZ I UCZ SIĘ!!”[/jitter], \npo czym zadeptuje gigantycznego robala."
       }
     ]
   },
@@ -1328,7 +1328,7 @@
       },
       {
         "id": "CONFRONT",
-        "description": "Kładziesz dłoń na grobie i szepczesz...\n\n[sine]„Twoja walka dobiegła końca...”[/sine]\n\nW odpowiedzi dusza zderza się z twoją i rozpoczyna się [aqua]WALKA DUSZ[/aqua]!\nPoddaje się, gdy tylko odczuwa, ile niezliczonych walk już stoczyła twoja dusza."
+        "description": "Kładziesz dłoń na grobie i szepczesz...\n\n[sine]„Twoja walka dobiegła końca...”[/sine]\n\nW odpowiedzi dusza zderza się z twoją i rozpoczyna się [jitter][aqua]WALKA DUSZ[/aqua][/jitter]!\nPoddaje się, gdy tylko odczuwa, ile niezliczonych walk już stoczyła twoja dusza."
       },
       {
         "id": "INITIAL",
@@ -2479,7 +2479,7 @@
     "options": [
       {
         "id": "POTION",
-        "title": "Podaruj Miksturę: Potion",
+        "title": "Podaruj Potion",
         "description": "Otrzymaj losowy [gold]Artefakt[/gold]."
       },
       {
@@ -2494,7 +2494,7 @@
       },
       {
         "id": "RELIC",
-        "title": "Podaruj Artefakt: Relic",
+        "title": "Podaruj Relic",
         "description": "Otrzymaj [blue]2[/blue] losowe [gold]Artefakty[/gold]."
       },
       {
@@ -2514,7 +2514,7 @@
         "options": [
           {
             "id": "POTION",
-            "title": "Podaruj Miksturę: Potion",
+            "title": "Podaruj Potion",
             "description": "Otrzymaj losowy [gold]Artefakt[/gold]."
           },
           {
@@ -2529,7 +2529,7 @@
           },
           {
             "id": "RELIC",
-            "title": "Podaruj Artefakt: Relic",
+            "title": "Podaruj Relic",
             "description": "Otrzymaj [blue]2[/blue] losowe [gold]Artefakty[/gold]."
           },
           {
@@ -2596,17 +2596,17 @@
       {
         "id": "TOP",
         "title": "Weź ten na górze",
-        "description": "Zamień: [gold]one of your Relics[/gold] na [gold]a random Relic[/gold]."
+        "description": "Zamień Artefakt: [gold]one of your Relics[/gold] na [gold]a random Relic[/gold]."
       },
       {
         "id": "MIDDLE",
         "title": "Weź ten na środku",
-        "description": "Zamień: [gold]one of your Relics[/gold] na [gold]a random Relic[/gold]."
+        "description": "Zamień Artefakt: [gold]one of your Relics[/gold] na [gold]a random Relic[/gold]."
       },
       {
         "id": "BOTTOM",
         "title": "Weź ten na dole",
-        "description": "Zamień: [gold]one of your Relics[/gold] na [gold]a random Relic[/gold]."
+        "description": "Zamień Artefakt: [gold]one of your Relics[/gold] na [gold]a random Relic[/gold]."
       }
     ],
     "pages": [
@@ -2621,17 +2621,17 @@
           {
             "id": "TOP",
             "title": "Weź ten na górze",
-            "description": "Zamień: [gold]one of your Relics[/gold] na [gold]a random Relic[/gold]."
+            "description": "Zamień Artefakt: [gold]one of your Relics[/gold] na [gold]a random Relic[/gold]."
           },
           {
             "id": "MIDDLE",
             "title": "Weź ten na środku",
-            "description": "Zamień: [gold]one of your Relics[/gold] na [gold]a random Relic[/gold]."
+            "description": "Zamień Artefakt: [gold]one of your Relics[/gold] na [gold]a random Relic[/gold]."
           },
           {
             "id": "BOTTOM",
             "title": "Weź ten na dole",
-            "description": "Zamień: [gold]one of your Relics[/gold] na [gold]a random Relic[/gold]."
+            "description": "Zamień Artefakt: [gold]one of your Relics[/gold] na [gold]a random Relic[/gold]."
           }
         ]
       }
@@ -3283,8 +3283,8 @@
       },
       {
         "id": "KILL_WITH_FIRE",
-        "title": "Zabij to ogniem",
-        "description": "Wybierz kartę do zmiany."
+        "title": "Podpal",
+        "description": "Wybierz kartę do [gold]Zmiany[/gold]."
       }
     ],
     "pages": [
@@ -3308,8 +3308,8 @@
           },
           {
             "id": "KILL_WITH_FIRE",
-            "title": "Zabij to ogniem",
-            "description": "Wybierz kartę do zmiany."
+            "title": "Podpal",
+            "description": "Wybierz kartę do [gold]Zmiany[/gold]."
           }
         ]
       },
@@ -3632,7 +3632,7 @@
       {
         "id": "BONE_TEA",
         "title": "Herbata z kości",
-        "description": "Pay [red]50[/red] [gold]Gold[/gold]. Na początku plural(en):następnej walki wszystkie karty w [gold]ręce[/gold] zostają [gold]Ulepszone[/gold]."
+        "description": "Pay [red]50[/red] [gold]Gold[/gold]. [BoneTeaDescription]"
       },
       {
         "id": "BONE_TEA_LOCKED",
@@ -3642,7 +3642,7 @@
       {
         "id": "EMBER_TEA",
         "title": "Piekielnie gorąca herbata",
-        "description": "Zapłać [red]150[/red] szt. [gold]Złota[/gold]. Na początku plural(en):następnej walki zyskaj [blue]2[/blue] pkt. [gold]Siły[/gold]."
+        "description": "Zapłać [red]150[/red] szt. [gold]Złota[/gold]. [EmberTeaDescription]"
       },
       {
         "id": "EMBER_TEA_LOCKED",
@@ -3667,7 +3667,7 @@
           {
             "id": "BONE_TEA",
             "title": "Herbata z kości",
-            "description": "Pay [red]50[/red] [gold]Gold[/gold]. Na początku plural(en):następnej walki wszystkie karty w [gold]ręce[/gold] zostają [gold]Ulepszone[/gold]."
+            "description": "Pay [red]50[/red] [gold]Gold[/gold]. [BoneTeaDescription]"
           },
           {
             "id": "BONE_TEA_LOCKED",
@@ -3677,7 +3677,7 @@
           {
             "id": "EMBER_TEA",
             "title": "Piekielnie gorąca herbata",
-            "description": "Zapłać [red]150[/red] szt. [gold]Złota[/gold]. Na początku plural(en):następnej walki zyskaj [blue]2[/blue] pkt. [gold]Siły[/gold]."
+            "description": "Zapłać [red]150[/red] szt. [gold]Złota[/gold]. [EmberTeaDescription]"
           },
           {
             "id": "EMBER_TEA_LOCKED",
@@ -4127,7 +4127,7 @@
     "options": [
       {
         "id": "POTION",
-        "title": "Umieść pospolitą Miksturę.",
+        "title": "Umieść pospolitą Miksturę",
         "description": "Utrać Miksturę: [gold]a Potion[/gold]. Otrzymaj [gold]Ulepszoną[/gold] [gold]pospolitą kartę Ataku[/gold]."
       }
     ],
@@ -4142,7 +4142,7 @@
         "options": [
           {
             "id": "POTION",
-            "title": "Umieść pospolitą Miksturę.",
+            "title": "Umieść pospolitą Miksturę",
             "description": "Utrać Miksturę: [gold]a Potion[/gold]. Otrzymaj [gold]Ulepszoną[/gold] [gold]pospolitą kartę Ataku[/gold]."
           }
         ]
@@ -4210,7 +4210,7 @@
   },
   {
     "id": "THE_LEGENDS_WERE_TRUE",
-    "name": "Legendy okazały się prawdziwe",
+    "name": "Legendy były prawdziwe",
     "type": "Shared",
     "act": null,
     "description": "Tuż po wejściu do ciemnej komnaty drzwi za tobą niespodziewanie się zamykają.\n\nŚwiatło przebija się z sufitu i oświetla przed tobą podium, na którym leży mapa. Czujesz, że musisz ją wziąć.\n\nPodejrzane.",
@@ -4290,7 +4290,7 @@
       },
       {
         "id": "ORNATE",
-        "description": "Bierzesz [purple]przeklęty Artefakt[/purple]. As soon as you grasp it, shackles materialize on your wrists.\n\nYou hear a [blue][sine]ghostly laughter[/sine][/blue] and a bright [orange]plume of fire[/orange] fills your vision!\n\nThe hole and arms are gone."
+        "description": "You grab the [purple]Cursed Relic[/purple]. As soon as you grasp it, shackles materialize on your wrists.\n\nYou hear a [blue][sine]ghostly laughter[/sine][/blue] and a bright [orange]plume of fire[/orange] fills your vision!\n\nThe hole and arms are gone."
       },
       {
         "id": "PLAIN",
@@ -4319,17 +4319,17 @@
           {
             "id": "ATTACK",
             "title": "Broń",
-            "description": "Make an ATAK."
+            "description": "Stwórz Atak."
           },
           {
             "id": "SKILL",
             "title": "Obrońca",
-            "description": "Make a UMIEJĘTNOŚĆ."
+            "description": "Stwórz Umiejętność."
           },
           {
             "id": "POWER",
             "title": "Gadżet",
-            "description": "Make a Potęga."
+            "description": "Stwórz Moc."
           }
         ]
       },
@@ -4416,7 +4416,7 @@
       {
         "id": "GRAB",
         "title": "Weź losowy śmieć",
-        "description": "Zyskaj [blue]100[/blue] szt. [gold]Złota[/gold]. Otrzymaj losowy kartę z przeszłości."
+        "description": "Zyskaj [blue]100[/blue] szt. [gold]Złota[/gold]. Otrzymaj losową kartę z przeszłości."
       }
     ],
     "pages": [
@@ -4440,7 +4440,7 @@
           {
             "id": "GRAB",
             "title": "Weź losowy śmieć",
-            "description": "Zyskaj [blue]100[/blue] szt. [gold]Złota[/gold]. Otrzymaj losowy kartę z przeszłości."
+            "description": "Zyskaj [blue]100[/blue] szt. [gold]Złota[/gold]. Otrzymaj losową kartę z przeszłości."
           }
         ]
       }
@@ -5073,7 +5073,7 @@
       {
         "id": "BATHE",
         "title": "Weź kąpiel",
-        "description": "Usuń [blue]1[/blue] kartę z [gold]talii[/gold]. Dodaj [blue]1[/blue] [red]Poczucie winy[/red] do [gold]talii[/gold]."
+        "description": "Usuń [blue]1[/blue] kartę z [gold]talii[/gold]. Dodaj [blue]1[/blue] [red]Poczucia winy[/red] do [gold]talii[/gold]."
       }
     ],
     "pages": [
@@ -5097,7 +5097,7 @@
           {
             "id": "BATHE",
             "title": "Weź kąpiel",
-            "description": "Usuń [blue]1[/blue] kartę z [gold]talii[/gold]. Dodaj [blue]1[/blue] [red]Poczucie winy[/red] do [gold]talii[/gold]."
+            "description": "Usuń [blue]1[/blue] kartę z [gold]talii[/gold]. Dodaj [blue]1[/blue] [red]Poczucia winy[/red] do [gold]talii[/gold]."
           }
         ]
       }

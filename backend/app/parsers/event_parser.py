@@ -4,8 +4,7 @@ import re
 from pathlib import Path
 from description_resolver import resolve_description, extract_vars_from_source
 
-BASE = Path(__file__).resolve().parents[3]
-DECOMPILED = BASE / "extraction" / "decompiled"
+from parser_paths import BASE, DECOMPILED, loc_dir as _loc_dir, data_dir as _data_dir
 EVENTS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.Events"
 ACTS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.Acts"
 IMAGES_DIR = BASE / "backend" / "static" / "images" / "misc" / "ancients"
@@ -784,8 +783,8 @@ def parse_all_events(loc_dir: Path, data_dir: Path) -> list[dict]:
 
 
 def main(lang: str = "eng"):
-    loc_dir = BASE / "extraction" / "raw" / "localization" / lang
-    output_dir = BASE / "data" / lang
+    loc_dir = _loc_dir(lang)
+    output_dir = _data_dir(lang)
     output_dir.mkdir(parents=True, exist_ok=True)
     events = parse_all_events(loc_dir, output_dir)
     with open(output_dir / "events.json", "w", encoding="utf-8") as f:

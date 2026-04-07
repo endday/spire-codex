@@ -778,7 +778,7 @@
   },
   {
     "id": "CALCIFIED_CULTIST",
-    "name": "Cultista calcificato",
+    "name": "Accolito calcificato",
     "type": "Normal",
     "min_hp": 38,
     "max_hp": 41,
@@ -857,7 +857,7 @@
       },
       {
         "id": "PLOW",
-        "name": "Incornata",
+        "name": "Aratura",
         "intent": "Attack + Buff",
         "powers": [
           {
@@ -1332,7 +1332,7 @@
   },
   {
     "id": "DAMP_CULTIST",
-    "name": "Cultista zuppo",
+    "name": "Accolito zuppo",
     "type": "Normal",
     "min_hp": 51,
     "max_hp": 53,
@@ -1439,7 +1439,7 @@
       },
       {
         "id": "REATTACH",
-        "name": "Riattaccamento",
+        "name": "Ricomposizione",
         "intent": "Heal"
       }
     ],
@@ -1771,7 +1771,7 @@
       },
       {
         "id": "ENRAGE",
-        "name": "Collera",
+        "name": "Ira",
         "intent": "Buff",
         "powers": [
           {
@@ -1920,7 +1920,7 @@
     "moves": [
       {
         "id": "SWIPE",
-        "name": "Furto",
+        "name": "Scippo",
         "intent": "Attack",
         "damage": {
           "normal": 13,
@@ -2745,7 +2745,7 @@
       },
       {
         "id": "SWIPE",
-        "name": "Colpo",
+        "name": "Scippo",
         "intent": "Attack",
         "damage": {
           "normal": 13,
@@ -7253,7 +7253,7 @@
       },
       {
         "id": "SWIPE",
-        "name": "Colpo",
+        "name": "Scippo",
         "intent": "Attack",
         "damage": {
           "normal": 6,
@@ -7598,7 +7598,7 @@
       },
       {
         "id": "REATTACH",
-        "name": "Riattaccamento",
+        "name": "Ricomposizione",
         "intent": "Heal"
       }
     ],
@@ -7687,7 +7687,7 @@
       },
       {
         "id": "REATTACH",
-        "name": "Riattaccamento",
+        "name": "Ricomposizione",
         "intent": "Heal"
       }
     ],
@@ -7776,7 +7776,7 @@
       },
       {
         "id": "REATTACH",
-        "name": "Riattaccamento",
+        "name": "Ricomposizione",
         "intent": "Heal"
       }
     ],

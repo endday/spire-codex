@@ -983,7 +983,7 @@
     "id": "BUFFER",
     "name": "Amortecedor",
     "description": "Evite a próxima vez que você perderia PV.",
-    "description_raw": "Evite {BufferPower:plural:a próxima vez|{BufferPower:as próximas diff()} vezes} que você perderia PV.",
+    "description_raw": "Evite {BufferPower:plural:a próxima vez|as próximas {BufferPower:diff()} vezes} que você perderia PV.",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -1018,7 +1018,7 @@
     "image_url": "/static/images/cards/buffer.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Evite as próximas diff() vezes que você perderia PV.",
+    "upgrade_description": "Evite as próximas 2 vezes que você perderia PV.",
     "type_key": "Power",
     "rarity_key": "Rare",
     "compendium_order": 359
@@ -2320,8 +2320,8 @@
   {
     "id": "BULWARK",
     "name": "Baluarte",
-    "description": "Receba 13 de [gold]Proteção[/gold].\n[gold]Forjar[/gold] 10.",
-    "description_raw": "Receba {Block:diff()} de [gold]Proteção[/gold].\n[gold]Forjar[/gold] {Forge:diff()}.",
+    "description": "Receba 13 de [gold]Proteção[/gold].\n[gold]Forje[/gold] 10.",
+    "description_raw": "Receba {Block:diff()} de [gold]Proteção[/gold].\n[gold]Forje[/gold] {Forge:diff()}.",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -2351,7 +2351,7 @@
     "image_url": "/static/images/cards/bulwark.png",
     "beta_image_url": "/static/images/cards/beta/bulwark.png",
     "type_variants": null,
-    "upgrade_description": "Receba 16 de [gold]Proteção[/gold].\n[gold]Forjar[/gold] 13.",
+    "upgrade_description": "Receba 16 de [gold]Proteção[/gold].\n[gold]Forje[/gold] 13.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 183
@@ -2471,8 +2471,8 @@
   {
     "id": "BIG_BANG",
     "name": "Big Bang",
-    "description": "Compre 1 carta.\nReceba [energy:1].\nReceba [star:1].\n[gold]Forjar[/gold] 5.",
-    "description_raw": "Compre {Cards:diff()} {Cards:plural:carta|cartas}.\nReceba {Energy:energyIcons()}.\nReceba {Stars:starIcons()}.\n[gold]Forjar[/gold] {Forge:diff()}.",
+    "description": "Compre 1 carta.\nReceba [energy:1].\nReceba [star:1].\n[gold]Forje[/gold] 5.",
+    "description_raw": "Compre {Cards:diff()} {Cards:plural:carta|cartas}.\nReceba {Energy:energyIcons()}.\nReceba {Stars:starIcons()}.\n[gold]Forje[/gold] {Forge:diff()}.",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -5442,8 +5442,8 @@
   {
     "id": "DEFEND_DEFECT",
     "name": "Defesa",
-    "description": "Receba5 de [gold]Proteção[/gold].",
-    "description_raw": "Receba{Block:diff()} de [gold]Proteção[/gold].",
+    "description": "Receba 5 de [gold]Proteção[/gold].",
+    "description_raw": "Receba {Block:diff()} de [gold]Proteção[/gold].",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -5473,7 +5473,7 @@
     "image_url": "/static/images/cards/defend_defect.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Receba8 de [gold]Proteção[/gold].",
+    "upgrade_description": "Receba 8 de [gold]Proteção[/gold].",
     "type_key": "Skill",
     "rarity_key": "Basic",
     "compendium_order": 374
@@ -6697,48 +6697,6 @@
       "Exhaust"
     ],
     "compendium_order": 527
-  },
-  {
-    "id": "BUNDLE_OF_JOY",
-    "name": "Doce Surpresa",
-    "description": "Adicione 3 cartas Incolores aleatórias na sua [gold]Mão[/gold].",
-    "description_raw": "Adicione {Cards:diff()} {Cards:plural:carta Incolor aleatória|cartas Incolores aleatórias} na sua [gold]Mão[/gold].",
-    "cost": 2,
-    "is_x_cost": null,
-    "is_x_star_cost": null,
-    "star_cost": null,
-    "type": "Técnica",
-    "rarity": "Rara",
-    "target": "Self",
-    "color": "regent",
-    "damage": null,
-    "block": null,
-    "hit_count": null,
-    "powers_applied": null,
-    "cards_draw": 3,
-    "energy_gain": null,
-    "hp_loss": null,
-    "keywords": [
-      "Exaurir"
-    ],
-    "tags": null,
-    "spawns_cards": null,
-    "vars": {
-      "Cards": 3
-    },
-    "upgrade": {
-      "cards": "+1"
-    },
-    "image_url": "/static/images/cards/bundle_of_joy.png",
-    "beta_image_url": "/static/images/cards/beta/bundle_of_joy.png",
-    "type_variants": null,
-    "upgrade_description": "Adicione 4 cartas Incolores aleatórias na sua [gold]Mão[/gold].",
-    "type_key": "Skill",
-    "rarity_key": "Rare",
-    "keywords_key": [
-      "Exhaust"
-    ],
-    "compendium_order": 184
   },
   {
     "id": "DOMINATE",
@@ -15026,8 +14984,8 @@
   {
     "id": "BEAT_INTO_SHAPE",
     "name": "Moldar",
-    "description": "Cause 5 de dano.\n[gold]Forjar[/gold] X.\n[gold]Forje[/gold] mais 5 por cada outra vez que você golpeou o inimigo neste turno.",
-    "description_raw": "Cause {Damage:diff()} de dano.\n[gold]Forjar[/gold] {CalculatedForge:diff()}.\n[gold]Forje[/gold] mais {CalculationExtra:diff()} por cada outra vez que você golpeou o inimigo neste turno.",
+    "description": "Cause 5 de dano.\n[gold]Forje[/gold] X.\n[gold]Forje[/gold] mais 5 por cada outra vez que você golpeou o inimigo neste turno.",
+    "description_raw": "Cause {Damage:diff()} de dano.\n[gold]Forje[/gold] {CalculatedForge:diff()}.\n[gold]Forje[/gold] mais {CalculationExtra:diff()} por cada outra vez que você golpeou o inimigo neste turno.",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -15059,7 +15017,7 @@
     "image_url": "/static/images/cards/beat_into_shape.png",
     "beta_image_url": "/static/images/cards/beta/beat_into_shape.png",
     "type_variants": null,
-    "upgrade_description": "Cause 7 de dano.\n[gold]Forjar[/gold] X.\n[gold]Forje[/gold] mais 7 por cada outra vez que você golpeou o inimigo neste turno.",
+    "upgrade_description": "Cause 7 de dano.\n[gold]Forje[/gold] X.\n[gold]Forje[/gold] mais 7 por cada outra vez que você golpeou o inimigo neste turno.",
     "type_key": "Attack",
     "rarity_key": "Rare",
     "compendium_order": 178
@@ -16623,6 +16581,48 @@
     "compendium_order": 498
   },
   {
+    "id": "BUNDLE_OF_JOY",
+    "name": "Pequeno Milagre",
+    "description": "Adicione 3 cartas Incolores aleatórias na sua [gold]Mão[/gold].",
+    "description_raw": "Adicione {Cards:diff()} {Cards:plural:carta Incolor aleatória|cartas Incolores aleatórias} na sua [gold]Mão[/gold].",
+    "cost": 2,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "Técnica",
+    "rarity": "Rara",
+    "target": "Self",
+    "color": "regent",
+    "damage": null,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": null,
+    "cards_draw": 3,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": [
+      "Exaurir"
+    ],
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Cards": 3
+    },
+    "upgrade": {
+      "cards": "+1"
+    },
+    "image_url": "/static/images/cards/bundle_of_joy.png",
+    "beta_image_url": "/static/images/cards/beta/bundle_of_joy.png",
+    "type_variants": null,
+    "upgrade_description": "Adicione 4 cartas Incolores aleatórias na sua [gold]Mão[/gold].",
+    "type_key": "Skill",
+    "rarity_key": "Rare",
+    "keywords_key": [
+      "Exhaust"
+    ],
+    "compendium_order": 184
+  },
+  {
     "id": "VEILPIERCER",
     "name": "Perfura-Véu",
     "description": "Cause 10 de dano.\nA próxima carta [gold]Etérea[/gold] que você jogar custa 0 [energy:1].",
@@ -16816,8 +16816,8 @@
   {
     "id": "PILLAR_OF_CREATION",
     "name": "Pilar da Criação",
-    "description": "Sempre que você comprar uma carta, receba 3 de [gold]Proteção[/gold].",
-    "description_raw": "Sempre que você comprar uma carta, receba {Block:diff()} de [gold]Proteção[/gold].",
+    "description": "Sempre que você criar uma carta, receba 3 de [gold]Proteção[/gold].",
+    "description_raw": "Sempre que você criar uma carta, receba {Block:diff()} de [gold]Proteção[/gold].",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -16845,7 +16845,7 @@
     "image_url": "/static/images/cards/pillar_of_creation.png",
     "beta_image_url": "/static/images/cards/beta/pillar_of_creation.png",
     "type_variants": null,
-    "upgrade_description": "Sempre que você comprar uma carta, receba 4 de [gold]Proteção[/gold].",
+    "upgrade_description": "Sempre que você criar uma carta, receba 4 de [gold]Proteção[/gold].",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 236
@@ -17088,7 +17088,7 @@
     "hit_count": null,
     "powers_applied": [
       {
-        "power": "Precisão",
+        "power": "Pontaria",
         "amount": 4,
         "power_key": "Accuracy"
       }
@@ -17651,44 +17651,6 @@
     "compendium_order": 480
   },
   {
-    "id": "MAKE_IT_SO",
-    "name": "Prossiga",
-    "description": "Cause 6 de dano.\nA cada 3 Técnicas que jogar em um mesmo turno, coloque esta carta na sua [gold]Mão[/gold].",
-    "description_raw": "Cause {Damage:diff()} de dano.\nA cada {Cards:diff()} {Cards:plural:Técnica|Técnicas} que jogar em um mesmo turno, coloque esta carta na sua [gold]Mão[/gold].",
-    "cost": 0,
-    "is_x_cost": null,
-    "is_x_star_cost": null,
-    "star_cost": null,
-    "type": "Ataque",
-    "rarity": "Rara",
-    "target": "AnyEnemy",
-    "color": "regent",
-    "damage": 6,
-    "block": null,
-    "hit_count": null,
-    "powers_applied": null,
-    "cards_draw": 3,
-    "energy_gain": null,
-    "hp_loss": null,
-    "keywords": null,
-    "tags": null,
-    "spawns_cards": null,
-    "vars": {
-      "Damage": 6,
-      "Cards": 3
-    },
-    "upgrade": {
-      "damage": "+3"
-    },
-    "image_url": "/static/images/cards/make_it_so.png",
-    "beta_image_url": "/static/images/cards/beta/make_it_so.png",
-    "type_variants": null,
-    "upgrade_description": "Cause 9 de dano.\nA cada 3 Técnicas que jogar em um mesmo turno, coloque esta carta na sua [gold]Mão[/gold].",
-    "type_key": "Attack",
-    "rarity_key": "Rare",
-    "compendium_order": 224
-  },
-  {
     "id": "PROTECTOR",
     "name": "Protetor",
     "description": "[gold]Ostheo[/gold] causa 10 de dano.\nCausa dano adicional equivalente aos [gold]PV Máximos[/gold] de [gold]Ostheo[/gold].",
@@ -18224,6 +18186,44 @@
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 238
+  },
+  {
+    "id": "MAKE_IT_SO",
+    "name": "Que Assim Seja",
+    "description": "Cause 6 de dano.\nA cada 3 Técnicas que jogar em um mesmo turno, coloque esta carta na sua [gold]Mão[/gold].",
+    "description_raw": "Cause {Damage:diff()} de dano.\nA cada {Cards:diff()} {Cards:plural:Técnica|Técnicas} que jogar em um mesmo turno, coloque esta carta na sua [gold]Mão[/gold].",
+    "cost": 0,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "Ataque",
+    "rarity": "Rara",
+    "target": "AnyEnemy",
+    "color": "regent",
+    "damage": 6,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": null,
+    "cards_draw": 3,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": null,
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Damage": 6,
+      "Cards": 3
+    },
+    "upgrade": {
+      "damage": "+3"
+    },
+    "image_url": "/static/images/cards/make_it_so.png",
+    "beta_image_url": "/static/images/cards/beta/make_it_so.png",
+    "type_variants": null,
+    "upgrade_description": "Cause 9 de dano.\nA cada 3 Técnicas que jogar em um mesmo turno, coloque esta carta na sua [gold]Mão[/gold].",
+    "type_key": "Attack",
+    "rarity_key": "Rare",
+    "compendium_order": 224
   },
   {
     "id": "BREAK",
@@ -20694,8 +20694,8 @@
   {
     "id": "SYNCHRONIZE",
     "name": "Sincronizar",
-    "description": "Receba 2 de [gold]Foco[/gold] por cada tipo de Orbe que você possuir.",
-    "description_raw": "Receba {CalculationExtra:diff()} de [gold]Foco[/gold] por cada tipo de Orbe que você possuir.{InCombat:\n(Receba {CalculatedFocus:diff()} de [gold]Foco[/gold])|}",
+    "description": "Receba 2 de [gold]Foco[/gold] neste turno por cada tipo de Orbe que você possuir.",
+    "description_raw": "Receba {CalculationExtra:diff()} de [gold]Foco[/gold] neste turno por cada tipo de Orbe que você possuir.{InCombat:\n(Receba {CalculatedFocus:diff()} de [gold]Foco[/gold])|}",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -21292,8 +21292,8 @@
   {
     "id": "CRUSH_UNDER",
     "name": "Subjugar",
-    "description": "Cause 7de dano a TODOS os inimigos. Todos os inimigos perdem 1 de [gold]Força[/gold] neste turno.",
-    "description_raw": "Cause {Damage:diff()}de dano a TODOS os inimigos. Todos os inimigos perdem {StrengthLoss:diff()} de [gold]Força[/gold] neste turno.",
+    "description": "Cause 7 de dano a TODOS os inimigos. Todos os inimigos perdem 1 de [gold]Força[/gold] neste turno.",
+    "description_raw": "Cause {Damage:diff()} de dano a TODOS os inimigos. Todos os inimigos perdem {StrengthLoss:diff()} de [gold]Força[/gold] neste turno.",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -21323,7 +21323,7 @@
     "image_url": "/static/images/cards/crush_under.png",
     "beta_image_url": "/static/images/cards/beta/crush_under.png",
     "type_variants": null,
-    "upgrade_description": "Cause 8de dano a TODOS os inimigos. Todos os inimigos perdem 2 de [gold]Força[/gold] neste turno.",
+    "upgrade_description": "Cause 8 de dano a TODOS os inimigos. Todos os inimigos perdem 2 de [gold]Força[/gold] neste turno.",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 196
@@ -21498,8 +21498,8 @@
   {
     "id": "BURST",
     "name": "Surto",
-    "description": "Neste turno,  sua próxima Técnica é uma vez adicional.",
-    "description_raw": "Neste turno,{IfUpgraded:show: suas 2 próximas} {Skills:plural: sua próxima Técnica é|Técnicas são jogadas} uma vez adicional.",
+    "description": "Neste turno, sua próxima Técnica é jogada uma vez adicional.",
+    "description_raw": "Neste turno, {Skills:plural:sua próxima Técnica é jogada|suas próximas {:diff()} Técnicas são jogadas} uma vez adicional.",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -21527,7 +21527,7 @@
     "image_url": "/static/images/cards/burst.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Neste turno, suas 2 próximas Técnicas são jogadas uma vez adicional.",
+    "upgrade_description": "Neste turno, suas próximas 2 Técnicas são jogadas uma vez adicional.",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 103

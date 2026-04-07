@@ -27,7 +27,7 @@
   {
     "id": "DRAFT",
     "name": "ドラフト",
-    "description": "[gold]カード報酬[/gold]を[blue]10[/blue]枚選択し、初期デッキと入れ替える。"
+    "description": "[gold]カード報酬[/gold]を[blue]10[/blue]枚選択し、開始デッキと入れ替える。"
   },
   {
     "id": "FLIGHT",
@@ -62,7 +62,7 @@
   {
     "id": "SEALED_DECK",
     "name": "シールドデッキ",
-    "description": "[blue]30[/blue]枚のカードの中から[blue]10[/blue]枚を選び、初期デッキと入れ替える。"
+    "description": "[blue]30[/blue]枚のカードの中から[blue]10[/blue]枚を選び、開始デッキと入れ替える。"
   },
   {
     "id": "SPECIALIZED",

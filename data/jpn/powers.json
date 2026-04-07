@@ -32,7 +32,7 @@
   {
     "id": "AFTERIMAGE",
     "name": "残像",
-    "description": "カードをプレイするたび、[gold]ブロック[/gold][blue]1[/blue]を得る。",
+    "description": "カードをプレイするたび、[blue]1[/blue][gold]ブロック[/gold]を得る。",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -172,7 +172,7 @@
   {
     "id": "BLADE_OF_INK",
     "name": "墨の刃",
-    "description": "このターン、アタックをプレイするたび、[gold]筋力[/gold][blue]2[/blue]を得る。",
+    "description": "このターン、アタックをプレイするたび、ターン終了時まで[gold]筋力[/gold][blue]2[/blue]を得る。",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -182,7 +182,7 @@
   {
     "id": "BLOCK_NEXT_TURN",
     "name": "次ターンブロック",
-    "description": "次のターン開始時、[gold]ブロック[/gold][blue]4[/blue]を得る。",
+    "description": "次のターン開始時、[blue]4[/blue][gold]ブロック[/gold]を得る。",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -272,8 +272,8 @@
   {
     "id": "CHILD_OF_THE_STARS",
     "name": "星の子",
-    "description": "[star:1]を消費するたび、[gold]ブロック[/gold][blue]1[/blue]を得る。",
-    "description_raw": "{singleStarIcon}を消費するたび、[gold]ブロック[/gold][blue]1[/blue]を得る。",
+    "description": "[star:1]を消費するたび、[blue]1[/blue][gold]ブロック[/gold]を得る。",
+    "description_raw": "{singleStarIcon}を消費するたび、[blue]1[/blue][gold]ブロック[/gold]を得る。",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -312,8 +312,8 @@
   {
     "id": "CONQUEROR",
     "name": "征服者",
-    "description": "次の[blue][Amount][/blue]ターンの間、[gold]ソヴリン・ブレード[/gold]は[gold]this creature[/gold]に2倍のダメージを与える。",
-    "description_raw": "次の[blue]{Amount}[/blue]ターンの間、[gold]ソヴリン・ブレード[/gold]は[gold]{OwnerName}[/gold]に2倍のダメージを与える。",
+    "description": "このターン、[gold]ソヴリン・ブレード[/gold]は[gold]this creature[/gold]に2倍のダメージを与える。",
+    "description_raw": "{Amount:choose(1):このターン|[blue]{Amount}[/blue]ターンの間}、[gold]ソヴリン・ブレード[/gold]は[gold]{OwnerName}[/gold]に2倍のダメージを与える。",
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -342,7 +342,7 @@
   {
     "id": "COOLANT",
     "name": "冷却材",
-    "description": "ターン開始時、生成中のオーブ1種類につき[gold]ブロック[/gold][blue]3[/blue]を得る。",
+    "description": "ターン開始時、生成中のオーブ1種類につき[blue]3[/blue][gold]ブロック[/gold]を得る。",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -372,7 +372,7 @@
   {
     "id": "CORRUPTION",
     "name": "堕落",
-    "description": "スキルのコストは[blue]0[/blue]になる。\nスキルをプレイするたび、それを[gold]廃棄[/gold]する。",
+    "description": "スキルのコストは[blue]0[/blue]。\nスキルをプレイするたび、それを[gold]廃棄[/gold]する。",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Single",
@@ -382,7 +382,7 @@
   {
     "id": "COUNTDOWN",
     "name": "カウントダウン",
-    "description": "ターン開始時、ランダムな敵1体に[gold]破滅[/gold][blue]6[/blue]を付与する。",
+    "description": "ターン開始時、ランダムな敵に[gold]破滅[/gold][blue]6[/blue]を付与する。",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -422,8 +422,8 @@
   {
     "id": "CRIMSON_MANTLE",
     "name": "深紅の衣",
-    "description": "ターン開始時、HPを[blue]0[/blue]失い、[gold]ブロック[/gold][blue][Amount][/blue]を得る。",
-    "description_raw": "ターン開始時、HPを[blue]{SelfDamage}[/blue]失い、[gold]ブロック[/gold][blue]{Amount}[/blue]を得る。",
+    "description": "ターン開始時、HPを[blue]0[/blue]失い、[blue][Amount][/blue][gold]ブロック[/gold]を得る。",
+    "description_raw": "ターン開始時、HPを[blue]{SelfDamage}[/blue]失い、[blue]{Amount}[/blue][gold]ブロック[/gold]を得る。",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -482,8 +482,8 @@
   {
     "id": "DANSE_MACABRE",
     "name": "死の舞踏",
-    "description": "コストが[energy:2]以上のカードをプレイするたび、[gold]ブロック[/gold][blue][Amount][/blue]を得る。",
-    "description_raw": "コストが{Energy:energyIcons()}以上のカードをプレイするたび、[gold]ブロック[/gold][blue]{Amount}[/blue]を得る。",
+    "description": "コストが[energy:2]以上のカードをプレイするたび、[blue][Amount][/blue][gold]ブロック[/gold]を得る。",
+    "description_raw": "コストが{Energy:energyIcons()}以上のカードをプレイするたび、[blue]{Amount}[/blue][gold]ブロック[/gold]を得る。",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -882,8 +882,8 @@
   {
     "id": "FREE_ATTACK",
     "name": "フリーアタック",
-    "description": "",
-    "description_raw": null,
+    "description": "次にプレイするアタックのコストは[blue]0[/blue][energy:1]。",
+    "description_raw": "次にプレイするアタックのコストは[blue]0[/blue]{energyPrefix:energyIcons(1)}。",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -892,8 +892,8 @@
   {
     "id": "FREE_POWER",
     "name": "フリーパワー",
-    "description": "",
-    "description_raw": null,
+    "description": "次にプレイするパワーのコストは[blue]0[/blue][energy:1]。",
+    "description_raw": "次にプレイするパワーのコストは[blue]0[/blue]{energyPrefix:energyIcons(1)}。",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -902,8 +902,8 @@
   {
     "id": "FREE_SKILL",
     "name": "フリースキル",
-    "description": "",
-    "description_raw": null,
+    "description": "次にプレイするスキルのコストは[blue]0[/blue][energy:1]。",
+    "description_raw": "次にプレイするスキルのコストは[blue]0[/blue]{energyPrefix:energyIcons(1)}。",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -912,7 +912,7 @@
   {
     "id": "FRIENDSHIP",
     "name": "フレンドシップ",
-    "description": "各ターンの開始時、[gold]エナジー[/gold][blue]1[/blue]を得る。",
+    "description": "ターン開始時、[gold]エナジー[/gold][blue]1[/blue]を得る。",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1032,8 +1032,8 @@
   {
     "id": "HARDENED_SHELL",
     "name": "硬い殻",
-    "description": "[gold]this creature[/gold]は各ターンに[blue][Amount][/blue]以上のHPを失わない。",
-    "description_raw": "[gold]{OwnerName}[/gold]は各ターンに[blue]{Amount}[/blue]以上のHPを失わない。",
+    "description": "[gold]this creature[/gold]は1ターンに[blue][Amount][/blue]以上のHPを失わない。",
+    "description_raw": "[gold]{OwnerName}[/gold]は1ターンに[blue]{Amount}[/blue]以上のHPを失わない。",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -1092,7 +1092,7 @@
   {
     "id": "HELLRAISER",
     "name": "ヘル・レイザー",
-    "description": "「ストライク」を含むカードを引くたび、ランダムな敵1体に対して自動でプレイされる。",
+    "description": "名前に「ストライク」を含むカードを引くたび、それをランダムな敵に対して自動でプレイする。",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Single",
@@ -1102,7 +1102,7 @@
   {
     "id": "HEX",
     "name": "呪術",
-    "description": "Spectral Knightが生存中、あなたのすべてのカードは[gold]エセリアル[/gold]を得る。",
+    "description": "スペクトルナイトが生存中、あなたのすべてのカードは[gold]エセリアル[/gold]を得る。",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Single",
@@ -1143,7 +1143,7 @@
     "id": "IMBALANCED",
     "name": "アンバランス",
     "description": "[gold]this creature[/gold]の攻撃が完全にブロックされた場合、[gold]スタン[/gold]する。",
-    "description_raw": "[gold]{OwnerName}[/gold]の攻撃が{IsMultiplayer: いずれかのプレイヤーに|}完全にブロックされた場合、[gold]スタン[/gold]する。",
+    "description_raw": "[gold]{OwnerName}[/gold]の攻撃が{IsMultiplayer:いずれかのプレイヤーに|}完全にブロックされた場合、[gold]スタン[/gold]する。",
     "type": "Debuff",
     "stack_type": "Single",
     "allow_negative": null,
@@ -1222,7 +1222,7 @@
   {
     "id": "JUGGERNAUT",
     "name": "ジャガーノート",
-    "description": "[gold]ブロック[/gold]を得るたび、ランダムな敵1体に[blue]5[/blue]ダメージを与える。",
+    "description": "[gold]ブロック[/gold]を得るたび、ランダムな敵に[blue]5[/blue]ダメージを与える。",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1362,7 +1362,7 @@
   {
     "id": "MONARCHS_GAZE",
     "name": "君主の睨み",
-    "description": "敵を攻撃するたび、このターン、その敵は[gold]筋力[/gold][blue]1[/blue]を失う。",
+    "description": "敵を攻撃するたび、ターン終了時までその敵は[gold]筋力[/gold][blue]1[/blue]を失う。",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1382,8 +1382,8 @@
   {
     "id": "MONOLOGUE",
     "name": "モノローグ",
-    "description": "このターン、カードをプレイするたび、[gold]筋力[/gold][blue]1[/blue]を得る。\n現在[blue]0[/blue]の[gold]筋力[/gold]を得ている。",
-    "description_raw": "このターン、カードをプレイするたび、[gold]筋力[/gold][blue]{StrengthPower}[/blue]を得る。\n現在[blue]{StrengthApplied}[/blue]の[gold]筋力[/gold]を得ている。",
+    "description": "このターン、カードをプレイするたび、ターン終了時まで[gold]筋力[/gold][blue]1[/blue]を得る。\n現在[blue]0[/blue]の[gold]筋力[/gold]を得ている。",
+    "description_raw": "このターン、カードをプレイするたび、ターン終了時まで[gold]筋力[/gold][blue]{StrengthPower}[/blue]を得る。\n現在[blue]{StrengthApplied}[/blue]の[gold]筋力[/gold]を得ている。",
     "type": "Buff",
     "stack_type": "None",
     "allow_negative": null,
@@ -1562,7 +1562,7 @@
   {
     "id": "PARRY",
     "name": "パリィ",
-    "description": "[gold]ソヴリン・ブレード[/gold]をプレイするたび、[gold]ブロック[/gold][blue]8[/blue]を得る。",
+    "description": "[gold]ソヴリン・ブレード[/gold]をプレイするたび、[blue]8[/blue][gold]ブロック[/gold]を得る。",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1602,7 +1602,7 @@
   {
     "id": "PILLAR_OF_CREATION",
     "name": "創造の柱",
-    "description": "カードを作成するたび、[gold]ブロック[/gold][blue]5[/blue]を得る。",
+    "description": "カードを作成するたび、[blue]5[/blue][gold]ブロック[/gold]を得る。",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1612,8 +1612,8 @@
   {
     "id": "PLATING",
     "name": "プレート",
-    "description": "ターン終了時、[gold]ブロック[/gold][blue][Amount][/blue]を得る。ターン開始時、[gold]プレート[/gold]が[blue]1[/blue]減少する。",
-    "description_raw": "ターン終了時、[gold]ブロック[/gold][blue]{Amount}[/blue]を得る。ターン開始時、[gold]プレート[/gold]が[blue]{Decrement}[/blue]減少する。",
+    "description": "ターン終了時、[blue][Amount][/blue][gold]ブロック[/gold]を得る。ターン開始時、[gold]プレート[/gold]が[blue]1[/blue]減少する。",
+    "description_raw": "ターン終了時、[blue]{Amount}[/blue][gold]ブロック[/gold]を得る。ターン開始時、[gold]プレート[/gold]が[blue]{Decrement}[/blue]減少する。",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -1632,7 +1632,7 @@
   {
     "id": "POISON",
     "name": "毒",
-    "description": "毒に侵されたモンスターはターン開始時にHPを失う。毎ターン、[gold]毒[/gold]は[blue]1[/blue]減少する。",
+    "description": "[gold]毒[/gold]に侵されたモンスターはターン開始時にHPを失う。毎ターン、[gold]毒[/gold]は[blue]1[/blue]減少する。",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
@@ -1672,7 +1672,7 @@
   {
     "id": "PYRE",
     "name": "かがり火",
-    "description": "各ターンの開始時、[gold]エナジー[/gold][blue]1[/blue]を得る。",
+    "description": "ターン開始時、[gold]エナジー[/gold][blue]1[/blue]を得る。",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1682,8 +1682,8 @@
   {
     "id": "RADIANCE",
     "name": "輝き",
-    "description": "次の[blue][Amount][/blue]ターンの間、追加の[energy:1]を得る。",
-    "description_raw": "次の[blue]{Amount}[/blue]ターンの間、追加の{Energy:energyIcons()}を得る。",
+    "description": "次のターン、追加の[energy:1]を得る。",
+    "description_raw": "{Amount:choose(1):次のターン|次の[blue]{Amount}[/blue]ターンの間}、追加の{Energy:energyIcons()}を得る。",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -1692,7 +1692,7 @@
   {
     "id": "RAGE",
     "name": "激怒",
-    "description": "このターン、アタックをプレイするたび、[gold]ブロック[/gold][blue]3[/blue]を得る。",
+    "description": "このターン、アタックをプレイするたび、[blue]3[/blue][gold]ブロック[/gold]を得る。",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1702,7 +1702,7 @@
   {
     "id": "RAMPART",
     "name": "城壁",
-    "description": "プレイヤーのターン開始時、タレットオペレーターは[gold]ブロック[/gold][blue]25[/blue]を得る。",
+    "description": "プレイヤーのターン開始時、タレットオペレーターは[blue]25[/blue][gold]ブロック[/gold]を得る。",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1782,7 +1782,7 @@
   {
     "id": "RETAIN_HAND",
     "name": "手札保留",
-    "description": "次の[blue]2[/blue]ターンの間、[gold]手札[/gold]を[gold]保留[/gold]する。",
+    "description": "次の[blue]2[/blue]ターンの間、[gold]手札[/gold]をすべて[gold]保留[/gold]する。",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1862,7 +1862,7 @@
   {
     "id": "SELF_FORMING_CLAY",
     "name": "自己形成粘土",
-    "description": "次のターン、[gold]ブロック[/gold][blue]3[/blue]を得る。",
+    "description": "次のターン、[blue]3[/blue][gold]ブロック[/gold]を得る。",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1882,7 +1882,7 @@
   {
     "id": "SERPENT_FORM",
     "name": "大蛇化",
-    "description": "カードをプレイするたび、ランダムな敵1体に[blue]4[/blue]ダメージを与える。",
+    "description": "カードをプレイするたび、ランダムな敵に[blue]4[/blue]ダメージを与える。",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1943,7 +1943,7 @@
     "id": "SHRINK",
     "name": "縮小",
     "description": "[gold]this creature[/gold]のアタックダメージが[blue]30%[/blue]減少する。",
-    "description_raw": "{ApplierName.StringValue:cond:敵が生存中、あなたの|[gold]{OwnerName}[/gold]の}アタックダメージが[blue]{DamageDecrease}%[/blue]減少する{Amount:cond:==1? 次のターン|>1? （残り[blue]{Amount}[/blue]ターン）|}。",
+    "description_raw": "{ApplierName.StringValue:cond:{}が生存中、あなたの|[gold]{OwnerName}[/gold]の}アタックダメージが[blue]{DamageDecrease}%[/blue]減少する{Amount:cond:==1?（次のターンまで）|>1?（残り[blue]{Amount}[/blue]ターン）|}。",
     "type": "Debuff",
     "stack_type": "None",
     "allow_negative": true,
@@ -1952,7 +1952,7 @@
   {
     "id": "SHROUD",
     "name": "影の衣",
-    "description": "[gold]破滅[/gold]を付与するたび、[gold]ブロック[/gold][blue]3[/blue]を得る。",
+    "description": "[gold]破滅[/gold]を付与するたび、[blue]3[/blue][gold]ブロック[/gold]を得る。",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1982,8 +1982,8 @@
   {
     "id": "SKITTISH",
     "name": "臆病",
-    "description": "毎ターン、[gold]this creature[/gold]が最初に攻撃を受けた時、[gold]ブロック[/gold][blue][Amount][/blue]を得る。",
-    "description_raw": "毎ターン、[gold]{OwnerName}[/gold]が最初に攻撃を受けた時、[gold]ブロック[/gold][blue]{Amount}[/blue]を得る。",
+    "description": "毎ターン、[gold]this creature[/gold]が最初に攻撃を受けた時、[blue][Amount][/blue][gold]ブロック[/gold]を得る。",
+    "description_raw": "毎ターン、[gold]{OwnerName}[/gold]が最初に攻撃を受けた時、[blue]{Amount}[/blue][gold]ブロック[/gold]を得る。",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -2122,7 +2122,7 @@
   {
     "id": "SPIRIT_OF_ASH",
     "name": "灰の精霊",
-    "description": "[gold]エセリアル[/gold]をプレイするたび、[gold]ブロック[/gold][blue]4[/blue]を得る。",
+    "description": "[gold]エセリアル[/gold]をプレイするたび、[blue]4[/blue][gold]ブロック[/gold]を得る。",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -2132,7 +2132,7 @@
   {
     "id": "STAMPEDE",
     "name": "暴走",
-    "description": "ターン終了時、[gold]手札[/gold]にあるランダムなアタック[blue]1[/blue]枚をランダムな敵1体に対してプレイする。",
+    "description": "ターン終了時、[gold]手札[/gold]にあるランダムなアタック[blue]1[/blue]枚をランダムな敵に対してプレイする。",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -2352,7 +2352,7 @@
   {
     "id": "THE_GAMBIT",
     "name": "背水の陣",
-    "description": "この戦闘中、ブロックできずに攻撃ダメージを受けた場合、死ぬ。",
+    "description": "この戦闘中、ブロックできずに攻撃ダメージを受けた場合、即死する。",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Single",
@@ -2422,8 +2422,8 @@
   {
     "id": "TORIC_TOUGHNESS",
     "name": "円環の障壁",
-    "description": "次の[blue][Amount][/blue]ターンの開始時、[gold]ブロック[/gold][blue]0[/blue]を得る。",
-    "description_raw": "次の[blue]{Amount}[/blue]ターンの開始時、[gold]ブロック[/gold][blue]{Block:diff()}[/blue]を得る。",
+    "description": "次のターン開始時、[blue]0[/blue][gold]ブロック[/gold]を得る。",
+    "description_raw": "次の{Amount:choose(1):ターン開始時| [blue]{}[/blue]ターンの間、ターン開始時}、[blue]{Block:diff()}[/blue][gold]ブロック[/gold]を得る。",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -2472,7 +2472,7 @@
   {
     "id": "VEILPIERCER",
     "name": "ベールピアサー",
-    "description": "次にプレイする[gold]エセリアル[/gold]のコストが[blue]0[/blue]になる。",
+    "description": "次にプレイする[gold]エセリアル[/gold]のコストは[blue]0[/blue]。",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -2552,7 +2552,7 @@
   {
     "id": "WELL_LAID_PLANS",
     "name": "用意周到",
-    "description": "ターン終了時、最大[blue]1[/blue]枚までカードを[gold]保留[/gold]する。",
+    "description": "ターン終了時、[blue]1[/blue]枚までカードを[gold]保留[/gold]する。",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",

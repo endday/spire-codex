@@ -475,8 +475,8 @@
   {
     "id": "FOUL_POTION",
     "name": "역겨운 포션",
-    "description": "누구에게나 피해를 [blue]12[/blue] 줍니다.\n[gold]상인[/gold]에게 던질 수 있으며, 상인에게 던질 시 피해를 주는 대신 [gold]골드[/gold]를 [blue]100[/blue] 얻습니다.",
-    "description_raw": "누구에게나 피해를 [blue]{Damage}[/blue] 줍니다.\n[gold]상인[/gold]에게 던질 수 있으며, 상인에게 던질 시 피해를 주는 대신 [gold]골드[/gold]를 [blue]{Gold}[/blue] 얻습니다.",
+    "description": "모든 대상에게 피해를 [blue]12[/blue] 줍니다.\n[gold]상인[/gold]에게도 던질 수 있으며, 상인에게 던질 시 피해를 주는 대신 [gold]골드[/gold]를 [blue]100[/blue] 얻습니다.",
+    "description_raw": "모든 대상에게 피해를 [blue]{Damage}[/blue] 줍니다.\n[gold]상인[/gold]에게도 던질 수 있으며, 상인에게 던질 시 피해를 주는 대신 [gold]골드[/gold]를 [blue]{Gold}[/blue] 얻습니다.",
     "rarity": "이벤트",
     "image_url": "/static/images/potions/foul_potion.png",
     "rarity_key": "Event",

@@ -1515,7 +1515,7 @@
   },
   {
     "id": "DOOR",
-    "name": "Puerta",
+    "name": "Portal",
     "type": "Boss",
     "min_hp": 155,
     "max_hp": null,

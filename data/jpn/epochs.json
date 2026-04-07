@@ -857,7 +857,7 @@
     "era_position": 0,
     "story_id": "Regent",
     "sort_order": 273400,
-    "description": "[jitter]＊ドッカーーーン＊[/jitter]\n\nド派手な爆発音が[orange]リージェント[/orange]様のご到着を告げた。陛下が乗ってきた宇宙船は、もはや修復不可能なほどに大破している。\n\n「ついに、余は到着したぞ！」",
+    "description": "[jitter]ドッカーーーン[/jitter]\n\nド派手な爆発音が[orange]リージェント[/orange]様のご到着を告げた。陛下が乗ってきた宇宙船は、もはや修復不可能なほどに大破している。\n\n「ついに、余は到着したぞ！」",
     "unlock_info": "[orange]リージェント[/orange]で[gold]第[/gold][blue]1[/blue][gold]層[/gold]をクリアすると、この断章が明らかになる。",
     "unlock_text": null,
     "unlocks_cards": [
@@ -945,7 +945,7 @@
     "story_id": "Tales_From_The_Spire",
     "sort_order": 273404,
     "description": "かつては[gold]スパイア[/gold]全体に[blue]清らかな水[/blue]を供給する水源であった[gold]地下水路[/gold]は、今や完全に荒れ果てている。\n[red][jitter]獰猛な海の生物たち[/jitter][/red]が深淵から姿を現し、迷路のように入り組んだ水路を住処としているのだ。",
-    "unlock_info": "全[blue]3[/blue]体の[green]繁茂の地[/green]のボスを倒すと、この断章が明らかになる。",
+    "unlock_info": "スコアを稼いでアンロック。",
     "unlock_text": "もう一つの第1層、[blue]地下水路[/blue]をアンロックした。",
     "unlocks_cards": [],
     "unlocks_relics": [],
@@ -1164,7 +1164,7 @@
     "era_position": 2,
     "story_id": "Ironclad",
     "sort_order": 273802,
-    "description": "「あの[gold]スパイア[/gold]はオレが支配するはずだった。だがアーキテクトが再び蘇りやがった。[jitter]ヤツがオレの顔に何をしやがったか見てみろ[/jitter]」\n\n悪魔は激しい癇癪を起こし、自らの部屋を粉砕し、目につくあらゆるものを\n炎で焼き尽くす。\n\n「我が死の操り人形よ。我が力を振るい、再び殺戮を繰り広げよ。\n[jitter]アーキテクトを殺せ！！[/jitter]」",
+    "description": "「あの[gold]スパイア[/gold]は俺が支配するはずだった。だがアーキテクトが再び蘇りやがった。[jitter]ヤツめ、俺の顔によくもこんな真似を！！！[/jitter]」\n\n悪魔は激しい癇癪を起こし、自らの部屋を破壊して、目につくすべてを\n炎で焼き尽くす。\n\n「我が死の操り人形よ。我の力を振るい、再び殺戮を繰り広げよ。\n[jitter]アーキテクトを殺せ！！[/jitter]」",
     "unlock_info": "[red]アイアンクラッド[/red]で[red]アセンション[/red][blue]1[/blue]をクリアすると、この断章が明らかになる。",
     "unlock_text": null,
     "unlocks_cards": [

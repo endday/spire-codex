@@ -4,8 +4,7 @@ import re
 from pathlib import Path
 from description_resolver import resolve_description, extract_vars_from_source
 
-BASE = Path(__file__).resolve().parents[3]
-DECOMPILED = BASE / "extraction" / "decompiled"
+from parser_paths import BASE, DECOMPILED, loc_dir as _loc_dir, data_dir as _data_dir
 ORBS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.Orbs"
 AFFLICTIONS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.Afflictions"
 STATIC_IMAGES = BASE / "backend" / "static" / "images"
@@ -378,8 +377,8 @@ def parse_glossary(loc_dir: Path) -> list[dict]:
 
 
 def main(lang: str = "eng"):
-    loc_dir = BASE / "extraction" / "raw" / "localization" / lang
-    output_dir = BASE / "data" / lang
+    loc_dir = _loc_dir(lang)
+    output_dir = _data_dir(lang)
     output_dir.mkdir(parents=True, exist_ok=True)
 
     keywords = parse_keywords(loc_dir)

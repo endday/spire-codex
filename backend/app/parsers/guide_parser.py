@@ -4,8 +4,8 @@ from pathlib import Path
 
 import frontmatter
 
-BASE = Path(__file__).resolve().parents[3]
-GUIDES_DIR = BASE / "data" / "guides"
+from parser_paths import DATA_DIR
+GUIDES_DIR = DATA_DIR / "guides"
 
 
 def parse_guides() -> list[dict]:
@@ -40,7 +40,7 @@ def parse_guides() -> list[dict]:
 
 
 def main():
-    output = BASE / "data" / "guides.json"
+    output = DATA_DIR / "guides.json"
     guides = parse_guides()
     with open(output, "w", encoding="utf-8") as f:
         json.dump(guides, f, indent=2, ensure_ascii=False)

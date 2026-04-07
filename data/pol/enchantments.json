@@ -92,7 +92,7 @@
     "name": "Impet",
     "description": "Każde zagranie karty zwiększa jej obrażenia w walce o [blue]X[/blue] pkt.",
     "description_raw": "Każde zagranie karty zwiększa jej obrażenia w walce o [blue]{Amount}[/blue] pkt.",
-    "extra_card_text": "Zwiększ obrażenia karty w walce o [blue]X[/blue] pkt.",
+    "extra_card_text": "Zwiększ obrażenia karty w walce o X pkt.",
     "card_type": "Attack",
     "applicable_to": null,
     "is_stackable": false,

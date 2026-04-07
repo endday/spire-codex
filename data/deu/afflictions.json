@@ -37,7 +37,7 @@
   {
     "id": "SMOG",
     "name": "Vernebelt",
-    "description": "Du kannst in diesem Zug keine weiteren [gold]Fertigkeiten[/gold] spielen. Löst sich am Ende des Zuges auf.",
+    "description": "Du kannst in diesem Zug keine [gold]Fertigkeiten[/gold] mehr spielen. Löst sich am Ende des Zuges auf.",
     "extra_card_text": null,
     "is_stackable": false
   }

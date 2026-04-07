@@ -223,7 +223,7 @@
   },
   {
     "id": "CULTISTS_NORMAL",
-    "name": "Cultisti",
+    "name": "Accoliti",
     "room_type": "Monster",
     "is_weak": false,
     "act": "Underdocks",
@@ -231,14 +231,14 @@
     "monsters": [
       {
         "id": "CALCIFIED_CULTIST",
-        "name": "Cultista calcificato"
+        "name": "Accolito calcificato"
       },
       {
         "id": "DAMP_CULTIST",
-        "name": "Cultista zuppo"
+        "name": "Accolito zuppo"
       }
     ],
-    "loss_text": "Dei [gold]Cultisti[/gold] hanno ucciso The adventurer. [sine]Aaah[/sine]..."
+    "loss_text": "Degli [gold]Accoliti[/gold] hanno ucciso The adventurer. [sine]Aaah[/sine]..."
   },
   {
     "id": "DECIMILLIPEDE_ELITE",
@@ -1403,7 +1403,7 @@
     "monsters": [
       {
         "id": "CALCIFIED_CULTIST",
-        "name": "Cultista calcificato"
+        "name": "Accolito calcificato"
       },
       {
         "id": "TOADPOLE",

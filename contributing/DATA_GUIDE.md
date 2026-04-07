@@ -54,7 +54,7 @@ data/
 ## Parsing Data
 
 ```bash
-# Parse all languages
+# Parse all languages (stable)
 cd backend/app/parsers && python3 parse_all.py
 
 # Parse English only
@@ -63,7 +63,13 @@ cd backend/app/parsers && python3 parse_all.py --lang eng
 # Parse a single category
 cd backend/app/parsers && python3 card_parser.py
 cd backend/app/parsers && python3 monster_parser.py
+
+# Parse beta data (from Steam beta branch)
+cd backend/app/parsers
+EXTRACTION_DIR=extraction/beta DATA_DIR=data-beta python3 parse_all.py
 ```
+
+Parsers support `EXTRACTION_DIR` and `DATA_DIR` environment variables (via `parser_paths.py`) to target alternate extraction sources and output directories.
 
 ## Rich Text Tags
 

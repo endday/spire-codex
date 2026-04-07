@@ -50,7 +50,7 @@
   {
     "id": "EVOKE",
     "name": "Entladen",
-    "description": "Verbrauche deinen Orb ganz rechts und nutze seinen Entlade-Effekt.",
+    "description": "Verbrauche deinen vordersten Orb und nutze seinen Entlade-Effekt.",
     "category": "combat"
   },
   {
@@ -97,7 +97,7 @@
   },
   {
     "id": "REPLAY",
-    "name": "Erneut spielen",
+    "name": "Erneut Spielen",
     "description": "Spielt diese Karte ein weiteres Mal.",
     "category": "mechanics"
   },
@@ -158,7 +158,7 @@
   {
     "id": "SUMMON",
     "name": "Beschwören",
-    "description": "Beschwöre [gold]Osty[/gold].\nFalls er schon beschwört ist, erhöhe seine max. TP für diesen Kampf.",
+    "description": "Beschwöre [gold]Osty[/gold].\nFalls er schon beschworen ist, erhöhe seine max. TP für diesen Kampf.",
     "category": "mechanics"
   },
   {

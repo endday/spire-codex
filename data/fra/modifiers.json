@@ -7,7 +7,7 @@
   {
     "id": "BIG_GAME_HUNTER",
     "name": "Chasseur de gros gibier",
-    "description": "La Tour est envahie d'ennemis d'Élite qui pourvoient de meilleures récompenses."
+    "description": "La Tour est envahie d'ennemis d'Élite qui octroient de meilleures récompenses."
   },
   {
     "id": "BINARY",
@@ -52,7 +52,7 @@
   {
     "id": "MURDEROUS",
     "name": "Meurtrier",
-    "description": "Vous débutez chaque combat avec [blue]3[/blue] [gold]Force[/gold]. Tous les ennemis débutent les combats avec [blue]3[/blue] [gold]Force[/gold]."
+    "description": "Vous débutez chaque combat avec [blue]3[/blue] de [gold]Force[/gold]. Tous les ennemis débutent les combats avec [blue]3[/blue] de [gold]Force[/gold]."
   },
   {
     "id": "NIGHT_TERRORS",
@@ -67,7 +67,7 @@
   {
     "id": "SPECIALIZED",
     "name": "Spécialisation",
-    "description": "Commencez la partie avec [blue]5[/blue] copies de la même card."
+    "description": "Commencez la partie avec [blue]5[/blue] copies de la même carte."
   },
   {
     "id": "TERMINAL",

@@ -14,7 +14,7 @@
   {
     "id": "CARD_DEBUFF",
     "name": "Böswillig",
-    "description": "Dieser Gegner möchte auf deine Karten [gold]Gebrechen[/gold] anwenden.",
+    "description": "Dieser Gegner möchte auf deine Karten [gold]Störungen[/gold] anwenden.",
     "image_url": "/static/images/intents/card_debuff.png"
   },
   {

@@ -490,7 +490,7 @@
       {
         "id": "TAKE",
         "title": "Взять яйцо с собой",
-        "description": "Добавить карту [gold]«Яйцо Птахоклюя»[/gold] в [gold]колоду[/gold]."
+        "description": "Добавить карту [gold]«Яйцо птахоклюя»[/gold] в [gold]колоду[/gold]."
       }
     ],
     "pages": [
@@ -510,7 +510,7 @@
           {
             "id": "TAKE",
             "title": "Взять яйцо с собой",
-            "description": "Добавить карту [gold]«Яйцо Птахоклюя»[/gold] в [gold]колоду[/gold]."
+            "description": "Добавить карту [gold]«Яйцо птахоклюя»[/gold] в [gold]колоду[/gold]."
           }
         ]
       },
@@ -1317,7 +1317,7 @@
       },
       {
         "id": "ACCEPT",
-        "title": "ACCEPT",
+        "title": "Получить Позабытая душа.",
         "description": "Получить реликвию [gold]«Позабытая душа»[/gold]."
       }
     ],
@@ -1346,7 +1346,7 @@
           },
           {
             "id": "ACCEPT",
-            "title": "ACCEPT",
+            "title": "Получить Позабытая душа.",
             "description": "Получить реликвию [gold]«Позабытая душа»[/gold]."
           }
         ]
@@ -1363,12 +1363,12 @@
       {
         "id": "BIG_MUSHROOM",
         "title": "Съесть большой гриб",
-        "description": ""
+        "description": "Obtain [gold]Съесть большой гриб[/gold]. При получении повышает максимальные ОЗ на [blue]20[/blue]. Вы добираете на [blue]2[/blue] plural(ru):карту меньше в начале боя."
       },
       {
         "id": "FRAGRANT_MUSHROOM",
         "title": "Съесть ароматный гриб",
-        "description": ""
+        "description": "Obtain [gold]Съесть ароматный гриб[/gold]. При получении вы теряете [red]15[/red] ОЗ и [gold]улучшаете[/gold] [blue]3[/blue] plural(ru):случайную карту."
       }
     ],
     "pages": [
@@ -1387,12 +1387,12 @@
           {
             "id": "BIG_MUSHROOM",
             "title": "Съесть большой гриб",
-            "description": ""
+            "description": "Obtain [gold]Съесть большой гриб[/gold]. При получении повышает максимальные ОЗ на [blue]20[/blue]. Вы добираете на [blue]2[/blue] plural(ru):карту меньше в начале боя."
           },
           {
             "id": "FRAGRANT_MUSHROOM",
             "title": "Съесть ароматный гриб",
-            "description": ""
+            "description": "Obtain [gold]Съесть ароматный гриб[/gold]. При получении вы теряете [red]15[/red] ОЗ и [gold]улучшаете[/gold] [blue]3[/blue] plural(ru):случайную карту."
           }
         ]
       },
@@ -2540,6 +2540,10 @@
         ]
       },
       {
+        "id": "POTION",
+        "description": "[sine]«Восхитительно!»[/sine]\n\n[sine][blue]Хлюп-хлюп-хлюп![/blue][/sine]\n\nОн выпивает [gold]Potion[/gold] до дна одним глотком."
+      },
+      {
         "id": "RELIC",
         "description": "[sine]«Великолепно!»[/sine]\n\nРанвид несколько минут внимательно рассматривает реликвию…\n\nРаз — и [gold]Relic[/gold] уже у него во рту!"
       }
@@ -3636,7 +3640,7 @@
       {
         "id": "BONE_TEA",
         "title": "Костяной чай",
-        "description": "Заплатить [red]50[/red] [gold]золота[/gold]. [BoneTeaDescription]."
+        "description": "Заплатить [red]50[/red] [gold]золота[/gold]. [gold]Улучшает[/gold] карты в руке в начале plural(ru):следующего боя.."
       },
       {
         "id": "BONE_TEA_LOCKED",
@@ -3646,7 +3650,7 @@
       {
         "id": "EMBER_TEA",
         "title": "Янтарный чай",
-        "description": "Заплатить [red]150[/red] [gold]золота[/gold]. [EmberTeaDescription]."
+        "description": "Заплатить [red]150[/red] [gold]золота[/gold]. Даст [blue]2[/blue] [gold]силы[/gold] в начале plural(ru):следующего боя.."
       },
       {
         "id": "EMBER_TEA_LOCKED",
@@ -3671,7 +3675,7 @@
           {
             "id": "BONE_TEA",
             "title": "Костяной чай",
-            "description": "Заплатить [red]50[/red] [gold]золота[/gold]. [BoneTeaDescription]."
+            "description": "Заплатить [red]50[/red] [gold]золота[/gold]. [gold]Улучшает[/gold] карты в руке в начале plural(ru):следующего боя.."
           },
           {
             "id": "BONE_TEA_LOCKED",
@@ -3681,7 +3685,7 @@
           {
             "id": "EMBER_TEA",
             "title": "Янтарный чай",
-            "description": "Заплатить [red]150[/red] [gold]золота[/gold]. [EmberTeaDescription]."
+            "description": "Заплатить [red]150[/red] [gold]золота[/gold]. Даст [blue]2[/blue] [gold]силы[/gold] в начале plural(ru):следующего боя.."
           },
           {
             "id": "EMBER_TEA_LOCKED",
@@ -4262,7 +4266,7 @@
     "name": "Первое или второе?",
     "type": "Shared",
     "act": null,
-    "description": "Из дыры в стене высовываются руки, сжимающие [gold]подозрительный мешок с золотом[/gold] и несомненно [purple]проклятую реликвию[/purple].\n\n[jitter][blue]«Первое или второе?»[/blue][/jitter]\nвопрошает хриплый голос.",
+    "description": "Из дыры в полу высовываются руки, сжимающие [gold]подозрительный мешок с золотом[/gold] и несомненно [purple]проклятую реликвию[/purple].\n\n[jitter][blue]«Первое или второе?»[/blue][/jitter]\nвопрошает хриплый голос.",
     "options": [
       {
         "id": "PLAIN",
@@ -4278,7 +4282,7 @@
     "pages": [
       {
         "id": "INITIAL",
-        "description": "Из дыры в стене высовываются руки, сжимающие [gold]подозрительный мешок с золотом[/gold] и несомненно [purple]проклятую реликвию[/purple].\n\n[jitter][blue]«Первое или второе?»[/blue][/jitter]\nвопрошает хриплый голос.",
+        "description": "Из дыры в полу высовываются руки, сжимающие [gold]подозрительный мешок с золотом[/gold] и несомненно [purple]проклятую реликвию[/purple].\n\n[jitter][blue]«Первое или второе?»[/blue][/jitter]\nвопрошает хриплый голос.",
         "options": [
           {
             "id": "PLAIN",
@@ -5081,7 +5085,7 @@
       {
         "id": "BATHE",
         "title": "Искупаться",
-        "description": ""
+        "description": "Удалить [blue]1[/blue] карту из [gold]колоды[/gold], добавить [blue]1[/blue] plural(ru):карту [red]«Угрызения совести»[/red] в [gold]колоду[/gold]."
       }
     ],
     "pages": [
@@ -5105,7 +5109,7 @@
           {
             "id": "BATHE",
             "title": "Искупаться",
-            "description": ""
+            "description": "Удалить [blue]1[/blue] карту из [gold]колоды[/gold], добавить [blue]1[/blue] plural(ru):карту [red]«Угрызения совести»[/red] в [gold]колоду[/gold]."
           }
         ]
       }

@@ -73,6 +73,7 @@ spire-codex/
 │   │       ├── pool_parser.py            # Adds character pool to potions
 │   │       ├── translation_parser.py    # Generates translations.json per language
 │   │       ├── description_resolver.py   # Shared SmartFormat resolver
+│   │       ├── parser_paths.py           # Shared path config (env var overrides for beta)
 │   │       └── parse_all.py              # Orchestrates all parsers (14 languages)
 │   ├── static/images/          # Game images (not committed)
 │   ├── scripts/copy_images.py  # Copies images from extraction → static
@@ -123,10 +124,13 @@ spire-codex/
 │   ├── runs/                   # Submitted run JSON files (per player hash)
 │   └── runs.db                 # SQLite database for run metadata
 ├── extraction/                 # Raw game files (not committed)
-│   ├── raw/                    # GDRE extracted Godot project
-│   └── decompiled/             # ILSpy output
+│   ├── raw/                    # GDRE extracted Godot project (stable)
+│   ├── decompiled/             # ILSpy output (stable)
+│   └── beta/                   # Steam beta branch (raw/ + decompiled/)
+├── data-beta/                  # Parsed beta data (not committed)
 ├── docker-compose.yml          # Local dev
 ├── docker-compose.prod.yml     # Production
+├── docker-compose.beta.yml     # Beta site (beta.spire-codex.com)
 └── .forgejo/workflows/
     └── build.yml               # CI: builds + pushes to Docker Hub
 ```
@@ -444,6 +448,9 @@ python3 tools/deploy.py --no-push
 
 # Tag a release:
 python3 tools/deploy.py --tag v0.98.2
+
+# Build and push beta images (:beta tag, skips IndexNow):
+python3 tools/deploy.py --beta
 ```
 
 Auto-detects Apple Silicon and cross-compiles to `linux/amd64` via `docker buildx`. Requires `docker login` first.
@@ -457,6 +464,34 @@ docker compose -f docker-compose.prod.yml up -d
 ```
 
 Production data is bind-mounted (`./data:/data:ro`). Container restart required after data changes.
+
+### Beta Site (beta.spire-codex.com)
+
+A parallel deployment serving data from the Steam beta branch. Uses the same codebase and Docker images but with separate containers and beta-parsed data.
+
+```bash
+# 1. Opt into Steam beta branch (StS2 → Properties → Betas)
+
+# 2. Extract and decompile beta game files
+"/Applications/Godot RE Tools.app/Contents/MacOS/Godot RE Tools" --headless \
+  "--recover=<path_to_pck>" "--output=extraction/beta/raw"
+~/.dotnet/tools/ilspycmd -p -o extraction/beta/decompiled "<path_to_dll>"
+
+# 3. Parse beta data into data-beta/
+cd backend/app/parsers
+EXTRACTION_DIR=extraction/beta DATA_DIR=data-beta python3 parse_all.py
+
+# 4. Build and push beta Docker images
+python3 tools/deploy.py --beta
+
+# 5. Start beta on server
+docker compose -f docker-compose.beta.yml pull
+docker compose -f docker-compose.beta.yml up -d
+```
+
+The parsers support `EXTRACTION_DIR` and `DATA_DIR` environment variables via `parser_paths.py`, allowing the same parser code to target either stable or beta sources.
+
+Requires DNS (A record for `beta.spire-codex.com`) and nginx server block proxying to the beta containers (`spire-codex-beta-backend:8000`, `spire-codex-beta-frontend:3000`).
 
 ## Spine Renderer
 

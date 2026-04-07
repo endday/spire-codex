@@ -963,7 +963,7 @@
       },
       {
         "id": "SCREECH",
-        "name": "Ruído",
+        "name": "*Ruído*",
         "intent": "Status"
       }
     ],

@@ -38,6 +38,7 @@ Each parser reads decompiled C# source + localization JSON and outputs structure
 | `guide_parser.py` | Guides — markdown with YAML frontmatter |
 | `encounter_parser.py` | Encounters — monster compositions, room type, act, tags |
 | `description_resolver.py` | Shared SmartFormat template resolver |
+| `parser_paths.py` | Shared path config — supports `EXTRACTION_DIR`/`DATA_DIR` env vars for beta |
 | `parse_all.py` | Orchestrates all parsers for all 14 languages |
 
 ### Key Patterns

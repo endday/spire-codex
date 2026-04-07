@@ -583,7 +583,7 @@
   },
   {
     "id": "KAISER_CRAB_BOSS",
-    "name": "Imperador Caranguejo",
+    "name": "Caranguejo Imperador",
     "room_type": "Boss",
     "is_weak": false,
     "act": "Act 2 - Hive",
@@ -598,7 +598,7 @@
         "name": "Míssil"
       }
     ],
-    "loss_text": "O [gold]Imperador Caranguejo[/gold] golpeou The adventurer violentamente."
+    "loss_text": "O [gold]Caranguejo Imperador[/gold] golpeou The adventurer violentamente."
   },
   {
     "id": "KNIGHTS_ELITE",
@@ -850,7 +850,7 @@
         "name": "Enguia Espectral"
       }
     ],
-    "loss_text": "The adventurer rasgaram [gold]Enguias Espectrais[/gold] em pedaços."
+    "loss_text": "[gold]Enguias Espectrais[/gold] rasgaram The adventurer em pedaços."
   },
   {
     "id": "PHROG_PARASITE_ELITE",

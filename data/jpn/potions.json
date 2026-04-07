@@ -90,8 +90,8 @@
   {
     "id": "SKILL_POTION",
     "name": "スキルポーション",
-    "description": "ランダムな[blue]3[/blue]枚のスキルから[blue]1[/blue]枚を選び、[gold]手札[/gold]に加える。このターン、それらはコストを支払わずにプレイできる。",
-    "description_raw": "ランダムな[blue]3[/blue]枚のスキルから[blue]1[/blue]枚を選び、[gold]手札[/gold]に加える。このターン、それらはコストを支払わずにプレイできる。",
+    "description": "ランダムな[blue]3[/blue]枚のスキルから[blue]1[/blue]枚を選び、[gold]手札[/gold]に加える。このターン、それはコストを支払わずにプレイできる。",
+    "description_raw": "ランダムな[blue]3[/blue]枚のスキルから[blue]1[/blue]枚を選び、[gold]手札[/gold]に加える。このターン、それはコストを支払わずにプレイできる。",
     "rarity": "ポーション（コモン）",
     "image_url": "/static/images/potions/skill_potion.png",
     "rarity_key": "Common",
@@ -255,8 +255,8 @@
   {
     "id": "SOLDIERS_STEW",
     "name": "兵士のシチュー",
-    "description": "この戦闘中、名前に[gold]ストライク[/gold]が含まれるすべてのカードが[gold]リプレイ[/gold][blue]1[/blue]を得る。",
-    "description_raw": "この戦闘中、名前に[gold]ストライク[/gold]が含まれるすべてのカードが[gold]リプレイ[/gold][blue]1[/blue]を得る。",
+    "description": "この戦闘中、名前に[gold]ストライク[/gold]を含むすべてのカードが[gold]リプレイ[/gold][blue]1[/blue]を得る。",
+    "description_raw": "この戦闘中、名前に[gold]ストライク[/gold]を含むすべてのカードが[gold]リプレイ[/gold][blue]1[/blue]を得る。",
     "rarity": "ポーション（レア）",
     "image_url": "/static/images/potions/soldiers_stew.png",
     "rarity_key": "Rare",
@@ -442,8 +442,8 @@
   {
     "id": "SHACKLING_POTION",
     "name": "枷のポーション",
-    "description": "このターン、すべての敵は[gold]筋力[/gold][blue]7[/blue]を失う。",
-    "description_raw": "このターン、すべての敵は[gold]筋力[/gold][blue]{StrengthPower}[/blue]を失う。",
+    "description": "ターン終了時まで、すべての敵は[gold]筋力[/gold][blue]7[/blue]を失う。",
+    "description_raw": "ターン終了時まで、すべての敵は[gold]筋力[/gold][blue]{StrengthPower}[/blue]を失う。",
     "rarity": "ポーション（レア）",
     "image_url": "/static/images/potions/shackling_potion.png",
     "rarity_key": "Rare",

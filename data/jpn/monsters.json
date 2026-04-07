@@ -3635,7 +3635,7 @@
   },
   {
     "id": "LOUSE_PROGENITOR",
-    "name": "始祖ラミー",
+    "name": "始祖虫",
     "type": "Normal",
     "min_hp": 134,
     "max_hp": 136,
@@ -5624,7 +5624,7 @@
   },
   {
     "id": "SPECTRAL_KNIGHT",
-    "name": "亡霊騎士",
+    "name": "スペクトルナイト",
     "type": "Elite",
     "min_hp": 93,
     "max_hp": null,
@@ -5633,7 +5633,7 @@
     "moves": [
       {
         "id": "HEX",
-        "name": "ヘックス",
+        "name": "呪術",
         "intent": "Debuff",
         "powers": [
           {
@@ -6728,7 +6728,7 @@
     "moves": [
       {
         "id": "HATCH",
-        "name": "孵化",
+        "name": "ふ化",
         "intent": "Summon"
       },
       {

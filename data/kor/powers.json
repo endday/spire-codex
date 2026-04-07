@@ -212,8 +212,8 @@
   {
     "id": "BURROWED",
     "name": "잠복",
-    "description": "[gold]this creature[/gold]의 턴 시작 시 [gold]방어도[/gold]가 사라지지 않습니다. 모든 [gold]방어도[/gold]가 사라질 시 [gold]기절[/gold] 상태가 됩니다.",
-    "description_raw": "[gold]{OwnerName}[/gold]의 턴 시작 시 [gold]방어도[/gold]가 사라지지 않습니다. 모든 [gold]방어도[/gold]가 사라질 시 [gold]기절[/gold] 상태가 됩니다.",
+    "description": "[gold]this creature[/gold]의 턴 시작 시 [gold]방어도[/gold]가 사라지지 않습니다. 모든 [gold]방어도[/gold]가 사라질 시 대상이 [gold]기절[/gold] 상태가 됩니다.",
+    "description_raw": "[gold]{OwnerName}[/gold]의 턴 시작 시 [gold]방어도[/gold]가 사라지지 않습니다. 모든 [gold]방어도[/gold]가 사라질 시 대상이 [gold]기절[/gold] 상태가 됩니다.",
     "type": "Buff",
     "stack_type": "Single",
     "allow_negative": null,
@@ -931,7 +931,7 @@
   },
   {
     "id": "GALVANIC",
-    "name": "전기 자극",
+    "name": "전류",
     "description": "파워 카드에 [gold]전기 자극[/gold]의 고난이 부여됩니다.",
     "description_raw": null,
     "type": "Buff",

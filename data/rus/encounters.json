@@ -261,7 +261,7 @@
         "name": "Decimillipede Segment Middle"
       }
     ],
-    "loss_text": "The adventurer не {characterGender:choose(neutral|masculine|feminine):пережил|пережил|пережила} встречу с [gold]скольконожкой[/gold]."
+    "loss_text": "The adventurer не {characterGender:choose(neutral|masculine|feminine):пережил|пережил|пережила} встречу со [gold]скольконожкой[/gold]."
   },
   {
     "id": "DENSE_VEGETATION_EVENT_ENCOUNTER",

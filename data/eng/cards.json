@@ -2959,7 +2959,7 @@
     "id": "BURST",
     "name": "Burst",
     "description": "This turn, your next Skill is played an extra time.",
-    "description_raw": "This turn, your next{IfUpgraded:show: 2} {Skills:plural:Skill is|Skills are} played an extra time.",
+    "description_raw": "This turn, your next {Skills:plural:Skill is|{:diff()} Skills are} played an extra time.",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,

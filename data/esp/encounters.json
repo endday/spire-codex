@@ -303,7 +303,7 @@
     "monsters": [
       {
         "id": "DOOR",
-        "name": "Puerta"
+        "name": "Portal"
       },
       {
         "id": "DOORMAKER",

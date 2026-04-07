@@ -1368,7 +1368,7 @@
       {
         "id": "FRAGRANT_MUSHROOM",
         "title": "향기로운 버섯",
-        "description": "Obtain [gold]향기로운 버섯[/gold]. 획득 시, 최대 체력을 [red]15%[/red] 잃고 무작위 카드를 [blue]3[/blue]장 [gold]강화[/gold]합니다."
+        "description": "Obtain [gold]향기로운 버섯[/gold]. 획득 시, 체력을 [red]15%[/red] 잃고 무작위 카드를 [blue]3[/blue]장 [gold]강화[/gold]합니다."
       }
     ],
     "pages": [
@@ -1392,7 +1392,7 @@
           {
             "id": "FRAGRANT_MUSHROOM",
             "title": "향기로운 버섯",
-            "description": "Obtain [gold]향기로운 버섯[/gold]. 획득 시, 최대 체력을 [red]15%[/red] 잃고 무작위 카드를 [blue]3[/blue]장 [gold]강화[/gold]합니다."
+            "description": "Obtain [gold]향기로운 버섯[/gold]. 획득 시, 체력을 [red]15%[/red] 잃고 무작위 카드를 [blue]3[/blue]장 [gold]강화[/gold]합니다."
           }
         ]
       },
@@ -1916,7 +1916,7 @@
         {
           "order": "0-0",
           "speaker": "character",
-          "text": "네 경비병들은 죽었어. 아키텍트의 죽음을 바라는 자들에게 네가 축복을 내려준다던 소문이 있던데."
+          "text": "네 경비병들은 죽었어. 아키텍트의 죽음을 바라는 자들에게 네가 축복을 내려준다는 소문이 있던데."
         },
         {
           "order": "0-1",
@@ -2760,7 +2760,7 @@
       {
         "id": "EAT",
         "title": "먹는다",
-        "description": "체력을 [green]9[/green] 회복합니다. [gold]덱[/gold]에 있는 무작위 카드를 1장 [gold]강화[/gold]합니다."
+        "description": "체력을 [green]9[/green] 회복합니다. [gold]덱[/gold]에 있는 카드를 1장 [gold]강화[/gold]합니다."
       },
       {
         "id": "PLANT",
@@ -2780,7 +2780,7 @@
           {
             "id": "EAT",
             "title": "먹는다",
-            "description": "체력을 [green]9[/green] 회복합니다. [gold]덱[/gold]에 있는 무작위 카드를 1장 [gold]강화[/gold]합니다."
+            "description": "체력을 [green]9[/green] 회복합니다. [gold]덱[/gold]에 있는 카드를 1장 [gold]강화[/gold]합니다."
           },
           {
             "id": "PLANT",
@@ -3142,7 +3142,7 @@
       {
         "id": "PUSH",
         "title": "민다",
-        "description": "체력을 [red]6[/red] 잃습니다. 공격 카드 1장에 [purple]활력[/purple]을 [blue]8[/blue] [gold]인챈트[/gold]합니다."
+        "description": "체력을 [red]6[/red] 잃습니다. 공격 카드 1장에 [purple]활기[/purple]를 [blue]8[/blue] [gold]인챈트[/gold]합니다."
       }
     ],
     "pages": [
@@ -3168,7 +3168,7 @@
           {
             "id": "PUSH",
             "title": "민다",
-            "description": "체력을 [red]6[/red] 잃습니다. 공격 카드 1장에 [purple]활력[/purple]을 [blue]8[/blue] [gold]인챈트[/gold]합니다."
+            "description": "체력을 [red]6[/red] 잃습니다. 공격 카드 1장에 [purple]활기[/purple]를 [blue]8[/blue] [gold]인챈트[/gold]합니다."
           }
         ]
       },
@@ -4430,7 +4430,7 @@
     "pages": [
       {
         "id": "DIVE_IN",
-        "description": "당신은 꽤 오랜 시간 동안 [red][sine]위험천만한 쓰레기들[/sine][/red] 사이를 헤치며 나아간 끝에, [gold]오래된 유물[/gold] 하나를 찾아냅니다!\n\n왜 이게 버려져 있던 걸까요?"
+        "description": "당신은 꽤 오랜 시간 동안 [red][sine]위험천만한 쓰레기들[/sine][/red] 사이를 헤치며 나아간 끝에, [gold]오래된 유물[/gold] 하나를 찾아냅니다!\n\n이게 왜 버려져 있던 걸까요?"
       },
       {
         "id": "GRAB",

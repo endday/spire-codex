@@ -172,7 +172,7 @@
   {
     "id": "BLADE_OF_INK",
     "name": "Hoja de tinta",
-    "description": "Cuando juegues un Ataque este turno, gana [blue]2[/blue] de [gold]Fuerza[/gold] durante este turno.",
+    "description": "Cuando juegues un Ataque este turno, gana [blue]2[/blue] de [gold]Fuerza[/gold] hasta el final del turno.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -252,8 +252,8 @@
   {
     "id": "CALL_OF_THE_VOID",
     "name": "Llamada del Vacío",
-    "description": "Al comienzo de tu turno, añade [blue]1[/blue] cartas aleatorias a tu [gold]Mano[/gold]. Ganan [gold]Etérea[/gold].",
-    "description_raw": "Al comienzo de tu turno, añade [blue]1[/blue] {Cards:plural:carta aleatoria|cartas aleatorias} a tu [gold]Mano[/gold]. {Cards:plural:Gana|Ganan} [gold]Etérea[/gold].",
+    "description": "Al comienzo de tu turno, añade [blue]1[/blue] carta aleatoria a tu [gold]Mano[/gold]. Esta carta gana [gold]Etérea[/gold].",
+    "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -1342,7 +1342,7 @@
   {
     "id": "MIND_ROT",
     "name": "Podredumbre mental",
-    "description": "Roba [blue]1[/blue] carta menos cada turno.",
+    "description": "Roba [blue]1[/blue] carta menos al comienzo de tu turno.",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
@@ -1641,7 +1641,7 @@
   },
   {
     "id": "POSSESS_SPEED",
-    "name": "Robo de velocidad",
+    "name": "Robo de destreza",
     "description": "Al morir, devuelve toda la [gold]Destreza[/gold] robada.",
     "description_raw": null,
     "type": "Buff",
@@ -1982,8 +1982,8 @@
   {
     "id": "SKITTISH",
     "name": "Timidez",
-    "description": "La primera vez por turno que [gold]this creature[/gold] reciba un golpe, gana [blue][Amount][/blue] de [gold]Bloqueo[/gold].",
-    "description_raw": "La primera vez por turno que [gold]{OwnerName}[/gold] reciba un golpe, gana [blue]{Amount}[/blue] de [gold]Bloqueo[/gold].",
+    "description": "La primera vez que [gold]this creature[/gold] reciba un golpe cada turno, gana [blue][Amount][/blue] de [gold]Bloqueo[/gold].",
+    "description_raw": "La primera vez que [gold]{OwnerName}[/gold] reciba un golpe cada turno, gana [blue]{Amount}[/blue] de [gold]Bloqueo[/gold].",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -2292,7 +2292,7 @@
   {
     "id": "TAG_TEAM",
     "name": "Maniobra coordinada",
-    "description": "El siguiente Ataque que otro jugador juegue contra el enemigo se repite.",
+    "description": "El siguiente Ataque que otro jugador juegue contra el enemigo se juega una vez más.",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",

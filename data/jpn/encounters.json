@@ -620,7 +620,7 @@
       },
       {
         "id": "SPECTRAL_KNIGHT",
-        "name": "亡霊騎士"
+        "name": "スペクトルナイト"
       }
     ],
     "loss_text": "The adventurerは[gold]騎士のギャング[/gold]に殺害された。"
@@ -684,7 +684,7 @@
     "monsters": [
       {
         "id": "LOUSE_PROGENITOR",
-        "name": "始祖ラミー"
+        "name": "始祖虫"
       }
     ],
     "loss_text": "The adventurerは[gold]始祖ラミー[/gold]によって麻痺させられた。"

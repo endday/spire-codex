@@ -376,8 +376,8 @@
   {
     "id": "MAZALETHS_GIFT",
     "name": "Mazaleth'in Hediyesi",
-    "description": "[blue]1[/blue] [gold]Ayin[/gold] elde et.",
-    "description_raw": "[blue]{RitualPower}[/blue] [gold]Ayin[/gold] elde et.",
+    "description": "[blue]1[/blue] [gold]Ritüel[/gold] elde et.",
+    "description_raw": "[blue]{RitualPower}[/blue] [gold]Ritüel[/gold] elde et.",
     "rarity": "Nadir",
     "image_url": "/static/images/potions/mazaleths_gift.png",
     "rarity_key": "Rare",

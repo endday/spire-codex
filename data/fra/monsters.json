@@ -4269,7 +4269,7 @@
   },
   {
     "id": "PAELS_LEGION",
-    "name": "Légion de Pael",
+    "name": "Légion de Paël",
     "type": "Normal",
     "min_hp": 9999,
     "max_hp": 9999,
@@ -4882,7 +4882,7 @@
   },
   {
     "id": "SEWER_CLAM",
-    "name": "Palourde d'égoût",
+    "name": "Palourde d'égout",
     "type": "Normal",
     "min_hp": 56,
     "max_hp": null,
@@ -7144,7 +7144,7 @@
   },
   {
     "id": "VANTOM",
-    "name": "Vantome",
+    "name": "Vantôme",
     "type": "Boss",
     "min_hp": 173,
     "max_hp": null,

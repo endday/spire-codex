@@ -402,8 +402,8 @@
   {
     "id": "CRAB_RAGE",
     "name": "Yengeç Öfkesi",
-    "description": "Bir müttefik öldüğünde bu yaratık [blue]5[/blue] [gold]Kuvvet[/gold] ve [blue]99[/blue] [gold]Blok[/gold] elde eder.",
-    "description_raw": null,
+    "description": "Bir müttefik öldüğünde [gold]this creature[/gold] [blue]5[/blue] [gold]Kuvvet[/gold] ve [blue]99[/blue] [gold]Blok[/gold] elde eder.",
+    "description_raw": "Bir müttefik öldüğünde [gold]{OwnerName}[/gold] [blue]{StrengthPower}[/blue] [gold]Kuvvet[/gold] ve [blue]{Block}[/blue] [gold]Blok[/gold] elde eder.",
     "type": "Buff",
     "stack_type": "Single",
     "allow_negative": null,

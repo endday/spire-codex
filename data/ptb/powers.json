@@ -11,7 +11,7 @@
   },
   {
     "id": "ACCURACY",
-    "name": "Precisão",
+    "name": "Pontaria",
     "description": "[gold]Lâminas[/gold] causam dano adicional.",
     "description_raw": null,
     "type": "Buff",
@@ -81,7 +81,7 @@
   },
   {
     "id": "ASLEEP",
-    "name": "Adormecido",
+    "name": "Adormecida",
     "description": "Desperta ao perder PV ou após [blue]2[/blue] turnos.",
     "description_raw": "Desperta ao perder PV ou {Amount:plural:no próximo turno|após [blue]{}[/blue] turnos}.",
     "type": "Buff",
@@ -1032,8 +1032,8 @@
   {
     "id": "HARDENED_SHELL",
     "name": "Carapaça Endurecida",
-    "description": "[gold]this creature[/gold] não pode perder mais que [blue][Amount][/blue] PV a cada turno.",
-    "description_raw": "[gold]{OwnerName}[/gold] não pode perder mais que [blue]{Amount}[/blue] PV a cada turno.",
+    "description": "[gold]this creature[/gold] não pode perder mais de [blue][Amount][/blue] PV a cada turno.",
+    "description_raw": "[gold]{OwnerName}[/gold] não pode perder mais de [blue]{Amount}[/blue] PV a cada turno.",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -1112,8 +1112,8 @@
   {
     "id": "HIGH_VOLTAGE",
     "name": "Alta Voltagem",
-    "description": "No início do turno de [gold]this creature's[/gold], recebe [blue][Amount][/blue] de [gold]Força[/gold].",
-    "description_raw": "No início do turno de [gold]{OwnerName}'s[/gold], recebe [blue]{Amount}[/blue] de [gold]Força[/gold].",
+    "description": "No início do turno de [gold]this creature[/gold], recebe [blue][Amount][/blue] de [gold]Força[/gold].",
+    "description_raw": "No início do turno de [gold]{OwnerName}[/gold], recebe [blue]{Amount}[/blue] de [gold]Força[/gold].",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,

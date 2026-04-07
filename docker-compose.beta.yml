@@ -1,0 +1,29 @@
+name: spire-codex-beta
+
+services:
+  backend:
+    image: ptrlrd/spire-codex-backend:beta
+    container_name: spire-codex-beta-backend
+    volumes:
+      - ./data-beta:/data
+    environment:
+      - DATA_DIR=/data
+    networks:
+      - nginx_web-network
+
+  frontend:
+    image: ptrlrd/spire-codex-frontend:beta
+    container_name: spire-codex-beta-frontend
+    depends_on:
+      - backend
+    volumes:
+      - ./data-beta:/data:ro
+    environment:
+      - API_INTERNAL_URL=http://spire-codex-beta-backend:8000
+      - NEXT_PUBLIC_SITE_URL=https://beta.spire-codex.com
+    networks:
+      - nginx_web-network
+
+networks:
+  nginx_web-network:
+    external: true

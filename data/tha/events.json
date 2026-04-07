@@ -444,6 +444,13 @@
           "text": "<3"
         }
       ],
+      "Regent": [
+        {
+          "order": "2-1",
+          "speaker": "character",
+          "text": "ว่ามา!"
+        }
+      ],
       "Silent": [
         {
           "order": "2-1",
@@ -799,7 +806,7 @@
   },
   {
     "id": "NEOW",
-    "name": "Neow",
+    "name": "เนียว",
     "type": "Ancient",
     "act": "Act 1 - Overgrowth / Underdocks",
     "description": null,
@@ -831,6 +838,13 @@
           "order": "4-0r",
           "speaker": "ancient",
           "text": "[sine]...จง.. ฆ่า... [red][jitter]สถาปนิก[/jitter][/red][/sine]"
+        }
+      ],
+      "Silent": [
+        {
+          "order": "2-1",
+          "speaker": "character",
+          "text": "..."
         }
       ]
     },
@@ -866,6 +880,15 @@
     "description": null,
     "options": null,
     "pages": null,
+    "dialogue": {
+      "Silent": [
+        {
+          "order": "2-1",
+          "speaker": "character",
+          "text": "..."
+        }
+      ]
+    },
     "image_url": "/static/images/misc/ancients/nonupeipe.png",
     "relics": [
       "BLESSED_ANTLER",
@@ -888,6 +911,15 @@
     "description": null,
     "options": null,
     "pages": null,
+    "dialogue": {
+      "Silent": [
+        {
+          "order": "0-1",
+          "speaker": "character",
+          "text": "[sine]...[/sine]"
+        }
+      ]
+    },
     "image_url": "/static/images/misc/ancients/orobas.png",
     "relics": [
       "ELECTRIC_SHRYMP",

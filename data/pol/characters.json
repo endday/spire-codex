@@ -30,7 +30,7 @@
       "event_death_prevention": "Muszę przetrwać dla moich przyjaciół!",
       "gold_monologue": "[sine]Mogę wymienić to złoto na części...[/sine]",
       "aroma_principle": "[sine][blue]1100 0011 1100 0011...[/blue][/sine]",
-      "banter_alive": "^AHD2N@@iiW_P? (TODO: Computery text effect)",
+      "banter_alive": "[jitter]0x54494D45 0x204C494D 0x49542045 0x58434545 0x00444544[/jitter]",
       "banter_dead": "...",
       "unlock_text": "Aby odblokować, zagraj tą postacią: [pink]{Prerequisite}[/pink].",
       "cards_modifier_title": "Karty Defekta",

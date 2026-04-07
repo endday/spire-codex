@@ -19,7 +19,7 @@
   },
   {
     "id": "COOK",
-    "name": "Ugotuj",
+    "name": "Gotuj",
     "description": "[gold]Usuń[/gold] [blue]2[/blue] karty z [gold]talii[/gold] i zyskaj [green]9[/green] maks. PŻ w [gold]Obozowisku[/gold].",
     "category": "mechanics"
   },
@@ -92,7 +92,7 @@
   {
     "id": "POTION_SLOT",
     "name": "Miejsce na Miksturę",
-    "description": "Używaj mikstur w trakcie walki, aby zyskiwać [green]bonusy[/green] lub [red]osłabiać[/red] przeciwników.",
+    "description": "W trakcie walki używaj mikstur do zyskiwania [green]wzmocnień[/green] lub do [red]osłabiania[/red] przeciwników.",
     "category": "progression"
   },
   {
@@ -104,7 +104,7 @@
   {
     "id": "ROOM_ANCIENT",
     "name": "Starożytny",
-    "description": "W tych pomieszczeniach przebywają Starożytni.\n\nOtrzymasz od nich specjalne wzmocnienia, drogocenne skarby oraz przydatną wiedzę.",
+    "description": "W tym pomieszczeniu przebywa Starożytny.\n\nOtrzymasz od niego specjalne wzmocnienia, drogocenne skarby oraz przydatną wiedzę.",
     "category": "rooms"
   },
   {
@@ -127,7 +127,7 @@
   },
   {
     "id": "ROOM_EVENT",
-    "name": "Wydarzenie",
+    "name": "Unikalna",
     "description": "W tym pomieszczeniu dzieje się coś niespotykanego...",
     "category": "rooms"
   },

@@ -1,7 +1,7 @@
 [
   {
     "id": "ABRASIVE",
-    "name": "Abrasivif",
+    "name": "Abrasif",
     "description": "Gagnez 1 de [gold]Dextérité[/gold].\nGagnez 4 [gold]Épines[/gold].",
     "description_raw": "Gagnez {DexterityPower:diff()} de [gold]Dextérité[/gold].\nGagnez {ThornsPower:diff()} [gold]Épines[/gold].",
     "cost": 3,
@@ -95,8 +95,8 @@
   {
     "id": "UNRELENTING",
     "name": "Acharnement",
-    "description": "Infligez 12 dégâts.\nLa prochaine Attaque vous jouez coûte 0 [energy:1].",
-    "description_raw": "Infligez {Damage:diff()} dégâts.\nLa prochaine Attaque vous jouez coûte 0 {energyPrefix:energyIcons(1)}.",
+    "description": "Infligez 12 dégâts.\nLa prochaine Attaque que vous jouez coûte 0 [energy:1].",
+    "description_raw": "Infligez {Damage:diff()} dégâts.\nLa prochaine Attaque que vous jouez coûte 0 {energyPrefix:energyIcons(1)}.",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -124,7 +124,7 @@
     "image_url": "/static/images/cards/unrelenting.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 18 dégâts.\nLa prochaine Attaque vous jouez coûte 0 [energy:1].",
+    "upgrade_description": "Infligez 18 dégâts.\nLa prochaine Attaque que vous jouez coûte 0 [energy:1].",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 83
@@ -859,8 +859,8 @@
   {
     "id": "SQUASH",
     "name": "Aplatissement",
-    "description": "Infligez 10 dégâts.\nAppliquez [gold]Vulnérable[/gold] (2).",
-    "description_raw": "Infligez {Damage:diff()} dégâts.\nAppliquez [gold]Vulnérable[/gold] ({VulnerablePower:diff()}).",
+    "description": "Infligez 10 dégâts.\nAppliquez [gold]Vulnérable[/gold] (2).",
+    "description_raw": "Infligez {Damage:diff()} dégâts.\nAppliquez [gold]Vulnérable[/gold] ({VulnerablePower:diff()}).",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -897,7 +897,7 @@
     "image_url": "/static/images/cards/squash.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 12 dégâts.\nAppliquez [gold]Vulnérable[/gold] (2).",
+    "upgrade_description": "Infligez 12 dégâts.\nAppliquez [gold]Vulnérable[/gold] (2).",
     "type_key": "Attack",
     "rarity_key": "Event",
     "compendium_order": 543
@@ -947,8 +947,8 @@
   {
     "id": "APPARITION",
     "name": "Apparition",
-    "description": "Gagnez [gold]Intangible[/gold] (1).",
-    "description_raw": "Gagnez [gold]Intangible[/gold] ({IntangiblePower:diff()}).",
+    "description": "Gagnez [gold]Intangible[/gold] (1).",
+    "description_raw": "Gagnez [gold]Intangible[/gold] ({IntangiblePower:diff()}).",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -1400,8 +1400,8 @@
   {
     "id": "ASSASSINATE",
     "name": "Assassiner",
-    "description": "Infligez 10 dégâts.\nAppliquez [gold]Vulnérable[/gold] (1).",
-    "description_raw": "Infligez {Damage:diff()} dégâts.\nAppliquez [gold]Vulnérable[/gold] ({VulnerablePower:diff()}).",
+    "description": "Infligez 10 dégâts.\nAppliquez [gold]Vulnérable[/gold] (1).",
+    "description_raw": "Infligez {Damage:diff()} dégâts.\nAppliquez [gold]Vulnérable[/gold] ({VulnerablePower:diff()}).",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -1441,7 +1441,7 @@
     "image_url": "/static/images/cards/assassinate.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 13 dégâts.\nAppliquez [gold]Vulnérable[/gold] (1).",
+    "upgrade_description": "Infligez 13 dégâts.\nAppliquez [gold]Vulnérable[/gold] (1).",
     "type_key": "Attack",
     "rarity_key": "Rare",
     "keywords_key": [
@@ -1755,8 +1755,8 @@
   {
     "id": "LEG_SWEEP",
     "name": "Balayage",
-    "description": "Appliquez [gold]Affaibli[/gold] (2).\nGagnez 11 d'[gold]Armure[/gold].",
-    "description_raw": "Appliquez [gold]Affaibli[/gold] ({WeakPower:diff()}).\nGagnez {Block:diff()} d'[gold]Armure[/gold].",
+    "description": "Appliquez [gold]Affaibli[/gold] (2).\nGagnez 11 d'[gold]Armure[/gold].",
+    "description_raw": "Appliquez [gold]Affaibli[/gold] ({WeakPower:diff()}).\nGagnez {Block:diff()} d'[gold]Armure[/gold].",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -1793,7 +1793,7 @@
     "image_url": "/static/images/cards/leg_sweep.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Appliquez [gold]Affaibli[/gold] (2).\nGagnez 14 d'[gold]Armure[/gold].",
+    "upgrade_description": "Appliquez [gold]Affaibli[/gold] (2).\nGagnez 14 d'[gold]Armure[/gold].",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 145
@@ -2566,8 +2566,8 @@
   {
     "id": "BREAK",
     "name": "Briser",
-    "description": "Infligez 20 dégâts.\nAppliquez [gold]Vulnérable[/gold] (5).",
-    "description_raw": "Infligez {Damage:diff()} dégâts.\nAppliquez [gold]Vulnérable[/gold] ({VulnerablePower:diff()}).",
+    "description": "Infligez 20 dégâts.\nAppliquez [gold]Vulnérable[/gold] (5).",
+    "description_raw": "Infligez {Damage:diff()} dégâts.\nAppliquez [gold]Vulnérable[/gold] ({VulnerablePower:diff()}).",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -2604,7 +2604,7 @@
     "image_url": "/static/images/cards/break.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 25 dégâts.\nAppliquez [gold]Vulnérable[/gold] (5).",
+    "upgrade_description": "Infligez 25 dégâts.\nAppliquez [gold]Vulnérable[/gold] (5).",
     "type_key": "Attack",
     "rarity_key": "Ancient",
     "compendium_order": 35
@@ -3131,8 +3131,8 @@
   {
     "id": "FLAK_CANNON",
     "name": "Canon anti-aérien",
-    "description": "[gold]Épuisez[/gold] TOUTES votre cartes [gold]Statut[/gold].\nInfligez 8 dégâts à un ennemi aléatoire pour chaque carte [gold]Épuisée[/gold].",
-    "description_raw": "[gold]Épuisez[/gold] TOUTES votre cartes [gold]Statut[/gold].\nInfligez {Damage:diff()} dégâts à un ennemi aléatoire pour chaque carte [gold]Épuisée[/gold].{InCombat:\n(Se déclenche {CalculatedHits:diff()} fois)|}",
+    "description": "[gold]Épuisez[/gold] TOUTES vos cartes [gold]Statut[/gold].\nInfligez 8 dégâts à un ennemi aléatoire pour chaque carte [gold]Épuisée[/gold].",
+    "description_raw": "[gold]Épuisez[/gold] TOUTES vos cartes [gold]Statut[/gold].\nInfligez {Damage:diff()} dégâts à un ennemi aléatoire pour chaque carte [gold]Épuisée[/gold].{InCombat:\n(Se déclenche {CalculatedHits:diff()} fois)|}",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -3162,7 +3162,7 @@
     "image_url": "/static/images/cards/flak_cannon.png",
     "beta_image_url": "/static/images/cards/beta/flak_cannon.png",
     "type_variants": null,
-    "upgrade_description": "[gold]Épuisez[/gold] TOUTES votre cartes [gold]Statut[/gold].\nInfligez 11 dégâts à un ennemi aléatoire pour chaque carte [gold]Épuisée[/gold].",
+    "upgrade_description": "[gold]Épuisez[/gold] TOUTES vos cartes [gold]Statut[/gold].\nInfligez 11 dégâts à un ennemi aléatoire pour chaque carte [gold]Épuisée[/gold].",
     "type_key": "Attack",
     "rarity_key": "Rare",
     "compendium_order": 359
@@ -3568,8 +3568,8 @@
   {
     "id": "FALLING_STAR",
     "name": "Chute d'étoile",
-    "description": "Infligez 7 dégâts.\nAppliquez [gold]Affaibli[/gold] (1).\nAppliquez [gold]Vulnérable[/gold] (1).",
-    "description_raw": "Infligez {Damage:diff()} dégâts.\nAppliquez [gold]Affaibli[/gold] ({WeakPower:diff()}).\nAppliquez [gold]Vulnérable[/gold] ({VulnerablePower:diff()}).",
+    "description": "Infligez 7 dégâts.\nAppliquez [gold]Affaibli[/gold] (1).\nAppliquez [gold]Vulnérable[/gold] (1).",
+    "description_raw": "Infligez {Damage:diff()} dégâts.\nAppliquez [gold]Affaibli[/gold] ({WeakPower:diff()}).\nAppliquez [gold]Vulnérable[/gold] ({VulnerablePower:diff()}).",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -3613,7 +3613,7 @@
     "image_url": "/static/images/cards/falling_star.png",
     "beta_image_url": "/static/images/cards/beta/falling_star.png",
     "type_variants": null,
-    "upgrade_description": "Infligez 11 dégâts.\nAppliquez [gold]Affaibli[/gold] (1).\nAppliquez [gold]Vulnérable[/gold] (1).",
+    "upgrade_description": "Infligez 11 dégâts.\nAppliquez [gold]Affaibli[/gold] (1).\nAppliquez [gold]Vulnérable[/gold] (1).",
     "type_key": "Attack",
     "rarity_key": "Basic",
     "compendium_order": 218
@@ -4052,8 +4052,8 @@
   {
     "id": "COMET",
     "name": "Comète",
-    "description": "Infligez 33 dégâts.\nAppliquez [gold]Affaibli[/gold] (3).\nAppliquez [gold]Vulnérable[/gold] (3).",
-    "description_raw": "Infligez {Damage:diff()} dégâts.\nAppliquez [gold]Affaibli[/gold] ({WeakPower:diff()}).\nAppliquez [gold]Vulnérable[/gold] ({VulnerablePower:diff()}).",
+    "description": "Infligez 33 dégâts.\nAppliquez [gold]Affaibli[/gold] (3).\nAppliquez [gold]Vulnérable[/gold] (3).",
+    "description_raw": "Infligez {Damage:diff()} dégâts.\nAppliquez [gold]Affaibli[/gold] ({WeakPower:diff()}).\nAppliquez [gold]Vulnérable[/gold] ({VulnerablePower:diff()}).",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -4097,7 +4097,7 @@
     "image_url": "/static/images/cards/comet.png",
     "beta_image_url": "/static/images/cards/beta/comet.png",
     "type_variants": null,
-    "upgrade_description": "Infligez 44 dégâts.\nAppliquez [gold]Affaibli[/gold] (3).\nAppliquez [gold]Vulnérable[/gold] (3).",
+    "upgrade_description": "Infligez 44 dégâts.\nAppliquez [gold]Affaibli[/gold] (3).\nAppliquez [gold]Vulnérable[/gold] (3).",
     "type_key": "Attack",
     "rarity_key": "Rare",
     "compendium_order": 180
@@ -4454,8 +4454,8 @@
   {
     "id": "SUCKER_PUNCH",
     "name": "Coup bas",
-    "description": "Infligez 8 dégâts.\nAppliquez [gold]Affaibli[/gold] (1).",
-    "description_raw": "Infligez {Damage:diff()} dégâts.\nAppliquez [gold]Affaibli[/gold] ({WeakPower:diff()}).",
+    "description": "Infligez 8 dégâts.\nAppliquez [gold]Affaibli[/gold] (1).",
+    "description_raw": "Infligez {Damage:diff()} dégâts.\nAppliquez [gold]Affaibli[/gold] ({WeakPower:diff()}).",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -4492,7 +4492,7 @@
     "image_url": "/static/images/cards/sucker_punch.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 10 dégâts.\nAppliquez [gold]Affaibli[/gold] (1).",
+    "upgrade_description": "Infligez 10 dégâts.\nAppliquez [gold]Affaibli[/gold] (1).",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 167
@@ -4694,8 +4694,8 @@
   {
     "id": "THUNDERCLAP",
     "name": "Coup de tonnerre",
-    "description": "Infligez 4 dégâts et appliquez [gold]Vulnérable[/gold] (1) à TOUS les ennemis.",
-    "description_raw": "Infligez {Damage:diff()} dégâts et appliquez [gold]Vulnérable[/gold] ({VulnerablePower:diff()}) à TOUS les ennemis.",
+    "description": "Infligez 4 dégâts et appliquez [gold]Vulnérable[/gold] (1) à TOUS les ennemis.",
+    "description_raw": "Infligez {Damage:diff()} dégâts et appliquez [gold]Vulnérable[/gold] ({VulnerablePower:diff()}) à TOUS les ennemis.",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -4731,7 +4731,7 @@
     "image_url": "/static/images/cards/thunderclap.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 7 dégâts et appliquez [gold]Vulnérable[/gold] (1) à TOUS les ennemis.",
+    "upgrade_description": "Infligez 7 dégâts et appliquez [gold]Vulnérable[/gold] (1) à TOUS les ennemis.",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 79
@@ -5473,8 +5473,8 @@
   {
     "id": "DOUBT",
     "name": "Doute",
-    "description": "À la fin de votre tour, si cette carte est dans votre [gold]Main[/gold], gagnez [gold]Affaibli[/gold] (1).",
-    "description_raw": "À la fin de votre tour, si cette carte est dans votre [gold]Main[/gold], gagnez [gold]Affaibli[/gold] ({WeakPower:diff()}).",
+    "description": "À la fin de votre tour, si cette carte est dans votre [gold]Main[/gold], gagnez [gold]Affaibli[/gold] (1).",
+    "description_raw": "À la fin de votre tour, si cette carte est dans votre [gold]Main[/gold], gagnez [gold]Affaibli[/gold] ({WeakPower:diff()}).",
     "cost": -1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -6116,8 +6116,8 @@
   {
     "id": "DEFY",
     "name": "Défi",
-    "description": "Gagnez 6 d'[gold]Armure[/gold].\nAppliquez [gold]Affaibli[/gold] (1).",
-    "description_raw": "Gagnez {Block:diff()} d'[gold]Armure[/gold].\nAppliquez [gold]Affaibli[/gold] ({WeakPower:diff()}).",
+    "description": "Gagnez 6 d'[gold]Armure[/gold].\nAppliquez [gold]Affaibli[/gold] (1).",
+    "description_raw": "Gagnez {Block:diff()} d'[gold]Armure[/gold].\nAppliquez [gold]Affaibli[/gold] ({WeakPower:diff()}).",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -6156,7 +6156,7 @@
     "image_url": "/static/images/cards/defy.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Gagnez 7 d'[gold]Armure[/gold].\nAppliquez [gold]Affaibli[/gold] (1).",
+    "upgrade_description": "Gagnez 7 d'[gold]Armure[/gold].\nAppliquez [gold]Affaibli[/gold] (1).",
     "type_key": "Skill",
     "rarity_key": "Common",
     "keywords_key": [
@@ -6167,8 +6167,8 @@
   {
     "id": "BURST",
     "name": "Déflagration",
-    "description": "",
-    "description_raw": "",
+    "description": "La prochaine compétence que vous jouez ce tour sera jouée une fois supplémentaire.",
+    "description_raw": "{Skills:plural:La prochaine compétence que vous jouez ce tour sera jouée|Les {:diff()} prochaines compétences que vous jouez ce tour seront jouées} une fois supplémentaire.",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -6196,7 +6196,7 @@
     "image_url": "/static/images/cards/burst.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Les 2 prochaines compétences que vous jouez ce tour seront jouées une fois supplémentaire.",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 94
@@ -6204,8 +6204,8 @@
   {
     "id": "GAMMA_BLAST",
     "name": "Déflagration gamma",
-    "description": "Infligez 13 dégâts.\nAppliquez [gold]Affaibli[/gold] (2).\nAppliquez [gold]Vulnérable[/gold] (2).",
-    "description_raw": "Infligez {Damage:diff()} dégâts.\nAppliquez [gold]Affaibli[/gold] ({WeakPower:diff()}).\nAppliquez [gold]Vulnérable[/gold] ({VulnerablePower:diff()}).",
+    "description": "Infligez 13 dégâts.\nAppliquez [gold]Affaibli[/gold] (2).\nAppliquez [gold]Vulnérable[/gold] (2).",
+    "description_raw": "Infligez {Damage:diff()} dégâts.\nAppliquez [gold]Affaibli[/gold] ({WeakPower:diff()}).\nAppliquez [gold]Vulnérable[/gold] ({VulnerablePower:diff()}).",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -6249,7 +6249,7 @@
     "image_url": "/static/images/cards/gamma_blast.png",
     "beta_image_url": "/static/images/cards/beta/gamma_blast.png",
     "type_variants": null,
-    "upgrade_description": "Infligez 18 dégâts.\nAppliquez [gold]Affaibli[/gold] (2).\nAppliquez [gold]Vulnérable[/gold] (2).",
+    "upgrade_description": "Infligez 18 dégâts.\nAppliquez [gold]Affaibli[/gold] (2).\nAppliquez [gold]Vulnérable[/gold] (2).",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 220
@@ -6908,8 +6908,8 @@
   {
     "id": "EIDOLON",
     "name": "Eidolon",
-    "description": "[gold]Épuisez[/gold] votre [gold]Main[/gold].\nSi vous avez [gold]Épuisé[/gold] 9 cartes de cette manière, gagnez [gold]Intangible[/gold] (1).",
-    "description_raw": "[gold]Épuisez[/gold] votre [gold]Main[/gold].\nSi vous avez [gold]Épuisé[/gold] 9 cartes de cette manière, gagnez [gold]Intangible[/gold] (1).",
+    "description": "[gold]Épuisez[/gold] votre [gold]Main[/gold].\nSi vous avez [gold]Épuisé[/gold] 9 cartes de cette manière, gagnez [gold]Intangible[/gold] (1).",
+    "description_raw": "[gold]Épuisez[/gold] votre [gold]Main[/gold].\nSi vous avez [gold]Épuisé[/gold] 9 cartes de cette manière, gagnez [gold]Intangible[/gold] (1).",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -7942,8 +7942,8 @@
   {
     "id": "FOLLOW_THROUGH",
     "name": "Fin du geste",
-    "description": "Infligez 6 dégâts à TOUS les ennemis.\nSi la dernière carte que vous avez jouée ce tour est une Compétence, appliquez [gold]Affaibli[/gold] (1) à TOUS les ennemis.",
-    "description_raw": "Infligez {Damage:diff()} dégâts à TOUS les ennemis.\nSi la dernière carte que vous avez jouée ce tour est une Compétence, appliquez [gold]Affaibli[/gold] ({WeakPower:diff()}) à TOUS les ennemis.",
+    "description": "Infligez 6 dégâts à TOUS les ennemis.\nSi la dernière carte que vous avez jouée ce tour est une Compétence, appliquez [gold]Affaibli[/gold] (1) à TOUS les ennemis.",
+    "description_raw": "Infligez {Damage:diff()} dégâts à TOUS les ennemis.\nSi la dernière carte que vous avez jouée ce tour est une Compétence, appliquez [gold]Affaibli[/gold] ({WeakPower:diff()}) à TOUS les ennemis.",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -7980,7 +7980,7 @@
     "image_url": "/static/images/cards/follow_through.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 8 dégâts à TOUS les ennemis.\nSi la dernière carte que vous avez jouée ce tour est une Compétence, appliquez [gold]Affaibli[/gold] (1) à TOUS les ennemis.",
+    "upgrade_description": "Infligez 8 dégâts à TOUS les ennemis.\nSi la dernière carte que vous avez jouée ce tour est une Compétence, appliquez [gold]Affaibli[/gold] (1) à TOUS les ennemis.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 138
@@ -8348,8 +8348,8 @@
   {
     "id": "REAPER_FORM",
     "name": "Forme de la Faucheuse",
-    "description": "Lorsque vous Attaques infligent des dégâts, elles appliquent le même montant de [gold]Fatalité[/gold].",
-    "description_raw": "Lorsque vous Attaques infligent des dégâts, elles appliquent le même montant de [gold]Fatalité[/gold].",
+    "description": "Lorsque vos Attaques infligent des dégâts, elles appliquent le même montant de [gold]Fatalité[/gold].",
+    "description_raw": "Lorsque vos Attaques infligent des dégâts, elles appliquent le même montant de [gold]Fatalité[/gold].",
     "cost": 3,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -8515,8 +8515,8 @@
   {
     "id": "ECHO_FORM",
     "name": "Forme résonnante",
-    "description": "La première carte vous jouez chaque tour est jouée une fois supplémentaire.",
-    "description_raw": "La première carte vous jouez chaque tour est jouée une fois supplémentaire.",
+    "description": "La première carte que vous jouez chaque tour est jouée une fois supplémentaire.",
+    "description_raw": "La première carte que vous jouez chaque tour est jouée une fois supplémentaire.",
     "cost": 3,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -8557,8 +8557,8 @@
   {
     "id": "WRAITH_FORM",
     "name": "Forme spectrale",
-    "description": "Gagnez [gold]Intangible[/gold] (2).\nAu début de votre tour, perdez 1 de [gold]Dextérité[/gold].",
-    "description_raw": "Gagnez [gold]Intangible[/gold] ({IntangiblePower:diff()}).\nAu début de votre tour, perdez {WraithFormPower:diff()} de [gold]Dextérité[/gold].",
+    "description": "Gagnez [gold]Intangible[/gold] (2).\nAu début de votre tour, perdez 1 de [gold]Dextérité[/gold].",
+    "description_raw": "Gagnez [gold]Intangible[/gold] ({IntangiblePower:diff()}).\nAu début de votre tour, perdez {WraithFormPower:diff()} de [gold]Dextérité[/gold].",
     "cost": 3,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -8600,7 +8600,7 @@
     "image_url": "/static/images/cards/wraith_form.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Gagnez [gold]Intangible[/gold] (3).\nAu début de votre tour, perdez 1 de [gold]Dextérité[/gold].",
+    "upgrade_description": "Gagnez [gold]Intangible[/gold] (3).\nAu début de votre tour, perdez 1 de [gold]Dextérité[/gold].",
     "type_key": "Power",
     "rarity_key": "Ancient",
     "compendium_order": 174
@@ -10545,8 +10545,8 @@
   {
     "id": "BASH",
     "name": "Heurt",
-    "description": "Infligez 8 dégâts.\nAppliquez [gold]Vulnérable[/gold] (2).",
-    "description_raw": "Infligez {Damage:diff()} dégâts.\nAppliquez [gold]Vulnérable[/gold] ({VulnerablePower:diff()}).",
+    "description": "Infligez 8 dégâts.\nAppliquez [gold]Vulnérable[/gold] (2).",
+    "description_raw": "Infligez {Damage:diff()} dégâts.\nAppliquez [gold]Vulnérable[/gold] ({VulnerablePower:diff()}).",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -10583,7 +10583,7 @@
     "image_url": "/static/images/cards/bash.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 10 dégâts.\nAppliquez [gold]Vulnérable[/gold] (2).",
+    "upgrade_description": "Infligez 10 dégâts.\nAppliquez [gold]Vulnérable[/gold] (2).",
     "type_key": "Attack",
     "rarity_key": "Basic",
     "compendium_order": 29
@@ -10591,8 +10591,8 @@
   {
     "id": "KNOW_THY_PLACE",
     "name": "Hiérarchie",
-    "description": "Appliquez [gold]Affaibli[/gold] (1).\nAppliquez [gold]Vulnérable[/gold] (1).",
-    "description_raw": "Appliquez [gold]Affaibli[/gold] ({WeakPower:diff()}).\nAppliquez [gold]Vulnérable[/gold] ({VulnerablePower:diff()}).",
+    "description": "Appliquez [gold]Affaibli[/gold] (1).\nAppliquez [gold]Vulnérable[/gold] (1).",
+    "description_raw": "Appliquez [gold]Affaibli[/gold] ({WeakPower:diff()}).\nAppliquez [gold]Vulnérable[/gold] ({VulnerablePower:diff()}).",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -10690,8 +10690,8 @@
   {
     "id": "SHAME",
     "name": "Honte",
-    "description": "À la fin de votre tour, si cette carte est dans votre [gold]Main[/gold], gagnez [gold]Fragilisé[/gold] (1).",
-    "description_raw": "À la fin de votre tour, si cette carte est dans votre [gold]Main[/gold], gagnez [gold]Fragilisé[/gold] ({Frail:diff()}).",
+    "description": "À la fin de votre tour, si cette carte est dans votre [gold]Main[/gold], gagnez [gold]Fragilisé[/gold] (1).",
+    "description_raw": "À la fin de votre tour, si cette carte est dans votre [gold]Main[/gold], gagnez [gold]Fragilisé[/gold] ({Frail:diff()}).",
     "cost": -1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -11524,8 +11524,8 @@
   {
     "id": "TREMBLE",
     "name": "Intimidation",
-    "description": "Appliquez [gold]Vulnérable[/gold] (2).",
-    "description_raw": "Appliquez [gold]Vulnérable[/gold] ({VulnerablePower:diff()}).",
+    "description": "Appliquez [gold]Vulnérable[/gold] (2).",
+    "description_raw": "Appliquez [gold]Vulnérable[/gold] ({VulnerablePower:diff()}).",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -12794,50 +12794,6 @@
     "compendium_order": 260
   },
   {
-    "id": "COOLANT",
-    "name": "Liquide de refroidissement",
-    "description": "Au début de votre tour, gagnez 2 d'[gold]Armure[/gold] pour chaque Orbe unique.",
-    "description_raw": "Au début de votre tour, gagnez {CoolantPower:diff()} d'[gold]Armure[/gold] pour chaque Orbe unique.",
-    "cost": 1,
-    "is_x_cost": null,
-    "is_x_star_cost": null,
-    "star_cost": null,
-    "type": "Pouvoir",
-    "rarity": "Rare",
-    "target": "Self",
-    "color": "defect",
-    "damage": null,
-    "block": null,
-    "hit_count": null,
-    "powers_applied": [
-      {
-        "power": "Liquide de refroidissement",
-        "amount": 2,
-        "power_key": "Coolant"
-      }
-    ],
-    "cards_draw": null,
-    "energy_gain": null,
-    "hp_loss": null,
-    "keywords": null,
-    "tags": null,
-    "spawns_cards": null,
-    "vars": {
-      "CoolantPower": 2,
-      "Coolant": 2
-    },
-    "upgrade": {
-      "coolantpower": "+1"
-    },
-    "image_url": "/static/images/cards/coolant.png",
-    "beta_image_url": null,
-    "type_variants": null,
-    "upgrade_description": "Au début de votre tour, gagnez 3 d'[gold]Armure[/gold] pour chaque Orbe unique.",
-    "type_key": "Power",
-    "rarity_key": "Rare",
-    "compendium_order": 355
-  },
-  {
     "id": "PINPOINT",
     "name": "Localisation",
     "description": "Infligez 17 dégâts.\nCoûte 1 [energy:1] en moins pour chaque Compétence jouée pendant ce tour.",
@@ -13237,8 +13193,8 @@
   {
     "id": "MALAISE",
     "name": "Malaise",
-    "description": "L'ennemi perd X de [gold]Force[/gold]. Appliquez [gold]Affaibli[/gold] (X).",
-    "description_raw": "L'ennemi perd X{IfUpgraded:show:+1} de [gold]Force[/gold]. Appliquez [gold]Affaibli[/gold] (X{IfUpgraded:show:+1}).",
+    "description": "L'ennemi perd X de [gold]Force[/gold]. Appliquez [gold]Affaibli[/gold] (X).",
+    "description_raw": "L'ennemi perd X{IfUpgraded:show:+1} de [gold]Force[/gold]. Appliquez [gold]Affaibli[/gold] (X{IfUpgraded:show:+1}).",
     "cost": 0,
     "is_x_cost": true,
     "is_x_star_cost": null,
@@ -13266,7 +13222,7 @@
     "image_url": "/static/images/cards/malaise.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "L'ennemi perd X+1 de [gold]Force[/gold]. Appliquez [gold]Affaibli[/gold] (X+1).",
+    "upgrade_description": "L'ennemi perd X+1 de [gold]Force[/gold]. Appliquez [gold]Affaibli[/gold] (X+1).",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "keywords_key": [
@@ -13441,8 +13397,8 @@
   {
     "id": "DEATH_MARCH",
     "name": "Marche de la mort",
-    "description": "Infligez 8 dégâts.\nInflige 3 dégâts supplémentaire pour chaque carte piochée durant votre tour.",
-    "description_raw": "Infligez {CalculatedDamage:diff()} dégâts.\nInflige {ExtraDamage:diff()} dégâts supplémentaire pour chaque carte piochée durant votre tour.",
+    "description": "Infligez 8 dégâts.\nInflige 3 dégâts supplémentaires pour chaque carte piochée durant votre tour.",
+    "description_raw": "Infligez {CalculatedDamage:diff()} dégâts.\nInflige {ExtraDamage:diff()} dégâts supplémentaires pour chaque carte piochée durant votre tour.",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -13473,7 +13429,7 @@
     "image_url": "/static/images/cards/death_march.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 8 dégâts.\nInflige 4 dégâts supplémentaire pour chaque carte piochée durant votre tour.",
+    "upgrade_description": "Infligez 8 dégâts.\nInflige 4 dégâts supplémentaires pour chaque carte piochée durant votre tour.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 302
@@ -14315,8 +14271,8 @@
   {
     "id": "NEUTRALIZE",
     "name": "Neutralisation",
-    "description": "Infligez 3 dégâts.\nAppliquez [gold]Affaibli[/gold] (1).",
-    "description_raw": "Infligez {Damage:diff()} dégâts.\nAppliquez [gold]Affaibli[/gold] ({WeakPower:diff()}).",
+    "description": "Infligez 3 dégâts.\nAppliquez [gold]Affaibli[/gold] (1).",
+    "description_raw": "Infligez {Damage:diff()} dégâts.\nAppliquez [gold]Affaibli[/gold] ({WeakPower:diff()}).",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -14353,7 +14309,7 @@
     "image_url": "/static/images/cards/neutralize.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 4 dégâts.\nAppliquez [gold]Affaibli[/gold] (1).",
+    "upgrade_description": "Infligez 4 dégâts.\nAppliquez [gold]Affaibli[/gold] (1).",
     "type_key": "Attack",
     "rarity_key": "Basic",
     "compendium_order": 148
@@ -14567,8 +14523,8 @@
   {
     "id": "CONSUMING_SHADOW",
     "name": "Ombre dévorante",
-    "description": "[gold]Canalisez[/gold] 2 [gold]Orbes ténébreux[/gold].\nÀ la fin de votre tour, [gold]Activez[/gold] votre Orbe le plus à droite.",
-    "description_raw": "[gold]Canalisez[/gold] {Repeat:diff()} [gold]Orbes ténébreux[/gold].\nÀ la fin de votre tour, [gold]Activez[/gold] votre Orbe le plus à droite.",
+    "description": "[gold]Canalisez[/gold] 2 [gold]Orbes ténébreux[/gold].\nÀ la fin de votre tour, [gold]Activez[/gold] votre Orbe le plus à gauche.",
+    "description_raw": "[gold]Canalisez[/gold] {Repeat:diff()} [gold]Orbes ténébreux[/gold].\nÀ la fin de votre tour, [gold]Activez[/gold] votre Orbe le plus à gauche.",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -14604,7 +14560,7 @@
     "image_url": "/static/images/cards/consuming_shadow.png",
     "beta_image_url": "/static/images/cards/beta/consuming_shadow.png",
     "type_variants": null,
-    "upgrade_description": "[gold]Canalisez[/gold] 3 [gold]Orbes ténébreux[/gold].\nÀ la fin de votre tour, [gold]Activez[/gold] votre Orbe le plus à droite.",
+    "upgrade_description": "[gold]Canalisez[/gold] 3 [gold]Orbes ténébreux[/gold].\nÀ la fin de votre tour, [gold]Activez[/gold] votre Orbe le plus à gauche.",
     "type_key": "Power",
     "rarity_key": "Rare",
     "compendium_order": 354
@@ -14612,8 +14568,8 @@
   {
     "id": "OMNISLICE",
     "name": "Omnilame",
-    "description": "Infligez 8 dégâts.\nInflige un montant de dégâts égal aux dégâts infligés à TOUS les autres ennemis.",
-    "description_raw": "Infligez {Damage:diff()} dégâts.\nInflige un montant de dégâts égal aux dégâts infligés à TOUS les autres ennemis.",
+    "description": "Infligez 8 dégâts.\nInfligez aux autres ennemis autant de dégâts que ceux infligés.",
+    "description_raw": "Infligez {Damage:diff()} dégâts.\nInfligez aux autres ennemis autant de dégâts que ceux infligés.",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -14641,7 +14597,7 @@
     "image_url": "/static/images/cards/omnislice.png",
     "beta_image_url": "/static/images/cards/beta/omnislice.png",
     "type_variants": null,
-    "upgrade_description": "Infligez 11 dégâts.\nInflige un montant de dégâts égal aux dégâts infligés à TOUS les autres ennemis.",
+    "upgrade_description": "Infligez 11 dégâts.\nInfligez aux autres ennemis autant de dégâts que ceux infligés.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 483
@@ -14649,8 +14605,8 @@
   {
     "id": "SHOCKWAVE",
     "name": "Onde de choc",
-    "description": "Appliquez [gold]Affaibli[/gold] (3) et [gold]Vulnérable[/gold] (3) à TOUS les ennemis.",
-    "description_raw": "Appliquez [gold]Affaibli[/gold] ({Power:diff()}) et [gold]Vulnérable[/gold] ({Power:diff()}) à TOUS les ennemis.",
+    "description": "Appliquez [gold]Affaibli[/gold] (3) et [gold]Vulnérable[/gold] (3) à TOUS les ennemis.",
+    "description_raw": "Appliquez [gold]Affaibli[/gold] ({Power:diff()}) et [gold]Vulnérable[/gold] ({Power:diff()}) à TOUS les ennemis.",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -14680,7 +14636,7 @@
     "image_url": "/static/images/cards/shockwave.png",
     "beta_image_url": "/static/images/cards/beta/shockwave.png",
     "type_variants": null,
-    "upgrade_description": "Appliquez [gold]Affaibli[/gold] (5) et [gold]Vulnérable[/gold] (5) à TOUS les ennemis.",
+    "upgrade_description": "Appliquez [gold]Affaibli[/gold] (5) et [gold]Vulnérable[/gold] (5) à TOUS les ennemis.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "keywords_key": [
@@ -15251,8 +15207,8 @@
   {
     "id": "BEAT_DOWN",
     "name": "Passage à tabac",
-    "description": "Jouez 3 Attaques aléatoires dépuis votre [gold]Défausse[/gold].",
-    "description_raw": "Jouez {Cards:diff()} Attaques aléatoires dépuis votre [gold]Défausse[/gold].",
+    "description": "Jouez 3 Attaques aléatoires depuis votre [gold]Défausse[/gold].",
+    "description_raw": "Jouez {Cards:diff()} Attaques aléatoires depuis votre [gold]Défausse[/gold].",
     "cost": 3,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -15280,7 +15236,7 @@
     "image_url": "/static/images/cards/beat_down.png",
     "beta_image_url": "/static/images/cards/beta/beat_down.png",
     "type_variants": null,
-    "upgrade_description": "Jouez 4 Attaques aléatoires dépuis votre [gold]Défausse[/gold].",
+    "upgrade_description": "Jouez 4 Attaques aléatoires depuis votre [gold]Défausse[/gold].",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 442
@@ -15838,6 +15794,41 @@
     "compendium_order": 524
   },
   {
+    "id": "TRACKING",
+    "name": "Pistage",
+    "description": "Les ennemis [gold]Affaiblis[/gold] subissent le double des dégâts infligés par les Attaques.",
+    "description_raw": "Les ennemis [gold]Affaiblis[/gold] subissent le double des dégâts infligés par les Attaques.",
+    "cost": 2,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "Pouvoir",
+    "rarity": "Rare",
+    "target": "Self",
+    "color": "silent",
+    "damage": null,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": null,
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": null,
+    "tags": null,
+    "spawns_cards": null,
+    "vars": null,
+    "upgrade": {
+      "cost": 1
+    },
+    "image_url": "/static/images/cards/tracking.png",
+    "beta_image_url": "/static/images/cards/beta/tracking.png",
+    "type_variants": null,
+    "upgrade_description": null,
+    "type_key": "Power",
+    "rarity_key": "Rare",
+    "compendium_order": 112
+  },
+  {
     "id": "KNIFE_TRAP",
     "name": "Piège à poignards",
     "description": "Jouez chaque [gold]Surin[/gold] depuis votre pile de cartes [gold]Épuisées[/gold] sur l'ennemi.",
@@ -16114,8 +16105,8 @@
   {
     "id": "METEOR_SHOWER",
     "name": "Pluie de météores",
-    "description": "Infligez 14 dégâts à TOUS les ennemis.\nAppliquez [gold]Affaibli[/gold] (2) et [gold]Vulnérable[/gold] à TOUS les ennemis.",
-    "description_raw": "Infligez {Damage:diff()} dégâts à TOUS les ennemis.\nAppliquez [gold]Affaibli[/gold] ({WeakPower:diff()}) et [gold]Vulnérable[/gold] à TOUS les ennemis.",
+    "description": "Infligez 14 dégâts à TOUS les ennemis.\nAppliquez [gold]Affaibli[/gold] (2) et [gold]Vulnérable[/gold] à TOUS les ennemis.",
+    "description_raw": "Infligez {Damage:diff()} dégâts à TOUS les ennemis.\nAppliquez [gold]Affaibli[/gold] ({WeakPower:diff()}) et [gold]Vulnérable[/gold] à TOUS les ennemis.",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -16159,7 +16150,7 @@
     "image_url": "/static/images/cards/meteor_shower.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 21 dégâts à TOUS les ennemis.\nAppliquez [gold]Affaibli[/gold] (2) et [gold]Vulnérable[/gold] à TOUS les ennemis.",
+    "upgrade_description": "Infligez 21 dégâts à TOUS les ennemis.\nAppliquez [gold]Affaibli[/gold] (2) et [gold]Vulnérable[/gold] à TOUS les ennemis.",
     "type_key": "Attack",
     "rarity_key": "Ancient",
     "compendium_order": 235
@@ -16448,8 +16439,8 @@
   {
     "id": "EXPOSE",
     "name": "Point faible",
-    "description": "Retirez tous les [gold]Artéfacts[/gold] et toute l'[gold]Armure[/gold] de l'ennemi.\nAppliquez [gold]Vulnérable[/gold] (2).",
-    "description_raw": "Retirez tous les [gold]Artéfacts[/gold] et toute l'[gold]Armure[/gold] de l'ennemi.\nAppliquez [gold]Vulnérable[/gold] ({Power:diff()}).",
+    "description": "Retirez tous les [gold]Artéfacts[/gold] et toute l'[gold]Armure[/gold] de l'ennemi.\nAppliquez [gold]Vulnérable[/gold] (2).",
+    "description_raw": "Retirez tous les [gold]Artéfacts[/gold] et toute l'[gold]Armure[/gold] de l'ennemi.\nAppliquez [gold]Vulnérable[/gold] ({Power:diff()}).",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -16479,7 +16470,7 @@
     "image_url": "/static/images/cards/expose.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Retirez tous les [gold]Artéfacts[/gold] et toute l'[gold]Armure[/gold] de l'ennemi.\nAppliquez [gold]Vulnérable[/gold] (3).",
+    "upgrade_description": "Retirez tous les [gold]Artéfacts[/gold] et toute l'[gold]Armure[/gold] de l'ennemi.\nAppliquez [gold]Vulnérable[/gold] (3).",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "keywords_key": [
@@ -16576,8 +16567,8 @@
   {
     "id": "DEATHBRINGER",
     "name": "Porte-mort",
-    "description": "Appliquez 21 de [gold]Fatalité[/gold] et [gold]Affaibli[/gold] (1) à TOUS les ennemis.",
-    "description_raw": "Appliquez {DoomPower:diff()} de [gold]Fatalité[/gold] et [gold]Affaibli[/gold] ({WeakPower:diff()}) à TOUS les ennemis.",
+    "description": "Appliquez 21 de [gold]Fatalité[/gold] et [gold]Affaibli[/gold] (1) à TOUS les ennemis.",
+    "description_raw": "Appliquez {DoomPower:diff()} de [gold]Fatalité[/gold] et [gold]Affaibli[/gold] ({WeakPower:diff()}) à TOUS les ennemis.",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -17102,8 +17093,8 @@
   {
     "id": "TAUNT",
     "name": "Provocation",
-    "description": "Gagnez 7 d'[gold]Armure[/gold].\nAppliquez [gold]Vulnérable[/gold] (1).",
-    "description_raw": "Gagnez {Block:diff()} d'[gold]Armure[/gold].\nAppliquez [gold]Vulnérable[/gold] ({VulnerablePower:diff()}).",
+    "description": "Gagnez 7 d'[gold]Armure[/gold].\nAppliquez [gold]Vulnérable[/gold] (1).",
+    "description_raw": "Gagnez {Block:diff()} d'[gold]Armure[/gold].\nAppliquez [gold]Vulnérable[/gold] ({VulnerablePower:diff()}).",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -17140,7 +17131,7 @@
     "image_url": "/static/images/cards/taunt.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Gagnez 8 d'[gold]Armure[/gold].\nAppliquez [gold]Vulnérable[/gold] (1).",
+    "upgrade_description": "Gagnez 8 d'[gold]Armure[/gold].\nAppliquez [gold]Vulnérable[/gold] (1).",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 78
@@ -17457,8 +17448,8 @@
   {
     "id": "PUTREFY",
     "name": "Putréfaction",
-    "description": "Appliquez [gold]Affaibli[/gold] (2).\nAppliquez [gold]Vulnérable[/gold] (2).",
-    "description_raw": "Appliquez [gold]Affaibli[/gold] ({Power:diff()}).\nAppliquez [gold]Vulnérable[/gold] ({Power:diff()}).",
+    "description": "Appliquez [gold]Affaibli[/gold] (2).\nAppliquez [gold]Vulnérable[/gold] (2).",
+    "description_raw": "Appliquez [gold]Affaibli[/gold] ({Power:diff()}).\nAppliquez [gold]Vulnérable[/gold] ({Power:diff()}).",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -17488,7 +17479,7 @@
     "image_url": "/static/images/cards/putrefy.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Appliquez [gold]Affaibli[/gold] (3).\nAppliquez [gold]Vulnérable[/gold] (3).",
+    "upgrade_description": "Appliquez [gold]Affaibli[/gold] (3).\nAppliquez [gold]Vulnérable[/gold] (3).",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "keywords_key": [
@@ -17723,8 +17714,8 @@
   {
     "id": "BEAM_CELL",
     "name": "Rayon cellulaire",
-    "description": "Infligez 3 dégâts.\nAppliquez [gold]Vulnérable[/gold] (1).",
-    "description_raw": "Infligez {Damage:diff()} dégâts.\nAppliquez [gold]Vulnérable[/gold] ({VulnerablePower:diff()}).",
+    "description": "Infligez 3 dégâts.\nAppliquez [gold]Vulnérable[/gold] (1).",
+    "description_raw": "Infligez {Damage:diff()} dégâts.\nAppliquez [gold]Vulnérable[/gold] ({VulnerablePower:diff()}).",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -17761,7 +17752,7 @@
     "image_url": "/static/images/cards/beam_cell.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 4 dégâts.\nAppliquez [gold]Vulnérable[/gold] (1).",
+    "upgrade_description": "Infligez 4 dégâts.\nAppliquez [gold]Vulnérable[/gold] (1).",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 379
@@ -18718,8 +18709,8 @@
   {
     "id": "SUPPRESS",
     "name": "Répression",
-    "description": "Infligez 11 dégâts.\nAppliquez [gold]Affaibli[/gold] (3).",
-    "description_raw": "Infligez {Damage:diff()} dégâts.\nAppliquez [gold]Affaibli[/gold] ({WeakPower:diff()}).",
+    "description": "Infligez 11 dégâts.\nAppliquez [gold]Affaibli[/gold] (3).",
+    "description_raw": "Infligez {Damage:diff()} dégâts.\nAppliquez [gold]Affaibli[/gold] ({WeakPower:diff()}).",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -18758,7 +18749,7 @@
     "image_url": "/static/images/cards/suppress.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 17 dégâts.\nAppliquez [gold]Affaibli[/gold] (3).",
+    "upgrade_description": "Infligez 17 dégâts.\nAppliquez [gold]Affaibli[/gold] (3).",
     "type_key": "Attack",
     "rarity_key": "Ancient",
     "keywords_key": [
@@ -19340,7 +19331,7 @@
     "id": "MAD_SCIENCE",
     "name": "Science sans conscience",
     "description": "Infligez 12 dégâts.",
-    "description_raw": "{CardType:choose(Attack|Skill|Power):Infligez {Damage:diff()} dégâts{Violence: {ViolenceHits:diff()} fois|}.|Gagnez {Block:diff()} d'[gold]Armure[/gold].|}{HasRider:{Sapping:\nAppliquez [gold]Affaibli[/gold] ({SappingWeak:diff()}).\nAppliquez [gold]Vulnérable[/gold] ({SappingVulnerable:diff()}).|}{Choking:\nLorsque vous jouez une carte pendant ce tour, l'ennemi perd {ChokingDamage:diff()} PV.|}{Energized:\nGagnez {EnergizedEnergy:energyIcons()}.|}{Wisdom:\nPiochez {WisdomCards:diff()} cartes.|}{Chaos:\nAjoutez une carte aléatoire à votre [gold]Main[/gold]. Elle coûte 0 {energyPrefix:energyIcons(1)} pendant ce tour.|}{Expertise:Gagnez {ExpertiseStrength:diff()} de [gold]Force[/gold].\nGagnez {ExpertiseDexterity:diff()} de [gold]Dextérité[/gold].|}{Curious:Les Pouvoirs coûtent {CuriousReduction:diff()} {energyPrefix:energyIcons(1)} en moins.|}{Improvement:À la fin du combat, [gold]Améliorez[/gold] une carte aléatoire.|}|{CardType:choose(Attack|Skill|Power):\n???|\n???|???}}",
+    "description_raw": "{CardType:choose(Attack|Skill|Power):Infligez {Damage:diff()} dégâts{Violence: {ViolenceHits:diff()} fois|}.|Gagnez {Block:diff()} d'[gold]Armure[/gold].|}{HasRider:{Sapping:\nAppliquez [gold]Affaibli[/gold] ({SappingWeak:diff()}).\nAppliquez [gold]Vulnérable[/gold] ({SappingVulnerable:diff()}).|}{Choking:\nLorsque vous jouez une carte pendant ce tour, l'ennemi perd {ChokingDamage:diff()} PV.|}{Energized:\nGagnez {EnergizedEnergy:energyIcons()}.|}{Wisdom:\nPiochez {WisdomCards:diff()} cartes.|}{Chaos:\nAjoutez une carte aléatoire à votre [gold]Main[/gold]. Elle coûte 0 {energyPrefix:energyIcons(1)} pendant ce tour.|}{Expertise:Gagnez {ExpertiseStrength:diff()} de [gold]Force[/gold].\nGagnez {ExpertiseDexterity:diff()} de [gold]Dextérité[/gold].|}{Curious:Les Pouvoirs coûtent {CuriousReduction:diff()} {energyPrefix:energyIcons(1)} en moins.|}{Improvement:À la fin du combat, [gold]Améliorez[/gold] une carte aléatoire.|}|{CardType:choose(Attack|Skill|Power):\n???|\n???|???}}",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -19882,8 +19873,8 @@
   {
     "id": "SPECTRUM_SHIFT",
     "name": "Spectre visible",
-    "description": "Au début de votre tour, ajoutez 1 carte Incolore alétoire à votre [gold]Main[/gold].",
-    "description_raw": "Au début de votre tour, ajoutez {Cards:diff()} {Cards:plural:carte Incolore alétoire|cartes Incolores alétoires} à votre [gold]Main[/gold].",
+    "description": "Au début de votre tour, ajoutez 1 carte Incolore aléatoire à votre [gold]Main[/gold].",
+    "description_raw": "Au début de votre tour, ajoutez {Cards:diff()} {Cards:plural:carte Incolore aléatoire|cartes Incolores aléatoires} à votre [gold]Main[/gold].",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -20732,8 +20723,8 @@
   {
     "id": "STORM_OF_STEEL",
     "name": "Tempête d'acier",
-    "description": "Défaussez votre [gold]Main[/gold].\nAjoutez autant de [gold]Surins[/gold] à votre [gold]Main[/gold] que de cartes défaussée.",
-    "description_raw": "Défaussez votre [gold]Main[/gold].\nAjoutez autant de [gold]{IfUpgraded:show:Surins+|Surins}[/gold] à votre [gold]Main[/gold] que de cartes défaussée.",
+    "description": "Défaussez votre [gold]Main[/gold].\nAjoutez autant de [gold]Surins[/gold] à votre [gold]Main[/gold] que de cartes défaussées.",
+    "description_raw": "Défaussez votre [gold]Main[/gold].\nAjoutez autant de [gold]{IfUpgraded:show:Surins+|Surins}[/gold] à votre [gold]Main[/gold] que de cartes défaussées.",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -20761,7 +20752,7 @@
     "image_url": "/static/images/cards/storm_of_steel.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Défaussez votre [gold]Main[/gold].\nAjoutez autant de [gold]Surins+[/gold] à votre [gold]Main[/gold] que de cartes défaussée.",
+    "upgrade_description": "Défaussez votre [gold]Main[/gold].\nAjoutez autant de [gold]Surins+[/gold] à votre [gold]Main[/gold] que de cartes défaussées.",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 109
@@ -20769,8 +20760,8 @@
   {
     "id": "SOUL_STORM",
     "name": "Tempête d'âmes",
-    "description": "Infligez 9 dégâts.\nInflige 2 dégâts supplémentaire pour chaque [gold]Âme[/gold] dans votre pile de cartes [gold]Épuisées[/gold].",
-    "description_raw": "Infligez {CalculatedDamage:diff()} dégâts.\nInflige {ExtraDamage:diff()} dégâts supplémentaire pour chaque [gold]Âme[/gold] dans votre pile de cartes [gold]Épuisées[/gold].",
+    "description": "Infligez 9 dégâts.\nInflige 2 dégâts supplémentaires pour chaque [gold]Âme[/gold] dans votre pile de cartes [gold]Épuisées[/gold].",
+    "description_raw": "Infligez {CalculatedDamage:diff()} dégâts.\nInflige {ExtraDamage:diff()} dégâts supplémentaires pour chaque [gold]Âme[/gold] dans votre pile de cartes [gold]Épuisées[/gold].",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -20802,7 +20793,7 @@
     "image_url": "/static/images/cards/soul_storm.png",
     "beta_image_url": "/static/images/cards/beta/soul_storm.png",
     "type_variants": null,
-    "upgrade_description": "Infligez 9 dégâts.\nInflige 3 dégâts supplémentaire pour chaque [gold]Âme[/gold] dans votre pile de cartes [gold]Épuisées[/gold].",
+    "upgrade_description": "Infligez 9 dégâts.\nInflige 3 dégâts supplémentaires pour chaque [gold]Âme[/gold] dans votre pile de cartes [gold]Épuisées[/gold].",
     "type_key": "Attack",
     "rarity_key": "Rare",
     "compendium_order": 282
@@ -20854,8 +20845,8 @@
   {
     "id": "FEAR",
     "name": "Terreur",
-    "description": "Infligez 7 dégâts.\nAppliquez [gold]Vulnérable[/gold] (1).",
-    "description_raw": "Infligez {Damage:diff()} dégâts.\nAppliquez [gold]Vulnérable[/gold] ({VulnerablePower:diff()}).",
+    "description": "Infligez 7 dégâts.\nAppliquez [gold]Vulnérable[/gold] (1).",
+    "description_raw": "Infligez {Damage:diff()} dégâts.\nAppliquez [gold]Vulnérable[/gold] ({VulnerablePower:diff()}).",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -20894,7 +20885,7 @@
     "image_url": "/static/images/cards/fear.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 8 dégâts.\nAppliquez [gold]Vulnérable[/gold] (1).",
+    "upgrade_description": "Infligez 8 dégâts.\nAppliquez [gold]Vulnérable[/gold] (1).",
     "type_key": "Attack",
     "rarity_key": "Common",
     "keywords_key": [
@@ -20991,8 +20982,8 @@
   {
     "id": "HIGH_FIVE",
     "name": "Tope là",
-    "description": "[gold]Titos[/gold] inflige 11 dégâts\net applique [gold]Vulnérable[/gold] (2) \nà TOUS les ennemis.",
-    "description_raw": "[gold]Titos[/gold] inflige {OstyDamage:diff()} dégâts\net applique [gold]Vulnérable[/gold] ({VulnerablePower:diff()}) \nà TOUS les ennemis.",
+    "description": "[gold]Titos[/gold] inflige 11 dégâts\net applique [gold]Vulnérable[/gold] (2) \nà TOUS les ennemis.",
+    "description_raw": "[gold]Titos[/gold] inflige {OstyDamage:diff()} dégâts\net applique [gold]Vulnérable[/gold] ({VulnerablePower:diff()}) \nà TOUS les ennemis.",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -21032,7 +21023,7 @@
     "image_url": "/static/images/cards/high_five.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "[gold]Titos[/gold] inflige 13 dégâts\net applique [gold]Vulnérable[/gold] (2) \nà TOUS les ennemis.",
+    "upgrade_description": "[gold]Titos[/gold] inflige 13 dégâts\net applique [gold]Vulnérable[/gold] (2) \nà TOUS les ennemis.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 320
@@ -21400,41 +21391,6 @@
     "compendium_order": 287
   },
   {
-    "id": "TRACKING",
-    "name": "Traquenard",
-    "description": "Les ennemis [gold]Affaiblis[/gold] subissent le double des dégâts infligés par les Attaques.",
-    "description_raw": "Les ennemis [gold]Affaiblis[/gold] subissent le double des dégâts infligés par les Attaques.",
-    "cost": 2,
-    "is_x_cost": null,
-    "is_x_star_cost": null,
-    "star_cost": null,
-    "type": "Pouvoir",
-    "rarity": "Rare",
-    "target": "Self",
-    "color": "silent",
-    "damage": null,
-    "block": null,
-    "hit_count": null,
-    "powers_applied": null,
-    "cards_draw": null,
-    "energy_gain": null,
-    "hp_loss": null,
-    "keywords": null,
-    "tags": null,
-    "spawns_cards": null,
-    "vars": null,
-    "upgrade": {
-      "cost": 1
-    },
-    "image_url": "/static/images/cards/tracking.png",
-    "beta_image_url": "/static/images/cards/beta/tracking.png",
-    "type_variants": null,
-    "upgrade_description": null,
-    "type_key": "Power",
-    "rarity_key": "Rare",
-    "compendium_order": 112
-  },
-  {
     "id": "BLACK_HOLE",
     "name": "Trou noir",
     "description": "Lorsque vous gagnez ou dépensez des [star:1], infligez 3 dégâts à TOUS les ennemis.",
@@ -21713,8 +21669,8 @@
   {
     "id": "UPPERCUT",
     "name": "Uppercut",
-    "description": "Infligez 13 dégâts.\nAppliquez [gold]Affaibli[/gold] (1).\nAppliquez [gold]Vulnérable[/gold] (1).",
-    "description_raw": "Infligez {Damage:diff()} dégâts.\nAppliquez [gold]Affaibli[/gold] ({Power:diff()}).\nAppliquez [gold]Vulnérable[/gold] ({Power:diff()}).",
+    "description": "Infligez 13 dégâts.\nAppliquez [gold]Affaibli[/gold] (1).\nAppliquez [gold]Vulnérable[/gold] (1).",
+    "description_raw": "Infligez {Damage:diff()} dégâts.\nAppliquez [gold]Affaibli[/gold] ({Power:diff()}).\nAppliquez [gold]Vulnérable[/gold] ({Power:diff()}).",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -21743,7 +21699,7 @@
     "image_url": "/static/images/cards/uppercut.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 13 dégâts.\nAppliquez [gold]Affaibli[/gold] (2).\nAppliquez [gold]Vulnérable[/gold] (2).",
+    "upgrade_description": "Infligez 13 dégâts.\nAppliquez [gold]Affaibli[/gold] (2).\nAppliquez [gold]Vulnérable[/gold] (2).",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 84
@@ -21905,8 +21861,8 @@
   {
     "id": "NULL",
     "name": "Valeur nulle",
-    "description": "Infligez 10 dégâts.\nAppliquez [gold]Affaibli[/gold] (2).\n[gold]Canalisez[/gold] 1 [gold]Orbe ténébreux[/gold].",
-    "description_raw": "Infligez {Damage:diff()} dégâts.\nAppliquez [gold]Affaibli[/gold] ({WeakPower:diff()}).\n[gold]Canalisez[/gold] 1 [gold]Orbe ténébreux[/gold].",
+    "description": "Infligez 10 dégâts.\nAppliquez [gold]Affaibli[/gold] (2).\n[gold]Canalisez[/gold] 1 [gold]Orbe ténébreux[/gold].",
+    "description_raw": "Infligez {Damage:diff()} dégâts.\nAppliquez [gold]Affaibli[/gold] ({WeakPower:diff()}).\n[gold]Canalisez[/gold] 1 [gold]Orbe ténébreux[/gold].",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -21943,7 +21899,7 @@
     "image_url": "/static/images/cards/null.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 13 dégâts.\nAppliquez [gold]Affaibli[/gold] (2).\n[gold]Canalisez[/gold] 1 [gold]Orbe ténébreux[/gold].",
+    "upgrade_description": "Infligez 13 dégâts.\nAppliquez [gold]Affaibli[/gold] (2).\n[gold]Canalisez[/gold] 1 [gold]Orbe ténébreux[/gold].",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 415
@@ -22028,6 +21984,50 @@
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 121
+  },
+  {
+    "id": "COOLANT",
+    "name": "Ventilation",
+    "description": "Au début de votre tour, gagnez 2 d'[gold]Armure[/gold] pour chaque Orbe unique.",
+    "description_raw": "Au début de votre tour, gagnez {CoolantPower:diff()} d'[gold]Armure[/gold] pour chaque Orbe unique.",
+    "cost": 1,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "Pouvoir",
+    "rarity": "Rare",
+    "target": "Self",
+    "color": "defect",
+    "damage": null,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": [
+      {
+        "power": "Liquide de refroidissement",
+        "amount": 2,
+        "power_key": "Coolant"
+      }
+    ],
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": null,
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "CoolantPower": 2,
+      "Coolant": 2
+    },
+    "upgrade": {
+      "coolantpower": "+1"
+    },
+    "image_url": "/static/images/cards/coolant.png",
+    "beta_image_url": null,
+    "type_variants": null,
+    "upgrade_description": "Au début de votre tour, gagnez 3 d'[gold]Armure[/gold] pour chaque Orbe unique.",
+    "type_key": "Power",
+    "rarity_key": "Rare",
+    "compendium_order": 355
   },
   {
     "id": "GLASSWORK",
@@ -22233,8 +22233,8 @@
   {
     "id": "GO_FOR_THE_EYES",
     "name": "Viser les yeux",
-    "description": "Infligez 3 dégâts.\nSi l'ennemi s'apprête à attaquer, appliquez [gold]Affaibli[/gold] (1).",
-    "description_raw": "Infligez {Damage:diff()} dégâts.\nSi l'ennemi s'apprête à attaquer, appliquez [gold]Affaibli[/gold] ({WeakPower:diff()}).",
+    "description": "Infligez 3 dégâts.\nSi l'ennemi s'apprête à attaquer, appliquez [gold]Affaibli[/gold] (1).",
+    "description_raw": "Infligez {Damage:diff()} dégâts.\nSi l'ennemi s'apprête à attaquer, appliquez [gold]Affaibli[/gold] ({WeakPower:diff()}).",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -22271,7 +22271,7 @@
     "image_url": "/static/images/cards/go_for_the_eyes.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 4 dégâts.\nSi l'ennemi s'apprête à attaquer, appliquez [gold]Affaibli[/gold] (1).",
+    "upgrade_description": "Infligez 4 dégâts.\nSi l'ennemi s'apprête à attaquer, appliquez [gold]Affaibli[/gold] (1).",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 405
@@ -22556,8 +22556,8 @@
   {
     "id": "SIC_EM",
     "name": "À l'attaque !",
-    "description": "[gold]Titos[/gold] inflige 5 dégâts.\nLorsque [gold]Titos[/gold] touche un ennemi pendant ce tour, [gold]Invoquez[/gold] pour 2.",
-    "description_raw": "[gold]Titos[/gold] inflige {OstyDamage:diff()} dégâts.\nLorsque [gold]Titos[/gold] touche un ennemi pendant ce tour, [gold]Invoquez[/gold] pour {SicEmPower:diff()}.",
+    "description": "[gold]Titos[/gold] inflige 5 dégâts.\nLorsque [gold]Titos[/gold] touche cet ennemi pendant ce tour, [gold]Invoquez[/gold] pour 2.",
+    "description_raw": "[gold]Titos[/gold] inflige {OstyDamage:diff()} dégâts.\nLorsque [gold]Titos[/gold] touche cet ennemi pendant ce tour, [gold]Invoquez[/gold] pour {SicEmPower:diff()}.",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -22597,7 +22597,7 @@
     "image_url": "/static/images/cards/sic_em.png",
     "beta_image_url": "/static/images/cards/beta/sic_em.png",
     "type_variants": null,
-    "upgrade_description": "[gold]Titos[/gold] inflige 6 dégâts.\nLorsque [gold]Titos[/gold] touche un ennemi pendant ce tour, [gold]Invoquez[/gold] pour 3.",
+    "upgrade_description": "[gold]Titos[/gold] inflige 6 dégâts.\nLorsque [gold]Titos[/gold] touche cet ennemi pendant ce tour, [gold]Invoquez[/gold] pour 3.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 342

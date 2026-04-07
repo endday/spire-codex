@@ -1,7 +1,7 @@
 [
   {
     "id": "BOUND",
-    "name": "Entraver",
+    "name": "Entrave",
     "description": "Seule [blue]1[/blue] carte [gold]Entravée[/gold] peut être jouée chaque tour. Les cartes de votre main perdent [gold]Entrave[/gold] à la fin du tour.",
     "extra_card_text": "Entravé",
     "is_stackable": false

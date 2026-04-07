@@ -178,8 +178,8 @@
   {
     "id": "CLARITY",
     "name": "明晰提取物",
-    "description": "抽[blue]1[/blue]张牌。在你的下[blue]3[/blue]个回合开始时，额外[blue]1[/blue]张牌。",
-    "description_raw": "抽[blue]{Cards}[/blue]张牌。在你的下[blue]{ClarityPower}[/blue]个回合开始时，额外[blue]1[/blue]张牌。",
+    "description": "抽[blue]1[/blue]张牌。在你的下[blue]3[/blue]个回合开始时，额外抽[blue]1[/blue]张牌。",
+    "description_raw": "抽[blue]{Cards}[/blue]张牌。在你的下[blue]{ClarityPower}[/blue]个回合开始时，额外抽[blue]1[/blue]张牌。",
     "rarity": "罕见",
     "image_url": "/static/images/potions/clarity.png",
     "rarity_key": "Uncommon",

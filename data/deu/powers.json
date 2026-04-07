@@ -262,7 +262,7 @@
   {
     "id": "CHAINS_OF_BINDING",
     "name": "Ketten des Bindens",
-    "description": "Die ersten [blue]3[/blue] gezogenen Karten in jedem Zug werden mit [gold]Gebunden[/gold] beschädigt.",
+    "description": "Die ersten [blue]3[/blue] gezogenen Karten in jedem Zug werden mit [gold]Gebunden[/gold] gestört.",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
@@ -281,7 +281,7 @@
   },
   {
     "id": "CLARITY",
-    "name": "Weitere Karte ziehen",
+    "name": "Klarheit",
     "description": "Ziehe zu Beginn deines nächsten Zuges [blue]1[/blue] Karte mehr.",
     "description_raw": null,
     "type": "Buff",
@@ -292,7 +292,7 @@
   {
     "id": "COLOSSUS",
     "name": "Koloss",
-    "description": "Du nimmst in diesem Zug [blue]50%[/blue] weniger Schaden von [gold]verwundbaren[/gold] Gegnern.",
+    "description": "Du nimmst in diesem Zug [blue]50%[/blue] weniger Schaden von [gold]Verwundbaren[/gold] Gegnern.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -341,7 +341,7 @@
   },
   {
     "id": "COOLANT",
-    "name": "Kühlmittel",
+    "name": "Kühlung",
     "description": "Erhalte zu Beginn deines Zuges [blue]3[/blue] [gold]Block[/gold] für jeden unterschiedlichen Orb, den du hast.",
     "description_raw": null,
     "type": "Buff",
@@ -782,8 +782,8 @@
   {
     "id": "FERAL",
     "name": "Ungezähmt",
-    "description": "Das erste Mal in jedem Zug, wenn du einen 0[energy:1]-Angriff spielst, nimm ihn zurück auf deine [gold]Hand[/gold].",
-    "description_raw": "Das erste Mal in jedem Zug, wenn du einen 0{energyPrefix:energyIcons(1)}-Angriff spielst, nimm ihn zurück auf deine [gold]Hand[/gold].",
+    "description": "Wenn du zum ersten Mal in einem Zug einen 0[energy:1]-Angriff spielst, nimm ihn zurück auf deine [gold]Hand[/gold].",
+    "description_raw": "Wenn du zum ersten Mal in einem Zug einen 0{energyPrefix:energyIcons(1)}-Angriff spielst, nimm ihn zurück auf deine [gold]Hand[/gold].",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -1212,7 +1212,7 @@
   {
     "id": "ITERATION",
     "name": "Iteration",
-    "description": "Das erste Mal in jedem Zug, wenn du eine [gold]Status[/gold]-Karte ziehst, ziehe mehr Karten.",
+    "description": "Wenn du zum ersten Mal in einem Zug eine [gold]Status[/gold]-Karte ziehst, ziehe mehr Karten.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1272,7 +1272,7 @@
   {
     "id": "LIGHTNING_ROD",
     "name": "Blitzableiter",
-    "description": "[gold]Erschaffe[/gold] zu Beginn der nächsten [blue]2[/blue] Züge [blue]1[/blue] [gold]Blitz[/gold].",
+    "description": "[gold]Erschaffe[/gold] zu Beginn deiner nächsten [blue]2[/blue] Züge [blue]1[/blue] [gold]Blitz[/gold].",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1282,7 +1282,7 @@
   {
     "id": "LOOP",
     "name": "Schleife",
-    "description": "Löse zu Beginn deines Zuges die passive Fähigkeit deines ersten Orbs aus.",
+    "description": "Löse zu Beginn deines Zuges die passive Fähigkeit deines vordersten Orbs aus.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1392,7 +1392,7 @@
   {
     "id": "NECRO_MASTERY",
     "name": "Nekro-Meisterin",
-    "description": "Wenn [gold]Osty[/gold] TP verliert, verlieren ALLE Gegner ebensoviele TP.",
+    "description": "Wenn [gold]Osty[/gold] TP verliert, verlieren ALLE Gegner ebenso viele TP.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1622,8 +1622,8 @@
   {
     "id": "PLOW",
     "name": "Pflügen",
-    "description": "Wenn die TP des [gold]this creaturees[/gold] zum ersten Mal [blue][Amount][/blue] oder weniger erreichen, wird es [gold]betäubt[/gold] und verliert all ihre [gold]Stärke[/gold].",
-    "description_raw": "Wenn die TP des [gold]{OwnerName}es[/gold] zum ersten Mal [blue]{Amount}[/blue] oder weniger erreichen, wird es [gold]betäubt[/gold] und verliert all ihre [gold]Stärke[/gold].",
+    "description": "Wenn die TP des [gold]this creaturees[/gold] zum ersten Mal [blue][Amount][/blue] oder weniger erreichen, wird es [gold]betäubt[/gold] und verliert all seine [gold]Stärke[/gold].",
+    "description_raw": "Wenn die TP des [gold]{OwnerName}es[/gold] zum ersten Mal [blue]{Amount}[/blue] oder weniger erreichen, wird es [gold]betäubt[/gold] und verliert all seine [gold]Stärke[/gold].",
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -1691,7 +1691,7 @@
   },
   {
     "id": "RAGE",
-    "name": "Zorn",
+    "name": "Wut",
     "description": "Wenn du in diesem Zug einen Angriff spielst, erhalte [blue]3[/blue] [gold]Block[/gold].",
     "description_raw": null,
     "type": "Buff",
@@ -1982,8 +1982,8 @@
   {
     "id": "SKITTISH",
     "name": "Unberechenbar",
-    "description": "Das erste Mal in jedem Zug, wenn [gold]this creature[/gold] getroffen wird, erhält er [blue][Amount][/blue] [gold]Block[/gold].",
-    "description_raw": "Das erste Mal in jedem Zug, wenn [gold]{OwnerName}[/gold] getroffen wird, erhält er [blue]{Amount}[/blue] [gold]Block[/gold].",
+    "description": "Wenn [gold]this creature[/gold] zum ersten Mal in einem Zug getroffen wird, erhält er [blue][Amount][/blue] [gold]Block[/gold].",
+    "description_raw": "Wenn [gold]{OwnerName}[/gold] zum ersten Mal in einem Zug getroffen wird, erhält er [blue]{Amount}[/blue] [gold]Block[/gold].",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -2162,7 +2162,7 @@
   {
     "id": "STOCK",
     "name": "Nachschub",
-    "description": "Wenn getötet, wird ein neuer Axtbot an seiner Stelle beschwört.",
+    "description": "Wenn getötet, wird ein neuer Axtbot an seiner Stelle beschworen.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -2462,7 +2462,7 @@
   {
     "id": "UNMOVABLE",
     "name": "Standfest",
-    "description": "Wenn du zum ersten Mal in jedem Zug durch eine Karte [gold]Block[/gold] erhältst, verdopple die erhaltene Menge.",
+    "description": "Wenn du zum ersten Mal in einem Zug durch eine Karte [gold]Block[/gold] erhältst, verdopple die erhaltene Menge.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -2502,8 +2502,8 @@
   {
     "id": "VITAL_SPARK",
     "name": "Lebensfunke",
-    "description": "Das erste Mal in jedem Zug, wenn [gold]this creature[/gold] Angriffsschaden nimmt, erhält der Angreifer [energy:1].",
-    "description_raw": "Das erste Mal in jedem Zug, wenn [gold]{OwnerName}[/gold] Angriffsschaden nimmt, erhält der Angreifer {Energy:energyIcons()}.",
+    "description": "Wenn [gold]this creature[/gold] zum ersten Mal in einem Zug Angriffsschaden nimmt, erhält der Angreifer [energy:1].",
+    "description_raw": "Wenn [gold]{OwnerName}[/gold] zum ersten Mal in einem Zug Angriffsschaden nimmt, erhält der Angreifer {Energy:energyIcons()}.",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,

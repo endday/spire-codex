@@ -156,8 +156,8 @@
   {
     "id": "POT_OF_GHOULS",
     "name": "Garnek z upiorami",
-    "description": "",
-    "description_raw": "",
+    "description": "Dodaj [blue]2[/blue] [gold]Dusze|Dusz|Dusz[/gold] do [gold]ręki[/gold].",
+    "description_raw": "Dodaj [blue]{Cards}[/blue] [gold]{Cards:plural:Duszę|Dusze|Dusz|Dusz}[/gold] do [gold]ręki[/gold].",
     "rarity": "Rzadka",
     "image_url": "/static/images/potions/pot_of_ghouls.png",
     "rarity_key": "Rare",
@@ -541,8 +541,8 @@
   {
     "id": "RADIANT_TINCTURE",
     "name": "Promieniująca nalewka",
-    "description": "Zyskaj [energy:1]. Na początku plural(en):następnej tury zyskaj dodatkowy [energy:1].",
-    "description_raw": "Zyskaj {Energy:energyIcons()}. Na początku {RadiancePower:plural(en):następnej tury|[blue]{RadiancePower}[/blue] następnych tur} zyskaj dodatkowy {energyPrefix:energyIcons(1)}.",
+    "description": "",
+    "description_raw": "",
     "rarity": "Niepospolita",
     "image_url": "/static/images/potions/radiant_tincture.png",
     "rarity_key": "Uncommon",

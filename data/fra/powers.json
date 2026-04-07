@@ -202,7 +202,7 @@
   {
     "id": "BUFFER",
     "name": "Tampon",
-    "description": "Incercepte la prochaine perte de PV.",
+    "description": "Intercepte la prochaine perte de PV.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -702,7 +702,7 @@
   {
     "id": "ENRAGE",
     "name": "Enragé",
-    "description": "Lorsque vous jouez une Compétence, gagnez [blue]2[/blue] de [gold]Force[/gold].",
+    "description": "Lorsque vous jouez une Compétence, gagne [blue]2[/blue] de [gold]Force[/gold].",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -782,8 +782,8 @@
   {
     "id": "FERAL",
     "name": "Sauvagerie",
-    "description": "La première fois de chaque tour que vous jouez une Attaque coûtant 0[energy:1], celle-ciretourne dans votre [gold]Main[/gold].",
-    "description_raw": "La première fois de chaque tour que vous jouez une Attaque coûtant 0{energyPrefix:energyIcons(1)}, celle-ciretourne dans votre [gold]Main[/gold].",
+    "description": "La première fois de chaque tour que vous jouez une Attaque coûtant 0 [energy:1], celle-ci retourne dans votre [gold]Main[/gold].",
+    "description_raw": "La première fois de chaque tour que vous jouez une Attaque coûtant 0 {energyPrefix:energyIcons(1)}, celle-ci retourne dans votre [gold]Main[/gold].",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -1142,8 +1142,8 @@
   {
     "id": "IMBALANCED",
     "name": "Déséquilibre",
-    "description": "Si les attaques de [gold]this creature's[/gold] sont entièrement bloquées par de l'Armure, il est [gold]Étourdi[/gold].",
-    "description_raw": "Si les attaques de [gold]{OwnerName}'s[/gold] sont entièrement bloquées {IsMultiplayer:par l'Armure de n'importe quel joueur|par de l'Armure}, il est [gold]Étourdi[/gold].",
+    "description": "Si les attaques de [gold]this creature[/gold] sont entièrement bloquées par de l'Armure, il est [gold]Étourdi[/gold].",
+    "description_raw": "Si les attaques de [gold]{OwnerName}[/gold] sont entièrement bloquées {IsMultiplayer:par l'Armure de n'importe quel joueur|par de l'Armure}, il est [gold]Étourdi[/gold].",
     "type": "Debuff",
     "stack_type": "Single",
     "allow_negative": null,
@@ -1242,8 +1242,8 @@
   {
     "id": "KNOCKDOWN",
     "name": "À terre",
-    "description": "Cette creature subit [blue][Amount][/blue] fois les dégâts infligés par les autres joueurs pendant ce tour.",
-    "description_raw": "Cette creature subit [blue]{Amount}[/blue] fois les dégâts infligés par les autres joueurs pendant ce tour.",
+    "description": "Cette créature subit [blue][Amount][/blue] fois les dégâts infligés par les autres joueurs pendant ce tour.",
+    "description_raw": "Cette créature subit [blue]{Amount}[/blue] fois les dégâts infligés par les autres joueurs pendant ce tour.",
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -1512,7 +1512,7 @@
   {
     "id": "PAGESTORM",
     "name": "Pluie de papier",
-    "description": "Lorsque vous piochez une carte [gold]Éthérée[/gold], piochez [blue]1[/blue] card.",
+    "description": "Lorsque vous piochez une carte [gold]Éthérée[/gold], piochez [blue]1[/blue] carte.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1712,7 +1712,7 @@
   {
     "id": "RAVENOUS",
     "name": "Affamé",
-    "description": "Lorsqu'un ennemi périt, Putrilimace la dévore. Elle est [gold]Étourdie[/gold] et gagne [blue]1[/blue] de [gold]Force[/gold].",
+    "description": "Lorsqu'un ennemi périt, Putrilimace le dévore. Elle est [gold]Étourdie[/gold] et gagne [blue]1[/blue] de [gold]Force[/gold].",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1812,8 +1812,8 @@
   {
     "id": "ROLLING_BOULDER",
     "name": "Pierre qui roule",
-    "description": "Au début de votre tour, infligez [blue][Amount][/blue] dégâts à TOUS les et augmentez ces dégâts de [blue]5[/blue].",
-    "description_raw": "Au début de votre tour, infligez [blue]{Amount}[/blue] dégâts à TOUS les et augmentez ces dégâts de [blue]{Damage}[/blue].",
+    "description": "Au début de votre tour, infligez [blue][Amount][/blue] dégâts à TOUS les ennemis et augmentez ces dégâts de [blue]5[/blue].",
+    "description_raw": "Au début de votre tour, infligez [blue]{Amount}[/blue] dégâts à TOUS les ennemis et augmentez ces dégâts de [blue]{Damage}[/blue].",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -1962,7 +1962,7 @@
   {
     "id": "SIC_EM",
     "name": "À l'attaque !",
-    "description": "Lorsque [gold]Titos[/gold] touche un ennemi pendant ce tour, [gold]Invoquez[/gold] pour [blue]3[/blue].",
+    "description": "Lorsque [gold]Titos[/gold] touche cet ennemi pendant ce tour, [gold]Invoquez[/gold] pour [blue]3[/blue].",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
@@ -2152,7 +2152,7 @@
   {
     "id": "STEAM_ERUPTION",
     "name": "Éruption de vapeur",
-    "description": "Le Géant de la Cascade vous inflige des dégâts à la fin de votre tour suivant le tour où il périt.",
+    "description": "Quand le Géant de la Cascade meurt, il vous inflige des dégâts à la fin de votre prochain tour.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -2431,7 +2431,7 @@
   },
   {
     "id": "TRACKING",
-    "name": "Traquenard",
+    "name": "Pistage",
     "description": "Les ennemis [gold]Affaiblis[/gold] subissent [blue]2[/blue] fois plus de dégâts des Attaques.",
     "description_raw": null,
     "type": "Buff",
@@ -2482,7 +2482,7 @@
   {
     "id": "VICIOUS",
     "name": "Vicieux",
-    "description": "Lorsque vous appliquez [gold]Vulnérable[/gold], piochez [blue]1[/blue] card.",
+    "description": "Lorsque vous appliquez [gold]Vulnérable[/gold], piochez [blue]1[/blue] carte.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -2492,8 +2492,8 @@
   {
     "id": "VIGOR",
     "name": "Vigueur",
-    "description": "La prochaine Attaque de [gold]this creature's[/gold] inflige [blue][Amount][/blue] dégâts supplémentaires.",
-    "description_raw": "{OnPlayer:Votre prochaine Attaque|La prochaine Attaque de [gold]{OwnerName}'s[/gold]} inflige [blue]{Amount}[/blue] dégâts supplémentaires.",
+    "description": "La prochaine Attaque de [gold]this creature[/gold] inflige [blue][Amount][/blue] dégâts supplémentaires.",
+    "description_raw": "{OnPlayer:Votre prochaine Attaque|La prochaine Attaque de [gold]{OwnerName}[/gold]} inflige [blue]{Amount}[/blue] dégâts supplémentaires.",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,

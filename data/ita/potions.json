@@ -2,8 +2,8 @@
   {
     "id": "OROBIC_ACID",
     "name": "Acido Orobico",
-    "description": "Aggiungi una carta Attacco, Abilità e Potere casuale alla tua [gold]mano[/gold]. In questo turno puoi giocarle senza costo.",
-    "description_raw": "Aggiungi una carta Attacco, Abilità e Potere casuale alla tua [gold]mano[/gold]. In questo turno puoi giocarle senza costo.",
+    "description": "Aggiungi una carta Attacco, Abilità e Potere casuale alla tua [gold]mano[/gold]. In questo turno puoi giocarle senza nessun costo.",
+    "description_raw": "Aggiungi una carta Attacco, Abilità e Potere casuale alla tua [gold]mano[/gold]. In questo turno puoi giocarle senza nessun costo.",
     "rarity": "Rara",
     "image_url": "/static/images/potions/orobic_acid.png",
     "rarity_key": "Rare",

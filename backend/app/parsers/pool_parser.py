@@ -7,8 +7,7 @@ import json
 import re
 from pathlib import Path
 
-BASE = Path(__file__).resolve().parents[3]
-DECOMPILED = BASE / "extraction" / "decompiled"
+from parser_paths import BASE, DECOMPILED, loc_dir as _loc_dir, data_dir as _data_dir
 CARD_POOLS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.CardPools"
 RELIC_POOLS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.RelicPools"
 POTION_POOLS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.PotionPools"
@@ -92,7 +91,7 @@ def update_potions_with_pools(output_dir: Path):
 
 
 def main(lang: str = "eng"):
-    output_dir = BASE / "data" / lang
+    output_dir = _data_dir(lang)
     update_potions_with_pools(output_dir)
 
 

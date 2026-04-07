@@ -1,9 +1,9 @@
 [
   {
     "id": "PAELS_WING",
-    "name": "Aile de Pael",
-    "description": "Vous pouvez offrir des récompenses de carte en sacrifice à Pael. Tous les [blue]2[/blue] sacrifices, vous obtenez une [gold]Relique[/gold].",
-    "description_raw": "Vous pouvez offrir des récompenses de carte en sacrifice à Pael. {Sacrifices:plural:À chaque sacrifice|Tous les [blue]{}[/blue] sacrifices}, vous obtenez une [gold]Relique[/gold].",
+    "name": "Aile de Paël",
+    "description": "Vous pouvez offrir des récompenses de carte en sacrifice à Paël. Tous les [blue]2[/blue] sacrifices, vous obtenez une [gold]Relique[/gold].",
+    "description_raw": "Vous pouvez offrir des récompenses de carte en sacrifice à Paël. {Sacrifices:plural:À chaque sacrifice|Tous les [blue]{}[/blue] sacrifices}, vous obtenez une [gold]Relique[/gold].",
     "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
     "rarity": "Relique d'Ancien",
     "pool": "shared",
@@ -327,8 +327,8 @@
   {
     "id": "BELT_BUCKLE",
     "name": "Boucle de ceinture",
-    "description": "Si vous n'avez pas de potions, vous avez [blue]2[/blue] de [gold]Dexterité[/gold] supplémentaire.",
-    "description_raw": "Si vous n'avez pas de potions, vous avez [blue]{DexterityPower}[/blue] de [gold]Dexterité[/gold] supplémentaire.",
+    "description": "Si vous n'avez pas de potions, vous avez [blue]2[/blue] de [gold]Dextérité[/gold] supplémentaire.",
+    "description_raw": "Si vous n'avez pas de potions, vous avez [blue]{DexterityPower}[/blue] de [gold]Dextérité[/gold] supplémentaire.",
     "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
     "rarity": "Relique du Marchand",
     "pool": "shared",
@@ -535,8 +535,8 @@
   {
     "id": "TOY_BOX",
     "name": "Caisse à jouets",
-    "description": "Lorsque vous obtenez cette relique, obtenez [blue]4[/blue] [gold]Reliques de cire[/gold]. Tous les [blue]3[/blue] combats, la [gold]Relique de cire[/gold] le plus à gauche fondra.",
-    "description_raw": "Lorsque vous obtenez cette relique, obtenez [blue]{Relics}[/blue] [gold]{Relics:plural:Relique|Reliques} de cire[/gold]. Tous les {Combats:plural:combats|[blue]{Combats}[/blue] combats}, la [gold]Relique de cire[/gold] le plus à gauche fondra.",
+    "description": "Lorsque vous obtenez cette relique, obtenez [blue]4[/blue] [gold]Reliques de cire[/gold]. Tous les [blue]3[/blue] combats, la [gold]Relique de cire[/gold] la plus à gauche fondra.",
+    "description_raw": "Lorsque vous obtenez cette relique, obtenez [blue]{Relics}[/blue] [gold]{Relics:plural:Relique|Reliques} de cire[/gold]. Tous les {Combats:plural:combats|[blue]{Combats}[/blue] combats}, la [gold]Relique de cire[/gold] la plus à gauche fondra.",
     "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
     "rarity": "Relique d'Ancien",
     "pool": "shared",
@@ -598,19 +598,6 @@
     "compendium_order": 176
   },
   {
-    "id": "IVORY_TILE",
-    "name": "Carreau en ivoire",
-    "description": "Lorsque vous jouez une carte qui coûte [energy:3] ou plus, gagnez [energy:1].",
-    "description_raw": "Lorsque vous jouez une carte qui coûte {EnergyThreshold:energyIcons()} ou plus, gagnez {Energy:energyIcons()}.",
-    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
-    "rarity": "Relique rare",
-    "pool": "necrobinder",
-    "image_url": "/static/images/relics/ivory_tile.png",
-    "image_variants": null,
-    "rarity_key": "Rare",
-    "compendium_order": 86
-  },
-  {
     "id": "MEMBERSHIP_CARD",
     "name": "Carte de fidélité",
     "description": "[blue]50%[/blue] de remise sur tous les produits !",
@@ -634,7 +621,7 @@
     "image_url": "/static/images/relics/ruined_helmet.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 87
+    "compendium_order": 86
   },
   {
     "id": "INTIMIDATING_HELMET",
@@ -647,7 +634,7 @@
     "image_url": "/static/images/relics/intimidating_helmet.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 88
+    "compendium_order": 87
   },
   {
     "id": "VEXING_PUZZLEBOX",
@@ -660,7 +647,7 @@
     "image_url": "/static/images/relics/vexing_puzzlebox.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 89
+    "compendium_order": 88
   },
   {
     "id": "LEAFY_POULTICE",
@@ -699,11 +686,11 @@
     "image_url": "/static/images/relics/charons_ashes.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 90
+    "compendium_order": 89
   },
   {
     "id": "PAELS_FLESH",
-    "name": "Chair de Pael",
+    "name": "Chair de Paël",
     "description": "Gagnez [energy:1] supplémentaire au début de votre [blue]3ème[/blue] tour et au début de chaque tour suivant.",
     "description_raw": "Gagnez {Energy:energyIcons()} supplémentaire au début de votre [blue]3ème[/blue] tour et au début de chaque tour suivant.",
     "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
@@ -738,7 +725,7 @@
     "image_url": "/static/images/relics/chandelier.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 91
+    "compendium_order": 90
   },
   {
     "id": "BOWLER_HAT",
@@ -768,7 +755,7 @@
   },
   {
     "id": "VERY_HOT_COCOA",
-    "name": "Chcolat très chaud",
+    "name": "Chocolat très chaud",
     "description": "Démarrez chaque combat avec [blue][energy:4][/blue] supplémentaires.",
     "description_raw": "Démarrez chaque combat avec [blue]{Energy:energyIcons()}[/blue] supplémentaires.",
     "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
@@ -860,8 +847,8 @@
   {
     "id": "RUNIC_CAPACITOR",
     "name": "Condensateur runique",
-    "description": "Démarré chaque combat avec [blue]3[/blue] [gold]Emplacements d'Orbe[/gold] supplémentaires.",
-    "description_raw": "Démarré chaque combat avec [blue]{Repeat}[/blue] [gold]Emplacements d'Orbe[/gold] supplémentaires.",
+    "description": "Démarrez chaque combat avec [blue]3[/blue] [gold]Emplacements d'Orbe[/gold] supplémentaires.",
+    "description_raw": "Démarrez chaque combat avec [blue]{Repeat}[/blue] [gold]Emplacements d'Orbe[/gold] supplémentaires.",
     "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
     "rarity": "Relique du Marchand",
     "pool": "defect",
@@ -885,7 +872,7 @@
   },
   {
     "id": "PAELS_HORN",
-    "name": "Corne de Pael",
+    "name": "Corne de Paël",
     "description": "Lorsque vous obtenez cette relique, ajoutez [blue]2[/blue] [gold]Relaxations[/gold] à votre [gold]Deck[/gold].",
     "description_raw": "Lorsque vous obtenez cette relique, ajoutez [blue]2[/blue] [gold]Relaxations[/gold] à votre [gold]Deck[/gold].",
     "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
@@ -1024,7 +1011,7 @@
     "image_url": "/static/images/relics/ice_cream.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 92
+    "compendium_order": 91
   },
   {
     "id": "GOLD_PLATED_CABLES",
@@ -1054,7 +1041,7 @@
   },
   {
     "id": "PAELS_TOOTH",
-    "name": "Dent de Pael",
+    "name": "Dent de Paël",
     "description": "Lorsque vous obtenez cette relique, retirez [blue]5[/blue] cartes de votre [gold]Deck[/gold]. Après chaque combat, rajoutez-en [blue]1[/blue] aléatoirement ; elle est [gold]Améliorée[/gold].",
     "description_raw": "Lorsque vous obtenez cette relique, retirez [blue]{Cards}[/blue] {Cards:plural:carte|cartes} de votre [gold]Deck[/gold]. Après chaque combat, rajoutez-en [blue]1[/blue] aléatoirement ; elle est [gold]Améliorée[/gold].{CardTitles.StringValue:cond:\n\nCartes restantes:\n{}|}",
     "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
@@ -1076,7 +1063,7 @@
     "image_url": "/static/images/relics/razor_tooth.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 93
+    "compendium_order": 92
   },
   {
     "id": "DIVINE_DESTINY",
@@ -1216,7 +1203,7 @@
   },
   {
     "id": "PAELS_GROWTH",
-    "name": "Excroissance de Pael",
+    "name": "Excroissance de Paël",
     "description": "Lorsque vous obtenez cette relique, [gold]Envoûtez[/gold] une carte avec [purple]Clonage[/purple].",
     "description_raw": "Lorsque vous obtenez cette relique, [gold]Envoûtez[/gold] une carte avec [purple]{EnchantmentName}[/purple].",
     "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
@@ -1329,7 +1316,7 @@
     "image_url": "/static/images/relics/helical_dart.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 94
+    "compendium_order": 93
   },
   {
     "id": "BONE_FLUTE",
@@ -1485,7 +1472,7 @@
     "image_url": "/static/images/relics/girya.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 95
+    "compendium_order": 94
   },
   {
     "id": "GORGET",
@@ -1537,7 +1524,7 @@
     "image_url": "/static/images/relics/big_hat.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 96
+    "compendium_order": 95
   },
   {
     "id": "LARGE_CAPSULE",
@@ -1554,7 +1541,7 @@
   },
   {
     "id": "PAELS_CLAW",
-    "name": "Griffe de Pael",
+    "name": "Griffe de Paël",
     "description": "Lorsque vous obtenez cette relique, [gold]Envoûtez[/gold] toutes vos [gold]Défenses[/gold] avec [purple]Viscosité[/purple].",
     "description_raw": "Lorsque vous obtenez cette relique, [gold]Envoûtez[/gold] toutes vos [gold]Défenses[/gold] avec [purple]{EnchantmentName}[/purple].",
     "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
@@ -1628,7 +1615,7 @@
     "image_url": "/static/images/relics/paper_krane.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 97
+    "compendium_order": 96
   },
   {
     "id": "THROWING_AXE",
@@ -1680,7 +1667,7 @@
     "image_url": "/static/images/relics/gambling_chip.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 98
+    "compendium_order": 97
   },
   {
     "id": "PRISMATIC_GEM",
@@ -1732,7 +1719,7 @@
     "image_url": "/static/images/relics/kunai.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 99
+    "compendium_order": 98
   },
   {
     "id": "KUSARIGAMA",
@@ -1771,7 +1758,7 @@
     "image_url": "/static/images/relics/art_of_war.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 100
+    "compendium_order": 99
   },
   {
     "id": "THE_BOOT",
@@ -1797,7 +1784,7 @@
     "image_url": "/static/images/relics/unsettling_lamp.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 101
+    "compendium_order": 100
   },
   {
     "id": "LAVA_LAMP",
@@ -1823,7 +1810,7 @@
     "image_url": "/static/images/relics/demon_tongue.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 102
+    "compendium_order": 101
   },
   {
     "id": "LANTERN",
@@ -1853,7 +1840,7 @@
   },
   {
     "id": "PAELS_TEARS",
-    "name": "Larmes de Pael",
+    "name": "Larmes de Paël",
     "description": "Si vous terminez votre tour sans avoir dépensé toute votre [energy:1], gagnez [energy:2] supplémentaires au prochain tour.",
     "description_raw": "Si vous terminez votre tour sans avoir dépensé toute votre {energyPrefix:energyIcons(1)}, gagnez {Energy:energyIcons()} supplémentaires au prochain tour.",
     "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
@@ -1875,7 +1862,7 @@
     "image_url": "/static/images/relics/the_courier.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 103
+    "compendium_order": 102
   },
   {
     "id": "FAKE_MERCHANTS_RUG",
@@ -1931,7 +1918,7 @@
   },
   {
     "id": "PAELS_LEGION",
-    "name": "Légion de Pael",
+    "name": "Légion de Paël",
     "description": "Double l'[gold]Armure[/gold] reçue d'une carte, puis s'endort pendant [blue]2[/blue] tours.",
     "description_raw": "Double l'[gold]Armure[/gold] reçue d'une carte, puis s'endort pendant [blue]{Turns}[/blue] {Turns:plural:tour|tours}.",
     "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
@@ -1953,7 +1940,7 @@
     "image_url": "/static/images/relics/mummified_hand.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 104
+    "compendium_order": 103
   },
   {
     "id": "MANGO",
@@ -1966,7 +1953,7 @@
     "image_url": "/static/images/relics/mango.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 105
+    "compendium_order": 104
   },
   {
     "id": "FAKE_MANGO",
@@ -2057,7 +2044,7 @@
     "image_url": "/static/images/relics/bookmark.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 106
+    "compendium_order": 105
   },
   {
     "id": "WAR_HAMMER",
@@ -2148,7 +2135,7 @@
     "image_url": "/static/images/relics/mini_regent.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 107
+    "compendium_order": 106
   },
   {
     "id": "TINY_MAILBOX",
@@ -2213,7 +2200,7 @@
     "image_url": "/static/images/relics/pocketwatch.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 108
+    "compendium_order": 107
   },
   {
     "id": "PRAYER_WHEEL",
@@ -2226,7 +2213,7 @@
     "image_url": "/static/images/relics/prayer_wheel.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 109
+    "compendium_order": 108
   },
   {
     "id": "METRONOME",
@@ -2239,7 +2226,7 @@
     "image_url": "/static/images/relics/metronome.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 110
+    "compendium_order": 109
   },
   {
     "id": "NEW_LEAF",
@@ -2369,7 +2356,7 @@
     "image_url": "/static/images/relics/meat_on_the_bone.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 111
+    "compendium_order": 110
   },
   {
     "id": "GLITTER",
@@ -2452,8 +2439,8 @@
   {
     "id": "MASSIVE_SCROLL",
     "name": "Parchemin énorme",
-    "description": "Lorsque vous obtenez cette relique, choisissez [blue]1[/blue] [gold]Carte Incolore Multijoueur[/gold] parmi [blue]3[/blue] à ajouter à votre [gold]Deck[/gold].",
-    "description_raw": "Lorsque vous obtenez cette relique, choisissez [blue]1[/blue] [gold]Carte Incolore Multijoueur[/gold] parmi [blue]3[/blue] à ajouter à votre [gold]Deck[/gold].",
+    "description": "Lorsque vous obtenez cette relique, choisissez [blue]1[/blue] [gold]Carte Multijoueur[/gold] parmi [blue]3[/blue] à ajouter à votre [gold]Deck[/gold].",
+    "description_raw": "Lorsque vous obtenez cette relique, choisissez [blue]1[/blue] [gold]Carte Multijoueur[/gold] parmi [blue]3[/blue] à ajouter à votre [gold]Deck[/gold].",
     "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
     "rarity": "Relique d'Ancien",
     "pool": "shared",
@@ -2486,7 +2473,7 @@
     "image_url": "/static/images/relics/shovel.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 112
+    "compendium_order": 111
   },
   {
     "id": "PENDULUM",
@@ -2681,7 +2668,7 @@
     "image_url": "/static/images/relics/power_cell.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 113
+    "compendium_order": 112
   },
   {
     "id": "STURDY_CLAMP",
@@ -2694,7 +2681,7 @@
     "image_url": "/static/images/relics/sturdy_clamp.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 114
+    "compendium_order": 113
   },
   {
     "id": "WONGO_CUSTOMER_APPRECIATION_BADGE",
@@ -2720,7 +2707,7 @@
     "image_url": "/static/images/relics/game_piece.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 115
+    "compendium_order": 114
   },
   {
     "id": "OLD_COIN",
@@ -2733,7 +2720,7 @@
     "image_url": "/static/images/relics/old_coin.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 116
+    "compendium_order": 115
   },
   {
     "id": "PLANISPHERE",
@@ -2868,8 +2855,8 @@
   {
     "id": "LEAD_PAPERWEIGHT",
     "name": "Presse-papier en plomb",
-    "description": "Lorsque vous obtenez cette relique, choisissez [blue]1[/blue] carte Incolore parmi [blue]2[/blue] à ajoutez à votre [gold]Deck[/gold].",
-    "description_raw": "Lorsque vous obtenez cette relique, choisissez [blue]1[/blue] carte Incolore parmi [blue]2[/blue] à ajoutez à votre [gold]Deck[/gold].",
+    "description": "Lorsque vous obtenez cette relique, choisissez [blue]1[/blue] carte Incolore parmi [blue]2[/blue] à ajouter à votre [gold]Deck[/gold].",
+    "description_raw": "Lorsque vous obtenez cette relique, choisissez [blue]1[/blue] carte Incolore parmi [blue]2[/blue] à ajouter à votre [gold]Deck[/gold].",
     "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
     "rarity": "Relique d'Ancien",
     "pool": "shared",
@@ -2889,7 +2876,7 @@
     "image_url": "/static/images/relics/emotion_chip.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 117
+    "compendium_order": 116
   },
   {
     "id": "CENTENNIAL_PUZZLE",
@@ -2928,7 +2915,7 @@
     "image_url": "/static/images/relics/orange_dough.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 118
+    "compendium_order": 117
   },
   {
     "id": "LUNAR_PASTRY",
@@ -2941,7 +2928,7 @@
     "image_url": "/static/images/relics/lunar_pastry.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 119
+    "compendium_order": 118
   },
   {
     "id": "FESTIVE_POPPER",
@@ -2967,7 +2954,7 @@
     "image_url": "/static/images/relics/lizard_tail.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 120
+    "compendium_order": 119
   },
   {
     "id": "VELVET_CHOKER",
@@ -3024,8 +3011,8 @@
   {
     "id": "BAG_OF_MARBLES",
     "name": "Sac de billes",
-    "description": "Au début de chaque combat, appliquez [gold]Vulnérable[/gold] ([blue]1[/blue]) sur TOUS les ennemis.",
-    "description_raw": "Au début de chaque combat, appliquez [gold]Vulnérable[/gold] ([blue]{VulnerablePower}[/blue]) sur TOUS les ennemis.",
+    "description": "Au début de chaque combat, appliquez [gold]Vulnérable[/gold] ([blue]1[/blue]) sur TOUS les ennemis.",
+    "description_raw": "Au début de chaque combat, appliquez [gold]Vulnérable[/gold] ([blue]{VulnerablePower}[/blue]) sur TOUS les ennemis.",
     "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
     "rarity": "Relique inhabituelle",
     "pool": "shared",
@@ -3062,7 +3049,7 @@
   },
   {
     "id": "PAELS_BLOOD",
-    "name": "Sang de Pael",
+    "name": "Sang de Paël",
     "description": "Au début de votre tour, piochez [blue]1[/blue] carte supplémentaire.",
     "description_raw": "Au début de votre tour, piochez [blue]{Cards}[/blue] {Cards:plural:carte supplémentaire|cartes supplémentaires}.",
     "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
@@ -3201,7 +3188,7 @@
     "image_url": "/static/images/relics/shuriken.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 121
+    "compendium_order": 120
   },
   {
     "id": "TANXS_WHISTLE",
@@ -3232,8 +3219,8 @@
   {
     "id": "BRIMSTONE",
     "name": "Soufre",
-    "description": "Au début de votre tour, gagnez [blue]2[/blue] de [gold]Force[/gold] ; TOUS les ennemis gagnent [blue]1[/blue] de [gold]Force[/gold].",
-    "description_raw": "Au début de votre tour, gagnez [blue]{SelfStrength}[/blue] de [gold]Force[/gold] ; TOUS les ennemis gagnent [blue]{EnemyStrength}[/blue] de [gold]Force[/gold].",
+    "description": "Au début de votre tour, vous gagnez [blue]2[/blue] de [gold]Force[/gold] et TOUS les ennemis gagnent [blue]1[/blue] de [gold]Force[/gold].",
+    "description_raw": "Au début de votre tour, vous gagnez [blue]{SelfStrength}[/blue] de [gold]Force[/gold] et TOUS les ennemis gagnent [blue]{EnemyStrength}[/blue] de [gold]Force[/gold].",
     "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
     "rarity": "Relique du Marchand",
     "pool": "ironclad",
@@ -3279,7 +3266,7 @@
     "image_url": "/static/images/relics/white_beast_statue.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 122
+    "compendium_order": 121
   },
   {
     "id": "DINGY_RUG",
@@ -3396,7 +3383,7 @@
     "image_url": "/static/images/relics/tungsten_rod.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 123
+    "compendium_order": 122
   },
   {
     "id": "TINGSHA",
@@ -3448,7 +3435,7 @@
     "image_url": "/static/images/relics/unceasing_top.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 124
+    "compendium_order": 123
   },
   {
     "id": "NEOWS_TORMENT",
@@ -3488,6 +3475,19 @@
     "image_variants": null,
     "rarity_key": "Shop",
     "compendium_order": 159
+  },
+  {
+    "id": "IVORY_TILE",
+    "name": "Tuile en ivoire",
+    "description": "Lorsque vous jouez une carte qui coûte [energy:3] ou plus, gagnez [energy:1].",
+    "description_raw": "Lorsque vous jouez une carte qui coûte {EnergyThreshold:energyIcons()} ou plus, gagnez {Energy:energyIcons()}.",
+    "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
+    "rarity": "Relique rare",
+    "pool": "necrobinder",
+    "image_url": "/static/images/relics/ivory_tile.png",
+    "image_variants": null,
+    "rarity_key": "Rare",
+    "compendium_order": 124
   },
   {
     "id": "VAJRA",
@@ -3596,8 +3596,8 @@
   {
     "id": "SWORD_OF_JADE",
     "name": "Épée de jade",
-    "description": "Démarrez chaque combat avec [blue]3[/blue] de [gold]Strength[/gold].",
-    "description_raw": "Démarrez chaque combat avec [blue]{StrengthPower}[/blue] de [gold]Strength[/gold].",
+    "description": "Démarrez chaque combat avec [blue]3[/blue] de [gold]Force[/gold].",
+    "description_raw": "Démarrez chaque combat avec [blue]{StrengthPower}[/blue] de [gold]Force[/gold].",
     "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",
     "rarity": "Relique d'événement",
     "pool": "shared",
@@ -3660,7 +3660,7 @@
   },
   {
     "id": "PAELS_EYE",
-    "name": "Œil de Pael",
+    "name": "Œil de Paël",
     "description": "Lorsque vous terminez votre tour sans avoir joué de cartes pour la première fois dans un combat, [gold]Épuisez[/gold] votre [gold]Main[/gold], et jouez un tour supplémentaire.",
     "description_raw": "Lorsque vous terminez votre tour sans avoir joué de cartes pour la première fois dans un combat, [gold]Épuisez[/gold] votre [gold]Main[/gold], et jouez un tour supplémentaire.",
     "flavor": "[red]Les détails de cette relique seront révélés plus tard...[/red]",

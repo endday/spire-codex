@@ -2,7 +2,7 @@
   {
     "id": "ATTACK",
     "name": "Agresja",
-    "description": "Ten przeciwnik zamierza zadać {IsMultiplayer:wszystkim |}[blue]{Damage}[/blue] pkt. [gold]obrażeń[/gold]{Repeat:plural(en):| [blue]{}[/blue] razy}.",
+    "description": "",
     "image_url": "/static/images/intents/attack.png"
   },
   {

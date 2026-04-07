@@ -35,7 +35,7 @@
   {
     "id": "FAVORED",
     "name": "Privilegio",
-    "description": "L'attacco di questa carta infligge danni doppi.",
+    "description": "L'attacco di questa carta infligge danno doppio.",
     "description_raw": null,
     "extra_card_text": null,
     "card_type": "Attack",

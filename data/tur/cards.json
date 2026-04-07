@@ -400,8 +400,8 @@
   {
     "id": "BURST",
     "name": "Ani Hamle",
-    "description": "Bu tur oynayacağın sonraki  Beceri kartın tekrar oynanır.",
-    "description_raw": "Bu tur oynayacağın {Skills:plural:sonraki|sonraki} {IfUpgraded:show: 2} Beceri kartın tekrar oynanır.",
+    "description": "Bu tur oynayacağın sonraki Beceri kartın tekrar oynanır.",
+    "description_raw": "Bu tur oynayacağın {Skills:plural:sonraki|sonraki {:diff()}} Beceri kartın tekrar oynanır.",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -429,7 +429,7 @@
     "image_url": "/static/images/cards/burst.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Bu tur oynayacağın sonraki  2 Beceri kartın tekrar oynanır.",
+    "upgrade_description": "Bu tur oynayacağın sonraki 2 Beceri kartın tekrar oynanır.",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 103
@@ -10509,8 +10509,8 @@
   {
     "id": "SWORD_BOOMERANG",
     "name": "Kılıç Bumerangı",
-    "description": "Rastgele bir düşmana 3 kez 3 hasar ver.",
-    "description_raw": "Rastgele bir düşmana {Repeat:diff()} kez {Damage:diff()} hasar ver.",
+    "description": "3 kez rastgele bir düşmana 3 hasar ver.",
+    "description_raw": "{Repeat:diff()} kez rastgele bir düşmana {Damage:diff()} hasar ver.",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -10539,7 +10539,7 @@
     "image_url": "/static/images/cards/sword_boomerang.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Rastgele bir düşmana 4 kez 3 hasar ver.",
+    "upgrade_description": "4 kez rastgele bir düşmana 3 hasar ver.",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 73
@@ -12422,8 +12422,8 @@
   {
     "id": "RIP_AND_TEAR",
     "name": "Parçalayıp Kopar",
-    "description": "Rastgele bir düşmana iki kez 7 hasar ver.",
-    "description_raw": "Rastgele bir düşmana iki kez {Damage:diff()} hasar ver.",
+    "description": "İki kez rastgele bir düşmana 7 hasar ver.",
+    "description_raw": "İki kez rastgele bir düşmana {Damage:diff()} hasar ver.",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -12451,7 +12451,7 @@
     "image_url": "/static/images/cards/rip_and_tear.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Rastgele bir düşmana iki kez 9 hasar ver.",
+    "upgrade_description": "İki kez rastgele bir düşmana 9 hasar ver.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 542
@@ -14592,8 +14592,8 @@
   {
     "id": "BOUNCING_FLASK",
     "name": "Seken Şişe",
-    "description": "Rastgele bir düşmana 3 kez 3 [gold]Zehir[/gold] uygula.",
-    "description_raw": "Rastgele bir düşmana {Repeat:diff()} kez {PoisonPower:diff()} [gold]Zehir[/gold] uygula.",
+    "description": "3 kez rastgele bir düşmana 3 [gold]Zehir[/gold] uygula.",
+    "description_raw": "{Repeat:diff()} kez rastgele bir düşmana {PoisonPower:diff()} [gold]Zehir[/gold] uygula.",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -14629,7 +14629,7 @@
     "image_url": "/static/images/cards/bouncing_flask.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Rastgele bir düşmana 4 kez 3 [gold]Zehir[/gold] uygula.",
+    "upgrade_description": "4 kez rastgele bir düşmana 3 [gold]Zehir[/gold] uygula.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 100
@@ -14637,8 +14637,8 @@
   {
     "id": "RICOCHET",
     "name": "Sekerek Vur",
-    "description": "Rastgele bir düşmana 4 kez 3 hasar ver.",
-    "description_raw": "Rastgele bir düşmana {Repeat:diff()} kez {Damage:diff()} hasar ver.",
+    "description": "4 kez rastgele bir düşmana 3 hasar ver.",
+    "description_raw": "{Repeat:diff()} kez rastgele bir düşmana {Damage:diff()} hasar ver.",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -14669,7 +14669,7 @@
     "image_url": "/static/images/cards/ricochet.png",
     "beta_image_url": "/static/images/cards/beta/ricochet.png",
     "type_variants": null,
-    "upgrade_description": "Rastgele bir düşmana 5 kez 3 hasar ver.",
+    "upgrade_description": "5 kez rastgele bir düşmana 3 hasar ver.",
     "type_key": "Attack",
     "rarity_key": "Common",
     "keywords_key": [
@@ -14844,8 +14844,8 @@
   {
     "id": "VOLLEY",
     "name": "Seri Atış",
-    "description": "Rastgele bir düşmana X kez 10 hasar ver.",
-    "description_raw": "Rastgele bir düşmana X kez {Damage:diff()} hasar ver.",
+    "description": "X kez rastgele bir düşmana 10 hasar ver.",
+    "description_raw": "X kez rastgele bir düşmana {Damage:diff()} hasar ver.",
     "cost": 0,
     "is_x_cost": true,
     "is_x_star_cost": null,
@@ -14873,7 +14873,7 @@
     "image_url": "/static/images/cards/volley.png",
     "beta_image_url": "/static/images/cards/beta/volley.png",
     "type_variants": null,
-    "upgrade_description": "Rastgele bir düşmana X kez 14 hasar ver.",
+    "upgrade_description": "X kez rastgele bir düşmana 14 hasar ver.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 502
@@ -19616,8 +19616,8 @@
   {
     "id": "STARDUST",
     "name": "Yıldız Tozu",
-    "description": "Rastgele bir düşmana X kez 5 hasar ver.",
-    "description_raw": "Rastgele bir düşmana X kez {Damage:diff()} hasar ver.",
+    "description": "X kez rastgele bir düşmana 5 hasar ver.",
+    "description_raw": "X kez rastgele bir düşmana {Damage:diff()} hasar ver.",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": true,
@@ -19645,7 +19645,7 @@
     "image_url": "/static/images/cards/stardust.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Rastgele bir düşmana X kez 7 hasar ver.",
+    "upgrade_description": "X kez rastgele bir düşmana 7 hasar ver.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 251
@@ -21749,8 +21749,8 @@
   {
     "id": "DEATHS_DOOR",
     "name": "Ölümün Eşiği",
-    "description": "6 [gold]Block[/gold] elde et.\nEğer bu tur [gold]Kader[/gold] uyguladıysan 2 kez daha [gold]Blok[/gold] elde et.",
-    "description_raw": "{Block:diff()} [gold]Block[/gold] elde et.\nEğer bu tur [gold]Kader[/gold] uyguladıysan {Repeat:diff()} {Repeat:plural:kez|kez} daha [gold]Blok[/gold] elde et.",
+    "description": "6 [gold]Blok[/gold] elde et.\nEğer bu tur [gold]Kader[/gold] uyguladıysan 2 kez daha [gold]Blok[/gold] elde et.",
+    "description_raw": "{Block:diff()} [gold]Blok[/gold] elde et.\nEğer bu tur [gold]Kader[/gold] uyguladıysan {Repeat:diff()} {Repeat:plural:kez|kez} daha [gold]Blok[/gold] elde et.",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -21779,7 +21779,7 @@
     "image_url": "/static/images/cards/deaths_door.png",
     "beta_image_url": "/static/images/cards/beta/deaths_door.png",
     "type_variants": null,
-    "upgrade_description": "7 [gold]Block[/gold] elde et.\nEğer bu tur [gold]Kader[/gold] uyguladıysan 2 kez daha [gold]Blok[/gold] elde et.",
+    "upgrade_description": "7 [gold]Blok[/gold] elde et.\nEğer bu tur [gold]Kader[/gold] uyguladıysan 2 kez daha [gold]Blok[/gold] elde et.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 277

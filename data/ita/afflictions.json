@@ -29,9 +29,9 @@
   },
   {
     "id": "RINGING",
-    "name": "Vibrazione",
+    "name": "Rintocco",
     "description": "Puoi giocare solo [blue]1[/blue] carta in questo turno.",
-    "extra_card_text": "Vibrazione",
+    "extra_card_text": "Rintocco.",
     "is_stackable": false
   },
   {

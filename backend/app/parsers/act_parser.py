@@ -3,8 +3,7 @@ import json
 import re
 from pathlib import Path
 
-BASE = Path(__file__).resolve().parents[3]
-DECOMPILED = BASE / "extraction" / "decompiled"
+from parser_paths import BASE, DECOMPILED, loc_dir as _loc_dir, data_dir as _data_dir
 ACTS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.Acts"
 
 
@@ -71,8 +70,8 @@ def parse_all_acts(loc_dir: Path) -> list[dict]:
 
 
 def main(lang: str = "eng"):
-    loc_dir = BASE / "extraction" / "raw" / "localization" / lang
-    output_dir = BASE / "data" / lang
+    loc_dir = _loc_dir(lang)
+    output_dir = _data_dir(lang)
     output_dir.mkdir(parents=True, exist_ok=True)
     acts = parse_all_acts(loc_dir)
     with open(output_dir / "acts.json", "w", encoding="utf-8") as f:

@@ -2745,7 +2745,7 @@
       },
       {
         "id": "SWIPE",
-        "name": "Zamach",
+        "name": "Kradzież",
         "intent": "Attack",
         "damage": {
           "normal": 13,
@@ -6434,7 +6434,7 @@
       },
       {
         "id": "HARDENING_STRIKE",
-        "name": "Strawrdniałe uderzenie",
+        "name": "Stwardniałe uderzenie",
         "intent": "Attack + Defend",
         "block": 6,
         "damage": {

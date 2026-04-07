@@ -3,7 +3,7 @@ import json
 import re
 from pathlib import Path
 
-BASE = Path(__file__).resolve().parents[3]
+from parser_paths import loc_dir as _loc_dir, data_dir as _data_dir
 
 
 def load_localization(loc_dir: Path) -> dict:
@@ -35,8 +35,8 @@ def parse_all_ascensions(loc_dir: Path) -> list[dict]:
 
 
 def main(lang: str = "eng"):
-    loc_dir = BASE / "extraction" / "raw" / "localization" / lang
-    output_dir = BASE / "data" / lang
+    loc_dir = _loc_dir(lang)
+    output_dir = _data_dir(lang)
     output_dir.mkdir(parents=True, exist_ok=True)
     ascensions = parse_all_ascensions(loc_dir)
     with open(output_dir / "ascensions.json", "w", encoding="utf-8") as f:

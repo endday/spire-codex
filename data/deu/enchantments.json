@@ -46,7 +46,7 @@
   {
     "id": "GLAM",
     "name": "Schick",
-    "description": "Diese Karte hat einmal pro Kampf [gold]Erneut spielen[/gold].",
+    "description": "Diese Karte hat einmal pro Kampf [gold]Erneut Spielen[/gold].",
     "description_raw": null,
     "extra_card_text": null,
     "card_type": null,
@@ -189,7 +189,7 @@
   {
     "id": "SPIRAL",
     "name": "Spirale",
-    "description": "Diese Karte bekommt [gold]Erneut spielen[/gold] [blue]1[/blue].",
+    "description": "Diese Karte bekommt [gold]Erneut Spielen[/gold] [blue]1[/blue].",
     "description_raw": null,
     "extra_card_text": null,
     "card_type": null,

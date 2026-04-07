@@ -314,7 +314,7 @@
   },
   {
     "id": "ENTOMANCER_ELITE",
-    "name": "Entomancien",
+    "name": "Apicultueur",
     "room_type": "Elite",
     "is_weak": false,
     "act": "Act 2 - Hive",
@@ -325,7 +325,7 @@
         "name": "Entomancien"
       }
     ],
-    "loss_text": "The adventurer a été dardé{characterGender:choose(feminine):e|} à mort par un [gold]Entomancien[/gold]."
+    "loss_text": "The adventurer a été dardé{characterGender:choose(feminine):e|} à mort par un [gold]Apicultueur[/gold]."
   },
   {
     "id": "EXOSKELETONS_NORMAL",
@@ -1012,7 +1012,7 @@
     "monsters": [
       {
         "id": "SEWER_CLAM",
-        "name": "Palourde d'égoût"
+        "name": "Palourde d'égout"
       }
     ],
     "loss_text": "The adventurer s'est fait engloutir par une [gold]Palourde des égoûts[/gold]."
@@ -1359,7 +1359,7 @@
         "name": "L'Égaré"
       }
     ],
-    "loss_text": "Un [gold]Perdu et Oublié[/gold] ont dépossédé The adventurer de sa volonté de vivre."
+    "loss_text": "Un [gold]Perdu et Oublié[/gold] a dépossédé The adventurer de sa volonté de vivre."
   },
   {
     "id": "THE_OBSCURA_NORMAL",
@@ -1506,7 +1506,7 @@
   },
   {
     "id": "VANTOM_BOSS",
-    "name": "Vantome",
+    "name": "Vantôme",
     "room_type": "Boss",
     "is_weak": false,
     "act": "Act 1 - Overgrowth",
@@ -1514,10 +1514,10 @@
     "monsters": [
       {
         "id": "VANTOM",
-        "name": "Vantome"
+        "name": "Vantôme"
       }
     ],
-    "loss_text": "The adventurer a été transformé{characterGender:choose(feminine):e|} en Encrelet par le [gold]Vantome[/gold]."
+    "loss_text": "The adventurer a été transformé{characterGender:choose(feminine):e|} en Encrelet par le [gold]Vantôme[/gold]."
   },
   {
     "id": "VINE_SHAMBLER_NORMAL",

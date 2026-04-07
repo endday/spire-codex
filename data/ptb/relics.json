@@ -931,8 +931,8 @@
   {
     "id": "VERY_HOT_COCOA",
     "name": "Chocolate Quentíssimo",
-    "description": "Inicie cada combate com uma [blue][energy:4][/blue] adicional.",
-    "description_raw": "Inicie cada combate com uma [blue]{Energy:energyIcons()}[/blue] adicional.",
+    "description": "Inicie cada combate com [blue][energy:4][/blue] adicionais.",
+    "description_raw": "Inicie cada combate com [blue]{Energy:energyIcons()}[/blue] adicionais.",
     "flavor": "[red]Detalhes sobre esta relíquia serão revelados no futuro...[/red]",
     "rarity": "Relíquia Ancestral",
     "pool": "shared",
@@ -2790,8 +2790,8 @@
   {
     "id": "MASSIVE_SCROLL",
     "name": "Pergaminho Extenso",
-    "description": "Ao coletar esta relíquia, escolha [blue]1[/blue] entre [blue]3[/blue] [gold]Cartas Incolores de Multijogador[/gold] para adicionar ao seu [gold]Baralho[/gold].",
-    "description_raw": "Ao coletar esta relíquia, escolha [blue]1[/blue] entre [blue]3[/blue] [gold]Cartas Incolores de Multijogador[/gold] para adicionar ao seu [gold]Baralho[/gold].",
+    "description": "Ao coletar esta relíquia, escolha [blue]1[/blue] entre [blue]3[/blue] [gold]Cartas de Multijogador[/gold] para adicionar ao seu [gold]Baralho[/gold].",
+    "description_raw": "Ao coletar esta relíquia, escolha [blue]1[/blue] entre [blue]3[/blue] [gold]Cartas de Multijogador[/gold] para adicionar ao seu [gold]Baralho[/gold].",
     "flavor": "[red]Detalhes sobre esta relíquia serão revelados no futuro...[/red]",
     "rarity": "Relíquia Ancestral",
     "pool": "shared",
@@ -3336,8 +3336,8 @@
   {
     "id": "ICE_CREAM",
     "name": "Sorvete",
-    "description": "Energia agora é conservada entre turno.",
-    "description_raw": "Energia agora é conservada entre turno.",
+    "description": "Energia agora é conservada entre turnos.",
+    "description_raw": "Energia agora é conservada entre turnos.",
     "flavor": "[red]Detalhes sobre esta relíquia serão revelados no futuro...[/red]",
     "rarity": "Relíquia Rara",
     "pool": "shared",

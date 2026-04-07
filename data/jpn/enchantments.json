@@ -23,7 +23,7 @@
   },
   {
     "id": "CORRUPTED",
-    "name": "腐敗",
+    "name": "蝕み",
     "description": "ダメージが[blue]50%[/blue]増加するが、HPを[blue]2[/blue]失う。",
     "description_raw": null,
     "extra_card_text": "HPを2失う。",
@@ -177,7 +177,7 @@
   },
   {
     "id": "SOWN",
-    "name": "種まき",
+    "name": "芽吹き",
     "description": "各戦闘で初めてプレイした時、[energy:X]を得る。",
     "description_raw": "各戦闘で初めてプレイした時、{Amount:energyIcons()}を得る。",
     "extra_card_text": "[energy:X]を得る。",
@@ -232,7 +232,7 @@
   },
   {
     "id": "VIGOROUS",
-    "name": "活力",
+    "name": "活気",
     "description": "各戦闘で初めてプレイした時、[blue]X[/blue]の追加ダメージを与える。",
     "description_raw": "各戦闘で初めてプレイした時、[blue]{Amount}[/blue]の追加ダメージを与える。",
     "extra_card_text": null,

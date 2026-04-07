@@ -573,7 +573,7 @@
     "story_id": "Defect",
     "sort_order": 180103,
     "description": "En el [orange]desguace[/orange], el [blue]Defectuoso[/blue] reflexionaba sobre su destino y su propósito.\n\n[sine]¿Acaso desempeñar decentemente varias funciones no es deseable? ¿Todos tenemos que sobresalir en una función específica?[/sine] Mientras procesaba estas preguntas...\n\n«¡Hola!», le saludó otro constructo.\n«¡Hola!», respondió el [blue]Defectuoso[/blue].\n«¡Me llamo [aqua]Fallo[/aqua]!»",
-    "unlock_info": "Has completado el [gold]Acto[/gold] [blue]2[/blue] con el [blue]Defectuoso[/blue] para revelar esta Época.",
+    "unlock_info": "Completa el [gold]Acto[/gold] [blue]2[/blue] con el [blue]Defectuoso[/blue] para revelar esta Época.",
     "unlock_text": null,
     "unlocks_cards": [],
     "unlocks_relics": [
@@ -945,7 +945,7 @@
     "story_id": "Tales_From_The_Spire",
     "sort_order": 273404,
     "description": "Antaño los [gold]Muelles Sombríos[/gold] fueron la fuente de [blue]agua limpia[/blue] para toda la [gold]Torre[/gold], pero cayeron en el olvido.\nDe sus profundidades emergieron [red][jitter]criaturas marinas agresivas[/jitter][/red] y se asentaron en los pasadizos de la Torre.",
-    "unlock_info": "Elimina a los [blue]3[/blue] Jefes de la [green]Espesura[/green] para revelar esta Época.",
+    "unlock_info": "Se desbloquea acumulando puntos.",
     "unlock_text": "Has desbloqueado los [blue]Muelles Sombríos[/blue], una zona alternativa del Acto 1.",
     "unlocks_cards": [],
     "unlocks_relics": [],

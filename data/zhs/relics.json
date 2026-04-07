@@ -67,8 +67,8 @@
   {
     "id": "BOOKMARK",
     "name": "书签",
-    "description": "在每个回合结束时，将随机一张[gold]被保留[/gold]的牌，直到被打出前耗能减少[blue]1[/blue]。",
-    "description_raw": "在每个回合结束时，将随机一张[gold]被保留[/gold]的牌，直到被打出前耗能减少[blue]1[/blue]。",
+    "description": "每回合结束时，随机一张被[gold]保留[/gold]的牌在被打出前的耗能减少[blue]1[/blue]。",
+    "description_raw": "每回合结束时，随机一张被[gold]保留[/gold]的牌在被打出前的耗能减少[blue]1[/blue]。",
     "flavor": "[red]这个遗物的细节将在未来揭晓……[/red]",
     "rarity": "稀有遗物",
     "pool": "necrobinder",
@@ -93,8 +93,8 @@
   {
     "id": "GLITTER",
     "name": "亮片",
-    "description": "为所有的卡牌奖励[gold]附魔[/gold]：[purple]华彩[/purple]。",
-    "description_raw": "为所有的卡牌奖励[gold]附魔[/gold]：[purple]华彩[/purple]。",
+    "description": "为之后的所有卡牌奖励[gold]附魔[/gold]：[purple]华彩[/purple]。",
+    "description_raw": "为之后的所有卡牌奖励[gold]附魔[/gold]：[purple]华彩[/purple]。",
     "flavor": "[red]这个遗物的细节将在未来揭晓……[/red]",
     "rarity": "先古遗物",
     "pool": "shared",
@@ -312,19 +312,6 @@
     "compendium_order": 41
   },
   {
-    "id": "BING_BONG",
-    "name": "冰梆",
-    "description": "每当你往[gold]牌组[/gold]中增添卡牌时，都将额外添加一张相同的牌。",
-    "description_raw": "每当你往[gold]牌组[/gold]中增添卡牌时，都将额外添加一张相同的牌。",
-    "flavor": "[red]这个遗物的细节将在未来揭晓……[/red]",
-    "rarity": "事件遗物",
-    "pool": "shared",
-    "image_url": "/static/images/relics/bing_bong.png",
-    "image_variants": null,
-    "rarity_key": "Event",
-    "compendium_order": 253
-  },
-  {
     "id": "ICE_CREAM",
     "name": "冰淇淋",
     "description": "多余的能量可以留到下一回合。",
@@ -530,7 +517,7 @@
     "image_url": "/static/images/relics/history_course.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 254
+    "compendium_order": 253
   },
   {
     "id": "STONE_CALENDAR",
@@ -595,7 +582,7 @@
     "image_url": "/static/images/relics/the_boot.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 255
+    "compendium_order": 254
   },
   {
     "id": "ARCHAIC_TOOTH",
@@ -634,7 +621,7 @@
     "image_url": "/static/images/relics/fake_venerable_tea_set.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 256
+    "compendium_order": 255
   },
   {
     "id": "OLD_COIN",
@@ -712,7 +699,7 @@
     "image_url": "/static/images/relics/fake_merchants_rug.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 257
+    "compendium_order": 256
   },
   {
     "id": "SIGNET_RING",
@@ -829,7 +816,7 @@
     "image_url": "/static/images/relics/big_mushroom.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 258
+    "compendium_order": 257
   },
   {
     "id": "CAULDRON",
@@ -894,7 +881,7 @@
     "image_url": "/static/images/relics/chosen_cheese.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 259
+    "compendium_order": 258
   },
   {
     "id": "VELVET_CHOKER",
@@ -959,7 +946,7 @@
     "image_url": "/static/images/relics/fake_orichalcum.png",
     "image_variants": null,
     "rarity_key": "Event",
-    "compendium_order": 260
+    "compendium_order": 259
   },
   {
     "id": "ARCANE_SCROLL",
@@ -1012,6 +999,19 @@
     "image_variants": null,
     "rarity_key": "Ancient",
     "compendium_order": 191
+  },
+  {
+    "id": "BING_BONG",
+    "name": "宾邦",
+    "description": "每当你往[gold]牌组[/gold]中增添卡牌时，都将额外添加一张相同的牌。",
+    "description_raw": "每当你往[gold]牌组[/gold]中增添卡牌时，都将额外添加一张相同的牌。",
+    "flavor": "[red]这个遗物的细节将在未来揭晓……[/red]",
+    "rarity": "事件遗物",
+    "pool": "shared",
+    "image_url": "/static/images/relics/bing_bong.png",
+    "image_variants": null,
+    "rarity_key": "Event",
+    "compendium_order": 260
   },
   {
     "id": "SMALL_CAPSULE",
@@ -1133,8 +1133,8 @@
   {
     "id": "MASSIVE_SCROLL",
     "name": "巨大卷轴",
-    "description": "拾起时，从[blue]3[/blue]张[gold]多人游戏无色牌[/gold]中选择[blue]1[/blue]张加入你的[gold]牌组[/gold]。",
-    "description_raw": "拾起时，从[blue]3[/blue]张[gold]多人游戏无色牌[/gold]中选择[blue]1[/blue]张加入你的[gold]牌组[/gold]。",
+    "description": "拾起时，从[blue]3[/blue]张[gold]多人游戏牌[/gold]中选择[blue]1[/blue]张加入你的[gold]牌组[/gold]。",
+    "description_raw": "拾起时，从[blue]3[/blue]张[gold]多人游戏牌[/gold]中选择[blue]1[/blue]张加入你的[gold]牌组[/gold]。",
     "flavor": "[red]这个遗物的细节将在未来揭晓……[/red]",
     "rarity": "先古遗物",
     "pool": "shared",
@@ -1380,8 +1380,8 @@
   {
     "id": "NINJA_SCROLL",
     "name": "忍术卷轴",
-    "description": "",
-    "description_raw": "",
+    "description": "每场战斗开始时，将[blue]3[/blue]张[gold]小刀[/gold]加入你的[gold]手牌[/gold]。",
+    "description_raw": "每场战斗开始时，将[blue]{Shivs}[/blue]张[gold]小刀[/gold]加入你的[gold]手牌[/gold]。",
     "flavor": "[red]这个遗物的细节将在未来揭晓……[/red]",
     "rarity": "商店遗物",
     "pool": "silent",
@@ -1573,6 +1573,19 @@
     "compendium_order": 22
   },
   {
+    "id": "MR_STRUGGLES",
+    "name": "抱抱先生",
+    "description": "在你的回合开始时，对所有敌人造成等量于当前回合数的伤害。",
+    "description_raw": "在你的回合开始时，对所有敌人造成等量于当前回合数的伤害。",
+    "flavor": "[red]这个遗物的细节将在未来揭晓……[/red]",
+    "rarity": "事件遗物",
+    "pool": "shared",
+    "image_url": "/static/images/relics/mr_struggles.png",
+    "image_variants": null,
+    "rarity_key": "Event",
+    "compendium_order": 268
+  },
+  {
     "id": "PARRYING_SHIELD",
     "name": "招架盾",
     "description": "如果你在回合结束时拥有至少[blue]10[/blue]点[gold]格挡[/gold]，则对随机敌人造成[blue]6[/blue]点伤害。",
@@ -1610,19 +1623,6 @@
     "image_variants": null,
     "rarity_key": "Shop",
     "compendium_order": 143
-  },
-  {
-    "id": "MR_STRUGGLES",
-    "name": "挣扎先生",
-    "description": "在你的回合开始时，对所有敌人造成等量于当前回合数的伤害。",
-    "description_raw": "在你的回合开始时，对所有敌人造成等量于当前回合数的伤害。",
-    "flavor": "[red]这个遗物的细节将在未来揭晓……[/red]",
-    "rarity": "事件遗物",
-    "pool": "shared",
-    "image_url": "/static/images/relics/mr_struggles.png",
-    "image_variants": null,
-    "rarity_key": "Event",
-    "compendium_order": 268
   },
   {
     "id": "DREAM_CATCHER",
@@ -1744,8 +1744,8 @@
   {
     "id": "TEA_OF_DISCOURTESY",
     "name": "无礼之茶",
-    "description": "在下一场战斗开始时，将[blue]2[/blue]张[gold]眩晕[/gold]放入你的[gold]抽牌堆[/gold]。",
-    "description_raw": "在下一场战斗开始时，将[blue]{DazedCount}[/blue]张[gold]眩晕[/gold]放入你的[gold]抽牌堆[/gold]。",
+    "description": "在下一场战斗开始时，将[blue]2[/blue]张[gold]晕眩[/gold]放入你的[gold]抽牌堆[/gold]。",
+    "description_raw": "在下一场战斗开始时，将[blue]{DazedCount}[/blue]张[gold]晕眩[/gold]放入你的[gold]抽牌堆[/gold]。",
     "flavor": "[red]这个遗物的细节将在未来揭晓……[/red]",
     "rarity": "事件遗物",
     "pool": "shared",
@@ -2342,7 +2342,7 @@
   {
     "id": "ROYAL_STAMP",
     "name": "王室印章",
-    "description": "拾起时，从[gold]牌组[/gold]中选择一张攻击牌或技能牌，为它[gold]附魔[/gold]：[purple]皇室认证[/purple]。",
+    "description": "拾起时，从[gold]牌组[/gold]中选择一张攻击牌或技能牌，为它[gold]附魔[/gold]：[purple]王室认证[/purple]。",
     "description_raw": "拾起时，从[gold]牌组[/gold]中选择一张攻击牌或技能牌，为它[gold]附魔[/gold]：[purple]{Enchantment}[/purple]。",
     "flavor": "[red]这个遗物的细节将在未来揭晓……[/red]",
     "rarity": "商店遗物",
@@ -2589,8 +2589,8 @@
   {
     "id": "EMPTY_CAGE",
     "name": "空鸟笼",
-    "description": "",
-    "description_raw": "",
+    "description": "拾起时，选择移除[gold]牌组[/gold]中的[blue]2[/blue]张牌。",
+    "description_raw": "拾起时，选择移除[gold]牌组[/gold]中的[blue]{Cards}[/blue]张牌。",
     "flavor": "[red]这个遗物的细节将在未来揭晓……[/red]",
     "rarity": "先古遗物",
     "pool": "shared",
@@ -3297,8 +3297,8 @@
   {
     "id": "CHOICES_PARADOX",
     "name": "选择悖论",
-    "description": "在每场战斗开始时，你可以从[blue]5[/blue]张随机牌中选择[blue]1[/blue]张放入你的[gold]手牌[/gold]。然后被选定的那张牌获得[gold]保留[/gold]。",
-    "description_raw": "在每场战斗开始时，你可以从[blue]{Cards}[/blue]张随机牌中选择[blue]1[/blue]张放入你的[gold]手牌[/gold]。然后被选定的那张牌获得[gold]保留[/gold]。",
+    "description": "在每场战斗开始时，从[blue]5[/blue]张随机牌中选择[blue]1[/blue]张放入你的[gold]手牌[/gold]。被选中的牌获得[gold]保留[/gold]。",
+    "description_raw": "在每场战斗开始时，从[blue]{Cards}[/blue]张随机牌中选择[blue]1[/blue]张放入你的[gold]手牌[/gold]。被选中的牌获得[gold]保留[/gold]。",
     "flavor": "[red]这个遗物的细节将在未来揭晓……[/red]",
     "rarity": "先古遗物",
     "pool": "shared",

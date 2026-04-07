@@ -28,6 +28,7 @@
     "dialogue_color": "new",
     "quotes": {
       "aroma_principle": "[sine][blue]1100 0011 1100 0011...[/blue][/sine]",
+      "banter_alive": "[jitter]0x54494D45 0x204C494D 0x49542045 0x58434545 0x00444544[/jitter]",
       "banter_dead": "...",
       "cards_modifier_title": "การ์ดนักเวทแปรพักตร์",
       "cards_modifier_description": "การ์ดนักเวทแปรพักตร์จะปรากฏในรางวัลและร้านค้าแล้ว"
@@ -110,6 +111,7 @@
     "color": "purple",
     "dialogue_color": "new",
     "quotes": {
+      "banter_dead": "...",
       "cards_modifier_title": "การ์ด Necrobinder",
       "cards_modifier_description": "การ์ด Necrobinder จะปรากฏในรางวัลและร้านค้าแล้ว"
     },
@@ -144,10 +146,23 @@
     "color": "orange",
     "dialogue_color": "new",
     "quotes": {
+      "banter_dead": "...",
       "cards_modifier_title": "การ์ด Regent",
       "cards_modifier_description": "การ์ด Regent จะปรากฏในรางวัลและร้านค้าแล้ว"
     },
-    "dialogues": null,
+    "dialogues": [
+      {
+        "ancient": "DARV",
+        "ancient_name": "Darv",
+        "lines": [
+          {
+            "order": 1,
+            "speaker": "char",
+            "text": "ว่ามา!"
+          }
+        ]
+      }
+    ],
     "image_url": "/static/images/characters/char_select_regent.png"
   },
   {
@@ -182,6 +197,7 @@
     "quotes": {
       "banter_alive": "[sine]...[/sine]",
       "banter_dead": "...",
+      "unlock_text": "เล่น 1 การเดินทางเพื่อปลดล็อกตัวละครนี้",
       "cards_modifier_title": "การ์ดนักฆ่าแห่งความเงียบ",
       "cards_modifier_description": "การ์ดนักฆ่าแห่งความเงียบจะปรากฏในรางวัลและร้านค้าแล้ว"
     },
@@ -194,6 +210,39 @@
             "order": 1,
             "speaker": "char",
             "text": "..."
+          }
+        ]
+      },
+      {
+        "ancient": "NEOW",
+        "ancient_name": "Neow",
+        "lines": [
+          {
+            "order": 1,
+            "speaker": "char",
+            "text": "..."
+          }
+        ]
+      },
+      {
+        "ancient": "NONUPEIPE",
+        "ancient_name": "Nonupeipe",
+        "lines": [
+          {
+            "order": 1,
+            "speaker": "char",
+            "text": "..."
+          }
+        ]
+      },
+      {
+        "ancient": "OROBAS",
+        "ancient_name": "Orobas",
+        "lines": [
+          {
+            "order": 1,
+            "speaker": "char",
+            "text": "[sine]...[/sine]"
           }
         ]
       }

@@ -561,8 +561,8 @@
   {
     "id": "MASSIVE_SCROLL",
     "name": "Devasa Parşömen",
-    "description": "Bu kalıntıyı aldığında, [gold]Deste[/gold]'ne eklemek için [blue]3[/blue] [gold]Çok Oyunculu Renksiz Kart[/gold]'tan [blue]1[/blue] tanesini seç.",
-    "description_raw": "Bu kalıntıyı aldığında, [gold]Deste[/gold]'ne eklemek için [blue]3[/blue] [gold]Çok Oyunculu Renksiz Kart[/gold]'tan [blue]1[/blue] tanesini seç.",
+    "description": "Bu kalıntıyı aldığında, [gold]Deste[/gold]'ne eklemek için [blue]3[/blue] [gold]Çok Oyunculu Kart[/gold]'tan [blue]1[/blue] tanesini seç.",
+    "description_raw": "Bu kalıntıyı aldığında, [gold]Deste[/gold]'ne eklemek için [blue]3[/blue] [gold]Çok Oyunculu Kart[/gold]'tan [blue]1[/blue] tanesini seç.",
     "flavor": "[red]Bu kalıntının detayları ileride ortaya çıkacak...[/red]",
     "rarity": "Kadim Kalıntı",
     "pool": "shared",
@@ -898,7 +898,7 @@
   },
   {
     "id": "IVORY_TILE",
-    "name": "Fildişi Fayans",
+    "name": "Fildişi Taş",
     "description": "Maliyeti [energy:3] veya daha fazla olan bir kartı her oynadığında [energy:1] elde et.",
     "description_raw": "Maliyeti {EnergyThreshold:energyIcons()} veya daha fazla olan bir kartı her oynadığında {Energy:energyIcons()} elde et.",
     "flavor": "[red]Bu kalıntının detayları ileride ortaya çıkacak...[/red]",

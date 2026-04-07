@@ -2,12 +2,12 @@
 import json
 from pathlib import Path
 
-BASE = Path(__file__).resolve().parents[3]
+from parser_paths import loc_dir as _loc_dir, data_dir as _data_dir
 
 
 def main(lang: str = "eng"):
-    loc_dir = BASE / "extraction" / "raw" / "localization" / lang
-    output_dir = BASE / "data" / lang
+    loc_dir = _loc_dir(lang)
+    output_dir = _data_dir(lang)
     output_dir.mkdir(parents=True, exist_ok=True)
 
     # Load gameplay_ui.json

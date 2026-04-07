@@ -1495,6 +1495,19 @@
     "compendium_order": 99
   },
   {
+    "id": "IVORY_TILE",
+    "name": "Ficha de marfil",
+    "description": "Cuando juegues una carta que cueste [energy:3] o más, gana [energy:1].",
+    "description_raw": "Cuando juegues una carta que cueste {EnergyThreshold:energyIcons()} o más, gana {Energy:energyIcons()}.",
+    "flavor": "[red]Los detalles de esta reliquia serán revelados en el futuro...[/red]",
+    "rarity": "Reliquia rara",
+    "pool": "necrobinder",
+    "image_url": "/static/images/relics/ivory_tile.png",
+    "image_variants": null,
+    "rarity_key": "Rare",
+    "compendium_order": 100
+  },
+  {
     "id": "BOUND_PHYLACTERY",
     "name": "Filacteria de vinculación",
     "description": "Al comienzo de tu turno, [gold]Vincula[/gold] [blue]1[/blue].",
@@ -1706,7 +1719,7 @@
     "image_url": "/static/images/relics/girya.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 100
+    "compendium_order": 101
   },
   {
     "id": "LEES_WAFFLE",
@@ -1758,7 +1771,7 @@
     "image_url": "/static/images/relics/paper_krane.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 101
+    "compendium_order": 102
   },
   {
     "id": "THROWING_AXE",
@@ -1797,7 +1810,7 @@
     "image_url": "/static/images/relics/ice_cream.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 102
+    "compendium_order": 103
   },
   {
     "id": "DELICATE_FROND",
@@ -1875,20 +1888,20 @@
     "image_url": "/static/images/relics/frozen_egg.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 103
+    "compendium_order": 104
   },
   {
     "id": "MOLTEN_EGG",
     "name": "Huevo fundido",
-    "description": "Cuando añadas un Ataque a tu [gold]Mazo[/gold], [gold]Mejórala[/gold].",
-    "description_raw": "Cuando añadas un Ataque a tu [gold]Mazo[/gold], [gold]Mejórala[/gold].",
+    "description": "Cuando añadas una carta de Ataque a tu [gold]Mazo[/gold], [gold]Mejórala[/gold].",
+    "description_raw": "Cuando añadas una carta de Ataque a tu [gold]Mazo[/gold], [gold]Mejórala[/gold].",
     "flavor": "[red]Los detalles de esta reliquia serán revelados en el futuro...[/red]",
     "rarity": "Reliquia rara",
     "pool": "shared",
     "image_url": "/static/images/relics/molten_egg.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 104
+    "compendium_order": 105
   },
   {
     "id": "TOXIC_EGG",
@@ -1901,7 +1914,7 @@
     "image_url": "/static/images/relics/toxic_egg.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 105
+    "compendium_order": 106
   },
   {
     "id": "STONE_HUMIDIFIER",
@@ -2005,7 +2018,7 @@
     "image_url": "/static/images/relics/kunai.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 106
+    "compendium_order": 107
   },
   {
     "id": "KUSARIGAMA",
@@ -2070,7 +2083,7 @@
     "image_url": "/static/images/relics/demon_tongue.png",
     "image_variants": null,
     "rarity_key": "Rare",
-    "compendium_order": 107
+    "compendium_order": 108
   },
   {
     "id": "FRESNEL_LENS",
@@ -2110,19 +2123,6 @@
     "image_variants": null,
     "rarity_key": "Event",
     "compendium_order": 268
-  },
-  {
-    "id": "IVORY_TILE",
-    "name": "Losa de marfil",
-    "description": "Cuando juegues una carta que cueste [energy:3] o más, gana [energy:1].",
-    "description_raw": "Cuando juegues una carta que cueste {EnergyThreshold:energyIcons()} o más, gana {Energy:energyIcons()}.",
-    "flavor": "[red]Los detalles de esta reliquia serán revelados en el futuro...[/red]",
-    "rarity": "Reliquia rara",
-    "pool": "necrobinder",
-    "image_url": "/static/images/relics/ivory_tile.png",
-    "image_variants": null,
-    "rarity_key": "Rare",
-    "compendium_order": 108
   },
   {
     "id": "PAELS_TEARS",
@@ -2478,8 +2478,8 @@
   {
     "id": "PAELS_EYE",
     "name": "Ojo de Pael",
-    "description": "La primera vez por combate que termines el turno sin jugar ninguna carta, [gold]Agota[/gold] tu [gold]Mano[/gold] y juega un turno extra.",
-    "description_raw": "La primera vez por combate que termines el turno sin jugar ninguna carta, [gold]Agota[/gold] tu [gold]Mano[/gold] y juega un turno extra.",
+    "description": "La primera vez que termines el turno sin jugar ninguna carta en cada combate, [gold]Agota[/gold] tu [gold]Mano[/gold] y juega un turno extra.",
+    "description_raw": "La primera vez que termines el turno sin jugar ninguna carta en cada combate, [gold]Agota[/gold] tu [gold]Mano[/gold] y juega un turno extra.",
     "flavor": "[red]Los detalles de esta reliquia serán revelados en el futuro...[/red]",
     "rarity": "Reliquia antigua",
     "pool": "shared",
@@ -2881,8 +2881,8 @@
   {
     "id": "PLANISPHERE",
     "name": "Planisferio",
-    "description": "Cuando entres a una sala de [gold]?[/gold], te curas [green]4[/green] PV.",
-    "description_raw": "Cuando entres a una sala de [gold]?[/gold], te curas [green]{Heal}[/green] PV.",
+    "description": "Cuando entres en una sala de «[gold]?[/gold]», recuperas [green]4[/green] PV.",
+    "description_raw": "Cuando entres en una sala de «[gold]?[/gold]», recuperas [green]{Heal}[/green] PV.",
     "flavor": "[red]Los detalles de esta reliquia serán revelados en el futuro...[/red]",
     "rarity": "Reliquia poco común",
     "pool": "shared",

@@ -419,7 +419,7 @@
   },
   {
     "id": "FOGMOG_NORMAL",
-    "name": "Fogmog",
+    "name": "Schwummschwamm",
     "room_type": "Monster",
     "is_weak": false,
     "act": "Act 1 - Overgrowth",
@@ -431,10 +431,10 @@
       },
       {
         "id": "FOGMOG",
-        "name": "Fogmog"
+        "name": "Schwummschwamm"
       }
     ],
-    "loss_text": "The adventurer wurde von den Illusionen eines [gold]Fogmogs[/gold] abgelenkt."
+    "loss_text": "The adventurer wurde von den Illusionen eines [gold]Schwummschwamms[/gold] abgelenkt."
   },
   {
     "id": "FOSSIL_STALKER_NORMAL",

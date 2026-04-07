@@ -12,7 +12,7 @@
   {
     "id": "BINARY",
     "name": "Zero-jedynkowe łupy",
-    "description": "W [gold]łupach[/gold] dostępne są tylko 2 karty do wyboru."
+    "description": "W [gold]łupach[/gold] dostępne są tylko [blue]2[/blue] karty do wyboru."
   },
   {
     "id": "CURSED_RUN",
@@ -21,7 +21,7 @@
   },
   {
     "id": "DEADLY_EVENTS",
-    "name": "Zabójcze spotkania",
+    "name": "Zabójcze wydarzenia",
     "description": "W nieznanych pokojach mogą przebywać Elitarni przeciwnicy, ale masz też większą szansę na znalezienie skarbów."
   },
   {
@@ -57,7 +57,7 @@
   {
     "id": "NIGHT_TERRORS",
     "name": "Koszmary",
-    "description": "Odpoczynek w [gold]Obozowiskach[/gold] przywraca wszystkie PŻ, ale tracisz 5 maks. PŻ."
+    "description": "Odpoczynek w [gold]Obozowiskach[/gold] przywraca wszystkie PŻ, ale tracisz [red]5[/red] maks. PŻ."
   },
   {
     "id": "SEALED_DECK",
@@ -72,7 +72,7 @@
   {
     "id": "TERMINAL",
     "name": "Śmiertelna choroba",
-    "description": "Kiedykolwiek wejdziesz do nowego pomieszczenia, utrać 1 maks. PŻ. Rozpoczynasz walkę z [blue]5[/blue] pkt. [gold]Pancerza[/gold]."
+    "description": "Kiedykolwiek wejdziesz do nowego pomieszczenia, utrać [red]1[/red] maks. PŻ. Rozpoczynasz walkę z [blue]5[/blue] pkt. [gold]Pancerza[/gold]."
   },
   {
     "id": "VINTAGE",

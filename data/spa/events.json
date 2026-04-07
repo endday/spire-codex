@@ -4249,7 +4249,7 @@
       },
       {
         "id": "NAB_THE_MAP",
-        "description": "¿Qué es lo peor que podría pasar? Al coger el mapa, aparece una abertura al otro lado de la sala."
+        "description": "¿Qué es lo peor que podría pasar? Al coger el mapa, un pasadizo se abre al otro lado de la sala."
       },
       {
         "id": "SLOWLY_FIND_AN_EXIT",
@@ -4535,7 +4535,7 @@
       },
       {
         "id": "NONDESCRIPT",
-        "description": "Una [orange]mujer muy insulsa y con cara de póker[/orange] avanza hacia el estrado. Está acusada de [red]robo[/red] y [purple]estafa[/purple]. Cuando la mujer se defiende, la crees, pero hay varios testigos que atestiguan sus felonías.\n¡Ambos presentan argumentos convincentes!",
+        "description": "Una [orange]mujer con un rostro difícil de leer[/orange] avanza hacia el estrado. Está acusada de [red]robo[/red] y [purple]estafa[/purple]. Cuando la mujer se defiende, la crees, pero hay varios testigos que atestiguan sus felonías.\n¡Ambos presentan argumentos convincentes!",
         "options": [
           {
             "id": "GUILTY",

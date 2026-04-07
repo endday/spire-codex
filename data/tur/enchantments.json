@@ -2,8 +2,8 @@
   {
     "id": "ADROIT",
     "name": "Becerikli",
-    "description": "[blue]X[/blue][gold]Blok[/gold] elde et.",
-    "description_raw": "[blue]{Block:diff()}[/blue][gold]Blok[/gold] elde et.",
+    "description": "[blue]X[/blue] [gold]Blok[/gold] elde et.",
+    "description_raw": "[blue]{Block:diff()}[/blue] [gold]Blok[/gold] elde et.",
     "extra_card_text": "X [gold]Blok[/gold] elde et.",
     "card_type": null,
     "applicable_to": null,

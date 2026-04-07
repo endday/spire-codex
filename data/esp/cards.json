@@ -367,8 +367,8 @@
   {
     "id": "BURST",
     "name": "Aceleración",
-    "description": "En este turno, puedes jugar  la próxima carta de habilidad otra vez.",
-    "description_raw": "En este turno, puedes jugar {IfUpgraded:show: 2} {Skills:plural:la próxima carta de habilidad|las próximas cartas de habilidad} otra vez.",
+    "description": "En este turno, puedes jugar la próxima carta de habilidad otra vez.",
+    "description_raw": "En este turno, puedes jugar {Skills:plural:la próxima carta de habilidad|las próximas {:diff()} cartas de habilidad} otra vez.",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -396,7 +396,7 @@
     "image_url": "/static/images/cards/burst.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "En este turno, puedes jugar  2 las próximas cartas de habilidad otra vez.",
+    "upgrade_description": "En este turno, puedes jugar las próximas 2 cartas de habilidad otra vez.",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 103
@@ -5194,8 +5194,8 @@
   {
     "id": "CRUELTY",
     "name": "Crueldad",
-    "description": "Los enemigos con [gold]vulnerabilidad[/gold] reciben 25 % de daño adicional.",
-    "description_raw": "Los enemigos con [gold]vulnerabilidad[/gold] reciben {CrueltyPower:diff()} % de daño adicional.",
+    "description": "Los enemigos con [gold]vulnerabilidad[/gold] reciben un 25 % de daño adicional.",
+    "description_raw": "Los enemigos con [gold]vulnerabilidad[/gold] reciben un {CrueltyPower:diff()} % de daño adicional.",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -5230,7 +5230,7 @@
     "image_url": "/static/images/cards/cruelty.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Los enemigos con [gold]vulnerabilidad[/gold] reciben 50 % de daño adicional.",
+    "upgrade_description": "Los enemigos con [gold]vulnerabilidad[/gold] reciben un 50 % de daño adicional.",
     "type_key": "Power",
     "rarity_key": "Rare",
     "compendium_order": 22

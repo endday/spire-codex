@@ -1594,8 +1594,8 @@
   {
     "id": "MASSIVE_SCROLL",
     "name": "Gigantopergamino",
-    "description": "Al recogerlo, eliges [blue]1[/blue] de [blue]3[/blue] [gold]cartas incoloras de modo coop.[/gold] para agregar al [gold]mazo[/gold].",
-    "description_raw": "Al recogerlo, eliges [blue]1[/blue] de [blue]3[/blue] [gold]cartas incoloras de modo coop.[/gold] para agregar al [gold]mazo[/gold].",
+    "description": "Al recogerlo, eliges [blue]1[/blue] de [blue]3[/blue] [gold]cartas de modo coop.[/gold] para agregar al [gold]mazo[/gold].",
+    "description_raw": "Al recogerlo, eliges [blue]1[/blue] de [blue]3[/blue] [gold]cartas de modo coop.[/gold] para agregar al [gold]mazo[/gold].",
     "flavor": "[red]Los detalles de esta reliquia se revelarán en el futuro...[/red]",
     "rarity": "Reliquia ancestral",
     "pool": "shared",
@@ -2036,8 +2036,8 @@
   {
     "id": "PAELS_TEARS",
     "name": "Lágrimas de Pael",
-    "description": "Si acabas tu turno sin gastar [energy:1], obtienes una [energy:2] adicional el próximo turno.",
-    "description_raw": "Si acabas tu turno sin gastar {energyPrefix:energyIcons(1)}, obtienes una {Energy:energyIcons()} adicional el próximo turno.",
+    "description": "Si acabas tu turno sin gastar [energy:1], obtienes [energy:2] adicional el próximo turno.",
+    "description_raw": "Si acabas tu turno sin gastar {energyPrefix:energyIcons(1)}, obtienes {Energy:energyIcons()} adicional el próximo turno.",
     "flavor": "[red]Los detalles de esta reliquia se revelarán en el futuro...[/red]",
     "rarity": "Reliquia ancestral",
     "pool": "shared",

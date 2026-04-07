@@ -211,7 +211,7 @@
   },
   {
     "id": "BURROWED",
-    "name": "Prestado",
+    "name": "Excavar",
     "description": "El [gold]bloqueo[/gold] no se quita al comienzo del próximo turno de [gold]this creature[/gold]. Si se quita todo el [gold]bloqueo[/gold], se le aplica [gold]aturdimiento[/gold].",
     "description_raw": "El [gold]bloqueo[/gold] no se quita al comienzo del próximo turno de [gold]{OwnerName}[/gold]. Si se quita todo el [gold]bloqueo[/gold], se le aplica [gold]aturdimiento[/gold].",
     "type": "Buff",
@@ -392,7 +392,7 @@
   {
     "id": "COVERED",
     "name": "Cobertura",
-    "description": "Te cubre una camarada, quien recibirá todos los ataques que se dirijan hacia ti.",
+    "description": "Te cubre un camarada, quien recibirá todos los ataques que se dirijan hacia ti.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Single",
@@ -402,8 +402,8 @@
   {
     "id": "CRAB_RAGE",
     "name": "Cólera crustácea",
-    "description": "Si una camarada muere, [gold]this creature[/gold] obtiene [blue]5[/blue] de [gold]fuerza[/gold] y [blue]99[/blue] de [gold]bloqueo[/gold].",
-    "description_raw": "Si una camarada muere, [gold]{OwnerName}[/gold] obtiene [blue]{StrengthPower}[/blue] de [gold]fuerza[/gold] y [blue]{Block}[/blue] de [gold]bloqueo[/gold].",
+    "description": "Si un camarada muere, [gold]this creature[/gold] obtiene [blue]5[/blue] de [gold]fuerza[/gold] y [blue]99[/blue] de [gold]bloqueo[/gold].",
+    "description_raw": "Si un camarada muere, [gold]{OwnerName}[/gold] obtiene [blue]{StrengthPower}[/blue] de [gold]fuerza[/gold] y [blue]{Block}[/blue] de [gold]bloqueo[/gold].",
     "type": "Buff",
     "stack_type": "Single",
     "allow_negative": null,
@@ -1621,7 +1621,7 @@
   },
   {
     "id": "PLOW",
-    "name": "Arado",
+    "name": "Colapso",
     "description": "La primera vez que los PV de [gold]this creature[/gold] lleguen a [blue][Amount][/blue] o menos, se [gold]aturdirá[/gold] y perderá toda su [gold]fuerza[/gold].",
     "description_raw": "La primera vez que los PV de [gold]{OwnerName}[/gold] lleguen a [blue]{Amount}[/blue] o menos, se [gold]aturdirá[/gold] y perderá toda su [gold]fuerza[/gold].",
     "type": "Debuff",
@@ -1702,7 +1702,7 @@
   {
     "id": "RAMPART",
     "name": "Bastión",
-    "description": "Al comienzo del turno de la otra persona, Operatorreta obtiene [blue]25[/blue] de [gold]bloqueo[/gold].",
+    "description": "Al comienzo del turno del jugador, Operatorreta obtiene [blue]25[/blue] de [gold]bloqueo[/gold].",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",

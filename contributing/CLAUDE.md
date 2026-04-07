@@ -12,11 +12,14 @@ Extract game data from Slay the Spire 2 (Godot 4 / C#/.NET 8) and expose it thro
 ```
 spire-codex/
   extraction/
-    raw/                    # GDRE extracted Godot project (9,947 files)
+    raw/                    # GDRE extracted Godot project (stable branch)
       images/               # Game images (card portraits, relics, potions, monsters)
       animations/           # Spine skeletal animations (.skel, .atlas, .png)
       localization/eng/     # Localization JSON (names, descriptions) — 14 languages
-    decompiled/             # ILSpy decompiled C# (3,298 files)
+    decompiled/             # ILSpy decompiled C# (stable branch)
+    beta/                   # Steam beta branch extraction
+      raw/                  # GDRE extracted (beta)
+      decompiled/           # ILSpy decompiled (beta)
   backend/
     app/
       main.py               # FastAPI app + CORS middleware + GZip
@@ -55,6 +58,7 @@ spire-codex/
         keyword_parser.py    # Keywords, intents, orbs, afflictions, modifiers, achievements (with unlock conditions)
         guide_parser.py      # Markdown guides with YAML frontmatter → JSON
         description_resolver.py
+        parser_paths.py      # Shared path config (supports EXTRACTION_DIR/DATA_DIR env vars)
         parse_all.py         # Runs all parsers for all 14 languages
     static/images/           # Served static images
     Dockerfile
@@ -116,7 +120,8 @@ spire-codex/
       render_hires.mjs       # Legacy canvas hi-res renderer (2048x2048)
       render_skins2.mjs      # Skin variants (Cultists, Bowlbugs, Cubex)
     diff_data.py             # Data diff tool — generates per-entity changelogs between git refs
-    deploy.py                # Build + push Docker images to Docker Hub
+    deploy.py                # Build + push Docker images to Docker Hub (--beta for beta images)
+    update.py               # Cross-platform extraction + parse + render pipeline
   data/                     # Parsed JSON output (14 language directories)
     changelogs/             # Version changelogs with per-entity diffs
     guides/                 # Markdown guide files with YAML frontmatter
@@ -126,6 +131,7 @@ spire-codex/
     showcase.json           # Community project gallery data
   docker-compose.yml        # Local dev
   docker-compose.prod.yml   # Production (Docker Hub images + nginx network)
+  docker-compose.beta.yml   # Beta site (beta.spire-codex.com, :beta images + data-beta)
 ```
 
 ## Data Parsed
@@ -249,6 +255,9 @@ docker compose up -d --build
 # Parse all data (all 14 languages)
 cd backend/app/parsers && python3 parse_all.py
 
+# Parse beta data (from Steam beta branch extraction)
+cd backend/app/parsers && EXTRACTION_DIR=extraction/beta DATA_DIR=data-beta python3 parse_all.py
+
 # Generate changelog diff
 python3 tools/diff_data.py v1.0.4 --format json --game-version 1.0.5 --date 2026-03-21 --title "Update title"
 
@@ -263,13 +272,28 @@ node render_all_webgl.mjs
 # Then copy monster renders to the served directory
 for dir in ../../backend/static/images/renders/monsters/*/; do name=$(basename "$dir"); src=$(find "$dir" -name "*.png" | head -1); [ -f "$src" ] && [ -f "../../backend/static/images/monsters/${name}.png" ] && cp "$src" "../../backend/static/images/monsters/${name}.png"; done
 
-# Deploy
+# Deploy (production)
 python3 tools/deploy.py
+
+# Deploy (beta — tags images as :beta, skips IndexNow)
+python3 tools/deploy.py --beta
+
+# Start beta on server
+docker compose -f docker-compose.beta.yml up -d
 ```
+
+## Beta Site (beta.spire-codex.com)
+
+Parallel deployment for Steam beta branch data. Uses same codebase/images but separate containers and `data-beta/` volume.
+
+- **Extraction**: `extraction/beta/raw/` + `extraction/beta/decompiled/`
+- **Parsed data**: `data-beta/` (14 languages)
+- **Docker**: `docker-compose.beta.yml` with `:beta` tagged images
+- **Parser env vars**: `EXTRACTION_DIR` and `DATA_DIR` via `parser_paths.py`
 
 ## Versioning
 Uses `1.X.Y` — 1=codex major, X=bumps on Mega Crit game patch, Y=our fixes/improvements.
-Current: **v1.0.15**
+Current: **v1.0.17**
 
 ## Known Limitations
 - 6 monsters lack images entirely (Crusher, Doormaker, Flyconid, Ovicopter, Rocket, Decimillipede)

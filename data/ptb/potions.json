@@ -266,8 +266,8 @@
   {
     "id": "CUNNING_POTION",
     "name": "Poção Afiada",
-    "description": "Adicione [blue]3[/blue] Lâminas [gold]Aprimoradas [/gold] na sua [gold]Mão[/gold].",
-    "description_raw": "Adicione [blue]{Cards}[/blue] {Cards:plural:Lâmina|Lâminas} [gold]Aprimoradas [/gold] na sua [gold]Mão[/gold].",
+    "description": "Adicione [blue]3[/blue] Lâminas [gold]Aprimoradas[/gold] na sua [gold]Mão[/gold].",
+    "description_raw": "Adicione [blue]{Cards}[/blue] {Cards:plural:Lâmina|Lâminas} [gold]Aprimoradas[/gold] na sua [gold]Mão[/gold].",
     "rarity": "Incomum",
     "image_url": "/static/images/potions/cunning_potion.png",
     "rarity_key": "Uncommon",
@@ -374,83 +374,6 @@
     "pool": "shared"
   },
   {
-    "id": "SWIFT_POTION",
-    "name": "Poção da Agilidade",
-    "description": "Compre [blue]3[/blue] cartas.",
-    "description_raw": "Compre [blue]{Cards}[/blue] {Cards:plural:carta|cartas}.",
-    "rarity": "Comum",
-    "image_url": "/static/images/potions/swift_potion.png",
-    "rarity_key": "Common",
-    "compendium_order": 9,
-    "pool": "shared"
-  },
-  {
-    "id": "POTION_OF_CAPACITY",
-    "name": "Poção da Capacidade",
-    "description": "Receba [blue]2[/blue] [gold]Espaços de Orbe[/gold].",
-    "description_raw": "Receba [blue]{Repeat}[/blue] [gold]{Repeat:plural:Espaço|Espaços} de Orbe[/gold].",
-    "rarity": "Incomum",
-    "image_url": "/static/images/potions/potion_of_capacity.png",
-    "rarity_key": "Uncommon",
-    "compendium_order": 30,
-    "pool": "defect"
-  },
-  {
-    "id": "STRENGTH_POTION",
-    "name": "Poção da Força",
-    "description": "Receba [blue]2[/blue] de [gold]Força[/gold].",
-    "description_raw": "Receba [blue]{StrengthPower}[/blue] de [gold]Força[/gold].",
-    "rarity": "Comum",
-    "image_url": "/static/images/potions/strength_potion.png",
-    "rarity_key": "Common",
-    "compendium_order": 10,
-    "pool": "shared"
-  },
-  {
-    "id": "WEAK_POTION",
-    "name": "Poção da Fraqueza",
-    "description": "Aplique [blue]3[/blue] de [gold]Fraqueza[/gold].",
-    "description_raw": "Aplique [blue]{WeakPower}[/blue] de [gold]Fraqueza[/gold].",
-    "rarity": "Comum",
-    "image_url": "/static/images/potions/weak_potion.png",
-    "rarity_key": "Common",
-    "compendium_order": 11,
-    "pool": "shared"
-  },
-  {
-    "id": "POTION_OF_DOOM",
-    "name": "Poção da Perdição",
-    "description": "Aplique [blue]33[/blue] de [gold]Ruína[/gold].",
-    "description_raw": "Aplique [blue]{DoomPower}[/blue] de [gold]Ruína[/gold].",
-    "rarity": "Comum",
-    "image_url": "/static/images/potions/potion_of_doom.png",
-    "rarity_key": "Common",
-    "compendium_order": 12,
-    "pool": "necrobinder"
-  },
-  {
-    "id": "REGEN_POTION",
-    "name": "Poção da Regeneração",
-    "description": "Receba [green]5[/green] de [gold]Regeneração[/gold].",
-    "description_raw": "Receba [green]{RegenPower}[/green] de [gold]Regeneração[/gold].",
-    "rarity": "Incomum",
-    "image_url": "/static/images/potions/regen_potion.png",
-    "rarity_key": "Uncommon",
-    "compendium_order": 31,
-    "pool": "shared"
-  },
-  {
-    "id": "SPEED_POTION",
-    "name": "Poção da Velocidade",
-    "description": "Receba [blue]5[/blue] de [gold]Destreza[/gold]. No final do turno perca [blue]5[/blue] de [gold]Destreza[/gold].",
-    "description_raw": "Receba [blue]{DexterityPower}[/blue] de [gold]Destreza[/gold]. No final do turno perca [blue]{DexterityPower}[/blue] de [gold]Destreza[/gold].",
-    "rarity": "Comum",
-    "image_url": "/static/images/potions/speed_potion.png",
-    "rarity_key": "Common",
-    "compendium_order": 13,
-    "pool": "shared"
-  },
-  {
     "id": "SHACKLING_POTION",
     "name": "Poção de Acorrentamento",
     "description": "TODOS os inimigos perdem [blue]7[/blue] de [gold]Força[/gold] neste turno.",
@@ -462,6 +385,17 @@
     "pool": "shared"
   },
   {
+    "id": "SWIFT_POTION",
+    "name": "Poção de Agilidade",
+    "description": "Compre [blue]3[/blue] cartas.",
+    "description_raw": "Compre [blue]{Cards}[/blue] {Cards:plural:carta|cartas}.",
+    "rarity": "Comum",
+    "image_url": "/static/images/potions/swift_potion.png",
+    "rarity_key": "Common",
+    "compendium_order": 9,
+    "pool": "shared"
+  },
+  {
     "id": "ATTACK_POTION",
     "name": "Poção de Ataque",
     "description": "Escolha [blue]1[/blue] entre [blue]3[/blue] cartas de Ataque aleatórias para adicionar na sua [gold]Mão[/gold]. Ela não tem custo neste turno.",
@@ -469,18 +403,29 @@
     "rarity": "Comum",
     "image_url": "/static/images/potions/attack_potion.png",
     "rarity_key": "Common",
-    "compendium_order": 14,
+    "compendium_order": 10,
     "pool": "shared"
+  },
+  {
+    "id": "POTION_OF_CAPACITY",
+    "name": "Poção de Capacidade",
+    "description": "Receba [blue]2[/blue] [gold]Espaços de Orbe[/gold].",
+    "description_raw": "Receba [blue]{Repeat}[/blue] [gold]{Repeat:plural:Espaço|Espaços} de Orbe[/gold].",
+    "rarity": "Incomum",
+    "image_url": "/static/images/potions/potion_of_capacity.png",
+    "rarity_key": "Uncommon",
+    "compendium_order": 30,
+    "pool": "defect"
   },
   {
     "id": "POTION_OF_BINDING",
     "name": "Poção de Contenção",
-    "description": "Aplique [blue]1[/blue] de [gold]Enfraquecido[/gold] e [blue]1[/blue] de [gold]Vulnerável[/gold] a TODOS os inimigos.",
-    "description_raw": "Aplique [blue]{WeakPower:diff()}[/blue] de [gold]Enfraquecido[/gold] e [blue]{VulnerablePower:diff()}[/blue] de [gold]Vulnerável[/gold] a TODOS os inimigos.",
+    "description": "Aplique [blue]1[/blue] de [gold]Fraqueza[/gold] e [blue]1[/blue] de [gold]Vulnerável[/gold] a TODOS os inimigos.",
+    "description_raw": "Aplique [blue]{WeakPower:diff()}[/blue] de [gold]Fraqueza[/gold] e [blue]{VulnerablePower:diff()}[/blue] de [gold]Vulnerável[/gold] a TODOS os inimigos.",
     "rarity": "Incomum",
     "image_url": "/static/images/potions/potion_of_binding.png",
     "rarity_key": "Uncommon",
-    "compendium_order": 32,
+    "compendium_order": 31,
     "pool": "shared"
   },
   {
@@ -491,7 +436,7 @@
     "rarity": "Comum",
     "image_url": "/static/images/potions/dexterity_potion.png",
     "rarity_key": "Common",
-    "compendium_order": 15,
+    "compendium_order": 11,
     "pool": "shared"
   },
   {
@@ -502,7 +447,7 @@
     "rarity": "Comum",
     "image_url": "/static/images/potions/energy_potion.png",
     "rarity_key": "Common",
-    "compendium_order": 16,
+    "compendium_order": 12,
     "pool": "shared"
   },
   {
@@ -513,8 +458,30 @@
     "rarity": "Comum",
     "image_url": "/static/images/potions/focus_potion.png",
     "rarity_key": "Common",
-    "compendium_order": 17,
+    "compendium_order": 13,
     "pool": "defect"
+  },
+  {
+    "id": "STRENGTH_POTION",
+    "name": "Poção de Força",
+    "description": "Receba [blue]2[/blue] de [gold]Força[/gold].",
+    "description_raw": "Receba [blue]{StrengthPower}[/blue] de [gold]Força[/gold].",
+    "rarity": "Comum",
+    "image_url": "/static/images/potions/strength_potion.png",
+    "rarity_key": "Common",
+    "compendium_order": 14,
+    "pool": "shared"
+  },
+  {
+    "id": "WEAK_POTION",
+    "name": "Poção de Fraqueza",
+    "description": "Aplique [blue]3[/blue] de [gold]Fraqueza[/gold].",
+    "description_raw": "Aplique [blue]{WeakPower}[/blue] de [gold]Fraqueza[/gold].",
+    "rarity": "Comum",
+    "image_url": "/static/images/potions/weak_potion.png",
+    "rarity_key": "Common",
+    "compendium_order": 15,
+    "pool": "shared"
   },
   {
     "id": "GIGANTIFICATION_POTION",
@@ -539,6 +506,17 @@
     "pool": "event"
   },
   {
+    "id": "POTION_OF_DOOM",
+    "name": "Poção de Perdição",
+    "description": "Aplique [blue]33[/blue] de [gold]Ruína[/gold].",
+    "description_raw": "Aplique [blue]{DoomPower}[/blue] de [gold]Ruína[/gold].",
+    "rarity": "Comum",
+    "image_url": "/static/images/potions/potion_of_doom.png",
+    "rarity_key": "Common",
+    "compendium_order": 16,
+    "pool": "necrobinder"
+  },
+  {
     "id": "POWER_POTION",
     "name": "Poção de Poder",
     "description": "Escolha [blue]1[/blue] entre [blue]3[/blue] cartas de Poder aleatórias para adicionar na sua [gold]Mão[/gold]. Ela não tem custo neste turno.",
@@ -546,7 +524,18 @@
     "rarity": "Comum",
     "image_url": "/static/images/potions/power_potion.png",
     "rarity_key": "Common",
-    "compendium_order": 18,
+    "compendium_order": 17,
+    "pool": "shared"
+  },
+  {
+    "id": "REGEN_POTION",
+    "name": "Poção de Regeneração",
+    "description": "Receba [green]5[/green] de [gold]Regeneração[/gold].",
+    "description_raw": "Receba [green]{RegenPower}[/green] de [gold]Regeneração[/gold].",
+    "rarity": "Incomum",
+    "image_url": "/static/images/potions/regen_potion.png",
+    "rarity_key": "Uncommon",
+    "compendium_order": 32,
     "pool": "shared"
   },
   {
@@ -557,12 +546,23 @@
     "rarity": "Comum",
     "image_url": "/static/images/potions/skill_potion.png",
     "rarity_key": "Common",
+    "compendium_order": 18,
+    "pool": "shared"
+  },
+  {
+    "id": "SPEED_POTION",
+    "name": "Poção de Velocidade",
+    "description": "Receba [blue]5[/blue] de [gold]Destreza[/gold]. No final do turno perca [blue]5[/blue] de [gold]Destreza[/gold].",
+    "description_raw": "Receba [blue]{DexterityPower}[/blue] de [gold]Destreza[/gold]. No final do turno perca [blue]{DexterityPower}[/blue] de [gold]Destreza[/gold].",
+    "rarity": "Comum",
+    "image_url": "/static/images/potions/speed_potion.png",
+    "rarity_key": "Common",
     "compendium_order": 19,
     "pool": "shared"
   },
   {
     "id": "POWDERED_DEMISE",
-    "name": "Pó Findável",
+    "name": "Pó Funesto",
     "description": "O inimigo perde [blue]9[/blue] PV no final de cada um de seus turnos.",
     "description_raw": "O inimigo perde [blue]{Demise}[/blue] PV no final de cada um de seus turnos.",
     "rarity": "Incomum",

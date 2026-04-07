@@ -29,11 +29,11 @@
     "Shop": "เครื่องรางร้านค้า"
   },
   "potion_rarities": {
-    "Common": "ขวดยาธรรมดา",
-    "Uncommon": "ขวดยาไม่ธรรมดา",
-    "Rare": "ขวดยาหายาก",
-    "Event": "ขวดยาเหตุการณ์",
-    "Token": "Token"
+    "Common": "ธรรมดา",
+    "Uncommon": "ไม่ธรรมดา",
+    "Rare": "หายาก",
+    "Event": "เหตุการณ์",
+    "Token": "โทเคน"
   },
   "keywords": {
     "ETERNAL": "นิรันดร์",

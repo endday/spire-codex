@@ -11539,8 +11539,8 @@
   {
     "id": "VOID_FORM",
     "name": "VoidForm",
-    "description": "จบเทิร์น\nการ์ด diff() ใบแรกที่คุณเล่นในแต่ละเทิร์นจะเล่นฟรี",
-    "description_raw": "จบเทิร์น\nการ์ด{VoidFormPower:plural:ใบแรก|{VoidFormPower: diff()} ใบแรก}ที่คุณเล่นในแต่ละเทิร์นจะเล่นฟรี",
+    "description": "จบเทิร์นทันที แต่หลังจากนี้\nการ์ด2 ใบแรกที่คุณเล่นในแต่ละเทิร์นจะเล่นฟรี",
+    "description_raw": "จบเทิร์นทันที แต่หลังจากนี้\nการ์ด{VoidFormPower:plural:ใบแรก|{VoidFormPower:diff()} ใบแรก}ที่คุณเล่นในแต่ละเทิร์นจะเล่นฟรี",
     "cost": 3,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -11575,7 +11575,7 @@
     "image_url": "/static/images/cards/void_form.png",
     "beta_image_url": "/static/images/cards/beta/void_form.png",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "จบเทิร์นทันที แต่หลังจากนี้\nการ์ด3 ใบแรกที่คุณเล่นในแต่ละเทิร์นจะเล่นฟรี",
     "type_key": "Power",
     "rarity_key": "Rare",
     "compendium_order": 261
@@ -22519,8 +22519,8 @@
   {
     "id": "HOWL_FROM_BEYOND",
     "name": "เสียงหอนจากเบื้องบน",
-    "description": "สร้างความเสียหาย 16 ใส่ศัตรูทั้งหมด\nตอนเริ่มต้นเทิร์น เล่นจาก[gold]กองทิ้ง[/gold]",
-    "description_raw": "สร้างความเสียหาย {Damage:diff()} ใส่ศัตรูทั้งหมด\nตอนเริ่มต้นเทิร์น เล่นจาก[gold]กองทิ้ง[/gold]",
+    "description": "สร้างความเสียหาย 16 ใส่ศัตรูทั้งหมด\nตอนเริ่มต้นเทิร์น เล่นจาก[gold]กองสลาย[/gold]",
+    "description_raw": "สร้างความเสียหาย {Damage:diff()} ใส่ศัตรูทั้งหมด\nตอนเริ่มต้นเทิร์น เล่นจาก[gold]กองสลาย[/gold]",
     "cost": 3,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -22548,7 +22548,7 @@
     "image_url": "/static/images/cards/howl_from_beyond.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "สร้างความเสียหาย 21 ใส่ศัตรูทั้งหมด\nตอนเริ่มต้นเทิร์น เล่นจาก[gold]กองทิ้ง[/gold]",
+    "upgrade_description": "สร้างความเสียหาย 21 ใส่ศัตรูทั้งหมด\nตอนเริ่มต้นเทิร์น เล่นจาก[gold]กองสลาย[/gold]",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 43

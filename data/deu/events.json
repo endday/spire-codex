@@ -477,7 +477,7 @@
   },
   {
     "id": "BYRDONIS_NEST",
-    "name": "Byrdonis-Nest",
+    "name": "Foglonis-Nest",
     "type": "Event",
     "act": "Act 1 - Overgrowth",
     "description": "Du beobachtest, wie ein riesiges [jitter][red]Schlurfendes Biest[/red][/jitter] einen verletzten [green][sine]Grünen Fogl[/sine][/green] davonjagt.\n\nIn der Nische, aus der der Fogl geflohen ist, liegt zurückgelassen ein [gold]einziges unbewachtes Ei[/gold].\n\n[sine]Dein Magen knurrt...[/sine]",
@@ -1107,7 +1107,7 @@
     "name": "Sinkendes Fanal",
     "type": "Event",
     "act": "Underdocks",
-    "description": "Du kommst durch eine Traumlandschaft aus Felsen und stillen Gewässern und tauchst vor einer Quelle von [purple]Anti-Licht[/purple] auf, welche aus einem [sine]versinkenden Leuchtturm[/sine] kommt.\n\nDu könntest das [aqua][sine]schaurig-leuchtende Wasser[/sine][/aqua] abfüllen, das sich hier gesammelt hat – oder das marode Bauwerk erklimmen, um die [gold]Linse[/gold] zu bergen.",
+    "description": "Du durchquerst eine Traumlandschaft aus Felsen und stillen Gewässern und tauchst vor einem [sine]versinkenden Leuchtturm[/sine] auf, der [purple]Anti-Licht[/purple] ausstrahlt.\n\nDu könntest das [aqua][sine]schaurig-leuchtende Wasser[/sine][/aqua] abfüllen, das sich hier gesammelt hat – oder das marode Bauwerk erklimmen, um die [gold]Linse[/gold] zu bergen.",
     "options": [
       {
         "id": "BOTTLE",
@@ -1131,7 +1131,7 @@
       },
       {
         "id": "INITIAL",
-        "description": "Du kommst durch eine Traumlandschaft aus Felsen und stillen Gewässern und tauchst vor einer Quelle von [purple]Anti-Licht[/purple] auf, welche aus einem [sine]versinkenden Leuchtturm[/sine] kommt.\n\nDu könntest das [aqua][sine]schaurig-leuchtende Wasser[/sine][/aqua] abfüllen, das sich hier gesammelt hat – oder das marode Bauwerk erklimmen, um die [gold]Linse[/gold] zu bergen.",
+        "description": "Du durchquerst eine Traumlandschaft aus Felsen und stillen Gewässern und tauchst vor einem [sine]versinkenden Leuchtturm[/sine] auf, der [purple]Anti-Licht[/purple] ausstrahlt.\n\nDu könntest das [aqua][sine]schaurig-leuchtende Wasser[/sine][/aqua] abfüllen, das sich hier gesammelt hat – oder das marode Bauwerk erklimmen, um die [gold]Linse[/gold] zu bergen.",
         "options": [
           {
             "id": "BOTTLE",
@@ -1362,8 +1362,8 @@
     "options": [
       {
         "id": "BIG_MUSHROOM",
-        "title": "Großer Kerl",
-        "description": "Obtain [gold]Großer Kerl[/gold]. Erhöhe beim Aufheben deine max. TP um [blue]20%[/blue]. Ziehe zu Beginn jedes Kampfes [blue]2[/blue] Karten weniger."
+        "title": "Großer Pilz",
+        "description": "Obtain [gold]Großer Pilz[/gold]. Erhöhe beim Aufheben deine max. TP um [blue]20%[/blue]. Ziehe zu Beginn jedes Kampfes [blue]2[/blue] Karten weniger."
       },
       {
         "id": "FRAGRANT_MUSHROOM",
@@ -1386,8 +1386,8 @@
         "options": [
           {
             "id": "BIG_MUSHROOM",
-            "title": "Großer Kerl",
-            "description": "Obtain [gold]Großer Kerl[/gold]. Erhöhe beim Aufheben deine max. TP um [blue]20%[/blue]. Ziehe zu Beginn jedes Kampfes [blue]2[/blue] Karten weniger."
+            "title": "Großer Pilz",
+            "description": "Obtain [gold]Großer Pilz[/gold]. Erhöhe beim Aufheben deine max. TP um [blue]20%[/blue]. Ziehe zu Beginn jedes Kampfes [blue]2[/blue] Karten weniger."
           },
           {
             "id": "FRAGRANT_MUSHROOM",
@@ -1407,7 +1407,7 @@
     "name": "Infiziertes Automaton",
     "type": "Event",
     "act": "Act 2 - Hive",
-    "description": "Da ist eine Kammer, die voller [red]toter Roboter[/red] ist.\n\nEin einsames Automaton hat noch einen [sine][aqua]schwach leuchtenden Kern[/aqua][/sine], aber ist von einem grotesken organischen Gewächs überwachsen und antwortet nicht.",
+    "description": "Da ist eine Kammer, die voller [red]toter Roboter[/red] ist.\n\nEin einsames Automaton hat noch einen [sine][aqua]schwach leuchtenden Kern[/aqua][/sine], aber ist von einem grotesken organischen Wuchs überwachsen und antwortet nicht.",
     "options": [
       {
         "id": "STUDY",
@@ -1423,7 +1423,7 @@
     "pages": [
       {
         "id": "INITIAL",
-        "description": "Da ist eine Kammer, die voller [red]toter Roboter[/red] ist.\n\nEin einsames Automaton hat noch einen [sine][aqua]schwach leuchtenden Kern[/aqua][/sine], aber ist von einem grotesken organischen Gewächs überwachsen und antwortet nicht.",
+        "description": "Da ist eine Kammer, die voller [red]toter Roboter[/red] ist.\n\nEin einsames Automaton hat noch einen [sine][aqua]schwach leuchtenden Kern[/aqua][/sine], aber ist von einem grotesken organischen Wuchs überwachsen und antwortet nicht.",
         "options": [
           {
             "id": "STUDY",
@@ -2235,7 +2235,7 @@
         {
           "order": "0-0",
           "speaker": "ancient",
-          "text": "Aufgewühltes Automaton, suchst du deinen Freund?\nLass mich helfen..."
+          "text": "Geplagtes Automaton, suchst du deinen Freund?\nLass mich helfen..."
         },
         {
           "order": "1-0r",
@@ -3074,10 +3074,10 @@
   },
   {
     "id": "SPIRIT_GRAFTER",
-    "name": "Geisterschieber",
+    "name": "Geistespfropfer",
     "type": "Event",
     "act": "Act 2 - Hive",
-    "description": "Über dir [jitter]wackelt und zappelt[/jitter] ein Kokon – kurz vor dem Aufplatzen!\n\n...er hört auf zu zappeln. [orange][sine]Der Kokon geht in Feuer auf[/sine][/orange]! [jitter]Was ist hier los?[/jitter]\nIn einem Blitz aus [gold]Licht[/gold] und [red]Flamme[/red] fährt ein [orange]Geisterschieber[/orange] in dich hinein und droht, sich mit deinem Wesen zu vereinen, um vollkommen zu werden.",
+    "description": "Über dir [jitter]wackelt und zappelt[/jitter] ein Kokon – kurz vor dem Aufplatzen!\n\n...er hört auf zu zappeln. [orange][sine]Der Kokon geht in Feuer auf[/sine][/orange]! [jitter]Was ist hier los?[/jitter]\nIn einem Blitz aus [gold]Licht[/gold] und [red]Flamme[/red] fährt ein [orange]Geistespfropfer[/orange] in dich hinein und droht, sich mit deinem Wesen zu vereinen, um sich zu vervollkommnen.",
     "options": [
       {
         "id": "LET_IT_IN",
@@ -3093,7 +3093,7 @@
     "pages": [
       {
         "id": "INITIAL",
-        "description": "Über dir [jitter]wackelt und zappelt[/jitter] ein Kokon – kurz vor dem Aufplatzen!\n\n...er hört auf zu zappeln. [orange][sine]Der Kokon geht in Feuer auf[/sine][/orange]! [jitter]Was ist hier los?[/jitter]\nIn einem Blitz aus [gold]Licht[/gold] und [red]Flamme[/red] fährt ein [orange]Geisterschieber[/orange] in dich hinein und droht, sich mit deinem Wesen zu vereinen, um vollkommen zu werden.",
+        "description": "Über dir [jitter]wackelt und zappelt[/jitter] ein Kokon – kurz vor dem Aufplatzen!\n\n...er hört auf zu zappeln. [orange][sine]Der Kokon geht in Feuer auf[/sine][/orange]! [jitter]Was ist hier los?[/jitter]\nIn einem Blitz aus [gold]Licht[/gold] und [red]Flamme[/red] fährt ein [orange]Geistespfropfer[/orange] in dich hinein und droht, sich mit deinem Wesen zu vereinen, um sich zu vervollkommnen.",
         "options": [
           {
             "id": "LET_IT_IN",
@@ -3109,11 +3109,11 @@
       },
       {
         "id": "LET_IT_IN",
-        "description": "Der [orange]Geisterschieber[/orange] verbindet sich mit dir. Die strotzende verwandte Seele [green]heilt[/green] dich sogleich.\n\nDu bist [blue]wiedergeboren[/blue]."
+        "description": "Der [orange]Geistespfropfer[/orange] verbindet sich mit dir. Die strotzende verwandte Seele [green]heilt[/green] dich sogleich.\n\nDu bist [blue]neugeboren[/blue]."
       },
       {
         "id": "REJECTION",
-        "description": "Der [orange]Geisterschieber[/orange] lässt sich durch deinen Willen leicht aufhalten.\n\nTrotzdem fliegt er wiederholt in dich hinein, um verzweifelt einen Wirt zu finden. Seine Stärke nimmt ab und er löst sich mit einem [purple][sine]Puffen[/sine][/purple] auf.\n\n[sine]Ein vergänglicher Geist.[/sine]"
+        "description": "Der [orange]Geistespfropfer[/orange] lässt sich durch deinen Willen leicht aufhalten.\n\nTrotzdem fliegt er wiederholt in dich hinein, um verzweifelt einen Wirt zu finden. Seine Stärke nimmt ab und er löst sich mit einem [purple][sine]Puffen[/sine][/purple] auf.\n\n[sine]Ein vergänglicher Geist.[/sine]"
       }
     ]
   },
@@ -3187,7 +3187,7 @@
     "name": "Die Versunkene Statue",
     "type": "Event",
     "act": "Act 1 - Overgrowth / Underdocks",
-    "description": "Du sichtest eine alte Statue, die halb in einem Teich versunken ist; ihre Hände ruhen friedlich auf einem [blue]Steinschwert[/blue].\n\nAußerdem [gold][sine]glitzert[/sine][/gold] etwas an Boden des Teiches.\nVielleicht Opferspenden?\n\nDu könntest wirklich etwas Geld gebrauchen...",
+    "description": "Du sichtest eine alte Statue, die halb in einem Teich versunken ist; ihre Hände ruhen friedlich auf einem [blue]Steinschwert[/blue].\n\nAußerdem [gold][sine]glitzert[/sine][/gold] etwas am Boden des Teiches.\nVielleicht Opfergaben?\n\nDu könntest wirklich etwas Geld gebrauchen...",
     "options": [
       {
         "id": "GRAB_SWORD",
@@ -3211,7 +3211,7 @@
       },
       {
         "id": "INITIAL",
-        "description": "Du sichtest eine alte Statue, die halb in einem Teich versunken ist; ihre Hände ruhen friedlich auf einem [blue]Steinschwert[/blue].\n\nAußerdem [gold][sine]glitzert[/sine][/gold] etwas an Boden des Teiches.\nVielleicht Opferspenden?\n\nDu könntest wirklich etwas Geld gebrauchen...",
+        "description": "Du sichtest eine alte Statue, die halb in einem Teich versunken ist; ihre Hände ruhen friedlich auf einem [blue]Steinschwert[/blue].\n\nAußerdem [gold][sine]glitzert[/sine][/gold] etwas am Boden des Teiches.\nVielleicht Opfergaben?\n\nDu könntest wirklich etwas Geld gebrauchen...",
         "options": [
           {
             "id": "GRAB_SWORD",
@@ -3353,7 +3353,7 @@
           {
             "id": "GIVE_UP",
             "title": "Aufgeben",
-            "description": "Aufhören, den Text zu lesen und weiter gehen."
+            "description": "Aufhören, den Text zu lesen und weitergehen."
           }
         ]
       },
@@ -4131,7 +4131,7 @@
     "name": "Die Zukunft der Tränke?",
     "type": "Shared",
     "act": null,
-    "description": "Du spürst ein entferntes Rumpeln, dann entdeckst du hinter der nächsten Ecke einen riesigen drehenden Apparat!\nEr hat verschiedene Öffnungen, die anscheinend Flüssigkeiten zu einer stark komprimierten essbaren Tablette umwandeln.\n\nDer Gedanke, aus diesen starken Tränken einen winzigen Happen zu machen, klingt unangenehm. Aber vielleicht ist es gut, neue Dinge auszuprobieren?",
+    "description": "Du spürst ein entferntes Rumpeln, dann entdeckst du hinter der nächsten Ecke einen riesigen drehenden Apparat!\nEr hat verschiedene Öffnungen, die anscheinend Flüssigkeiten in eine sehr komprimierte essbare Tablette umwandeln.\n\nDer Gedanke, aus diesen starken Tränken einen winzigen Happen zu machen, klingt unangenehm. Aber vielleicht ist es gut, neue Dinge auszuprobieren?",
     "options": [
       {
         "id": "POTION",
@@ -4146,7 +4146,7 @@
       },
       {
         "id": "INITIAL",
-        "description": "Du spürst ein entferntes Rumpeln, dann entdeckst du hinter der nächsten Ecke einen riesigen drehenden Apparat!\nEr hat verschiedene Öffnungen, die anscheinend Flüssigkeiten zu einer stark komprimierten essbaren Tablette umwandeln.\n\nDer Gedanke, aus diesen starken Tränken einen winzigen Happen zu machen, klingt unangenehm. Aber vielleicht ist es gut, neue Dinge auszuprobieren?",
+        "description": "Du spürst ein entferntes Rumpeln, dann entdeckst du hinter der nächsten Ecke einen riesigen drehenden Apparat!\nEr hat verschiedene Öffnungen, die anscheinend Flüssigkeiten in eine sehr komprimierte essbare Tablette umwandeln.\n\nDer Gedanke, aus diesen starken Tränken einen winzigen Happen zu machen, klingt unangenehm. Aber vielleicht ist es gut, neue Dinge auszuprobieren?",
         "options": [
           {
             "id": "POTION",
@@ -4459,12 +4459,12 @@
     "name": "Der Prozess",
     "type": "Event",
     "act": "Act 3 - Glory",
-    "description": "Du stellst dich hinter einigen Leuten an, die ein riesiges Gebäude betreten.\n\nAls du unter einem [gold]goldenen Torbogen[/gold] durchgehst, schmettert eine Fanfare, [jitter]Konfetti explodiert[/jitter] und [sine]Luftschlangen gleiten[/sine] von der Decke herab!\n\n“Teilnehmer [blue][EntrantNumber][/blue], du bist [green]ENTSCHEIDER[/green] für den heutigen [gold]Prozess[/gold].”",
+    "description": "Du stellst dich hinter einigen Leuten an, die ein riesiges Gebäude betreten.\n\nAls du unter einem [gold]goldenen Torbogen[/gold] durchgehst, schmettert eine Fanfare, [jitter]Konfetti explodiert[/jitter] und [sine]Luftschlangen gleiten[/sine] von der Decke herab!\n\n“Teilnehmerin [blue][EntrantNumber][/blue], du bist [green]ENTSCHEIDERIN[/green] für den heutigen [gold]Prozess[/gold].”",
     "options": [
       {
         "id": "ACCEPT",
         "title": "Akzeptieren",
-        "description": "Diene als heutiger Entscheider."
+        "description": "Diene als heutige Entscheiderin."
       },
       {
         "id": "REJECT",
@@ -4475,12 +4475,12 @@
     "pages": [
       {
         "id": "INITIAL",
-        "description": "Du stellst dich hinter einigen Leuten an, die ein riesiges Gebäude betreten.\n\nAls du unter einem [gold]goldenen Torbogen[/gold] durchgehst, schmettert eine Fanfare, [jitter]Konfetti explodiert[/jitter] und [sine]Luftschlangen gleiten[/sine] von der Decke herab!\n\n“Teilnehmer [blue][EntrantNumber][/blue], du bist [green]ENTSCHEIDER[/green] für den heutigen [gold]Prozess[/gold].”",
+        "description": "Du stellst dich hinter einigen Leuten an, die ein riesiges Gebäude betreten.\n\nAls du unter einem [gold]goldenen Torbogen[/gold] durchgehst, schmettert eine Fanfare, [jitter]Konfetti explodiert[/jitter] und [sine]Luftschlangen gleiten[/sine] von der Decke herab!\n\n“Teilnehmerin [blue][EntrantNumber][/blue], du bist [green]ENTSCHEIDERIN[/green] für den heutigen [gold]Prozess[/gold].”",
         "options": [
           {
             "id": "ACCEPT",
             "title": "Akzeptieren",
-            "description": "Diene als heutiger Entscheider."
+            "description": "Diene als heutige Entscheiderin."
           },
           {
             "id": "REJECT",
@@ -4568,7 +4568,7 @@
           {
             "id": "ACCEPT",
             "title": "Akzeptieren",
-            "description": "Gib nach. Diene als heutiger Entscheider."
+            "description": "Gib nach. Diene als heutige Entscheiderin."
           },
           {
             "id": "DOUBLE_DOWN",

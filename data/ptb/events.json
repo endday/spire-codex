@@ -4,7 +4,7 @@
     "name": "Termas Abissais",
     "type": "Event",
     "act": "Underdocks",
-    "description": "Você encontra uma câmara isolada.\n\nVapores sobem de termas borbulhantes cheias de líquido quente que muda de cor em ritmos hipnóticos. Formações de crustáceos se penduram pelo teto , pingando um líquido viscoso que se retorce e evapora ao entrar em contato com a superfície. O ar parece denso, carregado de [blue]sal[/blue] e algo [green]certamente orgânico[/green].\n\nAo se aproximar da borda de uma das fontes, o líquido cria ondulações. As águas borbulham com maior intensidade, como se estivessem ansiosas pela sua entrada.",
+    "description": "Você encontra uma câmara isolada.\n\nVapores sobem de termas borbulhantes cheias de líquido quente que muda de cor em ritmos hipnóticos. Formações de crustáceos se penduram pelo teto, pingando um líquido viscoso que se retorce e evapora ao entrar em contato com a superfície. O ar parece denso, carregado de [blue]sal[/blue] e de algo [green]certamente orgânico[/green].\n\nAo se aproximar da borda de uma das fontes, o líquido cria ondulações. As águas borbulham com maior intensidade, como se estivessem ansiosas pela sua entrada.",
     "options": [
       {
         "id": "IMMERSE",
@@ -76,7 +76,7 @@
       },
       {
         "id": "INITIAL",
-        "description": "Você encontra uma câmara isolada.\n\nVapores sobem de termas borbulhantes cheias de líquido quente que muda de cor em ritmos hipnóticos. Formações de crustáceos se penduram pelo teto , pingando um líquido viscoso que se retorce e evapora ao entrar em contato com a superfície. O ar parece denso, carregado de [blue]sal[/blue] e algo [green]certamente orgânico[/green].\n\nAo se aproximar da borda de uma das fontes, o líquido cria ondulações. As águas borbulham com maior intensidade, como se estivessem ansiosas pela sua entrada.",
+        "description": "Você encontra uma câmara isolada.\n\nVapores sobem de termas borbulhantes cheias de líquido quente que muda de cor em ritmos hipnóticos. Formações de crustáceos se penduram pelo teto, pingando um líquido viscoso que se retorce e evapora ao entrar em contato com a superfície. O ar parece denso, carregado de [blue]sal[/blue] e de algo [green]certamente orgânico[/green].\n\nAo se aproximar da borda de uma das fontes, o líquido cria ondulações. As águas borbulham com maior intensidade, como se estivessem ansiosas pela sua entrada.",
         "options": [
           {
             "id": "IMMERSE",
@@ -1948,7 +1948,7 @@
         {
           "order": "0-1",
           "speaker": "ancient",
-          "text": "Que belos trajes você trouxe de terras distantes!\nOrdene seus lacaios que o aproxime e lhe concederei minha bênção."
+          "text": "Que belos trajes você trouxe de terras distantes!\nOrdene seus lacaios que o aproximem e lhe concederei minha bênção."
         },
         {
           "order": "1-0r",
@@ -2692,7 +2692,7 @@
   },
   {
     "id": "ROUND_TEA_PARTY",
-    "name": "A Hora do Chá",
+    "name": "Hora do Chá",
     "type": "Event",
     "act": "Act 3 - Glory",
     "description": "Você encontra um [orange]convite[/orange] endereçado a um tal [blue]“Sir Galalot”[/blue], para que compareça a um chá da tarde.\n\nAo chegar no local descrito, você se vê em meio a [gold]comandantes[/gold], [aqua]generais[/aqua], [red]líderes de guerra[/red] e [blue]mercenários[/blue], todos... tomando chá?\nO robusto cavaleiro usando uma [gold]coroa dourada[/gold] se dirige a você.\n\n[jitter]“Como ousa se atrasar para a hora do [b]Chá[/b]?!”[/jitter]",

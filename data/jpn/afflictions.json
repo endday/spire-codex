@@ -2,7 +2,7 @@
   {
     "id": "BOUND",
     "name": "束縛",
-    "description": "毎ターンプレイできる[gold]束縛[/gold]状態のカードは[blue]1[/blue]枚のみ。ターン終了時に [gold]束縛[/gold]は解除される。",
+    "description": "1ターンにプレイできる[gold]束縛[/gold]状態のカードは[blue]1[/blue]枚のみ。ターン終了時に [gold]束縛[/gold]は解除される。",
     "extra_card_text": "束縛",
     "is_stackable": false
   },

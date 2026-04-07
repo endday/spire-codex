@@ -79,8 +79,8 @@
   {
     "id": "PYRE",
     "name": "かがり火",
-    "description": "各ターンの開始時、[energy:1]を得る。",
-    "description_raw": "各ターンの開始時、{Energy:energyIcons()}を得る。",
+    "description": "ターン開始時、[energy:1]を得る。",
+    "description_raw": "ターン開始時、{Energy:energyIcons()}を得る。",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -108,7 +108,7 @@
     "image_url": "/static/images/cards/pyre.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "各ターンの開始時、[energy:2]を得る。",
+    "upgrade_description": "ターン開始時、[energy:2]を得る。",
     "type_key": "Power",
     "rarity_key": "Rare",
     "compendium_order": 60
@@ -116,8 +116,8 @@
   {
     "id": "BULLY",
     "name": "ごろつき",
-    "description": "4ダメージを与える。\n敵に付与している[gold]弱体[/gold]1につき、追加で2ダメージを与える。",
-    "description_raw": "{CalculatedDamage:diff()}ダメージを与える。\n敵に付与している[gold]弱体[/gold]1につき、追加で{ExtraDamage:diff()}ダメージを与える。",
+    "description": "4ダメージを与える。\n対象の敵に付与している[gold]弱体[/gold]1につき、追加で2ダメージを与える。",
+    "description_raw": "{CalculatedDamage:diff()}ダメージを与える。\n対象の敵に付与している[gold]弱体[/gold]1につき、追加で{ExtraDamage:diff()}ダメージを与える。",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -147,7 +147,7 @@
     "image_url": "/static/images/cards/bully.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "4ダメージを与える。\n敵に付与している[gold]弱体[/gold]1につき、追加で3ダメージを与える。",
+    "upgrade_description": "4ダメージを与える。\n対象の敵に付与している[gold]弱体[/gold]1につき、追加で3ダメージを与える。",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 14
@@ -271,8 +271,8 @@
   {
     "id": "FETCH",
     "name": "とってこい",
-    "description": "[gold]オスティ[/gold]が3ダメージを与える。このターン、このカードを初めてプレイした場合、カードを1枚引く。",
-    "description_raw": "[gold]オスティ[/gold]が{OstyDamage:diff()}ダメージを与える。このターン、このカードを初めてプレイした場合、カードを{Cards:diff()}枚引く。",
+    "description": "[gold]オスティ[/gold]が3ダメージを与える。\nこのターンにこれをプレイしたのが初めての場合、カードを1枚引く。",
+    "description_raw": "[gold]オスティ[/gold]が{OstyDamage:diff()}ダメージを与える。\nこのターンにこれをプレイしたのが初めての場合、カードを{Cards:diff()}枚引く。",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -304,7 +304,7 @@
     "image_url": "/static/images/cards/fetch.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "[gold]オスティ[/gold]が6ダメージを与える。このターン、このカードを初めてプレイした場合、カードを1枚引く。",
+    "upgrade_description": "[gold]オスティ[/gold]が6ダメージを与える。\nこのターンにこれをプレイしたのが初めての場合、カードを1枚引く。",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 294
@@ -1040,8 +1040,8 @@
   {
     "id": "INFERNO",
     "name": "インフェルノ",
-    "description": "ターン開始時、\nHPを1失う。\nHPを失うたび、すべての敵に6ダメージを与える。",
-    "description_raw": "ターン開始時、\nHPを1失う。\nHPを失うたび、すべての敵に{InfernoPower:diff()}ダメージを与える。",
+    "description": "ターン開始時、HPを1失う。\n自身のターンにHPを失うたび、すべての敵に6ダメージを与える。",
+    "description_raw": "ターン開始時、HPを1失う。\n自身のターンにHPを失うたび、すべての敵に{InfernoPower:diff()}ダメージを与える。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -1076,7 +1076,7 @@
     "image_url": "/static/images/cards/inferno.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "ターン開始時、\nHPを1失う。\nHPを失うたび、すべての敵に9ダメージを与える。",
+    "upgrade_description": "ターン開始時、HPを1失う。\n自身のターンにHPを失うたび、すべての敵に9ダメージを与える。",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 46
@@ -1286,8 +1286,8 @@
   {
     "id": "OBLIVION",
     "name": "オブリビオン",
-    "description": "このターン、カードをプレイするたび、敵に[gold]破滅[/gold]3を付与する。",
-    "description_raw": "このターン、カードをプレイするたび、敵に[gold]破滅[/gold]{DoomPower:diff()}を付与する。",
+    "description": "このターン、カードをプレイするたび、対象の敵に[gold]破滅[/gold]3を付与する。",
+    "description_raw": "このターン、カードをプレイするたび、対象の敵に[gold]破滅[/gold]{DoomPower:diff()}を付与する。",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -1480,8 +1480,8 @@
   {
     "id": "COUNTDOWN",
     "name": "カウントダウン",
-    "description": "ターン開始時、ランダムな敵1体に[gold]破滅[/gold]6を付与する。",
-    "description_raw": "ターン開始時、ランダムな敵1体に[gold]破滅[/gold]{CountdownPower:diff()}を付与する。",
+    "description": "ターン開始時、ランダムな敵に[gold]破滅[/gold]6を付与する。",
+    "description_raw": "ターン開始時、ランダムな敵に[gold]破滅[/gold]{CountdownPower:diff()}を付与する。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -1516,7 +1516,7 @@
     "image_url": "/static/images/cards/countdown.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "ターン開始時、ランダムな敵1体に[gold]破滅[/gold]9を付与する。",
+    "upgrade_description": "ターン開始時、ランダムな敵に[gold]破滅[/gold]9を付与する。",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 274
@@ -1595,7 +1595,7 @@
     "id": "RATTLE",
     "name": "ガラガラ",
     "description": "[gold]オスティ[/gold]が7ダメージを与える。\nこのターン中に[gold]オスティ[/gold]が攻撃した回数分、追加で繰り返す。",
-    "description_raw": "[gold]オスティ[/gold]が{OstyDamage:diff()}ダメージを与える。\nこのターン中に[gold]オスティ[/gold]が攻撃した回数分、追加で繰り返す。{InCombat:\n(攻撃回数は{CalculatedHits:diff()}回)|}",
+    "description_raw": "[gold]オスティ[/gold]が{OstyDamage:diff()}ダメージを与える。\nこのターン中に[gold]オスティ[/gold]が攻撃した回数分、追加で繰り返す。{InCombat:\n(攻撃回数は{CalculatedHits:diff()}回)}",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -1874,8 +1874,8 @@
   {
     "id": "GRAPPLE",
     "name": "グラップル",
-    "description": "7ダメージを与える。\nこのターン、[gold]ブロック[/gold]を得るたび、5ダメージを与える。",
-    "description_raw": "{Damage:diff()}ダメージを与える。\nこのターン、[gold]ブロック[/gold]を得るたび、{GrapplePower:diff()}ダメージを与える。",
+    "description": "7ダメージを与える。\nこのターン、[gold]ブロック[/gold]を得るたび、対象の敵に5ダメージを与える。",
+    "description_raw": "{Damage:diff()}ダメージを与える。\nこのターン、[gold]ブロック[/gold]を得るたび、対象の敵に{GrapplePower:diff()}ダメージを与える。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -1912,7 +1912,7 @@
     "image_url": "/static/images/cards/grapple.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "9ダメージを与える。\nこのターン、[gold]ブロック[/gold]を得るたび、7ダメージを与える。",
+    "upgrade_description": "9ダメージを与える。\nこのターン、[gold]ブロック[/gold]を得るたび、対象の敵に7ダメージを与える。",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 38
@@ -2380,8 +2380,8 @@
   {
     "id": "SEEKER_STRIKE",
     "name": "シーカーストライク",
-    "description": "6ダメージを与える。\n[gold]山札[/gold]から3枚のカードを見て1枚選び、[gold]手札[/gold]に加える。",
-    "description_raw": "{Damage:diff()}ダメージを与える。\n[gold]山札[/gold]から{Cards:diff()}枚のカードを見て1枚選び、[gold]手札[/gold]に加える。",
+    "description": "6ダメージを与える。\n[gold]山札[/gold]のランダムなカード3枚から1枚選び、[gold]手札[/gold]に加える。",
+    "description_raw": "{Damage:diff()}ダメージを与える。\n[gold]山札[/gold]のランダムなカード{Cards:diff()}枚から1枚選び、[gold]手札[/gold]に加える。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -2412,7 +2412,7 @@
     "image_url": "/static/images/cards/seeker_strike.png",
     "beta_image_url": "/static/images/cards/beta/seeker_strike.png",
     "type_variants": null,
-    "upgrade_description": "9ダメージを与える。\n[gold]山札[/gold]から3枚のカードを見て1枚選び、[gold]手札[/gold]に加える。",
+    "upgrade_description": "9ダメージを与える。\n[gold]山札[/gold]のランダムなカード3枚から1枚選び、[gold]手札[/gold]に加える。",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 491
@@ -2537,8 +2537,8 @@
   {
     "id": "JUGGERNAUT",
     "name": "ジャガーノート",
-    "description": "[gold]ブロック[/gold]を得るたび、ランダムな敵1体に5ダメージを与える。",
-    "description_raw": "[gold]ブロック[/gold]を得るたび、ランダムな敵1体に{JuggernautPower:diff()}ダメージを与える。",
+    "description": "[gold]ブロック[/gold]を得るたび、ランダムな敵に5ダメージを与える。",
+    "description_raw": "[gold]ブロック[/gold]を得るたび、ランダムな敵に{JuggernautPower:diff()}ダメージを与える。",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -2573,7 +2573,7 @@
     "image_url": "/static/images/cards/juggernaut.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "[gold]ブロック[/gold]を得るたび、ランダムな敵1体に7ダメージを与える。",
+    "upgrade_description": "[gold]ブロック[/gold]を得るたび、ランダムな敵に7ダメージを与える。",
     "type_key": "Power",
     "rarity_key": "Rare",
     "compendium_order": 49
@@ -3174,8 +3174,8 @@
   {
     "id": "SPECTRUM_SHIFT",
     "name": "スペクトラムシフト",
-    "description": "ターン開始時、ランダムな無色カードを1枚[gold]手札[/gold]に加える",
-    "description_raw": "ターン開始時、ランダムな無色カードを{Cards:diff()}枚[gold]手札[/gold]に加える",
+    "description": "ターン開始時、ランダムな無色カードを1枚[gold]手札[/gold]に加える。",
+    "description_raw": "ターン開始時、ランダムな無色カードを{Cards:diff()}枚[gold]手札[/gold]に加える。",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -3285,8 +3285,8 @@
   {
     "id": "SETUP_STRIKE",
     "name": "セットアップストライク",
-    "description": "7ダメージを与える。\nこのターン、[gold]筋力[/gold]2を得る。",
-    "description_raw": "{Damage:diff()}ダメージを与える。\nこのターン、[gold]筋力[/gold]{StrengthPower:diff()}を得る。",
+    "description": "7ダメージを与える。\nターン終了時まで[gold]筋力[/gold]2を得る。",
+    "description_raw": "{Damage:diff()}ダメージを与える。\nターン終了時まで[gold]筋力[/gold]{StrengthPower:diff()}を得る。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -3325,7 +3325,7 @@
     "image_url": "/static/images/cards/setup_strike.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "9ダメージを与える。\nこのターン、[gold]筋力[/gold]2を得る。",
+    "upgrade_description": "9ダメージを与える。\nターン終了時まで[gold]筋力[/gold]2を得る。",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 65
@@ -3333,8 +3333,8 @@
   {
     "id": "SEVEN_STARS",
     "name": "セブンスターズ",
-    "description": "すべての敵に7ダメージを7回与える。 。",
-    "description_raw": "すべての敵に{Damage:diff()}ダメージを{Repeat}回与える。 。",
+    "description": "すべての敵に7ダメージを7回与える。",
+    "description_raw": "すべての敵に{Damage:diff()}ダメージを{Repeat}回与える。",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -3501,8 +3501,8 @@
   {
     "id": "SWORD_BOOMERANG",
     "name": "ソードブーメラン",
-    "description": "ランダムな敵1体に3ダメージを3回与える。",
-    "description_raw": "ランダムな敵1体に{Damage:diff()}ダメージを{Repeat:diff()}回与える。",
+    "description": "ランダムな敵に3ダメージを3回与える。",
+    "description_raw": "ランダムな敵に{Damage:diff()}ダメージを{Repeat:diff()}回与える。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -3531,7 +3531,7 @@
     "image_url": "/static/images/cards/sword_boomerang.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "ランダムな敵1体に3ダメージを4回与える。",
+    "upgrade_description": "ランダムな敵に3ダメージを4回与える。",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 73
@@ -3580,8 +3580,8 @@
   {
     "id": "TAG_TEAM",
     "name": "タッグチーム",
-    "description": "11ダメージを与える。\n他のプレイヤーが対象の敵にプレイする次のアタックは、2回プレイされる。",
-    "description_raw": "{Damage:diff()}ダメージを与える。\n他のプレイヤーが対象の敵にプレイする次のアタックは、2回プレイされる。",
+    "description": "11ダメージを与える。\n他のプレイヤーが対象の敵にプレイする次のアタックは、もう1回プレイされる。",
+    "description_raw": "{Damage:diff()}ダメージを与える。\n他のプレイヤーが対象の敵にプレイする次のアタックは、もう1回プレイされる。",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -3609,7 +3609,7 @@
     "image_url": "/static/images/cards/tag_team.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "15ダメージを与える。\n他のプレイヤーが対象の敵にプレイする次のアタックは、2回プレイされる。",
+    "upgrade_description": "15ダメージを与える。\n他のプレイヤーが対象の敵にプレイする次のアタックは、もう1回プレイされる。",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 495
@@ -3651,7 +3651,7 @@
   },
   {
     "id": "DAGGER_THROW",
-    "name": "ダガー投げ",
+    "name": "ダガースロー",
     "description": "9ダメージを与える。\nカードを1枚引く。\nカードを1枚捨てる。",
     "description_raw": "{Damage:diff()}ダメージを与える。\nカードを1枚引く。\nカードを1枚捨てる。",
     "cost": 1,
@@ -4251,7 +4251,7 @@
     "id": "KNIFE_TRAP",
     "name": "ナイフの罠",
     "description": "[gold]廃棄札[/gold]にあるすべての[gold]ナイフ[/gold]をプレイする。",
-    "description_raw": "[gold]廃棄札[/gold]にあるすべての[gold]ナイフ[/gold]を{IfUpgraded:show:[gold]アップグレード[/gold]してプレイ|プレイ}する。{InCombat:\n([gold]{CalculatedShivs:plural:ナイフ|ナイフ}[/gold]を{CalculatedShivs:diff()}枚プレイする。)|}",
+    "description_raw": "[gold]廃棄札[/gold]にあるすべての[gold]ナイフ[/gold]を{IfUpgraded:show:[gold]アップグレード[/gold]して|}プレイする。{InCombat:\n([gold]ナイフ[/gold]を{CalculatedShivs:diff()}枚プレイする。)|}",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -4796,8 +4796,8 @@
   {
     "id": "BOUNCING_FLASK",
     "name": "バウンドフラスコ",
-    "description": "ランダムな敵1体に[gold]毒[/gold]3を付与する。3回行う。",
-    "description_raw": "ランダムな敵1体に[gold]毒[/gold]{PoisonPower:diff()}を付与する。{Repeat:diff()}回行う。",
+    "description": "ランダムな敵に[gold]毒[/gold]3を3回付与する。",
+    "description_raw": "ランダムな敵に[gold]毒[/gold]{PoisonPower:diff()}を{Repeat:diff()}回付与する。",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -4833,7 +4833,7 @@
     "image_url": "/static/images/cards/bouncing_flask.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "ランダムな敵1体に[gold]毒[/gold]3を付与する。4回行う。",
+    "upgrade_description": "ランダムな敵に[gold]毒[/gold]3を4回付与する。",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 100
@@ -4875,52 +4875,6 @@
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 95
-  },
-  {
-    "id": "BASH",
-    "name": "バッシュ",
-    "description": "8ダメージを与える。\n[gold]弱体[/gold]2を付与する。",
-    "description_raw": "{Damage:diff()}ダメージを与える。\n[gold]弱体[/gold]{VulnerablePower:diff()}を付与する。",
-    "cost": 2,
-    "is_x_cost": null,
-    "is_x_star_cost": null,
-    "star_cost": null,
-    "type": "アタック",
-    "rarity": "ベーシック",
-    "target": "AnyEnemy",
-    "color": "ironclad",
-    "damage": 8,
-    "block": null,
-    "hit_count": null,
-    "powers_applied": [
-      {
-        "power": "弱体",
-        "amount": 2,
-        "power_key": "Vulnerable"
-      }
-    ],
-    "cards_draw": null,
-    "energy_gain": null,
-    "hp_loss": null,
-    "keywords": null,
-    "tags": null,
-    "spawns_cards": null,
-    "vars": {
-      "Damage": 8,
-      "VulnerablePower": 2,
-      "Vulnerable": 2
-    },
-    "upgrade": {
-      "damage": "+2",
-      "vulnerable": "+1"
-    },
-    "image_url": "/static/images/cards/bash.png",
-    "beta_image_url": null,
-    "type_variants": null,
-    "upgrade_description": "10ダメージを与える。\n[gold]弱体[/gold]2を付与する。",
-    "type_key": "Attack",
-    "rarity_key": "Basic",
-    "compendium_order": 5
   },
   {
     "id": "CHARGE_BATTERY",
@@ -5196,8 +5150,8 @@
   {
     "id": "BURST",
     "name": "バースト",
-    "description": "",
-    "description_raw": "",
+    "description": "このターン、次にプレイするスキルをもう1回プレイする。",
+    "description_raw": "このターン、次にプレイする{Skills:choose(1):|{:diff()}枚の}スキルをもう1回プレイする。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -5233,8 +5187,8 @@
   {
     "id": "SNAP",
     "name": "パチン",
-    "description": "[gold]オスティ[/gold]が7ダメージを与える。\n[gold]手札[/gold]のカード1枚を[gold]保留[/gold]する。",
-    "description_raw": "[gold]オスティ[/gold]が{OstyDamage:diff()}ダメージを与える。\n[gold]手札[/gold]のカード1枚を[gold]保留[/gold]する。",
+    "description": "[gold]オスティ[/gold]が7ダメージを与える。\n[gold]手札[/gold]のカード1枚が[gold]保留[/gold]を得る。",
+    "description_raw": "[gold]オスティ[/gold]が{OstyDamage:diff()}ダメージを与える。\n[gold]手札[/gold]のカード1枚が[gold]保留[/gold]を得る。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -5265,7 +5219,7 @@
     "image_url": "/static/images/cards/snap.png",
     "beta_image_url": "/static/images/cards/beta/snap.png",
     "type_variants": null,
-    "upgrade_description": "[gold]オスティ[/gold]が10ダメージを与える。\n[gold]手札[/gold]のカード1枚を[gold]保留[/gold]する。",
+    "upgrade_description": "[gold]オスティ[/gold]が10ダメージを与える。\n[gold]手札[/gold]のカード1枚が[gold]保留[/gold]を得る。",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 337
@@ -5319,8 +5273,8 @@
   {
     "id": "PERFECTED_STRIKE",
     "name": "パーフェクトストライク",
-    "description": "6ダメージを与える。\n「ストライク」を含むすべてのカード1枚につき、追加で2ダメージを与える。",
-    "description_raw": "{CalculatedDamage:diff()}ダメージを与える。\n「ストライク」を含むすべてのカード1枚につき、追加で{ExtraDamage:diff()}ダメージを与える。",
+    "description": "6ダメージを与える。\n名前に「ストライク」を含むすべてのカード1枚につき、追加で2ダメージを与える。",
+    "description_raw": "{CalculatedDamage:diff()}ダメージを与える。\n名前に「ストライク」を含むすべてのカード1枚につき、追加で{ExtraDamage:diff()}ダメージを与える。",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -5352,7 +5306,7 @@
     "image_url": "/static/images/cards/perfected_strike.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "6ダメージを与える。\n「ストライク」を含むすべてのカード1枚につき、追加で3ダメージを与える。",
+    "upgrade_description": "6ダメージを与える。\n名前に「ストライク」を含むすべてのカード1枚につき、追加で3ダメージを与える。",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 56
@@ -5763,8 +5717,8 @@
   {
     "id": "FOCUSED_STRIKE",
     "name": "フォーカスストライク",
-    "description": "9ダメージを与える。\nこのターン、[gold]集中力[/gold]1を得る。",
-    "description_raw": "{Damage:diff()}ダメージを与える。\nこのターン、[gold]集中力[/gold]{FocusPower:diff()}を得る。",
+    "description": "9ダメージを与える。\nターン終了時まで[gold]集中力[/gold]1を得る。",
+    "description_raw": "{Damage:diff()}ダメージを与える。\nターン終了時まで[gold]集中力[/gold]{FocusPower:diff()}を得る。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -5803,7 +5757,7 @@
     "image_url": "/static/images/cards/focused_strike.png",
     "beta_image_url": "/static/images/cards/beta/focused_strike.png",
     "type_variants": null,
-    "upgrade_description": "11ダメージを与える。\nこのターン、[gold]集中力[/gold]2を得る。",
+    "upgrade_description": "11ダメージを与える。\nターン終了時まで[gold]集中力[/gold]2を得る。",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 383
@@ -5936,8 +5890,8 @@
   {
     "id": "FRIENDSHIP",
     "name": "フレンドシップ",
-    "description": "[gold]筋力[/gold]inverseDiff()を失う。\n各ターンの開始時、[energy:1]を得る。",
-    "description_raw": "[gold]筋力[/gold]{StrengthPower:inverseDiff()}を失う。\n各ターンの開始時、{Energy:energyIcons()}を得る。",
+    "description": "[gold]筋力[/gold]inverseDiff()を失う。\nターン開始時、[energy:1]を得る。",
+    "description_raw": "[gold]筋力[/gold]{StrengthPower:inverseDiff()}を失う。\nターン開始時、{Energy:energyIcons()}を得る。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -5981,8 +5935,8 @@
   {
     "id": "FEEDING_FRENZY",
     "name": "フードファイト",
-    "description": "このターン、[gold]筋力[/gold]5を得る。",
-    "description_raw": "このターン、[gold]筋力[/gold]{StrengthPower:diff()}を得る。",
+    "description": "ターン終了時まで[gold]筋力[/gold]5を得る。",
+    "description_raw": "ターン終了時まで[gold]筋力[/gold]{StrengthPower:diff()}を得る。",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -6107,8 +6061,8 @@
   {
     "id": "PROTECTOR",
     "name": "プロテクター",
-    "description": "[gold]オスティ[/gold]が10ダメージを与える。追加で[gold]オスティ[/gold]の[gold]最大HP[/gold]に等しいダメージを与える。",
-    "description_raw": "[gold]オスティ[/gold]が{CalculatedDamage:diff()}ダメージを与える。追加で[gold]オスティ[/gold]の[gold]最大HP[/gold]に等しいダメージを与える。",
+    "description": "[gold]オスティ[/gold]が10ダメージを与える。\n追加で[gold]オスティ[/gold]の[gold]最大HP[/gold]に等しいダメージを与える。",
+    "description_raw": "[gold]オスティ[/gold]が{CalculatedDamage:diff()}ダメージを与える。\n追加で[gold]オスティ[/gold]の[gold]最大HP[/gold]に等しいダメージを与える。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -6347,8 +6301,8 @@
   {
     "id": "HELLRAISER",
     "name": "ヘル・レイザー",
-    "description": "「ストライク」を含むカードを引くたび、ランダムな敵1体に対して自動でプレイする。",
-    "description_raw": "「ストライク」を含むカードを引くたび、ランダムな敵1体に対して自動でプレイする。",
+    "description": "名前に「ストライク」を含むカードを引くたび、それをランダムな敵に対して自動でプレイする。",
+    "description_raw": "名前に「ストライク」を含むカードを引くたび、それをランダムな敵に対して自動でプレイする。",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -6537,8 +6491,8 @@
   {
     "id": "HOTFIX",
     "name": "ホットフィックス",
-    "description": "このターン、[gold]集中力[/gold]2を得る。",
-    "description_raw": "このターン、[gold]集中力[/gold]{FocusPower:diff()}を得る。",
+    "description": "ターン終了時まで[gold]集中力[/gold]2を得る。",
+    "description_raw": "ターン終了時まで[gold]集中力[/gold]{FocusPower:diff()}を得る。",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -6573,7 +6527,7 @@
     "image_url": "/static/images/cards/hotfix.png",
     "beta_image_url": "/static/images/cards/beta/hotfix.png",
     "type_variants": null,
-    "upgrade_description": "このターン、[gold]集中力[/gold]3を得る。",
+    "upgrade_description": "ターン終了時まで[gold]集中力[/gold]3を得る。",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 394
@@ -7303,8 +7257,8 @@
   {
     "id": "MEMENTO_MORI",
     "name": "メメント・モリ",
-    "description": "8ダメージを与える。\nこのターン、捨てたカード1枚につき、追加で4ダメージを与える",
-    "description_raw": "{CalculatedDamage:diff()}ダメージを与える。\nこのターン、捨てたカード1枚につき、追加で{ExtraDamage:diff()}ダメージを与える",
+    "description": "8ダメージを与える。\nこのターン、捨てたカード1枚につき、追加で4ダメージを与える。",
+    "description_raw": "{CalculatedDamage:diff()}ダメージを与える。\nこのターン、捨てたカード1枚につき、追加で{ExtraDamage:diff()}ダメージを与える。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -7335,7 +7289,7 @@
     "image_url": "/static/images/cards/memento_mori.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "8ダメージを与える。\nこのターン、捨てたカード1枚につき、追加で5ダメージを与える",
+    "upgrade_description": "8ダメージを与える。\nこのターン、捨てたカード1枚につき、追加で5ダメージを与える。",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 136
@@ -7343,8 +7297,8 @@
   {
     "id": "MONOLOGUE",
     "name": "モノローグ",
-    "description": "このターン、カードをプレイするたび、[gold]筋力[/gold]1を得る。",
-    "description_raw": "このターン、カードをプレイするたび、[gold]筋力[/gold]{Power:diff()}を得る。",
+    "description": "このターン、カードをプレイするたび、ターン終了時まで[gold]筋力[/gold]1を得る。",
+    "description_raw": "このターン、カードをプレイするたび、ターン終了時まで[gold]筋力[/gold]{Power:diff()}を得る。",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -7779,8 +7733,8 @@
   {
     "id": "ROCKET_PUNCH",
     "name": "ロケットパンチ",
-    "description": "13ダメージを与える。\nカードを1枚引く。\n状態異常を作成するたび、このターン、このカードのコストは0[energy:1]になる。",
-    "description_raw": "{Damage:diff()}ダメージを与える。\nカードを{Cards:diff()}枚引く。\n状態異常を作成するたび、このターン、このカードのコストは0{energyPrefix:energyIcons(1)}になる。",
+    "description": "13ダメージを与える。\nカードを1枚引く。\n状態異常を作成するたび、このターン、このカードのコストは0[energy:1]。",
+    "description_raw": "{Damage:diff()}ダメージを与える。\nカードを{Cards:diff()}枚引く。\n状態異常を作成するたび、このターン、このカードのコストは0{energyPrefix:energyIcons(1)}。",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -7810,7 +7764,7 @@
     "image_url": "/static/images/cards/rocket_punch.png",
     "beta_image_url": "/static/images/cards/beta/rocket_punch.png",
     "type_variants": null,
-    "upgrade_description": "14ダメージを与える。\nカードを2枚引く。\n状態異常を作成するたび、このターン、このカードのコストは0[energy:1]になる。",
+    "upgrade_description": "14ダメージを与える。\nカードを2枚引く。\n状態異常を作成するたび、このターン、このカードのコストは0[energy:1]。",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 413
@@ -7818,8 +7772,8 @@
   {
     "id": "ONE_TWO_PUNCH",
     "name": "ワン・ツーパンチ",
-    "description": "このターン、次にプレイするアタックを2回プレイする",
-    "description_raw": "このターン、次にプレイする{Attacks:cond:>1?{Attacks:diff()}枚のアタック|アタック}を2回プレイする",
+    "description": "このターン、次にプレイするアタックをもう1回プレイする。",
+    "description_raw": "このターン、次にプレイする{Attacks:cond:>1?{Attacks:diff()}枚のアタック|アタック}をもう1回プレイする。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -7847,7 +7801,7 @@
     "image_url": "/static/images/cards/one_two_punch.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "このターン、次にプレイする2枚のアタックを2回プレイする",
+    "upgrade_description": "このターン、次にプレイする2枚のアタックをもう1回プレイする。",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 54
@@ -7890,43 +7844,6 @@
     "compendium_order": 487
   },
   {
-    "id": "VOLLEY",
-    "name": "一斉射撃",
-    "description": "ランダムな敵1体に10ダメージをX回与える。",
-    "description_raw": "ランダムな敵1体に{Damage:diff()}ダメージをX回与える。",
-    "cost": 0,
-    "is_x_cost": true,
-    "is_x_star_cost": null,
-    "star_cost": null,
-    "type": "アタック",
-    "rarity": "アンコモン",
-    "target": "RandomEnemy",
-    "color": "colorless",
-    "damage": 10,
-    "block": null,
-    "hit_count": null,
-    "powers_applied": null,
-    "cards_draw": null,
-    "energy_gain": null,
-    "hp_loss": null,
-    "keywords": null,
-    "tags": null,
-    "spawns_cards": null,
-    "vars": {
-      "Damage": 10
-    },
-    "upgrade": {
-      "damage": "+4"
-    },
-    "image_url": "/static/images/cards/volley.png",
-    "beta_image_url": "/static/images/cards/beta/volley.png",
-    "type_variants": null,
-    "upgrade_description": "ランダムな敵1体に14ダメージをX回与える。",
-    "type_key": "Attack",
-    "rarity_key": "Uncommon",
-    "compendium_order": 502
-  },
-  {
     "id": "FLASH_OF_STEEL",
     "name": "一閃",
     "description": "5ダメージを与える。\nカードを1枚引く。",
@@ -7967,8 +7884,8 @@
   {
     "id": "CRESCENT_SPEAR",
     "name": "三日月の槍",
-    "description": "6ダメージを与える。\n[star:1]をコストに持つカード1枚につき、追加で2ダメージを与える。",
-    "description_raw": "{CalculatedDamage:diff()}ダメージを与える。\n{singleStarIcon}をコストに持つカード1枚につき、追加で{ExtraDamage:diff()}ダメージを与える。",
+    "description": "6ダメージを与える。\n[star:1]をコストに持つすべてのカード1枚につき、追加で2ダメージを与える。",
+    "description_raw": "{CalculatedDamage:diff()}ダメージを与える。\n{singleStarIcon}をコストに持つすべてのカード1枚につき、追加で{ExtraDamage:diff()}ダメージを与える。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -7999,7 +7916,7 @@
     "image_url": "/static/images/cards/crescent_spear.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "6ダメージを与える。\n[star:1]をコストに持つカード1枚につき、追加で3ダメージを与える。",
+    "upgrade_description": "6ダメージを与える。\n[star:1]をコストに持つすべてのカード1枚につき、追加で3ダメージを与える。",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 195
@@ -8601,8 +8518,8 @@
   {
     "id": "JACK_OF_ALL_TRADES",
     "name": "何でも屋",
-    "description": "ランダムな無色カードを1枚[gold]手札[/gold]に加える",
-    "description_raw": "ランダムな無色カードを{Cards:diff()}枚[gold]手札[/gold]に加える",
+    "description": "ランダムな無色カードを1枚[gold]手札[/gold]に加える。",
+    "description_raw": "ランダムな無色カードを{Cards:diff()}枚[gold]手札[/gold]に加える。",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -8632,7 +8549,7 @@
     "image_url": "/static/images/cards/jack_of_all_trades.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "ランダムな無色カードを2枚[gold]手札[/gold]に加える",
+    "upgrade_description": "ランダムな無色カードを2枚[gold]手札[/gold]に加える。",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "keywords_key": [
@@ -8761,8 +8678,8 @@
   {
     "id": "SIGNAL_BOOST",
     "name": "信号増幅",
-    "description": "次にプレイするパワーは2回プレイされる。",
-    "description_raw": "次にプレイするパワーは2回プレイされる。",
+    "description": "次にプレイするパワーをもう1回プレイする。",
+    "description_raw": "次にプレイするパワーをもう1回プレイする。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -9142,8 +9059,8 @@
   {
     "id": "TORIC_TOUGHNESS",
     "name": "円環の障壁",
-    "description": "5[gold]ブロック[/gold]を得る。\n次のターン開始時に5[gold]ブロック[/gold]を得る。",
-    "description_raw": "{Block:diff()}[gold]ブロック[/gold]を得る。\n{Turns:choose(1):次のターン開始時|次の{Turns:diff()}ターンの間、ターン開始時}に{Block:diff()}[gold]ブロック[/gold]を得る。",
+    "description": "5[gold]ブロック[/gold]を得る。\n次のターン開始時、5[gold]ブロック[/gold]を得る。",
+    "description_raw": "{Block:diff()}[gold]ブロック[/gold]を得る。\n次の{Turns:choose(1):ターン開始時|{Turns:diff()}ターンの間、ターン開始時}、{Block:diff()}[gold]ブロック[/gold]を得る。",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -9172,7 +9089,7 @@
     "image_url": "/static/images/cards/toric_toughness.png",
     "beta_image_url": "/static/images/cards/beta/toric_toughness.png",
     "type_variants": null,
-    "upgrade_description": "7[gold]ブロック[/gold]を得る。\n次のターン開始時に7[gold]ブロック[/gold]を得る。",
+    "upgrade_description": "7[gold]ブロック[/gold]を得る。\n次のターン開始時、7[gold]ブロック[/gold]を得る。",
     "type_key": "Skill",
     "rarity_key": "Event",
     "compendium_order": 545
@@ -9462,8 +9379,8 @@
   {
     "id": "MANGLE",
     "name": "切り刻み",
-    "description": "15ダメージを与える。\nこのターン、敵は[gold]筋力[/gold]10を失う。",
-    "description_raw": "{Damage:diff()}ダメージを与える。\nこのターン、敵は[gold]筋力[/gold]{StrengthLoss:diff()}を失う。",
+    "description": "15ダメージを与える。\nターン終了時まで敵は[gold]筋力[/gold]10を失う。",
+    "description_raw": "{Damage:diff()}ダメージを与える。\nターン終了時まで敵は[gold]筋力[/gold]{StrengthLoss:diff()}を失う。",
     "cost": 3,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -9493,7 +9410,7 @@
     "image_url": "/static/images/cards/mangle.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "20ダメージを与える。\nこのターン、敵は[gold]筋力[/gold]15を失う。",
+    "upgrade_description": "20ダメージを与える。\nターン終了時まで敵は[gold]筋力[/gold]15を失う。",
     "type_key": "Attack",
     "rarity_key": "Rare",
     "compendium_order": 51
@@ -9637,8 +9554,8 @@
   {
     "id": "TIMES_UP",
     "name": "刻限",
-    "description": "敵に付与されている[gold]破滅[/gold]に等しいダメージを与える。",
-    "description_raw": "敵に付与されている[gold]破滅[/gold]に等しいダメージを与える。{IsTargeting:\n({CalculatedDamage:diff()}ダメージを与える)|}",
+    "description": "対象の敵に付与されている[gold]破滅[/gold]に等しいダメージを与える。",
+    "description_raw": "対象の敵に付与されている[gold]破滅[/gold]に等しいダメージを与える。{IsTargeting:\n({CalculatedDamage:diff()}ダメージを与える)|}",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -10006,6 +9923,48 @@
     "compendium_order": 527
   },
   {
+    "id": "PUTREFY",
+    "name": "化膿",
+    "description": "[gold]脱力[/gold]2を付与する。\n[gold]弱体[/gold]2を付与する。",
+    "description_raw": "[gold]脱力[/gold]{Power:diff()}を付与する。\n[gold]弱体[/gold]{Power:diff()}を付与する。",
+    "cost": 1,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "スキル",
+    "rarity": "アンコモン",
+    "target": "AnyEnemy",
+    "color": "necrobinder",
+    "damage": null,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": null,
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": [
+      "廃棄"
+    ],
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Power": 2
+    },
+    "upgrade": {
+      "power": "+1"
+    },
+    "image_url": "/static/images/cards/putrefy.png",
+    "beta_image_url": null,
+    "type_variants": null,
+    "upgrade_description": "[gold]脱力[/gold]3を付与する。\n[gold]弱体[/gold]3を付与する。",
+    "type_key": "Skill",
+    "rarity_key": "Uncommon",
+    "keywords_key": [
+      "Exhaust"
+    ],
+    "compendium_order": 320
+  },
+  {
     "id": "PRIMAL_FORCE",
     "name": "原始の力",
     "description": "[gold]手札[/gold]にあるすべてのアタックを[gold]巨大な岩[/gold]に変化させる。",
@@ -10337,8 +10296,8 @@
   {
     "id": "BEAT_INTO_SHAPE",
     "name": "叩き直してやる",
-    "description": "5ダメージを与える。\n[gold]鍛造[/gold]X。このターン中の攻撃（これを除く）1回につき、追加で[gold]鍛造[/gold]5。",
-    "description_raw": "{Damage:diff()}ダメージを与える。\n[gold]鍛造[/gold]{CalculatedForge:diff()}。このターン中の攻撃（これを除く）1回につき、追加で[gold]鍛造[/gold]{CalculationExtra:diff()}。",
+    "description": "5ダメージを与える。\n[gold]鍛造[/gold]X。\nこのターンに対象の敵へ攻撃していた回数（これを除く）1回につき、追加で[gold]鍛造[/gold]5。",
+    "description_raw": "{Damage:diff()}ダメージを与える。\n[gold]鍛造[/gold]{CalculatedForge:diff()}。\nこのターンに対象の敵へ攻撃していた回数（これを除く）1回につき、追加で[gold]鍛造[/gold]{CalculationExtra:diff()}。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -10370,7 +10329,7 @@
     "image_url": "/static/images/cards/beat_into_shape.png",
     "beta_image_url": "/static/images/cards/beta/beat_into_shape.png",
     "type_variants": null,
-    "upgrade_description": "7ダメージを与える。\n[gold]鍛造[/gold]X。このターン中の攻撃（これを除く）1回につき、追加で[gold]鍛造[/gold]7。",
+    "upgrade_description": "7ダメージを与える。\n[gold]鍛造[/gold]X。\nこのターンに対象の敵へ攻撃していた回数（これを除く）1回につき、追加で[gold]鍛造[/gold]7。",
     "type_key": "Attack",
     "rarity_key": "Rare",
     "compendium_order": 178
@@ -10378,8 +10337,8 @@
   {
     "id": "SYNCHRONIZE",
     "name": "同期",
-    "description": "このターン、生成中のオーブ1種類につき、[gold]集中力[/gold]2を得る。",
-    "description_raw": "このターン、生成中のオーブ1種類につき、[gold]集中力[/gold]{CalculationExtra:diff()}を得る。{InCombat:\n([gold]集中力[/gold]{CalculatedFocus:diff()}を得る。)|}",
+    "description": "ターン終了時まで生成中のオーブ1種類につき、[gold]集中力[/gold]2を得る。",
+    "description_raw": "ターン終了時まで生成中のオーブ1種類につき、[gold]集中力[/gold]{CalculationExtra:diff()}を得る。{InCombat:\n([gold]集中力[/gold]{CalculatedFocus:diff()}を得る。)|}",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -10421,8 +10380,8 @@
   {
     "id": "MONARCHS_GAZE",
     "name": "君主の睨み",
-    "description": "敵を攻撃するたび、その敵はこのターン、[gold]筋力[/gold]1を失う。",
-    "description_raw": "敵を攻撃するたび、その敵はこのターン、[gold]筋力[/gold]{StrengthLoss:diff()}を失う。",
+    "description": "敵を攻撃するたび、その敵はターン終了時まで[gold]筋力[/gold]1を失う。",
+    "description_raw": "敵を攻撃するたび、その敵はターン終了時まで[gold]筋力[/gold]{StrengthLoss:diff()}を失う。",
     "cost": 3,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -10806,8 +10765,8 @@
   {
     "id": "CORRUPTION",
     "name": "堕落",
-    "description": "スキルのコストは0[energy:1]になる。\nスキルをプレイするたび、それを[gold]廃棄[/gold]する",
-    "description_raw": "スキルのコストは0{energyPrefix:energyIcons(1)}になる。\nスキルをプレイするたび、それを[gold]廃棄[/gold]する",
+    "description": "スキルのコストは0[energy:1]。\nスキルをプレイするたび、それを[gold]廃棄[/gold]する。",
+    "description_raw": "スキルのコストは0{energyPrefix:energyIcons(1)}。\nスキルをプレイするたび、それを[gold]廃棄[/gold]する。",
     "cost": 3,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -10961,8 +10920,8 @@
   {
     "id": "BLADE_OF_INK",
     "name": "墨の刃",
-    "description": "このターン、アタックをプレイするたび、[gold]筋力[/gold]2を得る。",
-    "description_raw": "このターン、アタックをプレイするたび、[gold]筋力[/gold]{StrengthPower:diff()}を得る。",
+    "description": "このターン、アタックをプレイするたび、ターン終了時まで[gold]筋力[/gold]2を得る。",
+    "description_raw": "このターン、アタックをプレイするたび、ターン終了時まで[gold]筋力[/gold]{StrengthPower:diff()}を得る。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -11132,8 +11091,8 @@
   {
     "id": "SERPENT_FORM",
     "name": "大蛇化",
-    "description": "カードをプレイするたび、ランダムな敵1体に4ダメージを与える。",
-    "description_raw": "カードをプレイするたび、ランダムな敵1体に{SerpentFormPower:diff()}ダメージを与える。",
+    "description": "カードをプレイするたび、ランダムな敵に4ダメージを与える。",
+    "description_raw": "カードをプレイするたび、ランダムな敵に{SerpentFormPower:diff()}ダメージを与える。",
     "cost": 3,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -11168,7 +11127,7 @@
     "image_url": "/static/images/cards/serpent_form.png",
     "beta_image_url": "/static/images/cards/beta/serpent_form.png",
     "type_variants": null,
-    "upgrade_description": "カードをプレイするたび、ランダムな敵1体に5ダメージを与える。",
+    "upgrade_description": "カードをプレイするたび、ランダムな敵に5ダメージを与える。",
     "type_key": "Power",
     "rarity_key": "Rare",
     "compendium_order": 153
@@ -11332,8 +11291,8 @@
   {
     "id": "SCOURGE",
     "name": "天罰",
-    "description": "[gold]破滅[/gold]13を付与する.\nカードを1枚引く。",
-    "description_raw": "[gold]破滅[/gold]{DoomPower:diff()}を付与する.\nカードを{Cards:diff()}枚引く。",
+    "description": "[gold]破滅[/gold]13を付与する。\nカードを1枚引く。",
+    "description_raw": "[gold]破滅[/gold]{DoomPower:diff()}を付与する。\nカードを{Cards:diff()}枚引く。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -11370,14 +11329,14 @@
     "image_url": "/static/images/cards/scourge.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "[gold]破滅[/gold]13を付与する.\nカードを2枚引く。",
+    "upgrade_description": "[gold]破滅[/gold]13を付与する。\nカードを2枚引く。",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 328
   },
   {
     "id": "BEGONE",
-    "name": "失せろ！",
+    "name": "失せよ！",
     "description": "4ダメージを与える。\n[gold]手札[/gold]のカードを1枚選び、[gold]ミニオンの特攻[/gold]に[gold]変化[/gold]させる。",
     "description_raw": "{Damage:diff()}ダメージを与える。\n[gold]手札[/gold]のカードを1枚選び、[gold]{IfUpgraded:show:ミニオンの特攻+|ミニオンの特攻}[/gold]に[gold]変化[/gold]させる。",
     "cost": 1,
@@ -11494,8 +11453,8 @@
   {
     "id": "DOMINATE",
     "name": "威圧",
-    "description": "[gold]弱体[/gold]中の敵1体につき\n[gold]筋力[/gold]1を得る。",
-    "description_raw": "[gold]弱体[/gold]中の敵1体につき\n[gold]筋力[/gold]{StrengthPerVulnerable:diff()}を得る。",
+    "description": "対象の敵に付与している[gold]弱体[/gold]1につき、[gold]筋力[/gold]1を得る。",
+    "description_raw": "対象の敵に付与している[gold]弱体[/gold]1につき、[gold]筋力[/gold]{StrengthPerVulnerable:diff()}を得る。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -11763,8 +11722,8 @@
   {
     "id": "LARGESSE",
     "name": "寛大なる施し",
-    "description": "他のプレイヤー1人は、ランダムなの無色カードを1枚[gold]手札[/gold]に加える。",
-    "description_raw": "他のプレイヤー1人は、ランダムな{IfUpgraded:show:[gold]アップグレード[/gold]済み}の無色カードを1枚[gold]手札[/gold]に加える。",
+    "description": "他のプレイヤー1人は、ランダムな無色カードを1枚[gold]手札[/gold]に加える。",
+    "description_raw": "他のプレイヤー1人は、ランダムな{IfUpgraded:show:[gold]アップグレード[/gold]済みの}無色カードを1枚[gold]手札[/gold]に加える。",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -11838,8 +11797,8 @@
   {
     "id": "FLAK_CANNON",
     "name": "対空砲",
-    "description": "[gold]状態異常[/gold]をすべて[gold]廃棄[/gold]する。[gold]廃棄[/gold]したカード1枚につき、ランダムな敵1体に8ダメージを与える。",
-    "description_raw": "[gold]状態異常[/gold]をすべて[gold]廃棄[/gold]する。[gold]廃棄[/gold]したカード1枚につき、ランダムな敵1体に{Damage:diff()}ダメージを与える。{InCombat:\n(攻撃回数は{CalculatedHits:diff()}回)|}",
+    "description": "あなたの[gold]状態異常[/gold]をすべて[gold]廃棄[/gold]する。[gold]廃棄[/gold]したカード1枚につき、ランダムな敵に8ダメージを与える。",
+    "description_raw": "あなたの[gold]状態異常[/gold]をすべて[gold]廃棄[/gold]する。[gold]廃棄[/gold]したカード1枚につき、ランダムな敵に{Damage:diff()}ダメージを与える。{InCombat:\n(攻撃回数は{CalculatedHits:diff()}回)|}",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -11869,7 +11828,7 @@
     "image_url": "/static/images/cards/flak_cannon.png",
     "beta_image_url": "/static/images/cards/beta/flak_cannon.png",
     "type_variants": null,
-    "upgrade_description": "[gold]状態異常[/gold]をすべて[gold]廃棄[/gold]する。[gold]廃棄[/gold]したカード1枚につき、ランダムな敵1体に11ダメージを与える。",
+    "upgrade_description": "あなたの[gold]状態異常[/gold]をすべて[gold]廃棄[/gold]する。[gold]廃棄[/gold]したカード1枚につき、ランダムな敵に11ダメージを与える。",
     "type_key": "Attack",
     "rarity_key": "Rare",
     "compendium_order": 382
@@ -12395,6 +12354,52 @@
     "compendium_order": 535
   },
   {
+    "id": "BASH",
+    "name": "強打",
+    "description": "8ダメージを与える。\n[gold]弱体[/gold]2を付与する。",
+    "description_raw": "{Damage:diff()}ダメージを与える。\n[gold]弱体[/gold]{VulnerablePower:diff()}を付与する。",
+    "cost": 2,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "アタック",
+    "rarity": "ベーシック",
+    "target": "AnyEnemy",
+    "color": "ironclad",
+    "damage": 8,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": [
+      {
+        "power": "弱体",
+        "amount": 2,
+        "power_key": "Vulnerable"
+      }
+    ],
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": null,
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Damage": 8,
+      "VulnerablePower": 2,
+      "Vulnerable": 2
+    },
+    "upgrade": {
+      "damage": "+2",
+      "vulnerable": "+1"
+    },
+    "image_url": "/static/images/cards/bash.png",
+    "beta_image_url": null,
+    "type_variants": null,
+    "upgrade_description": "10ダメージを与える。\n[gold]弱体[/gold]2を付与する。",
+    "type_key": "Attack",
+    "rarity_key": "Basic",
+    "compendium_order": 5
+  },
+  {
     "id": "GREED",
     "name": "強欲",
     "description": "",
@@ -12472,44 +12477,6 @@
     "type_key": "Attack",
     "rarity_key": "Rare",
     "compendium_order": 461
-  },
-  {
-    "id": "BREAKTHROUGH",
-    "name": "強行突破",
-    "description": "HPを1失う。\nすべての敵に9ダメージを与える。",
-    "description_raw": "HPを{HpLoss:diff()}失う。\nすべての敵に{Damage:diff()}ダメージを与える。",
-    "cost": 1,
-    "is_x_cost": null,
-    "is_x_star_cost": null,
-    "star_cost": null,
-    "type": "アタック",
-    "rarity": "コモン",
-    "target": "AllEnemies",
-    "color": "ironclad",
-    "damage": 9,
-    "block": null,
-    "hit_count": null,
-    "powers_applied": null,
-    "cards_draw": null,
-    "energy_gain": null,
-    "hp_loss": 1,
-    "keywords": null,
-    "tags": null,
-    "spawns_cards": null,
-    "vars": {
-      "Damage": 9,
-      "HpLoss": 1
-    },
-    "upgrade": {
-      "damage": "+4"
-    },
-    "image_url": "/static/images/cards/breakthrough.png",
-    "beta_image_url": null,
-    "type_variants": null,
-    "upgrade_description": "HPを1失う。\nすべての敵に13ダメージを与える。",
-    "type_key": "Attack",
-    "rarity_key": "Common",
-    "compendium_order": 13
   },
   {
     "id": "FIGHT_THROUGH",
@@ -12606,8 +12573,8 @@
   {
     "id": "SCULPTING_STRIKE",
     "name": "彫刻のストライク",
-    "description": "8ダメージを与える。\n[gold]手札[/gold]のカード1枚が[gold]エセリアル[/gold]を得る",
-    "description_raw": "{Damage:diff()}ダメージを与える。\n[gold]手札[/gold]のカード1枚が[gold]エセリアル[/gold]を得る",
+    "description": "8ダメージを与える。\n[gold]手札[/gold]のカード1枚が[gold]エセリアル[/gold]を得る。",
+    "description_raw": "{Damage:diff()}ダメージを与える。\n[gold]手札[/gold]のカード1枚が[gold]エセリアル[/gold]を得る。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -12637,7 +12604,7 @@
     "image_url": "/static/images/cards/sculpting_strike.png",
     "beta_image_url": "/static/images/cards/beta/sculpting_strike.png",
     "type_variants": null,
-    "upgrade_description": "11ダメージを与える。\n[gold]手札[/gold]のカード1枚が[gold]エセリアル[/gold]を得る",
+    "upgrade_description": "11ダメージを与える。\n[gold]手札[/gold]のカード1枚が[gold]エセリアル[/gold]を得る。",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 329
@@ -12719,8 +12686,8 @@
   {
     "id": "HOWL_FROM_BEYOND",
     "name": "彼方からの遠吠え",
-    "description": "すべての敵に16ダメージを与える。\nターン開始時、[gold]廃棄札[/gold]からプレイされる。",
-    "description_raw": "すべての敵に{Damage:diff()}ダメージを与える。\nターン開始時、[gold]廃棄札[/gold]からプレイされる。",
+    "description": "すべての敵に16ダメージを与える。\nターン開始時、[gold]廃棄札[/gold]からプレイする。",
+    "description_raw": "すべての敵に{Damage:diff()}ダメージを与える。\nターン開始時、[gold]廃棄札[/gold]からプレイする。",
     "cost": 3,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -12748,7 +12715,7 @@
     "image_url": "/static/images/cards/howl_from_beyond.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "すべての敵に21ダメージを与える。\nターン開始時、[gold]廃棄札[/gold]からプレイされる。",
+    "upgrade_description": "すべての敵に21ダメージを与える。\nターン開始時、[gold]廃棄札[/gold]からプレイする。",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 43
@@ -12800,8 +12767,8 @@
   {
     "id": "CONQUEROR",
     "name": "征服者",
-    "description": "[gold]鍛造[/gold]3。\nこのターン、[gold]ソヴリン・ブレード[/gold]は2倍のダメージを与える。",
-    "description_raw": "[gold]鍛造[/gold]{Forge:diff()}。\nこのターン、[gold]ソヴリン・ブレード[/gold]は2倍のダメージを与える。",
+    "description": "[gold]鍛造[/gold]3。\nこのターン、[gold]ソヴリン・ブレード[/gold]は対象の敵に2倍のダメージを与える。",
+    "description_raw": "[gold]鍛造[/gold]{Forge:diff()}。\nこのターン、[gold]ソヴリン・ブレード[/gold]は対象の敵に2倍のダメージを与える。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -12829,7 +12796,7 @@
     "image_url": "/static/images/cards/conqueror.png",
     "beta_image_url": "/static/images/cards/beta/conqueror.png",
     "type_variants": null,
-    "upgrade_description": "[gold]鍛造[/gold]5。\nこのターン、[gold]ソヴリン・ブレード[/gold]は2倍のダメージを与える。",
+    "upgrade_description": "[gold]鍛造[/gold]5。\nこのターン、[gold]ソヴリン・ブレード[/gold]は対象の敵に2倍のダメージを与える。",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 191
@@ -13025,8 +12992,8 @@
   {
     "id": "BUNDLE_OF_JOY",
     "name": "思いがけぬ贈り物",
-    "description": "ランダムな無色カードを3枚[gold]手札[/gold]に加える",
-    "description_raw": "ランダムな無色カードを{Cards:diff()}枚[gold]手札[/gold]に加える",
+    "description": "ランダムな無色カードを3枚[gold]手札[/gold]に加える。",
+    "description_raw": "ランダムな無色カードを{Cards:diff()}枚[gold]手札[/gold]に加える。",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -13056,7 +13023,7 @@
     "image_url": "/static/images/cards/bundle_of_joy.png",
     "beta_image_url": "/static/images/cards/beta/bundle_of_joy.png",
     "type_variants": null,
-    "upgrade_description": "ランダムな無色カードを4枚[gold]手札[/gold]に加える",
+    "upgrade_description": "ランダムな無色カードを4枚[gold]手札[/gold]に加える。",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "keywords_key": [
@@ -13559,8 +13526,8 @@
   {
     "id": "HAUNT",
     "name": "憑依",
-    "description": "[gold]ソウル[/gold]をプレイするたび、ランダムな敵1体がHPを6失う。",
-    "description_raw": "[gold]ソウル[/gold]をプレイするたび、ランダムな敵1体がHPを{HpLoss:diff()}失う。",
+    "description": "[gold]ソウル[/gold]をプレイするたび、ランダムな敵がHPを6失う。",
+    "description_raw": "[gold]ソウル[/gold]をプレイするたび、ランダムな敵がHPを{HpLoss:diff()}失う。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -13590,7 +13557,7 @@
     "image_url": "/static/images/cards/haunt.png",
     "beta_image_url": "/static/images/cards/beta/haunt.png",
     "type_variants": null,
-    "upgrade_description": "[gold]ソウル[/gold]をプレイするたび、ランダムな敵1体がHPを8失う。",
+    "upgrade_description": "[gold]ソウル[/gold]をプレイするたび、ランダムな敵がHPを8失う。",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 302
@@ -13635,8 +13602,8 @@
   {
     "id": "DRUM_OF_BATTLE",
     "name": "戦いのドラム",
-    "description": "カードを2枚引く。\nターン開始時、[gold]山札[/gold]の一番上のカードを[gold]廃棄[/gold]する",
-    "description_raw": "カードを{Cards:diff()}枚引く。\nターン開始時、[gold]山札[/gold]の一番上のカードを[gold]廃棄[/gold]する",
+    "description": "カードを2枚引く。\nターン開始時、[gold]山札[/gold]の一番上のカードを[gold]廃棄[/gold]する。",
+    "description_raw": "カードを{Cards:diff()}枚引く。\nターン開始時、[gold]山札[/gold]の一番上のカードを[gold]廃棄[/gold]する。",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -13672,7 +13639,7 @@
     "image_url": "/static/images/cards/drum_of_battle.png",
     "beta_image_url": "/static/images/cards/beta/drum_of_battle.png",
     "type_variants": null,
-    "upgrade_description": "カードを3枚引く。\nターン開始時、[gold]山札[/gold]の一番上のカードを[gold]廃棄[/gold]する",
+    "upgrade_description": "カードを3枚引く。\nターン開始時、[gold]山札[/gold]の一番上のカードを[gold]廃棄[/gold]する。",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 29
@@ -13997,52 +13964,6 @@
     "compendium_order": 165
   },
   {
-    "id": "SQUASH",
-    "name": "押しつぶし",
-    "description": "10ダメージを与える。\n[gold]弱体[/gold]2を付与する。",
-    "description_raw": "{Damage:diff()}ダメージを与える。\n[gold]弱体[/gold]{VulnerablePower:diff()}を付与する。",
-    "cost": 1,
-    "is_x_cost": null,
-    "is_x_star_cost": null,
-    "star_cost": null,
-    "type": "アタック",
-    "rarity": "イベント",
-    "target": "AnyEnemy",
-    "color": "event",
-    "damage": 10,
-    "block": null,
-    "hit_count": null,
-    "powers_applied": [
-      {
-        "power": "弱体",
-        "amount": 2,
-        "power_key": "Vulnerable"
-      }
-    ],
-    "cards_draw": null,
-    "energy_gain": null,
-    "hp_loss": null,
-    "keywords": null,
-    "tags": null,
-    "spawns_cards": null,
-    "vars": {
-      "Damage": 10,
-      "VulnerablePower": 2,
-      "Vulnerable": 2
-    },
-    "upgrade": {
-      "damage": "+2",
-      "vulnerable": "+1"
-    },
-    "image_url": "/static/images/cards/squash.png",
-    "beta_image_url": null,
-    "type_variants": null,
-    "upgrade_description": "12ダメージを与える。\n[gold]弱体[/gold]2を付与する。",
-    "type_key": "Attack",
-    "rarity_key": "Event",
-    "compendium_order": 543
-  },
-  {
     "id": "FISTICUFFS",
     "name": "拳闘",
     "description": "7ダメージを与える。\n与えたダメージに等しい[gold]ブロック[/gold]を得る。",
@@ -14284,43 +14205,6 @@
     "compendium_order": 288
   },
   {
-    "id": "SEEKING_EDGE",
-    "name": "探求の刃",
-    "description": "[gold]鍛造[/gold]7。\n[gold]ソヴリン・ブレード[/gold]がすべての敵にダメージを与えるようになる。",
-    "description_raw": "[gold]鍛造[/gold]{Forge:diff()}。\n[gold]ソヴリン・ブレード[/gold]がすべての敵にダメージを与えるようになる。",
-    "cost": 1,
-    "is_x_cost": null,
-    "is_x_star_cost": null,
-    "star_cost": null,
-    "type": "パワー",
-    "rarity": "レア",
-    "target": "Self",
-    "color": "regent",
-    "damage": null,
-    "block": null,
-    "hit_count": null,
-    "powers_applied": null,
-    "cards_draw": null,
-    "energy_gain": null,
-    "hp_loss": null,
-    "keywords": null,
-    "tags": null,
-    "spawns_cards": null,
-    "vars": {
-      "Forge": 7
-    },
-    "upgrade": {
-      "forge": "+4"
-    },
-    "image_url": "/static/images/cards/seeking_edge.png",
-    "beta_image_url": "/static/images/cards/beta/seeking_edge.png",
-    "type_variants": null,
-    "upgrade_description": "[gold]鍛造[/gold]11。\n[gold]ソヴリン・ブレード[/gold]がすべての敵にダメージを与えるようになる。",
-    "type_key": "Power",
-    "rarity_key": "Rare",
-    "compendium_order": 245
-  },
-  {
     "id": "DEVASTATE",
     "name": "撃滅",
     "description": "30ダメージを与える。",
@@ -14432,6 +14316,43 @@
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 86
+  },
+  {
+    "id": "STARDUST",
+    "name": "星くず",
+    "description": "ランダムな敵に5ダメージをX回与える。",
+    "description_raw": "ランダムな敵に{Damage:diff()}ダメージをX回与える。",
+    "cost": 0,
+    "is_x_cost": null,
+    "is_x_star_cost": true,
+    "star_cost": null,
+    "type": "アタック",
+    "rarity": "アンコモン",
+    "target": "RandomEnemy",
+    "color": "regent",
+    "damage": 5,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": null,
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": null,
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Damage": 5
+    },
+    "upgrade": {
+      "damage": "+2"
+    },
+    "image_url": "/static/images/cards/stardust.png",
+    "beta_image_url": null,
+    "type_variants": null,
+    "upgrade_description": "ランダムな敵に7ダメージをX回与える。",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
+    "compendium_order": 251
   },
   {
     "id": "CLOAK_OF_STARS",
@@ -14549,8 +14470,8 @@
   {
     "id": "DYING_STAR",
     "name": "星の終わり",
-    "description": "すべての敵に9ダメージを与える。このターン、すべての敵は[gold]筋力[/gold]9を失う。",
-    "description_raw": "すべての敵に{Damage:diff()}ダメージを与える。このターン、すべての敵は[gold]筋力[/gold]{StrengthLoss:diff()}を失う。",
+    "description": "すべての敵に9ダメージを与える。ターン終了時まですべての敵は[gold]筋力[/gold]9を失う。",
+    "description_raw": "すべての敵に{Damage:diff()}ダメージを与える。ターン終了時まですべての敵は[gold]筋力[/gold]{StrengthLoss:diff()}を失う。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -14583,50 +14504,13 @@
     "image_url": "/static/images/cards/dying_star.png",
     "beta_image_url": "/static/images/cards/beta/dying_star.png",
     "type_variants": null,
-    "upgrade_description": "すべての敵に11ダメージを与える。このターン、すべての敵は[gold]筋力[/gold]11を失う。",
+    "upgrade_description": "すべての敵に11ダメージを与える。ターン終了時まですべての敵は[gold]筋力[/gold]11を失う。",
     "type_key": "Attack",
     "rarity_key": "Rare",
     "keywords_key": [
       "Ethereal"
     ],
     "compendium_order": 200
-  },
-  {
-    "id": "STARDUST",
-    "name": "星屑",
-    "description": "ランダムな敵1体に5ダメージをX回与える。",
-    "description_raw": "ランダムな敵1体に{Damage:diff()}ダメージをX回与える。",
-    "cost": 0,
-    "is_x_cost": null,
-    "is_x_star_cost": true,
-    "star_cost": null,
-    "type": "アタック",
-    "rarity": "アンコモン",
-    "target": "RandomEnemy",
-    "color": "regent",
-    "damage": 5,
-    "block": null,
-    "hit_count": null,
-    "powers_applied": null,
-    "cards_draw": null,
-    "energy_gain": null,
-    "hp_loss": null,
-    "keywords": null,
-    "tags": null,
-    "spawns_cards": null,
-    "vars": {
-      "Damage": 5
-    },
-    "upgrade": {
-      "damage": "+2"
-    },
-    "image_url": "/static/images/cards/stardust.png",
-    "beta_image_url": null,
-    "type_variants": null,
-    "upgrade_description": "ランダムな敵1体に7ダメージをX回与える。",
-    "type_key": "Attack",
-    "rarity_key": "Uncommon",
-    "compendium_order": 251
   },
   {
     "id": "ASTRAL_PULSE",
@@ -14876,8 +14760,8 @@
   {
     "id": "LUNAR_BLAST",
     "name": "月光波",
-    "description": "このターン、すでにプレイされたスキル1枚につき、4ダメージを与える。",
-    "description_raw": "このターン、すでにプレイされたスキル1枚につき、{Damage:diff()}ダメージを与える。{InCombat:\n(攻撃回数は{CalculatedHits:diff()}回)|}",
+    "description": "このターンにプレイしたスキル1枚につき、4ダメージを与える。",
+    "description_raw": "このターンにプレイしたスキル1枚につき、{Damage:diff()}ダメージを与える。{InCombat:\n(攻撃回数は{CalculatedHits:diff()}回)|}",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -14907,7 +14791,7 @@
     "image_url": "/static/images/cards/lunar_blast.png",
     "beta_image_url": "/static/images/cards/beta/lunar_blast.png",
     "type_variants": null,
-    "upgrade_description": "このターン、すでにプレイされたスキル1枚につき、5ダメージを与える。",
+    "upgrade_description": "このターンにプレイしたスキル1枚につき、5ダメージを与える。",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 223
@@ -14996,8 +14880,8 @@
   {
     "id": "ERADICATE",
     "name": "根絶",
-    "description": "11ダメージをX回与える",
-    "description_raw": "{Damage:diff()}ダメージをX回与える",
+    "description": "11ダメージをX回与える。",
+    "description_raw": "{Damage:diff()}ダメージをX回与える。",
     "cost": 0,
     "is_x_cost": true,
     "is_x_star_cost": null,
@@ -15027,7 +14911,7 @@
     "image_url": "/static/images/cards/eradicate.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "14ダメージをX回与える",
+    "upgrade_description": "14ダメージをX回与える。",
     "type_key": "Attack",
     "rarity_key": "Rare",
     "keywords_key": [
@@ -15077,7 +14961,7 @@
   },
   {
     "id": "MANIFEST_AUTHORITY",
-    "name": "権威の顕現",
+    "name": "権威の体現",
     "description": "7[gold]ブロック[/gold]を得る。\nランダムな無色カードを1枚[gold]手札[/gold]に加える。",
     "description_raw": "{Block:diff()}[gold]ブロック[/gold]を得る。\nランダムな{IfUpgraded:show:[gold]アップグレード[/gold]済みの}無色カードを1枚[gold]手札[/gold]に加える。",
     "cost": 1,
@@ -15115,8 +14999,8 @@
   {
     "id": "ANTICIPATE",
     "name": "機先",
-    "description": "このターン、[gold]敏捷[/gold]3を得る。",
-    "description_raw": "このターン、[gold]敏捷[/gold]{DexterityPower:diff()}を得る。",
+    "description": "ターン終了時まで[gold]敏捷[/gold]3を得る。",
+    "description_raw": "ターン終了時まで[gold]敏捷[/gold]{DexterityPower:diff()}を得る。",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -15292,8 +15176,8 @@
   {
     "id": "ARMAMENTS",
     "name": "武装",
-    "description": "5[gold]ブロック[/gold]を得る。\n戦闘終了まで、[gold]手札[/gold]のカードを1枚[gold]アップグレード[/gold]する。",
-    "description_raw": "{Block:diff()}[gold]ブロック[/gold]を得る。\n戦闘終了まで、[gold]手札[/gold]のカードを{IfUpgraded:show:すべて|1枚}[gold]アップグレード[/gold]する。",
+    "description": "5[gold]ブロック[/gold]を得る。\n[gold]手札[/gold]のカードを1枚[gold]アップグレード[/gold]する。",
+    "description_raw": "{Block:diff()}[gold]ブロック[/gold]を得る。\n[gold]手札[/gold]のカードを{IfUpgraded:show:すべて|1枚}[gold]アップグレード[/gold]する。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -15321,7 +15205,7 @@
     "image_url": "/static/images/cards/armaments.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "5[gold]ブロック[/gold]を得る。\n戦闘終了まで、[gold]手札[/gold]のカードをすべて[gold]アップグレード[/gold]する。",
+    "upgrade_description": "5[gold]ブロック[/gold]を得る。\n[gold]手札[/gold]のカードをすべて[gold]アップグレード[/gold]する。",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 2
@@ -15374,8 +15258,8 @@
   {
     "id": "DEATH_MARCH",
     "name": "死の行進",
-    "description": "8ダメージを与える。\nあなたのターン中に引いたカード1枚につき、追加で3ダメージを与える。",
-    "description_raw": "{CalculatedDamage:diff()}ダメージを与える。\nあなたのターン中に引いたカード1枚につき、追加で{ExtraDamage:diff()}ダメージを与える。",
+    "description": "8ダメージを与える。\n自分のターン中に引いたカード1枚につき、追加で3ダメージを与える。",
+    "description_raw": "{CalculatedDamage:diff()}ダメージを与える。\n自分のターン中に引いたカード1枚につき、追加で{ExtraDamage:diff()}ダメージを与える。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -15406,7 +15290,7 @@
     "image_url": "/static/images/cards/death_march.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "8ダメージを与える。\nあなたのターン中に引いたカード1枚につき、追加で4ダメージを与える。",
+    "upgrade_description": "8ダメージを与える。\n自分のターン中に引いたカード1枚につき、追加で4ダメージを与える。",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 278
@@ -16090,8 +15974,8 @@
   {
     "id": "CLEANSE",
     "name": "浄化",
-    "description": "[gold]召喚[/gold]3。\n[gold]山札[/gold]のカードを1枚[gold]廃棄[/gold]する",
-    "description_raw": "[gold]召喚[/gold]{Summon:diff()}。\n[gold]山札[/gold]のカードを1枚[gold]廃棄[/gold]する",
+    "description": "[gold]召喚[/gold]3。\n[gold]山札[/gold]のカードを1枚[gold]廃棄[/gold]する。",
+    "description_raw": "[gold]召喚[/gold]{Summon:diff()}。\n[gold]山札[/gold]のカードを1枚[gold]廃棄[/gold]する。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -16119,7 +16003,7 @@
     "image_url": "/static/images/cards/cleanse.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "[gold]召喚[/gold]5。\n[gold]山札[/gold]のカードを1枚[gold]廃棄[/gold]する",
+    "upgrade_description": "[gold]召喚[/gold]5。\n[gold]山札[/gold]のカードを1枚[gold]廃棄[/gold]する。",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 273
@@ -17155,8 +17039,8 @@
   {
     "id": "RIP_AND_TEAR",
     "name": "狂奔",
-    "description": "ランダムな敵1体に7ダメージを2回与える。",
-    "description_raw": "ランダムな敵1体に{Damage:diff()}ダメージを2回与える。",
+    "description": "ランダムな敵に7ダメージを2回与える。",
+    "description_raw": "ランダムな敵に{Damage:diff()}ダメージを2回与える。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -17184,7 +17068,7 @@
     "image_url": "/static/images/cards/rip_and_tear.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "ランダムな敵1体に9ダメージを2回与える。",
+    "upgrade_description": "ランダムな敵に9ダメージを2回与える。",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 542
@@ -17273,7 +17157,7 @@
   },
   {
     "id": "KINGLY_KICK",
-    "name": "王族キック",
+    "name": "王様キック",
     "description": "24ダメージを与える。\nこのカードを引くたび、コストが1減少する。",
     "description_raw": "{Damage:diff()}ダメージを与える。\nこのカードを引くたび、コストが1減少する。",
     "cost": 4,
@@ -17310,7 +17194,7 @@
   },
   {
     "id": "KINGLY_PUNCH",
-    "name": "王族パンチ",
+    "name": "王様パンチ",
     "description": "8ダメージを与える。\nこのカードを引くたび、戦闘終了までダメージが3増加する。",
     "description_raw": "{Damage:diff()}ダメージを与える。\nこのカードを引くたび、戦闘終了までダメージが{Increase:diff()}増加する。",
     "cost": 1,
@@ -17853,8 +17737,8 @@
   {
     "id": "UNMOVABLE",
     "name": "盤石",
-    "description": "毎ターン、最初にカードから[gold]ブロック[/gold]を得た時、その2倍の値を得る。",
-    "description_raw": "毎ターン、最初にカードから[gold]ブロック[/gold]を得た時、その2倍の値を得る。",
+    "description": "毎ターン、最初にカードから[gold]ブロック[/gold]を得る時、その値が2倍になる。",
+    "description_raw": "毎ターン、最初にカードから[gold]ブロック[/gold]を得る時、その値が2倍になる。",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -18011,6 +17895,52 @@
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 148
+  },
+  {
+    "id": "BREAK",
+    "name": "破砕",
+    "description": "20ダメージを与える。\n[gold]弱体[/gold]5を付与する。",
+    "description_raw": "{Damage:diff()}ダメージを与える。\n[gold]弱体[/gold]{VulnerablePower:diff()}を付与する。",
+    "cost": 2,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "アタック",
+    "rarity": "エンシェント",
+    "target": "AnyEnemy",
+    "color": "ironclad",
+    "damage": 20,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": [
+      {
+        "power": "弱体",
+        "amount": 5,
+        "power_key": "Vulnerable"
+      }
+    ],
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": null,
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Damage": 20,
+      "VulnerablePower": 5,
+      "Vulnerable": 5
+    },
+    "upgrade": {
+      "damage": "+5",
+      "vulnerable": "+2"
+    },
+    "image_url": "/static/images/cards/break.png",
+    "beta_image_url": null,
+    "type_variants": null,
+    "upgrade_description": "25ダメージを与える。\n[gold]弱体[/gold]5を付与する。",
+    "type_key": "Attack",
+    "rarity_key": "Ancient",
+    "compendium_order": 12
   },
   {
     "id": "FOREGONE_CONCLUSION",
@@ -18372,8 +18302,8 @@
   {
     "id": "CHARGE",
     "name": "突撃せよ！",
-    "description": "[gold]山札[/gold]からカードを2枚選び、\n[gold]ミニオンストライク[/gold]に[gold]変化[/gold]させる",
-    "description_raw": "[gold]山札[/gold]からカードを{Cards:diff()}枚選び、\n[gold]{IfUpgraded:show:ミニオンストライク+|ミニオンストライク}[/gold]に[gold]変化[/gold]させる",
+    "description": "[gold]山札[/gold]のランダムなカード2枚から1枚選び、\n[gold]ミニオンストライク[/gold]に[gold]変化[/gold]させる。",
+    "description_raw": "[gold]山札[/gold]のランダムなカード{Cards:diff()}枚から1枚選び、\n[gold]{IfUpgraded:show:ミニオンストライク+|ミニオンストライク}[/gold]に[gold]変化[/gold]させる。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -18403,7 +18333,7 @@
     "image_url": "/static/images/cards/charge.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "[gold]山札[/gold]からカードを2枚選び、\n[gold]ミニオンストライク+[/gold]に[gold]変化[/gold]させる",
+    "upgrade_description": "[gold]山札[/gold]のランダムなカード2枚から1枚選び、\n[gold]ミニオンストライク+[/gold]に[gold]変化[/gold]させる。",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 186
@@ -18449,52 +18379,6 @@
       "Sly"
     ],
     "compendium_order": 167
-  },
-  {
-    "id": "BREAK",
-    "name": "粉砕",
-    "description": "20ダメージを与える。\n[gold]弱体[/gold]5を付与する。",
-    "description_raw": "{Damage:diff()}ダメージを与える。\n[gold]弱体[/gold]{VulnerablePower:diff()}を付与する。",
-    "cost": 2,
-    "is_x_cost": null,
-    "is_x_star_cost": null,
-    "star_cost": null,
-    "type": "アタック",
-    "rarity": "エンシェント",
-    "target": "AnyEnemy",
-    "color": "ironclad",
-    "damage": 20,
-    "block": null,
-    "hit_count": null,
-    "powers_applied": [
-      {
-        "power": "弱体",
-        "amount": 5,
-        "power_key": "Vulnerable"
-      }
-    ],
-    "cards_draw": null,
-    "energy_gain": null,
-    "hp_loss": null,
-    "keywords": null,
-    "tags": null,
-    "spawns_cards": null,
-    "vars": {
-      "Damage": 20,
-      "VulnerablePower": 5,
-      "Vulnerable": 5
-    },
-    "upgrade": {
-      "damage": "+5",
-      "vulnerable": "+2"
-    },
-    "image_url": "/static/images/cards/break.png",
-    "beta_image_url": null,
-    "type_variants": null,
-    "upgrade_description": "25ダメージを与える。\n[gold]弱体[/gold]5を付与する。",
-    "type_key": "Attack",
-    "rarity_key": "Ancient",
-    "compendium_order": 12
   },
   {
     "id": "SHATTER",
@@ -18739,8 +18623,8 @@
   {
     "id": "SWEEPING_GAZE",
     "name": "索敵の眼差し",
-    "description": "[gold]オスティ[/gold]が、ランダムな敵1体に10ダメージを与える",
-    "description_raw": "[gold]オスティ[/gold]が、ランダムな敵1体に{OstyDamage:diff()}ダメージを与える",
+    "description": "[gold]オスティ[/gold]が、ランダムな敵に10ダメージを与える。",
+    "description_raw": "[gold]オスティ[/gold]が、ランダムな敵に{OstyDamage:diff()}ダメージを与える。",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -18774,7 +18658,7 @@
     "image_url": "/static/images/cards/sweeping_gaze.png",
     "beta_image_url": "/static/images/cards/beta/sweeping_gaze.png",
     "type_variants": null,
-    "upgrade_description": "[gold]オスティ[/gold]が、ランダムな敵1体に15ダメージを与える",
+    "upgrade_description": "[gold]オスティ[/gold]が、ランダムな敵に15ダメージを与える。",
     "type_key": "Attack",
     "rarity_key": "Token",
     "keywords_key": [
@@ -19428,48 +19312,6 @@
     "compendium_order": 9
   },
   {
-    "id": "PUTREFY",
-    "name": "腐敗",
-    "description": "[gold]脱力[/gold]2を付与する。\n[gold]弱体[/gold]2を付与する。",
-    "description_raw": "[gold]脱力[/gold]{Power:diff()}を付与する。\n[gold]弱体[/gold]{Power:diff()}を付与する。",
-    "cost": 1,
-    "is_x_cost": null,
-    "is_x_star_cost": null,
-    "star_cost": null,
-    "type": "スキル",
-    "rarity": "アンコモン",
-    "target": "AnyEnemy",
-    "color": "necrobinder",
-    "damage": null,
-    "block": null,
-    "hit_count": null,
-    "powers_applied": null,
-    "cards_draw": null,
-    "energy_gain": null,
-    "hp_loss": null,
-    "keywords": [
-      "廃棄"
-    ],
-    "tags": null,
-    "spawns_cards": null,
-    "vars": {
-      "Power": 2
-    },
-    "upgrade": {
-      "power": "+1"
-    },
-    "image_url": "/static/images/cards/putrefy.png",
-    "beta_image_url": null,
-    "type_variants": null,
-    "upgrade_description": "[gold]脱力[/gold]3を付与する。\n[gold]弱体[/gold]3を付与する。",
-    "type_key": "Skill",
-    "rarity_key": "Uncommon",
-    "keywords_key": [
-      "Exhaust"
-    ],
-    "compendium_order": 320
-  },
-  {
     "id": "DECAY",
     "name": "腐敗",
     "description": "ターン終了時、これが[gold]手札[/gold]にある場合、2ダメージを受ける。",
@@ -20049,8 +19891,8 @@
   {
     "id": "ENFEEBLING_TOUCH",
     "name": "虚脱の魔手",
-    "description": "このターン、敵は[gold]筋力[/gold]8を失う。",
-    "description_raw": "このターン、敵は[gold]筋力[/gold]{StrengthLoss:diff()}を失う。",
+    "description": "ターン終了時まで敵は[gold]筋力[/gold]8を失う。",
+    "description_raw": "ターン終了時まで敵は[gold]筋力[/gold]{StrengthLoss:diff()}を失う。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -20080,7 +19922,7 @@
     "image_url": "/static/images/cards/enfeebling_touch.png",
     "beta_image_url": "/static/images/cards/beta/enfeebling_touch.png",
     "type_variants": null,
-    "upgrade_description": "このターン、敵は[gold]筋力[/gold]11を失う。",
+    "upgrade_description": "ターン終了時まで敵は[gold]筋力[/gold]11を失う。",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "keywords_key": [
@@ -20295,8 +20137,8 @@
   {
     "id": "RUPTURE",
     "name": "血の沸騰",
-    "description": "このターン、HPを失うたび、[gold]筋力[/gold]1を得る。",
-    "description_raw": "このターン、HPを失うたび、[gold]筋力[/gold]{StrengthPower:diff()}を得る。",
+    "description": "自身のターンにHPを失うたび、[gold]筋力[/gold]1を得る。",
+    "description_raw": "自身のターンにHPを失うたび、[gold]筋力[/gold]{StrengthPower:diff()}を得る。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -20335,6 +20177,44 @@
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 63
+  },
+  {
+    "id": "BREAKTHROUGH",
+    "name": "血路を開く",
+    "description": "HPを1失う。\nすべての敵に9ダメージを与える。",
+    "description_raw": "HPを{HpLoss:diff()}失う。\nすべての敵に{Damage:diff()}ダメージを与える。",
+    "cost": 1,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "アタック",
+    "rarity": "コモン",
+    "target": "AllEnemies",
+    "color": "ironclad",
+    "damage": 9,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": null,
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": 1,
+    "keywords": null,
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Damage": 9,
+      "HpLoss": 1
+    },
+    "upgrade": {
+      "damage": "+4"
+    },
+    "image_url": "/static/images/cards/breakthrough.png",
+    "beta_image_url": null,
+    "type_variants": null,
+    "upgrade_description": "HPを1失う。\nすべての敵に13ダメージを与える。",
+    "type_key": "Attack",
+    "rarity_key": "Common",
+    "compendium_order": 13
   },
   {
     "id": "SHOCKWAVE",
@@ -20466,8 +20346,8 @@
   {
     "id": "REND",
     "name": "裂傷",
-    "description": "15ダメージを与える。\n敵に付与しているデバフ1種類につき、追加で5ダメージを与える。",
-    "description_raw": "{CalculatedDamage:diff()}ダメージを与える。\n敵に付与しているデバフ1種類につき、追加で{ExtraDamage:diff()}ダメージを与える。",
+    "description": "15ダメージを与える。\n対象の敵に付与しているデバフ1種類につき、追加で5ダメージを与える。",
+    "description_raw": "{CalculatedDamage:diff()}ダメージを与える。\n対象の敵に付与しているデバフ1種類につき、追加で{ExtraDamage:diff()}ダメージを与える。",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -20498,7 +20378,7 @@
     "image_url": "/static/images/cards/rend.png",
     "beta_image_url": "/static/images/cards/beta/rend.png",
     "type_variants": null,
-    "upgrade_description": "15ダメージを与える。\n敵に付与しているデバフ1種類につき、追加で8ダメージを与える。",
+    "upgrade_description": "15ダメージを与える。\n対象の敵に付与しているデバフ1種類につき、追加で8ダメージを与える。",
     "type_key": "Attack",
     "rarity_key": "Rare",
     "compendium_order": 484
@@ -21131,8 +21011,8 @@
   {
     "id": "RICOCHET",
     "name": "跳弾",
-    "description": "ランダムな敵1体に3ダメージを4回与える。",
-    "description_raw": "ランダムな敵1体に{Damage:diff()}ダメージを{Repeat:diff()}回与える。",
+    "description": "ランダムな敵に3ダメージを4回与える。",
+    "description_raw": "ランダムな敵に{Damage:diff()}ダメージを{Repeat:diff()}回与える。",
     "cost": 2,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -21163,7 +21043,7 @@
     "image_url": "/static/images/cards/ricochet.png",
     "beta_image_url": "/static/images/cards/beta/ricochet.png",
     "type_variants": null,
-    "upgrade_description": "ランダムな敵1体に3ダメージを5回与える。",
+    "upgrade_description": "ランダムな敵に3ダメージを5回与える。",
     "type_key": "Attack",
     "rarity_key": "Common",
     "keywords_key": [
@@ -21244,6 +21124,52 @@
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 70
+  },
+  {
+    "id": "SQUASH",
+    "name": "踏み潰し",
+    "description": "10ダメージを与える。\n[gold]弱体[/gold]2を付与する。",
+    "description_raw": "{Damage:diff()}ダメージを与える。\n[gold]弱体[/gold]{VulnerablePower:diff()}を付与する。",
+    "cost": 1,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "アタック",
+    "rarity": "イベント",
+    "target": "AnyEnemy",
+    "color": "event",
+    "damage": 10,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": [
+      {
+        "power": "弱体",
+        "amount": 2,
+        "power_key": "Vulnerable"
+      }
+    ],
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": null,
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Damage": 10,
+      "VulnerablePower": 2,
+      "Vulnerable": 2
+    },
+    "upgrade": {
+      "damage": "+2",
+      "vulnerable": "+1"
+    },
+    "image_url": "/static/images/cards/squash.png",
+    "beta_image_url": null,
+    "type_variants": null,
+    "upgrade_description": "12ダメージを与える。\n[gold]弱体[/gold]2を付与する。",
+    "type_key": "Attack",
+    "rarity_key": "Event",
+    "compendium_order": 543
   },
   {
     "id": "KNOW_THY_PLACE",
@@ -21424,6 +21350,43 @@
     "compendium_order": 239
   },
   {
+    "id": "SEEKING_EDGE",
+    "name": "追尾の刃",
+    "description": "[gold]鍛造[/gold]7。\n[gold]ソヴリン・ブレード[/gold]がすべての敵にダメージを与えるようになる。",
+    "description_raw": "[gold]鍛造[/gold]{Forge:diff()}。\n[gold]ソヴリン・ブレード[/gold]がすべての敵にダメージを与えるようになる。",
+    "cost": 1,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "パワー",
+    "rarity": "レア",
+    "target": "Self",
+    "color": "regent",
+    "damage": null,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": null,
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": null,
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Forge": 7
+    },
+    "upgrade": {
+      "forge": "+4"
+    },
+    "image_url": "/static/images/cards/seeking_edge.png",
+    "beta_image_url": "/static/images/cards/beta/seeking_edge.png",
+    "type_variants": null,
+    "upgrade_description": "[gold]鍛造[/gold]11。\n[gold]ソヴリン・ブレード[/gold]がすべての敵にダメージを与えるようになる。",
+    "type_key": "Power",
+    "rarity_key": "Rare",
+    "compendium_order": 245
+  },
+  {
     "id": "FOLLOW_THROUGH",
     "name": "追打ち",
     "description": "すべての敵に6ダメージを与える。このターン、直前にプレイしたカードがスキルだった場合、すべての敵に[gold]脱力[/gold]1を付与する。",
@@ -21544,10 +21507,47 @@
     "compendium_order": 312
   },
   {
+    "id": "VOLLEY",
+    "name": "連射",
+    "description": "ランダムな敵に10ダメージをX回与える。",
+    "description_raw": "ランダムな敵に{Damage:diff()}ダメージをX回与える。",
+    "cost": 0,
+    "is_x_cost": true,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "アタック",
+    "rarity": "アンコモン",
+    "target": "RandomEnemy",
+    "color": "colorless",
+    "damage": 10,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": null,
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": null,
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Damage": 10
+    },
+    "upgrade": {
+      "damage": "+4"
+    },
+    "image_url": "/static/images/cards/volley.png",
+    "beta_image_url": "/static/images/cards/beta/volley.png",
+    "type_variants": null,
+    "upgrade_description": "ランダムな敵に14ダメージをX回与える。",
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
+    "compendium_order": 502
+  },
+  {
     "id": "COORDINATE",
     "name": "連携",
-    "description": "このターン、他のプレイヤー1人に[gold]筋力[/gold]5を付与する。",
-    "description_raw": "このターン、他のプレイヤー1人に[gold]筋力[/gold]{StrengthPower:diff()}を付与する。",
+    "description": "ターン終了時まで、他のプレイヤー1人に[gold]筋力[/gold]5を付与する。",
+    "description_raw": "ターン終了時まで、他のプレイヤー1人に[gold]筋力[/gold]{StrengthPower:diff()}を付与する。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -21590,8 +21590,8 @@
   {
     "id": "SHARED_FATE",
     "name": "運命共同体",
-    "description": "[gold]筋力[/gold]2を失う。\n敵は[gold]筋力[/gold]2を失う",
-    "description_raw": "[gold]筋力[/gold]{PlayerStrengthLoss:diff()}を失う。\n敵は[gold]筋力[/gold]{EnemyStrengthLoss:diff()}を失う",
+    "description": "[gold]筋力[/gold]2を失う。\n敵は[gold]筋力[/gold]2を失う。",
+    "description_raw": "[gold]筋力[/gold]{PlayerStrengthLoss:diff()}を失う。\n敵は[gold]筋力[/gold]{EnemyStrengthLoss:diff()}を失う。",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -21622,7 +21622,7 @@
     "image_url": "/static/images/cards/shared_fate.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "[gold]筋力[/gold]2を失う。\n敵は[gold]筋力[/gold]3を失う",
+    "upgrade_description": "[gold]筋力[/gold]2を失う。\n敵は[gold]筋力[/gold]3を失う。",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "keywords_key": [
@@ -21676,8 +21676,8 @@
   {
     "id": "LIGHTNING_ROD",
     "name": "避雷針",
-    "description": "4[gold]ブロック[/gold]を得る。\n次のターン開始時、[gold]ライトニング[/gold]1を[gold]生成[/gold]する。（2ターン持続）",
-    "description_raw": "{Block:diff()}[gold]ブロック[/gold]を得る。\n次のターン開始時、[gold]ライトニング[/gold]1を[gold]生成[/gold]する。（{LightningRodPower:diff()}ターン持続）",
+    "description": "4[gold]ブロック[/gold]を得る。\n次の2ターンの間、ターン開始時に[gold]ライトニング[/gold]1を[gold]生成[/gold]する。",
+    "description_raw": "{Block:diff()}[gold]ブロック[/gold]を得る。\n次の{LightningRodPower:diff()}ターンの間、ターン開始時に[gold]ライトニング[/gold]1を[gold]生成[/gold]する。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -21713,7 +21713,7 @@
     "image_url": "/static/images/cards/lightning_rod.png",
     "beta_image_url": "/static/images/cards/beta/lightning_rod.png",
     "type_variants": null,
-    "upgrade_description": "7[gold]ブロック[/gold]を得る。\n次のターン開始時、[gold]ライトニング[/gold]1を[gold]生成[/gold]する。（2ターン持続）",
+    "upgrade_description": "7[gold]ブロック[/gold]を得る。\n次の2ターンの間、ターン開始時に[gold]ライトニング[/gold]1を[gold]生成[/gold]する。",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 400
@@ -21756,8 +21756,8 @@
   {
     "id": "CRUSH_UNDER",
     "name": "重圧",
-    "description": "すべての敵に7ダメージを与える。このターン、すべての敵は[gold]筋力[/gold]1を失う。",
-    "description_raw": "すべての敵に{Damage:diff()}ダメージを与える。このターン、すべての敵は[gold]筋力[/gold]{StrengthLoss:diff()}を失う。",
+    "description": "すべての敵に7ダメージを与える。ターン終了時まですべての敵は[gold]筋力[/gold]1を失う。",
+    "description_raw": "すべての敵に{Damage:diff()}ダメージを与える。ターン終了時まですべての敵は[gold]筋力[/gold]{StrengthLoss:diff()}を失う。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -21787,7 +21787,7 @@
     "image_url": "/static/images/cards/crush_under.png",
     "beta_image_url": "/static/images/cards/beta/crush_under.png",
     "type_variants": null,
-    "upgrade_description": "すべての敵に8ダメージを与える。このターン、すべての敵は[gold]筋力[/gold]2を失う。",
+    "upgrade_description": "すべての敵に8ダメージを与える。ターン終了時まですべての敵は[gold]筋力[/gold]2を失う。",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 196
@@ -21878,8 +21878,8 @@
   {
     "id": "PIERCING_WAIL",
     "name": "金切り声",
-    "description": "このターン、すべての敵は[gold]筋力[/gold]6を失う。",
-    "description_raw": "このターン、すべての敵は[gold]筋力[/gold]{StrengthLoss:diff()}を失う。",
+    "description": "ターン終了時まですべての敵は[gold]筋力[/gold]6を失う。",
+    "description_raw": "ターン終了時まですべての敵は[gold]筋力[/gold]{StrengthLoss:diff()}を失う。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -21909,7 +21909,7 @@
     "image_url": "/static/images/cards/piercing_wail.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "このターン、すべての敵は[gold]筋力[/gold]8を失う。",
+    "upgrade_description": "ターン終了時まですべての敵は[gold]筋力[/gold]8を失う。",
     "type_key": "Skill",
     "rarity_key": "Common",
     "keywords_key": [
@@ -22110,8 +22110,8 @@
   {
     "id": "DARK_SHACKLES",
     "name": "闇の足枷",
-    "description": "このターン、敵は[gold]筋力[/gold]9を失う。",
-    "description_raw": "このターン、敵は[gold]筋力[/gold]{StrengthLoss:diff()}を失う。",
+    "description": "ターン終了時まで敵は[gold]筋力[/gold]9を失う。",
+    "description_raw": "ターン終了時まで敵は[gold]筋力[/gold]{StrengthLoss:diff()}を失う。",
     "cost": 0,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -22141,7 +22141,7 @@
     "image_url": "/static/images/cards/dark_shackles.png",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "このターン、敵は[gold]筋力[/gold]15を失う。",
+    "upgrade_description": "ターン終了時まで敵は[gold]筋力[/gold]15を失う。",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "keywords_key": [
@@ -22761,8 +22761,8 @@
   {
     "id": "INFERNAL_BLADE",
     "name": "非道の刃",
-    "description": "ランダムなアタックを1枚[gold]手札[/gold]に加える。このターンコストは0",
-    "description_raw": "ランダムなアタックを1枚[gold]手札[/gold]に加える。このターンコストは0",
+    "description": "ランダムなアタックを1枚[gold]手札[/gold]に加える。このターン、それはコストを支払わずにプレイできる。",
+    "description_raw": "ランダムなアタックを1枚[gold]手札[/gold]に加える。このターン、それはコストを支払わずにプレイできる。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -23040,8 +23040,8 @@
   {
     "id": "BONE_SHARDS",
     "name": "骨の破片",
-    "description": "[gold]オスティ[/gold]が生存中の場合、すべての敵に9ダメージを与え、9[gold]ブロック[/gold]を得る\n[gold]オスティ[/gold]は死亡する。",
-    "description_raw": "[gold]オスティ[/gold]が生存中の場合、すべての敵に{OstyDamage:diff()}ダメージを与え、{Block:diff()}[gold]ブロック[/gold]を得る\n[gold]オスティ[/gold]は死亡する。",
+    "description": "[gold]オスティ[/gold]が生存中の場合、すべての敵に9ダメージを与え、9[gold]ブロック[/gold]を得る。\n[gold]オスティ[/gold]は死亡する。",
+    "description_raw": "[gold]オスティ[/gold]が生存中の場合、すべての敵に{OstyDamage:diff()}ダメージを与え、{Block:diff()}[gold]ブロック[/gold]を得る。\n[gold]オスティ[/gold]は死亡する。",
     "cost": 1,
     "is_x_cost": null,
     "is_x_star_cost": null,
@@ -23074,7 +23074,7 @@
     "image_url": "/static/images/cards/bone_shards.png",
     "beta_image_url": "/static/images/cards/beta/bone_shards.png",
     "type_variants": null,
-    "upgrade_description": "[gold]オスティ[/gold]が生存中の場合、すべての敵に12ダメージを与え、12[gold]ブロック[/gold]を得る\n[gold]オスティ[/gold]は死亡する。",
+    "upgrade_description": "[gold]オスティ[/gold]が生存中の場合、すべての敵に12ダメージを与え、12[gold]ブロック[/gold]を得る。\n[gold]オスティ[/gold]は死亡する。",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 267

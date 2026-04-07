@@ -37,7 +37,7 @@
   {
     "id": "HOARDER",
     "name": "Accumulo",
-    "description": "ogni volta che aggiungi una carta al tuo mazzo, ne aggiungi [blue]2[/blue] copie aggiuntive. Non puoi più rimuovere carte dal tuo mazzo presso il mercante."
+    "description": "ogni volta che aggiungi una carta al tuo mazzo, ne aggiungi [blue]2[/blue] copie extra. Non puoi più rimuovere carte dal tuo mazzo presso il mercante."
   },
   {
     "id": "INSANITY",

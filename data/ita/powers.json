@@ -101,7 +101,7 @@
   },
   {
     "id": "BACK_ATTACK_LEFT",
-    "name": "Attacco alle spalle",
+    "name": "Attacco alle Spalle",
     "description": "Infligge il [blue]50%[/blue] di danno extra quando ti attacca alle spalle.",
     "description_raw": null,
     "type": "Buff",
@@ -111,7 +111,7 @@
   },
   {
     "id": "BACK_ATTACK_RIGHT",
-    "name": "Attacco alle spalle",
+    "name": "Attacco alle Spalle",
     "description": "Infligge il [blue]50%[/blue] di danno extra quando attacca alle spalle.",
     "description_raw": null,
     "type": "Buff",
@@ -131,7 +131,7 @@
   },
   {
     "id": "BATTLEWORN_DUMMY_TIME_LIMIT",
-    "name": "Limite di tempo",
+    "name": "Limite di Tempo",
     "description": "Hai ancora [blue]3[/blue] turni per battere il Manichino da allenamento martoriato.",
     "description_raw": null,
     "type": "Buff",
@@ -181,7 +181,7 @@
   },
   {
     "id": "BLOCK_NEXT_TURN",
-    "name": "Blocco imminente",
+    "name": "Blocco Imminente",
     "description": "All'inizio del tuo turno successivo, ottieni [blue]4[/blue] di [gold]Blocco[/gold].",
     "description_raw": null,
     "type": "Buff",
@@ -211,7 +211,7 @@
   },
   {
     "id": "BURROWED",
-    "name": "Al riparo",
+    "name": "Al Riparo",
     "description": "[gold]this creature[/gold] non perde il [gold]Blocco[/gold] all'inizio del suo turno successivo. Se perde tutto il [gold]Blocco[/gold], subisce [gold]Stordimento[/gold].",
     "description_raw": "[gold]{OwnerName}[/gold] non perde il [gold]Blocco[/gold] all'inizio del suo turno successivo. Se perde tutto il [gold]Blocco[/gold], subisce [gold]Stordimento[/gold].",
     "type": "Buff",
@@ -261,7 +261,7 @@
   },
   {
     "id": "CHAINS_OF_BINDING",
-    "name": "Catene del vincolo",
+    "name": "Catene del Vincolo",
     "description": "Le prime [blue]3[/blue] carte pescate in ogni turno hanno l'afflizione [gold]Vincolo[/gold].",
     "description_raw": null,
     "type": "Debuff",
@@ -361,7 +361,7 @@
   },
   {
     "id": "CORROSIVE_WAVE",
-    "name": "Onda corrosiva",
+    "name": "Onda Corrosiva",
     "description": "Ogni volta che peschi una carta in questo turno, applichi [blue]2[/blue] di [gold]Veleno[/gold] a TUTTI i nemici.",
     "description_raw": null,
     "type": "Buff",
@@ -381,7 +381,7 @@
   },
   {
     "id": "COUNTDOWN",
-    "name": "Conto alla rovescia",
+    "name": "Conto alla Rovescia",
     "description": "All'inizio del tuo turno, applichi [blue]6[/blue] di [gold]Condanna[/gold] a un nemico casuale.",
     "description_raw": null,
     "type": "Buff",
@@ -392,7 +392,7 @@
   {
     "id": "COVERED",
     "name": "Copertura",
-    "description": "Un alleato ti sta coprendo. Gli attacchi diretti verso di te vengono reindirizzati verso il tuo alleato.",
+    "description": "Un alleato ti sta coprendo: subirà tutti gli attacchi diretti verso di te.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Single",
@@ -411,7 +411,7 @@
   },
   {
     "id": "CREATIVE_AI",
-    "name": "IA creativa",
+    "name": "IA Creativa",
     "description": "All'inizio del tuo turno, aggiungi una carta Potere casuale alla tua [gold]mano[/gold].",
     "description_raw": null,
     "type": "Buff",
@@ -421,7 +421,7 @@
   },
   {
     "id": "CRIMSON_MANTLE",
-    "name": "Mantello cremisi",
+    "name": "Mantello Cremisi",
     "description": "All'inizio del tuo turno, perdi [blue]0[/blue] PV e ottieni [blue][Amount][/blue] di [gold]Blocco[/gold].",
     "description_raw": "All'inizio del tuo turno, perdi [blue]{SelfDamage}[/blue] PV e ottieni [blue]{Amount}[/blue] di [gold]Blocco[/gold].",
     "type": "Buff",
@@ -462,7 +462,7 @@
   {
     "id": "CURL_UP",
     "name": "Raggomitolamento",
-    "description": "Quando subisce danni, si accartoccia e ottiene Blocco. (Una volta per combattimento)",
+    "description": "Quando subisce danno, si accartoccia e ottiene Blocco. (Una volta per combattimento)",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -472,7 +472,7 @@
   {
     "id": "DAMPEN",
     "name": "Smorzamento",
-    "description": "Finché Magi cavaliere è vivo, TUTTE le tue carte vengono [gold]depotenziate[/gold].",
+    "description": "Finché Magicavaliere è vivo, TUTTE le tue carte vengono [gold]depotenziate[/gold].",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "None",
@@ -481,7 +481,7 @@
   },
   {
     "id": "DANSE_MACABRE",
-    "name": "Danza macabra",
+    "name": "Danza Macabra",
     "description": "Ogni volta che giochi una carta con costo pari o superiore a [energy:2] ottieni [blue][Amount][/blue] di [gold]Blocco[/gold].",
     "description_raw": "Ogni volta che giochi una carta con costo pari o superiore a {Energy:energyIcons()} ottieni [blue]{Amount}[/blue] di [gold]Blocco[/gold].",
     "type": "Buff",
@@ -491,7 +491,7 @@
   },
   {
     "id": "DARK_EMBRACE",
-    "name": "Abbraccio oscuro",
+    "name": "Abbraccio Oscuro",
     "description": "Ogni volta che una carta è [gold]esaurita[/gold], peschi [blue]1[/blue] carta.",
     "description_raw": null,
     "type": "Buff",
@@ -511,7 +511,7 @@
   },
   {
     "id": "DEBILITATE",
-    "name": "Indebolimento",
+    "name": "Deperimento",
     "description": "[gold]Vulnerabilità[/gold] e [gold]Debolezza[/gold] sono il doppio più efficaci per i successivi [blue]2[/blue] turni.",
     "description_raw": null,
     "type": "Debuff",
@@ -521,7 +521,7 @@
   },
   {
     "id": "DEMESNE",
-    "name": "Feudo",
+    "name": "Dominio",
     "description": "All'inizio del tuo turno, ottieni [blue]1[/blue] di [gold]Energia[/gold] e peschi [blue]1[/blue] carta extra.",
     "description_raw": null,
     "type": "Buff",
@@ -541,7 +541,7 @@
   },
   {
     "id": "DEMON_FORM",
-    "name": "Forma demoniaca",
+    "name": "Forma Demoniaca",
     "description": "All'inizio del tuo turno, ottieni [blue]2[/blue] di [gold]Forza[/gold].",
     "description_raw": null,
     "type": "Buff",
@@ -551,7 +551,7 @@
   },
   {
     "id": "DEVOUR_LIFE",
-    "name": "Divora-vita",
+    "name": "Divoravite",
     "description": "Ogni volta che giochi una carta [gold]Anima[/gold], applichi [blue]1[/blue] di [gold]Invocazione[/gold].",
     "description_raw": null,
     "type": "Buff",
@@ -571,8 +571,8 @@
   },
   {
     "id": "DIAMOND_DIADEM",
-    "name": "Diadema diamante",
-    "description": "I nemici infliggono il [blue]50%[/blue] di danni in meno in questo turno.",
+    "name": "Diadema di Diamanti",
+    "description": "I nemici infliggono il [blue]50%[/blue] di danno in meno in questo turno.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Single",
@@ -581,8 +581,8 @@
   },
   {
     "id": "DIE_FOR_YOU",
-    "name": "Morirò al posto tuo",
-    "description": "[gold]Osty[/gold] assorbe tutti i danni non bloccati dell'attacco.",
+    "name": "Morirò per Te",
+    "description": "[gold]Osty[/gold] assorbe il danno non bloccato di tutti gli attacchi.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Single",
@@ -592,7 +592,7 @@
   {
     "id": "DISINTEGRATION",
     "name": "Disintegrazione",
-    "description": "Al termine del turno, subisci [blue]5[/blue] danni.",
+    "description": "Al termine del tuo turno, subisci [blue]5[/blue] di danno.",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
@@ -602,8 +602,8 @@
   {
     "id": "DOOM",
     "name": "Condanna",
-    "description": "Alla fine del turno del nemico, se [gold]this creature[/gold] ha PV pari o inferiore a [blue][Amount][/blue], muore.",
-    "description_raw": "Alla fine del turno del {OnPlayer:giocatore|nemico}, se [gold]{OwnerName}[/gold] ha PV pari o inferiore a [blue]{Amount}[/blue], muore.",
+    "description": "Alla fine del turno del nemico, se [gold]this creature[/gold] ha PV pari o inferiori a [blue][Amount][/blue], muore.",
+    "description_raw": "Alla fine del turno del {OnPlayer:giocatore|nemico}, se [gold]{OwnerName}[/gold] ha PV pari o inferiori a [blue]{Amount}[/blue], muore.",
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -611,8 +611,8 @@
   },
   {
     "id": "DOOR_REVIVAL",
-    "name": "Rianimazione della porta",
-    "description": "Potere interno per far riesumare la meccanica della Porta.",
+    "name": "Riattivaporte",
+    "description": "Potere interno per le meccaniche di Riattivaporte.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Single",
@@ -621,8 +621,8 @@
   },
   {
     "id": "DOUBLE_DAMAGE",
-    "name": "Danni doppi",
-    "description": "In questo turno, le carte Attacco infliggono danni doppi.",
+    "name": "Danno Doppio",
+    "description": "In questo turno, le carte Attacco infliggono danno doppio.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -631,7 +631,7 @@
   },
   {
     "id": "DRAW_CARDS_NEXT_TURN",
-    "name": "Pesca carte nel turno successivo",
+    "name": "Pesca Carte nel Turno Successivo",
     "description": "All'inizio del tuo turno successivo, peschi [blue]1[/blue] carta extra.",
     "description_raw": null,
     "type": "Buff",
@@ -641,9 +641,9 @@
   },
   {
     "id": "DRUM_OF_BATTLE",
-    "name": "Tamburi di guerra",
-    "description": "All'inizio del tuo prossimo turno, [gold]esaurisci[/gold] [blue]2[/blue] le prime carte del tuo [gold]mazzo di pesca[/gold].",
-    "description_raw": "All'inizio del tuo prossimo turno, [gold]esaurisci[/gold] {Amount:plural:la prima carta|[blue]{}[/blue] le prime carte} del tuo [gold]mazzo di pesca[/gold].",
+    "name": "Tamburi di Guerra",
+    "description": "All'inizio del tuo prossimo turno, [gold]esaurisci[/gold] le prime [blue]2[/blue] carte del tuo [gold]mazzo di pesca[/gold].",
+    "description_raw": "All'inizio del tuo prossimo turno, [gold]esaurisci[/gold] {Amount:plural:la prima carta|le prime [blue]{}[/blue] carte} del tuo [gold]mazzo di pesca[/gold].",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -671,7 +671,7 @@
   },
   {
     "id": "ECHO_FORM",
-    "name": "Forma eco",
+    "name": "Forma Ricorsiva",
     "description": "La prima carta che giochi in ogni turno viene giocata una volta in più.",
     "description_raw": null,
     "type": "Buff",
@@ -681,7 +681,7 @@
   },
   {
     "id": "ENERGY_NEXT_TURN",
-    "name": "Energia prossimo turno",
+    "name": "Energia Prossimo Turno",
     "description": "Ottieni [gold]Energia[/gold] extra il prossimo turno.",
     "description_raw": null,
     "type": "Buff",
@@ -721,7 +721,7 @@
   },
   {
     "id": "ENVENOM",
-    "name": "Intossicamento",
+    "name": "Velenoso",
     "description": "Ogni volta che infliggi un danno non bloccato, applichi [blue]1[/blue] di [gold]Veleno[/gold].",
     "description_raw": null,
     "type": "Buff",
@@ -731,8 +731,8 @@
   },
   {
     "id": "ESCAPE_ARTIST",
-    "name": "Artista della fuga",
-    "description": "Esci dal combattimento dopo 4 turni.",
+    "name": "Artista della Fuga",
+    "description": "Fugge dal combattimento dopo 4 turni.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -741,7 +741,7 @@
   },
   {
     "id": "FAN_OF_KNIVES",
-    "name": "Fan dei pugnali",
+    "name": "Fan dei Pugnali",
     "description": "Le carte [gold]Pugnale[/gold] colpiscono TUTTI i nemici.",
     "description_raw": null,
     "type": "Buff",
@@ -751,8 +751,8 @@
   },
   {
     "id": "FASTEN",
-    "name": "Protezione",
-    "description": "Ottieni [blue]4[/blue] di [gold]Blocco[/gold] extra con le carte Difesa.",
+    "name": "Fissaggio",
+    "description": "Ottieni [blue]4[/blue] di [gold]Blocco[/gold] extra con le carte Difendi.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -771,8 +771,8 @@
   },
   {
     "id": "FEEL_NO_PAIN",
-    "name": "Niente dolore",
-    "description": "Ogni volta che una carta viene esaurita, ottieni [blue]3[/blue] di [gold]Blocco[/gold].",
+    "name": "Nessun Dolore",
+    "description": "Ogni volta che una carta diventa esaurita, ottieni [blue]3[/blue] di [gold]Blocco[/gold].",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -781,9 +781,9 @@
   },
   {
     "id": "FERAL",
-    "name": "Selvaggio",
-    "description": "La prima volta che giochi una carta Attacco da 0[energy:1] a ogni turno, rimettilo nella tua [gold]mano[/gold].",
-    "description_raw": "La prima volta che giochi una carta Attacco da 0{energyPrefix:energyIcons(1)} a ogni turno, rimettilo nella tua [gold]mano[/gold].",
+    "name": "Ferocia",
+    "description": "La prima volta che giochi una carta Attacco da 0[energy:1] a ogni turno, rimettila nella tua [gold]mano[/gold].",
+    "description_raw": "La prima volta che giochi una carta Attacco da 0{energyPrefix:energyIcons(1)} a ogni turno, rimettila nella tua [gold]mano[/gold].",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -791,8 +791,8 @@
   },
   {
     "id": "FLAME_BARRIER",
-    "name": "Barriera ardente",
-    "description": "Ogni volta che subisci un attacco in questo turno, infliggi [blue]4[/blue] danni come contrattacco.",
+    "name": "Muro di Fiamme",
+    "description": "Ogni volta che subisci un attacco in questo turno, infliggi [blue]4[/blue] di danno come contrattacco.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -802,7 +802,7 @@
   {
     "id": "FLANKING",
     "name": "Fiancheggiamento",
-    "description": "Gli altri alleati infliggono [blue]2x[/blue] di danno extra a questo nemico in questo turno.",
+    "description": "Gli altri alleati infliggono danno [blue]doppio[/blue] extra a questo nemico in questo turno.",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
@@ -821,9 +821,9 @@
   },
   {
     "id": "FLUTTER",
-    "name": "Svolazzamento",
-    "description": "Subisce un [blue]50%[/blue] di danno in meno dalle carte Attacco. Infliggi danni [blue][Amount][/blue] volte per provocare [gold]Stordimento[/gold].",
-    "description_raw": "Subisce un [blue]{DamageDecrease}%[/blue] di danno in meno dalle carte Attacco. Infliggi danni [blue]{Amount}[/blue] {Amount:plural:volta|volte} per provocare [gold]Stordimento[/gold].",
+    "name": "Palpitazione",
+    "description": "Subisce un [blue]50%[/blue] di danno in meno dalle carte Attacco. Infliggi danno [blue][Amount][/blue] volte per provocare [gold]Stordimento[/gold].",
+    "description_raw": "Subisce un [blue]{DamageDecrease}%[/blue] di danno in meno dalle carte Attacco. Infliggi danno [blue]{Amount}[/blue] {Amount:plural:volta|volte} per provocare [gold]Stordimento[/gold].",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -851,7 +851,7 @@
   },
   {
     "id": "FORBIDDEN_GRIMOIRE",
-    "name": "Grimorio proibito",
+    "name": "Grimorio Proibito",
     "description": "Al termine del combattimento, rimuovi una carta dal tuo [gold]mazzo[/gold].",
     "description_raw": null,
     "type": "Buff",
@@ -861,7 +861,7 @@
   },
   {
     "id": "FOREGONE_CONCLUSION",
-    "name": "Conclusione scontata",
+    "name": "Conclusione Scontata",
     "description": "Nel turno successivo, metti [blue]3[/blue] carte dal tuo [gold]mazzo di pesca[/gold] alla tua [gold]mano[/gold].",
     "description_raw": null,
     "type": "Buff",
@@ -881,7 +881,7 @@
   },
   {
     "id": "FREE_ATTACK",
-    "name": "Attacco senza costi",
+    "name": "Attacco Senza Costo",
     "description": "La tua carta Attacco successiva costa [blue]0[/blue] [energy:1].",
     "description_raw": "La tua carta Attacco successiva costa [blue]0[/blue] {energyPrefix:energyIcons(1)}.",
     "type": "Buff",
@@ -891,7 +891,7 @@
   },
   {
     "id": "FREE_POWER",
-    "name": "Potere senza costi",
+    "name": "Potere Senza Costo",
     "description": "La successiva carta Potere che giochi costa [blue]0[/blue] [energy:1].",
     "description_raw": "La successiva carta Potere che giochi costa [blue]0[/blue] {energyPrefix:energyIcons(1)}.",
     "type": "Buff",
@@ -901,7 +901,7 @@
   },
   {
     "id": "FREE_SKILL",
-    "name": "Abilità senza costi",
+    "name": "Abilità Senza Costo",
     "description": "La successiva carta Abilità che giochi costa [blue]0[/blue] [energy:1].",
     "description_raw": "La successiva carta Abilità che giochi costa [blue]0[/blue] {energyPrefix:energyIcons(1)}.",
     "type": "Buff",
@@ -952,7 +952,7 @@
   {
     "id": "GIGANTIFICATION",
     "name": "Gigantificazione",
-    "description": "La carta Attacco successiva che giochi infligge il triplo dei danni.",
+    "description": "La carta Attacco successiva che giochi infligge danno triplo.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -971,8 +971,8 @@
   },
   {
     "id": "GRAVITY",
-    "name": "Gravità",
-    "description": "Ogni volta che giochi una carta in questo turno, infliggi [blue]2[/blue] danni a TUTTI i nemici.",
+    "name": "Forza di Gravità",
+    "description": "Ogni volta che giochi una carta in questo turno, infliggi [blue]2[/blue] di danno a TUTTI i nemici.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -981,8 +981,8 @@
   },
   {
     "id": "GUARDED",
-    "name": "In protezione",
-    "description": "Subisci metà danni dai nemici.",
+    "name": "Protezione",
+    "description": "Subisci metà danno dai nemici.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Single",
@@ -1001,7 +1001,7 @@
   },
   {
     "id": "HAMMER_TIME",
-    "name": "Martella che ti passa",
+    "name": "Diamoci Sotto!",
     "description": "Ogni volta che esegui una [gold]Forgiatura[/gold], anche tutti gli alleati [gold]forgiano[/gold].",
     "description_raw": null,
     "type": "Buff",
@@ -1012,7 +1012,7 @@
   {
     "id": "HANG",
     "name": "Impiccagione",
-    "description": "Tutte le carte [gold]Impiccagione[/gold] infliggono il [blue]doppio[/blue] dei danni a questo nemico.",
+    "description": "Tutte le carte [gold]Impiccagione[/gold] infliggono danno [blue]doppio[/blue] a questo nemico.",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
@@ -1021,9 +1021,9 @@
   },
   {
     "id": "HARD_TO_KILL",
-    "name": "Pelle dura",
-    "description": "Riduci tutti i danni subiti e i PV persi da [gold]this creature[/gold] a [blue]9[/blue].",
-    "description_raw": "Riduci tutti i danni subiti e i PV persi da [gold]{OwnerName}[/gold] a [blue]9[/blue].",
+    "name": "Pellaccia",
+    "description": "Riduci tutto il danno subito e i PV persi da [gold]this creature[/gold] a [blue]9[/blue].",
+    "description_raw": "Riduci tutto il danno subito e i PV persi da [gold]{OwnerName}[/gold] a [blue]9[/blue].",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -1031,7 +1031,7 @@
   },
   {
     "id": "HARDENED_SHELL",
-    "name": "Guscio rafforzato",
+    "name": "Guscio Rafforzato",
     "description": "[gold]this creature[/gold] non può perdere più di [blue][Amount][/blue] PV in ogni turno.",
     "description_raw": "[gold]{OwnerName}[/gold] non può perdere più di [blue]{Amount}[/blue] PV in ogni turno.",
     "type": "Buff",
@@ -1051,8 +1051,8 @@
   },
   {
     "id": "HAUNT",
-    "name": "Infestazione",
-    "description": "Ogni volta che giochi un'[gold]Anima[/gold], un nemico casuale perde [blue]3[/blue] PV.",
+    "name": "Persecuzione",
+    "description": "Ogni volta che giochi una carta [gold]Anima[/gold], un nemico casuale perde [blue]3[/blue] PV.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1061,8 +1061,8 @@
   },
   {
     "id": "HEIST",
-    "name": "Furto",
-    "description": "Quando perde la vita, restituisce tutto l'[gold]oro[/gold] rubato.",
+    "name": "Taccheggio",
+    "description": "Quando muore, restituisce tutto l'[gold]oro[/gold] rubato.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1081,7 +1081,7 @@
   },
   {
     "id": "HELLO_WORLD",
-    "name": "Salve mondo",
+    "name": "Buongiorno Mondo",
     "description": "All'inizio del tuo turno, aggiungi [blue]1[/blue] carta casuale comune alla tua [gold]mano[/gold].",
     "description_raw": null,
     "type": "Buff",
@@ -1091,7 +1091,7 @@
   },
   {
     "id": "HELLRAISER",
-    "name": "Combinaguai",
+    "name": "Istigatore Infernale",
     "description": "Ogni volta che peschi una carta contenente la parola \"Colpo\", questa viene giocata direttamente contro un nemico casuale.",
     "description_raw": null,
     "type": "Buff",
@@ -1101,7 +1101,7 @@
   },
   {
     "id": "HEX",
-    "name": "Maledizione",
+    "name": "Sortilegio",
     "description": "Finché Cavaliere spettrale è vivo, TUTTE le tue carte ottengono [gold]Evanescenza[/gold].",
     "description_raw": null,
     "type": "Debuff",
@@ -1111,7 +1111,7 @@
   },
   {
     "id": "HIGH_VOLTAGE",
-    "name": "Voltaggio elevato",
+    "name": "Voltaggio Elevato",
     "description": "All'inizio del turno di [gold]this creature[/gold], ottiene [blue][Amount][/blue] di [gold]Forza[/gold].",
     "description_raw": "All'inizio del turno di [gold]{OwnerName}[/gold], ottiene [blue]{Amount}[/blue] di [gold]Forza[/gold].",
     "type": "Buff",
@@ -1132,7 +1132,7 @@
   {
     "id": "ILLUSION",
     "name": "Illusione",
-    "description": "Quando perde la vita, rinasce nel turno successivo con PV massimi.",
+    "description": "Quando muore, rinasce nel turno successivo con PV massimi.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Single",
@@ -1181,7 +1181,7 @@
   },
   {
     "id": "INFINITE_BLADES",
-    "name": "Lame infinite",
+    "name": "Lame Infinite",
     "description": "All'inizio del tuo turno, aggiungi una carta [gold]Pugnale[/gold] alla tua [gold]mano[/gold].",
     "description_raw": null,
     "type": "Buff",
@@ -1192,7 +1192,7 @@
   {
     "id": "INTANGIBLE",
     "name": "Intangibilità",
-    "description": "Riduci tutti i danni subiti e PV persi a [blue]1[/blue] in questo turno.",
+    "description": "Riduci tutto il danno subito e i PV che perdi a [blue]1[/blue] in questo turno.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1202,7 +1202,7 @@
   {
     "id": "INTERCEPT",
     "name": "Intercettazione",
-    "description": "Stai proteggendo un altro giocatore. Tutti gli attacchi diretti verso di esso verranno reindirizzati verso di te.",
+    "description": "Stai proteggendo un altro giocatore, pertanto subirai tutti gli attacchi che lo bersagliano.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Single",
@@ -1212,7 +1212,7 @@
   {
     "id": "ITERATION",
     "name": "Iterazione",
-    "description": "La prima volta che peschi una carta [gold]Stato[/gold] ogni turno, peschi altre carte.",
+    "description": "La prima volta che peschi una carta [gold]Stato[/gold] in ogni turno, peschi altre carte.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1221,8 +1221,8 @@
   },
   {
     "id": "JUGGERNAUT",
-    "name": "Furia devastante",
-    "description": "Ogni volta che ottieni [gold]Blocco[/gold], infliggi [blue]5[/blue] danni a un nemico casuale.",
+    "name": "Colosso",
+    "description": "Ogni volta che ottieni [gold]Blocco[/gold], infliggi [blue]5[/blue] di danno a un nemico casuale.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1232,7 +1232,7 @@
   {
     "id": "JUGGLING",
     "name": "Giocoleria",
-    "description": "Aggiungi una copia della terza carta Attacco che giochi ogni turno alla tua [gold]mano[/gold].",
+    "description": "Aggiungi una copia della terza carta Attacco che giochi in ogni turno alla tua [gold]mano[/gold].",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1242,8 +1242,8 @@
   {
     "id": "KNOCKDOWN",
     "name": "Abbattimento",
-    "description": "Per questo turno i danni che questa creatura subisce da altri giocatori vengono moltiplicati per [blue][Amount][/blue].",
-    "description_raw": "Per questo turno i danni che questa creatura subisce da altri giocatori vengono moltiplicati per [blue]{Amount}[/blue].",
+    "description": "Per questo turno il danno che questa creatura subisce dagli altri giocatori viene moltiplicato per [blue][Amount][/blue].",
+    "description_raw": "Per questo turno il danno che questa creatura subisce dagli altri giocatori viene moltiplicato per [blue]{Amount}[/blue].",
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -1252,7 +1252,7 @@
   {
     "id": "LEADERSHIP",
     "name": "Leadership",
-    "description": "Tutti gli altri alleati infliggono [blue]1[/blue] danno extra.",
+    "description": "Tutti gli altri alleati infliggono [blue]1[/blue] di danno extra.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1262,7 +1262,7 @@
   {
     "id": "LETHALITY",
     "name": "Letalità",
-    "description": "La prima carta Attacco ogni turno infligge il 50% di danno extra.",
+    "description": "La prima carta Attacco in ogni turno infligge il 50% di danno extra.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1282,7 +1282,7 @@
   {
     "id": "LOOP",
     "name": "Ciclo",
-    "description": "All'inizio del tuo turno, attivi un'abilità passiva del tuo Globo successivo.",
+    "description": "All'inizio del tuo turno, attivi l'abilità passiva del tuo Globo successivo.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1291,8 +1291,8 @@
   },
   {
     "id": "MACHINE_LEARNING",
-    "name": "Linguaggio informatico",
-    "description": "All'inizio del tuo turno, peschi [blue]1[/blue] carta aggiuntiva.",
+    "name": "Auto-Apprendimento",
+    "description": "All'inizio del tuo turno, peschi [blue]1[/blue] carta extra.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1301,8 +1301,8 @@
   },
   {
     "id": "MAGIC_BOMB",
-    "name": "Bomba magica",
-    "description": "Subisci [blue]20[/blue] danni alla fine del tuo turno. Si rimuove se Magi cavaliere muore.",
+    "name": "Bomba Magica",
+    "description": "Subisci [blue]20[/blue] di danno alla fine del tuo turno. Se Magicavaliere muore, l'effetto svanisce.",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
@@ -1321,8 +1321,8 @@
   },
   {
     "id": "MASTER_PLANNER",
-    "name": "Mente brillante",
-    "description": "Quando giochi una carta Abilità, ottiene [gold]Astuzia[/gold].",
+    "name": "Mente Pianificatrice",
+    "description": "Quando giochi una carta Abilità, questa ottiene [gold]Astuzia[/gold].",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Single",
@@ -1331,8 +1331,8 @@
   },
   {
     "id": "MAYHEM",
-    "name": "Caos",
-    "description": "All'inizio del tuo turno, giochi la carta superiore del tuo [gold]mazzo di pesca[/gold].",
+    "name": "Tumulto",
+    "description": "All'inizio del tuo turno, giochi la carta in cima al tuo [gold]mazzo di pesca[/gold].",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1341,7 +1341,7 @@
   },
   {
     "id": "MIND_ROT",
-    "name": "Marciume mentale",
+    "name": "Marciume Mentale",
     "description": "Peschi [blue]1[/blue] carta in meno in ogni turno.",
     "description_raw": null,
     "type": "Debuff",
@@ -1352,7 +1352,7 @@
   {
     "id": "MINION",
     "name": "Seguace",
-    "description": "I seguaci abbandonano il combattimento senza il loro leader.",
+    "description": "I seguaci abbandonano il combattimento se il loro leader non è presente.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Single",
@@ -1361,7 +1361,7 @@
   },
   {
     "id": "MONARCHS_GAZE",
-    "name": "Sguardo del monarca",
+    "name": "Sguardo del Monarca",
     "description": "Ogni volta che attacchi un nemico, perde [blue]1[/blue] di [gold]Forza[/gold] in questo turno.",
     "description_raw": null,
     "type": "Buff",
@@ -1391,8 +1391,8 @@
   },
   {
     "id": "NECRO_MASTERY",
-    "name": "Necro-maestria",
-    "description": "Ogni volta che [gold]Osty[/gold] perde PV, tutti i perdono altrettanti PV.",
+    "name": "Negromante Esperta",
+    "description": "Ogni volta che [gold]Osty[/gold] perde PV, tutti perdono la stessa quantità di PV.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1402,7 +1402,7 @@
   {
     "id": "NEMESIS",
     "name": "Nemesi",
-    "description": "Al termine di ogni turno ottieni [blue]1[/blue] di [gold]Intangibilità[/gold].",
+    "description": "Al termine di ogni due turni, ottieni [blue]1[/blue] di [gold]Intangibilità[/gold].",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Single",
@@ -1422,7 +1422,7 @@
   {
     "id": "NIGHTMARE",
     "name": "Incubo",
-    "description": "Aggiungi [blue]3[/blue] di una determinata carta alla tua [gold]mano[/gold] nel turno successivo.",
+    "description": "Aggiungi [blue]3[/blue] copie di una determinata carta alla tua [gold]mano[/gold] nel turno successivo.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1431,8 +1431,8 @@
   },
   {
     "id": "NO_BLOCK",
-    "name": "Niente Blocco",
-    "description": "Non puoi ottenere [gold]Blocco[/gold] dalle carte.",
+    "name": "Senza Blocco",
+    "description": "Non puoi ottenere [gold]Blocco[/gold] con le carte.",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
@@ -1441,7 +1441,7 @@
   },
   {
     "id": "NO_DRAW",
-    "name": "Vietato pescare",
+    "name": "Vietato Pescare",
     "description": "Non puoi pescare altre carte in questo turno.",
     "description_raw": null,
     "type": "Debuff",
@@ -1461,7 +1461,7 @@
   },
   {
     "id": "NOXIOUS_FUMES",
-    "name": "Esalazioni nocive",
+    "name": "Miasma",
     "description": "All'inizio del tuo turno, applichi [blue]2[/blue] di [gold]Veleno[/gold] a TUTTI i nemici.",
     "description_raw": null,
     "type": "Buff",
@@ -1481,7 +1481,7 @@
   },
   {
     "id": "ONE_TWO_PUNCH",
-    "name": "Uno-due",
+    "name": "Doppio Pugno",
     "description": "La tua carta Attacco successiva viene giocata una volta in più in questo turno.",
     "description_raw": null,
     "type": "Buff",
@@ -1511,7 +1511,7 @@
   },
   {
     "id": "PAGESTORM",
-    "name": "Tempesta di pagine",
+    "name": "Pioggia di Pagine",
     "description": "Ogni volta che peschi una carta con [gold]Evanescenza[/gold], peschi [blue]1[/blue] carta.",
     "description_raw": null,
     "type": "Buff",
@@ -1521,8 +1521,8 @@
   },
   {
     "id": "PAINFUL_STABS",
-    "name": "Pugnalate dolorse",
-    "description": "Mischi [blue]1[/blue] [gold]Ferita[/gold] nella tua [gold]pila degli scarti[/gold] ogni volta che subisci dei danni non bloccati.",
+    "name": "Pugnalate Dolorose",
+    "description": "Mischi [blue]1[/blue] carta [gold]Ferita[/gold] nella tua [gold]pila degli scarti[/gold] ogni volta che subisci danno non bloccato.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1531,7 +1531,7 @@
   },
   {
     "id": "PALE_BLUE_DOT",
-    "name": "Piccolo aiuto",
+    "name": "Pallido Punto Azzurro",
     "description": "Se giochi [blue]5[/blue] o più carte in un turno, peschi [blue][Amount][/blue] carte extra all'inizio del tuo turno successivo.",
     "description_raw": "Se giochi [blue]{CardPlay}[/blue] o più carte in un turno, peschi [blue]{Amount}[/blue] {Amount:plural:carta|carte} extra all'inizio del tuo turno successivo.",
     "type": "Buff",
@@ -1541,7 +1541,7 @@
   },
   {
     "id": "PANACHE",
-    "name": "Raffinatezza",
+    "name": "Portamento",
     "description": "Se giochi ancora [blue]5[/blue] carte in questo turno, infliggi [blue][Amount][/blue] di danno a TUTTI i nemici.",
     "description_raw": "Se giochi ancora [blue]{CardsLeft}[/blue] {CardsLeft:plural:carta|carte} in questo turno, infliggi [blue]{Amount}[/blue] di danno a TUTTI i nemici.",
     "type": "Buff",
@@ -1551,9 +1551,9 @@
   },
   {
     "id": "PAPER_CUTS",
-    "name": "Ritagli",
-    "description": "Ogni volta che [gold]this creature[/gold] ti infligge danni non bloccati, perdi [blue][Amount][/blue] [gold]PV massimi[/gold].",
-    "description_raw": "Ogni volta che [gold]{OwnerName}[/gold] ti infligge danni non bloccati, perdi [blue]{Amount}[/blue] [gold]PV massimi[/gold].",
+    "name": "Tagli di Carta",
+    "description": "Ogni volta che [gold]this creature[/gold] ti infligge danno non bloccato, perdi i seguenti [gold]PV massimi[/gold]: [blue][Amount][/blue].",
+    "description_raw": "Ogni volta che [gold]{OwnerName}[/gold] ti infligge danno non bloccato, perdi i seguenti [gold]PV massimi[/gold]: [blue]{Amount}[/blue].",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -1561,7 +1561,7 @@
   },
   {
     "id": "PARRY",
-    "name": "Parata",
+    "name": "Controparata",
     "description": "Ogni volta che giochi la carta [gold]Spada Sovrana[/gold], ottieni [blue]8[/blue] di [gold]Blocco[/gold].",
     "description_raw": null,
     "type": "Buff",
@@ -1571,8 +1571,8 @@
   },
   {
     "id": "PERSONAL_HIVE",
-    "name": "Alveare personale",
-    "description": "Ogni volta che questo nemico viene colpito da una carta Attacco, aggiungi [gold]Disorientato[/gold] al tuo [gold]mazzo di pesca[/gold].",
+    "name": "Alveare Personale",
+    "description": "Ogni volta che questo nemico viene colpito da una carta Attacco, aggiungi una carta [gold]Disorientato[/gold] al tuo [gold]mazzo di pesca[/gold].",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1581,7 +1581,7 @@
   },
   {
     "id": "PHANTOM_BLADES",
-    "name": "Spade fantasma",
+    "name": "Lame Fantasma",
     "description": "Le carte [gold]Pugnale[/gold] ottengono [gold]Conservazione[/gold].\nLa prima carta [gold]Pugnale[/gold] che giochi in ogni turno infligge [blue]9[/blue] di danno extra.",
     "description_raw": null,
     "type": "Buff",
@@ -1601,7 +1601,7 @@
   },
   {
     "id": "PILLAR_OF_CREATION",
-    "name": "Pilastro della creazione",
+    "name": "Pilastro della Creazione",
     "description": "Ogni volta che crei una carta, ottieni [blue]5[/blue] di [gold]Blocco[/gold].",
     "description_raw": null,
     "type": "Buff",
@@ -1621,9 +1621,9 @@
   },
   {
     "id": "PLOW",
-    "name": "Solcare",
-    "description": "La prima volta che i PV di [gold]this creature[/gold] sono pari o inferiore a [blue][Amount][/blue], subisce [gold]Stordimento[/gold] e perde tutta la sua [gold]Forza[/gold].",
-    "description_raw": "La prima volta che i PV di [gold]{OwnerName}[/gold] sono pari o inferiore a [blue]{Amount}[/blue], subisce [gold]Stordimento[/gold] e perde tutta la sua [gold]Forza[/gold].",
+    "name": "Aratura",
+    "description": "La prima volta che i PV di [gold]this creature[/gold] sono pari o inferiori a [blue][Amount][/blue], subisce [gold]Stordimento[/gold] e perde tutta la sua [gold]Forza[/gold].",
+    "description_raw": "La prima volta che i PV di [gold]{OwnerName}[/gold] sono pari o inferiori a [blue]{Amount}[/blue], subisce [gold]Stordimento[/gold] e perde tutta la sua [gold]Forza[/gold].",
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -1641,8 +1641,8 @@
   },
   {
     "id": "POSSESS_SPEED",
-    "name": "Restituzione della velocità",
-    "description": "Quando perde la vita, restituisce tutta la [gold]Destrezza[/gold] rubata al giocatore.",
+    "name": "Restituzione della Velocità",
+    "description": "Quando muore, restituisce tutta la [gold]Destrezza[/gold] rubata al giocatore.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Single",
@@ -1651,8 +1651,8 @@
   },
   {
     "id": "POSSESS_STRENGTH",
-    "name": "Restituzione della forza",
-    "description": "Quando perde la vita, restituisce tutta la [gold]Forza[/gold] rubata al giocatore.",
+    "name": "Restituzione della Forza",
+    "description": "Quando muore, restituisce tutta la [gold]Forza[/gold] rubata al giocatore.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Single",
@@ -1661,7 +1661,7 @@
   },
   {
     "id": "PREP_TIME",
-    "name": "Preparativi",
+    "name": "Tempo di Preparazione",
     "description": "All'inizio del tuo turno, ottieni [blue]4[/blue] di [gold]Vigore[/gold].",
     "description_raw": null,
     "type": "Buff",
@@ -1671,7 +1671,7 @@
   },
   {
     "id": "PYRE",
-    "name": "Falò",
+    "name": "Pira Funeraria",
     "description": "Ottieni [blue]1[/blue] di [gold]Energia[/gold] all'inizio di ogni turno.",
     "description_raw": null,
     "type": "Buff",
@@ -1682,8 +1682,8 @@
   {
     "id": "RADIANCE",
     "name": "Luminosità",
-    "description": "Ottieni [energy:1] extra per i prossimi[blue]2[/blue] turni.",
-    "description_raw": "Ottieni {Energy:energyIcons()} extra {Amount:plural:per il prossimo turno|per i prossimi[blue]{}[/blue] turni}.",
+    "description": "Ottieni [energy:1] extra nei prossimi[blue]2[/blue] turni.",
+    "description_raw": "Ottieni {Energy:energyIcons()} extra {Amount:plural:nel prossimo turno|nei prossimi[blue]{}[/blue] turni}.",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -1691,7 +1691,7 @@
   },
   {
     "id": "RAGE",
-    "name": "Furia",
+    "name": "Collera",
     "description": "Ogni volta che giochi una carta Attacco in questo turno, ottieni [blue]3[/blue] di [gold]Blocco[/gold].",
     "description_raw": null,
     "type": "Buff",
@@ -1701,8 +1701,8 @@
   },
   {
     "id": "RAMPART",
-    "name": "Fortificazione",
-    "description": "All'inizio del turno del giocatore, l'Operatore della torretta ottiene [blue]25[/blue] di [gold]Blocco[/gold].",
+    "name": "Muraglia",
+    "description": "All'inizio del turno del giocatore, l'Operatorretta ottiene [blue]25[/blue] di [gold]Blocco[/gold].",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1712,7 +1712,7 @@
   {
     "id": "RAVENOUS",
     "name": "Voracità",
-    "description": "Quando un nemico perde la vita, la Lumaca cadaverica lo mangia immediatamente, subendo [gold]Stordimento[/gold] e ottenendo [blue]1[/blue] di [gold]Forza[/gold].",
+    "description": "Quando un nemico muore, la Lumaca cadaverica lo mangia immediatamente, subendo [gold]Stordimento[/gold] e ottenendo [blue]1[/blue] di [gold]Forza[/gold].",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1721,8 +1721,8 @@
   },
   {
     "id": "REAPER_FORM",
-    "name": "Forma mietitrice",
-    "description": "Ogni volta che una carta Attacco infligge danni, applica anche altrettanta [gold]Condanna[/gold].",
+    "name": "Forma Mietitrice",
+    "description": "Ogni volta che una carta Attacco infligge danno, applica anche la stessa quantità di [gold]Condanna[/gold].",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1731,8 +1731,8 @@
   },
   {
     "id": "REATTACH",
-    "name": "Ricollegamento",
-    "description": "Se altri segmenti sono ancora vivi, rinasce tra [blue]2[/blue] turni con [blue]25[/blue] PV.",
+    "name": "Ricomposizione",
+    "description": "Se altri frammenti sono ancora vivi, rinasce tra [blue]2[/blue] turni con [blue]25[/blue] PV.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Single",
@@ -1741,7 +1741,7 @@
   },
   {
     "id": "REBOUND",
-    "name": "Rimbalzo",
+    "name": "Recupero",
     "description": "La carta successiva che giochi in questo turno viene posizionata in cima al tuo [gold]mazzo di pesca[/gold].",
     "description_raw": null,
     "type": "Buff",
@@ -1752,7 +1752,7 @@
   {
     "id": "REFLECT",
     "name": "Riflesso",
-    "description": "I danni bloccati vengono rispediti a chi ti ha attaccato.",
+    "description": "Il danno bloccato viene rispedito a chi ti ha attaccato.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1781,8 +1781,8 @@
   },
   {
     "id": "RETAIN_HAND",
-    "name": "Conserva mano",
-    "description": "[gold]Conservi[/gold] la tua [gold]mano[/gold] per i [blue]2[/blue] turni successivi.",
+    "name": "Conservazione della Mano",
+    "description": "[gold]Conservi[/gold] la tua [gold]mano[/gold] per i successivi [blue]2[/blue] turni.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1811,9 +1811,9 @@
   },
   {
     "id": "ROLLING_BOULDER",
-    "name": "Masso rotolante",
-    "description": "All'inizio del tuo turno, infliggi [blue][Amount][/blue] di danno a TUTTI i nemici e aumenti questi danni di [blue]5[/blue].",
-    "description_raw": "All'inizio del tuo turno, infliggi [blue]{Amount}[/blue] di danno a TUTTI i nemici e aumenti questi danni di [blue]{Damage}[/blue].",
+    "name": "Masso Rotolante",
+    "description": "All'inizio del tuo turno, infliggi [blue][Amount][/blue] di danno a TUTTI i nemici e aumenti questo danno di [blue]5[/blue].",
+    "description_raw": "All'inizio del tuo turno, infliggi [blue]{Amount}[/blue] di danno a TUTTI i nemici e aumenti questo danno di [blue]{Damage}[/blue].",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -1821,8 +1821,8 @@
   },
   {
     "id": "ROYALTIES",
-    "name": "Profitti",
-    "description": "Al termine del combattimento, ottieni [blue]25[/blue] d'[gold]oro[/gold].",
+    "name": "Imposte",
+    "description": "Al termine del combattimento, ottieni [blue]25[/blue] unità d'[gold]oro[/gold].",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1831,7 +1831,7 @@
   },
   {
     "id": "RUPTURE",
-    "name": "Frattura",
+    "name": "Squarcio",
     "description": "Ogni volta che perdi PV durante il tuo turno, ottieni [blue]1[/blue] di [gold]Forza[/gold].",
     "description_raw": null,
     "type": "Buff",
@@ -1851,7 +1851,7 @@
   },
   {
     "id": "SEEKING_EDGE",
-    "name": "Cercare il limite",
+    "name": "Spada Inseguitrice",
     "description": "La carta [gold]Spada Sovrana[/gold] ora colpisce TUTTI i nemici.",
     "description_raw": null,
     "type": "Buff",
@@ -1861,7 +1861,7 @@
   },
   {
     "id": "SELF_FORMING_CLAY",
-    "name": "Argilla autoformante",
+    "name": "Argilla Automodellante",
     "description": "Ottieni [blue]3[/blue] di [gold]Blocco[/gold] nel turno successivo.",
     "description_raw": null,
     "type": "Buff",
@@ -1881,8 +1881,8 @@
   },
   {
     "id": "SERPENT_FORM",
-    "name": "Forma di serpente",
-    "description": "Ogni volta che giochi una carta, infliggi [blue]4[/blue] danni a un nemico casuale.",
+    "name": "Forma Serpeggiante",
+    "description": "Ogni volta che giochi una carta, infliggi [blue]4[/blue] di danno a un nemico casuale.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1911,8 +1911,8 @@
   },
   {
     "id": "SHADOW_STEP",
-    "name": "Passo d'ombra",
-    "description": "Il turno successivo, le carte Attacco infliggono danni doppi.",
+    "name": "Passo d'Ombra",
+    "description": "Il turno successivo, le carte Attacco infliggono danno doppio.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1921,7 +1921,7 @@
   },
   {
     "id": "SHADOWMELD",
-    "name": "Fusione d'ombra",
+    "name": "Fusione d'Ombra",
     "description": "Raddoppi la quantità di [gold]Blocco[/gold] che ottieni in questo turno.",
     "description_raw": null,
     "type": "Buff",
@@ -1931,9 +1931,9 @@
   },
   {
     "id": "SHRIEK",
-    "name": "Urlo",
-    "description": "La prima volta che i PV di [gold]this creature[/gold] sono pari o superiori a [blue][Amount][/blue], subisce [gold]Stordimento[/gold].",
-    "description_raw": "La prima volta che i PV di [gold]{OwnerName}[/gold] sono pari o superiori a [blue]{Amount}[/blue], subisce [gold]Stordimento[/gold].",
+    "name": "Strillo",
+    "description": "La prima volta che i PV di [gold]this creature[/gold] sono pari o inferiori a [blue][Amount][/blue], subisce [gold]Stordimento[/gold].",
+    "description_raw": "La prima volta che i PV di [gold]{OwnerName}[/gold] sono pari o inferiori a [blue]{Amount}[/blue], subisce [gold]Stordimento[/gold].",
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": true,
@@ -1941,9 +1941,9 @@
   },
   {
     "id": "SHRINK",
-    "name": "Rimpicciolimento",
-    "description": "le carte Attacco di [gold]this creature[/gold] infliggono un [blue]30 %[/blue] di danno in meno.",
-    "description_raw": "{ApplierName.StringValue:cond:Finché {} è in vita, le tue carte Attacco|le carte Attacco di [gold]{OwnerName}[/gold]} infliggono un [blue]{DamageDecrease} %[/blue] di danno in meno{Amount:cond:==1? nel prossimo turno|>1? nei prossimi [blue]{}[/blue] turni|}.",
+    "name": "Restringimento",
+    "description": "le carte Attacco di [gold]this creature[/gold] infliggono un [blue]30%[/blue] di danno in meno.",
+    "description_raw": "{ApplierName.StringValue:cond:Finché {} è in vita, le tue carte Attacco|le carte Attacco di [gold]{OwnerName}[/gold]} infliggono un [blue]{DamageDecrease}%[/blue] di danno in meno{Amount:cond:==1? nel prossimo turno|>1? nei prossimi [blue]{}[/blue] turni|}.",
     "type": "Debuff",
     "stack_type": "None",
     "allow_negative": true,
@@ -1961,7 +1961,7 @@
   },
   {
     "id": "SIC_EM",
-    "name": "Distruzione totale",
+    "name": "All'Attacco!",
     "description": "Ogni volta che [gold]Osty[/gold] colpisce questo nemico in questo turno, applichi [blue]3[/blue] di [gold]Invocazione[/gold].",
     "description_raw": null,
     "type": "Debuff",
@@ -1971,7 +1971,7 @@
   },
   {
     "id": "SIGNAL_BOOST",
-    "name": "Incremento del segnale",
+    "name": "Segnale Amplificato",
     "description": "La tua carta Potere successiva viene giocata una volta in più.",
     "description_raw": null,
     "type": "Buff",
@@ -1991,8 +1991,8 @@
   },
   {
     "id": "SLEIGHT_OF_FLESH",
-    "name": "Gioco di prestigio",
-    "description": "Ogni volta che applichi un debuff a un nemico, subisce [blue]13[/blue] danni.",
+    "name": "Manipolazione Corporea",
+    "description": "Ogni volta che applichi un debuff a un nemico, subisce [blue]13[/blue] di danno.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -2001,9 +2001,9 @@
   },
   {
     "id": "SLIPPERY",
-    "name": "Sfuggevole",
-    "description": "[blue]2[/blue] Le prossime volte che [gold]this creature[/gold] perde PV, ne perde solo [blue]1[/blue].",
-    "description_raw": "{Amount:plural:La prossima volta che|[blue]{}[/blue] Le prossime volte che} [gold]{OwnerName}[/gold] perde PV, ne perde solo [blue]1[/blue].",
+    "name": "Sfuggevolezza",
+    "description": "Le prossime [blue]2[/blue] volte che [gold]this creature[/gold] perde PV, ne perde solo [blue]1[/blue].",
+    "description_raw": "{Amount:plural:La prossima volta che|Le prossime [blue]{}[/blue] volte che} [gold]{OwnerName}[/gold] perde PV, ne perde solo [blue]1[/blue].",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -2022,7 +2022,7 @@
   {
     "id": "SLOW",
     "name": "Rallentamento",
-    "description": "Ogni volta che giochi una carta, questo nemico subisce il [blue]10%[/blue] di danni in più dalle carte Attacco questo turno.",
+    "description": "Ogni volta che giochi una carta, questo nemico subisce il [blue]10%[/blue] di danno extra dalle carte Attacco in questo turno.",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
@@ -2041,7 +2041,7 @@
   },
   {
     "id": "SMOGGY",
-    "name": "Smog",
+    "name": "Inquinamento",
     "description": "Puoi giocare solo [blue]1[/blue] carta Abilità per turno.",
     "description_raw": null,
     "type": "Debuff",
@@ -2052,7 +2052,7 @@
   {
     "id": "SMOKESTACK",
     "name": "Ciminiera",
-    "description": "Ogni volta che crei una carta Stato, infliggi danni a TUTTI i nemici.",
+    "description": "Ogni volta che crei una carta Stato, infliggi danno a TUTTI i nemici.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -2061,7 +2061,7 @@
   },
   {
     "id": "SNEAKY",
-    "name": "Spregevolezza",
+    "name": "Furtività",
     "description": "Ogni volta che un altro giocatore attacca un nemico, ottieni [gold]Blocco[/gold].",
     "description_raw": null,
     "type": "Buff",
@@ -2071,9 +2071,9 @@
   },
   {
     "id": "SOAR",
-    "name": "Librarsi",
-    "description": "Subisce un [blue]50%[/blue] di danno in meno finché non va a segno.",
-    "description_raw": "Subisce un [blue]{DamageDecrease}%[/blue] di danno in meno finché non va a segno.",
+    "name": "Elevazione",
+    "description": "Subisce un [blue]50%[/blue] di danno in meno finché non atterra.",
+    "description_raw": "Subisce un [blue]{DamageDecrease}%[/blue] di danno in meno finché non atterra.",
     "type": "Buff",
     "stack_type": "Single",
     "allow_negative": null,
@@ -2081,7 +2081,7 @@
   },
   {
     "id": "SPECTRUM_SHIFT",
-    "name": "Movimento dello spettro",
+    "name": "Scala Cromatica",
     "description": "All'inizio del tuo turno, aggiungi [blue]1[/blue] carta incolore alla tua [gold]mano[/gold].",
     "description_raw": null,
     "type": "Buff",
@@ -2111,7 +2111,7 @@
   },
   {
     "id": "SPINNER",
-    "name": "Trottola",
+    "name": "Ruota",
     "description": "[gold]Vitreoglobi[/gold] [gold]canalizzati[/gold] all'inizio del tuo turno: [blue]1[/blue].",
     "description_raw": null,
     "type": "Buff",
@@ -2121,7 +2121,7 @@
   },
   {
     "id": "SPIRIT_OF_ASH",
-    "name": "Spirito della cenere",
+    "name": "Spirito Cinereo",
     "description": "Ogni volta che giochi una carta con [gold]Evanescenza[/gold], ottieni [blue]4[/blue] di [gold]Blocco[/gold].",
     "description_raw": null,
     "type": "Buff",
@@ -2131,7 +2131,7 @@
   },
   {
     "id": "STAMPEDE",
-    "name": "Fuga precipitosa",
+    "name": "Assalto",
     "description": "Al termine de tuo turno, [blue]1[/blue] carta Attacco casuale nella tua [gold]mano[/gold] viene giocata contro un nemico casuale.",
     "description_raw": null,
     "type": "Buff",
@@ -2141,7 +2141,7 @@
   },
   {
     "id": "STAR_NEXT_TURN",
-    "name": "Stella turno successivo",
+    "name": "Turno Successivo Stellato",
     "description": "Ottieni 1 [star:1] nel turno successivo.",
     "description_raw": "Ottieni 1 {singleStarIcon} nel turno successivo.",
     "type": "Buff",
@@ -2151,8 +2151,8 @@
   },
   {
     "id": "STEAM_ERUPTION",
-    "name": "Eruzione di vapore",
-    "description": "Quando perde la vita, infligge danni al termine del tuo turno successivo.",
+    "name": "Eruzione di Vapore",
+    "description": "Quando muore, infligge danno al termine del tuo turno successivo.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -2162,7 +2162,7 @@
   {
     "id": "STOCK",
     "name": "Rifornimento",
-    "description": "Quando perde la vita, un nuovo Affetta-bot viene invocato al suo posto.",
+    "description": "Quando muore, un nuovo Affettabot viene invocato al suo posto.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -2181,7 +2181,7 @@
   },
   {
     "id": "STRANGLE",
-    "name": "Soffocamento",
+    "name": "Strangolamento",
     "description": "Ogni volta che giochi una carta in questo turno, il nemico perde [blue]2[/blue] PV.",
     "description_raw": null,
     "type": "Debuff",
@@ -2192,7 +2192,7 @@
   {
     "id": "STRATAGEM",
     "name": "Stratagemma",
-    "description": "Ogni volta che mischi il tuo [gold]mazzo di pesca[/gold], scegli [blue]1[/blue] carta da esso e mettila nella tua [gold]mano[/gold].",
+    "description": "Ogni volta che mischi il tuo [gold]mazzo di pesca[/gold], scegli [blue]1[/blue] carta da esso e aggiungila alla tua [gold]mano[/gold].",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -2202,7 +2202,7 @@
   {
     "id": "STRENGTH",
     "name": "Forza",
-    "description": "La Forza aggiunge danno aggiuntivo alle carte Attacco.",
+    "description": "La Forza aggiunge danno extra alle carte Attacco.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -2211,7 +2211,7 @@
   },
   {
     "id": "SUBROUTINE",
-    "name": "Sottoprogramma",
+    "name": "Sottoprocedura",
     "description": "Ogni volta che giochi una carta Potere, ottieni [blue]1[/blue] di [energy:1].",
     "description_raw": "Ogni volta che giochi una carta Potere, ottieni [blue]1[/blue] di {energyPrefix:energyIcons(1)}.",
     "type": "Buff",
@@ -2222,8 +2222,8 @@
   {
     "id": "SUCK",
     "name": "Risucchio",
-    "description": "Ogni volta che [gold]this creature[/gold] infligge danni non bloccati, ottiene [blue][Amount][/blue] di [gold]Forza[/gold].",
-    "description_raw": "Ogni volta che [gold]{OwnerName}[/gold] infligge danni non bloccati, ottiene [blue]{Amount}[/blue] di [gold]Forza[/gold].",
+    "description": "Ogni volta che [gold]this creature[/gold] infligge danno non bloccato, ottiene [blue][Amount][/blue] di [gold]Forza[/gold].",
+    "description_raw": "Ogni volta che [gold]{OwnerName}[/gold] infligge danno non bloccato, ottiene [blue]{Amount}[/blue] di [gold]Forza[/gold].",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -2231,7 +2231,7 @@
   },
   {
     "id": "SUMMON_NEXT_TURN",
-    "name": "Invochi il turno successivo",
+    "name": "Invocazione Turno Successivo",
     "description": "All'inizio del tuo turno successivo, applichi [blue]2[/blue] di [gold]Invocazione[/gold].",
     "description_raw": null,
     "type": "Buff",
@@ -2251,8 +2251,8 @@
   },
   {
     "id": "SURROUNDED",
-    "name": "Spalle al muro",
-    "description": "Subisci il [blue]50%[/blue] di danno extra se subisci un attacco alle spalle. Use le carte di puntamento o le pozioni per cambiare il tuo orientamento.",
+    "name": "Spalle al Muro",
+    "description": "Subisci il [blue]50%[/blue] di danno extra se subisci un attacco alle spalle. Use le carte di puntamento o le pozioni per cambiare il tuo posizionamento.",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Single",
@@ -2261,7 +2261,7 @@
   },
   {
     "id": "SWIPE",
-    "name": "Sgraffignare",
+    "name": "Scippo",
     "description": "Dopo aver ucciso questo nemico, la carta rubata viene restituita.",
     "description_raw": null,
     "type": "Buff",
@@ -2271,8 +2271,8 @@
   },
   {
     "id": "SWORD_SAGE",
-    "name": "Saggio della spada",
-    "description": "Aumenta il costo della carta [gold]Spada Sovrana[/gold] di [blue]1[/blue]. La carta [gold]Spada Sovrana[/gold] ora colpisce [blue]1[/blue] volta in più.",
+    "name": "Maestro Spadaccino",
+    "description": "Aumenti il costo della carta [gold]Spada Sovrana[/gold] di [blue]1[/blue]. La carta [gold]Spada Sovrana[/gold] ora colpisce [blue]1[/blue] volta in più.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -2291,7 +2291,7 @@
   },
   {
     "id": "TAG_TEAM",
-    "name": "Gioco di squadra",
+    "name": "Attacco Coordinato",
     "description": "La carta Attacco successiva che un altro giocatore gioca sul nemico viene giocata una volta in più.",
     "description_raw": null,
     "type": "Debuff",
@@ -2302,7 +2302,7 @@
   {
     "id": "TANGLED",
     "name": "Ingarbuglio",
-    "description": "Le carte Attacco costano [blue]1[/blue] [gold]Energia[/gold] extra in questo turno.",
+    "description": "Le carte Attacco costano [blue]1[/blue] di [gold]Energia[/gold] extra in questo turno.",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
@@ -2311,8 +2311,8 @@
   },
   {
     "id": "TANK",
-    "name": "Tank",
-    "description": "Subisci danni doppi dai nemici. Gli alleati subiscono metà danni dai nemici.",
+    "name": "Guardiano Altruista",
+    "description": "Subisci danno doppio dai nemici. Gli alleati subiscono metà danno dai nemici.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Single",
@@ -2331,7 +2331,7 @@
   },
   {
     "id": "TERRITORIAL",
-    "name": "Territoriale",
+    "name": "Territorialità",
     "description": "Al termine del suo turno, ottiene [blue]1[/blue] di [gold]Forza[/gold].",
     "description_raw": null,
     "type": "Buff",
@@ -2341,7 +2341,7 @@
   },
   {
     "id": "THE_BOMB",
-    "name": "La bomba",
+    "name": "La Bomba",
     "description": "Al termine di [blue]2[/blue] turni, infliggi [blue]40[/blue] di danno a TUTTI i nemici.",
     "description_raw": "Al termine di {Amount:plural:questo turno|[blue]{}[/blue] turni}, infliggi [blue]{Damage}[/blue] di danno a TUTTI i nemici.",
     "type": "Buff",
@@ -2351,8 +2351,8 @@
   },
   {
     "id": "THE_GAMBIT",
-    "name": "Lo stratagemma",
-    "description": "Se subisci danni non bloccati in questo combattimento, perdi la vita.",
+    "name": "Azzardo",
+    "description": "Se subisci danno non bloccato in questo combattimento, muori.",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Single",
@@ -2361,7 +2361,7 @@
   },
   {
     "id": "THE_HUNT",
-    "name": "La caccia",
+    "name": "La Caccia",
     "description": "Ottieni [blue]1[/blue] carta extra come ricompensa al termine del combattimento.",
     "description_raw": null,
     "type": "Buff",
@@ -2371,7 +2371,7 @@
   },
   {
     "id": "THE_SEALED_THRONE",
-    "name": "Il trono sigillato",
+    "name": "Trono Sigillato",
     "description": "Ogni volta che giochi una carta, ottieni [star:1].",
     "description_raw": "Ogni volta che giochi una carta, ottieni {singleStarIcon}.",
     "type": "Buff",
@@ -2392,7 +2392,7 @@
   {
     "id": "THORNS",
     "name": "Spinascudo",
-    "description": "Quando subisci un attacco, rispedisci i danni subiti.",
+    "description": "Quando subisci un attacco, infliggi danno come contrattacco.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -2411,7 +2411,7 @@
   },
   {
     "id": "TOOLS_OF_THE_TRADE",
-    "name": "Strumenti di scambio",
+    "name": "Ferri del Mestiere",
     "description": "All'inizio del tuo turno, peschi [blue]1[/blue] carta e scarti [blue]1[/blue] carta.",
     "description_raw": null,
     "type": "Buff",
@@ -2421,9 +2421,9 @@
   },
   {
     "id": "TORIC_TOUGHNESS",
-    "name": "Resistenza torica",
-    "description": "Ottieni [blue]0[/blue] di [gold]Blocco[/gold] per [blue][Amount][/blue] turni successivi.",
-    "description_raw": "Ottieni [blue]{Block:diff()}[/blue] di [gold]Blocco[/gold] per [blue]{Amount}[/blue] {Amount:plural:turno successivo|turni successivi}.",
+    "name": "Resistenza Torica",
+    "description": "Ottieni [blue]0[/blue] di [gold]Blocco[/gold] all'inizio dei prossimi [blue]2[/blue] turni.",
+    "description_raw": "Ottieni [blue]{Block:diff()}[/blue] di [gold]Blocco[/gold] all'inizio {Amount:plural:del prossimo turno|dei prossimi [blue]{}[/blue] turni}.",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -2431,8 +2431,8 @@
   },
   {
     "id": "TRACKING",
-    "name": "Tracciatura",
-    "description": "I nemici con [gold]Debolezza[/gold] subiscono il [blue]doppio[/blue] dei danni dalle carte Attacco.",
+    "name": "Segugio",
+    "description": "I nemici con [gold]Debolezza[/gold] subiscono danno [blue]doppio[/blue] dalle carte Attacco.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -2441,7 +2441,7 @@
   },
   {
     "id": "TRASH_TO_TREASURE",
-    "name": "Da spazzatura a tesoro",
+    "name": "Trasmutazione",
     "description": "Globi casuali [gold]canalizzati[/gold] ogni volta che crei una carta Stato: [blue]1[/blue].",
     "description_raw": null,
     "type": "Buff",
@@ -2462,7 +2462,7 @@
   {
     "id": "UNMOVABLE",
     "name": "Inamovibile",
-    "description": "La prima volta che ottieni [gold]Blocco[/gold] da una carta in ogni turno, raddoppi la quantità ottenuto.",
+    "description": "La prima volta che ottieni [gold]Blocco[/gold] da una carta in ogni turno, raddoppi la quantità ottenuta.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -2471,8 +2471,8 @@
   },
   {
     "id": "VEILPIERCER",
-    "name": "Trafiggivelo",
-    "description": "La prossima carta con [gold]Evanescenza[/gold] che giochi costa [blue]0[/blue].",
+    "name": "Perforaveli",
+    "description": "La successiva carta con [gold]Evanescenza[/gold] che giochi costa [blue]0[/blue].",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -2481,7 +2481,7 @@
   },
   {
     "id": "VICIOUS",
-    "name": "Aggresività",
+    "name": "Violenza",
     "description": "Ogni volta che applichi [gold]Vulnerabilità[/gold], peschi [blue]1[/blue] carta.",
     "description_raw": null,
     "type": "Buff",
@@ -2492,8 +2492,8 @@
   {
     "id": "VIGOR",
     "name": "Vigore",
-    "description": "L'attacco successivo di [gold]this creature [/gold] infligge [blue][Amount][/blue] di danno extra.",
-    "description_raw": "{OnPlayer:Il tuo attacco successivo| L'attacco successivo di [gold]{OwnerName} [/gold]} infligge [blue]{Amount}[/blue] di danno extra.",
+    "description": "L'attacco successivo di [gold]this creature[/gold] infliggerà [blue][Amount][/blue] di danno extra.",
+    "description_raw": "{OnPlayer:La tua carta Attacco successiva|L'attacco successivo di [gold]{OwnerName}[/gold]} infliggerà [blue]{Amount}[/blue] di danno extra.",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -2501,9 +2501,9 @@
   },
   {
     "id": "VITAL_SPARK",
-    "name": "Scintilla vitale",
-    "description": "La prima volta che [gold]this creature[/gold] subisce danni ogni turno, chi l'ha attaccato ottiene [energy:1].",
-    "description_raw": "La prima volta che [gold]{OwnerName}[/gold] subisce danni ogni turno, chi l'ha attaccato ottiene {Energy:energyIcons()}.",
+    "name": "Scintilla Vitale",
+    "description": "La prima volta che [gold]this creature[/gold] subisce danno in ogni turno, chi attacca ottiene [energy:1].",
+    "description_raw": "La prima volta che [gold]{OwnerName}[/gold] subisce danno in ogni turno, chi attacca ottiene {Energy:energyIcons()}.",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -2511,8 +2511,8 @@
   },
   {
     "id": "VOID_FORM",
-    "name": "Forma vuota",
-    "description": "Le prime [blue]2[/blue] carte che giochi in ogni turno hanno costo pari a 0.",
+    "name": "Forma del Vuoto",
+    "description": "Le prime [blue]2[/blue] carte che giochi in ogni turno possono essere giocate senza nessun costo.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -2531,7 +2531,7 @@
   },
   {
     "id": "WASTE_AWAY",
-    "name": "Scarti",
+    "name": "Avvizzimento",
     "description": "Ottieni [blue]1[/blue] di [gold]Energia[/gold] in meno per turno.",
     "description_raw": null,
     "type": "Debuff",
@@ -2551,7 +2551,7 @@
   },
   {
     "id": "WELL_LAID_PLANS",
-    "name": "Piani ben congegnati",
+    "name": "Piani Perfetti",
     "description": "Al termine del tuo turno, [gold]conservi[/gold] fino a [blue]1[/blue] carta.",
     "description_raw": null,
     "type": "Buff",
@@ -2561,7 +2561,7 @@
   },
   {
     "id": "WRAITH_FORM",
-    "name": "Forma spettrale",
+    "name": "Forma Spettrale",
     "description": "All'inizio del tuo turno, perdi [blue]1[/blue] di [gold]Destrezza[/gold].",
     "description_raw": null,
     "type": "Debuff",

@@ -82,8 +82,8 @@
   {
     "id": "ASLEEP",
     "name": "Sen",
-    "description": "Budzi się po utraceniu PŻ lub po [blue]{}[/blue] turach.",
-    "description_raw": "Budzi się po utraceniu PŻ lub {Amount:plural(en):w następnej turze|po [blue]{}[/blue] turach}.",
+    "description": "TODO",
+    "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -212,8 +212,8 @@
   {
     "id": "BURROWED",
     "name": "Zanurzenie",
-    "description": "[gold]this creature[/gold] nie traci pkt. [gold]Bloku[/gold] na początku swojej tury. Otrzymuje [gold]Ogłuszenie[/gold], jeśli utraci wszystkie pkt. [gold]Bloku[/gold].",
-    "description_raw": "[gold]{OwnerName}[/gold] nie traci pkt. [gold]Bloku[/gold] na początku swojej tury. Otrzymuje [gold]Ogłuszenie[/gold], jeśli utraci wszystkie pkt. [gold]Bloku[/gold].",
+    "description": "[gold]this creature[/gold] nie traci pkt. [gold]Bloku[/gold] na początku swojej tury. Otrzymuje [gold]Ogłuszenie[/gold], gdy utraci wszystkie pkt. [gold]Bloku[/gold].",
+    "description_raw": "[gold]{OwnerName}[/gold] nie traci pkt. [gold]Bloku[/gold] na początku swojej tury. Otrzymuje [gold]Ogłuszenie[/gold], gdy utraci wszystkie pkt. [gold]Bloku[/gold].",
     "type": "Buff",
     "stack_type": "Single",
     "allow_negative": null,
@@ -492,7 +492,7 @@
   {
     "id": "DARK_EMBRACE",
     "name": "Objęcia mroku",
-    "description": "Kiedykolwiek karta zostanie [gold]Wyczerpana[/gold], dobierz 1 kartę.",
+    "description": "Kiedykolwiek karta zostanie [gold]Wyczerpana[/gold], dobierz [blue]1[/blue] kartę.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -822,8 +822,8 @@
   {
     "id": "FLUTTER",
     "name": "Trzepot skrzydeł",
-    "description": "Otrzymuje [blue]50%[/blue] mniej obrażeń od Ataków. Zadaj obrażenia temu przeciwnikowi [blue][Amount][/blue] razy, aby go [gold]Ogłuszyć[/gold].",
-    "description_raw": "Otrzymuje [blue]{DamageDecrease}%[/blue] mniej obrażeń od Ataków. Zadaj obrażenia temu przeciwnikowi [blue]{Amount}[/blue] {Amount:plural(en):raz|razy}, aby go [gold]Ogłuszyć[/gold].",
+    "description": "Otrzymuje [gold]50%[/gold] mniej obrażeń od Ataków.",
+    "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -1201,7 +1201,7 @@
   },
   {
     "id": "INTERCEPT",
-    "name": "Za Tobą skoczę w ogień",
+    "name": "Schowaj się za mną",
     "description": "Osłaniasz innego gracza. Wszystkie ataki skierowane na niego zostają przekierowane na ciebie.",
     "description_raw": null,
     "type": "Buff",
@@ -1212,7 +1212,7 @@
   {
     "id": "ITERATION",
     "name": "Nowa wersja",
-    "description": "Gdy dobierzesz kartę Stanu po raz pierwszy w tej turze, dobierz więcej kart.",
+    "description": "Gdy dobierzesz kartę [gold]Stanu[/gold] po raz pierwszy w tej turze, dobierz więcej kart.",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1272,7 +1272,7 @@
   {
     "id": "LIGHTNING_ROD",
     "name": "Piorunochron",
-    "description": "Na początku [blue]2[/blue] następnych tur [gold]Załaduj[/gold] 1 [gold]Sferę Gromu[/gold].",
+    "description": "Na początku [blue]2[/blue] następnych tur [gold]Załaduj[/gold] [blue]1[/blue] [gold]Sferę Gromu[/gold].",
     "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
@@ -1542,8 +1542,8 @@
   {
     "id": "PANACHE",
     "name": "Rozmach",
-    "description": "Po zagraniu [blue]5[/blue] plural(en):karty w tej turze zadaj obrażenia [blue][Amount][/blue] pkt. obrażeń WSZYSTKIM przeciwnikom.",
-    "description_raw": "Po zagraniu [blue]{CardsLeft}[/blue] {CardsLeft:plural(en):karty|kart} w tej turze zadaj obrażenia [blue]{Amount}[/blue] pkt. obrażeń WSZYSTKIM przeciwnikom.",
+    "description": "Po zagraniu [blue]5[/blue] kart w jednej turze zadaj obrażenia WSZYSTKIM przeciwnikom.",
+    "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -1622,8 +1622,8 @@
   {
     "id": "PLOW",
     "name": "Szarża",
-    "description": "To stworzenie otrzyma [gold]Ogłuszenie[/gold] i straci wszystkie pkt. [gold]Siły[/gold], gdy będzie mieć [blue]150[/blue] PŻ lub mniej (jednorazowo).",
-    "description_raw": null,
+    "description": "[gold]this creature[/gold] otrzyma [gold]Ogłuszenie[/gold] i straci wszystkie pkt. [gold]Siły[/gold], gdy będzie mieć [blue][Amount][/blue] PŻ lub mniej (jednorazowo).",
+    "description_raw": "[gold]{OwnerName}[/gold] otrzyma [gold]Ogłuszenie[/gold] i straci wszystkie pkt. [gold]Siły[/gold], gdy będzie mieć [blue]{Amount}[/blue] PŻ lub mniej (jednorazowo).",
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -1932,8 +1932,8 @@
   {
     "id": "SHRIEK",
     "name": "Udręka",
-    "description": "To stworzenie otrzyma [gold]Ogłuszenie[/gold], gdy będzie mieć [blue]50%[/blue] PŻ lub mniej (jednorazowo).",
-    "description_raw": null,
+    "description": "[gold]this creature[/gold] otrzyma [gold]Ogłuszenie[/gold], gdy będzie mieć [blue][Amount][/blue] PŻ lub mniej (jednorazowo).",
+    "description_raw": "[gold]{OwnerName}[/gold] otrzyma [gold]Ogłuszenie[/gold], gdy będzie mieć [blue]{Amount}[/blue] PŻ lub mniej (jednorazowo).",
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": true,
@@ -2302,7 +2302,7 @@
   {
     "id": "TANGLED",
     "name": "Zaplątanie",
-    "description": "Ataki kosztują [blue]1[/blue] dodatkowy pkt. [gold]Energii[/gold] w tej turze.",
+    "description": "W tej turze Ataki kosztują [blue]1[/blue] dodatkowy pkt. [gold]Energii[/gold].",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",
@@ -2422,8 +2422,8 @@
   {
     "id": "TORIC_TOUGHNESS",
     "name": "Twardy charakter",
-    "description": "Na początku [blue][Amount][/blue] następnych tur zyskaj [blue]0[/blue] pkt. [gold]Bloku[/gold].",
-    "description_raw": "Na początku {Amount:plural(en):następnej tury|[blue]{Amount}[/blue] następnych tur} zyskaj [blue]{Block:diff()}[/blue] pkt. [gold]Bloku[/gold].",
+    "description": "Na początku [blue]2[/blue] następnych tur zyskaj [blue]5[/blue] pkt. [gold]Bloku[/gold].",
+    "description_raw": null,
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,

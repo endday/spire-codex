@@ -1632,7 +1632,7 @@
   {
     "id": "POISON",
     "name": "中毒",
-    "description": "中毒的生物还在自身回合开始时失去生命。中毒层数每回合减少[blue]1[/blue]。",
+    "description": "中毒的生物会在自身回合开始时失去生命。中毒层数每回合减少[blue]1[/blue]。",
     "description_raw": null,
     "type": "Debuff",
     "stack_type": "Counter",

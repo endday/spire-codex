@@ -726,7 +726,7 @@
     "name": "Darv",
     "type": "Ancient",
     "act": null,
-    "description": "...où ai-je mis... Oh !\n{characterGender:choose(neutral|):Tu viens|Vous venez} voir ma collection ?! {characterGender:choose(neutral|):Sers-toi|Servez-vous} dans ce tas au fond, {characterGender:choose(neutral|):tu feras|vous ferez} bon usage de ce que {characterGender:choose(neutral|):tu trouveras|vous trouverez} !",
+    "description": "...où ai-je mis... Oh !\n{characterGender:choose(neutral):Tu viens|Vous venez} voir ma collection ?! {characterGender:choose(neutral):Sers-toi|Servez-vous} dans ce tas au fond, {characterGender:choose(neutral):tu feras|vous ferez} bon usage de ce que {characterGender:choose(neutral):tu trouveras|vous trouverez} !",
     "options": null,
     "pages": null,
     "epithet": "L'Amasseur",
@@ -735,19 +735,19 @@
         {
           "order": "0-0r",
           "speaker": "ancient",
-          "text": "{characterGender:choose(neutral|):Tiens, emporte|Tenez, emportez} une de ces gemmes oubliées avec {characterGender:choose(neutral|):toi|vous} !"
+          "text": "{characterGender:choose(neutral):Tiens, emporte|Tenez, emportez} une de ces gemmes oubliées avec {characterGender:choose(neutral):toi|vous} !"
         },
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "J'ai plein de choses à faire aujourd'hui !\n{characterGender:choose(neutral|):Prends ce que tu veux|Prenez ce que vous voulez} du tas là-bas !"
+          "text": "J'ai plein de choses à faire aujourd'hui !\n{characterGender:choose(neutral):Prends ce que tu veux|Prenez ce que vous voulez} du tas là-bas !"
         }
       ],
       "Defect": [
         {
           "order": "0-0",
           "speaker": "ancient",
-          "text": "{characterGender:choose(feminine|neutral|masculine):Quelle belle pièce de pacotille|Quel beau morceau de ferraille|Quel joli bloc de bric-à-brac} {characterGender:choose(neutral|):tu fais|vous faites} !"
+          "text": "{characterGender:choose(feminine|neutral|masculine):Quelle belle pièce de pacotille|Quel beau morceau de ferraille|Quel joli bloc de bric-à-brac} {characterGender:choose(neutral):tu fais|vous faites} !"
         },
         {
           "order": "0-1",
@@ -757,12 +757,12 @@
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "Toujours en service, à ce que vois... Voyons ce qu'on peut faire pour te mettre à jour !"
+          "text": "Toujours en service, à ce que je vois... Voyons ce qu'on peut faire pour te mettre à jour !"
         },
         {
           "order": "2-0",
           "speaker": "ancient",
-          "text": "J'ai bien conservé ce que ton ami euhh... hum.\nOublie ce qu'ai dit !!"
+          "text": "J'ai bien conservé ce que ton ami euhh... hum.\nOublie ce que j'ai dit !!"
         },
         {
           "order": "2-1",
@@ -772,7 +772,7 @@
         {
           "order": "2-2",
           "speaker": "ancient",
-          "text": "Ma petite ferrtaille, oublie ce que j'ai dit !"
+          "text": "Ma petite ferraille, oublie ce que j'ai dit !"
         }
       ],
       "Ironclad": [
@@ -843,7 +843,7 @@
         {
           "order": "0-0",
           "speaker": "ancient",
-          "text": "Qu'est-ce qui vous amène parmi nous ? Vous voulez jetez un œil à ma collection ?"
+          "text": "Qu'est-ce qui vous amène parmi nous ? Vous voulez jeter un œil à ma collection ?"
         },
         {
           "order": "0-1",
@@ -907,7 +907,7 @@
         {
           "order": "0-0",
           "speaker": "ancient",
-          "text": "...où ai-je mis... Oh !\n{characterGender:choose(neutral|):Tu viens|Vous venez} voir ma collection ?! {characterGender:choose(neutral|):Sers-toi|Servez-vous} dans ce tas au fond, {characterGender:choose(neutral|):tu feras|vous ferez} bon usage de ce que {characterGender:choose(neutral|):tu trouveras|vous trouverez} !"
+          "text": "...où ai-je mis... Oh !\n{characterGender:choose(neutral):Tu viens|Vous venez} voir ma collection ?! {characterGender:choose(neutral):Sers-toi|Servez-vous} dans ce tas au fond, {characterGender:choose(neutral):tu feras|vous ferez} bon usage de ce que {characterGender:choose(neutral):tu trouveras|vous trouverez} !"
         }
       ]
     },
@@ -1865,12 +1865,12 @@
         {
           "order": "0-0r",
           "speaker": "ancient",
-          "text": "La fureur {characterGender:choose(neutral|):t'|vous }attend au sommet. {characterGender:choose(neutral|):Vêtis-toi|Vêtissez-vous} de ma puissance et {characterGender:choose(neutral|):sors-en|sortez-en} victorieu{characterGender:choose(feminine):se|x}."
+          "text": "La fureur {characterGender:choose(neutral):t'|vous }attend au sommet. {characterGender:choose(neutral):Vêts-toi|Vêtissez-vous} de ma puissance et {characterGender:choose(neutral):sors-en|sortez-en} victorieu{characterGender:choose(feminine):se|x}."
         },
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "{characterGender:choose(neutral|):Tu as|Vous avez} fait tant de chemin pour venir me voir !\n{characterGender:choose(neutral|):Approche|Approchez} donc, et {characterGender:choose(neutral|):reçois|recevez} ma bénédiction."
+          "text": "{characterGender:choose(neutral):Tu as|Vous avez} fait tant de chemin pour venir me voir !\n{characterGender:choose(neutral):Approche|Approchez} donc, et {characterGender:choose(neutral):reçois|recevez} ma bénédiction."
         }
       ],
       "Defect": [
@@ -1948,7 +1948,7 @@
         {
           "order": "0-1",
           "speaker": "ancient",
-          "text": "Que de beaux accoutrements de contrées si lointaines !\nLaissez approcher vous sbires, et je vous donnerai ma bénédiction."
+          "text": "Que de beaux accoutrements de contrées si lointaines !\nLaissez approcher vos sbires, et je vous donnerai ma bénédiction."
         },
         {
           "order": "1-0r",
@@ -1958,7 +1958,7 @@
         {
           "order": "2-0",
           "speaker": "ancient",
-          "text": "L'Architecte a perdu la tête ! Si seulement un noble champion pouvait nous venir en secours..."
+          "text": "L'Architecte a perdu la tête ! Si seulement un noble champion pouvait venir à notre secours..."
         },
         {
           "order": "2-1",
@@ -2030,7 +2030,7 @@
     "name": "Orobas",
     "type": "Ancient",
     "act": "Act 2 - Hive",
-    "description": "Petite marionnette !! Ici ?! Prend ça, prends ça !",
+    "description": "Petite marionnette !! Ici ?! Prends ça, prends ça !",
     "options": null,
     "pages": null,
     "epithet": "Arc-en-ciel Vivant",
@@ -2152,7 +2152,7 @@
         {
           "order": "2-0",
           "speaker": "character",
-          "text": "Mon plus grand fan ! Ororbas, cher ami !\nHeureux de te voir encore en vie !"
+          "text": "Mon plus grand fan ! Orobas, cher ami !\nHeureux de te voir encore en vie !"
         },
         {
           "order": "2-1",
@@ -2191,7 +2191,7 @@
         {
           "order": "0-0",
           "speaker": "ancient",
-          "text": "Petite marionnette !! Ici ?! Prend ça, prends ça !"
+          "text": "Petite marionnette !! Ici ?! Prends ça, prends ça !"
         }
       ]
     },
@@ -2211,7 +2211,7 @@
   },
   {
     "id": "PAEL",
-    "name": "Pael",
+    "name": "Paël",
     "type": "Ancient",
     "act": "Act 2 - Hive",
     "description": "Une marionnette est arrivée ?\nPouvez-vous aller voir si Père va bien ? Je suis trop fatigué...",
@@ -2228,7 +2228,7 @@
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "Pael est endormi. Ses ronflements font trembler la pièce."
+          "text": "Paël est endormi. Ses ronflements font trembler la pièce."
         }
       ],
       "Defect": [
@@ -2240,7 +2240,7 @@
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "Les automates rêvent-ils ?\nObservez-moi et essayer de m'imiter..."
+          "text": "Les automates rêvent-ils ?\nObservez-moi et essayez de m'imiter..."
         },
         {
           "order": "2-0",
@@ -3462,7 +3462,7 @@
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "TES ORBES NE SONT PAS DES VRAIES ARMES !!"
+          "text": "TES ORBES NE SONT PAS DE VRAIES ARMES !!"
         },
         {
           "order": "2-0",
@@ -4660,7 +4660,7 @@
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "Ne trouves-tu pas étrange que tes camarades les assemblages veulent ta perte ?"
+          "text": "Ne trouves-tu pas étrange que tes camarades les assemblages veuillent ta perte ?"
         },
         {
           "order": "2-0",
@@ -4697,7 +4697,7 @@
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "Les clans que tu as anéantis pèsent-il sur ton âme...?\nVakuu rit aux éclats."
+          "text": "Les clans que tu as anéantis pèsent-ils sur ton âme...?\nVakuu rit aux éclats."
         },
         {
           "order": "2-0",

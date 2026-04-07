@@ -20,7 +20,7 @@
     "pages": [
       {
         "id": "ABSTAIN",
-        "description": "入浴の誘惑を振り切り、代わりに池の縁で結晶化した塩を集めた。 それを肌に擦り込むと、池の水が苛立ったように泡立ち、激しくうねる。 室温が急激に下がり、部屋中の反射する壁が一瞬「虚ろな目でやせ細った自分」を映し出した。 何か、自分を生まれ変わらせる機会を逃したかもしれない。 そんな感覚が拭いきれない。"
+        "description": "入浴の誘惑を振り切り、代わりに池の縁で結晶化した塩を集めた。 それを肌に擦り込むと、池の水が苛立ったように泡立ち、激しくうねる。 室温が急激に下がり、部屋中の反射する壁が一瞬「虚ろな目でやせ細った自分」を映し出した。 何か、自分が生まれ変わる機会を逃してしまったのではないか。 そんな感覚が拭いきれない。"
       },
       {
         "id": "ALL",
@@ -33,7 +33,7 @@
           },
           {
             "id": "EXIT_BATHS",
-            "title": "浴場を出る。",
+            "title": "浴場を出る",
             "description": ""
           }
         ]
@@ -49,7 +49,7 @@
           },
           {
             "id": "EXIT_BATHS",
-            "title": "浴場を出る。",
+            "title": "浴場を出る",
             "description": ""
           }
         ]
@@ -69,7 +69,7 @@
           },
           {
             "id": "EXIT_BATHS",
-            "title": "浴場を出る。",
+            "title": "浴場を出る",
             "description": ""
           }
         ]
@@ -101,7 +101,7 @@
           },
           {
             "id": "EXIT_BATHS",
-            "title": "浴場を出る。",
+            "title": "浴場を出る",
             "description": ""
           }
         ]
@@ -117,7 +117,7 @@
           },
           {
             "id": "EXIT_BATHS",
-            "title": "浴場を出る。",
+            "title": "浴場を出る",
             "description": ""
           }
         ]
@@ -133,7 +133,7 @@
           },
           {
             "id": "EXIT_BATHS",
-            "title": "浴場を出る。",
+            "title": "浴場を出る",
             "description": ""
           }
         ]
@@ -149,7 +149,7 @@
           },
           {
             "id": "EXIT_BATHS",
-            "title": "浴場を出る。",
+            "title": "浴場を出る",
             "description": ""
           }
         ]
@@ -165,7 +165,7 @@
           },
           {
             "id": "EXIT_BATHS",
-            "title": "浴場を出る。",
+            "title": "浴場を出る",
             "description": ""
           }
         ]
@@ -181,7 +181,7 @@
           },
           {
             "id": "EXIT_BATHS",
-            "title": "浴場を出る。",
+            "title": "浴場を出る",
             "description": ""
           }
         ]
@@ -197,7 +197,7 @@
           },
           {
             "id": "EXIT_BATHS",
-            "title": "浴場を出る。",
+            "title": "浴場を出る",
             "description": ""
           }
         ]
@@ -213,7 +213,7 @@
           },
           {
             "id": "EXIT_BATHS",
-            "title": "浴場を出る。",
+            "title": "浴場を出る",
             "description": ""
           }
         ]
@@ -229,7 +229,7 @@
           },
           {
             "id": "EXIT_BATHS",
-            "title": "浴場を出る。",
+            "title": "浴場を出る",
             "description": ""
           }
         ]
@@ -322,7 +322,7 @@
       },
       {
         "id": "MAINTAIN_CONTROL",
-        "description": "狂気に呑まれまいと誘惑に抗い、香りが届かない木の上に避難した。 だが、その効果は未だ精神を蝕んでいる。\n\n意識を保つのは困難だ。 あなたは[blue]確固たる信念[/blue]を強く念じ、そこに精神を繋ぎとめる。\n\n[AromaPrinciple]\n[AromaPrinciple]\n[AromaPrinciple]\n\nやがて、香りは収まった、"
+        "description": "狂気に呑まれまいと誘惑に抗い、香りが届かない木の上に避難した。 だが、その効果は未だ精神を蝕んでいる。\n\n意識を保つのは困難だ。 あなたは[blue]確固たる信念[/blue]を強く念じ、そこに精神を繋ぎとめる。\n\n[AromaPrinciple]\n[AromaPrinciple]\n[AromaPrinciple]\n\nやがて、香りは収まった。"
       }
     ]
   },
@@ -418,7 +418,7 @@
       },
       {
         "id": "RIP",
-        "description": "[jitter]頭に張り付いたヒルを力任せに引き剥がし[/jitter]、はるか彼方へと投げ捨てた！\n\n頭の中に声が響く。\n[purple][sine]「ギャアアアアアァァァァァァァァ……！！」"
+        "description": "[jitter]頭に張り付いたヒルを力任せに引き剥がし[/jitter]、はるか彼方へと投げ捨てた！\n\n頭の中に声が響く。\n[purple][sine]「ギャアアアアアァァァァァァァァ……！！」[/sine][/purple]"
       },
       {
         "id": "SHARE_KNOWLEDGE",
@@ -441,7 +441,7 @@
       {
         "id": "SQUASH",
         "title": "「圧殺」の極意を学ぶ",
-        "description": "[gold]押しつぶし[/gold]を[gold]デッキ[/gold]に追加。"
+        "description": "[gold]踏み潰し[/gold]を[gold]デッキ[/gold]に追加。"
       }
     ],
     "pages": [
@@ -451,7 +451,7 @@
       },
       {
         "id": "EXTERMINATION",
-        "description": "「ほう…… [gold]駆除の極意[/gold]を学びたいと。 よかろう……」\n\n彼はしばし沈黙した。 この奥義をどのように伝えるのが最善なのか、思案しているようだ。\n\n[jitter]「これぞ奥義なり！ とくと見よ！！」[/jitter]\nそう叫ぶと、彼は誇らしげに[green]殺虫剤[/green]のスプレー缶を天高く掲げた。"
+        "description": "「ほう…… [gold]駆除の極意[/gold]を学びたいと。 よかろう……」\n\n彼はしばし沈黙した。 この奥義をどのように伝えればよいか、思案しているようだ。\n\n[jitter]「これぞ奥義なり！ とくと見よ！！」[/jitter]\nそう叫ぶと、彼は誇らしげに[green]殺虫剤[/green]のスプレー缶を天高く掲げた。"
       },
       {
         "id": "INITIAL",
@@ -465,13 +465,13 @@
           {
             "id": "SQUASH",
             "title": "「圧殺」の極意を学ぶ",
-            "description": "[gold]押しつぶし[/gold]を[gold]デッキ[/gold]に追加。"
+            "description": "[gold]踏み潰し[/gold]を[gold]デッキ[/gold]に追加。"
           }
         ]
       },
       {
         "id": "SQUASH",
-        "description": "「ほう…… [gold]圧殺の極意[/gold]を学びたいと。 よかろう……」\n\n彼はしばし沈黙した。 この奥義をどのように伝えるのが最善なのか、思案しているようだ。\n\n[jitter]「これぞ奥義なり！ とくと見よ！！」[/jitter]\nそう叫ぶと、彼は誇らしげに巨大な虫を力任せに踏み潰した。"
+        "description": "「ほう…… [gold]圧殺の極意[/gold]を学びたいと。 よかろう……」\n\n彼はしばし沈黙した。 この奥義をどのように伝えればよいか、思案しているようだ。\n\n[jitter]「これぞ奥義なり！ とくと見よ！！」[/jitter]\nそう叫ぶと、彼は誇らしげに巨大な虫を力任せに踏み潰した。"
       }
     ]
   },
@@ -682,11 +682,11 @@
       {
         "id": "UNCOVER_FUTURE",
         "title": "未来を明らかにする",
-        "description": "[red]51-99[/red][gold]ゴールド[/gold]を支払う。 [blue]3[/blue]回[purple]占う[/purple]"
+        "description": "[red]51-99[/red][gold]ゴールド[/gold]を支払う。 [blue]3[/blue]回[purple]占う[/purple]。"
       },
       {
         "id": "PAYMENT_PLAN",
-        "title": "支払いプラン",
+        "title": "後払いプラン",
         "description": "[red]負債[/red]を1枚獲得。 [blue]6[/blue]回[purple]占う[/purple]。"
       }
     ],
@@ -702,11 +702,11 @@
           {
             "id": "UNCOVER_FUTURE",
             "title": "未来を明らかにする",
-            "description": "[red]51-99[/red][gold]ゴールド[/gold]を支払う。 [blue]3[/blue]回[purple]占う[/purple]"
+            "description": "[red]51-99[/red][gold]ゴールド[/gold]を支払う。 [blue]3[/blue]回[purple]占う[/purple]。"
           },
           {
             "id": "PAYMENT_PLAN",
-            "title": "支払いプラン",
+            "title": "後払いプラン",
             "description": "[red]負債[/red]を1枚獲得。 [blue]6[/blue]回[purple]占う[/purple]。"
           }
         ]
@@ -726,7 +726,7 @@
     "name": "ダーヴ",
     "type": "Ancient",
     "act": null,
-    "description": "…… どこに置いたっけな…… おお！\nオレのコレクションを見に来たのか！？ あそこの山から好きなモンを持ってって、役立ててくれや！",
+    "description": "…… どこに置いたっけな…… おお！オレのコレクションを見に来たのか！？\nあの山から好きなモンを持ってってくれ！きっと役に立つぜ！",
     "options": null,
     "pages": null,
     "epithet": "収集家",
@@ -779,7 +779,7 @@
         {
           "order": "0-0",
           "speaker": "ancient",
-          "text": "炎の戦士が戻ってきたな！\nお前さんにぴったりのモンがあるぜ！"
+          "text": "炎の戦士がお戻りだな！\nお前さんにぴったりのモンがあるぜ！"
         },
         {
           "order": "1-0r",
@@ -806,7 +806,7 @@
         {
           "order": "0-0",
           "speaker": "ancient",
-          "text": "お嬢ちゃん、マジな顔してんな。 オレに何ができる？"
+          "text": "お嬢ちゃん、マジな顔してんな。 何かオレに手伝えることはあるかい？"
         },
         {
           "order": "0-1",
@@ -821,12 +821,12 @@
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "まだ復讐の道を進んでるのか？ オレは止めねぇけどよ！"
+          "text": "まだ復讐の道を歩んでるのか？ 俺は止めねぇけどよ！"
         },
         {
           "order": "2-0",
           "speaker": "ancient",
-          "text": "この本はお嬢ちゃんと繋がってるみたいだな、お嬢ちゃんが生まれる前からあるんだけどな。"
+          "text": "この本はお嬢ちゃんと繋がってるみたいだな。お前さんが生まれる前からあったんだけどな。"
         },
         {
           "order": "2-1",
@@ -836,14 +836,14 @@
         {
           "order": "2-2",
           "speaker": "ancient",
-          "text": "[sine]恐ろしい[/sine]モンってのは、なぜかオレのコレクションに集まるのさ。"
+          "text": "[sine]恐ろしい[/sine]モンってのは、なぜか俺のコレクションに集まるのさ。"
         }
       ],
       "Regent": [
         {
           "order": "0-0",
           "speaker": "ancient",
-          "text": "お前さんみたいなのが、こんな上まで何しに来たんだ？ オレのコレクションを見ていくかい？"
+          "text": "お前さんみたいなのが、こんな上まで何しに来たんだ？ 俺のコレクションを見ていくかい？"
         },
         {
           "order": "0-1",
@@ -868,7 +868,7 @@
         {
           "order": "2-1",
           "speaker": "character",
-          "text": "聞こうではないか！"
+          "text": "見せてもらおうではないか！"
         },
         {
           "order": "2-2",
@@ -885,7 +885,7 @@
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "お前さんが持ってるその「狩りの証」と、何かいいモンを交換してやろうか！"
+          "text": "お前さんが持ってるその「狩りの証」、何かいいモンと交換してやろうか！"
         },
         {
           "order": "2-0",
@@ -900,14 +900,14 @@
         {
           "order": "2-2",
           "speaker": "ancient",
-          "text": "よし！ 最後の決戦か何かのために、お前さんの装備を整えてやろう！"
+          "text": "最後の決戦か何からしいな。よし、お前さんの装備を整えてやろう！"
         }
       ],
       "First Visit": [
         {
           "order": "0-0",
           "speaker": "ancient",
-          "text": "…… どこに置いたっけな…… おお！\nオレのコレクションを見に来たのか！？ あそこの山から好きなモンを持ってって、役立ててくれや！"
+          "text": "…… どこに置いたっけな…… おお！オレのコレクションを見に来たのか！？\nあの山から好きなモンを持ってってくれ！きっと役に立つぜ！"
         }
       ]
     },
@@ -932,7 +932,7 @@
     "name": "密林",
     "type": "Event",
     "act": "Act 1 - Overgrowth",
-    "description": "しばらく道を間違えて進んでいたようだ。 [green]シダ[/green]や[green]低木[/green]、そして[green]ツタ[/green]が生い茂る、鬱蒼としたジャングルに迷い込んでしまった。 特に[green]ツタ[/green]がひどい。 疲労困憊の中、暗い幻聴が頭をよぎる。\n\n[sine][purple]「お前は道に迷い、備えもなく、逃れられぬ死が近づいている。」[/purple][/sine]\n\nどうするべきか？",
+    "description": "ずいぶんと長い間、道を間違えていたようだ。 [green]シダ[/green]や[green]低木[/green]、そして[green]ツタ[/green]が生い茂る、鬱蒼としたジャングルに迷い込んでしまった。 特に[green]ツタ[/green]がひどい。 疲労困憊の中、暗い幻聴が頭をよぎる。\n\n[sine][purple]「お前は道に迷い、備えもなく、逃れられぬ死が近づいている。」[/purple][/sine]\n\nどうするべきか？",
     "options": [
       {
         "id": "TRUDGE_ON",
@@ -948,7 +948,7 @@
     "pages": [
       {
         "id": "INITIAL",
-        "description": "しばらく道を間違えて進んでいたようだ。 [green]シダ[/green]や[green]低木[/green]、そして[green]ツタ[/green]が生い茂る、鬱蒼としたジャングルに迷い込んでしまった。 特に[green]ツタ[/green]がひどい。 疲労困憊の中、暗い幻聴が頭をよぎる。\n\n[sine][purple]「お前は道に迷い、備えもなく、逃れられぬ死が近づいている。」[/purple][/sine]\n\nどうするべきか？",
+        "description": "ずいぶんと長い間、道を間違えていたようだ。 [green]シダ[/green]や[green]低木[/green]、そして[green]ツタ[/green]が生い茂る、鬱蒼としたジャングルに迷い込んでしまった。 特に[green]ツタ[/green]がひどい。 疲労困憊の中、暗い幻聴が頭をよぎる。\n\n[sine][purple]「お前は道に迷い、備えもなく、逃れられぬ死が近づいている。」[/purple][/sine]\n\nどうするべきか？",
         "options": [
           {
             "id": "TRUDGE_ON",
@@ -984,7 +984,7 @@
     "name": "ドール・ルーム",
     "type": "Shared",
     "act": null,
-    "description": "あなたは隠し部屋に足を踏み入れた……\n\n部屋中が人形で埋め尽くされている。 一つとして同じものはなく、その表情は[green]喜び[/green]から[purple]悲哀[/purple]まで様々だ。 着ている服は時代が数世紀に渡ってバラバラで、異界の物とすら思われるものもある。\n\n次第に、[sine][blue]合唱のようなささやき声[/blue][/sine]は大きくなり、やがて[jitter][red]絶叫[/red][/jitter]となって、我先にとあなたを呼び求めるようになった……\n\nどれか一つを選び、一刻も早く立ち去らなければ。",
+    "description": "あなたは隠し部屋に足を踏み入れた……\n\n部屋中が人形で埋め尽くされている。 一つとして同じものはなく、その表情は[green]喜び[/green]から[purple]悲哀[/purple]まで様々だ。 着ている服は時代が数世紀に渡ってバラバラで、異界の物とすら思われるものもある。\n\n次第に、[sine][blue]合唱のようなささやき声[/blue][/sine]は大きくなり、やがて[jitter][red]絶叫[/red][/jitter]となって、我先にとあなたを求めるようになった……\n\nどれか一つを選び、一刻も早く立ち去らなければ。",
     "options": [
       {
         "id": "RANDOM",
@@ -1017,7 +1017,7 @@
       },
       {
         "id": "INITIAL",
-        "description": "あなたは隠し部屋に足を踏み入れた……\n\n部屋中が人形で埋め尽くされている。 一つとして同じものはなく、その表情は[green]喜び[/green]から[purple]悲哀[/purple]まで様々だ。 着ている服は時代が数世紀に渡ってバラバラで、異界の物とすら思われるものもある。\n\n次第に、[sine][blue]合唱のようなささやき声[/blue][/sine]は大きくなり、やがて[jitter][red]絶叫[/red][/jitter]となって、我先にとあなたを呼び求めるようになった……\n\nどれか一つを選び、一刻も早く立ち去らなければ。",
+        "description": "あなたは隠し部屋に足を踏み入れた……\n\n部屋中が人形で埋め尽くされている。 一つとして同じものはなく、その表情は[green]喜び[/green]から[purple]悲哀[/purple]まで様々だ。 着ている服は時代が数世紀に渡ってバラバラで、異界の物とすら思われるものもある。\n\n次第に、[sine][blue]合唱のようなささやき声[/blue][/sine]は大きくなり、やがて[jitter][red]絶叫[/red][/jitter]となって、我先にとあなたを求めるようになった……\n\nどれか一つを選び、一刻も早く立ち去らなければ。",
         "options": [
           {
             "id": "RANDOM",
@@ -1152,7 +1152,7 @@
     "name": "無限コンベア",
     "type": "Event",
     "act": "Underdocks",
-    "description": "あなたは派手な看板を掲げた小屋に足を踏み入れた。 傾いた看板にはこう書いてある――\n[aqua]「大食い食堂『無限の宴』――お代は空腹に応じて」[/aqua]\n\n中に入ると、[orange]すらっとした多腕のシェフ[/orange]が、器用に[green]一口サイズの料理[/green]を作り、[sine]うねうね動く甲殻でできたベルト[/sine]に乗せている。\n\nシェフの腕の1本が、メニュー表を指差した。\n全品 1皿 [blue]35[/blue][gold]ゴールド[/gold]",
+    "description": "あなたは派手な看板を掲げた小屋に足を踏み入れた。 傾いた看板にはこう書いてある――\n[aqua]「大食い食堂『無限の宴』――お代は空腹に応じて」[/aqua]\n\n中に入ると、[orange]すらっとした多腕のシェフ[/orange]が、器用に[green]一口サイズの料理[/green]を作り、[sine]うねうね動く甲殻でできたベルト[/sine]に乗せている。\n\nシェフの腕の1本が、看板を指差した。\n全品 1皿 [blue]35[/blue][gold]ゴールド[/gold]",
     "options": [
       {
         "id": "OBSERVE_CHEF",
@@ -1225,7 +1225,7 @@
       },
       {
         "id": "INITIAL",
-        "description": "あなたは派手な看板を掲げた小屋に足を踏み入れた。 傾いた看板にはこう書いてある――\n[aqua]「大食い食堂『無限の宴』――お代は空腹に応じて」[/aqua]\n\n中に入ると、[orange]すらっとした多腕のシェフ[/orange]が、器用に[green]一口サイズの料理[/green]を作り、[sine]うねうね動く甲殻でできたベルト[/sine]に乗せている。\n\nシェフの腕の1本が、メニュー表を指差した。\n全品 1皿 [blue]35[/blue][gold]ゴールド[/gold]",
+        "description": "あなたは派手な看板を掲げた小屋に足を踏み入れた。 傾いた看板にはこう書いてある――\n[aqua]「大食い食堂『無限の宴』――お代は空腹に応じて」[/aqua]\n\n中に入ると、[orange]すらっとした多腕のシェフ[/orange]が、器用に[green]一口サイズの料理[/green]を作り、[sine]うねうね動く甲殻でできたベルト[/sine]に乗せている。\n\nシェフの腕の1本が、看板を指差した。\n全品 1皿 [blue]35[/blue][gold]ゴールド[/gold]",
         "options": [
           {
             "id": "OBSERVE_CHEF",
@@ -1303,7 +1303,7 @@
     "name": "忘れられた者の墓",
     "type": "Event",
     "act": "Act 3 - Glory",
-    "description": "[jitter][aqua]青い炎が揺らめく[/aqua][/jitter]墓が一つある……\n\n誇り高き戦士が戦死したが、その魂は安らぐことなく彷徨っているようだ。 魂は戦い続けることを望み、あなたと共に連れて行ってくれと[sine]懇願[/sine]しているようだ。\n\nだが、[red]真実[/red]と向き合わせるほうが、彼のためではないだろうか？",
+    "description": "[jitter][aqua]青い炎が揺らめく[/aqua][/jitter]墓が一つある……\n\n誇り高き戦士が戦死したが、その魂は安らぐことなく彷徨っているようだ。 魂は戦い続けることを望み、共に連れて行ってくれと[sine]懇願[/sine]しているようだ。\n\nだが、[red]真実[/red]と向き合わせるほうが、彼のためではないだろうか？",
     "options": [
       {
         "id": "CONFRONT_LOCKED",
@@ -1332,7 +1332,7 @@
       },
       {
         "id": "INITIAL",
-        "description": "[jitter][aqua]青い炎が揺らめく[/aqua][/jitter]墓が一つある……\n\n誇り高き戦士が戦死したが、その魂は安らぐことなく彷徨っているようだ。 魂は戦い続けることを望み、あなたと共に連れて行ってくれと[sine]懇願[/sine]しているようだ。\n\nだが、[red]真実[/red]と向き合わせるほうが、彼のためではないだろうか？",
+        "description": "[jitter][aqua]青い炎が揺らめく[/aqua][/jitter]墓が一つある……\n\n誇り高き戦士が戦死したが、その魂は安らぐことなく彷徨っているようだ。 魂は戦い続けることを望み、共に連れて行ってくれと[sine]懇願[/sine]しているようだ。\n\nだが、[red]真実[/red]と向き合わせるほうが、彼のためではないだろうか？",
         "options": [
           {
             "id": "CONFRONT_LOCKED",
@@ -1355,7 +1355,7 @@
   },
   {
     "id": "HUNGRY_FOR_MUSHROOMS",
-    "name": "腹ペコとキノコ",
+    "name": "キノコに夢中",
     "type": "Event",
     "act": "Act 3 - Glory",
     "description": "[sine]最後に食事をしたのはいつだったか……\n…… ん？ なんだ、このたまらなくいい匂いは？ [/sine]\n\n匂いをたどっていくと、こじんまりとしたキャンプ場にたどりついた。 そこには、おいしそうに調理された[green]色とりどりのキノコ[/green]が残されている！ あまりにも空腹なあなたは、食べて大丈夫なキノコかどうか考える余裕もない。\n(腹が減りすぎていて、横に冒険者の死体が転がっていることすら目に入らなかった)",
@@ -1363,12 +1363,12 @@
       {
         "id": "BIG_MUSHROOM",
         "title": "大きなキノコ",
-        "description": "Obtain [gold]大きなキノコ[/gold]. 取得時、最大HPが[blue]20[/blue]増加する。戦闘開始時に引くカードが[blue]2[/blue]枚少なくなる"
+        "description": "Obtain [gold]大きなキノコ[/gold]. 取得時、最大HPが[blue]20[/blue]増加する。戦闘開始時に引くカードが[blue]2[/blue]枚少なくなる。"
       },
       {
         "id": "FRAGRANT_MUSHROOM",
         "title": "芳醇なキノコ",
-        "description": "Obtain [gold]芳醇なキノコ[/gold]. 取得時、HPを[red]15[/red]失い、ランダムなカードを[blue]3[/blue]枚[gold]アップグレード[/gold]する"
+        "description": "Obtain [gold]芳醇なキノコ[/gold]. 取得時、HPを[red]15[/red]失い、ランダムなカードを[blue]3[/blue]枚[gold]アップグレード[/gold]する。"
       }
     ],
     "pages": [
@@ -1387,12 +1387,12 @@
           {
             "id": "BIG_MUSHROOM",
             "title": "大きなキノコ",
-            "description": "Obtain [gold]大きなキノコ[/gold]. 取得時、最大HPが[blue]20[/blue]増加する。戦闘開始時に引くカードが[blue]2[/blue]枚少なくなる"
+            "description": "Obtain [gold]大きなキノコ[/gold]. 取得時、最大HPが[blue]20[/blue]増加する。戦闘開始時に引くカードが[blue]2[/blue]枚少なくなる。"
           },
           {
             "id": "FRAGRANT_MUSHROOM",
             "title": "芳醇なキノコ",
-            "description": "Obtain [gold]芳醇なキノコ[/gold]. 取得時、HPを[red]15[/red]失い、ランダムなカードを[blue]3[/blue]枚[gold]アップグレード[/gold]する"
+            "description": "Obtain [gold]芳醇なキノコ[/gold]. 取得時、HPを[red]15[/red]失い、ランダムなカードを[blue]3[/blue]枚[gold]アップグレード[/gold]する。"
           }
         ]
       },
@@ -1642,7 +1642,7 @@
     "name": "ネオー",
     "type": "Ancient",
     "act": "Act 1 - Overgrowth / Underdocks",
-    "description": "[sine]私が…… お前を…… “作り直し”た……\n…… 行け…… 上へ………… [/sine]",
+    "description": "[sine]私が…… お前を…… “作り直した”……\n…… 行け…… 上へ………… [/sine]",
     "options": null,
     "pages": null,
     "epithet": "復活の母（追放されし者）",
@@ -1666,19 +1666,19 @@
         {
           "order": "3-0r",
           "speaker": "ancient",
-          "text": "[sine]…… 私が…… お前を…… 連れ戻したのだ…… [/sine]"
+          "text": "[sine]…… 私が…… お前を…… 連れ戻した…… [/sine]"
         },
         {
           "order": "4-0r",
           "speaker": "ancient",
-          "text": "[sine]…… 殺せ…… あの…… [red][jitter]アーキテクト[/jitter][/red]を…… [/sine]"
+          "text": "[sine]…… 殺せ…… 奴を…… [red][jitter]アーキテクト[/jitter][/red]を…… [/sine]"
         }
       ],
       "Defect": [
         {
           "order": "0-0",
           "speaker": "ancient",
-          "text": "[sine]…… 造られし者よ…… お前は……\n…… 何になって…… しまったのだ……？ [/sine]"
+          "text": "[sine]…… 造られし者よ…… お前は……\n…… 何になったと…… いうのだ……？ [/sine]"
         },
         {
           "order": "1-0r",
@@ -1688,7 +1688,7 @@
         {
           "order": "2-0",
           "speaker": "ancient",
-          "text": "[sine]…… 私には…… お前を……\n…… 忘れさせることは…… できぬ………… [/sine]"
+          "text": "[sine]…… 私は…… お前を……\n…… 忘れさせることは…… できぬ………… [/sine]"
         },
         {
           "order": "2-1",
@@ -1705,7 +1705,7 @@
         {
           "order": "0-0",
           "speaker": "ancient",
-          "text": "[sine]…… 起き上がれ…… 我が戦士よ……\n…… 再び…… 戦う時…… [/sine]"
+          "text": "[sine]…… 立ち上がれ…… 我が戦士よ……\n…… 再び…… 戦いの時…… [/sine]"
         },
         {
           "order": "1-0r",
@@ -1801,12 +1801,12 @@
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "[sine]…… お前の……\n…… 狩りの証が…… 待っている…… [/sine]"
+          "text": "[sine]…… お前の……\n…… 「狩りの証」が…… 待っている…… [/sine]"
         },
         {
           "order": "2-0",
           "speaker": "ancient",
-          "text": "[sine]…… 私たちは…… どちらもわかる…… 家族による苦痛…… [/sine]"
+          "text": "[sine]…… 私たちは…… 知っている…… 家族による痛み…… [/sine]"
         },
         {
           "order": "2-1",
@@ -1823,7 +1823,7 @@
         {
           "order": "0-0",
           "speaker": "ancient",
-          "text": "[sine]私が…… お前を…… “作り直し”た……\n…… 行け…… 上へ………… [/sine]"
+          "text": "[sine]私が…… お前を…… “作り直した”……\n…… 行け…… 上へ………… [/sine]"
         }
       ]
     },
@@ -1870,7 +1870,7 @@
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "あたしに会うために、遠くからよく来たわね！\nもっとこっち来なよ、祝福あげちゃう。"
+          "text": "あたしに会うために、遠くからよく来たものね！\nもっとこっち来なよ、祝福あげちゃう。"
         }
       ],
       "Defect": [
@@ -1892,14 +1892,14 @@
         {
           "order": "2-1",
           "speaker": "character",
-          "text": "<照れたような電子音>"
+          "text": "<照れるような音>"
         }
       ],
       "Ironclad": [
         {
           "order": "0-0",
           "speaker": "ancient",
-          "text": "あ、アイアンクラッドじゃん。 やっとあたしのとこ来たんだ。\n前に出なよ、力を授けてあげる。"
+          "text": "あ、アイアンクラッドじゃん。 やっとあたしのとこ来たんだ。\n前に出なよ、チカラを授けてあげる。"
         },
         {
           "order": "1-0r",
@@ -1909,19 +1909,19 @@
         {
           "order": "2-0",
           "speaker": "ancient",
-          "text": "また戻ってきたのね？ あたしのチャンピオン。\nこれで何回目？ 前はもっと強かったじゃん？ 一族を丸ごと滅ぼせるくらいに。"
+          "text": "また戻ってきたのね？ あたしの英雄さん。\nこれで何回目？ 前はもっと強かったじゃん？ 一族を丸ごと滅しちゃうぐらいに。"
         }
       ],
       "Necrobinder": [
         {
           "order": "0-0",
           "speaker": "character",
-          "text": "あなたの衛兵は死んだわ。 噂では、アーキテクトの死を望む者に祝福を授けてくれるそうね。"
+          "text": "あなたの護衛は死んだわ。 噂では、アーキテクトの死を望む者に祝福を授けてくれるそうね。"
         },
         {
           "order": "0-1",
           "speaker": "ancient",
-          "text": "デキる子は嫌いじゃないわ。 あたしの力を分けてあげる。\n次は、衛兵を殺すのやめてよね。"
+          "text": "デキる子は嫌いじゃないわ。 あたしの力を分けてあげる。\n次は、あたしの衛兵を殺すのやめてよね。"
         },
         {
           "order": "1-0r",
@@ -1931,7 +1931,7 @@
         {
           "order": "2-0",
           "speaker": "ancient",
-          "text": "あんたのその[sine]ペット[/sine]、アーキテクトは好きじゃなさそう。"
+          "text": "あんたのその[sine]ペット[/sine]、アーキテクトは嫌がりそう。"
         },
         {
           "order": "2-1",
@@ -1948,7 +1948,7 @@
         {
           "order": "0-1",
           "speaker": "ancient",
-          "text": "すっごいキレイなローブじゃん！ 遠い国から来たって？\nミニオンたちに言ってさ、もっとこっちに来なよ。 あんたを祝福してあげる。"
+          "text": "すっごいキレイなローブじゃん！ 遠い国から来たって？\nミニオンたちに担がせて、もっとこっちに来なよ。 あんたを祝福してあげる。"
         },
         {
           "order": "1-0r",
@@ -1958,7 +1958,7 @@
         {
           "order": "2-0",
           "speaker": "ancient",
-          "text": "アーキテクトってば、狂っちゃったワケ！ 誰か高貴なチャンピオン様が、このピンチから救ってくれたりしないかなー……"
+          "text": "アーキテクトってば、狂っちゃったワケ！ 誰か高貴なヒーロー様が、このピンチから救ってくれたりしないかなー……"
         },
         {
           "order": "2-1",
@@ -1970,7 +1970,7 @@
         {
           "order": "0-0",
           "speaker": "ancient",
-          "text": "あたしの領域に、ちっちゃい泥棒が忍び込んだみたいね。\n隠れられるとでも思ってんの？ 出てきなよ！"
+          "text": "あたしの領域に、小さい泥棒さんが忍び込んだみたいね。\n隠れられるとでも思ってんの？ 出てきなよ！"
         },
         {
           "order": "0-1",
@@ -2039,7 +2039,7 @@
         {
           "order": "0-0r",
           "speaker": "ancient",
-          "text": "コレタメシテ！！！"
+          "text": "コレタメシテ！！"
         },
         {
           "order": "1-0r",
@@ -2061,12 +2061,12 @@
         {
           "order": "2-0",
           "speaker": "ancient",
-          "text": "コア、コワレテル？ ネオー、コワレタキカイツカッテル？\nアヤツラレテル？"
+          "text": "コア、コワレテル？ ネオー、コワレタキカイ、ツカッテル？\nアヤツラレテル？"
         },
         {
           "order": "2-1",
           "speaker": "character",
-          "text": "<静かに電子音を鳴らす>"
+          "text": "<静かな電子音>"
         },
         {
           "order": "2-2",
@@ -2088,7 +2088,7 @@
         {
           "order": "2-0",
           "speaker": "ancient",
-          "text": "ジユウヲイノル！！ ツヨクイノル！\nヴァクー、ワルイ。 トテモワルイ！ アーキテクト、キミヲジユウニスル？"
+          "text": "ジユウニナアレ！ ジユウニナアレ！\nヴァクー、ワルイ。 トテモワルイ！ アーキテクト、キミヲジユウニスル？"
         }
       ],
       "Necrobinder": [
@@ -2100,7 +2100,7 @@
         {
           "order": "0-1",
           "speaker": "character",
-          "text": "私は操り人形じゃない。 殺さなきゃいけない奴がいるの。\nあなたは私に何をしてくれる？"
+          "text": "私は「ニンギョウ」じゃない。 殺さなきゃいけない奴がいるの。\nあなたは私に何をしてくれる？"
         },
         {
           "order": "0-2",
@@ -2120,7 +2120,7 @@
         {
           "order": "2-1",
           "speaker": "character",
-          "text": "私の探索は、アーキテクトが消え去るまで終わらない。\n暴力は避けられないわ。"
+          "text": "私の挑戦は、アーキテクトが消える日まで終わらない。\n「ボウリョク」は避けられないわ。"
         },
         {
           "order": "2-2",
@@ -2137,7 +2137,7 @@
         {
           "order": "0-1",
           "speaker": "character",
-          "text": "リージェントは自身の武勇伝を語った。 何時間もかけて。"
+          "text": "リージェントは自身のこれまでの冒険譚を語った。 何時間もかけて。"
         },
         {
           "order": "0-2",
@@ -2162,7 +2162,7 @@
         {
           "order": "2-2",
           "speaker": "character",
-          "text": "もちろんだとも、もちろんだ…… だが、余への貢物は用意しているだろうな？"
+          "text": "もちろんだ、もちろんだとも…… だが、余への貢物は用意しているだろうな？"
         }
       ],
       "Silent": [
@@ -2214,10 +2214,10 @@
     "name": "パエル",
     "type": "Ancient",
     "act": "Act 2 - Hive",
-    "description": "操り人形が来たのか？\n父様の様子を見てきてくれないか？ 私はもう眠くて…… ",
+    "description": "操り人形が来たのか。\n父様の様子を見てきてくれないか？ 私はもう眠くて…… ",
     "options": null,
     "pages": null,
-    "epithet": "溶けるドラゴン",
+    "epithet": "溶けゆくドラゴン",
     "dialogue": {
       "Returning": [
         {
@@ -2252,7 +2252,7 @@
         {
           "order": "0-0",
           "speaker": "ancient",
-          "text": "凄まじい怒りを抱えているな。 私の一部を持っていき、安らぎを見つけたまえ…… "
+          "text": "凄まじい怒りを抱えているな。 私の一部を持っていき、安らぎとしたまえ…… "
         },
         {
           "order": "1-0r",
@@ -2262,7 +2262,7 @@
         {
           "order": "2-0",
           "speaker": "ancient",
-          "text": "炎を鎮めるのだ\n父様なら、君を自由にできるだろう…… "
+          "text": "炎を鎮めるのだ。\n父様なら、君を自由にできるだろう…… "
         }
       ],
       "Necrobinder": [
@@ -2289,12 +2289,12 @@
         {
           "order": "2-0",
           "speaker": "ancient",
-          "text": "[red]父様[/red]を殺しても、安らぎは得られないぞ。 "
+          "text": "[red]父様[/red]を殺しても、そこに安らぎはないぞ。 "
         },
         {
           "order": "2-1",
           "speaker": "character",
-          "text": "あの[jitter]化け物[/jitter]を父親と呼ぶの！？"
+          "text": "[jitter]あんな奴[/jitter]を父親と呼ぶの！？"
         },
         {
           "order": "2-2",
@@ -2311,7 +2311,7 @@
         {
           "order": "0-1",
           "speaker": "ancient",
-          "text": "静かにしてくれ。\n私の一部をやるから、もう行ってくれ…… "
+          "text": "静かにしなさい。\n私の一部をやるから、もう行ってくれ…… "
         },
         {
           "order": "1-0r",
@@ -2326,7 +2326,7 @@
         {
           "order": "2-1",
           "speaker": "ancient",
-          "text": "有り余るほどの肉があるのに、与えない理由が？ "
+          "text": "有り余るほどの肉があるのだ。それを与えない理由はあるまい。"
         },
         {
           "order": "2-2",
@@ -2343,7 +2343,7 @@
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "狩りの証を探しているのか？ いいとも、私の一部を持っていきなさい……\n君の慰めになるのなら何でもいい…… "
+          "text": "「狩りの証」を探しているのか？ いいとも、私の一部を持っていきなさい……\n君の慰めになるのなら…… "
         },
         {
           "order": "2-0",
@@ -2355,7 +2355,7 @@
         {
           "order": "0-0",
           "speaker": "ancient",
-          "text": "操り人形が来たのか？\n父様の様子を見てきてくれないか？ 私はもう眠くて…… "
+          "text": "操り人形が来たのか。\n父様の様子を見てきてくれないか？ 私はもう眠くて…… "
         }
       ]
     },
@@ -2378,7 +2378,7 @@
     "name": "ポーションの運び屋",
     "type": "Shared",
     "act": null,
-    "description": "あたりに[sine]酸っぱい[/sine]臭いが漂っており、すぐ近くの床に[gold]ポーションの運び屋[/gold]が倒れているのを発見した。\n動かないし、息もしていない。 [jitter]死んでる！？ [/jitter]\n所持品は物色された後だったが、[green][sine]悪臭を放つポーション[/sine][/green]のセットが残されていた。 メモにはこうある――「受取人: 商人」。",
+    "description": "あたりに[sine]酸っぱい[/sine]臭いが漂う中、すぐ近くの床に[gold]ポーションの運び屋[/gold]が倒れているのを発見した。\n動かないし、息もしていない。 [jitter]死んでる！？ [/jitter]\n所持品は物色された後だったが、[green][sine]悪臭を放つポーション[/sine][/green]のセットが残されていた。 メモにはこうある――「受取人: 商人」。",
     "options": [
       {
         "id": "GRAB_POTIONS",
@@ -2398,7 +2398,7 @@
       },
       {
         "id": "INITIAL",
-        "description": "あたりに[sine]酸っぱい[/sine]臭いが漂っており、すぐ近くの床に[gold]ポーションの運び屋[/gold]が倒れているのを発見した。\n動かないし、息もしていない。 [jitter]死んでる！？ [/jitter]\n所持品は物色された後だったが、[green][sine]悪臭を放つポーション[/sine][/green]のセットが残されていた。 メモにはこうある――「受取人: 商人」。",
+        "description": "あたりに[sine]酸っぱい[/sine]臭いが漂う中、すぐ近くの床に[gold]ポーションの運び屋[/gold]が倒れているのを発見した。\n動かないし、息もしていない。 [jitter]死んでる！？ [/jitter]\n所持品は物色された後だったが、[green][sine]悪臭を放つポーション[/sine][/green]のセットが残されていた。 メモにはこうある――「受取人: 商人」。",
         "options": [
           {
             "id": "GRAB_POTIONS",
@@ -2433,7 +2433,7 @@
       {
         "id": "I_CAN_TAKE_THEM",
         "title": "あいつらなら倒せそうだ",
-        "description": "[gold]より良い報酬[/gold]を求めて戦う"
+        "description": "[gold]より良い報酬[/gold]を求めて戦う。"
       }
     ],
     "pages": [
@@ -2449,7 +2449,7 @@
           {
             "id": "I_CAN_TAKE_THEM",
             "title": "あいつらなら倒せそうだ",
-            "description": "[gold]より良い報酬[/gold]を求めて戦う"
+            "description": "[gold]より良い報酬[/gold]を求めて戦う。"
           }
         ]
       },
@@ -2475,7 +2475,7 @@
     "name": "長老、ランウィッド",
     "type": "Shared",
     "act": null,
-    "description": "[purple]これまで見たこともないぐらいに年老いた老人[/purple]が、あなたに近づいてきた。\n[sine]「また会ったな…… 私だ、ランウィッドだ！」[/sine]\n\nあなたはこの男に全く見覚えがない。",
+    "description": "[purple]これまで見たこともないぐらいに年老いた人物[/purple]が、あなたに近づいてきた。\n[sine]「また会ったな…… 私だ、ランウィッドだ！」[/sine]\n\nあなたはこの男に全く見覚えがない。",
     "options": [
       {
         "id": "POTION",
@@ -2510,7 +2510,7 @@
       },
       {
         "id": "INITIAL",
-        "description": "[purple]これまで見たこともないぐらいに年老いた老人[/purple]が、あなたに近づいてきた。\n[sine]「また会ったな…… 私だ、ランウィッドだ！」[/sine]\n\nあなたはこの男に全く見覚えがない。",
+        "description": "[purple]これまで見たこともないぐらいに年老いた人物[/purple]が、あなたに近づいてきた。\n[sine]「また会ったな…… 私だ、ランウィッドだ！」[/sine]\n\nあなたはこの男に全く見覚えがない。",
         "options": [
           {
             "id": "POTION",
@@ -2586,7 +2586,7 @@
       },
       {
         "id": "SHATTER",
-        "description": "集中して目を凝らすと、目の前にあるのは巨大な一枚鏡だと分かった。\n鋭い蹴りを放ち、巨大な鏡を[jitter]粉々に砕く[/jitter]！\n鏡が割れる瞬間、そこに映る自分自身が身構えるのが見え、そのまま何千もの美しく輝く破片となって散っていった。\n\nどうしてこんな場所が存在するんだ？"
+        "description": "集中して目を凝らすと、目の前にあるのは巨大な一枚鏡だと分かった。\n鋭い蹴りを放ち、巨大な鏡を[jitter]粉々に砕く[/jitter]！\n鏡が割れる瞬間、そこに映る自分自身が身構えるのが見えた。 それはそのまま、何千もの美しく輝く破片となって散っていった。\n\nどうしてこんな場所が存在するんだ？"
       },
       {
         "id": "TOUCH_A_MIRROR",
@@ -2711,7 +2711,7 @@
     "pages": [
       {
         "id": "CONTINUE_FIGHT",
-        "description": "常連客たちは、仲間の死体を目を丸くして見つめ…… 次の瞬間、[jitter]拍手喝采が沸き起こった！ [/jitter] 一体なぜ？\n\n「どうやって[red]ワイゴア卿[/red]を始末しようか、皆で悩んでいたのだ。 見事な手際だった！」\n\n彼らはあなたに出された[green]毒入りのお茶[/green]を捨て、一晩中[orange]戦術[/orange]や[purple]秘密の情報[/purple]について語り明かした。 最高のティーパーティだ。"
+        "description": "常連客たちは、仲間の死体を目を丸くして見つめ…… 次の瞬間、[jitter]拍手喝采が沸き起こった！ [/jitter] 一体なぜ？\n\n「[red]ワイゴア卿[/red]をどうやって始末しようかと、皆で悩んでいたところだったのだ。 見事な手際だった！」\n\n彼らはあなたに出された[green]毒入りのお茶[/green]を捨て、一晩中[orange]戦術[/orange]や[purple]秘密の情報[/purple]について語り明かした。 最高のティーパーティだ。"
       },
       {
         "id": "ENJOY_TEA",
@@ -2739,7 +2739,7 @@
       },
       {
         "id": "PICK_FIGHT",
-        "description": "あなたはテーブルに飛び乗り、[red]武将の騎士[/red]の顔面を[jitter]蹴り飛ばした[/jitter]！\n 騎士は恐ろしい悲鳴を上げ、倒れ込む\n\n[jitter][purple]全員が息を呑んだ。 [/purple][/jitter]",
+        "description": "あなたはテーブルに飛び乗り、[red]武将の騎士[/red]の顔面を[jitter]蹴り飛ばした[/jitter]！\n 騎士は恐ろしい悲鳴を上げ、倒れ込む。\n\n[jitter][purple]全員が息を呑んだ。 [/purple][/jitter]",
         "options": [
           {
             "id": "CONTINUE_FIGHT",
@@ -2765,7 +2765,7 @@
       {
         "id": "PLANT",
         "title": "植えて育てる",
-        "description": "カード1枚に、[purple]種まき[/purple]を[gold]エンチャント[/gold]する。"
+        "description": "カード1枚に、[purple]芽吹き[/purple]を[gold]エンチャント[/gold]する。"
       }
     ],
     "pages": [
@@ -2785,7 +2785,7 @@
           {
             "id": "PLANT",
             "title": "植えて育てる",
-            "description": "カード1枚に、[purple]種まき[/purple]を[gold]エンチャント[/gold]する。"
+            "description": "カード1枚に、[purple]芽吹き[/purple]を[gold]エンチャント[/gold]する。"
           }
         ]
       },
@@ -2800,7 +2800,7 @@
     "name": "自己啓発本",
     "type": "Shared",
     "act": null,
-    "description": "床に一冊の本が落ちている。\n「スパイアを攻略する3つの極意」\n\n本は[red]血まみれ[/red]で、どうみても胡散臭いシロモノだ。\n\n読んでみるか?",
+    "description": "床に一冊の本が落ちている。\n「スパイアを攻略する3つの極意」\n\n本は[red]血まみれ[/red]で、どうみても胡散臭いシロモノだ。\n\n読んでみるか？",
     "options": [
       {
         "id": "READ_THE_BACK",
@@ -2841,7 +2841,7 @@
     "pages": [
       {
         "id": "INITIAL",
-        "description": "床に一冊の本が落ちている。\n「スパイアを攻略する3つの極意」\n\n本は[red]血まみれ[/red]で、どうみても胡散臭いシロモノだ。\n\n読んでみるか?",
+        "description": "床に一冊の本が落ちている。\n「スパイアを攻略する3つの極意」\n\n本は[red]血まみれ[/red]で、どうみても胡散臭いシロモノだ。\n\n読んでみるか？",
         "options": [
           {
             "id": "READ_THE_BACK",
@@ -3203,7 +3203,7 @@
     "pages": [
       {
         "id": "DIVE_INTO_WATER",
-        "description": "あなたは池の深くまで潜った！\n\n[gold]お供え物[/gold]をかき集めていると、[sine][blue]鈍い反響音[/blue][/sine]が響き、崩れ落ちてきた石が直撃した！\n\n水面に顔を出すと、古い石像が崩壊しているのが見えた。 あなたが荒らしたことで、[red]物理的[/red]にも[purple]呪術的[/purple]にも崩れてしまったようだ。"
+        "description": "あなたは池の深くまで潜った！\n\n[gold]お供え物[/gold]をかき集めていると、[sine][blue]鈍い反響音[/blue][/sine]が響き、崩れ落ちてきた石が直撃した！\n\n水面に顔を出すと、古い石像が崩壊しているのが見えた。 あなたが手を出したことで、[red]物理的[/red]にも[purple]霊的[/purple]にも崩れてしまったようだ。"
       },
       {
         "id": "GRAB_SWORD",
@@ -3287,7 +3287,7 @@
       {
         "id": "APPROACH",
         "title": "近づく",
-        "description": "アタック1枚に、[purple]腐敗[/purple]を[gold]エンチャント[/gold]する。"
+        "description": "アタック1枚に、[purple]蝕み[/purple]を[gold]エンチャント[/gold]する。"
       },
       {
         "id": "KILL_WITH_FIRE",
@@ -3312,7 +3312,7 @@
           {
             "id": "APPROACH",
             "title": "近づく",
-            "description": "アタック1枚に、[purple]腐敗[/purple]を[gold]エンチャント[/gold]する。"
+            "description": "アタック1枚に、[purple]蝕み[/purple]を[gold]エンチャント[/gold]する。"
           },
           {
             "id": "KILL_WITH_FIRE",
@@ -3353,7 +3353,7 @@
           {
             "id": "GIVE_UP",
             "title": "諦める",
-            "description": "文字を読むのをやめて立ち去る"
+            "description": "文字を読むのをやめて立ち去る。"
           }
         ]
       },
@@ -3436,7 +3436,7 @@
     "name": "タンクス",
     "type": "Ancient",
     "act": "Act 3 - Glory",
-    "description": "弱すぎる！ だが見込みはある！\nこの武器を使え！！",
+    "description": "弱すぎる！ だが見込みはあるな！\nこの武器を使え！！",
     "options": null,
     "pages": null,
     "epithet": "キメラ王",
@@ -3462,7 +3462,7 @@
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "オーブは武器じゃねぇ！！"
+          "text": "オーブなんざ武器じゃねぇ！！"
         },
         {
           "order": "2-0",
@@ -3484,12 +3484,12 @@
         {
           "order": "0-0",
           "speaker": "ancient",
-          "text": "見事な剣だな、戦士よ！ もっと武器を使え！"
+          "text": "見事な剣だな、戦士よ！ もっとたくさん武器を使え！"
         },
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "戦士に武器を！ 武器を取れ！ 戦おうぜ！"
+          "text": "戦士に武器を！ さあ武器を取れ！戦ろうぜ！"
         },
         {
           "order": "2-0",
@@ -3504,14 +3504,14 @@
         {
           "order": "2-2",
           "speaker": "ancient",
-          "text": "ウオオオオ！！ 最高の戦いだったぜ。 武器を持っていけ！"
+          "text": "ウオオオオ！！ 最高の戦いだったぜ！ さあ 武器を持っていけ！"
         }
       ],
       "Necrobinder": [
         {
           "order": "0-0",
           "speaker": "ancient",
-          "text": "なんて強力な大鎌だ！"
+          "text": "なんて強ェ大鎌だ！"
         },
         {
           "order": "0-1",
@@ -3521,7 +3521,7 @@
         {
           "order": "0-2",
           "speaker": "ancient",
-          "text": "その「手」にも武器が必要か！？"
+          "text": "その「手」にも武器がいるんじゃねえか！？"
         },
         {
           "order": "1-0r",
@@ -3541,7 +3541,7 @@
         {
           "order": "2-2",
           "speaker": "ancient",
-          "text": "力強いチームワークだ！！ 武器を持っていけ！"
+          "text": "いいチームワークじゃねか！！ 武器を持っていけ！！"
         }
       ],
       "Regent": [
@@ -3553,17 +3553,17 @@
         {
           "order": "0-1",
           "speaker": "character",
-          "text": "オレンジこそ、最も王にふさわしい色。 常識だろう！"
+          "text": "オレンジこそ、最も王にふさわしき色。 常識であろう！"
         },
         {
           "order": "0-2",
           "speaker": "ancient",
-          "text": "すげぇ！ 超強そうだ！！"
+          "text": "すげぇ！！ 超強そうだ！！"
         },
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "オレンジのやつ！！ 強ぇ武器を選べ！"
+          "text": "オレンジのヤツ！！ 強ェ武器を選べ！"
         },
         {
           "order": "2-0",
@@ -3573,12 +3573,12 @@
         {
           "order": "2-1",
           "speaker": "character",
-          "text": "断る！ 前に来た時に戦ったではないか！"
+          "text": "断る！ 前に来た時にも戦ったではないか！"
         },
         {
           "order": "2-2",
           "speaker": "ancient",
-          "text": "もう一回戦え！！"
+          "text": "もう一回だ、戦るぞ！！"
         }
       ],
       "Silent": [
@@ -3590,7 +3590,7 @@
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "なぜダガーなんだ！！ 弱ぇ！"
+          "text": "なぜダガーなんぞを！！ 弱ェ！"
         },
         {
           "order": "2-0",
@@ -3600,7 +3600,7 @@
         {
           "order": "2-1",
           "speaker": "character",
-          "text": "サイレントは逃げ出した。 ついでに武器を盗んだ。 "
+          "text": "サイレントは逃げ出した。 ついでに武器もいただいた。 "
         },
         {
           "order": "2-2",
@@ -3612,7 +3612,7 @@
         {
           "order": "0-0",
           "speaker": "ancient",
-          "text": "弱すぎる！ だが見込みはある！\nこの武器を使え！！"
+          "text": "弱すぎる！ だが見込みはあるな！\nこの武器を使え！！"
         }
       ]
     },
@@ -3640,7 +3640,7 @@
       {
         "id": "BONE_TEA",
         "title": "骨茶",
-        "description": "[red]50[/red][gold]ゴールド[/gold]を支払う。 次の [blue]1[/blue] combats, 開始時、最初の手札をすべて[gold]アップグレード[/gold]する"
+        "description": "[red]50[/red][gold]ゴールド[/gold]を支払う。 次の[blue]1[/blue]回の戦闘開始時、最初の手札をすべて[gold]アップグレード[/gold]する。"
       },
       {
         "id": "BONE_TEA_LOCKED",
@@ -3650,7 +3650,7 @@
       {
         "id": "EMBER_TEA",
         "title": "燃え殻茶",
-        "description": "[red]150[/red][gold]ゴールド[/gold]を支払う。 次の[blue]5[/blue]回の戦闘開始時、[gold]筋力[/gold][blue]2[/blue]を得る"
+        "description": "[red]150[/red][gold]ゴールド[/gold]を支払う。 次の[blue]5[/blue]回の戦闘開始時、[gold]筋力[/gold][blue]2[/blue]を得る。"
       },
       {
         "id": "EMBER_TEA_LOCKED",
@@ -3660,7 +3660,7 @@
       {
         "id": "TEA_OF_DISCOURTESY",
         "title": "無作法茶",
-        "description": "次の戦闘開始時、[gold]めまい[/gold]を[blue]2[/blue]枚[gold]山札[/gold]に混ぜる"
+        "description": "次の戦闘開始時、[gold]めまい[/gold]を[blue]2[/blue]枚[gold]山札[/gold]に混ぜる。"
       }
     ],
     "pages": [
@@ -3675,7 +3675,7 @@
           {
             "id": "BONE_TEA",
             "title": "骨茶",
-            "description": "[red]50[/red][gold]ゴールド[/gold]を支払う。 次の [blue]1[/blue] combats, 開始時、最初の手札をすべて[gold]アップグレード[/gold]する"
+            "description": "[red]50[/red][gold]ゴールド[/gold]を支払う。 次の[blue]1[/blue]回の戦闘開始時、最初の手札をすべて[gold]アップグレード[/gold]する。"
           },
           {
             "id": "BONE_TEA_LOCKED",
@@ -3685,7 +3685,7 @@
           {
             "id": "EMBER_TEA",
             "title": "燃え殻茶",
-            "description": "[red]150[/red][gold]ゴールド[/gold]を支払う。 次の[blue]5[/blue]回の戦闘開始時、[gold]筋力[/gold][blue]2[/blue]を得る"
+            "description": "[red]150[/red][gold]ゴールド[/gold]を支払う。 次の[blue]5[/blue]回の戦闘開始時、[gold]筋力[/gold][blue]2[/blue]を得る。"
           },
           {
             "id": "EMBER_TEA_LOCKED",
@@ -3695,7 +3695,7 @@
           {
             "id": "TEA_OF_DISCOURTESY",
             "title": "無作法茶",
-            "description": "次の戦闘開始時、[gold]めまい[/gold]を[blue]2[/blue]枚[gold]山札[/gold]に混ぜる"
+            "description": "次の戦闘開始時、[gold]めまい[/gold]を[blue]2[/blue]枚[gold]山札[/gold]に混ぜる。"
           }
         ]
       },
@@ -3710,16 +3710,16 @@
     "name": "テスカタラ",
     "type": "Ancient",
     "act": "Act 2 - Hive",
-    "description": "あら、お客様！ さあ入ってちょうだい、愛しい子！\n今日はテスカタラに何をしてほしいの？",
+    "description": "あら、お客様ね！ さあ入ってちょうだい、愛しい子！\n今日はテスカタラに何をしてほしいの？",
     "options": null,
     "pages": null,
-    "epithet": "炎を喰らう者",
+    "epithet": "炎を育むもの",
     "dialogue": {
       "Returning": [
         {
           "order": "0-0r",
           "speaker": "ancient",
-          "text": "おかえり、愛しい子よ。 あなたの欠点を[jitter][b]焼き尽くして[/b][/jitter]あげましょうねえ。"
+          "text": "おかえり、愛しい子よ。 あなたの良くないところを[jitter][b]焼き尽くして[/b][/jitter]あげましょうねえ。"
         },
         {
           "order": "1-0r",
@@ -3736,12 +3736,12 @@
         {
           "order": "0-1",
           "speaker": "ancient",
-          "text": "私をからかいに来たわけじゃないのね？ なんて[jitter][b]珍しい[/b][/jitter]小さな機械の坊や……"
+          "text": "私をからかいに来たわけじゃないのね？ なんて[jitter][b]珍しい[/b][/jitter]、小さな機械の坊や……"
         },
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "自分が作ったものに壊されるなんて、なんて滑稽なことかしら？"
+          "text": "自分が作ったものに壊されるなんて、滑稽だとは思わない？"
         },
         {
           "order": "2-0",
@@ -3768,19 +3768,19 @@
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "なんて強い子なんでしょう！ さあ来て、何か食べていきなさい。\nお腹が空いてたら[jitter][b]殺戮[/b][/jitter]なんてできないでしょう？"
+          "text": "なんて強い子なんでしょう！ さあこっちへ来て、何か食べていきなさい。\nお腹が空いてたら[jitter][b]殺戮[/b][/jitter]なんてできないでしょう？"
         },
         {
           "order": "2-0",
           "speaker": "ancient",
-          "text": "あらら、アーキテクトはまだ生きてるの？ [jitter][b]さっさと[/b][/jitter]殺してきてくれないかしら？\nここで待ってるからねえ！"
+          "text": "あらら、アーキテクトったらまだ生きてるの？ [jitter][b]さっさと[/b][/jitter]殺してきてくれないかしら？\nここで待ってるからねえ！"
         }
       ],
       "Necrobinder": [
         {
           "order": "0-0",
           "speaker": "ancient",
-          "text": "あら、こんな壁の中で、骸骨ちゃんが何をしているの？"
+          "text": "あら。こんな壁の中で、ガイコツちゃんが何をしているの？"
         },
         {
           "order": "0-1",
@@ -3790,12 +3790,12 @@
         {
           "order": "0-2",
           "speaker": "ancient",
-          "text": "[jitter][b]すばらしいわあ[/b][/jitter]！"
+          "text": "[jitter][b]すばらしいわぁ！[/b][/jitter]"
         },
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "さあ入って、入って！ あなたの炎を、もっと[jitter][b]明るく[/b][/jitter]燃やしてあげましょうねえ。"
+          "text": "さあ入って、入って！ あなたの炎を、もっと[jitter][b]明るく[/b][/jitter]してあげましょうねえ。"
         },
         {
           "order": "2-0",
@@ -3817,27 +3817,27 @@
         {
           "order": "0-0",
           "speaker": "ancient",
-          "text": "あらまあ、なんて[jitter][b]珍しい[/b][/jitter]お客様！ あなたは誰かしら、可愛い坊や？"
+          "text": "あらまあ、なんて[jitter][b]珍しい[/b][/jitter]お客様！ あなたは何者かしら、可愛い坊や？"
         },
         {
           "order": "0-1",
           "speaker": "character",
-          "text": "余は坊やではない！ 敬意を持って接するのだ、この巨大な…… なんだかよく分からんヤツめ！"
+          "text": "余は坊やではない！ 口の利き方に気をつけよ、この巨大な…… なんだかよく分からんヤツめ！"
         },
         {
           "order": "0-2",
           "speaker": "ancient",
-          "text": "これは失礼したわねえ。\nテスカタラはうれしそうに高笑いした。 "
+          "text": "あらあら、これはとんだ御無礼を。\nテスカタラはうれしそうに高笑いした。 "
         },
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "お友達と一緒に、また戻ってきてくれたの？\nあなたたちのために[jitter][b]おやつ[/b][/jitter]を作ったのよ！"
+          "text": "また戻ってきてくれたの？お友達も一緒ねえ。\nあなたたちのために[jitter][b]おやつ[/b][/jitter]を作ったのよ！"
         },
         {
           "order": "2-0",
           "speaker": "ancient",
-          "text": "おかえりさい、王族坊や！ 外では[jitter][b]上手く[/b][/jitter]やっているようねえ。"
+          "text": "おかえりなさい、王様坊や！ 外では[jitter][b]上手く[/b][/jitter]やっているようねえ。"
         },
         {
           "order": "2-1",
@@ -3854,7 +3854,7 @@
         {
           "order": "0-0",
           "speaker": "ancient",
-          "text": "近くにいらっしゃい、無口な子。 よく見えないのよ……"
+          "text": "近くにいらっしゃい、無口な子。 あんまりよく見えないわね……"
         },
         {
           "order": "0-1",
@@ -3869,7 +3869,7 @@
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "ひどい厄介な[jitter][b]病気[/b][/jitter]にかかっているのね。 さあ、手当てをしてあげましょう。"
+          "text": "ひどく厄介な[jitter][b]病気[/b][/jitter]にかかっているのね。 さあ、手当てをしてあげましょう。"
         },
         {
           "order": "2-0",
@@ -3891,7 +3891,7 @@
         {
           "order": "0-0",
           "speaker": "ancient",
-          "text": "あら、お客様！ さあ入ってちょうだい、愛しい子！\n今日はテスカタラに何をしてほしいの？"
+          "text": "あら、お客様ね！ さあ入ってちょうだい、愛しい子！\n今日はテスカタラに何をしてほしいの？"
         }
       ]
     },
@@ -3914,7 +3914,7 @@
     "name": "アーキテクト",
     "type": "Ancient",
     "act": null,
-    "description": "大悪魔の奴隷が来たというわけか？",
+    "description": "大悪魔の奴隷がご到着か。",
     "options": null,
     "pages": null,
     "dialogue": {
@@ -3969,7 +3969,7 @@
         {
           "order": "0-0r",
           "speaker": "ancient",
-          "text": "大悪魔の奴隷が来たというわけか？"
+          "text": "大悪魔の奴隷がご到着か。"
         },
         {
           "order": "0-1r",
@@ -3979,7 +3979,7 @@
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "永遠に戦い続ける呪いか。 そうだろう？"
+          "text": "永遠に戦い続ける呪い、だろう？"
         },
         {
           "order": "1-1r",
@@ -4004,24 +4004,24 @@
         {
           "order": "2-2r",
           "speaker": "ancient",
-          "text": "底へと帰れ、アイアンクラッド。"
+          "text": "塔の底へと帰れ、アイアンクラッド。"
         }
       ],
       "Necrobinder": [
         {
           "order": "0-0",
           "speaker": "character",
-          "text": "アーキテクト！ 貴様は私の両親を殺した。 友を殺した。 私の“すべて”を殺した！…… 次は私が貴様を殺す番だ！"
+          "text": "アーキテクト！ 貴様は私の両親を奪った。 私の友を奪った。 私の“人生すべて”を奪った！…… 次は私が貴様を殺す番だ！"
         },
         {
           "order": "0-1",
           "speaker": "ancient",
-          "text": "復讐だと？ 遠慮しておこう。"
+          "text": "復讐だと？ まっぴら御免だな。"
         },
         {
           "order": "1-0r",
           "speaker": "character",
-          "text": "アーキテクト！ お前は私の両親を殺した。 私の友を殺した。 私の――"
+          "text": "アーキテクト！ お前は私の両親を奪った。 私の友を奪った。 私の――"
         },
         {
           "order": "1-1r",
@@ -4031,27 +4031,27 @@
         {
           "order": "2-0r",
           "speaker": "character",
-          "text": "アーキテクト！ お前は私の両親を殺した。 私の友を殺した。 私の“すべて”を――"
+          "text": "アーキテクト！ 貴様は私の両親を奪った。 私の友を奪った。 私の“人生すべて”を――"
         },
         {
           "order": "2-1r",
           "speaker": "ancient",
-          "text": "私は秩序を保つために必要なことをしたまでだ。"
+          "text": "必要なことをしたまでだ。秩序を保つためにな。"
         },
         {
           "order": "3-0r",
           "speaker": "character",
-          "text": "アーキテクト！ お前は私の両親を殺した。 私の友を殺した。 私の――"
+          "text": "アーキテクト！ 貴様は私の両親を奪った。 私の友を奪った。 私の――"
         },
         {
           "order": "3-1r",
           "speaker": "ancient",
-          "text": "すべて、か"
+          "text": "「人生すべてを」、かね？"
         },
         {
           "order": "3-2r",
           "speaker": "character",
-          "text": "何だと……！？ 死ね、化け物め！"
+          "text": "なっ……！？死ね、化け物！"
         }
       ],
       "Regent": [
@@ -4063,7 +4063,7 @@
         {
           "order": "0-1",
           "speaker": "ancient",
-          "text": "静かにしてほしいな……"
+          "text": "五月蠅くて敵わんな……"
         },
         {
           "order": "0-2",
@@ -4073,7 +4073,7 @@
         {
           "order": "1-0r",
           "speaker": "character",
-          "text": "また到着したぞ！"
+          "text": "またもや余が到着したぞ！"
         },
         {
           "order": "1-1r",
@@ -4083,7 +4083,7 @@
         {
           "order": "1-2r",
           "speaker": "character",
-          "text": "余は騒々しくも愚かでもない！ 勝負しろ！"
+          "text": "余は騒々しくも愚かでもない！ さあ勝負しろ！"
         },
         {
           "order": "2-0r",
@@ -4093,12 +4093,12 @@
         {
           "order": "2-1r",
           "speaker": "ancient",
-          "text": "それについては、意見が合ったな。"
+          "text": "それについては、同意見だ。"
         },
         {
           "order": "2-2r",
           "speaker": "character",
-          "text": "さあ、始めようか！"
+          "text": "さあ、ダンスの時間だ！"
         }
       ],
       "Silent": [
@@ -4115,7 +4115,7 @@
         {
           "order": "2-0r",
           "speaker": "ancient",
-          "text": "[jitter]ぐあっ！ [/jitter]\n[jitter][red]死ね！！ [/red][/jitter]"
+          "text": "[jitter]ぐっ！ [/jitter]\n[jitter][red]死ね！！ [/red][/jitter]"
         },
         {
           "order": "3-0r",
@@ -4515,7 +4515,7 @@
       },
       {
         "id": "NOBLE",
-        "description": "[gold]位の高い貴族[/gold]が証言台に立った。 ふとポケットを探ると、メモが入っていた。 「無罪にしてくれたら、多額の報酬を支払う」という内容だ。 その[gold]貴族[/gold]は[purple]汚職の罪[/purple]に対してろくに反論もせず、あなたに向かって意味ありげな笑みを浮かべている。\n汚職をなくすことはできないが、いくらかの[gold]ゴールド[/gold]を懐に収めることはできる……",
+        "description": "[gold]位の高い貴族[/gold]が証言台に立った。 ふとポケットを探ると、メモが入っていた。 「無罪にしてくれたら、多額の報酬を支払う」という内容だ。 その[gold]貴族[/gold]は[purple]汚職の罪[/purple]に対してろくに抗弁もせず、あなたに向かって意味ありげな笑みを浮かべている。\n汚職をなくすことはできないが、いくらかの[gold]ゴールド[/gold]を懐に収めることはできる……",
         "options": [
           {
             "id": "GUILTY",
@@ -4638,7 +4638,7 @@
         {
           "order": "0-0r",
           "speaker": "ancient",
-          "text": "スパイアで栄光をお求めですか？ あなたにいくつか提案があるのですが……"
+          "text": "スパイアで栄光をお求めですか？ あなたにいくつかご提案があるのですが……"
         },
         {
           "order": "1-0r",
@@ -4648,19 +4648,19 @@
         {
           "order": "2-0r",
           "speaker": "ancient",
-          "text": "これが[sine]永遠に[/sine]終わらないことに、お気づきですか？"
+          "text": "お気づきですか？これが[sine]永遠に[/sine]終わらないことに。"
         }
       ],
       "Defect": [
         {
           "order": "0-0",
           "speaker": "ancient",
-          "text": "壊れたお方、私があなたを[sine]完璧[/sine]にして差し上げましょう。"
+          "text": "壊れたお方、私があなたを[sine]完璧[/sine]にしてさしあげましょう。"
         },
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "仲間のオートマトンがあなたの死を望んでいること、奇妙だとは思いませんか？"
+          "text": "仲間の機械があなたの死を望んでいること、奇妙だとは思いませんか？"
         },
         {
           "order": "2-0",
@@ -4675,7 +4675,7 @@
         {
           "order": "2-2",
           "speaker": "ancient",
-          "text": "どちらが大切ですか？ あなたの創造主ですか、それともお友達ですか？"
+          "text": "どちらが大切ですか？ あなたの創造主？それともお友達？"
         }
       ],
       "Ironclad": [
@@ -4697,17 +4697,17 @@
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "滅んだ一族のことが気がかりですか……？\nヴァクーは高らかに笑う。 "
+          "text": "滅んだ一族のことが気がかりですか……？\nヴァクーは笑い声を上げる。 "
         },
         {
           "order": "2-0",
           "speaker": "ancient",
-          "text": "私の最高の操り人形よ…… なぜまだアーキテクトを殺していないのです？"
+          "text": "私の最高の操り人形よ…… なぜまだアーキテクトを殺していないのですか？"
         },
         {
           "order": "2-1",
           "speaker": "character",
-          "text": "アーキテクトを殺した後、次はお前を殺してやる。 [jitter][b]悪魔め！ [/b][/jitter]"
+          "text": "アーキテクトを殺した後、次はお前の番だ。 [jitter][b]悪魔め！ [/b][/jitter]"
         },
         {
           "order": "2-2",
@@ -4739,7 +4739,7 @@
         {
           "order": "2-1",
           "speaker": "character",
-          "text": "さっさと進めて、悪魔。 あなたの契約書を見せなさい。"
+          "text": "さっさと進めて、悪魔。 あなたの契約内容を見せなさい。"
         },
         {
           "order": "2-2",
@@ -4766,7 +4766,7 @@
         {
           "order": "1-0r",
           "speaker": "ancient",
-          "text": "ちょっとした対価で、私の力をさらに授けましょう。"
+          "text": "ちょっとした対価をいただければ、私の力をさらに授けましょう。"
         },
         {
           "order": "2-0",
@@ -4776,12 +4776,12 @@
         {
           "order": "2-1",
           "speaker": "ancient",
-          "text": "契約書は隅々まで読みましたよね？\n十分な意図と責任を持って署名したはずですよ。"
+          "text": "契約書は隅々まで読みましたよね？\n十分な意思と責任を持って署名したはずですよ。"
         },
         {
           "order": "2-2",
           "speaker": "ancient",
-          "text": "取引の義務を果たさないつもりですか？\nならば、別の契約はいかがでしょう？ そちらの方が良いのでは？"
+          "text": "取引の義務を果たさないおつもりで？\nならば、別の契約はいかがでしょう？ そちらもオススメですよ。"
         }
       ],
       "Silent": [
@@ -4818,7 +4818,7 @@
         {
           "order": "2-2",
           "speaker": "ancient",
-          "text": "言葉は不要です、私たちは“同じ”なのですから。"
+          "text": "言葉は不要です。私たちは“同じ”なのですから。"
         }
       ],
       "First Visit": [
@@ -4972,7 +4972,7 @@
     "name": "ウォンゴズへようこそ",
     "type": "Shared",
     "act": null,
-    "description": "「ウォンゴズようこそ。 ほしいものをウォンタスティックな価格で取り揃えております」と、これまで見たこともないほど無気力な店員が言った。\n\n「どうぞ商品をご覧になって、当店でのお買い物をお楽しみください」店員は顔を上げることもなく、棒読みで続けた。",
+    "description": "「ウォンゴズへようこそ。 お求めの商品をウォンタスティックな価格で取り揃えております」――これまで見たこともないほど無気力な店員が言った。\n\n「どうぞ商品をご覧になって、当店でのお買い物をお楽しみください」店員は顔を上げることもなく、棒読みで続けた。",
     "options": [
       {
         "id": "BARGAIN_BIN",
@@ -5025,7 +5025,7 @@
       },
       {
         "id": "INITIAL",
-        "description": "「ウォンゴズようこそ。 ほしいものをウォンタスティックな価格で取り揃えております」と、これまで見たこともないほど無気力な店員が言った。\n\n「どうぞ商品をご覧になって、当店でのお買い物をお楽しみください」店員は顔を上げることもなく、棒読みで続けた。",
+        "description": "「ウォンゴズへようこそ。 お求めの商品をウォンタスティックな価格で取り揃えております」――これまで見たこともないほど無気力な店員が言った。\n\n「どうぞ商品をご覧になって、当店でのお買い物をお楽しみください」店員は顔を上げることもなく、棒読みで続けた。",
         "options": [
           {
             "id": "BARGAIN_BIN",
@@ -5225,7 +5225,7 @@
       },
       {
         "id": "TORUS",
-        "description": "ドーナツ型の木彫りを台座にセットすると、像が熱々の揚げ菓子へと姿を変え、あなたの胃袋が激しく反応した！ 抑えきれない食欲に突き動かされ、あなたはあっという間にそのドーナツを平らげた。\n\n体がずっしりと頑丈になったが、同時に動きが鈍くなってしまった。"
+        "description": "ドーナツ型の木彫りを台座にセットすると、像は熱々の揚げ菓子へと姿を変えた。あなたの胃袋が激しく反応する！ 抑えきれない食欲に突き動かされ、あなたはあっという間にそのドーナツを平らげた。\n\n体がずっしりと頑丈になったが、同時に動きが鈍くなってしまった。"
       }
     ]
   },

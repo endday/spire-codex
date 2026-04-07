@@ -111,6 +111,7 @@ def main():
     parser = argparse.ArgumentParser(description="Build and push Spire Codex Docker images")
     parser.add_argument("--backend", action="store_true", help="Build backend only")
     parser.add_argument("--frontend", action="store_true", help="Build frontend only")
+    parser.add_argument("--beta", action="store_true", help="Tag images as :beta instead of :latest")
     parser.add_argument("--no-push", action="store_true", help="Build without pushing to Docker Hub")
     parser.add_argument("--tag", default="", help="Additional version tag (e.g. 'v0.98.2')")
     parser.add_argument(
@@ -126,7 +127,10 @@ def main():
     push = not args.no_push
 
     sha = get_git_sha()
-    tags = ["latest", sha]
+    if args.beta:
+        tags = ["beta", f"beta-{sha}"]
+    else:
+        tags = ["latest", sha]
     if args.tag:
         tags.append(args.tag)
 
@@ -186,8 +190,9 @@ def main():
             for t in tags:
                 print(f"    {FRONTEND_IMAGE}:{t}")
 
-        # Notify search engines about updated pages
-        ping_indexnow()
+        # Notify search engines about updated pages (skip for beta)
+        if not args.beta:
+            ping_indexnow()
     print()
 
 
