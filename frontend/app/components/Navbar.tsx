@@ -15,6 +15,8 @@ interface NavGroup {
   links: { href: string; label: string }[];
 }
 
+const BETA_HIDDEN = new Set(["/runs", "/guides", "/meta"]);
+
 const NAV_GROUPS: NavGroup[] = [
   {
     label: "Database",
@@ -199,8 +201,10 @@ export default function Navbar() {
 
                 {/* Collapsible groups */}
                 {NAV_GROUPS.map((group) => {
+                  const links = IS_BETA ? group.links.filter((l) => !BETA_HIDDEN.has(l.href)) : group.links;
+                  if (links.length === 0) return null;
                   const isExpanded = expandedGroups.has(group.label);
-                  const hasActive = group.links.some((link) => strippedPath.startsWith(link.href));
+                  const hasActive = links.some((link) => strippedPath.startsWith(link.href));
                   return (
                     <div key={group.label} className="border-t border-[var(--border-subtle)]">
                       <button
@@ -218,7 +222,7 @@ export default function Navbar() {
                       </button>
                       {isExpanded && (
                         <div className="pb-1">
-                          {group.links.map((link) => {
+                          {links.map((link) => {
                             const isExternal = link.href.startsWith("http");
                             const fullHref = isExternal ? link.href : `${langPrefix}${link.href}`;
                             const isActive = !isExternal && strippedPath.startsWith(link.href);
