@@ -45,7 +45,7 @@ CATEGORIES: dict[str, tuple[str, str, bool, list[str] | None]] = {
     "ui-top-bar": ("Top Bar Icons", "ui/top_bar", False, None),
     "ui-animations": ("Idle Animations", "ui/animations", True, None),
     "ui-animations-attack": ("Attack Animations", "ui/animations/monsters_attack", False, None),
-    "ui-card-library": ("Card Library UI", "ui/card_library", False, None),
+    "ui-compendium": ("Compendium UI", "ui/compendium", True, None),
     "ui-achievements": ("Achievement Icons", "ui/achievements", False, None),
     "ui-modifiers": ("Custom Mode Modifiers", "ui/modifiers", False, None),
     "ui-stats": ("Statistics Screen", "ui/stats", False, None),
