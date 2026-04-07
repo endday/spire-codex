@@ -143,8 +143,6 @@ export default function Navbar() {
             {IS_BETA ? (
               <a
                 href="https://spire-codex.com"
-                target="_blank"
-                rel="noopener noreferrer"
                 className="hidden sm:inline-flex items-center px-2 py-1 rounded text-xs font-semibold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-500/25 transition-colors"
               >
                 STABLE
@@ -152,8 +150,6 @@ export default function Navbar() {
             ) : (
               <a
                 href="https://beta.spire-codex.com"
-                target="_blank"
-                rel="noopener noreferrer"
                 className="hidden sm:inline-flex items-center px-2 py-1 rounded text-xs font-semibold bg-[var(--accent-gold)]/15 text-[var(--accent-gold)] border border-[var(--accent-gold)]/30 hover:bg-[var(--accent-gold)]/25 transition-colors"
               >
                 BETA

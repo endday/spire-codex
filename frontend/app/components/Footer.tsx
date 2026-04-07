@@ -171,8 +171,6 @@ export default function Footer() {
         <span className="text-[var(--border-subtle)]" aria-hidden>·</span>
         <a
           href={IS_BETA ? "https://spire-codex.com" : "https://beta.spire-codex.com"}
-          target="_blank"
-          rel="noopener noreferrer"
           className="hover:text-[var(--accent-gold)] transition-colors"
         >
           {IS_BETA ? "Stable Site" : "Beta Site"}
