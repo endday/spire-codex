@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import JsonLd from "@/app/components/JsonLd";
 import { buildSoftwareApplicationJsonLd, buildBreadcrumbJsonLd } from "@/lib/jsonld";
+import { IS_BETA } from "@/lib/seo";
 
 const API_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://spire-codex.com";
 
@@ -34,6 +35,16 @@ export default function DevelopersPage() {
       <p className="text-[var(--text-secondary)] mb-8">
         Build tools, bots, and content with Spire Codex data. Everything is free and open.
       </p>
+
+      {IS_BETA && (
+        <div className="bg-[var(--accent-gold)]/10 border border-[var(--accent-gold)]/30 rounded-xl p-4 mb-8">
+          <p className="text-sm text-[var(--accent-gold)] font-medium mb-1">Beta API</p>
+          <p className="text-sm text-[var(--text-secondary)]">
+            This API serves data from the Steam beta branch and may include unreleased content.
+            For stable data, use <a href="https://spire-codex.com/developers" className="text-[var(--accent-gold)] hover:underline">spire-codex.com</a>.
+          </p>
+        </div>
+      )}
 
       {/* Tooltip Widget */}
       <section className="mb-12">
@@ -139,6 +150,11 @@ export default function DevelopersPage() {
             Base URL
           </h3>
           <code className="text-[var(--accent-gold)]">{API_URL}</code>
+          {!IS_BETA && (
+            <p className="text-xs text-[var(--text-muted)] mt-2">
+              Beta API (unreleased content from Steam beta branch): <code className="text-[var(--text-secondary)]">https://beta.spire-codex.com</code>
+            </p>
+          )}
         </div>
 
         <div className="bg-[var(--bg-card)] rounded-xl border border-[var(--border-subtle)] p-5 mb-4">
