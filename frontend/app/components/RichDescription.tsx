@@ -263,15 +263,15 @@ function cleanTemplateVars(text: string): string {
   text = text.replace(/\{IsMultiplayer:([^|}]*)\|([^}]*)\}/g, (_m, _a, b) => b);
   // Handle {Repeat:plural:|...} → ""
   text = text.replace(/\{Repeat:plural:\|[^}]*\}/g, "");
-  // Handle remaining {VarName} → "X"
-  text = text.replace(/\{\w+\}/g, "X");
+  // Handle remaining {VarName} → styled "X" (runtime-dynamic value)
+  text = text.replace(/\{\w+\}/g, "[blue]X[/blue]");
   // Handle dynamic [Var] square bracket vars — but preserve valid rich text tags and icons
   text = text.replace(/\[([^\]]+)\]/g, (match, inner) => {
     // Preserve valid tags, icon tags, and parameterized tags like font_size=22
     if (VALID_TAGS.has(inner) || /^(energy|star):(\d+|X)$/.test(inner)) return match;
     if (/^\/?(font_size|thinky_dots|rainbow)(=\d+)?$/.test(inner)) return match;
-    // Numeric vars → "X"
-    if (/^(Amount|Passive|Evoke|Damage Decrease|Damage Increase)$/i.test(inner)) return "X";
+    // Numeric vars → styled "X" (runtime-dynamic value)
+    if (/^(Amount|Passive|Evoke|Damage Decrease|Damage Increase|EntrantNumber|CardCount)$/i.test(inner)) return "[blue]X[/blue]";
     // Context-dependent names → strip
     if (/^(Owner Name|OwnerName|On Player|Applier|Covering|Is Multiplayer)$/i.test(inner)) return "";
     // Dotted property access like [Applier Name.String Value] → strip
