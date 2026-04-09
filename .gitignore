@@ -27,6 +27,8 @@ docker-compose.override.yml
 # Runtime data
 data/runs.db
 data/runs/
+data-beta/runs.db
+data-beta/runs/
 history-of-runs/
 
 #Analysis Docs
