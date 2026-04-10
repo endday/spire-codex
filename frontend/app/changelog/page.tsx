@@ -105,24 +105,30 @@ function CategorySection({ cat }: { cat: CategoryDiff }) {
               <h4 className="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-1.5">
                 Added ({cat.added.length})
               </h4>
-              <ul className="list-disc list-inside space-y-1">
+              <div className="space-y-1.5">
                 {cat.added.map((e) => {
-                  const details = Object.entries(e)
-                    .filter(([k]) => !["id", "name"].includes(k))
-                    .map(([, v]) => String(v))
-                    .join(", ");
+                  const fields = Object.entries(e).filter(
+                    ([k]) => !["id", "name"].includes(k)
+                  );
                   return (
-                    <li key={e.id} className="text-sm text-emerald-300">
-                      <span className="font-medium">{e.name}</span>
-                      {details && (
-                        <span className="text-emerald-400/60 ml-1.5">
-                          {details}
-                        </span>
+                    <details key={e.id} className="group">
+                      <summary className="text-xs text-[var(--text-secondary)] cursor-pointer hover:text-[var(--text-primary)] transition-colors">
+                        <span className="font-medium text-emerald-300">{e.name}</span>
+                      </summary>
+                      {fields.length > 0 && (
+                        <div className="ml-4 mt-1 space-y-0.5">
+                          {fields.map(([k, v]) => (
+                            <div key={k} className="text-[11px] text-[var(--text-muted)]">
+                              <span className="text-[var(--text-secondary)]">{k}:</span>{" "}
+                              <span className="text-emerald-400/70">{String(v)}</span>
+                            </div>
+                          ))}
+                        </div>
                       )}
-                    </li>
+                    </details>
                   );
                 })}
-              </ul>
+              </div>
             </div>
           )}
 
