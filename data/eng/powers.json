@@ -292,8 +292,8 @@
   {
     "id": "COLOSSUS",
     "name": "Colossus",
-    "description": "You receive [blue]50%[/blue] less damage from [gold]Vulnerable[/gold] enemies this turn.",
-    "description_raw": null,
+    "description": "You receive [blue]50%[/blue] less damage from [gold]Vulnerable[/gold] enemies for [blue]2[/blue] turns.",
+    "description_raw": "You receive [blue]{DamageDecrease:percentLess()}%[/blue] less damage from [gold]Vulnerable[/gold] enemies {Amount:plural:this turn|for [blue]{}[/blue] turns}.",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -2522,8 +2522,8 @@
   {
     "id": "VULNERABLE",
     "name": "Vulnerable",
-    "description": "Vulnerable creatures take [blue]50%[/blue] more damage from Attacks.",
-    "description_raw": null,
+    "description": "Receive [blue]50%[/blue] more damage from Attacks for [blue][Amount][/blue] turns.",
+    "description_raw": "Receive [blue]{DamageIncrease:percentMore()}%[/blue] more damage from Attacks for [blue]{Amount}[/blue] {Amount:plural:turn|turns}.",
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": null,

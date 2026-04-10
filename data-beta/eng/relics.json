@@ -418,7 +418,7 @@
   {
     "id": "BOWLER_HAT",
     "name": "Bowler Hat",
-    "description": "Gain [blue]%[/blue] additional [gold]Gold[/gold].",
+    "description": "Gain [blue]25%[/blue] additional [gold]Gold[/gold].",
     "description_raw": "Gain [blue]{GoldIncrease:percentMore()}%[/blue] additional [gold]Gold[/gold].",
     "flavor": "[red]Details for this relic will be revealed in the future...[/red]",
     "rarity": "Uncommon Relic",

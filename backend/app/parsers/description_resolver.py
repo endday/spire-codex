@@ -210,7 +210,7 @@ def resolve_description(raw: str, vars_dict: dict[str, int | str], is_upgraded: 
     def resolve_all_nested_cond(text):
         while True:
             # Match {Word: or {Word. pattern (conditional with nested braces)
-            m = re.search(r'\{(\w[\w.]*?)(?::(?!choose\(|cond:|diff\(\)|energyIcons|starIcons|plural:|show:))', text)
+            m = re.search(r'\{(\w[\w.]*?)(?::(?!choose\(|cond:|diff\(\)|energyIcons|starIcons|plural:|show:|percentMore\(\)|percentLess\(\)))', text)
             if not m:
                 break
             start = m.start()
@@ -236,6 +236,27 @@ def resolve_description(raw: str, vars_dict: dict[str, int | str], is_upgraded: 
             text = text[:start] + result + text[i:]
         return text
     text = resolve_all_nested_cond(text)
+
+    # Handle {Var:percentMore()} -> convert multiplier to percentage (e.g. 1.25 -> "25")
+    # The "%" is typically a literal character after the closing brace in the template
+    def resolve_percent_more(m):
+        val = _lookup(m.group(1), vars_dict)
+        if val is not None:
+            if isinstance(val, (int, float)):
+                return str(int((val - 1) * 100))
+            return str(val)
+        return ""
+    text = re.sub(r'\{(\w+):percentMore\(\)\}', resolve_percent_more, text)
+
+    # Handle {Var:percentLess()} -> convert multiplier to percentage reduction (e.g. 0.75 -> "25")
+    def resolve_percent_less(m):
+        val = _lookup(m.group(1), vars_dict)
+        if val is not None:
+            if isinstance(val, (int, float)):
+                return str(int((1 - val) * 100))
+            return str(val)
+        return ""
+    text = re.sub(r'\{(\w+):percentLess\(\)\}', resolve_percent_less, text)
 
     # Handle {Var:diff()} -> value
     def resolve_diff(m):
@@ -281,8 +302,9 @@ def extract_vars_from_source(content: str) -> dict[str, int]:
     # Pattern: new XxxVar("Name", Nm, ...) — named typed vars (events use this heavily)
     # e.g. new DamageVar("RipHpLoss", 5m, ValueProp.Unblockable)
     # Also handles generic types: new PowerVar<WeakPower>("SappingWeak", 2m)
-    for m in re.finditer(r'new\s+\w+Var(?:<\w+>)?\(\s*"(\w+)"\s*,\s*(\d+)m?(?:\s*,\s*[^)]+)?\)', content):
-        all_vars[m.group(1)] = int(m.group(2))
+    for m in re.finditer(r'new\s+\w+Var(?:<\w+>)?\(\s*"(\w+)"\s*,\s*(\d+(?:\.\d+)?)m?(?:\s*,\s*[^)]+)?\)', content):
+        raw_val = m.group(2)
+        all_vars[m.group(1)] = float(raw_val) if '.' in raw_val else int(raw_val)
 
     # Pattern: new IntVar("Name", Nm) — named int vars
     # e.g. new IntVar("RewardCount", 1m)
@@ -309,10 +331,10 @@ def extract_vars_from_source(content: str) -> dict[str, int]:
         all_vars[power_name] = power_val
 
     # Pattern: new DynamicVar("Name", Nm) — named dynamic vars
-    for m in re.finditer(r'new\s+DynamicVar\(\s*"(\w+)"\s*,\s*(\d+)m?\)', content):
+    for m in re.finditer(r'new\s+DynamicVar\(\s*"(\w+)"\s*,\s*(\d+(?:\.\d+)?)m?\)', content):
         name = m.group(1)
-        val = int(m.group(2))
-        all_vars[name] = val
+        raw_val = m.group(2)
+        all_vars[name] = float(raw_val) if '.' in raw_val else int(raw_val)
 
     # Pattern: new DynamicVar("Name", PropertyName) — named vars with property reference
     # e.g. new DynamicVar("Combats", CombatsLeft) with private int _combatsLeft = 5
