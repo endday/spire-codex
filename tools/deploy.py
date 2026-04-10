@@ -134,7 +134,7 @@ def main():
     if args.tag:
         tags.append(args.tag)
 
-    cross = needs_cross_compile()
+    cross = needs_cross_compile() or platform.system() == "Darwin"
     machine = platform.machine()
 
     print(f"Spire Codex Deploy")
@@ -172,7 +172,7 @@ def main():
         build_and_push(
             image=FRONTEND_IMAGE,
             context=str(ROOT / "frontend"),
-            dockerfile=str(ROOT / "frontend" / ("Dockerfile.mac" if cross else "Dockerfile")),
+            dockerfile=str(ROOT / "frontend" / ("Dockerfile.mac" if platform.system() == "Darwin" else "Dockerfile")),
             tags=tags,
             push=push,
             cross=cross,
