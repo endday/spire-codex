@@ -8297,7 +8297,7 @@
   },
   {
     "id": "TEST_SUBJECT",
-    "name": "Test Subject #C{Count}",
+    "name": "Test Subject #C14",
     "type": "Boss",
     "min_hp": null,
     "max_hp": null,

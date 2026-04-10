@@ -741,6 +741,8 @@ def parse_single_monster(filepath: Path, localization: dict, encounter_types: di
 
     # Localization - get name and move names
     name = localization.get(f"{monster_id}.name", class_name)
+    # Resolve runtime template vars in names (e.g. "Test Subject #C{Count}" → "Test Subject #C14")
+    name = re.sub(r'\{Count\}', '14', name)
     move_details = []
     for move in moves:
         # Localization keys omit the _MOVE suffix (e.g. "INCANTATION" not "INCANTATION_MOVE")
