@@ -901,6 +901,18 @@ def _fix_lost_wisp(event: dict) -> dict:
     return event
 
 
+def _fix_fake_merchant(event: dict) -> dict:
+    """Enrich Fake Merchant — custom shop event with no localized description."""
+    if event["id"] != "FAKE_MERCHANT":
+        return event
+    event["description"] = (
+        "A suspicious merchant offers 9 fake relics at 42–58 gold each. "
+        "Throwing a [gold]Foul Potion[/gold] starts a fight against The Merchant??? (165 HP). "
+        "Winning rewards [gold]Fake Merchant's Rug[/gold] plus all unsold relics."
+    )
+    return event
+
+
 def parse_all_events(loc_dir: Path, data_dir: Path) -> list[dict]:
     localization = load_localization(loc_dir)
     act_mapping = build_act_mapping()
@@ -920,6 +932,7 @@ def parse_all_events(loc_dir: Path, data_dir: Path) -> list[dict]:
             event = _fix_wood_carvings(event)
             event = _fix_ranwid_the_elder(event)
             event = _fix_lost_wisp(event)
+            event = _fix_fake_merchant(event)
             events.append(event)
     return events
 
