@@ -14278,7 +14278,7 @@
     "upgrade": {
       "heal": "+3"
     },
-    "image_url": null,
+    "image_url": "/static/images/cards/not_yet.png",
     "beta_image_url": null,
     "type_variants": null,
     "upgrade_description": "Heal 13 HP.",
