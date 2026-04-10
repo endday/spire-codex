@@ -7,6 +7,7 @@ import {
   useEffect,
   type ReactNode,
 } from "react";
+import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import { IS_BETA } from "@/lib/seo";
 import { setBetaVersion, clearCache } from "@/lib/fetch-cache";
 
@@ -33,6 +34,9 @@ const BetaVersionContext = createContext<BetaVersionContextType>({
 export function BetaVersionProvider({ children }: { children: ReactNode }) {
   const [version, setVersionState] = useState<string | null>(null);
   const [versions, setVersions] = useState<VersionInfo[]>([]);
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const pathname = usePathname();
 
   // Fetch available versions on mount (only on beta)
   useEffect(() => {
@@ -43,14 +47,24 @@ export function BetaVersionProvider({ children }: { children: ReactNode }) {
         setVersions(data);
       })
       .catch(() => {});
-
-    // Restore from localStorage
-    const stored = localStorage.getItem(STORAGE_KEY);
-    if (stored && stored !== "latest") {
-      setVersionState(stored);
-      setBetaVersion(stored);
-    }
   }, []);
+
+  // On mount + URL change: URL param takes priority, then localStorage
+  useEffect(() => {
+    if (!IS_BETA) return;
+    const urlVersion = searchParams.get("version");
+    if (urlVersion && urlVersion !== "latest") {
+      setVersionState(urlVersion);
+      setBetaVersion(urlVersion);
+      localStorage.setItem(STORAGE_KEY, urlVersion);
+    } else if (!urlVersion) {
+      const stored = localStorage.getItem(STORAGE_KEY);
+      if (stored && stored !== "latest") {
+        setVersionState(stored);
+        setBetaVersion(stored);
+      }
+    }
+  }, [searchParams]);
 
   const setVersion = (v: string | null) => {
     setVersionState(v);
@@ -61,6 +75,15 @@ export function BetaVersionProvider({ children }: { children: ReactNode }) {
     } else {
       localStorage.removeItem(STORAGE_KEY);
     }
+    // Update URL with version param
+    const params = new URLSearchParams(searchParams.toString());
+    if (v) {
+      params.set("version", v);
+    } else {
+      params.delete("version");
+    }
+    const qs = params.toString();
+    router.replace(`${pathname}${qs ? `?${qs}` : ""}`, { scroll: false });
   };
 
   // Key changes on version switch, forcing all children to remount and re-fetch

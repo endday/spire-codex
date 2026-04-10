@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import DonationBanner from "./components/DonationBanner";
 import Footer from "./components/Footer";
 import GlobalSearch from "./components/GlobalSearch";
+import { Suspense } from "react";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import { BetaVersionProvider } from "./contexts/BetaVersionContext";
 import { SITE_NAME, SITE_URL } from "@/lib/seo";
@@ -53,15 +54,17 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}
       >
         <LanguageProvider>
-          <BetaVersionProvider>
-            <Navbar />
-            <div className="pt-16">
-              <DonationBanner />
-              <main>{children}</main>
-            </div>
-            <Footer />
-            <GlobalSearch />
-          </BetaVersionProvider>
+          <Suspense>
+            <BetaVersionProvider>
+              <Navbar />
+              <div className="pt-16">
+                <DonationBanner />
+                <main>{children}</main>
+              </div>
+              <Footer />
+              <GlobalSearch />
+            </BetaVersionProvider>
+          </Suspense>
         </LanguageProvider>
       </body>
     </html>
