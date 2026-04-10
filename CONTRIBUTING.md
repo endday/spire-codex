@@ -35,9 +35,10 @@ backend/          Python FastAPI backend
 frontend/         Next.js 16 + TypeScript + Tailwind
   app/            Pages and components
   lib/            API client, utilities, i18n
-data/             Parsed JSON data (per-language)
+data/             Parsed JSON data (per-language, stable)
   changelogs/     Version changelogs
   ancient_pools.json
+data-beta/        Parsed beta data (versioned: v0.102.0/, v0.103.0/, latest symlink)
 tools/            Spine renderer, diff tool, deploy script
 ```
 
@@ -58,6 +59,7 @@ If a card description, damage value, or relic effect is wrong:
 - Pages are in `frontend/app/` using Next.js App Router
 - Components are in `frontend/app/components/`
 - API client and types are in `frontend/lib/api.ts`
+- `fetch-cache.ts` handles version-aware API calls (beta multi-version support) — all `cachedFetch` calls automatically get `&version=X` appended on the beta site
 - Colors use CSS variables defined in `frontend/app/globals.css` — character colors are sampled from the game's energy icons
 
 ### New API Endpoints

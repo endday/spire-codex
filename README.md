@@ -18,10 +18,10 @@ Slay the Spire 2 is built with Godot 4 but all game logic lives in a C#/.NET 8 D
    - **Cards**: `base(cost, CardType, CardRarity, TargetType)` constructors + `DamageVar`, `BlockVar`, `PowerVar<T>` for stats
    - **Characters**: `StartingHp`, `StartingGold`, `MaxEnergy`, `StartingDeck`, `StartingRelics`
    - **Relics/Potions**: Rarity, pool, descriptions resolved from SmartFormat templates
-   - **Monsters**: HP ranges, ascension scaling via `AscensionHelper`, move state machines with per-move intents (Attack/Defend/Buff/Debuff/Status/Summon/Heal), damage values, multi-hit counts (including AscensionHelper patterns), innate powers from `AfterAddedToRoom` (42 monsters), powers applied per move (target + amount from `PowerCmd.Apply<T>`), block, healing, encounter context (act, room type)
+   - **Monsters**: HP ranges, ascension scaling via `AscensionHelper`, move state machines with per-move intents (Attack/Defend/Buff/Debuff/Status/Summon/Heal), damage values, multi-hit counts (including AscensionHelper patterns), innate powers from `AfterAddedToRoom` (42 monsters with ascension variants), powers applied per move (target + amount from `PowerCmd.Apply<T>`), block, healing, encounter context (act, room type), **attack patterns** parsed from `GenerateMoveStateMachine()` (112 monsters — cycle, random, conditional, mixed)
    - **Enchantments**: Card type restrictions, stackability, Amount-based scaling
    - **Encounters**: Monster compositions, room type (Boss/Elite/Monster), act placement, tags
-   - **Events**: Multi-page decision trees (56 of 66 events), choices with outcomes, act placement, `StringVar` model references resolved to display names, runtime-computed values (escalating costs via `GetDecipherCost()`, gold ranges via `CalculateVars` with `NextInt`/`NextFloat`, heal-to-full patterns)
+   - **Events**: Multi-page decision trees (56 of 66 events), choices with outcomes, act placement, `StringVar` model references resolved to display names, runtime-computed values (escalating costs via `GetDecipherCost()`, gold ranges via `CalculateVars` with `NextInt`/`NextFloat`, heal-to-full patterns), **preconditions** from `IsAllowed()` (25 events — gold, HP, act, deck, relic, potion conditions)
    - **Ancients**: 8 Ancient NPCs with epithets, character-specific dialogue, relic offerings, portrait icons
    - **Powers**: PowerType (Buff/Debuff), PowerStackType (Counter/Single), DynamicVars, descriptions
    - **Epochs/Stories**: Timeline progression data with unlock requirements
@@ -81,9 +81,9 @@ spire-codex/
 │   └── requirements.txt
 ├── frontend/                   # Next.js 16 + TypeScript + Tailwind CSS
 │   ├── app/
-│   │   ├── contexts/           # LanguageContext (i18n state + localStorage)
+│   │   ├── contexts/           # LanguageContext, BetaVersionContext
 │   │   ├── components/         # CardGrid, RichDescription, SearchFilter,
-│   │   │                       #   GlobalSearch, Navbar, Footer, LanguageSelector
+│   │   │                       #   GlobalSearch, Navbar, Footer, LanguageSelector, VersionSelector
 │   │   └── ...                 # Pages: cards, characters, relics, monsters, potions,
 │   │                           #   enchantments, encounters, events, powers, timeline,
 │   │                           #   reference, images, changelog, about, merchant, compare,
@@ -127,7 +127,7 @@ spire-codex/
 │   ├── raw/                    # GDRE extracted Godot project (stable)
 │   ├── decompiled/             # ILSpy output (stable)
 │   └── beta/                   # Steam beta branch (raw/ + decompiled/)
-├── data-beta/                  # Parsed beta data (not committed)
+├── data-beta/                  # Parsed beta data (versioned: v0.102.0/, v0.103.0/, latest → symlink)
 ├── docker-compose.yml          # Local dev
 ├── docker-compose.prod.yml     # Production
 ├── docker-compose.beta.yml     # Beta site (beta.spire-codex.com)
@@ -244,12 +244,13 @@ All data endpoints accept an optional `?lang=` query parameter (default: `eng`).
 | `GET /api/runs/shared/{hash}` | Full run data by hash | — |
 | `GET /api/runs/stats` | Aggregated community stats | `character`, `win`, `ascension`, `game_mode`, `players` |
 | `POST /api/feedback` | Submit feedback (proxied to Discord) | — |
+| `GET /api/versions` | Available data versions (beta multi-version) | — |
 
 Rate limited to **60 requests per minute** per IP. Feedback and guide submission limited to **3-5 per minute** per IP. Interactive docs at `/docs` (Swagger UI).
 
 ### Localization
 
-All game data is served in 14 languages using Slay the Spire 2's own localization files. Pass `?lang=` to any data endpoint.
+All game data is served in 14 languages using Slay the Spire 2's own localization files. Pass `?lang=` to any data endpoint. On the beta site, pass `?version=v0.102.0` to browse a specific beta version.
 
 | Code | Language | Code | Language |
 |------|----------|------|----------|
@@ -467,7 +468,11 @@ Production data is bind-mounted (`./data:/data:ro`). Container restart required 
 
 ### Beta Site (beta.spire-codex.com)
 
-A parallel deployment serving data from the Steam beta branch. Uses the same codebase and Docker images but with separate containers and beta-parsed data.
+A parallel deployment serving data from the Steam beta branch, with multi-version browsing support. Users can switch between any past beta version via a dropdown in the navbar. All versions are kept permanently.
+
+**Architecture**: `VersionMiddleware` reads `?version=` from the query string, stores it in a Python `ContextVar`, and `data_service.py` reads it when loading JSON — zero changes to any of the 20+ router files. Frontend uses `BetaVersionContext` + `VersionSelector` dropdown, and `fetch-cache.ts` transparently appends `&version=X` to all API calls.
+
+**Data layout**: `data-beta/v0.102.0/eng/`, `data-beta/v0.103.0/eng/`, with a `latest` symlink. Each version has its own `changelogs/` directory.
 
 ```bash
 # 1. Opt into Steam beta branch (StS2 → Properties → Betas)
@@ -477,21 +482,27 @@ A parallel deployment serving data from the Steam beta branch. Uses the same cod
   "--recover=<path_to_pck>" "--output=extraction/beta/raw"
 ~/.dotnet/tools/ilspycmd -p -o extraction/beta/decompiled "<path_to_dll>"
 
-# 3. Parse beta data into data-beta/
+# 3. Parse into versioned directory
 cd backend/app/parsers
-EXTRACTION_DIR=extraction/beta DATA_DIR=data-beta python3 parse_all.py
+EXTRACTION_DIR=extraction/beta DATA_DIR=data-beta/v0.103.0 python3 parse_all.py
 
-# 4. Build and push beta Docker images
+# 4. Generate changelog (previous → new version)
+python3 tools/diff_data.py data-beta/v0.102.0/eng data-beta/v0.103.0/eng \
+  --format json --output-dir data-beta/v0.103.0/changelogs \
+  --game-version "0.103.0" --title "Beta v0.103.0"
+
+# 5. Update latest symlink
+cd data-beta && rm latest && ln -sf v0.103.0 latest
+
+# 6. Build and push beta Docker images
 python3 tools/deploy.py --beta
 
-# 5. Start beta on server
+# 7. Start beta on server
 docker compose -f docker-compose.beta.yml pull
 docker compose -f docker-compose.beta.yml up -d
 ```
 
 The parsers support `EXTRACTION_DIR` and `DATA_DIR` environment variables via `parser_paths.py`, allowing the same parser code to target either stable or beta sources.
-
-Requires DNS (A record for `beta.spire-codex.com`) and nginx server block proxying to the beta containers (`spire-codex-beta-backend:8000`, `spire-codex-beta-frontend:3000`).
 
 ## Spine Renderer
 
@@ -656,6 +667,9 @@ Full docs: [spire-codex.com/developers](https://spire-codex.com/developers)
 - ~~Card upgrade descriptions~~ ✅ — upgrade_description for all 403 upgradable cards
 - ~~Monster innate powers~~ ✅ — 42 monsters with powers from AfterAddedToRoom
 - ~~Achievement unlock conditions~~ ✅ — Category, character, threshold from C# source
+- ~~Monster attack patterns~~ ✅ — 112 monsters with cycle/random/conditional/mixed AI from C# state machines
+- ~~Event preconditions~~ ✅ — 25 events with IsAllowed() conditions parsed from C# source
+- ~~Multi-version beta browsing~~ ✅ — Version dropdown, all past betas preserved and browsable with changelogs
 - **Discord bot** — Card lookup, patch alerts
 - **Deck builder** — Interactive deck theorycrafting
 - **Database backend** — Replace JSON loading with SQLite/PostgreSQL
