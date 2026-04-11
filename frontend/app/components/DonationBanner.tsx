@@ -17,8 +17,8 @@ function KofiBanner({ onDismiss }: { onDismiss: () => void }) {
             crossOrigin="anonymous"
           />
           <p className="text-sm text-emerald-200 italic">
-            &ldquo;If you&apos;re enjoying Spire Codex and want to support it,
-            please consider{" "}
+            &ldquo;I haven&apos;t had a visitor in a millennia! If you wish to
+            support Spire Codex, consider{" "}
             <a
               href="https://ko-fi.com/yitsy"
               target="_blank"
@@ -27,8 +27,8 @@ function KofiBanner({ onDismiss }: { onDismiss: () => void }) {
             >
               donating on Ko-Fi
             </a>
-            . Thank you to Katie K and LeMerkur for supporting Spire
-            Codex.&rdquo;
+            . Servants! Fetch some tea for Katie K and LeMerkur — they have
+            supported us well.&rdquo;
           </p>
         </div>
         <button
@@ -55,7 +55,7 @@ function CommunityBanner({ onDismiss }: { onDismiss: () => void }) {
             crossOrigin="anonymous"
           />
           <p className="text-sm text-indigo-200 italic">
-            &ldquo;Join the{" "}
+            &ldquo;...awaken... join the{" "}
             <a
               href="https://discord.gg/xMsTBeh"
               target="_blank"
@@ -63,15 +63,15 @@ function CommunityBanner({ onDismiss }: { onDismiss: () => void }) {
               className="font-medium text-indigo-100 underline hover:text-white transition-colors"
             >
               Spire Codex Discord
-            </a>{" "}
-            or{" "}
+            </a>
+            ... or{" "}
             <Link
               href="/runs"
               className="font-medium text-indigo-100 underline hover:text-white transition-colors"
             >
               upload your runs
-            </Link>{" "}
-            to contribute to the meta.&rdquo;
+            </Link>
+            ... ...the meta... ...needs you...&rdquo;
           </p>
         </div>
         <button
