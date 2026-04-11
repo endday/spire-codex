@@ -1,0 +1,3785 @@
+{
+  "app_id": 2868840,
+  "game_version": "0.100.0",
+  "build_id": "",
+  "tag": "0.100.0",
+  "date": "2026-04-10",
+  "title": "Beta v0.100.0",
+  "from_ref": "data-beta/v0.99.0-beta/eng",
+  "to_ref": "data-beta/v0.100.0/eng",
+  "summary": {
+    "added": 6,
+    "removed": 5,
+    "changed": 224
+  },
+  "categories": [
+    {
+      "id": "cards",
+      "name": "Cards",
+      "old_count": 576,
+      "new_count": 576,
+      "added": [
+        {
+          "id": "PREPARE",
+          "name": "Prepare",
+          "cost": 1,
+          "type": "Skill",
+          "rarity": "Common"
+        }
+      ],
+      "removed": [
+        {
+          "id": "PREPARED",
+          "name": "Prepared"
+        }
+      ],
+      "changed": [
+        {
+          "id": "ALIGNMENT",
+          "name": "Alignment",
+          "changes": [
+            {
+              "field": "star_cost",
+              "old": "2",
+              "new": "3"
+            },
+            {
+              "field": "vars",
+              "old": "2 fields",
+              "new": "2 fields"
+            }
+          ]
+        },
+        {
+          "id": "ANTICIPATE",
+          "name": "Anticipate",
+          "changes": [
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "description",
+              "old": "Gain 3 [gold]Dexterity[/gold] this turn.",
+              "new": "Gain 2 [gold]Dexterity[/gold] this turn."
+            },
+            {
+              "field": "vars",
+              "old": "2 fields",
+              "new": "2 fields"
+            },
+            {
+              "field": "powers_applied",
+              "old": "{'power': 'Dexterity', 'amount': 3, 'power_key': 'Dexterity'}",
+              "new": "{'power': 'Dexterity', 'amount': 2, 'power_key': 'Dexterity'}"
+            }
+          ]
+        },
+        {
+          "id": "APOTHEOSIS",
+          "name": "Apotheosis",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "522",
+              "new": "521"
+            }
+          ]
+        },
+        {
+          "id": "APPARITION",
+          "name": "Apparition",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "523",
+              "new": "522"
+            }
+          ]
+        },
+        {
+          "id": "BANSHEES_CRY",
+          "name": "Banshee's Cry",
+          "changes": [
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Deal 39 damage to ALL enemies.\nCosts [energy:2] less for each [gold]Ethereal[...",
+              "new": "none"
+            },
+            {
+              "field": "cost",
+              "old": "6",
+              "new": "9"
+            }
+          ]
+        },
+        {
+          "id": "BEGONE",
+          "name": "BEGONE!",
+          "changes": [
+            {
+              "field": "type",
+              "old": "Attack",
+              "new": "Skill"
+            },
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "description_raw",
+              "old": "Deal {Damage:diff()} damage.\nChoose a card in your [gold]Hand[/gold] to [gold...",
+              "new": "Choose a card in your [gold]Hand[/gold] to [gold]Transform[/gold] into [gold]..."
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Deal 5 damage.\nChoose a card in your [gold]Hand[/gold] to [gold]Transform[/go...",
+              "new": "Choose a card in your [gold]Hand[/gold] to [gold]Transform[/gold] into [gold]..."
+            },
+            {
+              "field": "description",
+              "old": "Deal 4 damage.\nChoose a card in your [gold]Hand[/gold] to [gold]Transform[/go...",
+              "new": "Choose a card in your [gold]Hand[/gold] to [gold]Transform[/gold] into [gold]..."
+            },
+            {
+              "field": "target",
+              "old": "AnyEnemy",
+              "new": "Self"
+            },
+            {
+              "field": "vars",
+              "old": "1 fields",
+              "new": "none"
+            },
+            {
+              "field": "damage",
+              "old": "4",
+              "new": "none"
+            },
+            {
+              "field": "spawns_cards",
+              "old": "MINION_DIVE_BOMB",
+              "new": "MINION_STRIKE"
+            },
+            {
+              "field": "type_key",
+              "old": "Attack",
+              "new": "Skill"
+            }
+          ]
+        },
+        {
+          "id": "BELIEVE_IN_YOU",
+          "name": "Believe in You",
+          "changes": [
+            {
+              "field": "energy_gain",
+              "old": "3",
+              "new": "2"
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Another player gains [energy:4].",
+              "new": "Another player gains [energy:3]."
+            },
+            {
+              "field": "description",
+              "old": "Another player gains [energy:3].",
+              "new": "Another player gains [energy:2]."
+            },
+            {
+              "field": "vars",
+              "old": "1 fields",
+              "new": "1 fields"
+            }
+          ]
+        },
+        {
+          "id": "BOMBARDMENT",
+          "name": "Bombardment",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "Deal {Damage:diff()} damage.\nAt the start of your turn, plays from the [gold]...",
+              "new": "Deal {Damage:diff()} damage.\nAt the start of your turn, if this is in your [g..."
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Deal 24 damage.\nAt the start of your turn, plays from the [gold]Exhaust Pile[...",
+              "new": "Deal 24 damage.\nAt the start of your turn, if this is in your [gold]Exhaust P..."
+            },
+            {
+              "field": "description",
+              "old": "Deal 18 damage.\nAt the start of your turn, plays from the [gold]Exhaust Pile[...",
+              "new": "Deal 18 damage.\nAt the start of your turn, if this is in your [gold]Exhaust P..."
+            }
+          ]
+        },
+        {
+          "id": "BORROWED_TIME",
+          "name": "Borrowed Time",
+          "changes": [
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "description_raw",
+              "old": "Apply {DoomPower:diff()} [gold]Doom[/gold] to yourself.\nGain {Energy:energyIc...",
+              "new": "Apply {DoomPower:inverseDiff()} [gold]Doom[/gold] to yourself.\nGain {Energy:e..."
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Apply 3 [gold]Doom[/gold] to yourself.\nGain [energy:2].",
+              "new": "none"
+            },
+            {
+              "field": "description",
+              "old": "Apply 3 [gold]Doom[/gold] to yourself.\nGain [energy:1].",
+              "new": "Apply inverseDiff() [gold]Doom[/gold] to yourself.\nGain [energy:1]."
+            },
+            {
+              "field": "vars",
+              "old": "3 fields",
+              "new": "3 fields"
+            },
+            {
+              "field": "powers_applied",
+              "old": "{'power': 'Doom', 'amount': 3, 'power_key': 'Doom'}",
+              "new": "{'power': 'Doom', 'amount': 6, 'power_key': 'Doom'}"
+            }
+          ]
+        },
+        {
+          "id": "BREAK",
+          "name": "Break",
+          "changes": [
+            {
+              "field": "upgrade",
+              "old": "2 fields",
+              "new": "2 fields"
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Deal 25 damage.\nApply 5 [gold]Vulnerable[/gold].",
+              "new": "Deal 30 damage.\nApply 5 [gold]Vulnerable[/gold]."
+            },
+            {
+              "field": "cost",
+              "old": "2",
+              "new": "1"
+            }
+          ]
+        },
+        {
+          "id": "BRIGHTEST_FLAME",
+          "name": "Brightest Flame",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "524",
+              "new": "523"
+            }
+          ]
+        },
+        {
+          "id": "BUNDLE_OF_JOY",
+          "name": "Bundle of Joy",
+          "changes": [
+            {
+              "field": "cost",
+              "old": "2",
+              "new": "1"
+            }
+          ]
+        },
+        {
+          "id": "BYRD_SWOOP",
+          "name": "Byrd Swoop",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "530",
+              "new": "529"
+            }
+          ]
+        },
+        {
+          "id": "CALTROPS",
+          "name": "Caltrops",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "531",
+              "new": "530"
+            }
+          ]
+        },
+        {
+          "id": "CAPTURE_SPIRIT",
+          "name": "Capture Spirit",
+          "changes": [
+            {
+              "field": "cards_draw",
+              "old": "3",
+              "new": "2"
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Enemy loses 4 HP.\nAdd 4 [gold]Souls[/gold] into your [gold]Draw Pile[/gold].",
+              "new": "Enemy loses 3 HP.\nAdd 3 [gold]Souls[/gold] into your [gold]Draw Pile[/gold]."
+            },
+            {
+              "field": "description",
+              "old": "Enemy loses 3 HP.\nAdd 3 [gold]Souls[/gold] into your [gold]Draw Pile[/gold].",
+              "new": "Enemy loses 2 HP.\nAdd 2 [gold]Souls[/gold] into your [gold]Draw Pile[/gold]."
+            },
+            {
+              "field": "vars",
+              "old": "2 fields",
+              "new": "2 fields"
+            },
+            {
+              "field": "damage",
+              "old": "3",
+              "new": "2"
+            }
+          ]
+        },
+        {
+          "id": "CHARGE",
+          "name": "CHARGE!!",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "Choose {Cards:diff()} {Cards:plural:card|cards} in your [gold]Draw Pile[/gold...",
+              "new": "Choose {Cards:diff()} {Cards:plural:card|cards} in your [gold]Draw Pile[/gold..."
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Choose 2 cards in your [gold]Draw Pile[/gold] to [gold]Transform[/gold] into\n...",
+              "new": "Choose 2 cards in your [gold]Draw Pile[/gold] to [gold]Transform[/gold] into\n..."
+            },
+            {
+              "field": "description",
+              "old": "Choose 2 cards in your [gold]Draw Pile[/gold] to [gold]Transform[/gold] into\n...",
+              "new": "Choose 2 cards in your [gold]Draw Pile[/gold] to [gold]Transform[/gold] into\n..."
+            },
+            {
+              "field": "spawns_cards",
+              "old": "MINION_STRIKE",
+              "new": "MINION_DIVE_BOMB"
+            }
+          ]
+        },
+        {
+          "id": "CINDER",
+          "name": "Cinder",
+          "changes": [
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Deal 22 damage.\n[gold]Exhaust[/gold] the top card of your [gold]Draw Pile[/go...",
+              "new": "Deal 24 damage.\n[gold]Exhaust[/gold] the top card of your [gold]Draw Pile[/go..."
+            },
+            {
+              "field": "description",
+              "old": "Deal 17 damage.\n[gold]Exhaust[/gold] the top card of your [gold]Draw Pile[/go...",
+              "new": "Deal 18 damage.\n[gold]Exhaust[/gold] the top card of your [gold]Draw Pile[/go..."
+            },
+            {
+              "field": "vars",
+              "old": "2 fields",
+              "new": "2 fields"
+            },
+            {
+              "field": "damage",
+              "old": "17",
+              "new": "18"
+            }
+          ]
+        },
+        {
+          "id": "CLASH",
+          "name": "Clash",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "532",
+              "new": "531"
+            }
+          ]
+        },
+        {
+          "id": "COLLISION_COURSE",
+          "name": "Collision Course",
+          "changes": [
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Deal 12 damage.\nAdd a [gold]Debris[/gold] into your [gold]Hand[/gold].",
+              "new": "Deal 15 damage.\nAdd a [gold]Debris[/gold] into your [gold]Hand[/gold]."
+            },
+            {
+              "field": "description",
+              "old": "Deal 9 damage.\nAdd a [gold]Debris[/gold] into your [gold]Hand[/gold].",
+              "new": "Deal 11 damage.\nAdd a [gold]Debris[/gold] into your [gold]Hand[/gold]."
+            },
+            {
+              "field": "vars",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "damage",
+              "old": "9",
+              "new": "11"
+            }
+          ]
+        },
+        {
+          "id": "CORROSIVE_WAVE",
+          "name": "Corrosive Wave",
+          "changes": [
+            {
+              "field": "upgrade_description",
+              "old": "Whenever you draw a card this turn, apply 4 [gold]Poison[/gold] to ALL enemies.",
+              "new": "Whenever you draw a card this turn, apply 3 [gold]Poison[/gold] to ALL enemies."
+            },
+            {
+              "field": "description",
+              "old": "Whenever you draw a card this turn, apply 3 [gold]Poison[/gold] to ALL enemies.",
+              "new": "Whenever you draw a card this turn, apply 2 [gold]Poison[/gold] to ALL enemies."
+            },
+            {
+              "field": "vars",
+              "old": "1 fields",
+              "new": "1 fields"
+            }
+          ]
+        },
+        {
+          "id": "DANSE_MACABRE",
+          "name": "Danse Macabre",
+          "changes": [
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Whenever you play a card that costs [energy:2] or more, gain 4 [gold]Block[/g...",
+              "new": "Whenever you play a card that costs [energy:2] or more, gain 6 [gold]Block[/g..."
+            },
+            {
+              "field": "description",
+              "old": "Whenever you play a card that costs [energy:2] or more, gain 3 [gold]Block[/g...",
+              "new": "Whenever you play a card that costs [energy:2] or more, gain 4 [gold]Block[/g..."
+            },
+            {
+              "field": "vars",
+              "old": "3 fields",
+              "new": "3 fields"
+            },
+            {
+              "field": "powers_applied",
+              "old": "{'power': 'Danse Macabre', 'amount': 3, 'power_key': 'DanseMacabre'}",
+              "new": "{'power': 'Danse Macabre', 'amount': 4, 'power_key': 'DanseMacabre'}"
+            }
+          ]
+        },
+        {
+          "id": "DEBILITATE",
+          "name": "Debilitate",
+          "changes": [
+            {
+              "field": "upgrade_description",
+              "old": "Deal 9 damage.\n[gold]Vulnerable[/gold] and [gold]Weak[/gold] are twice as eff...",
+              "new": "Deal 12 damage.\n[gold]Vulnerable[/gold] and [gold]Weak[/gold] are twice as ef..."
+            },
+            {
+              "field": "description",
+              "old": "Deal 7 damage.\n[gold]Vulnerable[/gold] and [gold]Weak[/gold] are twice as eff...",
+              "new": "Deal 10 damage.\n[gold]Vulnerable[/gold] and [gold]Weak[/gold] are twice as ef..."
+            },
+            {
+              "field": "vars",
+              "old": "3 fields",
+              "new": "3 fields"
+            },
+            {
+              "field": "damage",
+              "old": "7",
+              "new": "10"
+            }
+          ]
+        },
+        {
+          "id": "DEFY",
+          "name": "Defy",
+          "changes": [
+            {
+              "field": "upgrade",
+              "old": "2 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Gain 7 [gold]Block[/gold].\nApply 1 [gold]Weak[/gold].",
+              "new": "Gain 9 [gold]Block[/gold].\nApply 1 [gold]Weak[/gold]."
+            }
+          ]
+        },
+        {
+          "id": "DIRGE",
+          "name": "Dirge",
+          "changes": [
+            {
+              "field": "keywords_key",
+              "old": "none",
+              "new": "Exhaust"
+            },
+            {
+              "field": "keywords",
+              "old": "none",
+              "new": "Exhaust"
+            }
+          ]
+        },
+        {
+          "id": "DISCOVERY",
+          "name": "Discovery",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "Choose 1 of 3 random cards to add into your [gold]Hand[/gold]. It costs 0 {en...",
+              "new": "Choose 1 of 3 random cards to add into your [gold]Hand[/gold]. It's free to p..."
+            },
+            {
+              "field": "description",
+              "old": "Choose 1 of 3 random cards to add into your [gold]Hand[/gold]. It costs 0 [en...",
+              "new": "Choose 1 of 3 random cards to add into your [gold]Hand[/gold]. It's free to p..."
+            }
+          ]
+        },
+        {
+          "id": "DISTRACTION",
+          "name": "Distraction",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "533",
+              "new": "532"
+            }
+          ]
+        },
+        {
+          "id": "DOMINATE",
+          "name": "Dominate",
+          "changes": [
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "description_raw",
+              "old": "Gain {StrengthPerVulnerable:diff()} [gold]Strength[/gold] for each [gold]Vuln...",
+              "new": "Apply {VulnerablePower:diff()} [gold]Vulnerable[/gold].\nGain {StrengthPerVuln..."
+            },
+            {
+              "field": "upgrade_description",
+              "old": "none",
+              "new": "Apply 2 [gold]Vulnerable[/gold].\nGain 1 [gold]Strength[/gold] for each [gold]..."
+            },
+            {
+              "field": "description",
+              "old": "Gain 1 [gold]Strength[/gold] for each [gold]Vulnerable[/gold] on the enemy.",
+              "new": "Apply 1 [gold]Vulnerable[/gold].\nGain 1 [gold]Strength[/gold] for each [gold]..."
+            },
+            {
+              "field": "vars",
+              "old": "1 fields",
+              "new": "3 fields"
+            },
+            {
+              "field": "powers_applied",
+              "old": "none",
+              "new": "{'power': 'Vulnerable', 'amount': 1, 'power_key': 'Vulnerable'}"
+            }
+          ]
+        },
+        {
+          "id": "DUAL_WIELD",
+          "name": "Dual Wield",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "534",
+              "new": "533"
+            }
+          ]
+        },
+        {
+          "id": "ENLIGHTENMENT",
+          "name": "Enlightenment",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "535",
+              "new": "534"
+            }
+          ]
+        },
+        {
+          "id": "ENTRENCH",
+          "name": "Entrench",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "536",
+              "new": "535"
+            }
+          ]
+        },
+        {
+          "id": "ETERNAL_ARMOR",
+          "name": "Eternal Armor",
+          "changes": [
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Gain 9 [gold]Plating[/gold].",
+              "new": "Gain 12 [gold]Plating[/gold]."
+            },
+            {
+              "field": "description",
+              "old": "Gain 7 [gold]Plating[/gold].",
+              "new": "Gain 9 [gold]Plating[/gold]."
+            },
+            {
+              "field": "vars",
+              "old": "2 fields",
+              "new": "2 fields"
+            },
+            {
+              "field": "powers_applied",
+              "old": "{'power': 'Plating', 'amount': 7, 'power_key': 'Plating'}",
+              "new": "{'power': 'Plating', 'amount': 9, 'power_key': 'Plating'}"
+            }
+          ]
+        },
+        {
+          "id": "EXPECT_A_FIGHT",
+          "name": "Expect a Fight",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "Gain {energyPrefix:energyIcons(1)} for each Attack in your [gold]Hand[/gold]....",
+              "new": "Gain {energyPrefix:energyIcons(1)} for each Attack in your [gold]Hand[/gold]...."
+            },
+            {
+              "field": "description",
+              "old": "Gain [energy:1] for each Attack in your [gold]Hand[/gold].",
+              "new": "Gain [energy:1] for each Attack in your [gold]Hand[/gold].\nYou cannot gain\nad..."
+            }
+          ]
+        },
+        {
+          "id": "EXTERMINATE",
+          "name": "Exterminate",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "537",
+              "new": "536"
+            }
+          ]
+        },
+        {
+          "id": "FEEDING_FRENZY",
+          "name": "Feeding Frenzy",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "538",
+              "new": "537"
+            }
+          ]
+        },
+        {
+          "id": "FIGHT_ME",
+          "name": "Fight Me!",
+          "changes": [
+            {
+              "field": "upgrade_description",
+              "old": "Deal 6 damage twice.\nGain 2 [gold]Strength[/gold].\nThe enemy gains 1 [gold]St...",
+              "new": "Deal 6 damage twice.\nGain 3 [gold]Strength[/gold].\nThe enemy gains 1 [gold]St..."
+            },
+            {
+              "field": "description",
+              "old": "Deal 5 damage twice.\nGain 2 [gold]Strength[/gold].\nThe enemy gains 1 [gold]St...",
+              "new": "Deal 5 damage twice.\nGain 3 [gold]Strength[/gold].\nThe enemy gains 1 [gold]St..."
+            },
+            {
+              "field": "vars",
+              "old": "5 fields",
+              "new": "5 fields"
+            },
+            {
+              "field": "powers_applied",
+              "old": "{'power': 'Strength', 'amount': 2, 'power_key': 'Strength'}",
+              "new": "{'power': 'Strength', 'amount': 3, 'power_key': 'Strength'}"
+            }
+          ]
+        },
+        {
+          "id": "FLICK_FLACK",
+          "name": "Flick-Flack",
+          "changes": [
+            {
+              "field": "upgrade_description",
+              "old": "Deal 9 damage to ALL enemies.",
+              "new": "Deal 8 damage to ALL enemies."
+            },
+            {
+              "field": "description",
+              "old": "Deal 7 damage to ALL enemies.",
+              "new": "Deal 6 damage to ALL enemies."
+            },
+            {
+              "field": "vars",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "damage",
+              "old": "7",
+              "new": "6"
+            }
+          ]
+        },
+        {
+          "id": "FOLLY",
+          "name": "Folly",
+          "changes": [
+            {
+              "field": "keywords_key",
+              "old": "Innate, Unplayable, Eternal",
+              "new": "Innate, Ethereal, Unplayable, Eternal"
+            },
+            {
+              "field": "keywords",
+              "old": "Innate, Unplayable, Eternal",
+              "new": "Innate, Ethereal, Unplayable, Eternal"
+            }
+          ]
+        },
+        {
+          "id": "FORGOTTEN_RITUAL",
+          "name": "Forgotten Ritual",
+          "changes": [
+            {
+              "field": "keywords_key",
+              "old": "none",
+              "new": "Exhaust"
+            },
+            {
+              "field": "keywords",
+              "old": "none",
+              "new": "Exhaust"
+            }
+          ]
+        },
+        {
+          "id": "GATHER_LIGHT",
+          "name": "Gather Light",
+          "changes": [
+            {
+              "field": "upgrade_description",
+              "old": "Gain 10 [gold]Block[/gold].\nGain [star:1].",
+              "new": "Gain 11 [gold]Block[/gold].\nGain [star:1]."
+            },
+            {
+              "field": "description",
+              "old": "Gain 7 [gold]Block[/gold].\nGain [star:1].",
+              "new": "Gain 8 [gold]Block[/gold].\nGain [star:1]."
+            },
+            {
+              "field": "vars",
+              "old": "2 fields",
+              "new": "2 fields"
+            },
+            {
+              "field": "block",
+              "old": "7",
+              "new": "8"
+            }
+          ]
+        },
+        {
+          "id": "GLOW",
+          "name": "Glow",
+          "changes": [
+            {
+              "field": "cards_draw",
+              "old": "2",
+              "new": "1"
+            },
+            {
+              "field": "description_raw",
+              "old": "Gain {Stars:starIcons()}.\nDraw {Cards:diff()} {Cards:plural:card|cards}.",
+              "new": "Gain {Stars:starIcons()}.\nDraw {Cards:diff()} {Cards:plural:card|cards}.\nNext..."
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Gain [star:2].\nDraw 2 cards.",
+              "new": "Gain [star:2].\nDraw 1 card.\nNext turn, draw 1 card."
+            },
+            {
+              "field": "description",
+              "old": "Gain [star:1].\nDraw 2 cards.",
+              "new": "Gain [star:1].\nDraw 1 card.\nNext turn, draw 1 card."
+            },
+            {
+              "field": "vars",
+              "old": "2 fields",
+              "new": "2 fields"
+            }
+          ]
+        },
+        {
+          "id": "GRAND_FINALE",
+          "name": "Grand Finale",
+          "changes": [
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Can only be played if there are no cards in your [gold]Draw Pile[/gold]. Deal...",
+              "new": "Can only be played if there are no cards in your [gold]Draw Pile[/gold]. Deal..."
+            },
+            {
+              "field": "description",
+              "old": "Can only be played if there are no cards in your [gold]Draw Pile[/gold]. Deal...",
+              "new": "Can only be played if there are no cards in your [gold]Draw Pile[/gold]. Deal..."
+            },
+            {
+              "field": "vars",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "damage",
+              "old": "50",
+              "new": "60"
+            }
+          ]
+        },
+        {
+          "id": "GRAVE_WARDEN",
+          "name": "Grave Warden",
+          "changes": [
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "description_raw",
+              "old": "Gain {Block:diff()} [gold]Block[/gold].\nAdd a [gold]{IfUpgraded:show:Soul+|So...",
+              "new": "Gain {Block:diff()} [gold]Block[/gold].\nAdd a [gold]Soul[/gold] into your [go..."
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Gain 10 [gold]Block[/gold].\nAdd a [gold]Soul+[/gold] into your [gold]Draw Pil...",
+              "new": "Gain 11 [gold]Block[/gold].\nAdd a [gold]Soul[/gold] into your [gold]Draw Pile..."
+            }
+          ]
+        },
+        {
+          "id": "HEIRLOOM_HAMMER",
+          "name": "Heirloom Hammer",
+          "changes": [
+            {
+              "field": "upgrade_description",
+              "old": "Deal 22 damage.\nChoose a Colorless card in your [gold]Hand[/gold]. Add a copy...",
+              "new": "Deal 25 damage.\nChoose a Colorless card in your [gold]Hand[/gold]. Add a copy..."
+            },
+            {
+              "field": "description",
+              "old": "Deal 17 damage.\nChoose a Colorless card in your [gold]Hand[/gold]. Add a copy...",
+              "new": "Deal 20 damage.\nChoose a Colorless card in your [gold]Hand[/gold]. Add a copy..."
+            },
+            {
+              "field": "vars",
+              "old": "2 fields",
+              "new": "2 fields"
+            },
+            {
+              "field": "damage",
+              "old": "17",
+              "new": "20"
+            }
+          ]
+        },
+        {
+          "id": "HELLO_WORLD",
+          "name": "Hello World",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "539",
+              "new": "538"
+            }
+          ]
+        },
+        {
+          "id": "HEMOKINESIS",
+          "name": "Hemokinesis",
+          "changes": [
+            {
+              "field": "upgrade_description",
+              "old": "Lose 2 HP.\nDeal 19 damage.",
+              "new": "Lose 2 HP.\nDeal 20 damage."
+            },
+            {
+              "field": "description",
+              "old": "Lose 2 HP.\nDeal 14 damage.",
+              "new": "Lose 2 HP.\nDeal 15 damage."
+            },
+            {
+              "field": "vars",
+              "old": "2 fields",
+              "new": "2 fields"
+            },
+            {
+              "field": "damage",
+              "old": "14",
+              "new": "15"
+            }
+          ]
+        },
+        {
+          "id": "HIDDEN_GEM",
+          "name": "Hidden Gem",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "A random card in your [gold]Draw Pile[/gold] gains [gold]Replay[/gold] {Repla...",
+              "new": "A random card without [gold]Replay[/gold] in your [gold]Draw Pile[/gold] gain..."
+            },
+            {
+              "field": "upgrade_description",
+              "old": "A random card in your [gold]Draw Pile[/gold] gains [gold]Replay[/gold] 3.",
+              "new": "A random card without [gold]Replay[/gold] in your [gold]Draw Pile[/gold] gain..."
+            },
+            {
+              "field": "description",
+              "old": "A random card in your [gold]Draw Pile[/gold] gains [gold]Replay[/gold] 2.",
+              "new": "A random card without [gold]Replay[/gold] in your [gold]Draw Pile[/gold] gain..."
+            }
+          ]
+        },
+        {
+          "id": "HOTFIX",
+          "name": "Hotfix",
+          "changes": [
+            {
+              "field": "keywords_key",
+              "old": "none",
+              "new": "Exhaust"
+            },
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Gain 3 [gold]Focus[/gold] this turn.",
+              "new": "none"
+            },
+            {
+              "field": "keywords",
+              "old": "none",
+              "new": "Exhaust"
+            }
+          ]
+        },
+        {
+          "id": "HOWL_FROM_BEYOND",
+          "name": "Howl from Beyond",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "Deal {Damage:diff()} damage to ALL enemies.\nAt the start of your turn, plays ...",
+              "new": "Deal {Damage:diff()} damage to ALL enemies.\nAt the start of your turn, if thi..."
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Deal 21 damage to ALL enemies.\nAt the start of your turn, plays from the [gol...",
+              "new": "Deal 21 damage to ALL enemies.\nAt the start of your turn, if this is in your ..."
+            },
+            {
+              "field": "description",
+              "old": "Deal 16 damage to ALL enemies.\nAt the start of your turn, plays from the [gol...",
+              "new": "Deal 16 damage to ALL enemies.\nAt the start of your turn, if this is in your ..."
+            }
+          ]
+        },
+        {
+          "id": "HUDDLE_UP",
+          "name": "Huddle Up",
+          "changes": [
+            {
+              "field": "keywords_key",
+              "old": "none",
+              "new": "Exhaust"
+            },
+            {
+              "field": "description_raw",
+              "old": "ALL allies draw {Cards:diff()} cards.",
+              "new": "ALL players draw {Cards:diff()} cards."
+            },
+            {
+              "field": "upgrade_description",
+              "old": "ALL allies draw 3 cards.",
+              "new": "ALL players draw 3 cards."
+            },
+            {
+              "field": "keywords",
+              "old": "none",
+              "new": "Exhaust"
+            },
+            {
+              "field": "description",
+              "old": "ALL allies draw 2 cards.",
+              "new": "ALL players draw 2 cards."
+            }
+          ]
+        },
+        {
+          "id": "I_AM_INVINCIBLE",
+          "name": "I Am Invincible",
+          "changes": [
+            {
+              "field": "upgrade_description",
+              "old": "Gain 12 [gold]Block[/gold].\nAt the end of your turn, if this is on top of you...",
+              "new": "Gain 13 [gold]Block[/gold].\nAt the end of your turn, if this is on top of you..."
+            },
+            {
+              "field": "description",
+              "old": "Gain 9 [gold]Block[/gold].\nAt the end of your turn, if this is on top of your...",
+              "new": "Gain 10 [gold]Block[/gold].\nAt the end of your turn, if this is on top of you..."
+            },
+            {
+              "field": "vars",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "block",
+              "old": "9",
+              "new": "10"
+            }
+          ]
+        },
+        {
+          "id": "KINGLY_KICK",
+          "name": "Kingly Kick",
+          "changes": [
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Deal 30 damage.\nWhenever you draw this card, reduce its cost by 1.",
+              "new": "Deal 35 damage.\nWhenever you draw this card, reduce its cost by 1."
+            },
+            {
+              "field": "description",
+              "old": "Deal 24 damage.\nWhenever you draw this card, reduce its cost by 1.",
+              "new": "Deal 27 damage.\nWhenever you draw this card, reduce its cost by 1."
+            },
+            {
+              "field": "vars",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "damage",
+              "old": "24",
+              "new": "27"
+            }
+          ]
+        },
+        {
+          "id": "KINGLY_PUNCH",
+          "name": "Kingly Punch",
+          "changes": [
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "2 fields"
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Deal 8 damage.\nWhenever you draw this card, increase its damage by 5 this com...",
+              "new": "Deal 10 damage.\nWhenever you draw this card, increase its damage by 6 this co..."
+            },
+            {
+              "field": "description",
+              "old": "Deal 8 damage.\nWhenever you draw this card, increase its damage by 3 this com...",
+              "new": "Deal 8 damage.\nWhenever you draw this card, increase its damage by 4 this com..."
+            },
+            {
+              "field": "vars",
+              "old": "2 fields",
+              "new": "2 fields"
+            }
+          ]
+        },
+        {
+          "id": "MAD_SCIENCE",
+          "name": "Mad Science",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "540",
+              "new": "539"
+            }
+          ]
+        },
+        {
+          "id": "MAUL",
+          "name": "Maul",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "525",
+              "new": "524"
+            }
+          ]
+        },
+        {
+          "id": "METAMORPHOSIS",
+          "name": "Metamorphosis",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "541",
+              "new": "540"
+            }
+          ]
+        },
+        {
+          "id": "MINION_DIVE_BOMB",
+          "name": "Minion Dive Bomb",
+          "changes": [
+            {
+              "field": "cost",
+              "old": "1",
+              "new": "0"
+            }
+          ]
+        },
+        {
+          "id": "MINION_STRIKE",
+          "name": "Minion Strike",
+          "changes": [
+            {
+              "field": "upgrade_description",
+              "old": "Deal 10 damage.\nDraw 1 card.",
+              "new": "Deal 9 damage.\nDraw 1 card."
+            },
+            {
+              "field": "description",
+              "old": "Deal 7 damage.\nDraw 1 card.",
+              "new": "Deal 6 damage.\nDraw 1 card."
+            },
+            {
+              "field": "vars",
+              "old": "2 fields",
+              "new": "2 fields"
+            },
+            {
+              "field": "damage",
+              "old": "7",
+              "new": "6"
+            }
+          ]
+        },
+        {
+          "id": "NEOWS_FURY",
+          "name": "Neow's Fury",
+          "changes": [
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "2 fields"
+            },
+            {
+              "field": "compendium_order",
+              "old": "526",
+              "new": "525"
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Deal 14 damage.\nPut 2 random cards from your [gold]Discard Pile[/gold] into y...",
+              "new": "Deal 14 damage.\nPut 3 random cards from your [gold]Discard Pile[/gold] into y..."
+            }
+          ]
+        },
+        {
+          "id": "OUTMANEUVER",
+          "name": "Outmaneuver",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "542",
+              "new": "541"
+            }
+          ]
+        },
+        {
+          "id": "PARRY",
+          "name": "Parry",
+          "changes": [
+            {
+              "field": "upgrade_description",
+              "old": "Whenever you play [gold]Sovereign Blade[/gold], gain 9 [gold]Block[/gold].",
+              "new": "Whenever you play [gold]Sovereign Blade[/gold], gain 11 [gold]Block[/gold]."
+            },
+            {
+              "field": "description",
+              "old": "Whenever you play [gold]Sovereign Blade[/gold], gain 6 [gold]Block[/gold].",
+              "new": "Whenever you play [gold]Sovereign Blade[/gold], gain 8 [gold]Block[/gold]."
+            },
+            {
+              "field": "vars",
+              "old": "2 fields",
+              "new": "2 fields"
+            },
+            {
+              "field": "powers_applied",
+              "old": "{'power': 'Parry', 'amount': 6, 'power_key': 'Parry'}",
+              "new": "{'power': 'Parry', 'amount': 8, 'power_key': 'Parry'}"
+            }
+          ]
+        },
+        {
+          "id": "PATTER",
+          "name": "Patter",
+          "changes": [
+            {
+              "field": "upgrade_description",
+              "old": "Gain 10 [gold]Block[/gold].\nGain 3 [gold]Vigor[/gold].",
+              "new": "Gain 11 [gold]Block[/gold].\nGain 3 [gold]Vigor[/gold]."
+            },
+            {
+              "field": "description",
+              "old": "Gain 8 [gold]Block[/gold].\nGain 2 [gold]Vigor[/gold].",
+              "new": "Gain 9 [gold]Block[/gold].\nGain 2 [gold]Vigor[/gold]."
+            },
+            {
+              "field": "vars",
+              "old": "3 fields",
+              "new": "3 fields"
+            },
+            {
+              "field": "block",
+              "old": "8",
+              "new": "9"
+            }
+          ]
+        },
+        {
+          "id": "PECK",
+          "name": "Peck",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "543",
+              "new": "542"
+            }
+          ]
+        },
+        {
+          "id": "PINPOINT",
+          "name": "Pinpoint",
+          "changes": [
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Deal 22 damage.\nCosts 1 less [energy:1] for each Skill played this turn.",
+              "new": "Deal 19 damage.\nCosts 1 less [energy:1] for each Skill played this turn."
+            },
+            {
+              "field": "description",
+              "old": "Deal 17 damage.\nCosts 1 less [energy:1] for each Skill played this turn.",
+              "new": "Deal 15 damage.\nCosts 1 less [energy:1] for each Skill played this turn."
+            },
+            {
+              "field": "vars",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "damage",
+              "old": "17",
+              "new": "15"
+            }
+          ]
+        },
+        {
+          "id": "PRODUCTION",
+          "name": "Production",
+          "changes": [
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "upgrade_description",
+              "old": "none",
+              "new": "Gain [energy:3]."
+            }
+          ]
+        },
+        {
+          "id": "REBOUND",
+          "name": "Rebound",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "544",
+              "new": "543"
+            }
+          ]
+        },
+        {
+          "id": "RELAX",
+          "name": "Relax",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "527",
+              "new": "526"
+            }
+          ]
+        },
+        {
+          "id": "RIP_AND_TEAR",
+          "name": "Rip and Tear",
+          "changes": [
+            {
+              "field": "rarity",
+              "old": "Uncommon",
+              "new": "Event"
+            },
+            {
+              "field": "compendium_order",
+              "old": "521",
+              "new": "544"
+            },
+            {
+              "field": "rarity_key",
+              "old": "Uncommon",
+              "new": "Event"
+            }
+          ]
+        },
+        {
+          "id": "ROCKET_PUNCH",
+          "name": "Rocket Punch",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "Deal {Damage:diff()} damage.\nDraw {Cards:diff()} {Cards:plural:card|cards}.\nW...",
+              "new": "Deal {Damage:diff()} damage.\nDraw {Cards:diff()} {Cards:plural:card|cards}.\nW..."
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Deal 14 damage.\nDraw 2 cards.\nWhen a Status card is created, reduce this card...",
+              "new": "Deal 14 damage.\nDraw 2 cards.\nWhen you create a Status card, reduce this card..."
+            },
+            {
+              "field": "description",
+              "old": "Deal 13 damage.\nDraw 1 card.\nWhen a Status card is created, reduce this card'...",
+              "new": "Deal 13 damage.\nDraw 1 card.\nWhen you create a Status card, reduce this card'..."
+            }
+          ]
+        },
+        {
+          "id": "SCULPTING_STRIKE",
+          "name": "Sculpting Strike",
+          "changes": [
+            {
+              "field": "upgrade_description",
+              "old": "Deal 11 damage.\nAdd [gold]Ethereal[/gold] to a card in your [gold]Hand[/gold].",
+              "new": "Deal 12 damage.\nAdd [gold]Ethereal[/gold] to a card in your [gold]Hand[/gold]."
+            },
+            {
+              "field": "description",
+              "old": "Deal 8 damage.\nAdd [gold]Ethereal[/gold] to a card in your [gold]Hand[/gold].",
+              "new": "Deal 9 damage.\nAdd [gold]Ethereal[/gold] to a card in your [gold]Hand[/gold]."
+            },
+            {
+              "field": "vars",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "damage",
+              "old": "8",
+              "new": "9"
+            }
+          ]
+        },
+        {
+          "id": "SEANCE",
+          "name": "Seance",
+          "changes": [
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "description_raw",
+              "old": "Transform a card in your [gold]Draw Pile[/gold] into [gold]{IfUpgraded:show:S...",
+              "new": "Transform a card in your [gold]Draw Pile[/gold] into [gold]Soul[/gold]."
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Transform a card in your [gold]Draw Pile[/gold] into [gold]Soul+[/gold].",
+              "new": "none"
+            },
+            {
+              "field": "cost",
+              "old": "0",
+              "new": "1"
+            }
+          ]
+        },
+        {
+          "id": "SEEKER_STRIKE",
+          "name": "Seeker Strike",
+          "changes": [
+            {
+              "field": "upgrade_description",
+              "old": "Deal 9 damage.\nChoose 1 of 3 cards in your [gold]Draw Pile[/gold] to add into...",
+              "new": "Deal 12 damage.\nChoose 1 of 3 cards in your [gold]Draw Pile[/gold] to add int..."
+            },
+            {
+              "field": "description",
+              "old": "Deal 6 damage.\nChoose 1 of 3 cards in your [gold]Draw Pile[/gold] to add into...",
+              "new": "Deal 9 damage.\nChoose 1 of 3 cards in your [gold]Draw Pile[/gold] to add into..."
+            },
+            {
+              "field": "vars",
+              "old": "2 fields",
+              "new": "2 fields"
+            },
+            {
+              "field": "damage",
+              "old": "6",
+              "new": "9"
+            }
+          ]
+        },
+        {
+          "id": "SKEWER",
+          "name": "Skewer",
+          "changes": [
+            {
+              "field": "upgrade_description",
+              "old": "Deal 10 damage X times.",
+              "new": "Deal 11 damage X times."
+            },
+            {
+              "field": "description",
+              "old": "Deal 7 damage X times.",
+              "new": "Deal 8 damage X times."
+            },
+            {
+              "field": "vars",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "damage",
+              "old": "7",
+              "new": "8"
+            }
+          ]
+        },
+        {
+          "id": "SOLAR_STRIKE",
+          "name": "Solar Strike",
+          "changes": [
+            {
+              "field": "upgrade_description",
+              "old": "Deal 9 damage.\nGain [star:2].",
+              "new": "Deal 10 damage.\nGain [star:2]."
+            },
+            {
+              "field": "description",
+              "old": "Deal 8 damage.\nGain [star:1].",
+              "new": "Deal 9 damage.\nGain [star:1]."
+            },
+            {
+              "field": "vars",
+              "old": "2 fields",
+              "new": "2 fields"
+            },
+            {
+              "field": "damage",
+              "old": "8",
+              "new": "9"
+            }
+          ]
+        },
+        {
+          "id": "SPITE",
+          "name": "Spite",
+          "changes": [
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "cards_draw",
+              "old": "1",
+              "new": "none"
+            },
+            {
+              "field": "description_raw",
+              "old": "Deal {Damage:diff()} damage.\nIf you lost HP this turn, draw {Cards:diff()} {C...",
+              "new": "Deal {Damage:diff()} damage.\nIf you lost HP this turn,\nhits {Repeat:diff()} t..."
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Deal 9 damage.\nIf you lost HP this turn, draw 1 card.",
+              "new": "Deal 5 damage.\nIf you lost HP this turn,\nhits 3 times."
+            },
+            {
+              "field": "description",
+              "old": "Deal 6 damage.\nIf you lost HP this turn, draw 1 card.",
+              "new": "Deal 5 damage.\nIf you lost HP this turn,\nhits 2 times."
+            },
+            {
+              "field": "vars",
+              "old": "2 fields",
+              "new": "2 fields"
+            },
+            {
+              "field": "damage",
+              "old": "6",
+              "new": "5"
+            },
+            {
+              "field": "hit_count",
+              "old": "none",
+              "new": "2"
+            }
+          ]
+        },
+        {
+          "id": "SPOILS_OF_BATTLE",
+          "name": "Spoils of Battle",
+          "changes": [
+            {
+              "field": "upgrade_description",
+              "old": "[gold]Forge[/gold] 15.",
+              "new": "[gold]Forge[/gold] 17."
+            },
+            {
+              "field": "description",
+              "old": "[gold]Forge[/gold] 10.",
+              "new": "[gold]Forge[/gold] 12."
+            },
+            {
+              "field": "vars",
+              "old": "1 fields",
+              "new": "1 fields"
+            }
+          ]
+        },
+        {
+          "id": "STACK",
+          "name": "Stack",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "Gain [gold]Block[/gold] equal to the number of cards in your [gold]Discard Pi...",
+              "new": "Gain [gold]Block[/gold] equal to the number of cards in your [gold]Discard Pi..."
+            }
+          ]
+        },
+        {
+          "id": "STOKE",
+          "name": "Stoke",
+          "changes": [
+            {
+              "field": "keywords_key",
+              "old": "Exhaust",
+              "new": "none"
+            },
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "description_raw",
+              "old": "[gold]Exhaust[/gold] your [gold]Hand[/gold].\nDraw a card for each card [gold]...",
+              "new": "[gold]Exhaust[/gold] your [gold]Hand[/gold].\nAdd 1 random {IfUpgraded:show:[g..."
+            },
+            {
+              "field": "upgrade_description",
+              "old": "none",
+              "new": "[gold]Exhaust[/gold] your [gold]Hand[/gold].\nAdd 1 random [gold]Upgraded[/gol..."
+            },
+            {
+              "field": "description",
+              "old": "[gold]Exhaust[/gold] your [gold]Hand[/gold].\nDraw a card for each card [gold]...",
+              "new": "[gold]Exhaust[/gold] your [gold]Hand[/gold].\nAdd 1 random card into your [gol..."
+            },
+            {
+              "field": "keywords",
+              "old": "Exhaust",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "TEAR_ASUNDER",
+          "name": "Tear Asunder",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "Deal {Damage:diff()} damage.\nHits an additional time for each time you lost H...",
+              "new": "Deal {Damage:diff()} damage.\nHits an additional time for each time you lost H..."
+            }
+          ]
+        },
+        {
+          "id": "TREMBLE",
+          "name": "Tremble",
+          "changes": [
+            {
+              "field": "description",
+              "old": "Apply 2 [gold]Vulnerable[/gold].",
+              "new": "Apply 3 [gold]Vulnerable[/gold]."
+            },
+            {
+              "field": "vars",
+              "old": "2 fields",
+              "new": "2 fields"
+            },
+            {
+              "field": "powers_applied",
+              "old": "{'power': 'Vulnerable', 'amount': 2, 'power_key': 'Vulnerable'}",
+              "new": "{'power': 'Vulnerable', 'amount': 3, 'power_key': 'Vulnerable'}"
+            }
+          ]
+        },
+        {
+          "id": "UNTOUCHABLE",
+          "name": "Untouchable",
+          "changes": [
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Gain 12 [gold]Block[/gold].",
+              "new": "Gain 9 [gold]Block[/gold]."
+            },
+            {
+              "field": "description",
+              "old": "Gain 9 [gold]Block[/gold].",
+              "new": "Gain 7 [gold]Block[/gold]."
+            },
+            {
+              "field": "vars",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "block",
+              "old": "9",
+              "new": "7"
+            }
+          ]
+        },
+        {
+          "id": "VOID_FORM",
+          "name": "Void Form",
+          "changes": [
+            {
+              "field": "keywords_key",
+              "old": "none",
+              "new": "Ethereal"
+            },
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "upgrade_description",
+              "old": "End your turn.\nThe first 3 cards you play each turn are free to play.",
+              "new": "none"
+            },
+            {
+              "field": "keywords",
+              "old": "none",
+              "new": "Ethereal"
+            }
+          ]
+        },
+        {
+          "id": "WHISTLE",
+          "name": "Whistle",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "528",
+              "new": "527"
+            }
+          ]
+        },
+        {
+          "id": "WISH",
+          "name": "Wish",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "529",
+              "new": "528"
+            }
+          ]
+        },
+        {
+          "id": "WROUGHT_IN_WAR",
+          "name": "Wrought in War",
+          "changes": [
+            {
+              "field": "upgrade_description",
+              "old": "Deal 9 damage.\n[gold]Forge[/gold] 7.",
+              "new": "Deal 9 damage.\n[gold]Forge[/gold] 9."
+            },
+            {
+              "field": "description",
+              "old": "Deal 7 damage.\n[gold]Forge[/gold] 5.",
+              "new": "Deal 7 damage.\n[gold]Forge[/gold] 7."
+            },
+            {
+              "field": "vars",
+              "old": "2 fields",
+              "new": "2 fields"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "relics",
+      "name": "Relics",
+      "old_count": 288,
+      "new_count": 290,
+      "added": [
+        {
+          "id": "HEFTY_TABLET",
+          "name": "Hefty Tablet",
+          "rarity": "Ancient Relic"
+        },
+        {
+          "id": "NEOWS_TALISMAN",
+          "name": "Neow's Talisman",
+          "rarity": "Ancient Relic"
+        }
+      ],
+      "changed": [
+        {
+          "id": "AMETHYST_AUBERGINE",
+          "name": "Amethyst Aubergine",
+          "changes": [
+            {
+              "field": "description",
+              "old": "Enemies drop [blue]10[/blue] additional [gold]Gold[/gold].",
+              "new": "Enemies drop [blue]15[/blue] additional [gold]Gold[/gold]."
+            }
+          ]
+        },
+        {
+          "id": "BIG_MUSHROOM",
+          "name": "Big Mushroom",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "253",
+              "new": "255"
+            }
+          ]
+        },
+        {
+          "id": "BING_BONG",
+          "name": "Bing Bong",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "254",
+              "new": "256"
+            }
+          ]
+        },
+        {
+          "id": "BONE_TEA",
+          "name": "Bone Tea",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "256",
+              "new": "258"
+            }
+          ]
+        },
+        {
+          "id": "BOOK_OF_FIVE_RINGS",
+          "name": "Book of Five Rings",
+          "changes": [
+            {
+              "field": "description",
+              "old": "Every [blue]5[/blue] cards you add to your [gold]Deck[/gold], heal [green]15[...",
+              "new": "Every [blue]5[/blue] cards you add to your [gold]Deck[/gold], heal [green]20[..."
+            }
+          ]
+        },
+        {
+          "id": "BOWLER_HAT",
+          "name": "Bowler Hat",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "Gain [blue]20%[/blue] additional [gold]Gold[/gold].",
+              "new": "Gain [blue]{GoldIncrease:percentMore()}%[/blue] additional [gold]Gold[/gold]."
+            },
+            {
+              "field": "description",
+              "old": "Gain [blue]20%[/blue] additional [gold]Gold[/gold].",
+              "new": "Gain [blue]25%[/blue] additional [gold]Gold[/gold]."
+            }
+          ]
+        },
+        {
+          "id": "BYRDPIP",
+          "name": "Byrdpip",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "257",
+              "new": "259"
+            }
+          ]
+        },
+        {
+          "id": "CHOSEN_CHEESE",
+          "name": "The Chosen Cheese",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "282",
+              "new": "284"
+            }
+          ]
+        },
+        {
+          "id": "CIRCLET",
+          "name": "Circlet",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "287",
+              "new": "289"
+            }
+          ]
+        },
+        {
+          "id": "DARKSTONE_PERIAPT",
+          "name": "Darkstone Periapt",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "258",
+              "new": "260"
+            }
+          ]
+        },
+        {
+          "id": "DAUGHTER_OF_THE_WIND",
+          "name": "Daughter of the Wind",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "259",
+              "new": "261"
+            }
+          ]
+        },
+        {
+          "id": "DISTINGUISHED_CAPE",
+          "name": "Distinguished Cape",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "Upon pickup, lose [red]9[/red] Max HP. Add [blue]{Cards}[/blue] [gold]{Cards:...",
+              "new": "Upon pickup, lose [blue]9[/blue] Max HP. Add [blue]{Cards}[/blue] [gold]{Card..."
+            },
+            {
+              "field": "description",
+              "old": "Upon pickup, lose [red]9[/red] Max HP. Add [blue]3[/blue] [gold]Apparitions[/...",
+              "new": "Upon pickup, lose [blue]9[/blue] Max HP. Add [blue]3[/blue] [gold]Apparitions..."
+            }
+          ]
+        },
+        {
+          "id": "DREAM_CATCHER",
+          "name": "Dream Catcher",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "260",
+              "new": "262"
+            }
+          ]
+        },
+        {
+          "id": "EMBER_TEA",
+          "name": "Ember Tea",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "261",
+              "new": "263"
+            }
+          ]
+        },
+        {
+          "id": "FAKE_ANCHOR",
+          "name": "Anchor???",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "252",
+              "new": "254"
+            }
+          ]
+        },
+        {
+          "id": "FAKE_BLOOD_VIAL",
+          "name": "Blood Vial???",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "255",
+              "new": "257"
+            }
+          ]
+        },
+        {
+          "id": "FAKE_HAPPY_FLOWER",
+          "name": "Happy Flower???",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "266",
+              "new": "268"
+            }
+          ]
+        },
+        {
+          "id": "FAKE_LEES_WAFFLE",
+          "name": "Lee's Waffle???",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "268",
+              "new": "270"
+            }
+          ]
+        },
+        {
+          "id": "FAKE_MANGO",
+          "name": "Mango???",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "270",
+              "new": "272"
+            }
+          ]
+        },
+        {
+          "id": "FAKE_MERCHANTS_RUG",
+          "name": "The Merchant's Rug???",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "283",
+              "new": "285"
+            }
+          ]
+        },
+        {
+          "id": "FAKE_ORICHALCUM",
+          "name": "Orichalcum???",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "273",
+              "new": "275"
+            }
+          ]
+        },
+        {
+          "id": "FAKE_SNECKO_EYE",
+          "name": "Snecko Eye???",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "276",
+              "new": "278"
+            }
+          ]
+        },
+        {
+          "id": "FAKE_STRIKE_DUMMY",
+          "name": "Strike Dummy???",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "277",
+              "new": "279"
+            }
+          ]
+        },
+        {
+          "id": "FAKE_VENERABLE_TEA_SET",
+          "name": "Venerable Tea Set???",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "284",
+              "new": "286"
+            }
+          ]
+        },
+        {
+          "id": "FORGOTTEN_SOUL",
+          "name": "Forgotten Soul",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "262",
+              "new": "264"
+            }
+          ]
+        },
+        {
+          "id": "FRAGRANT_MUSHROOM",
+          "name": "Fragrant Mushroom",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "Upon pickup, lose [red]{HpLoss}[/red] HP and [gold]Upgrade[/gold] [blue]{Card...",
+              "new": "Upon pickup, lose [blue]{HpLoss}[/blue] HP and [gold]Upgrade[/gold] [blue]{Ca..."
+            },
+            {
+              "field": "compendium_order",
+              "old": "263",
+              "new": "265"
+            },
+            {
+              "field": "description",
+              "old": "Upon pickup, lose [red]15[/red] HP and [gold]Upgrade[/gold] [blue]3[/blue] ra...",
+              "new": "Upon pickup, lose [blue]15[/blue] HP and [gold]Upgrade[/gold] [blue]3[/blue] ..."
+            }
+          ]
+        },
+        {
+          "id": "FRESNEL_LENS",
+          "name": "Fresnel Lens",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "264",
+              "new": "266"
+            }
+          ]
+        },
+        {
+          "id": "HAND_DRILL",
+          "name": "Hand Drill",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "265",
+              "new": "267"
+            }
+          ]
+        },
+        {
+          "id": "HISTORY_COURSE",
+          "name": "History Course",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "267",
+              "new": "269"
+            }
+          ]
+        },
+        {
+          "id": "IRON_CLUB",
+          "name": "Iron Club",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "190",
+              "new": "191"
+            }
+          ]
+        },
+        {
+          "id": "JEWELED_MASK",
+          "name": "Jeweled Mask",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "191",
+              "new": "192"
+            }
+          ]
+        },
+        {
+          "id": "JEWELRY_BOX",
+          "name": "Jewelry Box",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "192",
+              "new": "193"
+            }
+          ]
+        },
+        {
+          "id": "LARGE_CAPSULE",
+          "name": "Large Capsule",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "193",
+              "new": "194"
+            }
+          ]
+        },
+        {
+          "id": "LAVA_ROCK",
+          "name": "Lava Rock",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "194",
+              "new": "195"
+            }
+          ]
+        },
+        {
+          "id": "LEAD_PAPERWEIGHT",
+          "name": "Lead Paperweight",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "195",
+              "new": "196"
+            }
+          ]
+        },
+        {
+          "id": "LEAFY_POULTICE",
+          "name": "Leafy Poultice",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "196",
+              "new": "197"
+            },
+            {
+              "field": "description",
+              "old": "Upon pickup, [gold]Transform[/gold] [blue]1[/blue] of your [gold]Strikes[/gol...",
+              "new": "Upon pickup, [gold]Transform[/gold] [blue]1[/blue] of your [gold]Strikes[/gol..."
+            }
+          ]
+        },
+        {
+          "id": "LIZARD_TAIL",
+          "name": "Lizard Tail",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "When you would die, heal to [green]{Heal}%[/green] of your Max HP instead (wo...",
+              "new": "When your HP would be reduced to [blue]0[/blue], heal to [green]{Heal}%[/gree..."
+            },
+            {
+              "field": "description",
+              "old": "When you would die, heal to [green]50%[/green] of your Max HP instead (works ...",
+              "new": "When your HP would be reduced to [blue]0[/blue], heal to [green]50%[/green] o..."
+            }
+          ]
+        },
+        {
+          "id": "LOOMING_FRUIT",
+          "name": "Looming Fruit",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "197",
+              "new": "198"
+            }
+          ]
+        },
+        {
+          "id": "LORDS_PARASOL",
+          "name": "Lord's Parasol",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "198",
+              "new": "199"
+            }
+          ]
+        },
+        {
+          "id": "LOST_COFFER",
+          "name": "Lost Coffer",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "199",
+              "new": "200"
+            }
+          ]
+        },
+        {
+          "id": "LOST_WISP",
+          "name": "Lost Wisp",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "269",
+              "new": "271"
+            }
+          ]
+        },
+        {
+          "id": "MASSIVE_SCROLL",
+          "name": "Massive Scroll",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "200",
+              "new": "201"
+            }
+          ]
+        },
+        {
+          "id": "MAW_BANK",
+          "name": "Maw Bank",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "271",
+              "new": "273"
+            }
+          ]
+        },
+        {
+          "id": "MEAT_CLEAVER",
+          "name": "Meat Cleaver",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "201",
+              "new": "202"
+            }
+          ]
+        },
+        {
+          "id": "MR_STRUGGLES",
+          "name": "Mr. Struggles",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "272",
+              "new": "274"
+            }
+          ]
+        },
+        {
+          "id": "MUSIC_BOX",
+          "name": "Music Box",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "202",
+              "new": "203"
+            }
+          ]
+        },
+        {
+          "id": "NEOWS_TORMENT",
+          "name": "Neow's Torment",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "203",
+              "new": "205"
+            }
+          ]
+        },
+        {
+          "id": "NEW_LEAF",
+          "name": "New Leaf",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "204",
+              "new": "206"
+            }
+          ]
+        },
+        {
+          "id": "NUTRITIOUS_OYSTER",
+          "name": "Nutritious Oyster",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "205",
+              "new": "207"
+            }
+          ]
+        },
+        {
+          "id": "NUTRITIOUS_SOUP",
+          "name": "Nutritious Soup",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "206",
+              "new": "208"
+            }
+          ]
+        },
+        {
+          "id": "PAELS_BLOOD",
+          "name": "Pael's Blood",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "207",
+              "new": "209"
+            }
+          ]
+        },
+        {
+          "id": "PAELS_CLAW",
+          "name": "Pael's Claw",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "208",
+              "new": "210"
+            }
+          ]
+        },
+        {
+          "id": "PAELS_EYE",
+          "name": "Pael's Eye",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "209",
+              "new": "211"
+            }
+          ]
+        },
+        {
+          "id": "PAELS_FLESH",
+          "name": "Pael's Flesh",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "210",
+              "new": "212"
+            }
+          ]
+        },
+        {
+          "id": "PAELS_GROWTH",
+          "name": "Pael's Growth",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "211",
+              "new": "213"
+            }
+          ]
+        },
+        {
+          "id": "PAELS_HORN",
+          "name": "Pael's Horn",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "212",
+              "new": "214"
+            }
+          ]
+        },
+        {
+          "id": "PAELS_LEGION",
+          "name": "Pael's Legion",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "213",
+              "new": "215"
+            }
+          ]
+        },
+        {
+          "id": "PAELS_TEARS",
+          "name": "Pael's Tears",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "214",
+              "new": "216"
+            }
+          ]
+        },
+        {
+          "id": "PAELS_TOOTH",
+          "name": "Pael's Tooth",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "215",
+              "new": "217"
+            }
+          ]
+        },
+        {
+          "id": "PAELS_WING",
+          "name": "Pael's Wing",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "216",
+              "new": "218"
+            }
+          ]
+        },
+        {
+          "id": "PANDORAS_BOX",
+          "name": "Pandora's Box",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "217",
+              "new": "219"
+            }
+          ]
+        },
+        {
+          "id": "PERMAFROST",
+          "name": "Permafrost",
+          "changes": [
+            {
+              "field": "description",
+              "old": "The first time you play a Power each combat, gain [blue]6[/blue] [gold]Block[...",
+              "new": "The first time you play a Power each combat, gain [blue]7[/blue] [gold]Block[..."
+            }
+          ]
+        },
+        {
+          "id": "PHILOSOPHERS_STONE",
+          "name": "Philosopher's Stone",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "218",
+              "new": "220"
+            }
+          ]
+        },
+        {
+          "id": "PLANISPHERE",
+          "name": "Planisphere",
+          "changes": [
+            {
+              "field": "description",
+              "old": "Whenever you enter a [gold]?[/gold] room, heal [green]4[/green] HP.",
+              "new": "Whenever you enter a [gold]?[/gold] room, heal [green]5[/green] HP."
+            }
+          ]
+        },
+        {
+          "id": "POLLINOUS_CORE",
+          "name": "Pollinous Core",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "274",
+              "new": "276"
+            }
+          ]
+        },
+        {
+          "id": "POMANDER",
+          "name": "Pomander",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "219",
+              "new": "221"
+            }
+          ]
+        },
+        {
+          "id": "PRECARIOUS_SHEARS",
+          "name": "Precarious Shears",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "Upon pickup, remove [blue]{Cards}[/blue] {Cards:plural:card|cards} from your ...",
+              "new": "Upon pickup, remove [blue]{Cards}[/blue] {Cards:plural:card|cards} from your ..."
+            },
+            {
+              "field": "compendium_order",
+              "old": "220",
+              "new": "222"
+            },
+            {
+              "field": "description",
+              "old": "Upon pickup, remove [blue]2[/blue] cards from your [gold]Deck[/gold] and take...",
+              "new": "Upon pickup, remove [blue]2[/blue] cards from your [gold]Deck[/gold] and lose..."
+            }
+          ]
+        },
+        {
+          "id": "PRECISE_SCISSORS",
+          "name": "Precise Scissors",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "221",
+              "new": "223"
+            }
+          ]
+        },
+        {
+          "id": "PRESERVED_FOG",
+          "name": "Preserved Fog",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "222",
+              "new": "224"
+            },
+            {
+              "field": "description",
+              "old": "Upon pickup, remove [blue]5[/blue] cards from your [gold]Deck[/gold]. Add [re...",
+              "new": "Upon pickup, remove [blue]3[/blue] cards from your [gold]Deck[/gold]. Add [re..."
+            }
+          ]
+        },
+        {
+          "id": "PRISMATIC_GEM",
+          "name": "Prismatic Gem",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "223",
+              "new": "225"
+            }
+          ]
+        },
+        {
+          "id": "PUMPKIN_CANDLE",
+          "name": "Pumpkin Candle",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "224",
+              "new": "226"
+            }
+          ]
+        },
+        {
+          "id": "RADIANT_PEARL",
+          "name": "Radiant Pearl",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "225",
+              "new": "227"
+            }
+          ]
+        },
+        {
+          "id": "ROYAL_POISON",
+          "name": "Royal Poison",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "275",
+              "new": "277"
+            }
+          ]
+        },
+        {
+          "id": "RUNIC_PYRAMID",
+          "name": "Runic Pyramid",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "226",
+              "new": "228"
+            }
+          ]
+        },
+        {
+          "id": "SAI",
+          "name": "Sai",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "227",
+              "new": "229"
+            }
+          ]
+        },
+        {
+          "id": "SAND_CASTLE",
+          "name": "Sand Castle",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "228",
+              "new": "230"
+            }
+          ]
+        },
+        {
+          "id": "SCROLL_BOXES",
+          "name": "Scroll Boxes",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "229",
+              "new": "231"
+            }
+          ]
+        },
+        {
+          "id": "SEAL_OF_GOLD",
+          "name": "Seal of Gold",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "231",
+              "new": "233"
+            }
+          ]
+        },
+        {
+          "id": "SEA_GLASS",
+          "name": "Sea Glass",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "230",
+              "new": "232"
+            }
+          ]
+        },
+        {
+          "id": "SERE_TALON",
+          "name": "Sere Talon",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "232",
+              "new": "234"
+            }
+          ]
+        },
+        {
+          "id": "SIGNET_RING",
+          "name": "Signet Ring",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "233",
+              "new": "235"
+            }
+          ]
+        },
+        {
+          "id": "SILVER_CRUCIBLE",
+          "name": "Silver Crucible",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "234",
+              "new": "236"
+            }
+          ]
+        },
+        {
+          "id": "SMALL_CAPSULE",
+          "name": "Small Capsule",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "235",
+              "new": "237"
+            }
+          ]
+        },
+        {
+          "id": "SNECKO_EYE",
+          "name": "Snecko Eye",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "236",
+              "new": "238"
+            }
+          ]
+        },
+        {
+          "id": "SOZU",
+          "name": "Sozu",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "237",
+              "new": "239"
+            }
+          ]
+        },
+        {
+          "id": "SPIKED_GAUNTLETS",
+          "name": "Spiked Gauntlets",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "238",
+              "new": "240"
+            }
+          ]
+        },
+        {
+          "id": "STONE_CRACKER",
+          "name": "Stone Cracker",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "At the start of [gold]Boss[/gold] combats, [gold]Upgrade[/gold] [blue]{Cards}...",
+              "new": "At the start of each combat, [gold]Upgrade[/gold] [blue]{Cards}[/blue] random..."
+            },
+            {
+              "field": "description",
+              "old": "At the start of [gold]Boss[/gold] combats, [gold]Upgrade[/gold] [blue]3[/blue...",
+              "new": "At the start of each combat, [gold]Upgrade[/gold] [blue]2[/blue] random cards..."
+            }
+          ]
+        },
+        {
+          "id": "STONE_HUMIDIFIER",
+          "name": "Stone Humidifier",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "239",
+              "new": "241"
+            }
+          ]
+        },
+        {
+          "id": "STORYBOOK",
+          "name": "Storybook",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "240",
+              "new": "242"
+            }
+          ]
+        },
+        {
+          "id": "SWORD_OF_JADE",
+          "name": "Sword of Jade",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "278",
+              "new": "280"
+            }
+          ]
+        },
+        {
+          "id": "SWORD_OF_STONE",
+          "name": "Sword of Stone",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "279",
+              "new": "281"
+            }
+          ]
+        },
+        {
+          "id": "TANXS_WHISTLE",
+          "name": "Tanx's Whistle",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "241",
+              "new": "243"
+            }
+          ]
+        },
+        {
+          "id": "TEA_OF_DISCOURTESY",
+          "name": "Tea of Discourtesy",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "280",
+              "new": "282"
+            }
+          ]
+        },
+        {
+          "id": "THE_BOOT",
+          "name": "The Boot",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "281",
+              "new": "283"
+            }
+          ]
+        },
+        {
+          "id": "THROWING_AXE",
+          "name": "Throwing Axe",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "242",
+              "new": "244"
+            }
+          ]
+        },
+        {
+          "id": "TOASTY_MITTENS",
+          "name": "Toasty Mittens",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "243",
+              "new": "245"
+            }
+          ]
+        },
+        {
+          "id": "TOUCH_OF_OROBAS",
+          "name": "Touch of Orobas",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "244",
+              "new": "246"
+            }
+          ]
+        },
+        {
+          "id": "TOY_BOX",
+          "name": "Toy Box",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "245",
+              "new": "247"
+            }
+          ]
+        },
+        {
+          "id": "TRI_BOOMERANG",
+          "name": "Tri-Boomerang",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "246",
+              "new": "248"
+            }
+          ]
+        },
+        {
+          "id": "VELVET_CHOKER",
+          "name": "Velvet Choker",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "247",
+              "new": "249"
+            }
+          ]
+        },
+        {
+          "id": "VERY_HOT_COCOA",
+          "name": "Very Hot Cocoa",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "248",
+              "new": "250"
+            }
+          ]
+        },
+        {
+          "id": "WAR_HAMMER",
+          "name": "War Hammer",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "249",
+              "new": "251"
+            }
+          ]
+        },
+        {
+          "id": "WHISPERING_EARRING",
+          "name": "Whispering Earring",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "250",
+              "new": "252"
+            }
+          ]
+        },
+        {
+          "id": "WONGOS_MYSTERY_TICKET",
+          "name": "Wongo's Mystery Ticket",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "286",
+              "new": "288"
+            }
+          ]
+        },
+        {
+          "id": "WONGO_CUSTOMER_APPRECIATION_BADGE",
+          "name": "Wongo Customer Appreciation Badge",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "285",
+              "new": "287"
+            }
+          ]
+        },
+        {
+          "id": "YUMMY_COOKIE",
+          "name": "Yummy Cookie",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "251",
+              "new": "253"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "monsters",
+      "name": "Monsters",
+      "old_count": 116,
+      "new_count": 115,
+      "removed": [
+        {
+          "id": "DOOR",
+          "name": "Door"
+        }
+      ],
+      "changed": [
+        {
+          "id": "BYGONE_EFFIGY",
+          "name": "Bygone Effigy",
+          "changes": [
+            {
+              "field": "moves",
+              "old": "{'id': 'INITIAL_SLEEP', 'name': 'Initial Sleep', 'intent': 'Sleep'}, {'id': 'WAKE', 'name': 'Wake', 'intent': 'Buff', 'powers': [{'power_id': 'STRENGTH', 'target': 'self', 'amount': 10}]}, {'id': 'SLEEP', 'name': 'Sleep', 'intent': 'Sleep'}, {'id': 'SLASHES', 'name': 'Slashes', 'intent': 'Attack', 'damage': {'normal': 15, 'ascension': 17}}",
+              "new": "{'id': 'INITIAL_SLEEP', 'name': 'Initial Sleep', 'intent': 'Sleep'}, {'id': 'WAKE', 'name': 'Wake', 'intent': 'Buff', 'powers': [{'power_id': 'STRENGTH', 'target': 'self', 'amount': 10}]}, {'id': 'SLEEP', 'name': 'Sleep', 'intent': 'Sleep'}, {'id': 'SLASHES', 'name': 'Slashes', 'intent': 'Attack', 'damage': {'normal': 13, 'ascension': 15}}"
+            },
+            {
+              "field": "damage_values",
+              "old": "1 fields",
+              "new": "1 fields"
+            }
+          ]
+        },
+        {
+          "id": "BYRDONIS",
+          "name": "Byrdonis",
+          "changes": [
+            {
+              "field": "moves",
+              "old": "{'id': 'PECK', 'name': 'Peck', 'intent': 'Attack', 'damage': {'normal': 3, 'ascension': 4, 'hit_count': 3, 'hit_count_ascension': 3}}, {'id': 'SWOOP', 'name': 'Swoop', 'intent': 'Attack', 'damage': {'normal': 16, 'ascension': 18}}",
+              "new": "{'id': 'PECK', 'name': 'Peck', 'intent': 'Attack', 'damage': {'normal': 3, 'ascension': 4, 'hit_count': 3, 'hit_count_ascension': 3}}, {'id': 'SWOOP', 'name': 'Swoop', 'intent': 'Attack', 'damage': {'normal': 17, 'ascension': 19}}"
+            },
+            {
+              "field": "damage_values",
+              "old": "2 fields",
+              "new": "2 fields"
+            }
+          ]
+        },
+        {
+          "id": "CRUSHER",
+          "name": "Crusher",
+          "changes": [
+            {
+              "field": "min_hp",
+              "old": "199",
+              "new": "209"
+            },
+            {
+              "field": "min_hp_ascension",
+              "old": "209",
+              "new": "219"
+            }
+          ]
+        },
+        {
+          "id": "DECIMILLIPEDE_SEGMENT",
+          "name": "Decimillipede",
+          "changes": [
+            {
+              "field": "min_hp",
+              "old": "42",
+              "new": "40"
+            },
+            {
+              "field": "max_hp",
+              "old": "48",
+              "new": "46"
+            },
+            {
+              "field": "min_hp_ascension",
+              "old": "48",
+              "new": "46"
+            },
+            {
+              "field": "max_hp_ascension",
+              "old": "56",
+              "new": "52"
+            }
+          ]
+        },
+        {
+          "id": "DECIMILLIPEDE_SEGMENT_BACK",
+          "name": "Decimillipede Segment (Back)",
+          "changes": [
+            {
+              "field": "min_hp",
+              "old": "42",
+              "new": "40"
+            },
+            {
+              "field": "max_hp",
+              "old": "48",
+              "new": "46"
+            },
+            {
+              "field": "min_hp_ascension",
+              "old": "48",
+              "new": "46"
+            },
+            {
+              "field": "max_hp_ascension",
+              "old": "56",
+              "new": "52"
+            }
+          ]
+        },
+        {
+          "id": "DECIMILLIPEDE_SEGMENT_FRONT",
+          "name": "Decimillipede Segment (Front)",
+          "changes": [
+            {
+              "field": "min_hp",
+              "old": "42",
+              "new": "40"
+            },
+            {
+              "field": "max_hp",
+              "old": "48",
+              "new": "46"
+            },
+            {
+              "field": "min_hp_ascension",
+              "old": "48",
+              "new": "46"
+            },
+            {
+              "field": "max_hp_ascension",
+              "old": "56",
+              "new": "52"
+            }
+          ]
+        },
+        {
+          "id": "DECIMILLIPEDE_SEGMENT_MIDDLE",
+          "name": "Decimillipede Segment (Middle)",
+          "changes": [
+            {
+              "field": "min_hp",
+              "old": "42",
+              "new": "40"
+            },
+            {
+              "field": "max_hp",
+              "old": "48",
+              "new": "46"
+            },
+            {
+              "field": "min_hp_ascension",
+              "old": "48",
+              "new": "46"
+            },
+            {
+              "field": "max_hp_ascension",
+              "old": "56",
+              "new": "52"
+            }
+          ]
+        },
+        {
+          "id": "DOORMAKER",
+          "name": "Doormaker",
+          "changes": [
+            {
+              "field": "moves",
+              "old": "{'id': 'WHAT_IS_IT', 'name': 'What Is It', 'intent': 'Stun'}, {'id': 'BEAM', 'name': 'Beam', 'intent': 'Attack', 'damage': {'normal': 31, 'ascension': 34}}, {'id': 'GET_BACK_IN', 'name': 'Get Back In', 'intent': 'Attack + Buff + Escape', 'powers': [{'power_id': 'STRENGTH', 'target': 'self', 'amount': 5}], 'damage': {'normal': 40, 'ascension': 45}}",
+              "new": "{'id': 'DRAMATIC_OPEN', 'name': 'Dramatic Open', 'intent': 'Summon'}, {'id': 'BEAM', 'name': 'Beam', 'intent': 'Attack', 'damage': {'normal': 10, 'ascension': 11, 'hit_count': 3}}, {'id': 'CHOMP', 'name': 'Chomp', 'intent': 'Attack', 'damage': {'normal': 40, 'ascension': 45}}, {'id': 'PULVERIZE', 'name': 'Pulverize', 'intent': 'Attack + Buff', 'powers': [{'power_id': 'STRENGTH', 'target': 'self', 'amount': 2}], 'damage': {'normal': 20, 'ascension': 22}}"
+            },
+            {
+              "field": "damage_values",
+              "old": "2 fields",
+              "new": "3 fields"
+            },
+            {
+              "field": "attack_pattern",
+              "old": "4 fields",
+              "new": "4 fields"
+            }
+          ]
+        },
+        {
+          "id": "GAS_BOMB",
+          "name": "Gas Bomb",
+          "changes": [
+            {
+              "field": "min_hp",
+              "old": "10",
+              "new": "7"
+            },
+            {
+              "field": "min_hp_ascension",
+              "old": "12",
+              "new": "8"
+            }
+          ]
+        },
+        {
+          "id": "GUARDBOT",
+          "name": "Guardbot",
+          "changes": [
+            {
+              "field": "min_hp",
+              "old": "21",
+              "new": "16"
+            },
+            {
+              "field": "max_hp",
+              "old": "25",
+              "new": "20"
+            },
+            {
+              "field": "min_hp_ascension",
+              "old": "22",
+              "new": "17"
+            },
+            {
+              "field": "max_hp_ascension",
+              "old": "26",
+              "new": "21"
+            }
+          ]
+        },
+        {
+          "id": "NIBBIT",
+          "name": "Nibbit",
+          "changes": [
+            {
+              "field": "moves",
+              "old": "{'id': 'BUTT', 'name': 'Butt', 'intent': 'Attack', 'damage': {'normal': 12, 'ascension': 13}}, {'id': 'SLICE', 'name': 'Slice', 'intent': 'Attack + Defend', 'block': 5, 'damage': {'normal': 6, 'ascension': 6}}, {'id': 'HISS', 'name': 'Hiss', 'intent': 'Buff', 'powers': [{'power_id': 'STRENGTH', 'target': 'self', 'amount': 2}]}",
+              "new": "{'id': 'BUTT', 'name': 'Butt', 'intent': 'Attack', 'damage': {'normal': 12, 'ascension': 13}}, {'id': 'SLICE', 'name': 'Slice', 'intent': 'Attack + Defend', 'block': 5, 'damage': {'normal': 6, 'ascension': 7}}, {'id': 'HISS', 'name': 'Hiss', 'intent': 'Buff', 'powers': [{'power_id': 'STRENGTH', 'target': 'self', 'amount': 2}]}"
+            },
+            {
+              "field": "damage_values",
+              "old": "2 fields",
+              "new": "2 fields"
+            }
+          ]
+        },
+        {
+          "id": "NOISEBOT",
+          "name": "Noisebot",
+          "changes": [
+            {
+              "field": "min_hp",
+              "old": "23",
+              "new": "18"
+            },
+            {
+              "field": "max_hp",
+              "old": "28",
+              "new": "23"
+            },
+            {
+              "field": "min_hp_ascension",
+              "old": "24",
+              "new": "19"
+            },
+            {
+              "field": "max_hp_ascension",
+              "old": "29",
+              "new": "24"
+            }
+          ]
+        },
+        {
+          "id": "PHANTASMAL_GARDENER",
+          "name": "Phantasmal Gardener",
+          "changes": [
+            {
+              "field": "min_hp",
+              "old": "28",
+              "new": "26"
+            },
+            {
+              "field": "max_hp",
+              "old": "32",
+              "new": "31"
+            },
+            {
+              "field": "min_hp_ascension",
+              "old": "29",
+              "new": "27"
+            },
+            {
+              "field": "max_hp_ascension",
+              "old": "33",
+              "new": "32"
+            }
+          ]
+        },
+        {
+          "id": "ROCKET",
+          "name": "Rocket",
+          "changes": [
+            {
+              "field": "min_hp",
+              "old": "189",
+              "new": "199"
+            },
+            {
+              "field": "min_hp_ascension",
+              "old": "199",
+              "new": "209"
+            }
+          ]
+        },
+        {
+          "id": "SEAPUNK",
+          "name": "Seapunk",
+          "changes": [
+            {
+              "field": "moves",
+              "old": "{'id': 'SEA_KICK', 'name': 'Sea Kick', 'intent': 'Attack', 'damage': {'normal': 11, 'ascension': 12}}, {'id': 'SPINNING_KICK', 'name': 'Spinning Kick', 'intent': 'Attack', 'damage': {'normal': 2, 'hit_count': 4}}, {'id': 'BUBBLE_BURP', 'name': 'Bubble Burp', 'intent': 'Buff + Defend', 'powers': [{'power_id': 'STRENGTH', 'target': 'self', 'amount': 1}], 'block': 7}",
+              "new": "{'id': 'SEA_KICK', 'name': 'Sea Kick', 'intent': 'Attack', 'damage': {'normal': 11, 'ascension': 13}}, {'id': 'SPINNING_KICK', 'name': 'Spinning Kick', 'intent': 'Attack', 'damage': {'normal': 2, 'hit_count': 4}}, {'id': 'BUBBLE_BURP', 'name': 'Bubble Burp', 'intent': 'Buff + Defend', 'powers': [{'power_id': 'STRENGTH', 'target': 'self', 'amount': 1}], 'block': 7}"
+            },
+            {
+              "field": "damage_values",
+              "old": "2 fields",
+              "new": "2 fields"
+            }
+          ]
+        },
+        {
+          "id": "SKULKING_COLONY",
+          "name": "Skulking Colony",
+          "changes": [
+            {
+              "field": "moves",
+              "old": "{'id': 'INERTIA', 'name': 'Inertia', 'intent': 'Defend + Buff', 'powers': [{'power_id': 'STRENGTH', 'target': 'self', 'amount': 3}], 'block': 10}, {'id': 'ZOOM', 'name': 'Zoom', 'intent': 'Attack', 'damage': {'normal': 16, 'ascension': 17}}, {'id': 'SUPER_CRAB', 'name': 'Super Crab', 'intent': 'Attack', 'damage': {'normal': 6, 'ascension': 7, 'hit_count': 2}}, {'id': 'SMASH', 'name': 'Smash', 'intent': 'Attack + Status', 'damage': {'normal': 9, 'ascension': 11}}",
+              "new": "{'id': 'INERTIA', 'name': 'Inertia', 'intent': 'Buff + Status', 'powers': [{'power_id': 'STRENGTH', 'target': 'self', 'amount': 3}]}, {'id': 'ZOOM', 'name': 'Zoom', 'intent': 'Attack + Defend', 'block': 10, 'damage': {'normal': 16, 'ascension': 17}}, {'id': 'PIERCING_STABS', 'name': 'Piercing Stabs', 'intent': 'Attack', 'damage': {'normal': 7, 'ascension': 8, 'hit_count': 2}}, {'id': 'SMASH', 'name': 'Smash', 'intent': 'Attack + Status', 'damage': {'normal': 9, 'ascension': 11}}"
+            },
+            {
+              "field": "min_hp",
+              "old": "79",
+              "new": "74"
+            },
+            {
+              "field": "damage_values",
+              "old": "3 fields",
+              "new": "3 fields"
+            },
+            {
+              "field": "min_hp_ascension",
+              "old": "84",
+              "new": "79"
+            },
+            {
+              "field": "attack_pattern",
+              "old": "4 fields",
+              "new": "4 fields"
+            }
+          ]
+        },
+        {
+          "id": "STABBOT",
+          "name": "Stabbot",
+          "changes": [
+            {
+              "field": "min_hp",
+              "old": "23",
+              "new": "18"
+            },
+            {
+              "field": "max_hp",
+              "old": "28",
+              "new": "23"
+            },
+            {
+              "field": "min_hp_ascension",
+              "old": "24",
+              "new": "19"
+            },
+            {
+              "field": "max_hp_ascension",
+              "old": "29",
+              "new": "24"
+            }
+          ]
+        },
+        {
+          "id": "TERROR_EEL",
+          "name": "Terror Eel",
+          "changes": [
+            {
+              "field": "moves",
+              "old": "{'id': 'CRASH', 'name': 'Crash', 'intent': 'Attack', 'damage': {'normal': 17, 'ascension': 19}}, {'id': 'ThrashMove', 'name': 'Thrashmove', 'intent': 'Attack + Buff', 'powers': [{'power_id': 'VIGOR', 'target': 'self', 'amount': 7}], 'damage': {'normal': 3, 'ascension': 4, 'hit_count': 3}}, {'id': 'STUN', 'name': 'Stun', 'intent': 'Stun'}, {'id': 'TERROR', 'name': 'Terror', 'intent': 'Debuff', 'powers': [{'power_id': 'VULNERABLE', 'target': 'player', 'amount': 99}]}",
+              "new": "{'id': 'CRASH', 'name': 'Crash', 'intent': 'Attack', 'damage': {'normal': 16, 'ascension': 18}}, {'id': 'ThrashMove', 'name': 'Thrashmove', 'intent': 'Attack + Buff', 'powers': [{'power_id': 'VIGOR', 'target': 'self', 'amount': 6}], 'damage': {'normal': 3, 'ascension': 4, 'hit_count': 3}}, {'id': 'STUN', 'name': 'Stun', 'intent': 'Stun'}, {'id': 'TERROR', 'name': 'Terror', 'intent': 'Debuff', 'powers': [{'power_id': 'VULNERABLE', 'target': 'player', 'amount': 99}]}"
+            },
+            {
+              "field": "damage_values",
+              "old": "2 fields",
+              "new": "2 fields"
+            }
+          ]
+        },
+        {
+          "id": "TEST_SUBJECT",
+          "name": "Test Subject #C14",
+          "changes": [
+            {
+              "field": "moves",
+              "old": "8 items",
+              "new": "7 items"
+            },
+            {
+              "field": "damage_values",
+              "old": "6 fields",
+              "new": "5 fields"
+            },
+            {
+              "field": "attack_pattern",
+              "old": "4 fields",
+              "new": "4 fields"
+            }
+          ]
+        },
+        {
+          "id": "THE_FORGOTTEN",
+          "name": "The Forgotten",
+          "changes": [
+            {
+              "field": "moves",
+              "old": "{'id': 'MIASMA', 'name': 'Miasma', 'intent': 'Debuff + Defend + Buff', 'powers': [{'power_id': 'DEXTERITY', 'target': 'self', 'amount': 2}], 'block': 8}, {'id': 'DREAD', 'name': 'Dread', 'intent': 'Attack', 'damage': {'normal': 15, 'ascension': 17}}",
+              "new": "{'id': 'MIASMA', 'name': 'Miasma', 'intent': 'Debuff + Defend + Buff', 'powers': [{'power_id': 'DEXTERITY', 'target': 'self', 'amount': 2}], 'block': 8}, {'id': 'DREAD', 'name': 'Dread', 'intent': 'Attack'}"
+            },
+            {
+              "field": "damage_values",
+              "old": "1 fields",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "ZAPBOT",
+          "name": "Zapbot",
+          "changes": [
+            {
+              "field": "min_hp",
+              "old": "23",
+              "new": "18"
+            },
+            {
+              "field": "max_hp",
+              "old": "28",
+              "new": "23"
+            },
+            {
+              "field": "min_hp_ascension",
+              "old": "24",
+              "new": "19"
+            },
+            {
+              "field": "max_hp_ascension",
+              "old": "29",
+              "new": "24"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "potions",
+      "name": "Potions",
+      "old_count": 63,
+      "new_count": 63,
+      "changed": [
+        {
+          "id": "FAIRY_IN_A_BOTTLE",
+          "name": "Fairy in a Bottle",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "When you would die, instead this potion is discarded and you heal to [blue]30...",
+              "new": "When your HP would be reduced to [blue]0[/blue], instead this potion is disca..."
+            },
+            {
+              "field": "description",
+              "old": "When you would die, instead this potion is discarded and you heal to [blue]30...",
+              "new": "When your HP would be reduced to [blue]0[/blue], instead this potion is disca..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "enchantments",
+      "name": "Enchantments",
+      "old_count": 22,
+      "new_count": 21,
+      "removed": [
+        {
+          "id": "FAVORED",
+          "name": "Favored"
+        }
+      ],
+      "changed": [
+        {
+          "id": "INSTINCT",
+          "name": "Instinct",
+          "changes": [
+            {
+              "field": "description",
+              "old": "Decrease the cost of this card by [blue]1[/blue].",
+              "new": "This card's attack damage is doubled."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "encounters",
+      "name": "Encounters",
+      "old_count": 87,
+      "new_count": 87,
+      "added": [
+        {
+          "id": "SEAPUNK_NORMAL",
+          "name": "Underdocks Wildlife",
+          "act": "Underdocks"
+        }
+      ],
+      "removed": [
+        {
+          "id": "TOADPOLES_NORMAL",
+          "name": "Underdocks Wildlife"
+        }
+      ],
+      "changed": [
+        {
+          "id": "DOORMAKER_BOSS",
+          "name": "The Doormaker",
+          "changes": [
+            {
+              "field": "monsters",
+              "old": "{'id': 'DOOR', 'name': 'Door'}, {'id': 'DOORMAKER', 'name': 'Doormaker'}",
+              "new": "{'id': 'DOORMAKER', 'name': 'Doormaker'}"
+            }
+          ]
+        },
+        {
+          "id": "TUNNELER_NORMAL",
+          "name": "Tunneling Twosome",
+          "changes": [
+            {
+              "field": "tags",
+              "old": "Burrower, Workers",
+              "new": "Burrower, Chomper"
+            },
+            {
+              "field": "monsters",
+              "old": "{'id': 'BOWLBUG_EGG', 'name': 'Bowlbug (Egg)'}, {'id': 'BOWLBUG_SILK', 'name': 'Bowlbug (Silk)'}, {'id': 'TUNNELER', 'name': 'Tunneler'}",
+              "new": "{'id': 'CHOMPER', 'name': 'Chomper'}, {'id': 'TUNNELER', 'name': 'Tunneler'}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events",
+      "name": "Events",
+      "old_count": 66,
+      "new_count": 66,
+      "changed": [
+        {
+          "id": "DENSE_VEGETATION",
+          "name": "Dense Vegetation",
+          "changes": [
+            {
+              "field": "pages",
+              "old": "{'id': 'INITIAL', 'description': 'Having taken the wrong path for a good while, you find yourself in a thick jungle of [green]ferns[/green], [green]shrubs[/green], and [green]vines[/green]. Especially [green]vines[/green]. Exhaustion sets in, and a dark thought comes to mind:\\n\\n[sine][purple]“You are lost, unprepared, and the inevitability of death is approaching.”[/purple][/sine]\\n\\nWhat do you do?', 'options': [{'id': 'TRUDGE_ON', 'title': 'Trudge On', 'description': 'Remove a card from your [gold]Deck[/gold]. Lose [red]11[/red] HP.'}, {'id': 'REST', 'title': 'Rest', 'description': 'Heal [green]30% Max[/green] HP. Fight some [red]enemies[/red].'}]}, {'id': 'REST', 'description': \"You're dead tired and take a nap...\\n\\n...only to be awoken by [gold][jitter]something wriggling around[/jitter][/gold] on top of you!\", 'options': [{'id': 'FIGHT', 'title': 'Fight!', 'description': ''}]}, {'id': 'TRUDGE_ON', 'description': 'You hack and slash your way through the jungle but it goes on and on...\\n\\nYou sustain yourself on [green]strange fruits[/green], [orange]crunchy bugs[/orange], and drink the nectar of [aqua]glowing plants[/aqua] but you start feeling [jitter][red]paranoid...[/red][/jitter]\\n\\nBut then you find a clearing, a trail, and some drawings of maps on the ground.\\nProblem solved.'}",
+              "new": "{'id': 'INITIAL', 'description': 'Having taken the wrong path for a good while, you find yourself in a thick jungle of [green]ferns[/green], [green]shrubs[/green], and [green]vines[/green]. Especially [green]vines[/green]. Exhaustion sets in, and a dark thought comes to mind:\\n\\n[sine][purple]“You are lost, unprepared, and the inevitability of death is approaching.”[/purple][/sine]\\n\\nWhat do you do?', 'options': [{'id': 'TRUDGE_ON', 'title': 'Trudge On', 'description': 'Gain [blue]61-99[/blue] [gold]Gold[/gold]. Lose [red]8[/red] HP.'}, {'id': 'REST', 'title': 'Rest', 'description': 'Heal [green]30% Max[/green] HP. Fight some [red]enemies[/red].'}]}, {'id': 'REST', 'description': \"You're dead tired and take a nap...\\n\\n...only to be awoken by [gold][jitter]something wriggling around[/jitter][/gold] on top of you!\", 'options': [{'id': 'FIGHT', 'title': 'Fight!', 'description': ''}]}, {'id': 'TRUDGE_ON', 'description': 'You hack and slash your way through the jungle but it goes on and on...\\n\\nYou sustain yourself on [green]strange fruits[/green], [orange]crunchy bugs[/orange], and drink the nectar of [aqua]glowing plants[/aqua] but you start feeling [jitter][red]paranoid...[/red][/jitter]\\n\\nBut then you find a clearing, a trail, and some [gold]Gold[/gold] coins scattered on the ground. Amongst the coins are some crudely-drawn maps!\\nProblem solved.'}"
+            },
+            {
+              "field": "options",
+              "old": "{'id': 'TRUDGE_ON', 'title': 'Trudge On', 'description': 'Remove a card from your [gold]Deck[/gold]. Lose [red]11[/red] HP.'}, {'id': 'REST', 'title': 'Rest', 'description': 'Heal [green]30% Max[/green] HP. Fight some [red]enemies[/red].'}",
+              "new": "{'id': 'TRUDGE_ON', 'title': 'Trudge On', 'description': 'Gain [blue]61-99[/blue] [gold]Gold[/gold]. Lose [red]8[/red] HP.'}, {'id': 'REST', 'title': 'Rest', 'description': 'Heal [green]30% Max[/green] HP. Fight some [red]enemies[/red].'}"
+            }
+          ]
+        },
+        {
+          "id": "ENDLESS_CONVEYOR",
+          "name": "Endless Conveyor",
+          "changes": [
+            {
+              "field": "pages",
+              "old": "{'id': 'ALL', 'description': None, 'options': [{'id': 'LOCKED', 'title': 'Broke', 'description': 'You could eat more but you are out of [gold]Gold[/gold].'}, {'id': 'CAVIAR', 'title': 'Grab Caviar off the Belt', 'description': 'Pay [red]35[/red] [gold]Gold[/gold]. Gain [green]4[/green] Max HP. Continue feasting!'}, {'id': 'CLAM_ROLL', 'title': 'Grab Clam Roll off the Belt', 'description': 'Pay [red]35[/red] [gold]Gold[/gold]. Heal [green]10[/green] HP. Continue feasting!'}, {'id': 'FRIED_EEL', 'title': 'Grab Fried Eel off the Belt', 'description': 'Pay [red]35[/red] [gold]Gold[/gold]. Add a random Colorless Card to your [gold]Deck[/gold]. Continue feasting!'}, {'id': 'GOLDEN_FYSH', 'title': 'Grab Golden Fysh off the Belt', 'description': '[green]LUCKY WINNER![/green] Gain [blue]75[/blue] [gold]Gold[/gold].'}, {'id': 'JELLY_LIVER', 'title': 'Grab Jelly Liver off the Belt', 'description': 'Pay [red]35[/red] [gold]Gold[/gold]. [gold]Transform[/gold] a card. Continue feasting!'}, {'id': 'SEAPUNK_SALAD', 'title': 'Grab Seapunk Salad off the Belt', 'description': 'Pay [red]35[/red] [gold]Gold[/gold]. Add [gold]Feeding Frenzy[/gold] to your [gold]Deck[/gold]. Continue feasting!'}, {'id': 'SPICY_SNAPPY', 'title': 'Grab Spicy Snappy off the Belt', 'description': 'Pay [red]35[/red] [gold]Gold[/gold]. [gold]Upgrade[/gold] a random card. Continue feasting!'}, {'id': 'SUSPICIOUS_CONDIMENT', 'title': 'Grab Suspicious Condiment off the Belt', 'description': 'Pay [red]35[/red] [gold]Gold[/gold]. Procure a random [gold]Potion[/gold]. Continue feasting!'}]}, {'id': 'GRAB_SOMETHING_OFF_THE_BELT', 'description': 'You grab the [gold]Last Dish Title[/gold] from the belt and scarf it down.\\n[green]Tasty![/green]', 'options': [{'id': 'LEAVE', 'title': 'Leave', 'description': ''}]}, {'id': 'INITIAL', 'description': \"You lumber into a shack with a bright but crooked sign that reads:\\n[aqua]“ENDLESS FEAST - PAY WHAT YOU HUNGER!”[/aqua]\\n\\nInside, a [orange]willowy multi-armed chef[/orange] is deftly preparing [green]bites of food[/green] and placing them onto a [sine]winding chitinous belt[/sine].\\n\\nOne of the chef's arms point to a sign:\\n[blue]35[/blue] [gold]Gold[/gold] each\", 'options': [{'id': 'OBSERVE_CHEF', 'title': 'Observe the Chef', 'description': '[gold]Upgrade[/gold] a random card in your [gold]Deck[/gold].'}]}, {'id': 'LEAVE', 'description': \"Now that you've had your fill, you continue on your way.\"}, {'id': 'OBSERVE_CHEF', 'description': \"Keeping your distance from a seat, you loiter in the shadows of the establishment's entrance.\\n\\n[orange]The chef[/orange], unfazed, continues working. Studying this behavior and discipline, you seek to minimize unnecessary movement and emotion during combat.\"}",
+              "new": "{'id': 'ALL', 'description': None, 'options': [{'id': 'LOCKED', 'title': 'Broke', 'description': 'You could eat more but you are out of [gold]Gold[/gold].'}, {'id': 'CAVIAR', 'title': 'Grab Caviar off the Belt', 'description': 'Pay [red]40[/red] [gold]Gold[/gold]. Gain [green]4[/green] Max HP. Continue feasting!'}, {'id': 'CLAM_ROLL', 'title': 'Grab Clam Roll off the Belt', 'description': 'Pay [red]40[/red] [gold]Gold[/gold]. Heal [green]10[/green] HP. Continue feasting!'}, {'id': 'FRIED_EEL', 'title': 'Grab Fried Eel off the Belt', 'description': 'Pay [red]40[/red] [gold]Gold[/gold]. Add a random Colorless Card to your [gold]Deck[/gold]. Continue feasting!'}, {'id': 'GOLDEN_FYSH', 'title': 'Grab Golden Fysh off the Belt', 'description': '[green]LUCKY WINNER![/green] Gain [blue]75[/blue] [gold]Gold[/gold].'}, {'id': 'JELLY_LIVER', 'title': 'Grab Jelly Liver off the Belt', 'description': 'Pay [red]40[/red] [gold]Gold[/gold]. [gold]Transform[/gold] a card. Continue feasting!'}, {'id': 'SEAPUNK_SALAD', 'title': 'Grab Seapunk Salad off the Belt', 'description': 'Pay [red]40[/red] [gold]Gold[/gold]. Add [gold]Feeding Frenzy[/gold] to your [gold]Deck[/gold]. Continue feasting!'}, {'id': 'SPICY_SNAPPY', 'title': 'Grab Spicy Snappy off the Belt', 'description': 'Pay [red]40[/red] [gold]Gold[/gold]. [gold]Upgrade[/gold] a random card. Continue feasting!'}, {'id': 'SUSPICIOUS_CONDIMENT', 'title': 'Grab Suspicious Condiment off the Belt', 'description': 'Pay [red]40[/red] [gold]Gold[/gold]. Procure a random [gold]Potion[/gold]. Continue feasting!'}]}, {'id': 'GRAB_SOMETHING_OFF_THE_BELT', 'description': 'You grab the [gold]Last Dish Title[/gold] from the belt and scarf it down.\\n[green]Tasty![/green]', 'options': [{'id': 'LEAVE', 'title': 'Leave', 'description': ''}]}, {'id': 'INITIAL', 'description': \"You lumber into a shack with a bright but crooked sign that reads:\\n[aqua]“ENDLESS FEAST - PAY WHAT YOU HUNGER!”[/aqua]\\n\\nInside, a [orange]willowy multi-armed chef[/orange] is deftly preparing [green]bites of food[/green] and placing them onto a [sine]winding chitinous belt[/sine].\\n\\nOne of the chef's arms point to a sign:\\n[blue]40[/blue] [gold]Gold[/gold] each\", 'options': [{'id': 'OBSERVE_CHEF', 'title': 'Observe the Chef', 'description': '[gold]Upgrade[/gold] a random card in your [gold]Deck[/gold].'}]}, {'id': 'LEAVE', 'description': \"Now that you've had your fill, you continue on your way.\"}, {'id': 'OBSERVE_CHEF', 'description': \"Keeping your distance from a seat, you loiter in the shadows of the establishment's entrance.\\n\\n[orange]The chef[/orange], unfazed, continues working. Studying this behavior and discipline, you seek to minimize unnecessary movement and emotion during combat.\"}"
+            },
+            {
+              "field": "preconditions",
+              "old": "Requires 105+ gold",
+              "new": "Requires 120+ gold"
+            },
+            {
+              "field": "description",
+              "old": "You lumber into a shack with a bright but crooked sign that reads:\n[aqua]“END...",
+              "new": "You lumber into a shack with a bright but crooked sign that reads:\n[aqua]“END..."
+            }
+          ]
+        },
+        {
+          "id": "HUNGRY_FOR_MUSHROOMS",
+          "name": "Hungry for Mushrooms",
+          "changes": [
+            {
+              "field": "pages",
+              "old": "{'id': 'BIG_MUSHROOM', 'description': 'You bite into the [orange]Big Mushroom[/orange]. Its flesh is firm, starchy, and satisfying. The more you eat, the hungrier you become, as if the mushroom is feeding on your hunger.\\n\\n[sine]So yummy... you enter a [red]food coma[/red].[/sine]\\nThis gluttony will cost you.'}, {'id': 'FRAGRANT_MUSHROOM', 'description': 'You sample the [green]Fragrant One[/green], a small woody mushroom with a delicate scent of shellfish...\\n\\nA burst of energy spurs you to run, jump, and [gold]rigorously train[/gold]!\\nThen, a sudden [red][jitter]stabbing pain[/jitter][/red] hits you as the living fungi struggles within you during its brief final moments.'}, {'id': 'INITIAL', 'description': \"[sine]How long has it been since you ate?\\n...wait, what's that fantastic smell?[/sine]\\n\\nFollowing the scent, you reach a cozy campground with all manner of [green]tasty mushrooms[/green] being cooked! You don't consider the safety of eating these mushrooms because you are so hungry.\\n(So hungry that you don't notice the dead adventurer)\", 'options': [{'id': 'BIG_MUSHROOM', 'title': 'Big Mushroom', 'description': 'Obtain [gold]Big Mushroom[/gold]. Upon pickup, raise your Max HP by [blue]20[/blue]. At the start of each combat, draw [blue]2[/blue] fewer cards.'}, {'id': 'FRAGRANT_MUSHROOM', 'title': 'Fragrant Mushroom', 'description': 'Obtain [gold]Fragrant Mushroom[/gold]. Upon pickup, lose [red]15[/red] HP and [gold]Upgrade[/gold] [blue]3[/blue] random cards.'}]}, {'id': 'MEDLEY', 'description': 'The [green]medley of mushrooms[/green] looks the most appetizing so you go for that.\\n\\n[red][jitter]“MY MUSHROOMS!!”[/jitter][/red]\\n\\nThe adventurer, presumably dead, attacks you! You knock them out, and with a seasoning of guilt, finish the rest of the fine meal.'}",
+              "new": "{'id': 'BIG_MUSHROOM', 'description': 'You bite into the [orange]Big Mushroom[/orange]. Its flesh is firm, starchy, and satisfying. The more you eat, the hungrier you become, as if the mushroom is feeding on your hunger.\\n\\n[sine]So yummy... you enter a [red]food coma[/red].[/sine]\\nThis gluttony will cost you.'}, {'id': 'FRAGRANT_MUSHROOM', 'description': 'You sample the [green]Fragrant One[/green], a small woody mushroom with a delicate scent of shellfish...\\n\\nA burst of energy spurs you to run, jump, and [gold]rigorously train[/gold]!\\nThen, a sudden [red][jitter]stabbing pain[/jitter][/red] hits you as the living fungi struggles within you during its brief final moments.'}, {'id': 'INITIAL', 'description': \"[sine]How long has it been since you ate?\\n...wait, what's that fantastic smell?[/sine]\\n\\nFollowing the scent, you reach a cozy campground with all manner of [green]tasty mushrooms[/green] being cooked! You don't consider the safety of eating these mushrooms because you are so hungry.\\n(So hungry that you don't notice the dead adventurer)\", 'options': [{'id': 'BIG_MUSHROOM', 'title': 'Big Mushroom', 'description': 'Obtain [gold]Big Mushroom[/gold]. Upon pickup, raise your Max HP by [blue]20[/blue]. At the start of each combat, draw [blue]2[/blue] fewer cards.'}, {'id': 'FRAGRANT_MUSHROOM', 'title': 'Fragrant Mushroom', 'description': 'Obtain [gold]Fragrant Mushroom[/gold]. Upon pickup, lose [blue]15[/blue] HP and [gold]Upgrade[/gold] [blue]3[/blue] random cards.'}]}, {'id': 'MEDLEY', 'description': 'The [green]medley of mushrooms[/green] looks the most appetizing so you go for that.\\n\\n[red][jitter]“MY MUSHROOMS!!”[/jitter][/red]\\n\\nThe adventurer, presumably dead, attacks you! You knock them out, and with a seasoning of guilt, finish the rest of the fine meal.'}"
+            },
+            {
+              "field": "options",
+              "old": "{'id': 'BIG_MUSHROOM', 'title': 'Big Mushroom', 'description': 'Obtain [gold]Big Mushroom[/gold]. Upon pickup, raise your Max HP by [blue]20[/blue]. At the start of each combat, draw [blue]2[/blue] fewer cards.'}, {'id': 'FRAGRANT_MUSHROOM', 'title': 'Fragrant Mushroom', 'description': 'Obtain [gold]Fragrant Mushroom[/gold]. Upon pickup, lose [red]15[/red] HP and [gold]Upgrade[/gold] [blue]3[/blue] random cards.'}",
+              "new": "{'id': 'BIG_MUSHROOM', 'title': 'Big Mushroom', 'description': 'Obtain [gold]Big Mushroom[/gold]. Upon pickup, raise your Max HP by [blue]20[/blue]. At the start of each combat, draw [blue]2[/blue] fewer cards.'}, {'id': 'FRAGRANT_MUSHROOM', 'title': 'Fragrant Mushroom', 'description': 'Obtain [gold]Fragrant Mushroom[/gold]. Upon pickup, lose [blue]15[/blue] HP and [gold]Upgrade[/gold] [blue]3[/blue] random cards.'}"
+            }
+          ]
+        },
+        {
+          "id": "MORPHIC_GROVE",
+          "name": "Morphic Grove",
+          "changes": [
+            {
+              "field": "pages",
+              "old": "{'id': 'GROUP', 'description': 'You greet the chittering [aqua]Morphics[/aqua] and they embrace you into their crystally arms.\\n\\nThey share their combined knowledge and inject you with [sine]Morphic Magic[/sine], changing your nature... Such lovely creatures, these [aqua]Morphics[/aqua].\\n\\n[red]One of them stole your[/red] [gold]gold[/gold][red].[/red]'}, {'id': 'INITIAL', 'description': 'You enter a grove of [green]crystalline trees[/green], and they begin to [jitter]quiver excitedly[/jitter]!\\nA chorus of [sine]hellos and welcomes[/sine] bombard you as a group of [aqua]Morphics[/aqua] [jitter]burst[/jitter] forth from trees.\\n\\nOne of the [aqua]Morphics[/aqua] is fidgeting in the corner, clearly not as sociable as the others.\\n\\nApproach the group or the loner?', 'options': [{'id': 'GROUP', 'title': 'Group', 'description': 'Lose [red]100[/red] [gold]Gold[/gold]. [gold]Transform[/gold] [blue]2[/blue] cards.'}, {'id': 'LONER', 'title': 'Loner', 'description': 'Gain [green]5[/green] Max HP.'}]}, {'id': 'LONER', 'description': 'You reach out a hand to the lone [aqua]Morphic[/aqua], sympathizing with its nature.\\nIt gifts you a tiny crystal fruit, and you consume it, as is custom.\\n\\nThe fruit clarifies your mind and purpose. You give thanks, then make your way onwards.'}",
+              "new": "{'id': 'GROUP', 'description': 'You greet the chittering [aqua]Morphics[/aqua] and they embrace you into their crystally arms.\\n\\nThey share their combined knowledge and inject you with [sine]Morphic Magic[/sine], changing your nature... Such lovely creatures, these [aqua]Morphics[/aqua].\\n\\n[red]One of them stole your[/red] [gold]gold[/gold][red].[/red]'}, {'id': 'INITIAL', 'description': 'You enter a grove of [green]crystalline trees[/green], and they begin to [jitter]quiver excitedly[/jitter]!\\nA chorus of [sine]hellos and welcomes[/sine] bombard you as a group of [aqua]Morphics[/aqua] [jitter]burst[/jitter] forth from trees.\\n\\nOne of the [aqua]Morphics[/aqua] is fidgeting in the corner, clearly not as sociable as the others.\\n\\nApproach the group or the loner?', 'options': [{'id': 'GROUP', 'title': 'Group', 'description': 'Lose [red]ALL[/red] of your [gold]Gold[/gold]. [gold]Transform[/gold] [blue]2[/blue] cards.'}, {'id': 'LONER', 'title': 'Loner', 'description': 'Gain [green]5[/green] Max HP.'}]}, {'id': 'LONER', 'description': 'You reach out a hand to the lone [aqua]Morphic[/aqua], sympathizing with its nature.\\nIt gifts you a tiny crystal fruit, and you consume it, as is custom.\\n\\nThe fruit clarifies your mind and purpose. You give thanks, then make your way onwards.'}"
+            },
+            {
+              "field": "options",
+              "old": "{'id': 'GROUP', 'title': 'Group', 'description': 'Lose [red]100[/red] [gold]Gold[/gold]. [gold]Transform[/gold] [blue]2[/blue] cards.'}, {'id': 'LONER', 'title': 'Loner', 'description': 'Gain [green]5[/green] Max HP.'}",
+              "new": "{'id': 'GROUP', 'title': 'Group', 'description': 'Lose [red]ALL[/red] of your [gold]Gold[/gold]. [gold]Transform[/gold] [blue]2[/blue] cards.'}, {'id': 'LONER', 'title': 'Loner', 'description': 'Gain [green]5[/green] Max HP.'}"
+            }
+          ]
+        },
+        {
+          "id": "NEOW",
+          "name": "Neow",
+          "changes": [
+            {
+              "field": "relics",
+              "old": "20 items",
+              "new": "22 items"
+            }
+          ]
+        },
+        {
+          "id": "ROUND_TEA_PARTY",
+          "name": "The Round Tea Party",
+          "changes": [
+            {
+              "field": "preconditions",
+              "old": "none",
+              "new": "Requires 12+ HP"
+            }
+          ]
+        },
+        {
+          "id": "SPIRIT_GRAFTER",
+          "name": "Spirit Grafter",
+          "changes": [
+            {
+              "field": "pages",
+              "old": "{'id': 'INITIAL', 'description': 'Above, a cocoon is [jitter]shaking and wriggling[/jitter], about to burst forth!\\n\\n...it stops wriggling. [orange][sine]The cocoon ignites[/sine][/orange]! [jitter]What is going on?[/jitter]\\nIn a flash of [gold]light[/gold] and [red]flame[/red], a [orange]Spirit Grafter[/orange] rushes into you, threatening to merge with your being to become complete.', 'options': [{'id': 'LET_IT_IN', 'title': 'Let It In', 'description': 'Heal [green]25[/green] HP. Add [gold]Metamorphosis[/gold] to your [gold]Deck[/gold].'}, {'id': 'REJECTION', 'title': 'Rejection', 'description': 'Lose [red]9[/red] HP. Remove a card from your [gold]Deck[/gold].'}]}, {'id': 'LET_IT_IN', 'description': 'The [orange]Spirit Grafter[/orange] merges with you. The vital kindred spirit swiftly [green]heals[/green] you up.\\n\\nYou are [blue]reborn[/blue].'}, {'id': 'REJECTION', 'description': 'The [orange]Spirit Grafter[/orange] is easily stopped by your will.\\n\\nHowever, it repeatedly flies into you, desperate for a host. Its strength runs out and it dissolves with a [purple][sine]poof[/sine][/purple].\\n\\n[sine]A fleeting spirit.[/sine]'}",
+              "new": "{'id': 'INITIAL', 'description': 'Above, a cocoon is [jitter]shaking and wriggling[/jitter], about to burst forth!\\n\\n...it stops wriggling. [orange][sine]The cocoon ignites[/sine][/orange]! [jitter]What is going on?[/jitter]\\nIn a flash of [gold]light[/gold] and [red]flame[/red], a [orange]Spirit Grafter[/orange] rushes into you, threatening to merge with your being to become complete.', 'options': [{'id': 'LET_IT_IN', 'title': 'Let It In', 'description': 'Heal [green]25[/green] HP. Add [gold]Metamorphosis[/gold] to your [gold]Deck[/gold].'}, {'id': 'REJECTION', 'title': 'Rejection', 'description': 'Lose [red]10[/red] HP. [gold]Upgrade[/gold] a card.'}]}, {'id': 'LET_IT_IN', 'description': 'The [orange]Spirit Grafter[/orange] merges with you. The vital kindred spirit swiftly [green]heals[/green] you up.\\n\\nYou are [blue]reborn[/blue].'}, {'id': 'REJECTION', 'description': 'The [orange]Spirit Grafter[/orange] is easily stopped by your will.\\n\\nHowever, it repeatedly flies into you, desperate for a host. Its strength runs out and it dissolves with a [purple][sine]poof[/sine][/purple].\\n\\n[sine]A fleeting spirit.[/sine]'}"
+            },
+            {
+              "field": "options",
+              "old": "{'id': 'LET_IT_IN', 'title': 'Let It In', 'description': 'Heal [green]25[/green] HP. Add [gold]Metamorphosis[/gold] to your [gold]Deck[/gold].'}, {'id': 'REJECTION', 'title': 'Rejection', 'description': 'Lose [red]9[/red] HP. Remove a card from your [gold]Deck[/gold].'}",
+              "new": "{'id': 'LET_IT_IN', 'title': 'Let It In', 'description': 'Heal [green]25[/green] HP. Add [gold]Metamorphosis[/gold] to your [gold]Deck[/gold].'}, {'id': 'REJECTION', 'title': 'Rejection', 'description': 'Lose [red]10[/red] HP. [gold]Upgrade[/gold] a card.'}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "powers",
+      "name": "Powers",
+      "old_count": 257,
+      "new_count": 258,
+      "added": [
+        {
+          "id": "HUNGER_OF_THE_VOID",
+          "name": "Hunger of the Void",
+          "type": "Buff"
+        },
+        {
+          "id": "NO_ENERGY_GAIN",
+          "name": "No Energy Gain",
+          "type": "Debuff"
+        }
+      ],
+      "removed": [
+        {
+          "id": "DOOR_REVIVAL",
+          "name": "Door Revival"
+        }
+      ],
+      "changed": [
+        {
+          "id": "BEACON_OF_HOPE",
+          "name": "Beacon of Hope",
+          "changes": [
+            {
+              "field": "stack_type",
+              "old": "Counter",
+              "new": "Single"
+            }
+          ]
+        },
+        {
+          "id": "CRAB_RAGE",
+          "name": "Crab Rage",
+          "changes": [
+            {
+              "field": "description",
+              "old": "When an ally dies, [gold]this creature[/gold] gains [blue]5[/blue] [gold]Stre...",
+              "new": "When an ally dies, [gold]this creature[/gold] gains [blue]6[/blue] [gold]Stre..."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

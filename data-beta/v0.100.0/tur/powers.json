@@ -1,0 +1,2582 @@
+[
+  {
+    "id": "ACCELERANT",
+    "name": "Katalizör",
+    "description": "[gold]Zehir[/gold] bir kez daha tetiklenir.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/accelerant_power.png"
+  },
+  {
+    "id": "ACCURACY",
+    "name": "İsabetlilik",
+    "description": "[gold]Kamalar[/gold] fazladan hasar verir.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/accuracy_power.png"
+  },
+  {
+    "id": "ADAPTABLE",
+    "name": "Uyum Sağlayan",
+    "description": "[gold]this creature[/gold] öleceği zaman, daha güçlü bir hâlde yeniden canlanır.",
+    "description_raw": "[gold]{OwnerName}[/gold] öleceği zaman, daha güçlü bir hâlde yeniden canlanır.",
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/adaptable_power.png"
+  },
+  {
+    "id": "AFTERIMAGE",
+    "name": "Ardıl Görüntü",
+    "description": "Her kart oynadığında [blue]1[/blue] [gold]Blok[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/afterimage_power.png"
+  },
+  {
+    "id": "AGGRESSION",
+    "name": "Saldırganlık",
+    "description": "Turunun başında [gold]Atık Deste[/gold]'nden rastgele bir Saldırı'yı [gold]El[/gold]'ine koy ve onu savaşın geri kalanı için [gold]Geliştir[/gold].",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/aggression_power.png"
+  },
+  {
+    "id": "ANTICIPATE",
+    "name": "Temporary Dexterity",
+    "description": "Bu turun sonuna kadar [gold]Çeviklik[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/anticipate_power.png"
+  },
+  {
+    "id": "ARSENAL",
+    "name": "Cephanelik",
+    "description": "Her Renksiz bir kart oynadığında [blue]1[/blue] [gold]Kuvvet[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/arsenal_power.png"
+  },
+  {
+    "id": "ARTIFACT",
+    "name": "Yapıt",
+    "description": "Güçsüzleştirmeleri [gold]önler[/gold].",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/artifact_power.png"
+  },
+  {
+    "id": "ASLEEP",
+    "name": "Uykuda",
+    "description": "CP kaybettikten sonra veya [blue]2[/blue] tur sonra uyanır.",
+    "description_raw": "CP kaybettikten sonra veya {Amount:plural:bir sonraki turda|[blue]{}[/blue] tur sonra} uyanır.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/asleep_power.png"
+  },
+  {
+    "id": "AUTOMATION",
+    "name": "Otomasyon",
+    "description": "Her [blue]10[/blue] kart çekişinde [energy:1] elde et.",
+    "description_raw": "Her [blue]{BaseCards}[/blue] kart çekişinde {Amount:energyIcons()} elde et.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/automation_power.png"
+  },
+  {
+    "id": "BACK_ATTACK_LEFT",
+    "name": "Arkadan Saldırı",
+    "description": "Sana arkadan saldırırken [blue]%50[/blue] daha fazla hasar verir.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/back_attack_left_power.png"
+  },
+  {
+    "id": "BACK_ATTACK_RIGHT",
+    "name": "Arkadan Saldırı",
+    "description": "Sana arkadan saldırırken [blue]%50[/blue] daha fazla hasar verir.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/back_attack_right_power.png"
+  },
+  {
+    "id": "BARRICADE",
+    "name": "Barikat",
+    "description": "[gold]Blok[/gold], bir sonraki turun başında üzerinden kaldırılmaz.",
+    "description_raw": "[gold]Blok[/gold], bir sonraki turun başında {ApplierName.StringValue:cond:[gold]{OwnerName} üzerinden[/gold]|üzerinden} kaldırılmaz.",
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/barricade_power.png"
+  },
+  {
+    "id": "BATTLEWORN_DUMMY_TIME_LIMIT",
+    "name": "Zaman Sınırı",
+    "description": "Savaşta Yıpranmış Manken'i yenmek için [blue]3[/blue] tura daha sahipsin.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/battleworn_dummy_time_limit_power.png"
+  },
+  {
+    "id": "BEACON_OF_HOPE",
+    "name": "Umut Işığı",
+    "description": "Kendi turun sırasında [gold]Blok[/gold] kazandığında, diğer oyuncular yarısı kadar [gold]Blok[/gold] kazanır.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/beacon_of_hope_power.png"
+  },
+  {
+    "id": "BIASED_COGNITION",
+    "name": "Taraflı Algı",
+    "description": "Turunun başında [blue]1[/blue] [gold]Odak[/gold] kaybet.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/biased_cognition_power.png"
+  },
+  {
+    "id": "BLACK_HOLE",
+    "name": "Kara Delik",
+    "description": "Her [star:1] elde ettiğinde veya harcadığında TÜM düşmanlara [blue]3[/blue] hasar ver.",
+    "description_raw": "Her {singleStarIcon} elde ettiğinde veya harcadığında TÜM düşmanlara [blue]3[/blue] hasar ver.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/black_hole_power.png"
+  },
+  {
+    "id": "BLADE_OF_INK",
+    "name": "Mürekkepli Bıçak",
+    "description": "Bu tur her Saldırı oynadığında bu tur için [blue]2[/blue] [gold]Kuvvet[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/blade_of_ink_power.png"
+  },
+  {
+    "id": "BLOCK_NEXT_TURN",
+    "name": "Sonraki Turda Blokla",
+    "description": "Bir sonraki turunun başında [blue]4[/blue] [gold]Blok[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/block_next_turn_power.png"
+  },
+  {
+    "id": "BLUR",
+    "name": "Bulanıklık",
+    "description": "Bir sonraki turun başında [gold]Blok[/gold] üzerinden kalkmaz.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/blur_power.png"
+  },
+  {
+    "id": "BUFFER",
+    "name": "Tampon",
+    "description": "Sonraki sefer CP'ne alacağın hasarı engelle.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/buffer_power.png"
+  },
+  {
+    "id": "BURROWED",
+    "name": "Gömülü",
+    "description": "Tur başladığında [gold]this creature[/gold] üzerindeki [gold]Blok[/gold] kalkmaz. Eğer üzerindeki tüm [gold]Blok[/gold] kaldırılırsa [gold]Sersemler[/gold].",
+    "description_raw": "Tur başladığında [gold]{OwnerName}[/gold] üzerindeki [gold]Blok[/gold] kalkmaz. Eğer üzerindeki tüm [gold]Blok[/gold] kaldırılırsa [gold]Sersemler[/gold].",
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/burrowed_power.png"
+  },
+  {
+    "id": "BURST",
+    "name": "Ani Hamle",
+    "description": "Bu tur oynayacağın bir sonraki Beceri kartı tekrar oynanır.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/burst_power.png"
+  },
+  {
+    "id": "CALAMITY",
+    "name": "Felaket",
+    "description": "Her Saldırı kartı oynadığında [gold]El[/gold]'ine rastgele bir Saldırı kartı ekle.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/calamity_power.png"
+  },
+  {
+    "id": "CALCIFY",
+    "name": "Sertleşme",
+    "description": "[gold]Osti[/gold]'nin saldırıları fazladan hasar verir.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/calcify_power.png"
+  },
+  {
+    "id": "CALL_OF_THE_VOID",
+    "name": "Boşluğun Çağrısı",
+    "description": "Turunun başında rastgele [blue]1[/blue] kartı [gold]El[/gold]'ine ekle ve ona [gold]Ruhani[/gold] uygula.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/call_of_the_void_power.png"
+  },
+  {
+    "id": "CHAINS_OF_BINDING",
+    "name": "Mühürleyen Zincirler",
+    "description": "Her tur çekilen ilk [blue]3[/blue] kart, [gold]Bağlı[/gold] tarafından etkilenmiştir.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/chains_of_binding_power.png"
+  },
+  {
+    "id": "CHILD_OF_THE_STARS",
+    "name": "Yıldızların Evladı",
+    "description": "Harcanan her [star:1] için [blue]1[/blue] [gold]Blok[/gold] elde et.",
+    "description_raw": "Harcanan her {singleStarIcon} için [blue]1[/blue] [gold]Blok[/gold] elde et.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/child_of_the_stars_power.png"
+  },
+  {
+    "id": "CLARITY",
+    "name": "Zihin Açıklığı",
+    "description": "Sonraki turunun başında fazladan [blue]1[/blue] kart çek.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/clarity_power.png"
+  },
+  {
+    "id": "COLOSSUS",
+    "name": "Devasa",
+    "description": "[blue]2[/blue] tur boyunca üzerinde [gold]Savunmasız[/gold] olan düşmanlardan [blue]%50[/blue] daha az hasar alırsın.",
+    "description_raw": "{Amount:plural:Bu tur,|[blue]{}[/blue] tur boyunca} üzerinde [gold]Savunmasız[/gold] olan düşmanlardan [blue]%{DamageDecrease:percentLess()}[/blue] daha az hasar alırsın.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/colossus_power.png"
+  },
+  {
+    "id": "CONFUSED",
+    "name": "Şaşkın",
+    "description": "Çektiğin kartların maliyeti [blue]0[/blue] ile [blue]3[/blue] arasında rastgele değişir.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/confused_power.png"
+  },
+  {
+    "id": "CONQUEROR",
+    "name": "Fatih",
+    "description": "[gold]this creature[/gold], sonraki [blue]2[/blue] turda [gold]Egemen Kılıcı[/gold]'ndan iki kat daha fazla hasar alır.",
+    "description_raw": "[gold]{OwnerName}[/gold], {Amount:plural:bu turda|sonraki [blue]{}[/blue] turda} [gold]Egemen Kılıcı[/gold]'ndan iki kat daha fazla hasar alır.",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/conqueror_power.png"
+  },
+  {
+    "id": "CONSTRICT",
+    "name": "Sıkıştırma",
+    "description": "Dikenli Boğucu hayatta olduğu sürece, turunun sonunda [blue]1[/blue] hasar alırsın.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/constrict_power.png"
+  },
+  {
+    "id": "CONSUMING_SHADOW",
+    "name": "Yutan Gölge",
+    "description": "Turunun sonunda en soldaki Küre'ni [gold]Tetikle[/gold].",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/consuming_shadow_power.png"
+  },
+  {
+    "id": "COOLANT",
+    "name": "Soğutucu",
+    "description": "Turunun başında sahip olduğun her eşsiz Küre için [blue]3[/blue] [gold]Blok[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/coolant_power.png"
+  },
+  {
+    "id": "COORDINATE",
+    "name": "Temporary Strength",
+    "description": "Bu turun sonuna kadar [gold]Kuvvet[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/coordinate_power.png"
+  },
+  {
+    "id": "CORROSIVE_WAVE",
+    "name": "Aşındırıcı Dalga",
+    "description": "Bu tur her kart çektiğinde TÜM düşmanlara [blue]2[/blue] [gold]Zehir[/gold] uygula.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/corrosive_wave_power.png"
+  },
+  {
+    "id": "CORRUPTION",
+    "name": "Çürüyüş",
+    "description": "Becerilerin maliyeti [blue]0[/blue] olur.\nHer Beceri oynadığında o kart [gold]Tüketilir[/gold].",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/corruption_power.png"
+  },
+  {
+    "id": "COUNTDOWN",
+    "name": "Geri Sayım",
+    "description": "Turunun başında rastgele bir düşmana [blue]6[/blue] [gold]Kader[/gold] uygula.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/countdown_power.png"
+  },
+  {
+    "id": "COVERED",
+    "name": "Korunuyor",
+    "description": "Bir müttefik seni koruyor. Sana yöneltilecek tüm saldırılar onun üzerine yönlendirilir.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/covered_power.png"
+  },
+  {
+    "id": "CRAB_RAGE",
+    "name": "Yengeç Öfkesi",
+    "description": "Bir müttefik öldüğünde [gold]this creature[/gold] [blue]6[/blue] [gold]Kuvvet[/gold] ve [blue]99[/blue] [gold]Blok[/gold] elde eder.",
+    "description_raw": "Bir müttefik öldüğünde [gold]{OwnerName}[/gold] [blue]{StrengthPower}[/blue] [gold]Kuvvet[/gold] ve [blue]{Block}[/blue] [gold]Blok[/gold] elde eder.",
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/crab_rage_power.png"
+  },
+  {
+    "id": "CREATIVE_AI",
+    "name": "Yaratıcı AI",
+    "description": "Turunun başında [gold]El[/gold]'ine rastgele bir Güç kartı ekle.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/creative_ai_power.png"
+  },
+  {
+    "id": "CRIMSON_MANTLE",
+    "name": "Kızıl Pelerin",
+    "description": "Turunun başında [blue]0[/blue] CP kaybet ve [blue][Amount][/blue] [gold]Blok[/gold] elde et.",
+    "description_raw": "Turunun başında [blue]{SelfDamage}[/blue] CP kaybet ve [blue]{Amount}[/blue] [gold]Blok[/gold] elde et.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/crimson_mantle_power.png"
+  },
+  {
+    "id": "CRUELTY",
+    "name": "Eziyet",
+    "description": "Savunmasız düşmanlar fazladan hasar alır.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/cruelty_power.png"
+  },
+  {
+    "id": "CRUSH_UNDER",
+    "name": "Temporary Strength Down",
+    "description": "Bu turun sonuna kadar [gold]Kuvvet[/gold] kaybet.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/crush_under_power.png"
+  },
+  {
+    "id": "CURIOUS",
+    "name": "Meraklı",
+    "description": "Güç kartlarının maliyeti [blue]1[/blue] [energy:1] azalır.",
+    "description_raw": "Güç kartlarının maliyeti [blue]1[/blue] {energyPrefix:energyIcons(1)} azalır.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/curious_power.png"
+  },
+  {
+    "id": "CURL_UP",
+    "name": "İçe Kapan",
+    "description": "Hasar aldığında içe kapanıp blok elde eder. (Her savaşta bir kereliğine)",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/curl_up_power.png"
+  },
+  {
+    "id": "DAMPEN",
+    "name": "Güçsüz Kıl",
+    "description": "Büyücü Şövalye hayattayken TÜM kartlarının [gold]Geliştirmesi Azalır[/gold].",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "None",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/dampen_power.png"
+  },
+  {
+    "id": "DANSE_MACABRE",
+    "name": "Ölüm Dansı",
+    "description": "Maliyeti [energy:2] veya daha fazla olan bir kartı her oynadığında [blue][Amount][/blue] [gold]Blok[/gold] elde et.",
+    "description_raw": "Maliyeti {Energy:energyIcons()} veya daha fazla olan bir kartı her oynadığında [blue]{Amount}[/blue] [gold]Blok[/gold] elde et.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/danse_macabre_power.png"
+  },
+  {
+    "id": "DARK_EMBRACE",
+    "name": "Karanlık Kucaklama",
+    "description": "Ne zaman bir kart [gold]Tüketilirse[/gold] [blue]1[/blue] kart çek.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/dark_embrace_power.png"
+  },
+  {
+    "id": "DARK_SHACKLES",
+    "name": "Temporary Strength Down",
+    "description": "Bu turun sonuna kadar [gold]Kuvvet[/gold] kaybet.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/dark_shackles_power.png"
+  },
+  {
+    "id": "DEBILITATE",
+    "name": "Bitkinleştir",
+    "description": "[gold]Savunmasız[/gold] ve [gold]Zayıf[/gold], sonraki [blue]2[/blue] tur boyunca iki kat daha etkili olur.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/debilitate_power.png"
+  },
+  {
+    "id": "DEMESNE",
+    "name": "Mülk",
+    "description": "Turunun başında [blue]1[/blue] [gold]Enerji[/gold] elde et ve fazladan [blue]1[/blue] kart çek.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/demesne_power.png"
+  },
+  {
+    "id": "DEMISE",
+    "name": "Ölüm Fermanı",
+    "description": "[gold]this creature[/gold], turunun sonunda [blue][Amount][/blue] CP kaybeder.",
+    "description_raw": "[gold]{OwnerName}[/gold], turunun sonunda [blue]{Amount}[/blue] CP kaybeder.",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/demise_power.png"
+  },
+  {
+    "id": "DEMON_FORM",
+    "name": "Şeytan Formu",
+    "description": "Turunun başında [blue]2[/blue] [gold]Kuvvet[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/demon_form_power.png"
+  },
+  {
+    "id": "DEVOUR_LIFE",
+    "name": "Ömür Tüket",
+    "description": "Her [gold]Ruh[/gold] oynadığında [blue]1[/blue] [gold]Çağır[/gold].",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/devour_life_power.png"
+  },
+  {
+    "id": "DEXTERITY",
+    "name": "Çeviklik",
+    "description": "Çeviklik, kartlardan elde edilen [gold]Blok[/gold]'u artırır.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": true,
+    "image_url": "/static/images/powers/dexterity_power.png"
+  },
+  {
+    "id": "DIAMOND_DIADEM",
+    "name": "Elmas Taç",
+    "description": "Düşmanlar bu turda [blue]%50[/blue] daha az hasar verir.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/diamond_diadem_power.png"
+  },
+  {
+    "id": "DIE_FOR_YOU",
+    "name": "Senin İçin Ölürüm",
+    "description": "[gold]Osti[/gold], engellenmeyen tüm saldırı hasarını üzerine alır.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/die_for_you_power.png"
+  },
+  {
+    "id": "DISINTEGRATION",
+    "name": "Ayrışma",
+    "description": "Turunun sonunda [blue]5[/blue] hasar al.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/disintegration_power.png"
+  },
+  {
+    "id": "DOOM",
+    "name": "Kader",
+    "description": "Düşmanın turunun sonunda eğer [gold]this creature[/gold], [blue][Amount][/blue] veya daha az CP'ye sahipse ölür.",
+    "description_raw": "{OnPlayer:Oyuncunun|Düşmanın} turunun sonunda eğer [gold]{OwnerName}[/gold], [blue]{Amount}[/blue] veya daha az CP'ye sahipse ölür.",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/doom_power.png"
+  },
+  {
+    "id": "DOUBLE_DAMAGE",
+    "name": "İki Kat Hasar",
+    "description": "Saldırılar, bu turda iki kat daha fazla hasar verir.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/double_damage_power.png"
+  },
+  {
+    "id": "DRAW_CARDS_NEXT_TURN",
+    "name": "Sonraki Tur Kart Çek",
+    "description": "Bir sonraki turunun başında fazladan [blue]1[/blue] kart çek.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/draw_cards_next_turn_power.png"
+  },
+  {
+    "id": "DRUM_OF_BATTLE",
+    "name": "Savaş Davulu",
+    "description": "Turunun başında, [gold]Çekme Deste[/gold]'nin en üstündeki [blue]2[/blue] kartı [gold]Tüket[/gold].",
+    "description_raw": "Turunun başında, [gold]Çekme Deste[/gold]'nin en üstündeki {Amount:plural:kartı|[blue]{}[/blue] kartı} [gold]Tüket[/gold].",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/drum_of_battle_power.png"
+  },
+  {
+    "id": "DUPLICATION",
+    "name": "Kopyalama",
+    "description": "Bir sonraki kartın bir kez daha oynanır.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/duplication_power.png"
+  },
+  {
+    "id": "DYING_STAR",
+    "name": "Temporary Strength Down",
+    "description": "Bu turun sonuna kadar [gold]Kuvvet[/gold] kaybet.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/dying_star_power.png"
+  },
+  {
+    "id": "ECHO_FORM",
+    "name": "Yankı Formu",
+    "description": "Her tur oynadığın ilk kart bir kez daha oynanır.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/echo_form_power.png"
+  },
+  {
+    "id": "ENERGY_NEXT_TURN",
+    "name": "Sonraki Turda Enerji",
+    "description": "Bir sonraki turda fazladan [gold]Enerji[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/energy_next_turn_power.png"
+  },
+  {
+    "id": "ENFEEBLING_TOUCH",
+    "name": "Temporary Strength Down",
+    "description": "Bu turun sonuna kadar [gold]Kuvvet[/gold] kaybet.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/enfeebling_touch_power.png"
+  },
+  {
+    "id": "ENRAGE",
+    "name": "Öfkelendir",
+    "description": "Her Beceri kartı oynadığında [blue]2[/blue] [gold]Kuvvet[/gold] elde eder.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/enrage_power.png"
+  },
+  {
+    "id": "ENTROPY",
+    "name": "Entropi",
+    "description": "Turunun başında [gold]El[/gold]'indeki [blue]1[/blue] kartı [gold]Dönüştür[/gold].",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/entropy_power.png"
+  },
+  {
+    "id": "ENVENOM",
+    "name": "Zehirle",
+    "description": "Engellenmeyen bir hasar verdiğinde [blue]1[/blue] [gold]Zehir[/gold] uygula.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/envenom_power.png"
+  },
+  {
+    "id": "ESCAPE_ARTIST",
+    "name": "Kaçış Ustası",
+    "description": "4 tur sonra savaşı terk eder.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/escape_artist_power.png"
+  },
+  {
+    "id": "FAN_OF_KNIVES",
+    "name": "Bıçak Yelpazesi",
+    "description": "[gold]Kamalar[/gold] TÜM düşmanlara vurur.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/fan_of_knives_power.png"
+  },
+  {
+    "id": "FASTEN",
+    "name": "Bağla",
+    "description": "Savunma kartlarından fazladan [blue]4[/blue] [gold]Blok[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/fasten_power.png"
+  },
+  {
+    "id": "FEEDING_FRENZY",
+    "name": "Temporary Strength",
+    "description": "Bu turun sonuna kadar [gold]Kuvvet[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/feeding_frenzy_power.png"
+  },
+  {
+    "id": "FEEL_NO_PAIN",
+    "name": "Acıya Kayıtsız",
+    "description": "Bir kart Tüketildiğinde [blue]3[/blue] [gold]Blok[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/feel_no_pain_power.png"
+  },
+  {
+    "id": "FERAL",
+    "name": "Vahşi",
+    "description": "Her tur oynadığın ilk 0[energy:1] Saldırı kartını [gold]El[/gold]'ine geri koy.",
+    "description_raw": "Her tur oynadığın ilk 0{energyPrefix:energyIcons(1)} Saldırı kartını [gold]El[/gold]'ine geri koy.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/feral_power.png"
+  },
+  {
+    "id": "FLAME_BARRIER",
+    "name": "Alev Bariyeri",
+    "description": "Bu tur her saldırıldığında geriye [blue]4[/blue] hasar ver.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/flame_barrier_power.png"
+  },
+  {
+    "id": "FLANKING",
+    "name": "Kuşatma",
+    "description": "Bu tur, diğer müttefikler bu düşmana [blue]2x[/blue] daha fazla hasar verir.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/flanking_power.png"
+  },
+  {
+    "id": "FLEX_POTION",
+    "name": "Temporary Strength",
+    "description": "Bu turun sonuna kadar [gold]Kuvvet[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/flex_potion_power.png"
+  },
+  {
+    "id": "FLUTTER",
+    "name": "Çırpın",
+    "description": "Saldırılardan [gold]%50[/gold] daha az hasar alır. [gold]Sersemletmek[/gold] için [blue][Amount][/blue] kez saldırı hasarı ver.",
+    "description_raw": "Saldırılardan [gold]%{DamageDecrease}[/gold] daha az hasar alır. [gold]Sersemletmek[/gold] için [blue]{Amount}[/blue] {Amount:plural:kez|kez} saldırı hasarı ver.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/flutter_power.png"
+  },
+  {
+    "id": "FOCUS",
+    "name": "Odak",
+    "description": "Kürelerin etkisini artırır.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": true,
+    "image_url": "/static/images/powers/focus_power.png"
+  },
+  {
+    "id": "FOCUSED_STRIKE",
+    "name": "Temporary Focus",
+    "description": "Bu turun sonuna kadar [gold]Odak[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/focused_strike_power.png"
+  },
+  {
+    "id": "FORBIDDEN_GRIMOIRE",
+    "name": "Yasaklı Kara Büyü Kitabı",
+    "description": "Savaşın sonunda [gold]Deste[/gold]'nden bir kart kaldır.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/forbidden_grimoire_power.png"
+  },
+  {
+    "id": "FOREGONE_CONCLUSION",
+    "name": "Kaçınılmaz Sonuç",
+    "description": "Bir sonraki turda [gold]Çekme Deste[/gold]'nden [blue]3[/blue] kartı [gold]El[/gold]'ine koy.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/foregone_conclusion_power.png"
+  },
+  {
+    "id": "FRAIL",
+    "name": "Kırılgan",
+    "description": "Kırılgan etkisi altındayken kartlardan [blue]%25[/blue] daha az [gold]Blok[/gold] elde edersin.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/frail_power.png"
+  },
+  {
+    "id": "FREE_ATTACK",
+    "name": "Ücretsiz Saldırı",
+    "description": "Bir sonraki Saldırı'nın maliyeti [blue]0[/blue] [energy:1] olur.",
+    "description_raw": "Bir sonraki Saldırı'nın maliyeti [blue]0[/blue] {energyPrefix:energyIcons(1)} olur.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/free_attack_power.png"
+  },
+  {
+    "id": "FREE_POWER",
+    "name": "Ücretsiz Güç",
+    "description": "Sonraki oynayacağın Güç kartının maliyeti [blue]0[/blue] [energy:1] olur.",
+    "description_raw": "Sonraki oynayacağın Güç kartının maliyeti [blue]0[/blue] {energyPrefix:energyIcons(1)} olur.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/free_power_power.png"
+  },
+  {
+    "id": "FREE_SKILL",
+    "name": "Ücretsiz Beceri",
+    "description": "Sonraki oynayacağın Beceri kartının maliyeti [blue]0[/blue] [energy:1] olur.",
+    "description_raw": "Sonraki oynayacağın Beceri kartının maliyeti [blue]0[/blue] {energyPrefix:energyIcons(1)} olur.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/free_skill_power.png"
+  },
+  {
+    "id": "FRIENDSHIP",
+    "name": "Arkadaşlık",
+    "description": "Her turun başında [blue]1[/blue] [gold]Enerji[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/friendship_power.png"
+  },
+  {
+    "id": "FURNACE",
+    "name": "Demirci Ocağı",
+    "description": "Turunun başında [blue]5[/blue] [gold]Döv[/gold].",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/furnace_power.png"
+  },
+  {
+    "id": "GALVANIC",
+    "name": "Uyarıcı",
+    "description": "Güç kartları [gold]Uyarıcı[/gold] tarafından etkilenmiştir.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/galvanic_power.png"
+  },
+  {
+    "id": "GENESIS",
+    "name": "Yaratılış",
+    "description": "Turunun başında [star:1] elde et.",
+    "description_raw": "Turunun başında {singleStarIcon} elde et.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/genesis_power.png"
+  },
+  {
+    "id": "GIGANTIFICATION",
+    "name": "Devleştirme",
+    "description": "Bir sonraki oynayacağın Saldırı kartı üç kat fazla hasar verir.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/gigantification_power.png"
+  },
+  {
+    "id": "GRAPPLE",
+    "name": "Kavra",
+    "description": "Bu tur her [gold]Blok[/gold] elde ettiğinde [gold]this creature[/gold] [blue][Amount][/blue] hasar alır.",
+    "description_raw": "Bu tur her [gold]Blok[/gold] elde ettiğinde [gold]{OwnerName}[/gold] [blue]{Amount}[/blue] hasar alır.",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/grapple_power.png"
+  },
+  {
+    "id": "GRAVITY",
+    "name": "Yerçekimi",
+    "description": "Bu tur her kart oynadığında TÜM düşmanlara [blue]2[/blue] hasar ver.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/gravity_power.png"
+  },
+  {
+    "id": "GUARDED",
+    "name": "Korunuyor",
+    "description": "Düşmanlardan alınan hasar yarıya iner.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/guarded_power.png"
+  },
+  {
+    "id": "HAILSTORM",
+    "name": "Dolu Fırtınası",
+    "description": "Turunun sonunda [gold]Buz[/gold]'a sahipsen, TÜM düşmanlara [blue]6[/blue] hasar verirsin.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/hailstorm_power.png"
+  },
+  {
+    "id": "HAMMER_TIME",
+    "name": "Çekiç Vakti",
+    "description": "Her [gold]Dövdüğünde[/gold] diğer müttefikler de [gold]Döver[/gold].",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/hammer_time_power.png"
+  },
+  {
+    "id": "HANG",
+    "name": "As",
+    "description": "Tüm [gold]As[/gold] kartları bu düşmana [blue]2[/blue] kat daha fazla hasar verir.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/hang_power.png"
+  },
+  {
+    "id": "HARD_TO_KILL",
+    "name": "Öldürmesi Zor",
+    "description": "[gold]this creature[/gold] tarafından alınan tüm hasar ve CP kaybını [blue]9[/blue]’a düşür.",
+    "description_raw": "[gold]{OwnerName}[/gold] tarafından alınan tüm hasar ve CP kaybını [blue]9[/blue]’a düşür.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/hard_to_kill_power.png"
+  },
+  {
+    "id": "HARDENED_SHELL",
+    "name": "Sert Kabuk",
+    "description": "[gold]this creature[/gold], her turda en fazla [blue][Amount][/blue] CP kaybedebilir.",
+    "description_raw": "[gold]{OwnerName}[/gold], her turda en fazla [blue]{Amount}[/blue] CP kaybedebilir.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/hardened_shell_power.png"
+  },
+  {
+    "id": "HATCH",
+    "name": "Yumurtadan Çık",
+    "description": "X tur sonra yumurtadan çıkar.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/hatch_power.png"
+  },
+  {
+    "id": "HAUNT",
+    "name": "Musallat Ol",
+    "description": "Her [gold]Ruh[/gold] oynadığında, rastgele bir düşman [blue]3[/blue] CP kaybeder.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/haunt_power.png"
+  },
+  {
+    "id": "HEIST",
+    "name": "Soygun",
+    "description": "Öldürüldüğünde, çalınan tüm [gold]Altın[/gold]'ı geri verir.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/heist_power.png"
+  },
+  {
+    "id": "HELICAL_DART",
+    "name": "Temporary Dexterity",
+    "description": "Bu turun sonuna kadar [gold]Çeviklik[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/helical_dart_power.png"
+  },
+  {
+    "id": "HELLO_WORLD",
+    "name": "Merhaba Dünya",
+    "description": "Turunun başında, [gold]El[/gold]'ine rastgele [blue]1[/blue] Yaygın kart ekle.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/hello_world_power.png"
+  },
+  {
+    "id": "HELLRAISER",
+    "name": "Cehennem Azabı",
+    "description": "İsminde \"Saldırı\" bulunan bir kart çektiğinde rastgele bir düşmana karşı oynanır.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/hellraiser_power.png"
+  },
+  {
+    "id": "HEX",
+    "name": "Büyü",
+    "description": "Hayalet Şövalye hayattayken TÜM kartlarına [gold]Ruhani[/gold] uygulanır.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/hex_power.png"
+  },
+  {
+    "id": "HIGH_VOLTAGE",
+    "name": "Yüksek Voltaj",
+    "description": "[gold]this creature[/gold], turunun başında [blue][Amount][/blue] [gold]Kuvvet[/gold] elde eder.",
+    "description_raw": "[gold]{OwnerName}[/gold], turunun başında [blue]{Amount}[/blue] [gold]Kuvvet[/gold] elde eder.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/high_voltage_power.png"
+  },
+  {
+    "id": "HOTFIX",
+    "name": "Temporary Focus",
+    "description": "Bu turun sonuna kadar [gold]Odak[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/hotfix_power.png"
+  },
+  {
+    "id": "HUNGER_OF_THE_VOID",
+    "name": "HungerOfTheVoidPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/hunger_of_the_void_power.png"
+  },
+  {
+    "id": "ILLUSION",
+    "name": "İlüzyon",
+    "description": "Öldüğünde bir sonraki tur maksimum CP ile yeniden dirilir.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/illusion_power.png"
+  },
+  {
+    "id": "IMBALANCED",
+    "name": "Dengesiz",
+    "description": "Eğer [gold]this creature[/gold] tarafından yapılan saldırılar  tamamen engellenirse, yaratık [gold]Sersemler[/gold].",
+    "description_raw": "Eğer [gold]{OwnerName}[/gold] tarafından yapılan saldırılar {IsMultiplayer: herhangi bir oyuncu tarafından|} tamamen engellenirse, yaratık [gold]Sersemler[/gold].",
+    "type": "Debuff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/imbalanced_power.png"
+  },
+  {
+    "id": "IMPROVEMENT",
+    "name": "Gelişim",
+    "description": "Savaşın sonunda rastgele bir kartı [gold]Geliştir[/gold].",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/improvement_power.png"
+  },
+  {
+    "id": "INFERNO",
+    "name": "Cehennem",
+    "description": "Turunun başında [blue]0[/blue] CP kaybet. Turun esnasında her CP kaybettiğinde TÜM düşmanlara [blue][Amount][/blue] hasar ver.",
+    "description_raw": "Turunun başında [blue]{SelfDamage}[/blue] CP kaybet. Turun esnasında her CP kaybettiğinde TÜM düşmanlara [blue]{Amount}[/blue] hasar ver.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/inferno_power.png"
+  },
+  {
+    "id": "INFESTED",
+    "name": "İstila Edilmiş",
+    "description": "Öldüğünde bir şey... çağırır.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/infested_power.png"
+  },
+  {
+    "id": "INFINITE_BLADES",
+    "name": "Sonsuz Bıçak",
+    "description": "Turunun başında [gold]El[/gold]'ine bir [gold]Kama[/gold] ekle.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/infinite_blades_power.png"
+  },
+  {
+    "id": "INTANGIBLE",
+    "name": "Soyutluk",
+    "description": "Bu turda alınan tüm hasar ve CP kaybını [blue]1[/blue]’e düşür.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/intangible_power.png"
+  },
+  {
+    "id": "INTERCEPT",
+    "name": "Araya Gir",
+    "description": "Başka bir oyuncuyu koruyorsun. Ona yöneltilecek tüm saldırılar senin üzerine yönlendirilir.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/intercept_power.png"
+  },
+  {
+    "id": "ITERATION",
+    "name": "Yineleme",
+    "description": "Her tur ilk kez [gold]Durum[/gold] kartı çektiğinde, fazladan kart çekersin.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/iteration_power.png"
+  },
+  {
+    "id": "JUGGERNAUT",
+    "name": "İzbandut",
+    "description": "Her [gold]Blok[/gold] elde ettiğinde rastgele bir düşmana [blue]5[/blue] hasar ver.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/juggernaut_power.png"
+  },
+  {
+    "id": "JUGGLING",
+    "name": "Hokkabazlık",
+    "description": "Her turda oynadığın üçüncü Saldırı'nın bir kopyasını [gold]El[/gold]'ine ekle.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/juggling_power.png"
+  },
+  {
+    "id": "KNOCKDOWN",
+    "name": "Yere Düşür",
+    "description": "Bu yaratık, bur turda diğer oyunculardan [blue][Amount][/blue] kat daha fazla hasar alır.",
+    "description_raw": "Bu yaratık, bur turda diğer oyunculardan [blue]{Amount}[/blue] kat daha fazla hasar alır.",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/knockdown_power.png"
+  },
+  {
+    "id": "LEADERSHIP",
+    "name": "Liderlik",
+    "description": "Tüm müttefiklerin fazladan [blue]1[/blue] hasar verir.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/leadership_power.png"
+  },
+  {
+    "id": "LETHALITY",
+    "name": "Ölümcüllük",
+    "description": "Her tur yapılan ilk Saldırı, %50 daha fazla hasar verir.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/lethality_power.png"
+  },
+  {
+    "id": "LIGHTNING_ROD",
+    "name": "Paratoner",
+    "description": "Sonraki [blue]2[/blue] turun başında [blue]1[/blue] [gold]Yıldırım[/gold] [gold]Oluştur[/gold].",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/lightning_rod_power.png"
+  },
+  {
+    "id": "LOOP",
+    "name": "Döngü",
+    "description": "Turunun başında sıradaki Küre'nin pasifini tetikle.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/loop_power.png"
+  },
+  {
+    "id": "MACHINE_LEARNING",
+    "name": "Makine Öğrenmesi",
+    "description": "Turunun başında fazladan [blue]1[/blue] kart çek.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/machine_learning_power.png"
+  },
+  {
+    "id": "MAGIC_BOMB",
+    "name": "Sihirli Bomba",
+    "description": "Turunun sonunda [blue]20[/blue] hasar al. Büyücü Şövalye öldüğünde üstünden kalkar.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/magic_bomb_power.png"
+  },
+  {
+    "id": "MANGLE",
+    "name": "Temporary Strength Down",
+    "description": "Bu turun sonuna kadar [gold]Kuvvet[/gold] kaybet.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/mangle_power.png"
+  },
+  {
+    "id": "MASTER_PLANNER",
+    "name": "Usta Plancı",
+    "description": "Oynanan her Beceri, [gold]Kurnaz[/gold] elde eder.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/master_planner_power.png"
+  },
+  {
+    "id": "MAYHEM",
+    "name": "Kargaşa",
+    "description": "Turunun başında, [gold]Çekme Deste[/gold]'nin en üstündeki kartı oyna.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/mayhem_power.png"
+  },
+  {
+    "id": "MIND_ROT",
+    "name": "Zihin Çürümesi",
+    "description": "Her tur [blue]1[/blue] kart az çekersin.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/mind_rot_power.png"
+  },
+  {
+    "id": "MINION",
+    "name": "Yancı",
+    "description": "Yancılar, liderleri yoksa savaşı terk eder.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/minion_power.png"
+  },
+  {
+    "id": "MONARCHS_GAZE",
+    "name": "Hükümdarın Bakışı",
+    "description": "Bir düşmana her saldırdığında, bu tur için [blue]1[/blue] [gold]Kuvvet[/gold] kaybeder.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/monarchs_gaze_power.png"
+  },
+  {
+    "id": "MONARCHS_GAZE_STRENGTH_DOWN",
+    "name": "Temporary Strength Down",
+    "description": "Bu turun sonuna kadar [gold]Kuvvet[/gold] kaybet.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/monarchs_gaze_strength_down_power.png"
+  },
+  {
+    "id": "MONOLOGUE",
+    "name": "Monolog",
+    "description": "Bu tur her kart oynadığında, bu tur için [blue]1[/blue] [gold]Kuvvet[/gold] elde et.\nŞu an [blue]0[/blue] [gold]Kuvvet[/gold] veriyor.",
+    "description_raw": "Bu tur her kart oynadığında, bu tur için [blue]{StrengthPower}[/blue] [gold]Kuvvet[/gold] elde et.\nŞu an [blue]{StrengthApplied}[/blue] [gold]Kuvvet[/gold] veriyor.",
+    "type": "Buff",
+    "stack_type": "None",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/monologue_power.png"
+  },
+  {
+    "id": "NECRO_MASTERY",
+    "name": "Ölüm Ustalığı",
+    "description": "[gold]Osti[/gold] her CP kaybettiğinde TÜM düşmanlar da aynı miktarda CP kaybeder.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/necro_mastery_power.png"
+  },
+  {
+    "id": "NEMESIS",
+    "name": "Ezeli Düşman",
+    "description": "Her iki turda bir, [blue]1[/blue] [gold]Soyutluk[/gold] elde eder.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/nemesis_power.png"
+  },
+  {
+    "id": "NEUROSURGE",
+    "name": "Nöral Patlama",
+    "description": "Turunun başında kendine [blue]3[/blue] [gold]Kader[/gold] uygula.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/neurosurge_power.png"
+  },
+  {
+    "id": "NIGHTMARE",
+    "name": "Kâbus",
+    "description": "Seçtiğin bir kartın [blue]3[/blue] kopyasını sonraki turda [gold]El[/gold]'ine ekle.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/nightmare_power.png"
+  },
+  {
+    "id": "NO_BLOCK",
+    "name": "Blok Yok",
+    "description": "Kartlardan [gold]Blok[/gold] elde edemezsin.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/no_block_power.png"
+  },
+  {
+    "id": "NO_DRAW",
+    "name": "Kart Çekmek Yok",
+    "description": "Bu tur daha fazla kart çekemezsin.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/no_draw_power.png"
+  },
+  {
+    "id": "NO_ENERGY_GAIN",
+    "name": "Enerji Elde Edemez",
+    "description": "Bu turda fazladan [energy:1] elde edemezsin.",
+    "description_raw": "Bu turda fazladan {energyPrefix:energyIcons(1)} elde edemezsin.",
+    "type": "Debuff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/no_energy_gain_power.png"
+  },
+  {
+    "id": "NOSTALGIA",
+    "name": "Nostalji",
+    "description": "Her tur oynadığın ilk Saldırı veya Beceri kartı, [gold]Çekme Deste[/gold]'nin en üstüne konur.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/nostalgia_power.png"
+  },
+  {
+    "id": "NOXIOUS_FUMES",
+    "name": "Zehirli Duman",
+    "description": "Turunun başında TÜM düşmanlara [blue]2[/blue] [gold]Zehir[/gold] uygula.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/noxious_fumes_power.png"
+  },
+  {
+    "id": "OBLIVION",
+    "name": "Unutuluş",
+    "description": "Bu düşman, her kart oynadığında [blue]1[/blue] [gold]Kader[/gold] elde eder.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/oblivion_power.png"
+  },
+  {
+    "id": "ONE_TWO_PUNCH",
+    "name": "Sollu Sağlı",
+    "description": "Bu tur oynayacağın sonraki Saldırı bir kez daha oynanır.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/one_two_punch_power.png"
+  },
+  {
+    "id": "ORBIT",
+    "name": "Yörünge",
+    "description": "Harcadığın her [energy:4] için [energy:1] elde et.",
+    "description_raw": "Harcadığın her {Energy:energyIcons()} için {Amount:energyIcons()} elde et.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/orbit_power.png"
+  },
+  {
+    "id": "OUTBREAK",
+    "name": "Salgın",
+    "description": "Her [blue]3[/blue] kez [gold]Zehir[/gold] uyguladığında, TÜM düşmanlara [blue][Amount][/blue] hasar ver.",
+    "description_raw": "Her [blue]{Repeat}[/blue] kez [gold]Zehir[/gold] uyguladığında, TÜM düşmanlara [blue]{Amount}[/blue] hasar ver.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/outbreak_power.png"
+  },
+  {
+    "id": "PAGESTORM",
+    "name": "Sayfa Fırtınası",
+    "description": "Her [gold]Ruhani[/gold] bir kart çektiğinde [blue]1[/blue] kart çek.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/pagestorm_power.png"
+  },
+  {
+    "id": "PAINFUL_STABS",
+    "name": "Acı Veren Saplamalar",
+    "description": "Engellenmeyen bir hasar aldığında, [gold]Atık Deste[/gold]'ne [blue]1[/blue] [gold]Yara[/gold] karıştır.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/painful_stabs_power.png"
+  },
+  {
+    "id": "PALE_BLUE_DOT",
+    "name": "Soluk Mavi Nokta",
+    "description": "Bir turda [blue]5[/blue] veya daha fazla kart oynarsan, bir sonraki turunda fazladan [blue][Amount][/blue] kart çekersin.",
+    "description_raw": "Bir turda [blue]{CardPlay}[/blue] veya daha fazla kart oynarsan, bir sonraki turunda fazladan [blue]{Amount}[/blue] {Amount:plural:kart|kart} çekersin.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/pale_blue_dot_power.png"
+  },
+  {
+    "id": "PANACHE",
+    "name": "Gösteriş",
+    "description": "Bu turda [blue]5[/blue] kart daha oynarsan TÜM düşmanlara [blue][Amount][/blue] hasar verirsin.",
+    "description_raw": "Bu turda [blue]{CardsLeft}[/blue] {CardsLeft:plural:kart|kart} daha oynarsan TÜM düşmanlara [blue]{Amount}[/blue] hasar verirsin.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/panache_power.png"
+  },
+  {
+    "id": "PAPER_CUTS",
+    "name": "Kağıt Kesiği",
+    "description": "[gold]this creature[/gold] sana her engellenmeyen bir hasar verdiğinde [blue][Amount][/blue] [gold]Maksimum CP[/gold] kaybedersin.",
+    "description_raw": "[gold]{OwnerName}[/gold] sana her engellenmeyen bir hasar verdiğinde [blue]{Amount}[/blue] [gold]Maksimum CP[/gold] kaybedersin.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/paper_cuts_power.png"
+  },
+  {
+    "id": "PARRY",
+    "name": "Savuştur",
+    "description": "[gold]Egemen Kılıcı[/gold]'nı her oynadığında [blue]8[/blue] [gold]Blok[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/parry_power.png"
+  },
+  {
+    "id": "PERSONAL_HIVE",
+    "name": "Kişisel Kovan",
+    "description": "Bu düşman bir Saldırı kartı ile her vurulduğunda [gold]Çekme Deste[/gold]'ne [gold]Sersemlemiş[/gold] eklenir.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/personal_hive_power.png"
+  },
+  {
+    "id": "PHANTOM_BLADES",
+    "name": "Hayalet Bıçaklar",
+    "description": "[gold]Kamalar[/gold] [gold]Sakla[/gold] elde eder.\nHer turda oynadığın ilk [gold]Kama[/gold] fazladan [blue]9[/blue] hasar verir.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/phantom_blades_power.png"
+  },
+  {
+    "id": "PIERCING_WAIL",
+    "name": "Temporary Strength Down",
+    "description": "Bu turun sonuna kadar [gold]Kuvvet[/gold] kaybet.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/piercing_wail_power.png"
+  },
+  {
+    "id": "PILLAR_OF_CREATION",
+    "name": "Yaratılışın Temeli",
+    "description": "Her kart oluşturduğunda [blue]5[/blue] [gold]Blok[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/pillar_of_creation_power.png"
+  },
+  {
+    "id": "PLATING",
+    "name": "Zırh",
+    "description": "Turunun sonunda [blue][Amount][/blue] [gold]Blok[/gold] elde et. [gold]Zırh[/gold], turunun başında [blue]1[/blue] azalır.",
+    "description_raw": "Turunun sonunda [blue]{Amount}[/blue] [gold]Blok[/gold] elde et. [gold]Zırh[/gold], turunun başında [blue]{Decrement}[/blue] azalır.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/plating_power.png"
+  },
+  {
+    "id": "PLOW",
+    "name": "Ezerek Geç",
+    "description": "[gold]this creature[/gold], CP'si ilk kez [blue][Amount][/blue] veya altına düştüğünde [gold]Sersemler[/gold] ve tüm [gold]Kuvvet[/gold]'ini kaybeder.",
+    "description_raw": "[gold]{OwnerName}[/gold], CP'si ilk kez [blue]{Amount}[/blue] veya altına düştüğünde [gold]Sersemler[/gold] ve tüm [gold]Kuvvet[/gold]'ini kaybeder.",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/plow_power.png"
+  },
+  {
+    "id": "POISON",
+    "name": "Zehir",
+    "description": "Zehirlenmiş yaratıklar turlarının başında CP kaybeder. Zehir, her turda [blue]1[/blue] azalır.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/poison_power.png"
+  },
+  {
+    "id": "POSSESS_SPEED",
+    "name": "Çeviklik Hırsızı",
+    "description": "Öldürüldüğünde, çalınan tüm [gold]Çeviklik[/gold] oyuncuya geri döner.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/possess_speed_power.png"
+  },
+  {
+    "id": "POSSESS_STRENGTH",
+    "name": "Kuvvet Hırsızı",
+    "description": "Öldürüldüğünde, çalınan tüm [gold]Kuvvet[/gold] oyuncuya geri döner.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/possess_strength_power.png"
+  },
+  {
+    "id": "PREP_TIME",
+    "name": "Hazırlık Vakti",
+    "description": "Turunun başında [blue]4[/blue] [gold]Dinç[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/prep_time_power.png"
+  },
+  {
+    "id": "PYRE",
+    "name": "Ateş Hüzmesi",
+    "description": "Her turun başında [blue]1[/blue] [gold]Enerji[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/pyre_power.png"
+  },
+  {
+    "id": "RADIANCE",
+    "name": "Işıma",
+    "description": "Sonraki [blue]2[/blue] turda fazladan [energy:1] elde et.",
+    "description_raw": "{Amount:plural:Sonraki turda|Sonraki [blue]{}[/blue] turda} fazladan {Energy:energyIcons()} elde et.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/radiance_power.png"
+  },
+  {
+    "id": "RAGE",
+    "name": "Öfke",
+    "description": "Bu tur her Saldırı kartı oynadığında [blue]3[/blue] [gold]Blok[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/rage_power.png"
+  },
+  {
+    "id": "RAMPART",
+    "name": "Sur",
+    "description": "Taret Operatörü, oyuncunun turunun başında [blue]25[/blue] [gold]Blok[/gold] elde eder.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/rampart_power.png"
+  },
+  {
+    "id": "RAVENOUS",
+    "name": "Obur",
+    "description": "Bir düşman öldüğünde, Ceset Yiyen Sümüklü Böcek onu hemen yer, [gold]Sersemler[/gold] ve [blue]1[/blue] [gold]Kuvvet[/gold] kazanır.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/ravenous_power.png"
+  },
+  {
+    "id": "REAPER_FORM",
+    "name": "Azrail Formu",
+    "description": "Saldırılar hasar verdiğinde, verdikleri hasar kadar [gold]Kader[/gold] de uygular.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/reaper_form_power.png"
+  },
+  {
+    "id": "REATTACH",
+    "name": "Tekrar Birleş",
+    "description": "Diğer parçalar hâlâ hayattaysa, [blue]2[/blue] tur sonra [blue]25[/blue] CP ile yeniden dirilir.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/reattach_power.png"
+  },
+  {
+    "id": "REBOUND",
+    "name": "Geri Sekme",
+    "description": "Bu tur sonraki oynayacağın kart, [gold]Çekme Deste[/gold]'nin en üstüne koyulur.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/rebound_power.png"
+  },
+  {
+    "id": "REFLECT",
+    "name": "Yansıt",
+    "description": "Engellenen hasar saldırgana yansıtılır.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/reflect_power.png"
+  },
+  {
+    "id": "REGEN",
+    "name": "Yenilenme",
+    "description": "[gold]Yenilenme[/gold], turunun sonunda CP'ni iyileştirir. [gold]Yenilenme[/gold] her turda [blue]1[/blue] azalır.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/regen_power.png"
+  },
+  {
+    "id": "REPTILE_TRINKET",
+    "name": "Temporary Strength",
+    "description": "Bu turun sonuna kadar [gold]Kuvvet[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/reptile_trinket_power.png"
+  },
+  {
+    "id": "RETAIN_HAND",
+    "name": "El'ini Sakla",
+    "description": "Sonraki [blue]2[/blue] turda [gold]El[/gold]'ini [gold]Sakla[/gold].",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/retain_hand_power.png"
+  },
+  {
+    "id": "RINGING",
+    "name": "Çınlama",
+    "description": "Bu turda sadece [blue]1[/blue] kart oynayabilirsin.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/ringing_power.png"
+  },
+  {
+    "id": "RITUAL",
+    "name": "Ritüel",
+    "description": "Turunun sonunda [gold]Kuvvet[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/ritual_power.png"
+  },
+  {
+    "id": "ROLLING_BOULDER",
+    "name": "Yuvarlanan Kaya",
+    "description": "Turunun başında TÜM düşmanlara [blue][Amount][/blue] hasar ver ve bu hasarı [blue]5[/blue] artır.",
+    "description_raw": "Turunun başında TÜM düşmanlara [blue]{Amount}[/blue] hasar ver ve bu hasarı [blue]{Damage}[/blue] artır.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/rolling_boulder_power.png"
+  },
+  {
+    "id": "ROYALTIES",
+    "name": "Kraliyet Haracı",
+    "description": "Savaşın sonunda [blue]25[/blue] [gold]Altın[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/royalties_power.png"
+  },
+  {
+    "id": "RUPTURE",
+    "name": "Vahşet",
+    "description": "Turun esnasında her CP kaybettiğinde [blue]1[/blue] [gold]Kuvvet[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/rupture_power.png"
+  },
+  {
+    "id": "SANDPIT",
+    "name": "Kum Havuzu",
+    "description": "Doyumsuz tarafından kullanılan bir güç.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/sandpit_power.png"
+  },
+  {
+    "id": "SEEKING_EDGE",
+    "name": "İz Bulan Kılıç",
+    "description": "[gold]Egemen Kılıcı[/gold] artık TÜM düşmanlara vurur.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/seeking_edge_power.png"
+  },
+  {
+    "id": "SELF_FORMING_CLAY",
+    "name": "Kendiliğinden Şekillenen Kil",
+    "description": "Bir sonraki turda [blue]3[/blue] [gold]Blok[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/self_forming_clay_power.png"
+  },
+  {
+    "id": "SENTRY_MODE",
+    "name": "Gözcü Modu",
+    "description": "Turunun başında [gold]El[/gold]'ine [blue]1[/blue] [gold]Yarıcı Bakış[/gold] ekle.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/sentry_mode_power.png"
+  },
+  {
+    "id": "SERPENT_FORM",
+    "name": "Yılan Formu",
+    "description": "Her kart oynadığında rastgele bir düşmana [blue]4[/blue] hasar ver.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/serpent_form_power.png"
+  },
+  {
+    "id": "SETUP_STRIKE",
+    "name": "Temporary Strength",
+    "description": "Bu turun sonuna kadar [gold]Kuvvet[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/setup_strike_power.png"
+  },
+  {
+    "id": "SHACKLING_POTION",
+    "name": "Temporary Strength Down",
+    "description": "Bu turun sonuna kadar [gold]Kuvvet[/gold] kaybet.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/shackling_potion_power.png"
+  },
+  {
+    "id": "SHADOW_STEP",
+    "name": "Gölge Adımı",
+    "description": "Sonraki turda Saldırıların iki kat fazla hasar verir.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/shadow_step_power.png"
+  },
+  {
+    "id": "SHADOWMELD",
+    "name": "Gölgelere Karış",
+    "description": "Bu tur elde edeceğin [gold]Blok[/gold]'u iki katına çıkar.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/shadowmeld_power.png"
+  },
+  {
+    "id": "SHRIEK",
+    "name": "Çığlık",
+    "description": "[gold]this creature[/gold], CP'si ilk kez [blue][Amount][/blue] veya altına düştüğünde [gold]Sersemler[/gold].",
+    "description_raw": "[gold]{OwnerName}[/gold], CP'si ilk kez [blue]{Amount}[/blue] veya altına düştüğünde [gold]Sersemler[/gold].",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": true,
+    "image_url": "/static/images/powers/shriek_power.png"
+  },
+  {
+    "id": "SHRINK",
+    "name": "Küçült",
+    "description": "[gold]this creature tarafından yapılan[/gold] Saldırılar, [blue]%30[/blue] daha az hasar verir.",
+    "description_raw": "{ApplierName.StringValue:cond: {} hayatteyken, sana ait|[gold]{OwnerName} tarafından yapılan[/gold]} Saldırılar,{Amount:cond:==1? sonraki turda|>1? sonraki [blue]{}[/blue] turda|} [blue]%{DamageDecrease}[/blue] daha az hasar verir.",
+    "type": "Debuff",
+    "stack_type": "None",
+    "allow_negative": true,
+    "image_url": "/static/images/powers/shrink_power.png"
+  },
+  {
+    "id": "SHROUD",
+    "name": "Kefen",
+    "description": "Her [gold]Kader[/gold] uyguladığında [blue]3[/blue] [gold]Blok[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/shroud_power.png"
+  },
+  {
+    "id": "SIC_EM",
+    "name": "Saldır Oğlum!",
+    "description": "[gold]Osti[/gold] bu turda bu düşmana her vurduğunda [blue]3[/blue] [gold]Çağır[/gold].",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/sic_em_power.png"
+  },
+  {
+    "id": "SIGNAL_BOOST",
+    "name": "Sinyal Güçlendirme",
+    "description": "Bir sonraki Güç kartın bir kez daha oynanır.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/signal_boost_power.png"
+  },
+  {
+    "id": "SKITTISH",
+    "name": "Ürkek",
+    "description": "[gold]this creature[/gold], her tur ilk kez hasar aldığında [blue][Amount][/blue] [gold]Blok[/gold] elde eder.",
+    "description_raw": "[gold]{OwnerName}[/gold], her tur ilk kez hasar aldığında [blue]{Amount}[/blue] [gold]Blok[/gold] elde eder.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/skittish_power.png"
+  },
+  {
+    "id": "SLEIGHT_OF_FLESH",
+    "name": "Bedensel Manipülasyon",
+    "description": "Bir düşmana her güçsüzleştirme uyguladığında, düşman [blue]13[/blue] hasar alır.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/sleight_of_flesh_power.png"
+  },
+  {
+    "id": "SLIPPERY",
+    "name": "Kaygan",
+    "description": "[gold]this creature[/gold], sonraki [blue]2[/blue] CP kaybedişinde sadece [blue]1[/blue] CP kaybeder.",
+    "description_raw": "[gold]{OwnerName}[/gold], {Amount:plural:sonraki|sonraki [blue]{}[/blue]} CP kaybedişinde sadece [blue]1[/blue] CP kaybeder.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/slippery_power.png"
+  },
+  {
+    "id": "SLOTH",
+    "name": "Tembellik",
+    "description": "Her turda en fazla [blue]3[/blue] kart oynayabilirsin.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/sloth_power.png"
+  },
+  {
+    "id": "SLOW",
+    "name": "Yavaş",
+    "description": "Bu tur her kart oynadığında, bu düşman Saldırılardan [blue]%10[/blue] daha fazla hasar alır.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/slow_power.png"
+  },
+  {
+    "id": "SLUMBER",
+    "name": "Derin Uyku",
+    "description": "Geçen tur sayısı veya düşmanın CP kaybetme sayısı 3 olduğunda uyanır.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/slumber_power.png"
+  },
+  {
+    "id": "SMOGGY",
+    "name": "Puslu",
+    "description": "Her turda sadece [blue]1[/blue] Beceri kartı oynayabilirsin.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/smoggy_power.png"
+  },
+  {
+    "id": "SMOKESTACK",
+    "name": "Ağır Sanayi",
+    "description": "Bir Durum kartı oluşturduğunda TÜM düşmanlara hasar ver.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/smokestack_power.png"
+  },
+  {
+    "id": "SNEAKY",
+    "name": "Sinsi",
+    "description": "Başka bir oyuncu, bir düşmana her saldırdığında [gold]Blok[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/sneaky_power.png"
+  },
+  {
+    "id": "SOAR",
+    "name": "Süzül",
+    "description": "Yere inene kadar [blue]%50[/blue] daha az saldırı hasarı alır.",
+    "description_raw": "Yere inene kadar [blue]%{DamageDecrease}[/blue] daha az saldırı hasarı alır.",
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/soar_power.png"
+  },
+  {
+    "id": "SPECTRUM_SHIFT",
+    "name": "Spektrum Kayması",
+    "description": "Turunun başında [gold]El[/gold]'ine rastgele [blue]1[/blue] Renksiz kart ekle.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/spectrum_shift_power.png"
+  },
+  {
+    "id": "SPEED_POTION",
+    "name": "Temporary Dexterity",
+    "description": "Bu turun sonuna kadar [gold]Çeviklik[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/speed_potion_power.png"
+  },
+  {
+    "id": "SPEEDSTER",
+    "name": "Hız Düşkünü",
+    "description": "Turun esnasında her kart çektiğinde TÜM düşmanlara [blue]1[/blue] hasar ver.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/speedster_power.png"
+  },
+  {
+    "id": "SPINNER",
+    "name": "Fırdöndü",
+    "description": "Turunun başında [blue]1[/blue] [gold]Cam[/gold] [gold]Oluştur[/gold].",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/spinner_power.png"
+  },
+  {
+    "id": "SPIRIT_OF_ASH",
+    "name": "Küllerin Ruhu",
+    "description": "Her [gold]Ruhani[/gold] bir kart oynadığında [blue]4[/blue] [gold]Blok[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/spirit_of_ash_power.png"
+  },
+  {
+    "id": "STAMPEDE",
+    "name": "İzdiham",
+    "description": "Turunun sonunda, [gold]El[/gold]'indeki rastgele [blue]1[/blue] Saldırı kartı rastgele bir düşmana karşı oynanır.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/stampede_power.png"
+  },
+  {
+    "id": "STAR_NEXT_TURN",
+    "name": "Sonraki Turda Yıldız",
+    "description": "Sonraki turda 1 [star:1] elde et.",
+    "description_raw": "Sonraki turda 1 {singleStarIcon} elde et.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/star_next_turn_power.png"
+  },
+  {
+    "id": "STEAM_ERUPTION",
+    "name": "Buhar Patlaması",
+    "description": "Öldüğünde, bir sonraki turunun sonunda hasar verir.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/steam_eruption_power.png"
+  },
+  {
+    "id": "STOCK",
+    "name": "Stok",
+    "description": "Öldüğünde yerine yeni bir Baltabot çağrılır.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/stock_power.png"
+  },
+  {
+    "id": "STORM",
+    "name": "Fırtına",
+    "description": "Her Güç kartı oynadığında [blue]1[/blue] [gold]Yıldırım[/gold] [gold]Oluştur[/gold].",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/storm_power.png"
+  },
+  {
+    "id": "STRANGLE",
+    "name": "Boğ",
+    "description": "Bu tur her kart oynadığında bu düşman [blue]2[/blue] CP kaybeder.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/strangle_power.png"
+  },
+  {
+    "id": "STRATAGEM",
+    "name": "Hile",
+    "description": "[gold]Çekme Deste[/gold]'ni her yeniden karıştırdığında bu desteden [blue]1[/blue] kart seç ve [gold]El[/gold]'ine koy.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/stratagem_power.png"
+  },
+  {
+    "id": "STRENGTH",
+    "name": "Kuvvet",
+    "description": "Kuvvet, Saldırılara fazladan hasar ekler.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": true,
+    "image_url": "/static/images/powers/strength_power.png"
+  },
+  {
+    "id": "SUBROUTINE",
+    "name": "Altyordam",
+    "description": "Her Güç kartı oynadığında [blue]1[/blue] [energy:1] elde et.",
+    "description_raw": "Her Güç kartı oynadığında [blue]1[/blue] {energyPrefix:energyIcons(1)} elde et.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/subroutine_power.png"
+  },
+  {
+    "id": "SUCK",
+    "name": "Sömür",
+    "description": "[gold]this creature[/gold] her engellenmeyen bir saldırı hasarı verdiğinde [blue][Amount][/blue] [gold]Kuvvet[/gold] elde eder.",
+    "description_raw": "[gold]{OwnerName}[/gold] her engellenmeyen bir saldırı hasarı verdiğinde [blue]{Amount}[/blue] [gold]Kuvvet[/gold] elde eder.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/suck_power.png"
+  },
+  {
+    "id": "SUMMON_NEXT_TURN",
+    "name": "Sonraki Turda Çağır",
+    "description": "Bir sonraki turunun başında [blue]2[/blue] [gold]Çağır[/gold].",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/summon_next_turn_power.png"
+  },
+  {
+    "id": "SURPRISE",
+    "name": "Sürpriz",
+    "description": "Bu yaratıkta bir gariplik var...",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/surprise_power.png"
+  },
+  {
+    "id": "SURROUNDED",
+    "name": "Etrafı Çevrili",
+    "description": "Arkadan saldırı aldığında [blue]%50[/blue] daha fazla hasar al. Yönünü değiştirmek için hedef aldırtan saldırı kartları ya da iksirler kullan.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/surrounded_power.png"
+  },
+  {
+    "id": "SWIPE",
+    "name": "Çaldı",
+    "description": "Bu düşmanı öldürdüğünde çalınan kartın geri döner.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/swipe_power.png"
+  },
+  {
+    "id": "SWORD_SAGE",
+    "name": "Kılıç Üstadı",
+    "description": "[gold]Egemen Kılıcı[/gold]'nın maliyetini [blue]1[/blue] artır. [gold]Egemen Kılıcı[/gold] artık [blue]1[/blue] kez daha vurur.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/sword_sage_power.png"
+  },
+  {
+    "id": "SYNCHRONIZE",
+    "name": "Temporary Focus",
+    "description": "Bu turun sonuna kadar [gold]Odak[/gold] elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/synchronize_power.png"
+  },
+  {
+    "id": "TAG_TEAM",
+    "name": "Eşli Hücum",
+    "description": "Başka bir oyuncu tarafından düşmana oynanan sonraki Saldırı kartı bir kez daha oynanır.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/tag_team_power.png"
+  },
+  {
+    "id": "TANGLED",
+    "name": "Dolanmış",
+    "description": "Saldırıların maliyeti bu turda [blue]1[/blue] [gold]Enerji[/gold] artar.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/tangled_power.png"
+  },
+  {
+    "id": "TANK",
+    "name": "Tank",
+    "description": "Düşmanlardan iki kat hasar al. Müttefiklerin düşmanlardan aldıkları hasar yarıya iner.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/tank_power.png"
+  },
+  {
+    "id": "TENDER",
+    "name": "Hassas",
+    "description": "Her kart oynadığında, bu tur için [blue]1[/blue] [gold]Kuvvet[/gold] ve [blue]1[/blue] [gold]Çeviklik[/gold] kaybet.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/tender_power.png"
+  },
+  {
+    "id": "TERRITORIAL",
+    "name": "Bölgesini Savunan",
+    "description": "Turunun sonunda [blue]1[/blue] [gold]Kuvvet[/gold] elde eder.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/territorial_power.png"
+  },
+  {
+    "id": "THE_BOMB",
+    "name": "Bomba",
+    "description": "[blue]2[/blue] turun sonunda TÜM düşmanlara [blue]40[/blue] hasar ver.",
+    "description_raw": "{Amount:plural:Bu turun|[blue]{}[/blue] turun} sonunda TÜM düşmanlara [blue]{Damage}[/blue] hasar ver.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/the_bomb_power.png"
+  },
+  {
+    "id": "THE_GAMBIT",
+    "name": "Riskli Hamle",
+    "description": "Bu savaşta engellenmeyen bir hasar alırsan ölürsün.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/the_gambit_power.png"
+  },
+  {
+    "id": "THE_HUNT",
+    "name": "Av",
+    "description": "Savaşın sonunda fazladan [blue]1[/blue] kart ödülü elde et.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/the_hunt_power.png"
+  },
+  {
+    "id": "THE_SEALED_THRONE",
+    "name": "Mühürlü Taht",
+    "description": "Her kart oynadığında [star:1] elde et.",
+    "description_raw": "Her kart oynadığında {singleStarIcon} elde et.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/the_sealed_throne_power.png"
+  },
+  {
+    "id": "THIEVERY",
+    "name": "Hırsızlık",
+    "description": "Saldırırken [gold]Altın[/gold] çalar.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/thievery_power.png"
+  },
+  {
+    "id": "THORNS",
+    "name": "Diken",
+    "description": "Bir saldırı aldığında, karşılık olarak hasar ver.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/thorns_power.png"
+  },
+  {
+    "id": "THUNDER",
+    "name": "Gök Gürültüsü",
+    "description": "Her [gold]Yıldırım Tetiklediğinde[/gold] hasar alan her düşmana ayrıca [blue]8[/blue] hasar ver.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/thunder_power.png"
+  },
+  {
+    "id": "TOOLS_OF_THE_TRADE",
+    "name": "Ustalık Aletleri",
+    "description": "Turunun başında [blue]1[/blue] kart çek ve [blue]1[/blue] kart at.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/tools_of_the_trade_power.png"
+  },
+  {
+    "id": "TORIC_TOUGHNESS",
+    "name": "Torik Dayanıklılık",
+    "description": "Sonraki [blue][Amount][/blue] turunun başında [blue]0[/blue] [gold]Blok[/gold] elde et.",
+    "description_raw": "Sonraki [blue]{Amount}[/blue] {Amount:plural:turunun|turunun} başında [blue]{Block:diff()}[/blue] [gold]Blok[/gold] elde et.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/toric_toughness_power.png"
+  },
+  {
+    "id": "TRACKING",
+    "name": "Takip",
+    "description": "[gold]Zayıf[/gold] düşmanlar Saldırılardan [blue]2[/blue] kat daha fazla hasar alır.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/tracking_power.png"
+  },
+  {
+    "id": "TRASH_TO_TREASURE",
+    "name": "Artıktan Mucize",
+    "description": "Her Durum kartı oluşturduğunda rastgele [blue]1[/blue] Küre [gold]Oluştur[/gold].",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/trash_to_treasure_power.png"
+  },
+  {
+    "id": "TYRANNY",
+    "name": "Zulüm",
+    "description": "Turunun başında bir kart çek ve [gold]El[/gold]'indeki bir kartı [gold]Tüket[/gold].",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/tyranny_power.png"
+  },
+  {
+    "id": "UNMOVABLE",
+    "name": "Kımıldamaz",
+    "description": "Her turda bir karttan ilk kez [gold]Blok[/gold] elde ettiğinde kazanılan miktarı ikiye katla.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/unmovable_power.png"
+  },
+  {
+    "id": "VEILPIERCER",
+    "name": "Arafdelen",
+    "description": "Sonraki oynayacağın [gold]Ruhani[/gold] kartın maliyeti [blue]0[/blue] olur.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/veilpiercer_power.png"
+  },
+  {
+    "id": "VICIOUS",
+    "name": "Acımasız",
+    "description": "Her [gold]Savunmasız[/gold] uyguladığında [blue]1[/blue] kart çek.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/vicious_power.png"
+  },
+  {
+    "id": "VIGOR",
+    "name": "Dinç",
+    "description": "[gold]this creature tarafından oynanacak[/gold] sonraki Saldırı fazladan [blue][Amount][/blue] hasar verir.",
+    "description_raw": "{OnPlayer:Sana ait|[gold]{OwnerName} tarafından oynanacak[/gold]} sonraki Saldırı fazladan [blue]{Amount}[/blue] hasar verir.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/vigor_power.png"
+  },
+  {
+    "id": "VITAL_SPARK",
+    "name": "Yaşam Kıvılcımı",
+    "description": "[gold]this creature[/gold], her tur ilk kez Saldırı hasarı aldığında, saldıran kişi [energy:1] elde eder.",
+    "description_raw": "[gold]{OwnerName}[/gold], her tur ilk kez Saldırı hasarı aldığında, saldıran kişi {Energy:energyIcons()} elde eder.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/vital_spark_power.png"
+  },
+  {
+    "id": "VOID_FORM",
+    "name": "Boşluk Formu",
+    "description": "Her turda oynayacağın ilk [blue]2[/blue] kart ücretsiz olarak oynanır.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/void_form_power.png"
+  },
+  {
+    "id": "VULNERABLE",
+    "name": "Savunmasız",
+    "description": "[blue][Amount][/blue] tur boyunca Saldırılardan [blue]%50[/blue] daha fazla hasar al.",
+    "description_raw": "[blue]{Amount}[/blue] {Amount:plural:tur|tur} boyunca Saldırılardan [blue]%{DamageIncrease:percentMore()}[/blue] daha fazla hasar al.",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/vulnerable_power.png"
+  },
+  {
+    "id": "WASTE_AWAY",
+    "name": "Tükenme",
+    "description": "Her tura [blue]1[/blue] [gold]Enerji[/gold] eksik başla.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/waste_away_power.png"
+  },
+  {
+    "id": "WEAK",
+    "name": "Zayıf",
+    "description": "Zayıflayan yaratıklar Saldırılarında [blue]%25[/blue] daha az hasar verirler.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/weak_power.png"
+  },
+  {
+    "id": "WELL_LAID_PLANS",
+    "name": "Sağlam Plan",
+    "description": "Turunun sonunda en fazla [blue]1[/blue] kartı [gold]Sakla[/gold].",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/well_laid_plans_power.png"
+  },
+  {
+    "id": "WRAITH_FORM",
+    "name": "Hayalet Formu",
+    "description": "Turunun başında [blue]1[/blue] [gold]Çeviklik[/gold] kaybet.",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/wraith_form_power.png"
+  }
+]

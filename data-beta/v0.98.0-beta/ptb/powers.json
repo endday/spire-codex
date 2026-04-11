@@ -1,0 +1,2572 @@
+[
+  {
+    "id": "ACCELERANT",
+    "name": "Acelerante",
+    "description": "[gold]Veneno[/gold] é ativado uma vez adicional.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/accelerant_power.png"
+  },
+  {
+    "id": "ACCURACY",
+    "name": "Precisão",
+    "description": "[gold]Lâminas[/gold] causam dano adicional.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/accuracy_power.png"
+  },
+  {
+    "id": "ADAPTABLE",
+    "name": "Adaptável",
+    "description": "Quando [gold]this creature[/gold] sofrer uma derrota, retorna ainda mais forte.",
+    "description_raw": "Quando [gold]{OwnerName}[/gold] sofrer uma derrota, retorna ainda mais forte.",
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/adaptable_power.png"
+  },
+  {
+    "id": "AFTERIMAGE",
+    "name": "Imagem Residual",
+    "description": "Sempre que você jogar uma carta, receba [blue]1[/blue] de [gold]Proteção[/gold].",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/afterimage_power.png"
+  },
+  {
+    "id": "AGGRESSION",
+    "name": "Agressividade",
+    "description": "No início do seu turno, coloque um Ataque aleatório da sua [gold]Pilha de Descarte[/gold] na sua [gold]Mão[/gold] e o [gold]Aprimore[/gold] pelo restante do combate.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/aggression_power.png"
+  },
+  {
+    "id": "ANTICIPATE",
+    "name": "Temporary Dexterity",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/anticipate_power.png"
+  },
+  {
+    "id": "ARSENAL",
+    "name": "Arsenal",
+    "description": "Sempre que você jogar uma carta Incolor, receba [blue]1[/blue] de [gold]Força[/gold].",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/arsenal_power.png"
+  },
+  {
+    "id": "ARTIFACT",
+    "name": "Artefato",
+    "description": "[gold]Anula[/gold] efeitos negativos.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/artifact_power.png"
+  },
+  {
+    "id": "ASLEEP",
+    "name": "Adormecido",
+    "description": "Desperta ao perder PV ou após [blue]2[/blue] turnos.",
+    "description_raw": "Desperta ao perder PV ou {Amount:plural:no próximo turno|após [blue]{}[/blue] turnos}.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/asleep_power.png"
+  },
+  {
+    "id": "AUTOMATION",
+    "name": "Automação",
+    "description": "A cada [blue]10[/blue] cartas que você comprar, receba [energy:1].",
+    "description_raw": "A cada [blue]{BaseCards}[/blue] cartas que você comprar, receba {Amount:energyIcons()}.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/automation_power.png"
+  },
+  {
+    "id": "BACK_ATTACK_LEFT",
+    "name": "Ataque Traseiro",
+    "description": "Causa [blue]50%[/blue] a mais de dano quando atacar você pelas costas.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/back_attack_left_power.png"
+  },
+  {
+    "id": "BACK_ATTACK_RIGHT",
+    "name": "Ataque Traseiro",
+    "description": "Causa [blue]50%[/blue] a mais de dano quando atacar você pelas costas.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/back_attack_right_power.png"
+  },
+  {
+    "id": "BARRICADE",
+    "name": "Barricada",
+    "description": "[gold]Proteção[/gold] não é removida no início do seu turno.",
+    "description_raw": "[gold]Proteção[/gold] não é removida no início {ApplierName.StringValue:cond:do turno de [gold]{OwnerName}[/gold]|do seu turno}.",
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/barricade_power.png"
+  },
+  {
+    "id": "BATTLEWORN_DUMMY_TIME_LIMIT",
+    "name": "Limite de Tempo",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/battleworn_dummy_time_limit_power.png"
+  },
+  {
+    "id": "BEACON_OF_HOPE",
+    "name": "Farol da Esperança",
+    "description": "Sempre que receber [gold]Proteção[/gold] no seu turno, outros jogadores recebem metade desta [gold]Proteção[/gold].",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/beacon_of_hope_power.png"
+  },
+  {
+    "id": "BIASED_COGNITION",
+    "name": "Cognição Enviesada",
+    "description": "No início do seu turno, perca [blue]1[/blue] de [gold]Foco[/gold].",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/biased_cognition_power.png"
+  },
+  {
+    "id": "BLACK_HOLE",
+    "name": "Buraco Negro",
+    "description": "Sempre que você gastar ou receber [star:1], cause [blue]3[/blue] de dano a TODOS os inimigos.",
+    "description_raw": "Sempre que você gastar ou receber {singleStarIcon}, cause [blue]3[/blue] de dano a TODOS os inimigos.",
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/black_hole_power.png"
+  },
+  {
+    "id": "BLADE_OF_INK",
+    "name": "Lâmina Nanquim",
+    "description": "Sempre que você jogar um Ataque neste turno, receba [blue]2[/blue] de [gold]Força[/gold] neste turno.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/blade_of_ink_power.png"
+  },
+  {
+    "id": "BLOCK_NEXT_TURN",
+    "name": "Proteção Iminente",
+    "description": "No início do seu próximo turno, receba [blue]4[/blue] de [gold]Proteção[/gold].",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/block_next_turn_power.png"
+  },
+  {
+    "id": "BLUR",
+    "name": "Desfocar",
+    "description": "[gold]Proteção[/gold] não será removida no início do seu próximo turno.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/blur_power.png"
+  },
+  {
+    "id": "BUFFER",
+    "name": "Amortecedor",
+    "description": "Previne a próxima perda de PV.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/buffer_power.png"
+  },
+  {
+    "id": "BURROWED",
+    "name": "BurrowedPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/burrowed_power.png"
+  },
+  {
+    "id": "BURST",
+    "name": "BurstPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/burst_power.png"
+  },
+  {
+    "id": "CALAMITY",
+    "name": "CalamityPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/calamity_power.png"
+  },
+  {
+    "id": "CALCIFY",
+    "name": "CalcifyPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/calcify_power.png"
+  },
+  {
+    "id": "CALL_OF_THE_VOID",
+    "name": "CallOfTheVoidPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/call_of_the_void_power.png"
+  },
+  {
+    "id": "CHAINS_OF_BINDING",
+    "name": "ChainsOfBindingPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/chains_of_binding_power.png"
+  },
+  {
+    "id": "CHILD_OF_THE_STARS",
+    "name": "ChildOfTheStarsPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/child_of_the_stars_power.png"
+  },
+  {
+    "id": "CLARITY",
+    "name": "ClarityPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/clarity_power.png"
+  },
+  {
+    "id": "COLOSSUS",
+    "name": "ColossusPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/colossus_power.png"
+  },
+  {
+    "id": "CONFUSED",
+    "name": "ConfusedPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/confused_power.png"
+  },
+  {
+    "id": "CONQUEROR",
+    "name": "ConquerorPower",
+    "description": "[gold]Espada Soberana[/gold] causa o dobro de dano a [gold]this creature[/gold] pelos próximos [blue]2[/blue] turnos.",
+    "description_raw": "[gold]Espada Soberana[/gold] causa o dobro de dano a [gold]{OwnerName}[/gold] {Amount:plural:neste turno|pelos próximos [blue]{}[/blue] turnos}.",
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/conqueror_power.png"
+  },
+  {
+    "id": "CONSTRICT",
+    "name": "ConstrictPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/constrict_power.png"
+  },
+  {
+    "id": "CONSUMING_SHADOW",
+    "name": "ConsumingShadowPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/consuming_shadow_power.png"
+  },
+  {
+    "id": "COOLANT",
+    "name": "CoolantPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/coolant_power.png"
+  },
+  {
+    "id": "COORDINATE",
+    "name": "Temporary Strength",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/coordinate_power.png"
+  },
+  {
+    "id": "CORROSIVE_WAVE",
+    "name": "CorrosiveWavePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/corrosive_wave_power.png"
+  },
+  {
+    "id": "CORRUPTION",
+    "name": "CorruptionPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/corruption_power.png"
+  },
+  {
+    "id": "COUNTDOWN",
+    "name": "CountdownPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/countdown_power.png"
+  },
+  {
+    "id": "COVERED",
+    "name": "CoveredPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/covered_power.png"
+  },
+  {
+    "id": "CREATIVE_AI",
+    "name": "CreativeAiPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/creative_ai_power.png"
+  },
+  {
+    "id": "CRIMSON_MANTLE",
+    "name": "CrimsonMantlePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/crimson_mantle_power.png"
+  },
+  {
+    "id": "CRUELTY",
+    "name": "CrueltyPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/cruelty_power.png"
+  },
+  {
+    "id": "CRUSH_UNDER",
+    "name": "Temporary Strength Down",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/crush_under_power.png"
+  },
+  {
+    "id": "CURIOUS",
+    "name": "CuriousPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/curious_power.png"
+  },
+  {
+    "id": "CURL_UP",
+    "name": "CurlUpPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/curl_up_power.png"
+  },
+  {
+    "id": "DAMPEN",
+    "name": "DampenPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "None",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/dampen_power.png"
+  },
+  {
+    "id": "DANSE_MACABRE",
+    "name": "DanseMacabrePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/danse_macabre_power.png"
+  },
+  {
+    "id": "DARK_EMBRACE",
+    "name": "DarkEmbracePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/dark_embrace_power.png"
+  },
+  {
+    "id": "DARK_SHACKLES",
+    "name": "Temporary Strength Down",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/dark_shackles_power.png"
+  },
+  {
+    "id": "DEBILITATE",
+    "name": "DebilitatePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/debilitate_power.png"
+  },
+  {
+    "id": "DEMESNE",
+    "name": "DemesnePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/demesne_power.png"
+  },
+  {
+    "id": "DEMISE",
+    "name": "DemisePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/demise_power.png"
+  },
+  {
+    "id": "DEMON_FORM",
+    "name": "DemonFormPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/demon_form_power.png"
+  },
+  {
+    "id": "DEVOUR_LIFE",
+    "name": "DevourLifePower",
+    "description": "Sempre que você jogar uma [gold]Alma[/gold], [gold]Vincule[/gold] [blue]1[/blue].",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/devour_life_power.png"
+  },
+  {
+    "id": "DEXTERITY",
+    "name": "DexterityPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": true,
+    "image_url": "/static/images/powers/dexterity_power.png"
+  },
+  {
+    "id": "DIAMOND_DIADEM",
+    "name": "DiamondDiademPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/diamond_diadem_power.png"
+  },
+  {
+    "id": "DIE_FOR_YOU",
+    "name": "DieForYouPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/die_for_you_power.png"
+  },
+  {
+    "id": "DISINTEGRATION",
+    "name": "DisintegrationPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/disintegration_power.png"
+  },
+  {
+    "id": "DOOM",
+    "name": "DoomPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/doom_power.png"
+  },
+  {
+    "id": "DOOR_REVIVAL",
+    "name": "DoorRevivalPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": null
+  },
+  {
+    "id": "DOUBLE_DAMAGE",
+    "name": "DoubleDamagePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/double_damage_power.png"
+  },
+  {
+    "id": "DRAW_CARDS_NEXT_TURN",
+    "name": "DrawCardsNextTurnPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/draw_cards_next_turn_power.png"
+  },
+  {
+    "id": "DRUM_OF_BATTLE",
+    "name": "DrumOfBattlePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/drum_of_battle_power.png"
+  },
+  {
+    "id": "DUPLICATION",
+    "name": "DuplicationPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/duplication_power.png"
+  },
+  {
+    "id": "DYING_STAR",
+    "name": "Temporary Strength Down",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/dying_star_power.png"
+  },
+  {
+    "id": "ECHO_FORM",
+    "name": "EchoFormPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/echo_form_power.png"
+  },
+  {
+    "id": "ENERGY_NEXT_TURN",
+    "name": "EnergyNextTurnPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/energy_next_turn_power.png"
+  },
+  {
+    "id": "ENFEEBLING_TOUCH",
+    "name": "Temporary Strength Down",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/enfeebling_touch_power.png"
+  },
+  {
+    "id": "ENRAGE",
+    "name": "EnragePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/enrage_power.png"
+  },
+  {
+    "id": "ENTROPY",
+    "name": "EntropyPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/entropy_power.png"
+  },
+  {
+    "id": "ENVENOM",
+    "name": "EnvenomPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/envenom_power.png"
+  },
+  {
+    "id": "ESCAPE_ARTIST",
+    "name": "EscapeArtistPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/escape_artist_power.png"
+  },
+  {
+    "id": "FAN_OF_KNIVES",
+    "name": "FanOfKnivesPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/fan_of_knives_power.png"
+  },
+  {
+    "id": "FASTEN",
+    "name": "FastenPower",
+    "description": "Receba [blue]4[/blue] de [gold]Proteção[/gold] adicional de cartas de Defesa.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/fasten_power.png"
+  },
+  {
+    "id": "FEEDING_FRENZY",
+    "name": "Temporary Strength",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/feeding_frenzy_power.png"
+  },
+  {
+    "id": "FEEL_NO_PAIN",
+    "name": "FeelNoPainPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/feel_no_pain_power.png"
+  },
+  {
+    "id": "FERAL",
+    "name": "FeralPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/feral_power.png"
+  },
+  {
+    "id": "FLAME_BARRIER",
+    "name": "FlameBarrierPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/flame_barrier_power.png"
+  },
+  {
+    "id": "FLANKING",
+    "name": "FlankingPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/flanking_power.png"
+  },
+  {
+    "id": "FLEX_POTION",
+    "name": "Temporary Strength",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/flex_potion_power.png"
+  },
+  {
+    "id": "FLUTTER",
+    "name": "FlutterPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/flutter_power.png"
+  },
+  {
+    "id": "FOCUS",
+    "name": "FocusPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": true,
+    "image_url": "/static/images/powers/focus_power.png"
+  },
+  {
+    "id": "FOCUSED_STRIKE",
+    "name": "Temporary Focus",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/focused_strike_power.png"
+  },
+  {
+    "id": "FORBIDDEN_GRIMOIRE",
+    "name": "ForbiddenGrimoirePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/forbidden_grimoire_power.png"
+  },
+  {
+    "id": "FOREGONE_CONCLUSION",
+    "name": "ForegoneConclusionPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/foregone_conclusion_power.png"
+  },
+  {
+    "id": "FRAIL",
+    "name": "FrailPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/frail_power.png"
+  },
+  {
+    "id": "FREE_ATTACK",
+    "name": "FreeAttackPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/free_attack_power.png"
+  },
+  {
+    "id": "FREE_POWER",
+    "name": "FreePowerPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/free_power_power.png"
+  },
+  {
+    "id": "FREE_SKILL",
+    "name": "FreeSkillPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/free_skill_power.png"
+  },
+  {
+    "id": "FRIENDSHIP",
+    "name": "FriendshipPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/friendship_power.png"
+  },
+  {
+    "id": "FURNACE",
+    "name": "FurnacePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/furnace_power.png"
+  },
+  {
+    "id": "GALVANIC",
+    "name": "GalvanicPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/galvanic_power.png"
+  },
+  {
+    "id": "GENESIS",
+    "name": "GenesisPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/genesis_power.png"
+  },
+  {
+    "id": "GIGANTIFICATION",
+    "name": "GigantificationPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/gigantification_power.png"
+  },
+  {
+    "id": "GRAPPLE",
+    "name": "GrapplePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/grapple_power.png"
+  },
+  {
+    "id": "GRAVITY",
+    "name": "GravityPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/gravity_power.png"
+  },
+  {
+    "id": "GUARDED",
+    "name": "GuardedPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/guarded_power.png"
+  },
+  {
+    "id": "HAILSTORM",
+    "name": "HailstormPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/hailstorm_power.png"
+  },
+  {
+    "id": "HAMMER_TIME",
+    "name": "HammerTimePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/hammer_time_power.png"
+  },
+  {
+    "id": "HANG",
+    "name": "HangPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/hang_power.png"
+  },
+  {
+    "id": "HARD_TO_KILL",
+    "name": "HardToKillPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/hard_to_kill_power.png"
+  },
+  {
+    "id": "HARDENED_SHELL",
+    "name": "HardenedShellPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/hardened_shell_power.png"
+  },
+  {
+    "id": "HATCH",
+    "name": "HatchPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/hatch_power.png"
+  },
+  {
+    "id": "HAUNT",
+    "name": "HauntPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/haunt_power.png"
+  },
+  {
+    "id": "HEIST",
+    "name": "HeistPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/heist_power.png"
+  },
+  {
+    "id": "HELICAL_DART",
+    "name": "Temporary Dexterity",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/helical_dart_power.png"
+  },
+  {
+    "id": "HELLO_WORLD",
+    "name": "HelloWorldPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/hello_world_power.png"
+  },
+  {
+    "id": "HELLRAISER",
+    "name": "HellraiserPower",
+    "description": "Sempre que você comprar uma carta contendo \"Golpe\", ela é jogada contra um inimigo aleatório.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/hellraiser_power.png"
+  },
+  {
+    "id": "HEX",
+    "name": "HexPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/hex_power.png"
+  },
+  {
+    "id": "HIGH_VOLTAGE",
+    "name": "HighVoltagePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/high_voltage_power.png"
+  },
+  {
+    "id": "HOTFIX",
+    "name": "Temporary Focus",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/hotfix_power.png"
+  },
+  {
+    "id": "ILLUSION",
+    "name": "IllusionPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/illusion_power.png"
+  },
+  {
+    "id": "IMBALANCED",
+    "name": "ImbalancedPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/imbalanced_power.png"
+  },
+  {
+    "id": "IMPROVEMENT",
+    "name": "ImprovementPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/improvement_power.png"
+  },
+  {
+    "id": "INFERNO",
+    "name": "InfernoPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/inferno_power.png"
+  },
+  {
+    "id": "INFESTED",
+    "name": "InfestedPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/infested_power.png"
+  },
+  {
+    "id": "INFINITE_BLADES",
+    "name": "InfiniteBladesPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/infinite_blades_power.png"
+  },
+  {
+    "id": "INTANGIBLE",
+    "name": "IntangiblePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/intangible_power.png"
+  },
+  {
+    "id": "INTERCEPT",
+    "name": "InterceptPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/intercept_power.png"
+  },
+  {
+    "id": "ITERATION",
+    "name": "IterationPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/iteration_power.png"
+  },
+  {
+    "id": "JUGGERNAUT",
+    "name": "JuggernautPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/juggernaut_power.png"
+  },
+  {
+    "id": "JUGGLING",
+    "name": "JugglingPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/juggling_power.png"
+  },
+  {
+    "id": "KNOCKDOWN",
+    "name": "KnockdownPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/knockdown_power.png"
+  },
+  {
+    "id": "LEADERSHIP",
+    "name": "LeadershipPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/leadership_power.png"
+  },
+  {
+    "id": "LETHALITY",
+    "name": "LethalityPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/lethality_power.png"
+  },
+  {
+    "id": "LIGHTNING_ROD",
+    "name": "LightningRodPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": null
+  },
+  {
+    "id": "LOOP",
+    "name": "LoopPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/loop_power.png"
+  },
+  {
+    "id": "MACHINE_LEARNING",
+    "name": "MachineLearningPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/machine_learning_power.png"
+  },
+  {
+    "id": "MAGIC_BOMB",
+    "name": "MagicBombPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/magic_bomb_power.png"
+  },
+  {
+    "id": "MANGLE",
+    "name": "Temporary Strength Down",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/mangle_power.png"
+  },
+  {
+    "id": "MASTER_PLANNER",
+    "name": "MasterPlannerPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/master_planner_power.png"
+  },
+  {
+    "id": "MAYHEM",
+    "name": "MayhemPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/mayhem_power.png"
+  },
+  {
+    "id": "MIND_ROT",
+    "name": "MindRotPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/mind_rot_power.png"
+  },
+  {
+    "id": "MINION",
+    "name": "MinionPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/minion_power.png"
+  },
+  {
+    "id": "MONARCHS_GAZE",
+    "name": "MonarchsGazePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/monarchs_gaze_power.png"
+  },
+  {
+    "id": "MONARCHS_GAZE_STRENGTH_DOWN",
+    "name": "Temporary Strength Down",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/monarchs_gaze_strength_down_power.png"
+  },
+  {
+    "id": "MONOLOGUE",
+    "name": "MonologuePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "None",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/monologue_power.png"
+  },
+  {
+    "id": "NECRO_MASTERY",
+    "name": "NecroMasteryPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/necro_mastery_power.png"
+  },
+  {
+    "id": "NEMESIS",
+    "name": "NemesisPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": null
+  },
+  {
+    "id": "NEUROSURGE",
+    "name": "NeurosurgePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/neurosurge_power.png"
+  },
+  {
+    "id": "NIGHTMARE",
+    "name": "NightmarePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/nightmare_power.png"
+  },
+  {
+    "id": "NO_BLOCK",
+    "name": "NoBlockPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/no_block_power.png"
+  },
+  {
+    "id": "NO_DRAW",
+    "name": "NoDrawPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/no_draw_power.png"
+  },
+  {
+    "id": "NOSTALGIA",
+    "name": "NostalgiaPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/nostalgia_power.png"
+  },
+  {
+    "id": "NOXIOUS_FUMES",
+    "name": "NoxiousFumesPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/noxious_fumes_power.png"
+  },
+  {
+    "id": "OBLIVION",
+    "name": "OblivionPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/oblivion_power.png"
+  },
+  {
+    "id": "ONE_TWO_PUNCH",
+    "name": "OneTwoPunchPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/one_two_punch_power.png"
+  },
+  {
+    "id": "ORBIT",
+    "name": "OrbitPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/orbit_power.png"
+  },
+  {
+    "id": "OUTBREAK",
+    "name": "OutbreakPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/outbreak_power.png"
+  },
+  {
+    "id": "PAGESTORM",
+    "name": "PagestormPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/pagestorm_power.png"
+  },
+  {
+    "id": "PAINFUL_STABS",
+    "name": "PainfulStabsPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/painful_stabs_power.png"
+  },
+  {
+    "id": "PALE_BLUE_DOT",
+    "name": "PaleBlueDotPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/pale_blue_dot_power.png"
+  },
+  {
+    "id": "PANACHE",
+    "name": "PanachePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/panache_power.png"
+  },
+  {
+    "id": "PAPER_CUTS",
+    "name": "PaperCutsPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/paper_cuts_power.png"
+  },
+  {
+    "id": "PARRY",
+    "name": "ParryPower",
+    "description": "Sempre que você jogar [gold]Espada Soberana[/gold], receba [blue]8[/blue] de [gold]Proteção[/gold].",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/parry_power.png"
+  },
+  {
+    "id": "PERSONAL_HIVE",
+    "name": "PersonalHivePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/personal_hive_power.png"
+  },
+  {
+    "id": "PHANTOM_BLADES",
+    "name": "PhantomBladesPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/phantom_blades_power.png"
+  },
+  {
+    "id": "PIERCING_WAIL",
+    "name": "Temporary Strength Down",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/piercing_wail_power.png"
+  },
+  {
+    "id": "PILLAR_OF_CREATION",
+    "name": "PillarOfCreationPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/pillar_of_creation_power.png"
+  },
+  {
+    "id": "PLATING",
+    "name": "PlatingPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/plating_power.png"
+  },
+  {
+    "id": "PLOW",
+    "name": "PlowPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/plow_power.png"
+  },
+  {
+    "id": "POISON",
+    "name": "PoisonPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/poison_power.png"
+  },
+  {
+    "id": "POSSESS_SPEED",
+    "name": "PossessSpeedPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/possess_speed_power.png"
+  },
+  {
+    "id": "POSSESS_STRENGTH",
+    "name": "PossessStrengthPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/possess_strength_power.png"
+  },
+  {
+    "id": "PREP_TIME",
+    "name": "PrepTimePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/prep_time_power.png"
+  },
+  {
+    "id": "PSYCHIC_LINK",
+    "name": "PsychicLinkPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": null
+  },
+  {
+    "id": "PYRE",
+    "name": "PyrePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/pyre_power.png"
+  },
+  {
+    "id": "RADIANCE",
+    "name": "RadiancePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/radiance_power.png"
+  },
+  {
+    "id": "RAGE",
+    "name": "RagePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/rage_power.png"
+  },
+  {
+    "id": "RAMPART",
+    "name": "RampartPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/rampart_power.png"
+  },
+  {
+    "id": "RAVENOUS",
+    "name": "RavenousPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/ravenous_power.png"
+  },
+  {
+    "id": "REAPER_FORM",
+    "name": "ReaperFormPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/reaper_form_power.png"
+  },
+  {
+    "id": "REATTACH",
+    "name": "ReattachPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/reattach_power.png"
+  },
+  {
+    "id": "REBOUND",
+    "name": "ReboundPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/rebound_power.png"
+  },
+  {
+    "id": "REFLECT",
+    "name": "ReflectPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/reflect_power.png"
+  },
+  {
+    "id": "REGEN",
+    "name": "RegenPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/regen_power.png"
+  },
+  {
+    "id": "REPTILE_TRINKET",
+    "name": "Temporary Strength",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/reptile_trinket_power.png"
+  },
+  {
+    "id": "RETAIN_HAND",
+    "name": "RetainHandPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/retain_hand_power.png"
+  },
+  {
+    "id": "RINGING",
+    "name": "RingingPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/ringing_power.png"
+  },
+  {
+    "id": "RITUAL",
+    "name": "RitualPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/ritual_power.png"
+  },
+  {
+    "id": "ROLLING_BOULDER",
+    "name": "RollingBoulderPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/rolling_boulder_power.png"
+  },
+  {
+    "id": "ROYALTIES",
+    "name": "RoyaltiesPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/royalties_power.png"
+  },
+  {
+    "id": "RUPTURE",
+    "name": "RupturePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/rupture_power.png"
+  },
+  {
+    "id": "SANDPIT",
+    "name": "SandpitPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/sandpit_power.png"
+  },
+  {
+    "id": "SEEKING_EDGE",
+    "name": "SeekingEdgePower",
+    "description": "[gold]Espada Soberana[/gold] agora golpeia TODOS os inimigos.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/seeking_edge_power.png"
+  },
+  {
+    "id": "SELF_FORMING_CLAY",
+    "name": "SelfFormingClayPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/self_forming_clay_power.png"
+  },
+  {
+    "id": "SENTRY_MODE",
+    "name": "SentryModePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/sentry_mode_power.png"
+  },
+  {
+    "id": "SERPENT_FORM",
+    "name": "SerpentFormPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/serpent_form_power.png"
+  },
+  {
+    "id": "SETUP_STRIKE",
+    "name": "Temporary Strength",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/setup_strike_power.png"
+  },
+  {
+    "id": "SHACKLING_POTION",
+    "name": "Temporary Strength Down",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/shackling_potion_power.png"
+  },
+  {
+    "id": "SHADOW_STEP",
+    "name": "ShadowStepPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/shadow_step_power.png"
+  },
+  {
+    "id": "SHADOWMELD",
+    "name": "ShadowmeldPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/shadowmeld_power.png"
+  },
+  {
+    "id": "SHRIEK",
+    "name": "ShriekPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": true,
+    "image_url": "/static/images/powers/shriek_power.png"
+  },
+  {
+    "id": "SHRINK",
+    "name": "ShrinkPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "None",
+    "allow_negative": true,
+    "image_url": "/static/images/powers/shrink_power.png"
+  },
+  {
+    "id": "SHROUD",
+    "name": "ShroudPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/shroud_power.png"
+  },
+  {
+    "id": "SIC_EM",
+    "name": "SicEmPower",
+    "description": "Sempre que [gold]Ostheo[/gold] golpear este inimigo neste turno, [gold]Vincule[/gold] [blue]3[/blue].",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/sic_em_power.png"
+  },
+  {
+    "id": "SIGNAL_BOOST",
+    "name": "SignalBoostPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/signal_boost_power.png"
+  },
+  {
+    "id": "SKITTISH",
+    "name": "SkittishPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/skittish_power.png"
+  },
+  {
+    "id": "SLEIGHT_OF_FLESH",
+    "name": "SleightOfFleshPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/sleight_of_flesh_power.png"
+  },
+  {
+    "id": "SLIPPERY",
+    "name": "SlipperyPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/slippery_power.png"
+  },
+  {
+    "id": "SLOTH",
+    "name": "SlothPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/sloth_power.png"
+  },
+  {
+    "id": "SLOW",
+    "name": "SlowPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/slow_power.png"
+  },
+  {
+    "id": "SLUMBER",
+    "name": "SlumberPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/slumber_power.png"
+  },
+  {
+    "id": "SMOGGY",
+    "name": "SmoggyPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/smoggy_power.png"
+  },
+  {
+    "id": "SMOKESTACK",
+    "name": "SmokestackPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/smokestack_power.png"
+  },
+  {
+    "id": "SNEAKY",
+    "name": "SneakyPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/sneaky_power.png"
+  },
+  {
+    "id": "SOAR",
+    "name": "SoarPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/soar_power.png"
+  },
+  {
+    "id": "SPECTRUM_SHIFT",
+    "name": "SpectrumShiftPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/spectrum_shift_power.png"
+  },
+  {
+    "id": "SPEED_POTION",
+    "name": "Temporary Dexterity",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/speed_potion_power.png"
+  },
+  {
+    "id": "SPEEDSTER",
+    "name": "SpeedsterPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/speedster_power.png"
+  },
+  {
+    "id": "SPINNER",
+    "name": "SpinnerPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/spinner_power.png"
+  },
+  {
+    "id": "SPIRIT_OF_ASH",
+    "name": "SpiritOfAshPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/spirit_of_ash_power.png"
+  },
+  {
+    "id": "STAMPEDE",
+    "name": "StampedePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/stampede_power.png"
+  },
+  {
+    "id": "STAR_NEXT_TURN",
+    "name": "StarNextTurnPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/star_next_turn_power.png"
+  },
+  {
+    "id": "STEAM_ERUPTION",
+    "name": "SteamEruptionPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/steam_eruption_power.png"
+  },
+  {
+    "id": "STOCK",
+    "name": "StockPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/stock_power.png"
+  },
+  {
+    "id": "STORM",
+    "name": "StormPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/storm_power.png"
+  },
+  {
+    "id": "STRANGLE",
+    "name": "StranglePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/strangle_power.png"
+  },
+  {
+    "id": "STRATAGEM",
+    "name": "StratagemPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/stratagem_power.png"
+  },
+  {
+    "id": "STRENGTH",
+    "name": "StrengthPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": true,
+    "image_url": "/static/images/powers/strength_power.png"
+  },
+  {
+    "id": "SUBROUTINE",
+    "name": "SubroutinePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/subroutine_power.png"
+  },
+  {
+    "id": "SUCK",
+    "name": "SuckPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/suck_power.png"
+  },
+  {
+    "id": "SUMMON_NEXT_TURN",
+    "name": "Vincular no Próximo Turno",
+    "description": "No início do seu próximo turno, [gold]Vincule[/gold] [blue]2[/blue].",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/summon_next_turn_power.png"
+  },
+  {
+    "id": "SURPRISE",
+    "name": "SurprisePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/surprise_power.png"
+  },
+  {
+    "id": "SURROUNDED",
+    "name": "SurroundedPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/surrounded_power.png"
+  },
+  {
+    "id": "SWIPE",
+    "name": "SwipePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/swipe_power.png"
+  },
+  {
+    "id": "SWORD_SAGE",
+    "name": "SwordSagePower",
+    "description": "Aumenta o custo da [gold]Espada Soberana[/gold] em [blue]1[/blue]. [gold]Espada Soberana[/gold] agora golpeia [blue]1[/blue] vez adicional.",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/sword_sage_power.png"
+  },
+  {
+    "id": "SYNCHRONIZE",
+    "name": "Temporary Focus",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/synchronize_power.png"
+  },
+  {
+    "id": "TAG_TEAM",
+    "name": "TagTeamPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/tag_team_power.png"
+  },
+  {
+    "id": "TANGLED",
+    "name": "TangledPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/tangled_power.png"
+  },
+  {
+    "id": "TANK",
+    "name": "TankPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/tank_power.png"
+  },
+  {
+    "id": "TENDER",
+    "name": "TenderPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/tender_power.png"
+  },
+  {
+    "id": "TERRITORIAL",
+    "name": "TerritorialPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/territorial_power.png"
+  },
+  {
+    "id": "THE_BOMB",
+    "name": "TheBombPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/the_bomb_power.png"
+  },
+  {
+    "id": "THE_GAMBIT",
+    "name": "TheGambitPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/the_gambit_power.png"
+  },
+  {
+    "id": "THE_HUNT",
+    "name": "TheHuntPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/the_hunt_power.png"
+  },
+  {
+    "id": "THE_SEALED_THRONE",
+    "name": "TheSealedThronePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/the_sealed_throne_power.png"
+  },
+  {
+    "id": "THIEVERY",
+    "name": "ThieveryPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/thievery_power.png"
+  },
+  {
+    "id": "THORNS",
+    "name": "ThornsPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/thorns_power.png"
+  },
+  {
+    "id": "THUNDER",
+    "name": "ThunderPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/thunder_power.png"
+  },
+  {
+    "id": "TOOLS_OF_THE_TRADE",
+    "name": "ToolsOfTheTradePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/tools_of_the_trade_power.png"
+  },
+  {
+    "id": "TORIC_TOUGHNESS",
+    "name": "ToricToughnessPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/toric_toughness_power.png"
+  },
+  {
+    "id": "TRACKING",
+    "name": "TrackingPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/tracking_power.png"
+  },
+  {
+    "id": "TRASH_TO_TREASURE",
+    "name": "TrashToTreasurePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/trash_to_treasure_power.png"
+  },
+  {
+    "id": "TYRANNY",
+    "name": "TyrannyPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/tyranny_power.png"
+  },
+  {
+    "id": "UNMOVABLE",
+    "name": "UnmovablePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/unmovable_power.png"
+  },
+  {
+    "id": "VEILPIERCER",
+    "name": "VeilpiercerPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/veilpiercer_power.png"
+  },
+  {
+    "id": "VICIOUS",
+    "name": "ViciousPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/vicious_power.png"
+  },
+  {
+    "id": "VIGOR",
+    "name": "VigorPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/vigor_power.png"
+  },
+  {
+    "id": "VITAL_SPARK",
+    "name": "VitalSparkPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/vital_spark_power.png"
+  },
+  {
+    "id": "VOID_FORM",
+    "name": "VoidFormPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/void_form_power.png"
+  },
+  {
+    "id": "VULNERABLE",
+    "name": "VulnerablePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/vulnerable_power.png"
+  },
+  {
+    "id": "WASTE_AWAY",
+    "name": "WasteAwayPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/waste_away_power.png"
+  },
+  {
+    "id": "WEAK",
+    "name": "WeakPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/weak_power.png"
+  },
+  {
+    "id": "WELL_LAID_PLANS",
+    "name": "WellLaidPlansPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/well_laid_plans_power.png"
+  },
+  {
+    "id": "WRAITH_FORM",
+    "name": "WraithFormPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/wraith_form_power.png"
+  }
+]

@@ -1,0 +1,2226 @@
+{
+  "app_id": 2868840,
+  "game_version": "0.98.0-beta",
+  "build_id": "",
+  "tag": "0.98.0-beta",
+  "date": "2026-04-10",
+  "title": "Beta v0.98.0 — initial beta branch",
+  "from_ref": "data/eng",
+  "to_ref": "data-beta/v0.98.0-beta/eng",
+  "summary": {
+    "added": 1,
+    "removed": 2,
+    "changed": 159
+  },
+  "categories": [
+    {
+      "id": "cards",
+      "name": "Cards",
+      "old_count": 576,
+      "new_count": 576,
+      "changed": [
+        {
+          "id": "ADAPTIVE_STRIKE",
+          "name": "Adaptive Strike",
+          "changes": [
+            {
+              "field": "description",
+              "old": "Deal 18 damage.\nAdd a 0[energy:1] copy of this card into your [gold]Discard P...",
+              "new": "Deal 18 damage.\nAdd a 0[energy:1] copy of this card to your [gold]Discard Pil..."
+            },
+            {
+              "field": "description_raw",
+              "old": "Deal {Damage:diff()} damage.\nAdd a 0{energyPrefix:energyIcons(1)} copy of thi...",
+              "new": "Deal {Damage:diff()} damage.\nAdd a 0{energyPrefix:energyIcons(1)} copy of thi..."
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Deal 23 damage.\nAdd a 0[energy:1] copy of this card into your [gold]Discard P...",
+              "new": "Deal 23 damage.\nAdd a 0[energy:1] copy of this card to your [gold]Discard Pil..."
+            }
+          ]
+        },
+        {
+          "id": "BEAT_INTO_SHAPE",
+          "name": "Beat into Shape",
+          "changes": [
+            {
+              "field": "vars",
+              "old": "3 fields",
+              "new": "3 fields"
+            },
+            {
+              "field": "upgrade",
+              "old": "3 fields",
+              "new": "3 fields"
+            },
+            {
+              "field": "description",
+              "old": "Deal 5 damage.\n[gold]Forge[/gold] X.\n[gold]Forges[/gold] an additional 5 for ...",
+              "new": "Deal 10 damage.\n[gold]Forge[/gold] X.\n[gold]Forges[/gold] an additional 5 for..."
+            },
+            {
+              "field": "damage",
+              "old": "5",
+              "new": "10"
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Deal 7 damage.\n[gold]Forge[/gold] X.\n[gold]Forges[/gold] an additional 7 for ...",
+              "new": "Deal 11 damage.\n[gold]Forge[/gold] X.\n[gold]Forges[/gold] an additional 7 for..."
+            }
+          ]
+        },
+        {
+          "id": "BURST",
+          "name": "Burst",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "This turn, your next {Skills:plural:Skill is|{:diff()} Skills are} played an ...",
+              "new": "This turn, your next{IfUpgraded:show: 2} {Skills:plural:Skill is|Skills are} ..."
+            }
+          ]
+        },
+        {
+          "id": "DEMONIC_SHIELD",
+          "name": "Demonic Shield",
+          "changes": [
+            {
+              "field": "cost",
+              "old": "0",
+              "new": "1"
+            },
+            {
+              "field": "vars",
+              "old": "3 fields",
+              "new": "2 fields"
+            },
+            {
+              "field": "description",
+              "old": "Lose 1 HP.\nGive another player [gold]Block[/gold] equal to your [gold]Block[/...",
+              "new": "Give another player [gold]Block[/gold] equal to your [gold]Block[/gold]."
+            },
+            {
+              "field": "hp_loss",
+              "old": "1",
+              "new": "none"
+            },
+            {
+              "field": "description_raw",
+              "old": "Lose {HpLoss:diff()} HP.\nGive another player [gold]Block[/gold] equal to your...",
+              "new": "Give another player [gold]Block[/gold] equal to your [gold]Block[/gold].{InCo..."
+            }
+          ]
+        },
+        {
+          "id": "FIGHT_THROUGH",
+          "name": "Fight Through",
+          "changes": [
+            {
+              "field": "description",
+              "old": "Gain 13 [gold]Block[/gold].\nAdd 2 [gold]Wounds[/gold] into your [gold]Discard...",
+              "new": "Gain 13 [gold]Block[/gold].\nAdd 2 [gold]Wounds[/gold] to your [gold]Discard P..."
+            },
+            {
+              "field": "description_raw",
+              "old": "Gain {Block:diff()} [gold]Block[/gold].\nAdd 2 [gold]Wounds[/gold] into your [...",
+              "new": "Gain {Block:diff()} [gold]Block[/gold].\nAdd 2 [gold]Wounds[/gold] to your [go..."
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Gain 17 [gold]Block[/gold].\nAdd 2 [gold]Wounds[/gold] into your [gold]Discard...",
+              "new": "Gain 17 [gold]Block[/gold].\nAdd 2 [gold]Wounds[/gold] to your [gold]Discard P..."
+            }
+          ]
+        },
+        {
+          "id": "JUGGLING",
+          "name": "Juggling",
+          "changes": [
+            {
+              "field": "description",
+              "old": "Add a copy of the third [gold]Attack[/gold] you play each turn into your [gol...",
+              "new": "Add a copy of the third [gold]Attack[/gold] you play each turn to your [gold]..."
+            },
+            {
+              "field": "description_raw",
+              "old": "Add a copy of the third [gold]Attack[/gold] you play each turn into your [gol...",
+              "new": "Add a copy of the third [gold]Attack[/gold] you play each turn to your [gold]..."
+            }
+          ]
+        },
+        {
+          "id": "KNIFE_TRAP",
+          "name": "Knife Trap",
+          "changes": [
+            {
+              "field": "cost",
+              "old": "2",
+              "new": "3"
+            },
+            {
+              "field": "type_key",
+              "old": "Skill",
+              "new": "Attack"
+            },
+            {
+              "field": "vars",
+              "old": "2 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "type",
+              "old": "Skill",
+              "new": "Attack"
+            },
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "description",
+              "old": "Play every [gold]Shiv[/gold] in your [gold]Exhaust Pile[/gold] on the enemy.",
+              "new": "Deal 11 damage.\nPlay every [gold]Shiv[/gold] in your [gold]Exhaust Pile[/gold..."
+            },
+            {
+              "field": "damage",
+              "old": "0",
+              "new": "11"
+            },
+            {
+              "field": "description_raw",
+              "old": "{IfUpgraded:show:[gold]Upgrade[/gold] and play|Play} every [gold]Shiv[/gold] ...",
+              "new": "Deal {Damage:diff()} damage.\n{IfUpgraded:show:[gold]Upgrade[/gold] and play|P..."
+            },
+            {
+              "field": "upgrade_description",
+              "old": "[gold]Upgrade[/gold] and play every [gold]Shiv[/gold] in your [gold]Exhaust P...",
+              "new": "Deal 13 damage.\n[gold]Upgrade[/gold] and play every [gold]Shiv[/gold] in your..."
+            }
+          ]
+        },
+        {
+          "id": "LIFT",
+          "name": "Lift",
+          "changes": [
+            {
+              "field": "vars",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "block",
+              "old": "11",
+              "new": "10"
+            },
+            {
+              "field": "description",
+              "old": "Give another player 11 [gold]Block[/gold].",
+              "new": "Give another player 10 [gold]Block[/gold]."
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Give another player 16 [gold]Block[/gold].",
+              "new": "Give another player 15 [gold]Block[/gold]."
+            }
+          ]
+        },
+        {
+          "id": "MAD_SCIENCE",
+          "name": "Mad Science",
+          "changes": [
+            {
+              "field": "type_variants",
+              "old": "3 fields",
+              "new": "3 fields"
+            },
+            {
+              "field": "description_raw",
+              "old": "{CardType:choose(Attack|Skill|Power):Deal {Damage:diff()} damage{Violence: {V...",
+              "new": "{CardType:choose(Attack|Skill|Power):Deal {Damage:diff()} damage{Violence: {V..."
+            }
+          ]
+        },
+        {
+          "id": "MOMENTUM_STRIKE",
+          "name": "Momentum Strike",
+          "changes": [
+            {
+              "field": "description",
+              "old": "Deal 10 damage.\nReduce this card's cost to 0 [energy:1].",
+              "new": "Deal 10 damage.\nReduce this card's cost to 0."
+            },
+            {
+              "field": "description_raw",
+              "old": "Deal {Damage:diff()} damage.\nReduce this card's cost to 0 {energyPrefix:energ...",
+              "new": "Deal {Damage:diff()} damage.\nReduce this card's cost to 0."
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Deal 13 damage.\nReduce this card's cost to 0 [energy:1].",
+              "new": "Deal 13 damage.\nReduce this card's cost to 0."
+            }
+          ]
+        },
+        {
+          "id": "MURDER",
+          "name": "Murder",
+          "changes": [
+            {
+              "field": "cost",
+              "old": "3",
+              "new": "2"
+            },
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "1 fields"
+            }
+          ]
+        },
+        {
+          "id": "OUTBREAK",
+          "name": "Outbreak",
+          "changes": [
+            {
+              "field": "powers_applied",
+              "old": "{'power': 'Outbreak', 'amount': 11, 'power_key': 'Outbreak'}",
+              "new": "{'power': 'Outbreak', 'amount': 15, 'power_key': 'Outbreak'}"
+            },
+            {
+              "field": "vars",
+              "old": "3 fields",
+              "new": "3 fields"
+            },
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "description",
+              "old": "Every 3 times you apply [gold]Poison[/gold], deal 11 damage to ALL enemies.",
+              "new": "Every 3 times you apply [gold]Poison[/gold], deal 15 damage to ALL enemies."
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Every 3 times you apply [gold]Poison[/gold], deal 15 damage to ALL enemies.",
+              "new": "Every 3 times you apply [gold]Poison[/gold], deal 20 damage to ALL enemies."
+            }
+          ]
+        },
+        {
+          "id": "ROCKET_PUNCH",
+          "name": "Rocket Punch",
+          "changes": [
+            {
+              "field": "description",
+              "old": "Deal 13 damage.\nDraw 1 card.\nWhen a Status card is created, reduce this card'...",
+              "new": "Deal 13 damage.\nDraw 1 card.\nWhen a Status card is created, reduce this card'..."
+            },
+            {
+              "field": "description_raw",
+              "old": "Deal {Damage:diff()} damage.\nDraw {Cards:diff()} {Cards:plural:card|cards}.\nW...",
+              "new": "Deal {Damage:diff()} damage.\nDraw {Cards:diff()} {Cards:plural:card|cards}.\nW..."
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Deal 14 damage.\nDraw 2 cards.\nWhen a Status card is created, reduce this card...",
+              "new": "Deal 14 damage.\nDraw 2 cards.\nWhen a Status card is created, reduce this card..."
+            }
+          ]
+        },
+        {
+          "id": "SEVERANCE",
+          "name": "Severance",
+          "changes": [
+            {
+              "field": "description",
+              "old": "Deal 13 damage.\nAdd a [gold]Soul[/gold] into your [gold]Draw Pile[/gold], [go...",
+              "new": "Deal 13 damage.\nAdd a [gold]Soul[/gold] to your [gold]Draw Pile[/gold], [gold..."
+            },
+            {
+              "field": "description_raw",
+              "old": "Deal {Damage:diff()} damage.\nAdd a [gold]Soul[/gold] into your [gold]Draw Pil...",
+              "new": "Deal {Damage:diff()} damage.\nAdd a [gold]Soul[/gold] to your [gold]Draw Pile[..."
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Deal 18 damage.\nAdd a [gold]Soul[/gold] into your [gold]Draw Pile[/gold], [go...",
+              "new": "Deal 18 damage.\nAdd a [gold]Soul[/gold] to your [gold]Draw Pile[/gold], [gold..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "characters",
+      "name": "Characters",
+      "old_count": 5,
+      "new_count": 5,
+      "changed": [
+        {
+          "id": "DEFECT",
+          "name": "The Defect",
+          "changes": [
+            {
+              "field": "quotes",
+              "old": "8 fields",
+              "new": "8 fields"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "relics",
+      "name": "Relics",
+      "old_count": 288,
+      "new_count": 288,
+      "changed": [
+        {
+          "id": "BIG_HAT",
+          "name": "Big Hat",
+          "changes": [
+            {
+              "field": "description",
+              "old": "At the start of each combat, add [blue]2[/blue] random [gold]Ethereal[/gold] ...",
+              "new": "At the start of each combat, add [blue]2[/blue] random [gold]Ethereal[/gold] ..."
+            },
+            {
+              "field": "description_raw",
+              "old": "At the start of each combat, add [blue]{Cards}[/blue] random [gold]Ethereal[/...",
+              "new": "At the start of each combat, add [blue]{Cards}[/blue] random [gold]Ethereal[/..."
+            }
+          ]
+        },
+        {
+          "id": "BIIIG_HUG",
+          "name": "Biiig Hug",
+          "changes": [
+            {
+              "field": "description",
+              "old": "Upon pickup, remove [blue]4[/blue] cards from your [gold]Deck[/gold]. Wheneve...",
+              "new": "Upon pickup, remove [blue]4[/blue] cards from your [gold]Deck[/gold]. Wheneve..."
+            },
+            {
+              "field": "description_raw",
+              "old": "Upon pickup, remove [blue]{Cards}[/blue] cards from your [gold]Deck[/gold]. W...",
+              "new": "Upon pickup, remove [blue]{Cards}[/blue] cards from your [gold]Deck[/gold]. W..."
+            }
+          ]
+        },
+        {
+          "id": "BURNING_STICKS",
+          "name": "Burning Sticks",
+          "changes": [
+            {
+              "field": "description",
+              "old": "The first time each combat you [gold]Exhaust[/gold] a Skill, add a copy of it...",
+              "new": "The first time each combat you [gold]Exhaust[/gold] a Skill, add a copy of it..."
+            },
+            {
+              "field": "description_raw",
+              "old": "The first time each combat you [gold]Exhaust[/gold] a Skill, add a copy of it...",
+              "new": "The first time each combat you [gold]Exhaust[/gold] a Skill, add a copy of it..."
+            }
+          ]
+        },
+        {
+          "id": "CHOICES_PARADOX",
+          "name": "Choices Paradox",
+          "changes": [
+            {
+              "field": "description",
+              "old": "At the start of each combat, add [blue]1[/blue] of [blue]5[/blue] random card...",
+              "new": "At the start of each combat, add [blue]1[/blue] of [blue]5[/blue] random card..."
+            },
+            {
+              "field": "description_raw",
+              "old": "At the start of each combat, add [blue]1[/blue] of [blue]{Cards}[/blue] rando...",
+              "new": "At the start of each combat, add [blue]1[/blue] of [blue]{Cards}[/blue] rando..."
+            }
+          ]
+        },
+        {
+          "id": "CROSSBOW",
+          "name": "Crossbow",
+          "changes": [
+            {
+              "field": "description",
+              "old": "At the start of your turn, add a random [gold]Attack[/gold] into your [gold]H...",
+              "new": "At the start of your turn, add a random [gold]Attack[/gold] to your [gold]Han..."
+            },
+            {
+              "field": "description_raw",
+              "old": "At the start of your turn, add a random [gold]Attack[/gold] into your [gold]H...",
+              "new": "At the start of your turn, add a random [gold]Attack[/gold] to your [gold]Han..."
+            }
+          ]
+        },
+        {
+          "id": "FUNERARY_MASK",
+          "name": "Funerary Mask",
+          "changes": [
+            {
+              "field": "description",
+              "old": "At the start of each combat, add [blue]3[/blue] [gold]Souls[/gold] into your ...",
+              "new": "At the start of each combat, add [blue]3[/blue] [gold]Souls[/gold] to your [g..."
+            },
+            {
+              "field": "description_raw",
+              "old": "At the start of each combat, add [blue]{Cards}[/blue] [gold]{Cards:plural:Sou...",
+              "new": "At the start of each combat, add [blue]{Cards}[/blue] [gold]{Cards:plural:Sou..."
+            }
+          ]
+        },
+        {
+          "id": "MASSIVE_SCROLL",
+          "name": "Massive Scroll",
+          "changes": [
+            {
+              "field": "description",
+              "old": "Upon pickup, choose [blue]1[/blue] of [blue]3[/blue] [gold]Multiplayer Cards[...",
+              "new": "Upon pickup, choose [blue]1[/blue] of [blue]3[/blue] [gold]Multiplayer Colorl..."
+            },
+            {
+              "field": "description_raw",
+              "old": "Upon pickup, choose [blue]1[/blue] of [blue]3[/blue] [gold]Multiplayer Cards[...",
+              "new": "Upon pickup, choose [blue]1[/blue] of [blue]3[/blue] [gold]Multiplayer Colorl..."
+            }
+          ]
+        },
+        {
+          "id": "NINJA_SCROLL",
+          "name": "Ninja Scroll",
+          "changes": [
+            {
+              "field": "description",
+              "old": "At the start of each combat, add [blue]3[/blue] [gold]Shivs[/gold] into your ...",
+              "new": "At the start of each combat, add [blue]3[/blue] [gold]Shivs[/gold] to your [g..."
+            },
+            {
+              "field": "description_raw",
+              "old": "At the start of each combat, add [blue]{Shivs}[/blue] [gold]{Shivs:plural:Shi...",
+              "new": "At the start of each combat, add [blue]{Shivs}[/blue] [gold]{Shivs:plural:Shi..."
+            }
+          ]
+        },
+        {
+          "id": "ORANGE_DOUGH",
+          "name": "Orange Dough",
+          "changes": [
+            {
+              "field": "description",
+              "old": "At the start of each combat, add [blue]2[/blue] random Colorless cards into y...",
+              "new": "At the start of each combat, add [blue]2[/blue] random Colorless cards to you..."
+            },
+            {
+              "field": "description_raw",
+              "old": "At the start of each combat, add [blue]{Cards}[/blue] random Colorless {Cards...",
+              "new": "At the start of each combat, add [blue]{Cards}[/blue] random Colorless {Cards..."
+            }
+          ]
+        },
+        {
+          "id": "POWER_CELL",
+          "name": "Power Cell",
+          "changes": [
+            {
+              "field": "description",
+              "old": "At the start of each combat, add [blue]2[/blue] zero-cost cards from your [go...",
+              "new": "At the start of each combat, add [blue]2[/blue] zero-cost cards from your [go..."
+            },
+            {
+              "field": "description_raw",
+              "old": "At the start of each combat, add [blue]{Cards}[/blue] zero-cost cards from yo...",
+              "new": "At the start of each combat, add [blue]{Cards}[/blue] zero-cost cards from yo..."
+            }
+          ]
+        },
+        {
+          "id": "RADIANT_PEARL",
+          "name": "Radiant Pearl",
+          "changes": [
+            {
+              "field": "description",
+              "old": "At the start of each combat, add [blue]1[/blue] [gold]Luminesce[/gold] into y...",
+              "new": "At the start of each combat, add [blue]1[/blue] [gold]Luminesce[/gold] to you..."
+            },
+            {
+              "field": "description_raw",
+              "old": "At the start of each combat, add [blue]{Cards}[/blue] [gold]{Cards:plural:Lum...",
+              "new": "At the start of each combat, add [blue]{Cards}[/blue] [gold]{Cards:plural:Lum..."
+            }
+          ]
+        },
+        {
+          "id": "RAINBOW_RING",
+          "name": "Rainbow Ring",
+          "changes": [
+            {
+              "field": "description",
+              "old": "The first time you play an Attack, Skill, and Power each turn, gain [blue]1[/...",
+              "new": "Whenever you play an Attack, Skill, and Power in a single turn, gain [blue]1[..."
+            },
+            {
+              "field": "description_raw",
+              "old": "The first time you play an Attack, Skill, and Power each turn, gain [blue]{St...",
+              "new": "Whenever you play an Attack, Skill, and Power in a single turn, gain [blue]{S..."
+            }
+          ]
+        },
+        {
+          "id": "VEXING_PUZZLEBOX",
+          "name": "Vexing Puzzlebox",
+          "changes": [
+            {
+              "field": "description",
+              "old": "At the start of each combat, add a random card into your [gold]Hand[/gold]. I...",
+              "new": "At the start of each combat, add a random card to your [gold]Hand[/gold]. It ..."
+            },
+            {
+              "field": "description_raw",
+              "old": "At the start of each combat, add a random card into your [gold]Hand[/gold]. I...",
+              "new": "At the start of each combat, add a random card to your [gold]Hand[/gold]. It ..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "monsters",
+      "name": "Monsters",
+      "old_count": 116,
+      "new_count": 116,
+      "changed": [
+        {
+          "id": "ARCHITECT",
+          "name": "The Architect",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'THE_ARCHITECT_EVENT_ENCOUNTER', 'encounter_name': 'The Architect', 'room_type': 'Monster', 'act': None, 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "ASSASSIN_RUBY_RAIDER",
+          "name": "Assassin Raider",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'RUBY_RAIDERS_NORMAL', 'encounter_name': 'Ruby Raiders', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "AXEBOT",
+          "name": "Axebot",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'AXEBOTS_NORMAL', 'encounter_name': 'Bot Buddies', 'room_type': 'Monster', 'act': 'Act 3 - Glory', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "AXE_RUBY_RAIDER",
+          "name": "Axe Raider",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'RUBY_RAIDERS_NORMAL', 'encounter_name': 'Ruby Raiders', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "BATTLE_FRIEND_V1",
+          "name": "Battle Friend V1.0",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'BATTLEWORN_DUMMY_EVENT_ENCOUNTER', 'encounter_name': 'Battleworn Dummy', 'room_type': 'Monster', 'act': None, 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "BATTLE_FRIEND_V2",
+          "name": "Battle Friend V2.0",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'BATTLEWORN_DUMMY_EVENT_ENCOUNTER', 'encounter_name': 'Battleworn Dummy', 'room_type': 'Monster', 'act': None, 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "BATTLE_FRIEND_V3",
+          "name": "Battle Friend V3.0",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'BATTLEWORN_DUMMY_EVENT_ENCOUNTER', 'encounter_name': 'Battleworn Dummy', 'room_type': 'Monster', 'act': None, 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "BOWLBUG_EGG",
+          "name": "Bowlbug (Egg)",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'BOWLBUGS_NORMAL', 'encounter_name': 'Bowlbug Swarm', 'room_type': 'Monster', 'act': 'Act 2 - Hive', 'is_weak': False}, {'encounter_id': 'BOWLBUGS_WEAK', 'encounter_name': 'Bowlbugs', 'room_type': 'Monster', 'act': 'Act 2 - Hive', 'is_weak': True}, {'encounter_id': 'TUNNELER_NORMAL', 'encounter_name': 'Tunneling Twosome', 'room_type': 'Monster', 'act': 'Act 2 - Hive', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "BOWLBUG_NECTAR",
+          "name": "Bowlbug (Nectar)",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'BOWLBUGS_NORMAL', 'encounter_name': 'Bowlbug Swarm', 'room_type': 'Monster', 'act': 'Act 2 - Hive', 'is_weak': False}, {'encounter_id': 'BOWLBUGS_WEAK', 'encounter_name': 'Bowlbugs', 'room_type': 'Monster', 'act': 'Act 2 - Hive', 'is_weak': True}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "BOWLBUG_ROCK",
+          "name": "Bowlbug (Rock)",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'BOWLBUGS_NORMAL', 'encounter_name': 'Bowlbug Swarm', 'room_type': 'Monster', 'act': 'Act 2 - Hive', 'is_weak': False}, {'encounter_id': 'BOWLBUGS_WEAK', 'encounter_name': 'Bowlbugs', 'room_type': 'Monster', 'act': 'Act 2 - Hive', 'is_weak': True}, {'encounter_id': 'SLUMBERING_BEETLE_NORMAL', 'encounter_name': 'Slumber Party', 'room_type': 'Monster', 'act': 'Act 2 - Hive', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "BOWLBUG_SILK",
+          "name": "Bowlbug (Silk)",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'BOWLBUGS_NORMAL', 'encounter_name': 'Bowlbug Swarm', 'room_type': 'Monster', 'act': 'Act 2 - Hive', 'is_weak': False}, {'encounter_id': 'SLUMBERING_BEETLE_NORMAL', 'encounter_name': 'Slumber Party', 'room_type': 'Monster', 'act': 'Act 2 - Hive', 'is_weak': False}, {'encounter_id': 'TUNNELER_NORMAL', 'encounter_name': 'Tunneling Twosome', 'room_type': 'Monster', 'act': 'Act 2 - Hive', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "BRUTE_RUBY_RAIDER",
+          "name": "Brute Raider",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'RUBY_RAIDERS_NORMAL', 'encounter_name': 'Ruby Raiders', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "BYGONE_EFFIGY",
+          "name": "Bygone Effigy",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'BYGONE_EFFIGY_ELITE', 'encounter_name': 'Bygone Effigy', 'room_type': 'Elite', 'act': 'Act 1 - Overgrowth', 'is_weak': False}",
+              "new": "none"
+            },
+            {
+              "field": "min_hp_ascension",
+              "old": "132",
+              "new": "127"
+            },
+            {
+              "field": "min_hp",
+              "old": "127",
+              "new": "123"
+            }
+          ]
+        },
+        {
+          "id": "BYRDONIS",
+          "name": "Byrdonis",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'BYRDONIS_ELITE', 'encounter_name': 'Byrdonis', 'room_type': 'Elite', 'act': 'Act 1 - Overgrowth', 'is_weak': False}",
+              "new": "none"
+            },
+            {
+              "field": "damage_values",
+              "old": "2 fields",
+              "new": "2 fields"
+            },
+            {
+              "field": "moves",
+              "old": "{'id': 'PECK', 'name': 'Peck', 'intent': 'Attack', 'damage': {'normal': 3, 'ascension': 4, 'hit_count': 3, 'hit_count_ascension': 3}}, {'id': 'SWOOP', 'name': 'Swoop', 'intent': 'Attack', 'damage': {'normal': 16, 'ascension': 18}}",
+              "new": "{'id': 'PECK', 'name': 'Peck', 'intent': 'Attack', 'damage': {'normal': 3, 'ascension': 4, 'hit_count': 3, 'hit_count_ascension': 3}}, {'id': 'SWOOP', 'name': 'Swoop', 'intent': 'Attack', 'damage': {'normal': 16, 'ascension': 17}}"
+            }
+          ]
+        },
+        {
+          "id": "CALCIFIED_CULTIST",
+          "name": "Calcified Cultist",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'CULTISTS_NORMAL', 'encounter_name': 'Cultists', 'room_type': 'Monster', 'act': 'Underdocks', 'is_weak': False}, {'encounter_id': 'TOADPOLES_NORMAL', 'encounter_name': 'Underdocks Wildlife', 'room_type': 'Monster', 'act': 'Underdocks', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "CEREMONIAL_BEAST",
+          "name": "Ceremonial Beast",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'CEREMONIAL_BEAST_BOSS', 'encounter_name': 'Ceremonial Beast', 'room_type': 'Boss', 'act': 'Act 1 - Overgrowth', 'is_weak': False}",
+              "new": "none"
+            },
+            {
+              "field": "damage_values",
+              "old": "3 fields",
+              "new": "3 fields"
+            },
+            {
+              "field": "moves",
+              "old": "6 items",
+              "new": "6 items"
+            }
+          ]
+        },
+        {
+          "id": "CHOMPER",
+          "name": "Chomper",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'CHOMPERS_NORMAL', 'encounter_name': 'An Automaton Pair', 'room_type': 'Monster', 'act': 'Act 2 - Hive', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "CORPSE_SLUG",
+          "name": "Corpse Slug",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'CORPSE_SLUGS_NORMAL', 'encounter_name': 'Many Corpse Slugs', 'room_type': 'Monster', 'act': 'Underdocks', 'is_weak': False}, {'encounter_id': 'CORPSE_SLUGS_WEAK', 'encounter_name': 'Corpse Slugs', 'room_type': 'Monster', 'act': 'Underdocks', 'is_weak': True}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "CROSSBOW_RUBY_RAIDER",
+          "name": "Crossbow Raider",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'RUBY_RAIDERS_NORMAL', 'encounter_name': 'Ruby Raiders', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "CRUSHER",
+          "name": "Crusher",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'KAISER_CRAB_BOSS', 'encounter_name': 'Kaiser Crab', 'room_type': 'Boss', 'act': 'Act 2 - Hive', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "CUBEX_CONSTRUCT",
+          "name": "Cubex Construct",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'CONSTRUCT_MENAGERIE_NORMAL', 'encounter_name': 'Construct Menagerie', 'room_type': 'Monster', 'act': 'Act 3 - Glory', 'is_weak': False}, {'encounter_id': 'CUBEX_CONSTRUCT_NORMAL', 'encounter_name': 'Cubex Construct', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "DAMP_CULTIST",
+          "name": "Damp Cultist",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'CULTISTS_NORMAL', 'encounter_name': 'Cultists', 'room_type': 'Monster', 'act': 'Underdocks', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "DECIMILLIPEDE_SEGMENT_BACK",
+          "name": "Decimillipede Segment (Back)",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'DECIMILLIPEDE_ELITE', 'encounter_name': 'The Decimillipede', 'room_type': 'Elite', 'act': 'Act 2 - Hive', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "DECIMILLIPEDE_SEGMENT_FRONT",
+          "name": "Decimillipede Segment (Front)",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'DECIMILLIPEDE_ELITE', 'encounter_name': 'The Decimillipede', 'room_type': 'Elite', 'act': 'Act 2 - Hive', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "DECIMILLIPEDE_SEGMENT_MIDDLE",
+          "name": "Decimillipede Segment (Middle)",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'DECIMILLIPEDE_ELITE', 'encounter_name': 'The Decimillipede', 'room_type': 'Elite', 'act': 'Act 2 - Hive', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "DEVOTED_SCULPTOR",
+          "name": "Devoted Sculptor",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'DEVOTED_SCULPTOR_WEAK', 'encounter_name': 'Devoted Sculptor', 'room_type': 'Monster', 'act': 'Act 3 - Glory', 'is_weak': True}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "DOOR",
+          "name": "Door",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'DOORMAKER_BOSS', 'encounter_name': 'The Doormaker', 'room_type': 'Boss', 'act': 'Act 3 - Glory', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "DOORMAKER",
+          "name": "Doormaker",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'DOORMAKER_BOSS', 'encounter_name': 'The Doormaker', 'room_type': 'Boss', 'act': 'Act 3 - Glory', 'is_weak': False}",
+              "new": "none"
+            },
+            {
+              "field": "damage_values",
+              "old": "2 fields",
+              "new": "2 fields"
+            },
+            {
+              "field": "moves",
+              "old": "{'id': 'WHAT_IS_IT', 'name': 'What Is It', 'intent': 'Stun'}, {'id': 'BEAM', 'name': 'Beam', 'intent': 'Attack', 'damage': {'normal': 31, 'ascension': 34}}, {'id': 'GET_BACK_IN', 'name': 'Get Back In', 'intent': 'Attack + Buff + Escape', 'powers': [{'power_id': 'STRENGTH', 'target': 'self', 'amount': 5}], 'damage': {'normal': 40, 'ascension': 45}}",
+              "new": "{'id': 'WHAT_IS_IT', 'name': 'What Is It', 'intent': 'Stun'}, {'id': 'BEAM', 'name': 'Beam', 'intent': 'Attack', 'damage': {'normal': 29, 'ascension': 33}}, {'id': 'GET_BACK_IN', 'name': 'Get Back In', 'intent': 'Attack + Buff + Escape', 'powers': [{'power_id': 'STRENGTH', 'target': 'self', 'amount': 5}], 'damage': {'normal': 35, 'ascension': 40}}"
+            }
+          ]
+        },
+        {
+          "id": "ENTOMANCER",
+          "name": "Entomancer",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'ENTOMANCER_ELITE', 'encounter_name': 'Entomancer', 'room_type': 'Elite', 'act': 'Act 2 - Hive', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "EXOSKELETON",
+          "name": "Exoskeleton",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'EXOSKELETONS_NORMAL', 'encounter_name': 'Many Exoskeletons', 'room_type': 'Monster', 'act': 'Act 2 - Hive', 'is_weak': False}, {'encounter_id': 'EXOSKELETONS_WEAK', 'encounter_name': 'Exoskeletons', 'room_type': 'Monster', 'act': 'Act 2 - Hive', 'is_weak': True}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "EYE_WITH_TEETH",
+          "name": "Eye With Teeth",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'FOGMOG_NORMAL', 'encounter_name': 'Fogmog', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "FABRICATOR",
+          "name": "Fabricator",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'FABRICATOR_NORMAL', 'encounter_name': 'Fabricator', 'room_type': 'Monster', 'act': 'Act 3 - Glory', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "FAKE_MERCHANT_MONSTER",
+          "name": "The Merchant???",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'FAKE_MERCHANT_EVENT_ENCOUNTER', 'encounter_name': 'The Merchant???', 'room_type': 'Monster', 'act': None, 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "FAT_GREMLIN",
+          "name": "Fat Gremlin",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'GREMLIN_MERC_NORMAL', 'encounter_name': 'Two Gremlins in a Trenchcoat', 'room_type': 'Monster', 'act': 'Underdocks', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "FLAIL_KNIGHT",
+          "name": "Flail Knight",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'KNIGHTS_ELITE', 'encounter_name': 'Knight Gang', 'room_type': 'Elite', 'act': 'Act 3 - Glory', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "FLYCONID",
+          "name": "Flyconid",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'FLYCONID_NORMAL', 'encounter_name': 'Shroom and Slime', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': False}, {'encounter_id': 'SNAPPING_JAXFRUIT_NORMAL', 'encounter_name': 'Overgrowth Flora', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "FOGMOG",
+          "name": "Fogmog",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'FOGMOG_NORMAL', 'encounter_name': 'Fogmog', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "FOSSIL_STALKER",
+          "name": "Fossil Stalker",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'FOSSIL_STALKER_NORMAL', 'encounter_name': 'Fossil Stalker', 'room_type': 'Monster', 'act': 'Underdocks', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "FROG_KNIGHT",
+          "name": "Frog Knight",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'FROG_KNIGHT_NORMAL', 'encounter_name': 'Frog Knight', 'room_type': 'Monster', 'act': 'Act 3 - Glory', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "FUZZY_WURM_CRAWLER",
+          "name": "Fuzzy Wurm Crawler",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'FUZZY_WURM_CRAWLER_WEAK', 'encounter_name': 'Fuzzy Wurm Crawler', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': True}, {'encounter_id': 'OVERGROWTH_CRAWLERS', 'encounter_name': 'Overgrowth Crawlers', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "GAS_BOMB",
+          "name": "Gas Bomb",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'LIVING_FOG_NORMAL', 'encounter_name': 'Evil Gas', 'room_type': 'Monster', 'act': 'Underdocks', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "GLOBE_HEAD",
+          "name": "Globe Head",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'GLOBE_HEAD_NORMAL', 'encounter_name': 'A Lone Globe Head', 'room_type': 'Monster', 'act': 'Act 3 - Glory', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "GREMLIN_MERC",
+          "name": "Gremlin Merc",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'GREMLIN_MERC_NORMAL', 'encounter_name': 'Two Gremlins in a Trenchcoat', 'room_type': 'Monster', 'act': 'Underdocks', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "HAUNTED_SHIP",
+          "name": "Haunted Ship",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'HAUNTED_SHIP_NORMAL', 'encounter_name': 'Haunted Ship', 'room_type': 'Monster', 'act': 'Underdocks', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "HUNTER_KILLER",
+          "name": "Hunter Killer",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'HUNTER_KILLER_NORMAL', 'encounter_name': 'Hunter Killer', 'room_type': 'Monster', 'act': 'Act 2 - Hive', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "INFESTED_PRISM",
+          "name": "Infested Prism",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'INFESTED_PRISMS_ELITE', 'encounter_name': 'Infested Prism', 'room_type': 'Elite', 'act': 'Act 2 - Hive', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "INKLET",
+          "name": "Inklet",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'INKLETS_NORMAL', 'encounter_name': 'Inklets', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "KIN_FOLLOWER",
+          "name": "Kin Follower",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'THE_KIN_BOSS', 'encounter_name': 'The Kin', 'room_type': 'Boss', 'act': 'Act 1 - Overgrowth', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "KIN_PRIEST",
+          "name": "Kin Priest",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'THE_KIN_BOSS', 'encounter_name': 'The Kin', 'room_type': 'Boss', 'act': 'Act 1 - Overgrowth', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "KNOWLEDGE_DEMON",
+          "name": "Knowledge Demon",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'KNOWLEDGE_DEMON_BOSS', 'encounter_name': 'Knowledge Demon', 'room_type': 'Boss', 'act': 'Act 2 - Hive', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "LAGAVULIN_MATRIARCH",
+          "name": "Lagavulin Matriarch",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'LAGAVULIN_MATRIARCH_BOSS', 'encounter_name': 'Lagavulin Matriarch', 'room_type': 'Boss', 'act': 'Underdocks', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "LEAF_SLIME_M",
+          "name": "Leaf Slime (M)",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'FLYCONID_NORMAL', 'encounter_name': 'Shroom and Slime', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': False}, {'encounter_id': 'SLIMES_NORMAL', 'encounter_name': 'Swarm of Slimes', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': False}, {'encounter_id': 'SLIMES_WEAK', 'encounter_name': 'Group of Slimes', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': True}, {'encounter_id': 'SLITHERING_STRANGLER_NORMAL', 'encounter_name': 'Strangler and Friend', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "LEAF_SLIME_S",
+          "name": "Leaf Slime (S)",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'SLIMES_NORMAL', 'encounter_name': 'Swarm of Slimes', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': False}, {'encounter_id': 'SLIMES_WEAK', 'encounter_name': 'Group of Slimes', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': True}, {'encounter_id': 'SLITHERING_STRANGLER_NORMAL', 'encounter_name': 'Strangler and Friend', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "LIVING_FOG",
+          "name": "Living Fog",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'LIVING_FOG_NORMAL', 'encounter_name': 'Evil Gas', 'room_type': 'Monster', 'act': 'Underdocks', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "LIVING_SHIELD",
+          "name": "Living Shield",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'TURRET_OPERATOR_WEAK', 'encounter_name': 'Turret Operator', 'room_type': 'Monster', 'act': 'Act 3 - Glory', 'is_weak': True}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "LOUSE_PROGENITOR",
+          "name": "Louse Progenitor",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'LOUSE_PROGENITOR_NORMAL', 'encounter_name': 'Louse Progenitor', 'room_type': 'Monster', 'act': 'Act 2 - Hive', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "MAGI_KNIGHT",
+          "name": "Magi Knight",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'KNIGHTS_ELITE', 'encounter_name': 'Knight Gang', 'room_type': 'Elite', 'act': 'Act 3 - Glory', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "MAWLER",
+          "name": "Mawler",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'MAWLER_NORMAL', 'encounter_name': 'Mawler', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "MECHA_KNIGHT",
+          "name": "Mecha Knight",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'MECHA_KNIGHT_ELITE', 'encounter_name': 'Mecha Knight', 'room_type': 'Elite', 'act': 'Act 3 - Glory', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "MYSTERIOUS_KNIGHT",
+          "name": "Mysterious Knight",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'MYSTERIOUS_KNIGHT_EVENT_ENCOUNTER', 'encounter_name': 'Mysterious Knight', 'room_type': 'Monster', 'act': None, 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "MYTE",
+          "name": "Myte",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'MYTES_NORMAL', 'encounter_name': 'Mass of Mytes', 'room_type': 'Monster', 'act': 'Act 2 - Hive', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "NIBBIT",
+          "name": "Nibbit",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'NIBBITS_NORMAL', 'encounter_name': 'A Pair of Nibbits', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': False}, {'encounter_id': 'NIBBITS_WEAK', 'encounter_name': 'A Lone Nibbit', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': True}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "OVICOPTER",
+          "name": "Ovicopter",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'OVICOPTER_NORMAL', 'encounter_name': 'Ovicopter', 'room_type': 'Monster', 'act': 'Act 2 - Hive', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "OWL_MAGISTRATE",
+          "name": "Owl Magistrate",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'OWL_MAGISTRATE_NORMAL', 'encounter_name': 'Owl Magistrate', 'room_type': 'Monster', 'act': 'Act 3 - Glory', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "PHANTASMAL_GARDENER",
+          "name": "Phantasmal Gardener",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'PHANTASMAL_GARDENERS_ELITE', 'encounter_name': 'Phantasmal Gardeners', 'room_type': 'Elite', 'act': 'Underdocks', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "PHROG_PARASITE",
+          "name": "Phrog Parasite",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'PHROG_PARASITE_ELITE', 'encounter_name': 'Phrog Parasite', 'room_type': 'Elite', 'act': 'Act 1 - Overgrowth', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "PUNCH_CONSTRUCT",
+          "name": "Punch Construct",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'CONSTRUCT_MENAGERIE_NORMAL', 'encounter_name': 'Construct Menagerie', 'room_type': 'Monster', 'act': 'Act 3 - Glory', 'is_weak': False}, {'encounter_id': 'PUNCH_CONSTRUCT_NORMAL', 'encounter_name': 'Punch Construct', 'room_type': 'Monster', 'act': 'Underdocks', 'is_weak': False}, {'encounter_id': 'PUNCH_OFF_EVENT_ENCOUNTER', 'encounter_name': 'Punch Constructs', 'room_type': 'Monster', 'act': None, 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "QUEEN",
+          "name": "Queen",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'QUEEN_BOSS', 'encounter_name': 'Queen', 'room_type': 'Boss', 'act': 'Act 3 - Glory', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "ROCKET",
+          "name": "Rocket",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'KAISER_CRAB_BOSS', 'encounter_name': 'Kaiser Crab', 'room_type': 'Boss', 'act': 'Act 2 - Hive', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "SCROLL_OF_BITING",
+          "name": "Scroll of Biting",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'SCROLLS_OF_BITING_NORMAL', 'encounter_name': 'Many Scrolls of Biting', 'room_type': 'Monster', 'act': 'Act 3 - Glory', 'is_weak': False}, {'encounter_id': 'SCROLLS_OF_BITING_WEAK', 'encounter_name': 'Scrolls of Biting', 'room_type': 'Monster', 'act': 'Act 3 - Glory', 'is_weak': True}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "SEAPUNK",
+          "name": "Seapunk",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'SEAPUNK_WEAK', 'encounter_name': 'Seapunk', 'room_type': 'Monster', 'act': 'Underdocks', 'is_weak': True}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "SEWER_CLAM",
+          "name": "Sewer Clam",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'SEWER_CLAM_NORMAL', 'encounter_name': 'Sewer Clam', 'room_type': 'Monster', 'act': 'Underdocks', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "SHRINKER_BEETLE",
+          "name": "Shrinker Beetle",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'OVERGROWTH_CRAWLERS', 'encounter_name': 'Overgrowth Crawlers', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': False}, {'encounter_id': 'SHRINKER_BEETLE_WEAK', 'encounter_name': 'Shrinker Beetle', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': True}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "SKULKING_COLONY",
+          "name": "Skulking Colony",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'SKULKING_COLONY_ELITE', 'encounter_name': 'Skulking Colony', 'room_type': 'Elite', 'act': 'Underdocks', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "SLIMED_BERSERKER",
+          "name": "Slimed Berserker",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'SLIMED_BERSERKER_NORMAL', 'encounter_name': 'Slimed Berserker', 'room_type': 'Monster', 'act': 'Act 3 - Glory', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "SLITHERING_STRANGLER",
+          "name": "Slithering Strangler",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'SLITHERING_STRANGLER_NORMAL', 'encounter_name': 'Strangler and Friend', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "SLUDGE_SPINNER",
+          "name": "Sludge Spinner",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'SLUDGE_SPINNER_WEAK', 'encounter_name': 'Sludge Spinner', 'room_type': 'Monster', 'act': 'Underdocks', 'is_weak': True}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "SLUMBERING_BEETLE",
+          "name": "Slumbering Beetle",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'SLUMBERING_BEETLE_NORMAL', 'encounter_name': 'Slumber Party', 'room_type': 'Monster', 'act': 'Act 2 - Hive', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "SNAPPING_JAXFRUIT",
+          "name": "Snapping Jaxfruit",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'SLITHERING_STRANGLER_NORMAL', 'encounter_name': 'Strangler and Friend', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': False}, {'encounter_id': 'SNAPPING_JAXFRUIT_NORMAL', 'encounter_name': 'Overgrowth Flora', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "SNEAKY_GREMLIN",
+          "name": "Sneaky Gremlin",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'GREMLIN_MERC_NORMAL', 'encounter_name': 'Two Gremlins in a Trenchcoat', 'room_type': 'Monster', 'act': 'Underdocks', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "SOUL_FYSH",
+          "name": "Soul Fysh",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'SOUL_FYSH_BOSS', 'encounter_name': 'Soul Fysh', 'room_type': 'Boss', 'act': 'Underdocks', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "SOUL_NEXUS",
+          "name": "Soul Nexus",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'SOUL_NEXUS_ELITE', 'encounter_name': 'Soul Nexus', 'room_type': 'Elite', 'act': 'Act 3 - Glory', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "SPECTRAL_KNIGHT",
+          "name": "Spectral Knight",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'KNIGHTS_ELITE', 'encounter_name': 'Knight Gang', 'room_type': 'Elite', 'act': 'Act 3 - Glory', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "SPINY_TOAD",
+          "name": "Spiny Toad",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'SPINY_TOAD_NORMAL', 'encounter_name': 'Spiny Toad', 'room_type': 'Monster', 'act': 'Act 2 - Hive', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "TERROR_EEL",
+          "name": "Terror Eel",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'TERROR_EEL_ELITE', 'encounter_name': 'Terror Eel', 'room_type': 'Elite', 'act': 'Underdocks', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "TEST_SUBJECT",
+          "name": "Test Subject #C14",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'TEST_SUBJECT_BOSS', 'encounter_name': 'Test Subject', 'room_type': 'Boss', 'act': 'Act 3 - Glory', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "THE_FORGOTTEN",
+          "name": "The Forgotten",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'THE_LOST_AND_FORGOTTEN_NORMAL', 'encounter_name': 'Lost and Forgotten', 'room_type': 'Monster', 'act': 'Act 3 - Glory', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "THE_INSATIABLE",
+          "name": "The Insatiable",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'THE_INSATIABLE_BOSS', 'encounter_name': 'The Insatiable', 'room_type': 'Boss', 'act': 'Act 2 - Hive', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "THE_LOST",
+          "name": "The Lost",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'THE_LOST_AND_FORGOTTEN_NORMAL', 'encounter_name': 'Lost and Forgotten', 'room_type': 'Monster', 'act': 'Act 3 - Glory', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "THE_OBSCURA",
+          "name": "The Obscura",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'THE_OBSCURA_NORMAL', 'encounter_name': 'The Obscura', 'room_type': 'Monster', 'act': 'Act 2 - Hive', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "THIEVING_HOPPER",
+          "name": "Thieving Hopper",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'THIEVING_HOPPER_WEAK', 'encounter_name': 'Thieving Hopper', 'room_type': 'Monster', 'act': 'Act 2 - Hive', 'is_weak': True}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "TOADPOLE",
+          "name": "Toadpole",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'TOADPOLES_NORMAL', 'encounter_name': 'Underdocks Wildlife', 'room_type': 'Monster', 'act': 'Underdocks', 'is_weak': False}, {'encounter_id': 'TOADPOLES_WEAK', 'encounter_name': 'Toadpoles', 'room_type': 'Monster', 'act': 'Underdocks', 'is_weak': True}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "TORCH_HEAD_AMALGAM",
+          "name": "Torch Head Amalgam",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'QUEEN_BOSS', 'encounter_name': 'Queen', 'room_type': 'Boss', 'act': 'Act 3 - Glory', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "TOUGH_EGG",
+          "name": "Tough Egg",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'OVICOPTER_NORMAL', 'encounter_name': 'Ovicopter', 'room_type': 'Monster', 'act': 'Act 2 - Hive', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "TRACKER_RUBY_RAIDER",
+          "name": "Tracker Raider",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'RUBY_RAIDERS_NORMAL', 'encounter_name': 'Ruby Raiders', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "TUNNELER",
+          "name": "Tunneler",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'TUNNELER_NORMAL', 'encounter_name': 'Tunneling Twosome', 'room_type': 'Monster', 'act': 'Act 2 - Hive', 'is_weak': False}, {'encounter_id': 'TUNNELER_WEAK', 'encounter_name': 'Tunneler', 'room_type': 'Monster', 'act': 'Act 2 - Hive', 'is_weak': True}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "TURRET_OPERATOR",
+          "name": "Turret Operator",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'TURRET_OPERATOR_WEAK', 'encounter_name': 'Turret Operator', 'room_type': 'Monster', 'act': 'Act 3 - Glory', 'is_weak': True}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "TWIG_SLIME_M",
+          "name": "Twig Slime (M)",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'FLYCONID_NORMAL', 'encounter_name': 'Shroom and Slime', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': False}, {'encounter_id': 'SLIMES_NORMAL', 'encounter_name': 'Swarm of Slimes', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': False}, {'encounter_id': 'SLIMES_WEAK', 'encounter_name': 'Group of Slimes', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': True}, {'encounter_id': 'SLITHERING_STRANGLER_NORMAL', 'encounter_name': 'Strangler and Friend', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "TWIG_SLIME_S",
+          "name": "Twig Slime (S)",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'SLIMES_NORMAL', 'encounter_name': 'Swarm of Slimes', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': False}, {'encounter_id': 'SLIMES_WEAK', 'encounter_name': 'Group of Slimes', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': True}, {'encounter_id': 'SLITHERING_STRANGLER_NORMAL', 'encounter_name': 'Strangler and Friend', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "TWO_TAILED_RAT",
+          "name": "Two-Tailed Rat",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'TWO_TAILED_RATS_NORMAL', 'encounter_name': 'Two-Tailed Rats', 'room_type': 'Monster', 'act': 'Underdocks', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "VANTOM",
+          "name": "Vantom",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'VANTOM_BOSS', 'encounter_name': 'Vantom', 'room_type': 'Boss', 'act': 'Act 1 - Overgrowth', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "VINE_SHAMBLER",
+          "name": "Vine Shambler",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'VINE_SHAMBLER_NORMAL', 'encounter_name': 'Vine Shambler', 'room_type': 'Monster', 'act': 'Act 1 - Overgrowth', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "WATERFALL_GIANT",
+          "name": "Waterfall Giant",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'WATERFALL_GIANT_BOSS', 'encounter_name': 'Waterfall Giant', 'room_type': 'Boss', 'act': 'Underdocks', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        },
+        {
+          "id": "WRIGGLER",
+          "name": "Wriggler",
+          "changes": [
+            {
+              "field": "encounters",
+              "old": "{'encounter_id': 'DENSE_VEGETATION_EVENT_ENCOUNTER', 'encounter_name': 'Wrigglers', 'room_type': 'Monster', 'act': None, 'is_weak': False}, {'encounter_id': 'PHROG_PARASITE_ELITE', 'encounter_name': 'Phrog Parasite', 'room_type': 'Elite', 'act': 'Act 1 - Overgrowth', 'is_weak': False}",
+              "new": "none"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "potions",
+      "name": "Potions",
+      "old_count": 63,
+      "new_count": 63,
+      "changed": [
+        {
+          "id": "ATTACK_POTION",
+          "name": "Attack Potion",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "Choose [blue]1[/blue] of [blue]3[/blue] random Attack cards to add into your ...",
+              "new": "Choose [blue]1[/blue] of [blue]3[/blue] random Attack cards to add to your [g..."
+            },
+            {
+              "field": "description",
+              "old": "Choose [blue]1[/blue] of [blue]3[/blue] random Attack cards to add into your ...",
+              "new": "Choose [blue]1[/blue] of [blue]3[/blue] random Attack cards to add to your [g..."
+            }
+          ]
+        },
+        {
+          "id": "COLORLESS_POTION",
+          "name": "Colorless Potion",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "Choose [blue]1[/blue] of [blue]3[/blue] random Colorless cards to add into yo...",
+              "new": "Choose [blue]1[/blue] of [blue]3[/blue] random Colorless cards to add to your..."
+            },
+            {
+              "field": "description",
+              "old": "Choose [blue]1[/blue] of [blue]3[/blue] random Colorless cards to add into yo...",
+              "new": "Choose [blue]1[/blue] of [blue]3[/blue] random Colorless cards to add to your..."
+            }
+          ]
+        },
+        {
+          "id": "COSMIC_CONCOCTION",
+          "name": "Cosmic Concoction",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "Add [blue]{Cards}[/blue] [gold]Upgraded[/gold] Colorless {Cards:plural:card|c...",
+              "new": "Add [blue]{Cards}[/blue] [gold]Upgraded[/gold] Colorless {Cards:plural:card|c..."
+            },
+            {
+              "field": "description",
+              "old": "Add [blue]3[/blue] [gold]Upgraded[/gold] Colorless cards into your [gold]Hand...",
+              "new": "Add [blue]3[/blue] [gold]Upgraded[/gold] Colorless cards to your [gold]Hand[/..."
+            }
+          ]
+        },
+        {
+          "id": "CUNNING_POTION",
+          "name": "Cunning Potion",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "Add [blue]{Cards}[/blue] [gold]Upgraded {Cards:plural:Shiv|Shivs}[/gold] into...",
+              "new": "Add [blue]{Cards}[/blue] [gold]Upgraded {Cards:plural:Shiv|Shivs}[/gold] to y..."
+            },
+            {
+              "field": "description",
+              "old": "Add [blue]3[/blue] [gold]Upgraded Shivs[/gold] into your [gold]Hand[/gold].",
+              "new": "Add [blue]3[/blue] [gold]Upgraded Shivs[/gold] to your [gold]Hand[/gold]."
+            }
+          ]
+        },
+        {
+          "id": "DROPLET_OF_PRECOGNITION",
+          "name": "Droplet of Precognition",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "Choose a card in your [gold]Draw Pile[/gold] and add it into your [gold]Hand[...",
+              "new": "Choose a card in your [gold]Draw Pile[/gold] and add it to your [gold]Hand[/g..."
+            },
+            {
+              "field": "description",
+              "old": "Choose a card in your [gold]Draw Pile[/gold] and add it into your [gold]Hand[...",
+              "new": "Choose a card in your [gold]Draw Pile[/gold] and add it to your [gold]Hand[/g..."
+            }
+          ]
+        },
+        {
+          "id": "OROBIC_ACID",
+          "name": "Orobic Acid",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "Add a random Attack, Skill, and Power into your [gold]Hand[/gold]. They're fr...",
+              "new": "Add a random Attack, Skill, and Power to your [gold]Hand[/gold]. They're free..."
+            },
+            {
+              "field": "description",
+              "old": "Add a random Attack, Skill, and Power into your [gold]Hand[/gold]. They're fr...",
+              "new": "Add a random Attack, Skill, and Power to your [gold]Hand[/gold]. They're free..."
+            }
+          ]
+        },
+        {
+          "id": "POT_OF_GHOULS",
+          "name": "Pot of Ghouls",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "Add [blue]{Cards}[/blue] [gold]{Cards:plural:Soul|Souls}[/gold] into your [go...",
+              "new": "Add [blue]{Cards}[/blue] [gold]{Cards:plural:Soul|Souls}[/gold] to your [gold..."
+            },
+            {
+              "field": "description",
+              "old": "Add [blue]2[/blue] [gold]Souls[/gold] into your [gold]Hand[/gold].",
+              "new": "Add [blue]2[/blue] [gold]Souls[/gold] to your [gold]Hand[/gold]."
+            }
+          ]
+        },
+        {
+          "id": "POWER_POTION",
+          "name": "Power Potion",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "Choose [blue]1[/blue] of [blue]3[/blue] random Power cards to add into your [...",
+              "new": "Choose [blue]1[/blue] of [blue]3[/blue] random Power cards to add to your [go..."
+            },
+            {
+              "field": "description",
+              "old": "Choose [blue]1[/blue] of [blue]3[/blue] random Power cards to add into your [...",
+              "new": "Choose [blue]1[/blue] of [blue]3[/blue] random Power cards to add to your [go..."
+            }
+          ]
+        },
+        {
+          "id": "SKILL_POTION",
+          "name": "Skill Potion",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "Choose [blue]1[/blue] of [blue]3[/blue] random Skill cards to add into your [...",
+              "new": "Choose [blue]1[/blue] of [blue]3[/blue] random Skill cards to add to your [go..."
+            },
+            {
+              "field": "description",
+              "old": "Choose [blue]1[/blue] of [blue]3[/blue] random Skill cards to add into your [...",
+              "new": "Choose [blue]1[/blue] of [blue]3[/blue] random Skill cards to add to your [go..."
+            }
+          ]
+        },
+        {
+          "id": "TOUCH_OF_INSANITY",
+          "name": "Touch of Insanity",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "Choose a card in your [gold]Hand[/gold]. It is free to play this combat.",
+              "new": "Choose a card in your [gold]Hand[/gold] to cost [blue]0[/blue] this combat."
+            },
+            {
+              "field": "description",
+              "old": "Choose a card in your [gold]Hand[/gold]. It is free to play this combat.",
+              "new": "Choose a card in your [gold]Hand[/gold] to cost [blue]0[/blue] this combat."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "enchantments",
+      "name": "Enchantments",
+      "old_count": 22,
+      "new_count": 22,
+      "changed": [
+        {
+          "id": "GOOPY",
+          "name": "Goopy",
+          "changes": [
+            {
+              "field": "applicable_to",
+              "old": "Defend cards",
+              "new": "none"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events",
+      "name": "Events",
+      "old_count": 66,
+      "new_count": 66,
+      "changed": [
+        {
+          "id": "THE_LANTERN_KEY",
+          "name": "The Lantern Key",
+          "changes": [
+            {
+              "field": "pages",
+              "old": "{'id': 'DONE', 'description': None, 'options': [{'id': 'RETURN_THE_KEY', 'title': 'RETURN_THE_KEY', 'description': 'The stranger thanks you for your help, and rewards you handsomely.'}]}, {'id': 'INITIAL', 'description': \"You come upon a faintly glowing key and go to pick it up.\\n\\n“Been looking all over for that key! Now if you don't mind...”\\n\\n This person looks like bad news but maybe it's not good to be judgy.\", 'options': [{'id': 'RETURN_THE_KEY', 'title': 'Return the Key', 'description': 'Gain [blue]100[/blue] [gold]Gold[/gold].'}, {'id': 'KEEP_THE_KEY', 'title': 'Keep the Key', 'description': 'Fight to obtain the Key.'}]}, {'id': 'KEEP_THE_KEY', 'description': 'The stranger looks at you menacingly. It seems like only one of you is making it out of here with the key.', 'options': [{'id': 'FIGHT', 'title': 'Fight', 'description': ''}]}",
+              "new": "{'id': 'DONE', 'description': None, 'options': [{'id': 'RETURN_THE_KEY', 'title': 'RETURN_THE_KEY', 'description': 'The stranger thanks you for your help, and rewards you handsomely.'}]}, {'id': 'INITIAL', 'description': \"You come upon a faintly glowing key and go to pick it up \\n\\n“Been looking all over for that key! Now if you don't mind...”\\n\\n This person looks like bad news but maybe it's not good to be judgy.\", 'options': [{'id': 'RETURN_THE_KEY', 'title': 'Return the Key', 'description': 'Gain [blue]100[/blue] [gold]Gold[/gold].'}, {'id': 'KEEP_THE_KEY', 'title': 'Keep the Key', 'description': 'Fight to obtain the Key.'}]}, {'id': 'KEEP_THE_KEY', 'description': 'The stranger looks at you menacingly. It seems like only one of you is making it out of here with the key.', 'options': [{'id': 'FIGHT', 'title': 'Fight', 'description': ''}]}"
+            },
+            {
+              "field": "description",
+              "old": "You come upon a faintly glowing key and go to pick it up.\n\n“Been looking all ...",
+              "new": "You come upon a faintly glowing key and go to pick it up \n\n“Been looking all ..."
+            }
+          ]
+        },
+        {
+          "id": "TINKER_TIME",
+          "name": "Tinker Time",
+          "changes": [
+            {
+              "field": "pages",
+              "old": "{'id': 'CHOOSE_CARD_TYPE', 'description': '“What kind of tool will help you [red][jitter]kill everyone[/jitter][/red]?”', 'options': [{'id': 'ATTACK', 'title': 'Weapon', 'description': 'Make an Attack.'}, {'id': 'SKILL', 'title': 'Protector', 'description': 'Make a Skill.'}, {'id': 'POWER', 'title': 'Gadget', 'description': 'Make a Power.'}]}, {'id': 'CHOOSE_RIDER', 'description': '“Excellent choice! Now what should it [sine]DO[/sine]?”\\nThe [orange]scientist[/orange] rubs her hands together with glee.', 'options': [{'id': 'SAPPING', 'title': 'Sapping', 'description': 'Apply [blue]2[/blue] [gold]Weak[/gold]. Apply [blue]2[/blue] [gold]Vulnerable[/gold].'}, {'id': 'VIOLENCE', 'title': 'Violence', 'description': 'Hits [blue]2[/blue] additional times.'}, {'id': 'CHOKING', 'title': 'Choking', 'description': 'Whenever you play a card this turn, the enemy loses [blue]6[/blue] HP.'}, {'id': 'ENERGIZED', 'title': 'Energized', 'description': 'Gain [energy:2].'}, {'id': 'WISDOM', 'title': 'Wisdom', 'description': 'Draw [blue]3[/blue] cards.'}, {'id': 'CHAOS', 'title': 'Chaos', 'description': 'Add a random card into your [gold]Hand[/gold]. It costs [blue]0[/blue] [energy:1] this turn.'}, {'id': 'EXPERTISE', 'title': 'Expertise', 'description': 'Gain [blue]2[/blue] [gold]Strength[/gold]. Gain [blue]2[/blue] [gold]Dexterity[/gold].'}, {'id': 'CURIOUS', 'title': 'Curious', 'description': 'Powers cost [blue]1[/blue] [energy:1] less.'}, {'id': 'IMPROVEMENT', 'title': 'Improvement', 'description': 'At the end of combat, [gold]Upgrade[/gold] a random card.'}]}, {'id': 'DONE', 'description': '“Whew! All done. This is for you! Now get out there and [red][jitter]slaughter[/jitter][/red]!!”\\n\\nLittle did you know, that [orange]scientist[/orange] went on to create hundreds of weapons, resulting in several thousand deaths within the Spire.'}, {'id': 'INITIAL', 'description': 'Navigating through an [red][sine]endless sea of corpses[/sine][/red], you find a [orange]mad scientist[/orange] scavenging for various scraps.\\n\\n“Yes. Hi, hello! You look like a capable fighter... I need a tester for my next [green]atrocity device[/green]! How about it?”', 'options': [{'id': 'CHOOSE_CARD_TYPE', 'title': 'Accept', 'description': 'Create a custom card to add to your [gold]Deck[/gold].'}]}",
+              "new": "{'id': 'CHOOSE_CARD_TYPE', 'description': '“What kind of tool will help you [red][jitter]kill everyone[/jitter][/red]?”', 'options': [{'id': 'ATTACK', 'title': 'Weapon', 'description': 'Make an Attack with a special effect. Deal [blue]12[/blue] damage.'}, {'id': 'SKILL', 'title': 'Protector', 'description': 'Make a Skill with a special effect. Gain [blue]8[/blue] [gold]Block[/gold].'}, {'id': 'POWER', 'title': 'Gadget', 'description': 'Make a Power with a special effect.'}]}, {'id': 'CHOOSE_RIDER', 'description': '“Excellent choice! Now what should it [sine]DO[/sine]?”\\nThe [orange]scientist[/orange] rubs her hands together with glee.', 'options': [{'id': 'SAPPING', 'title': 'Sapping', 'description': 'Apply [blue]2[/blue] [gold]Weak[/gold]. Apply [blue]2[/blue] [gold]Vulnerable[/gold].'}, {'id': 'VIOLENCE', 'title': 'Violence', 'description': 'Hits [blue]2[/blue] additional times.'}, {'id': 'CHOKING', 'title': 'Choking', 'description': 'Whenever you play a card this turn, the enemy loses [blue]6[/blue] HP.'}, {'id': 'ENERGIZED', 'title': 'Energized', 'description': 'Gain [energy:2].'}, {'id': 'WISDOM', 'title': 'Wisdom', 'description': 'Draw [blue]3[/blue] cards.'}, {'id': 'CHAOS', 'title': 'Chaos', 'description': 'Add a random card to your [gold]Hand[/gold]. It costs [blue]0[/blue] [energy:1] this turn.'}, {'id': 'EXPERTISE', 'title': 'Expertise', 'description': 'Gain [blue]2[/blue] [gold]Strength[/gold]. Gain [blue]2[/blue] [gold]Dexterity[/gold].'}, {'id': 'CURIOUS', 'title': 'Curious', 'description': 'Powers cost [blue]1[/blue] [energy:1] less.'}, {'id': 'IMPROVEMENT', 'title': 'Improvement', 'description': 'At the end of combat, [gold]Upgrade[/gold] a random card.'}]}, {'id': 'DONE', 'description': '“Whew! All done. This is for you! Now get out there and [red][jitter]slaughter[/jitter][/red]!!”\\n\\nLittle did you know, that [orange]scientist[/orange] went on to create hundreds of weapons, resulting in several thousand deaths within the Spire.'}, {'id': 'INITIAL', 'description': 'Navigating through an [red][sine]endless sea of corpses[/sine][/red], you find a [orange]mad scientist[/orange] scavenging for various scraps.\\n\\n“Yes. Hi, hello! You look like a capable fighter... I need a tester for my next [green]atrocity device[/green]! How about it?”', 'options': [{'id': 'CHOOSE_CARD_TYPE', 'title': 'Accept', 'description': 'Create a custom card to add to your [gold]Deck[/gold].'}]}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "powers",
+      "name": "Powers",
+      "old_count": 257,
+      "new_count": 257,
+      "added": [
+        {
+          "id": "PSYCHIC_LINK",
+          "name": "Psychic Link",
+          "type": "Buff"
+        }
+      ],
+      "removed": [
+        {
+          "id": "CRAB_RAGE",
+          "name": "Crab Rage"
+        }
+      ],
+      "changed": [
+        {
+          "id": "CALAMITY",
+          "name": "Calamity",
+          "changes": [
+            {
+              "field": "description",
+              "old": "Whenever you play an Attack, add a random Attack into your [gold]Hand[/gold].",
+              "new": "Whenever you play an Attack, add a random Attack to your [gold]Hand[/gold]."
+            }
+          ]
+        },
+        {
+          "id": "CALL_OF_THE_VOID",
+          "name": "Call of the Void",
+          "changes": [
+            {
+              "field": "description",
+              "old": "At the start of your turn, add [blue]1[/blue] random card into your [gold]Han...",
+              "new": "At the start of your turn, add [blue]1[/blue] random card to your [gold]Hand[..."
+            }
+          ]
+        },
+        {
+          "id": "FREE_ATTACK",
+          "name": "Free Attack",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "Your next Attack costs [blue]0[/blue] {energyPrefix:energyIcons(1)}.",
+              "new": "none"
+            },
+            {
+              "field": "description",
+              "old": "Your next Attack costs [blue]0[/blue] [energy:1].",
+              "new": "Your next Attack costs [blue]0[/blue]."
+            }
+          ]
+        },
+        {
+          "id": "FREE_POWER",
+          "name": "Free Power",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "The next Power you play costs [blue]0[/blue] {energyPrefix:energyIcons(1)}.",
+              "new": "none"
+            },
+            {
+              "field": "description",
+              "old": "The next Power you play costs [blue]0[/blue] [energy:1].",
+              "new": "The next Power you play costs [blue]0[/blue]."
+            }
+          ]
+        },
+        {
+          "id": "FREE_SKILL",
+          "name": "Free Skill",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "The next Skill you play costs [blue]0[/blue] {energyPrefix:energyIcons(1)}.",
+              "new": "none"
+            },
+            {
+              "field": "description",
+              "old": "The next Skill you play costs [blue]0[/blue] [energy:1].",
+              "new": "The next Skill you play costs [blue]0[/blue]."
+            }
+          ]
+        },
+        {
+          "id": "GALVANIC",
+          "name": "Galvanic",
+          "changes": [
+            {
+              "field": "description",
+              "old": "Powers are afflicted with [gold]Galvanized[/gold].",
+              "new": "Powers are afflicted with [gold]Galvanic[/gold]."
+            }
+          ]
+        },
+        {
+          "id": "HELLO_WORLD",
+          "name": "Hello World",
+          "changes": [
+            {
+              "field": "description",
+              "old": "At the start of your turn, add [blue]1[/blue] random Common card into your [g...",
+              "new": "At the start of your turn, add [blue]1[/blue] random Common card to your [gol..."
+            }
+          ]
+        },
+        {
+          "id": "JUGGLING",
+          "name": "Juggling",
+          "changes": [
+            {
+              "field": "description",
+              "old": "Add a copy of the third Attack you play each turn into your [gold]Hand[/gold].",
+              "new": "Add a copy of the third Attack you play each turn to your [gold]Hand[/gold]."
+            }
+          ]
+        },
+        {
+          "id": "PERSONAL_HIVE",
+          "name": "Personal Hive",
+          "changes": [
+            {
+              "field": "description",
+              "old": "Whenever this enemy is hit by an Attack, add [gold]Dazed[/gold] into your [go...",
+              "new": "Whenever this enemy is hit by an Attack, add [gold]Dazed[/gold] to your [gold..."
+            }
+          ]
+        },
+        {
+          "id": "SENTRY_MODE",
+          "name": "Sentry Mode",
+          "changes": [
+            {
+              "field": "description",
+              "old": "At the start of your turn, add [blue]1[/blue] [gold]Sweeping Gaze[/gold] into...",
+              "new": "At the start of your turn, add [blue]1[/blue] [gold]Sweeping Gaze[/gold] to y..."
+            }
+          ]
+        },
+        {
+          "id": "SPECTRUM_SHIFT",
+          "name": "Spectrum Shift",
+          "changes": [
+            {
+              "field": "description",
+              "old": "At the start of your turn, add [blue]1[/blue] random Colorless card into your...",
+              "new": "At the start of your turn, add [blue]1[/blue] random Colorless card to your [..."
+            }
+          ]
+        },
+        {
+          "id": "SWIPE",
+          "name": "Swipe",
+          "changes": [
+            {
+              "field": "description",
+              "old": "Upon killing this enemy, the stolen card is returned.",
+              "new": "Upon killing this enemy, the stolen card is returned to your [gold]Hand[/gold]."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "keywords",
+      "name": "Keywords",
+      "old_count": 8,
+      "new_count": 7,
+      "removed": [
+        {
+          "id": "PERIOD",
+          "name": "Period"
+        }
+      ]
+    },
+    {
+      "id": "afflictions",
+      "name": "Afflictions",
+      "old_count": 6,
+      "new_count": 6,
+      "changed": [
+        {
+          "id": "GALVANIZED",
+          "name": "Galvanic",
+          "changes": [
+            {
+              "field": "name",
+              "old": "Galvanized",
+              "new": "Galvanic"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "epochs",
+      "name": "Epochs",
+      "old_count": 57,
+      "new_count": 57,
+      "changed": [
+        {
+          "id": "UNDERDOCKS_EPOCH",
+          "name": "Underdocks",
+          "changes": [
+            {
+              "field": "unlock_info",
+              "old": "Unlock by accumulating score.",
+              "new": "Kill all [blue]3[/blue] [green]Overgrowth[/green] Bosses to reveal this Epoch."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

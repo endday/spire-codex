@@ -1,0 +1,86 @@
+[
+  {
+    "id": "ATTACK",
+    "name": "Aggressività",
+    "description": "Questo nemico intende [gold]attaccare[/gold] {IsMultiplayer:tutti |}e infliggere [blue]{Damage}[/blue] danni per{Repeat:plural:| [blue]{}[/blue] volte}.",
+    "image_url": "/static/images/intents/attack.png"
+  },
+  {
+    "id": "BUFF",
+    "name": "Rafforzamento",
+    "description": "Questo nemico intende usare un [gold]Buff[/gold].",
+    "image_url": "/static/images/intents/buff.png"
+  },
+  {
+    "id": "CARD_DEBUFF",
+    "name": "Malvagità",
+    "description": "Queto nemico intende applicare [gold]Afflizioni[/gold]",
+    "image_url": "/static/images/intents/card_debuff.png"
+  },
+  {
+    "id": "DEATH_BLOW",
+    "name": "Colpo mortale",
+    "description": "Questa creatura vuole farti morire insieme a essa. Ti attaccherà e infliggerà [blue]{Damage}[/blue] danni prima di essere sconfitta.",
+    "image_url": "/static/images/intents/death_blow.png"
+  },
+  {
+    "id": "DEBUFF",
+    "name": "Strategia",
+    "description": "Questo nemico intende applicarti un [gold]Debuff[/gold].",
+    "image_url": "/static/images/intents/debuff.png"
+  },
+  {
+    "id": "DEBUFF_STRONG",
+    "name": "Strategia",
+    "description": "Questo nemico intende applicarti un potente [gold]Debuff[/gold].",
+    "image_url": "/static/images/intents/debuff_strong.png"
+  },
+  {
+    "id": "DEFEND",
+    "name": "Prudenza",
+    "description": "Questo nemico intende [gold]bloccare[/gold] durante il suo turno.",
+    "image_url": "/static/images/intents/defend.png"
+  },
+  {
+    "id": "ESCAPE",
+    "name": "Codardia",
+    "description": "Questo nemico intende [gold]fuggire[/gold].",
+    "image_url": "/static/images/intents/escape.png"
+  },
+  {
+    "id": "HEAL",
+    "name": "Cura",
+    "description": "Questo nemico intende [gold]curarsi[/gold].",
+    "image_url": "/static/images/intents/heal.png"
+  },
+  {
+    "id": "SLEEP",
+    "name": "Letargo",
+    "description": "Questo nemico non farà nulla durante il suo turno.",
+    "image_url": "/static/images/intents/sleep.png"
+  },
+  {
+    "id": "STATUS",
+    "name": "Strategia",
+    "description": "Questo nemico intende darti [blue]{CardCount}[/blue] {CardCount:plural:carta|carte} [gold]Stato[/gold].",
+    "image_url": "/static/images/intents/status.png"
+  },
+  {
+    "id": "STUN",
+    "name": "Stordimento",
+    "description": "Questo nemico non può agire durante il suo prossimo turno.",
+    "image_url": "/static/images/intents/stun.png"
+  },
+  {
+    "id": "SUMMON",
+    "name": "Evocazione",
+    "description": "Questo nemico intende evocare [gold]mostri[/gold].",
+    "image_url": "/static/images/intents/summon.png"
+  },
+  {
+    "id": "UNKNOWN",
+    "name": "???",
+    "description": "Le intenzioni del nemico sono [gold]sconosciute[/gold].",
+    "image_url": "/static/images/intents/unknown.png"
+  }
+]

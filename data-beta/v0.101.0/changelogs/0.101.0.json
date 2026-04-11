@@ -1,0 +1,1566 @@
+{
+  "app_id": 2868840,
+  "game_version": "0.101.0",
+  "build_id": "",
+  "tag": "0.101.0",
+  "date": "2026-04-10",
+  "title": "Beta v0.101.0",
+  "from_ref": "data-beta/v0.100.0/eng",
+  "to_ref": "data-beta/v0.101.0/eng",
+  "summary": {
+    "added": 5,
+    "removed": 2,
+    "changed": 101
+  },
+  "categories": [
+    {
+      "id": "cards",
+      "name": "Cards",
+      "old_count": 576,
+      "new_count": 576,
+      "added": [
+        {
+          "id": "PREPARED",
+          "name": "Prepared",
+          "cost": 0,
+          "type": "Skill",
+          "rarity": "Common"
+        }
+      ],
+      "removed": [
+        {
+          "id": "PREPARE",
+          "name": "Prepare"
+        }
+      ],
+      "changed": [
+        {
+          "id": "ARSENAL",
+          "name": "Arsenal",
+          "changes": [
+            {
+              "field": "upgrade_description",
+              "old": "Whenever you play a Colorless card, gain 2 [gold]Strength[/gold].",
+              "new": "none"
+            },
+            {
+              "field": "description",
+              "old": "Whenever you play a Colorless card, gain 1 [gold]Strength[/gold].",
+              "new": "Whenever you create a card, gain 1 [gold]Strength[/gold]."
+            },
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "description_raw",
+              "old": "Whenever you play a Colorless card, gain {ArsenalPower:diff()} [gold]Strength...",
+              "new": "Whenever you create a card, gain {ArsenalPower:diff()} [gold]Strength[/gold]."
+            }
+          ]
+        },
+        {
+          "id": "BORROWED_TIME",
+          "name": "Borrowed Time",
+          "changes": [
+            {
+              "field": "powers_applied",
+              "old": "{'power': 'Doom', 'amount': 6, 'power_key': 'Doom'}",
+              "new": "{'power': 'Doom', 'amount': 3, 'power_key': 'Doom'}"
+            },
+            {
+              "field": "vars",
+              "old": "3 fields",
+              "new": "3 fields"
+            },
+            {
+              "field": "upgrade_description",
+              "old": "none",
+              "new": "Apply 3 [gold]Doom[/gold] to yourself.\nGain [energy:2]."
+            },
+            {
+              "field": "description",
+              "old": "Apply inverseDiff() [gold]Doom[/gold] to yourself.\nGain [energy:1].",
+              "new": "Apply 3 [gold]Doom[/gold] to yourself.\nGain [energy:1]."
+            },
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "description_raw",
+              "old": "Apply {DoomPower:inverseDiff()} [gold]Doom[/gold] to yourself.\nGain {Energy:e...",
+              "new": "Apply {DoomPower:diff()} [gold]Doom[/gold] to yourself.\nGain {Energy:energyIc..."
+            }
+          ]
+        },
+        {
+          "id": "CAPTURE_SPIRIT",
+          "name": "Capture Spirit",
+          "changes": [
+            {
+              "field": "vars",
+              "old": "2 fields",
+              "new": "2 fields"
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Enemy loses 3 HP.\nAdd 3 [gold]Souls[/gold] into your [gold]Draw Pile[/gold].",
+              "new": "Enemy loses 4 HP.\nAdd 4 [gold]Souls[/gold] into your [gold]Draw Pile[/gold]."
+            },
+            {
+              "field": "cards_draw",
+              "old": "2",
+              "new": "3"
+            },
+            {
+              "field": "damage",
+              "old": "2",
+              "new": "3"
+            },
+            {
+              "field": "description",
+              "old": "Enemy loses 2 HP.\nAdd 2 [gold]Souls[/gold] into your [gold]Draw Pile[/gold].",
+              "new": "Enemy loses 3 HP.\nAdd 3 [gold]Souls[/gold] into your [gold]Draw Pile[/gold]."
+            }
+          ]
+        },
+        {
+          "id": "CELESTIAL_MIGHT",
+          "name": "Celestial Might",
+          "changes": [
+            {
+              "field": "upgrade_description",
+              "old": "Deal 8 damage 3 times.",
+              "new": "Deal 6 damage 4 times."
+            },
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "1 fields"
+            }
+          ]
+        },
+        {
+          "id": "CINDER",
+          "name": "Cinder",
+          "changes": [
+            {
+              "field": "vars",
+              "old": "2 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Deal 24 damage.\n[gold]Exhaust[/gold] the top card of your [gold]Draw Pile[/go...",
+              "new": "Deal 24 damage.\n[gold]Exhaust[/gold] 1 card at random."
+            },
+            {
+              "field": "description",
+              "old": "Deal 18 damage.\n[gold]Exhaust[/gold] the top card of your [gold]Draw Pile[/go...",
+              "new": "Deal 18 damage.\n[gold]Exhaust[/gold] 1 card at random."
+            },
+            {
+              "field": "description_raw",
+              "old": "Deal {Damage:diff()} damage.\n[gold]Exhaust[/gold] the top card of your [gold]...",
+              "new": "Deal {Damage:diff()} damage.\n[gold]Exhaust[/gold] 1 card at random."
+            }
+          ]
+        },
+        {
+          "id": "FALLING_STAR",
+          "name": "Falling Star",
+          "changes": [
+            {
+              "field": "vars",
+              "old": "6 fields",
+              "new": "6 fields"
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Deal 11 damage.\nApply 1 [gold]Weak[/gold].\nApply 1 [gold]Vulnerable[/gold].",
+              "new": "Deal 12 damage.\nApply 1 [gold]Weak[/gold].\nApply 1 [gold]Vulnerable[/gold]."
+            },
+            {
+              "field": "damage",
+              "old": "7",
+              "new": "8"
+            },
+            {
+              "field": "description",
+              "old": "Deal 7 damage.\nApply 1 [gold]Weak[/gold].\nApply 1 [gold]Vulnerable[/gold].",
+              "new": "Deal 8 damage.\nApply 1 [gold]Weak[/gold].\nApply 1 [gold]Vulnerable[/gold]."
+            }
+          ]
+        },
+        {
+          "id": "GLITTERSTREAM",
+          "name": "Glitterstream",
+          "changes": [
+            {
+              "field": "vars",
+              "old": "2 fields",
+              "new": "2 fields"
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Gain 13 [gold]Block[/gold].\nNext turn, gain 6 [gold]Block[/gold].",
+              "new": "Gain 13 [gold]Block[/gold].\nNext turn, gain 7 [gold]Block[/gold]."
+            },
+            {
+              "field": "description",
+              "old": "Gain 11 [gold]Block[/gold].\nNext turn, gain 4 [gold]Block[/gold].",
+              "new": "Gain 11 [gold]Block[/gold].\nNext turn, gain 5 [gold]Block[/gold]."
+            }
+          ]
+        },
+        {
+          "id": "GUIDING_STAR",
+          "name": "Guiding Star",
+          "changes": [
+            {
+              "field": "upgrade_description",
+              "old": "Deal 13 damage.\nNext turn, draw 3 cards.",
+              "new": "Deal 13 damage.\nDraw 3 cards."
+            },
+            {
+              "field": "description",
+              "old": "Deal 12 damage.\nNext turn, draw 2 cards.",
+              "new": "Deal 12 damage.\nDraw 2 cards."
+            },
+            {
+              "field": "description_raw",
+              "old": "Deal {Damage:diff()} damage.\nNext turn, draw {Cards:diff()} {Cards:plural:car...",
+              "new": "Deal {Damage:diff()} damage.\nDraw {Cards:diff()} {Cards:plural:card|cards}."
+            }
+          ]
+        },
+        {
+          "id": "MAD_SCIENCE",
+          "name": "Mad Science",
+          "changes": [
+            {
+              "field": "type_variants",
+              "old": "3 fields",
+              "new": "3 fields"
+            },
+            {
+              "field": "description_raw",
+              "old": "{CardType:choose(Attack|Skill|Power):Deal {Damage:diff()} damage{Violence: {V...",
+              "new": "{CardType:choose(Attack|Skill|Power):Deal {Damage:diff()} damage{Violence: {V..."
+            }
+          ]
+        },
+        {
+          "id": "PARRY",
+          "name": "Parry",
+          "changes": [
+            {
+              "field": "powers_applied",
+              "old": "{'power': 'Parry', 'amount': 8, 'power_key': 'Parry'}",
+              "new": "{'power': 'Parry', 'amount': 10, 'power_key': 'Parry'}"
+            },
+            {
+              "field": "vars",
+              "old": "2 fields",
+              "new": "2 fields"
+            },
+            {
+              "field": "upgrade_description",
+              "old": "Whenever you play [gold]Sovereign Blade[/gold], gain 11 [gold]Block[/gold].",
+              "new": "Whenever you play [gold]Sovereign Blade[/gold], gain 14 [gold]Block[/gold]."
+            },
+            {
+              "field": "description",
+              "old": "Whenever you play [gold]Sovereign Blade[/gold], gain 8 [gold]Block[/gold].",
+              "new": "Whenever you play [gold]Sovereign Blade[/gold], gain 10 [gold]Block[/gold]."
+            },
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "1 fields"
+            }
+          ]
+        },
+        {
+          "id": "REFINE_BLADE",
+          "name": "Refine Blade",
+          "changes": [
+            {
+              "field": "vars",
+              "old": "2 fields",
+              "new": "2 fields"
+            },
+            {
+              "field": "upgrade_description",
+              "old": "[gold]Forge[/gold] 10.\nNext turn, gain [energy:1].",
+              "new": "[gold]Forge[/gold] 13.\nNext turn, gain [energy:1]."
+            },
+            {
+              "field": "description",
+              "old": "[gold]Forge[/gold] 6.\nNext turn, gain [energy:1].",
+              "new": "[gold]Forge[/gold] 9.\nNext turn, gain [energy:1]."
+            }
+          ]
+        },
+        {
+          "id": "SERPENT_FORM",
+          "name": "Serpent Form",
+          "changes": [
+            {
+              "field": "upgrade_description",
+              "old": "Whenever you play a card, deal 5 damage to a random enemy.",
+              "new": "Whenever you play a card, deal 6 damage to a random enemy."
+            },
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "1 fields"
+            }
+          ]
+        },
+        {
+          "id": "SPOILS_OF_BATTLE",
+          "name": "Spoils of Battle",
+          "changes": [
+            {
+              "field": "vars",
+              "old": "1 fields",
+              "new": "2 fields"
+            },
+            {
+              "field": "upgrade_description",
+              "old": "[gold]Forge[/gold] 17.",
+              "new": "[gold]Forge[/gold] 8.\nDraw 2 cards."
+            },
+            {
+              "field": "cards_draw",
+              "old": "none",
+              "new": "2"
+            },
+            {
+              "field": "description",
+              "old": "[gold]Forge[/gold] 12.",
+              "new": "[gold]Forge[/gold] 5.\nDraw 2 cards."
+            },
+            {
+              "field": "upgrade",
+              "old": "1 fields",
+              "new": "1 fields"
+            },
+            {
+              "field": "description_raw",
+              "old": "[gold]Forge[/gold] {Forge:diff()}.",
+              "new": "[gold]Forge[/gold] {Forge:diff()}.\nDraw {Cards:diff()} {Cards:plural:card|car..."
+            }
+          ]
+        },
+        {
+          "id": "SWORD_SAGE",
+          "name": "Sword Sage",
+          "changes": [
+            {
+              "field": "description",
+              "old": "Increase the cost of [gold]Sovereign Blade[/gold] by 1. [gold]Sovereign Blade...",
+              "new": "[gold]Sovereign Blade[/gold] now hits an additional time."
+            },
+            {
+              "field": "description_raw",
+              "old": "Increase the cost of [gold]Sovereign Blade[/gold] by 1. [gold]Sovereign Blade...",
+              "new": "[gold]Sovereign Blade[/gold] now hits an additional time."
+            }
+          ]
+        },
+        {
+          "id": "TREMBLE",
+          "name": "Tremble",
+          "changes": [
+            {
+              "field": "keywords",
+              "old": "none",
+              "new": "Exhaust"
+            },
+            {
+              "field": "keywords_key",
+              "old": "none",
+              "new": "Exhaust"
+            }
+          ]
+        },
+        {
+          "id": "VOLTAIC",
+          "name": "Voltaic",
+          "changes": [
+            {
+              "field": "cost",
+              "old": "2",
+              "new": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "relics",
+      "name": "Relics",
+      "old_count": 290,
+      "new_count": 290,
+      "changed": [
+        {
+          "id": "BAG_OF_MARBLES",
+          "name": "Bag of Marbles",
+          "changes": [
+            {
+              "field": "rarity",
+              "old": "Uncommon Relic",
+              "new": "Common Relic"
+            },
+            {
+              "field": "merchant_price",
+              "old": "3 fields",
+              "new": "3 fields"
+            },
+            {
+              "field": "compendium_order",
+              "old": "41",
+              "new": "12"
+            },
+            {
+              "field": "rarity_key",
+              "old": "Uncommon",
+              "new": "Common"
+            }
+          ]
+        },
+        {
+          "id": "BAG_OF_PREPARATION",
+          "name": "Bag of Preparation",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "12",
+              "new": "13"
+            }
+          ]
+        },
+        {
+          "id": "BELLOWS",
+          "name": "Bellows",
+          "changes": [
+            {
+              "field": "rarity",
+              "old": "Uncommon Relic",
+              "new": "Rare Relic"
+            },
+            {
+              "field": "merchant_price",
+              "old": "3 fields",
+              "new": "3 fields"
+            },
+            {
+              "field": "compendium_order",
+              "old": "42",
+              "new": "82"
+            },
+            {
+              "field": "rarity_key",
+              "old": "Uncommon",
+              "new": "Rare"
+            }
+          ]
+        },
+        {
+          "id": "BIG_HAT",
+          "name": "Big Hat",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "82",
+              "new": "83"
+            }
+          ]
+        },
+        {
+          "id": "BLOOD_VIAL",
+          "name": "Blood Vial",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "13",
+              "new": "14"
+            }
+          ]
+        },
+        {
+          "id": "BONE_FLUTE",
+          "name": "Bone Flute",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "14",
+              "new": "15"
+            }
+          ]
+        },
+        {
+          "id": "BOOKMARK",
+          "name": "Bookmark",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "83",
+              "new": "84"
+            }
+          ]
+        },
+        {
+          "id": "BOOK_OF_FIVE_RINGS",
+          "name": "Book of Five Rings",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "15",
+              "new": "16"
+            }
+          ]
+        },
+        {
+          "id": "BOOK_REPAIR_KNIFE",
+          "name": "Book Repair Knife",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "43",
+              "new": "41"
+            }
+          ]
+        },
+        {
+          "id": "BOWLER_HAT",
+          "name": "Bowler Hat",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "44",
+              "new": "42"
+            }
+          ]
+        },
+        {
+          "id": "BRONZE_SCALES",
+          "name": "Bronze Scales",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "16",
+              "new": "17"
+            }
+          ]
+        },
+        {
+          "id": "CANDELABRA",
+          "name": "Candelabra",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "45",
+              "new": "43"
+            }
+          ]
+        },
+        {
+          "id": "CAPTAINS_WHEEL",
+          "name": "Captain's Wheel",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "84",
+              "new": "85"
+            }
+          ]
+        },
+        {
+          "id": "CENTENNIAL_PUZZLE",
+          "name": "Centennial Puzzle",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "17",
+              "new": "18"
+            }
+          ]
+        },
+        {
+          "id": "CHANDELIER",
+          "name": "Chandelier",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "85",
+              "new": "86"
+            }
+          ]
+        },
+        {
+          "id": "CHARONS_ASHES",
+          "name": "Charon's Ashes",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "86",
+              "new": "87"
+            }
+          ]
+        },
+        {
+          "id": "CLOAK_CLASP",
+          "name": "Cloak Clasp",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "87",
+              "new": "88"
+            }
+          ]
+        },
+        {
+          "id": "CROSSBOW",
+          "name": "Crossbow",
+          "changes": [
+            {
+              "field": "description",
+              "old": "At the start of your turn, add a random [gold]Attack[/gold] into your [gold]H...",
+              "new": "At the start of your turn, add a random [gold]Attack[/gold] into your [gold]H..."
+            },
+            {
+              "field": "description_raw",
+              "old": "At the start of your turn, add a random [gold]Attack[/gold] into your [gold]H...",
+              "new": "At the start of your turn, add a random [gold]Attack[/gold] into your [gold]H..."
+            }
+          ]
+        },
+        {
+          "id": "DATA_DISK",
+          "name": "Data Disk",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "18",
+              "new": "19"
+            }
+          ]
+        },
+        {
+          "id": "DEMON_TONGUE",
+          "name": "Demon Tongue",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "88",
+              "new": "89"
+            }
+          ]
+        },
+        {
+          "id": "EMOTION_CHIP",
+          "name": "Emotion Chip",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "89",
+              "new": "90"
+            }
+          ]
+        },
+        {
+          "id": "ETERNAL_FEATHER",
+          "name": "Eternal Feather",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "46",
+              "new": "44"
+            }
+          ]
+        },
+        {
+          "id": "FENCING_MANUAL",
+          "name": "Fencing Manual",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "19",
+              "new": "20"
+            }
+          ]
+        },
+        {
+          "id": "FESTIVE_POPPER",
+          "name": "Festive Popper",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "20",
+              "new": "21"
+            }
+          ]
+        },
+        {
+          "id": "FROZEN_EGG",
+          "name": "Frozen Egg",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "90",
+              "new": "91"
+            }
+          ]
+        },
+        {
+          "id": "FUNERARY_MASK",
+          "name": "Funerary Mask",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "47",
+              "new": "45"
+            }
+          ]
+        },
+        {
+          "id": "GALACTIC_DUST",
+          "name": "Galactic Dust",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "48",
+              "new": "46"
+            }
+          ]
+        },
+        {
+          "id": "GAMBLING_CHIP",
+          "name": "Gambling Chip",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "91",
+              "new": "92"
+            }
+          ]
+        },
+        {
+          "id": "GAME_PIECE",
+          "name": "Game Piece",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "92",
+              "new": "93"
+            }
+          ]
+        },
+        {
+          "id": "GIRYA",
+          "name": "Girya",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "93",
+              "new": "94"
+            }
+          ]
+        },
+        {
+          "id": "GOLD_PLATED_CABLES",
+          "name": "Gold-Plated Cables",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "49",
+              "new": "47"
+            }
+          ]
+        },
+        {
+          "id": "GORGET",
+          "name": "Gorget",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "21",
+              "new": "22"
+            }
+          ]
+        },
+        {
+          "id": "GREMLIN_HORN",
+          "name": "Gremlin Horn",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "50",
+              "new": "48"
+            }
+          ]
+        },
+        {
+          "id": "HAPPY_FLOWER",
+          "name": "Happy Flower",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "22",
+              "new": "23"
+            }
+          ]
+        },
+        {
+          "id": "HELICAL_DART",
+          "name": "Helical Dart",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "94",
+              "new": "95"
+            }
+          ]
+        },
+        {
+          "id": "HORN_CLEAT",
+          "name": "Horn Cleat",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "51",
+              "new": "49"
+            }
+          ]
+        },
+        {
+          "id": "ICE_CREAM",
+          "name": "Ice Cream",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "95",
+              "new": "96"
+            }
+          ]
+        },
+        {
+          "id": "INTIMIDATING_HELMET",
+          "name": "Intimidating Helmet",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "96",
+              "new": "97"
+            }
+          ]
+        },
+        {
+          "id": "IVORY_TILE",
+          "name": "Ivory Tile",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "97",
+              "new": "98"
+            }
+          ]
+        },
+        {
+          "id": "JOSS_PAPER",
+          "name": "Joss Paper",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "52",
+              "new": "50"
+            }
+          ]
+        },
+        {
+          "id": "JUZU_BRACELET",
+          "name": "Juzu Bracelet",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "23",
+              "new": "24"
+            }
+          ]
+        },
+        {
+          "id": "KUNAI",
+          "name": "Kunai",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "98",
+              "new": "99"
+            }
+          ]
+        },
+        {
+          "id": "KUSARIGAMA",
+          "name": "Kusarigama",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "53",
+              "new": "51"
+            }
+          ]
+        },
+        {
+          "id": "LANTERN",
+          "name": "Lantern",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "24",
+              "new": "25"
+            }
+          ]
+        },
+        {
+          "id": "LASTING_CANDY",
+          "name": "Lasting Candy",
+          "changes": [
+            {
+              "field": "rarity",
+              "old": "Rare Relic",
+              "new": "Uncommon Relic"
+            },
+            {
+              "field": "merchant_price",
+              "old": "3 fields",
+              "new": "3 fields"
+            },
+            {
+              "field": "compendium_order",
+              "old": "99",
+              "new": "52"
+            },
+            {
+              "field": "rarity_key",
+              "old": "Rare",
+              "new": "Uncommon"
+            }
+          ]
+        },
+        {
+          "id": "LETTER_OPENER",
+          "name": "Letter Opener",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "54",
+              "new": "53"
+            }
+          ]
+        },
+        {
+          "id": "LUCKY_FYSH",
+          "name": "Lucky Fysh",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "55",
+              "new": "54"
+            }
+          ]
+        },
+        {
+          "id": "MEAL_TICKET",
+          "name": "Meal Ticket",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "25",
+              "new": "26"
+            }
+          ]
+        },
+        {
+          "id": "MERCURY_HOURGLASS",
+          "name": "Mercury Hourglass",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "56",
+              "new": "55"
+            }
+          ]
+        },
+        {
+          "id": "MINIATURE_CANNON",
+          "name": "Miniature Cannon",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "57",
+              "new": "56"
+            }
+          ]
+        },
+        {
+          "id": "NUNCHAKU",
+          "name": "Nunchaku",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "58",
+              "new": "57"
+            }
+          ]
+        },
+        {
+          "id": "ODDLY_SMOOTH_STONE",
+          "name": "Oddly Smooth Stone",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "26",
+              "new": "27"
+            }
+          ]
+        },
+        {
+          "id": "ORICHALCUM",
+          "name": "Orichalcum",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "59",
+              "new": "58"
+            }
+          ]
+        },
+        {
+          "id": "ORNAMENTAL_FAN",
+          "name": "Ornamental Fan",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "60",
+              "new": "59"
+            }
+          ]
+        },
+        {
+          "id": "PANTOGRAPH",
+          "name": "Pantograph",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "61",
+              "new": "60"
+            }
+          ]
+        },
+        {
+          "id": "PAPER_PHROG",
+          "name": "Paper Phrog",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "62",
+              "new": "61"
+            }
+          ]
+        },
+        {
+          "id": "PARRYING_SHIELD",
+          "name": "Parrying Shield",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "63",
+              "new": "62"
+            }
+          ]
+        },
+        {
+          "id": "PEAR",
+          "name": "Pear",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "64",
+              "new": "63"
+            }
+          ]
+        },
+        {
+          "id": "PENDULUM",
+          "name": "Pendulum",
+          "changes": [
+            {
+              "field": "description",
+              "old": "Whenever you shuffle your [gold]Draw Pile[/gold], draw a card.",
+              "new": "Every [blue]3[/blue] turns, draw [blue]1[/blue] card."
+            },
+            {
+              "field": "compendium_order",
+              "old": "27",
+              "new": "28"
+            },
+            {
+              "field": "description_raw",
+              "old": "Whenever you shuffle your [gold]Draw Pile[/gold], draw a card.",
+              "new": "Every [blue]{Turns}[/blue] {Turns:plural:turn|turns}, draw [blue]{Cards}[/blu..."
+            }
+          ]
+        },
+        {
+          "id": "PEN_NIB",
+          "name": "Pen Nib",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "65",
+              "new": "64"
+            }
+          ]
+        },
+        {
+          "id": "PERMAFROST",
+          "name": "Permafrost",
+          "changes": [
+            {
+              "field": "rarity",
+              "old": "Common Relic",
+              "new": "Uncommon Relic"
+            },
+            {
+              "field": "merchant_price",
+              "old": "3 fields",
+              "new": "3 fields"
+            },
+            {
+              "field": "compendium_order",
+              "old": "28",
+              "new": "65"
+            },
+            {
+              "field": "rarity_key",
+              "old": "Common",
+              "new": "Uncommon"
+            }
+          ]
+        },
+        {
+          "id": "RED_MASK",
+          "name": "Red Mask",
+          "changes": [
+            {
+              "field": "rarity",
+              "old": "Uncommon Relic",
+              "new": "Common Relic"
+            },
+            {
+              "field": "merchant_price",
+              "old": "3 fields",
+              "new": "3 fields"
+            },
+            {
+              "field": "compendium_order",
+              "old": "68",
+              "new": "30"
+            },
+            {
+              "field": "rarity_key",
+              "old": "Uncommon",
+              "new": "Common"
+            }
+          ]
+        },
+        {
+          "id": "RED_SKULL",
+          "name": "Red Skull",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "30",
+              "new": "31"
+            }
+          ]
+        },
+        {
+          "id": "REGALITE",
+          "name": "Regalite",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "69",
+              "new": "68"
+            }
+          ]
+        },
+        {
+          "id": "REGAL_PILLOW",
+          "name": "Regal Pillow",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "31",
+              "new": "32"
+            }
+          ]
+        },
+        {
+          "id": "REPTILE_TRINKET",
+          "name": "Reptile Trinket",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "70",
+              "new": "69"
+            }
+          ]
+        },
+        {
+          "id": "RIPPLE_BASIN",
+          "name": "Ripple Basin",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "71",
+              "new": "70"
+            }
+          ]
+        },
+        {
+          "id": "SELF_FORMING_CLAY",
+          "name": "Self-Forming Clay",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "72",
+              "new": "71"
+            }
+          ]
+        },
+        {
+          "id": "SNECKO_SKULL",
+          "name": "Snecko Skull",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "32",
+              "new": "33"
+            }
+          ]
+        },
+        {
+          "id": "SPARKLING_ROUGE",
+          "name": "Sparkling Rouge",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "73",
+              "new": "72"
+            }
+          ]
+        },
+        {
+          "id": "STONE_CRACKER",
+          "name": "Stone Cracker",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "74",
+              "new": "73"
+            }
+          ]
+        },
+        {
+          "id": "STRAWBERRY",
+          "name": "Strawberry",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "33",
+              "new": "34"
+            }
+          ]
+        },
+        {
+          "id": "STRIKE_DUMMY",
+          "name": "Strike Dummy",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "34",
+              "new": "35"
+            }
+          ]
+        },
+        {
+          "id": "SYMBIOTIC_VIRUS",
+          "name": "Symbiotic Virus",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "75",
+              "new": "74"
+            }
+          ]
+        },
+        {
+          "id": "TINGSHA",
+          "name": "Tingsha",
+          "changes": [
+            {
+              "field": "compendium_order",
+              "old": "76",
+              "new": "75"
+            }
+          ]
+        },
+        {
+          "id": "TINY_MAILBOX",
+          "name": "Tiny Mailbox",
+          "changes": [
+            {
+              "field": "rarity",
+              "old": "Common Relic",
+              "new": "Uncommon Relic"
+            },
+            {
+              "field": "merchant_price",
+              "old": "3 fields",
+              "new": "3 fields"
+            },
+            {
+              "field": "description",
+              "old": "Whenever you [gold]Rest[/gold], procure a random potion.",
+              "new": "Whenever you [gold]Rest[/gold], procure [blue]2[/blue] random potions."
+            },
+            {
+              "field": "compendium_order",
+              "old": "35",
+              "new": "76"
+            },
+            {
+              "field": "description_raw",
+              "old": "Whenever you [gold]Rest[/gold], procure a random potion.",
+              "new": "Whenever you [gold]Rest[/gold], procure [blue]2[/blue] random potions."
+            },
+            {
+              "field": "rarity_key",
+              "old": "Common",
+              "new": "Uncommon"
+            }
+          ]
+        },
+        {
+          "id": "VEXING_PUZZLEBOX",
+          "name": "Vexing Puzzlebox",
+          "changes": [
+            {
+              "field": "description",
+              "old": "At the start of each combat, add a random card into your [gold]Hand[/gold]. I...",
+              "new": "At the start of each combat, add a random card into your [gold]Hand[/gold]. I..."
+            },
+            {
+              "field": "description_raw",
+              "old": "At the start of each combat, add a random card into your [gold]Hand[/gold]. I...",
+              "new": "At the start of each combat, add a random card into your [gold]Hand[/gold]. I..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "monsters",
+      "name": "Monsters",
+      "old_count": 115,
+      "new_count": 115,
+      "changed": [
+        {
+          "id": "DOORMAKER",
+          "name": "Doormaker",
+          "changes": [
+            {
+              "field": "attack_pattern",
+              "old": "4 fields",
+              "new": "4 fields"
+            },
+            {
+              "field": "damage_values",
+              "old": "3 fields",
+              "new": "2 fields"
+            },
+            {
+              "field": "moves",
+              "old": "{'id': 'DRAMATIC_OPEN', 'name': 'Dramatic Open', 'intent': 'Summon'}, {'id': 'BEAM', 'name': 'Beam', 'intent': 'Attack', 'damage': {'normal': 10, 'ascension': 11, 'hit_count': 3}}, {'id': 'CHOMP', 'name': 'Chomp', 'intent': 'Attack', 'damage': {'normal': 40, 'ascension': 45}}, {'id': 'PULVERIZE', 'name': 'Pulverize', 'intent': 'Attack + Buff', 'powers': [{'power_id': 'STRENGTH', 'target': 'self', 'amount': 2}], 'damage': {'normal': 20, 'ascension': 22}}",
+              "new": "{'id': 'DRAMATIC_OPEN', 'name': 'Dramatic Open', 'intent': 'Summon'}, {'id': 'HUNGER', 'name': 'Hunger', 'intent': 'Attack + Buff', 'damage': {'normal': 12, 'ascension': 13, 'hit_count': 2}}, {'id': 'SCRUTINY', 'name': 'Scrutiny', 'intent': 'Attack + Buff', 'damage': {'normal': 30, 'ascension': 35}}, {'id': 'GRASP', 'name': 'Grasp', 'intent': 'Buff + Debuff', 'powers': [{'power_id': 'STRENGTH', 'target': 'self', 'amount': 4}]}"
+            }
+          ]
+        },
+        {
+          "id": "HAUNTED_SHIP",
+          "name": "Haunted Ship",
+          "changes": [
+            {
+              "field": "attack_pattern",
+              "old": "4 fields",
+              "new": "4 fields"
+            },
+            {
+              "field": "moves",
+              "old": "{'id': 'RAMMING_SPEED', 'name': 'Ramming Speed', 'intent': 'Attack + Status', 'damage': {'normal': 10, 'ascension': 11}}, {'id': 'SWIPE', 'name': 'Swipe', 'intent': 'Attack', 'damage': {'normal': 13, 'ascension': 14}}, {'id': 'STOMP', 'name': 'Stomp', 'intent': 'Attack', 'damage': {'normal': 4, 'ascension': 5, 'hit_count': 3}}, {'id': 'HAUNT', 'name': 'Haunt', 'intent': 'Debuff', 'powers': [{'power_id': 'WEAK', 'target': 'player', 'amount': 2}, {'power_id': 'FRAIL', 'target': 'player', 'amount': 2}, {'power_id': 'VULNERABLE', 'target': 'player', 'amount': 2}]}",
+              "new": "{'id': 'RAMMING_SPEED', 'name': 'Ramming Speed', 'intent': 'Attack + Debuff', 'powers': [{'power_id': 'WEAK', 'target': 'player', 'amount': 1}], 'damage': {'normal': 10, 'ascension': 11}}, {'id': 'SWIPE', 'name': 'Swipe', 'intent': 'Attack', 'damage': {'normal': 13, 'ascension': 14}}, {'id': 'STOMP', 'name': 'Stomp', 'intent': 'Attack', 'damage': {'normal': 4, 'ascension': 5, 'hit_count': 3}}, {'id': 'HAUNT', 'name': 'Haunt', 'intent': 'Status'}"
+            }
+          ]
+        },
+        {
+          "id": "SKULKING_COLONY",
+          "name": "Skulking Colony",
+          "changes": [
+            {
+              "field": "damage_values",
+              "old": "3 fields",
+              "new": "3 fields"
+            },
+            {
+              "field": "moves",
+              "old": "{'id': 'INERTIA', 'name': 'Inertia', 'intent': 'Buff + Status', 'powers': [{'power_id': 'STRENGTH', 'target': 'self', 'amount': 3}]}, {'id': 'ZOOM', 'name': 'Zoom', 'intent': 'Attack + Defend', 'block': 10, 'damage': {'normal': 16, 'ascension': 17}}, {'id': 'PIERCING_STABS', 'name': 'Piercing Stabs', 'intent': 'Attack', 'damage': {'normal': 7, 'ascension': 8, 'hit_count': 2}}, {'id': 'SMASH', 'name': 'Smash', 'intent': 'Attack + Status', 'damage': {'normal': 9, 'ascension': 11}}",
+              "new": "{'id': 'INERTIA', 'name': 'Inertia', 'intent': 'Buff', 'powers': [{'power_id': 'STRENGTH', 'target': 'self', 'amount': 2}]}, {'id': 'ZOOM', 'name': 'Zoom', 'intent': 'Attack + Defend', 'block': 10, 'damage': {'normal': 14, 'ascension': 16}}, {'id': 'PIERCING_STABS', 'name': 'Piercing Stabs', 'intent': 'Attack', 'damage': {'normal': 7, 'ascension': 8, 'hit_count': 2}}, {'id': 'SMASH', 'name': 'Smash', 'intent': 'Attack', 'damage': {'normal': 9, 'ascension': 11}}"
+            }
+          ]
+        },
+        {
+          "id": "WATERFALL_GIANT",
+          "name": "Waterfall Giant",
+          "changes": [
+            {
+              "field": "min_hp_ascension",
+              "old": "260",
+              "new": "250"
+            },
+            {
+              "field": "min_hp",
+              "old": "250",
+              "new": "240"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "potions",
+      "name": "Potions",
+      "old_count": 63,
+      "new_count": 63,
+      "changed": [
+        {
+          "id": "LIQUID_MEMORIES",
+          "name": "Liquid Memories",
+          "changes": [
+            {
+              "field": "description_raw",
+              "old": "Put a card from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold]. I...",
+              "new": "Put a card from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold]. I..."
+            },
+            {
+              "field": "description",
+              "old": "Put a card from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold]. I...",
+              "new": "Put a card from your [gold]Discard Pile[/gold] into your [gold]Hand[/gold]. I..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "events",
+      "name": "Events",
+      "old_count": 66,
+      "new_count": 66,
+      "changed": [
+        {
+          "id": "TINKER_TIME",
+          "name": "Tinker Time",
+          "changes": [
+            {
+              "field": "pages",
+              "old": "{'id': 'CHOOSE_CARD_TYPE', 'description': '“What kind of tool will help you [red][jitter]kill everyone[/jitter][/red]?”', 'options': [{'id': 'ATTACK', 'title': 'Weapon', 'description': 'Make an Attack.'}, {'id': 'SKILL', 'title': 'Protector', 'description': 'Make a Skill.'}, {'id': 'POWER', 'title': 'Gadget', 'description': 'Make a Power.'}]}, {'id': 'CHOOSE_RIDER', 'description': '“Excellent choice! Now what should it [sine]DO[/sine]?”\\nThe [orange]scientist[/orange] rubs her hands together with glee.', 'options': [{'id': 'SAPPING', 'title': 'Sapping', 'description': 'Apply [blue]2[/blue] [gold]Weak[/gold]. Apply [blue]2[/blue] [gold]Vulnerable[/gold].'}, {'id': 'VIOLENCE', 'title': 'Violence', 'description': 'Hits [blue]2[/blue] additional times.'}, {'id': 'CHOKING', 'title': 'Choking', 'description': 'Whenever you play a card this turn, the enemy loses [blue]6[/blue] HP.'}, {'id': 'ENERGIZED', 'title': 'Energized', 'description': 'Gain [energy:2].'}, {'id': 'WISDOM', 'title': 'Wisdom', 'description': 'Draw [blue]3[/blue] cards.'}, {'id': 'CHAOS', 'title': 'Chaos', 'description': 'Add a random card into your [gold]Hand[/gold]. It costs [blue]0[/blue] [energy:1] this turn.'}, {'id': 'EXPERTISE', 'title': 'Expertise', 'description': 'Gain [blue]2[/blue] [gold]Strength[/gold]. Gain [blue]2[/blue] [gold]Dexterity[/gold].'}, {'id': 'CURIOUS', 'title': 'Curious', 'description': 'Powers cost [blue]1[/blue] [energy:1] less.'}, {'id': 'IMPROVEMENT', 'title': 'Improvement', 'description': 'At the end of combat, [gold]Upgrade[/gold] a random card.'}]}, {'id': 'DONE', 'description': '“Whew! All done. This is for you! Now get out there and [red][jitter]slaughter[/jitter][/red]!!”\\n\\nLittle did you know, that [orange]scientist[/orange] went on to create hundreds of weapons, resulting in several thousand deaths within the Spire.'}, {'id': 'INITIAL', 'description': 'Navigating through an [red][sine]endless sea of corpses[/sine][/red], you find a [orange]mad scientist[/orange] scavenging for various scraps.\\n\\n“Yes. Hi, hello! You look like a capable fighter... I need a tester for my next [green]atrocity device[/green]! How about it?”', 'options': [{'id': 'CHOOSE_CARD_TYPE', 'title': 'Accept', 'description': 'Create a custom card to add to your [gold]Deck[/gold].'}]}",
+              "new": "{'id': 'CHOOSE_CARD_TYPE', 'description': '“What kind of tool will help you [red][jitter]kill everyone[/jitter][/red]?”', 'options': [{'id': 'ATTACK', 'title': 'Weapon', 'description': 'Make an Attack.'}, {'id': 'SKILL', 'title': 'Protector', 'description': 'Make a Skill.'}, {'id': 'POWER', 'title': 'Gadget', 'description': 'Make a Power.'}]}, {'id': 'CHOOSE_RIDER', 'description': '“Excellent choice! Now what should it [sine]DO[/sine]?”\\nThe [orange]scientist[/orange] rubs her hands together with glee.', 'options': [{'id': 'SAPPING', 'title': 'Sapping', 'description': 'Apply [blue]2[/blue] [gold]Weak[/gold]. Apply [blue]2[/blue] [gold]Vulnerable[/gold].'}, {'id': 'VIOLENCE', 'title': 'Violence', 'description': 'Hits [blue]2[/blue] additional times.'}, {'id': 'CHOKING', 'title': 'Choking', 'description': 'Whenever you play a card this turn, the enemy loses [blue]6[/blue] HP.'}, {'id': 'ENERGIZED', 'title': 'Energized', 'description': 'Gain [energy:2].'}, {'id': 'WISDOM', 'title': 'Wisdom', 'description': 'Draw [blue]3[/blue] cards.'}, {'id': 'CHAOS', 'title': 'Chaos', 'description': \"Add a random card into your [gold]Hand[/gold]. It's free to play this turn.\"}, {'id': 'EXPERTISE', 'title': 'Expertise', 'description': 'Gain [blue]2[/blue] [gold]Strength[/gold]. Gain [blue]2[/blue] [gold]Dexterity[/gold].'}, {'id': 'CURIOUS', 'title': 'Curious', 'description': 'Powers cost [blue]1[/blue] [energy:1] less.'}, {'id': 'IMPROVEMENT', 'title': 'Improvement', 'description': 'At the end of combat, [gold]Upgrade[/gold] a random card.'}]}, {'id': 'DONE', 'description': '“Whew! All done. This is for you! Now get out there and [red][jitter]slaughter[/jitter][/red]!!”\\n\\nLittle did you know, that [orange]scientist[/orange] went on to create hundreds of weapons, resulting in several thousand deaths within the Spire.'}, {'id': 'INITIAL', 'description': 'Navigating through an [red][sine]endless sea of corpses[/sine][/red], you find a [orange]mad scientist[/orange] scavenging for various scraps.\\n\\n“Yes. Hi, hello! You look like a capable fighter... I need a tester for my next [green]atrocity device[/green]! How about it?”', 'options': [{'id': 'CHOOSE_CARD_TYPE', 'title': 'Accept', 'description': 'Create a custom card to add to your [gold]Deck[/gold].'}]}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "powers",
+      "name": "Powers",
+      "old_count": 258,
+      "new_count": 260,
+      "added": [
+        {
+          "id": "GRASP",
+          "name": "Grasp",
+          "type": "Buff"
+        },
+        {
+          "id": "HUNGER",
+          "name": "Hunger",
+          "type": "Buff"
+        },
+        {
+          "id": "SCRUTINY",
+          "name": "Scrutiny",
+          "type": "Buff"
+        }
+      ],
+      "removed": [
+        {
+          "id": "HUNGER_OF_THE_VOID",
+          "name": "Hunger of the Void"
+        }
+      ],
+      "changed": [
+        {
+          "id": "ARSENAL",
+          "name": "Arsenal",
+          "changes": [
+            {
+              "field": "description",
+              "old": "Whenever you play a Colorless card, gain [blue]1[/blue] [gold]Strength[/gold].",
+              "new": "Whenever you create a card, gain [blue]1[/blue] [gold]Strength[/gold]."
+            }
+          ]
+        },
+        {
+          "id": "SWORD_SAGE",
+          "name": "Sword Sage",
+          "changes": [
+            {
+              "field": "description",
+              "old": "Increase the cost of [gold]Sovereign Blade[/gold] by [blue]1[/blue]. [gold]So...",
+              "new": "[gold]Sovereign Blade[/gold] now hits [blue]1[/blue] additional time."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "afflictions",
+      "name": "Afflictions",
+      "old_count": 6,
+      "new_count": 7,
+      "added": [
+        {
+          "id": "DEVOURED",
+          "name": "Devoured"
+        }
+      ]
+    }
+  ]
+}
