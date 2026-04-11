@@ -237,7 +237,7 @@ export default function HomeClient({ initialStats, initialTranslations }: HomeCl
                     src={`${API}/static/images/characters/combat_${char.id}.png`}
                     alt={`${charName} - Slay the Spire 2 Character`}
                     className={`w-full h-full object-contain p-1 sm:p-2 group-hover:scale-105 transition-transform duration-300 ${
-                      char.id === "necrobinder" ? "scale-[1.6] translate-y-6" : ""
+                      char.id === "necrobinder" ? "scale-[2] translate-x-[-10%] translate-y-[15%]" : ""
                     }`}
                     crossOrigin="anonymous"
                   />
