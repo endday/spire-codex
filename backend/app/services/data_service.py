@@ -182,7 +182,14 @@ def get_available_versions() -> list[dict]:
     if latest_link.is_symlink():
         latest_target = Path(os.readlink(latest_link)).name
 
-    for d in sorted(DATA_DIR.iterdir(), reverse=True):
+    def _version_key(d: Path) -> tuple:
+        """Parse version string into tuple for proper numeric sorting."""
+        m = re.match(r'^v?(\d+)\.(\d+)(?:\.(\d+))?', d.name)
+        if m:
+            return (int(m.group(1)), int(m.group(2)), int(m.group(3) or 0))
+        return (0, 0, 0)
+
+    for d in sorted(DATA_DIR.iterdir(), key=_version_key, reverse=True):
         if d.is_dir() and re.match(r'^v?\d+\.\d+', d.name):
             # Verify it has at least an eng/ subdirectory
             if (d / "eng").is_dir():
