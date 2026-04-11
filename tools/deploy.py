@@ -228,9 +228,43 @@ def build_indexnow_urls() -> list[str]:
         f"{SITE_URL}/changelog",
         f"{SITE_URL}/about",
         f"{SITE_URL}/ancients",
+        f"{SITE_URL}/unlocks",
+        f"{SITE_URL}/runs",
+        f"{SITE_URL}/meta",
+        f"{SITE_URL}/guides",
+        f"{SITE_URL}/guides/submit",
+        f"{SITE_URL}/mechanics",
+        f"{SITE_URL}/modifiers",
         f"{SITE_URL}/cards/browse",
         f"{SITE_URL}/sitemap.xml",
     ]
+
+    # Mechanics detail pages
+    mechanics_slugs = [
+        "card-rarity", "relic-distribution", "potion-drop-rates", "gold-rewards",
+        "card-removal", "shop-inventory", "encounter-pools", "question-mark-rooms",
+        "upgrade-chance", "map-generation", "boss-pools", "ancient-pools",
+        "combat-formulas", "card-draw", "orb-mechanics", "block-decay",
+        "energy-system", "potion-slots", "rest-sites", "treasure-rooms",
+        "act-progression", "ascension-effects", "custom-mode", "multiplayer",
+        "enchantment-system", "achievement-tracking", "secrets-and-trivia",
+    ]
+    for slug in mechanics_slugs:
+        urls.append(f"{SITE_URL}/mechanics/{slug}")
+
+    # Card browse pages
+    browse_slugs = [
+        "common-attacks", "common-skills", "common-powers",
+        "uncommon-attacks", "uncommon-skills", "uncommon-powers",
+        "rare-attacks", "rare-skills", "rare-powers",
+        "ironclad-attacks", "ironclad-skills", "ironclad-powers",
+        "silent-attacks", "silent-skills", "silent-powers",
+        "defect-attacks", "defect-skills", "defect-powers",
+        "necrobinder-attacks", "necrobinder-skills", "necrobinder-powers",
+        "regent-attacks", "regent-skills", "regent-powers",
+    ]
+    for slug in browse_slugs:
+        urls.append(f"{SITE_URL}/cards/browse/{slug}")
 
     # Detail pages from parsed JSON data
     entity_routes = {
