@@ -27,8 +27,9 @@ export default function VersionSelector() {
 
   if (versions.length === 0) return null;
 
+  const strip = (v: string) => v.replace(/-beta$/, "");
   const latestVersion = versions.find((v) => v.is_latest);
-  const displayLabel = version || latestVersion?.version || "Latest";
+  const displayLabel = strip(version || latestVersion?.version || "Latest");
 
   return (
     <div className="relative">
@@ -67,7 +68,7 @@ export default function VersionSelector() {
                       : "text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-card)]"
                   }`}
                 >
-                  <span className="font-medium">{v.version}</span>
+                  <span className="font-medium">{strip(v.version)}</span>
                   {v.is_latest && (
                     <span className="text-xs text-[var(--text-muted)] ml-2">latest</span>
                   )}
