@@ -292,8 +292,8 @@
   {
     "id": "COLOSSUS",
     "name": "Colosal",
-    "description": "Recibes un [blue]50 %[/blue] menos de daño de enemigos [gold]Vulnerables[/gold] durante este turno.",
-    "description_raw": null,
+    "description": "Recibes un [blue]50 %[/blue] menos de daño de enemigos [gold]Vulnerables[/gold] durante los siguientes [blue]2[/blue] turnos.",
+    "description_raw": "Recibes un [blue]{DamageDecrease:percentLess()} %[/blue] menos de daño de enemigos [gold]Vulnerables[/gold] durante {Amount:plural:este turno|los siguientes [blue]{}[/blue] turnos}.",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -2522,8 +2522,8 @@
   {
     "id": "VULNERABLE",
     "name": "Vulnerabilidad",
-    "description": "Las criaturas Vulnerables reciben un [blue]50 %[/blue] más de daño de Ataques.",
-    "description_raw": null,
+    "description": "Recibe [blue]50 %[/blue] más de daño de Ataques durante [blue][Amount][/blue] turnos.",
+    "description_raw": "Recibe [blue]{DamageIncrease:percentMore()} %[/blue] más de daño de Ataques durante [blue]{Amount}[/blue] {Amount:plural:turno|turnos}.",
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": null,

@@ -12,7 +12,7 @@
         "name": "Siekierobot"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został poćwiartowany|została poćwiartowana|został poćwiartowany} przez [gold]Siekieroboty[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został poćwiartowany|została poćwiartowana|został poćwiartowany} przez [gold]Siekieroboty[/gold]."
   },
   {
     "id": "BATTLEWORN_DUMMY_EVENT_ENCOUNTER",
@@ -35,7 +35,7 @@
         "name": "Drewnobot V3.0"
       }
     ],
-    "loss_text": "The adventurer jakimś cudem {characterGender:choose(masculine|feminine|neutral):zginął|zginęła|zginął} w walce z [gold]Drewnobotem[/gold]???"
+    "loss_text": "[b]The Adventurer[/b] jakimś cudem {characterGender:choose(masculine|feminine|neutral):zginął|zginęła|zginął} w walce z [gold]Drewnobotem[/gold]???"
   },
   {
     "id": "BOWLBUGS_NORMAL",
@@ -64,7 +64,7 @@
         "name": "Robal z nicią"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):przeszkodził|przeszkodziła|przeszkodził} [gold]Robalom[/gold] w pracy."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):przeszkodził|przeszkodziła|przeszkodził} [gold]Robalom[/gold] w pracy."
   },
   {
     "id": "BOWLBUGS_WEAK",
@@ -89,7 +89,7 @@
         "name": "Robal z kamieniem"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):przeszkodził|przeszkodziła|przeszkodził} [gold]Robalom[/gold] w pracy."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):przeszkodził|przeszkodziła|przeszkodził} [gold]Robalom[/gold] w pracy."
   },
   {
     "id": "BYGONE_EFFIGY_ELITE",
@@ -104,7 +104,7 @@
         "name": "Starodawna Figura"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został przecięty|została przecięta|został przecięty} w pół przez [gold]Starodawną Figurę[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został przecięty|została przecięta|został przecięty} w pół przez [gold]Starodawną Figurę[/gold]."
   },
   {
     "id": "BYRDONIS_ELITE",
@@ -134,7 +134,7 @@
         "name": "Leśny Stróż"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został rozdeptany|została rozdeptana|został rozdeptany} przez [gold]Leśnego Stróża[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został rozdeptany|została rozdeptana|został rozdeptany} przez [gold]Leśnego Stróża[/gold]."
   },
   {
     "id": "CHOMPERS_NORMAL",
@@ -151,7 +151,7 @@
         "name": "Gryzak"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został zagryziony|została zagryziona|został zagryziony} przez [gold]Gryzaki[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został zagryziony|została zagryziona|został zagryziony} przez [gold]Gryzaki[/gold]."
   },
   {
     "id": "CONSTRUCT_MENAGERIE_NORMAL",
@@ -219,7 +219,7 @@
         "name": "Promieniotron"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został zlaserowany|została zlaserowana|został zlaserowany} przez [gold]Promieniotrona[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został zlaserowany|została zlaserowana|został zlaserowany} przez [gold]Promieniotrona[/gold]."
   },
   {
     "id": "CULTISTS_NORMAL",
@@ -238,7 +238,7 @@
         "name": "Zwilgotniały Kultysta"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został zabity|została zabita|został zabity} przez jakichś [gold]Kultystów[/gold]. [sine]Kraaaa[/sine]..."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został zabity|została zabita|został zabity} przez jakichś [gold]Kultystów[/gold]. [sine]Kraaaa[/sine]..."
   },
   {
     "id": "DECIMILLIPEDE_ELITE",
@@ -261,7 +261,7 @@
         "name": "Decimillipede Segment Middle"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):zginął|zginęła|zginął} na terytorium [gold]Wielonogi[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):zginął|zginęła|zginął} na terytorium [gold]Wielonogi[/gold]."
   },
   {
     "id": "DENSE_VEGETATION_EVENT_ENCOUNTER",
@@ -276,7 +276,7 @@
         "name": "Pasożyt"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został opanowany|została opanowana|został opanowany} przez [gold]Pasożyty[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został opanowany|została opanowana|został opanowany} przez [gold]Pasożyty[/gold]."
   },
   {
     "id": "DEVOTED_SCULPTOR_WEAK",
@@ -291,7 +291,7 @@
         "name": "Zagorzały Rzeźbiarz"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został rozbity|została rozbita|został rozbity} na kawałki przez [gold]Zagorzałego Rzeźbiarza[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został rozbity|została rozbita|został rozbity} na kawałki przez [gold]Zagorzałego Rzeźbiarza[/gold]."
   },
   {
     "id": "DOORMAKER_BOSS",
@@ -310,7 +310,7 @@
         "name": "Drzwiarz"
       }
     ],
-    "loss_text": "The adventurer nie {characterGender:choose(masculine|feminine|neutral):zachwycił|zachwyciła|zachwycił} [gold]Drzwiarza[/gold] swoją wizytą."
+    "loss_text": "[b]The Adventurer[/b] nie {characterGender:choose(masculine|feminine|neutral):zachwycił|zachwyciła|zachwycił} [gold]Drzwiarza[/gold] swoją wizytą."
   },
   {
     "id": "ENTOMANCER_ELITE",
@@ -325,7 +325,7 @@
         "name": "Pszczelarz"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został zażądlony|została zażądlona|został zażądlony} na śmierć przez [gold]Pszczelarza[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został zażądlony|została zażądlona|został zażądlony} na śmierć przez [gold]Pszczelarza[/gold]."
   },
   {
     "id": "EXOSKELETONS_NORMAL",
@@ -342,7 +342,7 @@
         "name": "Egzoszkielet"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został wypatroszony|została wypatroszona|został wypatroszony} przez [gold]Wiele Egzoszkieletów[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został wypatroszony|została wypatroszona|został wypatroszony} przez [gold]Wiele Egzoszkieletów[/gold]."
   },
   {
     "id": "EXOSKELETONS_WEAK",
@@ -359,7 +359,7 @@
         "name": "Egzoszkielet"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został wypatroszony|została wypatroszona|został wypatroszony} przez jakieś [gold]Egzoszkielety[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został wypatroszony|została wypatroszona|został wypatroszony} przez jakieś [gold]Egzoszkielety[/gold]."
   },
   {
     "id": "FABRICATOR_NORMAL",
@@ -374,7 +374,7 @@
         "name": "Mechanik"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został porażony|została porażona|został porażony} prądem przez roboty [gold]Mechanika[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został porażony|została porażona|został porażony} prądem przez roboty [gold]Mechanika[/gold]."
   },
   {
     "id": "FAKE_MERCHANT_EVENT_ENCOUNTER",
@@ -389,7 +389,7 @@
         "name": "Handlarz???"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):poznał|poznała|poznał} gniew [gold]Handlarza???[/gold]"
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):poznał|poznała|poznał} gniew [gold]Handlarza???[/gold]"
   },
   {
     "id": "FLYCONID_NORMAL",
@@ -415,7 +415,7 @@
         "name": "Śluzak Wielki"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został wchłonięty|została wchłonięta przez|został wchłonięty} przez [gold]Musznicę[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został wchłonięty|została wchłonięta przez|został wchłonięty} przez [gold]Musznicę[/gold]."
   },
   {
     "id": "FOGMOG_NORMAL",
@@ -434,7 +434,7 @@
         "name": "Grzybol"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został rozproszony|została rozproszona|został rozproszony} przez halucynacje [gold]Grzybola[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został rozproszony|została rozproszona|został rozproszony} przez halucynacje [gold]Grzybola[/gold]."
   },
   {
     "id": "FOSSIL_STALKER_NORMAL",
@@ -449,7 +449,7 @@
         "name": "Skamieliniak"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):wpadł|wpadła|wpadł} w zasadzkę [gold]Skamieliniaka[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):wpadł|wpadła|wpadł} w zasadzkę [gold]Skamieliniaka[/gold]."
   },
   {
     "id": "FROG_KNIGHT_NORMAL",
@@ -519,7 +519,7 @@
         "name": "Podstępny Gremlin"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został napadnięty|została napadnięta|został napadnięty} przez dwóch [gold]Gremlinów[/gold] w płaszczu."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został napadnięty|została napadnięta|został napadnięty} przez dwóch [gold]Gremlinów[/gold] w płaszczu."
   },
   {
     "id": "HAUNTED_SHIP_NORMAL",
@@ -549,7 +549,7 @@
         "name": "Zabójczy Łowca"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został wypatroszony|została wypatroszona|został wypatroszony} przez [gold]Zabójczego Łowcę[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został wypatroszony|została wypatroszona|został wypatroszony} przez [gold]Zabójczego Łowcę[/gold]."
   },
   {
     "id": "INFESTED_PRISMS_ELITE",
@@ -564,7 +564,7 @@
         "name": "Zainfekowany Pryzmat"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został powstrzymany|została powstrzymana|został powstrzymany} przez [gold]Zainfekowany Pryzmat[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został powstrzymany|została powstrzymana|został powstrzymany} przez [gold]Zainfekowany Pryzmat[/gold]."
   },
   {
     "id": "INKLETS_NORMAL",
@@ -623,7 +623,7 @@
         "name": "Rycerz Widmo"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został zabity|została zabita|został zabity} przez [gold]Kompanię Rycerską[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został zabity|została zabita|został zabity} przez [gold]Kompanię Rycerską[/gold]."
   },
   {
     "id": "KNOWLEDGE_DEMON_BOSS",
@@ -653,7 +653,7 @@
         "name": "Królowa Lagavulinów"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został przekrojony|została przekrojona|został przekrojony} na pół przez [gold]Królową Lagavulinów[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został przekrojony|została przekrojona|został przekrojony} na pół przez [gold]Królową Lagavulinów[/gold]."
   },
   {
     "id": "LIVING_FOG_NORMAL",
@@ -672,7 +672,7 @@
         "name": "Żywa Mgła"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):nie mógł|nie mogła|nie mógł} znieść smrodu [gold]Nieprzyjemnego Gazu[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):nie mógł|nie mogła|nie mógł} znieść smrodu [gold]Nieprzyjemnego Gazu[/gold]."
   },
   {
     "id": "LOUSE_PROGENITOR_NORMAL",
@@ -687,7 +687,7 @@
         "name": "Protowesz"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został sparaliżowany|została sparaliżowana|został sparaliżowany} przez [gold]Protowesz[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został sparaliżowany|została sparaliżowana|został sparaliżowany} przez [gold]Protowesz[/gold]."
   },
   {
     "id": "MAWLER_NORMAL",
@@ -717,7 +717,7 @@
         "name": "Mecha-Rycerz"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został zadźgany i spalony|została zadźgana i spalona|został zadźgany i spalony} przez [gold]Mecha-Rycerza[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został zadźgany i spalony|została zadźgana i spalona|został zadźgany i spalony} przez [gold]Mecha-Rycerza[/gold]."
   },
   {
     "id": "MYSTERIOUS_KNIGHT_EVENT_ENCOUNTER",
@@ -732,7 +732,7 @@
         "name": "Tajemniczy Rycerz"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):próbował|próbowała|próbował} zabrać klucz [gold]Tajemniczego Rycerza[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):próbował|próbowała|próbował} zabrać klucz [gold]Tajemniczego Rycerza[/gold]."
   },
   {
     "id": "MYTES_NORMAL",
@@ -747,7 +747,7 @@
         "name": "Roztycz"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został otoczony|została otoczona|został otoczony} przez masę [gold]Roztyczy[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został otoczony|została otoczona|został otoczony} przez masę [gold]Roztyczy[/gold]."
   },
   {
     "id": "NIBBITS_NORMAL",
@@ -820,7 +820,7 @@
         "name": "Twarde jajo"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):stał się|stała się|stał się} pożywieniem dla larw [gold]Jajokoptera[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):stał się|stała się|stał się} pożywieniem dla larw [gold]Jajokoptera[/gold]."
   },
   {
     "id": "OWL_MAGISTRATE_NORMAL",
@@ -835,7 +835,7 @@
         "name": "Sędzia"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został skazany| została skazana|został skazany} na śmierć przez [gold]Sędzię[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został skazany| została skazana|został skazany} na śmierć przez [gold]Sędzię[/gold]."
   },
   {
     "id": "PHANTASMAL_GARDENERS_ELITE",
@@ -850,7 +850,7 @@
         "name": "Węgorzówka"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został pożarty|została pożarta|został pożarty} przez [gold]Węgorzówki[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został pożarty|została pożarta|został pożarty} przez [gold]Węgorzówki[/gold]."
   },
   {
     "id": "PHROG_PARASITE_ELITE",
@@ -884,7 +884,7 @@
         "name": "Robokser"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):przegrał|przegrała|przegrał} walkę na pięści z [gold]Robokserem[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):przegrał|przegrała|przegrał} walkę na pięści z [gold]Robokserem[/gold]."
   },
   {
     "id": "PUNCH_OFF_EVENT_ENCOUNTER",
@@ -899,7 +899,7 @@
         "name": "Robokser"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):przeszkodził|przeszkodziła|przeszkodził} [gold]Robokserom[/gold] w pojedynku."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):przeszkodził|przeszkodziła|przeszkodził} [gold]Robokserom[/gold] w pojedynku."
   },
   {
     "id": "QUEEN_BOSS",
@@ -949,7 +949,7 @@
         "name": "Tropiciel"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został napadnięty|została napadnięta|został napadnięty} przez [gold]Bandę Najeźdźców[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został napadnięty|została napadnięta|został napadnięty} przez [gold]Bandę Najeźdźców[/gold]."
   },
   {
     "id": "SCROLLS_OF_BITING_NORMAL",
@@ -1015,7 +1015,7 @@
         "name": "Małża Ściekowa"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został pożarty|została pożarta|został pożarty} przez [gold]Małżę Ściekową[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został pożarty|została pożarta|został pożarty} przez [gold]Małżę Ściekową[/gold]."
   },
   {
     "id": "SHRINKER_BEETLE_WEAK",
@@ -1047,7 +1047,7 @@
         "name": "Żywa Rafa Koralowa"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został wchłonięty|została wchłonięta przez|został wchłonięty} przez [gold]Żywą Rafę Koralową[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został wchłonięty|została wchłonięta przez|został wchłonięty} przez [gold]Żywą Rafę Koralową[/gold]."
   },
   {
     "id": "SLIMED_BERSERKER_NORMAL",
@@ -1062,7 +1062,7 @@
         "name": "Śluzak Berserker"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został wchłonięty|została wchłonięta przez|został wchłonięty} przez [gold]Śluzaka Berserkera[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został wchłonięty|została wchłonięta przez|został wchłonięty} przez [gold]Śluzaka Berserkera[/gold]."
   },
   {
     "id": "SLIMES_NORMAL",
@@ -1091,7 +1091,7 @@
         "name": "Śluzak Mały"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został pokonany|została pokonana|został pokonany} przez masę [gold]Śluzaków[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został pokonany|została pokonana|został pokonany} przez masę [gold]Śluzaków[/gold]."
   },
   {
     "id": "SLIMES_WEAK",
@@ -1120,7 +1120,7 @@
         "name": "Śluzak Mały"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został pokonany|została pokonana|został pokonany} przez grupkę [gold]Śluzaków[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został pokonany|została pokonana|został pokonany} przez grupkę [gold]Śluzaków[/gold]."
   },
   {
     "id": "SLITHERING_STRANGLER_NORMAL",
@@ -1155,7 +1155,7 @@
         "name": "Śluzak Mały"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został uduszony|została uduszona|został uduszony} przez [gold]Dusiciela[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został uduszony|została uduszona|został uduszony} przez [gold]Dusiciela[/gold]."
   },
   {
     "id": "SLUDGE_SPINNER_WEAK",
@@ -1170,7 +1170,7 @@
         "name": "Wirówka"
       }
     ],
-    "loss_text": "The adventurer nie {characterGender:choose(masculine|feminine|neutral):mógł|mogła|mógł} pokonać [gold]Wirówki[/gold]."
+    "loss_text": "[b]The Adventurer[/b] nie {characterGender:choose(masculine|feminine|neutral):mógł|mogła|mógł} pokonać [gold]Wirówki[/gold]."
   },
   {
     "id": "SLUMBERING_BEETLE_NORMAL",
@@ -1195,7 +1195,7 @@
         "name": "Śpiący Żuk"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):wybudził|wybudziła|wybudził} [gold]Śpiącego Żuka[/gold] ze snu."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):wybudził|wybudziła|wybudził} [gold]Śpiącego Żuka[/gold] ze snu."
   },
   {
     "id": "SNAPPING_JAXFRUIT_NORMAL",
@@ -1216,7 +1216,7 @@
         "name": "Kwiat Energii"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):zaplątał|zaplątała|zaplątał} się we [gold]florze Zarośli[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):zaplątał|zaplątała|zaplątał} się we [gold]florze Zarośli[/gold]."
   },
   {
     "id": "SOUL_FYSH_BOSS",
@@ -1246,7 +1246,7 @@
         "name": "Spojenie Dusz"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):zginął|zginęła|zginął} przez [gold]Spojenie Dusz[/gold] na zapomnianym polu bitwy."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):zginął|zginęła|zginął} przez [gold]Spojenie Dusz[/gold] na zapomnianym polu bitwy."
   },
   {
     "id": "SPINY_TOAD_NORMAL",
@@ -1340,7 +1340,7 @@
         "name": "Kapłan"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został unicestwiony|została unicestwiona|został unicestwiony} dzięki wybitnej strategii [gold]Kapłana[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został unicestwiony|została unicestwiona|został unicestwiony} dzięki wybitnej strategii [gold]Kapłana[/gold]."
   },
   {
     "id": "THE_LOST_AND_FORGOTTEN_NORMAL",
@@ -1359,7 +1359,7 @@
         "name": "Porzucony"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):stracił|straciła|stracił} chęci do życia przez [gold]Porzuconego i Zapomnianego[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):stracił|straciła|stracił} chęci do życia przez [gold]Porzuconego i Zapomnianego[/gold]."
   },
   {
     "id": "THE_OBSCURA_NORMAL",
@@ -1410,7 +1410,7 @@
         "name": "Kijanka"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został pokonany|została pokonana|został pokonany} przez jakieś [gold]Kijanki[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został pokonany|została pokonana|został pokonany} przez jakieś [gold]Kijanki[/gold]."
   },
   {
     "id": "TOADPOLES_WEAK",
@@ -1425,7 +1425,7 @@
         "name": "Kijanka"
       }
     ],
-    "loss_text": "The adventurer nie {characterGender:choose(masculine|feminine|neutral):umiał|umiała|umiał} poradzić sobie z jakimiś [gold]Kijankami[/gold]."
+    "loss_text": "[b]The Adventurer[/b] nie {characterGender:choose(masculine|feminine|neutral):umiał|umiała|umiał} poradzić sobie z jakimiś [gold]Kijankami[/gold]."
   },
   {
     "id": "TUNNELER_NORMAL",
@@ -1502,7 +1502,7 @@
         "name": "Zmutowany Szczur"
       }
     ],
-    "loss_text": "The adventurer {characterGender:choose(masculine|feminine|neutral):został otoczony|została otoczona|został otoczony} przez jakieś [gold]Zmutowane Szczury[/gold]."
+    "loss_text": "[b]The Adventurer[/b] {characterGender:choose(masculine|feminine|neutral):został otoczony|została otoczona|został otoczony} przez jakieś [gold]Zmutowane Szczury[/gold]."
   },
   {
     "id": "VANTOM_BOSS",
@@ -1532,7 +1532,7 @@
         "name": "Pnączowór"
       }
     ],
-    "loss_text": "The adventurer nie {characterGender:choose(masculine|feminine|neutral):mógł|mogła|mógł} uciec przed [gold]Pnączoworem[/gold]."
+    "loss_text": "[b]The Adventurer[/b] nie {characterGender:choose(masculine|feminine|neutral):mógł|mogła|mógł} uciec przed [gold]Pnączoworem[/gold]."
   },
   {
     "id": "WATERFALL_GIANT_BOSS",

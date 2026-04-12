@@ -12,7 +12,7 @@
         "name": "Baltabot"
       }
     ],
-    "loss_text": "The adventurer, [gold]Bot Ahbaplar[/gold] tarafından parçalara ayrıldı."
+    "loss_text": "[b]The Adventurer[/b], [gold]Bot Ahbaplar[/gold] tarafından parçalara ayrıldı."
   },
   {
     "id": "BATTLEWORN_DUMMY_EVENT_ENCOUNTER",
@@ -35,7 +35,7 @@
         "name": "Savaş Dostu V3.0"
       }
     ],
-    "loss_text": "The adventurer, nasıl olduysa [gold]Savaşta Yıpranmış Manken[/gold] tarafından mı öldürüldü???"
+    "loss_text": "[b]The Adventurer[/b], nasıl olduysa [gold]Savaşta Yıpranmış Manken[/gold] tarafından mı öldürüldü???"
   },
   {
     "id": "BOWLBUGS_NORMAL",
@@ -64,7 +64,7 @@
         "name": "Çanakböceği (İpek)"
       }
     ],
-    "loss_text": "The adventurer, kalabalık bir [gold]Çanakböceği Sürüsü[/gold]'nün yoluna çıktı."
+    "loss_text": "[b]The Adventurer[/b], kalabalık bir [gold]Çanakböceği Sürüsü[/gold]'nün yoluna çıktı."
   },
   {
     "id": "BOWLBUGS_WEAK",
@@ -89,7 +89,7 @@
         "name": "Çanakböceği (Taş)"
       }
     ],
-    "loss_text": "The adventurer, iş başındaki [gold]Çanakböcekleri[/gold]'nin yoluna çıktı."
+    "loss_text": "[b]The Adventurer[/b], iş başındaki [gold]Çanakböcekleri[/gold]'nin yoluna çıktı."
   },
   {
     "id": "BYGONE_EFFIGY_ELITE",
@@ -104,7 +104,7 @@
         "name": "Mazinin Heykeli"
       }
     ],
-    "loss_text": "The adventurer, [gold]Mazinin Heykeli[/gold] tarafından ortadan ikiye ayrıldı."
+    "loss_text": "[b]The Adventurer[/b], [gold]Mazinin Heykeli[/gold] tarafından ortadan ikiye ayrıldı."
   },
   {
     "id": "BYRDONIS_ELITE",
@@ -119,7 +119,7 @@
         "name": "Guşdeniz"
       }
     ],
-    "loss_text": "[gold]Guşdeniz[/gold], yavrularını The adventurer karşısında korudu."
+    "loss_text": "[gold]Guşdeniz[/gold], yavrularını [b]The Adventurer[/b] karşısında korudu."
   },
   {
     "id": "CEREMONIAL_BEAST_BOSS",
@@ -134,7 +134,7 @@
         "name": "Mukaddes Yaratık"
       }
     ],
-    "loss_text": "The adventurer, [gold]Mukaddes Yaratık[/gold] karşısında son nefesini verdi."
+    "loss_text": "[b]The Adventurer[/b], [gold]Mukaddes Yaratık[/gold] karşısında son nefesini verdi."
   },
   {
     "id": "CHOMPERS_NORMAL",
@@ -151,7 +151,7 @@
         "name": "Çiğneyici"
       }
     ],
-    "loss_text": "The adventurer, [gold]Bir Otomaton İkilisi[/gold] tarafından ısırılarak öldürüldü."
+    "loss_text": "[b]The Adventurer[/b], [gold]Bir Otomaton İkilisi[/gold] tarafından ısırılarak öldürüldü."
   },
   {
     "id": "CONSTRUCT_MENAGERIE_NORMAL",
@@ -170,7 +170,7 @@
         "name": "Yumruklayan Yapı"
       }
     ],
-    "loss_text": "The adventurer, [gold]Yapı Koleksiyonu[/gold] tarafından ezildi."
+    "loss_text": "[b]The Adventurer[/b], [gold]Yapı Koleksiyonu[/gold] tarafından ezildi."
   },
   {
     "id": "CORPSE_SLUGS_NORMAL",
@@ -187,7 +187,7 @@
         "name": "Ceset Yiyen Sümüklü Böcek"
       }
     ],
-    "loss_text": "[gold]Birçok Ceset Yiyen Sümüklü Böcek[/gold], The adventurer üzerinde ziyafet çekti."
+    "loss_text": "[gold]Birçok Ceset Yiyen Sümüklü Böcek[/gold], [b]The Adventurer[/b] üzerinde ziyafet çekti."
   },
   {
     "id": "CORPSE_SLUGS_WEAK",
@@ -204,7 +204,7 @@
         "name": "Ceset Yiyen Sümüklü Böcek"
       }
     ],
-    "loss_text": "[gold]Ceset Yiyen Sümüklü Böcekler[/gold], The adventurer üzerinde ziyafet çekti."
+    "loss_text": "[gold]Ceset Yiyen Sümüklü Böcekler[/gold], [b]The Adventurer[/b] üzerinde ziyafet çekti."
   },
   {
     "id": "CUBEX_CONSTRUCT_NORMAL",
@@ -219,7 +219,7 @@
         "name": "Kübiks Yapı"
       }
     ],
-    "loss_text": "The adventurer, [gold]Kübiks Yapı[/gold] tarafından lazerle infaz edildi."
+    "loss_text": "[b]The Adventurer[/b], [gold]Kübiks Yapı[/gold] tarafından lazerle infaz edildi."
   },
   {
     "id": "CULTISTS_NORMAL",
@@ -238,7 +238,7 @@
         "name": "Islak Tarikatçi"
       }
     ],
-    "loss_text": "The adventurer, bazı [gold]Tarikatçılar[/gold] tarafından öldürüldü. [sine]Gak gaaaak[/sine]..."
+    "loss_text": "[b]The Adventurer[/b], bazı [gold]Tarikatçılar[/gold] tarafından öldürüldü. [sine]Gak gaaaak[/sine]..."
   },
   {
     "id": "DECIMILLIPEDE_ELITE",
@@ -261,7 +261,7 @@
         "name": "Decimillipede Segment Middle"
       }
     ],
-    "loss_text": "The adventurer, [gold]Ondabirayak[/gold]'ın bölgesinde hayatta kalamadı."
+    "loss_text": "[b]The Adventurer[/b], [gold]Ondabirayak[/gold]'ın bölgesinde hayatta kalamadı."
   },
   {
     "id": "DENSE_VEGETATION_EVENT_ENCOUNTER",
@@ -276,7 +276,7 @@
         "name": "Kımıldak"
       }
     ],
-    "loss_text": "The adventurer, [gold]Kımıldaklar[/gold] tarafından istilaya uğradı."
+    "loss_text": "[b]The Adventurer[/b], [gold]Kımıldaklar[/gold] tarafından istilaya uğradı."
   },
   {
     "id": "DEVOTED_SCULPTOR_WEAK",
@@ -291,7 +291,7 @@
         "name": "Kendini Adamış Heykeltıraş"
       }
     ],
-    "loss_text": "The adventurer, [gold]Kendini Adamış Heykeltıraş[/gold] tarafından küçük parçalara ayrıldı."
+    "loss_text": "[b]The Adventurer[/b], [gold]Kendini Adamış Heykeltıraş[/gold] tarafından küçük parçalara ayrıldı."
   },
   {
     "id": "DOORMAKER_BOSS",
@@ -310,7 +310,7 @@
         "name": "Kapı Ustası"
       }
     ],
-    "loss_text": "[gold]Kapı Ustası[/gold], The adventurer tarafından verilen rahatsızlığı hoş karşılamadı."
+    "loss_text": "[gold]Kapı Ustası[/gold], [b]The Adventurer[/b] tarafından verilen rahatsızlığı hoş karşılamadı."
   },
   {
     "id": "ENTOMANCER_ELITE",
@@ -325,7 +325,7 @@
         "name": "Böcek Büyücüsü"
       }
     ],
-    "loss_text": "The adventurer, [gold]Böcek Büyücüsü[/gold] tarafından sokularak öldürüldü."
+    "loss_text": "[b]The Adventurer[/b], [gold]Böcek Büyücüsü[/gold] tarafından sokularak öldürüldü."
   },
   {
     "id": "EXOSKELETONS_NORMAL",
@@ -342,7 +342,7 @@
         "name": "Zırhkabuk"
       }
     ],
-    "loss_text": "The adventurer, [gold]Birçok Zırhkabuk[/gold] tarafından iç organları sökülerek öldürüldü."
+    "loss_text": "[b]The Adventurer[/b], [gold]Birçok Zırhkabuk[/gold] tarafından iç organları sökülerek öldürüldü."
   },
   {
     "id": "EXOSKELETONS_WEAK",
@@ -359,7 +359,7 @@
         "name": "Zırhkabuk"
       }
     ],
-    "loss_text": "The adventurer, bazı [gold]Zırhkabuklar[/gold] tarafından iç organları sökülerek öldürüldü."
+    "loss_text": "[b]The Adventurer[/b], bazı [gold]Zırhkabuklar[/gold] tarafından iç organları sökülerek öldürüldü."
   },
   {
     "id": "FABRICATOR_NORMAL",
@@ -374,7 +374,7 @@
         "name": "İmalatçı"
       }
     ],
-    "loss_text": "The adventurer, [gold]İmalatçı[/gold]'nın botları tarafından çarpıldı."
+    "loss_text": "[b]The Adventurer[/b], [gold]İmalatçı[/gold]'nın botları tarafından çarpıldı."
   },
   {
     "id": "FAKE_MERCHANT_EVENT_ENCOUNTER",
@@ -389,7 +389,7 @@
         "name": "Tüccar???"
       }
     ],
-    "loss_text": "The adventurer, [gold]Tüccar???[/gold] tarafından katledildi."
+    "loss_text": "[b]The Adventurer[/b], [gold]Tüccar???[/gold] tarafından katledildi."
   },
   {
     "id": "FLYCONID_NORMAL",
@@ -415,7 +415,7 @@
         "name": "Dal Balçığı (O)"
       }
     ],
-    "loss_text": "The adventurer, bir [gold]Mantar ve Balçık[/gold] tarafından özümlendi."
+    "loss_text": "[b]The Adventurer[/b], bir [gold]Mantar ve Balçık[/gold] tarafından özümlendi."
   },
   {
     "id": "FOGMOG_NORMAL",
@@ -434,7 +434,7 @@
         "name": "Gaztar"
       }
     ],
-    "loss_text": "The adventurer, bir [gold]Gaztar[/gold] tarafından yaratılan ilüzyonlar yüzünden dikkatini kaybetti."
+    "loss_text": "[b]The Adventurer[/b], bir [gold]Gaztar[/gold] tarafından yaratılan ilüzyonlar yüzünden dikkatini kaybetti."
   },
   {
     "id": "FOSSIL_STALKER_NORMAL",
@@ -449,7 +449,7 @@
         "name": "Pusan Fosil"
       }
     ],
-    "loss_text": "The adventurer, bir [gold]Pusan Fosil[/gold] tarafından pusuya düşürüldü."
+    "loss_text": "[b]The Adventurer[/b], bir [gold]Pusan Fosil[/gold] tarafından pusuya düşürüldü."
   },
   {
     "id": "FROG_KNIGHT_NORMAL",
@@ -464,7 +464,7 @@
         "name": "Kurbağa Şövalye"
       }
     ],
-    "loss_text": "Yiğit bir [gold]Kurbağa Şövalye[/gold], The adventurer karşısında galip geldi."
+    "loss_text": "Yiğit bir [gold]Kurbağa Şövalye[/gold], [b]The Adventurer[/b] karşısında galip geldi."
   },
   {
     "id": "FUZZY_WURM_CRAWLER_WEAK",
@@ -481,7 +481,7 @@
         "name": "Tüylü Müylü Sürüngen"
       }
     ],
-    "loss_text": "The adventurer, bir [gold]Tüylü Müylü Sürüngen[/gold]'in tükürüklerine maruz kaldı."
+    "loss_text": "[b]The Adventurer[/b], bir [gold]Tüylü Müylü Sürüngen[/gold]'in tükürüklerine maruz kaldı."
   },
   {
     "id": "GLOBE_HEAD_NORMAL",
@@ -496,7 +496,7 @@
         "name": "Küre Kafa"
       }
     ],
-    "loss_text": "The adventurer, [gold]Yalnız Küre Kafa[/gold] tarafından çarpıldı."
+    "loss_text": "[b]The Adventurer[/b], [gold]Yalnız Küre Kafa[/gold] tarafından çarpıldı."
   },
   {
     "id": "GREMLIN_MERC_NORMAL",
@@ -519,7 +519,7 @@
         "name": "Sinsi Gremlin"
       }
     ],
-    "loss_text": "The adventurer, [gold]Paltolu İki Gremlin[/gold] tarafından gasp edildi."
+    "loss_text": "[b]The Adventurer[/b], [gold]Paltolu İki Gremlin[/gold] tarafından gasp edildi."
   },
   {
     "id": "HAUNTED_SHIP_NORMAL",
@@ -534,7 +534,7 @@
         "name": "Lanetli Gemi"
       }
     ],
-    "loss_text": "The adventurer, bir [gold]Lanetli Gemi[/gold] tarafından ezilip geçildi."
+    "loss_text": "[b]The Adventurer[/b], bir [gold]Lanetli Gemi[/gold] tarafından ezilip geçildi."
   },
   {
     "id": "HUNTER_KILLER_NORMAL",
@@ -549,7 +549,7 @@
         "name": "Avcı Katili"
       }
     ],
-    "loss_text": "The adventurer, bir [gold]Avcı Katili[/gold] tarafından deşildi."
+    "loss_text": "[b]The Adventurer[/b], bir [gold]Avcı Katili[/gold] tarafından deşildi."
   },
   {
     "id": "INFESTED_PRISMS_ELITE",
@@ -564,7 +564,7 @@
         "name": "İstila Edilmiş Prizma"
       }
     ],
-    "loss_text": "The adventurer, bir [gold]İstila Edilmiş Prizma[/gold] tarafından durduruldu."
+    "loss_text": "[b]The Adventurer[/b], bir [gold]İstila Edilmiş Prizma[/gold] tarafından durduruldu."
   },
   {
     "id": "INKLETS_NORMAL",
@@ -579,7 +579,7 @@
         "name": "Mürekkepçik"
       }
     ],
-    "loss_text": "The adventurer ilerlemek isterken bazı [gold]Mürekkepçikler[/gold] tarafından yolu kesildi."
+    "loss_text": "[b]The Adventurer[/b] ilerlemek isterken bazı [gold]Mürekkepçikler[/gold] tarafından yolu kesildi."
   },
   {
     "id": "KAISER_CRAB_BOSS",
@@ -598,7 +598,7 @@
         "name": "Roket"
       }
     ],
-    "loss_text": "The adventurer, [gold]Kayzer Yengeç[/gold] tarafından dört bir yanından saldırıldı."
+    "loss_text": "[b]The Adventurer[/b], [gold]Kayzer Yengeç[/gold] tarafından dört bir yanından saldırıldı."
   },
   {
     "id": "KNIGHTS_ELITE",
@@ -623,7 +623,7 @@
         "name": "Hayalet Şövalye"
       }
     ],
-    "loss_text": "The adventurer, bir [gold]Şövalye Çetesi[/gold] tarafından öldürüldü."
+    "loss_text": "[b]The Adventurer[/b], bir [gold]Şövalye Çetesi[/gold] tarafından öldürüldü."
   },
   {
     "id": "KNOWLEDGE_DEMON_BOSS",
@@ -638,7 +638,7 @@
         "name": "Bilgi Şeytanı"
       }
     ],
-    "loss_text": "The adventurer, [gold]Bilgi Şeytanı[/gold] tarafından dayanılamaz bilgilerle lanetlendi."
+    "loss_text": "[b]The Adventurer[/b], [gold]Bilgi Şeytanı[/gold] tarafından dayanılamaz bilgilerle lanetlendi."
   },
   {
     "id": "LAGAVULIN_MATRIARCH_BOSS",
@@ -653,7 +653,7 @@
         "name": "Anne Lagavulin"
       }
     ],
-    "loss_text": "The adventurer, [gold]Anne Lagavulin[/gold] tarafından ortadan ikiye ayrıldı."
+    "loss_text": "[b]The Adventurer[/b], [gold]Anne Lagavulin[/gold] tarafından ortadan ikiye ayrıldı."
   },
   {
     "id": "LIVING_FOG_NORMAL",
@@ -672,7 +672,7 @@
         "name": "Yaşayan Sis"
       }
     ],
-    "loss_text": "The adventurer, [gold]Kötü Bir Gaz[/gold] tarafından salınan kokuya dayanamadı."
+    "loss_text": "[b]The Adventurer[/b], [gold]Kötü Bir Gaz[/gold] tarafından salınan kokuya dayanamadı."
   },
   {
     "id": "LOUSE_PROGENITOR_NORMAL",
@@ -687,7 +687,7 @@
         "name": "Bitlerin Atası"
       }
     ],
-    "loss_text": "The adventurer, [gold]Bitlerin Atası[/gold] tarafından felç edildi."
+    "loss_text": "[b]The Adventurer[/b], [gold]Bitlerin Atası[/gold] tarafından felç edildi."
   },
   {
     "id": "MAWLER_NORMAL",
@@ -702,7 +702,7 @@
         "name": "Yırtançene"
       }
     ],
-    "loss_text": "The adventurer, bir [gold]Yırtançene[/gold] için leziz bir yemeğe dönüştü."
+    "loss_text": "[b]The Adventurer[/b], bir [gold]Yırtançene[/gold] için leziz bir yemeğe dönüştü."
   },
   {
     "id": "MECHA_KNIGHT_ELITE",
@@ -717,7 +717,7 @@
         "name": "Meka Şövalye"
       }
     ],
-    "loss_text": "The adventurer, bir [gold]Meka Şövalye[/gold] tarafından kesildi ve yakıldı."
+    "loss_text": "[b]The Adventurer[/b], bir [gold]Meka Şövalye[/gold] tarafından kesildi ve yakıldı."
   },
   {
     "id": "MYSTERIOUS_KNIGHT_EVENT_ENCOUNTER",
@@ -732,7 +732,7 @@
         "name": "Gizemli Şövalye"
       }
     ],
-    "loss_text": "The adventurer, bir [gold]Gizemli Şövalye[/gold]'nin anahtarını almaya çalıştı."
+    "loss_text": "[b]The Adventurer[/b], bir [gold]Gizemli Şövalye[/gold]'nin anahtarını almaya çalıştı."
   },
   {
     "id": "MYTES_NORMAL",
@@ -747,7 +747,7 @@
         "name": "Mayt"
       }
     ],
-    "loss_text": "The adventurer, bir [gold]Mayt Sürüsü[/gold] tarafından kuşatıldı."
+    "loss_text": "[b]The Adventurer[/b], bir [gold]Mayt Sürüsü[/gold] tarafından kuşatıldı."
   },
   {
     "id": "NIBBITS_NORMAL",
@@ -762,7 +762,7 @@
         "name": "Kemirbağa"
       }
     ],
-    "loss_text": "The adventurer, [gold]Bir Çift Kemirbağa[/gold] tarafından pataklandı."
+    "loss_text": "[b]The Adventurer[/b], [gold]Bir Çift Kemirbağa[/gold] tarafından pataklandı."
   },
   {
     "id": "NIBBITS_WEAK",
@@ -779,7 +779,7 @@
         "name": "Kemirbağa"
       }
     ],
-    "loss_text": "The adventurer, [gold]Yalnız Bir Kemirbağa[/gold] tarafından pataklandı."
+    "loss_text": "[b]The Adventurer[/b], [gold]Yalnız Bir Kemirbağa[/gold] tarafından pataklandı."
   },
   {
     "id": "OVERGROWTH_CRAWLERS",
@@ -801,7 +801,7 @@
         "name": "Küçültücü Böcek"
       }
     ],
-    "loss_text": "Bazı [gold]Aşırı Yeşerme Böcekleri[/gold], The adventurer üzerinde ziyafet çekti."
+    "loss_text": "Bazı [gold]Aşırı Yeşerme Böcekleri[/gold], [b]The Adventurer[/b] üzerinde ziyafet çekti."
   },
   {
     "id": "OVICOPTER_NORMAL",
@@ -820,7 +820,7 @@
         "name": "Dayanıklı Yumurta"
       }
     ],
-    "loss_text": "The adventurer, bir [gold]Kuluçkopter[/gold]'in çocukları için yemek oldu."
+    "loss_text": "[b]The Adventurer[/b], bir [gold]Kuluçkopter[/gold]'in çocukları için yemek oldu."
   },
   {
     "id": "OWL_MAGISTRATE_NORMAL",
@@ -835,7 +835,7 @@
         "name": "Yargıç Baykuş"
       }
     ],
-    "loss_text": "The adventurer, [gold]Yargıç Baykuş[/gold] tarafından ölüme mahkum edildi."
+    "loss_text": "[b]The Adventurer[/b], [gold]Yargıç Baykuş[/gold] tarafından ölüme mahkum edildi."
   },
   {
     "id": "PHANTASMAL_GARDENERS_ELITE",
@@ -850,7 +850,7 @@
         "name": "Bahçe Yılan Balığı"
       }
     ],
-    "loss_text": "The adventurer, [gold]Bahçe Yılan Balıkları[/gold] tarafından öldürüldü."
+    "loss_text": "[b]The Adventurer[/b], [gold]Bahçe Yılan Balıkları[/gold] tarafından öldürüldü."
   },
   {
     "id": "PHROG_PARASITE_ELITE",
@@ -869,7 +869,7 @@
         "name": "Kımıldak"
       }
     ],
-    "loss_text": "The adventurer, [gold]Parazitli Gurbağa[/gold] tarafından kolonisine dahil edildi."
+    "loss_text": "[b]The Adventurer[/b], [gold]Parazitli Gurbağa[/gold] tarafından kolonisine dahil edildi."
   },
   {
     "id": "PUNCH_CONSTRUCT_NORMAL",
@@ -884,7 +884,7 @@
         "name": "Yumruklayan Yapı"
       }
     ],
-    "loss_text": "The adventurer, bir [gold]Yumruklayan Yapı[/gold] ile yumruk savaşına girdi."
+    "loss_text": "[b]The Adventurer[/b], bir [gold]Yumruklayan Yapı[/gold] ile yumruk savaşına girdi."
   },
   {
     "id": "PUNCH_OFF_EVENT_ENCOUNTER",
@@ -899,7 +899,7 @@
         "name": "Yumruklayan Yapı"
       }
     ],
-    "loss_text": "The adventurer, maalesef [gold]Yumruklayan Yapılar[/gold]'ın kavgasına müdahale etti."
+    "loss_text": "[b]The Adventurer[/b], maalesef [gold]Yumruklayan Yapılar[/gold]'ın kavgasına müdahale etti."
   },
   {
     "id": "QUEEN_BOSS",
@@ -918,7 +918,7 @@
         "name": "Meşale Kafalı Bileşim"
       }
     ],
-    "loss_text": "The adventurer, [gold]Kraliçe[/gold]'nin koleksiyonuna eklendi."
+    "loss_text": "[b]The Adventurer[/b], [gold]Kraliçe[/gold]'nin koleksiyonuna eklendi."
   },
   {
     "id": "RUBY_RAIDERS_NORMAL",
@@ -949,7 +949,7 @@
         "name": "İz Süren Yağmacı"
       }
     ],
-    "loss_text": "The adventurer, [gold]Yakut Yağmacıları[/gold] tarafından ansızın saldırıya uğradı."
+    "loss_text": "[b]The Adventurer[/b], [gold]Yakut Yağmacıları[/gold] tarafından ansızın saldırıya uğradı."
   },
   {
     "id": "SCROLLS_OF_BITING_NORMAL",
@@ -966,7 +966,7 @@
         "name": "Isırma Parşömeni"
       }
     ],
-    "loss_text": "The adventurer, [gold]Birçok Isırma Parşömeni[/gold] tarafından paramparça edildi."
+    "loss_text": "[b]The Adventurer[/b], [gold]Birçok Isırma Parşömeni[/gold] tarafından paramparça edildi."
   },
   {
     "id": "SCROLLS_OF_BITING_WEAK",
@@ -983,7 +983,7 @@
         "name": "Isırma Parşömeni"
       }
     ],
-    "loss_text": "The adventurer, bazı [gold]Isırma Parşömenleri[/gold] tarafından paramparça edildi."
+    "loss_text": "[b]The Adventurer[/b], bazı [gold]Isırma Parşömenleri[/gold] tarafından paramparça edildi."
   },
   {
     "id": "SEAPUNK_WEAK",
@@ -1000,7 +1000,7 @@
         "name": "Deniz Haydutu"
       }
     ],
-    "loss_text": "The adventurer, [gold]Deniz Haydutu[/gold] tarafından pataklandı."
+    "loss_text": "[b]The Adventurer[/b], [gold]Deniz Haydutu[/gold] tarafından pataklandı."
   },
   {
     "id": "SEWER_CLAM_NORMAL",
@@ -1015,7 +1015,7 @@
         "name": "Kanalizasyon İstiridyesi"
       }
     ],
-    "loss_text": "The adventurer, bir [gold]Kanalizasyon İstiridyesi[/gold] tarafından mideye indirildi."
+    "loss_text": "[b]The Adventurer[/b], bir [gold]Kanalizasyon İstiridyesi[/gold] tarafından mideye indirildi."
   },
   {
     "id": "SHRINKER_BEETLE_WEAK",
@@ -1032,7 +1032,7 @@
         "name": "Küçültücü Böcek"
       }
     ],
-    "loss_text": "The adventurer, bir [gold]Küçültücü Böcek[/gold] için atıştırmalık oldu."
+    "loss_text": "[b]The Adventurer[/b], bir [gold]Küçültücü Böcek[/gold] için atıştırmalık oldu."
   },
   {
     "id": "SKULKING_COLONY_ELITE",
@@ -1047,7 +1047,7 @@
         "name": "Saklanan Koloni"
       }
     ],
-    "loss_text": "The adventurer, [gold]Saklanan Koloni[/gold] tarafından özümlendi."
+    "loss_text": "[b]The Adventurer[/b], [gold]Saklanan Koloni[/gold] tarafından özümlendi."
   },
   {
     "id": "SLIMED_BERSERKER_NORMAL",
@@ -1062,7 +1062,7 @@
         "name": "Balçıklanmış Vahşi Savaşçı"
       }
     ],
-    "loss_text": "The adventurer, [gold]Balçıklanmış Vahşi Savaşçı[/gold] tarafından yutuldu."
+    "loss_text": "[b]The Adventurer[/b], [gold]Balçıklanmış Vahşi Savaşçı[/gold] tarafından yutuldu."
   },
   {
     "id": "SLIMES_NORMAL",
@@ -1091,7 +1091,7 @@
         "name": "Dal Balçığı (K)"
       }
     ],
-    "loss_text": "The adventurer, bir [gold]Balçık Sürüsü[/gold] tarafından yere serildi."
+    "loss_text": "[b]The Adventurer[/b], bir [gold]Balçık Sürüsü[/gold] tarafından yere serildi."
   },
   {
     "id": "SLIMES_WEAK",
@@ -1120,7 +1120,7 @@
         "name": "Dal Balçığı (K)"
       }
     ],
-    "loss_text": "The adventurer, [gold]Bir Grup Balçık[/gold] tarafından yere serildi."
+    "loss_text": "[b]The Adventurer[/b], [gold]Bir Grup Balçık[/gold] tarafından yere serildi."
   },
   {
     "id": "SLITHERING_STRANGLER_NORMAL",
@@ -1155,7 +1155,7 @@
         "name": "Dal Balçığı (K)"
       }
     ],
-    "loss_text": "The adventurer, [gold]Boğucu ve Dostu[/gold] tarafından boğuldu."
+    "loss_text": "[b]The Adventurer[/b], [gold]Boğucu ve Dostu[/gold] tarafından boğuldu."
   },
   {
     "id": "SLUDGE_SPINNER_WEAK",
@@ -1170,7 +1170,7 @@
         "name": "Çamurdöner"
       }
     ],
-    "loss_text": "The adventurer, bir [gold]Çamurdöner[/gold]'i yenemedi."
+    "loss_text": "[b]The Adventurer[/b], bir [gold]Çamurdöner[/gold]'i yenemedi."
   },
   {
     "id": "SLUMBERING_BEETLE_NORMAL",
@@ -1195,7 +1195,7 @@
         "name": "Uyuyan Böcek"
       }
     ],
-    "loss_text": "The adventurer, bir [gold]Uyku Partisi[/gold]'ni bastı."
+    "loss_text": "[b]The Adventurer[/b], bir [gold]Uyku Partisi[/gold]'ni bastı."
   },
   {
     "id": "SNAPPING_JAXFRUIT_NORMAL",
@@ -1216,7 +1216,7 @@
         "name": "Isıran Meyve"
       }
     ],
-    "loss_text": "The adventurer, bazı [gold]Aşırı Yeşerme Bitkileri[/gold] tarafından alt edildi."
+    "loss_text": "[b]The Adventurer[/b], bazı [gold]Aşırı Yeşerme Bitkileri[/gold] tarafından alt edildi."
   },
   {
     "id": "SOUL_FYSH_BOSS",
@@ -1231,7 +1231,7 @@
         "name": "Ruh Baluğu"
       }
     ],
-    "loss_text": "The adventurer, [gold]Ruh Baluğu[/gold] tarafından ölümüne çağrıldı."
+    "loss_text": "[b]The Adventurer[/b], [gold]Ruh Baluğu[/gold] tarafından ölümüne çağrıldı."
   },
   {
     "id": "SOUL_NEXUS_ELITE",
@@ -1246,7 +1246,7 @@
         "name": "Ruh Bileşiği"
       }
     ],
-    "loss_text": "The adventurer, unutulmuş bir savaş alanında [gold]Ruh Bileşiği[/gold] karşısında can verdi."
+    "loss_text": "[b]The Adventurer[/b], unutulmuş bir savaş alanında [gold]Ruh Bileşiği[/gold] karşısında can verdi."
   },
   {
     "id": "SPINY_TOAD_NORMAL",
@@ -1261,7 +1261,7 @@
         "name": "Dikenli Kurbağa"
       }
     ],
-    "loss_text": "The adventurer, [gold]Dikenli Kurbağa[/gold]'nın dikenlerini delip geçemedi."
+    "loss_text": "[b]The Adventurer[/b], [gold]Dikenli Kurbağa[/gold]'nın dikenlerini delip geçemedi."
   },
   {
     "id": "TERROR_EEL_ELITE",
@@ -1276,7 +1276,7 @@
         "name": "Korkunç Yılan Balığı"
       }
     ],
-    "loss_text": "[gold]Korkunç Yılan Balığı[/gold], The adventurer için fazla korkutucuydu."
+    "loss_text": "[gold]Korkunç Yılan Balığı[/gold], [b]The Adventurer[/b] için fazla korkutucuydu."
   },
   {
     "id": "TEST_SUBJECT_BOSS",
@@ -1291,7 +1291,7 @@
         "name": "Denek #C{Count}"
       }
     ],
-    "loss_text": "Bir [gold]Denek[/gold], efendilerini The adventurer karşısında sadakatle korudu."
+    "loss_text": "Bir [gold]Denek[/gold], efendilerini [b]The Adventurer[/b] karşısında sadakatle korudu."
   },
   {
     "id": "THE_ARCHITECT_EVENT_ENCOUNTER",
@@ -1321,7 +1321,7 @@
         "name": "Doyumsuz"
       }
     ],
-    "loss_text": "The adventurer, [gold]Doyumsuz[/gold] tarafından yutuldu; ancak o hâlâ aç..."
+    "loss_text": "[b]The Adventurer[/b], [gold]Doyumsuz[/gold] tarafından yutuldu; ancak o hâlâ aç..."
   },
   {
     "id": "THE_KIN_BOSS",
@@ -1340,7 +1340,7 @@
         "name": "Kabile Şamanı"
       }
     ],
-    "loss_text": "The adventurer, [gold]Kabile[/gold]'nin üstün stratejisiyle yok edildi."
+    "loss_text": "[b]The Adventurer[/b], [gold]Kabile[/gold]'nin üstün stratejisiyle yok edildi."
   },
   {
     "id": "THE_LOST_AND_FORGOTTEN_NORMAL",
@@ -1359,7 +1359,7 @@
         "name": "Kayıp Olan"
       }
     ],
-    "loss_text": "The adventurer ve onun yaşam arzusu, [gold]Kayıp ve Unutulmuş[/gold] tarafından söndürüldü."
+    "loss_text": "[b]The Adventurer[/b] ve onun yaşam arzusu, [gold]Kayıp ve Unutulmuş[/gold] tarafından söndürüldü."
   },
   {
     "id": "THE_OBSCURA_NORMAL",
@@ -1374,7 +1374,7 @@
         "name": "Belirsiz"
       }
     ],
-    "loss_text": "The adventurer, [gold]Belirsiz[/gold] ve ilüzyonları tarafından ezildi."
+    "loss_text": "[b]The Adventurer[/b], [gold]Belirsiz[/gold] ve ilüzyonları tarafından ezildi."
   },
   {
     "id": "THIEVING_HOPPER_WEAK",
@@ -1391,7 +1391,7 @@
         "name": "Hırsız Çekirge"
       }
     ],
-    "loss_text": "The adventurer, [gold]Hırsız Çekirge[/gold] tarafından gasp edildi."
+    "loss_text": "[b]The Adventurer[/b], [gold]Hırsız Çekirge[/gold] tarafından gasp edildi."
   },
   {
     "id": "TOADPOLES_NORMAL",
@@ -1410,7 +1410,7 @@
         "name": "İribaş"
       }
     ],
-    "loss_text": "The adventurer, [gold]Dip Rıhtımlar'ın Vahşi Yaşamı[/gold] tarafından yenilgiye uğratıldı."
+    "loss_text": "[b]The Adventurer[/b], [gold]Dip Rıhtımlar'ın Vahşi Yaşamı[/gold] tarafından yenilgiye uğratıldı."
   },
   {
     "id": "TOADPOLES_WEAK",
@@ -1425,7 +1425,7 @@
         "name": "İribaş"
       }
     ],
-    "loss_text": "The adventurer, bazı [gold]İribaşlar[/gold] ile başa çıkamadı."
+    "loss_text": "[b]The Adventurer[/b], bazı [gold]İribaşlar[/gold] ile başa çıkamadı."
   },
   {
     "id": "TUNNELER_NORMAL",
@@ -1451,7 +1451,7 @@
         "name": "Tünelci"
       }
     ],
-    "loss_text": "The adventurer, bir [gold]Tünel Kazan İkili[/gold] tarafından saf dışı bırakıldı."
+    "loss_text": "[b]The Adventurer[/b], bir [gold]Tünel Kazan İkili[/gold] tarafından saf dışı bırakıldı."
   },
   {
     "id": "TUNNELER_WEAK",
@@ -1468,7 +1468,7 @@
         "name": "Tünelci"
       }
     ],
-    "loss_text": "The adventurer, [gold]Tünelci[/gold] tarafından fena halde dövüldü."
+    "loss_text": "[b]The Adventurer[/b], [gold]Tünelci[/gold] tarafından fena halde dövüldü."
   },
   {
     "id": "TURRET_OPERATOR_WEAK",
@@ -1487,7 +1487,7 @@
         "name": "Taret Operatörü"
       }
     ],
-    "loss_text": "The adventurer, bir [gold]Taret Operatörü[/gold] tarafından delik deşik edildi."
+    "loss_text": "[b]The Adventurer[/b], bir [gold]Taret Operatörü[/gold] tarafından delik deşik edildi."
   },
   {
     "id": "TWO_TAILED_RATS_NORMAL",
@@ -1502,7 +1502,7 @@
         "name": "İki Kuyruklu Fare"
       }
     ],
-    "loss_text": "The adventurer, bazı [gold]İki Kuyruklu Fareler[/gold] tarafından kuşatıldı."
+    "loss_text": "[b]The Adventurer[/b], bazı [gold]İki Kuyruklu Fareler[/gold] tarafından kuşatıldı."
   },
   {
     "id": "VANTOM_BOSS",
@@ -1517,7 +1517,7 @@
         "name": "Vantom"
       }
     ],
-    "loss_text": "The adventurer, [gold]Vantom[/gold] tarafından bir Mürekkepçik'e dönüştürüldü."
+    "loss_text": "[b]The Adventurer[/b], [gold]Vantom[/gold] tarafından bir Mürekkepçik'e dönüştürüldü."
   },
   {
     "id": "VINE_SHAMBLER_NORMAL",
@@ -1532,7 +1532,7 @@
         "name": "Sarmaşık Yığını"
       }
     ],
-    "loss_text": "The adventurer, [gold]Sarmaşık Yığını[/gold]'ndan kaçamadı."
+    "loss_text": "[b]The Adventurer[/b], [gold]Sarmaşık Yığını[/gold]'ndan kaçamadı."
   },
   {
     "id": "WATERFALL_GIANT_BOSS",
@@ -1547,6 +1547,6 @@
         "name": "Akarsu Devi"
       }
     ],
-    "loss_text": "[gold]Akarsu Devi[/gold], Dip Rıhtımlar'ı The adventurer ile ilgili her şeyden temizledi."
+    "loss_text": "[gold]Akarsu Devi[/gold], Dip Rıhtımlar'ı [b]The Adventurer[/b] ile ilgili her şeyden temizledi."
   }
 ]

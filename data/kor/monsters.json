@@ -177,7 +177,7 @@
           "next": "SWING_1"
         }
       ],
-      "description": "Cycle: Swing 1 → Swing 2 → 크게 휘두르기 → repeat"
+      "description": "Swing 1 → Swing 2 → 크게 휘두르기 → repeat"
     },
     "image_url": "/static/images/monsters/axe_ruby_raider.png",
     "beta_image_url": null
@@ -591,7 +591,7 @@
           "next": "THRASH2_MOVE"
         }
       ],
-      "description": "Cycle: 난동부리기 → 이로운 효과 → 난동부리기 → repeat"
+      "description": "난동부리기 → 이로운 효과 → 난동부리기 → repeat"
     },
     "image_url": "/static/images/monsters/bowlbug_nectar.png",
     "beta_image_url": null
@@ -916,7 +916,7 @@
           "next": "SLASHES_MOVE"
         }
       ],
-      "description": "Cycle: Initial Sleep → Wake → 참격 → repeat"
+      "description": "Initial Sleep → Wake → 참격 → repeat"
     },
     "image_url": "/static/images/monsters/bygone_effigy.png",
     "beta_image_url": null
@@ -990,7 +990,7 @@
           "next": "PECK_MOVE"
         }
       ],
-      "description": "Cycle: Swoop → 쪼기 → repeat"
+      "description": "Swoop → 쪼기 → repeat"
     },
     "image_url": "/static/images/monsters/byrdonis.png",
     "beta_image_url": null
@@ -1252,7 +1252,7 @@
           "next": "STOMP_MOVE"
         }
       ],
-      "description": "Cycle: 발구르기 → 파헤치기 → repeat"
+      "description": "발구르기 → 파헤치기 → repeat"
     },
     "image_url": "/static/images/monsters/ceremonial_beast.png",
     "beta_image_url": null
@@ -1621,7 +1621,7 @@
           "next": "THRASH_MOVE"
         }
       ],
-      "description": "Cycle: 난동부리기 → 확대 타격 → 벌레 쏘기 → 적응 → 수호의 타격 → repeat"
+      "description": "난동부리기 → 확대 타격 → 벌레 쏘기 → 적응 → 수호의 타격 → repeat"
     },
     "image_url": "/static/images/monsters/crusher.png",
     "beta_image_url": null
@@ -1760,7 +1760,7 @@
           "next": "CHARGE_UP_MOVE"
         }
       ],
-      "description": "Cycle: 충전 → Repeater → Repeater Move 2 → Expel Blast → repeat"
+      "description": "충전 → Repeater → Repeater Move 2 → Expel Blast → repeat"
     },
     "image_url": "/static/images/monsters/cubex_construct.png",
     "beta_image_url": null
@@ -2205,7 +2205,7 @@
           "next": "GET_BACK_IN_MOVE"
         }
       ],
-      "description": "Cycle: What Is It → Beam → Get Back In → repeat"
+      "description": "What Is It → Beam → Get Back In → repeat"
     },
     "image_url": "/static/images/monsters/doormaker.png",
     "beta_image_url": "/static/images/monsters/beta/door_maker_placeholder_2.png"
@@ -3605,7 +3605,7 @@
           "next": "SHOCKING_SLAP"
         }
       ],
-      "description": "Cycle: 깜짝 따귀 → Thunder Strike → Galvanic Burst → repeat"
+      "description": "깜짝 따귀 → Thunder Strike → Galvanic Burst → repeat"
     },
     "image_url": "/static/images/monsters/orb_head.png",
     "beta_image_url": null
@@ -3713,7 +3713,7 @@
           "next": "GIMME_MOVE"
         }
       ],
-      "description": "Cycle: 내놔 → 이연타 → 헤헤 → repeat"
+      "description": "내놔 → 이연타 → 헤헤 → repeat"
     },
     "image_url": "/static/images/monsters/gremlin_merc.png",
     "beta_image_url": null
@@ -4092,7 +4092,7 @@
           "next": "JAB_MOVE"
         }
       ],
-      "description": "Cycle: 찌르기 → 방출 → 소용돌이 → 맥박 → repeat"
+      "description": "찌르기 → 방출 → 소용돌이 → 맥박 → repeat"
     },
     "image_url": "/static/images/monsters/infested_prism.png",
     "beta_image_url": null
@@ -4313,7 +4313,7 @@
           "next": "QUICK_SLASH_MOVE"
         }
       ],
-      "description": "Cycle: Power Dance → Quick Slash → Boomerang → repeat"
+      "description": "Power Dance → Quick Slash → Boomerang → repeat"
     },
     "image_url": "/static/images/monsters/kin_follower.png",
     "beta_image_url": null
@@ -4437,7 +4437,7 @@
           "next": "ORB_OF_FRAILTY_MOVE"
         }
       ],
-      "description": "Cycle: Orb Of Frailty → Orb Of Weakness → Beam → Ritual → repeat"
+      "description": "Orb Of Frailty → Orb Of Weakness → Beam → Ritual → repeat"
     },
     "image_url": "/static/images/monsters/kin_priest.png",
     "beta_image_url": null
@@ -4772,7 +4772,7 @@
           "next": "CLUMP_SHOT"
         }
       ],
-      "description": "Cycle: 끈적한 발사 → 덤불 발사 → repeat"
+      "description": "끈적한 발사 → 덤불 발사 → repeat"
     },
     "image_url": "/static/images/monsters/leaf_slime_m.png",
     "beta_image_url": null
@@ -4956,7 +4956,7 @@
           "next": "BLOAT_MOVE"
         }
       ],
-      "description": "Cycle: Advanced Gas → 부풀기 → Super Gas Blast → repeat"
+      "description": "Advanced Gas → 부풀기 → Super Gas Blast → repeat"
     },
     "image_url": "/static/images/monsters/living_smog.png",
     "beta_image_url": null
@@ -5261,7 +5261,7 @@
           "next": "PREP_MOVE"
         }
       ],
-      "description": "Cycle: First Power Shield → Dampen → 들이받기 → Prep → 마법 폭탄 → repeat"
+      "description": "First Power Shield → Dampen → 들이받기 → Prep → 마법 폭탄 → repeat"
     },
     "image_url": "/static/images/monsters/magi_knight.png",
     "beta_image_url": null
@@ -5481,7 +5481,7 @@
           "next": "FLAMETHROWER_MOVE"
         }
       ],
-      "description": "Cycle: 돌진 → 화염 방사 → 태엽 감기 → 묵직한 절단 → repeat"
+      "description": "돌진 → 화염 방사 → 태엽 감기 → 묵직한 절단 → repeat"
     },
     "image_url": "/static/images/monsters/mecha_knight.png",
     "beta_image_url": null
@@ -6007,7 +6007,7 @@
           "next": "MAGISTRATE_SCRUTINY"
         }
       ],
-      "description": "Cycle: 판관의 조사 → 기습 쪼기 → 공정한 비행 → 판결 → repeat"
+      "description": "판관의 조사 → 기습 쪼기 → 공정한 비행 → 판결 → repeat"
     },
     "image_url": "/static/images/monsters/owl_magistrate.png",
     "beta_image_url": null
@@ -6695,7 +6695,7 @@
           "next": "TARGETING_RETICLE_MOVE"
         }
       ],
-      "description": "Cycle: 십자선 조준 → 정밀 광선 → 충전 → 레이저 → 재충전 → repeat"
+      "description": "십자선 조준 → 정밀 광선 → 충전 → 레이저 → 재충전 → repeat"
     },
     "image_url": "/static/images/monsters/rocket.png",
     "beta_image_url": null
@@ -6888,7 +6888,7 @@
           "next": "SEA_KICK_MOVE"
         }
       ],
-      "description": "Cycle: 바다 차기 → 돌려차기 → 거품 뿜기 → repeat"
+      "description": "바다 차기 → 돌려차기 → 거품 뿜기 → repeat"
     },
     "image_url": "/static/images/monsters/seapunk.png",
     "beta_image_url": null
@@ -7045,7 +7045,7 @@
           "next": "CHOMP_MOVE"
         }
       ],
-      "description": "Cycle: 압축 → 물어뜯기 → 발구르기 → repeat"
+      "description": "압축 → 물어뜯기 → 발구르기 → repeat"
     },
     "image_url": "/static/images/monsters/shrinker_beetle.png",
     "beta_image_url": null
@@ -7156,7 +7156,7 @@
           "next": "ZOOM_MOVE"
         }
       ],
-      "description": "Cycle: Smash → 확대 → 관성 → 짱짱게 → repeat"
+      "description": "Smash → 확대 → 관성 → 짱짱게 → repeat"
     },
     "image_url": "/static/images/monsters/skulkling_colomy.png",
     "beta_image_url": null
@@ -7808,7 +7808,7 @@
           "next": "BECKON_MOVE"
         }
       ],
-      "description": "Cycle: Beckon → 가스 방출 → Gaze → Fade → 절규 → repeat"
+      "description": "Beckon → 가스 방출 → Gaze → Fade → 절규 → repeat"
     },
     "image_url": "/static/images/monsters/soul_fysh.png",
     "beta_image_url": null
@@ -8124,7 +8124,7 @@
           "next": "PROTRUDING_SPIKES_MOVE"
         }
       ],
-      "description": "Cycle: 튀어나오는 가시 → 가시 폭발 → 혓바닥 채찍 → repeat"
+      "description": "튀어나오는 가시 → 가시 폭발 → 혓바닥 채찍 → repeat"
     },
     "image_url": "/static/images/monsters/spiny_toad.png",
     "beta_image_url": null
@@ -8290,7 +8290,7 @@
           "next": "CRASH_MOVE"
         }
       ],
-      "description": "Cycle: Crash → Thrashmove → repeat"
+      "description": "Crash → Thrashmove → repeat"
     },
     "image_url": "/static/images/monsters/terror_eel.png",
     "beta_image_url": null
@@ -8591,7 +8591,7 @@
           "next": "SMASH_MOVE"
         }
       ],
-      "description": "Cycle: 부수기 → 광선 → 집중포화 → repeat"
+      "description": "부수기 → 광선 → 집중포화 → repeat"
     },
     "image_url": "/static/images/monsters/the_adversary_placeholder.png",
     "beta_image_url": null
@@ -8676,7 +8676,7 @@
           "next": "CRASH_MOVE"
         }
       ],
-      "description": "Cycle: 충돌 → 화염 광선 → 집중포화 → repeat"
+      "description": "충돌 → 화염 광선 → 집중포화 → repeat"
     },
     "image_url": "/static/images/monsters/the_adversary_placeholder.png",
     "beta_image_url": null
@@ -8761,7 +8761,7 @@
           "next": "BASH_MOVE"
         }
       ],
-      "description": "Cycle: 강타 → 화염 광선 → 집중포화 → repeat"
+      "description": "강타 → 화염 광선 → 집중포화 → repeat"
     },
     "image_url": "/static/images/monsters/the_adversary_placeholder.png",
     "beta_image_url": null
@@ -8948,7 +8948,7 @@
           "next": "THRASH_MOVE_2"
         }
       ],
-      "description": "Cycle: 대지 뒤틀기 → Thrash Move 1 → 덮쳐 물기 → 군침 흘리기 → Thrash Move 2 → repeat"
+      "description": "대지 뒤틀기 → Thrash Move 1 → 덮쳐 물기 → 군침 흘리기 → Thrash Move 2 → repeat"
     },
     "image_url": "/static/images/monsters/the_insatiable.png",
     "beta_image_url": null
@@ -9241,7 +9241,7 @@
           "next": "ESCAPE_MOVE"
         }
       ],
-      "description": "Cycle: 절도 → 파닥거리기 → 해트트릭 → 낚아채기 → 도망 → repeat"
+      "description": "절도 → 파닥거리기 → 해트트릭 → 낚아채기 → 도망 → repeat"
     },
     "image_url": "/static/images/monsters/thieving_hopper.png",
     "beta_image_url": null
@@ -9475,7 +9475,7 @@
           "next": "BEAM_MOVE"
         }
       ],
-      "description": "Cycle: Tackle 1 → Tackle 2 → Beam → Tackle 3 → Tackle 4 → repeat"
+      "description": "Tackle 1 → Tackle 2 → Beam → Tackle 3 → Tackle 4 → repeat"
     },
     "image_url": "/static/images/monsters/amalgam.png",
     "beta_image_url": null
@@ -9715,7 +9715,7 @@
           "next": "BITE_MOVE"
         }
       ],
-      "description": "Cycle: 물기 → 땅굴 파기 → Below Move 1 → repeat"
+      "description": "물기 → 땅굴 파기 → Below Move 1 → repeat"
     },
     "image_url": "/static/images/monsters/tunneler.png",
     "beta_image_url": null
@@ -9803,7 +9803,7 @@
           "next": "UNLOAD_MOVE_1"
         }
       ],
-      "description": "Cycle: Unload Move 1 → Unload Move 2 → Reload → repeat"
+      "description": "Unload Move 1 → Unload Move 2 → Reload → repeat"
     },
     "image_url": "/static/images/monsters/turret_operator.png",
     "beta_image_url": null
@@ -10183,7 +10183,7 @@
           "next": "INK_BLOT_MOVE"
         }
       ],
-      "description": "Cycle: 잉크 투척 → 잉크 창 → 토막내기 → 준비 → repeat"
+      "description": "잉크 투척 → 잉크 창 → 토막내기 → 준비 → repeat"
     },
     "image_url": "/static/images/monsters/vantom.png",
     "beta_image_url": null
@@ -10282,7 +10282,7 @@
           "next": "SWIPE_MOVE"
         }
       ],
-      "description": "Cycle: 밀쳐내기 → 휘감는 덩굴 → 물어뜯기 → repeat"
+      "description": "밀쳐내기 → 휘감는 덩굴 → 물어뜯기 → repeat"
     },
     "image_url": "/static/images/monsters/vine_shambler.png",
     "beta_image_url": null
@@ -10479,7 +10479,7 @@
           "next": "EXPLODE_MOVE"
         }
       ],
-      "description": "Cycle: 가압 → 발구르기 → 들이받기 → 흡수 → 압축포 → Pressure Up → repeat"
+      "description": "가압 → 발구르기 → 들이받기 → 흡수 → 압축포 → Pressure Up → repeat"
     },
     "image_url": "/static/images/monsters/waterfall_giant.png",
     "beta_image_url": null

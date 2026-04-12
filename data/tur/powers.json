@@ -292,8 +292,8 @@
   {
     "id": "COLOSSUS",
     "name": "Devasa",
-    "description": "Bu tur, üzerinde [gold]Savunmasız[/gold] olan düşmanlardan [blue]%50[/blue] daha az hasar alırsın.",
-    "description_raw": null,
+    "description": "[blue]2[/blue] tur boyunca üzerinde [gold]Savunmasız[/gold] olan düşmanlardan [blue]%50[/blue] daha az hasar alırsın.",
+    "description_raw": "{Amount:plural:Bu tur,|[blue]{}[/blue] tur boyunca} üzerinde [gold]Savunmasız[/gold] olan düşmanlardan [blue]%{DamageDecrease:percentLess()}[/blue] daha az hasar alırsın.",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -2522,8 +2522,8 @@
   {
     "id": "VULNERABLE",
     "name": "Savunmasız",
-    "description": "Savunmasız yaratıklar Saldırılardan [blue]%50[/blue] daha fazla hasar alır.",
-    "description_raw": null,
+    "description": "[blue][Amount][/blue] tur boyunca Saldırılardan [blue]%50[/blue] daha fazla hasar al.",
+    "description_raw": "[blue]{Amount}[/blue] {Amount:plural:tur|tur} boyunca Saldırılardan [blue]%{DamageIncrease:percentMore()}[/blue] daha fazla hasar al.",
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": null,

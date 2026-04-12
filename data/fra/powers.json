@@ -292,8 +292,8 @@
   {
     "id": "COLOSSUS",
     "name": "Colosse",
-    "description": "Les dégâts que vous subissez des ennemis [gold]Vulnérables[/gold] sont réduits de [blue]50%[/blue] pendant ce tour.",
-    "description_raw": null,
+    "description": "Les dégâts que vous subissez des ennemis [gold]Vulnérables[/gold] sont réduits de [blue]50%[/blue] pour les [blue]2[/blue] prochains tours.",
+    "description_raw": "Les dégâts que vous subissez des ennemis [gold]Vulnérables[/gold] sont réduits de [blue]{DamageDecrease:percentLess()}%[/blue] {Amount:plural:pendant ce tour|pour les [blue]{}[/blue] prochains tours}.",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -2522,8 +2522,8 @@
   {
     "id": "VULNERABLE",
     "name": "Vulnérable",
-    "description": "Les créatures Vulnérables subissent [blue]50%[/blue] de dégâts d'Attaque en plus.",
-    "description_raw": null,
+    "description": "Subissez [blue]50%[/blue] de dégâts d'Attaque supplémentaires pendant [blue][Amount][/blue] tours.",
+    "description_raw": "Subissez [blue]{DamageIncrease:percentMore()}%[/blue] de dégâts d'Attaque supplémentaires pendant [blue]{Amount}[/blue] {Amount:plural:tour|tours}.",
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": null,

@@ -12,7 +12,7 @@
         "name": "Robô de Fundição"
       }
     ],
-    "loss_text": "The adventurer teve os membros separados do corpo ao encontrar alguns [gold]Robôs de Fundição[/gold]."
+    "loss_text": "[b]The Adventurer[/b] teve os membros separados do corpo ao encontrar alguns [gold]Robôs de Fundição[/gold]."
   },
   {
     "id": "BATTLEWORN_DUMMY_EVENT_ENCOUNTER",
@@ -35,7 +35,7 @@
         "name": "Companheiro de Batalha V3.0"
       }
     ],
-    "loss_text": "De alguma forma, um [gold]Manequim de Treinamento Desgastado[/gold] conseguiu derrotar The adventurer???"
+    "loss_text": "De alguma forma, um [gold]Manequim de Treinamento Desgastado[/gold] conseguiu derrotar [b]The Adventurer[/b]???"
   },
   {
     "id": "BOWLBUGS_NORMAL",
@@ -64,7 +64,7 @@
         "name": "Besouro Coletor (Seda)"
       }
     ],
-    "loss_text": "The adventurer atravessou o caminho de um [gold]Enxame de Besouros Coletores[/gold]."
+    "loss_text": "[b]The Adventurer[/b] atravessou o caminho de um [gold]Enxame de Besouros Coletores[/gold]."
   },
   {
     "id": "BOWLBUGS_WEAK",
@@ -89,7 +89,7 @@
         "name": "Besouro Coletor (Pedra)"
       }
     ],
-    "loss_text": "The adventurer ficou no caminho de alguns [gold]Besouros Coletores[/gold]."
+    "loss_text": "[b]The Adventurer[/b] ficou no caminho de alguns [gold]Besouros Coletores[/gold]."
   },
   {
     "id": "BYGONE_EFFIGY_ELITE",
@@ -104,7 +104,7 @@
         "name": "Efígie Antigo"
       }
     ],
-    "loss_text": "The adventurer teve seu corpo partido ao meio por um [gold]Efígie Antigo[/gold]."
+    "loss_text": "[b]The Adventurer[/b] teve seu corpo partido ao meio por um [gold]Efígie Antigo[/gold]."
   },
   {
     "id": "BYRDONIS_ELITE",
@@ -119,7 +119,7 @@
         "name": "Avestriz Alfa"
       }
     ],
-    "loss_text": "Um [gold]Avestriz Alfa[/gold] protegeu seu ninho contra The adventurer."
+    "loss_text": "Um [gold]Avestriz Alfa[/gold] protegeu seu ninho contra [b]The Adventurer[/b]."
   },
   {
     "id": "CEREMONIAL_BEAST_BOSS",
@@ -134,7 +134,7 @@
         "name": "Besta Cerimonial"
       }
     ],
-    "loss_text": "The adventurer não conseguiu avançar ao encontrar uma [gold]Besta Cerimonial[/gold]."
+    "loss_text": "[b]The Adventurer[/b] não conseguiu avançar ao encontrar uma [gold]Besta Cerimonial[/gold]."
   },
   {
     "id": "CHOMPERS_NORMAL",
@@ -151,7 +151,7 @@
         "name": "Mordiscador"
       }
     ],
-    "loss_text": "Um [gold]Par de Autômatos[/gold] mordiscou The adventurer até não sobrar mais nada."
+    "loss_text": "Um [gold]Par de Autômatos[/gold] mordiscou [b]The Adventurer[/b] até não sobrar mais nada."
   },
   {
     "id": "CONSTRUCT_MENAGERIE_NORMAL",
@@ -170,7 +170,7 @@
         "name": "Constructo Pugilista"
       }
     ],
-    "loss_text": "Um [gold]Conjunto de Constructos[/gold] acabou com The adventurer."
+    "loss_text": "Um [gold]Conjunto de Constructos[/gold] acabou com [b]The Adventurer[/b]."
   },
   {
     "id": "CORPSE_SLUGS_NORMAL",
@@ -187,7 +187,7 @@
         "name": "Lesma Necrófaga"
       }
     ],
-    "loss_text": "[gold]Muitas Lesmas Necrófagas[/gold] devoraram The adventurer."
+    "loss_text": "[gold]Muitas Lesmas Necrófagas[/gold] devoraram [b]The Adventurer[/b]."
   },
   {
     "id": "CORPSE_SLUGS_WEAK",
@@ -204,7 +204,7 @@
         "name": "Lesma Necrófaga"
       }
     ],
-    "loss_text": "[gold]Lesmas Necrófagas[/gold] devoraram The adventurer."
+    "loss_text": "[gold]Lesmas Necrófagas[/gold] devoraram [b]The Adventurer[/b]."
   },
   {
     "id": "CUBEX_CONSTRUCT_NORMAL",
@@ -219,7 +219,7 @@
         "name": "Cubiconstructo"
       }
     ],
-    "loss_text": "Os disparos de um [gold]Cubiconstructo[/gold] feriram mortalmente The adventurer."
+    "loss_text": "Os disparos de um [gold]Cubiconstructo[/gold] feriram mortalmente [b]The Adventurer[/b]."
   },
   {
     "id": "CULTISTS_NORMAL",
@@ -238,7 +238,7 @@
         "name": "Cultista Encharcado"
       }
     ],
-    "loss_text": "Alguns [gold]Cultistas[/gold] acabaram com The adventurer. [sine]Caaaaw[/sine]..."
+    "loss_text": "Alguns [gold]Cultistas[/gold] acabaram com [b]The Adventurer[/b]. [sine]Caaaaw[/sine]..."
   },
   {
     "id": "DECIMILLIPEDE_ELITE",
@@ -261,7 +261,7 @@
         "name": "Decimillipede Segment Middle"
       }
     ],
-    "loss_text": "The adventurer não sobreviveu ao domínio da [gold]Decimilípede[/gold]."
+    "loss_text": "[b]The Adventurer[/b] não sobreviveu ao domínio da [gold]Decimilípede[/gold]."
   },
   {
     "id": "DENSE_VEGETATION_EVENT_ENCOUNTER",
@@ -276,7 +276,7 @@
         "name": "Parasitário"
       }
     ],
-    "loss_text": "[gold]Parasitários[/gold] infestaram The adventurer."
+    "loss_text": "[gold]Parasitários[/gold] infestaram [b]The Adventurer[/b]."
   },
   {
     "id": "DEVOTED_SCULPTOR_WEAK",
@@ -291,7 +291,7 @@
         "name": "Escultor Devoto"
       }
     ],
-    "loss_text": "The adventurer ficou em pedacinhos ao encontrar um [gold]Escultor Devoto[/gold]."
+    "loss_text": "[b]The Adventurer[/b] ficou em pedacinhos ao encontrar um [gold]Escultor Devoto[/gold]."
   },
   {
     "id": "DOORMAKER_BOSS",
@@ -310,7 +310,7 @@
         "name": "Porteiro"
       }
     ],
-    "loss_text": "[gold]O Porteiro[/gold] não gostou que The adventurer o tenha perturbado."
+    "loss_text": "[gold]O Porteiro[/gold] não gostou que [b]The Adventurer[/b] o tenha perturbado."
   },
   {
     "id": "ENTOMANCER_ELITE",
@@ -325,7 +325,7 @@
         "name": "Entomante"
       }
     ],
-    "loss_text": "The adventurer sofreu inúmeras picadas fatais ao encontrar um [gold]Entomante[/gold]."
+    "loss_text": "[b]The Adventurer[/b] sofreu inúmeras picadas fatais ao encontrar um [gold]Entomante[/gold]."
   },
   {
     "id": "EXOSKELETONS_NORMAL",
@@ -342,7 +342,7 @@
         "name": "Exoesqueleto"
       }
     ],
-    "loss_text": "[gold]Vários Exoesqueletos[/gold] dilaceraram The adventurer."
+    "loss_text": "[gold]Vários Exoesqueletos[/gold] dilaceraram [b]The Adventurer[/b]."
   },
   {
     "id": "EXOSKELETONS_WEAK",
@@ -359,7 +359,7 @@
         "name": "Exoesqueleto"
       }
     ],
-    "loss_text": "Alguns [gold]Exoesqueletos[/gold] dilaceraram The adventurer."
+    "loss_text": "Alguns [gold]Exoesqueletos[/gold] dilaceraram [b]The Adventurer[/b]."
   },
   {
     "id": "FABRICATOR_NORMAL",
@@ -374,7 +374,7 @@
         "name": "Operador"
       }
     ],
-    "loss_text": "Os robôs controlados pelo [gold]Operador[/gold] pulverizaram The adventurer."
+    "loss_text": "Os robôs controlados pelo [gold]Operador[/gold] pulverizaram [b]The Adventurer[/b]."
   },
   {
     "id": "FAKE_MERCHANT_EVENT_ENCOUNTER",
@@ -389,7 +389,7 @@
         "name": "O Mercador???"
       }
     ],
-    "loss_text": "The adventurer enfrentou a fúria do [gold]Mercador???[/gold]"
+    "loss_text": "[b]The Adventurer[/b] enfrentou a fúria do [gold]Mercador???[/gold]"
   },
   {
     "id": "FLYCONID_NORMAL",
@@ -415,7 +415,7 @@
         "name": "Gosma de Gravetos (M)"
       }
     ],
-    "loss_text": "The adventurer teve sua vitalidade consumida por [gold]Fungos e Gosmas[/gold]."
+    "loss_text": "[b]The Adventurer[/b] teve sua vitalidade consumida por [gold]Fungos e Gosmas[/gold]."
   },
   {
     "id": "FOGMOG_NORMAL",
@@ -434,7 +434,7 @@
         "name": "Brumesporo"
       }
     ],
-    "loss_text": "The adventurer se distraiu pelas ilusões de um [gold]Brumesporo[/gold]."
+    "loss_text": "[b]The Adventurer[/b] se distraiu pelas ilusões de um [gold]Brumesporo[/gold]."
   },
   {
     "id": "FOSSIL_STALKER_NORMAL",
@@ -449,7 +449,7 @@
         "name": "Fóssil Espreitador"
       }
     ],
-    "loss_text": "The adventurer sofreu uma emboscada de um [gold]Fóssil Espreitador[/gold]."
+    "loss_text": "[b]The Adventurer[/b] sofreu uma emboscada de um [gold]Fóssil Espreitador[/gold]."
   },
   {
     "id": "FROG_KNIGHT_NORMAL",
@@ -464,7 +464,7 @@
         "name": "Sapo Cavaleiro"
       }
     ],
-    "loss_text": "Um valente [gold]Sapo Cavaleiro[/gold] triunfou em um combate contra The adventurer."
+    "loss_text": "Um valente [gold]Sapo Cavaleiro[/gold] triunfou em um combate contra [b]The Adventurer[/b]."
   },
   {
     "id": "FUZZY_WURM_CRAWLER_WEAK",
@@ -481,7 +481,7 @@
         "name": "Vorme Peluginoso"
       }
     ],
-    "loss_text": "Um [gold]Vorme Peluginoso[/gold] cuspiu em The adventurer."
+    "loss_text": "Um [gold]Vorme Peluginoso[/gold] cuspiu em [b]The Adventurer[/b]."
   },
   {
     "id": "GLOBE_HEAD_NORMAL",
@@ -496,7 +496,7 @@
         "name": "Globocéfalo"
       }
     ],
-    "loss_text": "[gold]Um Globocéfalo Solitário[/gold] eletrocutou The adventurer."
+    "loss_text": "[gold]Um Globocéfalo Solitário[/gold] eletrocutou [b]The Adventurer[/b]."
   },
   {
     "id": "GREMLIN_MERC_NORMAL",
@@ -519,7 +519,7 @@
         "name": "Gremlin Trapaceiro"
       }
     ],
-    "loss_text": "[gold]Dois Gremlins em um Casaco[/gold] assaltaram The adventurer."
+    "loss_text": "[gold]Dois Gremlins em um Casaco[/gold] assaltaram [b]The Adventurer[/b]."
   },
   {
     "id": "HAUNTED_SHIP_NORMAL",
@@ -534,7 +534,7 @@
         "name": "Embarcação Assombrada"
       }
     ],
-    "loss_text": "Uma [gold]Embarcação Assombrada[/gold] pisoteou The adventurer."
+    "loss_text": "Uma [gold]Embarcação Assombrada[/gold] pisoteou [b]The Adventurer[/b]."
   },
   {
     "id": "HUNTER_KILLER_NORMAL",
@@ -549,7 +549,7 @@
         "name": "Predador de Predadores"
       }
     ],
-    "loss_text": "Um [gold]Predador de Predadores[/gold] dilacerou vorazmente The adventurer."
+    "loss_text": "Um [gold]Predador de Predadores[/gold] dilacerou vorazmente [b]The Adventurer[/b]."
   },
   {
     "id": "INFESTED_PRISMS_ELITE",
@@ -564,7 +564,7 @@
         "name": "Prisma Infestado"
       }
     ],
-    "loss_text": "The adventurer teve sua jornada interrompida por um [gold]Prisma Infestado[/gold]."
+    "loss_text": "[b]The Adventurer[/b] teve sua jornada interrompida por um [gold]Prisma Infestado[/gold]."
   },
   {
     "id": "INKLETS_NORMAL",
@@ -579,7 +579,7 @@
         "name": "Nanquíneo"
       }
     ],
-    "loss_text": "Alguns [gold]Nanquíneos[/gold] impediram The adventurer de prosseguir."
+    "loss_text": "Alguns [gold]Nanquíneos[/gold] impediram [b]The Adventurer[/b] de prosseguir."
   },
   {
     "id": "KAISER_CRAB_BOSS",
@@ -598,7 +598,7 @@
         "name": "Míssil"
       }
     ],
-    "loss_text": "O [gold]Caranguejo Imperador[/gold] golpeou The adventurer violentamente."
+    "loss_text": "O [gold]Caranguejo Imperador[/gold] golpeou [b]The Adventurer[/b] violentamente."
   },
   {
     "id": "KNIGHTS_ELITE",
@@ -623,7 +623,7 @@
         "name": "Cavaleiro Espectral"
       }
     ],
-    "loss_text": "Um [gold]Grupo de Cavaleiros[/gold] venceu The adventurer."
+    "loss_text": "Um [gold]Grupo de Cavaleiros[/gold] venceu [b]The Adventurer[/b]."
   },
   {
     "id": "KNOWLEDGE_DEMON_BOSS",
@@ -638,7 +638,7 @@
         "name": "Demônio do Conhecimento"
       }
     ],
-    "loss_text": "O [gold]Demônio do Conhecimento[/gold] amaldiçoou The adventurer com conhecimento esmagador."
+    "loss_text": "O [gold]Demônio do Conhecimento[/gold] amaldiçoou [b]The Adventurer[/b] com conhecimento esmagador."
   },
   {
     "id": "LAGAVULIN_MATRIARCH_BOSS",
@@ -653,7 +653,7 @@
         "name": "Matriarca Lagavulin"
       }
     ],
-    "loss_text": "The adventurer teve seu corpo partido ao meio pela [gold]Matriarca Lagavulin[/gold]."
+    "loss_text": "[b]The Adventurer[/b] teve seu corpo partido ao meio pela [gold]Matriarca Lagavulin[/gold]."
   },
   {
     "id": "LIVING_FOG_NORMAL",
@@ -672,7 +672,7 @@
         "name": "Névoa Viva"
       }
     ],
-    "loss_text": "The adventurer não suportou respirar enquanto enfrentava uma espécie de [gold]Gás Maligno[/gold]."
+    "loss_text": "[b]The Adventurer[/b] não suportou respirar enquanto enfrentava uma espécie de [gold]Gás Maligno[/gold]."
   },
   {
     "id": "LOUSE_PROGENITOR_NORMAL",
@@ -687,7 +687,7 @@
         "name": "Piolho Progenitor"
       }
     ],
-    "loss_text": "Um [gold]Piolho Progenitor[/gold] paralisou The adventurer."
+    "loss_text": "Um [gold]Piolho Progenitor[/gold] paralisou [b]The Adventurer[/b]."
   },
   {
     "id": "MAWLER_NORMAL",
@@ -702,7 +702,7 @@
         "name": "Dilacerador"
       }
     ],
-    "loss_text": "Um [gold]Dilacerador[/gold] fez jus a seu nome ao encontrar The adventurer."
+    "loss_text": "Um [gold]Dilacerador[/gold] fez jus a seu nome ao encontrar [b]The Adventurer[/b]."
   },
   {
     "id": "MECHA_KNIGHT_ELITE",
@@ -717,7 +717,7 @@
         "name": "Cavaleiro Mecânico"
       }
     ],
-    "loss_text": "Um [gold]Cavaleiro Mecânico[/gold] fincou sua espada e queimou The adventurer."
+    "loss_text": "Um [gold]Cavaleiro Mecânico[/gold] fincou sua espada e queimou [b]The Adventurer[/b]."
   },
   {
     "id": "MYSTERIOUS_KNIGHT_EVENT_ENCOUNTER",
@@ -732,7 +732,7 @@
         "name": "Cavaleiro Misterioso"
       }
     ],
-    "loss_text": "The adventurer tentou furtar a chave de um [gold]Cavaleiro Misterioso[/gold]."
+    "loss_text": "[b]The Adventurer[/b] tentou furtar a chave de um [gold]Cavaleiro Misterioso[/gold]."
   },
   {
     "id": "MYTES_NORMAL",
@@ -747,7 +747,7 @@
         "name": "Acarino"
       }
     ],
-    "loss_text": "The adventurer ficou sem rota de fuga ao encontrar um [gold]Enxame de Acarinos[/gold]."
+    "loss_text": "[b]The Adventurer[/b] ficou sem rota de fuga ao encontrar um [gold]Enxame de Acarinos[/gold]."
   },
   {
     "id": "NIBBITS_NORMAL",
@@ -762,7 +762,7 @@
         "name": "Lagartisco"
       }
     ],
-    "loss_text": "[gold]Um Par de Lagartiscos[/gold] acabaram com The adventurer."
+    "loss_text": "[gold]Um Par de Lagartiscos[/gold] acabaram com [b]The Adventurer[/b]."
   },
   {
     "id": "NIBBITS_WEAK",
@@ -779,7 +779,7 @@
         "name": "Lagartisco"
       }
     ],
-    "loss_text": "[gold]Um Lagartisco solitário[/gold] acabou com The adventurer."
+    "loss_text": "[gold]Um Lagartisco solitário[/gold] acabou com [b]The Adventurer[/b]."
   },
   {
     "id": "OVERGROWTH_CRAWLERS",
@@ -801,7 +801,7 @@
         "name": "Besouro Encolhedor"
       }
     ],
-    "loss_text": "Alguns [gold]Seres Rastejantes[/gold] devoraram The adventurer."
+    "loss_text": "Alguns [gold]Seres Rastejantes[/gold] devoraram [b]The Adventurer[/b]."
   },
   {
     "id": "OVICOPTER_NORMAL",
@@ -820,7 +820,7 @@
         "name": "Ovo Resistente"
       }
     ],
-    "loss_text": "The adventurer virou comida para a prole de um [gold]Ovicóptero[/gold]."
+    "loss_text": "[b]The Adventurer[/b] virou comida para a prole de um [gold]Ovicóptero[/gold]."
   },
   {
     "id": "OWL_MAGISTRATE_NORMAL",
@@ -835,7 +835,7 @@
         "name": "Coruja Magistrada"
       }
     ],
-    "loss_text": "Uma [gold]Coruja Magistrada[/gold] sentenciou The adventurer à morte."
+    "loss_text": "Uma [gold]Coruja Magistrada[/gold] sentenciou [b]The Adventurer[/b] à morte."
   },
   {
     "id": "PHANTASMAL_GARDENERS_ELITE",
@@ -850,7 +850,7 @@
         "name": "Enguia Espectral"
       }
     ],
-    "loss_text": "[gold]Enguias Espectrais[/gold] rasgaram The adventurer em pedaços."
+    "loss_text": "[gold]Enguias Espectrais[/gold] rasgaram [b]The Adventurer[/b] em pedaços."
   },
   {
     "id": "PHROG_PARASITE_ELITE",
@@ -869,7 +869,7 @@
         "name": "Parasitário"
       }
     ],
-    "loss_text": "Um [gold]Sapo Parasitado[/gold] espalhou seus parasitas para The adventurer."
+    "loss_text": "Um [gold]Sapo Parasitado[/gold] espalhou seus parasitas para [b]The Adventurer[/b]."
   },
   {
     "id": "PUNCH_CONSTRUCT_NORMAL",
@@ -884,7 +884,7 @@
         "name": "Constructo Pugilista"
       }
     ],
-    "loss_text": "The adventurer entrou em uma briga com um [gold]Constructo Pugilista[/gold]."
+    "loss_text": "[b]The Adventurer[/b] entrou em uma briga com um [gold]Constructo Pugilista[/gold]."
   },
   {
     "id": "PUNCH_OFF_EVENT_ENCOUNTER",
@@ -899,7 +899,7 @@
         "name": "Constructo Pugilista"
       }
     ],
-    "loss_text": "The adventurer interrompeu uma briga entre dois [gold]Constructos Pugilistas[/gold]."
+    "loss_text": "[b]The Adventurer[/b] interrompeu uma briga entre dois [gold]Constructos Pugilistas[/gold]."
   },
   {
     "id": "QUEEN_BOSS",
@@ -918,7 +918,7 @@
         "name": "Amálgama Lamparínea"
       }
     ],
-    "loss_text": "A [gold]Rainha[/gold] destroçou The adventurer e guardou um pedacinho em sua coleção."
+    "loss_text": "A [gold]Rainha[/gold] destroçou [b]The Adventurer[/b] e guardou um pedacinho em sua coleção."
   },
   {
     "id": "RUBY_RAIDERS_NORMAL",
@@ -949,7 +949,7 @@
         "name": "Guerreira Rastreadora"
       }
     ],
-    "loss_text": "The adventurer sofreu uma emboscada dos [gold]Guerreiros Saqueadores[/gold]."
+    "loss_text": "[b]The Adventurer[/b] sofreu uma emboscada dos [gold]Guerreiros Saqueadores[/gold]."
   },
   {
     "id": "SCROLLS_OF_BITING_NORMAL",
@@ -966,7 +966,7 @@
         "name": "Pergaminho Mordaz"
       }
     ],
-    "loss_text": "[gold]Vários Pergaminhos Mordazes[/gold] destroçaram The adventurer em pedacinhos."
+    "loss_text": "[gold]Vários Pergaminhos Mordazes[/gold] destroçaram [b]The Adventurer[/b] em pedacinhos."
   },
   {
     "id": "SCROLLS_OF_BITING_WEAK",
@@ -983,7 +983,7 @@
         "name": "Pergaminho Mordaz"
       }
     ],
-    "loss_text": "Alguns [gold]Pergaminhos Mordazes[/gold] destroçaram The adventurer em pedacinhos."
+    "loss_text": "Alguns [gold]Pergaminhos Mordazes[/gold] destroçaram [b]The Adventurer[/b] em pedacinhos."
   },
   {
     "id": "SEAPUNK_WEAK",
@@ -1000,7 +1000,7 @@
         "name": "Arruaceiro Marinho"
       }
     ],
-    "loss_text": "Um [gold]Arruaceiro Marinho[/gold] atrapalhou The adventurer."
+    "loss_text": "Um [gold]Arruaceiro Marinho[/gold] atrapalhou [b]The Adventurer[/b]."
   },
   {
     "id": "SEWER_CLAM_NORMAL",
@@ -1015,7 +1015,7 @@
         "name": "Bivalve de Esgoto"
       }
     ],
-    "loss_text": "Um [gold]Bivalve de Esgoto[/gold] engoliu The adventurer."
+    "loss_text": "Um [gold]Bivalve de Esgoto[/gold] engoliu [b]The Adventurer[/b]."
   },
   {
     "id": "SHRINKER_BEETLE_WEAK",
@@ -1032,7 +1032,7 @@
         "name": "Besouro Encolhedor"
       }
     ],
-    "loss_text": "Um [gold]Besouro Encolhedor[/gold] devorou The adventurer como aperitivo."
+    "loss_text": "Um [gold]Besouro Encolhedor[/gold] devorou [b]The Adventurer[/b] como aperitivo."
   },
   {
     "id": "SKULKING_COLONY_ELITE",
@@ -1047,7 +1047,7 @@
         "name": "Colônia Furtiva"
       }
     ],
-    "loss_text": "The adventurer teve seus restos absorvidos por uma [gold]Colônia Furtiva[/gold]"
+    "loss_text": "[b]The Adventurer[/b] teve seus restos absorvidos por uma [gold]Colônia Furtiva[/gold]"
   },
   {
     "id": "SLIMED_BERSERKER_NORMAL",
@@ -1062,7 +1062,7 @@
         "name": "Amoque Gosmento"
       }
     ],
-    "loss_text": "Um [gold]Amoque Gosmento[/gold] absorveu The adventurer por completo."
+    "loss_text": "Um [gold]Amoque Gosmento[/gold] absorveu [b]The Adventurer[/b] por completo."
   },
   {
     "id": "SLIMES_NORMAL",
@@ -1091,7 +1091,7 @@
         "name": "Gosma de Gravetos (P)"
       }
     ],
-    "loss_text": "The adventurer sucumbiu a um [gold]Grande número de Gosmas[/gold]."
+    "loss_text": "[b]The Adventurer[/b] sucumbiu a um [gold]Grande número de Gosmas[/gold]."
   },
   {
     "id": "SLIMES_WEAK",
@@ -1120,7 +1120,7 @@
         "name": "Gosma de Gravetos (P)"
       }
     ],
-    "loss_text": "The adventurer sucumbiu a um [gold]Grupo de Gosmas[/gold]."
+    "loss_text": "[b]The Adventurer[/b] sucumbiu a um [gold]Grupo de Gosmas[/gold]."
   },
   {
     "id": "SLITHERING_STRANGLER_NORMAL",
@@ -1155,7 +1155,7 @@
         "name": "Gosma de Gravetos (P)"
       }
     ],
-    "loss_text": "The adventurer sufocou em combate ao encontrar um [gold]Estrangulador Acompanhado[/gold]."
+    "loss_text": "[b]The Adventurer[/b] sufocou em combate ao encontrar um [gold]Estrangulador Acompanhado[/gold]."
   },
   {
     "id": "SLUDGE_SPINNER_WEAK",
@@ -1170,7 +1170,7 @@
         "name": "Náutilo Oleoso"
       }
     ],
-    "loss_text": "The adventurer não foi capaz de derrotar um [gold]Náutilo Oleoso[/gold]."
+    "loss_text": "[b]The Adventurer[/b] não foi capaz de derrotar um [gold]Náutilo Oleoso[/gold]."
   },
   {
     "id": "SLUMBERING_BEETLE_NORMAL",
@@ -1195,7 +1195,7 @@
         "name": "Besouro Sonolento"
       }
     ],
-    "loss_text": "The adventurer interrompeu o [gold]Precioso Descanso[/gold] de algumas criaturas."
+    "loss_text": "[b]The Adventurer[/b] interrompeu o [gold]Precioso Descanso[/gold] de algumas criaturas."
   },
   {
     "id": "SNAPPING_JAXFRUIT_NORMAL",
@@ -1216,7 +1216,7 @@
         "name": "Bulbo Mordiscador"
       }
     ],
-    "loss_text": "The adventurer teve o infortúnio de encontrar algumas espécimes de [gold]Flora da Proliferação[/gold]."
+    "loss_text": "[b]The Adventurer[/b] teve o infortúnio de encontrar algumas espécimes de [gold]Flora da Proliferação[/gold]."
   },
   {
     "id": "SOUL_FYSH_BOSS",
@@ -1231,7 +1231,7 @@
         "name": "Peyxe Espectral"
       }
     ],
-    "loss_text": "Um [gold]Peyxe Espectral[/gold] atraiu The adventurer para o seu fim."
+    "loss_text": "Um [gold]Peyxe Espectral[/gold] atraiu [b]The Adventurer[/b] para o seu fim."
   },
   {
     "id": "SOUL_NEXUS_ELITE",
@@ -1246,7 +1246,7 @@
         "name": "Nexo de Almas"
       }
     ],
-    "loss_text": "The adventurer sucumbiu a um [gold]Nexo de Almas[/gold] em um campo de batalha abandonado."
+    "loss_text": "[b]The Adventurer[/b] sucumbiu a um [gold]Nexo de Almas[/gold] em um campo de batalha abandonado."
   },
   {
     "id": "SPINY_TOAD_NORMAL",
@@ -1261,7 +1261,7 @@
         "name": "Sapo Espinhoso"
       }
     ],
-    "loss_text": "The adventurer não conseguiu atravessar os espinhos de um [gold]Sapo Espinhoso[/gold]."
+    "loss_text": "[b]The Adventurer[/b] não conseguiu atravessar os espinhos de um [gold]Sapo Espinhoso[/gold]."
   },
   {
     "id": "TERROR_EEL_ELITE",
@@ -1276,7 +1276,7 @@
         "name": "Enguia Abissal"
       }
     ],
-    "loss_text": "Uma [gold]Enguia Abissal[/gold] se mostrou aterrorizante demais para The adventurer."
+    "loss_text": "Uma [gold]Enguia Abissal[/gold] se mostrou aterrorizante demais para [b]The Adventurer[/b]."
   },
   {
     "id": "TEST_SUBJECT_BOSS",
@@ -1291,7 +1291,7 @@
         "name": "Cobaia #C{Count}"
       }
     ],
-    "loss_text": "Uma [gold]Cobaia[/gold] impediu The adventurer de encontrar seus mestres."
+    "loss_text": "Uma [gold]Cobaia[/gold] impediu [b]The Adventurer[/b] de encontrar seus mestres."
   },
   {
     "id": "THE_ARCHITECT_EVENT_ENCOUNTER",
@@ -1321,7 +1321,7 @@
         "name": "O Insaciável"
       }
     ],
-    "loss_text": "[gold]O Insaciável[/gold] devorou The adventurer. Ainda assim, sua fome aumenta..."
+    "loss_text": "[gold]O Insaciável[/gold] devorou [b]The Adventurer[/b]. Ainda assim, sua fome aumenta..."
   },
   {
     "id": "THE_KIN_BOSS",
@@ -1340,7 +1340,7 @@
         "name": "Sacerdote Tribal"
       }
     ],
-    "loss_text": "The adventurer não foi pareo para a superior estratégia [gold]A Tribo[/gold]."
+    "loss_text": "[b]The Adventurer[/b] não foi pareo para a superior estratégia [gold]A Tribo[/gold]."
   },
   {
     "id": "THE_LOST_AND_FORGOTTEN_NORMAL",
@@ -1359,7 +1359,7 @@
         "name": "O Perdido"
       }
     ],
-    "loss_text": "[gold]O Perdido e O Esquecido[/gold] privaram The adventurer de sua vontade de viver."
+    "loss_text": "[gold]O Perdido e O Esquecido[/gold] privaram [b]The Adventurer[/b] de sua vontade de viver."
   },
   {
     "id": "THE_OBSCURA_NORMAL",
@@ -1374,7 +1374,7 @@
         "name": "A Obscura"
       }
     ],
-    "loss_text": "[gold]A Obscura[/gold] e suas ilusões acabaram com The adventurer."
+    "loss_text": "[gold]A Obscura[/gold] e suas ilusões acabaram com [b]The Adventurer[/b]."
   },
   {
     "id": "THIEVING_HOPPER_WEAK",
@@ -1391,7 +1391,7 @@
         "name": "Gafanhoto Larápio"
       }
     ],
-    "loss_text": "Um [gold]Gafanhoto Larápio[/gold] assaltou The adventurer."
+    "loss_text": "Um [gold]Gafanhoto Larápio[/gold] assaltou [b]The Adventurer[/b]."
   },
   {
     "id": "TOADPOLES_NORMAL",
@@ -1410,7 +1410,7 @@
         "name": "Girino"
       }
     ],
-    "loss_text": "The adventurer se arrependeu de encontrar algumas das espécies da [gold]Fauna das Docas Subterrâneas[/gold]."
+    "loss_text": "[b]The Adventurer[/b] se arrependeu de encontrar algumas das espécies da [gold]Fauna das Docas Subterrâneas[/gold]."
   },
   {
     "id": "TOADPOLES_WEAK",
@@ -1425,7 +1425,7 @@
         "name": "Girino"
       }
     ],
-    "loss_text": "The adventurer não soube lidar com alguns [gold]Girinos[/gold]."
+    "loss_text": "[b]The Adventurer[/b] não soube lidar com alguns [gold]Girinos[/gold]."
   },
   {
     "id": "TUNNELER_NORMAL",
@@ -1451,7 +1451,7 @@
         "name": "Escavador"
       }
     ],
-    "loss_text": "Um [gold]Escavador e seu aliado[/gold] acabaram com The adventurer."
+    "loss_text": "Um [gold]Escavador e seu aliado[/gold] acabaram com [b]The Adventurer[/b]."
   },
   {
     "id": "TUNNELER_WEAK",
@@ -1468,7 +1468,7 @@
         "name": "Escavador"
       }
     ],
-    "loss_text": "The adventurer não soube como se proteger de um [gold]Escavador[/gold]."
+    "loss_text": "[b]The Adventurer[/b] não soube como se proteger de um [gold]Escavador[/gold]."
   },
   {
     "id": "TURRET_OPERATOR_WEAK",
@@ -1487,7 +1487,7 @@
         "name": "Operador de Artilharia"
       }
     ],
-    "loss_text": "Um [gold]Operador de Artilharia[/gold] deixou The adventurer com inúmeros buracos."
+    "loss_text": "Um [gold]Operador de Artilharia[/gold] deixou [b]The Adventurer[/b] com inúmeros buracos."
   },
   {
     "id": "TWO_TAILED_RATS_NORMAL",
@@ -1502,7 +1502,7 @@
         "name": "Rato Duas-Caudas"
       }
     ],
-    "loss_text": "Alguns [gold]Ratos Duas-Caudas[/gold] encurralaram The adventurer."
+    "loss_text": "Alguns [gold]Ratos Duas-Caudas[/gold] encurralaram [b]The Adventurer[/b]."
   },
   {
     "id": "VANTOM_BOSS",
@@ -1517,7 +1517,7 @@
         "name": "Vantasma"
       }
     ],
-    "loss_text": "The adventurer se transformou em um Nanquíneo pelas garras do [gold]Vantasma[/gold]."
+    "loss_text": "[b]The Adventurer[/b] se transformou em um Nanquíneo pelas garras do [gold]Vantasma[/gold]."
   },
   {
     "id": "VINE_SHAMBLER_NORMAL",
@@ -1532,7 +1532,7 @@
         "name": "Videira Trôpega"
       }
     ],
-    "loss_text": "The adventurer não conseguiu se desvencilhar de uma [gold]Videira Trôpega[/gold]."
+    "loss_text": "[b]The Adventurer[/b] não conseguiu se desvencilhar de uma [gold]Videira Trôpega[/gold]."
   },
   {
     "id": "WATERFALL_GIANT_BOSS",
@@ -1547,6 +1547,6 @@
         "name": "Cachoeira Titânica"
       }
     ],
-    "loss_text": "A [gold]Cachoeira Titânica[/gold] erradicou The adventurer das Docas Subterrâneas."
+    "loss_text": "A [gold]Cachoeira Titânica[/gold] erradicou [b]The Adventurer[/b] das Docas Subterrâneas."
   }
 ]

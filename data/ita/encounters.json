@@ -12,7 +12,7 @@
         "name": "Affettabot"
       }
     ],
-    "loss_text": "Dei [gold]Compagnibot[/gold] hanno smembrato The adventurer."
+    "loss_text": "Dei [gold]Compagnibot[/gold] hanno smembrato [b]The Adventurer[/b]."
   },
   {
     "id": "BATTLEWORN_DUMMY_EVENT_ENCOUNTER",
@@ -35,7 +35,7 @@
         "name": "Partner da battaglia V3.0"
       }
     ],
-    "loss_text": "In qualche modo un [gold]Manichino da allenamento martoriato[/gold] ha ucciso The adventurer."
+    "loss_text": "In qualche modo un [gold]Manichino da allenamento martoriato[/gold] ha ucciso [b]The Adventurer[/b]."
   },
   {
     "id": "BOWLBUGS_NORMAL",
@@ -64,7 +64,7 @@
         "name": "Scaraciotola (Seta)"
       }
     ],
-    "loss_text": "The adventurer ha intralciato il cammino di uno [gold]Sciame di Scaraciotole[/gold] indaffarato."
+    "loss_text": "[b]The Adventurer[/b] ha intralciato il cammino di uno [gold]Sciame di Scaraciotole[/gold] indaffarato."
   },
   {
     "id": "BOWLBUGS_WEAK",
@@ -89,7 +89,7 @@
         "name": "Scaraciotola (Roccia)"
       }
     ],
-    "loss_text": "The adventurer ha intralciato il cammino di alcune [gold]Scaraciotole[/gold] indaffarate."
+    "loss_text": "[b]The Adventurer[/b] ha intralciato il cammino di alcune [gold]Scaraciotole[/gold] indaffarate."
   },
   {
     "id": "BYGONE_EFFIGY_ELITE",
@@ -104,7 +104,7 @@
         "name": "Effige antica"
       }
     ],
-    "loss_text": "Un'[gold]Effigie antica[/gold] ha squarciato in due The adventurer."
+    "loss_text": "Un'[gold]Effigie antica[/gold] ha squarciato in due [b]The Adventurer[/b]."
   },
   {
     "id": "BYRDONIS_ELITE",
@@ -119,7 +119,7 @@
         "name": "Gryfone"
       }
     ],
-    "loss_text": "Un [gold]Gryfone[/gold] ha protetto i suoi cuccioli da The adventurer."
+    "loss_text": "Un [gold]Gryfone[/gold] ha protetto i suoi cuccioli da [b]The Adventurer[/b]."
   },
   {
     "id": "CEREMONIAL_BEAST_BOSS",
@@ -134,7 +134,7 @@
         "name": "Bestia solenne"
       }
     ],
-    "loss_text": "Una [gold]Bestia solenne[/gold] ha abbattuto The adventurer."
+    "loss_text": "Una [gold]Bestia solenne[/gold] ha abbattuto [b]The Adventurer[/b]."
   },
   {
     "id": "CHOMPERS_NORMAL",
@@ -151,7 +151,7 @@
         "name": "Mordicchio"
       }
     ],
-    "loss_text": "[gold]Una coppia di automi[/gold] ha sbranato The adventurer."
+    "loss_text": "[gold]Una coppia di automi[/gold] ha sbranato [b]The Adventurer[/b]."
   },
   {
     "id": "CONSTRUCT_MENAGERIE_NORMAL",
@@ -170,7 +170,7 @@
         "name": "Assemblaggio pugile"
       }
     ],
-    "loss_text": "Un [gold]gruppo di Assemblaggi[/gold] ha annientato The adventurer."
+    "loss_text": "Un [gold]gruppo di Assemblaggi[/gold] ha annientato [b]The Adventurer[/b]."
   },
   {
     "id": "CORPSE_SLUGS_NORMAL",
@@ -187,7 +187,7 @@
         "name": "Lumaca cadaverica"
       }
     ],
-    "loss_text": "[gold]Molte Lumache cadaveriche[/gold] hanno sbranato The adventurer."
+    "loss_text": "[gold]Molte Lumache cadaveriche[/gold] hanno sbranato [b]The Adventurer[/b]."
   },
   {
     "id": "CORPSE_SLUGS_WEAK",
@@ -204,7 +204,7 @@
         "name": "Lumaca cadaverica"
       }
     ],
-    "loss_text": "Delle [gold]Lumache cadaveriche[/gold] hanno sbranato The adventurer."
+    "loss_text": "Delle [gold]Lumache cadaveriche[/gold] hanno sbranato [b]The Adventurer[/b]."
   },
   {
     "id": "CUBEX_CONSTRUCT_NORMAL",
@@ -219,7 +219,7 @@
         "name": "Assemblaggio cubico"
       }
     ],
-    "loss_text": "Un [gold]Assemblaggio cubico[/gold] ha usato i suoi laser per polverizzare The adventurer."
+    "loss_text": "Un [gold]Assemblaggio cubico[/gold] ha usato i suoi laser per polverizzare [b]The Adventurer[/b]."
   },
   {
     "id": "CULTISTS_NORMAL",
@@ -238,7 +238,7 @@
         "name": "Accolito zuppo"
       }
     ],
-    "loss_text": "Degli [gold]Accoliti[/gold] hanno ucciso The adventurer. [sine]Aaah[/sine]..."
+    "loss_text": "Degli [gold]Accoliti[/gold] hanno ucciso [b]The Adventurer[/b]. [sine]Aaah[/sine]..."
   },
   {
     "id": "DECIMILLIPEDE_ELITE",
@@ -261,7 +261,7 @@
         "name": "Decimillipede Segment Middle"
       }
     ],
-    "loss_text": "[gold]Il Diecimilapiedi[/gold] non ha lasciato scampo a The adventurer."
+    "loss_text": "[gold]Il Diecimilapiedi[/gold] non ha lasciato scampo a [b]The Adventurer[/b]."
   },
   {
     "id": "DENSE_VEGETATION_EVENT_ENCOUNTER",
@@ -276,7 +276,7 @@
         "name": "Larva"
       }
     ],
-    "loss_text": "Delle [gold]Larve[/gold] hanno infestato The adventurer."
+    "loss_text": "Delle [gold]Larve[/gold] hanno infestato [b]The Adventurer[/b]."
   },
   {
     "id": "DEVOTED_SCULPTOR_WEAK",
@@ -291,7 +291,7 @@
         "name": "Scultore devoto"
       }
     ],
-    "loss_text": "Lo [gold]Scultore devoto[/gold] ha ridotto The adventurer in mille pezzi."
+    "loss_text": "Lo [gold]Scultore devoto[/gold] ha ridotto [b]The Adventurer[/b] in mille pezzi."
   },
   {
     "id": "DOORMAKER_BOSS",
@@ -310,7 +310,7 @@
         "name": "Fabbricaporte"
       }
     ],
-    "loss_text": "[gold]Il Fabbricaporte[/gold] non ha affatto reagito bene dopo essere stato disturbato da The adventurer."
+    "loss_text": "[gold]Il Fabbricaporte[/gold] non ha affatto reagito bene dopo essere stato disturbato da [b]The Adventurer[/b]."
   },
   {
     "id": "ENTOMANCER_ELITE",
@@ -325,7 +325,7 @@
         "name": "Coleomago"
       }
     ],
-    "loss_text": "The adventurer ha subito una puntura mortale dal [gold]Coleomago[/gold]."
+    "loss_text": "[b]The Adventurer[/b] ha subito una puntura mortale dal [gold]Coleomago[/gold]."
   },
   {
     "id": "EXOSKELETONS_NORMAL",
@@ -342,7 +342,7 @@
         "name": "Esoscheletro"
       }
     ],
-    "loss_text": "[gold]Molti Esoscheletri[/gold] hanno sventrato The adventurer."
+    "loss_text": "[gold]Molti Esoscheletri[/gold] hanno sventrato [b]The Adventurer[/b]."
   },
   {
     "id": "EXOSKELETONS_WEAK",
@@ -359,7 +359,7 @@
         "name": "Esoscheletro"
       }
     ],
-    "loss_text": "Degli [gold]Esoscheletri[/gold] hanno sventrato The adventurer."
+    "loss_text": "Degli [gold]Esoscheletri[/gold] hanno sventrato [b]The Adventurer[/b]."
   },
   {
     "id": "FABRICATOR_NORMAL",
@@ -374,7 +374,7 @@
         "name": "Mechacostruttore"
       }
     ],
-    "loss_text": "I robot del [gold]Mechacostruttore[/gold] hanno polverizzato The adventurer."
+    "loss_text": "I robot del [gold]Mechacostruttore[/gold] hanno polverizzato [b]The Adventurer[/b]."
   },
   {
     "id": "FAKE_MERCHANT_EVENT_ENCOUNTER",
@@ -389,7 +389,7 @@
         "name": "Il mercante???"
       }
     ],
-    "loss_text": "The adventurer ha affrontato la furia del... [gold][b]mercante???[/b][/gold]"
+    "loss_text": "[b]The Adventurer[/b] ha affrontato la furia del... [gold][b]mercante???[/b][/gold]"
   },
   {
     "id": "FLYCONID_NORMAL",
@@ -415,7 +415,7 @@
         "name": "Ramomelma (grande)"
       }
     ],
-    "loss_text": "[gold]Un fungo e una Melma[/gold] hanno assorbito The adventurer."
+    "loss_text": "[gold]Un fungo e una Melma[/gold] hanno assorbito [b]The Adventurer[/b]."
   },
   {
     "id": "FOGMOG_NORMAL",
@@ -434,7 +434,7 @@
         "name": "Fungonebbia"
       }
     ],
-    "loss_text": "Le illusioni del [gold]Fungonebbia[/gold] hanno distratto The adventurer."
+    "loss_text": "Le illusioni del [gold]Fungonebbia[/gold] hanno distratto [b]The Adventurer[/b]."
   },
   {
     "id": "FOSSIL_STALKER_NORMAL",
@@ -449,7 +449,7 @@
         "name": "Cacciatore di fossili"
       }
     ],
-    "loss_text": "The adventurer ha subito un'imboscata da parte del [gold]Cacciatore di fossili[/gold]."
+    "loss_text": "[b]The Adventurer[/b] ha subito un'imboscata da parte del [gold]Cacciatore di fossili[/gold]."
   },
   {
     "id": "FROG_KNIGHT_NORMAL",
@@ -464,7 +464,7 @@
         "name": "Rana cavaliere"
       }
     ],
-    "loss_text": "Una coraggiosa [gold]Rana cavaliere[/gold] ha battuto The adventurer."
+    "loss_text": "Una coraggiosa [gold]Rana cavaliere[/gold] ha battuto [b]The Adventurer[/b]."
   },
   {
     "id": "FUZZY_WURM_CRAWLER_WEAK",
@@ -481,7 +481,7 @@
         "name": "Peloverme"
       }
     ],
-    "loss_text": "Un [gold]Peloverme[/gold] ha sputato su The adventurer."
+    "loss_text": "Un [gold]Peloverme[/gold] ha sputato su [b]The Adventurer[/b]."
   },
   {
     "id": "GLOBE_HEAD_NORMAL",
@@ -496,7 +496,7 @@
         "name": "Testaglobo"
       }
     ],
-    "loss_text": "[gold]Una Testaglobo solitaria[/gold] ha folgorato The adventurer."
+    "loss_text": "[gold]Una Testaglobo solitaria[/gold] ha folgorato [b]The Adventurer[/b]."
   },
   {
     "id": "GREMLIN_MERC_NORMAL",
@@ -519,7 +519,7 @@
         "name": "Gremlin furtivo"
       }
     ],
-    "loss_text": "[gold]Due Gremlin con indosso un impermeabile[/gold] hanno aggredito The adventurer."
+    "loss_text": "[gold]Due Gremlin con indosso un impermeabile[/gold] hanno aggredito [b]The Adventurer[/b]."
   },
   {
     "id": "HAUNTED_SHIP_NORMAL",
@@ -534,7 +534,7 @@
         "name": "Nave infestata"
       }
     ],
-    "loss_text": "Una [gold]Nave Infestata[/gold] ha schiacciato The adventurer."
+    "loss_text": "Una [gold]Nave Infestata[/gold] ha schiacciato [b]The Adventurer[/b]."
   },
   {
     "id": "HUNTER_KILLER_NORMAL",
@@ -549,7 +549,7 @@
         "name": "Predatore di cacciatori"
       }
     ],
-    "loss_text": "Il [gold]Predatore di cacciatori[/gold] ha smembrato The adventurer."
+    "loss_text": "Il [gold]Predatore di cacciatori[/gold] ha smembrato [b]The Adventurer[/b]."
   },
   {
     "id": "INFESTED_PRISMS_ELITE",
@@ -564,7 +564,7 @@
         "name": "Prisma infestato"
       }
     ],
-    "loss_text": "Un [gold]Prisma infestato[/gold] ha interrotto il cammino di The adventurer."
+    "loss_text": "Un [gold]Prisma infestato[/gold] ha interrotto il cammino di [b]The Adventurer[/b]."
   },
   {
     "id": "INKLETS_NORMAL",
@@ -579,7 +579,7 @@
         "name": "Inchiostrino"
       }
     ],
-    "loss_text": "Degli [gold]Inchiostrini[/gold] non hanno lasciato passare The adventurer."
+    "loss_text": "Degli [gold]Inchiostrini[/gold] non hanno lasciato passare [b]The Adventurer[/b]."
   },
   {
     "id": "KAISER_CRAB_BOSS",
@@ -598,7 +598,7 @@
         "name": "Razzo"
       }
     ],
-    "loss_text": "Il [gold]Granchio reale[/gold] ha colpito The adventurer da ogni lato."
+    "loss_text": "Il [gold]Granchio reale[/gold] ha colpito [b]The Adventurer[/b] da ogni lato."
   },
   {
     "id": "KNIGHTS_ELITE",
@@ -623,7 +623,7 @@
         "name": "Cavaliere spettrale"
       }
     ],
-    "loss_text": "Un [gold]gruppo di cavalieri[/gold] ha ucciso The adventurer."
+    "loss_text": "Un [gold]gruppo di cavalieri[/gold] ha ucciso [b]The Adventurer[/b]."
   },
   {
     "id": "KNOWLEDGE_DEMON_BOSS",
@@ -638,7 +638,7 @@
         "name": "Demone onnisciente"
       }
     ],
-    "loss_text": "Il [gold]Demone onnisciente[/gold] ha maledetto The adventurer con tutto il suo sapere."
+    "loss_text": "Il [gold]Demone onnisciente[/gold] ha maledetto [b]The Adventurer[/b] con tutto il suo sapere."
   },
   {
     "id": "LAGAVULIN_MATRIARCH_BOSS",
@@ -653,7 +653,7 @@
         "name": "Matriarca Lagavulin"
       }
     ],
-    "loss_text": "La [gold]Matriarca Lagavulin[/gold] ha squarciato The adventurer in due."
+    "loss_text": "La [gold]Matriarca Lagavulin[/gold] ha squarciato [b]The Adventurer[/b] in due."
   },
   {
     "id": "LIVING_FOG_NORMAL",
@@ -672,7 +672,7 @@
         "name": "Nebbia vivente"
       }
     ],
-    "loss_text": "The adventurer non ha saputo sopportare il fetore del [gold]Gas maligno[/gold]."
+    "loss_text": "[b]The Adventurer[/b] non ha saputo sopportare il fetore del [gold]Gas maligno[/gold]."
   },
   {
     "id": "LOUSE_PROGENITOR_NORMAL",
@@ -687,7 +687,7 @@
         "name": "Antenato delle pulci"
       }
     ],
-    "loss_text": "L'[gold]Antenato delle pulci[/gold] ha paralizzato The adventurer."
+    "loss_text": "L'[gold]Antenato delle pulci[/gold] ha paralizzato [b]The Adventurer[/b]."
   },
   {
     "id": "MAWLER_NORMAL",
@@ -702,7 +702,7 @@
         "name": "Laceracarne"
       }
     ],
-    "loss_text": "Il [gold]Laceracarne[/gold] si è fatto un delizioso spuntino divorando The adventurer."
+    "loss_text": "Il [gold]Laceracarne[/gold] si è fatto un delizioso spuntino divorando [b]The Adventurer[/b]."
   },
   {
     "id": "MECHA_KNIGHT_ELITE",
@@ -717,7 +717,7 @@
         "name": "Cavaliere meccanico"
       }
     ],
-    "loss_text": "Un [gold]Cavaliere meccanico[/gold] ha pugnalato e bruciato The adventurer."
+    "loss_text": "Un [gold]Cavaliere meccanico[/gold] ha pugnalato e bruciato [b]The Adventurer[/b]."
   },
   {
     "id": "MYSTERIOUS_KNIGHT_EVENT_ENCOUNTER",
@@ -732,7 +732,7 @@
         "name": "Cavaliere misterioso"
       }
     ],
-    "loss_text": "The adventurer ha provato a prendere la chiave del [gold]Cavaliere misterioso[/gold]."
+    "loss_text": "[b]The Adventurer[/b] ha provato a prendere la chiave del [gold]Cavaliere misterioso[/gold]."
   },
   {
     "id": "MYTES_NORMAL",
@@ -747,7 +747,7 @@
         "name": "Acaro"
       }
     ],
-    "loss_text": "Un [gold]gruppo di acari[/gold] ha infestato il corpo di The adventurer."
+    "loss_text": "Un [gold]gruppo di acari[/gold] ha infestato il corpo di [b]The Adventurer[/b]."
   },
   {
     "id": "NIBBITS_NORMAL",
@@ -762,7 +762,7 @@
         "name": "Sgranocchiatore"
       }
     ],
-    "loss_text": "[gold]Degli Sgranocchiatori[/gold] hanno pestato The adventurer."
+    "loss_text": "[gold]Degli Sgranocchiatori[/gold] hanno pestato [b]The Adventurer[/b]."
   },
   {
     "id": "NIBBITS_WEAK",
@@ -779,7 +779,7 @@
         "name": "Sgranocchiatore"
       }
     ],
-    "loss_text": "[gold]Un solo Sgranocchiatore[/gold] ha pestato The adventurer."
+    "loss_text": "[gold]Un solo Sgranocchiatore[/gold] ha pestato [b]The Adventurer[/b]."
   },
   {
     "id": "OVERGROWTH_CRAWLERS",
@@ -801,7 +801,7 @@
         "name": "Scarabeo restringente"
       }
     ],
-    "loss_text": "Dei [gold]vermi della Proliferazione[/gold] hanno divorato The adventurer."
+    "loss_text": "Dei [gold]vermi della Proliferazione[/gold] hanno divorato [b]The Adventurer[/b]."
   },
   {
     "id": "OVICOPTER_NORMAL",
@@ -820,7 +820,7 @@
         "name": "Uovo forte"
       }
     ],
-    "loss_text": "Un [gold]Ovicoptero[/gold] ha dato The adventurer in pasto per i suoi cuccioli."
+    "loss_text": "Un [gold]Ovicoptero[/gold] ha dato [b]The Adventurer[/b] in pasto per i suoi cuccioli."
   },
   {
     "id": "OWL_MAGISTRATE_NORMAL",
@@ -835,7 +835,7 @@
         "name": "Giudice gufo"
       }
     ],
-    "loss_text": "Il [gold]Giudice gufo[/gold] ha sentenziato The adventurer a morte."
+    "loss_text": "Il [gold]Giudice gufo[/gold] ha sentenziato [b]The Adventurer[/b] a morte."
   },
   {
     "id": "PHANTASMAL_GARDENERS_ELITE",
@@ -850,7 +850,7 @@
         "name": "Giardiniere spettrale"
       }
     ],
-    "loss_text": "Dei [gold]Giardinieri fantasma[/gold] hanno abbattuto The adventurer."
+    "loss_text": "Dei [gold]Giardinieri fantasma[/gold] hanno abbattuto [b]The Adventurer[/b]."
   },
   {
     "id": "PHROG_PARASITE_ELITE",
@@ -869,7 +869,7 @@
         "name": "Larva"
       }
     ],
-    "loss_text": "Un [gold]Parassita fungineo[/gold] ha diffuso la sua colona nel corpo di The adventurer."
+    "loss_text": "Un [gold]Parassita fungineo[/gold] ha diffuso la sua colona nel corpo di [b]The Adventurer[/b]."
   },
   {
     "id": "PUNCH_CONSTRUCT_NORMAL",
@@ -884,7 +884,7 @@
         "name": "Assemblaggio pugile"
       }
     ],
-    "loss_text": "The adventurer ha preso parte a una scazzottata con un [gold]Assemblaggio pugile[/gold]."
+    "loss_text": "[b]The Adventurer[/b] ha preso parte a una scazzottata con un [gold]Assemblaggio pugile[/gold]."
   },
   {
     "id": "PUNCH_OFF_EVENT_ENCOUNTER",
@@ -899,7 +899,7 @@
         "name": "Assemblaggio pugile"
       }
     ],
-    "loss_text": "The adventurer ha interrotto un incontro tra due [gold]Assemblaggi pugili[/gold]."
+    "loss_text": "[b]The Adventurer[/b] ha interrotto un incontro tra due [gold]Assemblaggi pugili[/gold]."
   },
   {
     "id": "QUEEN_BOSS",
@@ -918,7 +918,7 @@
         "name": "Torciamostro"
       }
     ],
-    "loss_text": "La [gold]Regina funesta[/gold] ha aggiunto una parte di The adventurer alla sua collezione."
+    "loss_text": "La [gold]Regina funesta[/gold] ha aggiunto una parte di [b]The Adventurer[/b] alla sua collezione."
   },
   {
     "id": "RUBY_RAIDERS_NORMAL",
@@ -949,7 +949,7 @@
         "name": "Razziatore inseguitore"
       }
     ],
-    "loss_text": "Un gruppo di [gold]Razziatori di rubini[/gold] ha assalito The adventurer."
+    "loss_text": "Un gruppo di [gold]Razziatori di rubini[/gold] ha assalito [b]The Adventurer[/b]."
   },
   {
     "id": "SCROLLS_OF_BITING_NORMAL",
@@ -966,7 +966,7 @@
         "name": "Pergamena mordente"
       }
     ],
-    "loss_text": "[gold]Tante Pergamene mordenti[/gold] hanno ridotto The adventurer in brandelli."
+    "loss_text": "[gold]Tante Pergamene mordenti[/gold] hanno ridotto [b]The Adventurer[/b] in brandelli."
   },
   {
     "id": "SCROLLS_OF_BITING_WEAK",
@@ -983,7 +983,7 @@
         "name": "Pergamena mordente"
       }
     ],
-    "loss_text": "Delle [gold]Pergamene mordenti[/gold] hanno ridotto The adventurer in brandelli."
+    "loss_text": "Delle [gold]Pergamene mordenti[/gold] hanno ridotto [b]The Adventurer[/b] in brandelli."
   },
   {
     "id": "SEAPUNK_WEAK",
@@ -1000,7 +1000,7 @@
         "name": "Teppista marino"
       }
     ],
-    "loss_text": "Un [gold]Teppista marino[/gold] ha annientato The adventurer."
+    "loss_text": "Un [gold]Teppista marino[/gold] ha annientato [b]The Adventurer[/b]."
   },
   {
     "id": "SEWER_CLAM_NORMAL",
@@ -1015,7 +1015,7 @@
         "name": "Vongola di fogna"
       }
     ],
-    "loss_text": "Una [gold]Vongola di fogna[/gold] ha divorato The adventurer."
+    "loss_text": "Una [gold]Vongola di fogna[/gold] ha divorato [b]The Adventurer[/b]."
   },
   {
     "id": "SHRINKER_BEETLE_WEAK",
@@ -1032,7 +1032,7 @@
         "name": "Scarabeo restringente"
       }
     ],
-    "loss_text": "Uno [gold]Scarabeo restringente[/gold] si è fatto uno spuntino sbranando The adventurer."
+    "loss_text": "Uno [gold]Scarabeo restringente[/gold] si è fatto uno spuntino sbranando [b]The Adventurer[/b]."
   },
   {
     "id": "SKULKING_COLONY_ELITE",
@@ -1047,7 +1047,7 @@
         "name": "Colonia furtiva"
       }
     ],
-    "loss_text": "Una [gold]colonia furtiva[/gold] ha assorbito The adventurer."
+    "loss_text": "Una [gold]colonia furtiva[/gold] ha assorbito [b]The Adventurer[/b]."
   },
   {
     "id": "SLIMED_BERSERKER_NORMAL",
@@ -1062,7 +1062,7 @@
         "name": "Berserker viscido"
       }
     ],
-    "loss_text": "Un [gold]Berseker viscido[/gold] ha assorbito The adventurer."
+    "loss_text": "Un [gold]Berseker viscido[/gold] ha assorbito [b]The Adventurer[/b]."
   },
   {
     "id": "SLIMES_NORMAL",
@@ -1091,7 +1091,7 @@
         "name": "Ramomelma (piccola)"
       }
     ],
-    "loss_text": "Un [gold]esercito di Melme[/gold] ha sconfitto The adventurer."
+    "loss_text": "Un [gold]esercito di Melme[/gold] ha sconfitto [b]The Adventurer[/b]."
   },
   {
     "id": "SLIMES_WEAK",
@@ -1120,7 +1120,7 @@
         "name": "Ramomelma (piccola)"
       }
     ],
-    "loss_text": "Un [gold]gruppo di melme[/gold] ha sconfitto The adventurer."
+    "loss_text": "Un [gold]gruppo di melme[/gold] ha sconfitto [b]The Adventurer[/b]."
   },
   {
     "id": "SLITHERING_STRANGLER_NORMAL",
@@ -1155,7 +1155,7 @@
         "name": "Ramomelma (piccola)"
       }
     ],
-    "loss_text": "Uno [gold]Strangolatore e un suo amico[/gold] hanno strangolato The adventurer."
+    "loss_text": "Uno [gold]Strangolatore e un suo amico[/gold] hanno strangolato [b]The Adventurer[/b]."
   },
   {
     "id": "SLUDGE_SPINNER_WEAK",
@@ -1170,7 +1170,7 @@
         "name": "Poltiglia rotante"
       }
     ],
-    "loss_text": "The adventurer non ha avuto scampo con una [gold]Poltiglia rotante[/gold]."
+    "loss_text": "[b]The Adventurer[/b] non ha avuto scampo con una [gold]Poltiglia rotante[/gold]."
   },
   {
     "id": "SLUMBERING_BEETLE_NORMAL",
@@ -1195,7 +1195,7 @@
         "name": "Scarabeo dormiente"
       }
     ],
-    "loss_text": "The adventurer ha interrotto una [gold]festa di melme[/gold]."
+    "loss_text": "[b]The Adventurer[/b] ha interrotto una [gold]festa di melme[/gold]."
   },
   {
     "id": "SNAPPING_JAXFRUIT_NORMAL",
@@ -1216,7 +1216,7 @@
         "name": "Bulbo azzannatore"
       }
     ],
-    "loss_text": "The adventurer ha avuto la sfortuna di incontrare una [gold]flora della Proliferazione[/gold]."
+    "loss_text": "[b]The Adventurer[/b] ha avuto la sfortuna di incontrare una [gold]flora della Proliferazione[/gold]."
   },
   {
     "id": "SOUL_FYSH_BOSS",
@@ -1231,7 +1231,7 @@
         "name": "Animapesce"
       }
     ],
-    "loss_text": "Un [gold]Animapesce[/gold] ha condannato alla morte The adventurer."
+    "loss_text": "Un [gold]Animapesce[/gold] ha condannato alla morte [b]The Adventurer[/b]."
   },
   {
     "id": "SOUL_NEXUS_ELITE",
@@ -1246,7 +1246,7 @@
         "name": "Nesso dell'anima"
       }
     ],
-    "loss_text": "Un [gold]Nesso dell'anima[/gold] ha ucciso The adventurer in un campo di battaglia dimenticato."
+    "loss_text": "Un [gold]Nesso dell'anima[/gold] ha ucciso [b]The Adventurer[/b] in un campo di battaglia dimenticato."
   },
   {
     "id": "SPINY_TOAD_NORMAL",
@@ -1261,7 +1261,7 @@
         "name": "Rospo spinoso"
       }
     ],
-    "loss_text": "The adventurer non ha potuto perforare le spine del [gold]Rospo spinoso[/gold]."
+    "loss_text": "[b]The Adventurer[/b] non ha potuto perforare le spine del [gold]Rospo spinoso[/gold]."
   },
   {
     "id": "TERROR_EEL_ELITE",
@@ -1276,7 +1276,7 @@
         "name": "Anguilla nefasta"
       }
     ],
-    "loss_text": "L'[gold]Anguilla nefasta[/gold] ha spaventato a morte The adventurer."
+    "loss_text": "L'[gold]Anguilla nefasta[/gold] ha spaventato a morte [b]The Adventurer[/b]."
   },
   {
     "id": "TEST_SUBJECT_BOSS",
@@ -1291,7 +1291,7 @@
         "name": "Soggetto di prova #C{Count}"
       }
     ],
-    "loss_text": "Un [gold]Soggetto di prova[/gold] ha protetto con fedeltà i suoi padroni da The adventurer."
+    "loss_text": "Un [gold]Soggetto di prova[/gold] ha protetto con fedeltà i suoi padroni da [b]The Adventurer[/b]."
   },
   {
     "id": "THE_ARCHITECT_EVENT_ENCOUNTER",
@@ -1321,7 +1321,7 @@
         "name": "L'Insaziabile"
       }
     ],
-    "loss_text": "[gold]L'Insaziabile[/gold] ha divorato The adventurer. E nonostante ciò, ha ancora fame..."
+    "loss_text": "[gold]L'Insaziabile[/gold] ha divorato [b]The Adventurer[/b]. E nonostante ciò, ha ancora fame..."
   },
   {
     "id": "THE_KIN_BOSS",
@@ -1340,7 +1340,7 @@
         "name": "Sacerdote della tribù"
       }
     ],
-    "loss_text": "La strategia sopraffina della [gold]Tribù[/gold] ha annichilito The adventurer."
+    "loss_text": "La strategia sopraffina della [gold]Tribù[/gold] ha annichilito [b]The Adventurer[/b]."
   },
   {
     "id": "THE_LOST_AND_FORGOTTEN_NORMAL",
@@ -1359,7 +1359,7 @@
         "name": "Il Perduto"
       }
     ],
-    "loss_text": "[gold]Il Perduto e il Dimenticato[/gold] hanno rubato il desiderio di vivere di The adventurer."
+    "loss_text": "[gold]Il Perduto e il Dimenticato[/gold] hanno rubato il desiderio di vivere di [b]The Adventurer[/b]."
   },
   {
     "id": "THE_OBSCURA_NORMAL",
@@ -1374,7 +1374,7 @@
         "name": "L'Obscura"
       }
     ],
-    "loss_text": "[gold]L'Oscura[/gold] e la sua illusione hanno annientato The adventurer."
+    "loss_text": "[gold]L'Oscura[/gold] e la sua illusione hanno annientato [b]The Adventurer[/b]."
   },
   {
     "id": "THIEVING_HOPPER_WEAK",
@@ -1391,7 +1391,7 @@
         "name": "Mantide ladra"
       }
     ],
-    "loss_text": "Una [gold]Mantide ladra[/gold] ha derubato The adventurer."
+    "loss_text": "Una [gold]Mantide ladra[/gold] ha derubato [b]The Adventurer[/b]."
   },
   {
     "id": "TOADPOLES_NORMAL",
@@ -1410,7 +1410,7 @@
         "name": "Girino"
       }
     ],
-    "loss_text": "La [gold]fauna dei Moli Funesti[/gold] ha sconfitto The adventurer."
+    "loss_text": "La [gold]fauna dei Moli Funesti[/gold] ha sconfitto [b]The Adventurer[/b]."
   },
   {
     "id": "TOADPOLES_WEAK",
@@ -1425,7 +1425,7 @@
         "name": "Girino"
       }
     ],
-    "loss_text": "The adventurer non ha potuto nulla contro dei [gold]Girini[/gold]."
+    "loss_text": "[b]The Adventurer[/b] non ha potuto nulla contro dei [gold]Girini[/gold]."
   },
   {
     "id": "TUNNELER_NORMAL",
@@ -1451,7 +1451,7 @@
         "name": "Scavatore"
       }
     ],
-    "loss_text": "Una [gold]coppia di Scavatori[/gold] ha tolto la vita a The adventurer."
+    "loss_text": "Una [gold]coppia di Scavatori[/gold] ha tolto la vita a [b]The Adventurer[/b]."
   },
   {
     "id": "TUNNELER_WEAK",
@@ -1468,7 +1468,7 @@
         "name": "Scavatore"
       }
     ],
-    "loss_text": "Uno [gold]Scavatore[/gold] ha ucciso The adventurer."
+    "loss_text": "Uno [gold]Scavatore[/gold] ha ucciso [b]The Adventurer[/b]."
   },
   {
     "id": "TURRET_OPERATOR_WEAK",
@@ -1487,7 +1487,7 @@
         "name": "Operatorretta"
       }
     ],
-    "loss_text": "Un [gold]Operatorretta[/gold] ha crivellato The adventurer."
+    "loss_text": "Un [gold]Operatorretta[/gold] ha crivellato [b]The Adventurer[/b]."
   },
   {
     "id": "TWO_TAILED_RATS_NORMAL",
@@ -1502,7 +1502,7 @@
         "name": "Topo bicoda"
       }
     ],
-    "loss_text": "Dei [gold]Topi bicoda[/gold] hanno assalito The adventurer."
+    "loss_text": "Dei [gold]Topi bicoda[/gold] hanno assalito [b]The Adventurer[/b]."
   },
   {
     "id": "VANTOM_BOSS",
@@ -1517,7 +1517,7 @@
         "name": "Vantom"
       }
     ],
-    "loss_text": "[gold]Vantom[/gold] ha trasformato The adventurer in un Inchiostrino."
+    "loss_text": "[gold]Vantom[/gold] ha trasformato [b]The Adventurer[/b] in un Inchiostrino."
   },
   {
     "id": "VINE_SHAMBLER_NORMAL",
@@ -1532,7 +1532,7 @@
         "name": "Groviglio di liane"
       }
     ],
-    "loss_text": "Il [gold]Groviglio di liane[/gold] non ha lasciato fuggire The adventurer."
+    "loss_text": "Il [gold]Groviglio di liane[/gold] non ha lasciato fuggire [b]The Adventurer[/b]."
   },
   {
     "id": "WATERFALL_GIANT_BOSS",
@@ -1547,6 +1547,6 @@
         "name": "Gigante della cascata"
       }
     ],
-    "loss_text": "Il [gold]Gigante della cascata[/gold] ha spazzato via The adventurer dai Moli Funesti."
+    "loss_text": "Il [gold]Gigante della cascata[/gold] ha spazzato via [b]The Adventurer[/b] dai Moli Funesti."
   }
 ]

@@ -292,8 +292,8 @@
   {
     "id": "COLOSSUS",
     "name": "Gigante",
-    "description": "Subisci il [blue]50%[/blue] di danno in meno dai nemici con [gold]Vulnerabilità[/gold] in questo turno.",
-    "description_raw": null,
+    "description": "Subisci un [blue]50%[/blue] di danno in meno dai nemici con [gold]Vulnerabilità[/gold] per [blue]2[/blue] turni.",
+    "description_raw": "Subisci un [blue]{DamageDecrease:percentLess()}%[/blue] di danno in meno dai nemici con [gold]Vulnerabilità[/gold] {Amount:plural:in questo turno|per [blue]{}[/blue] turni}.",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -2522,8 +2522,8 @@
   {
     "id": "VULNERABLE",
     "name": "Vulnerabilità",
-    "description": "Le creature con Vulnerabilità subiscono il [blue]50%[/blue] di danno extra dalle carte Attacco.",
-    "description_raw": null,
+    "description": "Subisci un [blue]50%[/blue] di danno extra per [blue][Amount][/blue] turni.",
+    "description_raw": "Subisci un [blue]{DamageIncrease:percentMore()}%[/blue] di danno extra per [blue]{Amount}[/blue] {Amount:plural:turno|turni}.",
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": null,

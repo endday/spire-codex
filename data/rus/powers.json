@@ -292,8 +292,8 @@
   {
     "id": "COLOSSUS",
     "name": "Колосс",
-    "description": "Вы получаете на [blue]50%[/blue] меньше урона от [gold]уязвимых[/gold] врагов в этом ходу.",
-    "description_raw": null,
+    "description": "Вы получаете на [blue]50%[/blue] меньше урона от [gold]уязвимых[/gold] врагов в течение [blue]{}[/blue] ходов.",
+    "description_raw": "Вы получаете на [blue]{DamageDecrease:percentLess()}%[/blue] меньше урона от [gold]уязвимых[/gold] врагов {Amount:plural(ru):в этом ходу|в течение [blue]{}[/blue] ходов|в течение [blue]{}[/blue] ходов}.",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -2522,8 +2522,8 @@
   {
     "id": "VULNERABLE",
     "name": "Уязвимость",
-    "description": "Уязвимые враги получают на [blue]50%[/blue] больше урона от Атак.",
-    "description_raw": null,
+    "description": "Получает на [blue]50%[/blue] больше урона от Атак в течение [blue][Amount][/blue] ходов.",
+    "description_raw": "{OnPlayer:Вы получаете|Получает} на [blue]{DamageIncrease:percentMore()}%[/blue] больше урона от {OnPlayer:атак|Атак} в течение [blue]{Amount}[/blue] {Amount:plural(ru):хода|ходов|ходов}.",
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": null,

@@ -292,8 +292,8 @@
   {
     "id": "COLOSSUS",
     "name": "巨像",
-    "description": "本回合，你从[gold]易伤[/gold]敌人处受到的伤害减少[blue]50%[/blue]。",
-    "description_raw": null,
+    "description": "[blue][Amount][/blue]回合内，你从[gold]易伤[/gold]敌人处受到的伤害减少[blue]50%[/blue]。",
+    "description_raw": "[blue]{Amount}[/blue]回合内，你从[gold]易伤[/gold]敌人处受到的伤害减少[blue]{DamageDecrease:percentLess()}%[/blue]。",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -2522,8 +2522,8 @@
   {
     "id": "VULNERABLE",
     "name": "易伤",
-    "description": "易伤的生物从攻击中受到的伤害增加[blue]50%[/blue]。",
-    "description_raw": null,
+    "description": "[blue][Amount][/blue]回合内，受到的攻击伤害增加[blue]50%[/blue]。",
+    "description_raw": "[blue]{Amount}[/blue]回合内，受到的攻击伤害增加[blue]{DamageIncrease:percentMore()}%[/blue]。",
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": null,

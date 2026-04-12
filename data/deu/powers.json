@@ -292,8 +292,8 @@
   {
     "id": "COLOSSUS",
     "name": "Koloss",
-    "description": "Du nimmst in diesem Zug [blue]50%[/blue] weniger Schaden von [gold]Verwundbaren[/gold] Gegnern.",
-    "description_raw": null,
+    "description": "Du nimmst für [blue]2[/blue] Züge [blue]50%[/blue] weniger Schaden von [gold]Verwundbaren[/gold] Gegnern.",
+    "description_raw": "Du nimmst {Amount:plural:in diesem Zug|für [blue]{}[/blue] Züge} [blue]{DamageDecrease:percentLess()}%[/blue] weniger Schaden von [gold]Verwundbaren[/gold] Gegnern.",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -2522,8 +2522,8 @@
   {
     "id": "VULNERABLE",
     "name": "Verwundbar",
-    "description": "Verwundbare Kreaturen erleiden [blue]50%[/blue] mehr Schaden durch Angriffe.",
-    "description_raw": null,
+    "description": "Erleide für [blue][Amount][/blue] Züge [blue]50%[/blue] mehr Schaden durch Angriffe.",
+    "description_raw": "Erleide für [blue]{Amount}[/blue] {Amount:plural:Zug|Züge} [blue]{DamageIncrease:percentMore()}%[/blue] mehr Schaden durch Angriffe.",
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": null,

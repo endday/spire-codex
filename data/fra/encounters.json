@@ -12,7 +12,7 @@
         "name": "Hachebots"
       }
     ],
-    "loss_text": "The adventurer a été démembré{characterGender:choose(feminine):e|} par des [gold]Hachebots[/gold]."
+    "loss_text": "[b]The Adventurer[/b] a été démembré{characterGender:choose(feminine):e|} par des [gold]Hachebots[/gold]."
   },
   {
     "id": "BATTLEWORN_DUMMY_EVENT_ENCOUNTER",
@@ -35,7 +35,7 @@
         "name": "Ami de combat V3.0"
       }
     ],
-    "loss_text": "Un [gold]Mannequin de combat usé[/gold] serait venu à bout de The adventurer ???"
+    "loss_text": "Un [gold]Mannequin de combat usé[/gold] serait venu à bout de [b]The Adventurer[/b] ???"
   },
   {
     "id": "BOWLBUGS_NORMAL",
@@ -64,7 +64,7 @@
         "name": "Sphéropode (Soie)"
       }
     ],
-    "loss_text": "The adventurer s'est mis{characterGender:choose(feminine):e|} en travers du chemin d'un [gold]Essaim de sphéropodes[/gold]."
+    "loss_text": "[b]The Adventurer[/b] s'est mis{characterGender:choose(feminine):e|} en travers du chemin d'un [gold]Essaim de sphéropodes[/gold]."
   },
   {
     "id": "BOWLBUGS_WEAK",
@@ -89,7 +89,7 @@
         "name": "Sphéropode (Pierre)"
       }
     ],
-    "loss_text": "The adventurer s'est mis{characterGender:choose(feminine):e|} en travers du chemin de quelques [gold]Sphéropodes[/gold] pressés."
+    "loss_text": "[b]The Adventurer[/b] s'est mis{characterGender:choose(feminine):e|} en travers du chemin de quelques [gold]Sphéropodes[/gold] pressés."
   },
   {
     "id": "BYGONE_EFFIGY_ELITE",
@@ -104,7 +104,7 @@
         "name": "Idole Oubliée"
       }
     ],
-    "loss_text": "The adventurer a été fendu{characterGender:choose(feminine):e|} de part en part par une [gold]Idole Oubliée[/gold]."
+    "loss_text": "[b]The Adventurer[/b] a été fendu{characterGender:choose(feminine):e|} de part en part par une [gold]Idole Oubliée[/gold]."
   },
   {
     "id": "BYRDONIS_ELITE",
@@ -119,7 +119,7 @@
         "name": "Oizodon"
       }
     ],
-    "loss_text": "Un [gold]Oizodon[/gold] a protégé sa progéniture de The adventurer."
+    "loss_text": "Un [gold]Oizodon[/gold] a protégé sa progéniture de [b]The Adventurer[/b]."
   },
   {
     "id": "CEREMONIAL_BEAST_BOSS",
@@ -134,7 +134,7 @@
         "name": "Cerf Auguste"
       }
     ],
-    "loss_text": "The adventurer a été enterré{characterGender:choose(feminine):e|} par le [gold]Cerf Auguste[/gold]."
+    "loss_text": "[b]The Adventurer[/b] a été enterré{characterGender:choose(feminine):e|} par le [gold]Cerf Auguste[/gold]."
   },
   {
     "id": "CHOMPERS_NORMAL",
@@ -151,7 +151,7 @@
         "name": "Croquebot"
       }
     ],
-    "loss_text": "The adventurer a été croqué{characterGender:choose(feminine):e|} à mort par des [gold]Jumeaux croquebots[/gold]."
+    "loss_text": "[b]The Adventurer[/b] a été croqué{characterGender:choose(feminine):e|} à mort par des [gold]Jumeaux croquebots[/gold]."
   },
   {
     "id": "CONSTRUCT_MENAGERIE_NORMAL",
@@ -170,7 +170,7 @@
         "name": "Assemblage de pugilat"
       }
     ],
-    "loss_text": "La [gold]Ménagerie d'assemblages[/gold] a écrasé The adventurer."
+    "loss_text": "La [gold]Ménagerie d'assemblages[/gold] a écrasé [b]The Adventurer[/b]."
   },
   {
     "id": "CORPSE_SLUGS_NORMAL",
@@ -187,7 +187,7 @@
         "name": "Putrilimace"
       }
     ],
-    "loss_text": "Des [gold]Putrilimaces nombreuses[/gold] ont fait de The adventurer leur festin."
+    "loss_text": "Des [gold]Putrilimaces nombreuses[/gold] ont fait de [b]The Adventurer[/b] leur festin."
   },
   {
     "id": "CORPSE_SLUGS_WEAK",
@@ -204,7 +204,7 @@
         "name": "Putrilimace"
       }
     ],
-    "loss_text": "Des [gold]Putrilimaces[/gold] ont fait de The adventurer leur festin."
+    "loss_text": "Des [gold]Putrilimaces[/gold] ont fait de [b]The Adventurer[/b] leur festin."
   },
   {
     "id": "CUBEX_CONSTRUCT_NORMAL",
@@ -219,7 +219,7 @@
         "name": "Assemblage Cubex"
       }
     ],
-    "loss_text": "The adventurer a été pulvérisé{characterGender:choose(feminine):e|} à mort par les lasers d'un [gold]Assemblage Cubex[/gold]."
+    "loss_text": "[b]The Adventurer[/b] a été pulvérisé{characterGender:choose(feminine):e|} à mort par les lasers d'un [gold]Assemblage Cubex[/gold]."
   },
   {
     "id": "CULTISTS_NORMAL",
@@ -238,7 +238,7 @@
         "name": "Adepte moisi"
       }
     ],
-    "loss_text": "The adventurer a été vaincu{characterGender:choose(feminine):e|} par quelques [gold]Adeptes[/gold]. [sine]Croaaa[/sine]..."
+    "loss_text": "[b]The Adventurer[/b] a été vaincu{characterGender:choose(feminine):e|} par quelques [gold]Adeptes[/gold]. [sine]Croaaa[/sine]..."
   },
   {
     "id": "DECIMILLIPEDE_ELITE",
@@ -261,7 +261,7 @@
         "name": "Decimillipede Segment Middle"
       }
     ],
-    "loss_text": "The adventurer n'a pu traverser indemne le territoire du [gold]Dix-Mille-Pattes[/gold]."
+    "loss_text": "[b]The Adventurer[/b] n'a pu traverser indemne le territoire du [gold]Dix-Mille-Pattes[/gold]."
   },
   {
     "id": "DENSE_VEGETATION_EVENT_ENCOUNTER",
@@ -276,7 +276,7 @@
         "name": "Larve"
       }
     ],
-    "loss_text": "The adventurer a été infesté{characterGender:choose(feminine):e|} par des [gold]Grouilleurs[/gold]."
+    "loss_text": "[b]The Adventurer[/b] a été infesté{characterGender:choose(feminine):e|} par des [gold]Grouilleurs[/gold]."
   },
   {
     "id": "DEVOTED_SCULPTOR_WEAK",
@@ -291,7 +291,7 @@
         "name": "Sculpteur dévoué"
       }
     ],
-    "loss_text": "The adventurer a été fracassé{characterGender:choose(feminine):e|} en mille morceaux par un [gold]Sculpteur dévoué[/gold]."
+    "loss_text": "[b]The Adventurer[/b] a été fracassé{characterGender:choose(feminine):e|} en mille morceaux par un [gold]Sculpteur dévoué[/gold]."
   },
   {
     "id": "DOORMAKER_BOSS",
@@ -310,7 +310,7 @@
         "name": "L'Huissier"
       }
     ],
-    "loss_text": "[gold]L'Huissier[/gold] n'a pas apprécié être dérangé par The adventurer."
+    "loss_text": "[gold]L'Huissier[/gold] n'a pas apprécié être dérangé par [b]The Adventurer[/b]."
   },
   {
     "id": "ENTOMANCER_ELITE",
@@ -325,7 +325,7 @@
         "name": "Entomancien"
       }
     ],
-    "loss_text": "The adventurer a été dardé{characterGender:choose(feminine):e|} à mort par un [gold]Apicultueur[/gold]."
+    "loss_text": "[b]The Adventurer[/b] a été dardé{characterGender:choose(feminine):e|} à mort par un [gold]Apicultueur[/gold]."
   },
   {
     "id": "EXOSKELETONS_NORMAL",
@@ -342,7 +342,7 @@
         "name": "Exosquelette"
       }
     ],
-    "loss_text": "The adventurer s'est fait éviscérer par [gold]Exosquelettes nombreux[/gold]."
+    "loss_text": "[b]The Adventurer[/b] s'est fait éviscérer par [gold]Exosquelettes nombreux[/gold]."
   },
   {
     "id": "EXOSKELETONS_WEAK",
@@ -359,7 +359,7 @@
         "name": "Exosquelette"
       }
     ],
-    "loss_text": "The adventurer s'est fait éviscérer par quelques [gold]Exosquelettes[/gold]."
+    "loss_text": "[b]The Adventurer[/b] s'est fait éviscérer par quelques [gold]Exosquelettes[/gold]."
   },
   {
     "id": "FABRICATOR_NORMAL",
@@ -374,7 +374,7 @@
         "name": "Machiniste"
       }
     ],
-    "loss_text": "The adventurer s'est fait pulvériser par les robots d'un [gold]Machiniste[/gold]."
+    "loss_text": "[b]The Adventurer[/b] s'est fait pulvériser par les robots d'un [gold]Machiniste[/gold]."
   },
   {
     "id": "FAKE_MERCHANT_EVENT_ENCOUNTER",
@@ -389,7 +389,7 @@
         "name": "Le Marchand ???"
       }
     ],
-    "loss_text": "The adventurer a subi la colère du [gold]Le Marchand ???[/gold]."
+    "loss_text": "[b]The Adventurer[/b] a subi la colère du [gold]Le Marchand ???[/gold]."
   },
   {
     "id": "FLYCONID_NORMAL",
@@ -415,7 +415,7 @@
         "name": "Limon brindille (M)"
       }
     ],
-    "loss_text": "The adventurer a été digéré{characterGender:choose(feminine):e|} par un [gold]Champi et Limon[/gold]."
+    "loss_text": "[b]The Adventurer[/b] a été digéré{characterGender:choose(feminine):e|} par un [gold]Champi et Limon[/gold]."
   },
   {
     "id": "FOGMOG_NORMAL",
@@ -434,7 +434,7 @@
         "name": "Fongibrume"
       }
     ],
-    "loss_text": "The adventurer s'est laissé distraire par les illusions d'un [gold]Fongibrume[/gold]."
+    "loss_text": "[b]The Adventurer[/b] s'est laissé distraire par les illusions d'un [gold]Fongibrume[/gold]."
   },
   {
     "id": "FOSSIL_STALKER_NORMAL",
@@ -449,7 +449,7 @@
         "name": "Traqueur fossilisé"
       }
     ],
-    "loss_text": "The adventurer a été victime de l'embuscade d'un [gold]Traqueur fossilisé[/gold]."
+    "loss_text": "[b]The Adventurer[/b] a été victime de l'embuscade d'un [gold]Traqueur fossilisé[/gold]."
   },
   {
     "id": "FROG_KNIGHT_NORMAL",
@@ -464,7 +464,7 @@
         "name": "Chevalier rainette"
       }
     ],
-    "loss_text": "Un vaillant [gold]Chevalier rainette[/gold] a triomphé de The adventurer."
+    "loss_text": "Un vaillant [gold]Chevalier rainette[/gold] a triomphé de [b]The Adventurer[/b]."
   },
   {
     "id": "FUZZY_WURM_CRAWLER_WEAK",
@@ -481,7 +481,7 @@
         "name": "Rampeluche"
       }
     ],
-    "loss_text": "Un [gold]Rampeluche[/gold] a craché sur The adventurer."
+    "loss_text": "Un [gold]Rampeluche[/gold] a craché sur [b]The Adventurer[/b]."
   },
   {
     "id": "GLOBE_HEAD_NORMAL",
@@ -496,7 +496,7 @@
         "name": "Globocéphale"
       }
     ],
-    "loss_text": "[gold]Globocéphale isolé[/gold] a pulvérisé The adventurer."
+    "loss_text": "[gold]Globocéphale isolé[/gold] a pulvérisé [b]The Adventurer[/b]."
   },
   {
     "id": "GREMLIN_MERC_NORMAL",
@@ -519,7 +519,7 @@
         "name": "Diablotin sournois"
       }
     ],
-    "loss_text": "The adventurer s'est fait agresser par [gold]Deux diablotins dans un imperméable[/gold]."
+    "loss_text": "[b]The Adventurer[/b] s'est fait agresser par [gold]Deux diablotins dans un imperméable[/gold]."
   },
   {
     "id": "HAUNTED_SHIP_NORMAL",
@@ -534,7 +534,7 @@
         "name": "Navire hanté"
       }
     ],
-    "loss_text": "Un [gold]Vaisseau hanté[/gold] a piétiné The adventurer."
+    "loss_text": "Un [gold]Vaisseau hanté[/gold] a piétiné [b]The Adventurer[/b]."
   },
   {
     "id": "HUNTER_KILLER_NORMAL",
@@ -549,7 +549,7 @@
         "name": "Chasseur-tueur"
       }
     ],
-    "loss_text": "The adventurer s'est fait éventrer par un [gold]Chasseur-tueur[/gold]."
+    "loss_text": "[b]The Adventurer[/b] s'est fait éventrer par un [gold]Chasseur-tueur[/gold]."
   },
   {
     "id": "INFESTED_PRISMS_ELITE",
@@ -564,7 +564,7 @@
         "name": "Prisme infesté"
       }
     ],
-    "loss_text": "The adventurer s'est fait arrêter par un [gold]Prisme infesté[/gold]."
+    "loss_text": "[b]The Adventurer[/b] s'est fait arrêter par un [gold]Prisme infesté[/gold]."
   },
   {
     "id": "INKLETS_NORMAL",
@@ -579,7 +579,7 @@
         "name": "Encrelin"
       }
     ],
-    "loss_text": "Des [gold]Encrelins[/gold] n'ont pas laissé passer The adventurer."
+    "loss_text": "Des [gold]Encrelins[/gold] n'ont pas laissé passer [b]The Adventurer[/b]."
   },
   {
     "id": "KAISER_CRAB_BOSS",
@@ -598,7 +598,7 @@
         "name": "Roquette"
       }
     ],
-    "loss_text": "Les [gold]Crabe empereur[/gold] ont frappé The adventurer de toutes parts."
+    "loss_text": "Les [gold]Crabe empereur[/gold] ont frappé [b]The Adventurer[/b] de toutes parts."
   },
   {
     "id": "KNIGHTS_ELITE",
@@ -623,7 +623,7 @@
         "name": "Chevalier spectral"
       }
     ],
-    "loss_text": "The adventurer a été terrassé{characterGender:choose(feminine):e|} par une [gold]Bande de chevaliers[/gold]."
+    "loss_text": "[b]The Adventurer[/b] a été terrassé{characterGender:choose(feminine):e|} par une [gold]Bande de chevaliers[/gold]."
   },
   {
     "id": "KNOWLEDGE_DEMON_BOSS",
@@ -638,7 +638,7 @@
         "name": "Démon de la Connaissance"
       }
     ],
-    "loss_text": "Le [gold]Démon de la Connaissance[/gold] a accablé The adventurer de son savoir."
+    "loss_text": "Le [gold]Démon de la Connaissance[/gold] a accablé [b]The Adventurer[/b] de son savoir."
   },
   {
     "id": "LAGAVULIN_MATRIARCH_BOSS",
@@ -653,7 +653,7 @@
         "name": "Matriarche Lagavulin"
       }
     ],
-    "loss_text": "The adventurer s'est fait fendre en deux par la [gold]Matriarche lagavulin[/gold]."
+    "loss_text": "[b]The Adventurer[/b] s'est fait fendre en deux par la [gold]Matriarche lagavulin[/gold]."
   },
   {
     "id": "LIVING_FOG_NORMAL",
@@ -672,7 +672,7 @@
         "name": "Brouillard vivant"
       }
     ],
-    "loss_text": "The adventurer n'a pas supporté la puanteur de quelques [gold]Gaz maléfique[/gold]."
+    "loss_text": "[b]The Adventurer[/b] n'a pas supporté la puanteur de quelques [gold]Gaz maléfique[/gold]."
   },
   {
     "id": "LOUSE_PROGENITOR_NORMAL",
@@ -687,7 +687,7 @@
         "name": "Progéniteur de poux"
       }
     ],
-    "loss_text": "The adventurer s'est fait paralyser par un [gold]Progéniteur de poux[/gold]."
+    "loss_text": "[b]The Adventurer[/b] s'est fait paralyser par un [gold]Progéniteur de poux[/gold]."
   },
   {
     "id": "MAWLER_NORMAL",
@@ -702,7 +702,7 @@
         "name": "Écharneur"
       }
     ],
-    "loss_text": "The adventurer est devenu le repas délicieux d'un [gold]Écharneur[/gold]."
+    "loss_text": "[b]The Adventurer[/b] est devenu le repas délicieux d'un [gold]Écharneur[/gold]."
   },
   {
     "id": "MECHA_KNIGHT_ELITE",
@@ -717,7 +717,7 @@
         "name": "Méca-Chevalier"
       }
     ],
-    "loss_text": "The adventurer s'est fait poignarder puis incinérer par un [gold]Méca-Chevalier[/gold]."
+    "loss_text": "[b]The Adventurer[/b] s'est fait poignarder puis incinérer par un [gold]Méca-Chevalier[/gold]."
   },
   {
     "id": "MYSTERIOUS_KNIGHT_EVENT_ENCOUNTER",
@@ -732,7 +732,7 @@
         "name": "Chevalier mystérieux"
       }
     ],
-    "loss_text": "The adventurer a tenté de saisir la clé d'un [gold]Chevalier mystérieux[/gold]."
+    "loss_text": "[b]The Adventurer[/b] a tenté de saisir la clé d'un [gold]Chevalier mystérieux[/gold]."
   },
   {
     "id": "MYTES_NORMAL",
@@ -747,7 +747,7 @@
         "name": "Sarcopte"
       }
     ],
-    "loss_text": "The adventurer a été envahi par des [gold]Sarcoptes en masse[/gold]."
+    "loss_text": "[b]The Adventurer[/b] a été envahi par des [gold]Sarcoptes en masse[/gold]."
   },
   {
     "id": "NIBBITS_NORMAL",
@@ -762,7 +762,7 @@
         "name": "Grignotin"
       }
     ],
-    "loss_text": "[gold]Deux grignotins[/gold] ont brutalisé The adventurer."
+    "loss_text": "[gold]Deux grignotins[/gold] ont brutalisé [b]The Adventurer[/b]."
   },
   {
     "id": "NIBBITS_WEAK",
@@ -779,7 +779,7 @@
         "name": "Grignotin"
       }
     ],
-    "loss_text": "[gold]Un grignotin isolé[/gold] a brutalisé The adventurer."
+    "loss_text": "[gold]Un grignotin isolé[/gold] a brutalisé [b]The Adventurer[/b]."
   },
   {
     "id": "OVERGROWTH_CRAWLERS",
@@ -801,7 +801,7 @@
         "name": "Scarabrideur"
       }
     ],
-    "loss_text": "Des [gold]Rampants de la Friche[/gold] ont dévoré The adventurer."
+    "loss_text": "Des [gold]Rampants de la Friche[/gold] ont dévoré [b]The Adventurer[/b]."
   },
   {
     "id": "OVICOPTER_NORMAL",
@@ -820,7 +820,7 @@
         "name": "Œuf robuste"
       }
     ],
-    "loss_text": "The adventurer est devenu{characterGender:choose(feminine):e|} le repas de la progéniture d'un [gold]Ovicoptère[/gold]."
+    "loss_text": "[b]The Adventurer[/b] est devenu{characterGender:choose(feminine):e|} le repas de la progéniture d'un [gold]Ovicoptère[/gold]."
   },
   {
     "id": "OWL_MAGISTRATE_NORMAL",
@@ -835,7 +835,7 @@
         "name": "Magistrix"
       }
     ],
-    "loss_text": "The adventurer a été condamné{characterGender:choose(feminine):e|} à mort par un [gold]Magistrix[/gold]."
+    "loss_text": "[b]The Adventurer[/b] a été condamné{characterGender:choose(feminine):e|} à mort par un [gold]Magistrix[/gold]."
   },
   {
     "id": "PHANTASMAL_GARDENERS_ELITE",
@@ -850,7 +850,7 @@
         "name": "Jardinier spectral"
       }
     ],
-    "loss_text": "The adventurer a été enterré{characterGender:choose(feminine):e|} par des [gold]Jardiniers spectraux[/gold]."
+    "loss_text": "[b]The Adventurer[/b] a été enterré{characterGender:choose(feminine):e|} par des [gold]Jardiniers spectraux[/gold]."
   },
   {
     "id": "PHROG_PARASITE_ELITE",
@@ -869,7 +869,7 @@
         "name": "Larve"
       }
     ],
-    "loss_text": "Un [gold]Parasite Krapo[/gold] a propagé sa colonie à The adventurer."
+    "loss_text": "Un [gold]Parasite Krapo[/gold] a propagé sa colonie à [b]The Adventurer[/b]."
   },
   {
     "id": "PUNCH_CONSTRUCT_NORMAL",
@@ -884,7 +884,7 @@
         "name": "Assemblage de pugilat"
       }
     ],
-    "loss_text": "The adventurer s'est bagarré{characterGender:choose(feminine):e|} avec un [gold]Assemblage de pugilat[/gold]."
+    "loss_text": "[b]The Adventurer[/b] s'est bagarré{characterGender:choose(feminine):e|} avec un [gold]Assemblage de pugilat[/gold]."
   },
   {
     "id": "PUNCH_OFF_EVENT_ENCOUNTER",
@@ -899,7 +899,7 @@
         "name": "Assemblage de pugilat"
       }
     ],
-    "loss_text": "The adventurer a interrompu un match entre deux [gold]Assemblages de pugilat[/gold]."
+    "loss_text": "[b]The Adventurer[/b] a interrompu un match entre deux [gold]Assemblages de pugilat[/gold]."
   },
   {
     "id": "QUEEN_BOSS",
@@ -918,7 +918,7 @@
         "name": "Amalgame Torchetête"
       }
     ],
-    "loss_text": "La [gold]Reine[/gold] a ajouté un morceau de The adventurer à sa collection."
+    "loss_text": "La [gold]Reine[/gold] a ajouté un morceau de [b]The Adventurer[/b] à sa collection."
   },
   {
     "id": "RUBY_RAIDERS_NORMAL",
@@ -949,7 +949,7 @@
         "name": "Rôdeur Traqueur"
       }
     ],
-    "loss_text": "The adventurer s'est fait surprendre par un groupe de [gold]Rôdeurs Rubis[/gold]."
+    "loss_text": "[b]The Adventurer[/b] s'est fait surprendre par un groupe de [gold]Rôdeurs Rubis[/gold]."
   },
   {
     "id": "SCROLLS_OF_BITING_NORMAL",
@@ -966,7 +966,7 @@
         "name": "Parchemord"
       }
     ],
-    "loss_text": "Des [gold]Parchemords nombreux[/gold] ont réduit The adventurer en miettes."
+    "loss_text": "Des [gold]Parchemords nombreux[/gold] ont réduit [b]The Adventurer[/b] en miettes."
   },
   {
     "id": "SCROLLS_OF_BITING_WEAK",
@@ -983,7 +983,7 @@
         "name": "Parchemord"
       }
     ],
-    "loss_text": "Des [gold]Parchemord[/gold] ont réduit The adventurer en miettes."
+    "loss_text": "Des [gold]Parchemord[/gold] ont réduit [b]The Adventurer[/b] en miettes."
   },
   {
     "id": "SEAPUNK_WEAK",
@@ -1000,7 +1000,7 @@
         "name": "Voyou marin"
       }
     ],
-    "loss_text": "Un [gold]Voyou marin[/gold] a matraqué The adventurer."
+    "loss_text": "Un [gold]Voyou marin[/gold] a matraqué [b]The Adventurer[/b]."
   },
   {
     "id": "SEWER_CLAM_NORMAL",
@@ -1015,7 +1015,7 @@
         "name": "Palourde d'égout"
       }
     ],
-    "loss_text": "The adventurer s'est fait engloutir par une [gold]Palourde des égoûts[/gold]."
+    "loss_text": "[b]The Adventurer[/b] s'est fait engloutir par une [gold]Palourde des égoûts[/gold]."
   },
   {
     "id": "SHRINKER_BEETLE_WEAK",
@@ -1032,7 +1032,7 @@
         "name": "Scarabrideur"
       }
     ],
-    "loss_text": "Un [gold]Scarabrideur[/gold] a fait de The adventurer son goûter."
+    "loss_text": "Un [gold]Scarabrideur[/gold] a fait de [b]The Adventurer[/b] son goûter."
   },
   {
     "id": "SKULKING_COLONY_ELITE",
@@ -1047,7 +1047,7 @@
         "name": "Colonie de rôdeurs"
       }
     ],
-    "loss_text": "The adventurer s'est fait absorber par une [gold]Colonie de rôdeurs[/gold]."
+    "loss_text": "[b]The Adventurer[/b] s'est fait absorber par une [gold]Colonie de rôdeurs[/gold]."
   },
   {
     "id": "SLIMED_BERSERKER_NORMAL",
@@ -1062,7 +1062,7 @@
         "name": "Berserker de vase"
       }
     ],
-    "loss_text": "The adventurer s'est fait absorber par un [gold]Berserker de vase[/gold]."
+    "loss_text": "[b]The Adventurer[/b] s'est fait absorber par un [gold]Berserker de vase[/gold]."
   },
   {
     "id": "SLIMES_NORMAL",
@@ -1091,7 +1091,7 @@
         "name": "Limon brindille (S)"
       }
     ],
-    "loss_text": "The adventurer s'est fait abattre par un [gold]Essaim de limons[/gold]."
+    "loss_text": "[b]The Adventurer[/b] s'est fait abattre par un [gold]Essaim de limons[/gold]."
   },
   {
     "id": "SLIMES_WEAK",
@@ -1120,7 +1120,7 @@
         "name": "Limon brindille (S)"
       }
     ],
-    "loss_text": "The adventurer s'est fait abattre par un [gold]Bande de limons[/gold]."
+    "loss_text": "[b]The Adventurer[/b] s'est fait abattre par un [gold]Bande de limons[/gold]."
   },
   {
     "id": "SLITHERING_STRANGLER_NORMAL",
@@ -1155,7 +1155,7 @@
         "name": "Limon brindille (S)"
       }
     ],
-    "loss_text": "The adventurer a été suffoqué{characterGender:choose(feminine):e|} par un [gold]Étrangleur et son ami[/gold]."
+    "loss_text": "[b]The Adventurer[/b] a été suffoqué{characterGender:choose(feminine):e|} par un [gold]Étrangleur et son ami[/gold]."
   },
   {
     "id": "SLUDGE_SPINNER_WEAK",
@@ -1170,7 +1170,7 @@
         "name": "Tisse-boue"
       }
     ],
-    "loss_text": "The adventurer n'a pu venir à bout d'un [gold]Tisseboue[/gold]."
+    "loss_text": "[b]The Adventurer[/b] n'a pu venir à bout d'un [gold]Tisseboue[/gold]."
   },
   {
     "id": "SLUMBERING_BEETLE_NORMAL",
@@ -1195,7 +1195,7 @@
         "name": "Scarabée dormeur"
       }
     ],
-    "loss_text": "The adventurer a interrompu une [gold]Veillée[/gold]."
+    "loss_text": "[b]The Adventurer[/b] a interrompu une [gold]Veillée[/gold]."
   },
   {
     "id": "SNAPPING_JAXFRUIT_NORMAL",
@@ -1216,7 +1216,7 @@
         "name": "Jaxier à clapet"
       }
     ],
-    "loss_text": "The adventurer est allé{characterGender:choose(feminine):e|} à l'encontre de la [gold]Flore de la Friche[/gold]."
+    "loss_text": "[b]The Adventurer[/b] est allé{characterGender:choose(feminine):e|} à l'encontre de la [gold]Flore de la Friche[/gold]."
   },
   {
     "id": "SOUL_FYSH_BOSS",
@@ -1231,7 +1231,7 @@
         "name": "Poissâme"
       }
     ],
-    "loss_text": "Un [gold]Poissâme[/gold] a appâté The adventurer jusqu'à sa perte."
+    "loss_text": "Un [gold]Poissâme[/gold] a appâté [b]The Adventurer[/b] jusqu'à sa perte."
   },
   {
     "id": "SOUL_NEXUS_ELITE",
@@ -1246,7 +1246,7 @@
         "name": "Amalg'âmes"
       }
     ],
-    "loss_text": "The adventurer a été vaincu{characterGender:choose(feminine):e|} par un [gold]Amalg'âmes[/gold] sur un champ de bataille oublié."
+    "loss_text": "[b]The Adventurer[/b] a été vaincu{characterGender:choose(feminine):e|} par un [gold]Amalg'âmes[/gold] sur un champ de bataille oublié."
   },
   {
     "id": "SPINY_TOAD_NORMAL",
@@ -1261,7 +1261,7 @@
         "name": "Crapineux"
       }
     ],
-    "loss_text": "The adventurer n'a pu percer les épines du [gold]Crapineux[/gold]."
+    "loss_text": "[b]The Adventurer[/b] n'a pu percer les épines du [gold]Crapineux[/gold]."
   },
   {
     "id": "TERROR_EEL_ELITE",
@@ -1276,7 +1276,7 @@
         "name": "Murène de l'effroi"
       }
     ],
-    "loss_text": "Une [gold]Murène de l'effroi[/gold] a trop effrayé The adventurer."
+    "loss_text": "Une [gold]Murène de l'effroi[/gold] a trop effrayé [b]The Adventurer[/b]."
   },
   {
     "id": "TEST_SUBJECT_BOSS",
@@ -1291,7 +1291,7 @@
         "name": "Cobaye #C{Count}"
       }
     ],
-    "loss_text": "Un [gold]Cobaye[/gold] a loyalement monté la garde contre The adventurer."
+    "loss_text": "Un [gold]Cobaye[/gold] a loyalement monté la garde contre [b]The Adventurer[/b]."
   },
   {
     "id": "THE_ARCHITECT_EVENT_ENCOUNTER",
@@ -1321,7 +1321,7 @@
         "name": "L'Insatiable"
       }
     ],
-    "loss_text": "[gold]L'Insatiable[/gold] a dévoré The adventurer. Pour autant, sa faim n'est pas assouvie..."
+    "loss_text": "[gold]L'Insatiable[/gold] a dévoré [b]The Adventurer[/b]. Pour autant, sa faim n'est pas assouvie..."
   },
   {
     "id": "THE_KIN_BOSS",
@@ -1340,7 +1340,7 @@
         "name": "Prêtre de la Tribu"
       }
     ],
-    "loss_text": "The adventurer a été annihilé{characterGender:choose(feminine):e|} par les stratagèmes de [gold]La Tribu[/gold]."
+    "loss_text": "[b]The Adventurer[/b] a été annihilé{characterGender:choose(feminine):e|} par les stratagèmes de [gold]La Tribu[/gold]."
   },
   {
     "id": "THE_LOST_AND_FORGOTTEN_NORMAL",
@@ -1359,7 +1359,7 @@
         "name": "L'Égaré"
       }
     ],
-    "loss_text": "Un [gold]Perdu et Oublié[/gold] a dépossédé The adventurer de sa volonté de vivre."
+    "loss_text": "Un [gold]Perdu et Oublié[/gold] a dépossédé [b]The Adventurer[/b] de sa volonté de vivre."
   },
   {
     "id": "THE_OBSCURA_NORMAL",
@@ -1374,7 +1374,7 @@
         "name": "L'Obscura"
       }
     ],
-    "loss_text": "[gold]L'Obscura[/gold] et son illusion ont écrasé The adventurer."
+    "loss_text": "[gold]L'Obscura[/gold] et son illusion ont écrasé [b]The Adventurer[/b]."
   },
   {
     "id": "THIEVING_HOPPER_WEAK",
@@ -1391,7 +1391,7 @@
         "name": "Mante chapardeuse"
       }
     ],
-    "loss_text": "Une [gold]Mante Chapardeuse[/gold] a braqué The adventurer."
+    "loss_text": "Une [gold]Mante Chapardeuse[/gold] a braqué [b]The Adventurer[/b]."
   },
   {
     "id": "TOADPOLES_NORMAL",
@@ -1410,7 +1410,7 @@
         "name": "Crapautard"
       }
     ],
-    "loss_text": "The adventurer a été vaincu{characterGender:choose(feminine):e|} par la [gold]Faune et flore des Bas-Quais[/gold]."
+    "loss_text": "[b]The Adventurer[/b] a été vaincu{characterGender:choose(feminine):e|} par la [gold]Faune et flore des Bas-Quais[/gold]."
   },
   {
     "id": "TOADPOLES_WEAK",
@@ -1425,7 +1425,7 @@
         "name": "Crapautard"
       }
     ],
-    "loss_text": "The adventurer n'a pu faire face à quelques [gold]Crapautards[/gold]."
+    "loss_text": "[b]The Adventurer[/b] n'a pu faire face à quelques [gold]Crapautards[/gold]."
   },
   {
     "id": "TUNNELER_NORMAL",
@@ -1451,7 +1451,7 @@
         "name": "Tunnelier"
       }
     ],
-    "loss_text": "Un [gold]Tunnelier accompagné[/gold] a achevé The adventurer."
+    "loss_text": "Un [gold]Tunnelier accompagné[/gold] a achevé [b]The Adventurer[/b]."
   },
   {
     "id": "TUNNELER_WEAK",
@@ -1468,7 +1468,7 @@
         "name": "Tunnelier"
       }
     ],
-    "loss_text": "The adventurer s'est pris une claque par un [gold]Tunnelier[/gold]."
+    "loss_text": "[b]The Adventurer[/b] s'est pris une claque par un [gold]Tunnelier[/gold]."
   },
   {
     "id": "TURRET_OPERATOR_WEAK",
@@ -1487,7 +1487,7 @@
         "name": "Opérateur de tourelle"
       }
     ],
-    "loss_text": "Un [gold]Opérateur de tourelle[/gold] a criblé The adventurer de trous."
+    "loss_text": "Un [gold]Opérateur de tourelle[/gold] a criblé [b]The Adventurer[/b] de trous."
   },
   {
     "id": "TWO_TAILED_RATS_NORMAL",
@@ -1502,7 +1502,7 @@
         "name": "Rat bicaudé"
       }
     ],
-    "loss_text": "The adventurer a été envahi{characterGender:choose(feminine):e|} par des [gold]Rats bicaudés[/gold]."
+    "loss_text": "[b]The Adventurer[/b] a été envahi{characterGender:choose(feminine):e|} par des [gold]Rats bicaudés[/gold]."
   },
   {
     "id": "VANTOM_BOSS",
@@ -1517,7 +1517,7 @@
         "name": "Vantôme"
       }
     ],
-    "loss_text": "The adventurer a été transformé{characterGender:choose(feminine):e|} en Encrelet par le [gold]Vantôme[/gold]."
+    "loss_text": "[b]The Adventurer[/b] a été transformé{characterGender:choose(feminine):e|} en Encrelet par le [gold]Vantôme[/gold]."
   },
   {
     "id": "VINE_SHAMBLER_NORMAL",
@@ -1532,7 +1532,7 @@
         "name": "Bourbelianes"
       }
     ],
-    "loss_text": "The adventurer n'a pu échapper à un [gold]Bourbelianes[/gold]."
+    "loss_text": "[b]The Adventurer[/b] n'a pu échapper à un [gold]Bourbelianes[/gold]."
   },
   {
     "id": "WATERFALL_GIANT_BOSS",
@@ -1547,6 +1547,6 @@
         "name": "Géant de la Cascade"
       }
     ],
-    "loss_text": "Le [gold]Géant de la Cascade[/gold] a débarrassé les Bas-Quais de The adventurer."
+    "loss_text": "Le [gold]Géant de la Cascade[/gold] a débarrassé les Bas-Quais de [b]The Adventurer[/b]."
   }
 ]

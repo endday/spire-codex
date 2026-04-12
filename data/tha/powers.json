@@ -292,8 +292,8 @@
   {
     "id": "COLOSSUS",
     "name": "ColossusPower",
-    "description": "คุณได้รับความเสียหายจากศัตรูที่มี[gold]จุดอ่อน[/gold]น้อยลง [blue]50%[/blue] ในเทิร์นนี้",
-    "description_raw": null,
+    "description": "คุณได้รับความเสียหายจากศัตรูที่มี[gold]จุดอ่อน[/gold]น้อยลง [blue]50%[/blue] เป็นเวลา [blue]2[/blue] เทิร์น",
+    "description_raw": "คุณได้รับความเสียหายจากศัตรูที่มี[gold]จุดอ่อน[/gold]น้อยลง [blue]{DamageDecrease:percentLess()}%[/blue] {Amount:plural:ในเทิร์นนี้|เป็นเวลา [blue]{}[/blue] เทิร์น}",
     "type": "Buff",
     "stack_type": "Counter",
     "allow_negative": null,
@@ -2522,8 +2522,8 @@
   {
     "id": "VULNERABLE",
     "name": "จุดอ่อน",
-    "description": "ศัตรูที่มีจุดอ่อนได้รับความเสียหายจากการโจมตีเพิ่ม [blue]50%[/blue]",
-    "description_raw": null,
+    "description": "ได้รับความเสียหายจากการโจมตีเพิ่ม [blue]50%[/blue] เป็นเวลา [blue][Amount][/blue] เทิร์น",
+    "description_raw": "ได้รับความเสียหายจากการโจมตีเพิ่ม [blue]{DamageIncrease:percentMore()}%[/blue] เป็นเวลา [blue]{Amount}[/blue] เทิร์น",
     "type": "Debuff",
     "stack_type": "Counter",
     "allow_negative": null,

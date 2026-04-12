@@ -177,7 +177,7 @@
           "next": "SWING_1"
         }
       ],
-      "description": "Cycle: Swing 1 → Swing 2 → Schwungvoller Hieb → repeat"
+      "description": "Swing 1 → Swing 2 → Schwungvoller Hieb → repeat"
     },
     "image_url": "/static/images/monsters/axe_ruby_raider.png",
     "beta_image_url": null
@@ -591,7 +591,7 @@
           "next": "THRASH2_MOVE"
         }
       ],
-      "description": "Cycle: Verdreschen → Trainieren → Verdreschen → repeat"
+      "description": "Verdreschen → Trainieren → Verdreschen → repeat"
     },
     "image_url": "/static/images/monsters/bowlbug_nectar.png",
     "beta_image_url": null
@@ -916,7 +916,7 @@
           "next": "SLASHES_MOVE"
         }
       ],
-      "description": "Cycle: Initial Sleep → Wake → Aufschlitzen → repeat"
+      "description": "Initial Sleep → Wake → Aufschlitzen → repeat"
     },
     "image_url": "/static/images/monsters/bygone_effigy.png",
     "beta_image_url": null
@@ -990,7 +990,7 @@
           "next": "PECK_MOVE"
         }
       ],
-      "description": "Cycle: Swoop → Picken → repeat"
+      "description": "Swoop → Picken → repeat"
     },
     "image_url": "/static/images/monsters/byrdonis.png",
     "beta_image_url": null
@@ -1252,7 +1252,7 @@
           "next": "STOMP_MOVE"
         }
       ],
-      "description": "Cycle: Zerstampfen → Pflügen → repeat"
+      "description": "Zerstampfen → Pflügen → repeat"
     },
     "image_url": "/static/images/monsters/ceremonial_beast.png",
     "beta_image_url": null
@@ -1621,7 +1621,7 @@
           "next": "THRASH_MOVE"
         }
       ],
-      "description": "Cycle: Verdreschen → Großmachender Schlag → Insektenstich → Anpassen → Behüteter Schlag → repeat"
+      "description": "Verdreschen → Großmachender Schlag → Insektenstich → Anpassen → Behüteter Schlag → repeat"
     },
     "image_url": "/static/images/monsters/crusher.png",
     "beta_image_url": null
@@ -1760,7 +1760,7 @@
           "next": "CHARGE_UP_MOVE"
         }
       ],
-      "description": "Cycle: Aufladen → Repeater → Repeater Move 2 → Expel Blast → repeat"
+      "description": "Aufladen → Repeater → Repeater Move 2 → Expel Blast → repeat"
     },
     "image_url": "/static/images/monsters/cubex_construct.png",
     "beta_image_url": null
@@ -2205,7 +2205,7 @@
           "next": "GET_BACK_IN_MOVE"
         }
       ],
-      "description": "Cycle: What Is It → Beam → Get Back In → repeat"
+      "description": "What Is It → Beam → Get Back In → repeat"
     },
     "image_url": "/static/images/monsters/doormaker.png",
     "beta_image_url": "/static/images/monsters/beta/door_maker_placeholder_2.png"
@@ -3605,7 +3605,7 @@
           "next": "SHOCKING_SLAP"
         }
       ],
-      "description": "Cycle: Schockschlag → Thunder Strike → Galvanic Burst → repeat"
+      "description": "Schockschlag → Thunder Strike → Galvanic Burst → repeat"
     },
     "image_url": "/static/images/monsters/orb_head.png",
     "beta_image_url": null
@@ -3713,7 +3713,7 @@
           "next": "GIMME_MOVE"
         }
       ],
-      "description": "Cycle: Her damit → Doppelschmettern → Hihi → repeat"
+      "description": "Her damit → Doppelschmettern → Hihi → repeat"
     },
     "image_url": "/static/images/monsters/gremlin_merc.png",
     "beta_image_url": null
@@ -4092,7 +4092,7 @@
           "next": "JAB_MOVE"
         }
       ],
-      "description": "Cycle: Stoßen → Strahlen → Wirbelsturm → Pulsieren → repeat"
+      "description": "Stoßen → Strahlen → Wirbelsturm → Pulsieren → repeat"
     },
     "image_url": "/static/images/monsters/infested_prism.png",
     "beta_image_url": null
@@ -4313,7 +4313,7 @@
           "next": "QUICK_SLASH_MOVE"
         }
       ],
-      "description": "Cycle: Power Dance → Quick Slash → Boomerang → repeat"
+      "description": "Power Dance → Quick Slash → Boomerang → repeat"
     },
     "image_url": "/static/images/monsters/kin_follower.png",
     "beta_image_url": null
@@ -4437,7 +4437,7 @@
           "next": "ORB_OF_FRAILTY_MOVE"
         }
       ],
-      "description": "Cycle: Orb Of Frailty → Orb Of Weakness → Beam → Ritual → repeat"
+      "description": "Orb Of Frailty → Orb Of Weakness → Beam → Ritual → repeat"
     },
     "image_url": "/static/images/monsters/kin_priest.png",
     "beta_image_url": null
@@ -4772,7 +4772,7 @@
           "next": "CLUMP_SHOT"
         }
       ],
-      "description": "Cycle: Klebriger Schuss → Büschelschuss → repeat"
+      "description": "Klebriger Schuss → Büschelschuss → repeat"
     },
     "image_url": "/static/images/monsters/leaf_slime_m.png",
     "beta_image_url": null
@@ -4956,7 +4956,7 @@
           "next": "BLOAT_MOVE"
         }
       ],
-      "description": "Cycle: Advanced Gas → Abgas → Super Gas Blast → repeat"
+      "description": "Advanced Gas → Abgas → Super Gas Blast → repeat"
     },
     "image_url": "/static/images/monsters/living_smog.png",
     "beta_image_url": null
@@ -5261,7 +5261,7 @@
           "next": "PREP_MOVE"
         }
       ],
-      "description": "Cycle: First Power Shield → Dampen → Rammen → Prep → Magische Bombe → repeat"
+      "description": "First Power Shield → Dampen → Rammen → Prep → Magische Bombe → repeat"
     },
     "image_url": "/static/images/monsters/magi_knight.png",
     "beta_image_url": null
@@ -5481,7 +5481,7 @@
           "next": "FLAMETHROWER_MOVE"
         }
       ],
-      "description": "Cycle: Ansturm → Flammenwerfer → Aufziehen → Schweres Spalten → repeat"
+      "description": "Ansturm → Flammenwerfer → Aufziehen → Schweres Spalten → repeat"
     },
     "image_url": "/static/images/monsters/mecha_knight.png",
     "beta_image_url": null
@@ -6007,7 +6007,7 @@
           "next": "MAGISTRATE_SCRUTINY"
         }
       ],
-      "description": "Cycle: Magistrale Untersuchung → Wildes Picken → Richterlicher Flug → Urteilsspruch → repeat"
+      "description": "Magistrale Untersuchung → Wildes Picken → Richterlicher Flug → Urteilsspruch → repeat"
     },
     "image_url": "/static/images/monsters/owl_magistrate.png",
     "beta_image_url": null
@@ -6695,7 +6695,7 @@
           "next": "TARGETING_RETICLE_MOVE"
         }
       ],
-      "description": "Cycle: Fadenkreuz ausrichten → Präzisionsstrahl → Aufladen → Laser → Wieder aufladen → repeat"
+      "description": "Fadenkreuz ausrichten → Präzisionsstrahl → Aufladen → Laser → Wieder aufladen → repeat"
     },
     "image_url": "/static/images/monsters/rocket.png",
     "beta_image_url": null
@@ -6888,7 +6888,7 @@
           "next": "SEA_KICK_MOVE"
         }
       ],
-      "description": "Cycle: Meerestritt → Kreisender Kick → Blasen rülpsen → repeat"
+      "description": "Meerestritt → Kreisender Kick → Blasen rülpsen → repeat"
     },
     "image_url": "/static/images/monsters/seapunk.png",
     "beta_image_url": null
@@ -7045,7 +7045,7 @@
           "next": "CHOMP_MOVE"
         }
       ],
-      "description": "Cycle: Schrumpfer → Schnappen → Zerstampfen → repeat"
+      "description": "Schrumpfer → Schnappen → Zerstampfen → repeat"
     },
     "image_url": "/static/images/monsters/shrinker_beetle.png",
     "beta_image_url": null
@@ -7156,7 +7156,7 @@
           "next": "ZOOM_MOVE"
         }
       ],
-      "description": "Cycle: Smash → Rasen → Beharrung → Superkrabbe → repeat"
+      "description": "Smash → Rasen → Beharrung → Superkrabbe → repeat"
     },
     "image_url": "/static/images/monsters/skulkling_colomy.png",
     "beta_image_url": null
@@ -7808,7 +7808,7 @@
           "next": "BECKON_MOVE"
         }
       ],
-      "description": "Cycle: Beckon → Gas ablassen → Gaze → Fade → Schreien → repeat"
+      "description": "Beckon → Gas ablassen → Gaze → Fade → Schreien → repeat"
     },
     "image_url": "/static/images/monsters/soul_fysh.png",
     "beta_image_url": null
@@ -8124,7 +8124,7 @@
           "next": "PROTRUDING_SPIKES_MOVE"
         }
       ],
-      "description": "Cycle: Vorspringende Stacheln → Stachelexplosion → Zungenpeitsche → repeat"
+      "description": "Vorspringende Stacheln → Stachelexplosion → Zungenpeitsche → repeat"
     },
     "image_url": "/static/images/monsters/spiny_toad.png",
     "beta_image_url": null
@@ -8290,7 +8290,7 @@
           "next": "CRASH_MOVE"
         }
       ],
-      "description": "Cycle: Crash → Thrashmove → repeat"
+      "description": "Crash → Thrashmove → repeat"
     },
     "image_url": "/static/images/monsters/terror_eel.png",
     "beta_image_url": null
@@ -8591,7 +8591,7 @@
           "next": "SMASH_MOVE"
         }
       ],
-      "description": "Cycle: Schmettern → Strahl → Kreuzfeuer → repeat"
+      "description": "Schmettern → Strahl → Kreuzfeuer → repeat"
     },
     "image_url": "/static/images/monsters/the_adversary_placeholder.png",
     "beta_image_url": null
@@ -8676,7 +8676,7 @@
           "next": "CRASH_MOVE"
         }
       ],
-      "description": "Cycle: Gegenkrachen → Flammenstrahl → Kreuzfeuer → repeat"
+      "description": "Gegenkrachen → Flammenstrahl → Kreuzfeuer → repeat"
     },
     "image_url": "/static/images/monsters/the_adversary_placeholder.png",
     "beta_image_url": null
@@ -8761,7 +8761,7 @@
           "next": "BASH_MOVE"
         }
       ],
-      "description": "Cycle: Schmettern → Flammenstrahl → Kreuzfeuer → repeat"
+      "description": "Schmettern → Flammenstrahl → Kreuzfeuer → repeat"
     },
     "image_url": "/static/images/monsters/the_adversary_placeholder.png",
     "beta_image_url": null
@@ -8948,7 +8948,7 @@
           "next": "THRASH_MOVE_2"
         }
       ],
-      "description": "Cycle: Boden verflüssigen → Thrash Move 1 → Hervorstürzender Biss → Speicheln → Thrash Move 2 → repeat"
+      "description": "Boden verflüssigen → Thrash Move 1 → Hervorstürzender Biss → Speicheln → Thrash Move 2 → repeat"
     },
     "image_url": "/static/images/monsters/the_insatiable.png",
     "beta_image_url": null
@@ -9241,7 +9241,7 @@
           "next": "ESCAPE_MOVE"
         }
       ],
-      "description": "Cycle: Diebstahl → Flattern → Hattrick → Schnappen → Fliehen → repeat"
+      "description": "Diebstahl → Flattern → Hattrick → Schnappen → Fliehen → repeat"
     },
     "image_url": "/static/images/monsters/thieving_hopper.png",
     "beta_image_url": null
@@ -9475,7 +9475,7 @@
           "next": "BEAM_MOVE"
         }
       ],
-      "description": "Cycle: Tackle 1 → Tackle 2 → Beam → Tackle 3 → Tackle 4 → repeat"
+      "description": "Tackle 1 → Tackle 2 → Beam → Tackle 3 → Tackle 4 → repeat"
     },
     "image_url": "/static/images/monsters/amalgam.png",
     "beta_image_url": null
@@ -9715,7 +9715,7 @@
           "next": "BITE_MOVE"
         }
       ],
-      "description": "Cycle: Beißen → Einwühlen → Below Move 1 → repeat"
+      "description": "Beißen → Einwühlen → Below Move 1 → repeat"
     },
     "image_url": "/static/images/monsters/tunneler.png",
     "beta_image_url": null
@@ -9803,7 +9803,7 @@
           "next": "UNLOAD_MOVE_1"
         }
       ],
-      "description": "Cycle: Unload Move 1 → Unload Move 2 → Reload → repeat"
+      "description": "Unload Move 1 → Unload Move 2 → Reload → repeat"
     },
     "image_url": "/static/images/monsters/turret_operator.png",
     "beta_image_url": null
@@ -10183,7 +10183,7 @@
           "next": "INK_BLOT_MOVE"
         }
       ],
-      "description": "Cycle: Tintenklecks → Lanze voller Tinte → Verstümmeln → Vorbereiten → repeat"
+      "description": "Tintenklecks → Lanze voller Tinte → Verstümmeln → Vorbereiten → repeat"
     },
     "image_url": "/static/images/monsters/vantom.png",
     "beta_image_url": null
@@ -10282,7 +10282,7 @@
           "next": "SWIPE_MOVE"
         }
       ],
-      "description": "Cycle: Tatzenhieb → Greifende Ranken → Schnappen → repeat"
+      "description": "Tatzenhieb → Greifende Ranken → Schnappen → repeat"
     },
     "image_url": "/static/images/monsters/vine_shambler.png",
     "beta_image_url": null
@@ -10479,7 +10479,7 @@
           "next": "EXPLODE_MOVE"
         }
       ],
-      "description": "Cycle: Druck aufbauen → Zerstampfen → Rammen → Abschöpfen → Druckgewehr → Pressure Up → repeat"
+      "description": "Druck aufbauen → Zerstampfen → Rammen → Abschöpfen → Druckgewehr → Pressure Up → repeat"
     },
     "image_url": "/static/images/monsters/waterfall_giant.png",
     "beta_image_url": null

@@ -12,7 +12,7 @@
         "name": "Axebot"
       }
     ],
-    "loss_text": "The adventurerถูกตัดแยกชิ้นส่วนโดยพวก[gold]Axebots Normal[/gold]"
+    "loss_text": "[b]The Adventurer[/b]ถูกตัดแยกชิ้นส่วนโดยพวก[gold]Axebots Normal[/gold]"
   },
   {
     "id": "BATTLEWORN_DUMMY_EVENT_ENCOUNTER",
@@ -35,7 +35,7 @@
         "name": "Battle Friend V3"
       }
     ],
-    "loss_text": "The adventurerถูก[gold]Battleworn Dummy Event Encounter[/gold]สังหารได้ไงก็ไม่รู้???"
+    "loss_text": "[b]The Adventurer[/b]ถูก[gold]Battleworn Dummy Event Encounter[/gold]สังหารได้ไงก็ไม่รู้???"
   },
   {
     "id": "BOWLBUGS_NORMAL",
@@ -64,7 +64,7 @@
         "name": "Bowlbug Silk"
       }
     ],
-    "loss_text": "The adventurerดันไปขวางทาง[gold]Bowlbugs Normal[/gold]เข้าแล้ว"
+    "loss_text": "[b]The Adventurer[/b]ดันไปขวางทาง[gold]Bowlbugs Normal[/gold]เข้าแล้ว"
   },
   {
     "id": "BOWLBUGS_WEAK",
@@ -89,7 +89,7 @@
         "name": "Bowlbug Rock"
       }
     ],
-    "loss_text": "The adventurerเข้าไปขวางทางพวก[gold]Bowlbugs Weak[/gold]แสนวุ่นวาย"
+    "loss_text": "[b]The Adventurer[/b]เข้าไปขวางทางพวก[gold]Bowlbugs Weak[/gold]แสนวุ่นวาย"
   },
   {
     "id": "BYGONE_EFFIGY_ELITE",
@@ -104,7 +104,7 @@
         "name": "Bygone Effigy"
       }
     ],
-    "loss_text": "The adventurerถูกหั่นครึ่งโดย[gold]Bygone Effigy Elite[/gold]"
+    "loss_text": "[b]The Adventurer[/b]ถูกหั่นครึ่งโดย[gold]Bygone Effigy Elite[/gold]"
   },
   {
     "id": "BYRDONIS_ELITE",
@@ -119,7 +119,7 @@
         "name": "Byrdonis"
       }
     ],
-    "loss_text": "[gold]Byrdonis Elite[/gold]ปกป้องลูกๆ ให้พ้นจากThe adventurer"
+    "loss_text": "[gold]Byrdonis Elite[/gold]ปกป้องลูกๆ ให้พ้นจาก[b]The Adventurer[/b]"
   },
   {
     "id": "CEREMONIAL_BEAST_BOSS",
@@ -134,7 +134,7 @@
         "name": "Ceremonial Beast"
       }
     ],
-    "loss_text": "The adventurerถูก[gold]Ceremonial Beast Boss[/gold]ส่งไปที่ชอบที่ชอบ"
+    "loss_text": "[b]The Adventurer[/b]ถูก[gold]Ceremonial Beast Boss[/gold]ส่งไปที่ชอบที่ชอบ"
   },
   {
     "id": "CHOMPERS_NORMAL",
@@ -151,7 +151,7 @@
         "name": "Chomper"
       }
     ],
-    "loss_text": "The adventurerถูก[gold]Chompers Normal[/gold]ขย้ำจนตาย"
+    "loss_text": "[b]The Adventurer[/b]ถูก[gold]Chompers Normal[/gold]ขย้ำจนตาย"
   },
   {
     "id": "CONSTRUCT_MENAGERIE_NORMAL",
@@ -170,7 +170,7 @@
         "name": "Punch Construct"
       }
     ],
-    "loss_text": "[gold]Construct Menagerie Normal[/gold]บดขยี้The adventurerจนแหลก"
+    "loss_text": "[gold]Construct Menagerie Normal[/gold]บดขยี้[b]The Adventurer[/b]จนแหลก"
   },
   {
     "id": "CORPSE_SLUGS_NORMAL",
@@ -187,7 +187,7 @@
         "name": "Corpse Slug"
       }
     ],
-    "loss_text": "The adventurerถูก[gold]ฝูงทากศพ[/gold]รุมกินโต๊ะ"
+    "loss_text": "[b]The Adventurer[/b]ถูก[gold]ฝูงทากศพ[/gold]รุมกินโต๊ะ"
   },
   {
     "id": "CORPSE_SLUGS_WEAK",
@@ -204,7 +204,7 @@
         "name": "Corpse Slug"
       }
     ],
-    "loss_text": "The adventurerถูก[gold]ทากศพ[/gold]รุมกินโต๊ะ"
+    "loss_text": "[b]The Adventurer[/b]ถูก[gold]ทากศพ[/gold]รุมกินโต๊ะ"
   },
   {
     "id": "CUBEX_CONSTRUCT_NORMAL",
@@ -219,7 +219,7 @@
         "name": "Cubex Construct"
       }
     ],
-    "loss_text": "The adventurerถูก[gold]Cubex Construct Normal[/gold]ยิงเลเซอร์ใส่จนตาย"
+    "loss_text": "[b]The Adventurer[/b]ถูก[gold]Cubex Construct Normal[/gold]ยิงเลเซอร์ใส่จนตาย"
   },
   {
     "id": "CULTISTS_NORMAL",
@@ -261,7 +261,7 @@
         "name": "Decimillipede Segment Middle"
       }
     ],
-    "loss_text": "The adventurerไม่สามารถเอาชีวิตรอดจากอาณาเขตของ[gold]Decimillipede Elite[/gold]ได้"
+    "loss_text": "[b]The Adventurer[/b]ไม่สามารถเอาชีวิตรอดจากอาณาเขตของ[gold]Decimillipede Elite[/gold]ได้"
   },
   {
     "id": "DENSE_VEGETATION_EVENT_ENCOUNTER",
@@ -276,7 +276,7 @@
         "name": "Wriggler"
       }
     ],
-    "loss_text": "The adventurerถูก[gold]Dense Vegetation Event Encounter[/gold]แพร่ระบาด"
+    "loss_text": "[b]The Adventurer[/b]ถูก[gold]Dense Vegetation Event Encounter[/gold]แพร่ระบาด"
   },
   {
     "id": "DEVOTED_SCULPTOR_WEAK",
@@ -291,7 +291,7 @@
         "name": "Devoted Sculptor"
       }
     ],
-    "loss_text": "The adventurerถูก[gold]Devoted Sculptor Weak[/gold]ทุบเป็นชิ้นเล็กชิ้นน้อย"
+    "loss_text": "[b]The Adventurer[/b]ถูก[gold]Devoted Sculptor Weak[/gold]ทุบเป็นชิ้นเล็กชิ้นน้อย"
   },
   {
     "id": "DOORMAKER_BOSS",
@@ -310,7 +310,7 @@
         "name": "Doormaker"
       }
     ],
-    "loss_text": "The adventurerไม่สามารถผ่านประตูของ[gold]Doormaker Boss[/gold]ไปได้"
+    "loss_text": "[b]The Adventurer[/b]ไม่สามารถผ่านประตูของ[gold]Doormaker Boss[/gold]ไปได้"
   },
   {
     "id": "ENTOMANCER_ELITE",
@@ -325,7 +325,7 @@
         "name": "Entomancer"
       }
     ],
-    "loss_text": "The adventurerถูก[gold]Entomancer Elite[/gold]ฝังเล็กในจนตาย"
+    "loss_text": "[b]The Adventurer[/b]ถูก[gold]Entomancer Elite[/gold]ฝังเล็กในจนตาย"
   },
   {
     "id": "EXOSKELETONS_NORMAL",
@@ -342,7 +342,7 @@
         "name": "Exoskeleton"
       }
     ],
-    "loss_text": "The adventurerถูก[gold]Exoskeletons Normal[/gold]ควักไส้"
+    "loss_text": "[b]The Adventurer[/b]ถูก[gold]Exoskeletons Normal[/gold]ควักไส้"
   },
   {
     "id": "EXOSKELETONS_WEAK",
@@ -359,7 +359,7 @@
         "name": "Exoskeleton"
       }
     ],
-    "loss_text": "The adventurerถูกกลุ่ม[gold]Exoskeletons Weak[/gold]ควักไส้"
+    "loss_text": "[b]The Adventurer[/b]ถูกกลุ่ม[gold]Exoskeletons Weak[/gold]ควักไส้"
   },
   {
     "id": "FABRICATOR_NORMAL",
@@ -374,7 +374,7 @@
         "name": "Fabricator"
       }
     ],
-    "loss_text": "The adventurerถูกช็อตโดยหุ่นยนต์ของ[gold]Fabricator Normal[/gold]"
+    "loss_text": "[b]The Adventurer[/b]ถูกช็อตโดยหุ่นยนต์ของ[gold]Fabricator Normal[/gold]"
   },
   {
     "id": "FAKE_MERCHANT_EVENT_ENCOUNTER",
@@ -389,7 +389,7 @@
         "name": "Fake Merchant Monster"
       }
     ],
-    "loss_text": "The adventurerถูก[gold]พ่อค้า???[/gold]ต้มตุ๋น"
+    "loss_text": "[b]The Adventurer[/b]ถูก[gold]พ่อค้า???[/gold]ต้มตุ๋น"
   },
   {
     "id": "FLYCONID_NORMAL",
@@ -415,7 +415,7 @@
         "name": "Twig Slime M"
       }
     ],
-    "loss_text": "The adventurerถูก[gold]Flyconid Normal[/gold]ดูดซับ"
+    "loss_text": "[b]The Adventurer[/b]ถูก[gold]Flyconid Normal[/gold]ดูดซับ"
   },
   {
     "id": "FOGMOG_NORMAL",
@@ -434,7 +434,7 @@
         "name": "Fogmog"
       }
     ],
-    "loss_text": "The adventurerหลงกลมายาของ[gold]Fogmog Normal[/gold]"
+    "loss_text": "[b]The Adventurer[/b]หลงกลมายาของ[gold]Fogmog Normal[/gold]"
   },
   {
     "id": "FOSSIL_STALKER_NORMAL",
@@ -449,7 +449,7 @@
         "name": "Fossil Stalker"
       }
     ],
-    "loss_text": "The adventurerถูก[gold]Fossil Stalker Normal[/gold]ซุ่มโจมตี"
+    "loss_text": "[b]The Adventurer[/b]ถูก[gold]Fossil Stalker Normal[/gold]ซุ่มโจมตี"
   },
   {
     "id": "FROG_KNIGHT_NORMAL",
@@ -464,7 +464,7 @@
         "name": "Frog Knight"
       }
     ],
-    "loss_text": "[gold]Frog Knight Normal[/gold]ผู้องอาจคว้าชัยเหนือThe adventurer"
+    "loss_text": "[gold]Frog Knight Normal[/gold]ผู้องอาจคว้าชัยเหนือ[b]The Adventurer[/b]"
   },
   {
     "id": "FUZZY_WURM_CRAWLER_WEAK",
@@ -481,7 +481,7 @@
         "name": "Fuzzy Wurm Crawler"
       }
     ],
-    "loss_text": "[gold]Fuzzy Wurm Crawler Weak[/gold]ถุยน้ำลายใส่The adventurer"
+    "loss_text": "[gold]Fuzzy Wurm Crawler Weak[/gold]ถุยน้ำลายใส่[b]The Adventurer[/b]"
   },
   {
     "id": "GLOBE_HEAD_NORMAL",
@@ -496,7 +496,7 @@
         "name": "Globe Head"
       }
     ],
-    "loss_text": "[gold]Globe Head Normal[/gold]ช็อตThe adventurer"
+    "loss_text": "[gold]Globe Head Normal[/gold]ช็อต[b]The Adventurer[/b]"
   },
   {
     "id": "GREMLIN_MERC_NORMAL",
@@ -519,7 +519,7 @@
         "name": "Sneaky Gremlin"
       }
     ],
-    "loss_text": "The adventurerถูก[gold]Gremlin Merc Normal[/gold]ปล้น"
+    "loss_text": "[b]The Adventurer[/b]ถูก[gold]Gremlin Merc Normal[/gold]ปล้น"
   },
   {
     "id": "HAUNTED_SHIP_NORMAL",
@@ -534,7 +534,7 @@
         "name": "Haunted Ship"
       }
     ],
-    "loss_text": "[gold]เรือผีสิง[/gold]กระแทกทับThe adventurerจนเละ"
+    "loss_text": "[gold]เรือผีสิง[/gold]กระแทกทับ[b]The Adventurer[/b]จนเละ"
   },
   {
     "id": "HUNTER_KILLER_NORMAL",
@@ -549,7 +549,7 @@
         "name": "Hunter Killer"
       }
     ],
-    "loss_text": "The adventurerถูก[gold]Hunter Killer Normal[/gold]คว้านไส้พุง"
+    "loss_text": "[b]The Adventurer[/b]ถูก[gold]Hunter Killer Normal[/gold]คว้านไส้พุง"
   },
   {
     "id": "INFESTED_PRISMS_ELITE",
@@ -564,7 +564,7 @@
         "name": "Infested Prism"
       }
     ],
-    "loss_text": "The adventurerถูก[gold]Infested Prisms Elite[/gold]ฝังเหล็กใน"
+    "loss_text": "[b]The Adventurer[/b]ถูก[gold]Infested Prisms Elite[/gold]ฝังเหล็กใน"
   },
   {
     "id": "INKLETS_NORMAL",
@@ -579,7 +579,7 @@
         "name": "Inklet"
       }
     ],
-    "loss_text": "พวก[gold]Inklets Normal[/gold]ไม่ปล่อยให้The adventurerผ่านไปได้"
+    "loss_text": "พวก[gold]Inklets Normal[/gold]ไม่ปล่อยให้[b]The Adventurer[/b]ผ่านไปได้"
   },
   {
     "id": "KAISER_CRAB_BOSS",
@@ -598,7 +598,7 @@
         "name": "Rocket"
       }
     ],
-    "loss_text": "[gold]Kaiser Crab Boss[/gold]จู่โจมThe adventurerจากทุกทิศทาง"
+    "loss_text": "[gold]Kaiser Crab Boss[/gold]จู่โจม[b]The Adventurer[/b]จากทุกทิศทาง"
   },
   {
     "id": "KNIGHTS_ELITE",
@@ -623,7 +623,7 @@
         "name": "Spectral Knight"
       }
     ],
-    "loss_text": "The adventurerถูกสังหารโดย[gold]Knights Elite[/gold]"
+    "loss_text": "[b]The Adventurer[/b]ถูกสังหารโดย[gold]Knights Elite[/gold]"
   },
   {
     "id": "KNOWLEDGE_DEMON_BOSS",
@@ -638,7 +638,7 @@
         "name": "Knowledge Demon"
       }
     ],
-    "loss_text": "[gold]อสูรความรู้[/gold]สาปThe adventurerด้วยความรู้ท่วมหัว"
+    "loss_text": "[gold]อสูรความรู้[/gold]สาป[b]The Adventurer[/b]ด้วยความรู้ท่วมหัว"
   },
   {
     "id": "LAGAVULIN_MATRIARCH_BOSS",
@@ -653,7 +653,7 @@
         "name": "Lagavulin Matriarch"
       }
     ],
-    "loss_text": "The adventurerถูก[gold]นางพญาลากาวูลิน[/gold]กำจัด"
+    "loss_text": "[b]The Adventurer[/b]ถูก[gold]นางพญาลากาวูลิน[/gold]กำจัด"
   },
   {
     "id": "LIVING_FOG_NORMAL",
@@ -672,7 +672,7 @@
         "name": "Living Fog"
       }
     ],
-    "loss_text": "The adventurerทนกลิ่นของ[gold]Living Fog Normal[/gold]ไม่ไหว"
+    "loss_text": "[b]The Adventurer[/b]ทนกลิ่นของ[gold]Living Fog Normal[/gold]ไม่ไหว"
   },
   {
     "id": "LOUSE_PROGENITOR_NORMAL",
@@ -687,7 +687,7 @@
         "name": "Louse Progenitor"
       }
     ],
-    "loss_text": "The adventurerถูก[gold]พระเจ้าเหา[/gold]ทำให้เป็นอัมพาต"
+    "loss_text": "[b]The Adventurer[/b]ถูก[gold]พระเจ้าเหา[/gold]ทำให้เป็นอัมพาต"
   },
   {
     "id": "MAWLER_NORMAL",
@@ -702,7 +702,7 @@
         "name": "Mawler"
       }
     ],
-    "loss_text": "The adventurerกลายเป็นอาหารอันโอชะของ[gold]Mawler Normal[/gold]"
+    "loss_text": "[b]The Adventurer[/b]กลายเป็นอาหารอันโอชะของ[gold]Mawler Normal[/gold]"
   },
   {
     "id": "MECHA_KNIGHT_ELITE",
@@ -717,7 +717,7 @@
         "name": "Mecha Knight"
       }
     ],
-    "loss_text": "The adventurerถูก[gold]Mecha Knight Elite[/gold]เผาเสียบไม้"
+    "loss_text": "[b]The Adventurer[/b]ถูก[gold]Mecha Knight Elite[/gold]เผาเสียบไม้"
   },
   {
     "id": "MYSTERIOUS_KNIGHT_EVENT_ENCOUNTER",
@@ -732,7 +732,7 @@
         "name": "Mysterious Knight"
       }
     ],
-    "loss_text": "The adventurerพยายามชิงกุญแจของ[gold]Mysterious Knight Event Encounter[/gold]"
+    "loss_text": "[b]The Adventurer[/b]พยายามชิงกุญแจของ[gold]Mysterious Knight Event Encounter[/gold]"
   },
   {
     "id": "MYTES_NORMAL",
@@ -762,7 +762,7 @@
         "name": "Nibbit"
       }
     ],
-    "loss_text": "[gold]Nibbits Normal[/gold]ซัดThe adventurerจนน่วม"
+    "loss_text": "[gold]Nibbits Normal[/gold]ซัด[b]The Adventurer[/b]จนน่วม"
   },
   {
     "id": "NIBBITS_WEAK",
@@ -779,7 +779,7 @@
         "name": "Nibbit"
       }
     ],
-    "loss_text": "[gold]Nibbits Weak[/gold]ซัดThe adventurerจนน่วม"
+    "loss_text": "[gold]Nibbits Weak[/gold]ซัด[b]The Adventurer[/b]จนน่วม"
   },
   {
     "id": "OVERGROWTH_CRAWLERS",
@@ -801,7 +801,7 @@
         "name": "Shrinker Beetle"
       }
     ],
-    "loss_text": "พวก[gold]Overgrowth Crawlers[/gold]รุมทึ้งThe adventurer"
+    "loss_text": "พวก[gold]Overgrowth Crawlers[/gold]รุมทึ้ง[b]The Adventurer[/b]"
   },
   {
     "id": "OVICOPTER_NORMAL",
@@ -820,7 +820,7 @@
         "name": "Tough Egg"
       }
     ],
-    "loss_text": "The adventurerกลายเป็นอาหารให้ลูกๆ ของ[gold]Ovicopter Normal[/gold]"
+    "loss_text": "[b]The Adventurer[/b]กลายเป็นอาหารให้ลูกๆ ของ[gold]Ovicopter Normal[/gold]"
   },
   {
     "id": "OWL_MAGISTRATE_NORMAL",
@@ -835,7 +835,7 @@
         "name": "Owl Magistrate"
       }
     ],
-    "loss_text": "The adventurerได้ถูก[gold]ฮูกพิพากษา[/gold]ตัดสินประหารชีวิต"
+    "loss_text": "[b]The Adventurer[/b]ได้ถูก[gold]ฮูกพิพากษา[/gold]ตัดสินประหารชีวิต"
   },
   {
     "id": "PHANTASMAL_GARDENERS_ELITE",
@@ -850,7 +850,7 @@
         "name": "Phantasmal Gardener"
       }
     ],
-    "loss_text": "The adventurerถูก[gold]Phantasmal Gardeners Elite[/gold]ส่งไปที่ชอบที่ชอบ"
+    "loss_text": "[b]The Adventurer[/b]ถูก[gold]Phantasmal Gardeners Elite[/gold]ส่งไปที่ชอบที่ชอบ"
   },
   {
     "id": "PHROG_PARASITE_ELITE",
@@ -869,7 +869,7 @@
         "name": "Wriggler"
       }
     ],
-    "loss_text": "[gold]Phrog Parasite Elite[/gold]แผ่ขยายอาณานิคมเข้าร่างของThe adventurer"
+    "loss_text": "[gold]Phrog Parasite Elite[/gold]แผ่ขยายอาณานิคมเข้าร่างของ[b]The Adventurer[/b]"
   },
   {
     "id": "PUNCH_CONSTRUCT_NORMAL",
@@ -884,7 +884,7 @@
         "name": "Punch Construct"
       }
     ],
-    "loss_text": "The adventurerแลกหมัดกับ[gold]Punch Construct Normal[/gold]"
+    "loss_text": "[b]The Adventurer[/b]แลกหมัดกับ[gold]Punch Construct Normal[/gold]"
   },
   {
     "id": "PUNCH_OFF_EVENT_ENCOUNTER",
@@ -899,7 +899,7 @@
         "name": "Punch Construct"
       }
     ],
-    "loss_text": "The adventurerเข้าไปขัดการดวลของ[gold]Punch Off Event Encounter[/gold] 2 ตัว"
+    "loss_text": "[b]The Adventurer[/b]เข้าไปขัดการดวลของ[gold]Punch Off Event Encounter[/gold] 2 ตัว"
   },
   {
     "id": "QUEEN_BOSS",
@@ -918,7 +918,7 @@
         "name": "Torch Head Amalgam"
       }
     ],
-    "loss_text": "[gold]Queen Boss[/gold]เพิ่มชิ้นส่วนของThe adventurerเข้าคอลเลกชั่น"
+    "loss_text": "[gold]Queen Boss[/gold]เพิ่มชิ้นส่วนของ[b]The Adventurer[/b]เข้าคอลเลกชั่น"
   },
   {
     "id": "RUBY_RAIDERS_NORMAL",
@@ -949,7 +949,7 @@
         "name": "Tracker Ruby Raider"
       }
     ],
-    "loss_text": "The adventurerถูก[gold]Ruby Raiders Normal[/gold]ดักปล้น"
+    "loss_text": "[b]The Adventurer[/b]ถูก[gold]Ruby Raiders Normal[/gold]ดักปล้น"
   },
   {
     "id": "SCROLLS_OF_BITING_NORMAL",
@@ -966,7 +966,7 @@
         "name": "Scroll Of Biting"
       }
     ],
-    "loss_text": "[gold]Scrolls Of Biting Normal[/gold]ฉีกThe adventurerเป็นชิ้นๆ"
+    "loss_text": "[gold]Scrolls Of Biting Normal[/gold]ฉีก[b]The Adventurer[/b]เป็นชิ้นๆ"
   },
   {
     "id": "SCROLLS_OF_BITING_WEAK",
@@ -983,7 +983,7 @@
         "name": "Scroll Of Biting"
       }
     ],
-    "loss_text": "[gold]Scrolls Of Biting Weak[/gold]ฉีกThe adventurerเป็นชิ้นๆ"
+    "loss_text": "[gold]Scrolls Of Biting Weak[/gold]ฉีก[b]The Adventurer[/b]เป็นชิ้นๆ"
   },
   {
     "id": "SEAPUNK_WEAK",
@@ -1000,7 +1000,7 @@
         "name": "Seapunk"
       }
     ],
-    "loss_text": "[gold]Seapunk Weak[/gold]กระทืบThe adventurer"
+    "loss_text": "[gold]Seapunk Weak[/gold]กระทืบ[b]The Adventurer[/b]"
   },
   {
     "id": "SEWER_CLAM_NORMAL",
@@ -1015,7 +1015,7 @@
         "name": "Sewer Clam"
       }
     ],
-    "loss_text": "The adventurerถูก[gold]Sewer Clam Normal[/gold]จับกิน"
+    "loss_text": "[b]The Adventurer[/b]ถูก[gold]Sewer Clam Normal[/gold]จับกิน"
   },
   {
     "id": "SHRINKER_BEETLE_WEAK",
@@ -1047,7 +1047,7 @@
         "name": "Skulking Colony"
       }
     ],
-    "loss_text": "The adventurerไม่สามารถฝ่ากระดองของ[gold]Skulking Colony Elite[/gold]ได้"
+    "loss_text": "[b]The Adventurer[/b]ไม่สามารถฝ่ากระดองของ[gold]Skulking Colony Elite[/gold]ได้"
   },
   {
     "id": "SLIMED_BERSERKER_NORMAL",
@@ -1062,7 +1062,7 @@
         "name": "Slimed Berserker"
       }
     ],
-    "loss_text": "The adventurerถูกดูดรวมเข้ากับ[gold]Slimed Berserker Normal[/gold]"
+    "loss_text": "[b]The Adventurer[/b]ถูกดูดรวมเข้ากับ[gold]Slimed Berserker Normal[/gold]"
   },
   {
     "id": "SLIMES_NORMAL",
@@ -1091,7 +1091,7 @@
         "name": "Twig Slime S"
       }
     ],
-    "loss_text": "The adventurerล้มให้กับ[gold]Slimes Normal[/gold]"
+    "loss_text": "[b]The Adventurer[/b]ล้มให้กับ[gold]Slimes Normal[/gold]"
   },
   {
     "id": "SLIMES_WEAK",
@@ -1120,7 +1120,7 @@
         "name": "Twig Slime S"
       }
     ],
-    "loss_text": "The adventurerล้มให้กับ[gold]Slimes Weak[/gold]"
+    "loss_text": "[b]The Adventurer[/b]ล้มให้กับ[gold]Slimes Weak[/gold]"
   },
   {
     "id": "SLITHERING_STRANGLER_NORMAL",
@@ -1155,7 +1155,7 @@
         "name": "Twig Slime S"
       }
     ],
-    "loss_text": "The adventurerถูก[gold]Slithering Strangler Normal[/gold]ทำให้ขาดใจตาย"
+    "loss_text": "[b]The Adventurer[/b]ถูก[gold]Slithering Strangler Normal[/gold]ทำให้ขาดใจตาย"
   },
   {
     "id": "SLUDGE_SPINNER_WEAK",
@@ -1170,7 +1170,7 @@
         "name": "Sludge Spinner"
       }
     ],
-    "loss_text": "The adventurerไม่สามารถเอาชนะ[gold]Sludge Spinner Weak[/gold]ได้"
+    "loss_text": "[b]The Adventurer[/b]ไม่สามารถเอาชนะ[gold]Sludge Spinner Weak[/gold]ได้"
   },
   {
     "id": "SLUMBERING_BEETLE_NORMAL",
@@ -1195,7 +1195,7 @@
         "name": "Slumbering Beetle"
       }
     ],
-    "loss_text": "The adventurerเข้าไปขัดจังหวะ[gold]Slumbering Beetle Normal[/gold]"
+    "loss_text": "[b]The Adventurer[/b]เข้าไปขัดจังหวะ[gold]Slumbering Beetle Normal[/gold]"
   },
   {
     "id": "SNAPPING_JAXFRUIT_NORMAL",
@@ -1261,7 +1261,7 @@
         "name": "Spiny Toad"
       }
     ],
-    "loss_text": "The adventurerไม่สามารถฝ่าหนามของ[gold]Spiny Toad Normal[/gold]ไปได้"
+    "loss_text": "[b]The Adventurer[/b]ไม่สามารถฝ่าหนามของ[gold]Spiny Toad Normal[/gold]ไปได้"
   },
   {
     "id": "TERROR_EEL_ELITE",
@@ -1291,7 +1291,7 @@
         "name": "Test Subject"
       }
     ],
-    "loss_text": "[gold]Test Subject Boss[/gold]ผู้ภักดี ปกป้องเจ้านายให้พ้นจากThe adventurer"
+    "loss_text": "[gold]Test Subject Boss[/gold]ผู้ภักดี ปกป้องเจ้านายให้พ้นจาก[b]The Adventurer[/b]"
   },
   {
     "id": "THE_ARCHITECT_EVENT_ENCOUNTER",
@@ -1321,7 +1321,7 @@
         "name": "The Insatiable"
       }
     ],
-    "loss_text": "[gold]The Insatiable Boss[/gold]เขมือบThe adventurerแต่ก็ยังหิวอยู่..."
+    "loss_text": "[gold]The Insatiable Boss[/gold]เขมือบ[b]The Adventurer[/b]แต่ก็ยังหิวอยู่..."
   },
   {
     "id": "THE_KIN_BOSS",
@@ -1340,7 +1340,7 @@
         "name": "Kin Priest"
       }
     ],
-    "loss_text": "The adventurerถูกกลยุทธ์ที่เหนือกว่าของ[gold]The Kin Boss[/gold]ทำลายร้างจนราบคาบ"
+    "loss_text": "[b]The Adventurer[/b]ถูกกลยุทธ์ที่เหนือกว่าของ[gold]The Kin Boss[/gold]ทำลายร้างจนราบคาบ"
   },
   {
     "id": "THE_LOST_AND_FORGOTTEN_NORMAL",
@@ -1359,7 +1359,7 @@
         "name": "The Lost"
       }
     ],
-    "loss_text": "[gold]The Lost And Forgotten Normal[/gold]ช่วงชิงความอยากมีชีวิตของThe adventurerไป"
+    "loss_text": "[gold]The Lost And Forgotten Normal[/gold]ช่วงชิงความอยากมีชีวิตของ[b]The Adventurer[/b]ไป"
   },
   {
     "id": "THE_OBSCURA_NORMAL",
@@ -1374,7 +1374,7 @@
         "name": "The Obscura"
       }
     ],
-    "loss_text": "[gold]The Obscura Normal[/gold]และมายาของมันรุมขย้ำThe adventurer"
+    "loss_text": "[gold]The Obscura Normal[/gold]และมายาของมันรุมขย้ำ[b]The Adventurer[/b]"
   },
   {
     "id": "THIEVING_HOPPER_WEAK",
@@ -1391,7 +1391,7 @@
         "name": "Thieving Hopper"
       }
     ],
-    "loss_text": "[gold]Thieving Hopper Weak[/gold]ปล้นThe adventurer"
+    "loss_text": "[gold]Thieving Hopper Weak[/gold]ปล้น[b]The Adventurer[/b]"
   },
   {
     "id": "TOADPOLES_NORMAL",
@@ -1410,7 +1410,7 @@
         "name": "Toadpole"
       }
     ],
-    "loss_text": "The adventurerถูกกำจัดโดย[gold]Toadpoles Normal[/gold]"
+    "loss_text": "[b]The Adventurer[/b]ถูกกำจัดโดย[gold]Toadpoles Normal[/gold]"
   },
   {
     "id": "TOADPOLES_WEAK",
@@ -1425,7 +1425,7 @@
         "name": "Toadpole"
       }
     ],
-    "loss_text": "The adventurerจัดการ[gold]Toadpoles Weak[/gold]ไม่ได้"
+    "loss_text": "[b]The Adventurer[/b]จัดการ[gold]Toadpoles Weak[/gold]ไม่ได้"
   },
   {
     "id": "TUNNELER_NORMAL",
@@ -1451,7 +1451,7 @@
         "name": "Tunneler"
       }
     ],
-    "loss_text": "[gold]Tunneler Normal[/gold]ปลิดชีพThe adventurer"
+    "loss_text": "[gold]Tunneler Normal[/gold]ปลิดชีพ[b]The Adventurer[/b]"
   },
   {
     "id": "TUNNELER_WEAK",
@@ -1468,7 +1468,7 @@
         "name": "Tunneler"
       }
     ],
-    "loss_text": "The adventurerถูก[gold]Tunneler Weak[/gold]เล่นงาน"
+    "loss_text": "[b]The Adventurer[/b]ถูก[gold]Tunneler Weak[/gold]เล่นงาน"
   },
   {
     "id": "TURRET_OPERATOR_WEAK",
@@ -1487,7 +1487,7 @@
         "name": "Turret Operator"
       }
     ],
-    "loss_text": "[gold]Turret Operator Weak[/gold]แจกรูพรุนให้แก่The adventurer"
+    "loss_text": "[gold]Turret Operator Weak[/gold]แจกรูพรุนให้แก่[b]The Adventurer[/b]"
   },
   {
     "id": "TWO_TAILED_RATS_NORMAL",
@@ -1502,7 +1502,7 @@
         "name": "Two Tailed Rat"
       }
     ],
-    "loss_text": "The adventurerถูกพวก[gold]Two Tailed Rats Normal[/gold]รุมขย้ำ"
+    "loss_text": "[b]The Adventurer[/b]ถูกพวก[gold]Two Tailed Rats Normal[/gold]รุมขย้ำ"
   },
   {
     "id": "VANTOM_BOSS",
@@ -1532,7 +1532,7 @@
         "name": "Vine Shambler"
       }
     ],
-    "loss_text": "The adventurerไม่สามารถหลบหนี[gold]Vine Shambler Normal[/gold]ไปได้"
+    "loss_text": "[b]The Adventurer[/b]ไม่สามารถหลบหนี[gold]Vine Shambler Normal[/gold]ไปได้"
   },
   {
     "id": "WATERFALL_GIANT_BOSS",
@@ -1547,6 +1547,6 @@
         "name": "Waterfall Giant"
       }
     ],
-    "loss_text": "[gold]ยักษ์น้ำตก[/gold]ชำระล้างท่าเรือเบื้องล่างให้ปราศจากThe adventurer"
+    "loss_text": "[gold]ยักษ์น้ำตก[/gold]ชำระล้างท่าเรือเบื้องล่างให้ปราศจาก[b]The Adventurer[/b]"
   }
 ]

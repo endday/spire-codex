@@ -12,7 +12,7 @@
         "name": "アックスマシン"
       }
     ],
-    "loss_text": "The adventurerは[gold]マシンの仲間たち[/gold]によってバラバラに解体された。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]マシンの仲間たち[/gold]によってバラバラに解体された。"
   },
   {
     "id": "BATTLEWORN_DUMMY_EVENT_ENCOUNTER",
@@ -35,7 +35,7 @@
         "name": "バトルフレンド V3.0"
       }
     ],
-    "loss_text": "The adventurerは[gold]歴戦のダミー[/gold]によって殺された。……なんで？"
+    "loss_text": "[b]The Adventurer[/b]は[gold]歴戦のダミー[/gold]によって殺された。……なんで？"
   },
   {
     "id": "BOWLBUGS_NORMAL",
@@ -64,7 +64,7 @@
         "name": "ボウルバグ（糸）"
       }
     ],
-    "loss_text": "The adventurerは忙しい[gold]ボウルバグの群れ[/gold]の邪魔をした。"
+    "loss_text": "[b]The Adventurer[/b]は忙しい[gold]ボウルバグの群れ[/gold]の邪魔をした。"
   },
   {
     "id": "BOWLBUGS_WEAK",
@@ -89,7 +89,7 @@
         "name": "ボウルバグ（岩）"
       }
     ],
-    "loss_text": "The adventurerは忙しい[gold]ボウルバグ[/gold]の邪魔をした。"
+    "loss_text": "[b]The Adventurer[/b]は忙しい[gold]ボウルバグ[/gold]の邪魔をした。"
   },
   {
     "id": "BYGONE_EFFIGY_ELITE",
@@ -104,7 +104,7 @@
         "name": "古の偶像"
       }
     ],
-    "loss_text": "The adventurerは[gold]古の偶像[/gold]によって半分にスライスされた。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]古の偶像[/gold]によって半分にスライスされた。"
   },
   {
     "id": "BYRDONIS_ELITE",
@@ -119,7 +119,7 @@
         "name": "ビャードニス"
       }
     ],
-    "loss_text": "[gold]ビャードニス[/gold]は子供たちをThe adventurerから守った。"
+    "loss_text": "[gold]ビャードニス[/gold]は子供たちを[b]The Adventurer[/b]から守った。"
   },
   {
     "id": "CEREMONIAL_BEAST_BOSS",
@@ -134,7 +134,7 @@
         "name": "儀式の獣"
       }
     ],
-    "loss_text": "The adventurerは[gold]儀式の獣[/gold]によって休まされた。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]儀式の獣[/gold]によって休まされた。"
   },
   {
     "id": "CHOMPERS_NORMAL",
@@ -151,7 +151,7 @@
         "name": "チョンパー"
       }
     ],
-    "loss_text": "The adventurerは[gold]オートマトンのコンビ[/gold]によって噛み砕かれて死んだ。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]オートマトンのコンビ[/gold]によって噛み砕かれて死んだ。"
   },
   {
     "id": "CONSTRUCT_MENAGERIE_NORMAL",
@@ -170,7 +170,7 @@
         "name": "パンチマシン"
       }
     ],
-    "loss_text": "[gold]機械兵の動物園[/gold]はThe adventurerを押し潰した。"
+    "loss_text": "[gold]機械兵の動物園[/gold]は[b]The Adventurer[/b]を押し潰した。"
   },
   {
     "id": "CORPSE_SLUGS_NORMAL",
@@ -187,7 +187,7 @@
         "name": "屍ナメクジ"
       }
     ],
-    "loss_text": "[gold]多数の屍ナメクジ[/gold]はThe adventurerをごちそうにした。"
+    "loss_text": "[gold]多数の屍ナメクジ[/gold]は[b]The Adventurer[/b]をごちそうにした。"
   },
   {
     "id": "CORPSE_SLUGS_WEAK",
@@ -204,7 +204,7 @@
         "name": "屍ナメクジ"
       }
     ],
-    "loss_text": "[gold]屍ナメクジ[/gold]はThe adventurerをごちそうにした。"
+    "loss_text": "[gold]屍ナメクジ[/gold]は[b]The Adventurer[/b]をごちそうにした。"
   },
   {
     "id": "CUBEX_CONSTRUCT_NORMAL",
@@ -219,7 +219,7 @@
         "name": "キューベックス"
       }
     ],
-    "loss_text": "The adventurerは[gold]キューベックス[/gold]によってレーザーで殺された。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]キューベックス[/gold]によってレーザーで殺された。"
   },
   {
     "id": "CULTISTS_NORMAL",
@@ -238,7 +238,7 @@
         "name": "湿った狂信者"
       }
     ],
-    "loss_text": "The adventurerは[gold]狂信者たち[/gold]に殺害された。[sine]カァーーーッ[/sine]…"
+    "loss_text": "[b]The Adventurer[/b]は[gold]狂信者たち[/gold]に殺害された。[sine]カァーーーッ[/sine]…"
   },
   {
     "id": "DECIMILLIPEDE_ELITE",
@@ -261,7 +261,7 @@
         "name": "Decimillipede Segment Middle"
       }
     ],
-    "loss_text": "The adventurerは[gold]万足ムカデ[/gold]の縄張りで生き延びられなかった。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]万足ムカデ[/gold]の縄張りで生き延びられなかった。"
   },
   {
     "id": "DENSE_VEGETATION_EVENT_ENCOUNTER",
@@ -276,7 +276,7 @@
         "name": "リグラー"
       }
     ],
-    "loss_text": "The adventurerは[gold]リグラー[/gold]に寄生された。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]リグラー[/gold]に寄生された。"
   },
   {
     "id": "DEVOTED_SCULPTOR_WEAK",
@@ -291,7 +291,7 @@
         "name": "狂信の彫刻家"
       }
     ],
-    "loss_text": "The adventurerは[gold]狂信の彫刻家[/gold]によって粉々に粉砕された。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]狂信の彫刻家[/gold]によって粉々に粉砕された。"
   },
   {
     "id": "DOORMAKER_BOSS",
@@ -310,7 +310,7 @@
         "name": "ドアメーカー"
       }
     ],
-    "loss_text": "[gold]ドアメーカー[/gold]はThe adventurerの妨害に手荒い対応をした。"
+    "loss_text": "[gold]ドアメーカー[/gold]は[b]The Adventurer[/b]の妨害に手荒い対応をした。"
   },
   {
     "id": "ENTOMANCER_ELITE",
@@ -325,7 +325,7 @@
         "name": "エントマンサー"
       }
     ],
-    "loss_text": "The adventurerは[gold]エントマンサー[/gold]によって刺し殺された。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]エントマンサー[/gold]によって刺し殺された。"
   },
   {
     "id": "EXOSKELETONS_NORMAL",
@@ -342,7 +342,7 @@
         "name": "外骨格蟲"
       }
     ],
-    "loss_text": "The adventurerは[gold]数多の外骨格蟲[/gold]に内臓をえぐり出された。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]数多の外骨格蟲[/gold]に内臓をえぐり出された。"
   },
   {
     "id": "EXOSKELETONS_WEAK",
@@ -359,7 +359,7 @@
         "name": "外骨格蟲"
       }
     ],
-    "loss_text": "The adventurerは[gold]外骨格蟲[/gold]に内臓をえぐり出された。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]外骨格蟲[/gold]に内臓をえぐり出された。"
   },
   {
     "id": "FABRICATOR_NORMAL",
@@ -374,7 +374,7 @@
         "name": "ファブリケーター"
       }
     ],
-    "loss_text": "The adventurerは[gold]ファブリケーター[/gold]のマシンに殺された。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]ファブリケーター[/gold]のマシンに殺された。"
   },
   {
     "id": "FAKE_MERCHANT_EVENT_ENCOUNTER",
@@ -389,7 +389,7 @@
         "name": "商人？"
       }
     ],
-    "loss_text": "The adventurerは[gold]商人？[/gold]の怒りに触れた。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]商人？[/gold]の怒りに触れた。"
   },
   {
     "id": "FLYCONID_NORMAL",
@@ -415,7 +415,7 @@
         "name": "細枝スライム (中)"
       }
     ],
-    "loss_text": "The adventurerは[gold]キノコとスライム[/gold]によって吸収された。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]キノコとスライム[/gold]によって吸収された。"
   },
   {
     "id": "FOGMOG_NORMAL",
@@ -434,7 +434,7 @@
         "name": "フォグモグ"
       }
     ],
-    "loss_text": "The adventurerは[gold]フォグモグ[/gold]の幻影に気を取られた。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]フォグモグ[/gold]の幻影に気を取られた。"
   },
   {
     "id": "FOSSIL_STALKER_NORMAL",
@@ -449,7 +449,7 @@
         "name": "化石のストーカー"
       }
     ],
-    "loss_text": "The adventurerは[gold]化石のストーカー[/gold]によって待ち伏せされた。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]化石のストーカー[/gold]によって待ち伏せされた。"
   },
   {
     "id": "FROG_KNIGHT_NORMAL",
@@ -464,7 +464,7 @@
         "name": "カエルの騎士"
       }
     ],
-    "loss_text": "勇敢な[gold]カエルの騎士[/gold]がThe adventurerに勝利した。"
+    "loss_text": "勇敢な[gold]カエルの騎士[/gold]が[b]The Adventurer[/b]に勝利した。"
   },
   {
     "id": "FUZZY_WURM_CRAWLER_WEAK",
@@ -481,7 +481,7 @@
         "name": "剛毛のワーム"
       }
     ],
-    "loss_text": "[gold]剛毛のワーム[/gold]はThe adventurerの上にツバを吐いた。"
+    "loss_text": "[gold]剛毛のワーム[/gold]は[b]The Adventurer[/b]の上にツバを吐いた。"
   },
   {
     "id": "GLOBE_HEAD_NORMAL",
@@ -496,7 +496,7 @@
         "name": "グローブヘッド"
       }
     ],
-    "loss_text": "[gold]孤独なグローブヘッド[/gold]はThe adventurerに殺された。"
+    "loss_text": "[gold]孤独なグローブヘッド[/gold]は[b]The Adventurer[/b]に殺された。"
   },
   {
     "id": "GREMLIN_MERC_NORMAL",
@@ -519,7 +519,7 @@
         "name": "スニーキーグレムリン"
       }
     ],
-    "loss_text": "The adventurerは[gold]トレンチコートのグレムリン[/gold]に強盗された。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]トレンチコートのグレムリン[/gold]に強盗された。"
   },
   {
     "id": "HAUNTED_SHIP_NORMAL",
@@ -534,7 +534,7 @@
         "name": "幽霊船"
       }
     ],
-    "loss_text": "[gold]幽霊船[/gold]はThe adventurerを轢いた。"
+    "loss_text": "[gold]幽霊船[/gold]は[b]The Adventurer[/b]を轢いた。"
   },
   {
     "id": "HUNTER_KILLER_NORMAL",
@@ -549,7 +549,7 @@
         "name": "ハンターキラー"
       }
     ],
-    "loss_text": "The adventurerは[gold]ハンターキラー[/gold]にはらわたを裂かれた。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]ハンターキラー[/gold]にはらわたを裂かれた。"
   },
   {
     "id": "INFESTED_PRISMS_ELITE",
@@ -564,7 +564,7 @@
         "name": "寄生されたプリズム"
       }
     ],
-    "loss_text": "The adventurerは[gold]寄生されたプリズム[/gold]によって阻まれた。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]寄生されたプリズム[/gold]によって阻まれた。"
   },
   {
     "id": "INKLETS_NORMAL",
@@ -579,7 +579,7 @@
         "name": "インクレット"
       }
     ],
-    "loss_text": "[gold]インクレット[/gold]はThe adventurerの行く手をふさいだ。"
+    "loss_text": "[gold]インクレット[/gold]は[b]The Adventurer[/b]の行く手をふさいだ。"
   },
   {
     "id": "KAISER_CRAB_BOSS",
@@ -598,7 +598,7 @@
         "name": "ロケット"
       }
     ],
-    "loss_text": "[gold]カイザークラブ[/gold]は四方八方からThe adventurerを打ちのめした。"
+    "loss_text": "[gold]カイザークラブ[/gold]は四方八方から[b]The Adventurer[/b]を打ちのめした。"
   },
   {
     "id": "KNIGHTS_ELITE",
@@ -623,7 +623,7 @@
         "name": "スペクトルナイト"
       }
     ],
-    "loss_text": "The adventurerは[gold]騎士のギャング[/gold]に殺害された。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]騎士のギャング[/gold]に殺害された。"
   },
   {
     "id": "KNOWLEDGE_DEMON_BOSS",
@@ -638,7 +638,7 @@
         "name": "知識の悪魔"
       }
     ],
-    "loss_text": "[gold]知識の悪魔[/gold]は圧倒的な知識でThe adventurerを呪った。"
+    "loss_text": "[gold]知識の悪魔[/gold]は圧倒的な知識で[b]The Adventurer[/b]を呪った。"
   },
   {
     "id": "LAGAVULIN_MATRIARCH_BOSS",
@@ -653,7 +653,7 @@
         "name": "ラガヴーリン・メイトリアーク"
       }
     ],
-    "loss_text": "The adventurerは[gold]ラガヴーリン・メイトリアーク[/gold]によって半分になった。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]ラガヴーリン・メイトリアーク[/gold]によって半分になった。"
   },
   {
     "id": "LIVING_FOG_NORMAL",
@@ -672,7 +672,7 @@
         "name": "生きた霧"
       }
     ],
-    "loss_text": "The adventurerは[gold]邪悪なガス[/gold]の悪臭に耐えられなかった。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]邪悪なガス[/gold]の悪臭に耐えられなかった。"
   },
   {
     "id": "LOUSE_PROGENITOR_NORMAL",
@@ -687,7 +687,7 @@
         "name": "始祖虫"
       }
     ],
-    "loss_text": "The adventurerは[gold]始祖ラミー[/gold]によって麻痺させられた。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]始祖ラミー[/gold]によって麻痺させられた。"
   },
   {
     "id": "MAWLER_NORMAL",
@@ -702,7 +702,7 @@
         "name": "モーラー"
       }
     ],
-    "loss_text": "The adventurerは[gold]モーラー[/gold]のための美味しい食事になった。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]モーラー[/gold]のための美味しい食事になった。"
   },
   {
     "id": "MECHA_KNIGHT_ELITE",
@@ -717,7 +717,7 @@
         "name": "メカナイト"
       }
     ],
-    "loss_text": "The adventurerは[gold]メカナイト[/gold]に刺され燃やされた。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]メカナイト[/gold]に刺され燃やされた。"
   },
   {
     "id": "MYSTERIOUS_KNIGHT_EVENT_ENCOUNTER",
@@ -732,7 +732,7 @@
         "name": "謎の騎士"
       }
     ],
-    "loss_text": "The adventurerは[gold]謎の騎士[/gold]の鍵を取ろうとした。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]謎の騎士[/gold]の鍵を取ろうとした。"
   },
   {
     "id": "MYTES_NORMAL",
@@ -747,7 +747,7 @@
         "name": "マイト"
       }
     ],
-    "loss_text": "The adventurerは[gold]マイトの群れ[/gold]に呑まれた"
+    "loss_text": "[b]The Adventurer[/b]は[gold]マイトの群れ[/gold]に呑まれた"
   },
   {
     "id": "NIBBITS_NORMAL",
@@ -762,7 +762,7 @@
         "name": "ニビット"
       }
     ],
-    "loss_text": "[gold]ニビットのコンビ[/gold]はThe adventurerを打ちのめした。"
+    "loss_text": "[gold]ニビットのコンビ[/gold]は[b]The Adventurer[/b]を打ちのめした。"
   },
   {
     "id": "NIBBITS_WEAK",
@@ -779,7 +779,7 @@
         "name": "ニビット"
       }
     ],
-    "loss_text": "[gold]孤独なニビット[/gold]はThe adventurerを打ちのめした。"
+    "loss_text": "[gold]孤独なニビット[/gold]は[b]The Adventurer[/b]を打ちのめした。"
   },
   {
     "id": "OVERGROWTH_CRAWLERS",
@@ -801,7 +801,7 @@
         "name": "シュリンカービートル"
       }
     ],
-    "loss_text": "[gold]繁茂の地のクローラー[/gold]はThe adventurerをごちそうにした。"
+    "loss_text": "[gold]繁茂の地のクローラー[/gold]は[b]The Adventurer[/b]をごちそうにした。"
   },
   {
     "id": "OVICOPTER_NORMAL",
@@ -820,7 +820,7 @@
         "name": "固い卵"
       }
     ],
-    "loss_text": "The adventurerは[gold]オビコプター[/gold]の子供たちの食べ物になった。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]オビコプター[/gold]の子供たちの食べ物になった。"
   },
   {
     "id": "OWL_MAGISTRATE_NORMAL",
@@ -835,7 +835,7 @@
         "name": "フクロウ判事"
       }
     ],
-    "loss_text": "The adventurerは[gold]裁きのフクロウ[/gold]によって死刑宣告された。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]裁きのフクロウ[/gold]によって死刑宣告された。"
   },
   {
     "id": "PHANTASMAL_GARDENERS_ELITE",
@@ -850,7 +850,7 @@
         "name": "幻影蟲"
       }
     ],
-    "loss_text": "The adventurerは[gold]幻影蟲[/gold]によって休まされた。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]幻影蟲[/gold]によって休まされた。"
   },
   {
     "id": "PHROG_PARASITE_ELITE",
@@ -869,7 +869,7 @@
         "name": "リグラー"
       }
     ],
-    "loss_text": "[gold]寄生カエル[/gold]はThe adventurerにコロニーを広げた。"
+    "loss_text": "[gold]寄生カエル[/gold]は[b]The Adventurer[/b]にコロニーを広げた。"
   },
   {
     "id": "PUNCH_CONSTRUCT_NORMAL",
@@ -884,7 +884,7 @@
         "name": "パンチマシン"
       }
     ],
-    "loss_text": "The adventurerは[gold]パンチマシーン[/gold]との殴り合いに従事した。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]パンチマシーン[/gold]との殴り合いに従事した。"
   },
   {
     "id": "PUNCH_OFF_EVENT_ENCOUNTER",
@@ -899,7 +899,7 @@
         "name": "パンチマシン"
       }
     ],
-    "loss_text": "The adventurerは2体の[gold]パンチマシーン[/gold]の間の試合を妨害した。"
+    "loss_text": "[b]The Adventurer[/b]は2体の[gold]パンチマシーン[/gold]の間の試合を妨害した。"
   },
   {
     "id": "QUEEN_BOSS",
@@ -918,7 +918,7 @@
         "name": "トーチヘッド・アマルガム"
       }
     ],
-    "loss_text": "[gold]クイーン[/gold]は彼女のコレクションにThe adventurerの欠片を追加した。"
+    "loss_text": "[gold]クイーン[/gold]は彼女のコレクションに[b]The Adventurer[/b]の欠片を追加した。"
   },
   {
     "id": "RUBY_RAIDERS_NORMAL",
@@ -949,7 +949,7 @@
         "name": "トラッカーレイダー"
       }
     ],
-    "loss_text": "The adventurerは[gold]ルビーレイダーズ[/gold]のグループに跳びかかられた。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]ルビーレイダーズ[/gold]のグループに跳びかかられた。"
   },
   {
     "id": "SCROLLS_OF_BITING_NORMAL",
@@ -966,7 +966,7 @@
         "name": "噛みつきの巻物"
       }
     ],
-    "loss_text": "[gold]多数の噛みつきの巻物[/gold]はThe adventurerをズタズタに引き裂いた。"
+    "loss_text": "[gold]多数の噛みつきの巻物[/gold]は[b]The Adventurer[/b]をズタズタに引き裂いた。"
   },
   {
     "id": "SCROLLS_OF_BITING_WEAK",
@@ -983,7 +983,7 @@
         "name": "噛みつきの巻物"
       }
     ],
-    "loss_text": "[gold]噛みつきの巻物[/gold]はThe adventurerをズタズタに引き裂いた。"
+    "loss_text": "[gold]噛みつきの巻物[/gold]は[b]The Adventurer[/b]をズタズタに引き裂いた。"
   },
   {
     "id": "SEAPUNK_WEAK",
@@ -1000,7 +1000,7 @@
         "name": "シーパンク"
       }
     ],
-    "loss_text": "[gold]シーパンク[/gold]はThe adventurerを打ちのめした。"
+    "loss_text": "[gold]シーパンク[/gold]は[b]The Adventurer[/b]を打ちのめした。"
   },
   {
     "id": "SEWER_CLAM_NORMAL",
@@ -1015,7 +1015,7 @@
         "name": "下水貝"
       }
     ],
-    "loss_text": "The adventurerは[gold]下水貝[/gold]によってガツガツ食べられた。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]下水貝[/gold]によってガツガツ食べられた。"
   },
   {
     "id": "SHRINKER_BEETLE_WEAK",
@@ -1032,7 +1032,7 @@
         "name": "シュリンカービートル"
       }
     ],
-    "loss_text": "[gold]シュリンカービートル[/gold]はThe adventurerをおやつにした。"
+    "loss_text": "[gold]シュリンカービートル[/gold]は[b]The Adventurer[/b]をおやつにした。"
   },
   {
     "id": "SKULKING_COLONY_ELITE",
@@ -1047,7 +1047,7 @@
         "name": "蠢く群生体"
       }
     ],
-    "loss_text": "The adventurerは[gold]蠢く群生体[/gold]によって吸収された。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]蠢く群生体[/gold]によって吸収された。"
   },
   {
     "id": "SLIMED_BERSERKER_NORMAL",
@@ -1062,7 +1062,7 @@
         "name": "スライムバーサーカー"
       }
     ],
-    "loss_text": "The adventurerは[gold]スライムバーサーカー[/gold]の中に吸収された。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]スライムバーサーカー[/gold]の中に吸収された。"
   },
   {
     "id": "SLIMES_NORMAL",
@@ -1091,7 +1091,7 @@
         "name": "細枝スライム (小)"
       }
     ],
-    "loss_text": "The adventurerは[gold]スライムの大群[/gold]によって倒された。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]スライムの大群[/gold]によって倒された。"
   },
   {
     "id": "SLIMES_WEAK",
@@ -1120,7 +1120,7 @@
         "name": "細枝スライム (小)"
       }
     ],
-    "loss_text": "The adventurerは[gold]スライムの群れ[/gold]によって倒された。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]スライムの群れ[/gold]によって倒された。"
   },
   {
     "id": "SLITHERING_STRANGLER_NORMAL",
@@ -1155,7 +1155,7 @@
         "name": "細枝スライム (小)"
       }
     ],
-    "loss_text": "The adventurerは[gold]絞蛇と友達[/gold]によって窒息させられた。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]絞蛇と友達[/gold]によって窒息させられた。"
   },
   {
     "id": "SLUDGE_SPINNER_WEAK",
@@ -1170,7 +1170,7 @@
         "name": "スラッジスピナー"
       }
     ],
-    "loss_text": "The adventurerは[gold]スラッジスピナー[/gold]を倒せなかった。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]スラッジスピナー[/gold]を倒せなかった。"
   },
   {
     "id": "SLUMBERING_BEETLE_NORMAL",
@@ -1195,7 +1195,7 @@
         "name": "眠れるビートル"
       }
     ],
-    "loss_text": "The adventurerは[gold]パジャマパーティー[/gold]を妨害した。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]パジャマパーティー[/gold]を妨害した。"
   },
   {
     "id": "SNAPPING_JAXFRUIT_NORMAL",
@@ -1216,7 +1216,7 @@
         "name": "暴れジャックフルーツ"
       }
     ],
-    "loss_text": "The adventurerは[gold]繁茂の地の植物[/gold]と衝突した。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]繁茂の地の植物[/gold]と衝突した。"
   },
   {
     "id": "SOUL_FYSH_BOSS",
@@ -1231,7 +1231,7 @@
         "name": "ソウルフィッシュ"
       }
     ],
-    "loss_text": "[gold]ソウルフィッシュ[/gold]はThe adventurerを破滅へと手招きした。"
+    "loss_text": "[gold]ソウルフィッシュ[/gold]は[b]The Adventurer[/b]を破滅へと手招きした。"
   },
   {
     "id": "SOUL_NEXUS_ELITE",
@@ -1246,7 +1246,7 @@
         "name": "ソウルネクサス"
       }
     ],
-    "loss_text": "The adventurerは忘れられた戦場で[gold]ソウルネクサス[/gold]に相対して死んだ。"
+    "loss_text": "[b]The Adventurer[/b]は忘れられた戦場で[gold]ソウルネクサス[/gold]に相対して死んだ。"
   },
   {
     "id": "SPINY_TOAD_NORMAL",
@@ -1261,7 +1261,7 @@
         "name": "トゲヒキガエル"
       }
     ],
-    "loss_text": "The adventurerは[gold]トゲヒキガエル[/gold]のトゲを貫けなかった。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]トゲヒキガエル[/gold]のトゲを貫けなかった。"
   },
   {
     "id": "TERROR_EEL_ELITE",
@@ -1276,7 +1276,7 @@
         "name": "テラーウツボ"
       }
     ],
-    "loss_text": "[gold]テラーウツボ[/gold]はThe adventurerにとってあまりにも恐ろしすぎた。"
+    "loss_text": "[gold]テラーウツボ[/gold]は[b]The Adventurer[/b]にとってあまりにも恐ろしすぎた。"
   },
   {
     "id": "TEST_SUBJECT_BOSS",
@@ -1291,7 +1291,7 @@
         "name": "実験体 #C{Count}"
       }
     ],
-    "loss_text": "[gold]実験体[/gold]は忠実にその主人をThe adventurerから守った。"
+    "loss_text": "[gold]実験体[/gold]は忠実にその主人を[b]The Adventurer[/b]から守った。"
   },
   {
     "id": "THE_ARCHITECT_EVENT_ENCOUNTER",
@@ -1321,7 +1321,7 @@
         "name": "貪りの獣"
       }
     ],
-    "loss_text": "[gold]貪りの獣[/gold]はThe adventurerをむさぼり食った。それでもなお、それは飢えている…"
+    "loss_text": "[gold]貪りの獣[/gold]は[b]The Adventurer[/b]をむさぼり食った。それでもなお、それは飢えている…"
   },
   {
     "id": "THE_KIN_BOSS",
@@ -1340,7 +1340,7 @@
         "name": "血族の司祭"
       }
     ],
-    "loss_text": "The adventurerは[gold]血族[/gold]らの優れた戦術によって全滅させられた。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]血族[/gold]らの優れた戦術によって全滅させられた。"
   },
   {
     "id": "THE_LOST_AND_FORGOTTEN_NORMAL",
@@ -1359,7 +1359,7 @@
         "name": "迷える者"
       }
     ],
-    "loss_text": "[gold]迷える者と忘れられし者[/gold]はThe adventurerの生きる意志を盗んだ。"
+    "loss_text": "[gold]迷える者と忘れられし者[/gold]は[b]The Adventurer[/b]の生きる意志を盗んだ。"
   },
   {
     "id": "THE_OBSCURA_NORMAL",
@@ -1374,7 +1374,7 @@
         "name": "オブスキュラ"
       }
     ],
-    "loss_text": "[gold]オブスキュラ[/gold]とその幻影はThe adventurerを叩きつぶした。"
+    "loss_text": "[gold]オブスキュラ[/gold]とその幻影は[b]The Adventurer[/b]を叩きつぶした。"
   },
   {
     "id": "THIEVING_HOPPER_WEAK",
@@ -1391,7 +1391,7 @@
         "name": "泥棒バッタ"
       }
     ],
-    "loss_text": "[gold]泥棒バッタ[/gold]はThe adventurerを強盗した。"
+    "loss_text": "[gold]泥棒バッタ[/gold]は[b]The Adventurer[/b]を強盗した。"
   },
   {
     "id": "TOADPOLES_NORMAL",
@@ -1410,7 +1410,7 @@
         "name": "ヒキジャクシ"
       }
     ],
-    "loss_text": "The adventurerは[gold]地下水路の生物[/gold]によって敗北した。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]地下水路の生物[/gold]によって敗北した。"
   },
   {
     "id": "TOADPOLES_WEAK",
@@ -1425,7 +1425,7 @@
         "name": "ヒキジャクシ"
       }
     ],
-    "loss_text": "The adventurerは[gold]ヒキジャクシ[/gold]に対処できなかった。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]ヒキジャクシ[/gold]に対処できなかった。"
   },
   {
     "id": "TUNNELER_NORMAL",
@@ -1451,7 +1451,7 @@
         "name": "トンネラー"
       }
     ],
-    "loss_text": "[gold]トンネリング[/gold]はThe adventurerを終わらせた。"
+    "loss_text": "[gold]トンネリング[/gold]は[b]The Adventurer[/b]を終わらせた。"
   },
   {
     "id": "TUNNELER_WEAK",
@@ -1468,7 +1468,7 @@
         "name": "トンネラー"
       }
     ],
-    "loss_text": "The adventurerは[gold]トンネラー[/gold]によって強く打たれた。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]トンネラー[/gold]によって強く打たれた。"
   },
   {
     "id": "TURRET_OPERATOR_WEAK",
@@ -1487,7 +1487,7 @@
         "name": "タレットオペレーター"
       }
     ],
-    "loss_text": "[gold]タレットオペレーター[/gold]はThe adventurerを穴だらけにした。"
+    "loss_text": "[gold]タレットオペレーター[/gold]は[b]The Adventurer[/b]を穴だらけにした。"
   },
   {
     "id": "TWO_TAILED_RATS_NORMAL",
@@ -1502,7 +1502,7 @@
         "name": "双尾のネズミ"
       }
     ],
-    "loss_text": "The adventurerは[gold]双尾のネズミ[/gold]に群がられた。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]双尾のネズミ[/gold]に群がられた。"
   },
   {
     "id": "VANTOM_BOSS",
@@ -1517,7 +1517,7 @@
         "name": "ヴァントム"
       }
     ],
-    "loss_text": "The adventurerは[gold]ヴァントム[/gold]によってインクレットに変えられた。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]ヴァントム[/gold]によってインクレットに変えられた。"
   },
   {
     "id": "VINE_SHAMBLER_NORMAL",
@@ -1532,7 +1532,7 @@
         "name": "ヴァインシャンブラー"
       }
     ],
-    "loss_text": "The adventurerは[gold]ヴァインシャンブラー[/gold]から逃れることができなかった。"
+    "loss_text": "[b]The Adventurer[/b]は[gold]ヴァインシャンブラー[/gold]から逃れることができなかった。"
   },
   {
     "id": "WATERFALL_GIANT_BOSS",
@@ -1547,6 +1547,6 @@
         "name": "滝の巨人"
       }
     ],
-    "loss_text": "[gold]滝の巨人[/gold]は地下水路のThe adventurerを浄化した。"
+    "loss_text": "[gold]滝の巨人[/gold]は地下水路の[b]The Adventurer[/b]を浄化した。"
   }
 ]
