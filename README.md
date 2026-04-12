@@ -1,5 +1,10 @@
 # Spire Codex
 
+<p align="center">
+  <a href="README.md">English</a> |
+  <a href="README_CN.md">中文</a>
+</p>
+
 A comprehensive database and API for **Slay the Spire 2** game data, built by reverse-engineering the game files. Supports all **14 languages** shipped with the game.
 
 **Live site**: [spire-codex.com](https://spire-codex.com)
