@@ -769,22 +769,20 @@ def parse_single_event(
 
         # Image URL — check ancients dir first, then monsters
         img_name = event_id.lower()
-        image_file = IMAGES_DIR / f"{img_name}.png"
+        image_file = IMAGES_DIR / f"{img_name}.webp"
+        if not image_file.exists():
+            image_file = IMAGES_DIR / f"{img_name}.png"
         if image_file.exists():
-            result["image_url"] = f"/static/images/misc/ancients/{img_name}.png"
+            result["image_url"] = f"/static/images/misc/ancients/{image_file.name}"
         else:
             # Fall back to monster sprite (e.g. The Architect)
             monster_name = img_name.replace("the_", "")
-            monster_file = (
-                BASE
-                / "backend"
-                / "static"
-                / "images"
-                / "monsters"
-                / f"{monster_name}.png"
-            )
+            monster_dir = BASE / "backend" / "static" / "images" / "monsters"
+            monster_file = monster_dir / f"{monster_name}.webp"
+            if not monster_file.exists():
+                monster_file = monster_dir / f"{monster_name}.png"
             if monster_file.exists():
-                result["image_url"] = f"/static/images/monsters/{monster_name}.png"
+                result["image_url"] = f"/static/images/monsters/{monster_file.name}"
 
         # Relic offerings
         relics = extract_ancient_relics(content)
