@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useLangPrefix } from "@/lib/use-lang-prefix";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
@@ -62,6 +63,7 @@ type Tab = "fastest" | "highest_ascension" | "browse";
 
 export default function LeaderboardBrowseClient() {
   const lp = useLangPrefix();
+  const router = useRouter();
   const [tab, setTab] = useState<Tab>("fastest");
 
   // --- Leaderboard state ---
@@ -144,10 +146,10 @@ export default function LeaderboardBrowseClient() {
       .catch(() => {});
   }, [tab, browseChar, browseWin, browseUser, browseSeed, browseBuildId, browseSort, browsePage]);
 
-  const TABS: { key: Tab; label: string }[] = [
-    { key: "fastest", label: "Fastest Wins" },
-    { key: "highest_ascension", label: "Highest Ascension" },
-    { key: "browse", label: "Browse Runs" },
+  const TABS: { key: Tab; label: string; shortLabel: string }[] = [
+    { key: "fastest", label: "Fastest Wins", shortLabel: "Fastest" },
+    { key: "highest_ascension", label: "Highest Ascension", shortLabel: "Ascension" },
+    { key: "browse", label: "Browse Runs", shortLabel: "Browse" },
   ];
 
   const isLeaderboard = tab !== "browse";
@@ -162,13 +164,14 @@ export default function LeaderboardBrowseClient() {
           <button
             key={t.key}
             onClick={() => setTab(t.key)}
-            className={`px-4 py-2 text-sm font-medium transition-colors border-b-2 -mb-px ${
+            className={`px-3 sm:px-4 py-2 text-sm font-medium transition-colors border-b-2 -mb-px ${
               tab === t.key
                 ? "border-[var(--accent-gold)] text-[var(--accent-gold)]"
                 : "border-transparent text-[var(--text-muted)] hover:text-[var(--text-secondary)]"
             }`}
           >
-            {t.label}
+            <span className="sm:hidden">{t.shortLabel}</span>
+            <span className="hidden sm:inline">{t.label}</span>
           </button>
         ))}
       </div>
@@ -219,13 +222,13 @@ export default function LeaderboardBrowseClient() {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-[var(--border-subtle)]">
-                      <th className="text-left py-2 px-3 text-xs font-medium text-[var(--text-muted)] uppercase tracking-wider">Rank</th>
-                      <th className="text-left py-2 px-3 text-xs font-medium text-[var(--text-muted)] uppercase tracking-wider">Player</th>
-                      <th className="text-left py-2 px-3 text-xs font-medium text-[var(--text-muted)] uppercase tracking-wider">Character</th>
-                      <th className="text-left py-2 px-3 text-xs font-medium text-[var(--text-muted)] uppercase tracking-wider">Ascension</th>
-                      <th className="text-left py-2 px-3 text-xs font-medium text-[var(--text-muted)] uppercase tracking-wider">Time</th>
-                      <th className="text-left py-2 px-3 text-xs font-medium text-[var(--text-muted)] uppercase tracking-wider">Floors</th>
-                      <th className="py-2 px-3"></th>
+                      <th className="text-left py-2 px-2 sm:px-3 text-xs font-medium text-[var(--text-muted)] uppercase tracking-wider">Rank</th>
+                      <th className="hidden sm:table-cell text-left py-2 px-3 text-xs font-medium text-[var(--text-muted)] uppercase tracking-wider">Player</th>
+                      <th className="text-left py-2 px-2 sm:px-3 text-xs font-medium text-[var(--text-muted)] uppercase tracking-wider">Character</th>
+                      <th className="text-left py-2 px-2 sm:px-3 text-xs font-medium text-[var(--text-muted)] uppercase tracking-wider">Asc</th>
+                      <th className="text-left py-2 px-2 sm:px-3 text-xs font-medium text-[var(--text-muted)] uppercase tracking-wider">Time</th>
+                      <th className="hidden sm:table-cell text-left py-2 px-3 text-xs font-medium text-[var(--text-muted)] uppercase tracking-wider">Floors</th>
+                      <th className="py-2 px-2 sm:px-3"></th>
                     </tr>
                   </thead>
                   <tbody>
@@ -235,19 +238,25 @@ export default function LeaderboardBrowseClient() {
                       return (
                         <tr
                           key={entry.run_hash}
-                          className="border-b border-[var(--border-subtle)] hover:bg-[var(--bg-card-hover)] transition-colors"
+                          onClick={() => router.push(`${lp}/runs/${entry.run_hash}`)}
+                          className="border-b border-[var(--border-subtle)] hover:bg-[var(--bg-card-hover)] transition-colors cursor-pointer"
                         >
-                          <td className="py-2.5 px-3 font-medium text-[var(--accent-gold)]">#{entry.rank}</td>
-                          <td className="py-2.5 px-3 text-[var(--text-primary)]">{entry.username || "Anonymous"}</td>
-                          <td className="py-2.5 px-3" style={{ color: charColor }}>{charName}</td>
-                          <td className="py-2.5 px-3 text-[var(--text-secondary)]">A{entry.ascension}</td>
-                          <td className="py-2.5 px-3 text-[var(--text-secondary)]">{formatTime(entry.run_time)}</td>
-                          <td className="py-2.5 px-3 text-[var(--text-secondary)]">{entry.floors_reached}</td>
-                          <td className="py-2.5 px-3">
+                          <td className="py-2.5 px-2 sm:px-3 font-medium text-[var(--accent-gold)]">#{entry.rank}</td>
+                          <td className="hidden sm:table-cell py-2.5 px-3 text-[var(--text-primary)] truncate max-w-[10rem]">{entry.username || "Anonymous"}</td>
+                          <td className="py-2.5 px-2 sm:px-3" style={{ color: charColor }}>
+                            <span className="sm:hidden">{charName.slice(0, 3)}</span>
+                            <span className="hidden sm:inline">{charName}</span>
+                          </td>
+                          <td className="py-2.5 px-2 sm:px-3 text-[var(--text-secondary)]">A{entry.ascension}</td>
+                          <td className="py-2.5 px-2 sm:px-3 text-[var(--text-secondary)] whitespace-nowrap">{formatTime(entry.run_time)}</td>
+                          <td className="hidden sm:table-cell py-2.5 px-3 text-[var(--text-secondary)]">{entry.floors_reached}</td>
+                          <td className="py-2.5 px-2 sm:px-3">
                             <Link
                               href={`${lp}/runs/${entry.run_hash}`}
+                              onClick={(e) => e.stopPropagation()}
                               className="text-[var(--accent-gold)] hover:underline text-xs"
                               title="View run"
+                              aria-label="View run details"
                             >
                               &#x2197;
                             </Link>
@@ -271,12 +280,12 @@ export default function LeaderboardBrowseClient() {
       {/* Browse Runs tab content */}
       {tab === "browse" && (
         <>
-          {/* Filter bar */}
-          <div className="flex flex-wrap gap-2 mb-4">
+          {/* Filter bar — 2-col grid on mobile, inline on sm+ */}
+          <div className="grid grid-cols-2 gap-2 mb-4 sm:flex sm:flex-wrap">
             <select
               value={browseChar}
               onChange={(e) => setBrowseChar(e.target.value)}
-              className="text-sm px-3 py-1.5 rounded-lg bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[var(--text-primary)] focus:outline-none focus:border-[var(--accent-gold)]"
+              className="text-sm px-3 py-1.5 rounded-lg bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[var(--text-primary)] focus:outline-none focus:border-[var(--accent-gold)] w-full sm:w-auto"
             >
               <option value="">All Characters</option>
               <option value="IRONCLAD">Ironclad</option>
@@ -289,7 +298,7 @@ export default function LeaderboardBrowseClient() {
             <select
               value={browseWin}
               onChange={(e) => setBrowseWin(e.target.value)}
-              className="text-sm px-3 py-1.5 rounded-lg bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[var(--text-primary)] focus:outline-none focus:border-[var(--accent-gold)]"
+              className="text-sm px-3 py-1.5 rounded-lg bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[var(--text-primary)] focus:outline-none focus:border-[var(--accent-gold)] w-full sm:w-auto"
             >
               <option value="">All Runs</option>
               <option value="true">Wins</option>
@@ -300,23 +309,23 @@ export default function LeaderboardBrowseClient() {
               type="text"
               value={browseUser}
               onChange={(e) => setBrowseUser(e.target.value)}
-              placeholder="Search username..."
-              className="text-sm px-3 py-1.5 rounded-lg bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[var(--text-primary)] focus:outline-none focus:border-[var(--accent-gold)] w-44"
+              placeholder="Username..."
+              className="text-sm px-3 py-1.5 rounded-lg bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[var(--text-primary)] focus:outline-none focus:border-[var(--accent-gold)] w-full sm:w-44"
             />
 
             <input
               type="text"
               value={browseSeed}
               onChange={(e) => setBrowseSeed(e.target.value)}
-              placeholder="Search seed..."
-              className="text-sm px-3 py-1.5 rounded-lg bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[var(--text-primary)] focus:outline-none focus:border-[var(--accent-gold)] w-36"
+              placeholder="Seed..."
+              className="text-sm px-3 py-1.5 rounded-lg bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[var(--text-primary)] focus:outline-none focus:border-[var(--accent-gold)] w-full sm:w-36"
             />
 
             {versions.length > 0 && (
               <select
                 value={browseBuildId}
                 onChange={(e) => setBrowseBuildId(e.target.value)}
-                className="text-sm px-3 py-1.5 rounded-lg bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[var(--text-primary)] focus:outline-none focus:border-[var(--accent-gold)]"
+                className="text-sm px-3 py-1.5 rounded-lg bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[var(--text-primary)] focus:outline-none focus:border-[var(--accent-gold)] w-full sm:w-auto"
               >
                 <option value="">All Versions</option>
                 {versions.map((v) => (
@@ -328,12 +337,12 @@ export default function LeaderboardBrowseClient() {
             <select
               value={browseSort}
               onChange={(e) => setBrowseSort(e.target.value)}
-              className="text-sm px-3 py-1.5 rounded-lg bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[var(--text-primary)] focus:outline-none focus:border-[var(--accent-gold)]"
+              className="text-sm px-3 py-1.5 rounded-lg bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[var(--text-primary)] focus:outline-none focus:border-[var(--accent-gold)] w-full sm:w-auto"
             >
               <option value="date">Newest</option>
               <option value="time_asc">Fastest</option>
               <option value="time_desc">Slowest</option>
-              <option value="ascension_desc">Highest Ascension</option>
+              <option value="ascension_desc">Highest Asc</option>
             </select>
           </div>
 
@@ -349,28 +358,28 @@ export default function LeaderboardBrowseClient() {
                   <Link
                     key={r.run_hash}
                     href={`${lp}/runs/${r.run_hash}`}
-                    className="flex items-center justify-between bg-[var(--bg-card)] rounded-lg border border-[var(--border-subtle)] px-4 py-3 hover:bg-[var(--bg-card-hover)] transition-colors"
+                    className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-3 bg-[var(--bg-card)] rounded-lg border border-[var(--border-subtle)] px-3 sm:px-4 py-3 hover:bg-[var(--bg-card-hover)] transition-colors"
                   >
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-2 sm:gap-3 min-w-0">
                       <span
-                        className={`text-sm font-medium ${
+                        className={`text-sm font-medium shrink-0 ${
                           r.win ? "text-[var(--color-silent)]" : "text-[var(--color-ironclad)]"
                         }`}
                       >
                         {r.win ? "W" : r.was_abandoned ? "A" : "L"}
                       </span>
-                      <span className="text-sm text-[var(--text-primary)]">
+                      <span className="text-sm text-[var(--text-primary)] truncate">
                         {displayName(`CHARACTER.${r.character}`)}
                       </span>
-                      <span className="text-xs text-[var(--text-muted)]">A{r.ascension}</span>
+                      <span className="text-xs text-[var(--text-muted)] shrink-0">A{r.ascension}</span>
                       {r.username && (
-                        <span className="text-xs text-[var(--accent-gold)]">{r.username}</span>
+                        <span className="text-xs text-[var(--accent-gold)] truncate">{r.username}</span>
                       )}
                     </div>
-                    <div className="flex items-center gap-4 text-xs text-[var(--text-muted)]">
-                      <span>{r.deck_size} cards</span>
-                      <span>{r.relic_count} relics</span>
-                      <span>{r.floors_reached} floors</span>
+                    <div className="flex items-center gap-3 sm:gap-4 text-xs text-[var(--text-muted)] shrink-0">
+                      <span className="hidden sm:inline">{r.deck_size} cards</span>
+                      <span className="hidden sm:inline">{r.relic_count} relics</span>
+                      <span>{r.floors_reached}f</span>
                       <span>{formatTimeShort(r.run_time)}</span>
                     </div>
                   </Link>
