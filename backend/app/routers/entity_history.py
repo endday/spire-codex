@@ -83,4 +83,7 @@ def get_entity_history(entity_type: str, entity_id: str):
                     )
                     break
 
+    # Newest first so the most recent change is at the top of the rail
+    # without making users scroll past historical churn.
+    history.reverse()
     return history
