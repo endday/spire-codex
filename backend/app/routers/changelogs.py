@@ -1,6 +1,7 @@
 """Changelog API endpoints."""
 
 import json
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
 from fastapi import APIRouter, HTTPException, Request
@@ -51,18 +52,33 @@ def recent_additions(
     entity_type: str | None = None,
     limit: int = 12,
     max_versions: int = 5,
+    max_age_days: int = 7,
 ):
     """Return the most recent entity additions, scanning newest changelogs first.
 
     - entity_type: optional filter (e.g. "cards", "relics") — if omitted, returns a
       dict keyed by entity type.
     - limit: max items to return per entity type.
-    - max_versions: stop scanning after this many changelogs.
+    - max_versions: stop scanning after this many changelogs (safety cap).
+    - max_age_days: only surface items from changelogs dated within this many
+      days from today (default 7). Pass 0 to disable the time filter.
 
     Each item is enriched with `version`, `version_tag`, and `version_date` so the
     UI can render a "Added in vX.Y.Z" badge.
     """
     logs = _load_changelogs()[:max_versions]
+    if max_age_days > 0:
+        cutoff = date.today() - timedelta(days=max_age_days)
+
+        def _within_window(log: dict) -> bool:
+            raw = log.get("date") or ""
+            try:
+                return datetime.fromisoformat(raw).date() >= cutoff
+            except ValueError:
+                # Missing / malformed date — include rather than silently drop it.
+                return True
+
+        logs = [log for log in logs if _within_window(log)]
 
     def _collect(target_type: str) -> list[dict]:
         items: list[dict] = []
