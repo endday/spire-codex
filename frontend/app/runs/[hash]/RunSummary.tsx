@@ -238,14 +238,14 @@ export default function RunSummary({ run, player, cardData, relicData, potionDat
         {(run.ascension ?? 0) > 0 && (
           <IconStat icon={`${API}/static/images/ui/top_bar/top_bar_ascension.webp`} alt="Ascension" value={`A${run.ascension}`} color="var(--accent-gold)" />
         )}
-        <div className="ml-auto text-right text-xs text-[var(--text-muted)] leading-tight">
-          {run.start_time && <div>{formatDate(run.start_time)}</div>}
+        <div className="w-full sm:w-auto sm:ml-auto text-left sm:text-right text-xs text-[var(--text-muted)] leading-tight">
+          {run.start_time && <div className="truncate">{formatDate(run.start_time)}</div>}
           {run.seed && (
-            <div>
+            <div className="truncate">
               Seed: <span className="font-mono">{run.seed}</span>
             </div>
           )}
-          <div>
+          <div className="truncate">
             {run.game_mode ?? "Standard"}
             {run.build_id && <span className="ml-1">· {run.build_id}</span>}
           </div>
