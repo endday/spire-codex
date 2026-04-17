@@ -77,6 +77,13 @@ CATEGORIES: dict[str, tuple[str, str, bool, list[str] | None]] = {
     "ui-misc": ("Misc UI", "ui/misc", False, None),
 }
 
+# Subdirectories to skip when scanning a category recursively. Keeps the
+# "Idle Animations" gallery from picking up the sibling `monsters_attack`
+# folder, which has its own dedicated "Attack Animations" category.
+EXCLUDED_SUBDIRS: dict[str, tuple[str, ...]] = {
+    "ui-animations": ("monsters_attack",),
+}
+
 
 def _get_images_for_category(category_id: str) -> list[dict[str, str]]:
     """Return list of image dicts for a category (all files on disk)."""
@@ -93,8 +100,12 @@ def _get_images_for_category(category_id: str) -> list[dict[str, str]]:
         # Only specific files from the directory
         png_files = [dir_path / f for f in explicit_files if (dir_path / f).exists()]
     elif recursive:
+        excluded = EXCLUDED_SUBDIRS.get(category_id, ())
         png_files = sorted(
-            [f for ext in ("*.png", "*.gif", "*.webp") for f in dir_path.rglob(ext)]
+            f
+            for ext in ("*.png", "*.gif", "*.webp")
+            for f in dir_path.rglob(ext)
+            if not any(part in excluded for part in f.relative_to(dir_path).parts)
         )
     else:
         png_files = sorted(
