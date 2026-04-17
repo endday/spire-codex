@@ -3,8 +3,12 @@
  * Renders skeletons via spine-webgl in a headless browser — no canvas clip
  * path artifacts, no triangle seams.
  *
- * Usage: node render_webgl.mjs <skel_dir> <output_path> [size]
+ * Usage: node render_webgl.mjs <skel_dir> <output_path> [size] [--skin=name]
  * Example: node render_webgl.mjs ../../extraction/raw/animations/backgrounds/neow_room ../../backend/static/images/misc/neow.png 2048
+ *
+ * --skin=name combines the named skin with `default` — required for skeletons
+ * whose default skin only carries shadow/effect attachments and where the
+ * actual visible body lives in a variant skin (e.g. scroll_of_biting / skin1).
  */
 import { chromium } from "playwright";
 import { createCanvas } from "canvas";
@@ -28,9 +32,12 @@ async function main() {
   const onlySlots = onlySlotsArg ? onlySlotsArg.split("=")[1] : null;
   // Optional: --white to convert output to white silhouette
   const whiteMode = process.argv.includes("--white");
+  // Optional: --skin=name to combine the named skin with `default`
+  const skinArg = process.argv.find(a => a.startsWith("--skin="));
+  const skinName = skinArg ? skinArg.split("=")[1] : null;
 
   if (!skelDir || !fs.existsSync(skelDir)) {
-    console.error("Usage: node render_webgl.mjs <skel_dir> <output_path> [size] [--only-slots=pattern] [--white]");
+    console.error("Usage: node render_webgl.mjs <skel_dir> <output_path> [size] [--only-slots=pattern] [--white] [--skin=name]");
     process.exit(1);
   }
 
@@ -77,7 +84,7 @@ async function main() {
   const spineCoreCode = fs.readFileSync(spineCorePath, "utf-8");
 
   const result = await page.evaluate(async (params) => {
-    const { skelB64, atlasB64, textureData, outputSize, idleNames, shadowNames, hiddenSlots, onlySlots, whiteMode, spineCoreCode } = params;
+    const { skelB64, atlasB64, textureData, outputSize, idleNames, shadowNames, hiddenSlots, onlySlots, whiteMode, skinName, spineCoreCode } = params;
 
     // Load spine-webgl — IIFE uses `var spine = (...)()`, make it global
     eval(spineCoreCode.replace(/^"use strict";\s*var spine\s*=/, "window.spine ="));
@@ -136,7 +143,14 @@ async function main() {
 
     const skeleton = new spine.Skeleton(skelData);
     const defaultSkin = skelData.findSkin("default");
-    if (defaultSkin) {
+    const variantSkin = skinName ? skelData.findSkin(skinName) : null;
+    if (variantSkin) {
+      const combined = new spine.Skin("combined");
+      if (defaultSkin) combined.addSkin(defaultSkin);
+      combined.addSkin(variantSkin);
+      skeleton.setSkin(combined);
+      skeleton.setSlotsToSetupPose();
+    } else if (defaultSkin) {
       skeleton.setSkin(defaultSkin);
       skeleton.setSlotsToSetupPose();
     }
@@ -283,6 +297,7 @@ async function main() {
     shadowNames: SHADOW_NAMES,
     hiddenSlots: HIDDEN_SLOTS,
     onlySlots: onlySlots || null,
+    skinName: skinName || null,
     whiteMode: whiteMode || false,
     spineCoreCode: spineCoreCode,
   });
