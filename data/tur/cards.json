@@ -1135,7 +1135,7 @@
     "image_url": "/static/images/cards/footwork.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "3 [gold]Beceriklilik[/gold] elde et.",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 125
@@ -1767,7 +1767,7 @@
     "image_url": "/static/images/cards/bubble_bubble.webp",
     "beta_image_url": "/static/images/cards/beta/bubble_bubble.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Eğer düşman [gold]Zehir[/gold]'den etkilenmişse, 12 [gold]Zehir[/gold] uygula.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 101
@@ -2091,7 +2091,7 @@
     "image_url": "/static/images/cards/scourge.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "13 [gold]Kader[/gold] uygula.\n2 kart çek.",
+    "upgrade_description": "16 [gold]Kader[/gold] uygula.\n2 kart çek.",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 328
@@ -2259,7 +2259,7 @@
     "image_url": "/static/images/cards/feeding_frenzy.webp",
     "beta_image_url": "/static/images/cards/beta/feeding_frenzy.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Bu tur için 7 [gold]Kuvvet[/gold] elde et.",
     "type_key": "Skill",
     "rarity_key": "Event",
     "compendium_order": 532
@@ -3634,7 +3634,7 @@
     "image_url": "/static/images/cards/brand.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "1 CP kaybet.\n1 kart [gold]Tüket[/gold].\n2 [gold]Kuvvet[/gold] elde et.",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 11
@@ -4926,7 +4926,7 @@
     "image_url": "/static/images/cards/neutralize.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "4 hasar ver.\n1 [gold]Zayıf[/gold] uygula.",
+    "upgrade_description": "4 hasar ver.\n2 [gold]Zayıf[/gold] uygula.",
     "type_key": "Attack",
     "rarity_key": "Basic",
     "compendium_order": 139
@@ -6216,6 +6216,52 @@
     "compendium_order": 489
   },
   {
+    "id": "GRAPPLE",
+    "name": "Grapple",
+    "description": "",
+    "description_raw": "",
+    "cost": 1,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "Saldırı",
+    "rarity": "Az Yaygın",
+    "target": "AnyEnemy",
+    "color": "unknown",
+    "damage": 7,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": [
+      {
+        "power": "Grapple",
+        "amount": 5,
+        "power_key": "Grapple"
+      }
+    ],
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": null,
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Damage": 7,
+      "GrapplePower": 5,
+      "Grapple": 5
+    },
+    "upgrade": {
+      "damage": "+2",
+      "grapplepower": "+2"
+    },
+    "image_url": "/static/images/cards/grapple.webp",
+    "beta_image_url": null,
+    "type_variants": null,
+    "upgrade_description": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
+    "compendium_order": 576
+  },
+  {
     "id": "BYRD_SWOOP",
     "name": "Guş Dalışı",
     "description": "14 hasar ver.",
@@ -6718,7 +6764,7 @@
     "image_url": "/static/images/cards/go_for_the_eyes.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "4 hasar ver.\nEğer düşman saldırmayı amaçlıyorsa 1 [gold]Zayıf[/gold] uygula.",
+    "upgrade_description": "4 hasar ver.\nEğer düşman saldırmayı amaçlıyorsa 2 [gold]Zayıf[/gold] uygula.",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 389
@@ -6764,7 +6810,7 @@
     "image_url": "/static/images/cards/bash.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "10 hasar ver.\n2 [gold]Savunmasız[/gold] uygula.",
+    "upgrade_description": "10 hasar ver.\n3 [gold]Savunmasız[/gold] uygula.",
     "type_key": "Attack",
     "rarity_key": "Basic",
     "compendium_order": 5
@@ -7852,7 +7898,7 @@
     "image_url": "/static/images/cards/prowess.webp",
     "beta_image_url": "/static/images/cards/beta/prowess.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "2 [gold]Kuvvet[/gold] elde et.\n2 [gold]Beceriklilik[/gold] elde et.",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 481
@@ -8215,7 +8261,7 @@
     "image_url": "/static/images/cards/beam_cell.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "4 hasar ver.\n1 [gold]Savunmasız[/gold] uygula.",
+    "upgrade_description": "4 hasar ver.\n2 [gold]Savunmasız[/gold] uygula.",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 355
@@ -9478,7 +9524,7 @@
     "image_url": "/static/images/cards/coordinate.webp",
     "beta_image_url": "/static/images/cards/beta/coordinate.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Başka bir oyuncuya bu tur için 8 [gold]Kuvvet[/gold] ver.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 448
@@ -9606,7 +9652,7 @@
     "image_url": "/static/images/cards/fear.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "8 hasar ver.\n1 [gold]Savunmasız[/gold] uygula.",
+    "upgrade_description": "8 hasar ver.\n2 [gold]Savunmasız[/gold] uygula.",
     "type_key": "Attack",
     "rarity_key": "Common",
     "keywords_key": [
@@ -10652,7 +10698,7 @@
     "image_url": "/static/images/cards/end_of_days.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "TÜM düşmanlara 37 [gold]Kader[/gold] uygula.\nCP'si kadar [gold]Kader[/gold]'e sahip düşmanları öldür.",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 290
@@ -10742,7 +10788,7 @@
     "image_url": "/static/images/cards/taunt.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "8 [gold]Blok[/gold] elde et.\n1 [gold]Savunmasız[/gold] uygula.",
+    "upgrade_description": "8 [gold]Blok[/gold] elde et.\n2 [gold]Savunmasız[/gold] uygula.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 75
@@ -11623,7 +11669,7 @@
     "image_url": "/static/images/cards/negative_pulse.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "6 [gold]Blok[/gold] elde et.\nTÜM düşmanlara 7 [gold]Kader[/gold] uygula.",
+    "upgrade_description": "6 [gold]Blok[/gold] elde et.\nTÜM düşmanlara 11 [gold]Kader[/gold] uygula.",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 310
@@ -11896,7 +11942,7 @@
       "heal": "+3"
     },
     "image_url": "/static/images/cards/not_yet.webp",
-    "beta_image_url": null,
+    "beta_image_url": "/static/images/cards/beta/not_yet.webp",
     "type_variants": null,
     "upgrade_description": null,
     "type_key": "Skill",
@@ -12712,7 +12758,7 @@
     "image_url": "/static/images/cards/haze.webp",
     "beta_image_url": "/static/images/cards/beta/haze.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "TÜM düşmanlara 6 [gold]Zehir[/gold] uygula.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "keywords_key": [
@@ -13902,7 +13948,7 @@
     "image_url": "/static/images/cards/fight_me.webp",
     "beta_image_url": "/static/images/cards/beta/fight_me.webp",
     "type_variants": null,
-    "upgrade_description": "İki kez 6 hasar ver.\n3 [gold]Kuvvet[/gold] elde et.\nDüşman 1 [gold]Kuvvet[/gold] elde eder.",
+    "upgrade_description": "İki kez 6 hasar ver.\n4 [gold]Kuvvet[/gold] elde et.\nDüşman 1 [gold]Kuvvet[/gold] elde eder.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 35
@@ -15630,7 +15676,7 @@
     "image_url": "/static/images/cards/assassinate.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "13 hasar ver.\n1 [gold]Savunmasız[/gold] uygula.",
+    "upgrade_description": "13 hasar ver.\n2 [gold]Savunmasız[/gold] uygula.",
     "type_key": "Attack",
     "rarity_key": "Rare",
     "keywords_key": [
@@ -15876,7 +15922,7 @@
     "image_url": "/static/images/cards/sucker_punch.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "10 hasar ver.\n1 [gold]Zayıf[/gold] uygula.",
+    "upgrade_description": "10 hasar ver.\n2 [gold]Zayıf[/gold] uygula.",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 164
@@ -15961,7 +16007,7 @@
     "image_url": "/static/images/cards/null.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "13 hasar ver.\n2 [gold]Zayıf[/gold] uygula.\n1 [gold]Karanlık[/gold] [gold]Oluştur[/gold].",
+    "upgrade_description": "13 hasar ver.\n3 [gold]Zayıf[/gold] uygula.\n1 [gold]Karanlık[/gold] [gold]Oluştur[/gold].",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 407
@@ -16930,7 +16976,7 @@
     "image_url": "/static/images/cards/tremble.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "4 [gold]Savunmasız[/gold] uygula.",
     "type_key": "Skill",
     "rarity_key": "Common",
     "keywords_key": [
@@ -17336,7 +17382,7 @@
     "image_url": "/static/images/cards/oblivion.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Bu tur her kart oynadığında düşmana 4 [gold]Kader[/gold] uygula.",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 313
@@ -17856,7 +17902,7 @@
     "image_url": "/static/images/cards/rupture.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Turunda her CP kaybettiğinde 2 [gold]Kuvvet[/gold] elde et.",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 63
@@ -19440,7 +19486,7 @@
     "image_url": "/static/images/cards/break.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "30 hasar ver.\n5 [gold]Savunmasız[/gold] uygula.",
+    "upgrade_description": "30 hasar ver.\n7 [gold]Savunmasız[/gold] uygula.",
     "type_key": "Attack",
     "rarity_key": "Ancient",
     "compendium_order": 12
@@ -19530,7 +19576,7 @@
     "image_url": "/static/images/cards/snakebite.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "10 [gold]Zehir[/gold] uygula.",
     "type_key": "Skill",
     "rarity_key": "Common",
     "keywords_key": [
@@ -19812,7 +19858,7 @@
   {
     "id": "STACK",
     "name": "Yığın",
-    "description": "[gold]Atık Deste[/gold]'ndeki kart sayısı kadar [gold]Blok[/gold] kazan.  Blok daha ekle|}",
+    "description": "[gold]Atık Deste[/gold]'ndeki kart sayısı kadar [gold]Blok[/gold] kazan.",
     "description_raw": "[gold]Atık Deste[/gold]'ndeki kart sayısı kadar [gold]Blok[/gold] kazan. {IfUpgraded:show: +{CalculationBase} Blok daha ekle|} {InCombat:\n({CalculatedBlock:diff()} [gold]Blok[/gold] elde et)|}",
     "cost": 1,
     "is_x_cost": null,
@@ -19842,7 +19888,7 @@
     "image_url": "/static/images/cards/stack.webp",
     "beta_image_url": "/static/images/cards/beta/stack.webp",
     "type_variants": null,
-    "upgrade_description": "[gold]Atık Deste[/gold]'ndeki kart sayısı kadar [gold]Blok[/gold] kazan.  +[CalculationBase Blok daha ekle|]",
+    "upgrade_description": "[gold]Atık Deste[/gold]'ndeki kart sayısı kadar [gold]Blok[/gold] kazan.  +3 Blok daha ekle",
     "type_key": "Skill",
     "rarity_key": "Event",
     "compendium_order": 544
@@ -19934,7 +19980,7 @@
     "image_url": "/static/images/cards/suppress.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "17 hasar ver.\n3 [gold]Zayıf[/gold] uygula.",
+    "upgrade_description": "17 hasar ver.\n5 [gold]Zayıf[/gold] uygula.",
     "type_key": "Attack",
     "rarity_key": "Ancient",
     "keywords_key": [
@@ -20148,7 +20194,7 @@
     "image_url": "/static/images/cards/poisoned_stab.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "8 hasar ver.\n3 [gold]Zehir[/gold] uygula.",
+    "upgrade_description": "8 hasar ver.\n4 [gold]Zehir[/gold] uygula.",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 146
@@ -20400,7 +20446,7 @@
     "image_url": "/static/images/cards/high_five.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "[gold]Osti[/gold] 13 hasar verir\nve TÜM düşmanlara 2 [gold]Savunmasız[/gold] \nuygular.",
+    "upgrade_description": "[gold]Osti[/gold] 13 hasar verir\nve TÜM düşmanlara 3 [gold]Savunmasız[/gold] \nuygular.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 303
@@ -20890,7 +20936,7 @@
     "image_url": "/static/images/cards/leg_sweep.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "2 [gold]Zayıf[/gold] uygula.\n14 [gold]Blok[/gold] elde et.",
+    "upgrade_description": "3 [gold]Zayıf[/gold] uygula.\n14 [gold]Blok[/gold] elde et.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 133
@@ -20898,7 +20944,7 @@
   {
     "id": "DUAL_WIELD",
     "name": "Çift El",
-    "description": "Bir Saldırı veya Güç kartı seç. Bu kartın  kopyasını|kopyasını} [gold]El[/gold]'ine ekle.",
+    "description": "Bir Saldırı veya Güç kartı seç. Bu kartın kopyasını [gold]El[/gold]'ine ekle.",
     "description_raw": "Bir Saldırı veya Güç kartı seç. Bu kartın {IfUpgraded:show:{Cards} kopyasını|kopyasını} [gold]El[/gold]'ine ekle.",
     "cost": 1,
     "is_x_cost": null,
@@ -20927,7 +20973,7 @@
     "image_url": "/static/images/cards/dual_wield.webp",
     "beta_image_url": "/static/images/cards/beta/dual_wield.webp",
     "type_variants": null,
-    "upgrade_description": "Bir Saldırı veya Güç kartı seç. Bu kartın [Cards kopyasını|kopyasını] [gold]El[/gold]'ine ekle.",
+    "upgrade_description": "Bir Saldırı veya Güç kartı seç. Bu kartın 2 kopyasını [gold]El[/gold]'ine ekle.",
     "type_key": "Skill",
     "rarity_key": "Event",
     "compendium_order": 528
@@ -21008,7 +21054,7 @@
     "image_url": "/static/images/cards/squash.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "12 hasar ver.\n2 [gold]Savunmasız[/gold] uygula.",
+    "upgrade_description": "12 hasar ver.\n3 [gold]Savunmasız[/gold] uygula.",
     "type_key": "Attack",
     "rarity_key": "Event",
     "compendium_order": 543
@@ -21534,7 +21580,7 @@
     "image_url": "/static/images/cards/deathbringer.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "TÜM düşmanlara 26 [gold]Kader[/gold] ve 1 [gold]Zayıf[/gold] uygula.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 276
@@ -21692,7 +21738,7 @@
     "image_url": "/static/images/cards/deadly_poison.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "7 [gold]Zehir[/gold] uygula.",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 110
@@ -21873,7 +21919,7 @@
     "image_url": "/static/images/cards/setup_strike.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "9 hasar ver.\nBu tur 2 [gold]Kuvvet[/gold] elde et.",
+    "upgrade_description": "9 hasar ver.\nBu tur 3 [gold]Kuvvet[/gold] elde et.",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 65
@@ -21959,7 +22005,7 @@
     "image_url": "/static/images/cards/anticipate.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Bu tur 3 [gold]Beceriklilik[/gold] elde et.",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 93
@@ -22688,7 +22734,7 @@
     "image_url": "/static/images/cards/bulk_up.webp",
     "beta_image_url": "/static/images/cards/beta/bulk_up.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "1 Küre Yuvası kaybet.\n3 [gold]Kuvvet[/gold] elde et.\n3 [gold]Beceriklilik[/gold] elde et.",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 360

@@ -170,6 +170,16 @@
     "image_url": "/static/images/powers/black_hole_power.webp"
   },
   {
+    "id": "BLADE_OF_INK",
+    "name": "BladeOfInkPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/blade_of_ink_power.webp"
+  },
+  {
     "id": "BLOCK_NEXT_TURN",
     "name": "次ターンブロック",
     "description": "次のターン開始時、[blue]4[/blue][gold]ブロック[/gold]を得る。",
@@ -610,6 +620,16 @@
     "image_url": "/static/images/powers/doom_power.webp"
   },
   {
+    "id": "DOOR_REVIVAL",
+    "name": "DoorRevivalPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": null
+  },
+  {
     "id": "DOUBLE_DAMAGE",
     "name": "ダメージ2倍",
     "description": "このターン、アタックは2倍のダメージを与える。",
@@ -948,6 +968,16 @@
     "stack_type": "Counter",
     "allow_negative": null,
     "image_url": "/static/images/powers/gigantification_power.webp"
+  },
+  {
+    "id": "GRAPPLE",
+    "name": "GrapplePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/grapple_power.webp"
   },
   {
     "id": "GRASP",

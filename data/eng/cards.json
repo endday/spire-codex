@@ -609,7 +609,7 @@
     "image_url": "/static/images/cards/anticipate.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Gain 3 [gold]Dexterity[/gold] this turn.",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 91
@@ -915,7 +915,7 @@
     "image_url": "/static/images/cards/assassinate.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Deal 13 damage.\nApply 1 [gold]Vulnerable[/gold].",
+    "upgrade_description": "Deal 13 damage.\nApply 2 [gold]Vulnerable[/gold].",
     "type_key": "Attack",
     "rarity_key": "Rare",
     "keywords_key": [
@@ -1350,7 +1350,7 @@
     "image_url": "/static/images/cards/bash.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Deal 10 damage.\nApply 2 [gold]Vulnerable[/gold].",
+    "upgrade_description": "Deal 10 damage.\nApply 3 [gold]Vulnerable[/gold].",
     "type_key": "Attack",
     "rarity_key": "Basic",
     "compendium_order": 0
@@ -1468,7 +1468,7 @@
     "image_url": "/static/images/cards/beam_cell.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Deal 4 damage.\nApply 1 [gold]Vulnerable[/gold].",
+    "upgrade_description": "Deal 4 damage.\nApply 2 [gold]Vulnerable[/gold].",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 357
@@ -2439,7 +2439,7 @@
     "image_url": "/static/images/cards/brand.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Lose 1 HP.\n[gold]Exhaust[/gold] 1 card.\nGain 2 [gold]Strength[/gold].",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 61
@@ -2485,7 +2485,7 @@
     "image_url": "/static/images/cards/break.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Deal 30 damage.\nApply 5 [gold]Vulnerable[/gold].",
+    "upgrade_description": "Deal 30 damage.\nApply 7 [gold]Vulnerable[/gold].",
     "type_key": "Attack",
     "rarity_key": "Ancient",
     "compendium_order": 85
@@ -2607,7 +2607,7 @@
     "image_url": "/static/images/cards/bubble_bubble.webp",
     "beta_image_url": "/static/images/cards/beta/bubble_bubble.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "If the enemy has [gold]Poison[/gold], apply 12 [gold]Poison[/gold].",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 116
@@ -2704,7 +2704,7 @@
     "image_url": "/static/images/cards/bulk_up.webp",
     "beta_image_url": "/static/images/cards/beta/bulk_up.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Lose 1 Orb Slot.\nGain 3 [gold]Strength[/gold].\nGain 3 [gold]Dexterity[/gold].",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 376
@@ -4462,7 +4462,7 @@
     "image_url": "/static/images/cards/coordinate.webp",
     "beta_image_url": "/static/images/cards/beta/coordinate.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Give another player 8 [gold]Strength[/gold] this turn.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 442
@@ -5254,7 +5254,7 @@
     "image_url": "/static/images/cards/deadly_poison.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Apply 7 [gold]Poison[/gold].",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 97
@@ -5383,7 +5383,7 @@
     "image_url": "/static/images/cards/deathbringer.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Apply 26 [gold]Doom[/gold] and 1 [gold]Weak[/gold] to ALL enemies.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 295
@@ -6768,7 +6768,7 @@
   {
     "id": "DUAL_WIELD",
     "name": "Dual Wield",
-    "description": "Choose an Attack or Power card. Add  copies|a copy} of that card into your [gold]Hand[/gold].",
+    "description": "Choose an Attack or Power card. Add a copy of that card into your [gold]Hand[/gold].",
     "description_raw": "Choose an Attack or Power card. Add {IfUpgraded:show:{Cards} copies|a copy} of that card into your [gold]Hand[/gold].",
     "cost": 1,
     "is_x_cost": null,
@@ -6797,7 +6797,7 @@
     "image_url": "/static/images/cards/dual_wield.webp",
     "beta_image_url": "/static/images/cards/beta/dual_wield.webp",
     "type_variants": null,
-    "upgrade_description": "Choose an Attack or Power card. Add [Cards copies|a copy] of that card into your [gold]Hand[/gold].",
+    "upgrade_description": "Choose an Attack or Power card. Add 2 copies of that card into your [gold]Hand[/gold].",
     "type_key": "Skill",
     "rarity_key": "Event",
     "compendium_order": 533
@@ -7037,7 +7037,7 @@
     "image_url": "/static/images/cards/end_of_days.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Apply 37 [gold]Doom[/gold] to ALL enemies.\nKill enemies with at least as much [gold]Doom[/gold] as HP.",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 328
@@ -7888,7 +7888,7 @@
     "image_url": "/static/images/cards/fear.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Deal 8 damage.\nApply 1 [gold]Vulnerable[/gold].",
+    "upgrade_description": "Deal 8 damage.\nApply 2 [gold]Vulnerable[/gold].",
     "type_key": "Attack",
     "rarity_key": "Common",
     "keywords_key": [
@@ -7979,7 +7979,7 @@
     "image_url": "/static/images/cards/feeding_frenzy.webp",
     "beta_image_url": "/static/images/cards/beta/feeding_frenzy.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Gain 7 [gold]Strength[/gold] this turn.",
     "type_key": "Skill",
     "rarity_key": "Event",
     "compendium_order": 537
@@ -8191,7 +8191,7 @@
     "image_url": "/static/images/cards/fight_me.webp",
     "beta_image_url": "/static/images/cards/beta/fight_me.webp",
     "type_variants": null,
-    "upgrade_description": "Deal 6 damage twice.\nGain 3 [gold]Strength[/gold].\nThe enemy gains 1 [gold]Strength[/gold].",
+    "upgrade_description": "Deal 6 damage twice.\nGain 4 [gold]Strength[/gold].\nThe enemy gains 1 [gold]Strength[/gold].",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 36
@@ -8790,7 +8790,7 @@
     "image_url": "/static/images/cards/footwork.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Gain 3 [gold]Dexterity[/gold].",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 125
@@ -9670,7 +9670,7 @@
     "image_url": "/static/images/cards/go_for_the_eyes.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Deal 4 damage.\nIf the enemy intends to attack, apply 1 [gold]Weak[/gold].",
+    "upgrade_description": "Deal 4 damage.\nIf the enemy intends to attack, apply 2 [gold]Weak[/gold].",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 365
@@ -9750,6 +9750,52 @@
     "type_key": "Attack",
     "rarity_key": "Rare",
     "compendium_order": 159
+  },
+  {
+    "id": "GRAPPLE",
+    "name": "Grapple",
+    "description": "",
+    "description_raw": "",
+    "cost": 1,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "Attack",
+    "rarity": "Uncommon",
+    "target": "AnyEnemy",
+    "color": "unknown",
+    "damage": 7,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": [
+      {
+        "power": "Grapple",
+        "amount": 5,
+        "power_key": "Grapple"
+      }
+    ],
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": null,
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Damage": 7,
+      "GrapplePower": 5,
+      "Grapple": 5
+    },
+    "upgrade": {
+      "damage": "+2",
+      "grapplepower": "+2"
+    },
+    "image_url": "/static/images/cards/grapple.webp",
+    "beta_image_url": null,
+    "type_variants": null,
+    "upgrade_description": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
+    "compendium_order": 576
   },
   {
     "id": "GRAVE_WARDEN",
@@ -10301,7 +10347,7 @@
     "image_url": "/static/images/cards/haze.webp",
     "beta_image_url": "/static/images/cards/beta/haze.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Apply 6 [gold]Poison[/gold] to ALL enemies.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "keywords_key": [
@@ -10774,7 +10820,7 @@
     "image_url": "/static/images/cards/high_five.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "[gold]Osty[/gold] deals 13 damage\nand applies 2 [gold]Vulnerable[/gold]\nto ALL enemies.",
+    "upgrade_description": "[gold]Osty[/gold] deals 13 damage\nand applies 3 [gold]Vulnerable[/gold]\nto ALL enemies.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 306
@@ -12203,7 +12249,7 @@
     "image_url": "/static/images/cards/leg_sweep.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Apply 2 [gold]Weak[/gold].\nGain 14 [gold]Block[/gold].",
+    "upgrade_description": "Apply 3 [gold]Weak[/gold].\nGain 14 [gold]Block[/gold].",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 130
@@ -13860,7 +13906,7 @@
     "image_url": "/static/images/cards/negative_pulse.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Gain 6 [gold]Block[/gold].\nApply 7 [gold]Doom[/gold] to ALL enemies.",
+    "upgrade_description": "Gain 6 [gold]Block[/gold].\nApply 11 [gold]Doom[/gold] to ALL enemies.",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 277
@@ -13996,7 +14042,7 @@
     "image_url": "/static/images/cards/neutralize.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Deal 4 damage.\nApply 1 [gold]Weak[/gold].",
+    "upgrade_description": "Deal 4 damage.\nApply 2 [gold]Weak[/gold].",
     "type_key": "Attack",
     "rarity_key": "Basic",
     "compendium_order": 88
@@ -14233,7 +14279,7 @@
       "heal": "+3"
     },
     "image_url": "/static/images/cards/not_yet.webp",
-    "beta_image_url": null,
+    "beta_image_url": "/static/images/cards/beta/not_yet.webp",
     "type_variants": null,
     "upgrade_description": "Heal 13 HP.",
     "type_key": "Skill",
@@ -14321,7 +14367,7 @@
     "image_url": "/static/images/cards/null.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Deal 13 damage.\nApply 2 [gold]Weak[/gold].\n[gold]Channel[/gold] 1 [gold]Dark[/gold].",
+    "upgrade_description": "Deal 13 damage.\nApply 3 [gold]Weak[/gold].\n[gold]Channel[/gold] 1 [gold]Dark[/gold].",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 393
@@ -14365,7 +14411,7 @@
     "image_url": "/static/images/cards/oblivion.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Whenever you play a card this turn, apply 4 [gold]Doom[/gold] to the enemy.",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 335
@@ -15370,7 +15416,7 @@
     "image_url": "/static/images/cards/poisoned_stab.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Deal 8 damage.\nApply 3 [gold]Poison[/gold].",
+    "upgrade_description": "Deal 8 damage.\nApply 4 [gold]Poison[/gold].",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 104
@@ -15935,7 +15981,7 @@
     "image_url": "/static/images/cards/prowess.webp",
     "beta_image_url": "/static/images/cards/beta/prowess.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Gain 2 [gold]Strength[/gold].\nGain 2 [gold]Dexterity[/gold].",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 464
@@ -17380,7 +17426,7 @@
     "image_url": "/static/images/cards/rupture.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Whenever you lose HP on your turn, gain 2 [gold]Strength[/gold].",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 48
@@ -17540,7 +17586,7 @@
     "image_url": "/static/images/cards/scourge.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Apply 13 [gold]Doom[/gold].\nDraw 2 cards.",
+    "upgrade_description": "Apply 16 [gold]Doom[/gold].\nDraw 2 cards.",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 282
@@ -18034,7 +18080,7 @@
     "image_url": "/static/images/cards/setup_strike.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Deal 9 damage.\nGain 2 [gold]Strength[/gold] this turn.",
+    "upgrade_description": "Deal 9 damage.\nGain 3 [gold]Strength[/gold] this turn.",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 16
@@ -18969,7 +19015,7 @@
     "image_url": "/static/images/cards/snakebite.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Apply 10 [gold]Poison[/gold].",
     "type_key": "Skill",
     "rarity_key": "Common",
     "keywords_key": [
@@ -19752,7 +19798,7 @@
     "image_url": "/static/images/cards/squash.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Deal 12 damage.\nApply 2 [gold]Vulnerable[/gold].",
+    "upgrade_description": "Deal 12 damage.\nApply 3 [gold]Vulnerable[/gold].",
     "type_key": "Attack",
     "rarity_key": "Event",
     "compendium_order": 545
@@ -19802,7 +19848,7 @@
   {
     "id": "STACK",
     "name": "Stack",
-    "description": "Gain [gold]Block[/gold] equal to the number of cards in your [gold]Discard Pile[/gold]|}.",
+    "description": "Gain [gold]Block[/gold] equal to the number of cards in your [gold]Discard Pile[/gold].",
     "description_raw": "Gain [gold]Block[/gold] equal to the number of cards in your [gold]Discard Pile[/gold]{IfUpgraded:show: +{CalculationBase}|}.{InCombat:\n(Gain {CalculatedBlock:diff()} [gold]Block[/gold])|}",
     "cost": 1,
     "is_x_cost": null,
@@ -19832,7 +19878,7 @@
     "image_url": "/static/images/cards/stack.webp",
     "beta_image_url": "/static/images/cards/beta/stack.webp",
     "type_variants": null,
-    "upgrade_description": "Gain [gold]Block[/gold] equal to the number of cards in your [gold]Discard Pile[/gold] +[CalculationBase|].",
+    "upgrade_description": "Gain [gold]Block[/gold] equal to the number of cards in your [gold]Discard Pile[/gold] +3.",
     "type_key": "Skill",
     "rarity_key": "Event",
     "compendium_order": 546
@@ -20460,7 +20506,7 @@
     "image_url": "/static/images/cards/sucker_punch.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Deal 10 damage.\nApply 1 [gold]Weak[/gold].",
+    "upgrade_description": "Deal 10 damage.\nApply 2 [gold]Weak[/gold].",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 109
@@ -20666,7 +20712,7 @@
     "image_url": "/static/images/cards/suppress.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Deal 17 damage.\nApply 3 [gold]Weak[/gold].",
+    "upgrade_description": "Deal 17 damage.\nApply 5 [gold]Weak[/gold].",
     "type_key": "Attack",
     "rarity_key": "Ancient",
     "keywords_key": [
@@ -21154,7 +21200,7 @@
     "image_url": "/static/images/cards/taunt.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Gain 8 [gold]Block[/gold].\nApply 1 [gold]Vulnerable[/gold].",
+    "upgrade_description": "Gain 8 [gold]Block[/gold].\nApply 2 [gold]Vulnerable[/gold].",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 54
@@ -22066,7 +22112,7 @@
     "image_url": "/static/images/cards/tremble.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Apply 4 [gold]Vulnerable[/gold].",
     "type_key": "Skill",
     "rarity_key": "Common",
     "keywords_key": [

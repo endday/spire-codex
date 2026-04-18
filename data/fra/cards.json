@@ -592,7 +592,7 @@
   {
     "id": "DUAL_WIELD",
     "name": "Ambidextrie",
-    "description": "Choisissez une carte Attaque ou Pouvoir. Ajoutez  copies|une copie} de cette carte à votre [gold]Main[/gold].",
+    "description": "Choisissez une carte Attaque ou Pouvoir. Ajoutez une copie de cette carte à votre [gold]Main[/gold].",
     "description_raw": "Choisissez une carte Attaque ou Pouvoir. Ajoutez {IfUpgraded:show:{Cards} copies|une copie} de cette carte à votre [gold]Main[/gold].",
     "cost": 1,
     "is_x_cost": null,
@@ -621,7 +621,7 @@
     "image_url": "/static/images/cards/dual_wield.webp",
     "beta_image_url": "/static/images/cards/beta/dual_wield.webp",
     "type_variants": null,
-    "upgrade_description": "Choisissez une carte Attaque ou Pouvoir. Ajoutez [Cards copies|une copie] de cette carte à votre [gold]Main[/gold].",
+    "upgrade_description": "Choisissez une carte Attaque ou Pouvoir. Ajoutez 2 copies de cette carte à votre [gold]Main[/gold].",
     "type_key": "Skill",
     "rarity_key": "Event",
     "compendium_order": 528
@@ -807,7 +807,7 @@
     "image_url": "/static/images/cards/negative_pulse.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Gagnez 6 d'[gold]Armure[/gold].\nAppliquez 7 de [gold]Fatalité[/gold] sur TOUS les ennemis.",
+    "upgrade_description": "Gagnez 6 d'[gold]Armure[/gold].\nAppliquez 11 de [gold]Fatalité[/gold] sur TOUS les ennemis.",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 325
@@ -851,7 +851,7 @@
     "image_url": "/static/images/cards/anticipate.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Gagnez 3 de [gold]Dextérité[/gold] jusqu'à la fin du tour.",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 115
@@ -897,7 +897,7 @@
     "image_url": "/static/images/cards/squash.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 12 dégâts.\nAppliquez [gold]Vulnérable[/gold] (2).",
+    "upgrade_description": "Infligez 12 dégâts.\nAppliquez [gold]Vulnérable[/gold] (3).",
     "type_key": "Attack",
     "rarity_key": "Event",
     "compendium_order": 543
@@ -1441,7 +1441,7 @@
     "image_url": "/static/images/cards/assassinate.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 13 dégâts.\nAppliquez [gold]Vulnérable[/gold] (1).",
+    "upgrade_description": "Infligez 13 dégâts.\nAppliquez [gold]Vulnérable[/gold] (2).",
     "type_key": "Attack",
     "rarity_key": "Rare",
     "keywords_key": [
@@ -1788,7 +1788,7 @@
     "image_url": "/static/images/cards/leg_sweep.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Appliquez [gold]Affaibli[/gold] (2).\nGagnez 14 d'[gold]Armure[/gold].",
+    "upgrade_description": "Appliquez [gold]Affaibli[/gold] (3).\nGagnez 14 d'[gold]Armure[/gold].",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 145
@@ -2599,7 +2599,7 @@
     "image_url": "/static/images/cards/break.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 30 dégâts.\nAppliquez [gold]Vulnérable[/gold] (5).",
+    "upgrade_description": "Infligez 30 dégâts.\nAppliquez [gold]Vulnérable[/gold] (7).",
     "type_key": "Attack",
     "rarity_key": "Ancient",
     "compendium_order": 35
@@ -2645,7 +2645,7 @@
     "image_url": "/static/images/cards/haze.webp",
     "beta_image_url": "/static/images/cards/beta/haze.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Appliquez 6 de [gold]Poison[/gold] à TOUS les ennemis.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "keywords_key": [
@@ -4361,7 +4361,7 @@
     "image_url": "/static/images/cards/coordinate.webp",
     "beta_image_url": "/static/images/cards/beta/coordinate.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Donnez à un autre joueur 8 de [gold]Force[/gold] jusqu'à la fin du tour.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 467
@@ -4493,7 +4493,7 @@
     "image_url": "/static/images/cards/sucker_punch.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 10 dégâts.\nAppliquez [gold]Affaibli[/gold] (1).",
+    "upgrade_description": "Infligez 10 dégâts.\nAppliquez [gold]Affaibli[/gold] (2).",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 167
@@ -7943,7 +7943,7 @@
     "image_url": "/static/images/cards/end_of_days.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Appliquez 37 de [gold]Fatalité[/gold] à TOUS les ennemis.\nLes ennemis avec au moins autant de [gold]Fatalité[/gold] que de PV périssent.",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 268
@@ -9531,7 +9531,7 @@
     "image_url": "/static/images/cards/setup_strike.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 9 dégâts.\nGagnez 2 de [gold]Force[/gold] jusqu'à la fin du tour.",
+    "upgrade_description": "Infligez 9 dégâts.\nGagnez 3 de [gold]Force[/gold] jusqu'à la fin du tour.",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 70
@@ -10166,6 +10166,52 @@
     "compendium_order": 102
   },
   {
+    "id": "GRAPPLE",
+    "name": "Grapple",
+    "description": "",
+    "description_raw": "",
+    "cost": 1,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "Attaque",
+    "rarity": "Inhabituel",
+    "target": "AnyEnemy",
+    "color": "unknown",
+    "damage": 7,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": [
+      {
+        "power": "Grapple",
+        "amount": 5,
+        "power_key": "Grapple"
+      }
+    ],
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": null,
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Damage": 7,
+      "GrapplePower": 5,
+      "Grapple": 5
+    },
+    "upgrade": {
+      "damage": "+2",
+      "grapplepower": "+2"
+    },
+    "image_url": "/static/images/cards/grapple.webp",
+    "beta_image_url": null,
+    "type_variants": null,
+    "upgrade_description": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
+    "compendium_order": 576
+  },
+  {
     "id": "SCRAWL",
     "name": "Griffonage",
     "description": "Piochez des cartes jusqu'à remplir votre [gold]Main[/gold].",
@@ -10593,7 +10639,7 @@
     "image_url": "/static/images/cards/bash.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 10 dégâts.\nAppliquez [gold]Vulnérable[/gold] (2).",
+    "upgrade_description": "Infligez 10 dégâts.\nAppliquez [gold]Vulnérable[/gold] (3).",
     "type_key": "Attack",
     "rarity_key": "Basic",
     "compendium_order": 29
@@ -11574,7 +11620,7 @@
     "image_url": "/static/images/cards/tremble.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Appliquez [gold]Vulnérable[/gold] (4).",
     "type_key": "Skill",
     "rarity_key": "Common",
     "keywords_key": [
@@ -11896,7 +11942,7 @@
     "image_url": "/static/images/cards/footwork.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Gagnez 3 de [gold]Dextérité[/gold].",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 139
@@ -13486,7 +13532,7 @@
     "image_url": "/static/images/cards/brand.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Perdez 1 PV.\n[gold]Épuisez[/gold] 1 carte.\nGagnez 2 de [gold]Force[/gold].",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 2
@@ -14002,7 +14048,7 @@
     "image_url": "/static/images/cards/snakebite.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Appliquez 10 de [gold]Poison[/gold].",
     "type_key": "Skill",
     "rarity_key": "Common",
     "keywords_key": [
@@ -14321,7 +14367,7 @@
     "image_url": "/static/images/cards/neutralize.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 4 dégâts.\nAppliquez [gold]Affaibli[/gold] (1).",
+    "upgrade_description": "Infligez 4 dégâts.\nAppliquez [gold]Affaibli[/gold] (2).",
     "type_key": "Attack",
     "rarity_key": "Basic",
     "compendium_order": 148
@@ -14483,7 +14529,7 @@
     "image_url": "/static/images/cards/oblivion.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Lorsque vous jouez une carte ce tour, appliquez 4 de [gold]Fatalité[/gold] sur l'ennemi.",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 275
@@ -15253,7 +15299,7 @@
       "heal": "+3"
     },
     "image_url": "/static/images/cards/not_yet.webp",
-    "beta_image_url": null,
+    "beta_image_url": "/static/images/cards/beta/not_yet.webp",
     "type_variants": null,
     "upgrade_description": "Récupérez 13 PV.",
     "type_key": "Skill",
@@ -15531,7 +15577,7 @@
     "image_url": "/static/images/cards/scourge.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Appliquez 13 de [gold]Fatalité[/gold].\nPiochez 2 cartes.",
+    "upgrade_description": "Appliquez 16 de [gold]Fatalité[/gold].\nPiochez 2 cartes.",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 338
@@ -15668,7 +15714,7 @@
   {
     "id": "STACK",
     "name": "Pile",
-    "description": "Gagnez un montant d'[gold]Armure[/gold] égal au nombre de cartes dans votre [gold]Défausse[/gold]|}.",
+    "description": "Gagnez un montant d'[gold]Armure[/gold] égal au nombre de cartes dans votre [gold]Défausse[/gold].",
     "description_raw": "Gagnez un montant d'[gold]Armure[/gold] égal au nombre de cartes dans votre [gold]Défausse[/gold]{IfUpgraded:show: +{CalculationBase}|}.{InCombat:\n(Gagnez {CalculatedBlock:diff()} d'[gold]Armure[/gold])|}",
     "cost": 1,
     "is_x_cost": null,
@@ -15698,7 +15744,7 @@
     "image_url": "/static/images/cards/stack.webp",
     "beta_image_url": "/static/images/cards/beta/stack.webp",
     "type_variants": null,
-    "upgrade_description": "Gagnez un montant d'[gold]Armure[/gold] égal au nombre de cartes dans votre [gold]Défausse[/gold] +[CalculationBase|].",
+    "upgrade_description": "Gagnez un montant d'[gold]Armure[/gold] égal au nombre de cartes dans votre [gold]Défausse[/gold] +3.",
     "type_key": "Skill",
     "rarity_key": "Event",
     "compendium_order": 544
@@ -16331,7 +16377,7 @@
     "image_url": "/static/images/cards/poisoned_stab.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 8 dégâts.\nAppliquez 3 de [gold]Poison[/gold].",
+    "upgrade_description": "Infligez 8 dégâts.\nAppliquez 4 de [gold]Poison[/gold].",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 154
@@ -16576,7 +16622,7 @@
     "image_url": "/static/images/cards/deadly_poison.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Appliquez 7 de [gold]Poison[/gold].",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 127
@@ -16669,7 +16715,7 @@
     "image_url": "/static/images/cards/deathbringer.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Appliquez 26 de [gold]Fatalité[/gold] et [gold]Affaibli[/gold] (1) à TOUS les ennemis.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 300
@@ -16799,7 +16845,7 @@
     "image_url": "/static/images/cards/bulk_up.webp",
     "beta_image_url": "/static/images/cards/beta/bulk_up.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Perdez 1 Emplacement d'Orbe.\nGagnez 3 de [gold]Force[/gold].\nGagnez 3 de [gold]Dextérité[/gold].",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 383
@@ -17098,7 +17144,7 @@
     "image_url": "/static/images/cards/prowess.webp",
     "beta_image_url": "/static/images/cards/beta/prowess.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Gagnez 2 de [gold]Force[/gold].\nGagnez 2 de [gold]Dextérité[/gold].",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 489
@@ -17144,7 +17190,7 @@
     "image_url": "/static/images/cards/taunt.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Gagnez 8 d'[gold]Armure[/gold].\nAppliquez [gold]Vulnérable[/gold] (1).",
+    "upgrade_description": "Gagnez 8 d'[gold]Armure[/gold].\nAppliquez [gold]Vulnérable[/gold] (2).",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 78
@@ -17765,7 +17811,7 @@
     "image_url": "/static/images/cards/beam_cell.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 4 dégâts.\nAppliquez [gold]Vulnérable[/gold] (1).",
+    "upgrade_description": "Infligez 4 dégâts.\nAppliquez [gold]Vulnérable[/gold] (2).",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 379
@@ -18209,7 +18255,7 @@
     "image_url": "/static/images/cards/feeding_frenzy.webp",
     "beta_image_url": "/static/images/cards/beta/feeding_frenzy.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Gagnez 7 de [gold]Force[/gold] jusqu'à la fin du tour.",
     "type_key": "Skill",
     "rarity_key": "Event",
     "compendium_order": 532
@@ -18484,7 +18530,7 @@
     "image_url": "/static/images/cards/rupture.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Lorsque vous perdez des PV pendant votre tour, gagnez 2 de [gold]Force[/gold].",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 68
@@ -18767,7 +18813,7 @@
     "image_url": "/static/images/cards/suppress.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 17 dégâts.\nAppliquez [gold]Affaibli[/gold] (3).",
+    "upgrade_description": "Infligez 17 dégâts.\nAppliquez [gold]Affaibli[/gold] (5).",
     "type_key": "Attack",
     "rarity_key": "Ancient",
     "keywords_key": [
@@ -20893,7 +20939,7 @@
     "image_url": "/static/images/cards/fear.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 8 dégâts.\nAppliquez [gold]Vulnérable[/gold] (1).",
+    "upgrade_description": "Infligez 8 dégâts.\nAppliquez [gold]Vulnérable[/gold] (2).",
     "type_key": "Attack",
     "rarity_key": "Common",
     "keywords_key": [
@@ -21031,7 +21077,7 @@
     "image_url": "/static/images/cards/high_five.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "[gold]Titos[/gold] inflige 13 dégâts\net applique [gold]Vulnérable[/gold] (2) \nà TOUS les ennemis.",
+    "upgrade_description": "[gold]Titos[/gold] inflige 13 dégâts\net applique [gold]Vulnérable[/gold] (3) \nà TOUS les ennemis.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 320
@@ -21907,7 +21953,7 @@
     "image_url": "/static/images/cards/null.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 13 dégâts.\nAppliquez [gold]Affaibli[/gold] (2).\n[gold]Canalisez[/gold] 1 [gold]Orbe ténébreux[/gold].",
+    "upgrade_description": "Infligez 13 dégâts.\nAppliquez [gold]Affaibli[/gold] (3).\n[gold]Canalisez[/gold] 1 [gold]Orbe ténébreux[/gold].",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 415
@@ -21988,7 +22034,7 @@
     "image_url": "/static/images/cards/bubble_bubble.webp",
     "beta_image_url": "/static/images/cards/beta/bubble_bubble.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Si l'ennemi est affligé de [gold]Poison[/gold], appliquez 12 de [gold]Poison[/gold].",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 121
@@ -22196,7 +22242,7 @@
     "image_url": "/static/images/cards/fight_me.webp",
     "beta_image_url": "/static/images/cards/beta/fight_me.webp",
     "type_variants": null,
-    "upgrade_description": "Infligez 6 dégâts 2 fois.\nGagnez 3 de [gold]Force[/gold].\nL'ennemi gagne 1 de [gold]Force[/gold].",
+    "upgrade_description": "Infligez 6 dégâts 2 fois.\nGagnez 4 de [gold]Force[/gold].\nL'ennemi gagne 1 de [gold]Force[/gold].",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 50
@@ -22279,7 +22325,7 @@
     "image_url": "/static/images/cards/go_for_the_eyes.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Infligez 4 dégâts.\nSi l'ennemi s'apprête à attaquer, appliquez [gold]Affaibli[/gold] (1).",
+    "upgrade_description": "Infligez 4 dégâts.\nSi l'ennemi s'apprête à attaquer, appliquez [gold]Affaibli[/gold] (2).",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 405

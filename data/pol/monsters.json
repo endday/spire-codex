@@ -481,13 +481,6 @@
         "room_type": "Monster",
         "act": "Act 2 - Hive",
         "is_weak": true
-      },
-      {
-        "encounter_id": "TUNNELER_NORMAL",
-        "encounter_name": "Tunelowy duet",
-        "room_type": "Monster",
-        "act": "Act 2 - Hive",
-        "is_weak": false
       }
     ],
     "innate_powers": null,
@@ -728,13 +721,6 @@
       {
         "encounter_id": "SLUMBERING_BEETLE_NORMAL",
         "encounter_name": "Pidżama Party",
-        "room_type": "Monster",
-        "act": "Act 2 - Hive",
-        "is_weak": false
-      },
-      {
-        "encounter_id": "TUNNELER_NORMAL",
-        "encounter_name": "Tunelowy duet",
         "room_type": "Monster",
         "act": "Act 2 - Hive",
         "is_weak": false
@@ -1077,7 +1063,7 @@
         "is_weak": false
       },
       {
-        "encounter_id": "TOADPOLES_NORMAL",
+        "encounter_id": "SEAPUNK_NORMAL",
         "encounter_name": "Kijanki",
         "room_type": "Monster",
         "act": "Underdocks",
@@ -1203,7 +1189,7 @@
     "encounters": [
       {
         "encounter_id": "CEREMONIAL_BEAST_BOSS",
-        "encounter_name": "Leśnym Stróżem",
+        "encounter_name": "Leśny Stróż",
         "room_type": "Boss",
         "act": "Act 1 - Overgrowth",
         "is_weak": false
@@ -1296,6 +1282,13 @@
         "encounter_name": "Para automatonów",
         "room_type": "Monster",
         "act": "Act 2 - Hive",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "TUNNELER_NORMAL",
+        "encounter_name": "Tunelowy duet",
+        "room_type": "Monster",
+        "act": null,
         "is_weak": false
       }
     ],
@@ -1579,7 +1572,7 @@
     "encounters": [
       {
         "encounter_id": "KAISER_CRAB_BOSS",
-        "encounter_name": "Krabem Cesarskim",
+        "encounter_name": "Krab Cesarski",
         "room_type": "Boss",
         "act": "Act 2 - Hive",
         "is_weak": false
@@ -2021,6 +2014,99 @@
     "beta_image_url": null
   },
   {
+    "id": "DOOR",
+    "name": "Portal",
+    "type": "Normal",
+    "min_hp": 155,
+    "max_hp": null,
+    "min_hp_ascension": 165,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "DRAMATIC_OPEN",
+        "name": "Dramatic Open",
+        "intent": "Attack",
+        "damage": {
+          "normal": 25,
+          "ascension": 28
+        }
+      },
+      {
+        "id": "ENFORCE",
+        "name": "Enforce",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 3
+          }
+        ],
+        "damage": {
+          "normal": 20
+        }
+      },
+      {
+        "id": "DOOR_SLAM",
+        "name": "Door Slam",
+        "intent": "Attack",
+        "damage": {
+          "normal": 15,
+          "ascension": 15,
+          "hit_count": 2
+        }
+      },
+      {
+        "id": "DEAD",
+        "name": "Dead",
+        "intent": "Unknown"
+      }
+    ],
+    "damage_values": {
+      "DramaticOpen": {
+        "normal": 25,
+        "ascension": 28
+      },
+      "DoorSlam": {
+        "normal": 15,
+        "ascension": 15,
+        "hit_count": 2
+      },
+      "Enforce": {
+        "normal": 20
+      }
+    },
+    "block_values": null,
+    "encounters": null,
+    "innate_powers": null,
+    "attack_pattern": {
+      "type": "cycle",
+      "initial_move": null,
+      "states": [
+        {
+          "id": "ENFORCE_MOVE",
+          "type": "move",
+          "move_id": "ENFORCE"
+        },
+        {
+          "id": "DOOR_SLAM_MOVE",
+          "type": "move",
+          "move_id": "DOOR_SLAM",
+          "next": "ENFORCE_MOVE"
+        },
+        {
+          "id": "DEAD_MOVE",
+          "type": "move",
+          "move_id": "DEAD",
+          "next": "DEAD_MOVE"
+        }
+      ],
+      "description": ""
+    },
+    "image_url": "/static/images/monsters/door.webp",
+    "beta_image_url": "/static/images/monsters/beta/door.webp"
+  },
+  {
     "id": "DOORMAKER",
     "name": "Tytan Pustki",
     "type": "Boss",
@@ -2089,7 +2175,7 @@
     "encounters": [
       {
         "encounter_id": "DOORMAKER_BOSS",
-        "encounter_name": "Drzwiarzem",
+        "encounter_name": "Tytan Pustki",
         "room_type": "Boss",
         "act": "Act 3 - Glory",
         "is_weak": false
@@ -4193,7 +4279,7 @@
     "encounters": [
       {
         "encounter_id": "THE_KIN_BOSS",
-        "encounter_name": "Kapłanem",
+        "encounter_name": "Kapłan",
         "room_type": "Boss",
         "act": "Act 1 - Overgrowth",
         "is_weak": false
@@ -4311,7 +4397,7 @@
     "encounters": [
       {
         "encounter_id": "THE_KIN_BOSS",
-        "encounter_name": "Kapłanem",
+        "encounter_name": "Kapłan",
         "room_type": "Boss",
         "act": "Act 1 - Overgrowth",
         "is_weak": false
@@ -4422,7 +4508,7 @@
     "encounters": [
       {
         "encounter_id": "KNOWLEDGE_DEMON_BOSS",
-        "encounter_name": "Demonem Wiedzy",
+        "encounter_name": "Demon Wiedzy",
         "room_type": "Boss",
         "act": "Act 2 - Hive",
         "is_weak": false
@@ -4552,7 +4638,7 @@
     "encounters": [
       {
         "encounter_id": "LAGAVULIN_MATRIARCH_BOSS",
-        "encounter_name": "Królową Lagavulinów",
+        "encounter_name": "Matka Lagavulinów",
         "room_type": "Boss",
         "act": "Underdocks",
         "is_weak": false
@@ -6410,7 +6496,7 @@
     "encounters": [
       {
         "encounter_id": "QUEEN_BOSS",
-        "encounter_name": "Królową",
+        "encounter_name": "Królowa",
         "room_type": "Boss",
         "act": "Act 3 - Glory",
         "is_weak": false
@@ -6563,7 +6649,7 @@
     "encounters": [
       {
         "encounter_id": "KAISER_CRAB_BOSS",
-        "encounter_name": "Krabem Cesarskim",
+        "encounter_name": "Krab Cesarski",
         "room_type": "Boss",
         "act": "Act 2 - Hive",
         "is_weak": false
@@ -6766,6 +6852,13 @@
     },
     "block_values": null,
     "encounters": [
+      {
+        "encounter_id": "SEAPUNK_NORMAL",
+        "encounter_name": "Kijanki",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      },
       {
         "encounter_id": "SEAPUNK_WEAK",
         "encounter_name": "Gloniarz",
@@ -7684,7 +7777,7 @@
     "encounters": [
       {
         "encounter_id": "SOUL_FYSH_BOSS",
-        "encounter_name": "Duszą Rypki",
+        "encounter_name": "Dusza Rypki",
         "room_type": "Boss",
         "act": "Underdocks",
         "is_weak": false
@@ -8330,7 +8423,7 @@
     "encounters": [
       {
         "encounter_id": "TEST_SUBJECT_BOSS",
-        "encounter_name": "Eksperymentem",
+        "encounter_name": "Eksperyment",
         "room_type": "Boss",
         "act": "Act 3 - Glory",
         "is_weak": false
@@ -8796,7 +8889,7 @@
     "encounters": [
       {
         "encounter_id": "THE_INSATIABLE_BOSS",
-        "encounter_name": "Nienasyconym",
+        "encounter_name": "Nienasycony",
         "room_type": "Boss",
         "act": "Act 2 - Hive",
         "is_weak": false
@@ -9191,13 +9284,6 @@
     "block_values": null,
     "encounters": [
       {
-        "encounter_id": "TOADPOLES_NORMAL",
-        "encounter_name": "Kijanki",
-        "room_type": "Monster",
-        "act": "Underdocks",
-        "is_weak": false
-      },
-      {
         "encounter_id": "TOADPOLES_WEAK",
         "encounter_name": "Kijanki",
         "room_type": "Monster",
@@ -9323,7 +9409,7 @@
     "encounters": [
       {
         "encounter_id": "QUEEN_BOSS",
-        "encounter_name": "Królową",
+        "encounter_name": "Królowa",
         "room_type": "Boss",
         "act": "Act 3 - Glory",
         "is_weak": false
@@ -9564,7 +9650,7 @@
         "encounter_id": "TUNNELER_NORMAL",
         "encounter_name": "Tunelowy duet",
         "room_type": "Monster",
-        "act": "Act 2 - Hive",
+        "act": null,
         "is_weak": false
       },
       {
@@ -10037,7 +10123,7 @@
     "encounters": [
       {
         "encounter_id": "VANTOM_BOSS",
-        "encounter_name": "Fantomem",
+        "encounter_name": "Fantom",
         "room_type": "Boss",
         "act": "Act 1 - Overgrowth",
         "is_weak": false
@@ -10308,7 +10394,7 @@
     "encounters": [
       {
         "encounter_id": "WATERFALL_GIANT_BOSS",
-        "encounter_name": "Kaskadowym Olbrzymem",
+        "encounter_name": "Kaskadowy Olbrzym",
         "room_type": "Boss",
         "act": "Underdocks",
         "is_weak": false

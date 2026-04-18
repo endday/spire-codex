@@ -40,6 +40,52 @@
     "compendium_order": 384
   },
   {
+    "id": "GRAPPLE",
+    "name": "Grapple",
+    "description": "",
+    "description_raw": "",
+    "cost": 1,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "공격",
+    "rarity": "고급",
+    "target": "AnyEnemy",
+    "color": "unknown",
+    "damage": 7,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": [
+      {
+        "power": "Grapple",
+        "amount": 5,
+        "power_key": "Grapple"
+      }
+    ],
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": null,
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Damage": 7,
+      "GrapplePower": 5,
+      "Grapple": 5
+    },
+    "upgrade": {
+      "damage": "+2",
+      "grapplepower": "+2"
+    },
+    "image_url": "/static/images/cards/grapple.webp",
+    "beta_image_url": null,
+    "type_variants": null,
+    "upgrade_description": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
+    "compendium_order": 576
+  },
+  {
     "id": "HELLO_WORLD",
     "name": "Hello World",
     "description": "내 턴 시작 시,\n무작위 일반 카드를 1장\n[gold]손[/gold]으로 가져옵니다.",
@@ -115,7 +161,7 @@
     "image_url": "/static/images/cards/null.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "피해를 13 줍니다.\n[gold]약화[/gold]를 2 부여합니다.\n[gold]암흑[/gold]을 1번 [gold]영창[/gold]합니다.",
+    "upgrade_description": "피해를 13 줍니다.\n[gold]약화[/gold]를 3 부여합니다.\n[gold]암흑[/gold]을 1번 [gold]영창[/gold]합니다.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 407
@@ -563,7 +609,7 @@
     "image_url": "/static/images/cards/bash.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "피해를 10 줍니다.\n[gold]취약[/gold]을 2 부여합니다.",
+    "upgrade_description": "피해를 10 줍니다.\n[gold]취약[/gold]을 3 부여합니다.",
     "type_key": "Attack",
     "rarity_key": "Basic",
     "compendium_order": 5
@@ -1684,7 +1730,7 @@
     "image_url": "/static/images/cards/feeding_frenzy.webp",
     "beta_image_url": "/static/images/cards/beta/feeding_frenzy.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "이번 턴 동안\n[gold]힘[/gold]을 7 얻습니다.",
     "type_key": "Skill",
     "rarity_key": "Event",
     "compendium_order": 532
@@ -2966,7 +3012,7 @@
     "image_url": "/static/images/cards/prowess.webp",
     "beta_image_url": "/static/images/cards/beta/prowess.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "[gold]힘[/gold]을 2 얻습니다.\n[gold]민첩[/gold]을 2 얻습니다.",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 481
@@ -3400,7 +3446,7 @@
     "image_url": "/static/images/cards/brand.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "체력을 1 잃습니다.\n카드를 1장 [gold]소멸[/gold]시킵니다.\n[gold]힘[/gold]을 2 얻습니다.",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 11
@@ -4003,7 +4049,7 @@
     "image_url": "/static/images/cards/go_for_the_eyes.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "피해를 4 줍니다.\n적이 공격할 의도가 있다면 [gold]약화[/gold]를 1 부여합니다.",
+    "upgrade_description": "피해를 4 줍니다.\n적이 공격할 의도가 있다면 [gold]약화[/gold]를 2 부여합니다.",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 389
@@ -4131,7 +4177,7 @@
     "image_url": "/static/images/cards/leg_sweep.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "[gold]약화[/gold]를 2 부여합니다.\n[gold]방어도[/gold]를 14 얻습니다.",
+    "upgrade_description": "[gold]약화[/gold]를 3 부여합니다.\n[gold]방어도[/gold]를 14 얻습니다.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 133
@@ -4682,7 +4728,7 @@
     "image_url": "/static/images/cards/fight_me.webp",
     "beta_image_url": "/static/images/cards/beta/fight_me.webp",
     "type_variants": null,
-    "upgrade_description": "피해를 6만큼 2번 줍니다.\n[gold]힘[/gold]을 3 얻습니다.\n대상 적이 [gold]힘[/gold]을 1 얻습니다.",
+    "upgrade_description": "피해를 6만큼 2번 줍니다.\n[gold]힘[/gold]을 4 얻습니다.\n대상 적이 [gold]힘[/gold]을 1 얻습니다.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 35
@@ -4853,7 +4899,7 @@
     "image_url": "/static/images/cards/taunt.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "[gold]방어도[/gold]를 8 얻습니다.\n[gold]취약[/gold]을 1 부여합니다.",
+    "upgrade_description": "[gold]방어도[/gold]를 8 얻습니다.\n[gold]취약[/gold]을 2 부여합니다.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 75
@@ -5023,7 +5069,7 @@
     "image_url": "/static/images/cards/poisoned_stab.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "피해를 8 줍니다.\n[gold]중독[/gold]을 3 부여합니다.",
+    "upgrade_description": "피해를 8 줍니다.\n[gold]중독[/gold]을 4 부여합니다.",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 146
@@ -5430,7 +5476,7 @@
     "image_url": "/static/images/cards/fear.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "피해를 8 줍니다.\n[gold]취약[/gold]을 1 부여합니다.",
+    "upgrade_description": "피해를 8 줍니다.\n[gold]취약[/gold]을 2 부여합니다.",
     "type_key": "Attack",
     "rarity_key": "Common",
     "keywords_key": [
@@ -5693,7 +5739,7 @@
     "image_url": "/static/images/cards/tremble.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "[gold]취약[/gold]을 4 부여합니다.",
     "type_key": "Skill",
     "rarity_key": "Common",
     "keywords_key": [
@@ -5824,7 +5870,7 @@
     "image_url": "/static/images/cards/beam_cell.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "피해를 4 줍니다.\n[gold]취약[/gold]을 1 부여합니다.",
+    "upgrade_description": "피해를 4 줍니다.\n[gold]취약[/gold]을 2 부여합니다.",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 355
@@ -6106,7 +6152,7 @@
     "image_url": "/static/images/cards/oblivion.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "이번 턴에 카드를 사용할\n때마다, 대상 적에게\n[gold]종말[/gold]을 4 부여합니다.",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 313
@@ -6337,7 +6383,7 @@
     "image_url": "/static/images/cards/deadly_poison.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "[gold]중독[/gold]을 7 부여합니다.",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 110
@@ -6908,7 +6954,7 @@
     "image_url": "/static/images/cards/neutralize.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "피해를 4 줍니다.\n[gold]약화[/gold]를 1 부여합니다.",
+    "upgrade_description": "피해를 4 줍니다.\n[gold]약화[/gold]를 2 부여합니다.",
     "type_key": "Attack",
     "rarity_key": "Basic",
     "compendium_order": 139
@@ -7310,7 +7356,7 @@
     "image_url": "/static/images/cards/break.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "피해를 30 줍니다.\n[gold]취약[/gold]을 5 부여합니다.",
+    "upgrade_description": "피해를 30 줍니다.\n[gold]취약[/gold]을 7 부여합니다.",
     "type_key": "Attack",
     "rarity_key": "Ancient",
     "compendium_order": 12
@@ -7642,7 +7688,7 @@
     "image_url": "/static/images/cards/footwork.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "[gold]민첩[/gold]을 3 얻습니다.",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 125
@@ -8057,7 +8103,7 @@
     "image_url": "/static/images/cards/snakebite.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "[gold]중독[/gold]을 10 부여합니다.",
     "type_key": "Skill",
     "rarity_key": "Common",
     "keywords_key": [
@@ -9148,7 +9194,7 @@
       "heal": "+3"
     },
     "image_url": "/static/images/cards/not_yet.webp",
-    "beta_image_url": null,
+    "beta_image_url": "/static/images/cards/beta/not_yet.webp",
     "type_variants": null,
     "upgrade_description": "체력을 13 회복합니다.",
     "type_key": "Skill",
@@ -9433,7 +9479,7 @@
     "image_url": "/static/images/cards/sucker_punch.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "피해를 10 줍니다.\n[gold]약화[/gold]를 1 부여합니다.",
+    "upgrade_description": "피해를 10 줍니다.\n[gold]약화[/gold]를 2 부여합니다.",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 164
@@ -9600,7 +9646,7 @@
     "image_url": "/static/images/cards/negative_pulse.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "[gold]방어도[/gold]를 6 얻습니다.\n모든 적에게\n[gold]종말[/gold]을 7 부여합니다.",
+    "upgrade_description": "[gold]방어도[/gold]를 6 얻습니다.\n모든 적에게\n[gold]종말[/gold]을 11 부여합니다.",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 310
@@ -10419,7 +10465,7 @@
     "image_url": "/static/images/cards/setup_strike.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "피해를 9 줍니다.\n이번 턴 동안\n[gold]힘[/gold]을 2 얻습니다.",
+    "upgrade_description": "피해를 9 줍니다.\n이번 턴 동안\n[gold]힘[/gold]을 3 얻습니다.",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 65
@@ -12051,7 +12097,7 @@
   {
     "id": "STACK",
     "name": "스택",
-    "description": "[gold]버린 카드 더미[/gold]에 있는\n카드의 수|}만큼\n[gold]방어도[/gold]를 얻습니다.",
+    "description": "[gold]버린 카드 더미[/gold]에 있는\n카드의 수만큼\n[gold]방어도[/gold]를 얻습니다.",
     "description_raw": "[gold]버린 카드 더미[/gold]에 있는\n카드의 수{IfUpgraded:show: +{CalculationBase}|}만큼\n[gold]방어도[/gold]를 얻습니다.{InCombat:\n([gold]방어도[/gold]를 {CalculatedBlock:diff()} 얻습니다)|}",
     "cost": 1,
     "is_x_cost": null,
@@ -12081,7 +12127,7 @@
     "image_url": "/static/images/cards/stack.webp",
     "beta_image_url": "/static/images/cards/beta/stack.webp",
     "type_variants": null,
-    "upgrade_description": "[gold]버린 카드 더미[/gold]에 있는\n카드의 수 +[CalculationBase|]만큼\n[gold]방어도[/gold]를 얻습니다.",
+    "upgrade_description": "[gold]버린 카드 더미[/gold]에 있는\n카드의 수 +3만큼\n[gold]방어도[/gold]를 얻습니다.",
     "type_key": "Skill",
     "rarity_key": "Event",
     "compendium_order": 544
@@ -12547,7 +12593,7 @@
     "image_url": "/static/images/cards/haze.webp",
     "beta_image_url": "/static/images/cards/beta/haze.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "모든 적에게\n[gold]중독[/gold]을 6 부여합니다.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "keywords_key": [
@@ -12892,7 +12938,7 @@
     "image_url": "/static/images/cards/assassinate.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "피해를 13 줍니다.\n[gold]취약[/gold]을 1 부여합니다.",
+    "upgrade_description": "피해를 13 줍니다.\n[gold]취약[/gold]을 2 부여합니다.",
     "type_key": "Attack",
     "rarity_key": "Rare",
     "keywords_key": [
@@ -14078,7 +14124,7 @@
     "image_url": "/static/images/cards/anticipate.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "이번 턴 동안\n[gold]민첩[/gold]을 3 얻습니다.",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 93
@@ -15206,7 +15252,7 @@
   {
     "id": "DUAL_WIELD",
     "name": "이도류",
-    "description": "공격이나 파워 카드를\n1장 선택합니다.\n그 카드의 복사본을 장|1장}\n[gold]손[/gold]으로 가져옵니다.",
+    "description": "공격이나 파워 카드를\n1장 선택합니다.\n그 카드의 복사본을 1장\n[gold]손[/gold]으로 가져옵니다.",
     "description_raw": "공격이나 파워 카드를\n1장 선택합니다.\n그 카드의 복사본을 {IfUpgraded:show:{Cards}장|1장}\n[gold]손[/gold]으로 가져옵니다.",
     "cost": 1,
     "is_x_cost": null,
@@ -15235,7 +15281,7 @@
     "image_url": "/static/images/cards/dual_wield.webp",
     "beta_image_url": "/static/images/cards/beta/dual_wield.webp",
     "type_variants": null,
-    "upgrade_description": "공격이나 파워 카드를\n1장 선택합니다.\n그 카드의 복사본을 [Cards장|1장]\n[gold]손[/gold]으로 가져옵니다.",
+    "upgrade_description": "공격이나 파워 카드를\n1장 선택합니다.\n그 카드의 복사본을 2장\n[gold]손[/gold]으로 가져옵니다.",
     "type_key": "Skill",
     "rarity_key": "Event",
     "compendium_order": 528
@@ -17397,7 +17443,7 @@
     "image_url": "/static/images/cards/end_of_days.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "모든 적에게\n[gold]종말[/gold]을 37 부여합니다.\n체력이 [gold]종말[/gold] 이하인\n적을 처치합니다.",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 290
@@ -17570,7 +17616,7 @@
     "image_url": "/static/images/cards/deathbringer.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "모든 적에게 [gold]종말[/gold]을 26,\n[gold]약화[/gold]를 1 부여합니다.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 276
@@ -17954,7 +18000,7 @@
     "image_url": "/static/images/cards/bulk_up.webp",
     "beta_image_url": "/static/images/cards/beta/bulk_up.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "구체 슬롯을 1개 잃습니다.\n[gold]힘[/gold]을 3 얻습니다.\n[gold]민첩[/gold]을 3 얻습니다.",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 360
@@ -18197,7 +18243,7 @@
     "image_url": "/static/images/cards/suppress.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "피해를 17 줍니다.\n[gold]약화[/gold]를 3 부여합니다.",
+    "upgrade_description": "피해를 17 줍니다.\n[gold]약화[/gold]를 5 부여합니다.",
     "type_key": "Attack",
     "rarity_key": "Ancient",
     "keywords_key": [
@@ -18400,7 +18446,7 @@
     "image_url": "/static/images/cards/squash.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "피해를 12 줍니다.\n[gold]취약[/gold]을 2 부여합니다.",
+    "upgrade_description": "피해를 12 줍니다.\n[gold]취약[/gold]을 3 부여합니다.",
     "type_key": "Attack",
     "rarity_key": "Event",
     "compendium_order": 543
@@ -18483,7 +18529,7 @@
     "image_url": "/static/images/cards/scourge.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "[gold]종말[/gold]을 13 부여합니다.\n카드를 2장 뽑습니다.",
+    "upgrade_description": "[gold]종말[/gold]을 16 부여합니다.\n카드를 2장 뽑습니다.",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 328
@@ -18603,7 +18649,7 @@
     "image_url": "/static/images/cards/bubble_bubble.webp",
     "beta_image_url": "/static/images/cards/beta/bubble_bubble.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "대상 적이 [gold]중독[/gold]을\n보유하고 있다면,\n[gold]중독[/gold]을 12 부여합니다.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 101
@@ -20887,7 +20933,7 @@
     "image_url": "/static/images/cards/rupture.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "내 턴 동안 체력을 잃을\n때마다, [gold]힘[/gold]을 2 얻습니다.",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 63
@@ -22048,7 +22094,7 @@
     "image_url": "/static/images/cards/high_five.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "[gold]골골이[/gold]가 모든 적에게\n피해를 13 주고\n[gold]취약[/gold]을 2 부여합니다.",
+    "upgrade_description": "[gold]골골이[/gold]가 모든 적에게\n피해를 13 주고\n[gold]취약[/gold]을 3 부여합니다.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 303
@@ -22406,7 +22452,7 @@
     "image_url": "/static/images/cards/coordinate.webp",
     "beta_image_url": "/static/images/cards/beta/coordinate.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "이번 턴 동안\n다른 플레이어에게\n[gold]힘[/gold]을 8 줍니다.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 448

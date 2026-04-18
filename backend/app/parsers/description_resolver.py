@@ -80,15 +80,37 @@ def resolve_description(
 
     text = resolve_all_choose(text)
 
-    # Handle {IfUpgraded:show:A|B} or {IfUpgraded:show:A}
-    def resolve_if_upgraded(m):
-        parts = m.group(1)
-        if "|" in parts:
-            a, b = parts.split("|", 1)
-            return a if is_upgraded else b
-        return parts if is_upgraded else ""
+    # Handle {IfUpgraded:show:A|B} or {IfUpgraded:show:A}.
+    # Manual brace-counting because A often contains nested {Var} tokens
+    # (e.g. {IfUpgraded:show: +{CalculationBase}|}) — a flat `[^}]*` regex
+    # would stop at the first inner `}` and leave a stray `|}` in the
+    # output. Splits the inner body on `|` at depth 0 only.
+    def resolve_all_if_upgraded(text: str) -> str:
+        while True:
+            idx = text.find("{IfUpgraded:show:")
+            if idx < 0:
+                break
+            rest_start = idx + len("{IfUpgraded:show:")
+            depth = 1
+            i = rest_start
+            while i < len(text) and depth > 0:
+                if text[i] == "{":
+                    depth += 1
+                elif text[i] == "}":
+                    depth -= 1
+                i += 1
+            if depth != 0:
+                # Unbalanced — bail to avoid an infinite loop.
+                break
+            inner = text[rest_start : i - 1]
+            parts = _split_pipes_at_depth0(inner)
+            true_val = parts[0] if parts else ""
+            false_val = parts[1] if len(parts) > 1 else ""
+            result = true_val if is_upgraded else false_val
+            text = text[:idx] + result + text[i:]
+        return text
 
-    text = re.sub(r"\{IfUpgraded:show:([^}]*)\}", resolve_if_upgraded, text)
+    text = resolve_all_if_upgraded(text)
 
     # Handle {Var:energyIcons()} and {Var:energyIcons(N)} -> [energy:N]
     def resolve_energy_icons(m):

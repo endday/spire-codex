@@ -481,13 +481,6 @@
         "room_type": "Monster",
         "act": "Act 2 - Hive",
         "is_weak": true
-      },
-      {
-        "encounter_id": "TUNNELER_NORMAL",
-        "encounter_name": "Команда копателей",
-        "room_type": "Monster",
-        "act": "Act 2 - Hive",
-        "is_weak": false
       }
     ],
     "innate_powers": null,
@@ -728,13 +721,6 @@
       {
         "encounter_id": "SLUMBERING_BEETLE_NORMAL",
         "encounter_name": "Жучиная ночевка",
-        "room_type": "Monster",
-        "act": "Act 2 - Hive",
-        "is_weak": false
-      },
-      {
-        "encounter_id": "TUNNELER_NORMAL",
-        "encounter_name": "Команда копателей",
         "room_type": "Monster",
         "act": "Act 2 - Hive",
         "is_weak": false
@@ -1077,7 +1063,7 @@
         "is_weak": false
       },
       {
-        "encounter_id": "TOADPOLES_NORMAL",
+        "encounter_id": "SEAPUNK_NORMAL",
         "encounter_name": "Живность Пристани",
         "room_type": "Monster",
         "act": "Underdocks",
@@ -1297,6 +1283,13 @@
         "room_type": "Monster",
         "act": "Act 2 - Hive",
         "is_weak": false
+      },
+      {
+        "encounter_id": "TUNNELER_NORMAL",
+        "encounter_name": "Команда копателей",
+        "room_type": "Monster",
+        "act": null,
+        "is_weak": false
       }
     ],
     "innate_powers": null,
@@ -1374,7 +1367,7 @@
     "encounters": [
       {
         "encounter_id": "CORPSE_SLUGS_NORMAL",
-        "encounter_name": "Много слизней-падальщиков",
+        "encounter_name": "Куча слизней-падальщиков",
         "room_type": "Monster",
         "act": "Underdocks",
         "is_weak": false
@@ -2021,6 +2014,99 @@
     "beta_image_url": null
   },
   {
+    "id": "DOOR",
+    "name": "Дверь",
+    "type": "Normal",
+    "min_hp": 155,
+    "max_hp": null,
+    "min_hp_ascension": 165,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "DRAMATIC_OPEN",
+        "name": "Dramatic Open",
+        "intent": "Attack",
+        "damage": {
+          "normal": 25,
+          "ascension": 28
+        }
+      },
+      {
+        "id": "ENFORCE",
+        "name": "Enforce",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 3
+          }
+        ],
+        "damage": {
+          "normal": 20
+        }
+      },
+      {
+        "id": "DOOR_SLAM",
+        "name": "Door Slam",
+        "intent": "Attack",
+        "damage": {
+          "normal": 15,
+          "ascension": 15,
+          "hit_count": 2
+        }
+      },
+      {
+        "id": "DEAD",
+        "name": "Dead",
+        "intent": "Unknown"
+      }
+    ],
+    "damage_values": {
+      "DramaticOpen": {
+        "normal": 25,
+        "ascension": 28
+      },
+      "DoorSlam": {
+        "normal": 15,
+        "ascension": 15,
+        "hit_count": 2
+      },
+      "Enforce": {
+        "normal": 20
+      }
+    },
+    "block_values": null,
+    "encounters": null,
+    "innate_powers": null,
+    "attack_pattern": {
+      "type": "cycle",
+      "initial_move": null,
+      "states": [
+        {
+          "id": "ENFORCE_MOVE",
+          "type": "move",
+          "move_id": "ENFORCE"
+        },
+        {
+          "id": "DOOR_SLAM_MOVE",
+          "type": "move",
+          "move_id": "DOOR_SLAM",
+          "next": "ENFORCE_MOVE"
+        },
+        {
+          "id": "DEAD_MOVE",
+          "type": "move",
+          "move_id": "DEAD",
+          "next": "DEAD_MOVE"
+        }
+      ],
+      "description": ""
+    },
+    "image_url": "/static/images/monsters/door.webp",
+    "beta_image_url": "/static/images/monsters/beta/door.webp"
+  },
+  {
     "id": "DOORMAKER",
     "name": "Привратник",
     "type": "Boss",
@@ -2284,7 +2370,7 @@
     "encounters": [
       {
         "encounter_id": "EXOSKELETONS_NORMAL",
-        "encounter_name": "Множество экзоскелетов",
+        "encounter_name": "Группа экзоскелетов",
         "room_type": "Monster",
         "act": "Act 2 - Hive",
         "is_weak": false
@@ -3222,7 +3308,7 @@
     "encounters": [
       {
         "encounter_id": "FROG_KNIGHT_NORMAL",
-        "encounter_name": "Сэр лягушка",
+        "encounter_name": "Сэр Лягушка",
         "room_type": "Monster",
         "act": "Act 3 - Glory",
         "is_weak": false
@@ -5881,7 +5967,7 @@
     "encounters": [
       {
         "encounter_id": "OWL_MAGISTRATE_NORMAL",
-        "encounter_name": "Сова юстициарий",
+        "encounter_name": "Сова-юстициарий",
         "room_type": "Monster",
         "act": "Act 3 - Glory",
         "is_weak": false
@@ -6666,7 +6752,7 @@
     "encounters": [
       {
         "encounter_id": "SCROLLS_OF_BITING_NORMAL",
-        "encounter_name": "Много зубастых свитков",
+        "encounter_name": "Группа зубастых свитков",
         "room_type": "Monster",
         "act": "Act 3 - Glory",
         "is_weak": false
@@ -6766,6 +6852,13 @@
     },
     "block_values": null,
     "encounters": [
+      {
+        "encounter_id": "SEAPUNK_NORMAL",
+        "encounter_name": "Живность Пристани",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      },
       {
         "encounter_id": "SEAPUNK_WEAK",
         "encounter_name": "Зламинария",
@@ -9191,13 +9284,6 @@
     "block_values": null,
     "encounters": [
       {
-        "encounter_id": "TOADPOLES_NORMAL",
-        "encounter_name": "Живность Пристани",
-        "room_type": "Monster",
-        "act": "Underdocks",
-        "is_weak": false
-      },
-      {
         "encounter_id": "TOADPOLES_WEAK",
         "encounter_name": "Головастики",
         "room_type": "Monster",
@@ -9564,7 +9650,7 @@
         "encounter_id": "TUNNELER_NORMAL",
         "encounter_name": "Команда копателей",
         "room_type": "Monster",
-        "act": "Act 2 - Hive",
+        "act": null,
         "is_weak": false
       },
       {

@@ -1,5 +1,51 @@
 [
   {
+    "id": "GRAPPLE",
+    "name": "Grapple",
+    "description": "",
+    "description_raw": "",
+    "cost": 1,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "攻击",
+    "rarity": "罕见",
+    "target": "AnyEnemy",
+    "color": "unknown",
+    "damage": 7,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": [
+      {
+        "power": "Grapple",
+        "amount": 5,
+        "power_key": "Grapple"
+      }
+    ],
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": null,
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Damage": 7,
+      "GrapplePower": 5,
+      "Grapple": 5
+    },
+    "upgrade": {
+      "damage": "+2",
+      "grapplepower": "+2"
+    },
+    "image_url": "/static/images/cards/grapple.webp",
+    "beta_image_url": null,
+    "type_variants": null,
+    "upgrade_description": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
+    "compendium_order": 576
+  },
+  {
     "id": "SEVEN_STARS",
     "name": "七星",
     "description": "对所有敌人造成7点伤害7次。",
@@ -306,7 +352,7 @@
     "image_url": "/static/images/cards/fight_me.webp",
     "beta_image_url": "/static/images/cards/beta/fight_me.webp",
     "type_variants": null,
-    "upgrade_description": "造成6点伤害两次。\n获得3点[gold]力量[/gold]。\n该敌人获得1点[gold]力量[/gold]。",
+    "upgrade_description": "造成6点伤害两次。\n获得4点[gold]力量[/gold]。\n该敌人获得1点[gold]力量[/gold]。",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 35
@@ -352,7 +398,7 @@
     "image_url": "/static/images/cards/neutralize.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "造成4点伤害。\n给予1层[gold]虚弱[/gold]。",
+    "upgrade_description": "造成4点伤害。\n给予2层[gold]虚弱[/gold]。",
     "type_key": "Attack",
     "rarity_key": "Basic",
     "compendium_order": 139
@@ -1639,7 +1685,7 @@
     "image_url": "/static/images/cards/beam_cell.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "造成4点伤害。\n给予1层[gold]易伤[/gold]。",
+    "upgrade_description": "造成4点伤害。\n给予2层[gold]易伤[/gold]。",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 355
@@ -2620,7 +2666,7 @@
     "image_url": "/static/images/cards/high_five.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "[gold]奥斯提[/gold]对所有敌人\n造成13点伤害并给予它们\n2层[gold]易伤[/gold]。",
+    "upgrade_description": "[gold]奥斯提[/gold]对所有敌人\n造成13点伤害并给予它们\n3层[gold]易伤[/gold]。",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 303
@@ -3058,7 +3104,7 @@
     "image_url": "/static/images/cards/assassinate.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "造成13点伤害。\n给予1层[gold]易伤[/gold]。",
+    "upgrade_description": "造成13点伤害。\n给予2层[gold]易伤[/gold]。",
     "type_key": "Attack",
     "rarity_key": "Rare",
     "keywords_key": [
@@ -3499,7 +3545,7 @@
     "image_url": "/static/images/cards/coordinate.webp",
     "beta_image_url": "/static/images/cards/beta/coordinate.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "在本回合给予其他玩家8点[gold]力量[/gold]。",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 448
@@ -3584,7 +3630,7 @@
     "image_url": "/static/images/cards/suppress.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "造成17点伤害。\n给予3层[gold]虚弱[/gold]。",
+    "upgrade_description": "造成17点伤害。\n给予5层[gold]虚弱[/gold]。",
     "type_key": "Attack",
     "rarity_key": "Ancient",
     "keywords_key": [
@@ -3633,7 +3679,7 @@
     "image_url": "/static/images/cards/squash.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "造成12点伤害。\n给予2层[gold]易伤[/gold]。",
+    "upgrade_description": "造成12点伤害。\n给予3层[gold]易伤[/gold]。",
     "type_key": "Attack",
     "rarity_key": "Event",
     "compendium_order": 543
@@ -3839,7 +3885,7 @@
   {
     "id": "DUAL_WIELD",
     "name": "双持",
-    "description": "选择一张攻击牌或能力牌。将张此牌的复制品|一张此牌的复制品}加入你的[gold]手牌[/gold]。",
+    "description": "选择一张攻击牌或能力牌。将一张此牌的复制品加入你的[gold]手牌[/gold]。",
     "description_raw": "选择一张攻击牌或能力牌。将{IfUpgraded:show:{Cards}张此牌的复制品|一张此牌的复制品}加入你的[gold]手牌[/gold]。",
     "cost": 1,
     "is_x_cost": null,
@@ -3868,7 +3914,7 @@
     "image_url": "/static/images/cards/dual_wield.webp",
     "beta_image_url": "/static/images/cards/beta/dual_wield.webp",
     "type_variants": null,
-    "upgrade_description": "选择一张攻击牌或能力牌。将[Cards张此牌的复制品|一张此牌的复制品]加入你的[gold]手牌[/gold]。",
+    "upgrade_description": "选择一张攻击牌或能力牌。将2张此牌的复制品加入你的[gold]手牌[/gold]。",
     "type_key": "Skill",
     "rarity_key": "Event",
     "compendium_order": 528
@@ -4600,7 +4646,7 @@
     "image_url": "/static/images/cards/bubble_bubble.webp",
     "beta_image_url": "/static/images/cards/beta/bubble_bubble.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "如果敌方拥有[gold]中毒[/gold]，则给予12层[gold]中毒[/gold]。",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 101
@@ -5234,7 +5280,7 @@
   {
     "id": "STACK",
     "name": "堆栈",
-    "description": "获得等量于与你当前[gold]弃牌堆[/gold]中牌数|}的[gold]格挡[/gold]值。",
+    "description": "获得等量于与你当前[gold]弃牌堆[/gold]中牌数的[gold]格挡[/gold]值。",
     "description_raw": "获得等量于与你当前[gold]弃牌堆[/gold]中牌数{IfUpgraded:show:+{CalculationBase}|}的[gold]格挡[/gold]值。{InCombat:\n（获得{CalculatedBlock:diff()}点[gold]格挡[/gold]）|}",
     "cost": 1,
     "is_x_cost": null,
@@ -5264,7 +5310,7 @@
     "image_url": "/static/images/cards/stack.webp",
     "beta_image_url": "/static/images/cards/beta/stack.webp",
     "type_variants": null,
-    "upgrade_description": "获得等量于与你当前[gold]弃牌堆[/gold]中牌数+[CalculationBase|]的[gold]格挡[/gold]值。",
+    "upgrade_description": "获得等量于与你当前[gold]弃牌堆[/gold]中牌数+3的[gold]格挡[/gold]值。",
     "type_key": "Skill",
     "rarity_key": "Event",
     "compendium_order": 544
@@ -6901,7 +6947,7 @@
     "image_url": "/static/images/cards/poisoned_stab.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "造成8点伤害。\n给予3层[gold]中毒[/gold]。",
+    "upgrade_description": "造成8点伤害。\n给予4层[gold]中毒[/gold]。",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 146
@@ -8324,7 +8370,7 @@
     "image_url": "/static/images/cards/fear.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "造成8点伤害。\n给予1层[gold]易伤[/gold]。",
+    "upgrade_description": "造成8点伤害。\n给予2层[gold]易伤[/gold]。",
     "type_key": "Attack",
     "rarity_key": "Common",
     "keywords_key": [
@@ -8933,7 +8979,7 @@
     "image_url": "/static/images/cards/tremble.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "给予4层[gold]易伤[/gold]。",
     "type_key": "Skill",
     "rarity_key": "Common",
     "keywords_key": [
@@ -9566,7 +9612,7 @@
     "image_url": "/static/images/cards/leg_sweep.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "给予2层[gold]虚弱[/gold]。\n获得14点[gold]格挡[/gold]。",
+    "upgrade_description": "给予3层[gold]虚弱[/gold]。\n获得14点[gold]格挡[/gold]。",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 133
@@ -10253,7 +10299,7 @@
     "image_url": "/static/images/cards/taunt.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "获得8点[gold]格挡[/gold]。\n给予1层[gold]易伤[/gold]。",
+    "upgrade_description": "获得8点[gold]格挡[/gold]。\n给予2层[gold]易伤[/gold]。",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 75
@@ -10547,7 +10593,7 @@
     "image_url": "/static/images/cards/rupture.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "每当你在你的回合失去生命值时, 获得2点[gold]力量[/gold]。",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 63
@@ -11293,7 +11339,7 @@
       "heal": "+3"
     },
     "image_url": "/static/images/cards/not_yet.webp",
-    "beta_image_url": null,
+    "beta_image_url": "/static/images/cards/beta/not_yet.webp",
     "type_variants": null,
     "upgrade_description": "回复13点生命。",
     "type_key": "Skill",
@@ -11787,7 +11833,7 @@
     "image_url": "/static/images/cards/bulk_up.webp",
     "beta_image_url": "/static/images/cards/beta/bulk_up.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "失去1个充能球栏位。\n获得3点[gold]力量[/gold]。\n获得3点[gold]敏捷[/gold]。",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 360
@@ -12022,7 +12068,7 @@
     "image_url": "/static/images/cards/end_of_days.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "给予所有敌人37层[gold]灾厄[/gold]。\n杀死所有[gold]灾厄[/gold]大于等于当前生命值的敌人。",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 290
@@ -12666,7 +12712,7 @@
     "image_url": "/static/images/cards/deathbringer.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "给予所有敌人26层[gold]灾厄[/gold]和1层[gold]虚弱[/gold]。",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 276
@@ -13601,7 +13647,7 @@
     "image_url": "/static/images/cards/oblivion.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "打出此牌后，你在本回合内每打出一张牌，就给予该敌人4层[gold]灾厄[/gold]。",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 313
@@ -14012,7 +14058,7 @@
     "image_url": "/static/images/cards/footwork.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "获得3点[gold]敏捷[/gold]。",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 125
@@ -14293,7 +14339,7 @@
     "image_url": "/static/images/cards/brand.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "失去1点生命。\n[gold]消耗[/gold]1张牌。\n获得2点[gold]力量[/gold]。",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 11
@@ -16030,7 +16076,7 @@
     "image_url": "/static/images/cards/feeding_frenzy.webp",
     "beta_image_url": "/static/images/cards/beta/feeding_frenzy.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "在本回合内获得7点[gold]力量[/gold]。",
     "type_key": "Skill",
     "rarity_key": "Event",
     "compendium_order": 532
@@ -16076,7 +16122,7 @@
     "image_url": "/static/images/cards/bash.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "造成10点伤害。\n给予2层[gold]易伤[/gold]。",
+    "upgrade_description": "造成10点伤害。\n给予3层[gold]易伤[/gold]。",
     "type_key": "Attack",
     "rarity_key": "Basic",
     "compendium_order": 5
@@ -16236,7 +16282,7 @@
     "image_url": "/static/images/cards/go_for_the_eyes.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "造成4点伤害。\n如果敌人的意图是攻击，则给予1层[gold]虚弱[/gold]。",
+    "upgrade_description": "造成4点伤害。\n如果敌人的意图是攻击，则给予2层[gold]虚弱[/gold]。",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 389
@@ -16322,7 +16368,7 @@
     "image_url": "/static/images/cards/break.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "造成30点伤害。\n给予5层[gold]易伤[/gold]。",
+    "upgrade_description": "造成30点伤害。\n给予7层[gold]易伤[/gold]。",
     "type_key": "Attack",
     "rarity_key": "Ancient",
     "compendium_order": 12
@@ -16943,7 +16989,7 @@
     "image_url": "/static/images/cards/null.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "造成13点伤害。\n给予2层[gold]虚弱[/gold]。\n[gold]生成[/gold]1个[gold]黑暗[/gold]充能球。",
+    "upgrade_description": "造成13点伤害。\n给予3层[gold]虚弱[/gold]。\n[gold]生成[/gold]1个[gold]黑暗[/gold]充能球。",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 407
@@ -16989,7 +17035,7 @@
     "image_url": "/static/images/cards/sucker_punch.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "造成10点伤害。\n给予1层[gold]虚弱[/gold]。",
+    "upgrade_description": "造成10点伤害。\n给予2层[gold]虚弱[/gold]。",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 164
@@ -18525,7 +18571,7 @@
     "image_url": "/static/images/cards/deadly_poison.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "给予7层[gold]中毒[/gold]。",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 110
@@ -19062,7 +19108,7 @@
     "image_url": "/static/images/cards/snakebite.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "给予10层[gold]中毒[/gold]。",
     "type_key": "Skill",
     "rarity_key": "Common",
     "keywords_key": [
@@ -19740,7 +19786,7 @@
     "image_url": "/static/images/cards/negative_pulse.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "获得6点[gold]格挡[/gold]。\n给予所有敌人7层[gold]灾厄[/gold]。",
+    "upgrade_description": "获得6点[gold]格挡[/gold]。\n给予所有敌人11层[gold]灾厄[/gold]。",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 310
@@ -20670,7 +20716,7 @@
     "image_url": "/static/images/cards/haze.webp",
     "beta_image_url": "/static/images/cards/beta/haze.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "给予所有敌人6层[gold]中毒[/gold]。",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "keywords_key": [
@@ -22517,7 +22563,7 @@
     "image_url": "/static/images/cards/prowess.webp",
     "beta_image_url": "/static/images/cards/beta/prowess.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "获得2点[gold]力量[/gold]。\n获得2点[gold]敏捷[/gold]。",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 481
@@ -22563,7 +22609,7 @@
     "image_url": "/static/images/cards/scourge.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "给予13层[gold]灾厄[/gold]。\n抽2张牌。",
+    "upgrade_description": "给予16层[gold]灾厄[/gold]。\n抽2张牌。",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 328
@@ -22645,7 +22691,7 @@
     "image_url": "/static/images/cards/anticipate.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "在本回合获得3点[gold]敏捷[/gold]。",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 93
@@ -22693,7 +22739,7 @@
     "image_url": "/static/images/cards/setup_strike.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "造成9点伤害。\n在本回合内获得2点[gold]力量[/gold]。",
+    "upgrade_description": "造成9点伤害。\n在本回合内获得3点[gold]力量[/gold]。",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 65

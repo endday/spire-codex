@@ -470,7 +470,7 @@
     "encounters": [
       {
         "encounter_id": "BOWLBUGS_NORMAL",
-        "encounter_name": "Sciame di Scaraciotole",
+        "encounter_name": "sciame di Scaraciotole",
         "room_type": "Monster",
         "act": "Act 2 - Hive",
         "is_weak": false
@@ -481,13 +481,6 @@
         "room_type": "Monster",
         "act": "Act 2 - Hive",
         "is_weak": true
-      },
-      {
-        "encounter_id": "TUNNELER_NORMAL",
-        "encounter_name": "coppia di Scavatori",
-        "room_type": "Monster",
-        "act": "Act 2 - Hive",
-        "is_weak": false
       }
     ],
     "innate_powers": null,
@@ -554,7 +547,7 @@
     "encounters": [
       {
         "encounter_id": "BOWLBUGS_NORMAL",
-        "encounter_name": "Sciame di Scaraciotole",
+        "encounter_name": "sciame di Scaraciotole",
         "room_type": "Monster",
         "act": "Act 2 - Hive",
         "is_weak": false
@@ -630,7 +623,7 @@
     "encounters": [
       {
         "encounter_id": "BOWLBUGS_NORMAL",
-        "encounter_name": "Sciame di Scaraciotole",
+        "encounter_name": "sciame di Scaraciotole",
         "room_type": "Monster",
         "act": "Act 2 - Hive",
         "is_weak": false
@@ -644,7 +637,7 @@
       },
       {
         "encounter_id": "SLUMBERING_BEETLE_NORMAL",
-        "encounter_name": "festa di melme",
+        "encounter_name": "festa di scarafaggi",
         "room_type": "Monster",
         "act": "Act 2 - Hive",
         "is_weak": false
@@ -720,21 +713,14 @@
     "encounters": [
       {
         "encounter_id": "BOWLBUGS_NORMAL",
-        "encounter_name": "Sciame di Scaraciotole",
+        "encounter_name": "sciame di Scaraciotole",
         "room_type": "Monster",
         "act": "Act 2 - Hive",
         "is_weak": false
       },
       {
         "encounter_id": "SLUMBERING_BEETLE_NORMAL",
-        "encounter_name": "festa di melme",
-        "room_type": "Monster",
-        "act": "Act 2 - Hive",
-        "is_weak": false
-      },
-      {
-        "encounter_id": "TUNNELER_NORMAL",
-        "encounter_name": "coppia di Scavatori",
+        "encounter_name": "festa di scarafaggi",
         "room_type": "Monster",
         "act": "Act 2 - Hive",
         "is_weak": false
@@ -1077,7 +1063,7 @@
         "is_weak": false
       },
       {
-        "encounter_id": "TOADPOLES_NORMAL",
+        "encounter_id": "SEAPUNK_NORMAL",
         "encounter_name": "fauna dei Moli Funesti",
         "room_type": "Monster",
         "act": "Underdocks",
@@ -1296,6 +1282,13 @@
         "encounter_name": "Una coppia di automi",
         "room_type": "Monster",
         "act": "Act 2 - Hive",
+        "is_weak": false
+      },
+      {
+        "encounter_id": "TUNNELER_NORMAL",
+        "encounter_name": "coppia di Scavatori",
+        "room_type": "Monster",
+        "act": null,
         "is_weak": false
       }
     ],
@@ -2019,6 +2012,99 @@
     },
     "image_url": "/static/images/monsters/devoted_sculptor.webp",
     "beta_image_url": null
+  },
+  {
+    "id": "DOOR",
+    "name": "Porta",
+    "type": "Normal",
+    "min_hp": 155,
+    "max_hp": null,
+    "min_hp_ascension": 165,
+    "max_hp_ascension": null,
+    "moves": [
+      {
+        "id": "DRAMATIC_OPEN",
+        "name": "Dramatic Open",
+        "intent": "Attack",
+        "damage": {
+          "normal": 25,
+          "ascension": 28
+        }
+      },
+      {
+        "id": "ENFORCE",
+        "name": "Enforce",
+        "intent": "Attack + Buff",
+        "powers": [
+          {
+            "power_id": "STRENGTH",
+            "target": "self",
+            "amount": 3
+          }
+        ],
+        "damage": {
+          "normal": 20
+        }
+      },
+      {
+        "id": "DOOR_SLAM",
+        "name": "Door Slam",
+        "intent": "Attack",
+        "damage": {
+          "normal": 15,
+          "ascension": 15,
+          "hit_count": 2
+        }
+      },
+      {
+        "id": "DEAD",
+        "name": "Dead",
+        "intent": "Unknown"
+      }
+    ],
+    "damage_values": {
+      "DramaticOpen": {
+        "normal": 25,
+        "ascension": 28
+      },
+      "DoorSlam": {
+        "normal": 15,
+        "ascension": 15,
+        "hit_count": 2
+      },
+      "Enforce": {
+        "normal": 20
+      }
+    },
+    "block_values": null,
+    "encounters": null,
+    "innate_powers": null,
+    "attack_pattern": {
+      "type": "cycle",
+      "initial_move": null,
+      "states": [
+        {
+          "id": "ENFORCE_MOVE",
+          "type": "move",
+          "move_id": "ENFORCE"
+        },
+        {
+          "id": "DOOR_SLAM_MOVE",
+          "type": "move",
+          "move_id": "DOOR_SLAM",
+          "next": "ENFORCE_MOVE"
+        },
+        {
+          "id": "DEAD_MOVE",
+          "type": "move",
+          "move_id": "DEAD",
+          "next": "DEAD_MOVE"
+        }
+      ],
+      "description": ""
+    },
+    "image_url": "/static/images/monsters/door.webp",
+    "beta_image_url": "/static/images/monsters/beta/door.webp"
   },
   {
     "id": "DOORMAKER",
@@ -3743,7 +3829,7 @@
     "encounters": [
       {
         "encounter_id": "HAUNTED_SHIP_NORMAL",
-        "encounter_name": "Nave Infestata",
+        "encounter_name": "Nave infestata",
         "room_type": "Monster",
         "act": "Underdocks",
         "is_weak": false
@@ -4651,7 +4737,7 @@
       },
       {
         "encounter_id": "SLIMES_WEAK",
-        "encounter_name": "gruppo di melme",
+        "encounter_name": "gruppo di Melme",
         "room_type": "Monster",
         "act": "Act 1 - Overgrowth",
         "is_weak": true
@@ -4728,7 +4814,7 @@
       },
       {
         "encounter_id": "SLIMES_WEAK",
-        "encounter_name": "gruppo di melme",
+        "encounter_name": "gruppo di Melme",
         "room_type": "Monster",
         "act": "Act 1 - Overgrowth",
         "is_weak": true
@@ -6279,7 +6365,7 @@
       },
       {
         "encounter_id": "PUNCH_OFF_EVENT_ENCOUNTER",
-        "encounter_name": "Assemblaggi pugili",
+        "encounter_name": "Assemblaggi Pugili",
         "room_type": "Monster",
         "act": null,
         "is_weak": false
@@ -6767,6 +6853,13 @@
     "block_values": null,
     "encounters": [
       {
+        "encounter_id": "SEAPUNK_NORMAL",
+        "encounter_name": "fauna dei Moli Funesti",
+        "room_type": "Monster",
+        "act": "Underdocks",
+        "is_weak": false
+      },
+      {
         "encounter_id": "SEAPUNK_WEAK",
         "encounter_name": "Teppista marino",
         "room_type": "Monster",
@@ -7038,7 +7131,7 @@
     "encounters": [
       {
         "encounter_id": "SKULKING_COLONY_ELITE",
-        "encounter_name": "colonia furtiva",
+        "encounter_name": "Colonia furtiva",
         "room_type": "Elite",
         "act": "Underdocks",
         "is_weak": false
@@ -7439,7 +7532,7 @@
     "encounters": [
       {
         "encounter_id": "SLUMBERING_BEETLE_NORMAL",
-        "encounter_name": "festa di melme",
+        "encounter_name": "festa di scarafaggi",
         "room_type": "Monster",
         "act": "Act 2 - Hive",
         "is_weak": false
@@ -7684,7 +7777,7 @@
     "encounters": [
       {
         "encounter_id": "SOUL_FYSH_BOSS",
-        "encounter_name": "Animapesce",
+        "encounter_name": "Pesce anima",
         "room_type": "Boss",
         "act": "Underdocks",
         "is_weak": false
@@ -9191,13 +9284,6 @@
     "block_values": null,
     "encounters": [
       {
-        "encounter_id": "TOADPOLES_NORMAL",
-        "encounter_name": "fauna dei Moli Funesti",
-        "room_type": "Monster",
-        "act": "Underdocks",
-        "is_weak": false
-      },
-      {
         "encounter_id": "TOADPOLES_WEAK",
         "encounter_name": "Girini",
         "room_type": "Monster",
@@ -9564,7 +9650,7 @@
         "encounter_id": "TUNNELER_NORMAL",
         "encounter_name": "coppia di Scavatori",
         "room_type": "Monster",
-        "act": "Act 2 - Hive",
+        "act": null,
         "is_weak": false
       },
       {
@@ -9746,7 +9832,7 @@
       },
       {
         "encounter_id": "SLIMES_WEAK",
-        "encounter_name": "gruppo di melme",
+        "encounter_name": "gruppo di Melme",
         "room_type": "Monster",
         "act": "Act 1 - Overgrowth",
         "is_weak": true
@@ -9828,7 +9914,7 @@
       },
       {
         "encounter_id": "SLIMES_WEAK",
-        "encounter_name": "gruppo di melme",
+        "encounter_name": "gruppo di Melme",
         "room_type": "Monster",
         "act": "Act 1 - Overgrowth",
         "is_weak": true

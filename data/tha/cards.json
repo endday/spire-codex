@@ -39,7 +39,7 @@
     "image_url": "/static/images/cards/brand.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "เสีย 1 HP\n[gold]สลาย[/gold]การ์ด 1 ใบ\nได้รับ 2 [gold]ความแข็งแรง[/gold]",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 11
@@ -85,7 +85,7 @@
     "image_url": "/static/images/cards/break.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "สร้างความเสียหาย 30\nสร้าง 5 [gold]จุดอ่อน[/gold]",
+    "upgrade_description": "สร้างความเสียหาย 30\nสร้าง 7 [gold]จุดอ่อน[/gold]",
     "type_key": "Attack",
     "rarity_key": "Ancient",
     "compendium_order": 12
@@ -138,7 +138,7 @@
     "image_url": "/static/images/cards/bulk_up.webp",
     "beta_image_url": "/static/images/cards/beta/bulk_up.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "เสียช่องเก็บลูกแก้ว 1 ช่อง\nได้รับ 3 [gold]ความแข็งแรง[/gold]\nได้รับ 3 [gold]ความชำนาญ[/gold]",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 360
@@ -1166,7 +1166,7 @@
     "image_url": "/static/images/cards/coordinate.webp",
     "beta_image_url": "/static/images/cards/beta/coordinate.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "ผู้เล่นคนอื่น 1 คนได้รับ 8 [gold]ความแข็งแรง[/gold]ในเทิร์นนี้",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 448
@@ -1497,7 +1497,7 @@
     "image_url": "/static/images/cards/deathbringer.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "สร้าง 26 [gold]อายุขัย[/gold]และ 1 [gold]ความอ่อนแอ[/gold]ใส่ศัตรูทั้งหมด",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 276
@@ -2090,7 +2090,7 @@
     "image_url": "/static/images/cards/end_of_days.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "สร้าง 37 [gold]อายุขัย[/gold]ใส่ศัตรูทั้งหมด\nฆ่าศัตรูทั้งหมดที่เหลือ HP ไม่เกิน[gold]อายุขัย[/gold]",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 290
@@ -2588,7 +2588,7 @@
     "image_url": "/static/images/cards/feeding_frenzy.webp",
     "beta_image_url": "/static/images/cards/beta/feeding_frenzy.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "ได้รับ 7 [gold]ความแข็งแรง[/gold]ในเทิร์นนี้",
     "type_key": "Skill",
     "rarity_key": "Event",
     "compendium_order": 532
@@ -3474,6 +3474,52 @@
     "compendium_order": 460
   },
   {
+    "id": "GRAPPLE",
+    "name": "Grapple",
+    "description": "",
+    "description_raw": "",
+    "cost": 1,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "โจมตี",
+    "rarity": "ไม่ธรรมดา",
+    "target": "AnyEnemy",
+    "color": "unknown",
+    "damage": 7,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": [
+      {
+        "power": "Grapple",
+        "amount": 5,
+        "power_key": "Grapple"
+      }
+    ],
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": null,
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Damage": 7,
+      "GrapplePower": 5,
+      "Grapple": 5
+    },
+    "upgrade": {
+      "damage": "+2",
+      "grapplepower": "+2"
+    },
+    "image_url": "/static/images/cards/grapple.webp",
+    "beta_image_url": null,
+    "type_variants": null,
+    "upgrade_description": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
+    "compendium_order": 576
+  },
+  {
     "id": "GRAVE_WARDEN",
     "name": "GraveWarden",
     "description": "ได้รับ 8 [gold]บล็อก[/gold]\nเพิ่ม[gold]วิญญาณ[/gold] 1 ใบเข้า[gold]กองจั่ว[/gold]",
@@ -4112,7 +4158,7 @@
     "image_url": "/static/images/cards/high_five.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "[gold]Osty[/gold]สร้างความเสียหาย 13\nและสร้าง 2 [gold]จุดอ่อน[/gold]\nใส่ศัตรูทั้งหมด",
+    "upgrade_description": "[gold]Osty[/gold]สร้างความเสียหาย 13\nและสร้าง 3 [gold]จุดอ่อน[/gold]\nใส่ศัตรูทั้งหมด",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 303
@@ -5445,7 +5491,7 @@
     "image_url": "/static/images/cards/negative_pulse.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "ได้รับ 6 [gold]บล็อก[/gold]\nสร้าง 7 [gold]อายุขัย[/gold]ใส่ศัตรูทั้งหมด",
+    "upgrade_description": "ได้รับ 6 [gold]บล็อก[/gold]\nสร้าง 11 [gold]อายุขัย[/gold]ใส่ศัตรูทั้งหมด",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 310
@@ -5691,7 +5737,7 @@
       "heal": "+3"
     },
     "image_url": "/static/images/cards/not_yet.webp",
-    "beta_image_url": null,
+    "beta_image_url": "/static/images/cards/beta/not_yet.webp",
     "type_variants": null,
     "upgrade_description": null,
     "type_key": "Skill",
@@ -5742,7 +5788,7 @@
     "image_url": "/static/images/cards/null.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "สร้างความเสียหาย 13\nสร้าง 2 [gold]ความอ่อนแอ[/gold]\n[gold]ปลุกเสก[/gold] 1 [gold]ความมืด[/gold]",
+    "upgrade_description": "สร้างความเสียหาย 13\nสร้าง 3 [gold]ความอ่อนแอ[/gold]\n[gold]ปลุกเสก[/gold] 1 [gold]ความมืด[/gold]",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 407
@@ -5786,7 +5832,7 @@
     "image_url": "/static/images/cards/oblivion.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "ทุกครั้งที่คุณเล่นการ์ดในเทิร์นนี้ สร้าง 4 [gold]อายุขัย[/gold]ใส่ศัตรู",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 313
@@ -6828,7 +6874,7 @@
     "image_url": "/static/images/cards/prowess.webp",
     "beta_image_url": "/static/images/cards/beta/prowess.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "ได้รับ 2 [gold]ความแข็งแรง[/gold]\nได้รับ 2 [gold]ความชำนาญ[/gold]",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 481
@@ -7798,7 +7844,7 @@
     "image_url": "/static/images/cards/scourge.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "สร้าง 13 [gold]อายุขัย[/gold]\nจั่วการ์ด 2 ใบ",
+    "upgrade_description": "สร้าง 16 [gold]อายุขัย[/gold]\nจั่วการ์ด 2 ใบ",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 328
@@ -8052,7 +8098,7 @@
     "image_url": "/static/images/cards/setup_strike.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "สร้างความเสียหาย 9\nได้รับ 2 [gold]ความแข็งแรง[/gold]ในเทิร์นนี้",
+    "upgrade_description": "สร้างความเสียหาย 9\nได้รับ 3 [gold]ความแข็งแรง[/gold]ในเทิร์นนี้",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 65
@@ -8630,7 +8676,7 @@
     "image_url": "/static/images/cards/snakebite.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "สร้าง 10 [gold]พิษ[/gold]",
     "type_key": "Skill",
     "rarity_key": "Common",
     "keywords_key": [
@@ -9240,7 +9286,7 @@
     "image_url": "/static/images/cards/squash.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "สร้างความเสียหาย 12\nสร้าง 2 [gold]จุดอ่อน[/gold]",
+    "upgrade_description": "สร้างความเสียหาย 12\nสร้าง 3 [gold]จุดอ่อน[/gold]",
     "type_key": "Attack",
     "rarity_key": "Event",
     "compendium_order": 543
@@ -9754,7 +9800,7 @@
     "image_url": "/static/images/cards/suppress.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "สร้างความเสียหาย 17\nสร้าง 3 [gold]ความอ่อนแอ[/gold]",
+    "upgrade_description": "สร้างความเสียหาย 17\nสร้าง 5 [gold]ความอ่อนแอ[/gold]",
     "type_key": "Attack",
     "rarity_key": "Ancient",
     "keywords_key": [
@@ -10048,7 +10094,7 @@
     "image_url": "/static/images/cards/taunt.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "ได้รับ 8 [gold]บล็อก[/gold]\nสร้าง 1 [gold]จุดอ่อน[/gold]",
+    "upgrade_description": "ได้รับ 8 [gold]บล็อก[/gold]\nสร้าง 2 [gold]จุดอ่อน[/gold]",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 75
@@ -10647,7 +10693,7 @@
     "image_url": "/static/images/cards/tremble.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "สร้าง 4 [gold]จุดอ่อน[/gold]",
     "type_key": "Skill",
     "rarity_key": "Common",
     "keywords_key": [
@@ -11790,7 +11836,7 @@
     "image_url": "/static/images/cards/leg_sweep.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "สร้าง 2 [gold]ความอ่อนแอ[/gold]\nได้รับ 14 [gold]บล็อก[/gold]",
+    "upgrade_description": "สร้าง 3 [gold]ความอ่อนแอ[/gold]\nได้รับ 14 [gold]บล็อก[/gold]",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 133
@@ -12009,7 +12055,7 @@
     "image_url": "/static/images/cards/rupture.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "ทุกครั้งที่คุณเสีย HP ในเทิร์นของคุณ ได้รับ 2 [gold]ความแข็งแรง[/gold]",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 63
@@ -12891,7 +12937,7 @@
     "image_url": "/static/images/cards/fear.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "สร้างความเสียหาย 8\nสร้าง 1 [gold]จุดอ่อน[/gold]",
+    "upgrade_description": "สร้างความเสียหาย 8\nสร้าง 2 [gold]จุดอ่อน[/gold]",
     "type_key": "Attack",
     "rarity_key": "Common",
     "keywords_key": [
@@ -14121,7 +14167,7 @@
     "image_url": "/static/images/cards/footwork.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "ได้รับ 3 [gold]ความชำนาญ[/gold]",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 125
@@ -14253,7 +14299,7 @@
   {
     "id": "DUAL_WIELD",
     "name": "จับดาบสองมือ",
-    "description": "เลือกการ์ดโจมตีหรือการ์ดพลัง เพิ่มสำเนาการ์ดนั้น  ใบ|1 ใบ}ใส่[gold]มือ[/gold]",
+    "description": "เลือกการ์ดโจมตีหรือการ์ดพลัง เพิ่มสำเนาการ์ดนั้น 1 ใบใส่[gold]มือ[/gold]",
     "description_raw": "เลือกการ์ดโจมตีหรือการ์ดพลัง เพิ่มสำเนาการ์ดนั้น {IfUpgraded:show:{Cards} ใบ|1 ใบ}ใส่[gold]มือ[/gold]",
     "cost": 1,
     "is_x_cost": null,
@@ -14282,7 +14328,7 @@
     "image_url": "/static/images/cards/dual_wield.webp",
     "beta_image_url": "/static/images/cards/beta/dual_wield.webp",
     "type_variants": null,
-    "upgrade_description": "เลือกการ์ดโจมตีหรือการ์ดพลัง เพิ่มสำเนาการ์ดนั้น [Cards ใบ|1 ใบ]ใส่[gold]มือ[/gold]",
+    "upgrade_description": "เลือกการ์ดโจมตีหรือการ์ดพลัง เพิ่มสำเนาการ์ดนั้น 2 ใบใส่[gold]มือ[/gold]",
     "type_key": "Skill",
     "rarity_key": "Event",
     "compendium_order": 528
@@ -15440,7 +15486,7 @@
   {
     "id": "STACK",
     "name": "ทับซ้อน",
-    "description": "ได้รับ[gold]บล็อก[/gold]ตามจำนวนการ์ดใน[gold]กองทิ้ง[/gold]|}",
+    "description": "ได้รับ[gold]บล็อก[/gold]ตามจำนวนการ์ดใน[gold]กองทิ้ง[/gold]",
     "description_raw": "ได้รับ[gold]บล็อก[/gold]ตามจำนวนการ์ดใน[gold]กองทิ้ง[/gold]{IfUpgraded:show: +{CalculationBase}|}{InCombat:\n(ได้รับ {CalculatedBlock:diff()} [gold]บล็อก[/gold])|}",
     "cost": 1,
     "is_x_cost": null,
@@ -15470,7 +15516,7 @@
     "image_url": "/static/images/cards/stack.webp",
     "beta_image_url": "/static/images/cards/beta/stack.webp",
     "type_variants": null,
-    "upgrade_description": "ได้รับ[gold]บล็อก[/gold]ตามจำนวนการ์ดใน[gold]กองทิ้ง[/gold] +[CalculationBase|]",
+    "upgrade_description": "ได้รับ[gold]บล็อก[/gold]ตามจำนวนการ์ดใน[gold]กองทิ้ง[/gold] +3",
     "type_key": "Skill",
     "rarity_key": "Event",
     "compendium_order": 544
@@ -15553,7 +15599,7 @@
     "image_url": "/static/images/cards/neutralize.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "สร้างความเสียหาย 4\nสร้าง 1 [gold]ความอ่อนแอ[/gold]",
+    "upgrade_description": "สร้างความเสียหาย 4\nสร้าง 2 [gold]ความอ่อนแอ[/gold]",
     "type_key": "Attack",
     "rarity_key": "Basic",
     "compendium_order": 139
@@ -15599,7 +15645,7 @@
     "image_url": "/static/images/cards/bash.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "สร้างความเสียหาย 10\nสร้าง 2 [gold]จุดอ่อน[/gold]",
+    "upgrade_description": "สร้างความเสียหาย 10\nสร้าง 3 [gold]จุดอ่อน[/gold]",
     "type_key": "Attack",
     "rarity_key": "Basic",
     "compendium_order": 5
@@ -15996,7 +16042,7 @@
     "image_url": "/static/images/cards/bubble_bubble.webp",
     "beta_image_url": "/static/images/cards/beta/bubble_bubble.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "ถ้าศัตรูมี[gold]พิษ[/gold] สร้าง 12 [gold]พิษ[/gold]",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 101
@@ -16154,7 +16200,7 @@
     "image_url": "/static/images/cards/anticipate.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "ได้รับ 3 [gold]ความชำนาญ[/gold]ในเทิร์นนี้",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 93
@@ -17277,7 +17323,7 @@
     "image_url": "/static/images/cards/deadly_poison.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "สร้าง 7 [gold]พิษ[/gold]",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 110
@@ -17440,7 +17486,7 @@
     "image_url": "/static/images/cards/go_for_the_eyes.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "สร้างความเสียหาย 4\nถ้าศัตรูตั้งใจจะโจมตี สร้าง 1 [gold]ความอ่อนแอ[/gold]",
+    "upgrade_description": "สร้างความเสียหาย 4\nถ้าศัตรูตั้งใจจะโจมตี สร้าง 2 [gold]ความอ่อนแอ[/gold]",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 389
@@ -17904,7 +17950,7 @@
     "image_url": "/static/images/cards/fight_me.webp",
     "beta_image_url": "/static/images/cards/beta/fight_me.webp",
     "type_variants": null,
-    "upgrade_description": "สร้างความเสียหาย 6 จำนวน 2 ครั้ง\nได้รับ 3 [gold]ความแข็งแรง[/gold]\nศัตรูได้รับ 1 [gold]ความแข็งแรง[/gold]",
+    "upgrade_description": "สร้างความเสียหาย 6 จำนวน 2 ครั้ง\nได้รับ 4 [gold]ความแข็งแรง[/gold]\nศัตรูได้รับ 1 [gold]ความแข็งแรง[/gold]",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 35
@@ -18078,7 +18124,7 @@
     "image_url": "/static/images/cards/poisoned_stab.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "สร้างความเสียหาย 8\nสร้าง 3 [gold]พิษ[/gold]",
+    "upgrade_description": "สร้างความเสียหาย 8\nสร้าง 4 [gold]พิษ[/gold]",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 146
@@ -19209,7 +19255,7 @@
     "image_url": "/static/images/cards/assassinate.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "สร้างความเสียหาย 13\nสร้าง 1 [gold]จุดอ่อน[/gold]",
+    "upgrade_description": "สร้างความเสียหาย 13\nสร้าง 2 [gold]จุดอ่อน[/gold]",
     "type_key": "Attack",
     "rarity_key": "Rare",
     "keywords_key": [
@@ -19437,7 +19483,7 @@
     "image_url": "/static/images/cards/beam_cell.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "สร้างความเสียหาย 4\nสร้าง 1 [gold]จุดอ่อน[/gold]",
+    "upgrade_description": "สร้างความเสียหาย 4\nสร้าง 2 [gold]จุดอ่อน[/gold]",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 355
@@ -20512,7 +20558,7 @@
     "image_url": "/static/images/cards/haze.webp",
     "beta_image_url": "/static/images/cards/beta/haze.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "สร้าง 6 [gold]พิษ[/gold]ใส่ศัตรูทั้งหมด",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "keywords_key": [
@@ -20561,7 +20607,7 @@
     "image_url": "/static/images/cards/sucker_punch.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "สร้างความเสียหาย 10\nสร้าง 1 [gold]ความอ่อนแอ[/gold]",
+    "upgrade_description": "สร้างความเสียหาย 10\nสร้าง 2 [gold]ความอ่อนแอ[/gold]",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 164

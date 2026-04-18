@@ -40,6 +40,52 @@
     "compendium_order": 384
   },
   {
+    "id": "GRAPPLE",
+    "name": "Grapple",
+    "description": "",
+    "description_raw": "",
+    "cost": 1,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "アタック",
+    "rarity": "アンコモン",
+    "target": "AnyEnemy",
+    "color": "unknown",
+    "damage": 7,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": [
+      {
+        "power": "Grapple",
+        "amount": 5,
+        "power_key": "Grapple"
+      }
+    ],
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": null,
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Damage": 7,
+      "GrapplePower": 5,
+      "Grapple": 5
+    },
+    "upgrade": {
+      "damage": "+2",
+      "grapplepower": "+2"
+    },
+    "image_url": "/static/images/cards/grapple.webp",
+    "beta_image_url": null,
+    "type_variants": null,
+    "upgrade_description": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
+    "compendium_order": 576
+  },
+  {
     "id": "BELIEVE_IN_YOU",
     "name": "お前を信じる",
     "description": "他のプレイヤーは[energy:2]を得る。",
@@ -1322,7 +1368,7 @@
     "image_url": "/static/images/cards/oblivion.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "このターン、カードをプレイするたび、対象の敵に[gold]破滅[/gold]4を付与する。",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 313
@@ -2684,7 +2730,7 @@
   {
     "id": "STACK",
     "name": "スタック",
-    "description": "[gold]捨て札[/gold]の枚数|}に等しい[gold]ブロック[/gold]を得る。",
+    "description": "[gold]捨て札[/gold]の枚数に等しい[gold]ブロック[/gold]を得る。",
     "description_raw": "[gold]捨て札[/gold]の枚数{IfUpgraded:show: +{CalculationBase}|}に等しい[gold]ブロック[/gold]を得る。{InCombat:\n({CalculatedBlock:diff()}[gold]ブロック[/gold]を得る)|}",
     "cost": 1,
     "is_x_cost": null,
@@ -2714,7 +2760,7 @@
     "image_url": "/static/images/cards/stack.webp",
     "beta_image_url": "/static/images/cards/beta/stack.webp",
     "type_variants": null,
-    "upgrade_description": "[gold]捨て札[/gold]の枚数 +[CalculationBase|]に等しい[gold]ブロック[/gold]を得る。",
+    "upgrade_description": "[gold]捨て札[/gold]の枚数 +3に等しい[gold]ブロック[/gold]を得る。",
     "type_key": "Skill",
     "rarity_key": "Event",
     "compendium_order": 544
@@ -3279,7 +3325,7 @@
     "image_url": "/static/images/cards/setup_strike.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "9ダメージを与える。\nターン終了時まで[gold]筋力[/gold]2を得る。",
+    "upgrade_description": "9ダメージを与える。\nターン終了時まで[gold]筋力[/gold]3を得る。",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 65
@@ -3996,7 +4042,7 @@
     "image_url": "/static/images/cards/deathbringer.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "すべての敵に[gold]破滅[/gold]26と[gold]脱力[/gold]1を付与する。",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 276
@@ -4412,7 +4458,7 @@
     "image_url": "/static/images/cards/null.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "13ダメージを与える。\n[gold]脱力[/gold]2を付与する。\n[gold]ダーク[/gold]1を[gold]生成[/gold]する。",
+    "upgrade_description": "13ダメージを与える。\n[gold]脱力[/gold]3を付与する。\n[gold]ダーク[/gold]1を[gold]生成[/gold]する。",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 407
@@ -4626,7 +4672,7 @@
     "image_url": "/static/images/cards/high_five.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "[gold]オスティ[/gold]が13ダメージを与え、\nすべての敵に[gold]弱体[/gold]2を\n付与する。",
+    "upgrade_description": "[gold]オスティ[/gold]が13ダメージを与え、\nすべての敵に[gold]弱体[/gold]3を\n付与する。",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 303
@@ -4987,7 +5033,7 @@
     "image_url": "/static/images/cards/bubble_bubble.webp",
     "beta_image_url": "/static/images/cards/beta/bubble_bubble.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "敵が[gold]毒[/gold]に侵されている場合、[gold]毒[/gold]12を付与する。",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 101
@@ -5462,7 +5508,7 @@
     "image_url": "/static/images/cards/beam_cell.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "4ダメージを与える。\n[gold]弱体[/gold]1を付与する。",
+    "upgrade_description": "4ダメージを与える。\n[gold]弱体[/gold]2を付与する。",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 355
@@ -5754,7 +5800,7 @@
     "image_url": "/static/images/cards/footwork.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "[gold]敏捷[/gold]3を得る。",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 125
@@ -5963,7 +6009,7 @@
     "image_url": "/static/images/cards/feeding_frenzy.webp",
     "beta_image_url": "/static/images/cards/beta/feeding_frenzy.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "ターン終了時まで[gold]筋力[/gold]7を得る。",
     "type_key": "Skill",
     "rarity_key": "Event",
     "compendium_order": 532
@@ -8118,7 +8164,7 @@
     "image_url": "/static/images/cards/sucker_punch.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "10ダメージを与える。\n[gold]脱力[/gold]1を付与する。",
+    "upgrade_description": "10ダメージを与える。\n[gold]脱力[/gold]2を付与する。",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 164
@@ -8404,7 +8450,7 @@
   {
     "id": "DUAL_WIELD",
     "name": "二刀流",
-    "description": "アタックかパワーを1枚選ぶ。そのコピーを枚|1枚}[gold]手札[/gold]に加える。",
+    "description": "アタックかパワーを1枚選ぶ。そのコピーを1枚[gold]手札[/gold]に加える。",
     "description_raw": "アタックかパワーを1枚選ぶ。そのコピーを{IfUpgraded:show:{Cards}枚|1枚}[gold]手札[/gold]に加える。",
     "cost": 1,
     "is_x_cost": null,
@@ -8433,7 +8479,7 @@
     "image_url": "/static/images/cards/dual_wield.webp",
     "beta_image_url": "/static/images/cards/beta/dual_wield.webp",
     "type_variants": null,
-    "upgrade_description": "アタックかパワーを1枚選ぶ。そのコピーを[Cards枚|1枚][gold]手札[/gold]に加える。",
+    "upgrade_description": "アタックかパワーを1枚選ぶ。そのコピーを2枚[gold]手札[/gold]に加える。",
     "type_key": "Skill",
     "rarity_key": "Event",
     "compendium_order": 528
@@ -8769,7 +8815,7 @@
     "image_url": "/static/images/cards/fight_me.webp",
     "beta_image_url": "/static/images/cards/beta/fight_me.webp",
     "type_variants": null,
-    "upgrade_description": "6ダメージを2回与える。\n[gold]筋力[/gold]3を得る。\n敵は[gold]筋力[/gold]1を得る。",
+    "upgrade_description": "6ダメージを2回与える。\n[gold]筋力[/gold]4を得る。\n敵は[gold]筋力[/gold]1を得る。",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 35
@@ -11315,7 +11361,7 @@
     "image_url": "/static/images/cards/scourge.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "[gold]破滅[/gold]13を付与する。\nカードを2枚引く。",
+    "upgrade_description": "[gold]破滅[/gold]16を付与する。\nカードを2枚引く。",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 328
@@ -12382,7 +12428,7 @@
     "image_url": "/static/images/cards/bash.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "10ダメージを与える。\n[gold]弱体[/gold]2を付与する。",
+    "upgrade_description": "10ダメージを与える。\n[gold]弱体[/gold]3を付与する。",
     "type_key": "Attack",
     "rarity_key": "Basic",
     "compendium_order": 5
@@ -13988,7 +14034,7 @@
     "image_url": "/static/images/cards/suppress.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "17ダメージを与える。\n[gold]脱力[/gold]3を付与する。",
+    "upgrade_description": "17ダメージを与える。\n[gold]脱力[/gold]5を付与する。",
     "type_key": "Attack",
     "rarity_key": "Ancient",
     "keywords_key": [
@@ -14074,7 +14120,7 @@
     "image_url": "/static/images/cards/taunt.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "8[gold]ブロック[/gold]を得る。\n[gold]弱体[/gold]1を付与する。",
+    "upgrade_description": "8[gold]ブロック[/gold]を得る。\n[gold]弱体[/gold]2を付与する。",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 75
@@ -14672,7 +14718,7 @@
     "image_url": "/static/images/cards/assassinate.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "13ダメージを与える。\n[gold]弱体[/gold]1を付与する。",
+    "upgrade_description": "13ダメージを与える。\n[gold]弱体[/gold]2を付与する。",
     "type_key": "Attack",
     "rarity_key": "Rare",
     "keywords_key": [
@@ -14903,7 +14949,7 @@
       "heal": "+3"
     },
     "image_url": "/static/images/cards/not_yet.webp",
-    "beta_image_url": null,
+    "beta_image_url": "/static/images/cards/beta/not_yet.webp",
     "type_variants": null,
     "upgrade_description": "HPを13回復する。",
     "type_key": "Skill",
@@ -15152,7 +15198,7 @@
     "image_url": "/static/images/cards/anticipate.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "ターン終了時まで[gold]敏捷[/gold]3を得る。",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 93
@@ -15241,7 +15287,7 @@
     "image_url": "/static/images/cards/prowess.webp",
     "beta_image_url": "/static/images/cards/beta/prowess.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "[gold]筋力[/gold]2を得る。\n[gold]敏捷[/gold]2を得る。",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 481
@@ -15746,7 +15792,7 @@
     "image_url": "/static/images/cards/poisoned_stab.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "8ダメージを与える。\n[gold]毒[/gold]3を付与する。",
+    "upgrade_description": "8ダメージを与える。\n[gold]毒[/gold]4を付与する。",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 146
@@ -15836,7 +15882,7 @@
     "image_url": "/static/images/cards/haze.webp",
     "beta_image_url": "/static/images/cards/beta/haze.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "すべての敵に[gold]毒[/gold]6を付与する。",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "keywords_key": [
@@ -16624,7 +16670,7 @@
     "image_url": "/static/images/cards/neutralize.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "4ダメージを与える。\n[gold]脱力[/gold]1を付与する。",
+    "upgrade_description": "4ダメージを与える。\n[gold]脱力[/gold]2を付与する。",
     "type_key": "Attack",
     "rarity_key": "Basic",
     "compendium_order": 139
@@ -16861,7 +16907,7 @@
     "image_url": "/static/images/cards/brand.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "HPを1失う。\nカードを1枚[gold]廃棄[/gold]する。\n[gold]筋力[/gold]2を得る。",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 11
@@ -17468,7 +17514,7 @@
     "image_url": "/static/images/cards/fear.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "8ダメージを与える。\n[gold]弱体[/gold]1を付与する。",
+    "upgrade_description": "8ダメージを与える。\n[gold]弱体[/gold]2を付与する。",
     "type_key": "Attack",
     "rarity_key": "Common",
     "keywords_key": [
@@ -17847,7 +17893,7 @@
     "image_url": "/static/images/cards/go_for_the_eyes.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "4ダメージを与える。\n敵が攻撃を予定している場合、[gold]脱力[/gold]1を付与する。",
+    "upgrade_description": "4ダメージを与える。\n敵が攻撃を予定している場合、[gold]脱力[/gold]2を付与する。",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 389
@@ -17974,7 +18020,7 @@
     "image_url": "/static/images/cards/break.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "30ダメージを与える。\n[gold]弱体[/gold]5を付与する。",
+    "upgrade_description": "30ダメージを与える。\n[gold]弱体[/gold]7を付与する。",
     "type_key": "Attack",
     "rarity_key": "Ancient",
     "compendium_order": 12
@@ -18708,7 +18754,7 @@
     "image_url": "/static/images/cards/end_of_days.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "すべての敵に[gold]破滅[/gold]37を付与する。現在のHP以上の[gold]破滅[/gold]が蓄積している敵を即死させる。",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 290
@@ -19197,7 +19243,7 @@
     "image_url": "/static/images/cards/bulk_up.webp",
     "beta_image_url": "/static/images/cards/beta/bulk_up.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "オーブスロットを1個失う。\n[gold]筋力[/gold]3を得る。\n[gold]敏捷[/gold]3を得る。",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 360
@@ -19429,7 +19475,7 @@
     "image_url": "/static/images/cards/deadly_poison.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "[gold]毒[/gold]7を付与する。",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 110
@@ -19983,7 +20029,7 @@
     "image_url": "/static/images/cards/snakebite.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "[gold]毒[/gold]10を付与する。",
     "type_key": "Skill",
     "rarity_key": "Common",
     "keywords_key": [
@@ -20185,7 +20231,7 @@
     "image_url": "/static/images/cards/rupture.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "自身のターンにHPを失うたび、[gold]筋力[/gold]2を得る。",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 63
@@ -20681,7 +20727,7 @@
     "image_url": "/static/images/cards/negative_pulse.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "6[gold]ブロック[/gold]を得る。\nすべての敵に[gold]破滅[/gold]7を付与する。",
+    "upgrade_description": "6[gold]ブロック[/gold]を得る。\nすべての敵に[gold]破滅[/gold]11を付与する。",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 310
@@ -21015,7 +21061,7 @@
     "image_url": "/static/images/cards/leg_sweep.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "[gold]脱力[/gold]2を付与する。\n14[gold]ブロック[/gold]を得る。",
+    "upgrade_description": "[gold]脱力[/gold]3を付与する。\n14[gold]ブロック[/gold]を得る。",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 133
@@ -21178,7 +21224,7 @@
     "image_url": "/static/images/cards/squash.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "12ダメージを与える。\n[gold]弱体[/gold]2を付与する。",
+    "upgrade_description": "12ダメージを与える。\n[gold]弱体[/gold]3を付与する。",
     "type_key": "Attack",
     "rarity_key": "Event",
     "compendium_order": 543
@@ -21280,7 +21326,7 @@
     "image_url": "/static/images/cards/tremble.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "[gold]弱体[/gold]4を付与する。",
     "type_key": "Skill",
     "rarity_key": "Common",
     "keywords_key": [
@@ -21591,7 +21637,7 @@
     "image_url": "/static/images/cards/coordinate.webp",
     "beta_image_url": "/static/images/cards/beta/coordinate.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "ターン終了時まで、他のプレイヤー1人に[gold]筋力[/gold]8を付与する。",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 448

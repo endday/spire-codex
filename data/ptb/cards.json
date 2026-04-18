@@ -331,7 +331,7 @@
     "image_url": "/static/images/cards/squash.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Cause 12 de dano.\nAplique 2 de [gold]Vulnerável[/gold].",
+    "upgrade_description": "Cause 12 de dano.\nAplique 3 de [gold]Vulnerável[/gold].",
     "type_key": "Attack",
     "rarity_key": "Event",
     "compendium_order": 543
@@ -637,7 +637,7 @@
       "heal": "+3"
     },
     "image_url": "/static/images/cards/not_yet.webp",
-    "beta_image_url": null,
+    "beta_image_url": "/static/images/cards/beta/not_yet.webp",
     "type_variants": null,
     "upgrade_description": "Cure 13 PV.",
     "type_key": "Skill",
@@ -1154,7 +1154,7 @@
     "image_url": "/static/images/cards/anticipate.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Receba 3 de [gold]Destreza[/gold] neste turno.",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 93
@@ -2027,7 +2027,7 @@
     "image_url": "/static/images/cards/assassinate.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Cause 13 de dano.\nAplique 1 de [gold]Vulnerável[/gold].",
+    "upgrade_description": "Cause 13 de dano.\nAplique 2 de [gold]Vulnerável[/gold].",
     "type_key": "Attack",
     "rarity_key": "Rare",
     "keywords_key": [
@@ -2708,7 +2708,7 @@
     "image_url": "/static/images/cards/bubble_bubble.webp",
     "beta_image_url": "/static/images/cards/beta/bubble_bubble.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Se o inimigo estiver [gold]Envenenado[/gold], aplique 12 de [gold]Veneno[/gold].",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 101
@@ -2874,7 +2874,7 @@
     "image_url": "/static/images/cards/haze.webp",
     "beta_image_url": "/static/images/cards/beta/haze.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Aplique 6 de [gold]Veneno[/gold] a TODOS os inimigos.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "keywords_key": [
@@ -3391,7 +3391,7 @@
     "image_url": "/static/images/cards/deathbringer.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Aplique 26 de [gold]Ruína[/gold] e 1 de [gold]Fraqueza[/gold] a TODOS os inimigos.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 276
@@ -4704,7 +4704,7 @@
     "image_url": "/static/images/cards/coordinate.webp",
     "beta_image_url": "/static/images/cards/beta/coordinate.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Conceda a outro jogador 8 de [gold]Força[/gold] neste turno.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 448
@@ -6869,7 +6869,7 @@
   {
     "id": "DUAL_WIELD",
     "name": "Dupla Empunhadura",
-    "description": "Escolha uma carta de Ataque ou Poder. Adicione  cópias|uma cópia} desta carta na sua [gold]Mão[/gold].",
+    "description": "Escolha uma carta de Ataque ou Poder. Adicione uma cópia desta carta na sua [gold]Mão[/gold].",
     "description_raw": "Escolha uma carta de Ataque ou Poder. Adicione {IfUpgraded:show:{Cards} cópias|uma cópia} desta carta na sua [gold]Mão[/gold].",
     "cost": 1,
     "is_x_cost": null,
@@ -6898,7 +6898,7 @@
     "image_url": "/static/images/cards/dual_wield.webp",
     "beta_image_url": "/static/images/cards/beta/dual_wield.webp",
     "type_variants": null,
-    "upgrade_description": "Escolha uma carta de Ataque ou Poder. Adicione [Cards cópias|uma cópia] desta carta na sua [gold]Mão[/gold].",
+    "upgrade_description": "Escolha uma carta de Ataque ou Poder. Adicione 2 cópias desta carta na sua [gold]Mão[/gold].",
     "type_key": "Skill",
     "rarity_key": "Event",
     "compendium_order": 528
@@ -7105,7 +7105,7 @@
   {
     "id": "STACK",
     "name": "Empilhar",
-    "description": "Receba [gold]Proteção[/gold] equivalente à quantidade de cartas na sua [gold]Pilha de Descarte[/gold]|}.",
+    "description": "Receba [gold]Proteção[/gold] equivalente à quantidade de cartas na sua [gold]Pilha de Descarte[/gold].",
     "description_raw": "Receba [gold]Proteção[/gold] equivalente à quantidade de cartas na sua [gold]Pilha de Descarte[/gold]{IfUpgraded:show: +{CalculationBase}|}.{InCombat:\n(Receba {CalculatedBlock:diff()} de [gold]Proteção[/gold])|}",
     "cost": 1,
     "is_x_cost": null,
@@ -7135,7 +7135,7 @@
     "image_url": "/static/images/cards/stack.webp",
     "beta_image_url": "/static/images/cards/beta/stack.webp",
     "type_variants": null,
-    "upgrade_description": "Receba [gold]Proteção[/gold] equivalente à quantidade de cartas na sua [gold]Pilha de Descarte[/gold] +[CalculationBase|].",
+    "upgrade_description": "Receba [gold]Proteção[/gold] equivalente à quantidade de cartas na sua [gold]Pilha de Descarte[/gold] +3.",
     "type_key": "Skill",
     "rarity_key": "Event",
     "compendium_order": 544
@@ -7768,7 +7768,7 @@
     "image_url": "/static/images/cards/bash.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Cause 10 de dano.\nAplique 2 de [gold]Vulnerável[/gold].",
+    "upgrade_description": "Cause 10 de dano.\nAplique 3 de [gold]Vulnerável[/gold].",
     "type_key": "Attack",
     "rarity_key": "Basic",
     "compendium_order": 5
@@ -8245,7 +8245,7 @@
     "image_url": "/static/images/cards/poisoned_stab.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Cause 8 de dano.\nAplique 3 de [gold]Veneno[/gold].",
+    "upgrade_description": "Cause 8 de dano.\nAplique 4 de [gold]Veneno[/gold].",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 146
@@ -8589,7 +8589,7 @@
     "image_url": "/static/images/cards/tremble.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Aplique 4 de [gold]Vulnerável[/gold].",
     "type_key": "Skill",
     "rarity_key": "Common",
     "keywords_key": [
@@ -9033,7 +9033,7 @@
     "image_url": "/static/images/cards/beam_cell.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Cause 4 de dano.\nAplique 1 de [gold]Vulnerável[/gold].",
+    "upgrade_description": "Cause 4 de dano.\nAplique 2 de [gold]Vulnerável[/gold].",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 355
@@ -9225,7 +9225,7 @@
     "image_url": "/static/images/cards/end_of_days.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Aplique 37 de [gold]Ruína[/gold] a TODOS os inimigos.\nFinalize inimigos que tenham pelo menos tanta [gold]Ruína[/gold] quanto PV.",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 290
@@ -9310,7 +9310,7 @@
     "image_url": "/static/images/cards/scourge.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Aplique 13 de [gold]Ruína[/gold].\nCompre 2 cartas.",
+    "upgrade_description": "Aplique 16 de [gold]Ruína[/gold].\nCompre 2 cartas.",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 328
@@ -9862,7 +9862,7 @@
     "image_url": "/static/images/cards/bulk_up.webp",
     "beta_image_url": "/static/images/cards/beta/bulk_up.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Perca 1 Espaço de Orbe.\nReceba 3 de [gold]Força[/gold].\nReceba 3 de [gold]Destreza[/gold].",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 360
@@ -10030,7 +10030,7 @@
     "image_url": "/static/images/cards/feeding_frenzy.webp",
     "beta_image_url": "/static/images/cards/beta/feeding_frenzy.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Receba 7 de [gold]Força[/gold] neste turno.",
     "type_key": "Skill",
     "rarity_key": "Event",
     "compendium_order": 532
@@ -11384,7 +11384,7 @@
     "image_url": "/static/images/cards/setup_strike.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Cause 9 de dano.\nReceba 2 de [gold]Força[/gold] neste turno.",
+    "upgrade_description": "Cause 9 de dano.\nReceba 3 de [gold]Força[/gold] neste turno.",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 65
@@ -11590,6 +11590,52 @@
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 185
+  },
+  {
+    "id": "GRAPPLE",
+    "name": "Grapple",
+    "description": "",
+    "description_raw": "",
+    "cost": 1,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "Ataque",
+    "rarity": "Incomum",
+    "target": "AnyEnemy",
+    "color": "unknown",
+    "damage": 7,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": [
+      {
+        "power": "Grapple",
+        "amount": 5,
+        "power_key": "Grapple"
+      }
+    ],
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": null,
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Damage": 7,
+      "GrapplePower": 5,
+      "Grapple": 5
+    },
+    "upgrade": {
+      "damage": "+2",
+      "grapplepower": "+2"
+    },
+    "image_url": "/static/images/cards/grapple.webp",
+    "beta_image_url": null,
+    "type_variants": null,
+    "upgrade_description": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
+    "compendium_order": 576
   },
   {
     "id": "DARK_SHACKLES",
@@ -14337,7 +14383,7 @@
     "image_url": "/static/images/cards/brand.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Perca 1 PV.\n[gold]Exaure[/gold] 1 carta.\nReceba 2 de [gold]Força[/gold].",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 11
@@ -14906,7 +14952,7 @@
     "image_url": "/static/images/cards/go_for_the_eyes.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Cause 4 de dano.\nSe o inimigo tem intenção de atacar, aplique 1 de [gold]Fraqueza[/gold].",
+    "upgrade_description": "Cause 4 de dano.\nSe o inimigo tem intenção de atacar, aplique 2 de [gold]Fraqueza[/gold].",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 389
@@ -15114,7 +15160,7 @@
     "image_url": "/static/images/cards/snakebite.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Aplique 10 de [gold]Veneno[/gold].",
     "type_key": "Skill",
     "rarity_key": "Common",
     "keywords_key": [
@@ -15462,7 +15508,7 @@
     "image_url": "/static/images/cards/neutralize.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Cause 4 de dano.\nAplique 1 de [gold]Fraqueza[/gold].",
+    "upgrade_description": "Cause 4 de dano.\nAplique 2 de [gold]Fraqueza[/gold].",
     "type_key": "Attack",
     "rarity_key": "Basic",
     "compendium_order": 139
@@ -15699,7 +15745,7 @@
     "image_url": "/static/images/cards/null.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Cause 13 de dano.\nAplique 2 de [gold]Fraqueza[/gold].\n[gold]Canalize[/gold] 1 [gold]Trevas[/gold].",
+    "upgrade_description": "Cause 13 de dano.\nAplique 3 de [gold]Fraqueza[/gold].\n[gold]Canalize[/gold] 1 [gold]Trevas[/gold].",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 407
@@ -15818,7 +15864,7 @@
     "image_url": "/static/images/cards/oblivion.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Sempre que você jogar uma carta neste turno, aplique 4 de [gold]Ruína[/gold] ao inimigo.",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 313
@@ -17208,7 +17254,7 @@
     "image_url": "/static/images/cards/footwork.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Receba 3 de [gold]Destreza[/gold].",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 125
@@ -17540,7 +17586,7 @@
     "image_url": "/static/images/cards/prowess.webp",
     "beta_image_url": "/static/images/cards/beta/prowess.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Receba 2 de [gold]Força[/gold].\nReceba 2 de [gold]Destreza[/gold].",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 481
@@ -17747,7 +17793,7 @@
     "image_url": "/static/images/cards/taunt.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Receba 8 de [gold]Proteção[/gold].\nAplique 1 de [gold]Vulnerável[/gold].",
+    "upgrade_description": "Receba 8 de [gold]Proteção[/gold].\nAplique 2 de [gold]Vulnerável[/gold].",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 75
@@ -17831,7 +17877,7 @@
     "image_url": "/static/images/cards/negative_pulse.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Receba 6 de [gold]Proteção[/gold].\nAplique 7 de [gold]Ruína[/gold] a TODOS os inimigos.",
+    "upgrade_description": "Receba 6 de [gold]Proteção[/gold].\nAplique 11 de [gold]Ruína[/gold] a TODOS os inimigos.",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 310
@@ -18280,7 +18326,7 @@
     "image_url": "/static/images/cards/break.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Cause 30 de dano.\nAplique 5 de [gold]Vulnerável[/gold].",
+    "upgrade_description": "Cause 30 de dano.\nAplique 7 de [gold]Vulnerável[/gold].",
     "type_key": "Attack",
     "rarity_key": "Ancient",
     "compendium_order": 12
@@ -18710,7 +18756,7 @@
     "image_url": "/static/images/cards/leg_sweep.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Aplique 2 de [gold]Fraqueza[/gold].\nReceba 14 de [gold]Proteção[/gold].",
+    "upgrade_description": "Aplique 3 de [gold]Fraqueza[/gold].\nReceba 14 de [gold]Proteção[/gold].",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 133
@@ -19471,7 +19517,7 @@
     "image_url": "/static/images/cards/fight_me.webp",
     "beta_image_url": "/static/images/cards/beta/fight_me.webp",
     "type_variants": null,
-    "upgrade_description": "Cause 6 de dano duas vezes.\nReceba 3 de [gold]Força[/gold].\nO inimigo recebe 1 de [gold]Força[/gold].",
+    "upgrade_description": "Cause 6 de dano duas vezes.\nReceba 4 de [gold]Força[/gold].\nO inimigo recebe 1 de [gold]Força[/gold].",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 35
@@ -19838,7 +19884,7 @@
     "image_url": "/static/images/cards/rupture.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Sempre que você perder PV no seu turno, receba 2 de [gold]Força[/gold].",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 63
@@ -21023,7 +21069,7 @@
     "image_url": "/static/images/cards/sucker_punch.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Cause 10 de dano.\nAplique 1 de [gold]Fraqueza[/gold].",
+    "upgrade_description": "Cause 10 de dano.\nAplique 2 de [gold]Fraqueza[/gold].",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 164
@@ -21421,7 +21467,7 @@
     "image_url": "/static/images/cards/suppress.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Cause 17 de dano.\nAplique 3 de [gold]Fraqueza[/gold].",
+    "upgrade_description": "Cause 17 de dano.\nAplique 5 de [gold]Fraqueza[/gold].",
     "type_key": "Attack",
     "rarity_key": "Ancient",
     "keywords_key": [
@@ -22056,7 +22102,7 @@
     "image_url": "/static/images/cards/fear.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Cause 8 de dano.\nAplique 1 de [gold]Vulnerável[/gold].",
+    "upgrade_description": "Cause 8 de dano.\nAplique 2 de [gold]Vulnerável[/gold].",
     "type_key": "Attack",
     "rarity_key": "Common",
     "keywords_key": [
@@ -22237,7 +22283,7 @@
     "image_url": "/static/images/cards/high_five.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "[gold]Ostheo[/gold] causa 13 de dano\ne aplica 2 de [gold]Vulnerável[/gold]\na TODOS os inimigos.",
+    "upgrade_description": "[gold]Ostheo[/gold] causa 13 de dano\ne aplica 3 de [gold]Vulnerável[/gold]\na TODOS os inimigos.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 303
@@ -22885,7 +22931,7 @@
     "image_url": "/static/images/cards/deadly_poison.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Aplique 7 de [gold]Veneno[/gold].",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 110

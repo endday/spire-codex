@@ -743,7 +743,7 @@
     "image_url": "/static/images/cards/bubble_bubble.webp",
     "beta_image_url": "/static/images/cards/beta/bubble_bubble.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Jeżeli przeciwnik ma [gold]Truciznę[/gold], nałóż 12 pkt. [gold]Trucizny[/gold].",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 101
@@ -826,7 +826,7 @@
     "image_url": "/static/images/cards/sucker_punch.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Zadaj 10 pkt. obrażeń.\nNałóż 1 pkt. [gold]Słabości[/gold].",
+    "upgrade_description": "Zadaj 10 pkt. obrażeń.\nNałóż 2 pkt. [gold]Słabości[/gold].",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 164
@@ -1732,7 +1732,7 @@
     "image_url": "/static/images/cards/go_for_the_eyes.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Zadaj 4 pkt. obrażeń.\nJeżeli przeciwnik zamierza zaatakować, nałóż 1 pkt. [gold]Słabości[/gold].",
+    "upgrade_description": "Zadaj 4 pkt. obrażeń.\nJeżeli przeciwnik zamierza zaatakować, nałóż 2 pkt. [gold]Słabości[/gold].",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 389
@@ -1975,7 +1975,7 @@
     "image_url": "/static/images/cards/scourge.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Nałóż 13 pkt. [gold]Zagłady[/gold].\nDobierz 2 karty|kart.",
+    "upgrade_description": "Nałóż 16 pkt. [gold]Zagłady[/gold].\nDobierz 2 karty|kart.",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 328
@@ -4220,6 +4220,52 @@
     "compendium_order": 57
   },
   {
+    "id": "GRAPPLE",
+    "name": "Grapple",
+    "description": "",
+    "description_raw": "",
+    "cost": 1,
+    "is_x_cost": null,
+    "is_x_star_cost": null,
+    "star_cost": null,
+    "type": "Atak",
+    "rarity": "Niepospolita",
+    "target": "AnyEnemy",
+    "color": "unknown",
+    "damage": 7,
+    "block": null,
+    "hit_count": null,
+    "powers_applied": [
+      {
+        "power": "Grapple",
+        "amount": 5,
+        "power_key": "Grapple"
+      }
+    ],
+    "cards_draw": null,
+    "energy_gain": null,
+    "hp_loss": null,
+    "keywords": null,
+    "tags": null,
+    "spawns_cards": null,
+    "vars": {
+      "Damage": 7,
+      "GrapplePower": 5,
+      "Grapple": 5
+    },
+    "upgrade": {
+      "damage": "+2",
+      "grapplepower": "+2"
+    },
+    "image_url": "/static/images/cards/grapple.webp",
+    "beta_image_url": null,
+    "type_variants": null,
+    "upgrade_description": null,
+    "type_key": "Attack",
+    "rarity_key": "Uncommon",
+    "compendium_order": 576
+  },
+  {
     "id": "GATHER_LIGHT",
     "name": "Gromadzenie światła",
     "description": "Zyskaj 8 pkt. [gold]Bloku[/gold].\nZyskaj [star:1].",
@@ -4460,7 +4506,7 @@
     "image_url": "/static/images/cards/bash.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Zadaj 10 pkt. obrażeń.\nNałóż 2 pkt. [gold]Wrażliwości[/gold].",
+    "upgrade_description": "Zadaj 10 pkt. obrażeń.\nNałóż 3 pkt. [gold]Wrażliwości[/gold].",
     "type_key": "Attack",
     "rarity_key": "Basic",
     "compendium_order": 5
@@ -5389,7 +5435,7 @@
       "heal": "+3"
     },
     "image_url": "/static/images/cards/not_yet.webp",
-    "beta_image_url": null,
+    "beta_image_url": "/static/images/cards/beta/not_yet.webp",
     "type_variants": null,
     "upgrade_description": "Przywróć 13 PŻ.",
     "type_key": "Skill",
@@ -6243,7 +6289,7 @@
     "image_url": "/static/images/cards/coordinate.webp",
     "beta_image_url": "/static/images/cards/beta/coordinate.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Daj innemu graczowi 8 pkt. [gold]Siły[/gold] w tej turze.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 448
@@ -6449,7 +6495,7 @@
     "image_url": "/static/images/cards/end_of_days.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Nałóż 37 pkt. [gold]Zagłady[/gold] na WSZYSTKICH przeciwników.\nZabij przeciwników, których pkt. [gold]Zagłady[/gold] są równe ich PŻ lub większe.",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 290
@@ -7364,7 +7410,7 @@
     "image_url": "/static/images/cards/rupture.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Kiedykolwiek utracisz PŻ podczas swojej tury, zyskaj 2 pkt. [gold]Siły[/gold].",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 63
@@ -8086,7 +8132,7 @@
     "image_url": "/static/images/cards/fight_me.webp",
     "beta_image_url": "/static/images/cards/beta/fight_me.webp",
     "type_variants": null,
-    "upgrade_description": "Zadaj 6 pkt. obrażeń dwukrotnie.\nZyskaj 3 pkt. [gold]Siły[/gold].\nPrzeciwnik otrzymuje 1 pkt. [gold]Siły[/gold].",
+    "upgrade_description": "Zadaj 6 pkt. obrażeń dwukrotnie.\nZyskaj 4 pkt. [gold]Siły[/gold].\nPrzeciwnik otrzymuje 1 pkt. [gold]Siły[/gold].",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 35
@@ -8241,7 +8287,7 @@
     "image_url": "/static/images/cards/neutralize.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Zadaj 4 pkt. obrażeń.\nNałóż 1 pkt. [gold]Słabości[/gold].",
+    "upgrade_description": "Zadaj 4 pkt. obrażeń.\nNałóż 2 pkt. [gold]Słabości[/gold].",
     "type_key": "Attack",
     "rarity_key": "Basic",
     "compendium_order": 139
@@ -8807,7 +8853,7 @@
     "image_url": "/static/images/cards/null.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Zadaj 13 pkt. obrażeń.\nNałóż 2 pkt. [gold]Słabości[/gold].\n[gold]Załaduj[/gold] 1 [gold]Sferę Ciemności[/gold].",
+    "upgrade_description": "Zadaj 13 pkt. obrażeń.\nNałóż 3 pkt. [gold]Słabości[/gold].\n[gold]Załaduj[/gold] 1 [gold]Sferę Ciemności[/gold].",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 407
@@ -9285,7 +9331,7 @@
   {
     "id": "DUAL_WIELD",
     "name": "Oburęczność",
-    "description": "Wybierz Atak lub Moc. Dodaj  kopie|kopię} tej karty do [gold]ręki[/gold].",
+    "description": "Wybierz Atak lub Moc. Dodaj kopię tej karty do [gold]ręki[/gold].",
     "description_raw": "Wybierz Atak lub Moc. Dodaj {IfUpgraded:show:{Cards} kopie|kopię} tej karty do [gold]ręki[/gold].",
     "cost": 1,
     "is_x_cost": null,
@@ -9314,7 +9360,7 @@
     "image_url": "/static/images/cards/dual_wield.webp",
     "beta_image_url": "/static/images/cards/beta/dual_wield.webp",
     "type_variants": null,
-    "upgrade_description": "Wybierz Atak lub Moc. Dodaj [Cards kopie|kopię] tej karty do [gold]ręki[/gold].",
+    "upgrade_description": "Wybierz Atak lub Moc. Dodaj 2 kopie tej karty do [gold]ręki[/gold].",
     "type_key": "Skill",
     "rarity_key": "Event",
     "compendium_order": 528
@@ -9962,7 +10008,7 @@
     "image_url": "/static/images/cards/beam_cell.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Zadaj 4 pkt. obrażeń.\nNałóż 1 pkt. [gold]Wrażliwości[/gold].",
+    "upgrade_description": "Zadaj 4 pkt. obrażeń.\nNałóż 2 pkt. [gold]Wrażliwości[/gold].",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 355
@@ -10933,7 +10979,7 @@
     "image_url": "/static/images/cards/setup_strike.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Zadaj 9 pkt. obrażeń.\nZyskaj 2 pkt. [gold]Siły[/gold] w tej turze.",
+    "upgrade_description": "Zadaj 9 pkt. obrażeń.\nZyskaj 3 pkt. [gold]Siły[/gold] w tej turze.",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 65
@@ -11152,7 +11198,7 @@
     "image_url": "/static/images/cards/high_five.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "[gold]Kostek[/gold] zadaje 13 pkt. obrażeń\ni nakłada 2 pkt. [gold]Wrażliwości[/gold]\nna WSZYSTKICH przeciwników.",
+    "upgrade_description": "[gold]Kostek[/gold] zadaje 13 pkt. obrażeń\ni nakłada 3 pkt. [gold]Wrażliwości[/gold]\nna WSZYSTKICH przeciwników.",
     "type_key": "Attack",
     "rarity_key": "Uncommon",
     "compendium_order": 303
@@ -11464,7 +11510,7 @@
     "image_url": "/static/images/cards/leg_sweep.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Nałóż 2 pkt. [gold]Słabości[/gold].\nZyskaj 14 pkt. [gold]Bloku[/gold].",
+    "upgrade_description": "Nałóż 3 pkt. [gold]Słabości[/gold].\nZyskaj 14 pkt. [gold]Bloku[/gold].",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 133
@@ -11940,7 +11986,7 @@
     "image_url": "/static/images/cards/suppress.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Zadaj 17 pkt. obrażeń.\nNałóż 3 pkt. [gold]Słabości[/gold].",
+    "upgrade_description": "Zadaj 17 pkt. obrażeń.\nNałóż 5 pkt. [gold]Słabości[/gold].",
     "type_key": "Attack",
     "rarity_key": "Ancient",
     "keywords_key": [
@@ -12400,7 +12446,7 @@
     "image_url": "/static/images/cards/footwork.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Zyskaj 3 pkt. [gold]Zręczności[/gold].",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 125
@@ -12836,7 +12882,7 @@
     "image_url": "/static/images/cards/taunt.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Zyskaj 8 pkt. [gold]Bloku[/gold].\nNałóż 1 pkt. [gold]Wrażliwości[/gold].",
+    "upgrade_description": "Zyskaj 8 pkt. [gold]Bloku[/gold].\nNałóż 2 pkt. [gold]Wrażliwości[/gold].",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 75
@@ -13188,7 +13234,7 @@
     "image_url": "/static/images/cards/tremble.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Nałóż 4 pkt. [gold]Wrażliwości[/gold].",
     "type_key": "Skill",
     "rarity_key": "Common",
     "keywords_key": [
@@ -13427,7 +13473,7 @@
     "image_url": "/static/images/cards/anticipate.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Zyskaj 3 pkt. [gold]Zręczności[/gold] w tej turze.",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 93
@@ -13678,7 +13724,7 @@
     "image_url": "/static/images/cards/bulk_up.webp",
     "beta_image_url": "/static/images/cards/beta/bulk_up.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Utrać 1 miejsce na Sferę.\nZyskaj 3 pkt. [gold]Siły[/gold].\nZyskaj 3 pkt. [gold]Zręczności[/gold].",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 360
@@ -16171,7 +16217,7 @@
     "image_url": "/static/images/cards/prowess.webp",
     "beta_image_url": "/static/images/cards/beta/prowess.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Zyskaj 2 pkt. [gold]Siły[/gold].\nZyskaj 2 pkt. [gold]Zręczności[/gold].",
     "type_key": "Power",
     "rarity_key": "Uncommon",
     "compendium_order": 481
@@ -16256,7 +16302,7 @@
   {
     "id": "STACK",
     "name": "Stos",
-    "description": "Zyskaj [gold]Blok[/gold] równy liczbie kart na [gold]stosie kart odrzuconych[/gold] pkt.|}.",
+    "description": "Zyskaj [gold]Blok[/gold] równy liczbie kart na [gold]stosie kart odrzuconych[/gold].",
     "description_raw": "Zyskaj [gold]Blok[/gold] równy liczbie kart na [gold]stosie kart odrzuconych[/gold]{IfUpgraded:show: +{CalculationBase} pkt.|}.{InCombat:\n(Zyskaj {CalculatedBlock:diff()} pkt. [gold]Bloku[/gold])|}",
     "cost": 1,
     "is_x_cost": null,
@@ -16286,7 +16332,7 @@
     "image_url": "/static/images/cards/stack.webp",
     "beta_image_url": "/static/images/cards/beta/stack.webp",
     "type_variants": null,
-    "upgrade_description": "Zyskaj [gold]Blok[/gold] równy liczbie kart na [gold]stosie kart odrzuconych[/gold] +[CalculationBase pkt.|].",
+    "upgrade_description": "Zyskaj [gold]Blok[/gold] równy liczbie kart na [gold]stosie kart odrzuconych[/gold] +3 pkt..",
     "type_key": "Skill",
     "rarity_key": "Event",
     "compendium_order": 544
@@ -16334,7 +16380,7 @@
     "image_url": "/static/images/cards/fear.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Zadaj 8 pkt. obrażeń.\nNałóż 1 pkt. [gold]Wrażliwości[/gold].",
+    "upgrade_description": "Zadaj 8 pkt. obrażeń.\nNałóż 2 pkt. [gold]Wrażliwości[/gold].",
     "type_key": "Attack",
     "rarity_key": "Common",
     "keywords_key": [
@@ -17511,7 +17557,7 @@
     "image_url": "/static/images/cards/haze.webp",
     "beta_image_url": "/static/images/cards/beta/haze.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Nałóż 6 pkt. [gold]Trucizny[/gold] na WSZYSTKICH przeciwników.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "keywords_key": [
@@ -18061,7 +18107,7 @@
     "image_url": "/static/images/cards/feeding_frenzy.webp",
     "beta_image_url": "/static/images/cards/beta/feeding_frenzy.webp",
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Zyskaj 7 pkt. [gold]Siły[/gold] w tej turze.",
     "type_key": "Skill",
     "rarity_key": "Event",
     "compendium_order": 532
@@ -18594,7 +18640,7 @@
     "image_url": "/static/images/cards/negative_pulse.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Zyskaj 6 pkt. [gold]Bloku[/gold].\nNałóż 7 pkt. [gold]Zagłady[/gold] na WSZYSTKICH przeciwników.",
+    "upgrade_description": "Zyskaj 6 pkt. [gold]Bloku[/gold].\nNałóż 11 pkt. [gold]Zagłady[/gold] na WSZYSTKICH przeciwników.",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 310
@@ -18758,7 +18804,7 @@
     "image_url": "/static/images/cards/snakebite.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Nałóż 10 pkt. [gold]Trucizny[/gold].",
     "type_key": "Skill",
     "rarity_key": "Common",
     "keywords_key": [
@@ -20259,7 +20305,7 @@
     "image_url": "/static/images/cards/oblivion.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Kiedykolwiek zagrasz kartę w tej turze, nałóż 4 pkt. [gold]Zagłady[/gold] na przeciwnika.",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 313
@@ -20304,7 +20350,7 @@
     "image_url": "/static/images/cards/brand.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Utrać 1 PŻ.\n[gold]Wyczerp[/gold] 1 kartę.\nZyskaj 2 pkt. [gold]Siły[/gold].",
     "type_key": "Skill",
     "rarity_key": "Rare",
     "compendium_order": 11
@@ -20626,7 +20672,7 @@
     "image_url": "/static/images/cards/deadly_poison.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Nałóż 7 pkt. [gold]Trucizny[/gold].",
     "type_key": "Skill",
     "rarity_key": "Common",
     "compendium_order": 110
@@ -20675,7 +20721,7 @@
     "image_url": "/static/images/cards/assassinate.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Zadaj 13 pkt. obrażeń.\nNałóż 1 pkt. [gold]Wrażliwości[/gold].",
+    "upgrade_description": "Zadaj 13 pkt. obrażeń.\nNałóż 2 pkt. [gold]Wrażliwości[/gold].",
     "type_key": "Attack",
     "rarity_key": "Rare",
     "keywords_key": [
@@ -21156,7 +21202,7 @@
     "image_url": "/static/images/cards/poisoned_stab.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Zadaj 8 pkt. obrażeń.\nNałóż 3 pkt. [gold]Trucizny[/gold].",
+    "upgrade_description": "Zadaj 8 pkt. obrażeń.\nNałóż 4 pkt. [gold]Trucizny[/gold].",
     "type_key": "Attack",
     "rarity_key": "Common",
     "compendium_order": 146
@@ -21508,7 +21554,7 @@
     "image_url": "/static/images/cards/squash.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Zadaj 12 pkt. obrażeń.\nNałóż 2 pkt. [gold]Wrażliwości[/gold].",
+    "upgrade_description": "Zadaj 12 pkt. obrażeń.\nNałóż 3 pkt. [gold]Wrażliwości[/gold].",
     "type_key": "Attack",
     "rarity_key": "Event",
     "compendium_order": 543
@@ -22122,7 +22168,7 @@
     "image_url": "/static/images/cards/deathbringer.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": null,
+    "upgrade_description": "Nałóż 26 pkt. [gold]Zagłady[/gold] i 1 pkt. [gold]Słabości[/gold] na WSZYSTKICH przeciwników.",
     "type_key": "Skill",
     "rarity_key": "Uncommon",
     "compendium_order": 276
@@ -22293,7 +22339,7 @@
     "image_url": "/static/images/cards/break.webp",
     "beta_image_url": null,
     "type_variants": null,
-    "upgrade_description": "Zadaj 30 pkt. obrażeń.\nNałóż 5 pkt. [gold]Wrażliwości[/gold].",
+    "upgrade_description": "Zadaj 30 pkt. obrażeń.\nNałóż 7 pkt. [gold]Wrażliwości[/gold].",
     "type_key": "Attack",
     "rarity_key": "Ancient",
     "compendium_order": 12

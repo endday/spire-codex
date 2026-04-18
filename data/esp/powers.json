@@ -170,6 +170,16 @@
     "image_url": "/static/images/powers/black_hole_power.webp"
   },
   {
+    "id": "BLADE_OF_INK",
+    "name": "BladeOfInkPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/blade_of_ink_power.webp"
+  },
+  {
     "id": "BLOCK_NEXT_TURN",
     "name": "Bloqueo de próximo turno",
     "description": "Al comienzo del próximo turno, brinda [blue]4[/blue] de [gold]bloqueo[/gold].",
@@ -610,6 +620,16 @@
     "image_url": "/static/images/powers/doom_power.webp"
   },
   {
+    "id": "DOOR_REVIVAL",
+    "name": "DoorRevivalPower",
+    "description": "",
+    "description_raw": null,
+    "type": "Buff",
+    "stack_type": "Single",
+    "allow_negative": null,
+    "image_url": null
+  },
+  {
     "id": "DOUBLE_DAMAGE",
     "name": "Daño doble",
     "description": "En este turno, los ataques infligen el doble de daño.",
@@ -948,6 +968,16 @@
     "stack_type": "Counter",
     "allow_negative": null,
     "image_url": "/static/images/powers/gigantification_power.webp"
+  },
+  {
+    "id": "GRAPPLE",
+    "name": "GrapplePower",
+    "description": "",
+    "description_raw": null,
+    "type": "Debuff",
+    "stack_type": "Counter",
+    "allow_negative": null,
+    "image_url": "/static/images/powers/grapple_power.webp"
   },
   {
     "id": "GRASP",

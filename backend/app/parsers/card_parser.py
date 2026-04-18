@@ -530,12 +530,19 @@ def parse_single_card(
                     diff = int(val)
                 except ValueError:
                     continue
+                # Bump every numeric var whose name matches the upgrade key.
+                # Power-applying cards register both the bare name (`Weak`)
+                # and the C# class name (`WeakPower`) in their var dict —
+                # the description usually references {WeakPower:diff()} but
+                # the upgrade key is the bare `weak`. We need to bump both
+                # variants so the rendered description shows the new value.
+                key_l = key.lower()
                 for vk in upgraded_vars:
-                    if vk.lower() == key.lower() and isinstance(
-                        upgraded_vars[vk], (int, float)
-                    ):
+                    if not isinstance(upgraded_vars[vk], (int, float)):
+                        continue
+                    vk_l = vk.lower()
+                    if vk_l == key_l or vk_l == key_l + "power":
                         upgraded_vars[vk] += diff
-                        break
     up_desc = shared_resolve_description(description, upgraded_vars, is_upgraded=True)
     if up_desc != desc_rendered:
         card["upgrade_description"] = up_desc
