@@ -4,7 +4,7 @@ import { api } from "@/lib/api";
 export async function generateMetadata(): Promise<Metadata> {
   let count = "289+";
   try {
-    const stats = await api.getStats();
+    const stats = await api.getStatsBounded();
     count = String(stats.relics);
   } catch {
     // Fall back to the baseline count if the API is unreachable at build time.
