@@ -11,6 +11,7 @@ import { t } from "@/lib/ui-translations";
 
 const API = process.env.API_INTERNAL_URL || process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
+export const dynamic = "force-dynamic";
 export const revalidate = 1800;
 
 async function fetchItem(gid: string): Promise<NewsArticle | null> {

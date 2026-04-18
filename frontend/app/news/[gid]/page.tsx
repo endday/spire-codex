@@ -9,6 +9,9 @@ import { sanitizeSteamNews, newsExcerpt, formatNewsDate } from "@/lib/steam-news
 
 const API = process.env.API_INTERNAL_URL || process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
+// Same reasoning as /news — skip the build-time prerender so we don't
+// bake a "Not Found" page when the backend isn't reachable from CI.
+export const dynamic = "force-dynamic";
 export const revalidate = 1800;
 
 async function fetchItem(gid: string): Promise<NewsArticle | null> {

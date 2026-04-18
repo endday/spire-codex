@@ -8,7 +8,14 @@ import { newsExcerpt, formatNewsDate } from "@/lib/steam-news";
 
 const API = process.env.API_INTERNAL_URL || process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
-export const revalidate = 1800; // 30 min
+// Render at request time, not build time. The Docker build container
+// can't reach the backend, so a build-time prerender would catch the
+// fetch error and bake an empty list into the image — and ISR's 30-min
+// revalidate window would then serve that empty version for half an
+// hour after every deploy. Same pattern as `/[lang]/showcase` and
+// `/[lang]/leaderboards`.
+export const dynamic = "force-dynamic";
+export const revalidate = 1800;
 
 export const metadata: Metadata = {
   title: `Slay the Spire 2 News - Patch Notes & Announcements | ${SITE_NAME}`,
