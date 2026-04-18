@@ -6,6 +6,24 @@ async function fetchApi<T>(path: string): Promise<T> {
   return res.json();
 }
 
+// Variant for build-time metadata fetches: bounded so a stuck connection
+// can't hang `next build`. Used by layout `generateMetadata` calls — those
+// run during static generation where the backend may not be reachable.
+async function fetchApiBounded<T>(path: string, timeoutMs = 3000): Promise<T> {
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), timeoutMs);
+  try {
+    const res = await fetch(`${API_BASE}${path}`, {
+      signal: ctrl.signal,
+      next: { revalidate: 3600 },
+    });
+    if (!res.ok) throw new Error(`API error: ${res.status}`);
+    return await res.json();
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
 export interface CardRiderEffect {
   id: string;
   name: string;
@@ -416,6 +434,11 @@ export interface Stats {
 
 export const api = {
   getStats: () => fetchApi<Stats>("/api/stats"),
+  // Bounded variant for use inside `generateMetadata` — won't hang the
+  // build if the backend is unreachable. Caller should wrap in try/catch
+  // and fall through to a hardcoded baseline.
+  getStatsBounded: (timeoutMs?: number) =>
+    fetchApiBounded<Stats>("/api/stats", timeoutMs),
   getCards: (params?: string) => fetchApi<Card[]>(`/api/cards${params ? `?${params}` : ""}`),
   getCard: (id: string) => fetchApi<Card>(`/api/cards/${id}`),
   getCharacters: () => fetchApi<Character[]>("/api/characters"),
