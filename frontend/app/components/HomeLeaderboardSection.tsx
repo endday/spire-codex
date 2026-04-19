@@ -3,8 +3,13 @@ import { t } from "@/lib/ui-translations";
 
 const API = process.env.API_INTERNAL_URL || process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 // The browser fetches images from the public API URL — `API_INTERNAL_URL`
-// only resolves inside the Docker network during server render.
-const PUBLIC_API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+// only resolves inside the Docker network during server render. The
+// production build sets `NEXT_PUBLIC_API_URL=""` (empty) on purpose so
+// images render as same-origin `/static/...` paths that nginx routes
+// to the backend, so use `??` (nullish) instead of `||` (falsy) here —
+// otherwise an intentional empty string falls through to localhost and
+// leaks into the SSR'd HTML.
+const PUBLIC_API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
 function characterIcon(character: string): string {
   return `${PUBLIC_API}/static/images/characters/character_icon_${character.toLowerCase()}.webp`;
