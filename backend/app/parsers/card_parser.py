@@ -432,6 +432,15 @@ def parse_single_card(
 
     star_cost = all_vars.get("StarCost")
 
+    # `public override bool CanBeGeneratedInCombat => false;` opts a card
+    # out of mid-combat generation (Skill Potion, generated effects, etc.).
+    # The C# default is `true`, so only surface the field when explicitly
+    # `false` — keeps the payload tight and the rule visible. The v0.103.1
+    # patch notes called this out as a fix for the Not Yet card.
+    can_be_generated_in_combat = None
+    if re.search(r"override\s+bool\s+CanBeGeneratedInCombat\s*=>\s*false\b", content):
+        can_be_generated_in_combat = False
+
     card = {
         "id": card_id,
         "name": title,
@@ -476,6 +485,7 @@ def parse_single_card(
             else None
         ),
         "type_variants": type_variants,
+        "can_be_generated_in_combat": can_be_generated_in_combat,
         "upgrade_description": upgrade_description,
     }
 

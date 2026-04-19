@@ -71,6 +71,10 @@ export interface Card {
   image_url: string | null;
   beta_image_url: string | null;
   type_variants: Record<string, CardTypeVariant> | null;
+  /** `false` when the card cannot be added to combat by Skill Potion or
+   * other generated effects. Field is omitted (null) when the card uses
+   * the C# default of `true`, so a missing value means "yes, can spawn". */
+  can_be_generated_in_combat: boolean | null;
   compendium_order: number;
 }
 

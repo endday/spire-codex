@@ -56,6 +56,11 @@ class Card(BaseModel):
     image_url: str | None = None
     beta_image_url: str | None = None
     type_variants: dict[str, CardTypeVariant] | None = None
+    # `false` for cards that can never be added to combat by Skill Potion,
+    # generated reward effects, etc. — typically Ancient cards (Neow's Fury)
+    # and a handful of utility cards. The C# default is `true`, so we only
+    # surface the field when it's explicitly `false` to keep the payload tight.
+    can_be_generated_in_combat: bool | None = None
     compendium_order: int = 0
 
 

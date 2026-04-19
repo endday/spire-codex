@@ -615,6 +615,17 @@ def extract_preconditions(content: str, vars_dict: dict) -> list[str] | None:
     if re.search(r"Players\.Count\s*>\s*1.*?return\s+false", body, re.DOTALL):
         conditions.append("Single player only")
 
+    # --- Character-unlock conditions (added in v0.103.1) ---
+    # `runState.Players.All((Player p) => p.UnlockState.CharacterCardPools.Count() > 1)`
+    # gates ColorfulPhilosophers from running before any non-Ironclad
+    # character is unlocked (the starting unlock state is just Ironclad,
+    # so `Count() == 1` until the player unlocks a second character).
+    if re.search(
+        r"UnlockState\.CharacterCardPools\.Count\(\)\s*>\s*1",
+        body,
+    ):
+        conditions.append("Requires more than one character unlocked")
+
     # --- FoulPotion ---
     if "FoulPotion" in body:
         conditions.append("Requires 100+ gold or a Foul Potion")

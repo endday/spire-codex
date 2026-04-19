@@ -35,6 +35,7 @@ function createCard(overrides: Partial<Card> = {}): Card {
     image_url: null,
     beta_image_url: null,
     type_variants: null,
+    can_be_generated_in_combat: null,
     compendium_order: 1,
     ...overrides,
   };
