@@ -740,6 +740,14 @@ def parse_single_monster(
         "OneHpMonster",
         "SingleAttackMoveMonster",
         "TenHpMonster",
+        # Door was a Doormaker minion pre-MU1; the MU1 rework removed it
+        # from the game but `ilspycmd` doesn't delete orphaned files when
+        # re-decompiling, so a stale `Door.cs` can linger in the extraction
+        # tree from previous game versions. Explicit skip as a belt-and-
+        # suspenders defence in case the file comes back — 0 encounters
+        # reference it and `ModelDb.Monster<Door>()` has 0 callsites in
+        # the v0.103.2 source.
+        "Door",
     }
     if class_name.startswith(skip_prefixes) or class_name in skip_names:
         return None

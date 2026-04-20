@@ -124,6 +124,17 @@ def parse_single_power(filepath: Path, localization: dict) -> dict | None:
     if class_name.startswith("Deprecated") or class_name.startswith("Mock"):
         return None
 
+    # Stale orphans from pre-MU1 extractions that `ilspycmd` never
+    # overwrites when re-decompiling the new DLL. `DoorRevivalPower` was
+    # part of the pre-MU1 Doormaker minion mechanic; MU1 removed it but
+    # the .cs file can linger on disk. The skip-if-no-localization gate
+    # below already catches this one in practice, but an explicit list
+    # makes the intent clear and survives if localization is ever
+    # retroactively added.
+    STALE_ORPHANS = {"DoorRevivalPower"}
+    if class_name in STALE_ORPHANS:
+        return None
+
     # Skip abstract base classes — their children are the real powers
     if re.search(r"\babstract\s+class\b", content):
         return None
