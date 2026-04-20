@@ -11,10 +11,10 @@ export async function generateMetadata(): Promise<Metadata> {
   }
   return {
     title: "Slay the Spire 2 Monsters - Complete Monster List | Spire Codex",
-    description: `Slay the Spire 2 monsters — browse all ${count} normals, elites, and bosses. View HP values, moves, damage stats, and ascension scaling.`,
+    description: `Slay the Spire 2 (StS2) monsters — browse all ${count} normals, elites, and bosses. View HP values, moves, damage stats, and ascension scaling.`,
     openGraph: {
       title: "Slay the Spire 2 Monsters - Complete Monster List | Spire Codex",
-      description: `Slay the Spire 2 monsters — browse all ${count} normals, elites, and bosses. View HP, moves, and ascension scaling.`,
+      description: `Slay the Spire 2 (StS2) monsters — browse all ${count} normals, elites, and bosses. View HP, moves, and ascension scaling.`,
     },
     alternates: { canonical: "/monsters" },
   };

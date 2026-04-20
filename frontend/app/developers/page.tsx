@@ -9,11 +9,11 @@ const API_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://spire-codex.com";
 export const metadata: Metadata = {
   title: "Slay the Spire 2 Developer API & Tooltip Widget | Spire Codex",
   description:
-    "Integrate Slay the Spire 2 game data into your projects. Public REST API with 22+ endpoints, embeddable tooltip widget, and multi-language support.",
+    "Integrate Slay the Spire 2 (StS2) game data into your projects. Public REST API with 22+ endpoints, embeddable tooltip widget, and multi-language support.",
   openGraph: {
     title: "Slay the Spire 2 Developer API & Tooltip Widget | Spire Codex",
     description:
-      "Public REST API and embeddable tooltip widget for Slay the Spire 2 game data.",
+      "Public REST API and embeddable tooltip widget for Slay the Spire 2 (StS2) game data.",
   },
   alternates: { canonical: "/developers" },
 };

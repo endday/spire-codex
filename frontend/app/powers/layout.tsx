@@ -11,10 +11,10 @@ export async function generateMetadata(): Promise<Metadata> {
   }
   return {
     title: "Slay the Spire 2 Powers - Complete Power List | Spire Codex",
-    description: `Browse all ${count} Slay the Spire 2 powers — buffs, debuffs, and neutral effects. Filter by type and stack behavior. View descriptions, icons, and details for every power.`,
+    description: `Browse all ${count} Slay the Spire 2 (StS2) powers — buffs, debuffs, and neutral effects. Filter by type and stack behavior. View descriptions, icons, and details for every power.`,
     openGraph: {
       title: "Slay the Spire 2 Powers - Complete Power List | Spire Codex",
-      description: `Browse all ${count} Slay the Spire 2 powers — buffs, debuffs, and neutral effects. Filter by type and stack behavior.`,
+      description: `Browse all ${count} Slay the Spire 2 (StS2) powers — buffs, debuffs, and neutral effects. Filter by type and stack behavior.`,
     },
     alternates: { canonical: "/powers" },
   };

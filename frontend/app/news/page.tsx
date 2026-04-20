@@ -20,12 +20,12 @@ export const revalidate = 1800;
 export const metadata: Metadata = {
   title: `Slay the Spire 2 News - Patch Notes & Announcements | ${SITE_NAME}`,
   description:
-    "Slay the Spire 2 patch notes, dev announcements, and press coverage. Track every Mega Crit update plus external articles from PCGamesN, RPS, and more.",
+    "Slay the Spire 2 (StS2) patch notes, dev announcements, and press coverage. Track every Mega Crit update plus external articles from PCGamesN, RPS, and more.",
   alternates: { canonical: `${SITE_URL}/news` },
   openGraph: {
     title: `Slay the Spire 2 News - Patch Notes & Announcements | ${SITE_NAME}`,
     description:
-      "Slay the Spire 2 patch notes, dev announcements, and press coverage. Track every Mega Crit update plus external articles from PCGamesN, RPS, and more.",
+      "Slay the Spire 2 (StS2) patch notes, dev announcements, and press coverage. Track every Mega Crit update plus external articles from PCGamesN, RPS, and more.",
     url: `${SITE_URL}/news`,
     siteName: SITE_NAME,
     type: "website",

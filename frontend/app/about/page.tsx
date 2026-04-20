@@ -73,9 +73,11 @@ export default function AboutPage() {
         {/* Intro */}
         <div className="text-[var(--text-secondary)] leading-relaxed space-y-4">
           <p>
-            Spire Codex is a comprehensive database for Slay the Spire 2, built by reverse-engineering
-            the game files. Every card, relic, monster, potion, event, and power on this site was
-            extracted directly from the game&apos;s source code and localization data.
+            Spire Codex is a comprehensive database for Slay the Spire 2 — commonly abbreviated
+            <strong className="text-[var(--text-primary)]"> StS2</strong> — built by
+            reverse-engineering the game files. Every card, relic, monster, potion, event, and
+            power on this site was extracted directly from the game&apos;s source code and
+            localization data.
           </p>
           <p>
             The project started from curiosity about how StS2 was built, and grew into a full API

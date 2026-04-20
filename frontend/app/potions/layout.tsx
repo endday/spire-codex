@@ -11,10 +11,10 @@ export async function generateMetadata(): Promise<Metadata> {
   }
   return {
     title: "Slay the Spire 2 Potions - Complete Potion List | Spire Codex",
-    description: `Browse all ${count} Slay the Spire 2 potions. Filter by rarity (Common, Uncommon, Rare) and character pool (Ironclad, Silent, Defect, Necrobinder, Regent). View potion effects and descriptions.`,
+    description: `Browse all ${count} Slay the Spire 2 (StS2) potions. Filter by rarity (Common, Uncommon, Rare) and character pool (Ironclad, Silent, Defect, Necrobinder, Regent). View potion effects and descriptions.`,
     openGraph: {
       title: "Slay the Spire 2 Potions - Complete Potion List | Spire Codex",
-      description: `Browse all ${count} Slay the Spire 2 potions. Filter by rarity and character pool.`,
+      description: `Browse all ${count} Slay the Spire 2 (StS2) potions. Filter by rarity and character pool.`,
     },
     alternates: { canonical: "/potions" },
   };

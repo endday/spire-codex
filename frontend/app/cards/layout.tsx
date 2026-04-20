@@ -11,10 +11,10 @@ export async function generateMetadata(): Promise<Metadata> {
   }
   return {
     title: "Slay the Spire 2 Cards - Complete Card List | Spire Codex",
-    description: `Browse all ${count} Slay the Spire 2 cards. Filter by character (Ironclad, Silent, Defect, Necrobinder, Regent), type, rarity, and keywords. View card art, stats, upgrades, and related cards.`,
+    description: `Browse all ${count} Slay the Spire 2 (StS2) cards. Filter by character (Ironclad, Silent, Defect, Necrobinder, Regent), type, rarity, and keywords. View card art, stats, upgrades, and related cards.`,
     openGraph: {
       title: "Slay the Spire 2 Cards - Complete Card List | Spire Codex",
-      description: `Browse all ${count} Slay the Spire 2 cards. Filter by character, type, rarity, and keywords.`,
+      description: `Browse all ${count} Slay the Spire 2 (StS2) cards. Filter by character, type, rarity, and keywords.`,
     },
     alternates: { canonical: "/cards" },
   };

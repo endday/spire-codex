@@ -17,7 +17,12 @@ function buildFaqs(stats: Stats | null): { question: string; answer: string }[] 
     {
       question: "What is Slay the Spire 2?",
       answer:
-        "Slay the Spire 2 is the sequel to Mega Crit's iconic roguelike deckbuilder, currently in Steam Early Access. You climb the Spire one combat at a time, building a custom deck of cards, collecting powerful relics, and fighting through randomly generated encounters culminating in act bosses.",
+        "Slay the Spire 2 (commonly abbreviated StS2) is the sequel to Mega Crit's iconic roguelike deckbuilder, currently in Steam Early Access. You climb the Spire one combat at a time, building a custom deck of cards, collecting powerful relics, and fighting through randomly generated encounters culminating in act bosses.",
+    },
+    {
+      question: "What does StS2 stand for?",
+      answer:
+        "StS2 is the community shorthand for Slay the Spire 2, following the same convention as StS / StS1 for the original 2017 game. The Spire Codex database tracks every StS2 card, relic, character, monster, potion, event, and power across all 14 languages the game ships with.",
     },
     {
       question: "When does Slay the Spire 2 release?",

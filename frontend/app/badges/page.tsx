@@ -44,7 +44,7 @@ export default async function BadgesPage() {
     buildCollectionPageJsonLd({
       name: "Slay the Spire 2 Badges",
       description:
-        "All run-end badges in Slay the Spire 2 — Bronze, Silver, and Gold tier mini-achievements awarded on the Game Over screen.",
+        "All run-end badges in Slay the Spire 2 (StS2) — Bronze, Silver, and Gold tier mini-achievements awarded on the Game Over screen.",
       path: "/badges",
       items: badges.map((b) => ({
         name: b.name,

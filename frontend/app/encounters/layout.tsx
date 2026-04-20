@@ -11,10 +11,10 @@ export async function generateMetadata(): Promise<Metadata> {
   }
   return {
     title: "Slay the Spire 2 Encounters - All Combat Encounters | Spire Codex",
-    description: `Slay the Spire 2 encounters — browse all ${count} combat encounters including normal fights, elites, and bosses. View monster compositions, act assignments, and room types.`,
+    description: `Slay the Spire 2 (StS2) encounters — browse all ${count} combat encounters including normal fights, elites, and bosses. View monster compositions, act assignments, and room types.`,
     openGraph: {
       title: "Slay the Spire 2 Encounters - All Combat Encounters | Spire Codex",
-      description: `Slay the Spire 2 encounters — browse all ${count} combat encounters including normal fights, elites, and bosses.`,
+      description: `Slay the Spire 2 (StS2) encounters — browse all ${count} combat encounters including normal fights, elites, and bosses.`,
     },
     alternates: { canonical: "/encounters" },
   };
