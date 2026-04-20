@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import LanguageSelector from "./LanguageSelector";
 import SearchTrigger from "./SearchTrigger";
-import VersionSelector from "./VersionSelector";
+import SiteSwitcher from "./SiteSwitcher";
 import { useLanguage } from "@/app/contexts/LanguageContext";
 import { t } from "@/lib/ui-translations";
 import { IS_BETA } from "@/lib/seo";
@@ -153,23 +153,12 @@ export default function Navbar() {
           )}
 
           <div className="flex items-center gap-2 shrink-0">
-            {IS_BETA ? (
-              <a
-                href="https://spire-codex.com"
-                className="hidden sm:inline-flex items-center h-9 px-3 rounded-lg text-xs font-semibold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-500/25 transition-colors"
-              >
-                {t("View Stable Site", lang)}
-              </a>
-            ) : (
-              <a
-                href="https://beta.spire-codex.com"
-                className="hidden sm:inline-flex items-center h-9 px-3 rounded-lg text-xs font-semibold bg-[var(--accent-gold)]/15 text-[var(--accent-gold)] border border-[var(--accent-gold)]/30 hover:bg-[var(--accent-gold)]/25 transition-colors"
-              >
-                {t("View Beta Site", lang)}
-              </a>
-            )}
-
-            {IS_BETA && <VersionSelector />}
+            {/* Unified site + version switcher. Replaces the old
+                site-toggle button plus the beta-only `VersionSelector`
+                — one dropdown that lists `main` and every beta version,
+                with the current view filtered out. Colour reflects
+                which site you're on (gold = main, emerald = beta). */}
+            <SiteSwitcher />
             <LanguageSelector />
 
             {/* Mobile icon-only search — non-home pages only, sits next to the language selector */}
