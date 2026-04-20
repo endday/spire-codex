@@ -64,6 +64,11 @@ export default function HomeFAQ({
         {faqs.map((faq) => (
           <details
             key={faq.question}
+            // `name` groups these like radio buttons — opening one auto-
+            // closes any other with the same name, native browser behaviour
+            // (HTML Living Standard, shipped Chrome 120 / Safari 17.2 /
+            // Firefox 136, fully supported in current evergreens).
+            name="home-faq"
             className="group rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-card)] hover:border-[var(--border-accent)] transition-colors"
           >
             <summary className="cursor-pointer list-none flex items-baseline justify-between gap-3 p-4 sm:p-5">
