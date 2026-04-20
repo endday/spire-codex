@@ -42,9 +42,21 @@ CATEGORIES: dict[str, tuple[str, str, bool, list[str] | None]] = {
             "main_menu.png",
             "main_menu_bg.png",
             "sts2_logo.png",
+            "merchant.png",
+            # Ancient room backgrounds. Mega Crit labels Darv / Orobas /
+            # Tanx / Vakuu / Nonupeipe / Pael as `_placeholder.png` in
+            # `images/ancients/` since the final polished art isn't done,
+            # but the placeholders are what actually renders in-game today
+            # and players see them, so they're shippable.
             "neow.png",
             "tezcatara.png",
-            "merchant.png",
+            "architect.png",
+            "darv.png",
+            "orobas.png",
+            "tanx.png",
+            "vakuu.png",
+            "nonupeipe.png",
+            "pael.png",
         ],
     ),
     "intents": ("Intent Icons", "intents", False, None),
@@ -197,10 +209,17 @@ def search_images(request: Request, search: str = "", limit: int = 10):
         for img in all_files:
             if img["filename"].lower().endswith(".png"):
                 png_by_stem[img["url"].rsplit(".", 1)[0]] = img
+        # Include the category display name in the searchable haystack so
+        # queries like `darv background` or `tezcatara background` match
+        # against the Backgrounds gallery — without this, the only thing
+        # we matched against was the filename stem, so users searching for
+        # the kind of asset they wanted (alongside the name) got nothing.
+        cat_for_match = display_name.lower()
         for img in _dedupe_for_gallery(all_files):
             stem_name = img["filename"].rsplit(".", 1)[0]
             stem_for_match = stem_name.replace("_", " ").lower()
-            if not all(tok in stem_for_match for tok in tokens):
+            haystack = f"{stem_for_match} {cat_for_match}"
+            if not all(tok in haystack for tok in tokens):
                 continue
             url_stem = img["url"].rsplit(".", 1)[0]
             preferred = png_by_stem.get(url_stem, img)
