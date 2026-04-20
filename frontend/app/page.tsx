@@ -67,7 +67,7 @@ export default async function Home() {
                 CODEX
               </span>
               {IS_BETA && (
-                <span className="ml-3 text-sm font-medium px-2 py-1 rounded bg-[var(--accent-gold)]/20 text-[var(--accent-gold)] align-middle">
+                <span className="ml-3 text-sm font-medium px-2 py-1 rounded bg-emerald-500/20 text-emerald-400 align-middle">
                   BETA
                 </span>
               )}
