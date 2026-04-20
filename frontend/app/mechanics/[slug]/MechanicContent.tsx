@@ -386,16 +386,80 @@ export default function MechanicContent({ slug }: { slug: string }) {
 
     case "score-formula":
       return (
-        <div className={card}>
-          <table className={tbl}><thead><tr className={thr}><th className={th}>Component</th><th className={thr2}>Value</th></tr></thead><tbody>
-            <tr className={tr}><td className={td}>Rooms visited</td><td className={tdr}>10 pts per room per act (x1/x2/x3)</td></tr>
-            <tr className={tr}><td className={td}>Gold gained</td><td className={tdr}>+1 pt per 100 gold (divided by player count)</td></tr>
-            <tr className={tr}><td className={td}>Elites killed</td><td className={gold}>+50 each (the elite you died to doesn&apos;t count)</td></tr>
-            <tr className={tr}><td className={td}>Bosses slain</td><td className={gold}>+100 each (3 on a win, fewer if you die earlier; A10 wins count 4)</td></tr>
-            <tr><td className={td}>Ascension multiplier</td><td className={gold}>x(1 + ascension x 0.1)</td></tr>
-          </tbody></table>
-          <p className={note}>Total = (rooms + gold + elites + bosses) x (1 + ascension x 0.1). At Ascension 10, your score is doubled. Daily-run scoring also encodes badge count and run time on top of this base. The final boss scene uses your score to determine the visual damage numbers.</p>
-        </div>
+        <>
+          <div className={card}>
+            <h3 className={h3}>Run Score</h3>
+            <p className="text-sm text-[var(--text-secondary)] mb-3 leading-relaxed">
+              Awarded for every completed run, win or lose. Shown on the run-history screen and used by the final-boss scene to render the &quot;damage&quot; numbers on the Architect.
+            </p>
+            <table className={tbl}><thead><tr className={thr}><th className={th}>Component</th><th className={thr2}>Value</th></tr></thead><tbody>
+              <tr className={tr}><td className={td}>Rooms visited</td><td className={tdr}>10 pts per room <span className="text-[var(--text-muted)]">x act number (x1 / x2 / x3)</span></td></tr>
+              <tr className={tr}><td className={td}>Gold gained</td><td className={tdr}>+1 pt per 100 gold <span className="text-[var(--text-muted)]">(divided by player count)</span></td></tr>
+              <tr className={tr}><td className={td}>Elites killed</td><td className={gold}>+50 each <span className="text-[var(--text-muted)]">(the elite you died to doesn&apos;t count)</span></td></tr>
+              <tr className={tr}><td className={td}>Bosses slain</td><td className={gold}>+100 each <span className="text-[var(--text-muted)]">(3 on a win, fewer if you die earlier; A10 wins count 4)</span></td></tr>
+              <tr><td className={td}>Ascension multiplier</td><td className={gold}>x(1 + ascension x 0.1)</td></tr>
+            </tbody></table>
+            <p className={note}>
+              Final = <span className="text-[var(--text-secondary)]">(rooms + gold + elites + bosses) x (1 + ascension x 0.1)</span>. At A10 your score is doubled. Source: <span className="font-mono">ScoreUtility.CalculateScore</span>.
+            </p>
+          </div>
+
+          <div className={`${card} mt-4`}>
+            <h3 className={h3}>Worked example</h3>
+            <p className="text-sm text-[var(--text-secondary)] mb-3 leading-relaxed">
+              Hypothetical A0 win — 15 rooms in act 1, 14 in act 2, 14 in act 3, 4 elites killed, 3 bosses, 1,200 gold gained, single player.
+            </p>
+            <table className={tbl}><thead><tr className={thr}><th className={th}>Component</th><th className={thr2}>Math</th><th className={thr2}>Pts</th></tr></thead><tbody>
+              <tr className={tr}><td className={td}>Act 1 rooms</td><td className={tdr}>15 x 10 x 1</td><td className={gold}>150</td></tr>
+              <tr className={tr}><td className={td}>Act 2 rooms</td><td className={tdr}>14 x 10 x 2</td><td className={gold}>280</td></tr>
+              <tr className={tr}><td className={td}>Act 3 rooms</td><td className={tdr}>14 x 10 x 3</td><td className={gold}>420</td></tr>
+              <tr className={tr}><td className={td}>Gold</td><td className={tdr}>1200 / 100</td><td className={gold}>12</td></tr>
+              <tr className={tr}><td className={td}>Elites</td><td className={tdr}>4 x 50</td><td className={gold}>200</td></tr>
+              <tr className={tr}><td className={td}>Bosses</td><td className={tdr}>3 x 100</td><td className={gold}>300</td></tr>
+              <tr><td className={td}>Subtotal x A0 multiplier</td><td className={tdr}>1,362 x 1.0</td><td className="py-2 text-right text-[var(--accent-gold)] font-bold">1,362</td></tr>
+            </tbody></table>
+            <p className={note}>The same run on A10 would multiply by 2.0 for a final score of 2,724. Each A-tier adds +10% — there&apos;s no diminishing return.</p>
+          </div>
+
+          <div className={`${card} mt-4`}>
+            <h3 className={h3}>Daily-Run Leaderboard Score</h3>
+            <p className="text-sm text-[var(--text-secondary)] mb-3 leading-relaxed">
+              Daily runs use a completely separate scoring system that&apos;s a single packed integer. The digits ARE the sort order — a numeric DESC sort gives the right ranking, no separate columns needed. Major Update #1 introduced this so &quot;the score sent to the leaderboards is based on whether you won, how many badges you accrued, and how quickly you finished the run (in that order)&quot;.
+            </p>
+            <table className={tbl}><thead><tr className={thr}><th className={th}>Bucket</th><th className={thr2}>Multiplier</th><th className={thr2}>Range</th></tr></thead><tbody>
+              <tr className={tr}><td className={td}>Victory flag</td><td className={tdr}>x 100,000,000</td><td className={gold}>1 = loss, 2 = win</td></tr>
+              <tr className={tr}><td className={td}>Floors visited</td><td className={tdr}>x 1,000,000</td><td className={gold}>0–99</td></tr>
+              <tr className={tr}><td className={td}>Badges earned</td><td className={tdr}>x 10,000</td><td className={gold}>0–99</td></tr>
+              <tr><td className={td}>Run time</td><td className={tdr}>9999 − seconds</td><td className={gold}>faster = higher</td></tr>
+            </tbody></table>
+            <p className={note}>Source: <span className="font-mono">ScoreUtility.CalculateDailyScore</span>. The matching <span className="font-mono">DecodeDailyScore</span> peels the integer back into <span className="font-mono">{`{ victory, floors, badges, runTime }`}</span> for display.</p>
+          </div>
+
+          <div className={`${card} mt-4`}>
+            <h3 className={h3}>Daily-score worked example</h3>
+            <p className="text-sm text-[var(--text-secondary)] mb-3 leading-relaxed">
+              An A10 daily win — 48 floors visited, 7 badges earned, completed in 1,842 seconds (30:42).
+            </p>
+            <table className={tbl}><thead><tr className={thr}><th className={th}>Bucket</th><th className={thr2}>Math</th><th className={thr2}>Contribution</th></tr></thead><tbody>
+              <tr className={tr}><td className={td}>Victory (win)</td><td className={tdr}>2 x 100,000,000</td><td className={gold}>200,000,000</td></tr>
+              <tr className={tr}><td className={td}>Floors</td><td className={tdr}>48 x 1,000,000</td><td className={gold}>48,000,000</td></tr>
+              <tr className={tr}><td className={td}>Badges</td><td className={tdr}>7 x 10,000</td><td className={gold}>70,000</td></tr>
+              <tr className={tr}><td className={td}>Time</td><td className={tdr}>9999 − 1842</td><td className={gold}>8,157</td></tr>
+              <tr><td className={td}>Total packed score</td><td className={tdr}></td><td className="py-2 text-right text-[var(--accent-gold)] font-bold">248,078,157</td></tr>
+            </tbody></table>
+            <p className={note}>Beat someone&apos;s 248,070,XXX score? You won, hit at least 48 floors, and got 7+ badges. Faster runs win at every tier of the comparison.</p>
+          </div>
+
+          <div className={`${card} mt-4`}>
+            <h3 className={h3}>Why two scores?</h3>
+            <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
+              The <strong className={bold}>run score</strong> is descriptive — it tells you how good a single run was at a glance, weighted heavily toward depth (act 3 rooms count 3x). The <strong className={bold}>daily score</strong> is a sorting key — it has to compare two runs deterministically and produce one winner. Mega Crit packed it as a single integer so the leaderboard can be sorted with one column and no tiebreaker logic.
+            </p>
+            <p className={note}>
+              The constant <span className="font-mono">clientScore = -999999999</span> is a sentinel for &quot;this row was sent without a server-computed score&quot; — used to filter unverified entries from the leaderboard view.
+            </p>
+          </div>
+        </>
       );
 
     case "foul-potion":
