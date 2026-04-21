@@ -11,6 +11,20 @@ This tool re-crops to the true pixel bbox and rescales the content so the
 longer side fills 512 * (1 - 2*padding). Runs on both PNG and WebP if
 present, and keeps the output file path identical to the input.
 
+For severely undersized cases like thieving_hopper, the cleanest fix is
+to render at high resolution first, then let this tool downscale instead
+of upscaling tiny pixel data:
+
+    cd tools/spine-renderer && node render_webgl.mjs \\
+        ../../extraction/raw/animations/monsters/thieving_hopper \\
+        ../../backend/static/images/monsters/thieving_hopper.png 2048
+    python3 tools/rescale_bestiary.py thieving_hopper
+
+The 2048 render gives Spine WebGL ~16x more atlas-pixel-per-output-pixel
+samples than a direct 512 render, so the content this tool then fits to
+512 has real detail to LANCZOS-resample, rather than blocky upscale of a
+44x47 sprite stub.
+
 Usage:
   python3 tools/rescale_bestiary.py <monster_id> [<monster_id>...]
   python3 tools/rescale_bestiary.py --padding 0.04 fuzzy_wurm_crawler
