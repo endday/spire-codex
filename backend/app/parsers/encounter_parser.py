@@ -54,7 +54,7 @@ def build_act_mapping() -> dict[str, str]:
         "Overgrowth.cs": "Act 1 - Overgrowth",
         "Hive.cs": "Act 2 - Hive",
         "Glory.cs": "Act 3 - Glory",
-        "Underdocks.cs": "Underdocks",
+        "Underdocks.cs": "Act 1 - Underdocks",
     }
     for filename, act_name in act_map.items():
         filepath = ACTS_DIR / filename

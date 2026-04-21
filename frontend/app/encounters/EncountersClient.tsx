@@ -35,7 +35,7 @@ const actOptions = [
   { label: "Act 1 - Overgrowth", value: "overgrowth" },
   { label: "Act 2 - Hive", value: "hive" },
   { label: "Act 3 - Glory", value: "glory" },
-  { label: "Underdocks", value: "underdocks" },
+  { label: "Act 1 - Underdocks", value: "underdocks" },
 ];
 
 export default function EncountersClient({ initialEncounters }: { initialEncounters: Encounter[] }) {
