@@ -177,7 +177,7 @@
     "name": "Many Corpse Slugs",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": [
       "Slugs"
     ],
@@ -194,7 +194,7 @@
     "name": "Corpse Slugs",
     "room_type": "Monster",
     "is_weak": true,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": [
       "Slugs"
     ],
@@ -226,7 +226,7 @@
     "name": "Cultists",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -301,10 +301,6 @@
     "act": "Act 3 - Glory",
     "tags": null,
     "monsters": [
-      {
-        "id": "DOOR",
-        "name": "Door"
-      },
       {
         "id": "DOORMAKER",
         "name": "Doormaker"
@@ -441,7 +437,7 @@
     "name": "Fossil Stalker",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -503,7 +499,7 @@
     "name": "Two Gremlins in a Trenchcoat",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -526,7 +522,7 @@
     "name": "Haunted Ship",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -645,7 +641,7 @@
     "name": "Lagavulin Matriarch",
     "room_type": "Boss",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -660,7 +656,7 @@
     "name": "Evil Gas",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -842,7 +838,7 @@
     "name": "Phantasmal Gardeners",
     "room_type": "Elite",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -876,7 +872,7 @@
     "name": "Punch Construct",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -986,11 +982,32 @@
     "loss_text": "Some [gold]Scrolls of Biting[/gold] tore [b]The Adventurer[/b] to shreds."
   },
   {
+    "id": "SEAPUNK_NORMAL",
+    "name": "Underdocks Wildlife",
+    "room_type": "Monster",
+    "is_weak": false,
+    "act": "Act 1 - Underdocks",
+    "tags": [
+      "Seapunk"
+    ],
+    "monsters": [
+      {
+        "id": "CALCIFIED_CULTIST",
+        "name": "Calcified Cultist"
+      },
+      {
+        "id": "SEAPUNK",
+        "name": "Seapunk"
+      }
+    ],
+    "loss_text": "[b]The Adventurer[/b] was defeated by some [gold]Underdocks Wildlife[/gold]."
+  },
+  {
     "id": "SEAPUNK_WEAK",
     "name": "Seapunk",
     "room_type": "Monster",
     "is_weak": true,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": [
       "Seapunk"
     ],
@@ -1007,7 +1024,7 @@
     "name": "Sewer Clam",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -1039,7 +1056,7 @@
     "name": "Skulking Colony",
     "room_type": "Elite",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -1162,7 +1179,7 @@
     "name": "Sludge Spinner",
     "room_type": "Monster",
     "is_weak": true,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -1223,7 +1240,7 @@
     "name": "Soul Fysh",
     "room_type": "Boss",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -1268,7 +1285,7 @@
     "name": "Terror Eel",
     "room_type": "Elite",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -1394,30 +1411,11 @@
     "loss_text": "A [gold]Thieving Hopper[/gold] mugged [b]The Adventurer[/b]."
   },
   {
-    "id": "TOADPOLES_NORMAL",
-    "name": "Underdocks Wildlife",
-    "room_type": "Monster",
-    "is_weak": false,
-    "act": "Underdocks",
-    "tags": null,
-    "monsters": [
-      {
-        "id": "CALCIFIED_CULTIST",
-        "name": "Calcified Cultist"
-      },
-      {
-        "id": "TOADPOLE",
-        "name": "Toadpole"
-      }
-    ],
-    "loss_text": "[b]The Adventurer[/b] was defeated by some [gold]Underdocks Wildlife[/gold]."
-  },
-  {
     "id": "TOADPOLES_WEAK",
     "name": "Toadpoles",
     "room_type": "Monster",
     "is_weak": true,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -1432,19 +1430,15 @@
     "name": "Tunneling Twosome",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Act 2 - Hive",
+    "act": null,
     "tags": [
       "Burrower",
-      "Workers"
+      "Chomper"
     ],
     "monsters": [
       {
-        "id": "BOWLBUG_EGG",
-        "name": "Bowlbug (Egg)"
-      },
-      {
-        "id": "BOWLBUG_SILK",
-        "name": "Bowlbug (Silk)"
+        "id": "CHOMPER",
+        "name": "Chomper"
       },
       {
         "id": "TUNNELER",
@@ -1494,7 +1488,7 @@
     "name": "Two-Tailed Rats",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -1539,7 +1533,7 @@
     "name": "Waterfall Giant",
     "room_type": "Boss",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {

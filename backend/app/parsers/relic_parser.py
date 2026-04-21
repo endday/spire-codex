@@ -1,18 +1,21 @@
 """Parse relic data from decompiled C# files and localization JSON."""
+
 import json
 import re
 from pathlib import Path
 from description_resolver import resolve_description, extract_vars_from_source
 
+from orphan_filter import is_orphan
 from parser_paths import BASE, DECOMPILED, loc_dir as _loc_dir, data_dir as _data_dir
+
 RELICS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.Relics"
 RELIC_POOLS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.RelicPools"
 STATIC_IMAGES = BASE / "backend" / "static" / "images" / "relics"
 
 
 def class_name_to_id(name: str) -> str:
-    s = re.sub(r'(?<=[a-z0-9])(?=[A-Z])', '_', name)
-    s = re.sub(r'(?<=[A-Z])(?=[A-Z][a-z])', '_', s)
+    s = re.sub(r"(?<=[a-z0-9])(?=[A-Z])", "_", name)
+    s = re.sub(r"(?<=[A-Z])(?=[A-Z][a-z])", "_", s)
     return s.upper()
 
 
@@ -35,8 +38,7 @@ def parse_starter_upgrades() -> dict[str, str]:
         content = touch_file.read_text(encoding="utf-8")
         # Pattern: { ModelDb.Relic<Base>().Id, ModelDb.Relic<Upgraded>() }
         for m in re.finditer(
-            r'ModelDb\.Relic<(\w+)>\(\)\.Id,\s*ModelDb\.Relic<(\w+)>\(\)',
-            content
+            r"ModelDb\.Relic<(\w+)>\(\)\.Id,\s*ModelDb\.Relic<(\w+)>\(\)", content
         ):
             base, upgraded = m.group(1), m.group(2)
             upgrades[upgraded] = base
@@ -59,7 +61,7 @@ def parse_relic_pools() -> dict[str, str]:
         if not filepath.exists():
             continue
         content = filepath.read_text(encoding="utf-8")
-        for m in re.finditer(r'ModelDb\.Relic<(\w+)>\(\)', content):
+        for m in re.finditer(r"ModelDb\.Relic<(\w+)>\(\)", content):
             relic_to_pool[m.group(1)] = pool_name
 
     # Assign upgraded starter relics to their base relic's character pool
@@ -71,7 +73,14 @@ def parse_relic_pools() -> dict[str, str]:
     return relic_to_pool
 
 
-def parse_single_relic(filepath: Path, localization: dict, relic_pools: dict, ench_loc: dict | None = None) -> dict | None:
+def parse_single_relic(
+    filepath: Path, localization: dict, relic_pools: dict, ench_loc: dict | None = None
+) -> dict | None:
+    # Skip orphan .cs files left over from previous extractions — the
+    # class no longer exists in the current DLL (no cross-references,
+    # stale mtime) so it shouldn't appear in our output.
+    if is_orphan(filepath):
+        return None
     content = filepath.read_text(encoding="utf-8")
     class_name = filepath.stem
 
@@ -79,13 +88,13 @@ def parse_single_relic(filepath: Path, localization: dict, relic_pools: dict, en
         return None
 
     # Skip non-relic classes that happen to live in the Relics directory
-    if not re.search(r'class\s+\w+\s*:\s*RelicModel\b', content):
+    if not re.search(r"class\s+\w+\s*:\s*RelicModel\b", content):
         return None
 
     relic_id = class_name_to_id(class_name)
 
     # Rarity
-    rarity_match = re.search(r'Rarity\s*=>\s*RelicRarity\.(\w+)', content)
+    rarity_match = re.search(r"Rarity\s*=>\s*RelicRarity\.(\w+)", content)
     rarity = rarity_match.group(1) if rarity_match else "Unknown"
 
     # Extract variable values from source
@@ -93,11 +102,13 @@ def parse_single_relic(filepath: Path, localization: dict, relic_pools: dict, en
 
     # Resolve StringVar references to enchantment names
     # Pattern: StringVar("EnchantmentName", ModelDb.Enchantment<Goopy>().Title.GetFormattedText())
-    for sv in re.finditer(r'StringVar\(\s*"(\w+)"\s*,\s*ModelDb\.Enchantment<(\w+)>\(\)', content):
+    for sv in re.finditer(
+        r'StringVar\(\s*"(\w+)"\s*,\s*ModelDb\.Enchantment<(\w+)>\(\)', content
+    ):
         var_name = sv.group(1)
         enchant_class = sv.group(2)
         enchant_id = class_name_to_id(enchant_class)
-        enchant_name = re.sub(r'(?<=[a-z])(?=[A-Z])', ' ', enchant_class)
+        enchant_name = re.sub(r"(?<=[a-z])(?=[A-Z])", " ", enchant_class)
         if ench_loc:
             loc_name = ench_loc.get(f"{enchant_id}.title")
             if loc_name:
@@ -114,32 +125,49 @@ def parse_single_relic(filepath: Path, localization: dict, relic_pools: dict, en
     desc_clean = description_resolved
     flavor_clean = flavor
 
-    # Merchant cost — base price from rarity or MerchantCost override, with ×0.85–1.15 variance
+    # Merchant cost — base price from rarity or MerchantCost override, with
+    # ×0.85–1.15 variance. Major Update #1 (game v0.103.2) reduced every
+    # rarity tier's base by 25g; values below match the post-MU1 RelicModel.cs
+    # constants. The five gold-generating relics that broke shop economy
+    # (The Courier, Old Coin + the MU1 additions Lucky Fysh, Bowler Hat,
+    # Amethyst Aubergine) now opt out via `IsAllowedInShops => false` —
+    # surface that as `merchant_price: null` so the frontend doesn't
+    # advertise a shop price for relics you can never actually buy.
     RARITY_BASE_COST = {
-        "Common": 200,
-        "Uncommon": 250,
-        "Rare": 300,
-        "Shop": 225,
+        "Common": 175,
+        "Uncommon": 225,
+        "Rare": 275,
+        "Shop": 200,
     }
-    merchant_cost_override = re.search(r'override\s+int\s+MerchantCost\s*=>\s*(\d+)', content)
+    is_shop_blacklisted = bool(
+        re.search(r"override\s+bool\s+IsAllowedInShops\s*=>\s*false\b", content)
+    )
+    merchant_cost_override = re.search(
+        r"override\s+int\s+MerchantCost\s*=>\s*(\d+)", content
+    )
     if merchant_cost_override:
         base_cost = int(merchant_cost_override.group(1))
     else:
         base_cost = RARITY_BASE_COST.get(rarity)
 
-    if base_cost is not None:
+    if is_shop_blacklisted or base_cost is None:
+        merchant_price = None
+    else:
         cost_min = round(base_cost * 0.85)
         cost_max = round(base_cost * 1.15)
         merchant_price = {"base": base_cost, "min": cost_min, "max": cost_max}
-    else:
-        merchant_price = None
 
     # Pool/character
     pool = relic_pools.get(class_name, "shared")
 
-    # Image URL
-    image_file = STATIC_IMAGES / f"{relic_id.lower()}.png"
-    image_url = f"/static/images/relics/{relic_id.lower()}.png" if image_file.exists() else None
+    # Image URL — prefer WebP, fall back to PNG
+    relic_base = relic_id.lower()
+    image_file = STATIC_IMAGES / f"{relic_base}.webp"
+    if not image_file.exists():
+        image_file = STATIC_IMAGES / f"{relic_base}.png"
+    image_url = (
+        f"/static/images/relics/{image_file.name}" if image_file.exists() else None
+    )
 
     # Character-specific image variants (e.g., Yummy Cookie has 5 variants)
     VARIANT_SUFFIXES = {
@@ -151,9 +179,20 @@ def parse_single_relic(filepath: Path, localization: dict, relic_pools: dict, en
     }
     image_variants = {}
     for suffix, char_name in VARIANT_SUFFIXES.items():
-        variant_file = STATIC_IMAGES / f"{relic_id.lower()}_{suffix}.png"
+        variant_file = STATIC_IMAGES / f"{relic_base}_{suffix}.webp"
+        if not variant_file.exists():
+            variant_file = STATIC_IMAGES / f"{relic_base}_{suffix}.png"
         if variant_file.exists():
-            image_variants[char_name] = f"/static/images/relics/{relic_id.lower()}_{suffix}.png"
+            image_variants[char_name] = f"/static/images/relics/{variant_file.name}"
+
+    # Relic-specific notes extracted from C# source
+    notes = None
+    if class_name == "ToyBox":
+        notes = [
+            "Wax Relics are pulled from the normal relic pool — any non-Ancient relic can be waxed.",
+            "Wax Relic rarity: 50% Common, 33% Uncommon, 17% Rare (standard relic rarity roll).",
+            "All wax relics melt after 12 total combats, then Toy Box is used up.",
+        ]
 
     return {
         "id": relic_id,
@@ -166,6 +205,7 @@ def parse_single_relic(filepath: Path, localization: dict, relic_pools: dict, en
         "merchant_price": merchant_price,
         "image_url": image_url,
         "image_variants": image_variants if image_variants else None,
+        "notes": notes,
     }
 
 
@@ -191,7 +231,15 @@ def build_relic_rarity_map(gameplay_ui: dict) -> dict[str, str]:
 
 
 # Compendium rarity order for relics (matches in-game relic collection)
-RELIC_RARITY_ORDER = ["Starter", "Common", "Uncommon", "Rare", "Shop", "Ancient", "Event"]
+RELIC_RARITY_ORDER = [
+    "Starter",
+    "Common",
+    "Uncommon",
+    "Rare",
+    "Shop",
+    "Ancient",
+    "Event",
+]
 
 
 def parse_all_relics(loc_dir: Path) -> list[dict]:

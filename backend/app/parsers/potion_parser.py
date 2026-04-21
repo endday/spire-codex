@@ -1,17 +1,20 @@
 """Parse potion data from decompiled C# files and localization JSON."""
+
 import json
 import re
 from pathlib import Path
 from description_resolver import resolve_description, extract_vars_from_source
 
+from orphan_filter import is_orphan
 from parser_paths import BASE, DECOMPILED, loc_dir as _loc_dir, data_dir as _data_dir
+
 POTIONS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Models.Potions"
 STATIC_IMAGES = BASE / "backend" / "static" / "images" / "potions"
 
 
 def class_name_to_id(name: str) -> str:
-    s = re.sub(r'(?<=[a-z0-9])(?=[A-Z])', '_', name)
-    s = re.sub(r'(?<=[A-Z])(?=[A-Z][a-z])', '_', s)
+    s = re.sub(r"(?<=[a-z0-9])(?=[A-Z])", "_", name)
+    s = re.sub(r"(?<=[A-Z])(?=[A-Z][a-z])", "_", s)
     return s.upper()
 
 
@@ -24,6 +27,11 @@ def load_localization(loc_dir: Path) -> dict:
 
 
 def parse_single_potion(filepath: Path, localization: dict) -> dict | None:
+    # Skip orphan .cs files left over from previous extractions — the
+    # class no longer exists in the current DLL (no cross-references,
+    # stale mtime) so it shouldn't appear in our output.
+    if is_orphan(filepath):
+        return None
     content = filepath.read_text(encoding="utf-8")
     class_name = filepath.stem
 
@@ -33,7 +41,7 @@ def parse_single_potion(filepath: Path, localization: dict) -> dict | None:
     potion_id = class_name_to_id(class_name)
 
     # Rarity
-    rarity_match = re.search(r'Rarity\s*=>\s*PotionRarity\.(\w+)', content)
+    rarity_match = re.search(r"Rarity\s*=>\s*PotionRarity\.(\w+)", content)
     rarity = rarity_match.group(1) if rarity_match else "Common"
 
     # Extract variable values from source
@@ -47,9 +55,14 @@ def parse_single_potion(filepath: Path, localization: dict) -> dict | None:
     description_resolved = resolve_description(description_raw, all_vars)
     desc_clean = description_resolved
 
-    # Image URL
-    image_file = STATIC_IMAGES / f"{potion_id.lower()}.png"
-    image_url = f"/static/images/potions/{potion_id.lower()}.png" if image_file.exists() else None
+    # Image URL — prefer WebP, fall back to PNG
+    potion_base = potion_id.lower()
+    image_file = STATIC_IMAGES / f"{potion_base}.webp"
+    if not image_file.exists():
+        image_file = STATIC_IMAGES / f"{potion_base}.png"
+    image_url = (
+        f"/static/images/potions/{image_file.name}" if image_file.exists() else None
+    )
 
     return {
         "id": potion_id,

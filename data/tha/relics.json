@@ -8,12 +8,13 @@
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/akabeko.png",
+    "image_url": "/static/images/relics/akabeko.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
     "compendium_order": 40
   },
@@ -26,26 +27,24 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/alchemical_coffer.png",
+    "image_url": "/static/images/relics/alchemical_coffer.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 160
   },
   {
     "id": "AMETHYST_AUBERGINE",
     "name": "AmethystAubergine",
-    "description": "ศัตรูดรอป[gold]ทอง[/gold]มากขึ้น [blue]10[/blue]",
+    "description": "ศัตรูดรอป[gold]ทอง[/gold]มากขึ้น [blue]15[/blue]",
     "description_raw": "ศัตรูดรอป[gold]ทอง[/gold]มากขึ้น [blue]{Gold}[/blue]",
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
     "rarity": "เครื่องรางธรรมดา",
     "pool": "shared",
-    "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
-    },
-    "image_url": "/static/images/relics/amethyst_aubergine.png",
+    "merchant_price": null,
+    "image_url": "/static/images/relics/amethyst_aubergine.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
     "compendium_order": 10
   },
@@ -58,12 +57,13 @@
     "rarity": "เครื่องรางธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/anchor.png",
+    "image_url": "/static/images/relics/anchor.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
     "compendium_order": 11
   },
@@ -76,8 +76,9 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/arcane_scroll.png",
+    "image_url": "/static/images/relics/arcane_scroll.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 161
   },
@@ -90,8 +91,9 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/archaic_tooth.png",
+    "image_url": "/static/images/relics/archaic_tooth.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 162
   },
@@ -104,8 +106,9 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/astrolabe.png",
+    "image_url": "/static/images/relics/astrolabe.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 163
   },
@@ -115,17 +118,18 @@
     "description": "ตอนเริ่มต้นแต่ละการต่อสู้ สร้าง [blue]1[/blue] [gold]จุดอ่อน[/gold]ใส่ศัตรูทั้งหมด",
     "description_raw": "ตอนเริ่มต้นแต่ละการต่อสู้ สร้าง [blue]{VulnerablePower}[/blue] [gold]จุดอ่อน[/gold]ใส่ศัตรูทั้งหมด",
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
-    "rarity": "เครื่องรางไม่ธรรมดา",
+    "rarity": "เครื่องรางธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/bag_of_marbles.png",
+    "image_url": "/static/images/relics/bag_of_marbles.webp",
     "image_variants": null,
-    "rarity_key": "Uncommon",
-    "compendium_order": 41
+    "notes": null,
+    "rarity_key": "Common",
+    "compendium_order": 12
   },
   {
     "id": "BAG_OF_PREPARATION",
@@ -136,14 +140,15 @@
     "rarity": "เครื่องรางธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/bag_of_preparation.png",
+    "image_url": "/static/images/relics/bag_of_preparation.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
-    "compendium_order": 12
+    "compendium_order": 13
   },
   {
     "id": "BEATING_REMNANT",
@@ -154,12 +159,13 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/beating_remnant.png",
+    "image_url": "/static/images/relics/beating_remnant.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 80
   },
@@ -172,8 +178,9 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/beautiful_bracelet.png",
+    "image_url": "/static/images/relics/beautiful_bracelet.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 164
   },
@@ -183,17 +190,18 @@
     "description": "[gold]พัฒนา[/gold]การ์ดทั้งหมดใน[gold]มือ[/gold]แรกในแต่ละการต่อสู้",
     "description_raw": "[gold]พัฒนา[/gold]การ์ดทั้งหมดใน[gold]มือ[/gold]แรกในแต่ละการต่อสู้",
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
-    "rarity": "เครื่องรางไม่ธรรมดา",
+    "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/bellows.png",
+    "image_url": "/static/images/relics/bellows.webp",
     "image_variants": null,
-    "rarity_key": "Uncommon",
-    "compendium_order": 42
+    "notes": null,
+    "rarity_key": "Rare",
+    "compendium_order": 81
   },
   {
     "id": "BELT_BUCKLE",
@@ -204,12 +212,13 @@
     "rarity": "เครื่องรางร้านค้า",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/belt_buckle.png",
+    "image_url": "/static/images/relics/belt_buckle.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 130
   },
@@ -222,14 +231,15 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "necrobinder",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/big_hat.png",
+    "image_url": "/static/images/relics/big_hat.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
-    "compendium_order": 81
+    "compendium_order": 82
   },
   {
     "id": "BIG_MUSHROOM",
@@ -240,10 +250,11 @@
     "rarity": "เครื่องรางเหตุการณ์",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/big_mushroom.png",
+    "image_url": "/static/images/relics/big_mushroom.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 252
+    "compendium_order": 257
   },
   {
     "id": "BIIIG_HUG",
@@ -254,8 +265,9 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/biiig_hug.png",
+    "image_url": "/static/images/relics/biiig_hug.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 165
   },
@@ -268,10 +280,11 @@
     "rarity": "เครื่องรางเหตุการณ์",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/bing_bong.png",
+    "image_url": "/static/images/relics/bing_bong.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 253
+    "compendium_order": 258
   },
   {
     "id": "BLACK_BLOOD",
@@ -282,8 +295,9 @@
     "rarity": "เครื่องรางเริ่มต้น",
     "pool": "ironclad",
     "merchant_price": null,
-    "image_url": "/static/images/relics/black_blood.png",
+    "image_url": "/static/images/relics/black_blood.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Starter",
     "compendium_order": 0
   },
@@ -296,8 +310,9 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/black_star.png",
+    "image_url": "/static/images/relics/black_star.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 166
   },
@@ -310,8 +325,9 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/blessed_antler.png",
+    "image_url": "/static/images/relics/blessed_antler.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 167
   },
@@ -324,8 +340,9 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/blood_soaked_rose.png",
+    "image_url": "/static/images/relics/blood_soaked_rose.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 168
   },
@@ -338,14 +355,15 @@
     "rarity": "เครื่องรางธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/blood_vial.png",
+    "image_url": "/static/images/relics/blood_vial.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
-    "compendium_order": 13
+    "compendium_order": 14
   },
   {
     "id": "BONE_FLUTE",
@@ -356,14 +374,15 @@
     "rarity": "เครื่องรางธรรมดา",
     "pool": "necrobinder",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/bone_flute.png",
+    "image_url": "/static/images/relics/bone_flute.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
-    "compendium_order": 14
+    "compendium_order": 15
   },
   {
     "id": "BONE_TEA",
@@ -374,28 +393,30 @@
     "rarity": "เครื่องรางเหตุการณ์",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/bone_tea.png",
+    "image_url": "/static/images/relics/bone_tea.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 254
+    "compendium_order": 259
   },
   {
     "id": "BOOK_OF_FIVE_RINGS",
     "name": "BookOfFiveRings",
-    "description": "การ์ดทุก [blue]5[/blue] ใบที่คุณเพิ่มเข้า[gold]กองการ์ด[/gold] ฟื้นฟู [green]15[/green] HP",
+    "description": "การ์ดทุก [blue]5[/blue] ใบที่คุณเพิ่มเข้า[gold]กองการ์ด[/gold] ฟื้นฟู [green]20[/green] HP",
     "description_raw": "การ์ดทุก [blue]{Cards}[/blue] ใบที่คุณเพิ่มเข้า[gold]กองการ์ด[/gold] ฟื้นฟู [green]{Heal}[/green] HP",
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
     "rarity": "เครื่องรางธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/book_of_five_rings.png",
+    "image_url": "/static/images/relics/book_of_five_rings.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
-    "compendium_order": 15
+    "compendium_order": 16
   },
   {
     "id": "BOOK_REPAIR_KNIFE",
@@ -406,14 +427,15 @@
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "necrobinder",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/book_repair_knife.png",
+    "image_url": "/static/images/relics/book_repair_knife.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 43
+    "compendium_order": 41
   },
   {
     "id": "BOOMING_CONCH",
@@ -424,8 +446,9 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/booming_conch.png",
+    "image_url": "/static/images/relics/booming_conch.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 169
   },
@@ -438,8 +461,9 @@
     "rarity": "เครื่องรางเริ่มต้น",
     "pool": "necrobinder",
     "merchant_price": null,
-    "image_url": "/static/images/relics/bound_phylactery.png",
+    "image_url": "/static/images/relics/bound_phylactery.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Starter",
     "compendium_order": 1
   },
@@ -451,15 +475,12 @@
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "shared",
-    "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
-    },
-    "image_url": "/static/images/relics/bowler_hat.png",
+    "merchant_price": null,
+    "image_url": "/static/images/relics/bowler_hat.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 44
+    "compendium_order": 42
   },
   {
     "id": "BRILLIANT_SCARF",
@@ -470,8 +491,9 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/brilliant_scarf.png",
+    "image_url": "/static/images/relics/brilliant_scarf.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 170
   },
@@ -484,12 +506,13 @@
     "rarity": "เครื่องรางร้านค้า",
     "pool": "ironclad",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/brimstone.png",
+    "image_url": "/static/images/relics/brimstone.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 131
   },
@@ -502,14 +525,15 @@
     "rarity": "เครื่องรางธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/bronze_scales.png",
+    "image_url": "/static/images/relics/bronze_scales.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
-    "compendium_order": 16
+    "compendium_order": 17
   },
   {
     "id": "BURNING_BLOOD",
@@ -520,8 +544,9 @@
     "rarity": "เครื่องรางเริ่มต้น",
     "pool": "ironclad",
     "merchant_price": null,
-    "image_url": "/static/images/relics/burning_blood.png",
+    "image_url": "/static/images/relics/burning_blood.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Starter",
     "compendium_order": 2
   },
@@ -534,12 +559,13 @@
     "rarity": "เครื่องรางร้านค้า",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/burning_sticks.png",
+    "image_url": "/static/images/relics/burning_sticks.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 132
   },
@@ -552,10 +578,11 @@
     "rarity": "เครื่องรางเหตุการณ์",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/byrdpip.png",
+    "image_url": "/static/images/relics/byrdpip.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 255
+    "compendium_order": 260
   },
   {
     "id": "CALLING_BELL",
@@ -566,8 +593,9 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/calling_bell.png",
+    "image_url": "/static/images/relics/calling_bell.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 171
   },
@@ -580,14 +608,15 @@
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/candelabra.png",
+    "image_url": "/static/images/relics/candelabra.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 45
+    "compendium_order": 43
   },
   {
     "id": "CAPTAINS_WHEEL",
@@ -598,32 +627,15 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/captains_wheel.png",
+    "image_url": "/static/images/relics/captains_wheel.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
-    "compendium_order": 82
-  },
-  {
-    "id": "CENTENNIAL_PUZZLE",
-    "name": "CentennialPuzzle",
-    "description": "เมื่อคุณเสีย HP เป็นครั้งแรกในแต่ละการต่อสู้ จั่ว [blue]3[/blue] การ์ด",
-    "description_raw": "เมื่อคุณเสีย HP เป็นครั้งแรกในแต่ละการต่อสู้ จั่ว [blue]{Cards}[/blue] การ์ด",
-    "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
-    "rarity": "เครื่องรางธรรมดา",
-    "pool": "shared",
-    "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
-    },
-    "image_url": "/static/images/relics/centennial_puzzle.png",
-    "image_variants": null,
-    "rarity_key": "Common",
-    "compendium_order": 17
+    "compendium_order": 83
   },
   {
     "id": "CHANDELIER",
@@ -634,14 +646,15 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/chandelier.png",
+    "image_url": "/static/images/relics/chandelier.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
-    "compendium_order": 83
+    "compendium_order": 84
   },
   {
     "id": "CHARONS_ASHES",
@@ -652,14 +665,15 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "ironclad",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/charons_ashes.png",
+    "image_url": "/static/images/relics/charons_ashes.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
-    "compendium_order": 84
+    "compendium_order": 85
   },
   {
     "id": "CHOICES_PARADOX",
@@ -670,8 +684,9 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/choices_paradox.png",
+    "image_url": "/static/images/relics/choices_paradox.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 172
   },
@@ -684,8 +699,9 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/claws.png",
+    "image_url": "/static/images/relics/claws.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 173
   },
@@ -698,14 +714,15 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/cloak_clasp.png",
+    "image_url": "/static/images/relics/cloak_clasp.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
-    "compendium_order": 85
+    "compendium_order": 86
   },
   {
     "id": "CRACKED_CORE",
@@ -716,8 +733,9 @@
     "rarity": "เครื่องรางเริ่มต้น",
     "pool": "defect",
     "merchant_price": null,
-    "image_url": "/static/images/relics/cracked_core.png",
+    "image_url": "/static/images/relics/cracked_core.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Starter",
     "compendium_order": 3
   },
@@ -730,8 +748,9 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/cursed_pearl.png",
+    "image_url": "/static/images/relics/cursed_pearl.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 174
   },
@@ -744,10 +763,11 @@
     "rarity": "เครื่องรางเหตุการณ์",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/darkstone_periapt.png",
+    "image_url": "/static/images/relics/darkstone_periapt.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 256
+    "compendium_order": 261
   },
   {
     "id": "DAUGHTER_OF_THE_WIND",
@@ -758,10 +778,11 @@
     "rarity": "เครื่องรางเหตุการณ์",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/daughter_of_the_wind.png",
+    "image_url": "/static/images/relics/daughter_of_the_wind.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 257
+    "compendium_order": 262
   },
   {
     "id": "DELICATE_FROND",
@@ -772,8 +793,9 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/delicate_frond.png",
+    "image_url": "/static/images/relics/delicate_frond.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 175
   },
@@ -786,14 +808,15 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "ironclad",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/demon_tongue.png",
+    "image_url": "/static/images/relics/demon_tongue.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
-    "compendium_order": 86
+    "compendium_order": 87
   },
   {
     "id": "DIAMOND_DIADEM",
@@ -804,8 +827,9 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/diamond_diadem.png",
+    "image_url": "/static/images/relics/diamond_diadem.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 176
   },
@@ -818,12 +842,13 @@
     "rarity": "เครื่องรางร้านค้า",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/dingy_rug.png",
+    "image_url": "/static/images/relics/dingy_rug.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 133
   },
@@ -836,8 +861,9 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/distinguished_cape.png",
+    "image_url": "/static/images/relics/distinguished_cape.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 177
   },
@@ -850,8 +876,9 @@
     "rarity": "เครื่องรางเริ่มต้น",
     "pool": "regent",
     "merchant_price": null,
-    "image_url": "/static/images/relics/divine_destiny.png",
+    "image_url": "/static/images/relics/divine_destiny.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Starter",
     "compendium_order": 4
   },
@@ -864,8 +891,9 @@
     "rarity": "เครื่องรางเริ่มต้น",
     "pool": "regent",
     "merchant_price": null,
-    "image_url": "/static/images/relics/divine_right.png",
+    "image_url": "/static/images/relics/divine_right.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Starter",
     "compendium_order": 5
   },
@@ -878,12 +906,13 @@
     "rarity": "เครื่องรางร้านค้า",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/dollys_mirror.png",
+    "image_url": "/static/images/relics/dollys_mirror.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 134
   },
@@ -896,8 +925,9 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/driftwood.png",
+    "image_url": "/static/images/relics/driftwood.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 178
   },
@@ -910,8 +940,9 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/ectoplasm.png",
+    "image_url": "/static/images/relics/ectoplasm.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 179
   },
@@ -924,24 +955,26 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/electric_shrymp.png",
+    "image_url": "/static/images/relics/electric_shrymp.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 180
   },
   {
     "id": "EMBER_TEA",
     "name": "EmberTea",
-    "description": "ตอนเริ่มต้นอีก [blue]5[/blue] การต่อสู้ ได้รับ [blue]2[/blue] [gold]ความแข็งแรง[/gold]",
-    "description_raw": "ตอนเริ่มต้นอีก {Combats:plural:1|[blue]{}[/blue]} การต่อสู้ ได้รับ [blue]{StrengthPower}[/blue] [gold]ความแข็งแรง[/gold]",
+    "description": "ตอนเริ่มต้นอีก 1 การต่อสู้ ได้รับ [blue]2[/blue] [gold]ความแข็งแรง[/gold]",
+    "description_raw": "ตอนเริ่มต้นอีก {Combats:choose(1):1|[blue]{}[/blue]} การต่อสู้ ได้รับ [blue]{StrengthPower}[/blue] [gold]ความแข็งแรง[/gold]",
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
     "rarity": "เครื่องรางเหตุการณ์",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/ember_tea.png",
+    "image_url": "/static/images/relics/ember_tea.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 258
+    "compendium_order": 263
   },
   {
     "id": "EMPTY_CAGE",
@@ -952,28 +985,30 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/empty_cage.png",
+    "image_url": "/static/images/relics/empty_cage.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 181
   },
   {
     "id": "ETERNAL_FEATHER",
     "name": "EternalFeather",
-    "description": "ทุกครั้งที่เข้า[gold]จุดพัก[/gold] ฟื้นฟู [green]3[/green] HP ต่อทุก [blue]5[/blue] การ์ดใน[gold]กองการ์ด[/gold]",
-    "description_raw": "ทุกครั้งที่เข้า[gold]จุดพัก[/gold] ฟื้นฟู [green]{Heal}[/green] HP ต่อทุก {Cards:plural:1 การ์ด|[blue]{}[/blue] การ์ด}ใน[gold]กองการ์ด[/gold]",
+    "description": "ทุกครั้งที่เข้า[gold]จุดพัก[/gold] ฟื้นฟู [green]3[/green] HP ต่อทุก 1 การ์ดใน[gold]กองการ์ด[/gold]",
+    "description_raw": "ทุกครั้งที่เข้า[gold]จุดพัก[/gold] ฟื้นฟู [green]{Heal}[/green] HP ต่อทุก {Cards:choose(1):1 การ์ด|[blue]{}[/blue] การ์ด}ใน[gold]กองการ์ด[/gold]",
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/eternal_feather.png",
+    "image_url": "/static/images/relics/eternal_feather.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 46
+    "compendium_order": 44
   },
   {
     "id": "FAKE_ANCHOR",
@@ -988,10 +1023,11 @@
       "min": 42,
       "max": 57
     },
-    "image_url": "/static/images/relics/fake_anchor.png",
+    "image_url": "/static/images/relics/fake_anchor.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 259
+    "compendium_order": 264
   },
   {
     "id": "FAKE_BLOOD_VIAL",
@@ -1006,10 +1042,11 @@
       "min": 42,
       "max": 57
     },
-    "image_url": "/static/images/relics/fake_blood_vial.png",
+    "image_url": "/static/images/relics/fake_blood_vial.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 260
+    "compendium_order": 265
   },
   {
     "id": "FAKE_HAPPY_FLOWER",
@@ -1024,10 +1061,11 @@
       "min": 42,
       "max": 57
     },
-    "image_url": "/static/images/relics/fake_happy_flower.png",
+    "image_url": "/static/images/relics/fake_happy_flower.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 261
+    "compendium_order": 266
   },
   {
     "id": "FAKE_LEES_WAFFLE",
@@ -1042,10 +1080,11 @@
       "min": 42,
       "max": 57
     },
-    "image_url": "/static/images/relics/fake_lees_waffle.png",
+    "image_url": "/static/images/relics/fake_lees_waffle.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 262
+    "compendium_order": 267
   },
   {
     "id": "FAKE_MERCHANTS_RUG",
@@ -1056,28 +1095,11 @@
     "rarity": "เครื่องรางเหตุการณ์",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/fake_merchants_rug.png",
+    "image_url": "/static/images/relics/fake_merchants_rug.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 263
-  },
-  {
-    "id": "FAKE_ORICHALCUM",
-    "name": "FakeOrichalcum",
-    "description": "ถ้าจบเทิร์นโดยไม่มี[gold]บล็อก[/gold] ได้รับ [blue]3[/blue] [gold]บล็อก[/gold]",
-    "description_raw": "ถ้าจบเทิร์นโดยไม่มี[gold]บล็อก[/gold] ได้รับ [blue]{Block}[/blue] [gold]บล็อก[/gold]",
-    "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
-    "rarity": "เครื่องรางเหตุการณ์",
-    "pool": "shared",
-    "merchant_price": {
-      "base": 50,
-      "min": 42,
-      "max": 57
-    },
-    "image_url": "/static/images/relics/fake_orichalcum.png",
-    "image_variants": null,
-    "rarity_key": "Event",
-    "compendium_order": 264
+    "compendium_order": 268
   },
   {
     "id": "FAKE_SNECKO_EYE",
@@ -1092,10 +1114,11 @@
       "min": 42,
       "max": 57
     },
-    "image_url": "/static/images/relics/fake_snecko_eye.png",
+    "image_url": "/static/images/relics/fake_snecko_eye.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 265
+    "compendium_order": 269
   },
   {
     "id": "FAKE_STRIKE_DUMMY",
@@ -1110,10 +1133,11 @@
       "min": 42,
       "max": 57
     },
-    "image_url": "/static/images/relics/fake_strike_dummy.png",
+    "image_url": "/static/images/relics/fake_strike_dummy.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 266
+    "compendium_order": 270
   },
   {
     "id": "FAKE_VENERABLE_TEA_SET",
@@ -1128,10 +1152,11 @@
       "min": 42,
       "max": 57
     },
-    "image_url": "/static/images/relics/fake_venerable_tea_set.png",
+    "image_url": "/static/images/relics/fake_venerable_tea_set.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 267
+    "compendium_order": 271
   },
   {
     "id": "FENCING_MANUAL",
@@ -1142,12 +1167,13 @@
     "rarity": "เครื่องรางธรรมดา",
     "pool": "regent",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/fencing_manual.png",
+    "image_url": "/static/images/relics/fencing_manual.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
     "compendium_order": 18
   },
@@ -1160,12 +1186,13 @@
     "rarity": "เครื่องรางธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/festive_popper.png",
+    "image_url": "/static/images/relics/festive_popper.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
     "compendium_order": 19
   },
@@ -1178,38 +1205,41 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/fiddle.png",
+    "image_url": "/static/images/relics/fiddle.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 182
   },
   {
     "id": "FORGOTTEN_SOUL",
     "name": "ForgottenSoul",
-    "description": "ทุกครั้งที่คุณ[gold]สลาย[/gold]การ์ด สร้างความเสียหาย [blue]1[/blue] ใส่ศัตรู 1 ตัวแบบสุ่ม",
-    "description_raw": "ทุกครั้งที่คุณ[gold]สลาย[/gold]การ์ด สร้างความเสียหาย [blue]{Damage}[/blue] ใส่ศัตรู 1 ตัวแบบสุ่ม",
-    "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
+    "description": "",
+    "description_raw": "",
+    "flavor": "",
     "rarity": "เครื่องรางเหตุการณ์",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/forgotten_soul.png",
+    "image_url": "/static/images/relics/forgotten_soul.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 268
+    "compendium_order": 272
   },
   {
     "id": "FRAGRANT_MUSHROOM",
     "name": "FragrantMushroom",
-    "description": "เมื่อรับมา เสีย [red]15[/red] HP และ[gold]พัฒนา[/gold]การ์ด [blue]3[/blue] ใบแบบสุ่ม",
+    "description": "เมื่อรับมา เสีย [red]15[/red] HP และ[gold]พัฒนา[/gold]การ์ด [blue]2[/blue] ใบแบบสุ่ม",
     "description_raw": "เมื่อรับมา เสีย [red]{HpLoss}[/red] HP และ[gold]พัฒนา[/gold]การ์ด [blue]{Cards}[/blue] ใบแบบสุ่ม",
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
     "rarity": "เครื่องรางเหตุการณ์",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/fragrant_mushroom.png",
+    "image_url": "/static/images/relics/fragrant_mushroom.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 269
+    "compendium_order": 273
   },
   {
     "id": "FRESNEL_LENS",
@@ -1220,10 +1250,11 @@
     "rarity": "เครื่องรางเหตุการณ์",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/fresnel_lens.png",
+    "image_url": "/static/images/relics/fresnel_lens.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 270
+    "compendium_order": 274
   },
   {
     "id": "FUNERARY_MASK",
@@ -1234,14 +1265,15 @@
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "necrobinder",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/funerary_mask.png",
+    "image_url": "/static/images/relics/funerary_mask.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 47
+    "compendium_order": 45
   },
   {
     "id": "FUR_COAT",
@@ -1252,8 +1284,9 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/fur_coat.png",
+    "image_url": "/static/images/relics/fur_coat.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 183
   },
@@ -1266,14 +1299,15 @@
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "regent",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/galactic_dust.png",
+    "image_url": "/static/images/relics/galactic_dust.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 48
+    "compendium_order": 46
   },
   {
     "id": "GAMBLING_CHIP",
@@ -1284,14 +1318,15 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/gambling_chip.png",
+    "image_url": "/static/images/relics/gambling_chip.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
-    "compendium_order": 87
+    "compendium_order": 88
   },
   {
     "id": "GAME_PIECE",
@@ -1302,14 +1337,15 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/game_piece.png",
+    "image_url": "/static/images/relics/game_piece.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
-    "compendium_order": 88
+    "compendium_order": 89
   },
   {
     "id": "GHOST_SEED",
@@ -1320,12 +1356,13 @@
     "rarity": "เครื่องรางร้านค้า",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/ghost_seed.png",
+    "image_url": "/static/images/relics/ghost_seed.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 135
   },
@@ -1338,14 +1375,15 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/girya.png",
+    "image_url": "/static/images/relics/girya.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
-    "compendium_order": 89
+    "compendium_order": 90
   },
   {
     "id": "GLASS_EYE",
@@ -1356,8 +1394,9 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/glass_eye.png",
+    "image_url": "/static/images/relics/glass_eye.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 184
   },
@@ -1370,12 +1409,13 @@
     "rarity": "เครื่องรางร้านค้า",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/gnarled_hammer.png",
+    "image_url": "/static/images/relics/gnarled_hammer.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 136
   },
@@ -1388,30 +1428,32 @@
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "defect",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/gold_plated_cables.png",
+    "image_url": "/static/images/relics/gold_plated_cables.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 49
+    "compendium_order": 47
   },
   {
     "id": "GORGET",
     "name": "Gorget",
-    "description": "ตอนเริ่มต้นแต่ละการต่อสู้ ได้รับ [blue]4[/blue] [gold]Plating[/gold]",
-    "description_raw": "ตอนเริ่มต้นแต่ละการต่อสู้ ได้รับ [blue]{PlatingPower}[/blue] [gold]Plating[/gold]",
+    "description": "ตอนเริ่มต้นแต่ละการต่อสู้ ได้รับ [blue]4[/blue] [gold]เกราะโลหะ[/gold]",
+    "description_raw": "ตอนเริ่มต้นแต่ละการต่อสู้ ได้รับ [blue]{PlatingPower}[/blue] [gold]เกราะโลหะ[/gold]",
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
     "rarity": "เครื่องรางธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/gorget.png",
+    "image_url": "/static/images/relics/gorget.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
     "compendium_order": 20
   },
@@ -1424,14 +1466,15 @@
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/gremlin_horn.png",
+    "image_url": "/static/images/relics/gremlin_horn.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 50
+    "compendium_order": 48
   },
   {
     "id": "HAND_DRILL",
@@ -1442,10 +1485,11 @@
     "rarity": "เครื่องรางเหตุการณ์",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/hand_drill.png",
+    "image_url": "/static/images/relics/hand_drill.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 271
+    "compendium_order": 275
   },
   {
     "id": "HAPPY_FLOWER",
@@ -1456,14 +1500,30 @@
     "rarity": "เครื่องรางธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/happy_flower.png",
+    "image_url": "/static/images/relics/happy_flower.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
     "compendium_order": 21
+  },
+  {
+    "id": "HEFTY_TABLET",
+    "name": "HeftyTablet",
+    "description": "",
+    "description_raw": "",
+    "flavor": "",
+    "rarity": "เครื่องรางเทพโบราณ",
+    "pool": "shared",
+    "merchant_price": null,
+    "image_url": "/static/images/relics/hefty_tablet.webp",
+    "image_variants": null,
+    "notes": null,
+    "rarity_key": "Ancient",
+    "compendium_order": 185
   },
   {
     "id": "HELICAL_DART",
@@ -1474,14 +1534,15 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "silent",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/helical_dart.png",
+    "image_url": "/static/images/relics/helical_dart.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
-    "compendium_order": 90
+    "compendium_order": 91
   },
   {
     "id": "HISTORY_COURSE",
@@ -1492,10 +1553,11 @@
     "rarity": "เครื่องรางเหตุการณ์",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/history_course.png",
+    "image_url": "/static/images/relics/history_course.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 272
+    "compendium_order": 276
   },
   {
     "id": "HORN_CLEAT",
@@ -1506,14 +1568,15 @@
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/horn_cleat.png",
+    "image_url": "/static/images/relics/horn_cleat.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 51
+    "compendium_order": 49
   },
   {
     "id": "INFUSED_CORE",
@@ -1524,8 +1587,9 @@
     "rarity": "เครื่องรางเริ่มต้น",
     "pool": "defect",
     "merchant_price": null,
-    "image_url": "/static/images/relics/infused_core.png",
+    "image_url": "/static/images/relics/infused_core.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Starter",
     "compendium_order": 6
   },
@@ -1538,14 +1602,15 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/intimidating_helmet.png",
+    "image_url": "/static/images/relics/intimidating_helmet.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
-    "compendium_order": 91
+    "compendium_order": 92
   },
   {
     "id": "IRON_CLUB",
@@ -1556,10 +1621,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/iron_club.png",
+    "image_url": "/static/images/relics/iron_club.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 185
+    "compendium_order": 186
   },
   {
     "id": "IVORY_TILE",
@@ -1570,14 +1636,15 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "necrobinder",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/ivory_tile.png",
+    "image_url": "/static/images/relics/ivory_tile.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
-    "compendium_order": 92
+    "compendium_order": 93
   },
   {
     "id": "JEWELED_MASK",
@@ -1588,10 +1655,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/jeweled_mask.png",
+    "image_url": "/static/images/relics/jeweled_mask.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 186
+    "compendium_order": 187
   },
   {
     "id": "JEWELRY_BOX",
@@ -1602,10 +1670,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/jewelry_box.png",
+    "image_url": "/static/images/relics/jewelry_box.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 187
+    "compendium_order": 188
   },
   {
     "id": "JOSS_PAPER",
@@ -1616,32 +1685,15 @@
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/joss_paper.png",
+    "image_url": "/static/images/relics/joss_paper.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 52
-  },
-  {
-    "id": "JUZU_BRACELET",
-    "name": "JuzuBracelet",
-    "description": "จะไม่พบศัตรูปกติในห้อง [gold]?[/gold] อีกต่อไป",
-    "description_raw": "จะไม่พบศัตรูปกติในห้อง [gold]?[/gold] อีกต่อไป",
-    "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
-    "rarity": "เครื่องรางธรรมดา",
-    "pool": "shared",
-    "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
-    },
-    "image_url": "/static/images/relics/juzu_bracelet.png",
-    "image_variants": null,
-    "rarity_key": "Common",
-    "compendium_order": 22
+    "compendium_order": 50
   },
   {
     "id": "KIFUDA",
@@ -1652,12 +1704,13 @@
     "rarity": "เครื่องรางร้านค้า",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/kifuda.png",
+    "image_url": "/static/images/relics/kifuda.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 137
   },
@@ -1670,14 +1723,15 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/kunai.png",
+    "image_url": "/static/images/relics/kunai.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
-    "compendium_order": 93
+    "compendium_order": 94
   },
   {
     "id": "KUSARIGAMA",
@@ -1688,14 +1742,15 @@
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/kusarigama.png",
+    "image_url": "/static/images/relics/kusarigama.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 53
+    "compendium_order": 51
   },
   {
     "id": "LARGE_CAPSULE",
@@ -1706,10 +1761,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/large_capsule.png",
+    "image_url": "/static/images/relics/large_capsule.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 188
+    "compendium_order": 189
   },
   {
     "id": "LASTING_CANDY",
@@ -1717,17 +1773,18 @@
     "description": "ทุกการต่อสู้แบบครั้งเว้นครั้ง รางวัลการ์ดจะมีการ์ดพลังเพิ่ม 1 ใบ",
     "description_raw": "ทุกการต่อสู้แบบครั้งเว้นครั้ง รางวัลการ์ดจะมีการ์ดพลังเพิ่ม 1 ใบ",
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
-    "rarity": "เครื่องรางหายาก",
+    "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/lasting_candy.png",
+    "image_url": "/static/images/relics/lasting_candy.webp",
     "image_variants": null,
-    "rarity_key": "Rare",
-    "compendium_order": 94
+    "notes": null,
+    "rarity_key": "Uncommon",
+    "compendium_order": 52
   },
   {
     "id": "LAVA_LAMP",
@@ -1738,28 +1795,30 @@
     "rarity": "เครื่องรางร้านค้า",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/lava_lamp.png",
+    "image_url": "/static/images/relics/lava_lamp.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 138
   },
   {
     "id": "LEAFY_POULTICE",
     "name": "LeafyPoultice",
-    "description": "เมื่อรับมา [gold]แปรสภาพ[/gold][gold]จู่โจม[/gold] [blue]1[/blue] ใบ และ[gold]ป้องกัน[/gold] [blue]1[/blue] ใบ และเสีย [blue]10[/blue] HP สูงสุด",
+    "description": "เมื่อรับมา [gold]แปรสภาพ[/gold][gold]จู่โจม[/gold] [blue]1[/blue] ใบ และ[gold]ป้องกัน[/gold] [blue]1[/blue] ใบ และเสีย [blue]12[/blue] HP สูงสุด",
     "description_raw": "เมื่อรับมา [gold]แปรสภาพ[/gold][gold]จู่โจม[/gold] [blue]1[/blue] ใบ และ[gold]ป้องกัน[/gold] [blue]1[/blue] ใบ และเสีย [blue]{MaxHp}[/blue] HP สูงสุด",
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/leafy_poultice.png",
+    "image_url": "/static/images/relics/leafy_poultice.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 189
+    "compendium_order": 190
   },
   {
     "id": "LEES_WAFFLE",
@@ -1770,12 +1829,13 @@
     "rarity": "เครื่องรางร้านค้า",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/lees_waffle.png",
+    "image_url": "/static/images/relics/lees_waffle.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 139
   },
@@ -1788,14 +1848,15 @@
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/letter_opener.png",
+    "image_url": "/static/images/relics/letter_opener.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 54
+    "compendium_order": 53
   },
   {
     "id": "LIZARD_TAIL",
@@ -1806,12 +1867,13 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/lizard_tail.png",
+    "image_url": "/static/images/relics/lizard_tail.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 95
   },
@@ -1824,10 +1886,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/looming_fruit.png",
+    "image_url": "/static/images/relics/looming_fruit.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 190
+    "compendium_order": 191
   },
   {
     "id": "LORDS_PARASOL",
@@ -1838,10 +1901,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/lords_parasol.png",
+    "image_url": "/static/images/relics/lords_parasol.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 191
+    "compendium_order": 192
   },
   {
     "id": "LOST_COFFER",
@@ -1852,24 +1916,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/lost_coffer.png",
+    "image_url": "/static/images/relics/lost_coffer.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 192
-  },
-  {
-    "id": "LOST_WISP",
-    "name": "LostWisp",
-    "description": "ทุกครั้งที่คุณเล่นการ์ด[gold]พลัง[/gold] สร้างความเสียหาย [blue]8[/blue] ใส่ศัตรูทั้งหมด",
-    "description_raw": "ทุกครั้งที่คุณเล่นการ์ด[gold]พลัง[/gold] สร้างความเสียหาย [blue]{Damage}[/blue] ใส่ศัตรูทั้งหมด",
-    "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
-    "rarity": "เครื่องรางเหตุการณ์",
-    "pool": "shared",
-    "merchant_price": null,
-    "image_url": "/static/images/relics/lost_wisp.png",
-    "image_variants": null,
-    "rarity_key": "Event",
-    "compendium_order": 273
+    "compendium_order": 193
   },
   {
     "id": "LUCKY_FYSH",
@@ -1879,15 +1930,12 @@
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "shared",
-    "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
-    },
-    "image_url": "/static/images/relics/lucky_fysh.png",
+    "merchant_price": null,
+    "image_url": "/static/images/relics/lucky_fysh.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 55
+    "compendium_order": 54
   },
   {
     "id": "LUNAR_PASTRY",
@@ -1898,12 +1946,13 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "regent",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/lunar_pastry.png",
+    "image_url": "/static/images/relics/lunar_pastry.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 96
   },
@@ -1916,10 +1965,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/massive_scroll.png",
+    "image_url": "/static/images/relics/massive_scroll.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 193
+    "compendium_order": 194
   },
   {
     "id": "MAW_BANK",
@@ -1930,10 +1980,11 @@
     "rarity": "เครื่องรางเหตุการณ์",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/maw_bank.png",
+    "image_url": "/static/images/relics/maw_bank.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 274
+    "compendium_order": 277
   },
   {
     "id": "MEAL_TICKET",
@@ -1944,14 +1995,15 @@
     "rarity": "เครื่องรางธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/meal_ticket.png",
+    "image_url": "/static/images/relics/meal_ticket.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
-    "compendium_order": 23
+    "compendium_order": 22
   },
   {
     "id": "MEAT_CLEAVER",
@@ -1962,10 +2014,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/meat_cleaver.png",
+    "image_url": "/static/images/relics/meat_cleaver.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 194
+    "compendium_order": 195
   },
   {
     "id": "MEAT_ON_THE_BONE",
@@ -1976,12 +2029,13 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/meat_on_the_bone.png",
+    "image_url": "/static/images/relics/meat_on_the_bone.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 97
   },
@@ -1994,14 +2048,15 @@
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/mercury_hourglass.png",
+    "image_url": "/static/images/relics/mercury_hourglass.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 56
+    "compendium_order": 55
   },
   {
     "id": "METRONOME",
@@ -2012,12 +2067,13 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "defect",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/metronome.png",
+    "image_url": "/static/images/relics/metronome.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 98
   },
@@ -2030,12 +2086,13 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "regent",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/mini_regent.png",
+    "image_url": "/static/images/relics/mini_regent.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 99
   },
@@ -2048,14 +2105,15 @@
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/miniature_cannon.png",
+    "image_url": "/static/images/relics/miniature_cannon.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 57
+    "compendium_order": 56
   },
   {
     "id": "MINIATURE_TENT",
@@ -2066,12 +2124,13 @@
     "rarity": "เครื่องรางร้านค้า",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/miniature_tent.png",
+    "image_url": "/static/images/relics/miniature_tent.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 140
   },
@@ -2084,12 +2143,13 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/molten_egg.png",
+    "image_url": "/static/images/relics/molten_egg.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 100
   },
@@ -2102,10 +2162,11 @@
     "rarity": "เครื่องรางเหตุการณ์",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/mr_struggles.png",
+    "image_url": "/static/images/relics/mr_struggles.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 275
+    "compendium_order": 278
   },
   {
     "id": "MUMMIFIED_HAND",
@@ -2116,12 +2177,13 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/mummified_hand.png",
+    "image_url": "/static/images/relics/mummified_hand.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 101
   },
@@ -2134,14 +2196,45 @@
     "rarity": "เครื่องรางร้านค้า",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/mystic_lighter.png",
+    "image_url": "/static/images/relics/mystic_lighter.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 141
+  },
+  {
+    "id": "NEOWS_BONES",
+    "name": "NeowsBones",
+    "description": "",
+    "description_raw": "",
+    "flavor": "",
+    "rarity": "เครื่องรางเทพโบราณ",
+    "pool": "shared",
+    "merchant_price": null,
+    "image_url": "/static/images/relics/neows_bones.webp",
+    "image_variants": null,
+    "notes": null,
+    "rarity_key": "Ancient",
+    "compendium_order": 196
+  },
+  {
+    "id": "NEOWS_TALISMAN",
+    "name": "NeowsTalisman",
+    "description": "",
+    "description_raw": "",
+    "flavor": "",
+    "rarity": "เครื่องรางเทพโบราณ",
+    "pool": "shared",
+    "merchant_price": null,
+    "image_url": "/static/images/relics/neows_talisman.webp",
+    "image_variants": null,
+    "notes": null,
+    "rarity_key": "Ancient",
+    "compendium_order": 197
   },
   {
     "id": "NEOWS_TORMENT",
@@ -2152,10 +2245,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/neows_torment.png",
+    "image_url": "/static/images/relics/neows_torment.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 195
+    "compendium_order": 198
   },
   {
     "id": "NEW_LEAF",
@@ -2166,28 +2260,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/new_leaf.png",
+    "image_url": "/static/images/relics/new_leaf.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 196
-  },
-  {
-    "id": "NUNCHAKU",
-    "name": "Nunchaku",
-    "description": "ทุกครั้งที่คุณเล่นการ์ดโจมตี [blue]10[/blue] ใบ ได้รับ [energy:1]",
-    "description_raw": "ทุกครั้งที่คุณเล่นการ์ดโจมตี [blue]{Cards}[/blue] ใบ ได้รับ {Energy:energyIcons()}",
-    "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
-    "rarity": "เครื่องรางไม่ธรรมดา",
-    "pool": "shared",
-    "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
-    },
-    "image_url": "/static/images/relics/nunchaku.png",
-    "image_variants": null,
-    "rarity_key": "Uncommon",
-    "compendium_order": 58
+    "compendium_order": 199
   },
   {
     "id": "NUTRITIOUS_OYSTER",
@@ -2198,10 +2275,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/nutritious_oyster.png",
+    "image_url": "/static/images/relics/nutritious_oyster.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 197
+    "compendium_order": 200
   },
   {
     "id": "NUTRITIOUS_SOUP",
@@ -2212,10 +2290,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/nutritious_soup.png",
+    "image_url": "/static/images/relics/nutritious_soup.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 198
+    "compendium_order": 201
   },
   {
     "id": "ODDLY_SMOOTH_STONE",
@@ -2226,14 +2305,15 @@
     "rarity": "เครื่องรางธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/oddly_smooth_stone.png",
+    "image_url": "/static/images/relics/oddly_smooth_stone.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
-    "compendium_order": 24
+    "compendium_order": 23
   },
   {
     "id": "ORANGE_DOUGH",
@@ -2244,50 +2324,15 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "regent",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/orange_dough.png",
+    "image_url": "/static/images/relics/orange_dough.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 102
-  },
-  {
-    "id": "ORICHALCUM",
-    "name": "Orichalcum",
-    "description": "ถ้าจบเทิร์นโดยไม่มี[gold]บล็อก[/gold] ได้รับ [blue]6[/blue] [gold]บล็อก[/gold]",
-    "description_raw": "ถ้าจบเทิร์นโดยไม่มี[gold]บล็อก[/gold] ได้รับ [blue]{Block}[/blue] [gold]บล็อก[/gold]",
-    "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
-    "rarity": "เครื่องรางไม่ธรรมดา",
-    "pool": "shared",
-    "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
-    },
-    "image_url": "/static/images/relics/orichalcum.png",
-    "image_variants": null,
-    "rarity_key": "Uncommon",
-    "compendium_order": 59
-  },
-  {
-    "id": "ORNAMENTAL_FAN",
-    "name": "OrnamentalFan",
-    "description": "ทุกครั้งที่คุณเล่นการ์ดโจมตี [blue]3[/blue] ใบในเทิร์นเดียว ได้รับ [blue]4[/blue] [gold]บล็อก[/gold]",
-    "description_raw": "ทุกครั้งที่คุณเล่นการ์ดโจมตี [blue]{Cards}[/blue] ใบในเทิร์นเดียว ได้รับ [blue]{Block}[/blue] [gold]บล็อก[/gold]",
-    "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
-    "rarity": "เครื่องรางไม่ธรรมดา",
-    "pool": "shared",
-    "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
-    },
-    "image_url": "/static/images/relics/ornamental_fan.png",
-    "image_variants": null,
-    "rarity_key": "Uncommon",
-    "compendium_order": 60
   },
   {
     "id": "ORRERY",
@@ -2298,12 +2343,13 @@
     "rarity": "เครื่องรางร้านค้า",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/orrery.png",
+    "image_url": "/static/images/relics/orrery.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 142
   },
@@ -2316,10 +2362,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/paels_blood.png",
+    "image_url": "/static/images/relics/paels_blood.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 199
+    "compendium_order": 202
   },
   {
     "id": "PAELS_CLAW",
@@ -2330,24 +2377,26 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/paels_claw.png",
+    "image_url": "/static/images/relics/paels_claw.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 200
+    "compendium_order": 203
   },
   {
     "id": "PAELS_EYE",
     "name": "PaelsEye",
-    "description": "ครั้งแรกของแต่ละการต่อสู้ที่คุณจบเทิร์นโดยไม่เช่นการ์ดเลย [gold]สลาย[/gold]ทั้ง[gold]มือ[/gold]แล้วเล่นต่ออีกเทิร์น",
-    "description_raw": "ครั้งแรกของแต่ละการต่อสู้ที่คุณจบเทิร์นโดยไม่เช่นการ์ดเลย [gold]สลาย[/gold]ทั้ง[gold]มือ[/gold]แล้วเล่นต่ออีกเทิร์น",
+    "description": "ครั้งแรกของแต่ละการต่อสู้ที่คุณจบเทิร์นโดยไม่เล่นการ์ดเลย [gold]สลาย[/gold]ทั้ง[gold]มือ[/gold]แล้วเล่นต่ออีกเทิร์น",
+    "description_raw": "ครั้งแรกของแต่ละการต่อสู้ที่คุณจบเทิร์นโดยไม่เล่นการ์ดเลย [gold]สลาย[/gold]ทั้ง[gold]มือ[/gold]แล้วเล่นต่ออีกเทิร์น",
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/paels_eye.png",
+    "image_url": "/static/images/relics/paels_eye.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 201
+    "compendium_order": 204
   },
   {
     "id": "PAELS_FLESH",
@@ -2358,10 +2407,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/paels_flesh.png",
+    "image_url": "/static/images/relics/paels_flesh.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 202
+    "compendium_order": 205
   },
   {
     "id": "PAELS_GROWTH",
@@ -2372,10 +2422,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/paels_growth.png",
+    "image_url": "/static/images/relics/paels_growth.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 203
+    "compendium_order": 206
   },
   {
     "id": "PAELS_HORN",
@@ -2386,10 +2437,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/paels_horn.png",
+    "image_url": "/static/images/relics/paels_horn.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 204
+    "compendium_order": 207
   },
   {
     "id": "PAELS_LEGION",
@@ -2400,10 +2452,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/paels_legion.png",
+    "image_url": "/static/images/relics/paels_legion.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 205
+    "compendium_order": 208
   },
   {
     "id": "PAELS_TEARS",
@@ -2414,10 +2467,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/paels_tears.png",
+    "image_url": "/static/images/relics/paels_tears.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 206
+    "compendium_order": 209
   },
   {
     "id": "PAELS_TOOTH",
@@ -2428,10 +2482,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/paels_tooth.png",
+    "image_url": "/static/images/relics/paels_tooth.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 207
+    "compendium_order": 210
   },
   {
     "id": "PAELS_WING",
@@ -2442,10 +2497,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/paels_wing.png",
+    "image_url": "/static/images/relics/paels_wing.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 208
+    "compendium_order": 211
   },
   {
     "id": "PANTOGRAPH",
@@ -2456,14 +2512,15 @@
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/pantograph.png",
+    "image_url": "/static/images/relics/pantograph.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 61
+    "compendium_order": 57
   },
   {
     "id": "PAPER_KRANE",
@@ -2474,12 +2531,13 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "silent",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/paper_krane.png",
+    "image_url": "/static/images/relics/paper_krane.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 103
   },
@@ -2492,14 +2550,15 @@
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "ironclad",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/paper_phrog.png",
+    "image_url": "/static/images/relics/paper_phrog.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 62
+    "compendium_order": 58
   },
   {
     "id": "PARRYING_SHIELD",
@@ -2510,14 +2569,15 @@
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/parrying_shield.png",
+    "image_url": "/static/images/relics/parrying_shield.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 63
+    "compendium_order": 59
   },
   {
     "id": "PEAR",
@@ -2528,68 +2588,53 @@
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/pear.png",
+    "image_url": "/static/images/relics/pear.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 64
-  },
-  {
-    "id": "PEN_NIB",
-    "name": "PenNib",
-    "description": "การ์ดโจมตีทุก [blue]10[/blue] ใบจะสร้างความเสียหายเป็น 2 เท่า",
-    "description_raw": "การ์ดโจมตีทุก [blue]10[/blue] ใบจะสร้างความเสียหายเป็น 2 เท่า",
-    "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
-    "rarity": "เครื่องรางไม่ธรรมดา",
-    "pool": "shared",
-    "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
-    },
-    "image_url": "/static/images/relics/pen_nib.png",
-    "image_variants": null,
-    "rarity_key": "Uncommon",
-    "compendium_order": 65
+    "compendium_order": 60
   },
   {
     "id": "PENDULUM",
     "name": "Pendulum",
-    "description": "ทุกครั้งที่คุณสับ[gold]กองจั่ว[/gold] จั่วการ์ด 1 ใบ",
-    "description_raw": "ทุกครั้งที่คุณสับ[gold]กองจั่ว[/gold] จั่วการ์ด 1 ใบ",
+    "description": "",
+    "description_raw": "",
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
     "rarity": "เครื่องรางธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/pendulum.png",
+    "image_url": "/static/images/relics/pendulum.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
-    "compendium_order": 25
+    "compendium_order": 24
   },
   {
     "id": "PERMAFROST",
     "name": "Permafrost",
-    "description": "ครั้งแรกที่คุณเล่นการ์ดพลังเป็นครั้งแรกในแต่ละการต่อสู้ ได้รับ [blue]6[/blue] [gold]บล็อก[/gold]",
-    "description_raw": "ครั้งแรกที่คุณเล่นการ์ดพลังเป็นครั้งแรกในแต่ละการต่อสู้ ได้รับ [blue]{Block}[/blue] [gold]บล็อก[/gold]",
+    "description": "ครั้งแรกที่คุณเล่นการ์ดพลังในแต่ละการต่อสู้ ได้รับ [blue]7[/blue] [gold]บล็อก[/gold]",
+    "description_raw": "ครั้งแรกที่คุณเล่นการ์ดพลังในแต่ละการต่อสู้ ได้รับ [blue]{Block}[/blue] [gold]บล็อก[/gold]",
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
-    "rarity": "เครื่องรางธรรมดา",
+    "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/permafrost.png",
+    "image_url": "/static/images/relics/permafrost.webp",
     "image_variants": null,
-    "rarity_key": "Common",
-    "compendium_order": 26
+    "notes": null,
+    "rarity_key": "Uncommon",
+    "compendium_order": 61
   },
   {
     "id": "PETRIFIED_TOAD",
@@ -2600,14 +2645,30 @@
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/petrified_toad.png",
+    "image_url": "/static/images/relics/petrified_toad.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 66
+    "compendium_order": 62
+  },
+  {
+    "id": "PHIAL_HOLSTER",
+    "name": "PhialHolster",
+    "description": "",
+    "description_raw": "",
+    "flavor": "",
+    "rarity": "เครื่องรางเทพโบราณ",
+    "pool": "shared",
+    "merchant_price": null,
+    "image_url": "/static/images/relics/phial_holster.webp",
+    "image_variants": null,
+    "notes": null,
+    "rarity_key": "Ancient",
+    "compendium_order": 212
   },
   {
     "id": "PHYLACTERY_UNBOUND",
@@ -2618,28 +2679,30 @@
     "rarity": "เครื่องรางเริ่มต้น",
     "pool": "necrobinder",
     "merchant_price": null,
-    "image_url": "/static/images/relics/phylactery_unbound.png",
+    "image_url": "/static/images/relics/phylactery_unbound.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Starter",
     "compendium_order": 7
   },
   {
     "id": "PLANISPHERE",
     "name": "Planisphere",
-    "description": "ทุกครั้งที่คุณเข้าห้อง [gold]?[/gold] ฟื้นฟู [green]4[/green] HP",
+    "description": "ทุกครั้งที่คุณเข้าห้อง [gold]?[/gold] ฟื้นฟู [green]5[/green] HP",
     "description_raw": "ทุกครั้งที่คุณเข้าห้อง [gold]?[/gold] ฟื้นฟู [green]{Heal}[/green] HP",
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/planisphere.png",
+    "image_url": "/static/images/relics/planisphere.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 67
+    "compendium_order": 63
   },
   {
     "id": "POCKETWATCH",
@@ -2650,12 +2713,13 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/pocketwatch.png",
+    "image_url": "/static/images/relics/pocketwatch.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 104
   },
@@ -2668,10 +2732,11 @@
     "rarity": "เครื่องรางเหตุการณ์",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/pollinous_core.png",
+    "image_url": "/static/images/relics/pollinous_core.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 276
+    "compendium_order": 279
   },
   {
     "id": "POMANDER",
@@ -2682,10 +2747,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/pomander.png",
+    "image_url": "/static/images/relics/pomander.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 209
+    "compendium_order": 213
   },
   {
     "id": "POTION_BELT",
@@ -2696,14 +2762,15 @@
     "rarity": "เครื่องรางธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/potion_belt.png",
+    "image_url": "/static/images/relics/potion_belt.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
-    "compendium_order": 27
+    "compendium_order": 25
   },
   {
     "id": "POWER_CELL",
@@ -2714,12 +2781,13 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "defect",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/power_cell.png",
+    "image_url": "/static/images/relics/power_cell.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 105
   },
@@ -2732,28 +2800,30 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/prayer_wheel.png",
+    "image_url": "/static/images/relics/prayer_wheel.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 106
   },
   {
     "id": "PRECARIOUS_SHEARS",
     "name": "PrecariousShears",
-    "description": "เมื่อรับมา กำจัดการ์ด [blue]2[/blue] ใบจาก[gold]กองการ์ด[/gold]และได้รับความเสียหาย [red]13[/red]",
+    "description": "เมื่อรับมา กำจัดการ์ด [blue]2[/blue] ใบจาก[gold]กองการ์ด[/gold]และได้รับความเสียหาย [red]16[/red]",
     "description_raw": "เมื่อรับมา กำจัดการ์ด [blue]{Cards}[/blue] ใบจาก[gold]กองการ์ด[/gold]และได้รับความเสียหาย [red]{Damage}[/red]",
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/precarious_shears.png",
+    "image_url": "/static/images/relics/precarious_shears.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 210
+    "compendium_order": 214
   },
   {
     "id": "PRECISE_SCISSORS",
@@ -2764,10 +2834,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/precise_scissors.png",
+    "image_url": "/static/images/relics/precise_scissors.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 211
+    "compendium_order": 215
   },
   {
     "id": "PRESERVED_FOG",
@@ -2778,10 +2849,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/preserved_fog.png",
+    "image_url": "/static/images/relics/preserved_fog.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 212
+    "compendium_order": 216
   },
   {
     "id": "PRISMATIC_GEM",
@@ -2792,10 +2864,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/prismatic_gem.png",
+    "image_url": "/static/images/relics/prismatic_gem.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 213
+    "compendium_order": 217
   },
   {
     "id": "PUNCH_DAGGER",
@@ -2806,12 +2879,13 @@
     "rarity": "เครื่องรางร้านค้า",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/punch_dagger.png",
+    "image_url": "/static/images/relics/punch_dagger.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 143
   },
@@ -2824,10 +2898,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/radiant_pearl.png",
+    "image_url": "/static/images/relics/radiant_pearl.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 214
+    "compendium_order": 218
   },
   {
     "id": "RAINBOW_RING",
@@ -2838,12 +2913,13 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/rainbow_ring.png",
+    "image_url": "/static/images/relics/rainbow_ring.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 107
   },
@@ -2856,12 +2932,13 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/razor_tooth.png",
+    "image_url": "/static/images/relics/razor_tooth.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 108
   },
@@ -2871,17 +2948,18 @@
     "description": "ตอนเริ่มต้นการต่อสู้ สร้าง [blue]1[/blue] [gold]ความอ่อนแอ[/gold]ใส่ศัตรูทั้งหมด",
     "description_raw": "ตอนเริ่มต้นการต่อสู้ สร้าง [blue]{WeakPower}[/blue] [gold]ความอ่อนแอ[/gold]ใส่ศัตรูทั้งหมด",
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
-    "rarity": "เครื่องรางไม่ธรรมดา",
+    "rarity": "เครื่องรางธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/red_mask.png",
+    "image_url": "/static/images/relics/red_mask.webp",
     "image_variants": null,
-    "rarity_key": "Uncommon",
-    "compendium_order": 68
+    "notes": null,
+    "rarity_key": "Common",
+    "compendium_order": 26
   },
   {
     "id": "RED_SKULL",
@@ -2892,14 +2970,15 @@
     "rarity": "เครื่องรางธรรมดา",
     "pool": "ironclad",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/red_skull.png",
+    "image_url": "/static/images/relics/red_skull.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
-    "compendium_order": 28
+    "compendium_order": 27
   },
   {
     "id": "REGAL_PILLOW",
@@ -2910,14 +2989,15 @@
     "rarity": "เครื่องรางธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/regal_pillow.png",
+    "image_url": "/static/images/relics/regal_pillow.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
-    "compendium_order": 29
+    "compendium_order": 28
   },
   {
     "id": "REGALITE",
@@ -2928,14 +3008,15 @@
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "regent",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/regalite.png",
+    "image_url": "/static/images/relics/regalite.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 69
+    "compendium_order": 64
   },
   {
     "id": "REPTILE_TRINKET",
@@ -2946,26 +3027,28 @@
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/reptile_trinket.png",
+    "image_url": "/static/images/relics/reptile_trinket.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 70
+    "compendium_order": 65
   },
   {
     "id": "RING_OF_THE_DRAKE",
     "name": "RingOfTheDrake",
-    "description": "ตอนเริ่มต้นของ [blue]3[/blue] เทิร์นแรก จั่วการ์ดเพิ่ม [blue]2[/blue] ใบ",
-    "description_raw": "ตอนเริ่มต้นของ {Turns:plural:1|[blue]{}[/blue]} เทิร์นแรก จั่วการ์ดเพิ่ม [blue]{Cards}[/blue] ใบ",
+    "description": "ตอนเริ่มต้นของ 1 เทิร์นแรก จั่วการ์ดเพิ่ม [blue]2[/blue] ใบ",
+    "description_raw": "ตอนเริ่มต้นของ {Turns:choose(1):1|[blue]{}[/blue]} เทิร์นแรก จั่วการ์ดเพิ่ม [blue]{Cards}[/blue] ใบ",
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
     "rarity": "เครื่องรางเริ่มต้น",
     "pool": "silent",
     "merchant_price": null,
-    "image_url": "/static/images/relics/ring_of_the_drake.png",
+    "image_url": "/static/images/relics/ring_of_the_drake.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Starter",
     "compendium_order": 8
   },
@@ -2978,8 +3061,9 @@
     "rarity": "เครื่องรางเริ่มต้น",
     "pool": "silent",
     "merchant_price": null,
-    "image_url": "/static/images/relics/ring_of_the_snake.png",
+    "image_url": "/static/images/relics/ring_of_the_snake.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Starter",
     "compendium_order": 9
   },
@@ -2992,12 +3076,13 @@
     "rarity": "เครื่องรางร้านค้า",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/ringing_triangle.png",
+    "image_url": "/static/images/relics/ringing_triangle.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 144
   },
@@ -3010,14 +3095,15 @@
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/ripple_basin.png",
+    "image_url": "/static/images/relics/ripple_basin.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 71
+    "compendium_order": 66
   },
   {
     "id": "ROYAL_POISON",
@@ -3028,10 +3114,11 @@
     "rarity": "เครื่องรางเหตุการณ์",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/royal_poison.png",
+    "image_url": "/static/images/relics/royal_poison.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 277
+    "compendium_order": 280
   },
   {
     "id": "ROYAL_STAMP",
@@ -3042,12 +3129,13 @@
     "rarity": "เครื่องรางร้านค้า",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/royal_stamp.png",
+    "image_url": "/static/images/relics/royal_stamp.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 145
   },
@@ -3060,12 +3148,13 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "ironclad",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/ruined_helmet.png",
+    "image_url": "/static/images/relics/ruined_helmet.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 109
   },
@@ -3078,12 +3167,13 @@
     "rarity": "เครื่องรางร้านค้า",
     "pool": "defect",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/runic_capacitor.png",
+    "image_url": "/static/images/relics/runic_capacitor.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 146
   },
@@ -3096,10 +3186,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/runic_pyramid.png",
+    "image_url": "/static/images/relics/runic_pyramid.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 215
+    "compendium_order": 219
   },
   {
     "id": "SAI",
@@ -3110,10 +3201,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/sai.png",
+    "image_url": "/static/images/relics/sai.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 216
+    "compendium_order": 220
   },
   {
     "id": "SCREAMING_FLAGON",
@@ -3124,12 +3216,13 @@
     "rarity": "เครื่องรางร้านค้า",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/screaming_flagon.png",
+    "image_url": "/static/images/relics/screaming_flagon.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 147
   },
@@ -3142,10 +3235,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/scroll_boxes.png",
+    "image_url": "/static/images/relics/scroll_boxes.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 217
+    "compendium_order": 221
   },
   {
     "id": "SEA_GLASS",
@@ -3156,10 +3250,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/sea_glass.png",
+    "image_url": "/static/images/relics/sea_glass.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 218
+    "compendium_order": 222
   },
   {
     "id": "SEAL_OF_GOLD",
@@ -3170,10 +3265,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/seal_of_gold.png",
+    "image_url": "/static/images/relics/seal_of_gold.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 219
+    "compendium_order": 223
   },
   {
     "id": "SELF_FORMING_CLAY",
@@ -3184,14 +3280,15 @@
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "ironclad",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/self_forming_clay.png",
+    "image_url": "/static/images/relics/self_forming_clay.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 72
+    "compendium_order": 67
   },
   {
     "id": "SERE_TALON",
@@ -3202,10 +3299,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/sere_talon.png",
+    "image_url": "/static/images/relics/sere_talon.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 220
+    "compendium_order": 224
   },
   {
     "id": "SHURIKEN",
@@ -3216,12 +3314,13 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/shuriken.png",
+    "image_url": "/static/images/relics/shuriken.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 110
   },
@@ -3234,10 +3333,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/signet_ring.png",
+    "image_url": "/static/images/relics/signet_ring.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 221
+    "compendium_order": 225
   },
   {
     "id": "SILVER_CRUCIBLE",
@@ -3248,10 +3348,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/silver_crucible.png",
+    "image_url": "/static/images/relics/silver_crucible.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 222
+    "compendium_order": 226
   },
   {
     "id": "SLING_OF_COURAGE",
@@ -3262,12 +3363,13 @@
     "rarity": "เครื่องรางร้านค้า",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/sling_of_courage.png",
+    "image_url": "/static/images/relics/sling_of_courage.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 148
   },
@@ -3280,10 +3382,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/small_capsule.png",
+    "image_url": "/static/images/relics/small_capsule.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 223
+    "compendium_order": 227
   },
   {
     "id": "SNECKO_EYE",
@@ -3294,10 +3397,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/snecko_eye.png",
+    "image_url": "/static/images/relics/snecko_eye.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 224
+    "compendium_order": 228
   },
   {
     "id": "SNECKO_SKULL",
@@ -3308,14 +3412,15 @@
     "rarity": "เครื่องรางธรรมดา",
     "pool": "silent",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/snecko_skull.png",
+    "image_url": "/static/images/relics/snecko_skull.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
-    "compendium_order": 30
+    "compendium_order": 29
   },
   {
     "id": "SOZU",
@@ -3326,10 +3431,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/sozu.png",
+    "image_url": "/static/images/relics/sozu.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 225
+    "compendium_order": 229
   },
   {
     "id": "SPARKLING_ROUGE",
@@ -3340,14 +3446,15 @@
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/sparkling_rouge.png",
+    "image_url": "/static/images/relics/sparkling_rouge.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 73
+    "compendium_order": 68
   },
   {
     "id": "SPIKED_GAUNTLETS",
@@ -3358,10 +3465,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/spiked_gauntlets.png",
+    "image_url": "/static/images/relics/spiked_gauntlets.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 226
+    "compendium_order": 230
   },
   {
     "id": "STONE_CALENDAR",
@@ -3372,32 +3480,34 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/stone_calendar.png",
+    "image_url": "/static/images/relics/stone_calendar.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 111
   },
   {
     "id": "STONE_CRACKER",
     "name": "StoneCracker",
-    "description": "ตอนเริ่มต้นการต่อสู้กับ[gold]บอส[/gold] [gold]พัฒนา[/gold]การ์ด [blue]3[/blue] ใบแบบสุ่มใน[gold]กองจั่ว[/gold]จนจบการต่อสู้",
+    "description": "ตอนเริ่มต้นการต่อสู้กับ[gold]บอส[/gold] [gold]พัฒนา[/gold]การ์ด [blue]2[/blue] ใบแบบสุ่มใน[gold]กองจั่ว[/gold]จนจบการต่อสู้",
     "description_raw": "ตอนเริ่มต้นการต่อสู้กับ[gold]บอส[/gold] [gold]พัฒนา[/gold]การ์ด [blue]{Cards}[/blue] ใบแบบสุ่มใน[gold]กองจั่ว[/gold]จนจบการต่อสู้",
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/stone_cracker.png",
+    "image_url": "/static/images/relics/stone_cracker.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 74
+    "compendium_order": 69
   },
   {
     "id": "STONE_HUMIDIFIER",
@@ -3408,10 +3518,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/stone_humidifier.png",
+    "image_url": "/static/images/relics/stone_humidifier.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 227
+    "compendium_order": 231
   },
   {
     "id": "STORYBOOK",
@@ -3422,10 +3533,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/storybook.png",
+    "image_url": "/static/images/relics/storybook.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 228
+    "compendium_order": 232
   },
   {
     "id": "STRAWBERRY",
@@ -3436,14 +3548,15 @@
     "rarity": "เครื่องรางธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/strawberry.png",
+    "image_url": "/static/images/relics/strawberry.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
-    "compendium_order": 31
+    "compendium_order": 30
   },
   {
     "id": "STRIKE_DUMMY",
@@ -3454,14 +3567,15 @@
     "rarity": "เครื่องรางธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/strike_dummy.png",
+    "image_url": "/static/images/relics/strike_dummy.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
-    "compendium_order": 32
+    "compendium_order": 31
   },
   {
     "id": "STURDY_CLAMP",
@@ -3472,12 +3586,13 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/sturdy_clamp.png",
+    "image_url": "/static/images/relics/sturdy_clamp.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 112
   },
@@ -3490,10 +3605,11 @@
     "rarity": "เครื่องรางเหตุการณ์",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/sword_of_jade.png",
+    "image_url": "/static/images/relics/sword_of_jade.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 278
+    "compendium_order": 281
   },
   {
     "id": "SWORD_OF_STONE",
@@ -3504,10 +3620,11 @@
     "rarity": "เครื่องรางเหตุการณ์",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/sword_of_stone.png",
+    "image_url": "/static/images/relics/sword_of_stone.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 279
+    "compendium_order": 282
   },
   {
     "id": "SYMBIOTIC_VIRUS",
@@ -3518,14 +3635,15 @@
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "defect",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/symbiotic_virus.png",
+    "image_url": "/static/images/relics/symbiotic_virus.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 75
+    "compendium_order": 70
   },
   {
     "id": "TANXS_WHISTLE",
@@ -3536,10 +3654,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/tanxs_whistle.png",
+    "image_url": "/static/images/relics/tanxs_whistle.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 229
+    "compendium_order": 233
   },
   {
     "id": "TEA_OF_DISCOURTESY",
@@ -3550,10 +3669,11 @@
     "rarity": "เครื่องรางเหตุการณ์",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/tea_of_discourtesy.png",
+    "image_url": "/static/images/relics/tea_of_discourtesy.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 280
+    "compendium_order": 283
   },
   {
     "id": "THE_ABACUS",
@@ -3564,12 +3684,13 @@
     "rarity": "เครื่องรางร้านค้า",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/the_abacus.png",
+    "image_url": "/static/images/relics/the_abacus.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 149
   },
@@ -3582,10 +3703,11 @@
     "rarity": "เครื่องรางเหตุการณ์",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/the_boot.png",
+    "image_url": "/static/images/relics/the_boot.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 281
+    "compendium_order": 284
   },
   {
     "id": "THE_COURIER",
@@ -3595,13 +3717,10 @@
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
-    "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
-    },
-    "image_url": "/static/images/relics/the_courier.png",
+    "merchant_price": null,
+    "image_url": "/static/images/relics/the_courier.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 113
   },
@@ -3614,10 +3733,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/throwing_axe.png",
+    "image_url": "/static/images/relics/throwing_axe.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 230
+    "compendium_order": 234
   },
   {
     "id": "TINGSHA",
@@ -3628,14 +3748,15 @@
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "silent",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/tingsha.png",
+    "image_url": "/static/images/relics/tingsha.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 76
+    "compendium_order": 71
   },
   {
     "id": "TINY_MAILBOX",
@@ -3643,17 +3764,18 @@
     "description": "ทุกครั้งที่คุณ[gold]พักผ่อน[/gold] จัดหาขวดยา 1 ขวดแบบสุ่ม",
     "description_raw": "ทุกครั้งที่คุณ[gold]พักผ่อน[/gold] จัดหาขวดยา 1 ขวดแบบสุ่ม",
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
-    "rarity": "เครื่องรางธรรมดา",
+    "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/tiny_mailbox.png",
+    "image_url": "/static/images/relics/tiny_mailbox.webp",
     "image_variants": null,
-    "rarity_key": "Common",
-    "compendium_order": 33
+    "notes": null,
+    "rarity_key": "Uncommon",
+    "compendium_order": 72
   },
   {
     "id": "TOASTY_MITTENS",
@@ -3664,10 +3786,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/toasty_mittens.png",
+    "image_url": "/static/images/relics/toasty_mittens.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 231
+    "compendium_order": 235
   },
   {
     "id": "TOUCH_OF_OROBAS",
@@ -3678,10 +3801,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/touch_of_orobas.png",
+    "image_url": "/static/images/relics/touch_of_orobas.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 232
+    "compendium_order": 236
   },
   {
     "id": "TOUGH_BANDAGES",
@@ -3692,12 +3816,13 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "silent",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/tough_bandages.png",
+    "image_url": "/static/images/relics/tough_bandages.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 114
   },
@@ -3710,12 +3835,13 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/toxic_egg.png",
+    "image_url": "/static/images/relics/toxic_egg.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 115
   },
@@ -3728,10 +3854,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/tri_boomerang.png",
+    "image_url": "/static/images/relics/tri_boomerang.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 233
+    "compendium_order": 237
   },
   {
     "id": "TUNGSTEN_ROD",
@@ -3742,12 +3869,13 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/tungsten_rod.png",
+    "image_url": "/static/images/relics/tungsten_rod.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 116
   },
@@ -3760,14 +3888,15 @@
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/tuning_fork.png",
+    "image_url": "/static/images/relics/tuning_fork.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 77
+    "compendium_order": 73
   },
   {
     "id": "TWISTED_FUNNEL",
@@ -3778,14 +3907,15 @@
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "silent",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/twisted_funnel.png",
+    "image_url": "/static/images/relics/twisted_funnel.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 78
+    "compendium_order": 74
   },
   {
     "id": "UNCEASING_TOP",
@@ -3796,12 +3926,13 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/unceasing_top.png",
+    "image_url": "/static/images/relics/unceasing_top.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 117
   },
@@ -3814,12 +3945,13 @@
     "rarity": "เครื่องรางร้านค้า",
     "pool": "necrobinder",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/undying_sigil.png",
+    "image_url": "/static/images/relics/undying_sigil.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 150
   },
@@ -3832,12 +3964,13 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/unsettling_lamp.png",
+    "image_url": "/static/images/relics/unsettling_lamp.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 118
   },
@@ -3850,14 +3983,15 @@
     "rarity": "เครื่องรางไม่ธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/vambrace.png",
+    "image_url": "/static/images/relics/vambrace.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 79
+    "compendium_order": 75
   },
   {
     "id": "VELVET_CHOKER",
@@ -3868,10 +4002,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/velvet_choker.png",
+    "image_url": "/static/images/relics/velvet_choker.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 234
+    "compendium_order": 238
   },
   {
     "id": "VENERABLE_TEA_SET",
@@ -3882,14 +4017,15 @@
     "rarity": "เครื่องรางธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/venerable_tea_set.png",
+    "image_url": "/static/images/relics/venerable_tea_set.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
-    "compendium_order": 34
+    "compendium_order": 32
   },
   {
     "id": "VEXING_PUZZLEBOX",
@@ -3900,12 +4036,13 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/vexing_puzzlebox.png",
+    "image_url": "/static/images/relics/vexing_puzzlebox.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 119
   },
@@ -3918,12 +4055,13 @@
     "rarity": "เครื่องรางร้านค้า",
     "pool": "regent",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/vitruvian_minion.png",
+    "image_url": "/static/images/relics/vitruvian_minion.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 151
   },
@@ -3936,10 +4074,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/war_hammer.png",
+    "image_url": "/static/images/relics/war_hammer.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 235
+    "compendium_order": 239
   },
   {
     "id": "WAR_PAINT",
@@ -3950,14 +4089,15 @@
     "rarity": "เครื่องรางธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/war_paint.png",
+    "image_url": "/static/images/relics/war_paint.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
-    "compendium_order": 35
+    "compendium_order": 33
   },
   {
     "id": "WHETSTONE",
@@ -3968,14 +4108,15 @@
     "rarity": "เครื่องรางธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/whetstone.png",
+    "image_url": "/static/images/relics/whetstone.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
-    "compendium_order": 36
+    "compendium_order": 34
   },
   {
     "id": "WHISPERING_EARRING",
@@ -3986,10 +4127,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/whispering_earring.png",
+    "image_url": "/static/images/relics/whispering_earring.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 236
+    "compendium_order": 240
   },
   {
     "id": "WHITE_BEAST_STATUE",
@@ -4000,12 +4142,13 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/white_beast_statue.png",
+    "image_url": "/static/images/relics/white_beast_statue.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 120
   },
@@ -4018,12 +4161,13 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/white_star.png",
+    "image_url": "/static/images/relics/white_star.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 121
   },
@@ -4036,14 +4180,30 @@
     "rarity": "เครื่องรางร้านค้า",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/wing_charm.png",
+    "image_url": "/static/images/relics/wing_charm.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 152
+  },
+  {
+    "id": "WINGED_BOOTS",
+    "name": "WingedBoots",
+    "description": "",
+    "description_raw": "",
+    "flavor": "",
+    "rarity": "เครื่องรางเทพโบราณ",
+    "pool": "shared",
+    "merchant_price": null,
+    "image_url": "/static/images/relics/winged_boots.webp",
+    "image_variants": null,
+    "notes": null,
+    "rarity_key": "Ancient",
+    "compendium_order": 241
   },
   {
     "id": "WONGO_CUSTOMER_APPRECIATION_BADGE",
@@ -4054,10 +4214,11 @@
     "rarity": "เครื่องรางเหตุการณ์",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/wongo_customer_appreciation_badge.png",
+    "image_url": "/static/images/relics/wongo_customer_appreciation_badge.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 282
+    "compendium_order": 285
   },
   {
     "id": "WONGOS_MYSTERY_TICKET",
@@ -4068,10 +4229,30 @@
     "rarity": "เครื่องรางเหตุการณ์",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/wongos_mystery_ticket.png",
+    "image_url": "/static/images/relics/wongos_mystery_ticket.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 283
+    "compendium_order": 286
+  },
+  {
+    "id": "NUNCHAKU",
+    "name": "กระบองสองท่อน",
+    "description": "ทุกครั้งที่คุณเล่นการ์ดโจมตี [blue]10[/blue] ใบ ได้รับ [energy:1]",
+    "description_raw": "ทุกครั้งที่คุณเล่นการ์ดโจมตี [blue]{Cards}[/blue] ใบ ได้รับ {Energy:energyIcons()}",
+    "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
+    "rarity": "เครื่องรางไม่ธรรมดา",
+    "pool": "shared",
+    "merchant_price": {
+      "base": 225,
+      "min": 191,
+      "max": 259
+    },
+    "image_url": "/static/images/relics/nunchaku.webp",
+    "image_variants": null,
+    "notes": null,
+    "rarity_key": "Uncommon",
+    "compendium_order": 76
   },
   {
     "id": "TOY_BOX",
@@ -4082,10 +4263,15 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/toy_box.png",
+    "image_url": "/static/images/relics/toy_box.webp",
     "image_variants": null,
+    "notes": [
+      "Wax Relics are pulled from the normal relic pool — any non-Ancient relic can be waxed.",
+      "Wax Relic rarity: 50% Common, 33% Uncommon, 17% Rare (standard relic rarity roll).",
+      "All wax relics melt after 12 total combats, then Toy Box is used up."
+    ],
     "rarity_key": "Ancient",
-    "compendium_order": 237
+    "compendium_order": 242
   },
   {
     "id": "MUSIC_BOX",
@@ -4096,10 +4282,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/music_box.png",
+    "image_url": "/static/images/relics/music_box.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 238
+    "compendium_order": 243
   },
   {
     "id": "TOOLBOX",
@@ -4110,12 +4297,13 @@
     "rarity": "เครื่องรางร้านค้า",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/toolbox.png",
+    "image_url": "/static/images/relics/toolbox.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 153
   },
@@ -4128,10 +4316,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/pandoras_box.png",
+    "image_url": "/static/images/relics/pandoras_box.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 239
+    "compendium_order": 244
   },
   {
     "id": "GLITTER",
@@ -4142,10 +4331,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/glitter.png",
+    "image_url": "/static/images/relics/glitter.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 240
+    "compendium_order": 245
   },
   {
     "id": "BREAD",
@@ -4156,12 +4346,13 @@
     "rarity": "เครื่องรางร้านค้า",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/bread.png",
+    "image_url": "/static/images/relics/bread.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 154
   },
@@ -4174,12 +4365,13 @@
     "rarity": "เครื่องรางร้านค้า",
     "pool": "silent",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/ninja_scroll.png",
+    "image_url": "/static/images/relics/ninja_scroll.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 155
   },
@@ -4192,16 +4384,17 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/yummy_cookie.png",
+    "image_url": "/static/images/relics/yummy_cookie.webp",
     "image_variants": {
-      "Ironclad": "/static/images/relics/yummy_cookie_ironclad.png",
-      "Silent": "/static/images/relics/yummy_cookie_silent.png",
-      "Defect": "/static/images/relics/yummy_cookie_defect.png",
-      "Necrobinder": "/static/images/relics/yummy_cookie_necrobinder.png",
-      "Regent": "/static/images/relics/yummy_cookie_regent.png"
+      "Ironclad": "/static/images/relics/yummy_cookie_ironclad.webp",
+      "Silent": "/static/images/relics/yummy_cookie_silent.webp",
+      "Defect": "/static/images/relics/yummy_cookie_defect.webp",
+      "Necrobinder": "/static/images/relics/yummy_cookie_necrobinder.webp",
+      "Regent": "/static/images/relics/yummy_cookie_regent.webp"
     },
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 241
+    "compendium_order": 246
   },
   {
     "id": "EMOTION_CHIP",
@@ -4212,12 +4405,13 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "defect",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/emotion_chip.png",
+    "image_url": "/static/images/relics/emotion_chip.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 122
   },
@@ -4230,10 +4424,11 @@
     "rarity": "เครื่องรางเหตุการณ์",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/chosen_cheese.png",
+    "image_url": "/static/images/relics/chosen_cheese.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 284
+    "compendium_order": 287
   },
   {
     "id": "DATA_DISK",
@@ -4244,14 +4439,15 @@
     "rarity": "เครื่องรางธรรมดา",
     "pool": "defect",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/data_disk.png",
+    "image_url": "/static/images/relics/data_disk.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
-    "compendium_order": 37
+    "compendium_order": 35
   },
   {
     "id": "LEAD_PAPERWEIGHT",
@@ -4262,10 +4458,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/lead_paperweight.png",
+    "image_url": "/static/images/relics/lead_paperweight.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 242
+    "compendium_order": 247
   },
   {
     "id": "LANTERN",
@@ -4276,14 +4473,34 @@
     "rarity": "เครื่องรางธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/lantern.png",
+    "image_url": "/static/images/relics/lantern.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
-    "compendium_order": 38
+    "compendium_order": 36
+  },
+  {
+    "id": "CENTENNIAL_PUZZLE",
+    "name": "ตัวต่อร้อยปี",
+    "description": "เมื่อคุณเสีย HP เป็นครั้งแรกในแต่ละการต่อสู้ จั่ว [blue]3[/blue] การ์ด",
+    "description_raw": "เมื่อคุณเสีย HP เป็นครั้งแรกในแต่ละการต่อสู้ จั่ว [blue]{Cards}[/blue] การ์ด",
+    "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
+    "rarity": "เครื่องรางธรรมดา",
+    "pool": "shared",
+    "merchant_price": {
+      "base": 175,
+      "min": 149,
+      "max": 201
+    },
+    "image_url": "/static/images/relics/centennial_puzzle.webp",
+    "image_variants": null,
+    "notes": null,
+    "rarity_key": "Common",
+    "compendium_order": 37
   },
   {
     "id": "DREAM_CATCHER",
@@ -4294,10 +4511,11 @@
     "rarity": "เครื่องรางเหตุการณ์",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/dream_catcher.png",
+    "image_url": "/static/images/relics/dream_catcher.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 285
+    "compendium_order": 288
   },
   {
     "id": "DUSTY_TOME",
@@ -4308,10 +4526,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/dusty_tome.png",
+    "image_url": "/static/images/relics/dusty_tome.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 243
+    "compendium_order": 248
   },
   {
     "id": "ART_OF_WAR",
@@ -4322,12 +4541,13 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/art_of_war.png",
+    "image_url": "/static/images/relics/art_of_war.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 123
   },
@@ -4340,12 +4560,13 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "necrobinder",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/bookmark.png",
+    "image_url": "/static/images/relics/bookmark.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 124
   },
@@ -4358,12 +4579,13 @@
     "rarity": "เครื่องรางร้านค้า",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/membership_card.png",
+    "image_url": "/static/images/relics/membership_card.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 156
   },
@@ -4376,10 +4598,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/sand_castle.png",
+    "image_url": "/static/images/relics/sand_castle.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 244
+    "compendium_order": 249
   },
   {
     "id": "SHOVEL",
@@ -4390,14 +4613,34 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/shovel.png",
+    "image_url": "/static/images/relics/shovel.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 125
+  },
+  {
+    "id": "ORNAMENTAL_FAN",
+    "name": "พัดอลงกต",
+    "description": "ทุกครั้งที่คุณเล่นการ์ดโจมตี [blue]3[/blue] ใบในเทิร์นเดียว ได้รับ [blue]4[/blue] [gold]บล็อก[/gold]",
+    "description_raw": "ทุกครั้งที่คุณเล่นการ์ดโจมตี [blue]{Cards}[/blue] ใบในเทิร์นเดียว ได้รับ [blue]{Block}[/blue] [gold]บล็อก[/gold]",
+    "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
+    "rarity": "เครื่องรางไม่ธรรมดา",
+    "pool": "shared",
+    "merchant_price": {
+      "base": 225,
+      "min": 191,
+      "max": 259
+    },
+    "image_url": "/static/images/relics/ornamental_fan.webp",
+    "image_variants": null,
+    "notes": null,
+    "rarity_key": "Uncommon",
+    "compendium_order": 77
   },
   {
     "id": "MANGO",
@@ -4408,12 +4651,13 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/mango.png",
+    "image_url": "/static/images/relics/mango.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 126
   },
@@ -4430,10 +4674,11 @@
       "min": 42,
       "max": 57
     },
-    "image_url": "/static/images/relics/fake_mango.png",
+    "image_url": "/static/images/relics/fake_mango.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 286
+    "compendium_order": 289
   },
   {
     "id": "CIRCLET",
@@ -4444,10 +4689,26 @@
     "rarity": "เครื่องราง",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/circlet.png",
+    "image_url": "/static/images/relics/circlet.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "None",
-    "compendium_order": 287
+    "compendium_order": 292
+  },
+  {
+    "id": "LOST_WISP",
+    "name": "ลูกไฟวิญญาณที่หลงทาง",
+    "description": "ทุกครั้งที่คุณเล่นการ์ด[gold]พลัง[/gold] สร้างความเสียหาย [blue]8[/blue] ใส่ศัตรูทั้งหมด",
+    "description_raw": "ทุกครั้งที่คุณเล่นการ์ด[gold]พลัง[/gold] สร้างความเสียหาย [blue]{Damage}[/blue] ใส่ศัตรูทั้งหมด",
+    "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
+    "rarity": "เครื่องรางเหตุการณ์",
+    "pool": "shared",
+    "merchant_price": null,
+    "image_url": "/static/images/relics/lost_wisp.webp",
+    "image_variants": null,
+    "notes": null,
+    "rarity_key": "Event",
+    "compendium_order": 290
   },
   {
     "id": "VAJRA",
@@ -4458,14 +4719,15 @@
     "rarity": "เครื่องรางธรรมดา",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/vajra.png",
+    "image_url": "/static/images/relics/vajra.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
-    "compendium_order": 39
+    "compendium_order": 38
   },
   {
     "id": "PHILOSOPHERS_STONE",
@@ -4476,10 +4738,30 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/philosophers_stone.png",
+    "image_url": "/static/images/relics/philosophers_stone.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 245
+    "compendium_order": 250
+  },
+  {
+    "id": "JUZU_BRACELET",
+    "name": "สร้อยข้อมือลูกประคำ",
+    "description": "จะไม่พบศัตรูปกติในห้อง [gold]?[/gold] อีกต่อไป",
+    "description_raw": "จะไม่พบศัตรูปกติในห้อง [gold]?[/gold] อีกต่อไป",
+    "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
+    "rarity": "เครื่องรางธรรมดา",
+    "pool": "shared",
+    "merchant_price": {
+      "base": 175,
+      "min": 149,
+      "max": 201
+    },
+    "image_url": "/static/images/relics/juzu_bracelet.webp",
+    "image_variants": null,
+    "notes": null,
+    "rarity_key": "Common",
+    "compendium_order": 39
   },
   {
     "id": "CHEMICAL_X",
@@ -4490,28 +4772,30 @@
     "rarity": "เครื่องรางร้านค้า",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/chemical_x.png",
+    "image_url": "/static/images/relics/chemical_x.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 157
   },
   {
     "id": "CROSSBOW",
     "name": "หน้าไม้",
-    "description": "",
-    "description_raw": "",
+    "description": "ตอนเริ่มต้นเทิร์น เพิ่มการ์ด[gold]โจมตี[/gold] 1 ใบแบบสุ่มใส่[gold]มือ[/gold] มันมีค่าร่าย 0 ในเทิร์นนี้",
+    "description_raw": "ตอนเริ่มต้นเทิร์น เพิ่มการ์ด[gold]โจมตี[/gold] 1 ใบแบบสุ่มใส่[gold]มือ[/gold] มันมีค่าร่าย 0 ในเทิร์นนี้",
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/crossbow.png",
+    "image_url": "/static/images/relics/crossbow.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 246
+    "compendium_order": 251
   },
   {
     "id": "CAULDRON",
@@ -4522,14 +4806,34 @@
     "rarity": "เครื่องรางร้านค้า",
     "pool": "shared",
     "merchant_price": {
+      "base": 200,
+      "min": 170,
+      "max": 230
+    },
+    "image_url": "/static/images/relics/cauldron.webp",
+    "image_variants": null,
+    "notes": null,
+    "rarity_key": "Shop",
+    "compendium_order": 158
+  },
+  {
+    "id": "PEN_NIB",
+    "name": "หัวปากกา",
+    "description": "การ์ดโจมตีทุก [blue]10[/blue] ใบจะสร้างความเสียหายเป็น 2 เท่า",
+    "description_raw": "การ์ดโจมตีทุก [blue]10[/blue] ใบจะสร้างความเสียหายเป็น 2 เท่า",
+    "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
+    "rarity": "เครื่องรางไม่ธรรมดา",
+    "pool": "shared",
+    "merchant_price": {
       "base": 225,
       "min": 191,
       "max": 259
     },
-    "image_url": "/static/images/relics/cauldron.png",
+    "image_url": "/static/images/relics/pen_nib.webp",
     "image_variants": null,
-    "rarity_key": "Shop",
-    "compendium_order": 158
+    "notes": null,
+    "rarity_key": "Uncommon",
+    "compendium_order": 78
   },
   {
     "id": "LAVA_ROCK",
@@ -4540,10 +4844,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/lava_rock.png",
+    "image_url": "/static/images/relics/lava_rock.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 247
+    "compendium_order": 252
   },
   {
     "id": "GOLDEN_COMPASS",
@@ -4554,10 +4859,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/golden_compass.png",
+    "image_url": "/static/images/relics/golden_compass.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 248
+    "compendium_order": 253
   },
   {
     "id": "PUMPKIN_CANDLE",
@@ -4568,10 +4874,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/pumpkin_candle.png",
+    "image_url": "/static/images/relics/pumpkin_candle.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 249
+    "compendium_order": 254
   },
   {
     "id": "OLD_COIN",
@@ -4581,13 +4888,10 @@
     "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
-    "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
-    },
-    "image_url": "/static/images/relics/old_coin.png",
+    "merchant_price": null,
+    "image_url": "/static/images/relics/old_coin.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 127
   },
@@ -4600,12 +4904,13 @@
     "rarity": "เครื่องรางร้านค้า",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/dragon_fruit.png",
+    "image_url": "/static/images/relics/dragon_fruit.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 159
   },
@@ -4618,10 +4923,49 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/very_hot_cocoa.png",
+    "image_url": "/static/images/relics/very_hot_cocoa.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 250
+    "compendium_order": 255
+  },
+  {
+    "id": "ORICHALCUM",
+    "name": "โอริคัลคุม",
+    "description": "ถ้าจบเทิร์นโดยไม่มี[gold]บล็อก[/gold] ได้รับ [blue]6[/blue] [gold]บล็อก[/gold]",
+    "description_raw": "ถ้าจบเทิร์นโดยไม่มี[gold]บล็อก[/gold] ได้รับ [blue]{Block}[/blue] [gold]บล็อก[/gold]",
+    "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
+    "rarity": "เครื่องรางไม่ธรรมดา",
+    "pool": "shared",
+    "merchant_price": {
+      "base": 225,
+      "min": 191,
+      "max": 259
+    },
+    "image_url": "/static/images/relics/orichalcum.webp",
+    "image_variants": null,
+    "notes": null,
+    "rarity_key": "Uncommon",
+    "compendium_order": 79
+  },
+  {
+    "id": "FAKE_ORICHALCUM",
+    "name": "โอริคัลคุม???",
+    "description": "ถ้าจบเทิร์นโดยไม่มี[gold]บล็อก[/gold] ได้รับ [blue]3[/blue] [gold]บล็อก[/gold]",
+    "description_raw": "ถ้าจบเทิร์นโดยไม่มี[gold]บล็อก[/gold] ได้รับ [blue]{Block}[/blue] [gold]บล็อก[/gold]",
+    "flavor": "[red]รายละเอียดของเครื่องรางนี้จะถูกเปิดเผยในอนาคต...[/red]",
+    "rarity": "เครื่องรางเหตุการณ์",
+    "pool": "shared",
+    "merchant_price": {
+      "base": 50,
+      "min": 42,
+      "max": 57
+    },
+    "image_url": "/static/images/relics/fake_orichalcum.webp",
+    "image_variants": null,
+    "notes": null,
+    "rarity_key": "Event",
+    "compendium_order": 291
   },
   {
     "id": "GOLDEN_PEARL",
@@ -4632,10 +4976,11 @@
     "rarity": "เครื่องรางเทพโบราณ",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/golden_pearl.png",
+    "image_url": "/static/images/relics/golden_pearl.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 251
+    "compendium_order": 256
   },
   {
     "id": "FROZEN_EGG",
@@ -4646,12 +4991,13 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/frozen_egg.png",
+    "image_url": "/static/images/relics/frozen_egg.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 128
   },
@@ -4664,12 +5010,13 @@
     "rarity": "เครื่องรางหายาก",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/ice_cream.png",
+    "image_url": "/static/images/relics/ice_cream.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 129
   }

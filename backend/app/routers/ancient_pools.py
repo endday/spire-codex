@@ -1,19 +1,30 @@
 """Ancient relic pool API endpoints."""
+
 import json
-from pathlib import Path
 
 from fastapi import APIRouter, HTTPException, Request
 
-router = APIRouter(prefix="/api/ancient-pools", tags=["Ancient Pools"])
+from ..services.data_service import DATA_DIR, _resolve_base, _get_version
 
-DATA_FILE = Path(__file__).resolve().parents[3] / "data" / "ancient_pools.json"
+router = APIRouter(prefix="/api/ancient-pools", tags=["Ancient Pools"])
 
 
 def _load_pools() -> list[dict]:
-    if not DATA_FILE.exists():
-        return []
-    with open(DATA_FILE, "r", encoding="utf-8") as f:
-        return json.load(f)
+    """Load ancient_pools.json.
+
+    Tries the version-resolved base first (so beta versions can ship their own
+    file), then falls back to DATA_DIR so an unversioned file at the data root
+    works for both stable and beta layouts.
+    """
+    candidates = [
+        _resolve_base(_get_version()) / "ancient_pools.json",
+        DATA_DIR / "ancient_pools.json",
+    ]
+    for path in candidates:
+        if path.exists():
+            with open(path, "r", encoding="utf-8") as f:
+                return json.load(f)
+    return []
 
 
 @router.get("", tags=["Ancient Pools"])

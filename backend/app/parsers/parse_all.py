@@ -1,4 +1,5 @@
 """Run all parsers and generate structured JSON data files."""
+
 import sys
 from card_parser import main as parse_cards
 from character_parser import main as parse_characters
@@ -10,15 +11,29 @@ from encounter_parser import main as parse_encounters
 from event_parser import main as parse_events
 from power_parser import main as parse_powers
 from keyword_parser import main as parse_keywords_etc
+from badge_parser import main as parse_badges
 from epoch_parser import main as parse_epochs
 from act_parser import main as parse_acts
 from ascension_parser import main as parse_ascensions
 from pool_parser import main as parse_pools
 from translation_parser import main as parse_translations
+from news_parser import main as parse_news
 
 LANGUAGES = [
-    "deu", "eng", "esp", "fra", "ita", "jpn",
-    "kor", "pol", "ptb", "rus", "spa", "tha", "tur", "zhs",
+    "deu",
+    "eng",
+    "esp",
+    "fra",
+    "ita",
+    "jpn",
+    "kor",
+    "pol",
+    "ptb",
+    "rus",
+    "spa",
+    "tha",
+    "tur",
+    "zhs",
 ]
 
 
@@ -34,6 +49,7 @@ def parse_language(lang: str):
     parse_events(lang)
     parse_powers(lang)
     parse_keywords_etc(lang)
+    parse_badges(lang)
     parse_epochs(lang)
     parse_acts(lang)
     parse_ascensions(lang)
@@ -60,6 +76,10 @@ if __name__ == "__main__":
         parse_language(lang)
     # Guides are language-independent
     from guide_parser import main as parse_guides
+
     parse_guides()
+
+    # Steam news is language-agnostic — fetch once after the per-lang sweep.
+    parse_news()
 
     print("\n=== Done! ===")

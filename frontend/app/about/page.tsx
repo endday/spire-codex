@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { cachedFetch } from "@/lib/fetch-cache";
 import { useLanguage } from "../contexts/LanguageContext";
 
@@ -16,6 +17,7 @@ const STAT_ORDER = [
   { key: "potions", label: "Potions" },
   { key: "epochs", label: "Epochs" },
   { key: "achievements", label: "Achievements" },
+  { key: "badges", label: "Badges" },
   { key: "enchantments", label: "Enchantments" },
   { key: "modifiers", label: "Modifiers" },
   { key: "intents", label: "Intents" },
@@ -71,9 +73,11 @@ export default function AboutPage() {
         {/* Intro */}
         <div className="text-[var(--text-secondary)] leading-relaxed space-y-4">
           <p>
-            Spire Codex is a comprehensive database for Slay the Spire 2, built by reverse-engineering
-            the game files. Every card, relic, monster, potion, event, and power on this site was
-            extracted directly from the game&apos;s source code and localization data.
+            Spire Codex is a comprehensive database for Slay the Spire 2 — commonly abbreviated
+            <strong className="text-[var(--text-primary)]"> StS2</strong> — built by
+            reverse-engineering the game files. Every card, relic, monster, potion, event, and
+            power on this site was extracted directly from the game&apos;s source code and
+            localization data.
           </p>
           <p>
             The project started from curiosity about how StS2 was built, and grew into a full API
@@ -92,9 +96,9 @@ export default function AboutPage() {
             </a>
             . This repo is downstream of where the project is hosted, so it may take a bit before
             your PR gets fully merged. The project has an{" "}
-            <a href="/developers" className="text-[var(--accent-gold)] hover:underline">
+            <Link href="/developers" className="text-[var(--accent-gold)] hover:underline">
               open API
-            </a>
+            </Link>
             {" "}that is free to use and self-hostable. And if you&apos;re wanting to chat about the
             project, come visit the{" "}
             <a
@@ -108,26 +112,13 @@ export default function AboutPage() {
             {" "}where I send updates and discuss the project.
           </p>
 
-          <h2 className="text-xl font-semibold text-[var(--text-primary)] pt-4">
-            Thank You
-          </h2>
           <p>
-            Just wanted to say thank you to everyone that has supported the project. Thanks to
-            those who&apos;ve been using the site, reporting bugs, and helping make it better.
-            This project wouldn&apos;t be where it is without the community. If you&apos;ve been
-            enjoying the project, please make sure to share it on social media!
+            Big thanks to everyone supporting the project — see the{" "}
+            <Link href="/thank-you" className="text-[var(--accent-gold)] hover:underline">
+              Thank You page
+            </Link>
+            {" "}for Ko-fi supporters and community contributors.
           </p>
-          <p>
-            A special thanks to the following:
-          </p>
-          <ul className="list-disc list-inside space-y-1">
-            <li>vesper-arch</li>
-            <li>terracubist</li>
-            <li>U77654</li>
-            <li>Purple Aspired Dreaming</li>
-            <li>Kobaru</li>
-            <li>Severi</li>
-          </ul>
         </div>
 
         {/* Stats */}

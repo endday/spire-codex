@@ -1,4 +1,5 @@
 """Pydantic models for the API."""
+
 from pydantic import BaseModel
 
 
@@ -55,6 +56,11 @@ class Card(BaseModel):
     image_url: str | None = None
     beta_image_url: str | None = None
     type_variants: dict[str, CardTypeVariant] | None = None
+    # `false` for cards that can never be added to combat by Skill Potion,
+    # generated reward effects, etc. — typically Ancient cards (Neow's Fury)
+    # and a handful of utility cards. The C# default is `true`, so we only
+    # surface the field when it's explicitly `false` to keep the payload tight.
+    can_be_generated_in_combat: bool | None = None
     compendium_order: int = 0
 
 
@@ -107,6 +113,7 @@ class Relic(BaseModel):
     merchant_price: MerchantPrice | None = None
     image_url: str | None = None
     image_variants: dict[str, str] | None = None
+    notes: list[str] | None = None
     compendium_order: int = 0
 
 
@@ -345,6 +352,23 @@ class Achievement(BaseModel):
     character: str | None = None
     threshold: int | None = None
     condition: str | None = None
+
+
+class BadgeTier(BaseModel):
+    rarity: str
+    title: str
+    description: str
+
+
+class Badge(BaseModel):
+    id: str
+    name: str
+    description: str
+    tiered: bool
+    tiers: list[BadgeTier]
+    requires_win: bool
+    multiplayer_only: bool
+    image_url: str | None = None
 
 
 class Epoch(BaseModel):

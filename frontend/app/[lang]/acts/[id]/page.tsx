@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import ActDetail from "@/app/acts/[id]/ActDetail";
-import { stripTags, SITE_URL } from "@/lib/seo";
+import { SITE_URL } from "@/lib/seo";
 import JsonLd from "@/app/components/JsonLd";
 import { buildDetailPageJsonLd } from "@/lib/jsonld";
 import { isValidLang, LANG_HREFLANG, LANG_NAMES, LANG_GAME_NAME, SUPPORTED_LANGS, type LangCode } from "@/lib/languages";
@@ -39,10 +39,11 @@ export default async function Page({ params }: Props) {
   const { lang, id } = await params;
   if (!isValidLang(lang)) return null;
   let jsonLd = null;
+  let act = null;
   try {
     const res = await fetch(`${API_INTERNAL}/api/acts/${id}?lang=${lang}`);
     if (res.ok) {
-      const act = await res.json();
+      act = await res.json();
       jsonLd = buildDetailPageJsonLd({
         name: act.name,
         description: `${act.name} act with ${act.encounters.length} encounters and ${act.bosses.length} bosses.`,
@@ -59,7 +60,7 @@ export default async function Page({ params }: Props) {
   return (
     <>
       {jsonLd && <JsonLd data={jsonLd} />}
-      <ActDetail />
+      <ActDetail initialAct={act} />
     </>
   );
 }

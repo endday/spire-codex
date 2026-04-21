@@ -1,4 +1,5 @@
 """Service layer that loads and serves parsed game data from JSON files."""
+
 import json
 import os
 import re
@@ -6,7 +7,9 @@ from pathlib import Path
 from functools import lru_cache
 from contextvars import ContextVar
 
-DATA_DIR = Path(os.environ.get("DATA_DIR", Path(__file__).resolve().parents[3] / "data"))
+DATA_DIR = Path(
+    os.environ.get("DATA_DIR", Path(__file__).resolve().parents[3] / "data")
+)
 DEFAULT_LANG = "eng"
 
 # ContextVar set by VersionMiddleware — allows version-aware loading without changing router signatures
@@ -109,6 +112,10 @@ def load_achievements(lang: str = DEFAULT_LANG) -> list[dict]:
     return _load_json(lang, "achievements")
 
 
+def load_badges(lang: str = DEFAULT_LANG) -> list[dict]:
+    return _load_json(lang, "badges")
+
+
 def load_glossary(lang: str = DEFAULT_LANG) -> list[dict]:
     return _load_json(lang, "glossary")
 
@@ -127,6 +134,37 @@ def load_acts(lang: str = DEFAULT_LANG) -> list[dict]:
 
 def load_ascensions(lang: str = DEFAULT_LANG) -> list[dict]:
     return _load_json(lang, "ascensions")
+
+
+@lru_cache(maxsize=4)
+def _load_news_index(version: str | None) -> list[dict]:
+    """Load the news/index.json built by news_parser. The index is
+    language-agnostic — Steam news isn't translated."""
+    base = _resolve_base(version)
+    filepath = base / "news" / "index.json"
+    if not filepath.exists():
+        return []
+    with open(filepath, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def load_news_index() -> list[dict]:
+    return _load_news_index(_get_version())
+
+
+@lru_cache(maxsize=512)
+def _load_news_item(gid: str, version: str | None) -> dict | None:
+    """Load a single archived Steam news item by Steam `gid`."""
+    base = _resolve_base(version)
+    filepath = base / "news" / f"{gid}.json"
+    if not filepath.exists():
+        return None
+    with open(filepath, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def load_news_item(gid: str) -> dict | None:
+    return _load_news_item(gid, _get_version())
 
 
 @lru_cache(maxsize=16)
@@ -168,7 +206,12 @@ def load_translation_maps(lang: str = DEFAULT_LANG) -> dict:
 
 @lru_cache(maxsize=1)
 def count_images() -> int:
-    images_dir = Path(os.environ.get("STATIC_DIR", Path(__file__).resolve().parents[2] / "static")) / "images"
+    images_dir = (
+        Path(
+            os.environ.get("STATIC_DIR", Path(__file__).resolve().parents[2] / "static")
+        )
+        / "images"
+    )
     if not images_dir.exists():
         return 0
     return sum(1 for _ in images_dir.rglob("*.png"))
@@ -184,19 +227,21 @@ def get_available_versions() -> list[dict]:
 
     def _version_key(d: Path) -> tuple:
         """Parse version string into tuple for proper numeric sorting."""
-        m = re.match(r'^v?(\d+)\.(\d+)(?:\.(\d+))?', d.name)
+        m = re.match(r"^v?(\d+)\.(\d+)(?:\.(\d+))?", d.name)
         if m:
             return (int(m.group(1)), int(m.group(2)), int(m.group(3) or 0))
         return (0, 0, 0)
 
     for d in sorted(DATA_DIR.iterdir(), key=_version_key, reverse=True):
-        if d.is_dir() and re.match(r'^v?\d+\.\d+', d.name):
+        if d.is_dir() and re.match(r"^v?\d+\.\d+", d.name):
             # Verify it has at least an eng/ subdirectory
             if (d / "eng").is_dir():
-                versions.append({
-                    "version": d.name,
-                    "is_latest": d.name == latest_target,
-                })
+                versions.append(
+                    {
+                        "version": d.name,
+                        "is_latest": d.name == latest_target,
+                    }
+                )
     return versions
 
 
@@ -217,6 +262,7 @@ def get_stats(lang: str = DEFAULT_LANG) -> dict:
         "afflictions": len(load_afflictions(lang)),
         "modifiers": len(load_modifiers(lang)),
         "achievements": len(load_achievements(lang)),
+        "badges": len(load_badges(lang)),
         "glossary": len(load_glossary(lang)),
         "epochs": len(load_epochs(lang)),
         "acts": len(load_acts(lang)),

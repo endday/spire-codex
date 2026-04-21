@@ -35,19 +35,18 @@ function getPotionMerchantPriceRange(rarity: string): { min: number; max: number
 
 type Tab = "overview" | "details" | "info";
 
-export default function PotionDetail() {
+export default function PotionDetail({ initialPotion }: { initialPotion?: Potion | null } = {}) {
   const { id } = useParams<{ id: string }>();
   const router = useRouter();
   const { lang } = useLanguage();
-    const lp = useLangPrefix();
-const [potion, setPotion] = useState<Potion | null>(null);
-  const [loading, setLoading] = useState(true);
+  const lp = useLangPrefix();
+  const [potion, setPotion] = useState<Potion | null>(initialPotion ?? null);
+  const [loading, setLoading] = useState(!initialPotion);
   const [notFound, setNotFound] = useState(false);
   const [tab, setTab] = useState<Tab>("overview");
 
   useEffect(() => {
     if (!id) return;
-    setLoading(true);
     cachedFetch<Potion>(`${API}/api/potions/${id}?lang=${lang}`)
       .then((data) => setPotion(data))
       .catch(() => setNotFound(true))

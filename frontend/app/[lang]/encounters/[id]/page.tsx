@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import EncounterDetail from "@/app/encounters/[id]/EncounterDetail";
-import { stripTags, SITE_URL } from "@/lib/seo";
+import { SITE_URL } from "@/lib/seo";
 import JsonLd from "@/app/components/JsonLd";
 import { buildDetailPageJsonLd, buildFAQPageJsonLd } from "@/lib/jsonld";
 import { isValidLang, LANG_HREFLANG, LANG_NAMES, LANG_GAME_NAME, SUPPORTED_LANGS, type LangCode } from "@/lib/languages";
@@ -40,10 +40,11 @@ export default async function Page({ params }: Props) {
   const { lang, id } = await params;
   if (!isValidLang(lang)) return null;
   let jsonLd = null;
+  let data = null;
   try {
     const res = await fetch(`${API_INTERNAL}/api/encounters/${id}?lang=${lang}`);
     if (res.ok) {
-      const data = await res.json();
+      data = await res.json();
       const name = data.name || id;
       const desc = data.monsters?.length
         ? `${name} is a ${data.room_type} encounter featuring ${data.monsters.map((m: { name: string }) => m.name).join(", ")}.`
@@ -59,7 +60,7 @@ export default async function Page({ params }: Props) {
   return (
     <>
       {jsonLd && <JsonLd data={jsonLd} />}
-      <EncounterDetail />
+      <EncounterDetail initialEncounter={data} />
     </>
   );
 }

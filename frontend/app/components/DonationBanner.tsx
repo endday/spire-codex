@@ -32,7 +32,7 @@ const ROTATING_BANNERS: RotatingBanner[] = [
           Spire Codex Discord
         </a>
         ... or{" "}
-        <Link href="/runs" className="font-medium text-indigo-100 underline hover:text-white transition-colors">
+        <Link href="/leaderboards/submit" className="font-medium text-indigo-100 underline hover:text-white transition-colors">
           upload your runs
         </Link>
         ... ...the meta... ...needs you...
@@ -137,7 +137,7 @@ function KofiBanner({ onDismiss }: { onDismiss: () => void }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between gap-4">
         <div className="flex items-center gap-3">
           <img
-            src={`${API}/static/images/misc/ancients/nonupeipe.png`}
+            src={`${API}/static/images/misc/ancients/nonupeipe.webp`}
             alt="Nonupeipe"
             className="w-8 h-8 object-contain flex-shrink-0 hidden sm:block"
             crossOrigin="anonymous"
@@ -153,8 +153,14 @@ function KofiBanner({ onDismiss }: { onDismiss: () => void }) {
             >
               donating on Ko-Fi
             </a>
-            . Servants! Fetch some tea for Katie K and LeMerkur — they have
-            supported us well.&rdquo;
+            . Servants! Fetch tea for{" "}
+            <Link
+              href="/about#thank-you"
+              className="font-medium text-emerald-100 underline hover:text-white transition-colors"
+            >
+              those who&apos;ve supported us
+            </Link>
+            .&rdquo;
           </p>
         </div>
         <button

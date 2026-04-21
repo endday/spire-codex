@@ -3,6 +3,8 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { useLangPrefix } from "@/lib/use-lang-prefix";
+import { useLanguage } from "@/app/contexts/LanguageContext";
+import { t } from "@/lib/ui-translations";
 import { cachedFetch } from "@/lib/fetch-cache";
 import RichDescription from "../components/RichDescription";
 
@@ -207,6 +209,7 @@ function displayName(id: string): string {
 
 function RunOverview({ run, cardData, relicData }: { run: RunData; cardData: Record<string, CardInfo>; relicData: Record<string, RelicInfo> }) {
   const lp = useLangPrefix();
+  const { lang } = useLanguage();
   const player = run.players[0];
   const charId = cleanId(player.character);
   const charName = displayName(player.character);
@@ -225,7 +228,7 @@ function RunOverview({ run, cardData, relicData }: { run: RunData; cardData: Rec
         <div className="flex items-center justify-between mb-3">
           <div className="flex items-center gap-3">
             <span className={`text-2xl font-bold ${run.win ? "text-[var(--color-silent)]" : "text-[var(--color-ironclad)]"}`}>
-              {run.win ? "Victory" : run.was_abandoned ? "Abandoned" : "Defeat"}
+              {run.win ? t("Victory", lang) : run.was_abandoned ? t("Abandoned", lang) : t("Defeat", lang)}
             </span>
             <Link href={`${lp}/characters/${charId.toLowerCase()}`} className="text-lg text-[var(--accent-gold)] hover:underline">
               {charName}
@@ -445,7 +448,42 @@ export default function RunsClient() {
   }, [tab, browseChar, browseWin, browseUser, browsePage]);
 
   function isValidRunFile(data: any): boolean {
-    return data && typeof data === "object" && data.players && data.acts && data.map_point_history && "win" in data && "schema_version" in data;
+    return data && typeof data === "object" && data.players && data.acts && data.map_point_history && "win" in data;
+  }
+
+  function diagnoseRunFile(data: any): string {
+    if (!data || typeof data !== "object") return "not a JSON object";
+    const missing: string[] = [];
+    if (!data.players) missing.push("players");
+    if (!data.acts) missing.push("acts");
+    if (!data.map_point_history) missing.push("map_point_history");
+    if (!("win" in data)) missing.push("win");
+    return missing.length ? `missing fields: ${missing.join(", ")}` : "unknown";
+  }
+
+  async function reportInvalidRuns(failures: { filename: string; reason: string; keys?: string[]; schema?: number; build?: string }[]) {
+    if (failures.length === 0) return;
+    try {
+      const summary = failures.slice(0, 10).map((f) => {
+        let line = `${f.filename}: ${f.reason}`;
+        if (f.keys) line += ` [keys: ${f.keys.join(",")}]`;
+        if (f.schema) line += ` [schema: ${f.schema}]`;
+        if (f.build) line += ` [build: ${f.build}]`;
+        return line;
+      }).join("\n");
+      const body = failures.length > 10
+        ? `${summary}\n... and ${failures.length - 10} more`
+        : summary;
+      await fetch(`${API}/api/feedback`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          type: "Bug",
+          contact: "auto-report",
+          contents: `Run upload: ${failures.length} invalid out of batch\n\n${body}`,
+        }),
+      }).catch(() => {});
+    } catch {}
   }
 
   async function handleFileUpload(files: FileList) {
@@ -454,6 +492,7 @@ export default function RunsClient() {
     setUploadProgress({ total, done: 0, dupes: 0, errors: 0 });
 
     let done = 0, dupes = 0, errors = 0;
+    const failures: { filename: string; reason: string; keys?: string[]; schema?: number; build?: string }[] = [];
     const submitUrl = username.trim() ? `${API}/api/runs?username=${encodeURIComponent(username.trim())}` : `${API}/api/runs`;
 
     for (const file of Array.from(files)) {
@@ -462,6 +501,13 @@ export default function RunsClient() {
         const data = JSON.parse(text);
         if (!isValidRunFile(data)) {
           errors++;
+          failures.push({
+            filename: file.name,
+            reason: diagnoseRunFile(data),
+            keys: Object.keys(data).slice(0, 15),
+            schema: data?.schema_version,
+            build: data?.build_id,
+          });
         } else {
           const res = await fetch(submitUrl, {
             method: "POST",
@@ -469,13 +515,28 @@ export default function RunsClient() {
             body: text,
           });
           const result = await res.json().catch(() => null);
-          if (result?.duplicate) dupes++;
+          if (result?.duplicate) {
+            dupes++;
+          } else if (!res.ok) {
+            errors++;
+            failures.push({
+              filename: file.name,
+              reason: `backend ${res.status}: ${result?.detail || "unknown"}`,
+              schema: data?.schema_version,
+              build: data?.build_id,
+            });
+          }
         }
-      } catch {
+      } catch (e) {
         errors++;
+        failures.push({ filename: file.name, reason: `exception: ${e instanceof Error ? e.message : "parse/network error"}` });
       }
       done++;
       setUploadProgress({ total, done, dupes, errors });
+    }
+
+    if (failures.length > 0) {
+      reportInvalidRuns(failures);
     }
 
     // If only one file, also show the run detail
@@ -531,6 +592,7 @@ export default function RunsClient() {
   }
 
   const lp = useLangPrefix();
+  const { lang } = useLanguage();
 
   function formatTimeShort(s: number) {
     const m = Math.floor(s / 60);
@@ -563,7 +625,7 @@ export default function RunsClient() {
       {tab === "submit" && !run && (
         <div className="space-y-4">
           <p className="text-xs text-[var(--text-muted)]">
-            Run files are located at <code className="bg-[var(--bg-primary)] px-1 py-0.5 rounded">%appdata%/Roaming/SlayTheSpire2/steam/&lt;steamid&gt;/profile#/saves/</code>
+            Submit your run data or browse community-submitted runs.
           </p>
 
           {/* Username */}
@@ -578,9 +640,14 @@ export default function RunsClient() {
 
           {/* File Upload */}
           <div className="bg-[var(--bg-card)] rounded-xl border border-dashed border-[var(--border-accent)] p-6 text-center">
-            <p className="text-sm text-[var(--text-secondary)] mb-3">
+            <p className="text-sm text-[var(--text-secondary)] mb-1">
               Upload .run files — select one or multiple
             </p>
+            <div className="text-left mb-3 space-y-1 text-xs text-[var(--text-muted)]">
+              <p><strong className="text-[var(--text-secondary)]">Windows:</strong> <code className="bg-[var(--bg-primary)] px-1 rounded">%AppData%/SlayTheSpire2/steam/&lt;steamid&gt;/profile1/saves/history</code></p>
+              <p><strong className="text-[var(--text-secondary)]">macOS:</strong> <code className="bg-[var(--bg-primary)] px-1 rounded">~/Library/Application Support/SlayTheSpire2/steam/&lt;steamid&gt;/profile1/saves/history</code></p>
+              <p><strong className="text-[var(--text-secondary)]">Linux / Steam Deck:</strong> <code className="bg-[var(--bg-primary)] px-1 rounded">~/.local/share/SlayTheSpire2/steam/&lt;steamid&gt;/profile1/saves/history</code></p>
+            </div>
             <label className="inline-block px-5 py-2 rounded-lg text-sm font-medium bg-[var(--accent-gold)] text-[var(--bg-primary)] hover:opacity-90 transition-opacity cursor-pointer">
               Choose Files
               <input
@@ -659,7 +726,7 @@ export default function RunsClient() {
               type="text"
               value={browseUser}
               onChange={(e) => setBrowseUser(e.target.value)}
-              placeholder="Search username..."
+              placeholder={t("Search username...", lang)}
               className="text-sm px-3 py-1.5 rounded-lg bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[var(--text-primary)] focus:outline-none focus:border-[var(--accent-gold)] w-44"
             />
           </div>
@@ -739,7 +806,7 @@ export default function RunsClient() {
                 }}
                 className="text-xs px-3 py-1.5 rounded-lg border border-[var(--border-subtle)] text-[var(--text-muted)] hover:text-[var(--text-primary)] hover:border-[var(--border-accent)] transition-colors"
               >
-                {copied ? "Copied!" : "Share Run"}
+                {copied ? t("Copied!", lang) : t("Share Run", lang)}
               </button>
             )}
           </div>

@@ -31,6 +31,19 @@ Options:
 
   The Steam App ID for Slay the Spire 2 is 2868840 (hardcoded).
   Build IDs can be found on SteamDB or via Steam's app info API.
+
+Behaviour notes:
+  - Field-level diffs RECURSE into nested dicts and lists. A `vars` change
+    becomes individual rows like `vars.DamageVar: 8 -> 10` instead of
+    opaque `vars: 2 fields -> 2 fields`. List items with stable `id` fields
+    are matched by id (so `moves[BEAM_MOVE]` not `moves[2]`).
+  - Hand-curated `features` / `fixes` / `api_changes` arrays are PRESERVED
+    when regenerating an existing changelog at the same tag. The data-diff
+    portion (`categories`, `summary`) is overwritten on regen, but the
+    release notes someone wrote on top survive the merge.
+  - data/changelogs/ is write-once at PR time — see
+    .github/workflows/changelog-guard.yml. Editing an existing changelog
+    requires the `changelog-edit-approved` label on the PR.
 """
 import json
 import sys
@@ -116,17 +129,72 @@ def extract_git_data(ref: str, tmp_dir: Path, data_dir: str = "data") -> Path:
     return out
 
 
+def _deep_diff(prefix: str, old, new):
+    """Yield (field_path, old_val, new_val) tuples for changed leaves.
+
+    Recurses into dicts and lists so a nested field change becomes its own
+    row in the changelog (e.g. `vars.DamageVar: 8 -> 10`) instead of an
+    opaque `vars: 2 fields -> 2 fields`. List items with stable `id`
+    fields are matched by id; otherwise by index.
+    """
+    if old == new:
+        return
+    # Recurse into dicts even when one side is None so e.g. a moves entry
+    # added to a monster shows up as `moves[GRASP].damage` rather than the
+    # opaque `moves[GRASP]: none -> 5 fields`.
+    if isinstance(old, dict) or isinstance(new, dict):
+        old_d = old if isinstance(old, dict) else {}
+        new_d = new if isinstance(new, dict) else {}
+        # Mismatched non-None types (e.g. string -> dict): leaf-level change.
+        if (old is not None and not isinstance(old, dict)) or (
+            new is not None and not isinstance(new, dict)
+        ):
+            yield (prefix, old, new)
+            return
+        all_keys = set(old_d.keys()) | set(new_d.keys())
+        for k in sorted(all_keys, key=str):
+            sub = f"{prefix}.{k}" if prefix else k
+            yield from _deep_diff(sub, old_d.get(k), new_d.get(k))
+        return
+    if isinstance(old, list) or isinstance(new, list):
+        old_l = old if isinstance(old, list) else []
+        new_l = new if isinstance(new, list) else []
+        if (old is not None and not isinstance(old, list)) or (
+            new is not None and not isinstance(new, list)
+        ):
+            yield (prefix, old, new)
+            return
+        # Match by id when every element has one — otherwise positional.
+        keyed = (
+            (old_l or new_l)
+            and all(isinstance(x, dict) and "id" in x for x in old_l)
+            and all(isinstance(x, dict) and "id" in x for x in new_l)
+        )
+        if keyed:
+            old_by = {x["id"]: x for x in old_l}
+            new_by = {x["id"]: x for x in new_l}
+            for i in sorted(set(old_by) | set(new_by), key=str):
+                sub = f"{prefix}[{i}]"
+                yield from _deep_diff(sub, old_by.get(i), new_by.get(i))
+        else:
+            for i in range(max(len(old_l), len(new_l))):
+                sub = f"{prefix}[{i}]"
+                ov = old_l[i] if i < len(old_l) else None
+                nv = new_l[i] if i < len(new_l) else None
+                yield from _deep_diff(sub, ov, nv)
+        return
+    yield (prefix, old, new)
+
+
 def diff_entity(old: dict, new: dict) -> dict[str, tuple]:
-    """Return changed fields between two entities."""
+    """Return changed fields between two entities, recursing into nested data."""
     changes = {}
-    all_keys = set(old.keys()) | set(new.keys())
-    for key in all_keys:
-        if key in IGNORE_FIELDS:
+    for path, old_val, new_val in _deep_diff("", old, new):
+        # Skip noise: ignored top-level fields
+        top = path.split(".", 1)[0].split("[", 1)[0]
+        if top in IGNORE_FIELDS:
             continue
-        old_val = old.get(key)
-        new_val = new.get(key)
-        if old_val != new_val:
-            changes[key] = (old_val, new_val)
+        changes[path] = (old_val, new_val)
     return changes
 
 
@@ -160,7 +228,13 @@ def diff_category(old_data: list[dict], new_data: list[dict]) -> dict:
 
 
 def format_value(val) -> str:
-    """Format a value for display."""
+    """Format a value for display.
+
+    Leaves (scalars) render as-is. Small collections render their contents
+    inline so the changelog actually says what changed instead of opaque
+    "N fields" / "N items"; only falls back to a count when the rendered
+    string would be unreadably long.
+    """
     if val is None:
         return "none"
     if isinstance(val, bool):
@@ -168,10 +242,16 @@ def format_value(val) -> str:
     if isinstance(val, list):
         if len(val) == 0:
             return "[]"
-        if len(val) <= 5:
-            return ", ".join(str(v) for v in val)
+        rendered = ", ".join(str(v) for v in val)
+        if len(rendered) <= 100:
+            return rendered
         return f"{len(val)} items"
     if isinstance(val, dict):
+        if not val:
+            return "{}"
+        rendered = ", ".join(f"{k}={v}" for k, v in val.items())
+        if len(rendered) <= 100:
+            return rendered
         return f"{len(val)} fields"
     if isinstance(val, str) and len(val) > 80:
         return val[:77] + "..."
@@ -464,6 +544,18 @@ def main():
             tag = changelog["tag"]
             out_path = output_dir / f"{tag}.json"
             out_path.parent.mkdir(parents=True, exist_ok=True)
+            # Preserve hand-curated features/fixes/api_changes when an existing
+            # changelog at this tag already has them — diff_data only knows
+            # the data diff, not the release notes someone wrote on top.
+            if out_path.exists():
+                try:
+                    with open(out_path, "r", encoding="utf-8") as f:
+                        existing = json.load(f)
+                    for preserved_key in ("features", "fixes", "api_changes"):
+                        if preserved_key in existing and preserved_key not in changelog:
+                            changelog[preserved_key] = existing[preserved_key]
+                except Exception:
+                    pass
             with open(out_path, "w", encoding="utf-8") as f:
                 json.dump(changelog, f, indent=2, ensure_ascii=False)
             print(f"Saved changelog to {out_path}")

@@ -27,21 +27,20 @@ const rarityColorMap: Record<string, string> = {
 
 type Tab = "overview" | "details" | "info";
 
-export default function RelicDetail() {
+export default function RelicDetail({ initialRelic }: { initialRelic?: Relic | null } = {}) {
   const { id } = useParams<{ id: string }>();
   const router = useRouter();
   const { lang } = useLanguage();
-    const lp = useLangPrefix();
-const [relic, setRelic] = useState<Relic | null>(null);
+  const lp = useLangPrefix();
+  const [relic, setRelic] = useState<Relic | null>(initialRelic ?? null);
   const [selectedVariant, setSelectedVariant] = useState<string | null>(null);
   const [selectedChar, setSelectedChar] = useState<string | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(!initialRelic);
   const [notFound, setNotFound] = useState(false);
   const [tab, setTab] = useState<Tab>("overview");
 
   useEffect(() => {
     if (!id) return;
-    setLoading(true);
     cachedFetch<Relic>(`${API}/api/relics/${id}?lang=${lang}`)
       .then((data) => {
         setRelic(data);
@@ -180,6 +179,22 @@ const [relic, setRelic] = useState<Relic | null>(null);
               <p className="text-sm text-[var(--text-muted)]">
                 This relic is not sold at the merchant.
               </p>
+            )}
+
+            {relic.notes && relic.notes.length > 0 && (
+              <div className="mt-5">
+                <h3 className="text-xs font-semibold uppercase tracking-wider text-[var(--text-muted)] mb-2">
+                  {t("Mechanics", lang)}
+                </h3>
+                <ul className="space-y-1.5">
+                  {relic.notes.map((note, i) => (
+                    <li key={i} className="text-sm text-[var(--text-secondary)] flex gap-2">
+                      <span className="text-[var(--text-muted)] select-none">•</span>
+                      <span>{note}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             )}
           </>
         )}

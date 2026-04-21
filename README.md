@@ -92,7 +92,9 @@ spire-codex/
 │   │   └── ...                 # Pages: cards, characters, relics, monsters, potions,
 │   │                           #   enchantments, encounters, events, powers, timeline,
 │   │                           #   reference, images, changelog, about, merchant, compare,
-│   │                           #   mechanics/[slug], guides/[slug], guides/submit, runs, meta
+│   │                           #   mechanics/[slug], guides/[slug], guides/submit,
+│   │                           #   leaderboards, leaderboards/submit, leaderboards/stats,
+│   │                           #   runs/[hash] (shared run view)
 │   │                           #   Detail pages: cards/[id], characters/[id], relics/[id],
 │   │                           #   monsters/[id], potions/[id], enchantments/[id],
 │   │                           #   encounters/[id], events/[id], powers/[id], keywords/[id],
@@ -136,8 +138,10 @@ spire-codex/
 ├── docker-compose.yml          # Local dev
 ├── docker-compose.prod.yml     # Production
 ├── docker-compose.beta.yml     # Beta site (beta.spire-codex.com)
+├── .github/workflows/
+│   └── ci.yml                  # GitHub Actions CI: lint, type-check, secret scan, Docker build+push, SSH deploy
 └── .forgejo/workflows/
-    └── build.yml               # CI: builds + pushes to Docker Hub
+    └── build.yml               # Retained Forgejo CI fallback (buildah-based, not active)
 ```
 
 ## Website Pages
@@ -178,13 +182,17 @@ spire-codex/
 | Affliction Detail | `/afflictions/[id]` | Affliction description, stackability |
 | Modifier Detail | `/modifiers/[id]` | Run modifier description |
 | Achievement Detail | `/achievements/[id]` | Achievement description |
+| Badges | `/badges` | All 25 run-end badges grouped by tiered / single-tier / multiplayer-only |
+| Badge Detail | `/badges/[id]` | Per-tier breakdown (Bronze / Silver / Gold), requires-win + multiplayer flags, icon |
 | Mechanics | `/mechanics` | Game mechanics hub — 27 clickable sections with individual SEO pages |
 | Mechanic Detail | `/mechanics/[slug]` | Card odds, relic distribution, potion drops, map generation, boss pools, combat, secrets & trivia |
 | Guides | `/guides` | Community strategy guides with search/filter |
 | Guide Detail | `/guides/[slug]` | Full guide with markdown rendering + tooltip widget |
 | Submit Guide | `/guides/submit` | Guide submission form (Discord webhook) |
-| Runs | `/runs` | Community run browser with character/win filters |
-| Meta | `/meta` | Live community stats from submitted runs |
+| Leaderboards | `/leaderboards` | Three-tab browser: Fastest Wins, Highest Ascension, Browse Runs (search by seed/username, filter by character/win/loss/game version) |
+| Submit a Run | `/leaderboards/submit` | Drag-and-drop `.run` upload, JSON paste fallback, upload progress |
+| Stats | `/leaderboards/stats` | Ranked tables (pick rate, win rate, count) for cards, relics, potions, encounters. Filter by character / ascension / outcome |
+| Shared Run | `/runs/[hash]` | In-game-style victory/defeat summary with clickable map-node icons, relic strip, and tiny-card grid |
 | Reference | `/reference` | All items clickable — acts, ascensions, keywords, orbs, afflictions, intents, modifiers, achievements |
 | Images | `/images` | Browsable game assets with ZIP download per category |
 | Changelog | `/changelog` | Data diffs between game updates |
@@ -226,6 +234,9 @@ All data endpoints accept an optional `?lang=` query parameter (default: `eng`).
 | `GET /api/modifiers/{id}` | Single modifier | `lang` |
 | `GET /api/achievements` | All achievements | `lang` |
 | `GET /api/achievements/{id}` | Single achievement | `lang` |
+| `GET /api/badges` | All run-end badges | `tiered`, `multiplayer_only`, `requires_win`, `search`, `lang` |
+| `GET /api/badges/{id}` | Single badge with tier breakdown | `lang` |
+| `GET /api/history/{entity_type}/{entity_id}` | Per-entity version history (case-insensitive, newest first) | — |
 | `GET /api/epochs` | Timeline epochs | `era`, `search`, `lang` |
 | `GET /api/epochs/{id}` | Single epoch | `lang` |
 | `GET /api/stories` | Story entries | `lang` |
@@ -245,9 +256,11 @@ All data endpoints accept an optional `?lang=` query parameter (default: `eng`).
 | `GET /api/guides/{slug}` | Single guide (with markdown content) | — |
 | `POST /api/guides` | Submit guide (proxied to Discord) | — |
 | `POST /api/runs` | Submit a run (.run file JSON) | `username` |
-| `GET /api/runs/list` | List submitted runs | `character`, `win`, `username`, `page`, `limit` |
+| `GET /api/runs/list` | List submitted runs | `character`, `win`, `username`, `seed`, `build_id`, `sort`, `page`, `limit` |
 | `GET /api/runs/shared/{hash}` | Full run data by hash | — |
 | `GET /api/runs/stats` | Aggregated community stats | `character`, `win`, `ascension`, `game_mode`, `players` |
+| `GET /api/runs/leaderboard` | Ranked wins-only leaderboard | `category` (`fastest`, `highest_ascension`), `character`, `page`, `limit` |
+| `GET /api/runs/versions` | Distinct game versions across submitted runs | — |
 | `POST /api/feedback` | Submit feedback (proxied to Discord) | — |
 | `GET /api/versions` | Available data versions (beta multi-version) | — |
 
@@ -384,14 +397,31 @@ cd backend/app/parsers && python3 parse_all.py
 # Parse a single language
 cd backend/app/parsers && python3 parse_all.py --lang eng
 
-# Copy images from extraction to static
+# Copy images from extraction to static (PNG + WebP from same source — no
+# lossy chain through an existing backend WebP). WebP at quality=95, method=6.
 python3 backend/scripts/copy_images.py
 
 # Render Spine sprites (WebGL — no triangle seam artifacts)
 cd tools/spine-renderer && npm install
 npx playwright install chromium           # First time only
 node render_all_webgl.mjs                 # All 138 skeletons via headless Chrome
-node render_webgl.mjs <skel_dir> <out> [size]  # Single skeleton (e.g., hi-res ancient)
+node render_webgl.mjs <skel_dir> <out> [size] [--skin=a,b] [--anim=name] [--anim-time=N]
+
+# Common per-monster overrides:
+#   --skin=moss1,diamondeye   combine variant skins with default (cubex_construct)
+#   --skin=skin1              swap default for a variant (scroll_of_biting)
+#   --anim-time=0.5           advance animation N seconds before snapshot
+#   --anim=attack             override the auto-picked idle animation
+#
+# Smoke-placeholder substitution: gas_bomb_2.png, the_forgotten_2.png, and
+# living_smog_2.png ship as magenta "Smoke Placeholder" boards in the source.
+# render_webgl.mjs swaps them for a procedurally generated dark plum cloud
+# at the same dimensions before GL upload, then forces slot.color.a = 1.0
+# on substituted slots (the artists set low alpha expecting a shader).
+
+# Re-frame undersized monster sprites (post-process — crops to true alpha
+# bbox, scales to fill ~92% of the 512x512 frame):
+python3 tools/rescale_bestiary.py fuzzy_wurm_crawler thieving_hopper terror_eel
 
 # Legacy canvas renderer (has triangle seam artifacts — avoid)
 # node render_all.mjs / node render.mjs
@@ -427,13 +457,24 @@ Each changelog JSON file contains:
 | `date` | Date of the update |
 | `title` | Human-readable title |
 | `summary` | Counts: `{ added, removed, changed }` |
-| `categories` | Per-category diffs with added/removed/changed entities |
+| `features` / `fixes` / `api_changes` | Hand-curated release notes. Preserved through `diff_data.py` regenerations of an existing tag — the data diff is overwritten but these arrays merge through. |
+| `categories` | Per-category diffs with added/removed/changed entities. Field changes recurse into nested dicts/lists so each leaf is its own row (e.g. `vars.DamageVar: 8 → 10`) instead of opaque `vars: 2 fields → 2 fields`. |
+
+### Write-once retention
+
+Files under `data/changelogs/` are write-once historical records. `.github/workflows/changelog-guard.yml` blocks any PR that **modifies or deletes** an existing changelog. New files (`A`) are always allowed; modifications require the `changelog-edit-approved` label on the PR. See `CONTRIBUTING.md → Changelog Retention` for the policy and override workflow.
+
+### Per-entity history
+
+`GET /api/history/{entity_type}/{entity_id}` walks every changelog and returns the entries that touched the requested entity, newest first. The Version History rail on every detail page (`/cards/{id}`, `/monsters/{id}`, etc.) is powered by this endpoint.
 
 ## Deploying
 
-### CI/CD (Forgejo)
+### CI/CD (GitHub Actions)
 
-Pushes to `main` trigger `.forgejo/workflows/build.yml` which builds and pushes both images to Docker Hub via buildah.
+Pushes to `main` trigger `.github/workflows/ci.yml` which runs secret scanning, linting (ESLint, TypeScript, ruff), builds Docker images, pushes to Docker Hub, and deploys to production via SSH. Self-hosted K8s runner.
+
+> **Note:** `.forgejo/workflows/build.yml` is retained as a fallback CI config (buildah-based) but is not currently active.
 
 ### Local Build + Push
 
@@ -688,7 +729,7 @@ Thanks to **vesper-arch**, **terracubist**, **U77654**, **Purple Aspired Dreamin
 - **Backend**: Python, FastAPI, Pydantic, slowapi, GZip compression
 - **Frontend**: Next.js 16 (App Router), TypeScript, Tailwind CSS, 14-language support
 - **Spine Renderer**: Node.js, Playwright, @esotericsoftware/spine-webgl (WebGL via headless Chrome)
-- **Infrastructure**: Docker, Forgejo CI, buildah
+- **Infrastructure**: Docker, GitHub Actions CI (self-hosted K8s runner), SSH deploy
 - **Tools**: Python (update pipeline, changelog diffing, image copying)
 
 ## Disclaimer

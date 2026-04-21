@@ -7,8 +7,9 @@ Thanks for your interest in contributing! This project is open to community cont
 1. **Fork the repo** on [GitHub](https://github.com/ptrlrd/spire-codex)
 2. **Clone your fork** locally
 3. **Set up the dev environment** (see below)
-4. **Create a branch** for your changes
-5. **Submit a PR** — the GitHub repo is downstream of where the project is hosted, so it may take a bit before your PR gets reviewed and merged
+4. **Create a branch** for your changes (never commit directly to `main`)
+5. **Submit a PR** against `main` — CI will run lint, type-check, format check, and secret scanning automatically
+6. **Once approved and merged**, CI builds Docker images and deploys to production
 
 ## Dev Environment
 
@@ -84,6 +85,50 @@ If a card description, damage value, or relic effect is wrong:
 - 27 individual SEO pages at `/mechanics/[slug]`
 - Section metadata in `frontend/app/mechanics/sections.ts`
 - Content components in `frontend/app/mechanics/[slug]/MechanicContent.tsx`
+
+## Changelog Retention
+
+Files under `data/changelogs/` are the **only durable record of per-version
+data history** — every entity-detail page reads them through `/api/history/`
+to render its version-history rail. Once a tag's changelog is in `main`, it
+is **write-once**. CI (`.github/workflows/changelog-guard.yml`) blocks any
+PR that modifies or deletes an existing file under `data/changelogs/`.
+
+**Adding a new tag** — always allowed:
+
+```bash
+# After parsing the new game data into data/eng/...
+python3 tools/diff_data.py vPREV --format json \
+  --game-version NEW --date YYYY-MM-DD --title "Update title"
+# Hand-edit data/changelogs/NEW.json to add `features`, `fixes`,
+# `api_changes` arrays. Commit + PR.
+```
+
+The PR shows `A data/changelogs/NEW.json` → guard passes.
+
+**Editing an existing changelog** — requires the `changelog-edit-approved`
+label. Legitimate cases:
+
+- Typo / metadata fix in `title`, `date`, etc.
+- Re-running `diff_data.py` against a tag (e.g. after fixing a parser bug
+  that produced incorrect values). Hand-curated `features` / `fixes` /
+  `api_changes` are preserved through regen — `diff_data.py` merges them
+  back in if the file already exists.
+- One-time format normalization across all historical changelogs.
+
+Add the label on the GitHub PR page — the check re-runs on label change
+and turns green. The bar isn't "you can't edit", it's "you must consciously
+say you meant to."
+
+**What this protects against**
+
+- Regen-by-accident (running `diff_data.py vWRONG_TAG` and silently
+  overwriting last month's release notes)
+- Merge-conflict resolutions that drop a hand-curated section
+- Scripts that loop over `data/changelogs/*.json` and rewrite them
+
+The changelog files survive in git history, but the guard catches the
+mistake at PR review rather than after-the-fact.
 
 ## Code Style
 

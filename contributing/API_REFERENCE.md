@@ -38,6 +38,8 @@ All data endpoints accept `?lang=` (default: `eng`). Rate limited to 60 req/min 
 | `GET /api/modifiers/{id}` | | Single modifier |
 | `GET /api/achievements` | | All achievements |
 | `GET /api/achievements/{id}` | | Single achievement |
+| `GET /api/badges` | `tiered`, `multiplayer_only`, `requires_win`, `search` | All run-end badges (Bronze/Silver/Gold tiers) |
+| `GET /api/badges/{id}` | | Single badge with tier breakdown |
 | `GET /api/epochs` | `era`, `search` | Timeline epochs |
 | `GET /api/acts` | | All acts |
 | `GET /api/acts/{id}` | | Single act |
@@ -59,9 +61,11 @@ All data endpoints accept `?lang=` (default: `eng`). Rate limited to 60 req/min 
 | Endpoint | Method | Description |
 |----------|--------|-------------|
 | `POST /api/runs` | POST | Submit a run. Optional `?username=` param (25 char max) |
-| `GET /api/runs/stats` | GET | Community stats. Filters: `character`, `win`, `ascension`, `game_mode`, `players` |
-| `GET /api/runs/list` | GET | Browse runs. Filters: `character`, `win`, `username`, `page`, `limit` |
+| `GET /api/runs/stats` | GET | Aggregated community stats. Filters: `character`, `win`, `ascension`, `game_mode`, `players` |
+| `GET /api/runs/list` | GET | Browse runs. Filters: `character`, `win`, `username`, `seed` (LIKE), `build_id`, `sort` (`date`, `time_asc`, `time_desc`, `ascension_desc`), `page`, `limit` |
 | `GET /api/runs/shared/{hash}` | GET | Retrieve a shared run by hash |
+| `GET /api/runs/leaderboard` | GET | Ranked wins-only leaderboard. Filters: `category` (`fastest`, `highest_ascension`), `character`, `page`, `limit` |
+| `GET /api/runs/versions` | GET | Distinct `build_id` values across submitted runs — powers the version filter dropdown |
 
 ## Utility
 
@@ -76,7 +80,7 @@ All data endpoints accept `?lang=` (default: `eng`). Rate limited to 60 req/min 
 | `GET /api/changelogs/{tag}` | Full changelog for a version |
 | `GET /api/names/{type}/{id}` | Cross-language name lookup |
 | `GET /api/exports/{lang}` | ZIP download of all entity JSON |
-| `GET /api/history/{type}/{id}` | Per-entity version history |
+| `GET /api/history/{type}/{id}` | Per-entity version history (newest first, case-insensitive id match) |
 | `POST /api/feedback` | Submit feedback (proxied to Discord) |
 
 ## Languages

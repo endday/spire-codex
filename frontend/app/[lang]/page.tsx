@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
 import type { Stats } from "@/lib/api";
 import HomeClient from "@/app/HomeClient";
+import HomeNewsSection from "@/app/components/HomeNewsSection";
+import HomeGuidesSection from "@/app/components/HomeGuidesSection";
+import HomeShowcaseSection from "@/app/components/HomeShowcaseSection";
+import HomeLeaderboardSection from "@/app/components/HomeLeaderboardSection";
+import HomeStatsSection from "@/app/components/HomeStatsSection";
+import HomeFAQ from "@/app/components/HomeFAQ";
 import JsonLd from "@/app/components/JsonLd";
+import SearchTrigger from "@/app/components/SearchTrigger";
 import { buildWebSiteJsonLd, buildVideoGameJsonLd } from "@/lib/jsonld";
 import { t } from "@/lib/ui-translations";
-import { SITE_URL } from "@/lib/seo";
+import { SITE_URL, IS_BETA } from "@/lib/seo";
 import {
   isValidLang,
   LANG_GAME_NAME,
@@ -73,16 +80,11 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
     fetchJSON<Translations>(`${API}/api/translations?lang=${lang}`),
   ]);
 
-  const total = stats
-    ? Object.entries(stats)
-        .filter(([k]) => k !== "images")
-        .reduce((sum, [, v]) => sum + (typeof v === "number" ? v : 0), 0)
-    : 0;
-
   return (
     <div className="min-h-screen">
       <JsonLd data={[buildWebSiteJsonLd(), buildVideoGameJsonLd()]} />
-      {/* Hero */}
+      {/* Hero — mirrors `/page.tsx` so the localized routes get the same
+          search-led hero instead of the entity-count tagline. */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-[var(--accent-red)]/8 via-transparent to-transparent" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8 relative">
@@ -92,20 +94,32 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
               <span className="text-[var(--text-primary)] font-light">
                 CODEX
               </span>
+              {IS_BETA && (
+                <span className="ml-3 text-sm font-medium px-2 py-1 rounded bg-[var(--accent-gold)]/20 text-[var(--accent-gold)] align-middle">
+                  BETA
+                </span>
+              )}
             </h1>
-            <p className="text-lg text-[var(--text-secondary)] max-w-2xl mx-auto mb-2">
-              {t("The complete database for Slay the Spire 2", lang)}
+            <p className="text-lg text-[var(--text-secondary)] max-w-2xl mx-auto mb-6">
+              {IS_BETA
+                ? t("Preview of upcoming Slay the Spire 2 content", lang)
+                : t("The complete database for Slay the Spire 2", lang)}
             </p>
-            {total > 0 && (
-              <p className="text-sm text-[var(--text-muted)]">
-                {total.toLocaleString()} entities across cards, relics, monsters, potions, and more
-              </p>
-            )}
+            <div className="max-w-xl mx-auto">
+              <SearchTrigger variant="hero" />
+            </div>
           </div>
         </div>
       </section>
 
       <HomeClient initialStats={stats} initialTranslations={translations ?? {}} />
+
+      <HomeNewsSection langPrefix={`/${lang}`} lang={lang} />
+      <HomeLeaderboardSection langPrefix={`/${lang}`} lang={lang} characterNames={translations?.character_names} />
+      <HomeStatsSection langPrefix={`/${lang}`} lang={lang} characterNames={translations?.character_names} />
+      <HomeGuidesSection langPrefix={`/${lang}`} lang={lang} />
+      <HomeShowcaseSection langPrefix={`/${lang}`} lang={lang} />
+      <HomeFAQ stats={stats} lang={lang} />
     </div>
   );
 }

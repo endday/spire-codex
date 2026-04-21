@@ -6,6 +6,24 @@ async function fetchApi<T>(path: string): Promise<T> {
   return res.json();
 }
 
+// Variant for build-time metadata fetches: bounded so a stuck connection
+// can't hang `next build`. Used by layout `generateMetadata` calls — those
+// run during static generation where the backend may not be reachable.
+async function fetchApiBounded<T>(path: string, timeoutMs = 3000): Promise<T> {
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), timeoutMs);
+  try {
+    const res = await fetch(`${API_BASE}${path}`, {
+      signal: ctrl.signal,
+      next: { revalidate: 3600 },
+    });
+    if (!res.ok) throw new Error(`API error: ${res.status}`);
+    return await res.json();
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
 export interface CardRiderEffect {
   id: string;
   name: string;
@@ -48,11 +66,15 @@ export interface Card {
   tags: string[] | null;
   spawns_cards: string[] | null;
   vars: Record<string, number> | null;
-  upgrade: Record<string, string | number | null> | null;
+  upgrade: Record<string, string | number | boolean | null> | null;
   upgrade_description: string | null;
   image_url: string | null;
   beta_image_url: string | null;
   type_variants: Record<string, CardTypeVariant> | null;
+  /** `false` when the card cannot be added to combat by Skill Potion or
+   * other generated effects. Field is omitted (null) when the card uses
+   * the C# default of `true`, so a missing value means "yes, can spawn". */
+  can_be_generated_in_combat: boolean | null;
   compendium_order: number;
 }
 
@@ -105,6 +127,7 @@ export interface Relic {
   merchant_price: MerchantPrice | null;
   image_url: string | null;
   image_variants: Record<string, string> | null;
+  notes: string[] | null;
   compendium_order: number;
 }
 
@@ -327,6 +350,23 @@ export interface Achievement {
   description: string;
 }
 
+export interface BadgeTier {
+  rarity: "bronze" | "silver" | "gold";
+  title: string;
+  description: string;
+}
+
+export interface Badge {
+  id: string;
+  name: string;
+  description: string;
+  tiered: boolean;
+  tiers: BadgeTier[];
+  requires_win: boolean;
+  multiplayer_only: boolean;
+  image_url: string | null;
+}
+
 export interface Epoch {
   id: string;
   title: string;
@@ -373,6 +413,32 @@ export interface Guide extends GuideSummary {
   content: string;
 }
 
+export interface NewsArticle {
+  gid: string;
+  title: string;
+  url: string;
+  is_external_url: boolean;
+  author: string;
+  /** Raw Steam HTML/BBCode body. Only present on detail fetches; the
+   * list endpoint omits it to keep payloads small. */
+  contents?: string;
+  feedlabel: string;
+  feedname: string;
+  /** 1 = Steam community announcement, 0 = external press article. */
+  feed_type: number;
+  tags: string[];
+  /** Unix epoch seconds. */
+  date: number;
+  appid: number;
+}
+
+export interface NewsListResponse {
+  total: number;
+  limit: number;
+  offset: number;
+  items: NewsArticle[];
+}
+
 export interface Stats {
   cards: number;
   characters: number;
@@ -389,6 +455,7 @@ export interface Stats {
   afflictions: number;
   modifiers: number;
   achievements: number;
+  badges: number;
   epochs: number;
   acts: number;
   ascensions: number;
@@ -397,6 +464,14 @@ export interface Stats {
 
 export const api = {
   getStats: () => fetchApi<Stats>("/api/stats"),
+  getNews: (params?: string) =>
+    fetchApi<NewsListResponse>(`/api/news${params ? `?${params}` : ""}`),
+  getNewsItem: (gid: string) => fetchApi<NewsArticle>(`/api/news/${gid}`),
+  // Bounded variant for use inside `generateMetadata` — won't hang the
+  // build if the backend is unreachable. Caller should wrap in try/catch
+  // and fall through to a hardcoded baseline.
+  getStatsBounded: (timeoutMs?: number) =>
+    fetchApiBounded<Stats>("/api/stats", timeoutMs),
   getCards: (params?: string) => fetchApi<Card[]>(`/api/cards${params ? `?${params}` : ""}`),
   getCard: (id: string) => fetchApi<Card>(`/api/cards/${id}`),
   getCharacters: () => fetchApi<Character[]>("/api/characters"),

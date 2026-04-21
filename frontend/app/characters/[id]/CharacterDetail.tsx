@@ -30,16 +30,16 @@ const QUOTE_LABELS: Record<string, { label: string; icon: string }> = {
   banter_dead: { label: "Last Words", icon: "skull" },
 };
 
-export default function CharacterDetail() {
+export default function CharacterDetail({ initialCharacter }: { initialCharacter?: Character | null } = {}) {
   const { id } = useParams<{ id: string }>();
   const router = useRouter();
   const { lang } = useLanguage();
-  const [char, setChar] = useState<Character | null>(null);
+  const [char, setChar] = useState<Character | null>(initialCharacter ?? null);
   const [cards, setCards] = useState<Record<string, Card>>({});
   const [relics, setRelics] = useState<Record<string, Relic>>({});
   const [allCards, setAllCards] = useState<Card[]>([]);
   const [poolRelics, setPoolRelics] = useState<Relic[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(!initialCharacter);
   const [notFound, setNotFound] = useState(false);
   const [expandedAncient, setExpandedAncient] = useState<string | null>(null);
   const [cardsExpanded, setCardsExpanded] = useState(true);
@@ -47,7 +47,6 @@ export default function CharacterDetail() {
 
   useEffect(() => {
     if (!id) return;
-    setLoading(true);
     Promise.all([
       cachedFetch<Character>(`${API}/api/characters/${id}?lang=${lang}`).catch(() => {
         setNotFound(true);
@@ -154,7 +153,7 @@ export default function CharacterDetail() {
       <div className={`rounded-xl border-2 ${style.border} bg-gradient-to-br ${style.bg} to-transparent bg-[var(--bg-card)] p-6 mb-8`}>
         <div className="flex flex-col sm:flex-row items-center gap-6">
           <img
-            src={`${API}/static/images/characters/combat_${char.id.toLowerCase()}.png`}
+            src={`${API}/static/images/characters/combat_${char.id.toLowerCase()}.webp`}
             alt={`${char.name} - Slay the Spire 2 Character`}
             className="w-48 h-48 object-contain"
             crossOrigin="anonymous"

@@ -7,7 +7,6 @@ import type { Stats } from "@/lib/api";
 import { cachedFetch, getBetaVersion } from "@/lib/fetch-cache";
 import { useLanguage } from "./contexts/LanguageContext";
 import { t } from "@/lib/ui-translations";
-import { IS_BETA } from "@/lib/seo";
 
 const LANG_CODES = new Set(["deu", "esp", "fra", "ita", "jpn", "kor", "pol", "ptb", "rus", "spa", "tha", "tur", "zhs"]);
 
@@ -40,9 +39,11 @@ const FALLBACK_DESCS: Record<string, string> = {
   timeline: "Explore the Slay the Spire 2 timeline — epochs, story arcs, and unlockable content.",
   images: "Browse and download Slay the Spire 2 game art — card portraits, relic icons, monster sprites.",
   reference: "Slay the Spire 2 reference — keywords, orbs, afflictions, intents, acts, ascension, and more.",
+  badges: "Run-end badges from Slay the Spire 2 — Bronze, Silver, and Gold tier mini-achievements awarded on the Game Over screen.",
   guides: "Community strategy guides — character breakdowns, boss strategies, deckbuilding tips, and more.",
-  runs: "Community submitted runs — browse decks, relics, and stats from real climbs.",
-  meta: "Live community stats — win rates, popular cards, top relics, and more across all submitted runs.",
+  leaderboards: "Fastest wins and highest ascensions from the community. Browse every submitted run.",
+  submit: "Upload your .run files to contribute to leaderboards and community stats.",
+  stats: "Win rates by character, card pick rates, most common relics, deadliest encounters.",
 };
 
 interface HomeClientProps {
@@ -53,8 +54,6 @@ interface HomeClientProps {
 export default function HomeClient({ initialStats, initialTranslations }: HomeClientProps) {
   const [stats, setStats] = useState<Stats | null>(initialStats);
   const [translations, setTranslations] = useState<Translations>(initialTranslations);
-  const [guideCount, setGuideCount] = useState<number | null>(null);
-  const [runCount, setRunCount] = useState<number | null>(null);
   const { lang } = useLanguage();
   const initialRender = useRef(true);
   const pathname = usePathname();
@@ -72,22 +71,14 @@ export default function HomeClient({ initialStats, initialTranslations }: HomeCl
       .then(setTranslations);
   }, [lang]);
 
-  useEffect(() => {
-    cachedFetch<{ slug: string }[]>(`${API}/api/guides`)
-      .then((g) => setGuideCount(g.length))
-      .catch(() => {});
-    cachedFetch<{ total: number }>(`${API}/api/runs/list?limit=1`)
-      .then((d) => setRunCount(d.total))
-      .catch(() => {});
-  }, []);
-
   // Section name: use game translations if actually translated, otherwise our UI translations
   const SECTION_LABEL_MAP: Record<string, string> = {
     cards: "Card Library", characters: "Characters", relics: "Relic Collection",
     monsters: "Bestiary", potions: "Potion Lab", enchantments: "Enchantments",
     encounters: "Encounters", events: "Events", powers: "Powers",
     timeline: "Timeline", images: "Images", reference: "Reference",
-    guides: "Guides", runs: "Runs", meta: "Meta",
+    badges: "Badges",
+    guides: "Guides", leaderboards: "Leaderboard", submit: "Submit a Run", stats: "Stats",
   };
   const ENGLISH_FALLBACKS = new Set(Object.values(SECTION_LABEL_MAP).map(v => v.toLowerCase()));
   const sectionKey = (key: string) => {
@@ -193,26 +184,12 @@ export default function HomeClient({ initialStats, initialTranslations }: HomeCl
         : "–",
       color: "#596068",  // muted
     },
-    ...(!IS_BETA ? [
-      {
-        href: "/guides",
-        key: "guides",
-        count: guideCount ?? "–",
-        color: "#44CC44",  // guide green
-      },
-      {
-        href: "/runs",
-        key: "runs",
-        count: runCount ?? "–",
-        color: "#e8b830",  // gold
-      },
-      {
-        href: "/meta",
-        key: "meta",
-        count: null as number | string | null,
-        color: "#d53b27",  // red
-      },
-    ] : []),
+    {
+      href: "/badges",
+      key: "badges",
+      count: stats?.badges ?? "–",
+      color: "#c5894a",  // bronze
+    },
   ];
 
   return (
@@ -234,7 +211,7 @@ export default function HomeClient({ initialStats, initialTranslations }: HomeCl
                 />
                 <div className="relative aspect-square flex items-end justify-center overflow-hidden">
                   <img
-                    src={`${API}/static/images/characters/combat_${char.id}.png`}
+                    src={`${API}/static/images/characters/combat_${char.id}.webp`}
                     alt={`${charName} - Slay the Spire 2 Character`}
                     className="w-full h-full object-contain p-1 sm:p-2 group-hover:scale-105 transition-transform duration-300"
                     crossOrigin="anonymous"

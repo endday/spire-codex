@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       openGraph: {
         title,
         description: metaDesc,
-        images: [{ url: `${API_PUBLIC}/static/images/characters/combat_${char.id.toLowerCase()}.png` }],
+        images: [{ url: `${API_PUBLIC}/static/images/characters/combat_${char.id.toLowerCase()}.webp` }],
       },
       twitter: { card: "summary_large_image" },
       alternates: { canonical: `/characters/${id}` },
@@ -37,16 +37,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function Page({ params }: Props) {
   const { id } = await params;
   let jsonLd = null;
+  let char = null;
   try {
     const res = await fetch(`${API_INTERNAL}/api/characters/${id}`);
     if (res.ok) {
-      const char = await res.json();
+      char = await res.json();
       const desc = stripTags(char.description || "");
       jsonLd = buildDetailPageJsonLd({
         name: char.name,
         description: desc || `${char.name} from Slay the Spire 2`,
         path: `/characters/${id}`,
-        imageUrl: `${API_PUBLIC}/static/images/characters/combat_${char.id.toLowerCase()}.png`,
+        imageUrl: `${API_PUBLIC}/static/images/characters/combat_${char.id.toLowerCase()}.webp`,
         category: "Character",
         breadcrumbs: [
           { name: "Home", href: "/" },
@@ -59,7 +60,7 @@ export default async function Page({ params }: Props) {
   return (
     <>
       {jsonLd && <JsonLd data={jsonLd} />}
-      <CharacterDetail />
+      <CharacterDetail initialCharacter={char} />
     </>
   );
 }

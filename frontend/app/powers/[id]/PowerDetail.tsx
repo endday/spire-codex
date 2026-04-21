@@ -19,19 +19,18 @@ const typeColors: Record<string, string> = {
   None: "text-gray-400",
 };
 
-export default function PowerDetail() {
+export default function PowerDetail({ initialPower }: { initialPower?: Power | null } = {}) {
   const { id } = useParams<{ id: string }>();
   const router = useRouter();
   const { lang } = useLanguage();
-    const lp = useLangPrefix();
-const [power, setPower] = useState<Power | null>(null);
+  const lp = useLangPrefix();
+  const [power, setPower] = useState<Power | null>(initialPower ?? null);
   const [allCards, setAllCards] = useState<Card[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(!initialPower);
   const [notFound, setNotFound] = useState(false);
 
   useEffect(() => {
     if (!id) return;
-    setLoading(true);
     cachedFetch<Power>(`${API}/api/powers/${id}?lang=${lang}`)
       .then((data) => setPower(data))
       .catch(() => setNotFound(true))

@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { useLanguage } from "../contexts/LanguageContext";
 import { buildApiUrl } from "@/lib/fetch-cache";
+import { t } from "@/lib/ui-translations";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -18,6 +19,10 @@ interface CategoryConfig {
   endpoint: string;
   linkFn: (item: SearchResult) => string;
   subtitleFn?: (item: SearchResult) => string;
+  /** Absolute thumbnail URL — when present, the row renders it as a small preview. */
+  thumbFn?: (item: SearchResult) => string;
+  /** When true, activating the result opens it in a new tab instead of routing. */
+  openExternal?: boolean;
 }
 
 const CATEGORIES: CategoryConfig[] = [
@@ -84,6 +89,14 @@ const CATEGORIES: CategoryConfig[] = [
     linkFn: (item) => `/encounters/${item.id.toLowerCase()}`,
     subtitleFn: (item) => (item.room_type ? String(item.room_type) : ""),
   },
+  {
+    label: "Images",
+    endpoint: "/api/images/search",
+    linkFn: (item) => `${API}${item.url}`,
+    subtitleFn: (item) => (item.category_name ? String(item.category_name) : ""),
+    thumbFn: (item) => `${API}${item.url}`,
+    openExternal: true,
+  },
 ];
 
 const PAGES = [
@@ -116,6 +129,7 @@ const PAGES = [
   { name: "About", path: "/about", keywords: ["about", "info", "credits"] },
   { name: "Discord", path: "https://discord.gg/xMsTBeh", keywords: ["discord", "chat", "community"] },
   { name: "Card Browse", path: "/cards/browse", keywords: ["browse", "filter", "matrix"] },
+  { name: "News", path: "/news", keywords: ["news", "patch", "patch notes", "announcement", "update", "steam", "press"] },
 ];
 
 const MAX_PER_CATEGORY = 5;
@@ -192,7 +206,6 @@ export default function GlobalSearch() {
       return;
     }
 
-    setLoading(true);
     const timer = setTimeout(() => {
       // Abort previous requests
       if (abortRef.current) abortRef.current.abort();
@@ -231,7 +244,12 @@ export default function GlobalSearch() {
   const navigate = useCallback(
     (cat: CategoryConfig, item: SearchResult) => {
       setOpen(false);
-      router.push(cat.linkFn(item));
+      const href = cat.linkFn(item);
+      if (cat.openExternal) {
+        window.open(href, "_blank", "noopener,noreferrer");
+      } else {
+        router.push(href);
+      }
     },
     [router]
   );
@@ -272,7 +290,7 @@ export default function GlobalSearch() {
   return (
     <div
       ref={overlayRef}
-      className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-start justify-center pt-[15vh]"
+      className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-start justify-center px-4 sm:px-6 pt-[10vh] sm:pt-[15vh]"
       onClick={(e) => {
         if (e.target === overlayRef.current) setOpen(false);
       }}
@@ -301,7 +319,7 @@ export default function GlobalSearch() {
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search cards, relics, monsters..."
+            placeholder={t("Search cards, relics, monsters...", lang)}
             className="flex-1 bg-transparent text-lg text-[var(--text-primary)] placeholder:text-[var(--text-muted)] outline-none"
           />
           {loading && (
@@ -316,20 +334,20 @@ export default function GlobalSearch() {
         <div className="max-h-[60vh] overflow-y-auto">
           {!query.trim() && (
             <div className="px-4 py-8 text-center text-sm text-[var(--text-muted)]">
-              Type to search across all categories
+              {t("Type to search across all categories", lang)}
             </div>
           )}
 
           {query.trim() && !loading && totalResults === 0 && (
             <div className="px-4 py-8 text-center text-sm text-[var(--text-muted)]">
-              No results found for &ldquo;{query}&rdquo;
+              {t("No results found for", lang)} &ldquo;{query}&rdquo;
             </div>
           )}
 
           {matchedPages.length > 0 && (
             <div className="py-2">
               <div className="px-4 py-1 text-xs uppercase tracking-wider text-[var(--text-muted)] font-medium">
-                Pages
+                {t("Pages", lang)}
               </div>
               {matchedPages.map((p, i) => {
                 const isSelected = i === selectedIndex;
@@ -377,10 +395,11 @@ export default function GlobalSearch() {
                   {items.map((item, i) => {
                     const globalIdx = startIndex + i;
                     const isSelected = globalIdx === selectedIndex;
+                    const thumb = cat.thumbFn?.(item);
                     return (
                       <button
                         key={item.id}
-                        className={`w-full text-left px-4 py-2 flex items-baseline gap-2 cursor-pointer transition-colors ${
+                        className={`w-full text-left px-4 py-2 flex items-center gap-3 cursor-pointer transition-colors ${
                           isSelected
                             ? "bg-[var(--bg-card-hover)]"
                             : "hover:bg-[var(--bg-card-hover)]"
@@ -388,6 +407,15 @@ export default function GlobalSearch() {
                         onClick={() => navigate(cat, item)}
                         onMouseEnter={() => setSelectedIndex(globalIdx)}
                       >
+                        {thumb && (
+                          <img
+                            src={thumb}
+                            alt=""
+                            className="w-8 h-8 object-contain shrink-0 rounded bg-[var(--bg-primary)]"
+                            crossOrigin="anonymous"
+                            loading="lazy"
+                          />
+                        )}
                         <span className="text-sm text-[var(--text-primary)] truncate">
                           {item.name}
                         </span>
@@ -395,6 +423,9 @@ export default function GlobalSearch() {
                           <span className="text-xs text-[var(--text-muted)] truncate shrink-0">
                             {cat.subtitleFn(item)}
                           </span>
+                        )}
+                        {cat.openExternal && (
+                          <span className="ml-auto text-[10px] text-[var(--text-muted)] shrink-0">↗</span>
                         )}
                       </button>
                     );

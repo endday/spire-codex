@@ -41,7 +41,7 @@ export default function MechanicContent({ slug }: { slug: string }) {
           <div className={`${card} mt-4`}>
             <h3 className={h3}>Rare Card Pity System</h3>
             <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
-              A hidden offset starts at <strong className={bold}>-5%</strong> and increases by <strong className={bold}>+1%</strong> each time you pick a non-rare card (+0.5% on A7+). When a rare is rolled, the offset resets to -5%. Caps at <strong className={bold}>+40%</strong>. This ensures you see rares more often the longer you go without one.
+              A hidden offset starts at <strong className={bold}>-5%</strong> and increases by <strong className={bold}>+1%</strong> for each non-rare card <em>shown</em> in a combat reward (+0.5% on A7+) — including ones you skip. When a rare is rolled, the offset resets to -5%. Caps at <strong className={bold}>+40%</strong>. Each combat reward generates 3 cards up front, so a skipped reward still ticks the counter 3 times. This ensures you see rares more often the longer you go without one.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
@@ -140,13 +140,14 @@ export default function MechanicContent({ slug }: { slug: string }) {
             </div>
             <div>
               <h3 className={h3}>Card Removal Cost</h3>
-              <table className={tbl}><thead><tr className={thr}><th className={th}>Removals Used</th><th className={thr2}>Cost</th></tr></thead><tbody>
-                <tr className={tr}><td className={td}>0 (first)</td><td className={gold}>75g</td></tr>
-                <tr className={tr}><td className={td}>1</td><td className={gold}>100g</td></tr>
-                <tr className={tr}><td className={td}>2</td><td className={gold}>125g</td></tr>
-                <tr className={tr}><td className={td}>3</td><td className={gold}>150g</td></tr>
-                <tr><td className={td}>n</td><td className={gold}>75 + 25n</td></tr>
+              <table className={tbl}><thead><tr className={thr}><th className={th}>Removals Used</th><th className={thr2}>A0–5</th><th className={thr2}>A6+ (Inflation)</th></tr></thead><tbody>
+                <tr className={tr}><td className={td}>0 (first)</td><td className={gold}>75g</td><td className={gold}>100g</td></tr>
+                <tr className={tr}><td className={td}>1</td><td className={gold}>100g</td><td className={gold}>150g</td></tr>
+                <tr className={tr}><td className={td}>2</td><td className={gold}>125g</td><td className={gold}>200g</td></tr>
+                <tr className={tr}><td className={td}>3</td><td className={gold}>150g</td><td className={gold}>250g</td></tr>
+                <tr><td className={td}>n</td><td className={gold}>75 + 25n</td><td className={gold}>100 + 50n</td></tr>
               </tbody></table>
+              <p className={note}>Major Update #1 (v0.103.2) reworked Ascension 6 from Gloom (1 fewer rest site) into Inflation, which raises the base removal price by 25 gold and the per-use increment by 25.</p>
             </div>
           </div>
         </div>
@@ -352,16 +353,16 @@ export default function MechanicContent({ slug }: { slug: string }) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <h3 className={`${h3} text-sm`}>Positive Pool (2 picked)</h3>
-              <p className="text-xs text-[var(--text-secondary)]">Arcane Scroll, Booming Conch, Pomander, Golden Pearl, Lead Paperweight, New Leaf, Neow&apos;s Torment, Precise Scissors, Lost Coffer</p>
-              <p className="text-xs text-[var(--text-muted)] mt-1">Plus one of: Nutritious Oyster / Stone Humidifier (50/50) and one of: Lava Rock / Small Capsule (50/50)</p>
+              <p className="text-xs text-[var(--text-secondary)]">Arcane Scroll, Booming Conch, Golden Pearl, Lead Paperweight, Lost Coffer, Massive Scroll, Neow&apos;s Torment, New Leaf, Phial Holster, Precise Scissors, Winged Boots</p>
+              <p className="text-xs text-[var(--text-muted)] mt-1">Plus one of each pair (50/50 each): Lava Rock / Small Capsule · Nutritious Oyster / Stone Humidifier · Neow&apos;s Talisman / Pomander</p>
             </div>
             <div>
               <h3 className={`${h3} text-sm`}>Curse Pool (1 picked)</h3>
-              <p className="text-xs text-[var(--text-secondary)]">Cursed Pearl, Large Capsule, Leafy Poultice, Precarious Shears, Scroll Boxes (conditional), Silver Crucible (singleplayer only)</p>
-              <p className="text-xs text-[var(--text-muted)] mt-1">Conflicting pairs are removed (e.g. Cursed Pearl excludes Golden Pearl).</p>
+              <p className="text-xs text-[var(--text-secondary)]">Cursed Pearl, Hefty Tablet, Large Capsule, Leafy Poultice, Neow&apos;s Bones, Precarious Shears, Scroll Boxes (conditional), Silver Crucible (singleplayer only)</p>
+              <p className="text-xs text-[var(--text-muted)] mt-1">Conflicting pairs are removed (e.g. Cursed Pearl excludes Golden Pearl, Hefty Tablet excludes Arcane Scroll, Leafy Poultice excludes New Leaf, Precarious Shears excludes Precise Scissors). If Large Capsule rolls as the curse, both the Lava Rock / Small Capsule pair are skipped.</p>
             </div>
           </div>
-          <p className={note}>Before the event, you are healed to full HP. On A2+, heal is only 80% of missing HP.</p>
+          <p className={note}>Before the event, you are healed to full HP. On A2+, heal is only 80% of missing HP. Major Update #1 (v0.103.2) expanded both pools — Phial Holster, Winged Boots, Massive Scroll, and Neow&apos;s Talisman joined the positive side; Hefty Tablet and Neow&apos;s Bones joined the curse side.</p>
         </div>
       );
 
@@ -374,7 +375,7 @@ export default function MechanicContent({ slug }: { slug: string }) {
             <tr className={tr}><td className={td}>3</td><td className={td}>Poverty</td><td className={tdr}>Gold rewards x0.75</td></tr>
             <tr className={tr}><td className={td}>4</td><td className={td}>Tight Belt</td><td className={tdr}>3 → 2 potion slots</td></tr>
             <tr className={tr}><td className={td}>5</td><td className={td}>Ascender&apos;s Bane</td><td className={tdr}>Start with Ascender&apos;s Bane curse</td></tr>
-            <tr className={tr}><td className={td}>6</td><td className={td}>Gloom</td><td className={tdr}>1 fewer rest site on map</td></tr>
+            <tr className={tr}><td className={td}>6</td><td className={td}>Inflation</td><td className={tdr}>Card removal at the Merchant is more expensive (base 100g, +50g per use)</td></tr>
             <tr className={tr}><td className={td}>7</td><td className={td}>Scarcity</td><td className={tdr}>~50% rarer cards, slower pity</td></tr>
             <tr className={tr}><td className={td}>8</td><td className={td}>Tough Enemies</td><td className={tdr}>Enemy HP increases (per-enemy)</td></tr>
             <tr className={tr}><td className={td}>9</td><td className={td}>Deadly Enemies</td><td className={tdr}>Enemy damage increases (per-enemy)</td></tr>
@@ -385,17 +386,80 @@ export default function MechanicContent({ slug }: { slug: string }) {
 
     case "score-formula":
       return (
-        <div className={card}>
-          <table className={tbl}><thead><tr className={thr}><th className={th}>Component</th><th className={thr2}>Value</th></tr></thead><tbody>
-            <tr className={tr}><td className={td}>Rooms visited</td><td className={tdr}>10 pts per room per act (x1/x2/x3)</td></tr>
-            <tr className={tr}><td className={td}>Win bonus</td><td className={gold}>+300</td></tr>
-            <tr className={tr}><td className={td}>Act 3 death</td><td className={tdr}>+200</td></tr>
-            <tr className={tr}><td className={td}>Act 2 death</td><td className={tdr}>+100</td></tr>
-            <tr className={tr}><td className={td}>Act 1 death</td><td className={tdr}>+0</td></tr>
-            <tr><td className={td}>Ascension multiplier</td><td className={gold}>x(1 + ascension x 0.1)</td></tr>
-          </tbody></table>
-          <p className={note}>At Ascension 10, your score is doubled. The final boss scene uses your score to determine the visual damage numbers.</p>
-        </div>
+        <>
+          <div className={card}>
+            <h3 className={h3}>Run Score</h3>
+            <p className="text-sm text-[var(--text-secondary)] mb-3 leading-relaxed">
+              Awarded for every completed run, win or lose. Shown on the run-history screen and used by the final-boss scene to render the &quot;damage&quot; numbers on the Architect.
+            </p>
+            <table className={tbl}><thead><tr className={thr}><th className={th}>Component</th><th className={thr2}>Value</th></tr></thead><tbody>
+              <tr className={tr}><td className={td}>Rooms visited</td><td className={tdr}>10 pts per room <span className="text-[var(--text-muted)]">x act number (x1 / x2 / x3)</span></td></tr>
+              <tr className={tr}><td className={td}>Gold gained</td><td className={tdr}>+1 pt per 100 gold <span className="text-[var(--text-muted)]">(divided by player count)</span></td></tr>
+              <tr className={tr}><td className={td}>Elites killed</td><td className={gold}>+50 each <span className="text-[var(--text-muted)]">(the elite you died to doesn&apos;t count)</span></td></tr>
+              <tr className={tr}><td className={td}>Bosses slain</td><td className={gold}>+100 each <span className="text-[var(--text-muted)]">(3 on a win, fewer if you die earlier; A10 wins count 4)</span></td></tr>
+              <tr><td className={td}>Ascension multiplier</td><td className={gold}>x(1 + ascension x 0.1)</td></tr>
+            </tbody></table>
+            <p className={note}>
+              Final = <span className="text-[var(--text-secondary)]">(rooms + gold + elites + bosses) x (1 + ascension x 0.1)</span>. At A10 your score is doubled. Source: <span className="font-mono">ScoreUtility.CalculateScore</span>.
+            </p>
+          </div>
+
+          <div className={`${card} mt-4`}>
+            <h3 className={h3}>Worked example</h3>
+            <p className="text-sm text-[var(--text-secondary)] mb-3 leading-relaxed">
+              Hypothetical A0 win — 15 rooms in act 1, 14 in act 2, 14 in act 3, 4 elites killed, 3 bosses, 1,200 gold gained, single player.
+            </p>
+            <table className={tbl}><thead><tr className={thr}><th className={th}>Component</th><th className={thr2}>Math</th><th className={thr2}>Pts</th></tr></thead><tbody>
+              <tr className={tr}><td className={td}>Act 1 rooms</td><td className={tdr}>15 x 10 x 1</td><td className={gold}>150</td></tr>
+              <tr className={tr}><td className={td}>Act 2 rooms</td><td className={tdr}>14 x 10 x 2</td><td className={gold}>280</td></tr>
+              <tr className={tr}><td className={td}>Act 3 rooms</td><td className={tdr}>14 x 10 x 3</td><td className={gold}>420</td></tr>
+              <tr className={tr}><td className={td}>Gold</td><td className={tdr}>1200 / 100</td><td className={gold}>12</td></tr>
+              <tr className={tr}><td className={td}>Elites</td><td className={tdr}>4 x 50</td><td className={gold}>200</td></tr>
+              <tr className={tr}><td className={td}>Bosses</td><td className={tdr}>3 x 100</td><td className={gold}>300</td></tr>
+              <tr><td className={td}>Subtotal x A0 multiplier</td><td className={tdr}>1,362 x 1.0</td><td className="py-2 text-right text-[var(--accent-gold)] font-bold">1,362</td></tr>
+            </tbody></table>
+            <p className={note}>The same run on A10 would multiply by 2.0 for a final score of 2,724. Each A-tier adds +10% — there&apos;s no diminishing return.</p>
+          </div>
+
+          <div className={`${card} mt-4`}>
+            <h3 className={h3}>Daily-Run Leaderboard Score</h3>
+            <p className="text-sm text-[var(--text-secondary)] mb-3 leading-relaxed">
+              Daily runs use a completely separate scoring system that&apos;s a single packed integer. The digits ARE the sort order — a numeric DESC sort gives the right ranking, no separate columns needed. Major Update #1 introduced this so &quot;the score sent to the leaderboards is based on whether you won, how many badges you accrued, and how quickly you finished the run (in that order)&quot;.
+            </p>
+            <table className={tbl}><thead><tr className={thr}><th className={th}>Bucket</th><th className={thr2}>Multiplier</th><th className={thr2}>Range</th></tr></thead><tbody>
+              <tr className={tr}><td className={td}>Victory flag</td><td className={tdr}>x 100,000,000</td><td className={gold}>1 = loss, 2 = win</td></tr>
+              <tr className={tr}><td className={td}>Floors visited</td><td className={tdr}>x 1,000,000</td><td className={gold}>0–99</td></tr>
+              <tr className={tr}><td className={td}>Badges earned</td><td className={tdr}>x 10,000</td><td className={gold}>0–99</td></tr>
+              <tr><td className={td}>Run time</td><td className={tdr}>9999 − seconds</td><td className={gold}>faster = higher</td></tr>
+            </tbody></table>
+            <p className={note}>Source: <span className="font-mono">ScoreUtility.CalculateDailyScore</span>. The matching <span className="font-mono">DecodeDailyScore</span> peels the integer back into <span className="font-mono">{`{ victory, floors, badges, runTime }`}</span> for display.</p>
+          </div>
+
+          <div className={`${card} mt-4`}>
+            <h3 className={h3}>Daily-score worked example</h3>
+            <p className="text-sm text-[var(--text-secondary)] mb-3 leading-relaxed">
+              An A10 daily win — 48 floors visited, 7 badges earned, completed in 1,842 seconds (30:42).
+            </p>
+            <table className={tbl}><thead><tr className={thr}><th className={th}>Bucket</th><th className={thr2}>Math</th><th className={thr2}>Contribution</th></tr></thead><tbody>
+              <tr className={tr}><td className={td}>Victory (win)</td><td className={tdr}>2 x 100,000,000</td><td className={gold}>200,000,000</td></tr>
+              <tr className={tr}><td className={td}>Floors</td><td className={tdr}>48 x 1,000,000</td><td className={gold}>48,000,000</td></tr>
+              <tr className={tr}><td className={td}>Badges</td><td className={tdr}>7 x 10,000</td><td className={gold}>70,000</td></tr>
+              <tr className={tr}><td className={td}>Time</td><td className={tdr}>9999 − 1842</td><td className={gold}>8,157</td></tr>
+              <tr><td className={td}>Total packed score</td><td className={tdr}></td><td className="py-2 text-right text-[var(--accent-gold)] font-bold">248,078,157</td></tr>
+            </tbody></table>
+            <p className={note}>Beat someone&apos;s 248,070,XXX score? You won, hit at least 48 floors, and got 7+ badges. Faster runs win at every tier of the comparison.</p>
+          </div>
+
+          <div className={`${card} mt-4`}>
+            <h3 className={h3}>Why two scores?</h3>
+            <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
+              The <strong className={bold}>run score</strong> is descriptive — it tells you how good a single run was at a glance, weighted heavily toward depth (act 3 rooms count 3x). The <strong className={bold}>daily score</strong> is a sorting key — it has to compare two runs deterministically and produce one winner. Mega Crit packed it as a single integer so the leaderboard can be sorted with one column and no tiebreaker logic.
+            </p>
+            <p className={note}>
+              The constant <span className="font-mono">clientScore = -999999999</span> is a sentinel for &quot;this row was sent without a server-computed score&quot; — used to filter unverified entries from the leaderboard view.
+            </p>
+          </div>
+        </>
       );
 
     case "foul-potion":
@@ -470,7 +534,7 @@ export default function MechanicContent({ slug }: { slug: string }) {
       return (
         <div className={card}>
           <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
-            <strong className={bold}>The Courier</strong> and <strong className={bold}>Old Coin</strong> are hardcoded into the merchant relic blacklist and can never appear in shops. Both would break the shop economy.
+            Five relics override <code className="bg-[var(--bg-primary)] px-1 rounded text-xs text-[var(--accent-gold)]">IsAllowedInShops =&gt; false</code> and never appear in the merchant pool: <strong className={bold}>The Courier</strong>, <strong className={bold}>Old Coin</strong>, <strong className={bold}>Lucky Fysh</strong>, <strong className={bold}>Bowler Hat</strong>, and <strong className={bold}>Amethyst Aubergine</strong>. Major Update #1 (v0.103.2) added the last three after gold-generating relics broke shop economy testing — they remain craftable through other sources but are walled off from the merchant.
           </p>
         </div>
       );

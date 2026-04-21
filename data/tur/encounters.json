@@ -177,7 +177,7 @@
     "name": "Birçok Ceset Yiyen Sümüklü Böcek",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": [
       "Slugs"
     ],
@@ -194,7 +194,7 @@
     "name": "Ceset Yiyen Sümüklü Böcekler",
     "room_type": "Monster",
     "is_weak": true,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": [
       "Slugs"
     ],
@@ -226,7 +226,7 @@
     "name": "Tarikatçılar",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -301,10 +301,6 @@
     "act": "Act 3 - Glory",
     "tags": null,
     "monsters": [
-      {
-        "id": "DOOR",
-        "name": "Kapı"
-      },
       {
         "id": "DOORMAKER",
         "name": "Kapı Ustası"
@@ -441,7 +437,7 @@
     "name": "Pusan Fosil",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -503,7 +499,7 @@
     "name": "Paltolu İki Gremlin",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -526,7 +522,7 @@
     "name": "Lanetli Gemi",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -645,7 +641,7 @@
     "name": "Anne Lagavulin",
     "room_type": "Boss",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -660,7 +656,7 @@
     "name": "Kötü Bir Gaz",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -842,7 +838,7 @@
     "name": "Bahçe Yılan Balıkları",
     "room_type": "Elite",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -876,7 +872,7 @@
     "name": "Yumruklayan Yapı",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -986,11 +982,32 @@
     "loss_text": "[b]The Adventurer[/b], bazı [gold]Isırma Parşömenleri[/gold] tarafından paramparça edildi."
   },
   {
+    "id": "SEAPUNK_NORMAL",
+    "name": "Dip Rıhtımlar'ın Yaban Hayatı",
+    "room_type": "Monster",
+    "is_weak": false,
+    "act": "Act 1 - Underdocks",
+    "tags": [
+      "Seapunk"
+    ],
+    "monsters": [
+      {
+        "id": "CALCIFIED_CULTIST",
+        "name": "Taşlaşmış Tarikatçı"
+      },
+      {
+        "id": "SEAPUNK",
+        "name": "Deniz Haydutu"
+      }
+    ],
+    "loss_text": "[b]The Adventurer[/b], [gold]Dip Rıhtımlar'ın Yaban Hayatı[/gold] tarafından yenilgiye uğratıldı."
+  },
+  {
     "id": "SEAPUNK_WEAK",
     "name": "Deniz Haydutu",
     "room_type": "Monster",
     "is_weak": true,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": [
       "Seapunk"
     ],
@@ -1007,7 +1024,7 @@
     "name": "Kanalizasyon İstiridyesi",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -1039,7 +1056,7 @@
     "name": "Saklanan Koloni",
     "room_type": "Elite",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -1162,7 +1179,7 @@
     "name": "Çamurdöner",
     "room_type": "Monster",
     "is_weak": true,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -1223,7 +1240,7 @@
     "name": "Ruh Baluğu",
     "room_type": "Boss",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -1268,7 +1285,7 @@
     "name": "Korkunç Yılan Balığı",
     "room_type": "Elite",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -1394,30 +1411,11 @@
     "loss_text": "[b]The Adventurer[/b], [gold]Hırsız Çekirge[/gold] tarafından gasp edildi."
   },
   {
-    "id": "TOADPOLES_NORMAL",
-    "name": "Dip Rıhtımlar'ın Vahşi Yaşamı",
-    "room_type": "Monster",
-    "is_weak": false,
-    "act": "Underdocks",
-    "tags": null,
-    "monsters": [
-      {
-        "id": "CALCIFIED_CULTIST",
-        "name": "Taşlaşmış Tarikatçı"
-      },
-      {
-        "id": "TOADPOLE",
-        "name": "İribaş"
-      }
-    ],
-    "loss_text": "[b]The Adventurer[/b], [gold]Dip Rıhtımlar'ın Vahşi Yaşamı[/gold] tarafından yenilgiye uğratıldı."
-  },
-  {
     "id": "TOADPOLES_WEAK",
     "name": "İribaşlar",
     "room_type": "Monster",
     "is_weak": true,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -1432,19 +1430,15 @@
     "name": "Tünel Kazan İkili",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Act 2 - Hive",
+    "act": null,
     "tags": [
       "Burrower",
-      "Workers"
+      "Chomper"
     ],
     "monsters": [
       {
-        "id": "BOWLBUG_EGG",
-        "name": "Çanakböceği (Yumurta)"
-      },
-      {
-        "id": "BOWLBUG_SILK",
-        "name": "Çanakböceği (İpek)"
+        "id": "CHOMPER",
+        "name": "Çiğneyici"
       },
       {
         "id": "TUNNELER",
@@ -1494,7 +1488,7 @@
     "name": "İki Kuyruklu Fareler",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -1539,7 +1533,7 @@
     "name": "Akarsu Devi",
     "room_type": "Boss",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {

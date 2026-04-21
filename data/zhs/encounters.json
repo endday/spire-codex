@@ -177,7 +177,7 @@
     "name": "许多噬尸蛞蝓",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": [
       "Slugs"
     ],
@@ -194,7 +194,7 @@
     "name": "一些噬尸蛞蝓",
     "room_type": "Monster",
     "is_weak": true,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": [
       "Slugs"
     ],
@@ -226,7 +226,7 @@
     "name": "邪教徒们",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -301,10 +301,6 @@
     "act": "Act 3 - Glory",
     "tags": null,
     "monsters": [
-      {
-        "id": "DOOR",
-        "name": "门扉"
-      },
       {
         "id": "DOORMAKER",
         "name": "门扉缔造者"
@@ -441,7 +437,7 @@
     "name": "化石追踪者",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -503,7 +499,7 @@
     "name": "穿着一件大衣的两只地精",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -526,7 +522,7 @@
     "name": "幽灵船",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -645,7 +641,7 @@
     "name": "乐加维林族母",
     "room_type": "Boss",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -660,7 +656,7 @@
     "name": "邪恶气体",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -842,7 +838,7 @@
     "name": "花园幽灵鳗",
     "room_type": "Elite",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -876,7 +872,7 @@
     "name": "拳击构装体",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -986,11 +982,32 @@
     "loss_text": "一些[gold]咬人卷轴[/gold]将[b]The Adventurer[/b]撕成了碎片。"
   },
   {
+    "id": "SEAPUNK_NORMAL",
+    "name": "暗港野生动物",
+    "room_type": "Monster",
+    "is_weak": false,
+    "act": "Act 1 - Underdocks",
+    "tags": [
+      "Seapunk"
+    ],
+    "monsters": [
+      {
+        "id": "CALCIFIED_CULTIST",
+        "name": "钙化邪教徒"
+      },
+      {
+        "id": "SEAPUNK",
+        "name": "海洋混混"
+      }
+    ],
+    "loss_text": "[b]The Adventurer[/b]被一些[gold]暗港野生动物[/gold]打败了。"
+  },
+  {
     "id": "SEAPUNK_WEAK",
     "name": "海洋混混",
     "room_type": "Monster",
     "is_weak": true,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": [
       "Seapunk"
     ],
@@ -1007,7 +1024,7 @@
     "name": "下水道蚌",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -1039,7 +1056,7 @@
     "name": "鬼祟珊瑚群",
     "room_type": "Elite",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -1162,7 +1179,7 @@
     "name": "淤泥旋螺",
     "room_type": "Monster",
     "is_weak": true,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -1223,7 +1240,7 @@
     "name": "灵魂异鱼",
     "room_type": "Boss",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -1268,7 +1285,7 @@
     "name": "骇鳗",
     "room_type": "Elite",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -1394,30 +1411,11 @@
     "loss_text": "一只[gold]偷窃草蜢[/gold]抢走了[b]The Adventurer[/b]的生命。"
   },
   {
-    "id": "TOADPOLES_NORMAL",
-    "name": "暗港野生动物",
-    "room_type": "Monster",
-    "is_weak": false,
-    "act": "Underdocks",
-    "tags": null,
-    "monsters": [
-      {
-        "id": "CALCIFIED_CULTIST",
-        "name": "钙化邪教徒"
-      },
-      {
-        "id": "TOADPOLE",
-        "name": "蟾蜍蝌蚪"
-      }
-    ],
-    "loss_text": "[b]The Adventurer[/b]被一些[gold]暗港野生动物[/gold]打败。"
-  },
-  {
     "id": "TOADPOLES_WEAK",
     "name": "蟾蜍蝌蚪",
     "room_type": "Monster",
     "is_weak": true,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -1432,19 +1430,15 @@
     "name": "地道组合",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Act 2 - Hive",
+    "act": null,
     "tags": [
       "Burrower",
-      "Workers"
+      "Chomper"
     ],
     "monsters": [
       {
-        "id": "BOWLBUG_EGG",
-        "name": "盛碗虫（卵）"
-      },
-      {
-        "id": "BOWLBUG_SILK",
-        "name": "盛碗虫（丝）"
+        "id": "CHOMPER",
+        "name": "啃咬机"
       },
       {
         "id": "TUNNELER",
@@ -1494,7 +1488,7 @@
     "name": "双尾鼠",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -1539,7 +1533,7 @@
     "name": "瀑布巨兽",
     "room_type": "Boss",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {

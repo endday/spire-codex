@@ -8,12 +8,13 @@
     "rarity": "Seltenes Relikt",
     "pool": "ironclad",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/ruined_helmet.png",
+    "image_url": "/static/images/relics/ruined_helmet.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 80
   },
@@ -26,12 +27,13 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/akabeko.png",
+    "image_url": "/static/images/relics/akabeko.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
     "compendium_order": 40
   },
@@ -44,8 +46,9 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/alchemical_coffer.png",
+    "image_url": "/static/images/relics/alchemical_coffer.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 160
   },
@@ -57,31 +60,25 @@
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Seltenes Relikt",
     "pool": "shared",
-    "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
-    },
-    "image_url": "/static/images/relics/old_coin.png",
+    "merchant_price": null,
+    "image_url": "/static/images/relics/old_coin.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 81
   },
   {
     "id": "AMETHYST_AUBERGINE",
     "name": "Amethyst-Aubergine",
-    "description": "Gegner hinterlassen zusätzlich [blue]10[/blue] [gold]Gold[/gold].",
+    "description": "Gegner hinterlassen zusätzlich [blue]15[/blue] [gold]Gold[/gold].",
     "description_raw": "Gegner hinterlassen zusätzlich [blue]{Gold}[/blue] [gold]Gold[/gold].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
-    "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
-    },
-    "image_url": "/static/images/relics/amethyst_aubergine.png",
+    "merchant_price": null,
+    "image_url": "/static/images/relics/amethyst_aubergine.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
     "compendium_order": 10
   },
@@ -94,12 +91,13 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/anchor.png",
+    "image_url": "/static/images/relics/anchor.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
     "compendium_order": 11
   },
@@ -116,10 +114,11 @@
       "min": 42,
       "max": 57
     },
-    "image_url": "/static/images/relics/fake_anchor.png",
+    "image_url": "/static/images/relics/fake_anchor.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 252
+    "compendium_order": 257
   },
   {
     "id": "ARCHAIC_TOOTH",
@@ -130,36 +129,39 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/archaic_tooth.png",
+    "image_url": "/static/images/relics/archaic_tooth.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 161
   },
   {
     "id": "ARCANE_SCROLL",
     "name": "Arkane Schriftrolle",
-    "description": "Erhalte beim Aufheben eine zufällige [gold]seltene Karte[/gold] für dein [gold]Deck[/gold].",
-    "description_raw": "Erhalte beim Aufheben eine zufällige [gold]seltene Karte[/gold] für dein [gold]Deck[/gold].",
+    "description": "Nimm beim Aufheben eine zufällige [gold]Seltene Karte[/gold] in dein [gold]Deck[/gold].",
+    "description_raw": "Nimm beim Aufheben eine zufällige [gold]Seltene Karte[/gold] in dein [gold]Deck[/gold].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/arcane_scroll.png",
+    "image_url": "/static/images/relics/arcane_scroll.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 162
   },
   {
     "id": "CROSSBOW",
     "name": "Armbrust",
-    "description": "Erhalte zu Beginn deines Zuges einen zufälligen [gold]Angriff[/gold] auf deine [gold]Hand[/gold]. Er kostet diesen Zug [blue]0[/blue] [energy:1].",
-    "description_raw": "Erhalte zu Beginn deines Zuges einen zufälligen [gold]Angriff[/gold] auf deine [gold]Hand[/gold]. Er kostet diesen Zug [blue]0[/blue] {energyPrefix:energyIcons(1)}.",
+    "description": "Erhalte immer zu Beginn deines Zuges einen zufälligen [gold]Angriff[/gold] auf deine [gold]Hand[/gold]. Er ist in diesem Zug kostenlos spielbar.",
+    "description_raw": "Erhalte immer zu Beginn deines Zuges einen zufälligen [gold]Angriff[/gold] auf deine [gold]Hand[/gold]. Er ist in diesem Zug kostenlos spielbar.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/crossbow.png",
+    "image_url": "/static/images/relics/crossbow.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 163
   },
@@ -172,12 +174,13 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/candelabra.png",
+    "image_url": "/static/images/relics/candelabra.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
     "compendium_order": 41
   },
@@ -190,26 +193,28 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/vambrace.png",
+    "image_url": "/static/images/relics/vambrace.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
     "compendium_order": 42
   },
   {
     "id": "ASTROLABE",
     "name": "Astrolabium",
-    "description": "[gold]Transformiere[/gold] beim Aufheben [blue]3[/blue] Karten, dann [gold]verbessere[/gold] sie.",
-    "description_raw": "[gold]Transformiere[/gold] beim Aufheben [blue]{Cards}[/blue] {Cards:plural:Karte|Karten}, dann [gold]verbessere[/gold] sie.",
+    "description": "[gold]Transformiere[/gold] beim Aufheben [blue]3[/blue] Karten, dann [gold]Verbessere[/gold] sie.",
+    "description_raw": "[gold]Transformiere[/gold] beim Aufheben [blue]{Cards}[/blue] {Cards:plural:Karte|Karten}, dann [gold]Verbessere[/gold] sie.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/astrolabe.png",
+    "image_url": "/static/images/relics/astrolabe.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 164
   },
@@ -222,8 +227,9 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/choices_paradox.png",
+    "image_url": "/static/images/relics/choices_paradox.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 165
   },
@@ -236,12 +242,13 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "necrobinder",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/funerary_mask.png",
+    "image_url": "/static/images/relics/funerary_mask.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
     "compendium_order": 43
   },
@@ -254,24 +261,26 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/touch_of_orobas.png",
+    "image_url": "/static/images/relics/touch_of_orobas.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 166
   },
   {
     "id": "BING_BONG",
     "name": "Bing Bong",
-    "description": "Immer wenn du deinem [gold]Deck[/gold] eine Karte hinzufügst, erhalte ein weiteres Exemplar.",
-    "description_raw": "Immer wenn du deinem [gold]Deck[/gold] eine Karte hinzufügst, erhalte ein weiteres Exemplar.",
+    "description": "Immer wenn du eine Karte in dein [gold]Deck[/gold] nimmst, nimm ein weiteres Exemplar.",
+    "description_raw": "Immer wenn du eine Karte in dein [gold]Deck[/gold] nimmst, nimm ein weiteres Exemplar.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ereignis-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/bing_bong.png",
+    "image_url": "/static/images/relics/bing_bong.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 253
+    "compendium_order": 258
   },
   {
     "id": "PEAR",
@@ -282,12 +291,13 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/pear.png",
+    "image_url": "/static/images/relics/pear.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
     "compendium_order": 44
   },
@@ -300,54 +310,58 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/pomander.png",
+    "image_url": "/static/images/relics/pomander.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 167
   },
   {
     "id": "BELLOWS",
     "name": "Blasebalg",
-    "description": "Die erste [gold]Hand[/gold], die du jeden Kampf ziehst, ist [gold]verbessert[/gold].",
-    "description_raw": "Die erste [gold]Hand[/gold], die du jeden Kampf ziehst, ist [gold]verbessert[/gold].",
+    "description": "Deine erste gezogene [gold]Hand[/gold] in jedem Kampf ist [gold]Verbessert[/gold].",
+    "description_raw": "Deine erste gezogene [gold]Hand[/gold] in jedem Kampf ist [gold]Verbessert[/gold].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
-    "rarity": "Ungewöhnliches Relikt",
+    "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/bellows.png",
+    "image_url": "/static/images/relics/bellows.webp",
     "image_variants": null,
-    "rarity_key": "Uncommon",
-    "compendium_order": 45
+    "notes": null,
+    "rarity_key": "Rare",
+    "compendium_order": 82
   },
   {
     "id": "LEAD_PAPERWEIGHT",
     "name": "Bleierner Briefbeschwerer",
-    "description": "Wähle beim Aufheben [blue]1[/blue] von [blue]2[/blue] farblosen Karten, die in dein [gold]Deck[/gold] erhältst.",
-    "description_raw": "Wähle beim Aufheben [blue]1[/blue] von [blue]2[/blue] farblosen Karten, die in dein [gold]Deck[/gold] erhältst.",
+    "description": "Wähle beim Aufheben [blue]1[/blue] von [blue]2[/blue] Farblosen Karten, die du in dein [gold]Deck[/gold] nimmst.",
+    "description_raw": "Wähle beim Aufheben [blue]1[/blue] von [blue]2[/blue] Farblosen Karten, die du in dein [gold]Deck[/gold] nimmst.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/lead_paperweight.png",
+    "image_url": "/static/images/relics/lead_paperweight.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 168
   },
   {
     "id": "BLOOD_SOAKED_ROSE",
     "name": "Blutgetränkte Rose",
-    "description": "Erhalte beim Aufheben [blue]1[/blue] [red]Verzückt[/red] in dein [gold]Deck[/gold]. Erhalte zu Beginn jedes Zuges [energy:1].",
-    "description_raw": "Erhalte beim Aufheben [blue]1[/blue] [red]Verzückt[/red] in dein [gold]Deck[/gold]. Erhalte zu Beginn jedes Zuges {Energy:energyIcons()}.",
+    "description": "Nimm beim Aufheben [blue]1[/blue] [red]Verzückt[/red] in dein [gold]Deck[/gold]. Erhalte zu Beginn jedes Zuges [energy:1].",
+    "description_raw": "Nimm beim Aufheben [blue]1[/blue] [red]Verzückt[/red] in dein [gold]Deck[/gold]. Erhalte zu Beginn jedes Zuges {Energy:energyIcons()}.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/blood_soaked_rose.png",
+    "image_url": "/static/images/relics/blood_soaked_rose.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 169
   },
@@ -360,12 +374,13 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/blood_vial.png",
+    "image_url": "/static/images/relics/blood_vial.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
     "compendium_order": 12
   },
@@ -382,22 +397,24 @@
       "min": 42,
       "max": 57
     },
-    "image_url": "/static/images/relics/fake_blood_vial.png",
+    "image_url": "/static/images/relics/fake_blood_vial.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 254
+    "compendium_order": 259
   },
   {
     "id": "LEAFY_POULTICE",
     "name": "Blätterwickel",
-    "description": "[gold]Transformiere[/gold] beim Aufheben [blue]1[/blue] deiner [gold]Schläge[/gold] und [blue]1[/blue] deiner [gold]Verteidigen[/gold] und verliere [blue]10[/blue] max. TP.",
+    "description": "[gold]Transformiere[/gold] beim Aufheben [blue]1[/blue] deiner [gold]Schläge[/gold] und [blue]1[/blue] deiner [gold]Verteidigen[/gold] und verliere [blue]12[/blue] max. TP.",
     "description_raw": "[gold]Transformiere[/gold] beim Aufheben [blue]1[/blue] deiner [gold]Schläge[/gold] und [blue]1[/blue] deiner [gold]Verteidigen[/gold] und verliere [blue]{MaxHp}[/blue] max. TP.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/leafy_poultice.png",
+    "image_url": "/static/images/relics/leafy_poultice.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 170
   },
@@ -410,54 +427,58 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/booming_conch.png",
+    "image_url": "/static/images/relics/booming_conch.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 171
   },
   {
     "id": "BURNING_BLOOD",
     "name": "Brennendes Blut",
-    "description": "Heile am Ende jedes Kampfes [green]6[/green] TP.",
-    "description_raw": "Heile am Ende jedes Kampfes [green]{Heal}[/green] TP.",
+    "description": "Heile am Ende des Kampfes [green]6[/green] TP.",
+    "description_raw": "Heile am Ende des Kampfes [green]{Heal}[/green] TP.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Startrelikt",
     "pool": "ironclad",
     "merchant_price": null,
-    "image_url": "/static/images/relics/burning_blood.png",
+    "image_url": "/static/images/relics/burning_blood.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Starter",
     "compendium_order": 0
   },
   {
     "id": "LETTER_OPENER",
     "name": "Brieföffner",
-    "description": "Immer wenn du in einem Zug [blue]3[/blue] Fertigkeiten ausspielst, füge ALLEN Gegnern [blue]5[/blue] Schaden zu.",
-    "description_raw": "Immer wenn du in einem Zug [blue]{Cards}[/blue] {Cards:plural:Fertigkeit|Fertigkeiten} ausspielst, füge ALLEN Gegnern [blue]{Damage}[/blue] Schaden zu.",
+    "description": "Immer wenn du [blue]3[/blue] Fertigkeiten in einem Zug ausspielst, füge ALLEN Gegnern [blue]5[/blue] Schaden zu.",
+    "description_raw": "Immer wenn du [blue]{Cards}[/blue] {Cards:plural:Fertigkeit|Fertigkeiten} in einem Zug ausspielst, füge ALLEN Gegnern [blue]{Damage}[/blue] Schaden zu.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/letter_opener.png",
+    "image_url": "/static/images/relics/letter_opener.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 46
+    "compendium_order": 45
   },
   {
     "id": "BRILLIANT_SCARF",
     "name": "Brillianter Schal",
-    "description": "Die [blue]5.[/blue] Karte, die du in jedem Zug spielst, ist kostenlos.",
-    "description_raw": "Die [blue]5.[/blue] Karte, die du in jedem Zug spielst, ist kostenlos.",
+    "description": "Deine [blue]5.[/blue] Karte in jedem Zug ist kostenlos spielbar.",
+    "description_raw": "Deine [blue]5.[/blue] Karte in jedem Zug ist kostenlos spielbar.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/brilliant_scarf.png",
+    "image_url": "/static/images/relics/brilliant_scarf.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 172
   },
@@ -470,12 +491,13 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/bronze_scales.png",
+    "image_url": "/static/images/relics/bronze_scales.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
     "compendium_order": 13
   },
@@ -488,30 +510,32 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/bread.png",
+    "image_url": "/static/images/relics/bread.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 130
   },
   {
     "id": "BOOK_OF_FIVE_RINGS",
     "name": "Buch der fünf Ringe",
-    "description": "Heile [green]15[/green] TP für je [blue]5[/blue] Karten, die du deinem [gold]Deck[/gold] hinzufügst.",
-    "description_raw": "Heile [green]{Heal}[/green] TP für {Cards:plural:jede Karte|je [blue]{}[/blue] Karten}, die du deinem [gold]Deck[/gold] hinzufügst.",
+    "description": "Heile [green]20[/green] TP für je [blue]5[/blue] Karten, die du in dein [gold]Deck[/gold] nimmst.",
+    "description_raw": "Heile [green]{Heal}[/green] TP für {Cards:plural:jede Karte|je [blue]{}[/blue] Karten}, die du in dein [gold]Deck[/gold] nimmst.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/book_of_five_rings.png",
+    "image_url": "/static/images/relics/book_of_five_rings.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
     "compendium_order": 14
   },
@@ -524,14 +548,15 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "necrobinder",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/book_repair_knife.png",
+    "image_url": "/static/images/relics/book_repair_knife.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 47
+    "compendium_order": 46
   },
   {
     "id": "PANDORAS_BOX",
@@ -542,28 +567,30 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/pandoras_box.png",
+    "image_url": "/static/images/relics/pandoras_box.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 173
   },
   {
     "id": "CHARONS_ASHES",
     "name": "Charons Asche",
-    "description": "Immer wenn du eine Karte [gold]erschöpfst[/gold], füge ALLEN Gegnern [blue]3[/blue] Schaden zu.",
-    "description_raw": "Immer wenn du eine Karte [gold]erschöpfst[/gold], füge ALLEN Gegnern [blue]{Damage}[/blue] Schaden zu.",
+    "description": "Immer wenn du eine Karte [gold]Erschöpfst[/gold], füge ALLEN Gegnern [blue]3[/blue] Schaden zu.",
+    "description_raw": "Immer wenn du eine Karte [gold]Erschöpfst[/gold], füge ALLEN Gegnern [blue]{Damage}[/blue] Schaden zu.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Seltenes Relikt",
     "pool": "ironclad",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/charons_ashes.png",
+    "image_url": "/static/images/relics/charons_ashes.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
-    "compendium_order": 82
+    "compendium_order": 83
   },
   {
     "id": "CHEMICAL_X",
@@ -574,12 +601,13 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/chemical_x.png",
+    "image_url": "/static/images/relics/chemical_x.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 131
   },
@@ -589,33 +617,35 @@
     "description": "Nach jedem zweiten Kampf enthalten deine Kartenbelohnungen eine Macht zusätzlich.",
     "description_raw": "Nach jedem zweiten Kampf enthalten deine Kartenbelohnungen eine Macht zusätzlich.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
-    "rarity": "Seltenes Relikt",
+    "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/lasting_candy.png",
+    "image_url": "/static/images/relics/lasting_candy.webp",
     "image_variants": null,
-    "rarity_key": "Rare",
-    "compendium_order": 83
+    "notes": null,
+    "rarity_key": "Uncommon",
+    "compendium_order": 47
   },
   {
     "id": "ORNAMENTAL_FAN",
     "name": "Dekorativer Fächer",
-    "description": "Immer wenn du in einem Zug [blue]3[/blue] Angriffe ausspielst, erhalte [blue]4[/blue] [gold]Block[/gold].",
-    "description_raw": "Immer wenn du in einem Zug [blue]{Cards}[/blue] Angriffe ausspielst, erhalte [blue]{Block}[/blue] [gold]Block[/gold].",
+    "description": "Immer wenn du [blue]3[/blue] Angriffe in einem Zug ausspielst, erhalte [blue]4[/blue] [gold]Block[/gold].",
+    "description_raw": "Immer wenn du [blue]{Cards}[/blue] Angriffe in einem Zug ausspielst, erhalte [blue]{Block}[/blue] [gold]Block[/gold].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/ornamental_fan.png",
+    "image_url": "/static/images/relics/ornamental_fan.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
     "compendium_order": 48
   },
@@ -628,12 +658,13 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/the_abacus.png",
+    "image_url": "/static/images/relics/the_abacus.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 132
   },
@@ -646,10 +677,11 @@
     "rarity": "Ereignis-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/the_boot.png",
+    "image_url": "/static/images/relics/the_boot.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 255
+    "compendium_order": 260
   },
   {
     "id": "CHOSEN_CHEESE",
@@ -660,36 +692,39 @@
     "rarity": "Ereignis-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/chosen_cheese.png",
+    "image_url": "/static/images/relics/chosen_cheese.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 256
+    "compendium_order": 261
   },
   {
     "id": "DIAMOND_DIADEM",
     "name": "Diamanten-Diadem",
-    "description": "Immer wenn du [blue]2[/blue] oder weniger Karten in einem Zug spielst, nimmst du den halben Schaden von Gegnern.",
-    "description_raw": "Immer wenn du [blue]{CardThreshold}[/blue] oder weniger Karten in einem Zug spielst, nimmst du den halben Schaden von Gegnern.",
+    "description": "Immer wenn du in einem Zug [blue]2[/blue] oder weniger Karten spielst, nimmst du den halben Schaden von Gegnern.",
+    "description_raw": "Immer wenn du in einem Zug [blue]{CardThreshold}[/blue] oder weniger Karten spielst, nimmst du den halben Schaden von Gegnern.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/diamond_diadem.png",
+    "image_url": "/static/images/relics/diamond_diadem.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 174
   },
   {
     "id": "BIIIG_HUG",
     "name": "Dicke Umarmung",
-    "description": "Entferne beim Aufheben [blue]4[/blue] Karten aus deinem [gold]Deck[/gold]. Immer wenn du deinen [gold]Nachziehstapel[/gold] mischst, erhalte einen [gold]Ruß[/gold] in deinen [gold]Nachziehstapel[/gold].",
-    "description_raw": "Entferne beim Aufheben [blue]{Cards}[/blue] Karten aus deinem [gold]Deck[/gold]. Immer wenn du deinen [gold]Nachziehstapel[/gold] mischst, erhalte einen [gold]Ruß[/gold] in deinen [gold]Nachziehstapel[/gold].",
+    "description": "Entferne beim Aufheben [blue]4[/blue] Karten aus deinem [gold]Deck[/gold]. Immer wenn du deinen [gold]Nachziehstapel[/gold] mischst, nimm einen [gold]Ruß[/gold] in deinen [gold]Nachziehstapel[/gold].",
+    "description_raw": "Entferne beim Aufheben [blue]{Cards}[/blue] Karten aus deinem [gold]Deck[/gold]. Immer wenn du deinen [gold]Nachziehstapel[/gold] mischst, nimm einen [gold]Ruß[/gold] in deinen [gold]Nachziehstapel[/gold].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/biiig_hug.png",
+    "image_url": "/static/images/relics/biiig_hug.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 175
   },
@@ -702,12 +737,13 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/art_of_war.png",
+    "image_url": "/static/images/relics/art_of_war.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 84
   },
@@ -719,31 +755,29 @@
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Seltenes Relikt",
     "pool": "shared",
-    "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
-    },
-    "image_url": "/static/images/relics/the_courier.png",
+    "merchant_price": null,
+    "image_url": "/static/images/relics/the_courier.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 85
   },
   {
     "id": "DOLLYS_MIRROR",
     "name": "Dollys Spiegel",
-    "description": "Erhalte beim Aufheben eine weitere Kopie einer Karte aus deinem [gold]Deck[/gold].",
-    "description_raw": "Erhalte beim Aufheben eine weitere Kopie einer Karte aus deinem [gold]Deck[/gold].",
+    "description": "Nimm beim Aufheben ein weiteres Exemplar einer Karte aus deinem [gold]Deck[/gold].",
+    "description_raw": "Nimm beim Aufheben ein weiteres Exemplar einer Karte aus deinem [gold]Deck[/gold].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/dollys_mirror.png",
+    "image_url": "/static/images/relics/dollys_mirror.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 133
   },
@@ -756,12 +790,13 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/dragon_fruit.png",
+    "image_url": "/static/images/relics/dragon_fruit.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 134
   },
@@ -774,8 +809,9 @@
     "rarity": "Startrelikt",
     "pool": "silent",
     "merchant_price": null,
-    "image_url": "/static/images/relics/ring_of_the_drake.png",
+    "image_url": "/static/images/relics/ring_of_the_drake.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Starter",
     "compendium_order": 1
   },
@@ -788,28 +824,30 @@
     "rarity": "Seltenes Relikt",
     "pool": "silent",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/helical_dart.png",
+    "image_url": "/static/images/relics/helical_dart.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 86
   },
   {
     "id": "FRAGRANT_MUSHROOM",
     "name": "Duftender Pilz",
-    "description": "Verliere beim Aufheben [red]15%[/red] deiner TP und [gold]verbessere[/gold] [blue]3[/blue] zufällige Karten.",
-    "description_raw": "Verliere beim Aufheben [red]{HpLoss}%[/red] deiner TP und [gold]verbessere[/gold] [blue]{Cards}[/blue] zufällige {Cards:plural:Karte|Karten}.",
+    "description": "Verliere beim Aufheben [blue]15%[/blue] deiner TP und [gold]Verbessere[/gold] [blue]2[/blue] zufällige Karten.",
+    "description_raw": "Verliere beim Aufheben [blue]{HpLoss}%[/blue] deiner TP und [gold]Verbessere[/gold] [blue]{Cards}[/blue] zufällige {Cards:plural:Karte|Karten}.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ereignis-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/fragrant_mushroom.png",
+    "image_url": "/static/images/relics/fragrant_mushroom.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 257
+    "compendium_order": 262
   },
   {
     "id": "DARKSTONE_PERIAPT",
@@ -820,10 +858,11 @@
     "rarity": "Ereignis-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/darkstone_periapt.png",
+    "image_url": "/static/images/relics/darkstone_periapt.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 258
+    "compendium_order": 263
   },
   {
     "id": "DEMON_TONGUE",
@@ -834,62 +873,66 @@
     "rarity": "Seltenes Relikt",
     "pool": "ironclad",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/demon_tongue.png",
+    "image_url": "/static/images/relics/demon_tongue.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 87
   },
   {
     "id": "SERE_TALON",
     "name": "Dürre Kralle",
-    "description": "Erhalte beim Aufheben [blue]2[/blue] zufällige [red]Flüche[/red] und [blue]3[/blue] [purple]Wünsche[/purple] in dein [gold]Deck[/gold].",
-    "description_raw": "Erhalte beim Aufheben [blue]{Curses}[/blue] zufällige [red]Flüche[/red] und [blue]{Wishes}[/blue] [purple]Wünsche[/purple] in dein [gold]Deck[/gold].",
+    "description": "Nimm beim Aufheben [blue]2[/blue] zufällige [red]Flüche[/red] und [blue]3[/blue] [purple]Wünsche[/purple] in dein [gold]Deck[/gold].",
+    "description_raw": "Nimm beim Aufheben [blue]{Curses}[/blue] zufällige [red]Flüche[/red] und [blue]{Wishes}[/blue] [purple]Wünsche[/purple] in dein [gold]Deck[/gold].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/sere_talon.png",
+    "image_url": "/static/images/relics/sere_talon.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 176
   },
   {
     "id": "LIZARD_TAIL",
     "name": "Echsenschwanz",
-    "description": "Wenn du sterben würdest, heile stattdessen auf [green]50%[/green] deiner max. TP (funktioniert einmal).",
-    "description_raw": "Wenn du sterben würdest, heile stattdessen auf [green]{Heal}%[/green] deiner max. TP (funktioniert einmal).",
+    "description": "Wenn deine TP auf [blue]0[/blue] fallen würden, heile stattdessen auf [green]50%[/green] deiner max. TP (funktioniert einmal).",
+    "description_raw": "Wenn deine TP auf [blue]0[/blue] fallen würden, heile stattdessen auf [green]{Heal}%[/green] deiner max. TP (funktioniert einmal).",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/lizard_tail.png",
+    "image_url": "/static/images/relics/lizard_tail.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 88
   },
   {
     "id": "REGAL_PILLOW",
     "name": "Edles Kissen",
-    "description": "Immer wenn du dich [gold]ausruhst[/gold], heile [blue]15[/blue] weitere TP.",
-    "description_raw": "Immer wenn du dich [gold]ausruhst[/gold], heile [blue]{Heal}[/blue] weitere TP.",
+    "description": "Heile immer beim [gold]Ausruhen[/gold] [blue]15[/blue] TP mehr.",
+    "description_raw": "Heile immer beim [gold]Ausruhen[/gold] [blue]{Heal}[/blue] TP mehr.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/regal_pillow.png",
+    "image_url": "/static/images/relics/regal_pillow.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
     "compendium_order": 15
   },
@@ -902,22 +945,24 @@
     "rarity": "Startrelikt",
     "pool": "necrobinder",
     "merchant_price": null,
-    "image_url": "/static/images/relics/bound_phylactery.png",
+    "image_url": "/static/images/relics/bound_phylactery.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Starter",
     "compendium_order": 2
   },
   {
     "id": "PRESERVED_FOG",
     "name": "Eingeweckter Nebel",
-    "description": "Entferne beim Aufheben [blue]5[/blue] Karten aus deinem [gold]Deck[/gold]. Erhalte [red]Torheit[/red] in dein [gold]Deck[/gold].",
-    "description_raw": "Entferne beim Aufheben [blue]{Cards}[/blue] {Cards:plural:Karte|Karten} aus deinem [gold]Deck[/gold]. Erhalte [red]Torheit[/red] in dein [gold]Deck[/gold].",
+    "description": "Entferne beim Aufheben [blue]3[/blue] Karten aus deinem [gold]Deck[/gold]. Nimm [red]Torheit[/red] in dein [gold]Deck[/gold].",
+    "description_raw": "Entferne beim Aufheben [blue]{Cards}[/blue] {Cards:plural:Karte|Karten} aus deinem [gold]Deck[/gold]. Nimm [red]Torheit[/red] in dein [gold]Deck[/gold].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/preserved_fog.png",
+    "image_url": "/static/images/relics/preserved_fog.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 177
   },
@@ -930,12 +975,13 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/ice_cream.png",
+    "image_url": "/static/images/relics/ice_cream.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 89
   },
@@ -948,8 +994,9 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/iron_club.png",
+    "image_url": "/static/images/relics/iron_club.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 178
   },
@@ -962,22 +1009,24 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/ectoplasm.png",
+    "image_url": "/static/images/relics/ectoplasm.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 179
   },
   {
     "id": "ELECTRIC_SHRYMP",
-    "name": "Electrischer Shrymp",
+    "name": "Elektrischer Shrymp",
     "description": "[gold]Verzaubere[/gold] beim Aufheben eine Fertigkeit mit [purple]Durchdrungen[/purple].",
     "description_raw": "[gold]Verzaubere[/gold] beim Aufheben eine Fertigkeit mit [purple]Durchdrungen[/purple].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/electric_shrymp.png",
+    "image_url": "/static/images/relics/electric_shrymp.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 180
   },
@@ -990,12 +1039,13 @@
     "rarity": "Seltenes Relikt",
     "pool": "necrobinder",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/ivory_tile.png",
+    "image_url": "/static/images/relics/ivory_tile.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 90
   },
@@ -1008,8 +1058,9 @@
     "rarity": "Startrelikt",
     "pool": "necrobinder",
     "merchant_price": null,
-    "image_url": "/static/images/relics/phylactery_unbound.png",
+    "image_url": "/static/images/relics/phylactery_unbound.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Starter",
     "compendium_order": 3
   },
@@ -1022,12 +1073,13 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/strawberry.png",
+    "image_url": "/static/images/relics/strawberry.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
     "compendium_order": 16
   },
@@ -1040,12 +1092,13 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/meal_ticket.png",
+    "image_url": "/static/images/relics/meal_ticket.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
     "compendium_order": 17
   },
@@ -1058,12 +1111,13 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/eternal_feather.png",
+    "image_url": "/static/images/relics/eternal_feather.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
     "compendium_order": 49
   },
@@ -1076,12 +1130,13 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "regent",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/fencing_manual.png",
+    "image_url": "/static/images/relics/fencing_manual.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
     "compendium_order": 18
   },
@@ -1094,12 +1149,13 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "defect",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/data_disk.png",
+    "image_url": "/static/images/relics/data_disk.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
     "compendium_order": 19
   },
@@ -1112,8 +1168,9 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/fiddle.png",
+    "image_url": "/static/images/relics/fiddle.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 181
   },
@@ -1126,8 +1183,9 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/delicate_frond.png",
+    "image_url": "/static/images/relics/delicate_frond.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 182
   },
@@ -1140,12 +1198,13 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/meat_on_the_bone.png",
+    "image_url": "/static/images/relics/meat_on_the_bone.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 91
   },
@@ -1158,8 +1217,9 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/meat_cleaver.png",
+    "image_url": "/static/images/relics/meat_cleaver.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 183
   },
@@ -1172,12 +1232,13 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/wing_charm.png",
+    "image_url": "/static/images/relics/wing_charm.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 135
   },
@@ -1190,8 +1251,9 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/whispering_earring.png",
+    "image_url": "/static/images/relics/whispering_earring.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 184
   },
@@ -1204,24 +1266,26 @@
     "rarity": "Ereignis-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/byrdpip.png",
+    "image_url": "/static/images/relics/byrdpip.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 259
+    "compendium_order": 264
   },
   {
     "id": "FRESNEL_LENS",
     "name": "Fresnel-Linse",
-    "description": "Immer wenn du deinem [gold]Deck[/gold] eine Karte hinzufügst, die [gold]Block[/gold] gewährt, [gold]verzaubere[/gold] sie mit [purple]Geschickt[/purple] [blue]2[/blue].",
-    "description_raw": "Immer wenn du deinem [gold]Deck[/gold] eine Karte hinzufügst, die [gold]Block[/gold] gewährt, [gold]verzaubere[/gold] sie mit [purple]Geschickt[/purple] [blue]{NimbleAmount}[/blue].",
+    "description": "Immer wenn du eine Karte in dein [gold]Deck[/gold] nimmst, die [gold]Block[/gold] gewährt, [gold]Verzaubere[/gold] sie mit [purple]Geschickt[/purple] [blue]2[/blue].",
+    "description_raw": "Immer wenn du eine Karte in dein [gold]Deck[/gold] nimmst, die [gold]Block[/gold] gewährt, [gold]Verzaubere[/gold] sie mit [purple]Geschickt[/purple] [blue]{NimbleAmount}[/blue].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ereignis-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/fresnel_lens.png",
+    "image_url": "/static/images/relics/fresnel_lens.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 260
+    "compendium_order": 265
   },
   {
     "id": "HAPPY_FLOWER",
@@ -1232,12 +1296,13 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/happy_flower.png",
+    "image_url": "/static/images/relics/happy_flower.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
     "compendium_order": 20
   },
@@ -1254,26 +1319,28 @@
       "min": 42,
       "max": 57
     },
-    "image_url": "/static/images/relics/fake_happy_flower.png",
+    "image_url": "/static/images/relics/fake_happy_flower.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 261
+    "compendium_order": 266
   },
   {
     "id": "SPARKLING_ROUGE",
-    "name": "Funkelndes Rouge",
+    "name": "Funkelndes Rot",
     "description": "Erhalte zu Beginn deines [blue]3.[/blue] Zuges [blue]1[/blue] [gold]Stärke[/gold] und [blue]1[/blue] [gold]Geschicklichkeit[/gold].",
     "description_raw": "Erhalte zu Beginn deines [blue]3.[/blue] Zuges [blue]{StrengthPower}[/blue] [gold]Stärke[/gold] und [blue]{DexterityPower}[/blue] [gold]Geschicklichkeit[/gold].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/sparkling_rouge.png",
+    "image_url": "/static/images/relics/sparkling_rouge.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
     "compendium_order": 50
   },
@@ -1286,12 +1353,13 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/intimidating_helmet.png",
+    "image_url": "/static/images/relics/intimidating_helmet.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 92
   },
@@ -1304,8 +1372,9 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/lords_parasol.png",
+    "image_url": "/static/images/relics/lords_parasol.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 185
   },
@@ -1318,12 +1387,13 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "regent",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/galactic_dust.png",
+    "image_url": "/static/images/relics/galactic_dust.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
     "compendium_order": 51
   },
@@ -1336,30 +1406,47 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/prayer_wheel.png",
+    "image_url": "/static/images/relics/prayer_wheel.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 93
   },
   {
+    "id": "WINGED_BOOTS",
+    "name": "Geflügelte Schuhe",
+    "description": "Du kannst [blue]3[/blue] Mal vom Pfad abweichen, wenn du entscheidest, zu welchem Raum du reist.",
+    "description_raw": "Du kannst [blue]{Rooms}[/blue] Mal vom Pfad abweichen, wenn du entscheidest, zu welchem Raum du reist.",
+    "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
+    "rarity": "Ahnen-Relikt",
+    "pool": "shared",
+    "merchant_price": null,
+    "image_url": "/static/images/relics/winged_boots.webp",
+    "image_variants": null,
+    "notes": null,
+    "rarity_key": "Ancient",
+    "compendium_order": 186
+  },
+  {
     "id": "FROZEN_EGG",
     "name": "Gefrorenes Ei",
-    "description": "Immer wenn du deinem [gold]Deck[/gold] eine Macht hinzufügst, [gold]verbessere[/gold] sie.",
-    "description_raw": "Immer wenn du deinem [gold]Deck[/gold] eine Macht hinzufügst, [gold]verbessere[/gold] sie.",
+    "description": "Immer wenn du eine Macht in dein [gold]Deck[/gold] nimmst, [gold]Verbessere[/gold] sie.",
+    "description_raw": "Immer wenn du eine Macht in dein [gold]Deck[/gold] nimmst, [gold]Verbessere[/gold] sie.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/frozen_egg.png",
+    "image_url": "/static/images/relics/frozen_egg.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 94
   },
@@ -1372,30 +1459,32 @@
     "rarity": "Seltenes Relikt",
     "pool": "defect",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/emotion_chip.png",
+    "image_url": "/static/images/relics/emotion_chip.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 95
   },
   {
     "id": "GHOST_SEED",
     "name": "Geistersaat",
-    "description": "[gold]Schläge[/gold] und [gold]Verteidigungen[/gold] sind [gold]flüchtig[/gold].",
-    "description_raw": "[gold]Schläge[/gold] und [gold]Verteidigungen[/gold] sind [gold]flüchtig[/gold].",
+    "description": "[gold]Schläge[/gold] und [gold]Verteidigungen[/gold] erhalten [gold]Flüchtig[/gold].",
+    "description_raw": "[gold]Schläge[/gold] und [gold]Verteidigungen[/gold] erhalten [gold]Flüchtig[/gold].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/ghost_seed.png",
+    "image_url": "/static/images/relics/ghost_seed.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 136
   },
@@ -1408,8 +1497,9 @@
     "rarity": "Startrelikt",
     "pool": "defect",
     "merchant_price": null,
-    "image_url": "/static/images/relics/infused_core.png",
+    "image_url": "/static/images/relics/infused_core.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Starter",
     "compendium_order": 4
   },
@@ -1422,26 +1512,28 @@
     "rarity": "Ereignis-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/history_course.png",
+    "image_url": "/static/images/relics/history_course.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 262
+    "compendium_order": 267
   },
   {
     "id": "MOLTEN_EGG",
     "name": "Geschmolzenes Ei",
-    "description": "Immer wenn du deinem [gold]Deck[/gold] einen Angriff hinzufügst, [gold]verbessere[/gold] sie.",
-    "description_raw": "Immer wenn du deinem [gold]Deck[/gold] einen Angriff hinzufügst, [gold]verbessere[/gold] sie.",
+    "description": "Immer wenn du einen Angriff in dein [gold]Deck[/gold] nimmst, [gold]Verbessere[/gold] ihn.",
+    "description_raw": "Immer wenn du einen Angriff in dein [gold]Deck[/gold] nimmst, [gold]Verbessere[/gold] ihn.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/molten_egg.png",
+    "image_url": "/static/images/relics/molten_egg.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 96
   },
@@ -1454,10 +1546,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/blessed_antler.png",
+    "image_url": "/static/images/relics/blessed_antler.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 186
+    "compendium_order": 187
   },
   {
     "id": "CRACKED_CORE",
@@ -1468,42 +1561,45 @@
     "rarity": "Startrelikt",
     "pool": "defect",
     "merchant_price": null,
-    "image_url": "/static/images/relics/cracked_core.png",
+    "image_url": "/static/images/relics/cracked_core.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Starter",
     "compendium_order": 5
   },
   {
     "id": "GIRYA",
     "name": "Girya",
-    "description": "Du kannst jetzt [gold]Stärke[/gold] an [gold]Lagerfeuern[/gold] erhalten (bis zu [blue]3[/blue] Mal)",
-    "description_raw": "Du kannst jetzt [gold]Stärke[/gold] an [gold]Lagerfeuern[/gold] erhalten (bis zu [blue]3[/blue] Mal)",
+    "description": "Du kannst jetzt [gold]Stärke[/gold] an [gold]Lagerfeuern[/gold] erhalten (höchstens [blue]3[/blue] Mal).",
+    "description_raw": "Du kannst jetzt [gold]Stärke[/gold] an [gold]Lagerfeuern[/gold] erhalten (höchstens [blue]3[/blue] Mal).",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/girya.png",
+    "image_url": "/static/images/relics/girya.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 97
   },
   {
     "id": "GLASS_EYE",
     "name": "Glasauge",
-    "description": "Erhalte beim Aufheben [blue]2[/blue] [gold]gewöhnliche[/gold] Karten, [blue]2[/blue] [gold]ungewöhnliche[/gold] Karten und [blue]1[/blue] [gold]seltene[/gold] Karte.",
-    "description_raw": "Erhalte beim Aufheben [blue]2[/blue] [gold]gewöhnliche[/gold] Karten, [blue]2[/blue] [gold]ungewöhnliche[/gold] Karten und [blue]1[/blue] [gold]seltene[/gold] Karte.",
+    "description": "Erhalte beim Aufheben [blue]2[/blue] [gold]Gewöhnliche[/gold] Karten, [blue]2[/blue] [gold]Ungewöhnliche[/gold] Karten und [blue]1[/blue] [gold]Seltene[/gold] Karte.",
+    "description_raw": "Erhalte beim Aufheben [blue]2[/blue] [gold]Gewöhnliche[/gold] Karten, [blue]2[/blue] [gold]Ungewöhnliche[/gold] Karten und [blue]1[/blue] [gold]Seltene[/gold] Karte.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/glass_eye.png",
+    "image_url": "/static/images/relics/glass_eye.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 187
+    "compendium_order": 188
   },
   {
     "id": "GLITTER",
@@ -1514,10 +1610,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/glitter.png",
+    "image_url": "/static/images/relics/glitter.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 188
+    "compendium_order": 189
   },
   {
     "id": "EMBER_TEA",
@@ -1528,26 +1625,24 @@
     "rarity": "Ereignis-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/ember_tea.png",
+    "image_url": "/static/images/relics/ember_tea.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 263
+    "compendium_order": 268
   },
   {
     "id": "LUCKY_FYSH",
     "name": "Glücksfysh",
-    "description": "Immer wenn du deinem [gold]Deck[/gold] eine Karte hinzufügst, erhalte [blue]15[/blue] [gold]Gold[/gold].",
-    "description_raw": "Immer wenn du deinem [gold]Deck[/gold] eine Karte hinzufügst, erhalte [blue]{Gold}[/blue] [gold]Gold[/gold].",
+    "description": "Immer wenn du eine Karte in dein [gold]Deck[/gold] nimmst, erhalte [blue]15[/blue] [gold]Gold[/gold].",
+    "description_raw": "Immer wenn du eine Karte in dein [gold]Deck[/gold] nimmst, erhalte [blue]{Gold}[/blue] [gold]Gold[/gold].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
-    "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
-    },
-    "image_url": "/static/images/relics/lucky_fysh.png",
+    "merchant_price": null,
+    "image_url": "/static/images/relics/lucky_fysh.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
     "compendium_order": 52
   },
@@ -1560,12 +1655,13 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "defect",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/gold_plated_cables.png",
+    "image_url": "/static/images/relics/gold_plated_cables.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
     "compendium_order": 53
   },
@@ -1578,10 +1674,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/golden_pearl.png",
+    "image_url": "/static/images/relics/golden_pearl.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 189
+    "compendium_order": 190
   },
   {
     "id": "GOLDEN_COMPASS",
@@ -1592,26 +1689,28 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/golden_compass.png",
+    "image_url": "/static/images/relics/golden_compass.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 190
+    "compendium_order": 191
   },
   {
     "id": "JOSS_PAPER",
     "name": "Goldpapier",
-    "description": "Immer wenn du [blue]5[/blue] Karten [gold]erschöpfst[/gold], ziehe [blue]1[/blue] Karte.",
-    "description_raw": "Immer wenn du [blue]{ExhaustAmount}[/blue] Karten [gold]erschöpfst[/gold], ziehe [blue]{Cards}[/blue] {Cards:plural:Karte|Karten}.",
+    "description": "Immer wenn du [blue]5[/blue] Karten [gold]Erschöpfst[/gold], ziehe [blue]1[/blue] Karte.",
+    "description_raw": "Immer wenn du [blue]{ExhaustAmount}[/blue] Karten [gold]Erschöpfst[/gold], ziehe [blue]{Cards}[/blue] {Cards:plural:Karte|Karten}.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/joss_paper.png",
+    "image_url": "/static/images/relics/joss_paper.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
     "compendium_order": 54
   },
@@ -1624,10 +1723,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/seal_of_gold.png",
+    "image_url": "/static/images/relics/seal_of_gold.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 191
+    "compendium_order": 192
   },
   {
     "id": "GREMLIN_HORN",
@@ -1638,28 +1738,30 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/gremlin_horn.png",
+    "image_url": "/static/images/relics/gremlin_horn.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
     "compendium_order": 55
   },
   {
     "id": "LARGE_CAPSULE",
     "name": "Große Kapsel",
-    "description": "Erhalte beim Aufheben [blue]2[/blue] zufällige [gold]Relikte[/gold]. Erhalte einen zusätzlichen [gold]Schlag[/gold] und [gold]Verteidigen[/gold] in dein [gold]Deck[/gold].",
-    "description_raw": "Erhalte beim Aufheben [blue]{Relics}[/blue] zufällige{Relics:plural:s [gold]Relikt[/gold]| [gold]Relikte[/gold]}. Erhalte einen zusätzlichen [gold]Schlag[/gold] und [gold]Verteidigen[/gold] in dein [gold]Deck[/gold].",
+    "description": "Erhalte beim Aufheben [blue]2[/blue] zufällige [gold]Relikte[/gold]. Nimm einen zusätzlichen [gold]Schlag[/gold] und [gold]Verteidigen[/gold] in dein [gold]Deck[/gold].",
+    "description_raw": "Erhalte beim Aufheben [blue]{Relics}[/blue] zufällige{Relics:plural:s [gold]Relikt[/gold]| [gold]Relikte[/gold]}. Nimm einen zusätzlichen [gold]Schlag[/gold] und [gold]Verteidigen[/gold] in dein [gold]Deck[/gold].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/large_capsule.png",
+    "image_url": "/static/images/relics/large_capsule.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 192
+    "compendium_order": 193
   },
   {
     "id": "BIG_HAT",
@@ -1670,12 +1772,13 @@
     "rarity": "Seltenes Relikt",
     "pool": "necrobinder",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/big_hat.png",
+    "image_url": "/static/images/relics/big_hat.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 98
   },
@@ -1688,10 +1791,11 @@
     "rarity": "Ereignis-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/big_mushroom.png",
+    "image_url": "/static/images/relics/big_mushroom.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 264
+    "compendium_order": 269
   },
   {
     "id": "DIVINE_RIGHT",
@@ -1702,8 +1806,9 @@
     "rarity": "Startrelikt",
     "pool": "regent",
     "merchant_price": null,
-    "image_url": "/static/images/relics/divine_right.png",
+    "image_url": "/static/images/relics/divine_right.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Starter",
     "compendium_order": 6
   },
@@ -1716,8 +1821,9 @@
     "rarity": "Startrelikt",
     "pool": "regent",
     "merchant_price": null,
-    "image_url": "/static/images/relics/divine_destiny.png",
+    "image_url": "/static/images/relics/divine_destiny.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Starter",
     "compendium_order": 7
   },
@@ -1730,12 +1836,13 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/belt_buckle.png",
+    "image_url": "/static/images/relics/belt_buckle.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 137
   },
@@ -1748,12 +1855,13 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/gorget.png",
+    "image_url": "/static/images/relics/gorget.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
     "compendium_order": 21
   },
@@ -1766,10 +1874,11 @@
     "rarity": "Ereignis-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/hand_drill.png",
+    "image_url": "/static/images/relics/hand_drill.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 265
+    "compendium_order": 270
   },
   {
     "id": "TOUGH_BANDAGES",
@@ -1780,28 +1889,30 @@
     "rarity": "Seltenes Relikt",
     "pool": "silent",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/tough_bandages.png",
+    "image_url": "/static/images/relics/tough_bandages.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 99
   },
   {
     "id": "PRECARIOUS_SHEARS",
     "name": "Heikle Schere",
-    "description": "Entferne beim Aufheben [blue]2[/blue] Karten aus deinem [gold]Deck[/gold] und nimm [red]13[/red] Schaden.",
-    "description_raw": "Entferne beim Aufheben [blue]{Cards}[/blue] {Cards:plural:Karte|Karten} aus deinem [gold]Deck[/gold] und nimm [red]{Damage}[/red] Schaden.",
+    "description": "Entferne beim Aufheben [blue]2[/blue] Karten aus deinem [gold]Deck[/gold] und verliere [blue]16[/blue] TP.",
+    "description_raw": "Entferne beim Aufheben [blue]{Cards}[/blue] {Cards:plural:Karte|Karten} aus deinem [gold]Deck[/gold] und verliere [blue]{Damage}[/blue] TP.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/precarious_shears.png",
+    "image_url": "/static/images/relics/precarious_shears.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 193
+    "compendium_order": 194
   },
   {
     "id": "HORN_CLEAT",
@@ -1812,12 +1923,13 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/horn_cleat.png",
+    "image_url": "/static/images/relics/horn_cleat.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
     "compendium_order": 56
   },
@@ -1830,10 +1942,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/beautiful_bracelet.png",
+    "image_url": "/static/images/relics/beautiful_bracelet.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 194
+    "compendium_order": 195
   },
   {
     "id": "UNCEASING_TOP",
@@ -1844,12 +1957,13 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/unceasing_top.png",
+    "image_url": "/static/images/relics/unceasing_top.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 100
   },
@@ -1862,10 +1976,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/jeweled_mask.png",
+    "image_url": "/static/images/relics/jeweled_mask.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 195
+    "compendium_order": 196
   },
   {
     "id": "JUZU_BRACELET",
@@ -1876,12 +1991,13 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/juzu_bracelet.png",
+    "image_url": "/static/images/relics/juzu_bracelet.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
     "compendium_order": 22
   },
@@ -1894,12 +2010,13 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/captains_wheel.png",
+    "image_url": "/static/images/relics/captains_wheel.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 101
   },
@@ -1912,12 +2029,13 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/cauldron.png",
+    "image_url": "/static/images/relics/cauldron.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 138
   },
@@ -1930,28 +2048,30 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/kifuda.png",
+    "image_url": "/static/images/relics/kifuda.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 139
   },
   {
     "id": "SCROLL_BOXES",
     "name": "Kisten mit Schriftrollen",
-    "description": "Verliere beim Aufheben alles [gold]Gold[/gold] und wähle [blue]1[/blue] von [blue]2[/blue] Kartenpaketen, das du deinem [gold]Deck[/gold] hinzufügst.",
-    "description_raw": "Verliere beim Aufheben alles [gold]Gold[/gold] und wähle [blue]1[/blue] von [blue]2[/blue] Kartenpaketen, das du deinem [gold]Deck[/gold] hinzufügst.",
+    "description": "Verliere beim Aufheben alles [gold]Gold[/gold] und wähle [blue]1[/blue] von [blue]2[/blue] Kartenpaketen, die du in dein [gold]Deck[/gold] nimmst.",
+    "description_raw": "Verliere beim Aufheben alles [gold]Gold[/gold] und wähle [blue]1[/blue] von [blue]2[/blue] Kartenpaketen, die du in dein [gold]Deck[/gold] nimmst.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/scroll_boxes.png",
+    "image_url": "/static/images/relics/scroll_boxes.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 196
+    "compendium_order": 197
   },
   {
     "id": "CLAWS",
@@ -1962,10 +2082,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/claws.png",
+    "image_url": "/static/images/relics/claws.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 197
+    "compendium_order": 198
   },
   {
     "id": "SMALL_CAPSULE",
@@ -1976,10 +2097,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/small_capsule.png",
+    "image_url": "/static/images/relics/small_capsule.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 198
+    "compendium_order": 199
   },
   {
     "id": "RINGING_TRIANGLE",
@@ -1990,14 +2112,30 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/ringing_triangle.png",
+    "image_url": "/static/images/relics/ringing_triangle.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 140
+  },
+  {
+    "id": "HEFTY_TABLET",
+    "name": "Klobige Tafel",
+    "description": "Wähle beim Aufheben [blue]1[/blue] von [blue]3[/blue] Seltenen Karten, die du in dein [gold]Deck[/gold] nimmst und nimm [blue]1[/blue] [red]Verletzung[/red] in dein [gold]Deck[/gold].",
+    "description_raw": "Wähle beim Aufheben [blue]1[/blue] von [blue]{Cards}[/blue] Seltenen Karten, die du in dein [gold]Deck[/gold] nimmst und nimm [blue]1[/blue] [red]Verletzung[/red] in dein [gold]Deck[/gold].",
+    "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
+    "rarity": "Ahnen-Relikt",
+    "pool": "shared",
+    "merchant_price": null,
+    "image_url": "/static/images/relics/hefty_tablet.webp",
+    "image_variants": null,
+    "notes": null,
+    "rarity_key": "Ancient",
+    "compendium_order": 200
   },
   {
     "id": "BONE_FLUTE",
@@ -2008,12 +2146,13 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "necrobinder",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/bone_flute.png",
+    "image_url": "/static/images/relics/bone_flute.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
     "compendium_order": 23
   },
@@ -2026,10 +2165,11 @@
     "rarity": "Ereignis-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/bone_tea.png",
+    "image_url": "/static/images/relics/bone_tea.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 266
+    "compendium_order": 271
   },
   {
     "id": "GNARLED_HAMMER",
@@ -2040,12 +2180,13 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/gnarled_hammer.png",
+    "image_url": "/static/images/relics/gnarled_hammer.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 141
   },
@@ -2058,12 +2199,13 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "silent",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/twisted_funnel.png",
+    "image_url": "/static/images/relics/twisted_funnel.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
     "compendium_order": 57
   },
@@ -2076,12 +2218,13 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/festive_popper.png",
+    "image_url": "/static/images/relics/festive_popper.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
     "compendium_order": 24
   },
@@ -2094,12 +2237,13 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/screaming_flagon.png",
+    "image_url": "/static/images/relics/screaming_flagon.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 142
   },
@@ -2112,12 +2256,13 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/war_paint.png",
+    "image_url": "/static/images/relics/war_paint.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
     "compendium_order": 25
   },
@@ -2130,10 +2275,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/war_hammer.png",
+    "image_url": "/static/images/relics/war_hammer.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 199
+    "compendium_order": 201
   },
   {
     "id": "CHANDELIER",
@@ -2144,30 +2290,32 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/chandelier.png",
+    "image_url": "/static/images/relics/chandelier.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 102
   },
   {
     "id": "RIPPLE_BASIN",
     "name": "Kräuselbecken",
-    "description": "Falls du in deinem Zug keine Angriffe gespielt hast, erhalte [blue]4[/blue] [gold]Block[/gold].",
-    "description_raw": "Falls du in deinem Zug keine Angriffe gespielt hast, erhalte [blue]{Block}[/blue] [gold]Block[/gold].",
+    "description": "Erhalte [blue]4[/blue] [gold]Block[/gold] am Ende jedes Zuges, in dem du keine Angriffe gespielt hast.",
+    "description_raw": "Erhalte [blue]{Block}[/blue] [gold]Block[/gold] am Ende jedes Zuges, in dem du keine Angriffe gespielt hast.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/ripple_basin.png",
+    "image_url": "/static/images/relics/ripple_basin.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
     "compendium_order": 58
   },
@@ -2180,30 +2328,32 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/kunai.png",
+    "image_url": "/static/images/relics/kunai.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 103
   },
   {
     "id": "KUSARIGAMA",
     "name": "Kusarigama",
-    "description": "Jedes Mal, wenn du [blue]3[/blue] Angriffe in einem Zug spielst, füge einem zufälligen Gegner [blue]6[/blue] Schaden zu.",
-    "description_raw": "Jedes Mal, wenn du [blue]{Cards}[/blue] {Cards:plural:Angriff|Angriffe} in einem Zug spielst, füge einem zufälligen Gegner [blue]{Damage}[/blue] Schaden zu.",
+    "description": "Immer wenn du [blue]3[/blue] Angriffe in einem Zug spielst, füge einem zufälligen Gegner [blue]6[/blue] Schaden zu.",
+    "description_raw": "Immer wenn du [blue]{Cards}[/blue] {Cards:plural:Angriff|Angriffe} in einem Zug spielst, füge einem zufälligen Gegner [blue]{Damage}[/blue] Schaden zu.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/kusarigama.png",
+    "image_url": "/static/images/relics/kusarigama.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
     "compendium_order": 59
   },
@@ -2216,12 +2366,13 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/royal_stamp.png",
+    "image_url": "/static/images/relics/royal_stamp.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 143
   },
@@ -2234,10 +2385,11 @@
     "rarity": "Ereignis-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/royal_poison.png",
+    "image_url": "/static/images/relics/royal_poison.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 267
+    "compendium_order": 272
   },
   {
     "id": "PUMPKIN_CANDLE",
@@ -2248,10 +2400,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/pumpkin_candle.png",
+    "image_url": "/static/images/relics/pumpkin_candle.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 200
+    "compendium_order": 202
   },
   {
     "id": "LANTERN",
@@ -2262,12 +2415,13 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/lantern.png",
+    "image_url": "/static/images/relics/lantern.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
     "compendium_order": 26
   },
@@ -2280,12 +2434,13 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/lava_lamp.png",
+    "image_url": "/static/images/relics/lava_lamp.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 144
   },
@@ -2298,10 +2453,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/lava_rock.png",
+    "image_url": "/static/images/relics/lava_rock.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 201
+    "compendium_order": 203
   },
   {
     "id": "YUMMY_COOKIE",
@@ -2312,16 +2468,17 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/yummy_cookie.png",
+    "image_url": "/static/images/relics/yummy_cookie.webp",
     "image_variants": {
-      "Ironclad": "/static/images/relics/yummy_cookie_ironclad.png",
-      "Silent": "/static/images/relics/yummy_cookie_silent.png",
-      "Defect": "/static/images/relics/yummy_cookie_defect.png",
-      "Necrobinder": "/static/images/relics/yummy_cookie_necrobinder.png",
-      "Regent": "/static/images/relics/yummy_cookie_regent.png"
+      "Ironclad": "/static/images/relics/yummy_cookie_ironclad.webp",
+      "Silent": "/static/images/relics/yummy_cookie_silent.webp",
+      "Defect": "/static/images/relics/yummy_cookie_defect.webp",
+      "Necrobinder": "/static/images/relics/yummy_cookie_necrobinder.webp",
+      "Regent": "/static/images/relics/yummy_cookie_regent.webp"
     },
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 202
+    "compendium_order": 204
   },
   {
     "id": "EMPTY_CAGE",
@@ -2332,10 +2489,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/empty_cage.png",
+    "image_url": "/static/images/relics/empty_cage.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 203
+    "compendium_order": 205
   },
   {
     "id": "LEES_WAFFLE",
@@ -2346,12 +2504,13 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/lees_waffle.png",
+    "image_url": "/static/images/relics/lees_waffle.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 145
   },
@@ -2368,26 +2527,28 @@
       "min": 42,
       "max": 57
     },
-    "image_url": "/static/images/relics/fake_lees_waffle.png",
+    "image_url": "/static/images/relics/fake_lees_waffle.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 268
+    "compendium_order": 273
   },
   {
     "id": "BOOKMARK",
     "name": "Lesezeichen",
-    "description": "Reduziere am Ende jedes Zuges die Kosten einer zufälligen [gold]behaltenen[/gold] Karte um [blue]1[/blue], bis sie gespielt wird.",
-    "description_raw": "Reduziere am Ende jedes Zuges die Kosten einer zufälligen [gold]behaltenen[/gold] Karte um [blue]1[/blue], bis sie gespielt wird.",
+    "description": "Reduziere am Ende jedes Zuges die Kosten einer zufälligen [gold]Behaltenen[/gold] Karte um [blue]1[/blue], bis sie gespielt wird.",
+    "description_raw": "Reduziere am Ende jedes Zuges die Kosten einer zufälligen [gold]Behaltenen[/gold] Karte um [blue]1[/blue], bis sie gespielt wird.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Seltenes Relikt",
     "pool": "necrobinder",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/bookmark.png",
+    "image_url": "/static/images/relics/bookmark.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 104
   },
@@ -2400,12 +2561,13 @@
     "rarity": "Seltenes Relikt",
     "pool": "regent",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/lunar_pastry.png",
+    "image_url": "/static/images/relics/lunar_pastry.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 105
   },
@@ -2418,12 +2580,13 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/mango.png",
+    "image_url": "/static/images/relics/mango.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 106
   },
@@ -2440,10 +2603,11 @@
       "min": 42,
       "max": 57
     },
-    "image_url": "/static/images/relics/fake_mango.png",
+    "image_url": "/static/images/relics/fake_mango.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 269
+    "compendium_order": 274
   },
   {
     "id": "CLOAK_CLASP",
@@ -2454,62 +2618,62 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/cloak_clasp.png",
+    "image_url": "/static/images/relics/cloak_clasp.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 107
   },
   {
     "id": "SEA_GLASS",
     "name": "Meeresglas",
-    "description": "Sieh [blue]15[/blue] Karten von einem anderen Charakter. Wähle beliebig viele davon, die du deinem [gold]Deck[/gold] hinzufügst.",
-    "description_raw": "Sieh [blue]{Cards}[/blue] Karten von {Character.StringValue:cond:[gold]{}[/gold]|einem anderen Charakter}. Wähle beliebig viele davon, die du deinem [gold]Deck[/gold] hinzufügst.",
+    "description": "Sieh [blue]15[/blue] Karten von einem anderen Charakter. Wähle beliebig viele davon, die du in dein [gold]Deck[/gold] nimmst.",
+    "description_raw": "Sieh [blue]{Cards}[/blue] Karten von {Character.StringValue:cond:[gold]{}[/gold]|einem anderen Charakter}. Wähle beliebig viele davon, die du in dein [gold]Deck[/gold] nimmst.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/sea_glass.png",
+    "image_url": "/static/images/relics/sea_glass.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 204
+    "compendium_order": 206
   },
   {
     "id": "BOWLER_HAT",
     "name": "Melone",
-    "description": "Erhalte [blue]20%[/blue] mehr [gold]Gold[/gold].",
-    "description_raw": "Erhalte [blue]20%[/blue] mehr [gold]Gold[/gold].",
+    "description": "Erhalte [blue]25%[/blue] mehr [gold]Gold[/gold].",
+    "description_raw": "Erhalte [blue]{GoldIncrease:percentMore()}%[/blue] mehr [gold]Gold[/gold].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
-    "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
-    },
-    "image_url": "/static/images/relics/bowler_hat.png",
+    "merchant_price": null,
+    "image_url": "/static/images/relics/bowler_hat.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
     "compendium_order": 60
   },
   {
     "id": "METRONOME",
     "name": "Metronom",
-    "description": "Wenn du zum ersten Mal in einem Kampf [blue]7[/blue] [gold]Orbs[/gold] [gold]erschaffen[/gold] hast, füge ALLEN Gegnern [blue]30[/blue] Schaden zu.",
-    "description_raw": "Wenn du zum ersten Mal in einem Kampf [blue]{OrbCount}[/blue] [gold]Orbs[/gold] [gold]erschaffen[/gold] hast, füge ALLEN Gegnern [blue]{Damage}[/blue] Schaden zu.",
+    "description": "Wenn du zum ersten Mal in einem Kampf [blue]7[/blue] [gold]Orbs[/gold] [gold]Erschaffen[/gold] hast, füge ALLEN Gegnern [blue]30[/blue] Schaden zu.",
+    "description_raw": "Wenn du zum ersten Mal in einem Kampf [blue]{OrbCount}[/blue] [gold]Orbs[/gold] [gold]Erschaffen[/gold] hast, füge ALLEN Gegnern [blue]{Damage}[/blue] Schaden zu.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Seltenes Relikt",
     "pool": "defect",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/metronome.png",
+    "image_url": "/static/images/relics/metronome.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 108
   },
@@ -2522,12 +2686,13 @@
     "rarity": "Seltenes Relikt",
     "pool": "regent",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/mini_regent.png",
+    "image_url": "/static/images/relics/mini_regent.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 109
   },
@@ -2540,12 +2705,13 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/miniature_cannon.png",
+    "image_url": "/static/images/relics/miniature_cannon.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
     "compendium_order": 61
   },
@@ -2558,12 +2724,13 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/miniature_tent.png",
+    "image_url": "/static/images/relics/miniature_tent.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 146
   },
@@ -2576,12 +2743,13 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/membership_card.png",
+    "image_url": "/static/images/relics/membership_card.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 147
   },
@@ -2594,10 +2762,11 @@
     "rarity": "Ereignis-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/mr_struggles.png",
+    "image_url": "/static/images/relics/mr_struggles.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 270
+    "compendium_order": 275
   },
   {
     "id": "MUMMIFIED_HAND",
@@ -2608,32 +2777,34 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/mummified_hand.png",
+    "image_url": "/static/images/relics/mummified_hand.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 110
   },
   {
     "id": "BAG_OF_MARBLES",
     "name": "Murmelsack",
-    "description": "Wende zu Beginn jedes Kampfes [blue]1[/blue] [gold]Verwundbar[/gold] auf ALLE Gegner an.",
-    "description_raw": "Wende zu Beginn jedes Kampfes [blue]{VulnerablePower}[/blue] [gold]Verwundbar[/gold] auf ALLE Gegner an.",
+    "description": "Wende zu Beginn jedes Kampfes auf ALLE Gegner [blue]1[/blue] [gold]Verwundbar[/gold] an.",
+    "description_raw": "Wende zu Beginn jedes Kampfes auf ALLE Gegner [blue]{VulnerablePower}[/blue] [gold]Verwundbar[/gold] an.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
-    "rarity": "Ungewöhnliches Relikt",
+    "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/bag_of_marbles.png",
+    "image_url": "/static/images/relics/bag_of_marbles.webp",
     "image_variants": null,
-    "rarity_key": "Uncommon",
-    "compendium_order": 62
+    "notes": null,
+    "rarity_key": "Common",
+    "compendium_order": 27
   },
   {
     "id": "MYSTIC_LIGHTER",
@@ -2644,28 +2815,30 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/mystic_lighter.png",
+    "image_url": "/static/images/relics/mystic_lighter.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 148
   },
   {
     "id": "STORYBOOK",
     "name": "Märchenbuch",
-    "description": "Erhalte beim Aufheben [blue]1[/blue] [gold]Hellste Flamme[/gold] in dein [gold]Deck[/gold].",
-    "description_raw": "Erhalte beim Aufheben [blue]1[/blue] [gold]Hellste Flamme[/gold] in dein [gold]Deck[/gold].",
+    "description": "Nimm beim Aufheben [blue]1[/blue] [gold]Hellste Flamme[/gold] in dein [gold]Deck[/gold].",
+    "description_raw": "Nimm beim Aufheben [blue]1[/blue] [gold]Hellste Flamme[/gold] in dein [gold]Deck[/gold].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/storybook.png",
+    "image_url": "/static/images/relics/storybook.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 205
+    "compendium_order": 207
   },
   {
     "id": "NUTRITIOUS_OYSTER",
@@ -2676,10 +2849,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/nutritious_oyster.png",
+    "image_url": "/static/images/relics/nutritious_oyster.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 206
+    "compendium_order": 208
   },
   {
     "id": "NUTRITIOUS_SOUP",
@@ -2690,24 +2864,56 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/nutritious_soup.png",
+    "image_url": "/static/images/relics/nutritious_soup.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 207
+    "compendium_order": 209
   },
   {
     "id": "NEOWS_TORMENT",
     "name": "Neows Folter",
-    "description": "Erhalte beim Aufheben [blue]1[/blue] [gold]Neows Wut[/gold] in dein [gold]Deck[/gold].",
-    "description_raw": "Erhalte beim Aufheben [blue]1[/blue] [gold]Neows Wut[/gold] in dein [gold]Deck[/gold].",
+    "description": "Nimm beim Aufheben [blue]1[/blue] [gold]Neows Wut[/gold] in dein [gold]Deck[/gold].",
+    "description_raw": "Nimm beim Aufheben [blue]1[/blue] [gold]Neows Wut[/gold] in dein [gold]Deck[/gold].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/neows_torment.png",
+    "image_url": "/static/images/relics/neows_torment.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 208
+    "compendium_order": 210
+  },
+  {
+    "id": "NEOWS_BONES",
+    "name": "Neows Knochen",
+    "description": "Erhalte beim Aufheben [blue]2[/blue] [gold]zufällige Neow-Relikte[/gold]. Nimm [blue]1[/blue] [red]zufälligen [red]Fluch[/red][/red] in dein [gold]Deck[/gold].",
+    "description_raw": "Erhalte beim Aufheben [blue]{Relics}[/blue] [gold]{Relics:plural:zufälliges Neow-Relikt|zufällige Neow-Relikte}[/gold]. Nimm [blue]{Curses}[/blue] [red]{Curses:plural:zufälligen [red]Fluch[/red]|zufällige [red]Flüche[/red]}[/red] in dein [gold]Deck[/gold].",
+    "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
+    "rarity": "Ahnen-Relikt",
+    "pool": "shared",
+    "merchant_price": null,
+    "image_url": "/static/images/relics/neows_bones.webp",
+    "image_variants": null,
+    "notes": null,
+    "rarity_key": "Ancient",
+    "compendium_order": 211
+  },
+  {
+    "id": "NEOWS_TALISMAN",
+    "name": "Neows Talisman",
+    "description": "[gold]Verbessere[/gold] beim Aufheben [blue]1[/blue] deiner [gold]Schläge[/gold] und [blue]1[/blue] deiner [gold]Verteidigen[/gold].",
+    "description_raw": "[gold]Verbessere[/gold] beim Aufheben [blue]1[/blue] deiner [gold]Schläge[/gold] und [blue]1[/blue] deiner [gold]Verteidigen[/gold].",
+    "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
+    "rarity": "Ahnen-Relikt",
+    "pool": "shared",
+    "merchant_price": null,
+    "image_url": "/static/images/relics/neows_talisman.webp",
+    "image_variants": null,
+    "notes": null,
+    "rarity_key": "Ancient",
+    "compendium_order": 212
   },
   {
     "id": "NEW_LEAF",
@@ -2718,10 +2924,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/new_leaf.png",
+    "image_url": "/static/images/relics/new_leaf.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 209
+    "compendium_order": 213
   },
   {
     "id": "NINJA_SCROLL",
@@ -2732,12 +2939,13 @@
     "rarity": "Laden-Relikt",
     "pool": "silent",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/ninja_scroll.png",
+    "image_url": "/static/images/relics/ninja_scroll.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 149
   },
@@ -2750,30 +2958,32 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/nunchaku.png",
+    "image_url": "/static/images/relics/nunchaku.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 63
+    "compendium_order": 62
   },
   {
     "id": "ORANGE_DOUGH",
     "name": "Orangener Teig",
-    "description": "Erhalte zu Beginn jedes Kampfes [blue]2[/blue] zufällige farblose Karten auf deine [gold]Hand[/gold].",
-    "description_raw": "Erhalte zu Beginn jedes Kampfes [blue]{Cards}[/blue] zufällige farblose {Cards:plural:Karte|Karten} auf deine [gold]Hand[/gold].",
+    "description": "Erhalte zu Beginn jedes Kampfes [blue]2[/blue] zufällige Farblose Karten auf deine [gold]Hand[/gold].",
+    "description_raw": "Erhalte zu Beginn jedes Kampfes [blue]{Cards}[/blue] zufällige Farblose {Cards:plural:Karte|Karten} auf deine [gold]Hand[/gold].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Seltenes Relikt",
     "pool": "regent",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/orange_dough.png",
+    "image_url": "/static/images/relics/orange_dough.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 111
   },
@@ -2786,14 +2996,15 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/orichalcum.png",
+    "image_url": "/static/images/relics/orichalcum.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 64
+    "compendium_order": 63
   },
   {
     "id": "FAKE_ORICHALCUM",
@@ -2808,24 +3019,26 @@
       "min": 42,
       "max": 57
     },
-    "image_url": "/static/images/relics/fake_orichalcum.png",
+    "image_url": "/static/images/relics/fake_orichalcum.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 271
+    "compendium_order": 276
   },
   {
     "id": "PAELS_EYE",
     "name": "Paels Auge",
-    "description": "Wenn du zum ersten Mal in einem Kampf deinen Zug beendest, ohne Karten zu spielen, [gold]erschöpfe[/gold] deine [gold]Hand[/gold] und mache einen Extrazug.",
-    "description_raw": "Wenn du zum ersten Mal in einem Kampf deinen Zug beendest, ohne Karten zu spielen, [gold]erschöpfe[/gold] deine [gold]Hand[/gold] und mache einen Extrazug.",
+    "description": "Wenn du zum ersten Mal in einem Kampf deinen Zug beendest, ohne Karten zu spielen, [gold]Erschöpfe[/gold] deine [gold]Hand[/gold] und mache einen Extrazug.",
+    "description_raw": "Wenn du zum ersten Mal in einem Kampf deinen Zug beendest, ohne Karten zu spielen, [gold]Erschöpfe[/gold] deine [gold]Hand[/gold] und mache einen Extrazug.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/paels_eye.png",
+    "image_url": "/static/images/relics/paels_eye.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 210
+    "compendium_order": 214
   },
   {
     "id": "PAELS_BLOOD",
@@ -2836,10 +3049,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/paels_blood.png",
+    "image_url": "/static/images/relics/paels_blood.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 211
+    "compendium_order": 215
   },
   {
     "id": "PAELS_FLESH",
@@ -2850,10 +3064,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/paels_flesh.png",
+    "image_url": "/static/images/relics/paels_flesh.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 212
+    "compendium_order": 216
   },
   {
     "id": "PAELS_WING",
@@ -2864,24 +3079,26 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/paels_wing.png",
+    "image_url": "/static/images/relics/paels_wing.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 213
+    "compendium_order": 217
   },
   {
     "id": "PAELS_HORN",
     "name": "Paels Horn",
-    "description": "Erhalte beim Aufheben [blue]2[/blue] [gold]Entspannen[/gold] in dein [gold]Deck[/gold].",
-    "description_raw": "Erhalte beim Aufheben [blue]2[/blue] [gold]Entspannen[/gold] in dein [gold]Deck[/gold].",
+    "description": "Nimm beim Aufheben [blue]2[/blue] [gold]Entspannen[/gold] in dein [gold]Deck[/gold].",
+    "description_raw": "Nimm beim Aufheben [blue]2[/blue] [gold]Entspannen[/gold] in dein [gold]Deck[/gold].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/paels_horn.png",
+    "image_url": "/static/images/relics/paels_horn.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 214
+    "compendium_order": 218
   },
   {
     "id": "PAELS_CLAW",
@@ -2892,10 +3109,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/paels_claw.png",
+    "image_url": "/static/images/relics/paels_claw.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 215
+    "compendium_order": 219
   },
   {
     "id": "PAELS_LEGION",
@@ -2906,10 +3124,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/paels_legion.png",
+    "image_url": "/static/images/relics/paels_legion.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 216
+    "compendium_order": 220
   },
   {
     "id": "PAELS_TEARS",
@@ -2920,10 +3139,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/paels_tears.png",
+    "image_url": "/static/images/relics/paels_tears.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 217
+    "compendium_order": 221
   },
   {
     "id": "PAELS_GROWTH",
@@ -2934,24 +3154,26 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/paels_growth.png",
+    "image_url": "/static/images/relics/paels_growth.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 218
+    "compendium_order": 222
   },
   {
     "id": "PAELS_TOOTH",
-    "name": "Paels Zähne",
-    "description": "Entferne beim Aufheben [blue]5[/blue] Karten aus deinem [gold]Deck[/gold]. Nach jedem Kampf bekommst du zufällig [blue]1[/blue] [gold]verbessert[/gold] zurück.",
-    "description_raw": "Entferne beim Aufheben [blue]{Cards}[/blue] {Cards:plural:Karte|Karten} aus deinem [gold]Deck[/gold]. Nach jedem Kampf bekommst du zufällig [blue]1[/blue] [gold]verbessert[/gold] zurück.{CardTitles.StringValue:cond:\n\nRestliche Karten:\n{}|}",
+    "name": "Paels Zahn",
+    "description": "Entferne beim Aufheben [blue]5[/blue] Karten aus deinem [gold]Deck[/gold]. Nach jedem Kampf nimmst du zufällig [blue]1[/blue] [gold]Verbessert[/gold] wieder zurück.",
+    "description_raw": "Entferne beim Aufheben [blue]{Cards}[/blue] {Cards:plural:Karte|Karten} aus deinem [gold]Deck[/gold]. Nach jedem Kampf nimmst du zufällig [blue]1[/blue] [gold]Verbessert[/gold] wieder zurück.{CardTitles.StringValue:cond:\n\nVerzehrte Karten:\n{}|}",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/paels_tooth.png",
+    "image_url": "/static/images/relics/paels_tooth.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 219
+    "compendium_order": 223
   },
   {
     "id": "PANTOGRAPH",
@@ -2962,30 +3184,32 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/pantograph.png",
+    "image_url": "/static/images/relics/pantograph.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 65
+    "compendium_order": 64
   },
   {
     "id": "PAPER_KRANE",
-    "name": "Paperkranig",
-    "description": "Gegner mit [gold]Schwach[/gold] fügen [blue]40%[/blue] weniger Schaden zu anstatt [blue]25%[/blue].",
-    "description_raw": "Gegner mit [gold]Schwach[/gold] fügen [blue]40%[/blue] weniger Schaden zu anstatt [blue]25%[/blue].",
+    "name": "Papierkranig",
+    "description": "Gegner mit [gold]Schwach[/gold] fügen [blue]40%[/blue] weniger Schaden zu statt [blue]25%[/blue].",
+    "description_raw": "Gegner mit [gold]Schwach[/gold] fügen [blue]40%[/blue] weniger Schaden zu statt [blue]25%[/blue].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Seltenes Relikt",
     "pool": "silent",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/paper_krane.png",
+    "image_url": "/static/images/relics/paper_krane.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 112
   },
@@ -2998,14 +3222,15 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "ironclad",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/paper_phrog.png",
+    "image_url": "/static/images/relics/paper_phrog.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 66
+    "compendium_order": 65
   },
   {
     "id": "PARRYING_SHIELD",
@@ -3016,14 +3241,15 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/parrying_shield.png",
+    "image_url": "/static/images/relics/parrying_shield.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 67
+    "compendium_order": 66
   },
   {
     "id": "FUR_COAT",
@@ -3034,46 +3260,64 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/fur_coat.png",
+    "image_url": "/static/images/relics/fur_coat.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 220
+    "compendium_order": 224
   },
   {
     "id": "PENDULUM",
     "name": "Pendel",
-    "description": "Immer wenn du deinen [gold]Nachziehstapel[/gold] mischst, ziehe eine Karte nach.",
-    "description_raw": "Immer wenn du deinen [gold]Nachziehstapel[/gold] mischst, ziehe eine Karte nach.",
+    "description": "Ziehe in jedem [blue]3[/blue]. Zug [blue]1[/blue] Karte.",
+    "description_raw": "Ziehe in jedem {Turns:plural:|[blue]{}[/blue]. }Zug [blue]{Cards}[/blue] {Cards:plural:Karte|Karten}.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/pendulum.png",
+    "image_url": "/static/images/relics/pendulum.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
-    "compendium_order": 27
+    "compendium_order": 28
   },
   {
     "id": "PERMAFROST",
     "name": "Permafrost",
-    "description": "Wenn du zum ersten Mal in einem Kampf eine Macht spielst, erhalte [blue]6[/blue] [gold]Block[/gold].",
+    "description": "Wenn du zum ersten Mal in einem Kampf eine Macht spielst, erhalte [blue]7[/blue] [gold]Block[/gold].",
     "description_raw": "Wenn du zum ersten Mal in einem Kampf eine Macht spielst, erhalte [blue]{Block}[/blue] [gold]Block[/gold].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
-    "rarity": "Gewöhnliches Relikt",
+    "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/permafrost.png",
+    "image_url": "/static/images/relics/permafrost.webp",
     "image_variants": null,
-    "rarity_key": "Common",
-    "compendium_order": 28
+    "notes": null,
+    "rarity_key": "Uncommon",
+    "compendium_order": 67
+  },
+  {
+    "id": "PHIAL_HOLSTER",
+    "name": "Phiolenholster",
+    "description": "Erhalte beim Aufheben [blue]1[/blue] Trank-Slot und beschaffe [blue]2[/blue] zufällige Tränke.",
+    "description_raw": "Erhalte beim Aufheben [blue]{PotionSlots}[/blue] Trank-{PotionSlots:plural:Slot|Slots} und beschaffe [blue]{Potions}[/blue] {Potions:plural:zufälligen Trank|zufällige Tränke}.",
+    "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
+    "rarity": "Ahnen-Relikt",
+    "pool": "shared",
+    "merchant_price": null,
+    "image_url": "/static/images/relics/phial_holster.webp",
+    "image_variants": null,
+    "notes": null,
+    "rarity_key": "Ancient",
+    "compendium_order": 225
   },
   {
     "id": "ORRERY",
@@ -3084,30 +3328,32 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/orrery.png",
+    "image_url": "/static/images/relics/orrery.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 150
   },
   {
     "id": "PLANISPHERE",
     "name": "Planisphäre",
-    "description": "Immer wenn du einen [gold]?[/gold]-Raum betrittst, heile [green]4[/green] TP.",
+    "description": "Immer wenn du einen [gold]?[/gold]-Raum betrittst, heile [green]5[/green] TP.",
     "description_raw": "Immer wenn du einen [gold]?[/gold]-Raum betrittst, heile [green]{Heal}[/green] TP.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/planisphere.png",
+    "image_url": "/static/images/relics/planisphere.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
     "compendium_order": 68
   },
@@ -3120,12 +3366,13 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/beating_remnant.png",
+    "image_url": "/static/images/relics/beating_remnant.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 113
   },
@@ -3138,10 +3385,11 @@
     "rarity": "Ereignis-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/pollinous_core.png",
+    "image_url": "/static/images/relics/pollinous_core.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 272
+    "compendium_order": 277
   },
   {
     "id": "PRISMATIC_GEM",
@@ -3152,10 +3400,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/prismatic_gem.png",
+    "image_url": "/static/images/relics/prismatic_gem.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 221
+    "compendium_order": 226
   },
   {
     "id": "PRECISE_SCISSORS",
@@ -3166,10 +3415,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/precise_scissors.png",
+    "image_url": "/static/images/relics/precise_scissors.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 222
+    "compendium_order": 227
   },
   {
     "id": "MERCURY_HOURGLASS",
@@ -3180,66 +3430,70 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/mercury_hourglass.png",
+    "image_url": "/static/images/relics/mercury_hourglass.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
     "compendium_order": 69
   },
   {
     "id": "RAZOR_TOOTH",
     "name": "Rasierzahn",
-    "description": "Immer wenn du einen Angriff oder eine Fertigkeit spielst, [gold]verbessere[/gold] sie für den restlichen Kampf.",
-    "description_raw": "Immer wenn du einen Angriff oder eine Fertigkeit spielst, [gold]verbessere[/gold] sie für den restlichen Kampf.",
+    "description": "Immer wenn du einen Angriff oder eine Fertigkeit spielst, [gold]Verbessere[/gold] sie für den restlichen Kampf.",
+    "description_raw": "Immer wenn du einen Angriff oder eine Fertigkeit spielst, [gold]Verbessere[/gold] sie für den restlichen Kampf.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/razor_tooth.png",
+    "image_url": "/static/images/relics/razor_tooth.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 114
   },
   {
     "id": "REGALITE",
     "name": "Regalit",
-    "description": "Immer wenn du eine farblose Karte erschaffst, erhalte [blue]2[/blue] [gold]Block[/gold].",
-    "description_raw": "Immer wenn du eine farblose Karte erschaffst, erhalte [blue]{Block}[/blue] [gold]Block[/gold].",
+    "description": "Immer wenn du eine Karte erzeugst, erhalte [blue]2[/blue] [gold]Block[/gold].",
+    "description_raw": "Immer wenn du eine Karte erzeugst, erhalte [blue]{Block}[/blue] [gold]Block[/gold].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ungewöhnliches Relikt",
     "pool": "regent",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/regalite.png",
+    "image_url": "/static/images/relics/regalite.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
     "compendium_order": 70
   },
   {
     "id": "RAINBOW_RING",
     "name": "Regenbogenring",
-    "description": "Immer wenn du eine Angriffs-, Fertigkeits- und Machtkarte im selben Zug spielst, erhalte [blue]1[/blue] [gold]Stärke[/gold] und [blue]1[/blue] [gold]Geschicklichkeit[/gold].",
-    "description_raw": "Immer wenn du eine Angriffs-, Fertigkeits- und Machtkarte im selben Zug spielst, erhalte [blue]{StrengthPower}[/blue] [gold]Stärke[/gold] und [blue]{DexterityPower}[/blue] [gold]Geschicklichkeit[/gold].",
+    "description": "Wenn du mindestens eine Angriffs-, Fertigkeits- und Machtkarte im selben Zug spielst, erhalte [blue]1[/blue] [gold]Stärke[/gold] und [blue]1[/blue] [gold]Geschicklichkeit[/gold].",
+    "description_raw": "Wenn du mindestens eine Angriffs-, Fertigkeits- und Machtkarte im selben Zug spielst, erhalte [blue]{StrengthPower}[/blue] [gold]Stärke[/gold] und [blue]{DexterityPower}[/blue] [gold]Geschicklichkeit[/gold].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/rainbow_ring.png",
+    "image_url": "/static/images/relics/rainbow_ring.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 115
   },
@@ -3252,10 +3506,11 @@
     "rarity": "Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/circlet.png",
+    "image_url": "/static/images/relics/circlet.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "None",
-    "compendium_order": 287
+    "compendium_order": 292
   },
   {
     "id": "REPTILE_TRINKET",
@@ -3266,30 +3521,32 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/reptile_trinket.png",
+    "image_url": "/static/images/relics/reptile_trinket.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
     "compendium_order": 71
   },
   {
     "id": "STURDY_CLAMP",
     "name": "Robuste Zwinge",
-    "description": "Bis zu [blue]10[/blue] [gold]Block[/gold] wird zwischen Zügen aufbewahrt.",
-    "description_raw": "Bis zu [blue]{Block}[/blue] [gold]Block[/gold] wird zwischen Zügen aufbewahrt.",
+    "description": "Bis zu [blue]10[/blue] [gold]Block[/gold] bleibt zwischen Zügen bestehen.",
+    "description_raw": "Bis zu [blue]{Block}[/blue] [gold]Block[/gold] bleibt zwischen Zügen bestehen.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/sturdy_clamp.png",
+    "image_url": "/static/images/relics/sturdy_clamp.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 116
   },
@@ -3299,35 +3556,37 @@
     "description": "Wende zu Beginn jedes Kampfes auf ALLE Gegner [blue]1[/blue] [gold]Schwach[/gold] an.",
     "description_raw": "Wende zu Beginn jedes Kampfes auf ALLE Gegner [blue]{WeakPower}[/blue] [gold]Schwach[/gold] an.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
-    "rarity": "Ungewöhnliches Relikt",
+    "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/red_mask.png",
+    "image_url": "/static/images/relics/red_mask.webp",
     "image_variants": null,
-    "rarity_key": "Uncommon",
-    "compendium_order": 72
+    "notes": null,
+    "rarity_key": "Common",
+    "compendium_order": 29
   },
   {
     "id": "RED_SKULL",
     "name": "Roter Schädel",
-    "description": "Solange deine TP bei [blue]50%[/blue] oder weniger liegen, hast du [blue]3[/blue] weitere [gold]Stärke[/gold].",
-    "description_raw": "Solange deine TP bei [blue]{HpThreshold}%[/blue] oder weniger liegen, hast du [blue]{StrengthPower}[/blue] weitere [gold]Stärke[/gold].",
+    "description": "Solange deine TP bei [blue]50%[/blue] oder weniger liegen, hast du [blue]3[/blue] [gold]Stärke[/gold] mehr.",
+    "description_raw": "Solange deine TP bei [blue]{HpThreshold}%[/blue] oder weniger liegen, hast du [blue]{StrengthPower}[/blue] [gold]Stärke[/gold] mehr.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Gewöhnliches Relikt",
     "pool": "ironclad",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/red_skull.png",
+    "image_url": "/static/images/relics/red_skull.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
-    "compendium_order": 29
+    "compendium_order": 30
   },
   {
     "id": "CALLING_BELL",
@@ -3338,10 +3597,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/calling_bell.png",
+    "image_url": "/static/images/relics/calling_bell.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 223
+    "compendium_order": 228
   },
   {
     "id": "RUNIC_PYRAMID",
@@ -3352,10 +3612,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/runic_pyramid.png",
+    "image_url": "/static/images/relics/runic_pyramid.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 224
+    "compendium_order": 229
   },
   {
     "id": "RUNIC_CAPACITOR",
@@ -3366,14 +3627,34 @@
     "rarity": "Laden-Relikt",
     "pool": "defect",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/runic_capacitor.png",
+    "image_url": "/static/images/relics/runic_capacitor.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
     "compendium_order": 151
+  },
+  {
+    "id": "BURNING_STICKS",
+    "name": "Räucherwerk",
+    "description": "Wenn du zum ersten Mal in einem Kampf eine Fertigkeit [gold]Erschöpfst[/gold], erhalte eine Kopie davon auf deine [gold]Hand[/gold].",
+    "description_raw": "Wenn du zum ersten Mal in einem Kampf eine Fertigkeit [gold]Erschöpfst[/gold], erhalte eine Kopie davon auf deine [gold]Hand[/gold].",
+    "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
+    "rarity": "Laden-Relikt",
+    "pool": "shared",
+    "merchant_price": {
+      "base": 200,
+      "min": 170,
+      "max": 230
+    },
+    "image_url": "/static/images/relics/burning_sticks.webp",
+    "image_variants": null,
+    "notes": null,
+    "rarity_key": "Shop",
+    "compendium_order": 152
   },
   {
     "id": "SAI",
@@ -3384,10 +3665,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/sai.png",
+    "image_url": "/static/images/relics/sai.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 225
+    "compendium_order": 230
   },
   {
     "id": "VELVET_CHOKER",
@@ -3398,10 +3680,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/velvet_choker.png",
+    "image_url": "/static/images/relics/velvet_choker.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 226
+    "compendium_order": 231
   },
   {
     "id": "SAND_CASTLE",
@@ -3412,10 +3695,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/sand_castle.png",
+    "image_url": "/static/images/relics/sand_castle.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 227
+    "compendium_order": 232
   },
   {
     "id": "SHOVEL",
@@ -3426,12 +3710,13 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/shovel.png",
+    "image_url": "/static/images/relics/shovel.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 117
   },
@@ -3444,14 +3729,15 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/strike_dummy.png",
+    "image_url": "/static/images/relics/strike_dummy.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
-    "compendium_order": 30
+    "compendium_order": 31
   },
   {
     "id": "FAKE_STRIKE_DUMMY",
@@ -3466,22 +3752,24 @@
       "min": 42,
       "max": 57
     },
-    "image_url": "/static/images/relics/fake_strike_dummy.png",
+    "image_url": "/static/images/relics/fake_strike_dummy.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 273
+    "compendium_order": 278
   },
   {
     "id": "RING_OF_THE_SNAKE",
     "name": "Schlangenring",
-    "description": "Ziehe zu Beginn jedes Kampfes [blue]2[/blue] weitere Karten.",
-    "description_raw": "Ziehe zu Beginn jedes Kampfes [blue]{Cards}[/blue] weitere {Cards:plural:Karte|Karten}.",
+    "description": "Ziehe zu Beginn jedes Kampfes [blue]2[/blue] Karten mehr.",
+    "description_raw": "Ziehe zu Beginn jedes Kampfes [blue]{Cards}[/blue] {Cards:plural:Karte|Karten} mehr.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Startrelikt",
     "pool": "silent",
     "merchant_price": null,
-    "image_url": "/static/images/relics/ring_of_the_snake.png",
+    "image_url": "/static/images/relics/ring_of_the_snake.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Starter",
     "compendium_order": 8
   },
@@ -3494,14 +3782,15 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/whetstone.png",
+    "image_url": "/static/images/relics/whetstone.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
-    "compendium_order": 31
+    "compendium_order": 32
   },
   {
     "id": "SLING_OF_COURAGE",
@@ -3512,28 +3801,30 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/sling_of_courage.png",
+    "image_url": "/static/images/relics/sling_of_courage.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
-    "compendium_order": 152
+    "compendium_order": 153
   },
   {
     "id": "JEWELRY_BOX",
     "name": "Schmuckkasten",
-    "description": "Erhalte beim Aufheben [blue]1[/blue] [gold]Apotheose[/gold] in dein [gold]Deck[/gold].",
-    "description_raw": "Erhalte beim Aufheben [blue]1[/blue] [gold]Apotheose[/gold] in dein [gold]Deck[/gold].",
+    "description": "Nimm beim Aufheben [blue]1[/blue] [gold]Apotheose[/gold] in dein [gold]Deck[/gold].",
+    "description_raw": "Nimm beim Aufheben [blue]1[/blue] [gold]Apotheose[/gold] in dein [gold]Deck[/gold].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/jewelry_box.png",
+    "image_url": "/static/images/relics/jewelry_box.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 228
+    "compendium_order": 233
   },
   {
     "id": "PEN_NIB",
@@ -3544,14 +3835,15 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/pen_nib.png",
+    "image_url": "/static/images/relics/pen_nib.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 73
+    "compendium_order": 72
   },
   {
     "id": "BLACK_STAR",
@@ -3562,10 +3854,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/black_star.png",
+    "image_url": "/static/images/relics/black_star.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 229
+    "compendium_order": 234
   },
   {
     "id": "BLACK_BLOOD",
@@ -3576,8 +3869,9 @@
     "rarity": "Startrelikt",
     "pool": "ironclad",
     "merchant_price": null,
-    "image_url": "/static/images/relics/black_blood.png",
+    "image_url": "/static/images/relics/black_blood.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Starter",
     "compendium_order": 9
   },
@@ -3590,14 +3884,15 @@
     "rarity": "Laden-Relikt",
     "pool": "ironclad",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/brimstone.png",
+    "image_url": "/static/images/relics/brimstone.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
-    "compendium_order": 153
+    "compendium_order": 154
   },
   {
     "id": "SWORD_OF_JADE",
@@ -3608,10 +3903,11 @@
     "rarity": "Ereignis-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/sword_of_jade.png",
+    "image_url": "/static/images/relics/sword_of_jade.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 274
+    "compendium_order": 279
   },
   {
     "id": "SWORD_OF_STONE",
@@ -3622,28 +3918,30 @@
     "rarity": "Ereignis-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/sword_of_stone.png",
+    "image_url": "/static/images/relics/sword_of_stone.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 275
+    "compendium_order": 280
   },
   {
     "id": "DINGY_RUG",
     "name": "Schäbiger Teppich",
-    "description": "Kartenbelohnungen können nun farblose Karten enthalten.",
-    "description_raw": "Kartenbelohnungen können nun farblose Karten enthalten.",
+    "description": "Kartenbelohnungen können nun Farblose Karten enthalten.",
+    "description_raw": "Kartenbelohnungen können nun Farblose Karten enthalten.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/dingy_rug.png",
+    "image_url": "/static/images/relics/dingy_rug.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
-    "compendium_order": 154
+    "compendium_order": 155
   },
   {
     "id": "SELF_FORMING_CLAY",
@@ -3654,14 +3952,15 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "ironclad",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/self_forming_clay.png",
+    "image_url": "/static/images/relics/self_forming_clay.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 74
+    "compendium_order": 73
   },
   {
     "id": "ODDLY_SMOOTH_STONE",
@@ -3672,14 +3971,15 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/oddly_smooth_stone.png",
+    "image_url": "/static/images/relics/oddly_smooth_stone.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
-    "compendium_order": 32
+    "compendium_order": 33
   },
   {
     "id": "SHURIKEN",
@@ -3690,12 +3990,13 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/shuriken.png",
+    "image_url": "/static/images/relics/shuriken.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 118
   },
@@ -3708,14 +4009,15 @@
     "rarity": "Laden-Relikt",
     "pool": "necrobinder",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/undying_sigil.png",
+    "image_url": "/static/images/relics/undying_sigil.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
-    "compendium_order": 155
+    "compendium_order": 156
   },
   {
     "id": "SIGNET_RING",
@@ -3726,24 +4028,26 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/signet_ring.png",
+    "image_url": "/static/images/relics/signet_ring.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 230
+    "compendium_order": 235
   },
   {
     "id": "SILVER_CRUCIBLE",
     "name": "Silbertiegel",
-    "description": "Die ersten [blue]3[/blue] Kartenbelohnungen, die du siehst, sind [gold]verbessert[/gold]. Die erste Schatztruhe, die du öffnest, ist [red]leer[/red].",
-    "description_raw": "Die ersten [blue]{Cards}[/blue] Kartenbelohnungen, die du siehst, sind [gold]verbessert[/gold]. Die erste Schatztruhe, die du öffnest, ist [red]leer[/red].",
+    "description": "Die ersten [blue]3[/blue] Kartenbelohnungen, die du siehst, sind [gold]Verbessert[/gold]. Deine erste geöffnete Schatztruhe ist [red]leer[/red].",
+    "description_raw": "Die ersten [blue]{Cards}[/blue] Kartenbelohnungen, die du siehst, sind [gold]Verbessert[/gold]. Deine erste geöffnete Schatztruhe ist [red]leer[/red].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/silver_crucible.png",
+    "image_url": "/static/images/relics/silver_crucible.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 231
+    "compendium_order": 236
   },
   {
     "id": "SNECKO_EYE",
@@ -3754,10 +4058,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/snecko_eye.png",
+    "image_url": "/static/images/relics/snecko_eye.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 232
+    "compendium_order": 237
   },
   {
     "id": "FAKE_SNECKO_EYE",
@@ -3772,10 +4077,11 @@
       "min": 42,
       "max": 57
     },
-    "image_url": "/static/images/relics/fake_snecko_eye.png",
+    "image_url": "/static/images/relics/fake_snecko_eye.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 276
+    "compendium_order": 281
   },
   {
     "id": "SNECKO_SKULL",
@@ -3786,14 +4092,15 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "silent",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/snecko_skull.png",
+    "image_url": "/static/images/relics/snecko_skull.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
-    "compendium_order": 33
+    "compendium_order": 34
   },
   {
     "id": "SOZU",
@@ -3804,24 +4111,26 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/sozu.png",
+    "image_url": "/static/images/relics/sozu.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 233
+    "compendium_order": 238
   },
   {
     "id": "MAW_BANK",
     "name": "Spar-Schlund",
-    "description": "Immer wenn du eine Ebene erklimmst, erhalte [blue]12[/blue] [gold]Gold[/gold]. Verliert seinen Effekt, sobald du jegliches [gold]Gold[/gold] im Laden ausgibst.",
-    "description_raw": "Immer wenn du eine Ebene erklimmst, erhalte [blue]{Gold}[/blue] [gold]Gold[/gold]. Verliert seinen Effekt, sobald du jegliches [gold]Gold[/gold] im Laden ausgibst.",
+    "description": "Immer wenn du eine Ebene erklimmst, erhalte [blue]12[/blue] [gold]Gold[/gold]. Funktioniert nicht mehr, sobald du [gold]Gold[/gold] im Laden ausgibst.",
+    "description_raw": "Immer wenn du eine Ebene erklimmst, erhalte [blue]{Gold}[/blue] [gold]Gold[/gold]. Funktioniert nicht mehr, sobald du [gold]Gold[/gold] im Laden ausgibst.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ereignis-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/maw_bank.png",
+    "image_url": "/static/images/relics/maw_bank.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 277
+    "compendium_order": 282
   },
   {
     "id": "GAMBLING_CHIP",
@@ -3832,12 +4141,13 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/gambling_chip.png",
+    "image_url": "/static/images/relics/gambling_chip.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 119
   },
@@ -3850,28 +4160,30 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/game_piece.png",
+    "image_url": "/static/images/relics/game_piece.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 120
   },
   {
     "id": "MUSIC_BOX",
     "name": "Spieluhr",
-    "description": "Erschaffe in jedem Zug eine [gold]Flüchtige[/gold] Kopie deines ersten gespielten Angriffs.",
-    "description_raw": "Erschaffe in jedem Zug eine [gold]Flüchtige[/gold] Kopie deines ersten gespielten Angriffs.",
+    "description": "Erzeuge eine [gold]Flüchtige[/gold] Kopie deines ersten gespielten Angriffs in jedem Zug.",
+    "description_raw": "Erzeuge eine [gold]Flüchtige[/gold] Kopie deines ersten gespielten Angriffs in jedem Zug.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/music_box.png",
+    "image_url": "/static/images/relics/music_box.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 234
+    "compendium_order": 239
   },
   {
     "id": "TOY_BOX",
@@ -3882,10 +4194,15 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/toy_box.png",
+    "image_url": "/static/images/relics/toy_box.webp",
     "image_variants": null,
+    "notes": [
+      "Wax Relics are pulled from the normal relic pool — any non-Ancient relic can be waxed.",
+      "Wax Relic rarity: 50% Common, 33% Uncommon, 17% Rare (standard relic rarity roll).",
+      "All wax relics melt after 12 total combats, then Toy Box is used up."
+    ],
     "rarity_key": "Ancient",
-    "compendium_order": 235
+    "compendium_order": 240
   },
   {
     "id": "LOOMING_FRUIT",
@@ -3896,10 +4213,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/looming_fruit.png",
+    "image_url": "/static/images/relics/looming_fruit.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 236
+    "compendium_order": 241
   },
   {
     "id": "SPIKED_GAUNTLETS",
@@ -3910,10 +4228,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/spiked_gauntlets.png",
+    "image_url": "/static/images/relics/spiked_gauntlets.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 237
+    "compendium_order": 242
   },
   {
     "id": "DUSTY_TOME",
@@ -3924,10 +4243,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/dusty_tome.png",
+    "image_url": "/static/images/relics/dusty_tome.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 238
+    "compendium_order": 243
   },
   {
     "id": "PHILOSOPHERS_STONE",
@@ -3938,28 +4258,30 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/philosophers_stone.png",
+    "image_url": "/static/images/relics/philosophers_stone.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 239
+    "compendium_order": 244
   },
   {
     "id": "STONE_CRACKER",
     "name": "Steinbrecher",
-    "description": "[gold]Verbessere[/gold] zu Beginn von [gold]Boss[/gold]-Kämpfen [blue]3[/blue] zufällige Karten in deinem [gold]Nachziehstapel[/gold] für den restlichen Kampf.",
-    "description_raw": "[gold]Verbessere[/gold] zu Beginn von [gold]Boss[/gold]-Kämpfen [blue]{Cards}[/blue] zufällige {Cards:plural:Karte|Karten} in deinem [gold]Nachziehstapel[/gold] für den restlichen Kampf.",
+    "description": "[gold]Verbessere[/gold] zu Beginn jedes Kampfes [blue]2[/blue] zufällige Karten in deinem [gold]Nachziehstapel[/gold] für den restlichen Kampf.",
+    "description_raw": "[gold]Verbessere[/gold] zu Beginn jedes Kampfes [blue]{Cards}[/blue] zufällige {Cards:plural:Karte|Karten} in deinem [gold]Nachziehstapel[/gold] für den restlichen Kampf.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/stone_cracker.png",
+    "image_url": "/static/images/relics/stone_cracker.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 75
+    "compendium_order": 74
   },
   {
     "id": "STONE_HUMIDIFIER",
@@ -3970,10 +4292,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/stone_humidifier.png",
+    "image_url": "/static/images/relics/stone_humidifier.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 240
+    "compendium_order": 245
   },
   {
     "id": "STONE_CALENDAR",
@@ -3984,12 +4307,13 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/stone_calendar.png",
+    "image_url": "/static/images/relics/stone_calendar.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 121
   },
@@ -4002,14 +4326,15 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/tuning_fork.png",
+    "image_url": "/static/images/relics/tuning_fork.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 76
+    "compendium_order": 75
   },
   {
     "id": "PUNCH_DAGGER",
@@ -4020,14 +4345,15 @@
     "rarity": "Laden-Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/punch_dagger.png",
+    "image_url": "/static/images/relics/punch_dagger.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
-    "compendium_order": 156
+    "compendium_order": 157
   },
   {
     "id": "RADIANT_PEARL",
@@ -4038,10 +4364,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/radiant_pearl.png",
+    "image_url": "/static/images/relics/radiant_pearl.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 241
+    "compendium_order": 246
   },
   {
     "id": "POWER_CELL",
@@ -4052,12 +4379,13 @@
     "rarity": "Seltenes Relikt",
     "pool": "defect",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/power_cell.png",
+    "image_url": "/static/images/relics/power_cell.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 122
   },
@@ -4070,28 +4398,30 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "defect",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/symbiotic_virus.png",
+    "image_url": "/static/images/relics/symbiotic_virus.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 77
+    "compendium_order": 76
   },
   {
     "id": "TANXS_WHISTLE",
     "name": "Tanx' Pfeife",
-    "description": "Erhalte beim Aufheben [blue]1[/blue] [gold]Pfeife[/gold] in dein [gold]Deck[/gold].",
-    "description_raw": "Erhalte beim Aufheben [blue]1[/blue] [gold]Pfeife[/gold] in dein [gold]Deck[/gold].",
+    "description": "Nimm beim Aufheben [blue]1[/blue] [gold]Pfeife[/gold] in dein [gold]Deck[/gold].",
+    "description_raw": "Nimm beim Aufheben [blue]1[/blue] [gold]Pfeife[/gold] in dein [gold]Deck[/gold].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/tanxs_whistle.png",
+    "image_url": "/static/images/relics/tanxs_whistle.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 242
+    "compendium_order": 247
   },
   {
     "id": "BAG_OF_PREPARATION",
@@ -4102,14 +4432,15 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/bag_of_preparation.png",
+    "image_url": "/static/images/relics/bag_of_preparation.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
-    "compendium_order": 34
+    "compendium_order": 35
   },
   {
     "id": "POCKETWATCH",
@@ -4120,12 +4451,13 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/pocketwatch.png",
+    "image_url": "/static/images/relics/pocketwatch.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 123
   },
@@ -4138,10 +4470,11 @@
     "rarity": "Ereignis-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/tea_of_discourtesy.png",
+    "image_url": "/static/images/relics/tea_of_discourtesy.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 278
+    "compendium_order": 283
   },
   {
     "id": "FAKE_MERCHANTS_RUG",
@@ -4152,10 +4485,11 @@
     "rarity": "Ereignis-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/fake_merchants_rug.png",
+    "image_url": "/static/images/relics/fake_merchants_rug.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 279
+    "compendium_order": 284
   },
   {
     "id": "TINGSHA",
@@ -4166,14 +4500,15 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "silent",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/tingsha.png",
+    "image_url": "/static/images/relics/tingsha.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 78
+    "compendium_order": 77
   },
   {
     "id": "DAUGHTER_OF_THE_WIND",
@@ -4184,26 +4519,28 @@
     "rarity": "Ereignis-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/daughter_of_the_wind.png",
+    "image_url": "/static/images/relics/daughter_of_the_wind.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 280
+    "compendium_order": 285
   },
   {
     "id": "TOXIC_EGG",
     "name": "Toxisches Ei",
-    "description": "Immer wenn du deinem [gold]Deck[/gold] eine Fertigkeit hinzufügst, [gold]verbessere[/gold] sie.",
-    "description_raw": "Immer wenn du deinem [gold]Deck[/gold] eine Fertigkeit hinzufügst, [gold]verbessere[/gold] sie.",
+    "description": "Immer wenn du eine Fertigkeit in dein [gold]Deck[/gold] nimmst, [gold]Verbessere[/gold] sie.",
+    "description_raw": "Immer wenn du eine Fertigkeit in dein [gold]Deck[/gold] nimmst, [gold]Verbessere[/gold] sie.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/toxic_egg.png",
+    "image_url": "/static/images/relics/toxic_egg.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 124
   },
@@ -4216,28 +4553,30 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/potion_belt.png",
+    "image_url": "/static/images/relics/potion_belt.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
-    "compendium_order": 35
+    "compendium_order": 36
   },
   {
     "id": "DREAM_CATCHER",
     "name": "Traumfänger",
-    "description": "Immer wenn du dich [gold]ausruhst[/gold], kannst du deinem [gold]Deck[/gold] eine Karte hinzufügen.",
-    "description_raw": "Immer wenn du dich [gold]ausruhst[/gold], kannst du deinem [gold]Deck[/gold] eine Karte hinzufügen.",
+    "description": "Du darfst immer beim [gold]Ausruhen[/gold] eine Karte in dein [gold]Deck[/gold] nehmen.",
+    "description_raw": "Du darfst immer beim [gold]Ausruhen[/gold] eine Karte in dein [gold]Deck[/gold] nehmen.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ereignis-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/dream_catcher.png",
+    "image_url": "/static/images/relics/dream_catcher.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 281
+    "compendium_order": 286
   },
   {
     "id": "DRIFTWOOD",
@@ -4248,10 +4587,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/driftwood.png",
+    "image_url": "/static/images/relics/driftwood.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 243
+    "compendium_order": 248
   },
   {
     "id": "TRI_BOOMERANG",
@@ -4262,10 +4602,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/tri_boomerang.png",
+    "image_url": "/static/images/relics/tri_boomerang.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 244
+    "compendium_order": 249
   },
   {
     "id": "VENERABLE_TEA_SET",
@@ -4276,14 +4617,15 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/venerable_tea_set.png",
+    "image_url": "/static/images/relics/venerable_tea_set.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
-    "compendium_order": 36
+    "compendium_order": 37
   },
   {
     "id": "FAKE_VENERABLE_TEA_SET",
@@ -4298,10 +4640,11 @@
       "min": 42,
       "max": 57
     },
-    "image_url": "/static/images/relics/fake_venerable_tea_set.png",
+    "image_url": "/static/images/relics/fake_venerable_tea_set.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 282
+    "compendium_order": 287
   },
   {
     "id": "VAJRA",
@@ -4312,14 +4655,15 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/vajra.png",
+    "image_url": "/static/images/relics/vajra.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
-    "compendium_order": 37
+    "compendium_order": 38
   },
   {
     "id": "CURSED_PEARL",
@@ -4330,24 +4674,26 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/cursed_pearl.png",
+    "image_url": "/static/images/relics/cursed_pearl.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 245
+    "compendium_order": 250
   },
   {
     "id": "FORGOTTEN_SOUL",
     "name": "Vergessene Seele",
-    "description": "Immer wenn du eine Karte [gold]erschöpfst[/gold], füge einem zufälligen Gegner [blue]1[/blue] Schaden zu.",
-    "description_raw": "Immer wenn du eine Karte [gold]erschöpfst[/gold], füge einem zufälligen Gegner [blue]{Damage}[/blue] Schaden zu.",
+    "description": "Immer wenn du eine Karte [gold]Erschöpfst[/gold], füge einem zufälligen Gegner [blue]1[/blue] Schaden zu.",
+    "description_raw": "Immer wenn du eine Karte [gold]Erschöpfst[/gold], füge einem zufälligen Gegner [blue]{Damage}[/blue] Schaden zu.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ereignis-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/forgotten_soul.png",
+    "image_url": "/static/images/relics/forgotten_soul.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 283
+    "compendium_order": 288
   },
   {
     "id": "LOST_COFFER",
@@ -4358,10 +4704,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/lost_coffer.png",
+    "image_url": "/static/images/relics/lost_coffer.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 246
+    "compendium_order": 251
   },
   {
     "id": "LOST_WISP",
@@ -4372,10 +4719,11 @@
     "rarity": "Ereignis-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/lost_wisp.png",
+    "image_url": "/static/images/relics/lost_wisp.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 284
+    "compendium_order": 289
   },
   {
     "id": "PETRIFIED_TOAD",
@@ -4386,48 +4734,51 @@
     "rarity": "Ungewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 250,
-      "min": 212,
-      "max": 288
+      "base": 225,
+      "min": 191,
+      "max": 259
     },
-    "image_url": "/static/images/relics/petrified_toad.png",
+    "image_url": "/static/images/relics/petrified_toad.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Uncommon",
-    "compendium_order": 79
+    "compendium_order": 78
   },
   {
     "id": "UNSETTLING_LAMP",
     "name": "Verstörende Lampe",
-    "description": "Wenn du zum ersten Mal in einem Kampf eine Karte spielst, die einen Gegner [gold]debufft[/gold], verdopple jenen Effekt.",
-    "description_raw": "Wenn du zum ersten Mal in einem Kampf eine Karte spielst, die einen Gegner [gold]debufft[/gold], verdopple jenen Effekt.",
+    "description": "Wenn du zum ersten Mal in einem Kampf eine Karte spielst, die einen Gegner [gold]Debufft[/gold], verdopple jenen Effekt.",
+    "description_raw": "Wenn du zum ersten Mal in einem Kampf eine Karte spielst, die einen Gegner [gold]Debufft[/gold], verdopple jenen Effekt.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/unsettling_lamp.png",
+    "image_url": "/static/images/relics/unsettling_lamp.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 125
   },
   {
     "id": "VEXING_PUZZLEBOX",
     "name": "Verwirrende Rätselbox",
-    "description": "Erhalte zu Beginn jedes Kampfes eine zufällige Karte auf deine [gold]Hand[/gold]. Sie kostet [blue]0[/blue][energy:1].",
-    "description_raw": "Erhalte zu Beginn jedes Kampfes eine zufällige Karte auf deine [gold]Hand[/gold]. Sie kostet [blue]0[/blue]{energyPrefix:energyIcons(1)}.",
+    "description": "Erhalte zu Beginn jedes Kampfes eine zufällige Karte auf deine [gold]Hand[/gold]. Sie ist in diesem Zug kostenlos spielbar.",
+    "description_raw": "Erhalte zu Beginn jedes Kampfes eine zufällige Karte auf deine [gold]Hand[/gold]. Sie ist in diesem Zug kostenlos spielbar.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/vexing_puzzlebox.png",
+    "image_url": "/static/images/relics/vexing_puzzlebox.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 126
   },
@@ -4440,28 +4791,30 @@
     "rarity": "Laden-Relikt",
     "pool": "regent",
     "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
+      "base": 200,
+      "min": 170,
+      "max": 230
     },
-    "image_url": "/static/images/relics/vitruvian_minion.png",
+    "image_url": "/static/images/relics/vitruvian_minion.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Shop",
-    "compendium_order": 157
+    "compendium_order": 158
   },
   {
     "id": "DISTINGUISHED_CAPE",
     "name": "Vornehmer Umhang",
-    "description": "Verliere beim Aufheben [red]9[/red] max. TP. Erhalte [blue]3[/blue] [gold]Apparieren[/gold] in dein [gold]Deck[/gold].",
-    "description_raw": "Verliere beim Aufheben [red]9[/red] max. TP. Erhalte [blue]{Cards}[/blue] [gold]Apparieren[/gold] in dein [gold]Deck[/gold].",
+    "description": "Verliere beim Aufheben [blue]9[/blue] max. TP. Nimm [blue]3[/blue] [gold]Apparieren[/gold] in dein [gold]Deck[/gold].",
+    "description_raw": "Verliere beim Aufheben [blue]9[/blue] max. TP. Nimm [blue]{Cards}[/blue] [gold]Apparieren[/gold] in dein [gold]Deck[/gold].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/distinguished_cape.png",
+    "image_url": "/static/images/relics/distinguished_cape.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 247
+    "compendium_order": 252
   },
   {
     "id": "WHITE_BEAST_STATUE",
@@ -4472,68 +4825,72 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/white_beast_statue.png",
+    "image_url": "/static/images/relics/white_beast_statue.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 127
   },
   {
     "id": "WHITE_STAR",
     "name": "Weißer Stern",
-    "description": "[gold]Eliten[/gold] hinterlassen eine weitere [gold]seltene[/gold] Kartenbelohnung.",
-    "description_raw": "[gold]Eliten[/gold] hinterlassen eine weitere [gold]seltene[/gold] Kartenbelohnung.",
+    "description": "Besiegte [gold]Eliten[/gold] hinterlassen eine weitere [gold]Seltene[/gold] Kartenbelohnung.",
+    "description_raw": "Besiegte [gold]Eliten[/gold] hinterlassen eine weitere [gold]Seltene[/gold] Kartenbelohnung.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/white_star.png",
+    "image_url": "/static/images/relics/white_star.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 128
   },
   {
     "id": "TOOLBOX",
     "name": "Werkzeugkiste",
-    "description": "Wähle zu Beginn jedes Kampfes [blue]1[/blue] von [blue]3[/blue] zufälligen farblosen Karten und erhalte die gewählte Karte auf deine [gold]Hand[/gold].",
-    "description_raw": "Wähle zu Beginn jedes Kampfes [blue]1[/blue] von [blue]{Cards}[/blue] zufälligen farblosen Karten und erhalte die gewählte Karte auf deine [gold]Hand[/gold].",
+    "description": "Wähle zu Beginn jedes Kampfes [blue]1[/blue] von [blue]3[/blue] zufälligen Farblosen Karten und erhalte die gewählte Karte auf deine [gold]Hand[/gold].",
+    "description_raw": "Wähle zu Beginn jedes Kampfes [blue]1[/blue] von [blue]{Cards}[/blue] zufälligen Farblosen Karten und erhalte die gewählte Karte auf deine [gold]Hand[/gold].",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Laden-Relikt",
-    "pool": "shared",
-    "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
-    },
-    "image_url": "/static/images/relics/toolbox.png",
-    "image_variants": null,
-    "rarity_key": "Shop",
-    "compendium_order": 158
-  },
-  {
-    "id": "TINY_MAILBOX",
-    "name": "Winziger Briefkasten",
-    "description": "Immer wenn du dich [gold]ausruhst[/gold], beschaffe einen zufälligen Trank.",
-    "description_raw": "Immer wenn du dich [gold]ausruhst[/gold], beschaffe einen zufälligen Trank.",
-    "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
-    "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
       "base": 200,
       "min": 170,
       "max": 230
     },
-    "image_url": "/static/images/relics/tiny_mailbox.png",
+    "image_url": "/static/images/relics/toolbox.webp",
     "image_variants": null,
-    "rarity_key": "Common",
-    "compendium_order": 38
+    "notes": null,
+    "rarity_key": "Shop",
+    "compendium_order": 159
+  },
+  {
+    "id": "TINY_MAILBOX",
+    "name": "Winziger Briefkasten",
+    "description": "Beschaffe immer beim [gold]Ausruhen[/gold] [blue]2[/blue] zufällige Tränke.",
+    "description_raw": "Beschaffe immer beim [gold]Ausruhen[/gold] [blue]2[/blue] zufällige Tränke.",
+    "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
+    "rarity": "Ungewöhnliches Relikt",
+    "pool": "shared",
+    "merchant_price": {
+      "base": 225,
+      "min": 191,
+      "max": 259
+    },
+    "image_url": "/static/images/relics/tiny_mailbox.webp",
+    "image_variants": null,
+    "notes": null,
+    "rarity_key": "Uncommon",
+    "compendium_order": 79
   },
   {
     "id": "TUNGSTEN_ROD",
@@ -4544,12 +4901,13 @@
     "rarity": "Seltenes Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 300,
-      "min": 255,
-      "max": 345
+      "base": 275,
+      "min": 234,
+      "max": 316
     },
-    "image_url": "/static/images/relics/tungsten_rod.png",
+    "image_url": "/static/images/relics/tungsten_rod.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Rare",
     "compendium_order": 129
   },
@@ -4562,10 +4920,11 @@
     "rarity": "Ereignis-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/wongo_customer_appreciation_badge.png",
+    "image_url": "/static/images/relics/wongo_customer_appreciation_badge.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 285
+    "compendium_order": 290
   },
   {
     "id": "WONGOS_MYSTERY_TICKET",
@@ -4576,24 +4935,26 @@
     "rarity": "Ereignis-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/wongos_mystery_ticket.png",
+    "image_url": "/static/images/relics/wongos_mystery_ticket.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Event",
-    "compendium_order": 286
+    "compendium_order": 291
   },
   {
     "id": "MASSIVE_SCROLL",
     "name": "Wuchtige Schriftrolle",
-    "description": "Wähle beim Aufheben [blue]1[/blue] von [blue]3[/blue] [gold]Mehrspieler-Karten[/gold], die du deinem [gold]Deck[/gold] hinzufügst.",
-    "description_raw": "Wähle beim Aufheben [blue]1[/blue] von [blue]3[/blue] [gold]Mehrspieler-Karten[/gold], die du deinem [gold]Deck[/gold] hinzufügst.",
+    "description": "Wähle beim Aufheben [blue]1[/blue] von [blue]3[/blue] [gold]Mehrspieler-Karten[/gold], die in dein [gold]Deck[/gold] nimmst.",
+    "description_raw": "Wähle beim Aufheben [blue]1[/blue] von [blue]3[/blue] [gold]Mehrspieler-Karten[/gold], die in dein [gold]Deck[/gold] nimmst.",
     "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/massive_scroll.png",
+    "image_url": "/static/images/relics/massive_scroll.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 248
+    "compendium_order": 253
   },
   {
     "id": "THROWING_AXE",
@@ -4604,10 +4965,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/throwing_axe.png",
+    "image_url": "/static/images/relics/throwing_axe.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 249
+    "compendium_order": 254
   },
   {
     "id": "TOASTY_MITTENS",
@@ -4618,10 +4980,11 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/toasty_mittens.png",
+    "image_url": "/static/images/relics/toasty_mittens.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 250
+    "compendium_order": 255
   },
   {
     "id": "CENTENNIAL_PUZZLE",
@@ -4632,32 +4995,15 @@
     "rarity": "Gewöhnliches Relikt",
     "pool": "shared",
     "merchant_price": {
-      "base": 200,
-      "min": 170,
-      "max": 230
+      "base": 175,
+      "min": 149,
+      "max": 201
     },
-    "image_url": "/static/images/relics/centennial_puzzle.png",
+    "image_url": "/static/images/relics/centennial_puzzle.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Common",
     "compendium_order": 39
-  },
-  {
-    "id": "BURNING_STICKS",
-    "name": "Zündhölzer",
-    "description": "Wenn du zum ersten Mal in einem Kampf eine Fertigkeit [gold]erschöpfst[/gold], erhalte eine Kopie davon auf deine [gold]Hand[/gold].",
-    "description_raw": "Wenn du zum ersten Mal in einem Kampf eine Fertigkeit [gold]erschöpfst[/gold], erhalte eine Kopie davon auf deine [gold]Hand[/gold].",
-    "flavor": "[red]Näheres zu diesem Relikt wird zukünftig aufgedeckt werden...[/red]",
-    "rarity": "Laden-Relikt",
-    "pool": "shared",
-    "merchant_price": {
-      "base": 225,
-      "min": 191,
-      "max": 259
-    },
-    "image_url": "/static/images/relics/burning_sticks.png",
-    "image_variants": null,
-    "rarity_key": "Shop",
-    "compendium_order": 159
   },
   {
     "id": "VERY_HOT_COCOA",
@@ -4668,9 +5014,10 @@
     "rarity": "Ahnen-Relikt",
     "pool": "shared",
     "merchant_price": null,
-    "image_url": "/static/images/relics/very_hot_cocoa.png",
+    "image_url": "/static/images/relics/very_hot_cocoa.webp",
     "image_variants": null,
+    "notes": null,
     "rarity_key": "Ancient",
-    "compendium_order": 251
+    "compendium_order": 256
   }
 ]

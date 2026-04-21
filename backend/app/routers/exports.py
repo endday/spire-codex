@@ -1,14 +1,34 @@
+import io
+import zipfile
+
 from fastapi import APIRouter
 from fastapi.responses import StreamingResponse
-from ..services.data_service import DATA_DIR
+
 from ..dependencies import VALID_LANGUAGES
-import zipfile
-import io
-from pathlib import Path
+from ..metrics import data_exports
+from ..services.data_service import DATA_DIR
 
 router = APIRouter(prefix="/api/exports", tags=["Exports"])
 
-ENTITY_FILES = ["cards", "relics", "potions", "characters", "monsters", "powers", "events", "encounters", "enchantments", "keywords", "intents", "orbs", "afflictions", "modifiers", "achievements", "epochs"]
+ENTITY_FILES = [
+    "cards",
+    "relics",
+    "potions",
+    "characters",
+    "monsters",
+    "powers",
+    "events",
+    "encounters",
+    "enchantments",
+    "keywords",
+    "intents",
+    "orbs",
+    "afflictions",
+    "modifiers",
+    "achievements",
+    "epochs",
+]
+
 
 @router.get("/{lang}")
 def export_language(lang: str):
@@ -21,8 +41,11 @@ def export_language(lang: str):
             if filepath.exists():
                 zf.write(filepath, f"{entity}.json")
     buf.seek(0)
+    data_exports.labels(lang=lang).inc()
     return StreamingResponse(
         buf,
         media_type="application/zip",
-        headers={"Content-Disposition": f'attachment; filename="spire-codex-{lang}.zip"'}
+        headers={
+            "Content-Disposition": f'attachment; filename="spire-codex-{lang}.zip"'
+        },
     )

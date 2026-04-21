@@ -14,18 +14,17 @@ import { useLangPrefix } from "@/lib/use-lang-prefix";
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
-export default function AfflictionDetail() {
+export default function AfflictionDetail({ initialAffliction }: { initialAffliction?: Affliction | null } = {}) {
   const { id } = useParams<{ id: string }>();
   const router = useRouter();
   const { lang } = useLanguage();
   const lp = useLangPrefix();
-  const [affliction, setAffliction] = useState<Affliction | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [affliction, setAffliction] = useState<Affliction | null>(initialAffliction ?? null);
+  const [loading, setLoading] = useState(!initialAffliction);
   const [notFound, setNotFound] = useState(false);
 
   useEffect(() => {
     if (!id) return;
-    setLoading(true);
     cachedFetch<Affliction>(`${API}/api/afflictions/${id}?lang=${lang}`)
       .then((data) => setAffliction(data))
       .catch(() => setNotFound(true))

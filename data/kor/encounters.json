@@ -177,7 +177,7 @@
     "name": "많은 시체 민달팽이들",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": [
       "Slugs"
     ],
@@ -194,7 +194,7 @@
     "name": "시체 민달팽이들",
     "room_type": "Monster",
     "is_weak": true,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": [
       "Slugs"
     ],
@@ -226,7 +226,7 @@
     "name": "광신자들",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -301,10 +301,6 @@
     "act": "Act 3 - Glory",
     "tags": null,
     "monsters": [
-      {
-        "id": "DOOR",
-        "name": "문"
-      },
       {
         "id": "DOORMAKER",
         "name": "문을 만드는 자"
@@ -441,7 +437,7 @@
     "name": "화석 매복자",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -503,7 +499,7 @@
     "name": "트렌치코트를 입은 그렘린 두 마리",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -526,7 +522,7 @@
     "name": "유령선",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -645,7 +641,7 @@
     "name": "라가불린 대모",
     "room_type": "Boss",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -660,7 +656,7 @@
     "name": "사악한 가스",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -842,7 +838,7 @@
     "name": "허깨비 정원사들",
     "room_type": "Elite",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -876,7 +872,7 @@
     "name": "권투형 구조체",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -986,11 +982,32 @@
     "loss_text": "[gold]물어뜯는 두루마리[/gold]들은 [b]The Adventurer[/b]를 갈기갈기 찢어버렸습니다."
   },
   {
+    "id": "SEAPUNK_NORMAL",
+    "name": "지하 선착장 야생동물",
+    "room_type": "Monster",
+    "is_weak": false,
+    "act": "Act 1 - Underdocks",
+    "tags": [
+      "Seapunk"
+    ],
+    "monsters": [
+      {
+        "id": "CALCIFIED_CULTIST",
+        "name": "석회화된 광신자"
+      },
+      {
+        "id": "SEAPUNK",
+        "name": "불량 해초"
+      }
+    ],
+    "loss_text": "[b]The Adventurer[/b]는 [gold]지하 선착장 야생동물[/gold]들에게 패배했습니다."
+  },
+  {
     "id": "SEAPUNK_WEAK",
     "name": "불량 해초",
     "room_type": "Monster",
     "is_weak": true,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": [
       "Seapunk"
     ],
@@ -1007,7 +1024,7 @@
     "name": "시궁창 조개",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -1039,7 +1056,7 @@
     "name": "잠행 군체",
     "room_type": "Elite",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -1162,7 +1179,7 @@
     "name": "오물팽이",
     "room_type": "Monster",
     "is_weak": true,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -1223,7 +1240,7 @@
     "name": "영혼 물교기",
     "room_type": "Boss",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -1268,7 +1285,7 @@
     "name": "공포 장어",
     "room_type": "Elite",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -1394,30 +1411,11 @@
     "loss_text": "[gold]폴짝이 도적[/gold]은 [b]The Adventurer[/b]를 털어먹었습니다."
   },
   {
-    "id": "TOADPOLES_NORMAL",
-    "name": "지하 선착장 야생동물",
-    "room_type": "Monster",
-    "is_weak": false,
-    "act": "Underdocks",
-    "tags": null,
-    "monsters": [
-      {
-        "id": "CALCIFIED_CULTIST",
-        "name": "석회화된 광신자"
-      },
-      {
-        "id": "TOADPOLE",
-        "name": "올챙이"
-      }
-    ],
-    "loss_text": "[b]The Adventurer[/b]는 [gold]지하 선착장 야생동물[/gold]에게 패배했습니다."
-  },
-  {
     "id": "TOADPOLES_WEAK",
     "name": "올챙이들",
     "room_type": "Monster",
     "is_weak": true,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -1432,19 +1430,15 @@
     "name": "땅굴 2인조",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Act 2 - Hive",
+    "act": null,
     "tags": [
       "Burrower",
-      "Workers"
+      "Chomper"
     ],
     "monsters": [
       {
-        "id": "BOWLBUG_EGG",
-        "name": "그릇벌레 (알)"
-      },
-      {
-        "id": "BOWLBUG_SILK",
-        "name": "그릇벌레 (실크)"
+        "id": "CHOMPER",
+        "name": "먹깨비"
       },
       {
         "id": "TUNNELER",
@@ -1494,7 +1488,7 @@
     "name": "두꼬리쥐들",
     "room_type": "Monster",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
@@ -1539,7 +1533,7 @@
     "name": "폭포 거인",
     "room_type": "Boss",
     "is_weak": false,
-    "act": "Underdocks",
+    "act": "Act 1 - Underdocks",
     "tags": null,
     "monsters": [
       {
