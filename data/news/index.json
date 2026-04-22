@@ -1,5 +1,18 @@
 [
   {
+    "gid": "1830163047268589",
+    "title": "Steam Global Top Sellers for week of 14 Apr — 21 April 2026",
+    "url": "https://steamstore-a.akamaihd.net/news/externalpost/SteamDB/1830163047268589",
+    "is_external_url": true,
+    "author": "SteamDB",
+    "feedlabel": "SteamDB",
+    "feedname": "SteamDB",
+    "feed_type": 0,
+    "tags": [],
+    "date": 1776762000,
+    "appid": 252490
+  },
+  {
     "gid": "1830163047262482",
     "title": "The new Slay the Spire 2 roadmap has no dates: \"Exacting deadlines produce sloppy, uninspired work\"",
     "url": "https://steamstore-a.akamaihd.net/news/externalpost/PCGamesN/1830163047262482",
@@ -818,9 +831,9 @@
     "appid": 2868840
   },
   {
-    "gid": "1826362059922521",
+    "gid": "1826362059922332",
     "title": "Steam buckles under the weight of Marathon, a long-awaited roguelike sequel, and the revival of an iconic poker game",
-    "url": "https://steamstore-a.akamaihd.net/news/externalpost/PCGamesN/1826362059922521",
+    "url": "https://steamstore-a.akamaihd.net/news/externalpost/PCGamesN/1826362059922332",
     "is_external_url": true,
     "author": "editor@pcgamesn.com",
     "feedlabel": "PCGamesN",
@@ -831,9 +844,9 @@
     "appid": 2868840
   },
   {
-    "gid": "1826362059922332",
+    "gid": "1826362059922521",
     "title": "Steam buckles under the weight of Marathon, a long-awaited roguelike sequel, and the revival of an iconic poker game",
-    "url": "https://steamstore-a.akamaihd.net/news/externalpost/PCGamesN/1826362059922332",
+    "url": "https://steamstore-a.akamaihd.net/news/externalpost/PCGamesN/1826362059922521",
     "is_external_url": true,
     "author": "editor@pcgamesn.com",
     "feedlabel": "PCGamesN",
