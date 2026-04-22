@@ -5,6 +5,7 @@ import Link from "next/link";
 import type { Card } from "@/lib/api";
 import { getCardDisplayModel } from "@/lib/card-display";
 import { useLangPrefix } from "@/lib/use-lang-prefix";
+import RichDescription from "./RichDescription";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -37,56 +38,15 @@ const energyIconMap: Record<string, string> = {
   necrobinder: "necrobinder", regent: "regent", colorless: "colorless",
 };
 
+// Card grid tiles route through the same `RichDescription` tokenizer the
+// detail pages use so every BBCode tag the site supports (every color,
+// [b]/[i], [sine]/[jitter], [energy:N], [star:N]) renders consistently.
+// The previous inline regex only handled [gold] / [green] / energy / star,
+// so tags like [purple] (Blade of Ink) leaked through as literal text.
 function renderDescription(card: Card, text: string): React.ReactNode {
   const normalizedText = text.replace(/\n/g, " ");
-  const parts: React.ReactNode[] = [];
-  const regex = /(\[gold\].*?\[\/gold\]|\[green\].*?\[\/green\]|\[energy:(\d+)\]|\[star:(\d+)\])/g;
-  let lastIndex = 0;
-  let matchArr: RegExpExecArray | null;
-
-  while ((matchArr = regex.exec(normalizedText)) !== null) {
-    if (matchArr.index > lastIndex) {
-      parts.push(normalizedText.slice(lastIndex, matchArr.index));
-    }
-
-    const segment = matchArr[0];
-    if (segment.startsWith("[gold]")) {
-      const inner = segment.replace(/\[gold\]/g, "").replace(/\[\/gold\]/g, "");
-      parts.push(<span key={matchArr.index} className="text-[var(--accent-gold)]">{inner}</span>);
-    } else if (segment.startsWith("[green]")) {
-      const inner = segment.replace(/\[green\]/g, "").replace(/\[\/green\]/g, "");
-      parts.push(<span key={matchArr.index} className="text-emerald-400">{inner}</span>);
-    } else if (segment.startsWith("[energy:")) {
-      const count = parseInt(matchArr[2]);
-      const iconName = energyIconMap[card.color] || "colorless";
-      const icons = [];
-      for (let i = 0; i < count; i++) {
-        icons.push(
-          <img key={i} src={`${API_BASE}/static/images/icons/${iconName}_energy_icon.webp`}
-            alt="energy" className="inline-block w-4 h-4 align-text-bottom" crossOrigin="anonymous" />
-        );
-      }
-      parts.push(<span key={matchArr.index}>{icons}</span>);
-    } else if (segment.startsWith("[star:")) {
-      const count = parseInt(matchArr[3]);
-      const icons = [];
-      for (let i = 0; i < count; i++) {
-        icons.push(
-          <img key={i} src={`${API_BASE}/static/images/icons/star_icon.webp`}
-            alt="star" className="inline-block w-4 h-4 align-text-bottom" crossOrigin="anonymous" />
-        );
-      }
-      parts.push(<span key={matchArr.index}>{icons}</span>);
-    }
-
-    lastIndex = regex.lastIndex;
-  }
-
-  if (lastIndex < normalizedText.length) {
-    parts.push(normalizedText.slice(lastIndex));
-  }
-
-  return parts;
+  const energyIcon = energyIconMap[card.color] || "colorless";
+  return <RichDescription text={normalizedText} energyIcon={energyIcon} />;
 }
 
 function CardItem({ card }: { card: Card }) {
