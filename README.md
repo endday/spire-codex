@@ -731,6 +731,10 @@ Thanks to **vesper-arch**, **terracubist**, **U77654**, **Purple Aspired Dreamin
 - **Infrastructure**: Docker, GitHub Actions CI (self-hosted K8s runner), SSH deploy
 - **Tools**: Python (update pipeline, changelog diffing, image copying)
 
-## Disclaimer
+## License
 
-This project is for educational purposes. Game data belongs to Mega Crit Games. This should not be used to recompile or redistribute the game.
+- **Source code**: [PolyForm Noncommercial 1.0.0](LICENSE.md) — free to use, modify, and redistribute for noncommercial purposes. Selling the software is not permitted.
+- **Hosted API**: [API_TERMS.md](API_TERMS.md) — free for any use within the published rate limits; reach out on Discord or in an issue if you need more.
+- **Game data** (cards, relics, monsters, etc.): © Mega Crit Games. Served here as a community reference under fair-use / educational terms. Do not use this data to recompile, repackage, or redistribute the game.
+
+Contributions are accepted under the same PolyForm Noncommercial 1.0.0 terms — see [CONTRIBUTING.md](CONTRIBUTING.md#license).

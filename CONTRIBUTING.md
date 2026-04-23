@@ -186,4 +186,6 @@ docker compose up --build
 
 ## License
 
-This project is for educational purposes. Game data belongs to Mega Crit Games.
+Contributions are accepted under the project's [PolyForm Noncommercial 1.0.0](LICENSE.md) license — by opening a PR you agree your contribution is licensed under the same terms as the rest of the code. Noncommercial use, modification, and redistribution are all permitted; selling the software is not.
+
+Game data (cards, relics, monsters, etc.) belongs to **Mega Crit Games** and is served here as a community reference under fair-use / educational terms. See [API_TERMS.md](API_TERMS.md) for the hosted API's usage policy.
