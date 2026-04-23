@@ -957,7 +957,7 @@ function CardTable({
     );
   }
   return (
-    <div className="overflow-visible">
+    <div className="overflow-x-auto md:overflow-visible">
       <table className="w-full text-sm">
         <thead>
           <tr className="border-b border-[var(--border-subtle)]">
@@ -1084,7 +1084,7 @@ function RelicsTab({
       {rows.length === 0 ? (
         <div className="py-8 text-center text-sm text-[var(--text-muted)]">No relics match.</div>
       ) : (
-        <div className="overflow-visible">
+        <div className="overflow-x-auto md:overflow-visible">
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-[var(--border-subtle)]">
@@ -1212,7 +1212,7 @@ function PotionsTab({
       {rows.length === 0 ? (
         <div className="py-8 text-center text-sm text-[var(--text-muted)]">No potions match.</div>
       ) : (
-        <div className="overflow-visible">
+        <div className="overflow-x-auto md:overflow-visible">
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-[var(--border-subtle)]">
