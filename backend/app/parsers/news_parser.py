@@ -95,24 +95,63 @@ def main(_lang: str | None = None) -> None:
 
     # Maintain an index file so the API can list without scanning the
     # directory on every request.
-    archive = []
+    raw_archive: list[dict] = []
     for path in NEWS_DIR.glob("*.json"):
         if path.name == "index.json":
             continue
         try:
             with open(path, "r", encoding="utf-8") as f:
-                archive.append(json.load(f))
+                raw_archive.append(json.load(f))
         except (json.JSONDecodeError, OSError):
             continue
+
+    # Dedupe story-duplicates. Steam's feed occasionally yields the same
+    # press article under two gids — we've seen PCGamesN stories land twice
+    # with identical title / date / author / feedname. Collapse by that
+    # 4-tuple and keep the lowest gid (earliest-published, most stable
+    # share link). Articles with no title can't be safely grouped, so we
+    # key them by gid and let them survive individually.
+    grouped: dict[tuple, dict] = {}
+    for item in raw_archive:
+        title = (item.get("title") or "").strip()
+        if not title:
+            grouped[("__no_title__", item.get("gid"))] = item
+            continue
+        key = (title, item.get("date"), item.get("author"), item.get("feedname"))
+        existing = grouped.get(key)
+        if existing is None or _gid_int(item) < _gid_int(existing):
+            grouped[key] = item
+
+    archive = list(grouped.values())
+    survivors = {i.get("gid") for i in archive}
+    deleted = 0
+    for item in raw_archive:
+        gid = item.get("gid")
+        if gid and gid not in survivors:
+            path = NEWS_DIR / f"{gid}.json"
+            if path.exists():
+                path.unlink()
+                deleted += 1
+
     archive.sort(key=lambda i: i.get("date", 0), reverse=True)
     with open(NEWS_DIR / "index.json", "w", encoding="utf-8") as f:
         # Drop `contents` from the index — listing only needs metadata.
         slim = [{k: v for k, v in i.items() if k != "contents"} for i in archive]
         json.dump(slim, f, indent=2, ensure_ascii=False)
 
+    dedupe_note = f", dropped {deleted} duplicate(s)" if deleted else ""
     print(
-        f"  news: fetched {len(items)} from Steam, archive now {len(archive)} entries"
+        f"  news: fetched {len(items)} from Steam, archive now {len(archive)} entries{dedupe_note}"
     )
+
+
+def _gid_int(item: dict) -> int:
+    """Coerce Steam's numeric-string gid to int for ordering. Non-numeric
+    gids (shouldn't happen but cheap to defend against) sort as zero."""
+    try:
+        return int(item.get("gid") or "0")
+    except (TypeError, ValueError):
+        return 0
 
 
 if __name__ == "__main__":
