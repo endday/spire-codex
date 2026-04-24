@@ -168,6 +168,29 @@ _ENTITY_TYPES = frozenset(
 )
 
 
+def _error_label(path: str) -> str:
+    """Bucket a request path into a bounded set of labels for api_errors.
+
+    Prometheus counter labels live forever, so using the raw path meant
+    any scraper enumerating unique URLs could grow the metric without
+    limit until the container OOM-killed. This collapses the two known
+    unbounded surfaces — static assets and entity detail routes — into
+    a small constant set while leaving named API paths (`/api/runs`,
+    `/api/guides/submit`) alone so real 4xx signal is still
+    distinguishable.
+    """
+    if path.startswith("/static/"):
+        return "/static/"
+    if path.startswith("/api/"):
+        parts = path.strip("/").split("/")
+        if len(parts) >= 3 and parts[1] in _ENTITY_TYPES:
+            return f"/api/{parts[1]}/{{id}}"
+        return path
+    if path.startswith("/widget/"):
+        return "/widget/"
+    return "other"
+
+
 class RequestLoggingMiddleware(BaseHTTPMiddleware):
     """Log every request and track detailed metrics."""
 
@@ -238,20 +261,30 @@ class RequestLoggingMiddleware(BaseHTTPMiddleware):
             elif "changelog" in path:
                 widget_loads.labels(widget_type="changelog").inc()
 
-        # Error tracking and logging
+        # Error tracking and logging.
+        # The api_errors counter uses `path` as a label; a raw path label
+        # turned every unique URL (e.g. every scraped `/static/...` 404)
+        # into its own time series. Scrapers hitting thousands of unique
+        # URLs bloated the counter and pegged memory/CPU until the
+        # container OOM-killed. Normalize the label to a small fixed set
+        # so cardinality is bounded regardless of traffic.
         if response.status_code >= 400:
             api_errors.labels(
                 status_code=str(response.status_code),
                 method=request.method,
-                path=path,
+                path=_error_label(path),
             ).inc()
-            logger.warning(
-                "%s %s %d %.0fms",
-                request.method,
-                path,
-                response.status_code,
-                elapsed_ms,
-            )
+            # Skip per-line WARNING logs for 404s on `/static/` — a
+            # scrape burst can emit hundreds per second of identical-shape
+            # noise that drowns out real signal and adds real I/O cost.
+            if not (response.status_code == 404 and path.startswith("/static/")):
+                logger.warning(
+                    "%s %s %d %.0fms",
+                    request.method,
+                    path,
+                    response.status_code,
+                    elapsed_ms,
+                )
         else:
             logger.info(
                 "%s %s %d %.0fms",
