@@ -205,6 +205,10 @@ class RequestLoggingMiddleware(BaseHTTPMiddleware):
         version = request.query_params.get("version")
         if version:
             version_usage.labels(version=version).inc()
+        else:
+            host = request.headers.get("x-forwarded-host") or request.headers.get("host", "")
+            if host.startswith("beta."):
+                version_usage.labels(version="latest").inc()
 
         # Track entity views and searches from API paths
         path = request.url.path
