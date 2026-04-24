@@ -7,7 +7,7 @@ from pathlib import Path
 from fastapi import APIRouter, HTTPException, Request
 from slowapi import Limiter
 from slowapi.util import get_remote_address
-from ..services.runs_db import submit_run, get_stats
+from ..services.runs_db import submit_run, get_stats, claim_runs
 from ..metrics import (
     run_submissions,
     run_character,
@@ -110,6 +110,57 @@ async def submit_run_endpoint(request: Request, username: str | None = None):
         run_duration.observe(run_time)
 
     return result
+
+
+MAX_CLAIM_HASHES = 5000
+
+
+@router.post("/claim", tags=["Runs"])
+@limiter.limit("10/minute")
+async def claim_runs_endpoint(request: Request):
+    """Attach a username to previously-submitted runs by hash.
+
+    Body: `{ "username": "name", "hashes": ["abc123...", ...] }`
+
+    Only rows with a NULL/empty username are updated — existing
+    claims are never overwritten. Intended for the Spire Compendium
+    desktop app: after Steam sign-in, the client computes hashes
+    for every local run and claims the ones it already uploaded
+    anonymously.
+    """
+    try:
+        payload = await request.json()
+    except Exception:
+        raise HTTPException(status_code=400, detail="Invalid JSON body")
+
+    raw_username = payload.get("username")
+    if not raw_username or not isinstance(raw_username, str):
+        raise HTTPException(status_code=400, detail="username is required")
+
+    import re
+
+    sanitized = re.sub(r"[^a-zA-Z0-9_\- ]", "", raw_username.strip())[:25].strip()
+    if not sanitized:
+        raise HTTPException(
+            status_code=400, detail="username is empty after sanitization"
+        )
+
+    hashes = payload.get("hashes")
+    if not isinstance(hashes, list):
+        raise HTTPException(status_code=400, detail="hashes must be a list")
+    if len(hashes) > MAX_CLAIM_HASHES:
+        raise HTTPException(
+            status_code=413,
+            detail=f"Too many hashes. Max {MAX_CLAIM_HASHES} per request.",
+        )
+
+    clean_hashes = [
+        h for h in hashes if isinstance(h, str) and h.isalnum() and 8 <= len(h) <= 64
+    ]
+    if not clean_hashes:
+        return {"claimed": 0, "already_claimed": 0, "unknown": 0}
+
+    return claim_runs(sanitized, clean_hashes)
 
 
 @router.get("/list", tags=["Runs"])

@@ -327,6 +327,46 @@ def _submit_player_run(
     return {"success": True, "run_id": run_id, "run_hash": run_hash}
 
 
+def claim_runs(username: str, hashes: list[str]) -> dict:
+    """Attach `username` to any run rows whose hash matches and whose
+    current username is NULL/empty. Rows already claimed by any user
+    (including the same one) are left untouched so this can't overwrite.
+
+    Returns a summary: how many rows were updated, how many hashes
+    matched a row but were skipped (already claimed), and how many
+    hashes didn't match any row at all.
+    """
+    if not hashes:
+        return {"claimed": 0, "already_claimed": 0, "unknown": 0}
+
+    with get_conn() as conn:
+        placeholders = ",".join("?" for _ in hashes)
+        existing = conn.execute(
+            f"SELECT run_hash, username FROM runs WHERE run_hash IN ({placeholders})",
+            hashes,
+        ).fetchall()
+        by_hash = {r["run_hash"]: r["username"] for r in existing}
+
+        unclaimed = [h for h, u in by_hash.items() if not u]
+        already_claimed = len(by_hash) - len(unclaimed)
+        unknown = len(hashes) - len(by_hash)
+
+        if unclaimed:
+            unclaimed_placeholders = ",".join("?" for _ in unclaimed)
+            conn.execute(
+                f"UPDATE runs SET username = ? "
+                f"WHERE run_hash IN ({unclaimed_placeholders}) "
+                f"AND (username IS NULL OR username = '')",
+                [username, *unclaimed],
+            )
+
+    return {
+        "claimed": len(unclaimed),
+        "already_claimed": already_claimed,
+        "unknown": unknown,
+    }
+
+
 def get_stats(
     character: str | None = None,
     win: str | None = None,
