@@ -83,13 +83,6 @@ export default function SiteSwitcher() {
   // Current beta version comes from `?version=` when on beta; empty means
   // "viewing latest". On main this is always null.
   const currentBetaVersion = IS_BETA ? searchParams.get("version") : null;
-  
-  // Release currently treated as the main version.
-  const MAIN_VERSION = "v0.103.2";
-  // Keep the main-version check in one place so label and styling use the same source of truth.
-  function isMainVersion(version: string) {
-    return stripSuffix(version) === MAIN_VERSION;
-  }
 
   // Build the full list: "main" entry + one entry per beta version.
   // Beta entries point at beta.spire-codex.com with `?version=<v>` for
@@ -109,12 +102,11 @@ export default function SiteSwitcher() {
       const href = v.is_latest
         ? BETA_URL
         : `${BETA_URL}/?version=${encodeURIComponent(v.version)}`;
-      const mainVersion = isMainVersion(v.version);
       return {
         label: `beta ${stripSuffix(v.version)}`,
         href,
-        sublabel: v.is_latest ? "latest" : mainVersion ? "main" : undefined,
-        isMain: mainVersion,
+        sublabel: v.is_latest ? "latest" : undefined,
+        isMain: false,
         isCurrent,
         // When user is already on beta and picks a different beta version,
         // stay in-SPA via the context setter — no full page reload.
