@@ -34,6 +34,16 @@ CATEGORIES: dict[str, tuple[str, str, bool, list[str] | None]] = {
     "cards-beta": ("Cards (Beta Art)", "cards/beta", False, None),
     "relics-beta": ("Relics (Beta Art)", "relics/beta", False, None),
     "monsters-beta": ("Monsters (Beta Art)", "monsters/beta", False, None),
+    "backgrounds-beta": (
+        "Backgrounds (Beta Art)",
+        "misc/beta",
+        False,
+        # Event-scene backgrounds that changed in Steam beta builds but
+        # haven't landed on the stable branch yet. File names mirror
+        # their stable counterparts under `misc/` so downloads from
+        # either bundle produce a consistent filename.
+        ["vakuu.png"],
+    ),
     "backgrounds": (
         "Backgrounds",
         "misc",
