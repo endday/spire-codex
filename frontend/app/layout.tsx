@@ -59,7 +59,7 @@ export default function RootLayout({
               <Navbar />
               <div className="pt-16">
                 <DonationBanner />
-                <main>{children}</main>
+                <main tabIndex={-1}>{children}</main>
               </div>
               <Footer />
               <GlobalSearch />
