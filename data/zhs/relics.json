@@ -1500,7 +1500,10 @@
     "pool": "shared",
     "merchant_price": null,
     "image_url": "/static/images/relics/looming_fruit.webp",
-    "image_variants": null,
+    "image_variants": {
+      "Cornucopia": "/static/images/relics/looming_fruit.webp",
+      "Fruit": "/static/images/relics/looming_fruit_2.webp"
+    },
     "notes": null,
     "rarity_key": "Ancient",
     "compendium_order": 197

@@ -185,6 +185,20 @@ def parse_single_relic(
         if variant_file.exists():
             image_variants[char_name] = f"/static/images/relics/{variant_file.name}"
 
+    # Looming Fruit ships two icons (cornucopia + bare fruit) and the
+    # game picks one per save based on `UniqueId % 2 == 0` in
+    # `LoomingFruit.cs::HasCornucopia()`. Half the playerbase sees
+    # each, which leads to "wrong icon" reports — surface both so the
+    # detail page's variant picker shows them as alternates.
+    if class_name == "LoomingFruit":
+        cornucopia_url = f"/static/images/relics/{relic_base}.webp"
+        fruit_file = STATIC_IMAGES / f"{relic_base}_2.webp"
+        if not fruit_file.exists():
+            fruit_file = STATIC_IMAGES / f"{relic_base}_2.png"
+        if fruit_file.exists():
+            image_variants["Cornucopia"] = cornucopia_url
+            image_variants["Fruit"] = f"/static/images/relics/{fruit_file.name}"
+
     # Relic-specific notes extracted from C# source
     notes = None
     if class_name == "ToyBox":
