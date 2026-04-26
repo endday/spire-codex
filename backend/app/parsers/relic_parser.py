@@ -207,6 +207,11 @@ def parse_single_relic(
             "Wax Relic rarity: 50% Common, 33% Uncommon, 17% Rare (standard relic rarity roll).",
             "All wax relics melt after 12 total combats, then Toy Box is used up.",
         ]
+    if class_name == "LoomingFruit":
+        notes = [
+            "Looming Fruit ships two icons (Cornucopia and Fruit). The game picks one per save based on whether your save's UniqueId ends in an even or odd digit, so half the playerbase sees each variant.",
+            "Both variants are functionally identical — same +31 Max HP effect — and the choice is permanent for a given save file. Use the toggle above to preview the one your save shows.",
+        ]
 
     return {
         "id": relic_id,

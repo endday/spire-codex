@@ -1250,7 +1250,10 @@
       "Cornucopia": "/static/images/relics/looming_fruit.webp",
       "Fruit": "/static/images/relics/looming_fruit_2.webp"
     },
-    "notes": null,
+    "notes": [
+      "Looming Fruit ships two icons (Cornucopia and Fruit). The game picks one per save based on whether your save's UniqueId ends in an even or odd digit, so half the playerbase sees each variant.",
+      "Both variants are functionally identical — same +31 Max HP effect — and the choice is permanent for a given save file. Use the toggle above to preview the one your save shows."
+    ],
     "rarity_key": "Ancient",
     "compendium_order": 180
   },
