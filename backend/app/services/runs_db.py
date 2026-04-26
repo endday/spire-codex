@@ -152,13 +152,24 @@ def clean_id(raw_id: str) -> str:
 
 def submit_run(data: dict, username: str | None = None) -> dict:
     """Parse and store a run. Returns status dict."""
-    # Validate structure
-    if (
-        not data.get("players")
-        or not data.get("map_point_history")
-        or not isinstance(data.get("acts"), list)
-    ):
-        return {"error": "Invalid run data — missing required fields"}
+    # Validate structure. Errors call out the specific field so failed
+    # batch uploads (issue #151) can be triaged without re-running with
+    # a debugger — previously every rejection collapsed to the same
+    # "missing required fields" message regardless of which field was
+    # actually the problem.
+    missing: list[str] = []
+    if not data.get("players"):
+        missing.append("players")
+    if not data.get("map_point_history"):
+        missing.append("map_point_history")
+    if not isinstance(data.get("acts"), list):
+        missing.append("acts")
+    if missing:
+        return {
+            "error": (
+                f"Invalid run data — missing or empty fields: {', '.join(missing)}"
+            )
+        }
 
     was_abandoned = int(data.get("was_abandoned", False))
     total_floors = sum(len(act) for act in data.get("map_point_history", []))
