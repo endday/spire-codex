@@ -162,31 +162,115 @@ export default function DevelopersPage() {
           <h3 className="text-sm font-semibold text-[var(--text-muted)] uppercase tracking-wider mb-3">
             Endpoints
           </h3>
-          <div className="space-y-1.5 text-sm font-mono">
-            {[
-              { method: "GET", path: "/api/cards", desc: "All cards (filter: color, type, rarity, keyword, tag, search)" },
-              { method: "GET", path: "/api/cards/{id}", desc: "Single card" },
-              { method: "GET", path: "/api/characters", desc: "All characters" },
-              { method: "GET", path: "/api/relics", desc: "All relics (filter: rarity, pool, search)" },
-              { method: "GET", path: "/api/potions", desc: "All potions (filter: rarity, pool, search)" },
-              { method: "GET", path: "/api/monsters", desc: "All monsters (filter: type, search)" },
-              { method: "GET", path: "/api/powers", desc: "All powers (filter: type, stack_type, search)" },
-              { method: "GET", path: "/api/events", desc: "All events (filter: type, act, search)" },
-              { method: "GET", path: "/api/encounters", desc: "All encounters (filter: room_type, act, search)" },
-              { method: "GET", path: "/api/enchantments", desc: "All enchantments" },
-              { method: "GET", path: "/api/keywords", desc: "Card keywords" },
-              { method: "GET", path: "/api/orbs", desc: "Orb types" },
-              { method: "GET", path: "/api/afflictions", desc: "Affliction types" },
-              { method: "GET", path: "/api/achievements", desc: "Achievements" },
-              { method: "GET", path: "/api/stats", desc: "Entity counts" },
-            ].map((ep) => (
-              <div key={ep.path} className="flex items-start gap-3">
-                <span className="text-emerald-400 w-8 flex-shrink-0">{ep.method}</span>
-                <span className="text-[var(--text-primary)]">{ep.path}</span>
-                <span className="text-[var(--text-muted)] font-sans text-xs ml-auto">{ep.desc}</span>
+          <p className="text-xs text-[var(--text-muted)] mb-3">
+            Full interactive docs at <a href={`${API_URL}/docs`} className="text-[var(--accent-gold)] hover:underline">/docs</a> (auto-generated from the backend, always current).
+          </p>
+          {[
+            {
+              category: "Entities",
+              endpoints: [
+                { method: "GET", path: "/api/cards", desc: "All cards (filter: color, type, rarity, keyword, tag, search)" },
+                { method: "GET", path: "/api/cards/{id}", desc: "Single card" },
+                { method: "GET", path: "/api/characters", desc: "All characters" },
+                { method: "GET", path: "/api/characters/{id}", desc: "Single character" },
+                { method: "GET", path: "/api/relics", desc: "All relics (filter: rarity, pool, search)" },
+                { method: "GET", path: "/api/relics/{id}", desc: "Single relic" },
+                { method: "GET", path: "/api/potions", desc: "All potions (filter: rarity, pool, search)" },
+                { method: "GET", path: "/api/potions/{id}", desc: "Single potion" },
+                { method: "GET", path: "/api/monsters", desc: "All monsters (filter: type, search)" },
+                { method: "GET", path: "/api/monsters/{id}", desc: "Single monster" },
+                { method: "GET", path: "/api/powers", desc: "All powers (filter: type, stack_type, search)" },
+                { method: "GET", path: "/api/powers/{id}", desc: "Single power" },
+                { method: "GET", path: "/api/events", desc: "All events (filter: type, act, search)" },
+                { method: "GET", path: "/api/events/{id}", desc: "Single event" },
+                { method: "GET", path: "/api/encounters", desc: "All encounters (filter: room_type, act, search)" },
+                { method: "GET", path: "/api/encounters/{id}", desc: "Single encounter" },
+                { method: "GET", path: "/api/enchantments", desc: "All enchantments" },
+                { method: "GET", path: "/api/enchantments/{id}", desc: "Single enchantment" },
+                { method: "GET", path: "/api/keywords", desc: "Card keywords" },
+                { method: "GET", path: "/api/keywords/{id}", desc: "Single keyword" },
+                { method: "GET", path: "/api/intents", desc: "All intent types" },
+                { method: "GET", path: "/api/intents/{id}", desc: "Single intent" },
+                { method: "GET", path: "/api/orbs", desc: "All orb types" },
+                { method: "GET", path: "/api/orbs/{id}", desc: "Single orb" },
+                { method: "GET", path: "/api/afflictions", desc: "Affliction types" },
+                { method: "GET", path: "/api/afflictions/{id}", desc: "Single affliction" },
+                { method: "GET", path: "/api/modifiers", desc: "Custom mode modifiers" },
+                { method: "GET", path: "/api/modifiers/{id}", desc: "Single modifier" },
+                { method: "GET", path: "/api/achievements", desc: "All achievements" },
+                { method: "GET", path: "/api/achievements/{id}", desc: "Single achievement" },
+                { method: "GET", path: "/api/badges", desc: "All badges" },
+                { method: "GET", path: "/api/badges/{id}", desc: "Single badge" },
+                { method: "GET", path: "/api/epochs", desc: "All epochs" },
+                { method: "GET", path: "/api/epochs/{id}", desc: "Single epoch" },
+                { method: "GET", path: "/api/stories", desc: "All stories" },
+                { method: "GET", path: "/api/stories/{id}", desc: "Single story" },
+                { method: "GET", path: "/api/acts", desc: "All acts" },
+                { method: "GET", path: "/api/acts/{id}", desc: "Single act" },
+                { method: "GET", path: "/api/ascensions", desc: "All ascension levels" },
+                { method: "GET", path: "/api/ascensions/{id}", desc: "Single ascension" },
+                { method: "GET", path: "/api/glossary", desc: "All glossary terms" },
+                { method: "GET", path: "/api/glossary/{id}", desc: "Single term" },
+              ],
+            },
+            {
+              category: "Aggregations & Lookups",
+              endpoints: [
+                { method: "GET", path: "/api/stats", desc: "Entity counts" },
+                { method: "GET", path: "/api/ancient-pools", desc: "All ancient relic pools with conditions" },
+                { method: "GET", path: "/api/ancient-pools/{id}", desc: "Pools for a single ancient" },
+                { method: "GET", path: "/api/unlocks", desc: "Unlockable entities grouped by type with epoch context" },
+                { method: "GET", path: "/api/history/{entity_type}/{entity_id}", desc: "Per-entity version history from changelogs" },
+                { method: "GET", path: "/api/names/{entity_type}/{entity_id}", desc: "Cross-language name lookup for an entity" },
+                { method: "GET", path: "/api/changelogs", desc: "All changelogs" },
+                { method: "GET", path: "/api/changelogs/recent-additions", desc: "Newest entities surfaced for the homepage band" },
+                { method: "GET", path: "/api/changelogs/{tag}", desc: "Single changelog by tag (e.g. v1.0.20)" },
+                { method: "GET", path: "/api/news", desc: "Steam announcements (mirrored locally for permanence)" },
+                { method: "GET", path: "/api/news/{gid}", desc: "Single news article with sanitized body" },
+                { method: "GET", path: "/api/versions", desc: "Available beta data versions for the version picker" },
+              ],
+            },
+            {
+              category: "Community & Submissions",
+              endpoints: [
+                { method: "GET", path: "/api/guides", desc: "All guides (filter: category, difficulty, tag, search)" },
+                { method: "GET", path: "/api/guides/{slug}", desc: "Single guide with rendered markdown" },
+                { method: "POST", path: "/api/guides", desc: "Submit a guide (Discord webhook, rate-limited)" },
+                { method: "POST", path: "/api/runs", desc: "Submit a run for community stats and leaderboards" },
+                { method: "POST", path: "/api/runs/claim", desc: "Attach a username to previously-submitted runs by hash" },
+                { method: "GET", path: "/api/runs/list", desc: "Browse submitted runs with filters and pagination" },
+                { method: "GET", path: "/api/runs/leaderboard", desc: "Run leaderboards (fastest, highest_ascension)" },
+                { method: "GET", path: "/api/runs/shared/{run_hash}", desc: "Single submitted run by hash (rate-limited)" },
+                { method: "GET", path: "/api/runs/stats", desc: "Aggregate community stats (filter by character, ascension, username)" },
+                { method: "GET", path: "/api/runs/versions", desc: "Distinct game build IDs that have submitted runs" },
+                { method: "POST", path: "/api/feedback", desc: "Submit feedback (Discord webhook)" },
+              ],
+            },
+            {
+              category: "Bulk Downloads",
+              endpoints: [
+                { method: "GET", path: "/api/exports/{lang}", desc: "ZIP of all entity JSON for one language" },
+                { method: "GET", path: "/api/images", desc: "Image gallery categories" },
+                { method: "GET", path: "/api/images/search", desc: "Search images by filename" },
+                { method: "GET", path: "/api/images/{category}/download", desc: "ZIP download of an image category" },
+              ],
+            },
+          ].map((group) => (
+            <div key={group.category} className="mb-4 last:mb-0">
+              <h4 className="text-xs font-semibold text-[var(--accent-gold)] uppercase tracking-wider mb-2">
+                {group.category}
+              </h4>
+              <div className="space-y-1.5 text-sm font-mono">
+                {group.endpoints.map((ep) => (
+                  <div key={ep.path} className="flex items-start gap-3">
+                    <span className={`${ep.method === "POST" ? "text-cyan-400" : "text-emerald-400"} w-10 flex-shrink-0`}>{ep.method}</span>
+                    <span className="text-[var(--text-primary)]">{ep.path}</span>
+                    <span className="text-[var(--text-muted)] font-sans text-xs ml-auto text-right">{ep.desc}</span>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
 
         <div className="bg-[var(--bg-card)] rounded-xl border border-[var(--border-subtle)] p-5 mb-4">
