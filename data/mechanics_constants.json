@@ -1,4 +1,19 @@
 {
+  "ascension_helper": {
+    "PovertyAscensionGoldMultiplier": 0.75
+  },
+  "ascension_levels": [
+    "SwarmingElites",
+    "WearyTraveler",
+    "Poverty",
+    "TightBelt",
+    "AscendersBane",
+    "Inflation",
+    "Scarcity",
+    "ToughEnemies",
+    "DeadlyEnemies",
+    "DoubleBoss"
+  ],
   "card_rarity_odds": {
     "EliteCommonOdds": {
       "ascended": 0.549,
@@ -43,6 +58,20 @@
     },
     "regularUncommonOdds": 0.37,
     "shopUncommonOdds": 0.37
+  },
+  "encounter_gold_rewards": {
+    "Boss": {
+      "max": 100,
+      "min": 100
+    },
+    "Elite": {
+      "max": 45,
+      "min": 35
+    },
+    "Monster": {
+      "max": 20,
+      "min": 10
+    }
   },
   "potion_reward_odds": {
     "_basePotionRewardOdds": 0.4,

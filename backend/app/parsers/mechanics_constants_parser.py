@@ -1,4 +1,4 @@
-"""Parse named numeric constants from C# odds/economy files.
+"""Parse named numeric constants from C# odds / economy / progression files.
 
 Source of truth for the numbers shown on `/mechanics/<slug>` pages.
 Today every probability and threshold there is hand-typed (e.g. the
@@ -7,14 +7,19 @@ silently desyncs the page until a player reports it. This parser pulls
 the same numbers straight from the decompiled C# constants and writes
 them to `data/mechanics_constants.json`.
 
-Phase 1 covers the `MegaCrit.Sts2.Core.Odds` namespace (CardRarityOdds,
-PotionRewardOdds, UnknownMapPointOdds) — which back the most-viewed
-mechanics pages. Adding more files is just a matter of extending
-SOURCE_FILES below; the regexes are general.
+Coverage groups:
+- `MegaCrit.Sts2.Core.Odds/*` — card-rarity, potion-drop, unknown-room
+  probabilities (uses the generic const + AscensionHelper regex pair)
+- `EncounterModel.cs` — room-type → min/max gold reward switch
+  (custom extractor, gold-rewards mechanics page)
+- `AscensionLevel.cs` — ordered enum of all 10 ascension levels
+  (custom extractor, ascension-modifiers mechanics page)
+- `AscensionHelper.cs` — standalone multipliers like
+  `PovertyAscensionGoldMultiplier` (generic property-getter regex)
 
 The mechanics pages don't yet read from this file. That migration is a
 separate change — this PR ships the data + a drift-friendly format
-that future tooling (CI guard, build-time injection) can consume.
+that future tooling can consume.
 """
 
 import json
@@ -24,14 +29,15 @@ from parser_paths import BASE, DECOMPILED, DATA_DIR
 
 ODDS_DIR = DECOMPILED / "MegaCrit.Sts2.Core.Odds"
 
-# C# files to mine. Add more as we wire additional mechanics pages over
-# to parsed constants. Key is the namespaced source path (relative to
-# `extraction/decompiled/`); value is a friendly bucket name used as the
-# top-level JSON key.
+# C# files mined by the generic constant + AscensionHelper regexes.
+# Anything with a custom shape (room-type switches, enums, etc.) is
+# handled by a dedicated function further down — kept out of this map
+# so the generic path stays simple.
 SOURCE_FILES: dict[str, str] = {
     "MegaCrit.Sts2.Core.Odds/CardRarityOdds.cs": "card_rarity_odds",
     "MegaCrit.Sts2.Core.Odds/PotionRewardOdds.cs": "potion_reward_odds",
     "MegaCrit.Sts2.Core.Odds/UnknownMapPointOdds.cs": "unknown_map_point_odds",
+    "MegaCrit.Sts2.Core.Helpers/AscensionHelper.cs": "ascension_helper",
 }
 
 # Two declaration shapes carry the constants we care about:
@@ -44,6 +50,13 @@ SOURCE_FILES: dict[str, str] = {
 _CONST_RE = re.compile(
     r"(?:public|private|internal)\s+const\s+(?:float|double|int|decimal)\s+"
     r"(?P<name>\w+)\s*=\s*(?P<value>-?[0-9]+\.?[0-9]*)[fdmM]?\s*;"
+)
+# Standalone property-getter literals — `public static double X => 0.75;`.
+# AscensionHelper.cs uses this shape for `PovertyAscensionGoldMultiplier`
+# and similar tuning numbers that don't depend on an ascension call.
+_PROP_GETTER_RE = re.compile(
+    r"(?:public|private|internal)\s+(?:static\s+)?(?:readonly\s+)?(?:float|double|int|decimal)\s+"
+    r"(?P<name>\w+)\s*=>\s*(?P<value>-?[0-9]+\.?[0-9]*)[fdmM]?\s*;"
 )
 # Capture both branches of `GetValueIfAscension(level, withAsc, baseValue)`
 # so callers can see both the post-ascension and pre-ascension number.
@@ -66,6 +79,10 @@ def parse_file(filepath) -> dict:
     Output shape: `{name: value}` for plain constants, `{name: {base, ascended, ascension_level}}`
     for AscensionHelper-conditional values. Keeps the structure flat
     enough for the frontend to look up by name.
+
+    `_ASC_RE` runs first so AscensionHelper-conditional names get their
+    structured value before the plain `_PROP_GETTER_RE` would overwrite
+    them with whatever literal happens to appear inside the helper call.
     """
     if not filepath.exists():
         return {}
@@ -79,7 +96,77 @@ def parse_file(filepath) -> dict:
             "ascended": float(match.group("asc_value")),
             "ascension_level": match.group("level"),
         }
+    for match in _PROP_GETTER_RE.finditer(content):
+        # Don't clobber AscensionHelper-conditional names — those are
+        # richer dicts already populated above.
+        if match.group("name") not in out:
+            out[match.group("name")] = float(match.group("value"))
     return out
+
+
+def parse_encounter_gold_rewards() -> dict:
+    """Pull base gold-reward ranges from `EncounterModel.cs`.
+
+    `MinGoldReward` and `MaxGoldReward` are getters with a `RoomType
+    switch { Monster => 10, Elite => 35, Boss => 100, _ => 0 }` shape.
+    Returned shape:
+      `{room_type: {min, max}}` — e.g. `{"Monster": {"min": 10, "max": 20}}`.
+
+    Treasure rooms aren't in this switch (handled elsewhere in the
+    rewards pipeline) so they're absent from the output; the mechanics
+    page should treat that as "no base value, see treasure-specific
+    encounter classes."
+    """
+    filepath = DECOMPILED / "MegaCrit.Sts2.Core.Models" / "EncounterModel.cs"
+    if not filepath.exists():
+        return {}
+    content = filepath.read_text(encoding="utf-8")
+    out: dict = {}
+    # Min's switch and Max's switch sit next to each other in the file
+    # so a fixed-width window after one would overlap into the other.
+    # Bound each getter's window by the START of the next getter
+    # (whichever comes later in the file) so we only see its own arms.
+    pairs = (("MinGoldReward", "min"), ("MaxGoldReward", "max"))
+    indices = {kind: content.find(kind) for kind, _ in pairs}
+    for kind, label in pairs:
+        start = indices[kind]
+        if start == -1:
+            continue
+        # Cut off at the next getter we know about (or end of file).
+        # `start + 1` so we don't accidentally re-find the same kind.
+        next_starts = [
+            other_start
+            for other_kind, other_start in indices.items()
+            if other_kind != kind and other_start > start
+        ]
+        end = min(next_starts) if next_starts else len(content)
+        for match in re.finditer(r"RoomType\.(\w+)\s*=>\s*(\d+)", content[start:end]):
+            out.setdefault(match.group(1), {})[label] = int(match.group(2))
+    out.pop("_", None)
+    return out
+
+
+def parse_ascension_levels() -> list[str]:
+    """Read the `AscensionLevel` enum body for the ordered list of named levels.
+
+    Mechanics page hand-types the 10 ascension names. New levels would
+    silently slip through if the page never gets re-edited; pulling the
+    enum keeps it in lockstep with the C# definition.
+    """
+    filepath = (
+        DECOMPILED / "MegaCrit.Sts2.Core.Entities.Ascension" / "AscensionLevel.cs"
+    )
+    if not filepath.exists():
+        return []
+    content = filepath.read_text(encoding="utf-8")
+    body_match = re.search(r"public\s+enum\s+AscensionLevel\s*\{([^}]+)\}", content)
+    if not body_match:
+        return []
+    return [
+        name.strip()
+        for name in body_match.group(1).split(",")
+        if name.strip() and name.strip() != "None"
+    ]
 
 
 def parse_all() -> dict:
@@ -87,6 +174,8 @@ def parse_all() -> dict:
     out: dict = {}
     for rel_path, bucket in SOURCE_FILES.items():
         out[bucket] = parse_file(DECOMPILED / rel_path)
+    out["encounter_gold_rewards"] = parse_encounter_gold_rewards()
+    out["ascension_levels"] = parse_ascension_levels()
     return out
 
 
