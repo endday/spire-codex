@@ -13,53 +13,173 @@ export interface CharacterStatsRow {
   orb_slots: number;
 }
 
+// Subset of `data/mechanics_constants.json` consumed by the
+// card-rarity page. Only the buckets we actually render are typed
+// here so the prop stays narrow — page wrapper picks them off the
+// full payload before passing.
+type AscensionConditional = {
+  base: number;
+  ascended: number;
+  ascension_level: string;
+};
+export interface CardRarityConstants {
+  bossCommonOdds: number;
+  bossUncommonOdds: number;
+  bossRareOdds: number;
+  eliteUncommonOdds: number;
+  regularUncommonOdds: number;
+  shopUncommonOdds: number;
+  _baseRarityOffset: number;
+  _maxRarityOffset: number;
+  RegularRareOdds?: AscensionConditional;
+  EliteCommonOdds?: AscensionConditional;
+  EliteRareOdds?: AscensionConditional;
+  ShopCommonOdds?: AscensionConditional;
+  ShopRareOdds?: AscensionConditional;
+  RarityGrowth?: AscensionConditional;
+  regularCommonOdds?: AscensionConditional | number;
+}
+
+// Encounter gold ranges per room type, sourced from
+// `EncounterModel.cs::MinGoldReward / MaxGoldReward` switches.
+export interface EncounterGoldConstants {
+  Monster?: { min: number; max: number };
+  Elite?: { min: number; max: number };
+  Boss?: { min: number; max: number };
+}
+
+// Multiplier applied to all encounter gold rewards once the player
+// reaches Ascension 3 (Poverty), pulled from
+// `AscensionHelper.PovertyAscensionGoldMultiplier`.
+export interface AscensionHelperConstants {
+  PovertyAscensionGoldMultiplier?: number;
+}
+
+// Damage / block multipliers from the named combat-debuff powers.
+// Each entry's `value` is the literal from the power's `CanonicalVars`
+// — Vulnerable's `DamageIncrease` (1.5x), Weak's `DamageDecrease`
+// (0.75x), Frail's `BlockDecrease` (0.75x). Lets the combat-mechanics
+// page stay in sync with C# balance changes without a code edit.
+export interface CombatModifierEntry {
+  key: string;
+  value: number;
+}
+export interface CombatModifiers {
+  Vulnerable?: CombatModifierEntry;
+  Weak?: CombatModifierEntry;
+  Frail?: CombatModifierEntry;
+}
+
 interface MechanicContentProps {
   slug: string;
   characterStats?: CharacterStatsRow[];
+  cardRarity?: CardRarityConstants;
+  encounterGold?: EncounterGoldConstants;
+  ascensionHelper?: AscensionHelperConstants;
+  ascensionLevels?: string[];
+  combatModifiers?: CombatModifiers;
 }
 
-export default function MechanicContent({ slug, characterStats }: MechanicContentProps) {
+// Format a probability (0..1) as a percentage string. Trims trailing
+// zeros so 0.5 renders as "50%" not "50.0%".
+function pct(value: number): string {
+  const v = value * 100;
+  return Number.isInteger(v) ? `${v}%` : `${parseFloat(v.toFixed(2))}%`;
+}
+
+// Helper: pull the base value out of a const-or-AscensionConditional
+// field. Card-rarity has both shapes (e.g. `regularUncommonOdds: 0.37`
+// vs `regularCommonOdds: { base: 0.6, ascended: 0.615, ... }`).
+function baseValue(field: number | AscensionConditional | undefined, fallback: number): number {
+  if (field === undefined) return fallback;
+  if (typeof field === "number") return field;
+  return field.base;
+}
+function ascendedValue(field: AscensionConditional | undefined, fallback: number): number {
+  return field?.ascended ?? fallback;
+}
+
+// Render a multiplier as a short label like "1.5x" / "0.75x" — trims
+// trailing zeros so 1.5 reads "1.5x" not "1.50x".
+function mult(value: number): string {
+  return `${parseFloat(value.toFixed(2))}x`;
+}
+
+export default function MechanicContent({
+  slug,
+  characterStats,
+  cardRarity,
+  encounterGold,
+  ascensionHelper,
+  ascensionLevels,
+  combatModifiers,
+}: MechanicContentProps) {
   switch (slug) {
-    case "card-rarity":
+    case "card-rarity": {
+      // Per-table values pulled from the parsed C# constants when
+      // available, hardcoded fallbacks otherwise. Fallbacks mirror
+      // CardRarityOdds.cs as of Mega Crit's 2026-04 build — kept in
+      // sync by `parse_all.py` running before each release.
+      const r = cardRarity;
+      const normalCommon = baseValue(r?.regularCommonOdds, 0.6);
+      const normalCommonAsc = ascendedValue(typeof r?.regularCommonOdds === "object" ? r?.regularCommonOdds : undefined, 0.615);
+      const normalUncommon = r?.regularUncommonOdds ?? 0.37;
+      const normalRare = baseValue(r?.RegularRareOdds, 0.03);
+      const normalRareAsc = ascendedValue(r?.RegularRareOdds, 0.0149);
+      const eliteCommon = baseValue(r?.EliteCommonOdds, 0.5);
+      const eliteCommonAsc = ascendedValue(r?.EliteCommonOdds, 0.549);
+      const eliteUncommon = r?.eliteUncommonOdds ?? 0.4;
+      const eliteRare = baseValue(r?.EliteRareOdds, 0.1);
+      const eliteRareAsc = ascendedValue(r?.EliteRareOdds, 0.05);
+      const bossRare = r?.bossRareOdds ?? 1.0;
+      const shopCommon = baseValue(r?.ShopCommonOdds, 0.54);
+      const shopCommonAsc = ascendedValue(r?.ShopCommonOdds, 0.585);
+      const shopUncommon = r?.shopUncommonOdds ?? 0.37;
+      const shopRare = baseValue(r?.ShopRareOdds, 0.09);
+      const shopRareAsc = ascendedValue(r?.ShopRareOdds, 0.045);
+      const baseOffset = r?._baseRarityOffset ?? -0.05;
+      const maxOffset = r?._maxRarityOffset ?? 0.4;
+      const rarityGrowth = baseValue(r?.RarityGrowth, 0.01);
+      const rarityGrowthAsc = ascendedValue(r?.RarityGrowth, 0.005);
       return (
         <>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className={card}>
               <h3 className={h3}>Normal Fights</h3>
               <table className={tbl}><thead><tr className={thr}><th className={th}>Rarity</th><th className={thr2}>Chance</th><th className={thr2}>A7+</th></tr></thead><tbody>
-                <tr className={tr}><td className={td}>Common</td><td className={tdr}>60%</td><td className={tdr}>61.5%</td></tr>
-                <tr className={tr}><td className={td}>Uncommon</td><td className={tdr}>37%</td><td className={tdr}>37%</td></tr>
-                <tr><td className={td}>Rare</td><td className={gold}>3%</td><td className={gold}>1.5%</td></tr>
+                <tr className={tr}><td className={td}>Common</td><td className={tdr}>{pct(normalCommon)}</td><td className={tdr}>{pct(normalCommonAsc)}</td></tr>
+                <tr className={tr}><td className={td}>Uncommon</td><td className={tdr}>{pct(normalUncommon)}</td><td className={tdr}>{pct(normalUncommon)}</td></tr>
+                <tr><td className={td}>Rare</td><td className={gold}>{pct(normalRare)}</td><td className={gold}>{pct(normalRareAsc)}</td></tr>
               </tbody></table>
             </div>
             <div className={card}>
               <h3 className={h3}>Elite Fights</h3>
               <table className={tbl}><thead><tr className={thr}><th className={th}>Rarity</th><th className={thr2}>Chance</th><th className={thr2}>A7+</th></tr></thead><tbody>
-                <tr className={tr}><td className={td}>Common</td><td className={tdr}>50%</td><td className={tdr}>54.9%</td></tr>
-                <tr className={tr}><td className={td}>Uncommon</td><td className={tdr}>40%</td><td className={tdr}>40%</td></tr>
-                <tr><td className={td}>Rare</td><td className={gold}>10%</td><td className={gold}>5%</td></tr>
+                <tr className={tr}><td className={td}>Common</td><td className={tdr}>{pct(eliteCommon)}</td><td className={tdr}>{pct(eliteCommonAsc)}</td></tr>
+                <tr className={tr}><td className={td}>Uncommon</td><td className={tdr}>{pct(eliteUncommon)}</td><td className={tdr}>{pct(eliteUncommon)}</td></tr>
+                <tr><td className={td}>Rare</td><td className={gold}>{pct(eliteRare)}</td><td className={gold}>{pct(eliteRareAsc)}</td></tr>
               </tbody></table>
             </div>
             <div className={card}>
               <h3 className={h3}>Boss Fights</h3>
               <table className={tbl}><thead><tr className={thr}><th className={th}>Rarity</th><th className={thr2}>Chance</th></tr></thead><tbody>
-                <tr><td className={td}>Rare</td><td className={gold}>100%</td></tr>
+                <tr><td className={td}>Rare</td><td className={gold}>{pct(bossRare)}</td></tr>
               </tbody></table>
               <p className={note}>Boss card rewards are always rare.</p>
             </div>
             <div className={card}>
               <h3 className={h3}>Shop</h3>
               <table className={tbl}><thead><tr className={thr}><th className={th}>Rarity</th><th className={thr2}>Chance</th><th className={thr2}>A7+</th></tr></thead><tbody>
-                <tr className={tr}><td className={td}>Common</td><td className={tdr}>54%</td><td className={tdr}>58.5%</td></tr>
-                <tr className={tr}><td className={td}>Uncommon</td><td className={tdr}>37%</td><td className={tdr}>37%</td></tr>
-                <tr><td className={td}>Rare</td><td className={gold}>9%</td><td className={gold}>4.5%</td></tr>
+                <tr className={tr}><td className={td}>Common</td><td className={tdr}>{pct(shopCommon)}</td><td className={tdr}>{pct(shopCommonAsc)}</td></tr>
+                <tr className={tr}><td className={td}>Uncommon</td><td className={tdr}>{pct(shopUncommon)}</td><td className={tdr}>{pct(shopUncommon)}</td></tr>
+                <tr><td className={td}>Rare</td><td className={gold}>{pct(shopRare)}</td><td className={gold}>{pct(shopRareAsc)}</td></tr>
               </tbody></table>
             </div>
           </div>
           <div className={`${card} mt-4`}>
             <h3 className={h3}>Rare Card Pity System</h3>
             <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
-              A hidden offset starts at <strong className={bold}>-5%</strong> and increases by <strong className={bold}>+1%</strong> for each non-rare card <em>shown</em> in a combat reward (+0.5% on A7+) — including ones you skip. When a rare is rolled, the offset resets to -5%. Caps at <strong className={bold}>+40%</strong>. Each combat reward generates 3 cards up front, so a skipped reward still ticks the counter 3 times. This ensures you see rares more often the longer you go without one.
+              A hidden offset starts at <strong className={bold}>{pct(baseOffset)}</strong> and increases by <strong className={bold}>+{pct(rarityGrowth)}</strong> for each non-rare card <em>shown</em> in a combat reward (+{pct(rarityGrowthAsc)} on A7+) — including ones you skip. When a rare is rolled, the offset resets to {pct(baseOffset)}. Caps at <strong className={bold}>+{pct(maxOffset)}</strong>. Each combat reward generates 3 cards up front, so a skipped reward still ticks the counter 3 times. This ensures you see rares more often the longer you go without one.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
@@ -78,6 +198,7 @@ export default function MechanicContent({ slug, characterStats }: MechanicConten
           </div>
         </>
       );
+    }
 
     case "relic-distribution":
       return (
@@ -128,18 +249,64 @@ export default function MechanicContent({ slug, characterStats }: MechanicConten
         </div>
       );
 
-    case "gold-rewards":
+    case "gold-rewards": {
+      // Encounter ranges from EncounterModel.cs switches; Poverty
+      // multiplier from AscensionHelper. Treasure rooms aren't in the
+      // EncounterModel switch (handled by treasure-specific encounter
+      // classes elsewhere), so they stay as a hardcoded row for now.
+      const monster = encounterGold?.Monster ?? { min: 10, max: 20 };
+      const elite = encounterGold?.Elite ?? { min: 35, max: 45 };
+      const boss = encounterGold?.Boss ?? { min: 100, max: 100 };
+      const poverty = ascensionHelper?.PovertyAscensionGoldMultiplier ?? 0.75;
+      const fmt = (r: { min: number; max: number }) =>
+        r.min === r.max ? `${r.min}` : `${r.min}-${r.max}`;
+      const ascended = (r: { min: number; max: number }) => ({
+        min: Math.round(r.min * poverty),
+        max: Math.round(r.max * poverty),
+      });
+      // Treasure room range — see comment above. Pre-Poverty value
+      // taken from the prior hand-coded table; Mega Crit hasn't
+      // shipped a dedicated source we can mine yet.
+      const treasure = { min: 42, max: 52 };
       return (
         <div className={card}>
-          <table className={tbl}><thead><tr className={thr}><th className={th}>Source</th><th className={thr2}>Gold</th><th className={thr2}>A3+</th></tr></thead><tbody>
-            <tr className={tr}><td className={td}>Normal fight</td><td className={gold}>10-20</td><td className={gold}>7-15</td></tr>
-            <tr className={tr}><td className={td}>Elite fight</td><td className={gold}>35-45</td><td className={gold}>26-33</td></tr>
-            <tr className={tr}><td className={td}>Boss fight</td><td className={gold}>100</td><td className={gold}>75</td></tr>
-            <tr><td className={td}>Treasure room</td><td className={gold}>42-52</td><td className={gold}>31-39</td></tr>
-          </tbody></table>
-          <p className={note}>Ascension 3 (Poverty) multiplies all gold rewards by 0.75x. If enemies escape during combat, gold is proportionally reduced.</p>
+          <table className={tbl}>
+            <thead>
+              <tr className={thr}>
+                <th className={th}>Source</th>
+                <th className={thr2}>Gold</th>
+                <th className={thr2}>A3+</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className={tr}>
+                <td className={td}>Normal fight</td>
+                <td className={gold}>{fmt(monster)}</td>
+                <td className={gold}>{fmt(ascended(monster))}</td>
+              </tr>
+              <tr className={tr}>
+                <td className={td}>Elite fight</td>
+                <td className={gold}>{fmt(elite)}</td>
+                <td className={gold}>{fmt(ascended(elite))}</td>
+              </tr>
+              <tr className={tr}>
+                <td className={td}>Boss fight</td>
+                <td className={gold}>{fmt(boss)}</td>
+                <td className={gold}>{fmt(ascended(boss))}</td>
+              </tr>
+              <tr>
+                <td className={td}>Treasure room</td>
+                <td className={gold}>{fmt(treasure)}</td>
+                <td className={gold}>{fmt(ascended(treasure))}</td>
+              </tr>
+            </tbody>
+          </table>
+          <p className={note}>
+            Ascension 3 (Poverty) multiplies all gold rewards by {poverty}x. If enemies escape during combat, gold is proportionally reduced.
+          </p>
         </div>
       );
+    }
 
     case "shop-inventory":
       return (
@@ -283,10 +450,26 @@ export default function MechanicContent({ slug, characterStats }: MechanicConten
         </>
       );
 
-    case "combat-mechanics":
+    case "combat-mechanics": {
+      // Multipliers come from `combat_modifiers` in the parsed C#
+      // constants. Fallbacks mirror the v0.103.2 stable values
+      // (Vulnerable 1.5x, Weak/Frail 0.75x) so the page still renders
+      // when the API is down or the file is missing.
+      const vuln = combatModifiers?.Vulnerable?.value ?? 1.5;
+      const weak = combatModifiers?.Weak?.value ?? 0.75;
+      const frail = combatModifiers?.Frail?.value ?? 0.75;
       return (
         <>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className={card}>
+            <h3 className={h3}>Attack Mechanics</h3>
+            <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
+              An attack&rsquo;s damage is computed in a fixed order. First, the printed value is added to the attacker&rsquo;s <strong className={bold}>Strength</strong> stacks (one stack = +1 damage, additive — negative stacks reduce damage). The total is then multiplied by <strong className={bold}>{mult(weak)}</strong> if the attacker has <strong className={bold}>Weak</strong>, and by <strong className={bold}>{mult(vuln)}</strong> if the target has <strong className={bold}>Vulnerable</strong>. Whatever&rsquo;s left is absorbed by the target&rsquo;s <strong className={bold}>Block</strong>; any remainder hits HP.
+            </p>
+            <p className={`${note} mt-2`}>
+              Block follows the mirror path: card block + <strong className={bold}>Dexterity</strong> stacks, then multiplied by <strong className={bold}>{mult(frail)}</strong> if the player has <strong className={bold}>Frail</strong>. Multi-hit attacks apply the full pipeline per hit. Source: <span className="font-mono">VulnerablePower</span>, <span className="font-mono">WeakPower</span>, <span className="font-mono">FrailPower</span>, <span className="font-mono">StrengthPower</span>, <span className="font-mono">DexterityPower</span>.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
             <div className={card}>
               <h3 className={h3}>Hand &amp; Draw</h3>
               <table className={tbl}><thead><tr className={thr}><th className={th}>Mechanic</th><th className={thr2}>Value</th></tr></thead><tbody>
@@ -302,9 +485,9 @@ export default function MechanicContent({ slug, characterStats }: MechanicConten
               <table className={tbl}><thead><tr className={thr}><th className={th}>Effect</th><th className={thr2}>Modifier</th></tr></thead><tbody>
                 <tr className={tr}><td className={td}>Strength</td><td className={tdr}>+N attack damage (additive)</td></tr>
                 <tr className={tr}><td className={td}>Dexterity</td><td className={tdr}>+N card block (additive)</td></tr>
-                <tr className={tr}><td className={td}>Vulnerable</td><td className={gold}>1.5x damage taken</td></tr>
-                <tr className={tr}><td className={td}>Weak</td><td className={gold}>0.75x damage dealt</td></tr>
-                <tr><td className={td}>Frail</td><td className={gold}>0.75x block from cards</td></tr>
+                <tr className={tr}><td className={td}>Vulnerable</td><td className={gold}>{mult(vuln)} damage taken</td></tr>
+                <tr className={tr}><td className={td}>Weak</td><td className={gold}>{mult(weak)} damage dealt</td></tr>
+                <tr><td className={td}>Frail</td><td className={gold}>{mult(frail)} block from cards</td></tr>
               </tbody></table>
               <p className={note}>Strength and Dexterity are additive (applied before multipliers). Vulnerable, Weak, and Frail are multiplicative.</p>
             </div>
@@ -317,6 +500,7 @@ export default function MechanicContent({ slug, characterStats }: MechanicConten
           </div>
         </>
       );
+    }
 
     case "character-stats": {
       // Fallback values mirror the C# constants in
@@ -412,23 +596,57 @@ export default function MechanicContent({ slug, characterStats }: MechanicConten
         </div>
       );
 
-    case "ascension-modifiers":
+    case "ascension-modifiers": {
+      // Ordered list comes from the parsed `AscensionLevel` C# enum so
+      // Mega Crit can't add or rename a level without us catching it on
+      // the next render. Effect descriptions stay hand-curated keyed on
+      // the enum name — they're prose, not values, and re-deriving them
+      // would require parsing every consumer site of AscensionHelper
+      // throughout the C# tree.
+      const EFFECTS: Record<string, { display: string; effect: string }> = {
+        SwarmingElites: { display: "Swarming Elites", effect: "5 → 8 elites on map" },
+        WearyTraveler: { display: "Weary Traveler", effect: "Ancient heals only 80%" },
+        Poverty: { display: "Poverty", effect: "Gold rewards x0.75" },
+        TightBelt: { display: "Tight Belt", effect: "3 → 2 potion slots" },
+        AscendersBane: { display: "Ascender's Bane", effect: "Start with Ascender's Bane curse" },
+        Inflation: { display: "Inflation", effect: "Card removal at the Merchant is more expensive (base 100g, +50g per use)" },
+        Scarcity: { display: "Scarcity", effect: "~50% rarer cards, slower pity" },
+        ToughEnemies: { display: "Tough Enemies", effect: "Enemy HP increases (per-enemy)" },
+        DeadlyEnemies: { display: "Deadly Enemies", effect: "Enemy damage increases (per-enemy)" },
+        DoubleBoss: { display: "Double Boss", effect: "Two bosses at end of the final act" },
+      };
+      const fallback = [
+        "SwarmingElites", "WearyTraveler", "Poverty", "TightBelt", "AscendersBane",
+        "Inflation", "Scarcity", "ToughEnemies", "DeadlyEnemies", "DoubleBoss",
+      ];
+      const levels = ascensionLevels?.length ? ascensionLevels : fallback;
       return (
         <div className={card}>
-          <table className={tbl}><thead><tr className={thr}><th className={th}>Level</th><th className={th}>Name</th><th className={thr2}>Effect</th></tr></thead><tbody>
-            <tr className={tr}><td className={td}>1</td><td className={td}>Swarming Elites</td><td className={tdr}>5 → 8 elites on map</td></tr>
-            <tr className={tr}><td className={td}>2</td><td className={td}>Weary Traveler</td><td className={tdr}>Ancient heals only 80%</td></tr>
-            <tr className={tr}><td className={td}>3</td><td className={td}>Poverty</td><td className={tdr}>Gold rewards x0.75</td></tr>
-            <tr className={tr}><td className={td}>4</td><td className={td}>Tight Belt</td><td className={tdr}>3 → 2 potion slots</td></tr>
-            <tr className={tr}><td className={td}>5</td><td className={td}>Ascender&apos;s Bane</td><td className={tdr}>Start with Ascender&apos;s Bane curse</td></tr>
-            <tr className={tr}><td className={td}>6</td><td className={td}>Inflation</td><td className={tdr}>Card removal at the Merchant is more expensive (base 100g, +50g per use)</td></tr>
-            <tr className={tr}><td className={td}>7</td><td className={td}>Scarcity</td><td className={tdr}>~50% rarer cards, slower pity</td></tr>
-            <tr className={tr}><td className={td}>8</td><td className={td}>Tough Enemies</td><td className={tdr}>Enemy HP increases (per-enemy)</td></tr>
-            <tr className={tr}><td className={td}>9</td><td className={td}>Deadly Enemies</td><td className={tdr}>Enemy damage increases (per-enemy)</td></tr>
-            <tr><td className={td}>10</td><td className={td}>Double Boss</td><td className={tdr}>Two bosses at end of the final act</td></tr>
-          </tbody></table>
+          <table className={tbl}>
+            <thead>
+              <tr className={thr}>
+                <th className={th}>Level</th>
+                <th className={th}>Name</th>
+                <th className={thr2}>Effect</th>
+              </tr>
+            </thead>
+            <tbody>
+              {levels.map((key, i) => {
+                const e = EFFECTS[key] ?? { display: key, effect: "—" };
+                const isLast = i === levels.length - 1;
+                return (
+                  <tr key={key} className={isLast ? undefined : tr}>
+                    <td className={td}>{i + 1}</td>
+                    <td className={td}>{e.display}</td>
+                    <td className={tdr}>{e.effect}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
         </div>
       );
+    }
 
     case "score-formula":
       return (
